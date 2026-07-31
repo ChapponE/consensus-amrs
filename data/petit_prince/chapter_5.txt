@@ -1,0 +1,776 @@
+# AMR (Abstract Meaning Representation) release v3.0
+# Le Petit Prince ("The Little Prince"), a 1943 novel by Antoine de Saint-Exupery (1562 sentences)
+# generated on Thu Jan 25, 2018 at 16:14:36
+
+# ::id lpp_1943.208 ::date 2012-11-05T18:05:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt Chapter 5 .
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_208.txt
+(c / chapter :mod 5)
+
+# ::id lpp_1943.209 ::date 2012-11-05T18:08:04 ::annotator ISI-AMR-05 ::preferred
+# ::snt As each day passed I would learn , in our talk , something about the little prince 's planet , his departure from it , his journey .
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_209.txt
+(l / learn-01
+      :ARG0 (i / i)
+      :ARG1 (a / and
+            :op1 (s / something
+                  :topic (p2 / planet
+                        :poss (p3 / prince
+                              :mod (l2 / little))))
+            :op2 (d2 / depart-01
+                  :ARG0 p3
+                  :ARG1 p2)
+            :op3 (j / journey-01
+                  :ARG0 p3))
+      :time (p / pass-03
+            :ARG1 (d / day
+                  :mod (e / each)))
+      :source (t / talk-01
+            :ARG0 (w / we)))
+
+# ::id lpp_1943.210 ::date 2012-11-05T18:11:27 ::annotator ISI-AMR-05 ::preferred
+# ::snt The information would come very slowly , as it might chance to fall from his thoughts .
+# ::save-date Wed Nov 11, 2015 ::file lpp_1943_210.txt
+(c / come-01
+      :ARG1 (i / information)
+      :ARG1-of (s / slow-05
+            :degree (v / very))
+      :time (f / fall-01
+            :ARG1 i
+            :ARG3 (t / thing
+                  :ARG1-of (t2 / think-01
+                        :ARG0 (h / he)))
+            :ARG1-of (c2 / chance-01)))
+
+# ::id lpp_1943.211 ::date 2012-11-07T13:27:59 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was in this way that I heard , on the third day , about the catastrophe of the baobabs .
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_211.txt
+(h / hear-01
+      :ARG0 (i / i)
+      :ARG1 (c / catastrophe
+            :poss (b / baobab))
+      :manner (t / this)
+      :time (d / day
+            :ord (o / ordinal-entity :value 3)))
+
+# ::id lpp_1943.212 ::date 2012-11-07T13:29:02 ::annotator ISI-AMR-05 ::preferred
+# ::snt This time , once more , I had the sheep to thank for it .
+# ::save-date Sat Jan 6, 2018 ::file lpp_1943_212.txt
+(o / obligate-01
+      :ARG2 (t / thank-01
+            :ARG0 (i / i)
+            :ARG1 (s / sheep)
+            :ARG2 (i2 / it))
+      :time (t2 / time
+            :mod (t3 / this))
+      :mod (a / again))
+
+# ::id lpp_1943.213 ::date 2012-11-07T13:30:26 ::annotator ISI-AMR-05 ::preferred
+# ::snt For the little prince asked me abruptly -- as if seized by a grave doubt -- " It is true , is n't it , that sheep eat little bushes ? "
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_213.txt
+(r2 / request-confirmation-91
+      :ARG0 (p / prince
+            :mod (l2 / little))
+      :ARG1 (e / eat-01
+            :ARG0 (s / sheep)
+            :ARG1 (b / bush
+                  :mod (l / little)))
+      :ARG2 (i2 / i)
+      :manner (a2 / abrupt)
+      :conj-as-if (s2 / seize-01
+            :ARG0 (d / doubt-01
+                  :ARG0 p
+                  :mod (g / grave))
+            :ARG1 p))
+
+# ::id lpp_1943.214 ::date 2012-11-07T13:34:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Yes , that is true . "
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_214.txt
+(t / true-01
+      :ARG1 (t2 / that))
+
+# ::id lpp_1943.215 ::date 2012-11-07T13:35:42 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Ah !
+# ::save-date Wed May 15, 2013 ::file lpp_1943_215.txt
+(a / ah :mode expressive)
+
+# ::id lpp_1943.216 ::date 2012-11-07T13:37:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt I am glad ! "
+# ::save-date Sat Jul 25, 2015 ::file lpp_1943_216.txt
+(g / glad-02
+      :ARG1 (i / i))
+
+# ::id lpp_1943.217 ::date 2012-11-07T13:38:33 ::annotator ISI-AMR-05 ::preferred
+# ::snt I did not understand why it was so important that sheep should eat little bushes .
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_217.txt
+(u / understand-01 :polarity -
+      :ARG0 (i / i)
+      :ARG1 (i2 / important-01
+            :mod (s2 / so)
+            :ARG1 (r / recommend-01
+                  :ARG1 (e / eat-01
+                        :ARG0 (s / sheep)
+                        :ARG1 (b / bush
+                              :mod (l / little))))
+            :ARG1-of (c / cause-01
+                  :ARG0 (a / amr-unknown))))
+
+# ::id lpp_1943.218 ::date 2012-11-07T13:42:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt But the little prince added : " Then it follows that they also eat baobabs ? "
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_218.txt
+(c / contrast-01
+      :ARG1 (a / add-01
+            :ARG0 (p / prince
+                  :mod (l / little))
+            :ARG1 (f / follow-05
+                  :ARG1 (e / eat-01
+                        :ARG0 (t / they)
+                        :ARG1 (b / baobab)
+                        :mod (a2 / also))
+                  :ARG1-of (h / have-condition-91)
+                  :ARG1-of (r / request-confirmation-91))))
+
+# ::id lpp_1943.219 ::date 2012-11-07T13:43:31 ::annotator ISI-AMR-05 ::preferred
+# ::snt I pointed out to the little prince that baobabs were not little bushes , but , on the contrary , trees as big as castles ; and that even if he took a whole herd of elephants away with him , the herd would not eat up one single baobab .
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_219.txt
+(p2 / point-out-02
+      :ARG0 (i / i)
+      :ARG1 (a / and
+            :op1 (t2 / tree
+                  :ARG1-of (h2 / have-degree-91
+                        :ARG2 (b5 / big)
+                        :ARG3 (e4 / equal)
+                        :ARG4 (c / castle))
+                  :domain (b2 / baobab)
+                  :ARG1-of (i2 / instead-of-91
+                        :ARG2 (b3 / bush
+                              :mod (l3 / little)
+                              :domain b2)))
+            :op2 (e / eat-up-02 :polarity -
+                  :ARG0 h
+                  :ARG1 (b / baobab :quant 1
+                        :ARG1-of (s / single-02))
+                  :concession (e3 / even-if
+                        :op1 (t / take-01
+                              :ARG0 p
+                              :ARG1 (h / herd
+                                    :consist-of (e2 / elephant)
+                                    :mod (w / whole))
+                              :ARG3 (a2 / away)))))
+      :beneficiary (p / prince
+            :mod (l2 / little)))
+
+# ::id lpp_1943.220 ::date 2012-11-07T13:48:45 ::annotator ISI-AMR-05 ::preferred
+# ::snt The idea of the herd of elephants made the little prince laugh .
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_220.txt
+(m / make-02
+      :ARG0 (i / idea
+            :topic (h / herd
+                  :consist-of (e / elephant)))
+      :ARG1 (l / laugh-01
+            :ARG0 (p / prince
+                  :mod (l2 / little))))
+
+# ::id lpp_1943.221 ::date 2012-11-07T14:01:45 ::annotator ISI-AMR-05 ::preferred
+# ::snt " We would have to put them one on top of the other , " he said .
+# ::save-date Sat Apr 27, 2013 ::file lpp_1943_221.txt
+(s / say-01
+      :ARG0 (h / he)
+      :ARG1 (o / obligate-01
+            :ARG2 (s2 / stack-01
+                  :ARG0 (w / we)
+                  :ARG1 (t / they))))
+
+# ::id lpp_1943.222 ::date 2012-11-07T14:04:22 ::annotator ISI-AMR-05 ::preferred
+# ::snt But he made a wise comment : " Before they grow so big , the baobabs start out by being little . "
+# ::save-date Fri May 29, 2015 ::file lpp_1943_222.txt
+(c2 / contrast-01
+      :ARG2 (c / comment-01
+            :ARG0 (h / he)
+            :ARG1 (s / start-out-05
+                  :ARG0 (b2 / baobab)
+                  :ARG2 (l / little)
+                  :time (b4 / before
+                        :op1 (g / grow-02
+                              :ARG1 b2
+                              :ARG2 (b5 / big
+                                    :degree (s2 / so)))))
+            :manner (w / wise)))
+
+# ::id lpp_1943.223 ::date 2012-11-07T14:07:23 ::annotator ISI-AMR-05 ::preferred
+# ::snt " That is strictly correct , "
+# ::save-date Sun Jul 26, 2015 ::file lpp_1943_223.txt
+(c / correct-02
+      :ARG1 (t / that)
+      :mod (s / strict))
+
+# ::id lpp_1943.224 ::date 2012-11-07T14:13:23 ::annotator ISI-AMR-05 ::preferred
+# ::snt I said .
+# ::save-date Wed Nov 7, 2012 ::file lpp_1943_224.txt
+(s / say-01
+  :ARG0 (i / i))
+
+# ::id lpp_1943.225 ::date 2012-11-07T14:18:39 ::annotator ISI-AMR-05 ::preferred
+# ::snt " But why do you want the sheep to eat the little baobabs ? "
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_225.txt
+(c / contrast-01
+      :ARG2 (c2 / cause-01
+            :ARG0 (a / amr-unknown)
+            :ARG1 (w / want-01
+                  :ARG0 (y / you)
+                  :ARG1 (e / eat-01
+                        :ARG0 (s / sheep)
+                        :ARG1 (b / baobab
+                              :mod (l / little))))))
+
+# ::id lpp_1943.226 ::date 2012-11-07T14:19:33 ::annotator ISI-AMR-05 ::preferred
+# ::snt He answered me at once , " Oh , come , come ! " , as if he were speaking of something that was self - evident .
+# ::save-date Sat Jan 6, 2018 ::file lpp_1943_226.txt
+(a / answer-01
+      :ARG0 (h / he)
+      :ARG1 (i2 / i)
+      :ARG2 (c / come-on-25)
+      :time (a2 / at-once-01)
+      :conj-as-if (s / speak-01
+            :ARG0 h
+            :ARG1 (s2 / something
+                  :ARG0-of (e / evidence-01
+                        :ARG1 s2))))
+
+# ::id lpp_1943.227 ::date 2012-11-07T14:46:09 ::annotator ISI-AMR-05 ::preferred
+# ::snt And I was obliged to make a great mental effort to solve this problem , without any assistance .
+# ::save-date Fri Aug 26, 2016 ::file lpp_1943_227.txt
+(a / and
+      :op1 (o / oblige-02
+            :ARG1 (i / i)
+            :ARG2 (e / effort-01
+                  :ARG0 i
+                  :ARG1 (s / solve-01
+                        :ARG0 i
+                        :ARG1 (p / problem
+                              :mod (t / this))
+                        :ARG2-of (a2 / assist-01 :polarity -
+                              :ARG1 i))
+                  :manner (m2 / mental)
+                  :mod (g / great))))
+
+# ::id lpp_1943.228 ::date 2012-11-07T14:47:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt Indeed , as I learned , there were on the planet where the little prince lived -- as on all planets -- good plants and bad plants .
+# ::save-date Wed Apr 29, 2015 ::file lpp_1943_228.txt
+(b2 / be-located-at-91
+      :ARG1 (a3 / and
+            :op1 (p / plant
+                  :ARG1-of (g / good-02))
+            :op2 (p2 / plant
+                  :ARG1-of (b / bad-07))
+            :mod (i / indeed))
+      :ARG2 (a / and
+            :op1 (p3 / planet
+                  :location-of (l / live-01
+                        :ARG0 (p4 / prince
+                              :mod (l2 / little))))
+            :op2 (p5 / planet
+                  :mod (a2 / all)))
+      :ARG1-of (l3 / learn-01
+            :ARG0 (i2 / i)))
+
+# ::id lpp_1943.229 ::date 2012-11-07T15:36:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt In consequence , there were good seeds from good plants , and bad seeds from bad plants .
+# ::save-date Thu Nov 2, 2017 ::file lpp_1943_229.txt
+(c / consequence-03
+      :ARG2 (a / and
+            :op1 (s / seed
+                  :ARG1-of (g / good-02)
+                  :source (p / plant
+                        :ARG1-of (g2 / good-02)))
+            :op2 (s2 / seed
+                  :ARG1-of (b / bad-07)
+                  :source (p2 / plant
+                        :ARG1-of (b2 / bad-07)))))
+
+# ::id lpp_1943.230 ::date 2012-11-07T15:42:40 ::annotator ISI-AMR-05 ::preferred
+# ::snt But seeds are invisible .
+# ::save-date Wed Jul 15, 2015 ::file lpp_1943_230.txt
+(c / contrast-01
+      :ARG2 (p / possible-01 :polarity -
+            :ARG1 (s2 / see-01
+                  :ARG1 (s / seed))))
+
+# ::id lpp_1943.231 ::date 2012-11-08T07:38:34 ::annotator ISI-AMR-05 ::preferred
+# ::snt They sleep deep in the heart of the earth 's darkness , until some one among them is seized with the desire to awaken .
+# ::save-date Sun Jul 26, 2015 ::file lpp_1943_231.txt
+(s / sleep-01
+      :ARG0 (t / they)
+      :location (h / heart
+            :ARG2-of (d / deep-02)
+            :part-of (d2 / darkness
+                  :poss (e / earth)))
+      :time (u / until
+            :op1 (s2 / seize-01
+                  :ARG0 (d3 / desire-01
+                        :ARG1 (w / wake-01
+                              :ARG1 s))
+                  :ARG1 (s3 / someone
+                        :ARG1-of (i / include-91
+                              :ARG2 t)))))
+
+# ::id lpp_1943.232 ::date 2012-11-08T07:41:45 ::annotator ISI-AMR-05 ::preferred
+# ::snt Then this little seed will stretch itself and begin -- timidly at first -- to push a charming little sprig inoffensively upward toward the sun .
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_232.txt
+(a / and
+      :op1 (s / stretch-01
+            :ARG0 (s2 / seed
+                  :mod (l / little)
+                  :mod (t2 / this))
+            :ARG1 s2)
+      :op2 (b / begin-01
+            :ARG0 s2
+            :ARG1 (p / push-01
+                  :ARG0 s2
+                  :ARG1 (s3 / sprig
+                        :mod (l2 / little)
+                        :ARG0-of (c / charm-01))
+                  :ARG2 (u / upward
+                        :direction (s4 / sun))
+                  :manner (o / offensive :polarity -))
+            :manner (t3 / timid
+                  :time (a2 / at-first)))
+      :time (t / then))
+
+# ::id lpp_1943.233 ::date 2012-11-08T07:45:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt If it is only a sprout of radish or the sprig of a rose - bush , one would let it grow wherever it might wish .
+# ::save-date Thu May 2, 2013 ::file lpp_1943_233.txt
+(a / allow-01
+      :ARG0 (o / one)
+      :ARG1 (g / grow-01
+            :ARG1 i
+            :location (w2 / wish-01
+                  :ARG0 i
+                  :ARG1-of (p / possible-01)))
+      :condition (o2 / or
+            :op1 (s / sprout
+                  :part-of (r / radish))
+            :op2 (s2 / sprig
+                  :part-of (b2 / bush
+                        :mod (r2 / rose)))
+            :mod (o3 / only)
+            :domain (i / it)))
+
+# ::id lpp_1943.234 ::date 2012-11-08T07:48:33 ::annotator ISI-AMR-05 ::preferred
+# ::snt But when it is a bad plant , one must destroy it as soon as possible , the very first instant that one recognizes it .
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_234.txt
+(c / contrast-01
+      :ARG2 (o / obligate-01
+            :ARG2 (d / destroy-01
+                  :ARG0 (o2 / one)
+                  :ARG1 i2
+                  :time (i / instant
+                        :time-of (r / recognize-01
+                              :ARG0 o2
+                              :ARG1 i2)
+                        :ord (o3 / ordinal-entity :value 1
+                              :degree (v / very)))
+                  :time (s / soon
+                        :ARG2-of (h / have-degree-91
+                              :ARG1 d
+                              :ARG3 (e / equal)
+                              :ARG4 (p2 / possible-01
+                                    :ARG1 d))))
+            :condition (p / plant
+                  :ARG1-of (b / bad-07)
+                  :domain (i2 / it))))
+
+# ::id lpp_1943.235 ::date 2012-11-08T08:05:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt Now there were some terrible seeds on the planet that was the home of the little prince ; and these were the seeds of the baobab .
+# ::save-date Thu Nov 5, 2015 ::file lpp_1943_235.txt
+(b2 / be-located-at-91
+      :ARG1 (s / seed
+            :ARG1-of (t / terrible-01)
+            :quant (s2 / some)
+            :poss (b / baobab))
+      :ARG2 (p / planet
+            :location-of (h / home
+                  :poss (p2 / prince
+                        :mod (l / little))))
+      :time (n / now))
+
+# ::id lpp_1943.236 ::date 2012-11-08T08:08:22 ::annotator ISI-AMR-05 ::preferred
+# ::snt The soil of that planet was infested with them .
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_236.txt
+(i / infest-01
+      :ARG1 (s / soil
+            :poss (p / planet
+                  :mod (t2 / that)))
+      :ARG2 (t / they))
+
+# ::id lpp_1943.237 ::date 2012-11-08T08:09:16 ::annotator ISI-AMR-05 ::preferred
+# ::snt A baobab is something you will never , never be able to get rid of if you attend to it too late .
+# ::save-date Mon Dec 11, 2017 ::file lpp_1943_237.txt
+(p / possible-01 :polarity -
+      :ARG1 (e / eliminate-01
+            :ARG0 (y / you)
+            :ARG1 (b / baobab)
+            :time (e2 / ever))
+      :condition (a / attend-02
+            :ARG0 y
+            :ARG1 b
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (l / late)
+                  :ARG3 (t / too))))
+
+# ::id lpp_1943.238 ::date 2012-11-08T08:10:42 ::annotator ISI-AMR-05 ::preferred
+# ::snt It spreads over the entire planet .
+# ::save-date Thu Nov 8, 2012 ::file lpp_1943_238.txt
+(s / spread-01
+  :ARG1 (i / it)
+  :ARG2 (p / planet
+          :mod (e / entire)))
+
+# ::id lpp_1943.239 ::date 2012-11-08T08:11:46 ::annotator ISI-AMR-05 ::preferred
+# ::snt It bores clear through it with its roots .
+# ::save-date Fri May 29, 2015 ::file lpp_1943_239.txt
+(b / bore-01
+      :ARG0 (i / it)
+      :ARG2 (t2 / through
+            :op1 (i2 / it)
+            :mod (c / clear-03))
+      :ARG3 (r / root
+            :poss i))
+
+# ::id lpp_1943.240 ::date 2012-11-08T08:19:24 ::annotator ISI-AMR-05 ::preferred
+# ::snt And if the planet is too small , and the baobabs are too many , they split it in pieces ...
+# ::save-date Thu Sep 21, 2017 ::file lpp_1943_240.txt
+(a / and
+      :op1 (s / split-01
+            :ARG0 b
+            :ARG1 p2
+            :ARG2 (p / piece)
+            :condition (a2 / and
+                  :op1 (h / have-degree-91
+                        :ARG1 (p2 / planet)
+                        :ARG2 (s2 / small)
+                        :ARG3 (t2 / too))
+                  :op2 (h2 / have-quant-91
+                        :ARG1 (b / baobab)
+                        :ARG2 (m / many)
+                        :ARG3 (t3 / too)))))
+
+# ::id lpp_1943.241 ::date 2012-11-08T08:21:39 ::annotator ISI-AMR-05 ::preferred
+# ::snt " It is a question of discipline , " the little prince said to me later on .
+# ::save-date Tue Sep 19, 2017 ::file lpp_1943_241.txt
+(s / say-01
+      :ARG0 (p / prince
+            :mod (l / little))
+      :ARG1 (q / question
+            :topic (d / discipline)
+            :domain (i / it))
+      :ARG2 (i2 / i)
+      :time (a / after))
+
+# ::id lpp_1943.242 ::date 2012-11-08T08:23:57 ::annotator ISI-AMR-05 ::preferred
+# ::snt " When you 've finished your own toilet in the morning , then it is time to attend to the toilet of your planet , just so , with the greatest care .
+# ::save-date Tue Jan 23, 2018 ::file lpp_1943_242.txt
+(a / attend-02
+      :ARG0 (y / you)
+      :ARG1 (t2 / toilet
+            :poss (p / planet
+                  :poss y)
+            :ARG1-of (r / resemble-01
+                  :ARG2 t))
+      :manner (c / care-04
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (g / great)
+                  :ARG3 (m2 / most)))
+      :time (f / finish-01
+            :ARG0 y
+            :ARG1 (t / toilet
+                  :poss y)
+            :time (d / date-entity
+                  :dayperiod (m / morning))))
+
+# ::id lpp_1943.243 ::date 2012-11-08T08:28:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt You must see to it that you pull up regularly all the baobabs , at the very first moment when they can be distinguished from the rosebushes which they resemble so closely in their earliest youth .
+# ::save-date Tue Oct 17, 2017 ::file lpp_1943_243.txt
+(o2 / obligate-01
+      :ARG1 (p / pull-01
+            :ARG0 (y / you)
+            :ARG1 (b / baobab
+                  :mod (a / all))
+            :ARG1-of (r / regular-02)
+            :time (m / moment
+                  :ord (o / ordinal-entity :value 1
+                        :degree (v / very))
+                  :time-of (p2 / possible-01
+                        :ARG1 (d / distinguish-01
+                              :ARG1 b
+                              :ARG2 (r2 / rosebush
+                                    :ARG2-of (r3 / resemble-01
+                                          :ARG1 b
+                                          :ARG1-of (c / close-10
+                                                :degree (s / so))
+                                          :time (e / early
+                                                :op1 (y2 / youth
+                                                      :poss b)
+                                                :degree (v2 / very)))))))))
+
+# ::id lpp_1943.244 ::date 2012-11-08T08:31:41 ::annotator ISI-AMR-05 ::preferred
+# ::snt It is very tedious work , " the little prince added , " but very easy . "
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_244.txt
+(a / add-01
+      :ARG0 (p / prince
+            :mod (l / little))
+      :ARG1 (c / contrast-01
+            :ARG1 (t / tedious
+                  :degree (v / very)
+                  :domain (w / work-01))
+            :ARG2 (e / easy-05
+                  :degree (v2 / very)
+                  :ARG1 w)))
+
+# ::id lpp_1943.245 ::date 2012-11-08T08:35:39 ::annotator ISI-AMR-05 ::preferred
+# ::snt And one day he said to me : " You ought to make a beautiful drawing , so that the children where you live can see exactly how all this is .
+# ::save-date Sat Jul 25, 2015 ::file lpp_1943_245.txt
+(a / and
+      :op1 (s / say-01
+            :ARG0 (h / he)
+            :ARG1 (r / recommend-01
+                  :ARG0 h
+                  :ARG1 (d3 / draw-01
+                        :ARG0 i
+                        :ARG1 (p2 / picture
+                              :ARG1-of (b / beautiful-02))
+                        :purpose (p / possible-01
+                              :ARG1 (s2 / see-01
+                                    :ARG0 (c / child
+                                          :location (l / live-01
+                                                :ARG0 i))
+                                    :ARG1 (t / this
+                                          :mod (a2 / all))
+                                    :manner (e / exact))))
+                  :ARG2 i)
+            :ARG2 (i / i)
+            :time (d / day
+                  :mod (o / one))))
+
+# ::id lpp_1943.246 ::date 2012-11-08T08:41:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt That would be very useful to them if they were to travel some day .
+# ::save-date Mon Jul 6, 2015 ::file lpp_1943_246.txt
+(u / useful-05
+      :ARG0 (t2 / they)
+      :ARG1 (t / that)
+      :degree (v / very)
+      :condition (t3 / travel-01
+            :ARG0 t2
+            :time (d / day
+                  :mod (s / some))))
+
+# ::id lpp_1943.247 ::date 2012-11-13T07:34:31 ::annotator ISI-AMR-05 ::preferred
+# ::snt Sometimes , " he added , " there is no harm in putting off a piece of work until another day .
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_247.txt
+(a / add-01
+      :ARG0 (h / he)
+      :ARG1 (h2 / harm-01 :polarity -
+            :ARG0 (p / put-off-06
+                  :ARG1 (t / thing
+                        :ARG1-of (w / work-01)
+                        :quant (p3 / piece))
+                  :ARG2 (d / day
+                        :mod (a2 / another)))
+            :time (s / sometimes)))
+
+# ::id lpp_1943.248 ::date 2012-11-13T07:36:12 ::annotator ISI-AMR-05 ::preferred
+# ::snt But when it is a matter of baobabs , that always means a catastrophe .
+# ::save-date Sat Mar 14, 2015 ::file lpp_1943_248.txt
+(c2 / contrast-01
+      :ARG2 (m3 / mean-01
+            :ARG1 (t / that)
+            :ARG2 (c / catastrophe)
+            :time (a / always)
+            :condition (b / baobab)))
+
+# ::id lpp_1943.249 ::date 2012-11-13T07:39:23 ::annotator ISI-AMR-05 ::preferred
+# ::snt I knew a planet that was inhabited by a lazy man .
+# ::save-date Wed Mar 18, 2015 ::file lpp_1943_249.txt
+(k / know-02
+      :ARG0 (i / i)
+      :ARG1 (p / planet
+            :ARG1-of (i2 / inhabit-01
+                  :ARG0 (m / man
+                        :mod (l / lazy)))))
+
+# ::id lpp_1943.250 ::date 2012-11-13T07:40:51 ::annotator ISI-AMR-05 ::preferred
+# ::snt He neglected three little bushes ... "
+# ::save-date Tue Nov 13, 2012 ::file lpp_1943_250.txt
+(n / neglect-01
+  :ARG0 (h / he)
+  :ARG1 (b / bush
+          :mod (l / little)
+          :quant 3))
+
+# ::id lpp_1943.251 ::date 2012-11-13T07:41:17 ::annotator ISI-AMR-05 ::preferred
+# ::snt So , as the little prince described it to me , I have made a drawing of that planet .
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_251.txt
+(d / draw-01
+      :ARG0 (i / i)
+      :ARG1 (p / planet
+            :mod (t / that))
+      :manner (d2 / describe-01
+            :ARG0 (p2 / prince
+                  :mod (l / little))
+            :ARG1 p
+            :beneficiary i)
+      :ARG1-of (c / cause-01))
+
+# ::id lpp_1943.252 ::date 2012-11-13T07:43:35 ::annotator ISI-AMR-05 ::preferred
+# ::snt I do not much like to take the tone of a moralist .
+# ::save-date Mon Oct 23, 2017 ::file lpp_1943_252.txt
+(d / dislike-01
+      :ARG0 (i / i)
+      :ARG1 (t / take-01
+            :ARG0 i
+            :ARG1 (t2 / tone
+                  :poss (m2 / moralist)))
+      :degree (m / much))
+
+# ::id lpp_1943.253 ::date 2012-11-13T07:45:07 ::annotator ISI-AMR-05 ::preferred
+# ::snt But the danger of the baobabs is so little understood , and such considerable risks would be run by anyone who might get lost on an asteroid , that for once I am breaking through my reserve .
+# ::save-date Thu May 2, 2013 ::file lpp_1943_253.txt
+(c2 / contrast-01
+      :ARG2 (c3 / cause-01
+            :ARG0 (a / and
+                  :op1 (u / understand-01
+                        :ARG1 (d / danger
+                              :poss (b2 / baobab))
+                        :degree (l / little
+                              :degree (s / so)))
+                  :op2 (r / risk-01
+                        :ARG0 (a2 / anyone
+                              :ARG1-of (l2 / lose-02
+                                    :location (a3 / asteroid)
+                                    :ARG1-of (p / possible-01)))
+                        :degree (c / considerable
+                              :mod (s2 / such))))
+            :ARG1 (b3 / break-away-14
+                  :ARG0 (i / i)
+                  :ARG1 (r3 / reserve
+                        :poss i)
+                  :mod (f / for-once))))
+
+# ::id lpp_1943.254 ::date 2012-11-13T07:52:33 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Children , "
+# ::save-date Tue Apr 23, 2013 ::file lpp_1943_254.txt
+(c2 / child)
+
+# ::id lpp_1943.255 ::date 2012-11-13T07:53:50 ::annotator ISI-AMR-05 ::preferred
+# ::snt I say plainly , " watch out for the baobabs ! "
+# ::save-date Tue Apr 23, 2013 ::file lpp_1943_255.txt
+(s / say-01
+      :ARG0 (i / i)
+      :ARG1 (w / watch-out-02 :mode imperative
+            :ARG0 (y / you)
+            :ARG1 (b / baobab))
+      :manner (p / plain))
+
+# ::id lpp_1943.256 ::date 2012-11-13T07:54:27 ::annotator ISI-AMR-05 ::preferred
+# ::snt My friends , like myself , have been skirting this danger for a long time , without ever knowing it ; and so it is for them that I have worked so hard over this drawing .
+# ::save-date Sat Jul 25, 2015 ::file lpp_1943_256.txt
+(c / cause-01
+      :ARG0 (s / skirt-02
+            :ARG0 (a / and
+                  :op1 (p2 / person
+                        :ARG0-of (h2 / have-rel-role-91
+                              :ARG1 (i / i)
+                              :ARG2 (f / friend)))
+                  :op2 i)
+            :ARG1 (d / danger
+                  :mod (t / this))
+            :ARG1-of (k / know-01 :polarity -
+                  :ARG0 p2
+                  :time (e / ever))
+            :ARG1-of (l / long-03))
+      :ARG1 (w / work-01
+            :ARG0 i
+            :ARG1 (p / picture
+                  :ARG1-of (d2 / draw-01)
+                  :mod (t3 / this))
+            :ARG1-of (h / hard-02
+                  :degree (s2 / so))
+            :beneficiary p2))
+
+# ::id lpp_1943.257 ::date 2012-11-13T07:57:38 ::annotator ISI-AMR-05 ::preferred
+# ::snt The lesson which I pass on by this means is worth all the trouble it has cost me .
+# ::save-date Fri Nov 10, 2017 ::file lpp_1943_257.txt
+(w / worth-02
+      :ARG1 (l / lesson
+            :ARG1-of (p / pass-on-09
+                  :ARG0 (i / i)
+                  :manner (t2 / this)))
+      :ARG2 (t / trouble-05
+            :ARG2-of (c / cost-01
+                  :ARG1 l
+                  :ARG3 i)
+            :mod (a / all)))
+
+# ::id lpp_1943.258 ::date 2012-11-13T08:01:21 ::annotator ISI-AMR-05 ::preferred
+# ::snt Perhaps you will ask me , " Why are there no other drawing in this book as magnificent and impressive as this drawing of the baobabs ? "
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_258.txt
+(p / possible-01
+      :ARG1 (a / ask-01
+            :ARG0 (y / you)
+            :ARG1 (p2 / picture :polarity -
+                  :ARG1-of (d / draw-01)
+                  :mod (o / other)
+                  :location (b / book
+                        :mod (t / this))
+                  :ARG0-of (c / cause-01
+                        :ARG1 (a2 / amr-unknown))
+                  :ARG1-of (h / have-degree-91
+                        :ARG2 (m / magnificent)
+                        :ARG3 (e / equal)
+                        :ARG4 (p3 / picture
+                              :ARG1-of (d2 / draw-01)
+                              :mod (t2 / this)
+                              :topic (b2 / baobab)))
+                  :ARG1-of (h2 / have-degree-91
+                        :ARG2 (i3 / impress-01
+                              :ARG0 p2)
+                        :ARG3 (e2 / equal)
+                        :ARG4 p3))
+            :ARG2 (i2 / i)))
+
+# ::id lpp_1943.259 ::date 2012-11-13T08:04:09 ::annotator ISI-AMR-05 ::preferred
+# ::snt The reply is simple .
+# ::save-date Sun Jul 26, 2015 ::file lpp_1943_259.txt
+(s / simple-02
+      :ARG1 (t / thing
+            :ARG2-of (r / reply-01)))
+
+# ::id lpp_1943.260 ::date 2012-11-13T08:04:46 ::annotator ISI-AMR-05 ::preferred
+# ::snt I have tried .
+# ::save-date Tue Nov 13, 2012 ::file lpp_1943_260.txt
+(t / try-01
+  :ARG0 (i / i))
+
+# ::id lpp_1943.261 ::date 2012-11-13T08:05:06 ::annotator ISI-AMR-05 ::preferred
+# ::snt But with the others I have not been successful .
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_261.txt
+(c / contrast-01
+      :ARG2 (s / succeed-01 :polarity -
+            :ARG0 (i / i)
+            :ARG1 (o / other)))
+
+# ::id lpp_1943.262 ::date 2012-11-13T08:06:04 ::annotator ISI-AMR-05 ::preferred
+# ::snt When I made the drawing of the baobabs I was carried beyond myself by the inspiring force of urgent necessity .
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_262.txt
+(c / carry-01
+      :ARG0 (f / force-01
+            :ARG0 (n / necessity
+                  :mod (u / urgent))
+            :ARG0-of (i2 / inspire-01))
+      :ARG1 (i / i)
+      :destination (b / beyond
+            :op1 i)
+      :time (d / draw-01
+            :ARG0 i
+            :ARG1 (b2 / baobab)))
+

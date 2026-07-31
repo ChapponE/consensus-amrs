@@ -1,0 +1,175 @@
+chapter,s,tau,score,penman
+chapter_1,0.163389,0.239093,0.2963,"(a / and
+   :op2 (p / picture
+           :ARG1 (s / see-01
+                    :ARG2 (g / grown-up)
+                    :ARG0 (i / i)
+                    :time (c / constrictor)
+                    :ARG1 (p1 / picture))
+           :ARG0 (t / that)))"
+chapter_2,0.180372,0.189927,0.2771,"(d / draw-01
+   :ARG1 (s / sheep
+            :mod (t / this))
+   :ARG0 (i / i
+            :ARG0-of (c / cause-01
+                        :ARG1 (h / have-degree-91))))"
+chapter_3,0.110279,0.207994,0.2061,"(a1 / and
+    :op2 (s / say-01
+            :ARG1 (a / and
+                     :ARG1 (i1 / i
+                               :ARG1-of (s1 / seem-01)))
+            :ARG0 (i / i)
+            :ARG2 (i2 / i
+                      :mod (l / little)))
+    :domain (t / that))"
+chapter_4,0.05935,0.231863,0.2779,"(c / cause-01
+   :ARG1 (h / have-rel-role-91
+            :ARG1 (i / i)
+            :ARG0 (i1 / i
+                      :ARG0-of (t / this
+                                  :ARG1 (a1 / amr-unknown
+                                            :mod (a / and))))
+            :ARG2 (f / friend)))"
+chapter_5,0.08791,0.173005,0.2423,"(h / have-degree-91
+   :ARG1 (b / baobab)
+   :ARG0 (p / prince
+            :mod (l / little))
+   :ARG2 (i1 / i
+             :ARG2-of (e / eat-01
+                         :ARG1 (t / that)
+                         :ARG0 (i / i))))"
+chapter_6,0.083517,0.180001,0.2778,"(s / say-01
+   :ARG2 (i / i)
+   :ARG1 (w / wait-01
+            :time (d / date-entity
+                     :mod (l / little))
+            :ARG1 (s1 / sunset)
+            :ARG0 y
+            :ARG2-of (o / obligate-01))
+   :ARG0 (y / you))"
+chapter_7,0.194549,0.188344,0.2347,"(b / believe-01
+   :ARG1 (t / thorn)
+   :ARG0 (i / i)
+   :ARG2 (l / little))"
+chapter_8,0.050012,0.173827,0.2276,"(a / and
+   :op1 (k / know-01
+           :ARG2 (f / flower
+                    :mod (o / one))
+           :ARG1 (s / she)
+           :ARG0 (s1 / she
+                     :mod (l / little)
+                     :ARG0-of (s2 / so))))"
+chapter_9,0.149291,0.232647,0.258,"(s / say-01
+   :ARG0 (h / he)
+   :ARG1 (v / volcano))"
+chapter_10,0.05101,0.167743,0.2365,"(p / possible-01
+   :ARG1 (s / say-01
+            :ARG0 (k / king)
+            :ARG1 (h / he)
+            :ARG2 (l / little)))"
+chapter_11,0.10444,0.21773,0.2893,"(s / say-01
+   :ARG1 (h / hat)
+   :ARG0 (m / man
+            :ARG0-of (c / clap-01
+                        :ARG1 (h1 / hand))
+            :mod (l / little)))"
+chapter_12,0.083517,0.216382,0.3958,"(r / reply-01
+   :ARG0 (p / person
+            :ARG0-of (t / tipple-01)
+            :ARG0-of (f / forget-01))
+   :ARG1 (p1 / prince
+             :mod (l / little)))"
+chapter_13,0.052771,0.228381,0.2097,"(o / own-01
+   :ARG1 (a / amr-unknown
+            :ARG1-of (o1 / own-01))
+   :ARG0 (i / i
+            :mod (l / little)
+            :ARG0-of (a2 / and
+                         :ARG1 (a1 / amr-unknown))))"
+chapter_14,0.116771,0.161139,0.2714,"(a / and
+   :op2 (l1 / light-04
+            :ARG1 (l / lamp
+                     :poss p)
+            :ARG0 (p / person
+                     :ARG0-of (s / say-01
+                                 :ARG1 (a1 / again)))))"
+chapter_15,0.109658,0.19715,0.2535,"(s / say-01
+   :ARG0 (g / geographer
+            :mod (l / little)
+            :ARG0-of (e / explore-01))
+   :ARG1 (t / thing
+            :ARG1-of (c / contrast-01))
+   :ARG2 (a / amr-unknown))"
+chapter_16,0.050147,0.244047,0.2889,"(l / light-04
+   :ARG1 (p / planet
+            :domain (p1 / planet))
+   :ARG0 (t / they
+            :ARG0-of (a / and
+                        :op2 (c / country))
+            :ARG1-of (o / opera)))"
+chapter_17,0.089237,0.18108,0.2515,"(s / say-01
+   :ARG1 (y / you
+            :ARG1 (y1 / you
+                      :ARG1-of (h / have-degree-91
+                                  :ARG2 (f / far)))
+            :ARG0 p)
+   :ARG0 (p / prince
+            :mod (l / little)))"
+chapter_18,0.148123,0.191232,0.3986,"(s / say-01
+   :ARG1 (t / they)
+   :ARG0 (p / prince
+            :mod (l / little)))"
+chapter_19,0.125345,0.249785,0.3716,"(s / say-01
+   :ARG2 (y / you)
+   :ARG1 (i / i
+            :mod (a / all)
+            :ARG1-of (a1 / and)
+            :domain-of y)
+   :ARG0 (h / he))"
+chapter_20,0.148123,0.191232,0.3476,"(a1 / and
+    :op2 (s / say-01
+            :ARG0 (h / he
+                     :mod (a / all))
+            :ARG1 (h1 / he)))"
+chapter_21,0.150334,0.211039,0.2856,"(s / say-01
+   :ARG0 (f / fox
+            :mod (l / little))
+   :ARG1 (i / i
+            :ARG1 (y / you)))"
+chapter_22,0.179955,0.196261,0.4097,"(s / say-01
+   :ARG0 (s1 / switchman
+             :mod (l / little))
+   :ARG1 (k / know-01
+            :ARG1 (t / they)
+            :ARG0 (t1 / they)))"
+chapter_23,0.094568,0.170794,0.4291,"(s / say-01
+   :ARG1 (m / morning
+            :ARG1-of (g / good-02
+                        :ARG0 (y / you))
+            :ARG0 y)
+   :ARG0 (p / person
+            :ARG0-of (m1 / merchandise-01)
+            :mod (l / little)))"
+chapter_24,0.130525,0.208173,0.2807,"(a / and
+   :op2 (s / say-01
+           :ARG0 (i / i)
+           :ARG1 (h / he)))"
+chapter_25,0.125345,0.249785,0.266,"(s / say-01
+   :ARG2 (i / i)
+   :ARG0 (i1 / i)
+   :ARG1 (t / thing))"
+chapter_26,0.076139,0.150403,0.2537,"(s / say-01
+   :ARG1 (i / it
+            :ARG1 (d / date-entity
+                     :mod (l / little)))
+   :ARG0 (i1 / i)
+   :ARG2 (a / and))"
+chapter_27,0.060655,0.158713,0.2591,"(a / and
+   :op2 (s / say-01
+           :ARG1 (i / i
+                    :ARG1-of (h / he)
+                    :mod (l / little
+                            :mod-of (a1 / appear-01)))
+           :ARG0 (i1 / i
+                     :ARG0-of (c / contrast-01))
+           :time (t / then)))"

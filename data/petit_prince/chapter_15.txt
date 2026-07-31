@@ -1,0 +1,996 @@
+# AMR (Abstract Meaning Representation) release v3.0
+# Le Petit Prince ("The Little Prince"), a 1943 novel by Antoine de Saint-Exupery (1562 sentences)
+# generated on Thu Jan 25, 2018 at 16:14:36
+
+# ::id lpp_1943.825 ::date 2012-11-15T05:47:58 ::annotator ISI-AMR-05 ::preferred
+# ::snt Chapter 15 .
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_825.txt
+(c / chapter
+  :mod 15)
+
+# ::id lpp_1943.826 ::date 2012-11-15T05:50:02 ::annotator ISI-AMR-05 ::preferred
+# ::snt The sixth planet was ten times larger than the last one .
+# ::save-date Mon Oct 23, 2017 ::file lpp_1943_826.txt
+(h / have-degree-91
+      :ARG1 (p / planet
+            :ord (o / ordinal-entity :value 6))
+      :ARG2 (l / large)
+      :ARG3 (t / times :quant 10)
+      :ARG4 (p2 / planet
+            :mod (l2 / last)))
+
+# ::id lpp_1943.827 ::date 2012-11-15T05:59:32 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was inhabited by an old gentleman who wrote voluminous books .
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_827.txt
+(i / inhabit-01
+  :ARG0 (g / gentleman
+          :mod (o / old)
+          :ARG0-of (w / write-01
+                     :ARG1 (b / book
+                             :mod (v / volume))))
+  :ARG1 (i2 / it))
+
+# ::id lpp_1943.828 ::date 2012-11-15T06:01:51 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Oh , look !
+# ::save-date Tue Sep 15, 2015 ::file lpp_1943_828.txt
+(a / and
+      :op1 (o / oh :mode expressive)
+      :op2 (l / look-01 :mode imperative
+            :ARG0 (y / you)))
+
+# ::id lpp_1943.829 ::date 2012-11-15T06:02:47 ::annotator ISI-AMR-05 ::preferred
+# ::snt Here is an explorer ! " he exclaimed to himself when he saw the little prince coming .
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_829.txt
+(e / exclaim-01
+  :ARG0 (h / he)
+  :ARG1 (p / person
+          :ARG0-of (e2 / explore-01))
+  :ARG2 h
+  :time (s / see-01
+          :ARG0 h
+          :ARG1 (c / come-01
+                  :ARG1 (p2 / prince
+                          :mod (l / little)))))
+
+# ::id lpp_1943.830 ::date 2012-11-15T06:13:30 ::annotator ISI-AMR-05 ::preferred
+# ::snt The little prince sat down on the table and panted a little .
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_830.txt
+(a / and
+  :op1 (s / sit-down-02
+         :ARG1 (p2 / prince
+                 :mod (l / little))
+         :location (t / table))
+  :op2 (p / pant-01
+         :ARG0 p2
+         :duration (l2 / little)))
+
+# ::id lpp_1943.831 ::date 2012-11-15T06:15:25 ::annotator ISI-AMR-05 ::preferred
+# ::snt He had already traveled so much and so far !
+# ::save-date Tue Sep 15, 2015 ::file lpp_1943_831.txt
+(a2 / and
+      :op1 (t / travel-01
+            :ARG0 (h / he)
+            :quant (m / much
+                  :mod (s / so)))
+      :op2 (t2 / travel-01
+            :ARG0 h
+            :ARG1 (f / far
+                  :mod (s2 / so)))
+      :time (a / already))
+
+# ::id lpp_1943.832 ::date 2012-11-15T06:17:21 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Where do you come from ? " the old gentleman said to him .
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_832.txt
+(s / say-01
+  :ARG0 (g / gentleman
+          :mod (o / old))
+  :ARG1 (c / come-01
+          :ARG1 h
+          :ARG3 (a / amr-unknown))
+  :ARG2 (h / he))
+
+# ::id lpp_1943.833 ::date 2012-11-15T06:19:21 ::annotator ISI-AMR-05 ::preferred
+# ::snt " What is that big book ? " said the little prince .
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_833.txt
+(s / say-01
+  :ARG0 (p / prince
+          :mod (l / little))
+  :ARG1 (b / book
+          :domain (a / amr-unknown)
+          :mod (b2 / big)
+          :mod (t / that)))
+
+# ::id lpp_1943.834 ::date 2012-11-15T06:20:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt " What are you doing ? "
+# ::save-date Tue Apr 16, 2013 ::file lpp_1943_834.txt
+(d2 / do-02
+  :ARG0 (y / you)
+  :ARG1 (a / amr-unknown))
+
+# ::id lpp_1943.835 ::date 2012-11-15T06:21:31 ::annotator ISI-AMR-05 ::preferred
+# ::snt " I am a geographer , " the old gentleman said to him .
+# ::save-date Thu Nov 15, 2012 ::file lpp_1943_835.txt
+(s / say-01
+  :ARG0 (g / gentleman
+          :mod (o / old))
+  :ARG1 (g2 / geographer
+          :domain g)
+  :ARG2 (h / he))
+
+# ::id lpp_1943.836 ::date 2012-11-15T06:22:33 ::annotator ISI-AMR-05 ::preferred
+# ::snt " What is a geographer ? " asked the little prince .
+# ::save-date Tue May 7, 2013 ::file lpp_1943_836.txt
+(a / ask-01
+      :ARG0 (p / prince
+            :mod (l / little))
+      :ARG1 (g / geographer
+            :domain (a2 / amr-unknown)))
+
+# ::id lpp_1943.837 ::date 2012-11-15T06:24:26 ::annotator ISI-AMR-05 ::preferred
+# ::snt " A geographer is a scholar who knows the location of all the seas , rivers , towns , mountains , and deserts . "
+# ::save-date Tue Oct 21, 2014 ::file lpp_1943_837.txt
+(s4 / scholar
+      :domain (g / geographer)
+      :ARG0-of (k / know-01
+            :ARG1 (l / location
+                  :location-of (a / and
+                        :op1 (s2 / sea)
+                        :op2 (r / river)
+                        :op3 (t / town)
+                        :op4 (m / mountain)
+                        :op5 (d / desert)
+                        :mod (a2 / all)))))
+
+# ::id lpp_1943.838 ::date 2012-11-15T06:30:59 ::annotator ISI-AMR-05 ::preferred
+# ::snt " That is very interesting , " said the little prince .
+# ::save-date Tue May 7, 2013 ::file lpp_1943_838.txt
+(s / say-01
+      :ARG0 (p / prince
+            :mod (l / little))
+      :ARG1 (i / interest-01
+            :ARG0 (t2 / that)
+            :ARG1 p
+            :degree (v / very)))
+
+# ::id lpp_1943.839 ::date 2012-11-15T06:32:06 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Here at last is a man who has a real profession ! "
+# ::save-date Tue Oct 6, 2015 ::file lpp_1943_839.txt
+(m2 / man
+      :ARG0-of (h2 / have-03
+            :ARG1 (p2 / profession
+                  :ARG1-of (r / real-04)))
+      :time (a / at-last))
+
+# ::id lpp_1943.840 ::date 2012-11-15T06:33:54 ::annotator ISI-AMR-05 ::preferred
+# ::snt And he cast a look around him at the planet of the geographer .
+# ::save-date Mon May 13, 2013 ::file lpp_1943_840.txt
+(a / and
+      :op2 (l / look-01
+            :ARG0 (h / he)
+            :ARG1 (p / planet
+                  :poss (g / geographer))
+            :direction (a2 / around
+                  :op1 h)))
+
+# ::id lpp_1943.841 ::date 2012-11-15T06:36:42 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was the most magnificent and stately planet that he had ever seen .
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_841.txt
+(h2 / have-degree-91
+      :ARG1 (i / it)
+      :ARG2 (a / and
+            :op1 (m2 / magnificent)
+            :op2 (s / stately))
+      :ARG3 (m / most)
+      :ARG5 (p / planet
+            :ARG1-of (s2 / see-01
+                  :ARG0 (h / he)
+                  :time (e / ever))))
+
+# ::id lpp_1943.842 ::date 2012-11-15T06:38:54 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Your planet is very beautiful , " he said .
+# ::save-date Sat Jul 25, 2015 ::file lpp_1943_842.txt
+(s / say-01
+      :ARG0 (h / he)
+      :ARG1 (b / beautiful-02
+            :ARG1 (p / planet
+                  :poss (y / you))
+            :degree (v / very)))
+
+# ::id lpp_1943.843 ::date 2012-11-15T06:39:42 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Has it any oceans ? "
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_843.txt
+(h / have-03
+      :ARG0 (i / it)
+      :ARG1 (o / ocean
+            :mod (a / any))
+      :polarity (a2 / amr-unknown))
+
+# ::id lpp_1943.844 ::date 2012-11-15T06:40:53 ::annotator ISI-AMR-05 ::preferred
+# ::snt " I could n't tell you , " said the geographer .
+# ::save-date Thu Nov 15, 2012 ::file lpp_1943_844.txt
+(s / say-01
+  :ARG0 (g / geographer)
+  :ARG1 (p / possible-01
+          :ARG1 (t / tell-01
+                    :ARG0 g
+                    :ARG2 (y / you))
+          :polarity -))
+
+# ::id lpp_1943.845 ::date 2012-11-15T06:42:03 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Ah ! "
+# ::save-date Wed May 15, 2013 ::file lpp_1943_845.txt
+(a / ah :mode expressive)
+
+# ::id lpp_1943.846 ::date 2012-11-15T06:42:28 ::annotator ISI-AMR-05 ::preferred
+# ::snt The little prince was disappointed .
+# ::save-date Tue May 7, 2013 ::file lpp_1943_846.txt
+(d / disappoint-01
+      :ARG1 (p / prince
+            :mod (l / little)))
+
+# ::id lpp_1943.847 ::date 2012-11-15T06:43:17 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Has it any mountains ? "
+# ::save-date Sat May 10, 2014 ::file lpp_1943_847.txt
+(h2 / have-03 :polarity (a2 / amr-unknown)
+      :ARG0 (i / it)
+      :ARG1 (m / mountain
+            :mod (a / any)))
+
+# ::id lpp_1943.848 ::date 2012-11-15T06:44:52 ::annotator ISI-AMR-05 ::preferred
+# ::snt " I could n't tell you , " said the geographer .
+# ::save-date Thu Nov 15, 2012 ::file lpp_1943_848.txt
+(s / say-01
+  :ARG0 (g / geographer)
+  :ARG1 (p / possible-01
+          :ARG1 (t / tell-01
+                    :ARG0 g
+                    :ARG2 (y / you))
+          :polarity -))
+
+# ::id lpp_1943.849 ::date 2012-11-15T06:45:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt " And towns , and rivers , and deserts ? "
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_849.txt
+(a3 / and
+      :op2 (a4 / and
+            :op1 (t2 / town)
+            :op2 (r2 / river)
+            :op3 (d2 / desert)
+            :polarity (a / amr-unknown)))
+
+# ::id lpp_1943.850 ::date 2012-11-15T06:46:16 ::annotator ISI-AMR-05 ::preferred
+# ::snt " I could n't tell you that , either . "
+# ::save-date Mon May 13, 2013 ::file lpp_1943_850.txt
+(p2 / possible-01 :polarity -
+      :ARG1 (t / tell-01
+            :ARG0 (i / i)
+            :ARG1 (t2 / that)
+            :ARG2 (y / you))
+      :mod (e / either))
+
+# ::id lpp_1943.851 ::date 2012-11-15T06:48:35 ::annotator ISI-AMR-05 ::preferred
+# ::snt " But you are a geographer ! "
+# ::save-date Mon May 13, 2013 ::file lpp_1943_851.txt
+(c / contrast-01 :mode expressive
+      :ARG2 (g2 / geographer
+            :domain (y2 / you)))
+
+# ::id lpp_1943.852 ::date 2012-11-15T06:49:36 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Exactly , " the geographer said .
+# ::save-date Tue May 7, 2013 ::file lpp_1943_852.txt
+(s / say-01
+      :ARG0 (g / geographer)
+      :ARG1 (e / exact))
+
+# ::id lpp_1943.853 ::date 2012-11-15T06:50:24 ::annotator ISI-AMR-05 ::preferred
+# ::snt " But I am not an explorer .
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_853.txt
+(c / contrast-01
+      :ARG2 (p / person :polarity -
+            :domain (i / i)
+            :ARG0-of (e / explore-01)))
+
+# ::id lpp_1943.854 ::date 2012-11-15T06:51:19 ::annotator ISI-AMR-05 ::preferred
+# ::snt I have n't a single explorer on my planet .
+# ::save-date Sun Jun 28, 2015 ::file lpp_1943_854.txt
+(h2 / have-03 :polarity -
+      :ARG0 (i / i)
+      :ARG1 (p2 / person
+            :ARG1-of (s / single-02)
+            :ARG0-of (e / explore-01)
+            :location (p3 / planet
+                  :poss i)))
+
+# ::id lpp_1943.855 ::date 2012-11-15T06:53:24 ::annotator ISI-AMR-05 ::preferred
+# ::snt It is not the geographer who goes out to count the towns , the rivers , the mountains , the seas , the oceans , and the deserts .
+# ::save-date Mon May 25, 2015 ::file lpp_1943_855.txt
+(p2 / person
+      :domain (g / geographer :polarity -)
+      :ARG0-of (g2 / go-02
+            :purpose (c / count-01
+                  :ARG0 g
+                  :ARG1 (a / and
+                        :op1 (t / town)
+                        :op2 (r / river)
+                        :op3 (m / mountain)
+                        :op4 (o2 / ocean)
+                        :op5 (d / desert)
+                        :op6 (s2 / sea)))))
+
+# ::id lpp_1943.856 ::date 2012-11-15T06:55:23 ::annotator ISI-AMR-05 ::preferred
+# ::snt The geographer is much too important to go loafing about .
+# ::save-date Wed Oct 11, 2017 ::file lpp_1943_856.txt
+(h / have-degree-91
+      :ARG1 (g / geographer)
+      :ARG2 (i2 / important-01
+            :ARG1 g)
+      :ARG3 (t / too
+            :quant (m / much))
+      :ARG6 (g2 / go-01
+            :ARG1 g
+            :purpose (l / loaf-01
+                  :ARG0 g
+                  :path (a / about))))
+
+# ::id lpp_1943.857 ::date 2012-11-15T07:52:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt He does not leave his desk .
+# ::save-date Sat Jul 25, 2015 ::file lpp_1943_857.txt
+(l / leave-11 :polarity -
+      :ARG0 (h / he)
+      :ARG1 (d / desk
+            :poss h))
+
+# ::id lpp_1943.858 ::date 2012-11-15T07:52:52 ::annotator ISI-AMR-05 ::preferred
+# ::snt But he receives the explorers in his study .
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_858.txt
+(c / contrast-01
+      :ARG2 (r / receive-01
+            :ARG0 (h / he)
+            :ARG1 (p / person
+                  :ARG0-of (e / explore-01))
+            :location (s / study
+                  :poss h)))
+
+# ::id lpp_1943.859 ::date 2012-11-15T07:57:29 ::annotator ISI-AMR-05 ::preferred
+# ::snt He asks them questions , and he notes down what they recall of their travels .
+# ::save-date Wed Apr 8, 2015 ::file lpp_1943_859.txt
+(a3 / and
+      :op1 (q2 / question-01
+            :ARG0 (h / he)
+            :ARG2 (t / they))
+      :op2 (n / note-02
+            :ARG0 h
+            :ARG1 (t3 / thing
+                  :ARG1-of (r / recall-02)
+                  :source (t2 / travel-01
+                        :ARG0 t))))
+
+# ::id lpp_1943.860 ::date 2012-11-15T08:06:03 ::annotator ISI-AMR-05 ::preferred
+# ::snt And if the recollections of any one among them seem interesting to him , the geographer orders an inquiry into that explorer 's moral character . "
+# ::save-date Fri Jul 31, 2015 ::file lpp_1943_860.txt
+(a3 / and
+      :op2 (o / order-02
+            :ARG0 (g / geographer)
+            :ARG1 (i / inquire-01
+                  :ARG1 (c / character
+                        :ARG1-of (m / moral-02)
+                        :poss (p / person
+                              :ARG0-of (e / explore-01)
+                              :mod (t2 / that))))
+            :condition (i4 / interest-01
+                  :ARG1 g
+                  :ARG2 (t4 / thing
+                        :ARG1-of (r2 / recall-02)
+                        :poss (p2 / person
+                              :ARG0-of (e2 / explore-01)
+                              :mod (a / any)
+                              :ARG1-of (i5 / include-91
+                                    :ARG2 (t5 / they)))))))
+
+# ::id lpp_1943.861 ::date 2012-11-15T08:12:16 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Why is that ? "
+# ::save-date Tue May 7, 2013 ::file lpp_1943_861.txt
+(t2 / that
+      :ARG1-of (c / cause-01
+            :ARG0 (a / amr-unknown)))
+
+# ::id lpp_1943.862 ::date 2012-11-15T08:13:25 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Because an explorer who told lies would bring disaster on the books of the geographer .
+# ::save-date Mon May 13, 2013 ::file lpp_1943_862.txt
+(c / cause-01
+      :ARG1 (l / lie-08
+            :ARG0 (p2 / person
+                  :ARG0-of (e2 / explore-01))
+            :condition-of (b3 / bring-01
+                  :ARG1 (d2 / disaster)
+                  :ARG2 (b4 / book
+                        :poss (g2 / geographer)))))
+
+# ::id lpp_1943.863 ::date 2012-11-15T08:53:30 ::annotator ISI-AMR-05 ::preferred
+# ::snt So would an explorer who drank too much . "
+# ::save-date Thu Sep 21, 2017 ::file lpp_1943_863.txt
+(c / cause-01
+      :ARG0 (p / person
+            :ARG0-of (e / explore-01)
+            :ARG0-of (d / drink-01
+                  :ARG1-of (h / have-quant-91
+                        :ARG2 (m / much)
+                        :ARG3 (t2 / too))))
+      :ARG1 (t / thing
+            :ARG1-of (s / same-01)))
+
+# ::id lpp_1943.864 ::date 2012-11-15T08:55:29 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Why is that ? " asked the little prince .
+# ::save-date Thu Nov 15, 2012 ::file lpp_1943_864.txt
+(a / ask-01
+  :ARG0 (p / prince
+          :mod (l / little))
+  :ARG1 (t / that
+          :ARG1-of (c / cause-01
+                     :ARG0 (a2 / amr-unknown))))
+
+# ::id lpp_1943.865 ::date 2012-11-15T08:56:40 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Because intoxicated men see double .
+# ::save-date Tue May 7, 2013 ::file lpp_1943_865.txt
+(s3 / see-01
+      :ARG0 (m2 / man
+            :ARG1-of (i2 / intoxicate-01))
+      :ARG2 (d / double)
+      :ARG0-of (c2 / cause-01
+            :ARG1 (t2 / thing)))
+
+# ::id lpp_1943.866 ::date 2012-11-15T08:59:50 ::annotator ISI-AMR-05 ::preferred
+# ::snt Then the geographer would note down two mountains in a place where there was only one . "
+# ::save-date Mon May 13, 2013 ::file lpp_1943_866.txt
+(t / thing
+      :ARG0-of (c / cause-01
+            :ARG1 (n2 / note-02
+                  :ARG0 (g / geographer)
+                  :ARG1 (m / mountain :quant 2
+                        :location (p / place
+                              :location-of (m2 / mountain :quant 1
+                                    :mod (o2 / only))))
+                  :time (t2 / then))))
+
+# ::id lpp_1943.867 ::date 2012-11-15T09:03:44 ::annotator ISI-AMR-05 ::preferred
+# ::snt " I know some one , " said the little prince , " who would make a bad explorer . "
+# ::save-date Wed Apr 29, 2015 ::file lpp_1943_867.txt
+(s / say-01
+      :ARG0 (p / prince
+            :mod (l / little))
+      :ARG1 (k / know-02
+            :ARG0 p
+            :ARG1 (s2 / someone
+                  :ARG1-of (m / make-06
+                        :ARG2 (p2 / person
+                              :ARG0-of (e / explore-01)
+                              :ARG1-of (b / bad-02
+                                    :ARG2 e))))))
+
+# ::id lpp_1943.868 ::date 2012-11-15T09:08:26 ::annotator ISI-AMR-05 ::preferred
+# ::snt " That is possible .
+# ::save-date Tue May 7, 2013 ::file lpp_1943_868.txt
+(p2 / possible-01
+      :ARG1 (t / that))
+
+# ::id lpp_1943.869 ::date 2012-11-15T09:08:52 ::annotator ISI-AMR-05 ::preferred
+# ::snt Then , when the moral character of the explorer is shown to be good , an inquiry is ordered into his discovery . "
+# ::save-date Wed Nov 4, 2015 ::file lpp_1943_869.txt
+(o2 / order-01
+      :ARG1 (i / inquire-01
+            :ARG1 (t / thing
+                  :ARG1-of (d / discover-01
+                        :ARG0 p)))
+      :time (s3 / show-01
+            :ARG1 (g / good-02
+                  :ARG1 (c / character
+                        :poss (p / person
+                              :ARG0-of (e / explore-01))
+                        :ARG1-of (m / moral-02))))
+      :time (t3 / then))
+
+# ::id lpp_1943.870 ::date 2012-11-15T09:28:21 ::annotator ISI-AMR-05 ::preferred
+# ::snt " One goes to see it ? "
+# ::save-date Sun May 24, 2015 ::file lpp_1943_870.txt
+(g / go-02 :polarity (a / amr-unknown)
+      :ARG0 (o / one)
+      :purpose (s2 / see-01
+            :ARG0 o
+            :ARG1 (i / it)))
+
+# ::id lpp_1943.871 ::date 2012-11-15T09:30:16 ::annotator ISI-AMR-05 ::preferred
+# ::snt " No .
+# ::save-date Mon May 13, 2013 ::file lpp_1943_871.txt
+(n / no)
+
+# ::id lpp_1943.872 ::date 2012-11-15T09:30:52 ::annotator ISI-AMR-05 ::preferred
+# ::snt That would be too complicated .
+# ::save-date Thu Sep 21, 2017 ::file lpp_1943_872.txt
+(h / have-degree-91
+      :ARG1 (t / that)
+      :ARG2 (c2 / complicate-01
+            :ARG1 t)
+      :ARG3 (t2 / too))
+
+# ::id lpp_1943.873 ::date 2012-11-15T09:31:49 ::annotator ISI-AMR-05 ::preferred
+# ::snt But one requires the explorer to furnish proofs .
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_873.txt
+(c / contrast-01
+      :ARG2 (r / require-01
+            :ARG0 (o / one)
+            :ARG1 (f / furnish-01
+                  :ARG0 p
+                  :ARG1 (p2 / prove-01))
+            :ARG2 (p / person
+                  :ARG0-of (e / explore-01))))
+
+# ::id lpp_1943.874 ::date 2012-11-15T09:34:43 ::annotator ISI-AMR-05 ::preferred
+# ::snt For example , if the discovery in question is that of a large mountain , one requires that large stones be brought back from it . "
+# ::save-date Thu Mar 3, 2016 ::file lpp_1943_874.txt
+(e2 / exemplify-01
+      :ARG0 (r / require-01
+            :ARG0 (o / one)
+            :ARG1 (b / bring-01
+                  :ARG1 (s2 / stone
+                        :mod (l2 / large))
+                  :direction (b2 / back)
+                  :source m)
+            :condition (d / discover-01
+                  :ARG1 (m / mountain
+                        :mod (l / large))
+                  :ARG1-of (q / question-01))))
+
+# ::id lpp_1943.875 ::date 2012-11-15T09:40:04 ::annotator ISI-AMR-05 ::preferred
+# ::snt The geographer was suddenly stirred to excitement .
+# ::save-date Thu Nov 15, 2012 ::file lpp_1943_875.txt
+(s / stir-02
+  :ARG1 (g / geographer)
+  :ARG3 (e / excite-01)
+  :manner (s2 / sudden))
+
+# ::id lpp_1943.876 ::date 2012-11-15T09:42:41 ::annotator ISI-AMR-05 ::preferred
+# ::snt " But you - - you come from far away !
+# ::save-date Wed May 8, 2013 ::file lpp_1943_876.txt
+(c3 / contrast-01
+      :ARG2 (c / come-01
+            :ARG1 (y / you)
+            :ARG3 (a / away
+                  :extent (f / far))))
+
+# ::id lpp_1943.877 ::date 2012-11-15T07:59:46 ::annotator ISI-AMR-05 ::preferred
+# ::snt You are an explorer !
+# ::save-date Wed May 8, 2013 ::file lpp_1943_877.txt
+(p2 / person
+      :ARG0-of (e / explore-01)
+      :domain (y / you))
+
+# ::id lpp_1943.878 ::date 2012-11-15T08:00:06 ::annotator ISI-AMR-05 ::preferred
+# ::snt You shall describe your planet to me ! "
+# ::save-date Mon May 13, 2013 ::file lpp_1943_878.txt
+(d2 / describe-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (p / planet
+            :source-of y)
+      :beneficiary (i / i))
+
+# ::id lpp_1943.879 ::date 2012-11-15T09:49:42 ::annotator ISI-AMR-05 ::preferred
+# ::snt And , having opened his big register , the geographer sharpened his pencil .
+# ::save-date Tue May 14, 2013 ::file lpp_1943_879.txt
+(a / and
+      :op2 (s / sharpen-01
+            :ARG0 g
+            :ARG1 (p / pencil
+                  :poss g)
+            :time (a3 / after
+                  :op1 (o / open-01
+                        :ARG0 (g / geographer)
+                        :ARG1 (r / register-02
+                              :ARG0 g
+                              :mod (b / big))))))
+
+# ::id lpp_1943.880 ::date 2012-11-15T09:56:25 ::annotator ISI-AMR-05 ::preferred
+# ::snt The recitals of explorers are put down first in pencil .
+# ::save-date Mon Mar 10, 2014 ::file lpp_1943_880.txt
+(p / put-01
+      :ARG1 (t / thing
+            :ARG1-of (r / recite-01
+                  :ARG0 (p2 / person
+                        :ARG0-of (e / explore-01))))
+      :direction (d / down)
+      :time (f / first)
+      :instrument (p3 / pencil))
+
+# ::id lpp_1943.881 ::date 2012-11-15T09:56:37 ::annotator ISI-AMR-05 ::preferred
+# ::snt One waits until the explorer has furnished proofs , before putting them down in ink .
+# ::save-date Mon Mar 10, 2014 ::file lpp_1943_881.txt
+(w / wait-01
+      :ARG1 (o / one)
+      :time (u / until
+            :op1 (f / furnish-01
+                  :ARG0 (p2 / person
+                        :ARG0-of (e / explore-01))
+                  :ARG1 (p / prove-01)))
+      :time (b / before
+            :op1 (p3 / put-01
+                  :ARG0 o
+                  :ARG1 (t / they)
+                  :direction (d / down)
+                  :instrument (i / ink))))
+
+# ::id lpp_1943.882 ::date 2012-11-15T09:56:42 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Well ? " said the geographer expectantly .
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_882.txt
+(r / request-response-91
+      :ARG0 (g / geographer)
+      :manner (e / expect-01
+            :ARG0 g))
+
+# ::id lpp_1943.883 ::date 2012-11-15T10:08:41 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Oh , where I live , " said the little prince , " it is not very interesting .
+# ::save-date Wed May 8, 2013 ::file lpp_1943_883.txt
+(s / say-01
+      :ARG0 (p / prince
+            :mod (l / little))
+      :ARG1 (a / and
+            :op1 (o / oh
+                  :mode expressive)
+            :op2 (i2 / interest-01
+                  :ARG0 (l2 / location
+                        :location-of (l3 / live-01
+                              :ARG0 p))
+                  :ARG1 p
+                  :degree (v / very)
+                  :polarity -)))
+
+# ::id lpp_1943.884 ::date 2012-11-15T10:11:20 ::annotator ISI-AMR-05 ::preferred
+# ::snt It is all so small .
+# ::save-date Mon May 13, 2013 ::file lpp_1943_884.txt
+(s3 / small
+      :domain (i / it
+            :mod (a / all))
+      :degree (s / so))
+
+# ::id lpp_1943.885 ::date 2012-11-15T10:15:54 ::annotator ISI-AMR-05 ::preferred
+# ::snt I have three volcanoes .
+# ::save-date Wed May 8, 2013 ::file lpp_1943_885.txt
+(h2 / have-03
+      :ARG0 (i / i)
+      :ARG1 (v / volcano
+            :quant 3))
+
+# ::id lpp_1943.886 ::date 2012-11-15T10:16:36 ::annotator ISI-AMR-05 ::preferred
+# ::snt Two volcanoes are active and the other is extinct .
+# ::save-date Mon Jul 20, 2015 ::file lpp_1943_886.txt
+(a3 / and
+      :op1 (a / activity-06
+            :ARG0 (v / volcano :quant 2))
+      :op2 (e / extinct
+            :domain (o / other)))
+
+# ::id lpp_1943.887 ::date 2012-11-15T10:18:19 ::annotator ISI-AMR-05 ::preferred
+# ::snt But one never knows . "
+# ::save-date Wed May 8, 2013 ::file lpp_1943_887.txt
+(c / contrast-01
+      :ARG2 (k / know-01
+            :ARG0 (o / one)
+            :polarity -
+            :time (e / ever)))
+
+# ::id lpp_1943.888 ::date 2012-11-15T10:19:15 ::annotator ISI-AMR-05 ::preferred
+# ::snt " One never knows , " said the geographer .
+# ::save-date Fri Dec 14, 2012 ::file lpp_1943_888.txt
+(s / say-01
+      :ARG0 (g / geographer)
+      :ARG1 (k / know-01 :polarity -
+            :ARG0 (o / one)
+            :time (e / ever)))
+
+# ::id lpp_1943.889 ::date 2012-11-15T10:19:54 ::annotator ISI-AMR-05 ::preferred
+# ::snt " I have also a flower . "
+# ::save-date Wed May 8, 2013 ::file lpp_1943_889.txt
+(h2 / have-03
+      :ARG0 (i / i)
+      :ARG1 (t / thing
+            :ARG1-of (f / flower-01))
+      :mod (a2 / also))
+
+# ::id lpp_1943.890 ::date 2012-11-15T10:24:06 ::annotator ISI-AMR-05 ::preferred
+# ::snt " We do not record flowers , " said the geographer .
+# ::save-date Thu Nov 15, 2012 ::file lpp_1943_890.txt
+(s / say-01
+  :ARG0 (g / geographer)
+  :ARG1 (r / record-01
+          :ARG0 (w / we)
+          :ARG1 (t / thing
+                  :ARG1-of (f / flower-01))
+          :polarity -))
+
+# ::id lpp_1943.891 ::date 2012-11-15T10:25:27 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Why is that ?
+# ::save-date Wed May 8, 2013 ::file lpp_1943_891.txt
+(t2 / that
+      :ARG1-of (c / cause-01
+            :ARG0 (a / amr-unknown)))
+
+# ::id lpp_1943.892 ::date 2012-11-15T10:26:06 ::annotator ISI-AMR-05 ::preferred
+# ::snt The flower is the most beautiful thing on my planet ! "
+# ::save-date Wed Sep 20, 2017 ::file lpp_1943_892.txt
+(h / have-degree-91
+      :ARG1 (t / thing
+            :ARG1-of (f / flower-01))
+      :ARG2 (b / beautiful-02
+            :ARG1 t)
+      :ARG3 (m / most)
+      :ARG5 (t2 / thing
+            :location (p / planet
+                  :source-of (i / i))))
+
+# ::id lpp_1943.893 ::date 2012-11-15T10:27:54 ::annotator ISI-AMR-05 ::preferred
+# ::snt " We do not record them , " said the geographer , " because they are ephemeral . "
+# ::save-date Mon May 13, 2013 ::file lpp_1943_893.txt
+(s / say-01
+      :ARG0 (g / geographer)
+      :ARG1 (r / record-01 :polarity -
+            :ARG0 (w / we)
+            :ARG1 (t / they)
+            :ARG1-of (c / cause-01
+                  :ARG0 (e / ephemeral
+                        :domain t))))
+
+# ::id lpp_1943.894 ::date 2012-11-15T10:30:13 ::annotator ISI-AMR-05 ::preferred
+# ::snt " What does that mean - - ' ephemeral ' ? "
+# ::save-date Sat Mar 14, 2015 ::file lpp_1943_894.txt
+(m2 / mean-01
+      :ARG1 (e / ephemeral)
+      :ARG2 (a / amr-unknown))
+
+# ::id lpp_1943.895 ::date 2012-11-15T10:31:35 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Geographies , " said the geographer , " are the books which , of all books , are most concerned with matters of consequence .
+# ::save-date Thu Nov 2, 2017 ::file lpp_1943_895.txt
+(s / say-01
+      :ARG0 (g / geographer)
+      :ARG1 (b / book
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (c / concern-02
+                        :ARG1 (m2 / matter
+                              :ARG1-of (c2 / consequential-01)))
+                  :ARG3 (m / most)
+                  :ARG5 (b2 / book
+                        :mod (a / all)))
+            :domain (g2 / geography)))
+
+# ::id lpp_1943.896 ::date 2012-11-15T18:00:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt They never become old - fashioned .
+# ::save-date Wed May 8, 2013 ::file lpp_1943_896.txt
+(b / become-01
+      :ARG1 (t / they)
+      :ARG2 (f / fashion
+            :mod (o / old))
+      :time (e / ever)
+      :polarity -)
+
+# ::id lpp_1943.897 ::date 2012-11-15T18:57:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt It is very rarely that a mountain changes its position .
+# ::save-date Fri Jul 31, 2015 ::file lpp_1943_897.txt
+(c / change-01
+      :ARG0 (m / mountain)
+      :ARG1 (l / location
+            :ARG2-of (p / position-01
+                  :ARG1 m))
+      :ARG1-of (r / rare-02
+            :degree (v / very)))
+
+# ::id lpp_1943.898 ::date 2012-11-15T19:04:03 ::annotator ISI-AMR-05 ::preferred
+# ::snt It is very rarely that an ocean empties itself of its waters .
+# ::save-date Fri Jul 31, 2015 ::file lpp_1943_898.txt
+(e / empty-01
+      :ARG0 (o / ocean)
+      :ARG1 o
+      :ARG2 (w / water
+            :poss o)
+      :ARG1-of (r / rare-02
+            :degree (v / very)))
+
+# ::id lpp_1943.899 ::date 2012-11-15T19:16:48 ::annotator ISI-AMR-05 ::preferred
+# ::snt We write of eternal things . "
+# ::save-date Wed May 8, 2013 ::file lpp_1943_899.txt
+(w3 / write-01
+      :ARG0 (w2 / we)
+      :ARG1 (t / thing
+            :mod (e / eternal)))
+
+# ::id lpp_1943.900 ::date 2012-11-15T19:17:26 ::annotator ISI-AMR-05 ::preferred
+# ::snt " But extinct volcanoes may come to life again , " the little prince interrupted .
+# ::save-date Mon May 13, 2013 ::file lpp_1943_900.txt
+(i / interrupt-01
+      :ARG0 (p2 / prince
+            :mod (l / little))
+      :ARG2 (c / contrast-01
+            :ARG2 (p / possible-01
+                  :ARG1 (c2 / come-04
+                        :ARG1 (v / volcano
+                              :mod (e / extinct))
+                        :ARG2 (t / thing
+                              :ARG1-of (l3 / live-01))
+                        :mod (a / again)))))
+
+# ::id lpp_1943.901 ::date 2012-11-15T19:27:58 ::annotator ISI-AMR-05 ::preferred
+# ::snt " What does that mean - - ' ephemeral ' ? "
+# ::save-date Sat Mar 14, 2015 ::file lpp_1943_901.txt
+(m2 / mean-01
+      :ARG1 (e / ephemeral)
+      :ARG2 (a / amr-unknown))
+
+# ::id lpp_1943.902 ::date 2012-11-15T19:39:51 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Whether volcanoes are extinct or alive , it comes to the same thing for us , " said the geographer .
+# ::save-date Tue Dec 1, 2015 ::file lpp_1943_902.txt
+(s / say-01
+      :ARG0 (g / geographer)
+      :ARG1 (s2 / same-01
+            :ARG1 (e2 / extinct
+                  :domain (v / volcano))
+            :ARG2 (l2 / live-01
+                  :ARG0 v)
+            :ARG3 (w / we)))
+
+# ::id lpp_1943.903 ::date 2012-11-15T19:44:47 ::annotator ISI-AMR-05 ::preferred
+# ::snt " The thing that matters to us is the mountain .
+# ::save-date Wed May 8, 2013 ::file lpp_1943_903.txt
+(m3 / mountain
+      :domain (t / thing
+            :ARG1-of (m2 / matter-01
+                  :ARG2 (w / we))))
+
+# ::id lpp_1943.904 ::date 2012-11-15T19:57:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt It does not change . "
+# ::save-date Wed May 8, 2013 ::file lpp_1943_904.txt
+(c2 / change-01
+      :ARG1 (i / it)
+      :polarity -)
+
+# ::id lpp_1943.905 ::date 2012-11-15T19:58:53 ::annotator ISI-AMR-05 ::preferred
+# ::snt " But what does that mean - - ' ephemeral ' ? " repeated the little prince , who never in his life had let go of a question , once he had asked it .
+# ::save-date Mon May 25, 2015 ::file lpp_1943_905.txt
+(r / repeat-01
+      :ARG0 (p / prince
+            :mod (l / little)
+            :ARG0-of (l2 / let-01 :polarity -
+                  :ARG1 (g / go-02
+                        :ARG0 (t / thing
+                              :ARG1-of (q / question-01
+                                    :ARG0 p)))
+                  :time (o / once
+                        :op1 (a2 / ask-01
+                              :ARG1 t))
+                  :time (e2 / ever
+                        :duration (t2 / thing
+                              :ARG1-of (l3 / live-01
+                                    :ARG0 p)))))
+      :ARG1 (c / contrast-01
+            :ARG2 (m / mean-01
+                  :ARG1 (e / ephemeral)
+                  :ARG2 (a / amr-unknown))))
+
+# ::id lpp_1943.906 ::date 2012-11-15T20:05:48 ::annotator ISI-AMR-05 ::preferred
+# ::snt " It means , ' which is in danger of speedy disappearance . ' "
+# ::save-date Sun Jul 5, 2015 ::file lpp_1943_906.txt
+(m2 / mean-01
+      :ARG1 (i / it)
+      :ARG2 (t / thing
+            :ARG1-of (e / endanger-01
+                  :ARG1-of (c / cause-01
+                        :ARG0 (d / disappear-01
+                              :ARG1-of (s / speedy-03))))))
+
+# ::id lpp_1943.907 ::date 2012-11-15T20:10:42 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Is my flower in danger of speedy disappearance ? "
+# ::save-date Sun Jul 5, 2015 ::file lpp_1943_907.txt
+(e2 / endanger-01 :polarity (a / amr-unknown)
+      :ARG1 (f2 / flower
+            :poss (i / i))
+      :ARG1-of (c / cause-01
+            :ARG0 (d / disappear-01
+                  :ARG1-of (s / speedy-03))))
+
+# ::id lpp_1943.908 ::date 2012-11-15T20:12:49 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Certainly it is . "
+# ::save-date Thu May 9, 2013 ::file lpp_1943_908.txt
+(c2 / certain
+      :domain (i2 / it))
+
+# ::id lpp_1943.909 ::date 2012-11-15T20:14:01 ::annotator ISI-AMR-05 ::preferred
+# ::snt " My flower is ephemeral , " the little prince said to himself , " and she has only four thorns to defend herself against the world .
+# ::save-date Wed Nov 12, 2014 ::file lpp_1943_909.txt
+(s / say-01
+      :ARG0 (p / prince
+            :mod (l / little))
+      :ARG1 (a / and
+            :op1 (e / ephemeral
+                  :domain (f2 / flower
+                        :poss p))
+            :op2 (h / have-03
+                  :ARG0 f2
+                  :ARG1 (t2 / thorn
+                        :ARG2-of (d / defend-01
+                              :ARG0 f2
+                              :ARG1 f2
+                              :ARG3 (w / world))
+                        :quant (o / only :op1 4))))
+      :ARG2 p)
+
+# ::id lpp_1943.910 ::date 2012-11-15T20:28:14 ::annotator ISI-AMR-05 ::preferred
+# ::snt And I have left her on my planet , all alone ! "
+# ::save-date Fri Jul 17, 2015 ::file lpp_1943_910.txt
+(a4 / and
+      :op2 (l / leave-12
+            :ARG0 (i / i)
+            :ARG1 (s / she)
+            :ARG2 (p / planet
+                  :source-of i)
+            :ARG0-of (c / cause-01
+                  :ARG1 (a2 / alone
+                        :degree (a3 / all)
+                        :domain s))))
+
+# ::id lpp_1943.911 ::date 2012-11-15T20:31:29 ::annotator ISI-AMR-05 ::preferred
+# ::snt That was his first moment of regret .
+# ::save-date Thu Nov 15, 2012 ::file lpp_1943_911.txt
+(m / moment
+  :domain (t / that)
+  :mod (r / regret-01)
+  :ord (o / ordinal-entity :value 1)
+  :poss (h / he))
+
+# ::id lpp_1943.912 ::date 2012-11-15T20:32:34 ::annotator ISI-AMR-05 ::preferred
+# ::snt But he took courage once more .
+# ::save-date Sat Jan 6, 2018 ::file lpp_1943_912.txt
+(c / contrast-01
+      :ARG2 (t / take-01
+            :ARG0 (h / he)
+            :ARG1 (c2 / courage)
+            :mod (a / again
+                  :mod (o / once))))
+
+# ::id lpp_1943.913 ::date 2012-11-15T20:34:23 ::annotator ISI-AMR-05 ::preferred
+# ::snt " What place would you advise me to visit now ? " he asked .
+# ::save-date Thu May 9, 2013 ::file lpp_1943_913.txt
+(a / ask-01
+      :ARG0 (h / he)
+      :ARG1 (a2 / advise-01
+            :ARG0 (y / you)
+            :ARG1 h
+            :ARG2 (v / visit-01
+                  :ARG0 h
+                  :ARG1 (p / place
+                        :domain (a3 / amr-unknown))
+                  :time (n / now))))
+
+# ::id lpp_1943.914 ::date 2012-11-15T20:35:54 ::annotator ISI-AMR-05 ::preferred
+# ::snt " The planet Earth , " replied the geographer .
+# ::save-date Thu May 9, 2013 ::file lpp_1943_914.txt
+(r / reply-01
+      :ARG0 (g / geographer)
+      :ARG2 (p2 / planet :wiki "Earth"
+            :name (n / name :op1 "Earth")))
+
+# ::id lpp_1943.915 ::date 2012-11-15T20:42:06 ::annotator ISI-AMR-05 ::preferred
+# ::snt " It has a good reputation . "
+# ::save-date Wed Nov 4, 2015 ::file lpp_1943_915.txt
+(h2 / have-03
+      :ARG0 (i / it)
+      :ARG1 (r / reputation
+            :ARG1-of (g / good-02)))
+
+# ::id lpp_1943.916 ::date 2012-11-15T20:43:43 ::annotator ISI-AMR-05 ::preferred
+# ::snt And the little prince went away , thinking of his flower .
+# ::save-date Mon May 25, 2015 ::file lpp_1943_916.txt
+(a / and
+      :op2 (a2 / and
+            :op1 (g / go-02
+                  :ARG0 (p / prince
+                        :mod (l / little))
+                  :direction (a3 / away))
+            :op2 (t / think-01
+                  :ARG0 p
+                  :ARG1 (f2 / flower
+                        :poss p))))
+

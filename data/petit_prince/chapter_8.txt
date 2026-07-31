@@ -1,0 +1,832 @@
+# AMR (Abstract Meaning Representation) release v3.0
+# Le Petit Prince ("The Little Prince"), a 1943 novel by Antoine de Saint-Exupery (1562 sentences)
+# generated on Thu Jan 25, 2018 at 16:14:36
+
+# ::id lpp_1943.367 ::date 2012-11-24T08:33:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt Chapter 8 .
+# ::save-date Tue Apr 23, 2013 ::file lpp_1943_367.txt
+(c / chapter :mod 8)
+
+# ::id lpp_1943.368 ::date 2012-11-24T08:34:16 ::annotator ISI-AMR-05 ::preferred
+# ::snt I soon learned to know this flower better .
+# ::save-date Tue Sep 19, 2017 ::file lpp_1943_368.txt
+(l / learn-01
+      :ARG0 (i / i)
+      :ARG1 (k / know-02
+            :ARG0 i
+            :ARG1 (f / flower
+                  :mod (t / this))
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (g / good-03
+                        :ARG1 k)
+                  :ARG3 (m / more)))
+      :time (s / soon))
+
+# ::id lpp_1943.369 ::date 2012-11-24T08:35:18 ::annotator ISI-AMR-05 ::preferred
+# ::snt On the little prince 's planet the flowers had always been very simple .
+# ::save-date Sun Jul 26, 2015 ::file lpp_1943_369.txt
+(s / simple-02
+      :ARG1 (f / flower)
+      :degree (v / very)
+      :time (a / always)
+      :location (p / planet
+            :poss (p2 / prince
+                  :mod (l / little))))
+
+# ::id lpp_1943.370 ::date 2012-11-24T08:36:58 ::annotator ISI-AMR-05 ::preferred
+# ::snt They had only one ring of petals ; they took up no room at all ; they were a trouble to nobody .
+# ::save-date Thu Apr 25, 2013 ::file lpp_1943_370.txt
+(m / multi-sentence
+      :snt1 (h / have-03
+            :ARG0 (t / they)
+            :ARG1 (r / ring :quant 1
+                  :mod (o / only)
+                  :consist-of (p / petal)))
+      :snt2 (t2 / take-up-13 :polarity -
+            :ARG0 t
+            :ARG1 (r2 / room)
+            :degree (a / at-all))
+      :snt3 (t3 / trouble-01 :polarity -
+            :ARG0 t
+            :ARG1 (a2 / anybody)))
+
+# ::id lpp_1943.371 ::date 2012-11-24T08:41:53 ::annotator ISI-AMR-05 ::preferred
+# ::snt One morning they would appear in the grass , and by night they would have faded peacefully away .
+# ::save-date Fri Feb 26, 2016 ::file lpp_1943_371.txt
+(a / and
+      :op1 (a2 / appear-01
+            :ARG1 (t / they)
+            :time (d / date-entity
+                  :dayperiod (m / morning)
+                  :mod (o / one))
+            :location (g / grass))
+      :op2 (f / fade-01
+            :ARG1 t
+            :manner (p / peaceful)
+            :time (b / by
+                  :op1 (n / night))))
+
+# ::id lpp_1943.372 ::date 2012-11-24T16:32:03 ::annotator ISI-AMR-05 ::preferred
+# ::snt But one day , from a seed blown from no one knew where , a new flower had come up ; and the little prince had watched very closely over this small sprout which was not like any other small sprouts on his planet .
+# ::save-date Sat Dec 23, 2017 ::file lpp_1943_372.txt
+(a / and
+      :op1 (c / contrast-01
+            :ARG2 (c2 / come-up-13
+                  :ARG1 (f / flower
+                        :ARG1-of (n / new-01)
+                        :source (s / seed
+                              :ARG1-of (b / blow-01
+                                    :source (l2 / location
+                                          :ARG1-of (k / know-01 :polarity -)))))
+                  :time (d / day
+                        :mod (o / one))))
+      :op2 (w / watch-over-03
+            :ARG0 (p / prince
+                  :mod (l / little))
+            :ARG1 (s2 / sprout
+                  :mod (s3 / small)
+                  :mod (t / this)
+                  :ARG1-of (r / resemble-01 :polarity -
+                        :ARG2 (s4 / sprout
+                              :mod (s5 / small)
+                              :mod (o2 / other
+                                    :mod (a3 / any))
+                              :location (p2 / planet
+                                    :poss p))))
+            :ARG1-of (c3 / close-10
+                  :degree (v / very))))
+
+# ::id lpp_1943.373 ::date 2012-11-24T16:35:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt It might , you see , have been a new kind of baobab .
+# ::save-date Tue Dec 26, 2017 ::file lpp_1943_373.txt
+(p / possible-01
+      :ARG1 (b2 / baobab
+            :mod (k / kind
+                  :ARG1-of (n / new-01))
+            :domain (i / it)))
+
+# ::id lpp_1943.374 ::date 2012-11-24T16:37:04 ::annotator ISI-AMR-05 ::preferred
+# ::snt The shrub soon stopped growing , and began to get ready to produce a flower .
+# ::save-date Thu Apr 25, 2013 ::file lpp_1943_374.txt
+(a / and
+      :op1 (s / stop-01
+            :ARG0 (s2 / shrub)
+            :ARG1 (g / grow-01
+                  :ARG1 s2)
+            :time (s3 / soon))
+      :op2 (b / begin-01
+            :ARG0 s2
+            :ARG1 (r / ready-01
+                  :ARG0 s2
+                  :ARG1 s2
+                  :ARG2 (p / produce-01
+                        :ARG0 s2
+                        :ARG1 (f / flower)))))
+
+# ::id lpp_1943.375 ::date 2012-11-24T16:41:10 ::annotator ISI-AMR-05 ::preferred
+# ::snt The little prince , who was present at the first appearance of a huge bud , felt at once that some sort of miraculous apparition must emerge from it .
+# ::save-date Sat Jan 6, 2018 ::file lpp_1943_375.txt
+(f / feel-01
+      :ARG0 (p / prince
+            :mod (l / little)
+            :ARG1-of (p2 / present-02
+                  :ARG2 (a / appear-01
+                        :ARG1 (b / bud
+                              :mod (h / huge))
+                        :ord (o2 / ordinal-entity :value 1))))
+      :ARG1 (o / obligate-01
+            :ARG2 (e / emerge-01
+                  :ARG0 (t / thing
+                        :ARG1-of (a4 / appear-01
+                              :manner (m / miraculous))
+                        :mod (s / sort))
+                  :ARG1 b))
+      :time (a2 / at-once-01))
+
+# ::id lpp_1943.376 ::date 2012-11-24T16:44:15 ::annotator ISI-AMR-05 ::preferred
+# ::snt But the flower was not satisfied to complete the preparations for her beauty in the shelter of her green chamber .
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_376.txt
+(c / contrast-01
+      :ARG1 (s / satisfy-01 :polarity -
+            :ARG0 (c2 / complete-01
+                  :ARG0 f
+                  :ARG1 (p / prepare-02
+                        :ARG0 f
+                        :ARG1 (b / beautiful-02
+                              :ARG1 f))
+                  :location (c3 / chamber
+                        :ARG1-of (g / green-02)
+                        :poss f
+                        :ARG2-of (s2 / shelter-01)))
+            :ARG1 (f / flower)))
+
+# ::id lpp_1943.377 ::date 2012-11-24T16:46:28 ::annotator ISI-AMR-05 ::preferred
+# ::snt She chose her colours with the greatest care .
+# ::save-date Wed Sep 20, 2017 ::file lpp_1943_377.txt
+(c / choose-01
+      :ARG0 (s / she)
+      :ARG1 (c2 / color
+            :poss s)
+      :manner (c3 / care-04
+            :ARG1-of (h / have-degree-91
+                  :ARG2 (g / great)
+                  :ARG3 (m / most))))
+
+# ::id lpp_1943.378 ::date 2012-11-24T16:47:42 ::annotator ISI-AMR-05 ::preferred
+# ::snt She adjusted her petals one by one .
+# ::save-date Sat Nov 24, 2012 ::file lpp_1943_378.txt
+(a / adjust-01
+  :ARG0 (s / she)
+  :ARG1 (p / petal
+          :poss s)
+  :manner (o / one-by-one))
+
+# ::id lpp_1943.379 ::date 2012-11-24T16:48:50 ::annotator ISI-AMR-05 ::preferred
+# ::snt She did not wish to go out into the world all rumpled , like the field poppies .
+# ::save-date Mon May 6, 2013 ::file lpp_1943_379.txt
+(w / wish-01 :polarity -
+      :ARG0 (s / she
+            :ARG1-of (r / rumple-02
+                  :mod (a / all))
+            :ARG1-of (r2 / resemble-01
+                  :ARG2 (p / poppy
+                        :mod (f / field))))
+      :ARG1 (g / go-out-17
+            :ARG0 s
+            :destination (w2 / world)))
+
+# ::id lpp_1943.380 ::date 2012-11-24T16:57:31 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was only in the full radiance of her beauty that she wished to appear .
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_380.txt
+(w / wish-01
+      :ARG0 (s / she)
+      :ARG1 (a / appear-01
+            :ARG1 s
+            :manner (r / radiate-01
+                  :ARG0 s
+                  :ARG1 (b / beautiful-02
+                        :ARG1 s)
+                  :degree (f2 / full)
+                  :mod (o / only))))
+
+# ::id lpp_1943.381 ::date 2012-11-24T18:45:36 ::annotator ISI-AMR-05 ::preferred
+# ::snt Oh , yes !
+# ::save-date Tue Apr 23, 2013 ::file lpp_1943_381.txt
+(y / yes)
+
+# ::id lpp_1943.382 ::date 2012-11-24T18:48:03 ::annotator ISI-AMR-05 ::preferred
+# ::snt She was a coquettish creature !
+# ::save-date Thu Apr 25, 2013 ::file lpp_1943_382.txt
+(r / resemble-01
+      :ARG1 (s / she)
+      :ARG2 (c / creature
+            :mod (c2 / coquet)))
+
+# ::id lpp_1943.383 ::date 2012-11-24T18:48:36 ::annotator ISI-AMR-05 ::preferred
+# ::snt And her mysterious adornment lasted for days and days .
+# ::save-date Wed Sep 18, 2013 ::file lpp_1943_383.txt
+(a / and
+      :op1 (l / last-01
+            :ARG1 (t / thing
+                  :ARG2-of (a2 / adorn-01
+                        :ARG1 (s / she)
+                        :mod (m / mysterious)))
+            :ARG2 (m2 / multiple
+                  :op1 (t2 / temporal-quantity :quant 1
+                        :unit (d / day)))))
+
+# ::id lpp_1943.384 ::date 2012-11-24T19:12:10 ::annotator ISI-AMR-05 ::preferred
+# ::snt Then one morning , exactly at sunrise , she suddenly showed herself .
+# ::save-date Fri Feb 26, 2016 ::file lpp_1943_384.txt
+(s / show-01
+      :ARG0 (s2 / she)
+      :ARG1 s2
+      :manner (s3 / sudden)
+      :time (d / date-entity
+            :dayperiod (m / morning)
+            :mod (o / one))
+      :time (s4 / sunrise
+            :mod (e / exact))
+      :time (t / then))
+
+# ::id lpp_1943.385 ::date 2012-11-24T19:30:07 ::annotator ISI-AMR-05 ::preferred
+# ::snt And , after working with all this painstaking precision , she yawned and said : " Ah !
+# ::save-date Tue Jun 9, 2015 ::file lpp_1943_385.txt
+(a / and
+      :op1 (y / yawn-01
+            :ARG0 (s2 / she))
+      :op2 (s / say-01
+            :ARG0 s2
+            :ARG1 (a2 / ah :mode expressive))
+      :time (a3 / after
+            :op1 (w / work-01
+                  :ARG0 s2
+                  :manner (p / precise
+                        :degree (p2 / painstaking)
+                        :mod (t / this)
+                        :mod (a4 / all)))))
+
+# ::id lpp_1943.386 ::date 2012-11-24T19:55:07 ::annotator ISI-AMR-05 ::preferred
+# ::snt I am scarcely awake .
+# ::save-date Fri May 8, 2015 ::file lpp_1943_386.txt
+(a / awake-03
+      :ARG1 (i / i)
+      :degree (s / scarce))
+
+# ::id lpp_1943.387 ::date 2012-11-24T19:55:28 ::annotator ISI-AMR-05 ::preferred
+# ::snt I beg that you will excuse me .
+# ::save-date Thu May 2, 2013 ::file lpp_1943_387.txt
+(b2 / beg-01
+      :ARG0 (i / i)
+      :ARG1 (y2 / you)
+      :ARG2 (e2 / excuse-01
+            :ARG0 y2
+            :ARG1 i))
+
+# ::id lpp_1943.388 ::date 2012-11-24T20:00:25 ::annotator ISI-AMR-05 ::preferred
+# ::snt My petals are still all disarranged ... "
+# ::save-date Tue Apr 23, 2013 ::file lpp_1943_388.txt
+(a3 / arrange-01 :polarity -
+      :ARG1 (p2 / petal
+            :part-of (i / i)
+            :mod (a4 / all))
+      :mod (s4 / still))
+
+# ::id lpp_1943.389 ::date 2012-11-24T20:01:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt But the little prince could not restrain his admiration : " Oh !
+# ::save-date Tue Apr 23, 2013 ::file lpp_1943_389.txt
+(c / contrast-01
+      :ARG2 (p2 / possible-01 :polarity -
+            :ARG1 (r / restrain-01
+                  :ARG0 (p / prince
+                        :mod (l / little)
+                        :ARG0-of (s / say-01
+                              :ARG1 (o / oh :mode "expressive")))
+                  :ARG1 (a / admire-01
+                        :ARG0 p))))
+
+# ::id lpp_1943.390 ::date 2012-11-24T20:57:45 ::annotator ISI-AMR-05 ::preferred
+# ::snt How beautiful you are ! "
+# ::save-date Sat Jul 25, 2015 ::file lpp_1943_390.txt
+(b / beautiful-02
+      :ARG1 (y / you)
+      :degree (s / so))
+
+# ::id lpp_1943.391 ::date 2012-11-24T20:59:27 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Am I not ? " the flower responded , sweetly .
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_391.txt
+(r / respond-01
+      :ARG0 (f / flower)
+      :ARG2 (r2 / request-confirmation-91
+            :ARG1 (b / beautiful-02
+                  :ARG1 f))
+      :manner (s / sweet-03))
+
+# ::id lpp_1943.392 ::date 2012-11-24T21:00:39 ::annotator ISI-AMR-05 ::preferred
+# ::snt " And I was born at the same moment as the sun ... "
+# ::save-date Thu May 2, 2013 ::file lpp_1943_392.txt
+(a / and
+      :op2 (b / bear-02
+            :ARG1 (i / i)
+            :time (m / moment
+                  :ARG1-of (s / same-01
+                        :ARG2 (s2 / sun)))))
+
+# ::id lpp_1943.393 ::date 2012-11-25T08:29:32 ::annotator ISI-AMR-05 ::preferred
+# ::snt The little prince could guess easily enough that she was not any too modest - - but how moving - - and exciting - - she was !
+# ::save-date Fri Jul 3, 2015 ::file lpp_1943_393.txt
+(p / possible-01
+      :ARG1 (g / guess-01
+            :ARG0 (p2 / prince
+                  :mod (l / little))
+            :ARG1 (c / contrast-01
+                  :ARG1 (m / modest :polarity -
+                        :domain (s / she)
+                        :degree (t / too))
+                  :ARG2 (a2 / and
+                        :op1 (m2 / move-05
+                              :ARG0 s
+                              :degree (s2 / so))
+                        :op2 (e3 / excite-01
+                              :ARG0 s
+                              :degree (s3 / so))))
+            :ARG1-of (e / easy-05
+                  :mod (e2 / enough))))
+
+# ::id lpp_1943.394 ::date 2012-11-25T08:31:53 ::annotator ISI-AMR-05 ::preferred
+# ::snt " I think it is time for breakfast , " she added an instant later .
+# ::save-date Tue Sep 19, 2017 ::file lpp_1943_394.txt
+(a / add-01
+      :ARG0 (s / she)
+      :ARG1 (t / think-01
+            :ARG0 s
+            :ARG1 (t2 / time
+                  :purpose (b / breakfast-01)))
+      :time (a2 / after
+            :quant (i / instant)))
+
+# ::id lpp_1943.395 ::date 2012-11-25T08:32:41 ::annotator ISI-AMR-05 ::preferred
+# ::snt " If you would have the kindness to think of my needs - - "
+# ::save-date Mon May 4, 2015 ::file lpp_1943_395.txt
+(t / think-01 :mode imperative
+      :ARG0 (y / you)
+      :ARG1 (t2 / thing
+            :ARG1-of (n / need-01
+                  :ARG0 (i / i)))
+      :ARG1-of (k2 / kind-01
+            :ARG0 y
+            :ARG2 i))
+
+# ::id lpp_1943.396 ::date 2012-11-25T08:34:17 ::annotator ISI-AMR-05 ::preferred
+# ::snt And the little prince , completely abashed , went to look for a sprinkling - can of fresh water .
+# ::save-date Tue Jul 28, 2015 ::file lpp_1943_396.txt
+(a / and
+      :op1 (g / go-05
+            :ARG0 (p / prince
+                  :mod (l2 / little)
+                  :ARG1-of (a2 / abash-01
+                        :ARG1-of (c3 / complete-02)))
+            :ARG1 (l / look-01
+                  :ARG0 p
+                  :ARG1 (c / can
+                        :ARG0-of (s / sprinkle-01)
+                        :ARG0-of (c2 / contain-01
+                              :ARG1 (w / water
+                                    :ARG1-of (f / fresh-04)))))))
+
+# ::id lpp_1943.397 ::date 2012-11-25T08:36:31 ::annotator ISI-AMR-05 ::preferred
+# ::snt So , he tended the flower .
+# ::save-date Thu May 2, 2013 ::file lpp_1943_397.txt
+(t / tend-01
+      :ARG0 (h / he)
+      :ARG1 (f / flower)
+      :ARG1-of (c / cause-01))
+
+# ::id lpp_1943.398 ::date 2012-11-25T08:36:50 ::annotator ISI-AMR-05 ::preferred
+# ::snt So , too , she began very quickly to torment him with her vanity - - which was , if the truth be known , a little difficult to deal with .
+# ::save-date Fri Jul 31, 2015 ::file lpp_1943_398.txt
+(b / begin-01
+      :ARG0 (s / she)
+      :ARG1 (t2 / torment-01
+            :ARG0 s
+            :ARG1 (h / he)
+            :ARG2 (v2 / vanity
+                  :poss s
+                  :ARG2-of (d3 / deal-01
+                        :ARG0 h
+                        :mod (d / difficult
+                              :degree (l / little))
+                        :condition (k / know-01
+                              :ARG1 (t3 / truth)))))
+      :mod (t / too)
+      :ARG1-of (q / quick-02
+            :degree (v / very)))
+
+# ::id lpp_1943.399 ::date 2012-11-25T08:39:04 ::annotator ISI-AMR-05 ::preferred
+# ::snt One day , for instance , when she was speaking of her four thorns , she said to the little prince : " Let the tigers come with their claws ! "
+# ::save-date Fri May 10, 2013 ::file lpp_1943_399.txt
+(s / say-01
+      :ARG0 (s2 / she)
+      :ARG1 (c / come-01 :mode imperative
+            :ARG1 (t / tiger)
+            :accompanier (c2 / claw
+                  :part-of t))
+      :ARG2 (p / prince
+            :mod (l / little))
+      :time (d / day
+            :mod (o / one))
+      :ARG0-of (e / exemplify-01)
+      :time (s3 / speak-01
+            :ARG0 s2
+            :ARG1 (t2 / thorn :quant 4
+                  :part-of s2)))
+
+# ::id lpp_1943.400 ::date 2012-11-25T08:41:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt " There are no tigers on my planet , " the little prince objected .
+# ::save-date Sat May 11, 2013 ::file lpp_1943_400.txt
+(o / object-01
+      :ARG0 (p / prince
+            :mod (l / little))
+      :ARG1 (t / tiger :polarity -
+            :location (p2 / planet
+                  :poss p)))
+
+# ::id lpp_1943.401 ::date 2012-11-25T08:41:54 ::annotator ISI-AMR-05 ::preferred
+# ::snt " And , anyway , tigers do not eat weeds . "
+# ::save-date Tue May 21, 2013 ::file lpp_1943_401.txt
+(a / and
+      :op2 (e / eat-01 :polarity -
+            :ARG0 (t / tiger)
+            :ARG1 (w / weed)
+            :mod (a2 / anyway)))
+
+# ::id lpp_1943.402 ::date 2012-11-25T08:42:20 ::annotator ISI-AMR-05 ::preferred
+# ::snt " I am not a weed , " the flower replied , sweetly .
+# ::save-date Wed Jul 29, 2015 ::file lpp_1943_402.txt
+(r / reply-01
+      :ARG0 (f / flower)
+      :ARG2 (w / weed :polarity -
+            :domain f)
+      :manner (s / sweet-03))
+
+# ::id lpp_1943.403 ::date 2012-11-25T08:43:14 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Please excuse me ... "
+# ::save-date Tue Sep 15, 2015 ::file lpp_1943_403.txt
+(e / excuse-01 :mode imperative :polite +
+      :ARG0 (y / you)
+      :ARG1 (i / i))
+
+# ::id lpp_1943.404 ::date 2012-11-25T08:43:40 ::annotator ISI-AMR-05 ::preferred
+# ::snt " I am not at all afraid of tigers , " she went on , " but I have a horror of drafts .
+# ::save-date Sat May 11, 2013 ::file lpp_1943_404.txt
+(g / go-on-25
+      :ARG0 (s / she)
+      :ARG1 (c / contrast-01
+            :ARG1 (f / fear-01 :polarity -
+                  :ARG0 s
+                  :ARG1 (t / tiger)
+                  :degree (a / at-all))
+            :ARG2 (a2 / abhor-01
+                  :ARG0 s
+                  :ARG1 (d / draft))))
+
+# ::id lpp_1943.405 ::date 2012-11-25T08:45:20 ::annotator ISI-AMR-05 ::preferred
+# ::snt I suppose you would n't have a screen for me ? "
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_405.txt
+(s / suppose-01
+      :ARG0 (i / i)
+      :ARG1 (h / have-03
+            :ARG0 (y / you)
+            :ARG1 (s2 / screen)
+            :beneficiary i
+            :ARG1-of (r / request-confirmation-91)))
+
+# ::id lpp_1943.406 ::date 2012-11-25T08:46:49 ::annotator ISI-AMR-05 ::preferred
+# ::snt " A horror of drafts - - that is bad luck , for a plant , " remarked the little prince , and added to himself , " This flower is a very complex creature ... "
+# ::save-date Wed Apr 29, 2015 ::file lpp_1943_406.txt
+(a / and
+      :op1 (r / remark-01
+            :ARG0 (p / prince
+                  :mod (l / little))
+            :ARG1 (l2 / luck
+                  :ARG1-of (b / bad-07)
+                  :beneficiary (p2 / plant)
+                  :domain (a3 / abhor-01
+                        :ARG1 (d / draft))))
+      :op2 (a2 / add-01
+            :ARG0 p
+            :ARG1 (c3 / creature
+                  :mod (c2 / complex
+                        :degree (v / very))
+                  :domain (f / flower
+                        :mod (t / this)))
+            :beneficiary p))
+
+# ::id lpp_1943.407 ::date 2012-11-25T08:49:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt " At night I want you to put me under a glass globe .
+# ::save-date Sat May 11, 2013 ::file lpp_1943_407.txt
+(w / want-01
+      :ARG0 (i / i)
+      :ARG1 (p / put-01
+            :ARG0 (y / you)
+            :ARG1 i
+            :ARG2 (u / under
+                  :op1 (g / globe
+                        :consist-of (g2 / glass)))
+            :time (d / date-entity :dayperiod (n / night))))
+
+# ::id lpp_1943.408 ::date 2012-11-25T08:50:18 ::annotator ISI-AMR-05 ::preferred
+# ::snt It is very cold where you live .
+# ::save-date Thu Jan 21, 2016 ::file lpp_1943_408.txt
+(c / cold-01
+      :degree (v / very)
+      :location (l / live-01
+            :ARG0 (y / you)))
+
+# ::id lpp_1943.409 ::date 2012-11-25T08:50:49 ::annotator ISI-AMR-05 ::preferred
+# ::snt In the place I came from - - "
+# ::save-date Sat May 11, 2013 ::file lpp_1943_409.txt
+(l / location
+      :ARG3-of (c / come-01
+            :ARG1 (i / i)))
+
+# ::id lpp_1943.410 ::date 2012-11-25T08:51:20 ::annotator ISI-AMR-05 ::preferred
+# ::snt But she interrupted herself at that point .
+# ::save-date Mon Nov 20, 2017 ::file lpp_1943_410.txt
+(c / contrast-01
+      :ARG2 (i / interrupt-01
+            :ARG0 (s / she)
+            :ARG1 s
+            :time (p / point
+                  :mod (t / that))))
+
+# ::id lpp_1943.411 ::date 2012-11-25T08:51:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt She had come in the form of a seed .
+# ::save-date Sat May 11, 2013 ::file lpp_1943_411.txt
+(c / come-01
+      :ARG1 (s / she)
+      :time-of (s2 / seed
+            :domain s))
+
+# ::id lpp_1943.412 ::date 2012-11-25T08:52:57 ::annotator ISI-AMR-05 ::preferred
+# ::snt She could not have known anything of any other worlds .
+# ::save-date Sun Nov 25, 2012 ::file lpp_1943_412.txt
+(p / possible-01
+  :polarity -
+  :ARG1 (k / know-01
+            :ARG0 (s / she)
+            :ARG1 (a / anything
+                    :topic (w / world
+                             :mod (o / other
+                                    :mod (a2 / any))))))
+
+# ::id lpp_1943.413 ::date 2012-11-25T08:53:28 ::annotator ISI-AMR-05 ::preferred
+# ::snt Embarassed over having let herself be caught on the verge of such a naïve untruth , she coughed two or three times , in order to put the little prince in the wrong .
+# ::save-date Mon Sep 16, 2013 ::file lpp_1943_413.txt
+(c / cough-01
+      :ARG0 (s / she
+            :ARG1-of (e / embarrass-01
+                  :ARG0 (l2 / let-01
+                        :ARG0 s
+                        :ARG1 (c2 / catch-03
+                              :ARG1 s
+                              :ARG2 (v / verge-01
+                                    :ARG1 (t / truth :polarity -
+                                          :mod (n / naive
+                                                :degree (s2 / such))))))))
+      :purpose (p / put-03
+            :ARG0 s
+            :ARG1 (p2 / prince
+                  :mod (l / little))
+            :ARG2 (w / wrong-04
+                  :ARG1 p2))
+      :frequency (o / or :op1 2 :op2 3))
+
+# ::id lpp_1943.414 ::date 2012-11-25T08:56:40 ::annotator ISI-AMR-05 ::preferred
+# ::snt " The screen ? "
+# ::save-date Sat May 11, 2013 ::file lpp_1943_414.txt
+(s / screen :polarity (a / amr-unknown))
+
+# ::id lpp_1943.415 ::date 2012-11-25T08:56:58 ::annotator ISI-AMR-05 ::preferred
+# ::snt " I was just going to look for it when you spoke to me ... "
+# ::save-date Sun May 24, 2015 ::file lpp_1943_415.txt
+(l3 / look-01
+      :ARG0 (i / i)
+      :ARG1 (i2 / it)
+      :time (s3 / speak-01
+            :ARG0 (y2 / you)
+            :ARG2 i))
+
+# ::id lpp_1943.416 ::date 2012-11-25T08:57:37 ::annotator ISI-AMR-05 ::preferred
+# ::snt Then she forced her cough a little more so that he should suffer from remorse just the same .
+# ::save-date Tue Sep 19, 2017 ::file lpp_1943_416.txt
+(f / force-02
+      :ARG0 (s / she)
+      :ARG1 (c / cough-01
+            :ARG0 s
+            :ARG1-of (h3 / have-quant-91
+                  :ARG3 (m / more
+                        :quant (l / little))))
+      :time (t / then)
+      :purpose (s2 / suffer-01
+            :ARG0 (h / he)
+            :ARG1 (r / remorse)
+            :ARG1-of (h2 / have-concession-91)))
+
+# ::id lpp_1943.417 ::date 2012-11-25T08:58:47 ::annotator ISI-AMR-05 ::preferred
+# ::snt So the little prince , in spite of all the good will that was inseparable from his love , had soon come to doubt her .
+# ::save-date Wed Nov 4, 2015 ::file lpp_1943_417.txt
+(c / come-04
+      :ARG1 (p / prince
+            :mod (l / little))
+      :ARG2 (d / doubt-01
+            :ARG0 p
+            :ARG1 (s3 / she))
+      :time (s / soon)
+      :ARG1-of (c2 / cause-01)
+      :concession (w / will
+            :ARG1-of (g / good-02)
+            :mod (a / all)
+            :ARG1-of (s2 / separate-01
+                  :ARG2 (l2 / love-01
+                        :ARG0 p)
+                  :ARG1-of (p2 / possible-01 :polarity -))))
+
+# ::id lpp_1943.418 ::date 2012-11-25T09:02:03 ::annotator ISI-AMR-05 ::preferred
+# ::snt He had taken seriously words which were without importance , and it made him very unhappy .
+# ::save-date Thu Jan 21, 2016 ::file lpp_1943_418.txt
+(s / serious-01
+      :ARG1 (h / he)
+      :ARG2 (w / word-01
+            :ARG1-of (i / important-01 :polarity -))
+      :ARG0-of (m / make-02
+            :ARG1 (h2 / happy-01 :polarity -
+                  :ARG1 h
+                  :degree (v / very))))
+
+# ::id lpp_1943.419 ::date 2012-11-25T09:03:53 ::annotator ISI-AMR-05 ::preferred
+# ::snt " I ought not to have listened to her , " he confided to me one day . "
+# ::save-date Sun Nov 25, 2012 ::file lpp_1943_419.txt
+(c / confide-01
+  :ARG0 (h / he)
+  :ARG1 (r / recommend-01
+          :ARG1 (l / listen-01
+                  :ARG0 h
+                  :ARG1 (s / she)
+                  :polarity -)
+          :ARG2 h)
+  :ARG2 (i / i)
+  :time (d / day
+          :mod (o / one)))
+
+# ::id lpp_1943.420 ::date 2012-11-25T09:05:10 ::annotator ISI-AMR-05 ::preferred
+# ::snt One never ought to listen to the flowers .
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_420.txt
+(r / recommend-01
+      :ARG1 (l / listen-01 :polarity -
+            :ARG0 (o2 / one)
+            :ARG1 (f / flower)
+            :time (e / ever)))
+
+# ::id lpp_1943.421 ::date 2012-11-25T09:05:43 ::annotator ISI-AMR-05 ::preferred
+# ::snt One should simply look at them and breathe their fragrance .
+# ::save-date Sat May 11, 2013 ::file lpp_1943_421.txt
+(r / recommend-01
+      :ARG1 (a / and
+            :op1 (l / look-01
+                  :ARG0 (o2 / one)
+                  :ARG1 (t / they)
+                  :manner (s / simple))
+            :op2 (b / breathe-01
+                  :ARG0 o2
+                  :ARG1 (f / fragrance
+                        :poss t))))
+
+# ::id lpp_1943.422 ::date 2012-11-25T09:06:37 ::annotator ISI-AMR-05 ::preferred
+# ::snt Mine perfumed all my planet .
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_422.txt
+(p / perfume-01
+      :ARG0 (t / thing
+            :poss (i / i))
+      :ARG1 (p2 / planet
+            :mod (a / all)
+            :poss i))
+
+# ::id lpp_1943.423 ::date 2012-11-25T09:07:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt But I did not know how to take pleasure in all her grace .
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_423.txt
+(c / contrast-01
+      :ARG2 (k / know-01 :polarity -
+            :ARG0 (i / i)
+            :manner (p2 / please-01
+                  :ARG0 (g / grace
+                        :poss (s / she)
+                        :mod (a / all))
+                  :ARG1 i)))
+
+# ::id lpp_1943.424 ::date 2012-11-25T09:08:23 ::annotator ISI-AMR-05 ::preferred
+# ::snt This tale of claws , which disturbed me so much , should only have filled my heart with tenderness and pity . "
+# ::save-date Thu Jan 11, 2018 ::file lpp_1943_424.txt
+(r2 / recommend-01
+      :ARG1 (f / fill-01
+            :ARG0 (t2 / tale
+                  :topic (c / claw)
+                  :ARG0-of (d / disturb-01
+                        :ARG1 (i / i)
+                        :degree (m / much
+                              :degree (s / so)))
+                  :mod (t3 / this))
+            :ARG1 (h / heart
+                  :part-of i)
+            :ARG2 (a / and
+                  :op1 (t / tender)
+                  :op2 (p / pity-01))
+            :mod (o / only)))
+
+# ::id lpp_1943.425 ::date 2012-11-25T09:09:54 ::annotator ISI-AMR-05 ::preferred
+# ::snt And he continued his confidences : " The fact is that I did not know how to understand anything !
+# ::save-date Sat May 11, 2013 ::file lpp_1943_425.txt
+(a / and
+      :op1 (c / continue-02
+            :ARG0 (h / he)
+            :ARG1 (c2 / confide-01
+                  :ARG0 h
+                  :ARG1 (k / know-01 :polarity -
+                        :ARG0 h
+                        :ARG1 (t / thing
+                              :manner-of (u / understand-01
+                                    :ARG0 h
+                                    :ARG1 (a2 / anything)))))))
+
+# ::id lpp_1943.426 ::date 2012-11-25T09:11:02 ::annotator ISI-AMR-05 ::preferred
+# ::snt I ought to have judged by deeds and not by words .
+# ::save-date Sat May 11, 2013 ::file lpp_1943_426.txt
+(r2 / recommend-01
+      :ARG1 (a2 / and
+            :op1 (j / judge-01
+                  :ARG0 (i / i)
+                  :ARG3 (d / do-02))
+            :op2 (j2 / judge-01 :polarity -
+                  :ARG0 i
+                  :ARG3 (w / word))))
+
+# ::id lpp_1943.427 ::date 2012-11-25T09:11:47 ::annotator ISI-AMR-05 ::preferred
+# ::snt She cast her fragrance and her radiance over me .
+# ::save-date Fri May 3, 2013 ::file lpp_1943_427.txt
+(c / cast-01
+      :ARG0 (s / she)
+      :ARG1 (a / and
+            :op1 (f / fragrance
+                  :poss s)
+            :op2 (t / thing
+                  :ARG1-of (r / radiate-01
+                        :ARG0 s)))
+      :ARG2 (i / i))
+
+# ::id lpp_1943.428 ::date 2012-11-25T09:25:27 ::annotator ISI-AMR-05 ::preferred
+# ::snt I ought never to have run away from her ...
+# ::save-date Thu May 2, 2013 ::file lpp_1943_428.txt
+(r / recommend-01
+      :ARG1 (r2 / run-02 :polarity -
+            :ARG0 (i / i)
+            :time (e / ever)
+            :direction (a2 / away
+                  :op1 (s / she))))
+
+# ::id lpp_1943.429 ::date 2012-11-25T09:26:35 ::annotator ISI-AMR-05 ::preferred
+# ::snt I ought to have guessed all the affection that lay behind her poor little strategems .
+# ::save-date Sat May 11, 2013 ::file lpp_1943_429.txt
+(r / recommend-01
+      :ARG1 (g / guess-01
+            :ARG0 (i / i)
+            :ARG1 (a / affection
+                  :mod (a2 / all)
+                  :ARG1-of (l / lie-07
+                        :ARG2 (b / behind
+                              :op1 (s / strategem
+                                    :mod (l2 / little)
+                                    :mod (p / poor)
+                                    :poss (s2 / she)))))))
+
+# ::id lpp_1943.430 ::date 2012-11-25T09:27:46 ::annotator ISI-AMR-05 ::preferred
+# ::snt Flowers are so inconsistent !
+# ::save-date Thu Dec 10, 2015 ::file lpp_1943_430.txt
+(c / consistent-01 :polarity -
+      :ARG1 (f / flower)
+      :degree (s / so))
+
+# ::id lpp_1943.431 ::date 2012-11-25T09:28:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt But I was too young to know how to love her ... "
+# ::save-date Mon Sep 18, 2017 ::file lpp_1943_431.txt
+(c / contrast-01
+      :ARG2 (h / have-degree-91
+            :ARG1 (i / i)
+            :ARG2 (y / young)
+            :ARG3 (t / too)
+            :ARG6 (k / know-01
+                  :ARG0 i
+                  :ARG1 (m / manner
+                        :manner-of (l / love-01
+                              :ARG0 i
+                              :ARG1 (s / she))))))
+
