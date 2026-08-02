@@ -1,3 +1,6 @@
 __pycache__/
 *.pyc
-results*/raw/
+results*/means/
+results*/scores.csv.gz
+results*/graphs.csv.gz
+results*/config.json

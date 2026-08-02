@@ -1,10 +1,9 @@
 """The three experiments, aggregated from the raw search.
 
-*main* tunes (s, tau) on each chapter and reads the per-chapter studies;
+*main* tunes the threshold on each chapter and reads the per-chapter studies;
 *global_in_sample* takes the configuration that is best over the 27 chapters and
 *loco* selects it on 26 chapters and reads it on the held-out one, both from the
-corpus study. Selection is done per metric, ties going to the smallest s then
-the smallest tau.
+corpus study. Selection is done per metric, ties going to the smallest threshold.
 """
 from __future__ import annotations
 
@@ -20,8 +19,8 @@ BASELINES = ("medoid_smatch", "medoid_s2match", "text_medoid")
 ALPHA = 0.05
 
 
-def _pick(scores: pd.Series) -> tuple[float, float]:
-    """Best (s, tau) of a score column, ties to the smallest s then tau."""
+def _pick(scores: pd.Series) -> float:
+    """Best threshold of a score column, ties to the smallest one."""
     scores = scores.dropna()
     if scores.empty:
         raise ValueError("no configuration is defined on every chapter of the fold")
@@ -30,7 +29,7 @@ def _pick(scores: pd.Series) -> tuple[float, float]:
 
 
 def _select(chapter_pool: pd.DataFrame, corpus_pool: pd.DataFrame) -> dict:
-    """Configuration each experiment applies to each chapter, as (study, s, tau).
+    """Configuration each experiment applies to each chapter, as (study, threshold).
 
     Both pools hold one row per searched point and one column per chapter; the
     per-chapter studies only score their own chapter, so their other cells are
@@ -39,9 +38,9 @@ def _select(chapter_pool: pd.DataFrame, corpus_pool: pd.DataFrame) -> dict:
     chapters = list(corpus_pool.columns)
     globally = _pick(corpus_pool.mean(axis=1, skipna=False))
     return {
-        "main": {c: ("chapter", *_pick(chapter_pool[c])) for c in chapters},
-        "global_in_sample": {c: ("corpus", *globally) for c in chapters},
-        "loco": {c: ("corpus", *_pick(corpus_pool.drop(columns=c).mean(axis=1, skipna=False)))
+        "main": {c: ("chapter", _pick(chapter_pool[c])) for c in chapters},
+        "global_in_sample": {c: ("corpus", globally) for c in chapters},
+        "loco": {c: ("corpus", _pick(corpus_pool.drop(columns=c).mean(axis=1, skipna=False)))
                  for c in chapters},
     }
 
@@ -54,14 +53,14 @@ def _paired_test(ours: np.ndarray, theirs: np.ndarray, alternative: str) -> floa
 def run(out_dir: Path) -> None:
     """Write the experiment table, the selected thresholds and the consensus graphs."""
     out_dir = Path(out_dir)
-    raw = pd.read_csv(out_dir / "raw" / "scores.csv.gz").fillna({"study": ""})
-    raw[["s", "tau"]] = raw[["s", "tau"]].round(6)
-    graphs = pd.read_csv(out_dir / "raw" / "graphs.csv.gz").fillna({"penman": "", "study": ""})
-    graphs[["s", "tau"]] = graphs[["s", "tau"]].round(6)
-    graph_of = {(row.chapter, row.study, row.s, row.tau): row.penman
+    raw = pd.read_csv(out_dir / "scores.csv.gz").fillna({"study": ""})
+    raw["threshold"] = raw["threshold"].round(6)
+    graphs = pd.read_csv(out_dir / "graphs.csv.gz").fillna({"penman": "", "study": ""})
+    graphs["threshold"] = graphs["threshold"].round(6)
+    graph_of = {(row.chapter, row.study, row.threshold): row.penman
                 for row in graphs[graphs["method"] == "meanaac"].itertuples()}
 
-    keys = ["chapter", "method", "study", "s", "tau"]
+    keys = ["chapter", "method", "study", "threshold"]
     per_chapter = raw.groupby(keys, dropna=False)[list(METRICS)].mean().reset_index()
     chapters = sorted(per_chapter["chapter"].unique(), key=lambda c: int(c.split("_")[1]))
     ours_per_chapter = per_chapter[per_chapter["method"] == "meanaac"]
@@ -71,7 +70,7 @@ def run(out_dir: Path) -> None:
     for metric in METRICS:
         pools = {
             study: ours_per_chapter[ours_per_chapter["study"] == study]
-            .pivot(index=["s", "tau"], columns="chapter", values=metric)
+            .pivot(index="threshold", columns="chapter", values=metric)
             .reindex(columns=chapters)
             for study in ("chapter", "corpus")
         }
@@ -82,7 +81,7 @@ def run(out_dir: Path) -> None:
         ours_inputs = {
             key: group[metric].to_numpy()
             for key, group in ordered[ordered["method"] == "meanaac"]
-            .groupby(["chapter", "study", "s", "tau"])
+            .groupby(["chapter", "study", "threshold"])
         }
         theirs_inputs = {
             key: group[metric].to_numpy()
@@ -91,20 +90,20 @@ def run(out_dir: Path) -> None:
         }
 
         for experiment, configs in _select(pools["chapter"], pools["corpus"]).items():
-            ours = np.array([pools[configs[c][0]].loc[configs[c][1:], c] for c in chapters])
+            ours = np.array([pools[configs[c][0]].loc[configs[c][1], c] for c in chapters])
             for chapter in chapters:
-                study, s, tau = configs[chapter]
+                study, threshold = configs[chapter]
                 if experiment != "global_in_sample":
                     params.append(dict(experiment=experiment, metric=metric,
-                                       chapter=chapter, s=s, tau=tau))
+                                       chapter=chapter, threshold=threshold))
                 elif chapter == chapters[0]:  # one configuration for the whole corpus
                     params.append(dict(experiment=experiment, metric=metric,
-                                       chapter="ALL", s=s, tau=tau))
+                                       chapter="ALL", threshold=threshold))
                 if experiment == "main":
                     consensus.setdefault(metric, []).append(dict(
-                        chapter=chapter, s=s, tau=tau,
-                        score=round(float(pools[study].loc[(s, tau), chapter]), 4),
-                        penman=graph_of[(chapter, study, s, tau)]))
+                        chapter=chapter, threshold=threshold,
+                        score=round(float(pools[study].loc[threshold, chapter]), 4),
+                        penman=graph_of[(chapter, study, threshold)]))
 
             for baseline, theirs in by_baseline.items():
                 delta = ours - theirs.to_numpy()

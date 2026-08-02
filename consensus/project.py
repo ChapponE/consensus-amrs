@@ -3,7 +3,8 @@
 Nodes are activated by incident edge support, support values are calibrated into
 signed scores, and the active nodes are linked by the Maximum Scoring Connected
 Subgraph decoder of Flanigan et al. (2014) under a Lagrangian relaxation of role
-determinism.
+determinism. The core arguments carry a second constraint, enforced on the
+scores before the decoder runs: only a PropBank frame emits ``:ARGn``.
 """
 from __future__ import annotations
 
@@ -12,25 +13,51 @@ import re
 import networkx as nx
 import numpy as np
 
-#: Roles a node may not emit twice — the core PropBank arguments.
-DET_ROLE_RE = re.compile(r"^:ARG\d+$")
+#: The core PropBank arguments, the roles a plain concept may not emit.
+CORE_ROLE_RE = re.compile(r"^:ARG\d+$")
+
+#: Concepts licensed to emit a core role: the PropBank frames, ``want-01``.
+FRAME_RE = re.compile(r"-\d\d$")
+
+#: Initial step of the subgradient ascent on the determinism multipliers. Over a
+#: budget of ``T`` iterations the multiplier travels ``eta * sum_t 1/sqrt(t)``,
+#: about 13.6 times its value at ``T = 50``; it has to outgrow the margin a
+#: contested relation holds over its runner-up role, which puts the useful floor
+#: an order of magnitude above 0.01.
+SUBGRADIENT_STEP = 0.05
 
 
 # --------------------------------------------------------------------------
 # Node activation and edge scores
 # --------------------------------------------------------------------------
 
-def active_nodes(mean_ef: np.ndarray, s: float) -> np.ndarray:
-    """Positions reached by at least one relation of support ``s``, either way."""
+def active_nodes(mean_ef: np.ndarray, threshold: float) -> np.ndarray:
+    """Positions reached by at least one relation of that support, either way."""
     best_role = mean_ef.max(axis=2)
     np.fill_diagonal(best_role, -np.inf)
-    reached = best_role >= s
+    reached = best_role >= threshold
     return np.where(reached.any(axis=1) | reached.any(axis=0))[0]
 
 
 def deterministic_roles(roles: list[str]) -> np.ndarray:
-    """Channel mask of the roles constrained to at most one child per node."""
-    return np.array([bool(DET_ROLE_RE.match(r)) for r in roles], dtype=bool)
+    """Channel mask of the roles constrained to at most one child per node.
+
+    The core arguments: a frame fills each of its slots once. The rest are free
+    to repeat, as they do in the corpus — a node carrying two ``:mod`` is how an
+    AMR writes a pair of adjectives.
+    """
+    return np.array([bool(CORE_ROLE_RE.match(r)) for r in roles], dtype=bool)
+
+
+def core_role_mask(concepts: list[str], roles: list[str]) -> np.ndarray:
+    """``(concept, role)`` mask of what a concept is allowed to emit.
+
+    A frame emits anything; a plain concept emits every role but the core
+    arguments, which only a predicate can take.
+    """
+    is_frame = np.array([bool(FRAME_RE.search(c)) for c in concepts], dtype=bool)
+    is_core = np.array([bool(CORE_ROLE_RE.match(r)) for r in roles], dtype=bool)
+    return is_frame[:, None] | ~is_core[None, :]
 
 
 # --------------------------------------------------------------------------
@@ -103,42 +130,6 @@ def _violations(edges, role: np.ndarray, det_mask: np.ndarray, K: int) -> dict:
     return counts
 
 
-def _initial_step(edges, role, w: np.ndarray, det_mask: np.ndarray, max_iter: int) -> float:
-    """Step scaled to the instance's own conflicts.
-
-    A child abandons a contested role once the multiplier passes its margin over
-    the runner-up role, so the window keeping exactly one child is the gap
-    between the two best margins. The step must be small enough not to jump over
-    that window, yet large enough for ``step/sqrt(t)`` to reach it in budget.
-    """
-    contested: dict[tuple[int, int], list[int]] = {}
-    for i, j in edges:
-        r = int(role[i, j])
-        if det_mask[r]:
-            contested.setdefault((i, r), []).append(j)
-
-    gaps, firsts, windows = [], [], []
-    for (i, r), children in contested.items():
-        if len(children) < 2:
-            continue
-        margins = sorted(
-            (float(w[i, j, r]) - float(np.delete(w[i, j], r).max()) for j in children),
-            reverse=True,
-        )
-        gaps.append(margins[0] - margins[1])
-        firsts.append(margins[0])
-        windows.append(margins[1] + (margins[0] - margins[1]) / 2.0)
-    if not gaps:
-        return 1.0
-
-    travel = float(np.sum(1.0 / np.sqrt(np.arange(1, max(max_iter, 1) + 1))))
-    reach = max(float(np.median(windows)), 0.0) / travel
-    positive = [g for g in gaps if g > 0.0]
-    if positive:
-        return max(float(np.median(positive)) / 2.0, reach, 1e-12)
-    return max(float(np.median(firsts)) / 2.0, reach, 1e-6)
-
-
 def mscg_lagrangian(
     w: np.ndarray,
     det_mask: np.ndarray,
@@ -154,7 +145,6 @@ def mscg_lagrangian(
     """
     K, _, R = w.shape
     mu = np.zeros((K, R))
-    step = None
     best_feasible, best_value = None, -np.inf
     best_any, least_violation = None, np.inf
 
@@ -166,8 +156,6 @@ def mscg_lagrangian(
 
         counts = _violations(edges, role, det_mask, K)
         violation = sum(v for v in counts.values() if v > 0)
-        if step is None:
-            step = _initial_step(edges, role, w, det_mask, max_iter)
 
         role_map = np.full((K, K), -1, dtype=int)
         for i, j in edges:
@@ -185,7 +173,7 @@ def mscg_lagrangian(
         if violation == 0 and all(mu[i, r] == 0.0 or v == 0 for (i, r), v in counts.items()):
             break
 
-        alpha = step / np.sqrt(t)
+        alpha = SUBGRADIENT_STEP / np.sqrt(t)
         for (i, r), v in counts.items():
             mu[i, r] = max(0.0, mu[i, r] + alpha * v)
 
@@ -259,27 +247,38 @@ def project(
     mean_nf: np.ndarray,
     mean_ef: np.ndarray,
     det_mask: np.ndarray,
+    emit_mask: np.ndarray,
     *,
-    s: float,
-    tau: float,
+    threshold: float,
     max_iter: int = 50,
 ) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     """Relaxed mean to a binary encoding; returns the concepts, edges and nodes.
 
-    ``s`` gates which positions become nodes and ``tau`` offsets the support
-    values into the signed scores the decoder expects: an edge scores positive
-    once more than a fraction ``tau`` of the inputs support it, but a negative
-    one may still be taken to keep the graph connected. Positions whose concept
-    no consensus settles are then dropped, keeping the largest component of what
-    remains.
+    One threshold does both jobs the projection needs. It gates which positions
+    become nodes — those a relation of that much support reaches — and it offsets
+    the support values into the signed scores the decoder expects, so an edge
+    scores positive once more than that fraction of the inputs supports it. A
+    position therefore exists exactly when it carries a relation the decoder
+    would score positively, though a negative one may still be taken to keep the
+    graph connected. Positions whose concept no consensus settles are then
+    dropped, keeping the largest component of what remains.
+
+    The channels a position's concept is not licensed to emit — ``emit_mask``,
+    the ``(concept, role)`` mask of ``core_role_mask`` — are driven to ``-inf``
+    once the nodes are selected, which puts them out of reach of the decoder,
+    including of the bridges it takes to restore connectivity. Only core roles
+    are ever masked, so every pair keeps a finite channel and the graph can
+    always be connected.
     """
-    idx = active_nodes(mean_ef, s)
+    idx = active_nodes(mean_ef, threshold)
     X = concepts(mean_nf)
     A = np.zeros_like(mean_ef)
     if len(idx) <= 1:
         return X, A, idx
 
-    w = mean_ef[np.ix_(idx, idx)].astype(float) - float(tau)
+    licensed = emit_mask[X[idx].argmax(axis=1)]
+    w = mean_ef[np.ix_(idx, idx)].astype(float) - float(threshold)
+    w = np.where(licensed[:, None, :], w, -np.inf)
     edges, role_map, _ = mscg_lagrangian(w, det_mask, max_iter=max_iter)
     for i, j in edges:
         A[idx[i], idx[j], role_map[i, j]] = 1.0

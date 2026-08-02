@@ -1,36 +1,34 @@
-chapter,s,tau,score,penman
-chapter_1,0.163389,0.239093,0.3742,"(a / and
-   :op2 (p / picture
-           :ARG1 (s / see-01
-                    :ARG2 (g / grown-up)
-                    :ARG0 (i / i)
-                    :time (c / constrictor)
-                    :ARG1 (p1 / picture))
-           :ARG0 (t / that)))"
-chapter_2,0.180372,0.189927,0.3535,"(d / draw-01
+chapter,threshold,score,penman
+chapter_1,0.226,0.347,"(s / see-01
+   :ARG2 (g / grown-up)
+   :ARG0 (i / i)
+   :time (p / picture
+            :op2-of (a / and))
+   :ARG1 (p1 / picture))"
+chapter_2,0.181,0.3535,"(d / draw-01
    :ARG1 (s / sheep
             :mod (t / this))
    :ARG0 (i / i
             :ARG0-of (c / cause-01
                         :ARG1 (h / have-degree-91))))"
-chapter_3,0.110279,0.207994,0.3118,"(a1 / and
+chapter_3,0.103,0.3098,"(a1 / and
     :op2 (s / say-01
-            :ARG1 (a / and
-                     :ARG1 (i1 / i
-                               :ARG1-of (s1 / seem-01)))
-            :ARG0 (i / i)
+            :ARG1 (a / and)
+            :ARG0 (i / i
+                     :poss-of (i1 / i
+                                  :ARG1-of (s1 / seem-01)))
             :ARG2 (i2 / i
                       :mod (l / little)))
     :domain (t / that))"
-chapter_4,0.05935,0.231863,0.3835,"(c / cause-01
+chapter_4,0.091,0.3738,"(c / cause-01
    :ARG1 (h / have-rel-role-91
-            :ARG1 (i / i)
-            :ARG0 (i1 / i
-                      :ARG0-of (t / this
-                                  :ARG1 (a1 / amr-unknown
-                                            :mod (a / and))))
-            :ARG2 (f / friend)))"
-chapter_5,0.08791,0.173005,0.3378,"(h / have-degree-91
+            :ARG1 (i / i
+                     :mod (t / this))
+            :ARG0 (i1 / i)
+            :ARG2 (f / friend)
+            :time (a1 / amr-unknown
+                      :mod (a / and))))"
+chapter_5,0.087,0.3378,"(h / have-degree-91
    :ARG1 (b / baobab)
    :ARG0 (p / prince
             :mod (l / little))
@@ -38,138 +36,130 @@ chapter_5,0.08791,0.173005,0.3378,"(h / have-degree-91
              :ARG2-of (e / eat-01
                          :ARG1 (t / that)
                          :ARG0 (i / i))))"
-chapter_6,0.083517,0.180001,0.3422,"(s / say-01
+chapter_6,0.201,0.3444,"(s / say-01
    :ARG2 (i / i)
    :ARG1 (w / wait-01
             :time (d / date-entity
                      :mod (l / little))
             :ARG1 (s1 / sunset)
-            :ARG0 y
-            :ARG2-of (o / obligate-01))
-   :ARG0 (y / you))"
-chapter_7,0.180737,0.156253,0.3231,"(b / believe-01
+            :ARG0 (y / you)))"
+chapter_7,0.181,0.3266,"(b / believe-01
    :ARG1 (t / thorn
-            :ARG1-of (h / he))
+            :domain (h / he))
    :ARG0 (i / i)
    :ARG2 (l / little))"
-chapter_8,0.050012,0.173827,0.3343,"(a / and
-   :op1 (k / know-01
-           :ARG2 (f / flower
-                    :mod (o / one))
-           :ARG1 (s / she)
-           :ARG0 (s1 / she
-                     :mod (l / little)
-                     :ARG0-of (s2 / so))))"
-chapter_9,0.053033,0.233262,0.3445,"(s / say-01
-   :ARG0 (h / he
-            :ARG0-of (c / contrast-01))
-   :ARG1 (v / volcano)
+chapter_8,0.112,0.3276,"(k / know-01
+   :ARG2 (f / flower
+            :mod (o / one))
+   :ARG1 (s / she)
+   :ARG0 (s1 / she
+             :mod (l / little)))"
+chapter_9,0.06,0.3275,"(s / say-01
+   :ARG0 (h / he)
+   :ARG1 (v / volcano
+            :poss h
+            :mod (c / contrast-01
+                    :ARG0 h))
    :ARG2 (h1 / he))"
-chapter_10,0.05101,0.167743,0.3345,"(p / possible-01
+chapter_10,0.084,0.338,"(p / possible-01
+   :ARG0 (k / king
+            :mod (l / little)
+            :ARG0-of s)
    :ARG1 (s / say-01
-            :ARG0 (k / king)
             :ARG1 (h / he)
-            :ARG2 (l / little)))"
-chapter_11,0.071085,0.190306,0.3848,"(s / say-01
-   :ARG1 (h / hat
-            :domain (m1 / man))
+            :ARG2 l))"
+chapter_11,0.138,0.3835,"(s / say-01
+   :ARG1 (h / hat)
    :ARG0 (m / man
             :ARG0-of (c / clap-01
                         :ARG1 (h1 / hand))
             :mod (l / little)))"
-chapter_12,0.083517,0.216382,0.4362,"(r / reply-01
+chapter_12,0.084,0.4362,"(r / reply-01
    :ARG0 (p / person
             :ARG0-of (t / tipple-01)
             :ARG0-of (f / forget-01))
    :ARG1 (p1 / prince
              :mod (l / little)))"
-chapter_13,0.052771,0.228381,0.2679,"(o / own-01
-   :ARG1 (a / amr-unknown
-            :ARG1-of (o1 / own-01))
-   :ARG0 (i / i
-            :mod (l / little)
-            :ARG0-of (a2 / and
-                         :ARG1 (a1 / amr-unknown))))"
-chapter_14,0.095583,0.176815,0.3645,"(a / and
+chapter_13,0.153,0.2823,"(a2 / and
+    :op2 (o / own-01
+            :ARG1 (a / amr-unknown)
+            :ARG0 (i / i)
+            :ARG2 (a1 / amr-unknown)))"
+chapter_14,0.096,0.3651,"(a / and
    :op2 (l1 / light-04
-            :ARG1 (l / lamp)
+            :ARG1 (l / lamp
+                     :poss p)
             :ARG0 (p / person
                      :ARG0-of (s / say-01
-                                 :ARG1 (a1 / again)))))"
-chapter_15,0.15923,0.218853,0.3222,"(s / say-01
+                                 :ARG1 a1))
+            :mod (a1 / again)))"
+chapter_15,0.158,0.3222,"(s / say-01
    :ARG0 (g / geographer
             :mod (l / little)
             :ARG0-of (e / explore-01))
    :ARG1 (t / thing
             :ARG1-of (c / contrast-01)))"
-chapter_16,0.129677,0.205092,0.3588,"(l / light-04
+chapter_16,0.126,0.359,"(l / light-04
    :ARG1 (p / planet
             :domain (p1 / planet))
-   :ARG0 (t / they
-            :ARG0-of (a / and)
-            :ARG1-of (o / opera)))"
-chapter_17,0.104035,0.207553,0.365,"(s / say-01
-   :ARG1 (y / you
-            :ARG1 (y1 / you
-                      :ARG1-of (h / have-degree-91
-                                  :ARG2 (f / far))))
+   :ARG0 (t / they))"
+chapter_17,0.242,0.3672,"(s / say-01
+   :ARG1 (y / you)
    :ARG0 (p / prince
             :mod (l / little)))"
-chapter_18,0.148123,0.191232,0.4736,"(s / say-01
+chapter_18,0.143,0.4736,"(s / say-01
    :ARG1 (t / they)
    :ARG0 (p / prince
             :mod (l / little)))"
-chapter_19,0.125345,0.249785,0.465,"(s / say-01
-   :ARG2 (y / you)
-   :ARG1 (i / i
-            :mod (a / all)
-            :ARG1-of (a1 / and)
-            :domain-of y)
-   :ARG0 (h / he))"
-chapter_20,0.148123,0.191232,0.4548,"(a1 / and
+chapter_19,0.126,0.4491,"(a1 / and
+    :op2 (s / say-01
+            :ARG2 (y / you
+                     :domain i)
+            :ARG1 (i / i
+                     :mod (a / all))
+            :ARG0 (h / he)))"
+chapter_20,0.143,0.4548,"(a1 / and
     :op2 (s / say-01
             :ARG0 (h / he
                      :mod (a / all))
             :ARG1 (h1 / he)))"
-chapter_21,0.150334,0.211039,0.3882,"(s / say-01
+chapter_21,0.148,0.3899,"(s / say-01
    :ARG0 (f / fox
             :mod (l / little))
-   :ARG1 (i / i
-            :ARG1 (y / you)))"
-chapter_22,0.179955,0.196261,0.4735,"(s / say-01
+   :ARG1 (i / i)
+   :ARG2 (y / you))"
+chapter_22,0.174,0.4735,"(s / say-01
    :ARG0 (s1 / switchman
              :mod (l / little))
    :ARG1 (k / know-01
             :ARG1 (t / they)
             :ARG0 (t1 / they)))"
-chapter_23,0.094568,0.170794,0.4785,"(s / say-01
+chapter_23,0.091,0.4856,"(s / say-01
    :ARG1 (m / morning
             :ARG1-of (g / good-02
-                        :ARG0 (y / you))
-            :ARG0 y)
+                        :ARG0 (y / you)))
    :ARG0 (p / person
             :ARG0-of (m1 / merchandise-01)
             :mod (l / little)))"
-chapter_24,0.130525,0.208173,0.3673,"(a / and
+chapter_24,0.13,0.37,"(a / and
    :op2 (s / say-01
            :ARG0 (i / i)
-           :ARG1 (h / he)))"
-chapter_25,0.125345,0.249785,0.3808,"(s / say-01
+           :ARG1 (h / he
+                    :ARG0-of (p / possible-01
+                                :mod (l / little)))))"
+chapter_25,0.124,0.3808,"(s / say-01
    :ARG2 (i / i)
    :ARG0 (i1 / i)
    :ARG1 (t / thing))"
-chapter_26,0.076139,0.150403,0.3655,"(s / say-01
-   :ARG1 (i / it
-            :ARG1 (d / date-entity
-                     :mod (l / little)))
+chapter_26,0.076,0.3664,"(s / say-01
+   :ARG1 (i / it)
    :ARG0 (i1 / i)
+   :mod (l / little
+           :mod-of (d / date-entity))
    :ARG2 (a / and))"
-chapter_27,0.060655,0.158713,0.3622,"(a / and
-   :op2 (s / say-01
-           :ARG1 (i / i
-                    :ARG1-of (h / he)
-                    :mod (l / little
-                            :mod-of (a1 / appear-01)))
-           :ARG0 (i1 / i
-                     :ARG0-of (c / contrast-01))
-           :time (t / then)))"
+chapter_27,0.206,0.3705,"(s / say-01
+   :ARG1 (i / i
+            :mod (l / little
+                    :mod-of (a / appear-01)))
+   :ARG0 (i1 / i)
+   :time (t / then))"

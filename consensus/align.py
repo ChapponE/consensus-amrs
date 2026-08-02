@@ -1,13 +1,14 @@
 """FAQ node alignment: the quotient distance of Section 4, solved by Frank-Wolfe.
 
-Aligning ``h`` on ``g`` means maximising ``<X_g, P X_h> + lam * <A_g, P A_h P^T>``
-over the permutations, a quadratic assignment problem. Following Vogelstein et
-al. (2015) the feasible set is relaxed to the doubly stochastic matrices and the
-objective optimised by Frank-Wolfe, then rounded back to a permutation.
+Aligning ``h`` on ``g`` means maximising ``<X_g, P X_h> + w * <A_g, P A_h P^T>``
+over the permutations, a quadratic assignment problem, ``w`` being the weight of
+the edge channel. Following Vogelstein et al. (2015) the feasible set is relaxed
+to the doubly stochastic matrices and the objective optimised by Frank-Wolfe,
+then rounded back to a permutation.
 
-The edge channel carries the weight ``lam``, applied once as the isometry
-``(X, A) -> (X, sqrt(lam) A)`` so the gradient, the line search and the
-comparison between initialisations all stay consistent with it.
+That weight is applied once as the isometry ``(X, A) -> (X, sqrt(w) A)`` so the
+gradient, the line search and the comparison between initialisations all stay
+consistent with it.
 """
 from __future__ import annotations
 
