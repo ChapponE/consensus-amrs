@@ -126,7 +126,7 @@ def _chapter_campaign(path: Path, mean_dir: Path, threshold_range, step: float,
 
 
 # --------------------------------------------------------------------------
-# Campaign 2 — one study over the corpus, every trial scored on all chapters
+# Campaign 2 — one study over the corpus, every threshold scored on all chapters
 # --------------------------------------------------------------------------
 
 def _init_worker(paths: list[Path], mean_dir: Path, n_restarts: int) -> None:
