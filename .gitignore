@@ -3,4 +3,3 @@ __pycache__/
 results*/means/
 results*/scores.csv.gz
 results*/graphs.csv.gz
-results*/config.json

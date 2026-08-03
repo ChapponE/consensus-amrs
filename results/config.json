@@ -1,0 +1,8 @@
+{
+  "n_restarts": 20,
+  "threshold_range": [
+    0.06,
+    0.25
+  ],
+  "threshold_step": 0.001
+}
