@@ -19,7 +19,7 @@ python main.py aggregate         # turn the search into the reported tables
 python main.py all --jobs 8      # both
 ```
 
-`search` takes about ninety minutes with `--jobs 8`. Cached semantic mean under `results/means/`, so a second search over other values of τ takes about ten minutes. `aggregate` runs in seconds.
+`search` takes about ninety minutes with `--jobs 8`. Cached semantic mean under `results/means/`, so a second search over other values of τ takes about ten minutes. `aggregate` runs in seconds. 
 
 `--threshold-range` and `--threshold-step` move the grid of τ, `--restarts` the number of mean-AAC runs per chapter; every setting used is recorded in `results/config.json`.
 
@@ -34,8 +34,7 @@ python main.py all --jobs 8      # both
 | `results/consensus_graph_s2match.csv` | the same, S2MATCH-selected                                                         |
 
 
-`results/scores.csv.gz` and `results/graphs.csv.gz` keep every score and every
-graph of the sweep, `results/means/` the semantic means.
+`search` generates `results/scores.csv.gz` and `results/graphs.csv.gz`, which store every score and every graph produced by the sweep, respectively. It also caches the semantic means in `results/means/`.
 
 The three experiments differ only in how τ is chosen:
 
