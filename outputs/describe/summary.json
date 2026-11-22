@@ -1,0 +1,104 @@
+{
+  "results": {
+    "n_populations": 27,
+    "n_empty": 0,
+    "no_input_contains_all": 25,
+    "acyclic": 27,
+    "reentrant": 15,
+    "duplicated_concept": 11,
+    "duplicated_pronoun": 8,
+    "consensus_nodes_mean": 5.925925925925926,
+    "consensus_nodes_median": 6.0,
+    "input_nodes_mean": 6.38786725082552,
+    "concept_frequency": {
+      "say-01": 18,
+      "little": 17,
+      "i": 14,
+      "and": 10,
+      "he": 6,
+      "you": 5,
+      "prince": 4,
+      "amr-unknown": 3,
+      "person": 3,
+      "they": 3,
+      "cause-01": 2,
+      "have-degree-91": 2
+    },
+    "root_frequency": {
+      "say-01": 11,
+      "and": 7,
+      "see-01": 1,
+      "draw-01": 1,
+      "cause-01": 1,
+      "have-degree-91": 1
+    }
+  },
+  "results_bio": {
+    "n_populations": 44,
+    "n_empty": 0,
+    "no_input_contains_all": 42,
+    "acyclic": 44,
+    "reentrant": 44,
+    "duplicated_concept": 44,
+    "duplicated_pronoun": 0,
+    "consensus_nodes_mean": 16.636363636363637,
+    "consensus_nodes_median": 16.0,
+    "input_nodes_mean": 17.879338820718463,
+    "concept_frequency": {
+      "and": 44,
+      "describe-01": 37,
+      "figure": 31,
+      "enzyme": 28,
+      "protein": 21,
+      "cell-line": 21,
+      "mutate-01": 15,
+      "phosphorylate-01": 13,
+      "small-molecule": 13,
+      "cell": 12,
+      "this": 12,
+      "include-91": 10
+    },
+    "root_frequency": {
+      "describe-01": 25,
+      "mean-01": 3,
+      "mutate-01": 2,
+      "and": 2,
+      "include-91": 2,
+      "sensitive-03": 2
+    }
+  },
+  "results_proxy": {
+    "n_populations": 367,
+    "n_empty": 0,
+    "no_input_contains_all": 331,
+    "acyclic": 338,
+    "reentrant": 349,
+    "duplicated_concept": 330,
+    "duplicated_pronoun": 0,
+    "consensus_nodes_mean": 11.44141689373297,
+    "consensus_nodes_median": 11.0,
+    "input_nodes_mean": 12.070403312561574,
+    "concept_frequency": {
+      "country": 323,
+      "person": 277,
+      "and": 224,
+      "have-org-role-91": 197,
+      "state-01": 174,
+      "govern-01": 61,
+      "say-01": 59,
+      "nucleus": 56,
+      "government-organization": 53,
+      "organization": 49,
+      "official": 46,
+      "drug": 41
+    },
+    "root_frequency": {
+      "state-01": 75,
+      "have-org-role-91": 56,
+      "and": 46,
+      "say-01": 30,
+      "govern-01": 14,
+      "include-91": 9
+    }
+  }
+}

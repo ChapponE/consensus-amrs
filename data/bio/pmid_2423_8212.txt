@@ -1,0 +1,2214 @@
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Ten patient-derived metastatic melanoma specimens were enzymatically dissociated and tumor cells were cultured in selective conditions for CSC (tumor spheres), as previously described [<xref ref-type="bibr" rid="B41">41</xref>-<xref ref-type="bibr" rid="B44">44</xref>].
+# ::file pmid_2423_8212_96.txt
+# ::date 2015-08-25T09:11:20
+# ::id pmid_2423_8212.96
+(a / and
+      :op1 (d / dissociate-01
+            :ARG1 (s / specimen
+                  :quant "10"
+                  :ARG1-of (m2 / metastasize-101)
+                  :ARG1-of (d2 / derive-01
+                        :ARG2 (p / person
+                              :ARG1-of (h / have-org-role-91
+                                    :ARG2 (p2 / patient))))
+                  :mod (m4 / medical-condition
+                        :name (n2 / name :op1 "melanoma")))
+            :manner (e / enzyme))
+      :op2 (c / culture-01
+            :ARG1 (c2 / cell
+                  :mod (t / tumor))
+            :manner (c3 / condition
+                  :ARG0-of (s2 / select-01))
+            :purpose (c4 / cell
+                  :mod (s3 / stem)
+                  :ARG1-of (m3 / mean-01
+                        :ARG2 (s4 / sphere
+                              :mod t))
+                  :mod (d5 / disease
+                        :wiki "Cancer"
+                        :name (n / name :op1 "cancer"))))
+      :ARG1-of (d3 / describe-01
+            :time (p3 / previous))
+      :ARG1-of (d4 / describe-01
+            :ARG0 (p4 / publication
+                  :ARG1-of (c6 / cite-01
+                        :ARG2 (v / value-interval :op1 "41" :op2 "44")))))
+
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Following prolonged culture, we obtained exponentially growing “melanospheres” with efficiency of 80% (Figure <xref ref-type="fig" rid="F1">1</xref>A left).
+# ::file pmid_2423_8212_97.txt
+# ::date 2015-08-25T09:34:20
+# ::id pmid_2423_8212.97
+(o / obtain-01
+      :ARG0 (w / we)
+      :ARG1 (m / melanosphere
+            :ARG1-of (g / grow-01
+                  :manner (e / exponential))
+            :ARG1-of (e2 / efficient-01
+                  :degree (p / percentage-entity :value "80")))
+      :ARG1-of (f / follow-01
+            :ARG2 (c2 / culture-01
+                  :ARG1-of (p2 / prolong-01)))
+      :ARG1-of (d / describe-01
+            :ARG0 (f2 / figure
+                  :mod "1A"
+                  :ARG1-of (l / left-20))))
+
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The same cells cultured in conditions specific for the growth of melanocytes generated monolayers of tumor cells whose morphology resembled differentiated cells, suggesting the capacity of melanospheres to differentiate <i>in vitro</i> (Figure <xref ref-type="fig" rid="F1">1</xref>A right).
+# ::file pmid_2423_8212_98.txt
+# ::date 2015-08-25T09:54:23
+# ::id pmid_2423_8212.98
+(g / generate-01
+      :ARG0 (c / cell
+            :ARG1-of (c2 / culture-01
+                  :manner (c3 / condition
+                        :ARG1-of (s2 / specific-02
+                              :ARG2 (g2 / grow-01
+                                    :ARG1 (m4 / melanocyte)))))
+            :ARG1-of (s4 / same-01))
+      :ARG1 (m / monolayer
+            :consist-of (c5 / cell
+                  :ARG0-of (h / have-03
+                        :ARG1 (m2 / morphology
+                              :ARG1-of (r / resemble-01
+                                    :ARG2 (c6 / cell
+                                          :ARG1-of (d / differentiate-101)))))
+                  :mod (t / tumor)))
+      :ARG0-of (s3 / suggest-01
+            :ARG1 (c7 / capable-01
+                  :ARG1 (m3 / melanosphere)
+                  :ARG2 (d2 / differentiate-101
+                        :manner (i / in-vitro))))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f / figure
+                  :mod "1A"
+                  :ARG1-of (r2 / right-04))))
+
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next investigated the expression of antigens that have been previously associated with MIC.
+# ::file pmid_2423_8212_99.txt
+# ::date 2015-08-25T10:10:12
+# ::id pmid_2423_8212.99
+(i / investigate-01
+      :ARG0 (w / we)
+      :ARG1 (e / express-03
+            :ARG2 (a / antigen
+                  :ARG1-of (a2 / associate-01
+                        :ARG2 (c / cell
+                              :ARG0-of (i2 / initiate-01
+                                    :ARG1 (m / medical-condition
+                                          :name (n2 / name :op1 "melanoma"))))
+                        :time (p / previous))))
+      :time (n / next))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Melanospheres did not express CD133, CD20, CD24, ABCB5 or CD271 (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S1A-B), while p-glycoprotein was detectable at low levels.
+# ::file pmid_2423_8212_100.txt
+# ::date 2015-08-25T10:17:06
+# ::id pmid_2423_8212.100
+(c / contrast-01
+   :ARG1 (e / express-03
+            :polarity "-"
+            :ARG2 (o / or
+                     :op1 (p / protein
+                             :name (n / name
+                                      :op1 "CD133"))
+                     :op2 (p2 / protein
+                              :name (n2 / name
+                                        :op1 "CD20"))
+                     :op3 (p3 / protein
+                              :name (n3 / name
+                                        :op1 "CD24"))
+                     :op4 (p4 / protein
+                              :name (n4 / name
+                                        :op1 "ABCB5"))
+                     :op5 (p5 / protein
+                              :name (n5 / name
+                                        :op1 "CD271")))
+            :ARG3 (m / melanosphere)
+            :ARG1-of (d / describe-01
+                        :ARG0 (f / file
+                                 :mod "1"
+                                 :ARG1-of (a / add-02)
+                                 :ARG1-of (m2 / mean-01
+                                              :ARG2 (a2 / and
+                                                        :op1 (f2 / figure
+                                                                 :mod "S1A")
+                                                        :op2 (f3 / figure
+                                                                 :mod "S1B"))))))
+   :ARG2 (d2 / detect-01
+             :ARG1 (g / glycoprotein
+                      :ARG3-of (p8 / phosphorylate-01)
+                      :quant (l / level
+                                :ARG1-of (l2 / low-04)))
+             :ARG1-of (p6 / possible-01)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt They expressed stem cell-related markers as c-Kit, Cripto, CD146, CD44 and CD166 (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S1A) in agreement with previous reports on cell line-derived melanospheres [<xref ref-type="bibr" rid="B38">38</xref>].
+# ::file pmid_2423_8212_101.txt
+# ::date 2015-08-25T10:37:58
+# ::id pmid_2423_8212.101
+(e / express-03
+   :ARG2 (m / marker
+            :ARG1-of (r / relate-01
+                        :ARG2 (c / cell
+                                 :mod (s / stem)))
+            :ARG1-of (e2 / exemplify-01
+                         :ARG0 (a / and
+                                  :op1 (e3 / enzyme
+                                           :name (n / name
+                                                    :op1 "c-Kit"))
+                                  :op2 (p2 / protein
+                                           :name (n2 / name
+                                                     :op1 "Cripto"))
+                                  :op3 (p3 / protein
+                                           :name (n3 / name
+                                                     :op1 "CD146"))
+                                  :op4 (p4 / protein
+                                           :name (n4 / name
+                                                     :op1 "CD44"))
+                                  :op5 (p5 / protein
+                                           :name (n5 / name
+                                                     :op1 "CD166")))
+                         :ARG1-of (d3 / describe-01
+                                      :ARG0 (f / file
+                                               :mod "1"
+                                               :ARG1-of (a3 / add-02)
+                                               :ARG1-of (m2 / mean-01
+                                                            :ARG2 (f2 / figure
+                                                                      :mod "S1A"))))))
+   :ARG3 (t / they)
+   :ARG0-of (a2 / agree-01
+                :ARG2 (t2 / thing
+                          :time (p6 / previous)
+                          :ARG1-of (r2 / report-01
+                                       :topic (m3 / melanosphere
+                                                  :ARG1-of (d / derive-01
+                                                              :ARG2 (c3 / cell-line))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p7 / publication
+                          :ARG1-of (c4 / cite-01
+                                       :ARG2 "38"))))
+
+
+# ::save-date Mon Nov 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Finally, embryonic stem cell markers Nanog and Oct-4 were detected at the RNA level in all samples analyzed (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S1C).
+# ::file pmid_2423_8212_102.txt
+# ::date 2015-08-25T10:50:08
+# ::id pmid_2423_8212.102
+(d / detect-01
+      :ARG1 (a / and
+            :op1 (m / marker
+                  :wiki "Homeobox_protein_NANOG"
+                  :name (n / name :op1 "Nanog")
+                  :mod (c / cell
+                        :mod (s / stem))
+                  :mod (e / embryo))
+            :op2 (m2 / marker
+                  :wiki "Oct-4"
+                  :name (n2 / name :op1 "Oct-4")
+                  :mod c
+                  :mod e))
+      :location (t / thing
+            :mod (a2 / all)
+            :ARG1-of (a3 / analyze-01)
+            :ARG1-of (s2 / sample-01))
+      :location (l / level
+            :mod (n3 / nucleic-acid
+                  :wiki "RNA"
+                  :name (n4 / name :op1 "RNA")))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / file
+                  :mod "1"
+                  :ARG1-of (a4 / add-02)
+                  :ARG1-of (m3 / mean-01
+                        :ARG2 (f2 / figure :mod "S1C"))))
+      :time (f3 / final))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The CD44 isoform V6 was specifically restricted to melanospheres, being not expressed in differentiated cells, nor in tumor cells freshly isolated from melanosphere-derived xenografts nor in melanocytes (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S1D).
+# ::file pmid_2423_8212_103.txt
+# ::date 2015-08-25T10:58:38
+# ::id pmid_2423_8212.103
+(r / restrict-01
+   :ARG1 (i / isoform
+            :name (n / name
+                     :op1 "V6")
+            :mod (p / protein
+                    :name (n2 / name
+                              :op1 "CD44"))
+            :ARG1-of (e / express-03
+                        :polarity "-"
+                        :ARG3 (o / or
+                                 :op1 (c2 / cell
+                                          :ARG1-of (d / differentiate-101))
+                                 :op2 (c3 / cell
+                                          :mod (t / tumor)
+                                          :ARG1-of (i2 / isolate-01
+                                                       :ARG2 (x / xenograft
+                                                                :ARG1-of (d2 / derive-01
+                                                                             :ARG2 "m3"))
+                                                       :ARG1-of (f / fresh-04)))
+                                 :op3 (m2 / melanocyte))))
+   :ARG2 (m3 / melanosphere)
+   :manner (s / specific-02)
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f2 / file
+                          :mod "1"
+                          :ARG1-of (a / add-02)
+                          :ARG1-of (m / mean-01
+                                      :ARG2 (f3 / figure
+                                                :mod "S1D")))))
+
+
+# ::save-date Mon Aug 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Melanospheres could be expanded <i>in vitro</i> for several months and their proliferation rate was not lost with time (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S2A).
+# ::file pmid_2423_8212_104.txt
+# ::date 2015-08-25T11:07:49
+# ::id pmid_2423_8212.104
+(a / and
+      :op1 (p2 / possible-01
+            :ARG1 (e / expand-01
+                  :ARG1 (m3 / melanosphere)
+                  :manner (i / in-vitro)
+                  :duration (s / several
+                        :op1 (t2 / temporal-quantity
+                              :quant "1"
+                              :unit (m / month)))))
+      :op2 (l / lose-02
+            :ARG0 m3
+            :ARG1 (r / rate
+                  :degree-of (p / proliferate-01
+                        :ARG0 m3))
+            :condition (t / time))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / file
+                  :mod "2"
+                  :ARG1-of (a2 / add-02)
+                  :ARG1-of (m2 / mean-01
+                        :ARG2 (f2 / figure :mod "S2A")))))
+
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt They were composed by a large (mean 42% ± 8 in all examined samples) fraction of self-renewing sphere-reforming cells (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S2B upper left).
+# ::file pmid_2423_8212_105.txt
+# ::date 2015-08-25T11:35:04
+# ::id pmid_2423_8212.105
+(c / compose-01
+      :ARG1 (t / they)
+      :ARG2 (f / fraction-01
+            :ARG1 (c2 / cell
+                  :ARG0-of (r / renew-01
+                        :ARG1 c2)
+                  :ARG0-of (r2 / reform-01
+                        :ARG2 (s / sphere)))
+            :mod (l / large)
+            :ARG1-of (a2 / average-01
+                  :ARG2 (o / or
+                        :op1 (p / percentage-entity
+                              :value "42"
+                              :ARG2-of (a3 / add-02
+                                    :ARG1 (p2 / percentage-entity :value "8")))
+                        :op2 (p3 / percentage-entity
+                              :value "42"
+                              :ARG2-of (s2 / subtract-01
+                                    :ARG1 p2)))
+                  :location (t2 / thing
+                        :mod (a4 / all)
+                        :ARG1-of (e / examine-01)
+                        :ARG1-of (s3 / sample-01))))
+      :ARG1-of (d / describe-01
+            :ARG0 (f2 / file
+                  :mod "2"
+                  :ARG1-of (a / add-02)
+                  :ARG1-of (m / mean-01
+                        :ARG2 (f3 / figure
+                              :mod "S2B"
+                              :ARG1-of (l2 / left-20
+                                    :mod (u / upper)))))))
+
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Finally, secondary and tertiary spheres were formed with a similar frequency and tertiary spheres were able to proliferate indefinitely, indicating that the fraction of self-renewing cells did not decrease with passages (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S2B upper right panel).
+# ::file pmid_2423_8212_106.txt
+# ::date 2015-08-25T11:58:25
+# ::id pmid_2423_8212.106
+(a2 / and
+      :op1 (f / form-01
+            :ARG1 (a / and
+                  :op1 (s / sphere
+                        :mod (s2 / secondary))
+                  :op2 (s3 / sphere
+                        :mod (t / tertiary)))
+            :manner (f2 / frequency
+                  :ARG1-of (r / resemble-01)))
+      :op2 (p / possible-01
+            :ARG1 (p2 / proliferate-01
+                  :ARG0 s3
+                  :duration (d / definite :polarity "-")))
+      :ARG0-of (i / indicate-01
+            :ARG1 (d2 / decrease-01
+                  :polarity "-"
+                  :ARG0 (f3 / fraction-01
+                        :ARG1 (c / cell
+                              :ARG0-of (r2 / renew-01
+                                    :ARG1 c)))
+                  :condition (p3 / pass-08)))
+      :time (f4 / final)
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f5 / file
+                  :mod "2"
+                  :ARG1-of (a3 / add-02)
+                  :ARG1-of (m / mean-01
+                        :ARG2 (f6 / figure
+                              :mod "S2B"
+                              :part (p4 / panel
+                                    :ARG1-of (r3 / right-04
+                                          :mod (u / upper))))))))
+
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The clonogenic activity was higher in melanospheres than in their differentiated counterpart (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S2B lower panels).
+# ::file pmid_2423_8212_107.txt
+# ::date 2015-08-25T12:15:04
+# ::id pmid_2423_8212.107
+(h / high-02
+      :ARG1 (a / activity-06
+            :ARG0 (m2 / melanosphere)
+            :mod (c / clonogenic))
+      :compared-to (c3 / counterpart
+            :ARG1-of (d / differentiate-101)
+            :poss m2)
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / file
+                  :mod "2"
+                  :ARG1-of (a2 / add-02)
+                  :ARG1-of (m / mean-01
+                        :ARG2 (f2 / figure
+                              :mod "S2B"
+                              :part (p / panel
+                                    :ARG1-of (l / low-04))))))
+      :degree (m3 / more))
+
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Under appropriate conditions, melanospheres generated a progeny of cells with morphology and phenotype of melanocytic, adipogenic or osteogenic cells, demonstrating multiple differentiation ability and recapitulating the plasticity of neural crest cells (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>:Figure S2C).
+# ::file pmid_2423_8212_108.txt
+# ::date 2015-08-25T12:22:39
+# ::id pmid_2423_8212.108
+(g / generate-01
+      :ARG0 (m5 / melanosphere)
+      :ARG1 (p / progeny
+            :poss (c2 / cell
+                  :ARG0-of (h / have-03
+                        :ARG1 (a / and
+                              :op1 (m / morphology)
+                              :op2 (p2 / phenotype)
+                              :poss (o / or
+                                    :op1 (c3 / cell
+                                          :mod (m2 / melanocyte))
+                                    :op2 (c4 / cell
+                                          :mod (a2 / adipogenesis))
+                                    :op3 (c5 / cell
+                                          :mod (o2 / osteogenesis)))))))
+      :ARG0-of (d / demonstrate-01
+            :ARG1 (c6 / capable-01
+                  :ARG1 m5
+                  :ARG2 (d2 / differentiate-101
+                        :mod (m3 / multiple))))
+      :ARG0-of (r / recapitulate-01
+            :ARG1 (p3 / plasticity
+                  :poss (c7 / cell
+                        :mod (c8 / crest)
+                        :mod (n2 / neural))))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f / file
+                  :mod "2"
+                  :ARG1-of (a3 / add-02)
+                  :ARG1-of (m4 / mean-01
+                        :ARG2 (f2 / figure :mod "S2C"))))
+      :condition (c9 / condition
+            :ARG1-of (a4 / appropriate-02)))
+
+
+# ::save-date Mon Nov 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Melanospheres were highly tumorigenic when injected subcutaneously in NOD Scid or Nude mice and all samples displayed tumor take of 100% down to 25000 cells.
+# ::file pmid_2423_8212_109.txt
+# ::date 2015-08-25T12:45:10
+# ::id pmid_2423_8212.109
+(a / and
+      :op1 (c / cause-01
+            :ARG0 (m4 / melanosphere)
+            :ARG1 (t / tumor)
+            :degree (h / high)
+            :condition (i / inject-01
+                  :ARG1 m4
+                  :ARG2 (o / or
+                        :op1 (m5 / mouse
+                              :name (n / name :op1 "NOD-Scid"))
+                        :op2 (m2 / mouse
+                              :mod (n3 / nude)))
+                  :manner (s / subcutaneous)))
+      :op2 (d / display-01
+            :ARG0 (t2 / thing
+                  :ARG1-of (s2 / sample-01)
+                  :mod (a2 / all))
+            :ARG1 (t3 / take-01
+                  :ARG1 t
+                  :quant (p / percentage-entity
+                        :value "100"
+                        :ARG1-of (m3 / mean-01
+                              :ARG2 (c4 / cell
+                                    :quant (d2 / down-to :quant "25000"))))
+                  :mod t)))
+
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt For one sample we performed a limiting dilution experiment and even as low as 5 cells readily generated a tumor within 8 weeks (Figure <xref ref-type="fig" rid="F1">1</xref>B and C).
+# ::file pmid_2423_8212_110.txt
+# ::date 2015-08-25T13:10:19
+# ::id pmid_2423_8212.110
+(a / and
+      :op1 (p / perform-02
+            :ARG0 (w / we)
+            :ARG1 (e / experiment-01
+                  :ARG0 w
+                  :ARG1 (t3 / thing
+                        :quant "1"
+                        :ARG1-of (s / sample-01))
+                  :ARG2 (d / dilute-01
+                        :ARG0-of (l / limit-01))))
+      :op2 (g / generate-01
+            :ARG0 (c / cell
+                  :ARG1-of (l2 / low-04 :ARG3 "5")
+                  :mod (e2 / even))
+            :ARG1 (t / tumor)
+            :manner (r / ready)
+            :time (u / up-to
+                  :op1 (t2 / temporal-quantity
+                        :quant "8"
+                        :unit (w2 / week))))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (a2 / and
+                  :op1 (f / figure :mod "1B")
+                  :op2 (f2 / figure :mod "1C"))))
+
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, melanosphere-derived differentiated cells displayed a decreased and delayed tumor growth <i>in vivo</i>, and as many as 5x10<sup>4</sup> differentiated cells generated a slowly growing tumor with a 10-week delay post-injection (Figure <xref ref-type="fig" rid="F1">1</xref>B).
+# ::file pmid_2423_8212_111.txt
+# ::date 2015-08-25T13:20:04
+# ::id pmid_2423_8212.111
+(c / contrast-01
+      :ARG2 (a / and
+            :op1 (d / display-01
+                  :ARG0 (c3 / cell
+                        :ARG1-of (d4 / differentiate-101)
+                        :ARG1-of (d5 / derive-01
+                              :ARG2 (m / melanosphere)))
+                  :ARG1 (g / grow-01
+                        :ARG1 (t / tumor)
+                        :ARG1-of (d2 / decrease-01)
+                        :ARG1-of (d3 / delay-01))
+                  :manner (i / in-vivo))
+            :op2 (g2 / generate-01
+                  :ARG0 (c2 / cell
+                        :ARG1-of d4
+                        :quant (a3 / as-many-as :op1 "50000"))
+                  :ARG1 (t2 / tumor
+                        :ARG1-of (g3 / grow-01
+                              :ARG1-of (s / slow-05)))
+                  :ARG0-of (h / have-03
+                        :ARG1 (d6 / delay-01
+                              :ARG2 (t3 / temporal-quantity
+                                    :quant "10"
+                                    :unit (w / week))
+                              :time (a2 / after
+                                    :op1 (i2 / inject-01)))))
+            :ARG1-of (d7 / describe-01
+                  :ARG0 (f / figure :mod "1B"))))
+
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Immunohistochemical analysis of melanosphere-derived xenografts, performed for all samples, revealed a high similarity between the xenograft and the original patient tumor in terms of morphology and expression of the melanoma-associated diagnostic antigens MART1 and S100 (Figure <xref ref-type="fig" rid="F1">1</xref>D is a representative image).
+# ::file pmid_2423_8212_112.txt
+# ::date 2015-08-25T13:35:24
+# ::id pmid_2423_8212.112
+(r / reveal-01
+      :ARG0 (a / analyze-01
+            :ARG1 (x / xenograft
+                  :ARG1-of (d / derive-01
+                        :ARG2 (m3 / melanosphere)))
+            :ARG1-of (p / perform-02)
+            :beneficiary (t / thing
+                  :ARG1-of (s / sample-01)
+                  :mod (a2 / all))
+            :mod (i / immunohistochemical))
+      :ARG1 (r2 / resemble-01
+            :ARG1 x
+            :ARG2 (t2 / tumor
+                  :mod (o / original)
+                  :mod (p2 / person
+                        :ARG0-of (h2 / have-org-role-91
+                              :ARG2 (p3 / patient))))
+            :ARG1-of (h / high-02)
+            :topic (a3 / and
+                  :op1 (m / morphology)
+                  :op2 (e / express-03
+                        :ARG2 (a4 / and
+                              :op1 (a5 / antigen
+                                    :name (n2 / name :op1 "MART1")
+                                    :ARG1-of (a7 / associate-01
+                                          :ARG2 (m2 / medical-condition
+                                                :name (n / name :op1 "melanoma")))
+                                    :mod (d2 / diagnose-01))
+                              :op2 (a6 / antigen
+                                    :name (n3 / name :op1 "S100")
+                                    :ARG1-of a7
+                                    :mod d2)))))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f / figure
+                  :mod "1D"
+                  :ARG1-of (r3 / represent-01
+                        :ARG0 (i2 / image)))))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Following xenograft dissociation and re-injection we easily obtained secondary and tertiary tumors, suggesting that tumorigenic potential was not lost with passages in mice, in fact these results proved the ability of tumorigenic cells to self-renew <i>in vivo</i> (results not shown).
+# ::file pmid_2423_8212_113.txt
+# ::date 2015-08-25T13:53:32
+# ::id pmid_2423_8212.113
+(m2 / multi-sentence
+      :snt1 (o / obtain-01
+            :ARG0 (w / we)
+            :ARG1 (a / and
+                  :op1 (t / tumor
+                        :mod (s / secondary))
+                  :op2 (t2 / tumor
+                        :mod (t3 / tertiary)))
+            :ARG1-of (e / easy-05)
+            :ARG0-of (s2 / suggest-01
+                  :ARG1 (l / lose-02
+                        :polarity "-"
+                        :ARG1 (c / capable-01
+                              :ARG1 (c2 / cause-01
+                                    :ARG1 (t4 / tumor)))
+                        :condition (p / pass-03
+                              :location (m / mouse))))
+            :ARG1-of (f / follow-01
+                  :ARG2 (a2 / and
+                        :op1 (d / dissociate-01
+                              :ARG1 (x / xenograft))
+                        :op2 (r / reinject-00
+                              :ARG1 x))))
+      :snt2 (p2 / prove-01
+            :ARG0 (t5 / thing
+                  :ARG2-of (r2 / result-01)
+                  :ARG1-of (s3 / show-01 :polarity "-")
+                  :mod (t6 / this))
+            :ARG1 (c3 / capable-01
+                  :ARG1 (c4 / cell
+                        :ARG0-of (c5 / cause-01
+                              :ARG1 (t7 / tumor)))
+                  :ARG2 (r3 / renew-01
+                        :ARG0 c4
+                        :ARG1 c4
+                        :manner (i / in-vivo)))
+            :mod (i2 / in-fact)))
+
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Based on these <i>in vitro</i> and <i>in vivo</i> results, we considered melanospheres as surrogate of melanoma-initiating cells (MIC) exploitable for pre-clinical experimentation.
+# ::file pmid_2423_8212_114.txt
+# ::date 2015-08-25T14:15:06
+# ::id pmid_2423_8212.114
+(c / consider-02
+      :ARG0 (w / we)
+      :ARG1 (m2 / melanosphere)
+      :ARG2 (s / surrogate
+            :poss (c3 / cell
+                  :ARG0-of (i / initiate-01
+                        :ARG1 (m / medical-condition
+                              :name (n / name :op1 "melanoma")))
+                  :ARG1-of (e / exploit-01
+                        :ARG2 (e2 / experiment-01
+                              :time (b / before
+                                    :op1 (c4 / clinic)))
+                        :ARG1-of (p / possible-01))))
+      :ARG2-of (b2 / base-02
+            :ARG1 (t / thing
+                  :ARG2-of (r / result-01)
+                  :manner (i2 / in-vivo)
+                  :manner (i3 / in-vitro)
+                  :mod (t2 / this))))
+
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We investigated the response of melaospheres to chemotherapeutic agents currently used in the treatment of melanoma patients.
+# ::file pmid_2423_8212_116.txt
+# ::date 2015-08-25T14:29:29
+# ::id pmid_2423_8212.116
+(i / investigate-01
+      :ARG0 (w / we)
+      :ARG1 (r / respond-01
+            :ARG0 (m2 / melanosphere)
+            :ARG1 (a / agent
+                  :mod (c2 / chemotherapy)
+                  :ARG1-of (u / use-01
+                        :ARG2 (t / treat-03
+                              :ARG1 (p / person
+                                    :ARG0-of (h / have-org-role-91
+                                          :ARG2 (p2 / patient)))
+                              :ARG2 (m / medical-condition
+                                    :name (n / name :op1 "melanoma")))
+                        :time (c3 / current)))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Melanospheres were exposed to cisplatin, temozolomide, dacarbazine and paclitaxel for 48 hours and cell viability was assessed by MTT assay.
+# ::file pmid_2423_8212_117.txt
+# ::date 2015-08-25T14:33:04
+# ::id pmid_2423_8212.117
+(a / and
+   :op1 (e / expose-01
+           :ARG1 (m / melanosphere)
+           :ARG2 (a2 / and
+                     :op1 (s / small-molecule
+                             :name (n2 / name
+                                       :op1 "cisplatin"))
+                     :op2 (s2 / small-molecule
+                              :name (n3 / name
+                                        :op1 "temozolomide"))
+                     :op3 (s3 / small-molecule
+                              :name (n4 / name
+                                        :op1 "dacarbazine"))
+                     :op4 (s4 / small-molecule
+                              :name (n5 / name
+                                        :op1 "paclitaxel")))
+           :duration (t / temporal-quantity
+                        :quant "48"
+                        :unit (h / hour)))
+   :op1 (a3 / assess-01
+            :ARG0 (a4 / assay-01
+                      :instrument (s5 / small-molecule
+                                      :name (n / name
+                                               :op1 "MTT")))
+            :ARG1 (v / viability
+                     :mod (c2 / cell))))
+
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Overall a weak cytotoxic effect (<40% in all samples and with all drugs) was observed with no therapeutic window as compared to normal melanocytes (Figure <xref ref-type="fig" rid="F2">2</xref>A).
+# ::file pmid_2423_8212_118.txt
+# ::date 2015-08-25T14:39:15
+# ::id pmid_2423_8212.118
+(o / observe-01
+      :ARG1 (a / affect-01
+            :ARG1 (t2 / thing
+                  :ARG1-of (s / sample-01)
+                  :mod (a2 / all))
+            :ARG2 (d2 / drug
+                  :mod a2)
+            :ARG1-of (w / weak-02)
+            :mod (c / cytotoxic)
+            :ARG0-of (h / have-03
+                  :polarity "-"
+                  :ARG1 (w2 / window
+                        :mod (t / therapy)))
+            :degree (l / less-than
+                  :op1 (p / percentage-entity :value "40")))
+      :compared-to (m / melanocyte
+            :ARG1-of (n2 / normal-02))
+      :mod (o2 / overall)
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "2A")))
+
+# ::save-date Tue Aug 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Conversely, differentiated cells were extremely sensitive to cisplatin, in 3 out of 3 samples assessed (Figure <xref ref-type="fig" rid="F2">2</xref>B is a representative sample).
+# ::file pmid_2423_8212_119.txt
+# ::date 2015-08-25T14:47:35
+# ::id pmid_2423_8212.119
+(s / sensitive-03
+   :ARG0 (c / cell
+            :ARG1-of (d / differentiate-101))
+   :ARG1 (s2 / small-molecule
+             :name (n / name
+                      :op1 "cisplatin"))
+   :degree (e / extreme)
+   :location (t / thing
+                :quant "3"
+                :ARG1-of (a / assess-01)
+                :ARG1-of (s3 / sample-01)
+                :ARG1-of (i / include-91
+                            :ARG2 (t2 / thing
+                                      :quant "3"
+                                      :ARG1-of s3)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "2B"
+                         :ARG0-of (r / represent-01
+                                     :ARG1 (t3 / thing
+                                               :ARG1-of s3))))
+   :manner (c2 / converse))
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next investigated the cytotoxic potential of a panel of 80 signaling pathway inhibitors on melanospheres derived from patient #1 and #2 and #3 encompassing inhibitors of RAS/RAF/MEK and PI3K/AKT pathways as well as tyrosine kinase receptors.
+# ::file pmid_2423_8212_120.txt
+# ::date 2015-08-25T14:55:50
+# ::id pmid_2423_8212.120
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (c / capable-01
+            :ARG1 (p / panel
+                     :consist-of (m / molecular-physical-entity
+                                    :quant "80"
+                                    :ARG0-of (i2 / inhibit-01
+                                                 :ARG1 (p2 / pathway
+                                                           :ARG0-of (s / signal-07))))
+                     :ARG0-of (e / encompass-01
+                                 :ARG1 (a3 / and
+                                           :op1 (m3 / molecular-physical-entity
+                                                    :ARG0-of (i3 / inhibit-01
+                                                                 :ARG1 (a2 / and
+                                                                           :op1 (p7 / pathway
+                                                                                    :name (n2 / name
+                                                                                              :op1 "RAS/RAF/MEK"))
+                                                                           :op2 (p8 / pathway
+                                                                                    :name (n3 / name
+                                                                                              :op1 "PI3K/AKT")))))
+                                           :op2 (p9 / protein
+                                                    :name (n4 / name
+                                                              :op1 "tyrosine"
+                                                              :op2 "kinase"
+                                                              :op3 "receptor")))))
+            :ARG2 (c2 / cytotoxic)
+            :beneficiary (m2 / melanosphere
+                             :ARG1-of (d / derive-01
+                                         :ARG2 (a / and
+                                                  :op1 (p3 / person
+                                                           :ARG1-of (h / have-org-role-91
+                                                                       :ARG2 (p4 / patient))
+                                                           :ord (o / ordinal-entity
+                                                                   :value "1"))
+                                                  :op2 (p5 / person
+                                                           :ARG1-of h
+                                                           :ord (o2 / ordinal-entity
+                                                                    :value "2"))
+                                                  :op3 (p6 / person
+                                                           :ARG1-of h
+                                                           :ord (o3 / ordinal-entity
+                                                                    :value "3"))))))
+   :time (n / next))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Only inhibitors of the RAS/RAF/MEK pathway (including the MEK inhibitors PD098059 and U0126 and the Erk2 inhibitor 5-iodotubercidin) showed promising antitumor activity in terms of reduced cell viability, as measured by MTT assay.
+# ::file pmid_2423_8212_121.txt
+# ::date 2015-08-25T15:11:30
+# ::id pmid_2423_8212.121
+(s / show-01
+   :ARG0 (m / molecular-physical-entity
+            :ARG0-of (i / inhibit-01
+                        :ARG1 (p / pathway
+                                 :name (n / name
+                                          :op1 "RAS/RAF/MEK")))
+            :ARG2-of (i2 / include-01
+                         :ARG1 (a / and
+                                  :op1 (s2 / small-molecule
+                                           :name (n2 / name
+                                                     :op1 "PD098059")
+                                           :ARG0-of (i3 / inhibit-01
+                                                        :ARG1 (p3 / protein-family
+                                                                  :name (n5 / name
+                                                                            :op1 "MEK"))
+                                                        :ARG0 s3))
+                                  :op2 (s3 / small-molecule
+                                           :name (n3 / name
+                                                     :op1 "U0126"))
+                                  :op3 (s4 / small-molecule
+                                           :name (n4 / name
+                                                     :op1 "5-iodotubercidin")
+                                           :ARG0-of (i4 / inhibit-01
+                                                        :ARG1 (e / enzyme
+                                                                 :name (n6 / name
+                                                                           :op1 "Erk2"))))))
+            :mod (o / only))
+   :ARG1 (a2 / activity-06
+             :ARG1 (o2 / oppose-01
+                       :ARG1 (t / tumor))
+             :ARG0-of (p2 / promise-01)
+             :topic (v / viability
+                       :mod (c / cell)
+                       :ARG0-of (r / reduce-01)
+                       :ARG1-of (m2 / measure-01
+                                    :ARG0 (a3 / assay-01
+                                              :instrument (s5 / small-molecule
+                                                              :name (n7 / name
+                                                                        :op1 "MTT")))))))
+
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The other drugs, except for the broadly toxic compound staurosporin used as positive control, were nearly unable to reduce cell viability/proliferation, although all compounds were used at doses higher than the described IC<sub>50</sub> in order to enhance their activity.
+# ::file pmid_2423_8212_122.txt
+# ::date 2015-08-25T15:24:24
+# ::id pmid_2423_8212.122
+(p / possible-01
+      :polarity "-"
+      :ARG1 (r / reduce-01
+            :ARG0 (d / drug
+                  :mod (o / other)
+                  :ARG2-of (e / except-01
+                        :ARG1 (c / compound
+                              :name (n / name :op1 "staurosporin")
+                              :mod (t / toxic
+                                    :ARG1-of (b / broad-02))
+                              :ARG1-of (u / use-01
+                                    :ARG2 (c2 / control
+                                          :mod (p2 / positive))))))
+            :ARG1 (s / slash
+                  :op1 (v / viability
+                        :mod (c3 / cell))
+                  :op2 (p3 / proliferate-01
+                        :ARG0 c3)))
+      :concession (u2 / use-01
+            :ARG1 (c4 / compound
+                  :mod (a / all)
+                  :ARG2-of (d2 / dose-01
+                        :ARG1-of (h2 / high-02
+                              :degree (m / more)
+                              :compared-to (t2 / thing
+                                    :name (n2 / name :op1 "IC50")
+                                    :ARG1-of (d3 / describe-01)))))
+            :ARG2 (e2 / enhance-01
+                  :ARG1 (a2 / activity-06
+                        :ARG0 c4)))
+      :mod (n3 / near))
+
+
+# ::save-date Tue Aug 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A similar drug response was observed for the different samples (Figure <xref ref-type="fig" rid="F2">2</xref>C shows a representative one).
+# ::file pmid_2423_8212_123.txt
+# ::date 2015-08-25T15:36:12
+# ::id pmid_2423_8212.123
+(o / observe-01
+      :ARG1 (r / respond-01
+            :ARG0 (d / drug)
+            :ARG1-of (r2 / resemble-01))
+      :location (t / thing
+            :ARG1-of (s / sample-01)
+            :ARG1-of (d2 / differ-02))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f / figure
+                  :mod "2C"
+                  :ARG0-of (s2 / show-01
+                        :ARG1 (t2 / thing
+                              :ARG1-of (s3 / sample-01
+                                    :ARG0-of (r3 / represent-01)))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In line with the melanosphere sensitivity to compounds targeting the MAPK pathways, we observed the activation of this signaling pathway with high levels of phosphorylation of Erk and downstream S6 (Figure <xref ref-type="fig" rid="F2">2</xref>D).
+# ::file pmid_2423_8212_124.txt
+# ::date 2015-08-30T05:03:36
+# ::id pmid_2423_8212.124
+(o / observe-01
+   :ARG0 (w / we)
+   :ARG1 (a / activate-01
+            :ARG1 (p / pathway
+                     :ARG0-of (s / signal-07)
+                     :mod (t / this))
+            :mod (l / level
+                    :ARG1-of (h / high-02
+                                :ARG2 (p2 / phosphorylate-01
+                                          :ARG1 (a2 / and
+                                                    :op1 (e / enzyme
+                                                            :name (n / name
+                                                                     :op1 "Erk"))
+                                                    :op2 (p4 / protein
+                                                             :name (n2 / name
+                                                                       :op1 "S6")
+                                                             :location (d / downstream)))))))
+   :ARG1-of (a3 / align-01
+                :ARG2 (s2 / sensitive-03
+                          :ARG0 (c / cell
+                                   :name (n3 / name
+                                             :op1 "melanosphere"))
+                          :ARG1 (c2 / compound
+                                    :ARG0-of (t2 / target-01
+                                                 :ARG1 (p5 / pathway
+                                                           :name (n4 / name
+                                                                     :op1 "MAPK"))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "2D")))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We also found high levels of Cyclin-D and undetectable p16 (Figure <xref ref-type="fig" rid="F2">2</xref>D).
+# ::file pmid_2423_8212_125.txt
+# ::date 2015-08-30T05:25:39
+# ::id pmid_2423_8212.125
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (l / level
+            :ARG1-of (h / high-02
+                        :ARG2 (a2 / and
+                                  :op1 (p / protein
+                                          :name (n / name
+                                                   :op1 "Cyclin-D"))
+                                  :op2 (p2 / protein
+                                           :name (n2 / name
+                                                     :op1 "p16")
+                                           :ARG1-of (d / detect-01
+                                                       :ARG1-of (p3 / possible-01
+                                                                    :polarity "-"))))))
+   :mod (a / also)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "2D")))
+
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results are in agreement with the frequent alteration of the RAS/RAF/MEK pathway and cell cycle deregulation found in melanomas.
+# ::file pmid_2423_8212_126.txt
+# ::date 2015-08-30T05:31:28
+# ::id pmid_2423_8212.126
+(a / agree-01
+      :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+      :ARG2 (a3 / and
+            :op1 (a2 / alter-01
+                  :ARG1 (p / pathway
+                        :name (n / name :op1 "RAS/RAF/MEK"))
+                  :ARG1-of (f2 / frequent-02))
+            :op1 (d / deregulate-01
+                  :ARG1 (c / cycle
+                        :mod (c2 / cell)))
+            :ARG1-of (f / find-01
+                  :location (m / medical-condition
+                        :name (n2 / name :op1 "melanoma")))))
+
+
+# ::save-date Sat Sep 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Next, we analyzed DNA sequences of genes whose alterations may contribute to the abnormal pathway activation.
+# ::file pmid_2423_8212_127.txt
+# ::date 2015-08-30T05:46:59
+# ::id pmid_2423_8212.127
+(a / analyze-01
+      :ARG0 (w / we)
+      :ARG1 (d / dna-sequence
+            :part-of (g / gene
+                  :poss-of (a2 / alter-01
+                        :ARG0-of (c / contribute-01
+                              :ARG2 (a3 / activate-01
+                                    :ARG1 (p2 / pathway)
+                                    :ARG1-of (n / normal-02 :polarity "-"))
+                              :ARG1-of (p3 / possible-01)))))
+      :time (n2 / next))
+
+# ::save-date Sat Sep 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As reported in the Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>: Table S1, NRAS was never mutated in the analyzed samples.
+# ::file pmid_2423_8212_128.txt
+# ::date 2015-08-30T05:55:22
+# ::id pmid_2423_8212.128
+(m / mutate-01
+   :polarity "-"
+   :ARG1 (e / enzyme
+            :name (n / name
+                     :op1 "NRAS"))
+   :location (t2 / thing
+                 :ARG1-of (a / analyze-01)
+                 :ARG1-of (s / sample-01))
+   :ARG1-of (r / report-01
+               :medium (t / table
+                          :mod "S1"
+                          :part-of (f / file
+                                      :mod "3"
+                                      :mod (a2 / additional))))
+   :time (e2 / ever))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Instead, despite the ubiquitous Erk phosphorylation found in melanospheres, the BRAF-V600E mutation was detected in samples 1, 2 and 4, BRAF-V600K mutation was found in samples 5 and 8, while samples 3, 6 and 7 displayed wild type BRAF.
+# ::file pmid_2423_8212_129.txt
+# ::date 2015-08-30T06:00:34
+# ::id pmid_2423_8212.129
+(h / have-concession-91
+   :ARG1 (a / and
+            :op1 (d / detect-01
+                    :ARG1 (m / mutate-01
+                             :value "V600E"
+                             :ARG2 (e / enzyme
+                                      :name (n3 / name
+                                                :op1 "BRAF")))
+                    :location (a2 / and
+                                  :op1 (t / thing
+                                          :mod "1"
+                                          :ARG1-of (s / sample-01))
+                                  :op2 (t2 / thing
+                                           :mod "2"
+                                           :ARG1-of s)
+                                  :op3 (t3 / thing
+                                           :mod "4"
+                                           :ARG1-of s)))
+            :op2 (f2 / find-01
+                     :ARG1 (m2 / mutate-01
+                               :value "V600K"
+                               :ARG1 e)
+                     :location (a3 / and
+                                   :op1 (t4 / thing
+                                            :mod "5"
+                                            :ARG1-of s)
+                                   :op2 (t5 / thing
+                                            :mod "8"
+                                            :ARG1-of s)))
+            :op3 (d2 / display-01
+                     :ARG0 (a4 / and
+                               :op1 (t6 / thing
+                                        :mod "3"
+                                        :ARG1-of s)
+                               :op2 (t7 / thing
+                                        :mod "6"
+                                        :ARG1-of s)
+                               :op3 (t8 / thing
+                                        :mod "7"
+                                        :ARG1-of s))
+                     :ARG1 (e2 / enzyme
+                               :name (n4 / name
+                                         :op1 "BRAF")
+                               :mod (w / wild-type))))
+   :ARG2 (p / phosphorylate-01
+            :ARG1 (e3 / enzyme
+                      :name (n / name
+                               :op1 "Erk"))
+            :mod (u / ubiquity)
+            :ARG1-of (f / find-01
+                        :location (c / cell
+                                     :name (n2 / name
+                                               :op1 "melanosphere"))))
+   :ARG1-of (i / instead-of-91))
+
+# ::save-date Sat Sep 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All samples displayed wild type PTEN.
+# ::file pmid_2423_8212_130.txt
+# ::date 2015-08-30T06:14:45
+# ::id pmid_2423_8212.130
+(d / display-01
+   :ARG0 (t / thing
+            :mod (a / all)
+            :ARG1-of (s / sample-01))
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "PTEN")
+            :mod (w / wild-type)))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Finally, sequence analysis of the exon 4 and 5 of GNAQ gene, whose mutations have been associated with wild type BRAF and NRAS melanomas, revealed wild type status in all samples (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>: Table S1 and Additional file <xref ref-type="supplementary-material" rid="S4">4</xref>) [<xref ref-type="bibr" rid="B45">45</xref>].
+# ::file pmid_2423_8212_131.txt
+# ::date 2015-08-30T06:16:26
+# ::id pmid_2423_8212.131
+(r / reveal-01
+   :ARG0 (a / analyze-01
+            :ARG1 (a2 / and
+                      :op1 (e / exon
+                              :mod "4")
+                      :op2 (e2 / exon
+                               :mod "5")
+                      :part-of (g / gene
+                                  :name (n / name
+                                           :op1 "GNAQ")
+                                  :poss-of (m / mutate-01
+                                              :ARG1-of (a3 / associate-01
+                                                           :ARG2 (a4 / and
+                                                                     :op1 (m2 / medical-condition
+                                                                              :name (n2 / name
+                                                                                        :op1 "melanoma")
+                                                                              :mod (e3 / enzyme
+                                                                                       :name (n3 / name
+                                                                                                 :op1 "BRAF")
+                                                                                       :mod (w / wild-type)))
+                                                                     :op2 (m3 / medical-condition
+                                                                              :name (n4 / name
+                                                                                        :op1 "melanoma")
+                                                                              :mod (e4 / enzyme
+                                                                                       :name (n5 / name
+                                                                                                 :op1 "NRAS")
+                                                                                       :mod w)))))))
+            :mod (s / sequence))
+   :ARG1 (s2 / status
+             :location (t2 / thing
+                           :mod (a5 / all)
+                           :ARG1-of (s3 / sample-01))
+             :mod w)
+   :ARG1-of (d3 / describe-01
+                :ARG0 (a6 / and
+                          :op1 (t / table
+                                  :mod "S1"
+                                  :part-of (f / file
+                                              :mod "3"
+                                              :mod (a7 / additional)))
+                          :op2 (f2 / file
+                                   :mod "4"
+                                   :mod (a8 / additional))
+                          :op3 (p / publication
+                                  :ARG1-of (c / cite-01
+                                              :ARG2 "45"))))
+   :time (f3 / final))
+
+# ::save-date Sat Sep 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The encouraging activity of the MEK inhibitors used in the pathway inhibitor screening (see above) prompted us to study the antitumor effect of the MEK inhibitor PD0325901 on the melanospheres, based on its antitumor activity described in clinical studies [<xref ref-type="bibr" rid="B16">16</xref>].
+# ::file pmid_2423_8212_133.txt
+# ::date 2015-08-30T06:34:52
+# ::id pmid_2423_8212.133
+(p / prompt-01
+   :ARG0 (a / activity-06
+            :ARG0 (s / small-molecule
+                     :ARG0-of (i / inhibit-01
+                                 :ARG1 (p2 / protein-family
+                                           :name (n / name
+                                                    :op1 "MEK")))
+                     :ARG1-of (u / use-01
+                                 :ARG2 (s2 / screen-01
+                                           :ARG1 (s3 / small-molecule
+                                                     :ARG0-of (i2 / inhibit-01
+                                                                  :ARG1 (p3 / pathway))))))
+            :ARG0-of (e / encourage-01)
+            :ARG1-of (d / describe-01
+                        :location (a2 / above)))
+   :ARG1 (s4 / study-01
+             :ARG0 (w / we)
+             :ARG1 (a3 / affect-01
+                       :ARG0 (s5 / small-molecule
+                                 :name (n2 / name
+                                           :op1 "PD0325901")
+                                 :ARG0-of (i3 / inhibit-01
+                                              :ARG1 p2))
+                       :ARG1 (c / cell
+                                :name (n3 / name
+                                          :op1 "melanosphere"))
+                       :ARG2 (c2 / counter-01
+                                 :ARG1 (t / tumor)))
+             :ARG1-of (b / base-02
+                         :ARG2 (a4 / activity-06
+                                   :ARG0 s5
+                                   :ARG1 c2
+                                   :ARG1-of (d2 / describe-01
+                                                :medium (s6 / study-01
+                                                            :mod (c3 / clinic)
+                                                            :ARG1-of (d3 / describe-01
+                                                                         :ARG0 (p4 / publication
+                                                                                   :ARG1-of (c4 / cite-01
+                                                                                                :ARG2 "16")))))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Following 3 day-exposure to PD0325901, at doses comparable with those achieved <i>in vivo,</i> both wild type and mutated-BRAF cells displayed decreased proliferation/viability, with mutated-BRAF samples being more sensitive to the drug (Figure <xref ref-type="fig" rid="F3">3</xref>A).
+# ::file pmid_2423_8212_134.txt
+# ::date 2015-08-30T06:48:29
+# ::id pmid_2423_8212.134
+(d / display-01
+   :ARG0 (a / and
+            :op1 (c / cell
+                    :mod (e2 / enzyme
+                             :name (n / name
+                                      :op1 "BRAF")
+                             :mod (w / wild-type)))
+            :op2 (c2 / cell
+                     :mod (e3 / enzyme
+                              :name (n2 / name
+                                        :op1 "BRAF")
+                              :ARG2-of (m / mutate-01))))
+   :ARG1 (a4 / and
+             :op1 (o / or
+                     :op1 (p / proliferate-01)
+                     :op2 (v / viability)
+                     :ARG1-of (d2 / decrease-01))
+             :op2 (s2 / sensitive-03
+                      :ARG0 (s3 / sample-01
+                                :mod e3)
+                      :ARG1 "s"
+                      :degree (m2 / more)))
+   :time (a2 / after
+             :op1 (e / expose-01
+                     :ARG1 a
+                     :ARG2 (s / small-molecule
+                              :name (n3 / name
+                                        :op1 "PD0325901")
+                              :quant (d4 / dose
+                                         :ARG1-of (c3 / comparable-03
+                                                      :ARG2 (d5 / dose
+                                                                :ARG1-of (a3 / achieve-01
+                                                                             :manner (i / in-vivo)))))
+                              :ARG2-of (d8 / dose-01))
+                     :duration (t / temporal-quantity
+                                  :quant "3"
+                                  :unit (d3 / day))))
+   :ARG1-of (d7 / describe-01
+                :ARG0 (f / figure
+                         :mod "3A")))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to distinguish the cytostatic from the cytotoxic effect and to unravel the molecular mechanisms of PD0325901 antitumor activity against malenospheres, we first performed cell cycle analysis of control and treated samples.
+# ::file pmid_2423_8212_135.txt
+# ::date 2015-08-30T06:58:03
+# ::id pmid_2423_8212.135
+(p / perform-02
+   :ARG0 (w / we)
+   :ARG1 (a / analyze-01
+            :ARG1 (a2 / and
+                      :op1 (t3 / thing
+                               :mod (c3 / control)
+                               :ARG1-of (s2 / sample-01
+                                            :ARG1 t4))
+                      :op2 (t4 / thing
+                               :ARG1-of (t / treat-04)))
+            :mod (c / cycle
+                    :mod (c2 / cell)))
+   :purpose (a3 / and
+                :op1 (d / distinguish-01
+                        :ARG0 w
+                        :ARG1 (a4 / affect-01
+                                  :ARG2 (c4 / cytostasis))
+                        :ARG2 (a5 / affect-01
+                                  :ARG2 (c5 / cytotoxicity)))
+                :op2 (u / unravel-01
+                        :ARG0 w
+                        :ARG1 (m / mechanism
+                                 :mod (m2 / molecule)
+                                 :poss (a6 / activity-06
+                                           :ARG0 (s3 / small-molecule
+                                                     :name (n / name
+                                                              :op1 "PD0325901"))
+                                           :ARG1 (c6 / counter-01
+                                                     :ARG1 (t2 / tumor))
+                                           :ARG0-of (c7 / counter-01
+                                                        :ARG1 (c8 / cell
+                                                                  :name (n2 / name
+                                                                            :op1 "melanosphere")))))))
+   :time (f / first))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt After short exposure (2 days), PD0325901 greatly affected cell cycle progression by determining accumulation of cells in the G1 phase, both in the wild type and mutated-BRAF samples (Figure <xref ref-type="fig" rid="F3">3</xref>B).
+# ::file pmid_2423_8212_136.txt
+# ::date 2015-08-30T09:42:21
+# ::id pmid_2423_8212.136
+(a / affect-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "PD0325901"))
+   :ARG1 (p / progress-01
+            :ARG1 (c / cycle
+                     :mod (c2 / cell)))
+   :ARG2 (d / determine-01
+            :ARG0 s
+            :ARG1 (a2 / accumulate-01
+                      :ARG1 (c3 / cell)
+                      :time (e2 / event
+                                :name (n4 / name
+                                          :op1 "G1"
+                                          :op2 "phase")))
+            :location (a3 / and
+                          :op1 (t2 / thing
+                                   :mod (e3 / enzyme
+                                            :name (n2 / name
+                                                      :op1 "BRAF")
+                                            :mod (w / wild-type))
+                                   :ARG1-of (s2 / sample-01
+                                                :ARG1 t3))
+                          :op2 (t3 / thing
+                                   :mod (e4 / enzyme
+                                            :name (n3 / name
+                                                      :op1 "BRAF")
+                                            :ARG2-of (m / mutate-01)))))
+   :manner (g / great)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "3B"))
+   :time (a4 / after
+             :op1 (e / expose-01
+                     :ARG1-of (s4 / short-07))
+             :duration (t / temporal-quantity
+                          :quant "2"
+                          :unit (d3 / day))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At the molecular level, together with a striking decrease in Cyclin D levels which is in line with the observed cell cycle arrest, treated samples displayed a decline in Erk and S6 phosphorylation, thus, proving MEK signaling inhibition by PD0325901 (Figure <xref ref-type="fig" rid="F3">3</xref>C).
+# ::file pmid_2423_8212_137.txt
+# ::date 2015-08-30T09:54:58
+# ::id pmid_2423_8212.137
+(d / display-01
+   :ARG0 (t2 / thing
+             :ARG1-of (t / treat-04)
+             :ARG1-of (s / sample-01))
+   :ARG1 (a5 / and
+             :op1 (d2 / decline-01
+                      :ARG1 (p / phosphorylate-01
+                               :ARG1 (a / and
+                                        :op1 (e / enzyme
+                                                :name (n / name
+                                                         :op1 "Erk"))
+                                        :op2 (p3 / protein
+                                                 :name (n2 / name
+                                                           :op1 "S6")))))
+             :op2 (d3 / decrease-01
+                      :ARG1 (l2 / level
+                                :quant-of (p6 / protein
+                                              :name (n5 / name
+                                                        :op1 "Cyclin"
+                                                        :op2 "D")))
+                      :ARG1-of (s4 / strike-04)
+                      :ARG1-of (a3 / align-01
+                                   :ARG2 (a4 / arrest-02
+                                             :ARG1 (c2 / cycle
+                                                       :mod (c3 / cell))
+                                             :ARG1-of (o / observe-01)))))
+   :ARG0-of (c / cause-01
+               :ARG1 (p4 / prove-01
+                         :ARG1 (i / inhibit-01
+                                  :ARG0 (s2 / small-molecule
+                                            :name (n3 / name
+                                                      :op1 "PD0325901"))
+                                  :ARG1 (s3 / signal-07
+                                            :ARG0 (p5 / pathway
+                                                      :name (n4 / name
+                                                                :op1 "MEK"))))))
+   :location (l / level
+                :mod (m / molecule))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (f / figure
+                         :mod "3C")))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Given that PD0325901 may induce apoptosis in melanoma cell lines, we investigated whether a similar mechanism could account for the reduced number of viable cells in PD0325901-treated melanosphere samples [<xref ref-type="bibr" rid="B17">17</xref>].
+# ::file pmid_2423_8212_138.txt
+# ::date 2015-08-30T10:07:11
+# ::id pmid_2423_8212.138
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (p3 / possible-01
+             :mode "interrogative"
+             :ARG1 (a / account-01
+                      :ARG0 (m / mechanism
+                               :ARG1-of (r / resemble-01))
+                      :ARG1 (n / number-01
+                               :ARG1 (c / cell
+                                        :mod (v / viable))
+                               :ARG1-of (r2 / reduce-01)
+                               :location (s / sample-01
+                                            :ARG1 (c2 / cell
+                                                      :name (n2 / name
+                                                                :op1 "melanosphere"))
+                                            :ARG1-of (t / treat-04
+                                                        :ARG2 (s2 / small-molecule
+                                                                  :name (n3 / name
+                                                                            :op1 "PD0325901")))))))
+   :ARG1-of (c3 / cause-01
+                :ARG0 (p / possible-01
+                         :ARG1 (i2 / induce-01
+                                   :ARG0 s2
+                                   :ARG2 (a2 / apoptosis)
+                                   :location (c4 / cell-line
+                                                 :mod (m2 / medical-condition
+                                                          :name (n4 / name
+                                                                    :op1 "melanoma"))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p2 / publication
+                          :ARG1-of (c5 / cite-01
+                                       :ARG2 "17"))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Indeed, PD0325901-treated mutant-BRAF melanospheres contained a high fraction of apoptotic annexin V-positive cells compared to control samples.
+# ::file pmid_2423_8212_139.txt
+# ::date 2015-08-30T10:14:34
+# ::id pmid_2423_8212.139
+(c / contain-01
+   :ARG0 (c2 / cell
+             :name (n / name
+                      :op1 "melanosphere")
+             :mod (e / enzyme
+                     :name (n2 / name
+                               :op1 "BRAF")
+                     :ARG2-of (m / mutate-01))
+             :ARG1-of (t / treat-04
+                         :ARG2 (s / small-molecule
+                                  :name (n3 / name
+                                            :op1 "PD0335901"))))
+   :ARG1 (f / fraction
+            :ARG1-of (h / high-02)
+            :quant-of (c3 / cell
+                          :mod (p / positive
+                                  :mod (p2 / protein
+                                           :name (n4 / name
+                                                     :op1 "annexin"
+                                                     :op2 "V")))
+                          :mod (a / apoptosis))
+            :compared-to (t2 / thing
+                             :mod (c4 / control)
+                             :ARG1-of (s2 / sample-01)))
+   :mod (i / indeed))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, PD0325901 treated wild type-BRAF melanospheres did not show such a dramatic increase (Figure <xref ref-type="fig" rid="F3">3</xref>D).
+# ::file pmid_2423_8212_140.txt
+# ::date 2015-08-30T10:21:09
+# ::id pmid_2423_8212.140
+(c3 / contrast-01
+    :ARG2 (s / show-01
+             :polarity "-"
+             :ARG0 (c / cell
+                      :name (n / name
+                               :op1 "melanosphere")
+                      :ARG1-of (t / treat-04
+                                  :ARG2 (s2 / small-molecule
+                                            :name (n2 / name
+                                                      :op1 "PD0325901")))
+                      :mod (e / enzyme
+                              :name (n3 / name
+                                        :op1 "BRAF")
+                              :mod (w / wild-type)))
+             :ARG1 (i / increase-01
+                      :ARG2 (d / dramatic)))
+    :ARG1-of (d2 / describe-01
+                 :ARG0 (f / figure
+                          :mod "3D")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Importantly, we found that both wild type and mutated-BRAF melanoma differentiated cells, were exquisitely sensitive to the drug, as indicated by the high fraction of sub-diploid cells detected in treated samples stained with Propidium Iodide (Figure <xref ref-type="fig" rid="F3">3</xref>E).
+# ::file pmid_2423_8212_141.txt
+# ::date 2015-08-30T10:24:42
+# ::id pmid_2423_8212.141
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (s / sensitive-03
+            :ARG0 (a / and
+                     :op1 (c / cell
+                             :ARG1-of (d / differentiate-01)
+                             :mod (m2 / medical-condition
+                                      :name (n / name
+                                               :op1 "melanoma"))
+                             :mod (e2 / enzyme
+                                      :name (n2 / name
+                                                :op1 "BRAF")
+                                      :ARG2-of (m / mutate-01)))
+                     :op2 (c2 / cell
+                              :ARG1-of d
+                              :mod m2
+                              :mod (w2 / wild-type)))
+            :ARG1 (d3 / drug)
+            :manner (e / exquisite)
+            :ARG1-of (i / indicate-01
+                        :ARG0 (f2 / fraction
+                                  :ARG1-of (h / high-02)
+                                  :quant-of (c3 / cell
+                                                :mod (s2 / sub-diploid)
+                                                :ARG1-of (d4 / detect-01
+                                                             :location (t2 / thing
+                                                                           :ARG1-of (t / treat-04)
+                                                                           :ARG1-of (s4 / stain-01
+                                                                                        :ARG2 (s5 / small-molecule
+                                                                                                  :name (n3 / name
+                                                                                                            :op1 "Propidium"
+                                                                                                            :op2 "Iodide")))
+                                                                           :ARG1-of (s3 / sample-01)))))))
+   :mod (i2 / important)
+   :ARG1-of (d5 / describe-01
+                :ARG0 (f3 / figure
+                          :mod "3E")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This additional apoptosis assay confirmed that, at the level of melanospheres, only mutated-BRAF cells rapidly underwent PD0325901-induced apoptosis, while apoptotic hypodiploid DNA-cells were almost absent in the treated wild type-BRAF cells (Figure <xref ref-type="fig" rid="F3">3</xref>E).
+# ::file pmid_2423_8212_142.txt
+# ::date 2015-08-30T10:33:51
+# ::id pmid_2423_8212.142
+(c / confirm-01
+   :ARG0 (a / assay-01
+            :ARG1 (a2 / apoptosis)
+            :mod (a3 / additional)
+            :mod (t / this))
+   :ARG1 (c3 / contrast-01
+             :ARG1 (u / undergo-28
+                      :ARG1 (c2 / cell
+                                :mod (e2 / enzyme
+                                         :name (n / name
+                                                  :op1 "BRAF")
+                                         :ARG2-of (m / mutate-01))
+                                :mod (o / only))
+                      :ARG2 (a4 / apoptosis
+                                :ARG2-of (i / induce-01
+                                            :ARG0 (s / small-molecule
+                                                     :name (n2 / name
+                                                               :op1 "PD0325901"))))
+                      :manner (r / rapid))
+             :ARG2 (a5 / absent-01
+                       :ARG1 (c4 / cell
+                                 :mod (h / hypodiploid)
+                                 :mod (a6 / apoptosis)
+                                 :mod (n5 / nucleic-acid
+                                          :name (n6 / name
+                                                    :op1 "DNA")))
+                       :ARG2 (c5 / cell
+                                 :mod (e / enzyme
+                                         :name (n3 / name
+                                                   :op1 "BRAF")
+                                         :mod (w / wild-type))
+                                 :ARG1-of (t2 / treat-04))
+                       :degree (a7 / almost))
+             :location (l / level
+                          :mod (c6 / cell
+                                   :name (n4 / name
+                                             :op1 "melanosphere"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3E")))
+
+# ::save-date Wed Jan 20, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results indicate that PD0325901 exerted strong cytotoxic activity against mutant-BRAF melanospheres, and a strong cytostatic activity against wild type-BRAF melanospheres, where cytotoxicity played a minor role.
+# ::file pmid_2423_8212_143.txt
+# ::date 2015-08-30T10:41:43
+# ::id pmid_2423_8212.143
+(i / indicate-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG1 (e / exert-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "PD0325901"))
+            :ARG1 (a / and
+                     :op1 (a2 / activity-06
+                              :ARG1 (c / cytotoxicity)
+                              :ARG1-of (s2 / strong-02
+                                           :ARG1 a3)
+                              :ARG0-of (c3 / counter-01
+                                           :ARG1 (c2 / cell
+                                                     :name (n2 / name
+                                                               :op1 "melanosphere")
+                                                     :mod (e2 / enzyme
+                                                              :name (n3 / name
+                                                                        :op1 "BRAF")
+                                                              :ARG2-of (m / mutate-01)))))
+                     :op2 (a3 / activity-06
+                              :ARG1 (c4 / cytostasis)
+                              :ARG0-of (c5 / counter-01
+                                           :ARG1 (c6 / cell
+                                                     :name (n4 / name
+                                                               :op1 "melanosphere")
+                                                     :mod (e3 / enzyme
+                                                              :name (n5 / name
+                                                                        :op1 "BRAF")
+                                                              :mod (w / wild-type))
+                                                     :location-of (p / play-02
+                                                                     :ARG0 (c7 / cytotoxicity)
+                                                                     :ARG1 (r2 / role
+                                                                               :ARG1-of (m2 / minor-01)))))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, differentiated melanoma cells were efficiently killed by PD0325901, regardless BRAF status (Figure <xref ref-type="fig" rid="F3">3</xref>E).
+# ::file pmid_2423_8212_144.txt
+# ::date 2015-08-30T10:48:50
+# ::id pmid_2423_8212.144
+(c3 / contrast-01
+    :ARG2 (k / kill-01
+             :ARG0 (s / small-molecule
+                      :name (n2 / name
+                                :op1 "PD0325901"))
+             :ARG1 (c / cell
+                      :ARG1-of (d / differentiate-01)
+                      :mod (m / medical-condition
+                              :name (n / name
+                                       :op1 "melanoma")))
+             :ARG2-of (e / efficient-01)
+             :concession (s2 / status
+                             :mod (e2 / enzyme
+                                      :name (n3 / name
+                                                :op1 "BRAF"))))
+    :ARG1-of (d3 / describe-01
+                 :ARG0 (f / figure
+                          :mod "3E")))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We investigated the activity of PD0325901 against melanosphere-generated subcutaneous xenografts.
+# ::file pmid_2423_8212_146.txt
+# ::date 2015-08-30T10:58:12
+# ::id pmid_2423_8212.146
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (a / activity-06
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "PD0325901"))
+            :ARG0-of (c / counter-01
+                        :ARG1 (x / xenograft
+                                 :mod (s2 / subcutaneous)
+                                 :ARG1-of (g / generate-01
+                                             :ARG2 (c2 / cell
+                                                       :name (n2 / name
+                                                                 :op1 "melanosphere")))))))
+
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Doses of 25 or 12.5 mg/Kg were investigated in order to define a well tolerated dose with reduced toxicity and maximum antitumor activity, as the optimal doses and schedules for antitumor activity in the absence of toxicity was not previously determined in cancer patients.
+# ::file pmid_2423_8212_147.txt
+# ::date 2015-08-30T13:05:46
+# ::id pmid_2423_8212.147
+(i / investigate-01
+      :ARG1 (d / dose
+            :quant (c / concentration-quantity
+                  :quant (o / or :op1 "25" :op2 "12.5")
+                  :unit (m / milligram-per-kilogram)))
+      :purpose (d2 / define-01
+            :ARG1 (d3 / dose
+                  :ARG1-of (t / tolerate-01
+                        :ARG1-of (w / well-09))
+                  :ARG0-of (h2 / have-03
+                        :ARG1 (a5 / and
+                              :op1 (t2 / toxicity
+                                    :ARG1-of (r / reduce-01))
+                              :op2 (a / activity-06
+                                    :ARG1 (c2 / counter-01
+                                          :ARG1 (t3 / tumor))
+                                    :degree (m2 / maximum))))))
+      :ARG1-of (c3 / cause-01
+            :ARG0 (d4 / determine-01
+                  :polarity "-"
+                  :ARG1 (a2 / and
+                        :op1 (d5 / dose
+                              :mod (o2 / optimal))
+                        :op2 (s / schedule
+                              :mod o2)
+                        :beneficiary (a3 / activity-06
+                              :ARG1 c2))
+                  :time (p / previous)
+                  :condition (a4 / absent-01
+                        :ARG1 (t5 / toxicity))
+                  :location (p2 / person
+                        :ARG0-of (h / have-rel-role-91
+                              :ARG2 (p3 / patient))
+                        :mod (c5 / cancer)))))
+
+
+# ::save-date Sat Sep 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We chose the bi-weekly treatment schedule for drug administration based on previously published results showing high systemic toxicity occurring during daily drug administration [<xref ref-type="bibr" rid="B46">46</xref>] and as we previously experienced similar results in mice (results not shown).
+# ::file pmid_2423_8212_148.txt
+# ::date 2015-08-30T13:16:43
+# ::id pmid_2423_8212.148
+(c / choose-01
+      :ARG0 (w / we)
+      :ARG1 (s / schedule-01
+            :ARG0 w
+            :ARG1 (t / treat-04)
+            :ARG2 (a / administer-01
+                  :ARG1 (d / drug))
+            :ARG3 (r / rate-entity-91
+                  :ARG1 "1"
+                  :ARG2 (t2 / temporal-quantity
+                        :quant "2"
+                        :unit (w2 / week))))
+      :ARG1-of (b / base-02
+            :ARG2 (a3 / and
+                  :op1 (t3 / thing
+                        :ARG2-of (r2 / result-01)
+                        :ARG1-of (p4 / publish-01
+                              :time (p / previous))
+                        :ARG0-of (s2 / show-01
+                              :ARG1 (t4 / toxicity
+                                    :mod (s3 / systemic)
+                                    :time (a2 / administer-01
+                                          :ARG1 d
+                                          :frequency (r3 / rate-entity-91
+                                                :ARG3 (t5 / temporal-quantity
+                                                      :quant "1"
+                                                      :unit (d2 / day))))))
+                        :ARG1-of (h / high-02)
+                        :ARG1-of (d3 / describe-01
+                              :ARG0 (p2 / publication
+                                    :ARG1-of (c2 / cite-01 :ARG2 "46"))))
+                  :op2 (e2 / experience-01
+                        :ARG0 w
+                        :ARG1 (t6 / thing
+                              :ARG2-of (r4 / result-01)
+                              :ARG1-of (r5 / resemble-01)
+                              :location (m / mouse)
+                              :ARG1-of (s4 / show-01 :polarity "-"))
+                        :time p))))
+
+# ::save-date Sat Sep 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PD0325901 administration, by oral gavage, caused a striking reduction in tumor growth at both drug doses, displaying stronger activity for the higher dose (Figure <xref ref-type="fig" rid="F4">4</xref>A and Additional file <xref ref-type="supplementary-material" rid="S5">5</xref>: Figure S3A).
+# ::file pmid_2423_8212_149.txt
+# ::date 2015-08-30T13:32:39
+# ::id pmid_2423_8212.149
+(c / cause-01
+   :ARG0 (a / administer-01
+            :ARG1 (s / small-molecule
+                     :name (n / name
+                              :op1 "PD0325901"))
+            :medium (m / mouth)
+            :ARG0-of (d3 / display-01
+                         :ARG1 (a2 / activity-06
+                                   :ARG0 (d4 / dose
+                                             :ARG1-of (h / high-02
+                                                         :degree "m2"))
+                                   :ARG1-of (s3 / strong-02
+                                                :degree (m2 / more)))))
+   :ARG1 (r / reduce-01
+            :ARG1 (g / grow-01
+                     :ARG1 (t / tumor)
+                     :condition (d / dose-01
+                                   :ARG1 (d2 / drug)
+                                   :mod (b / both)))
+            :ARG1-of (s2 / strike-04))
+   :ARG1-of (d5 / describe-01
+                :ARG0 (a3 / and
+                          :op1 (f / figure
+                                  :mod "4A")
+                          :op2 (f2 / figure
+                                   :mod "S3A"
+                                   :part-of (f3 / file
+                                                :mod "5"
+                                                :mod (a4 / additional))))))
+
+
+# ::save-date Sat Sep 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Importantly, treated mice did not exhibit signs of toxicity under this treatment schedule.
+# ::file pmid_2423_8212_150.txt
+# ::date 2015-08-30T13:42:57
+# ::id pmid_2423_8212.150
+(e / exhibit-01
+      :polarity "-"
+      :ARG0 (m / mouse
+            :ARG1-of (t / treat-04))
+      :ARG1 (s / signal-07
+            :ARG1 (t2 / toxicity))
+      :condition (s2 / schedule-01
+            :ARG1 (t3 / treat-04)
+            :mod (t4 / this))
+      :mod (i / important))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Immunoblot analysis of xenografts displayed markedly reduced levels of Erk and downstream S6 phosphorylation in treated tumors, indicating that PD0325901 levels reached <i>in vivo</i> were sufficient to achieve almost complete Erk inactivation and that the effects observed on tumors were caused by specific PD0325901 activity (Additional file <xref ref-type="supplementary-material" rid="S5">5</xref>: Figure S3B).
+# ::file pmid_2423_8212_151.txt
+# ::date 2015-08-30T13:44:41
+# ::id pmid_2423_8212.151
+(d / display-01
+   :ARG0 (a / analyze-01
+            :ARG1 (x / xenograft)
+            :mod (i / immunoblot-01))
+   :ARG1 (l / level
+            :degree-of (p2 / phosphorylate-01
+                           :ARG1 (a3 / and
+                                     :op1 (e / enzyme
+                                             :name (n / name
+                                                      :op1 "Erk"))
+                                     :op2 (p3 / protein
+                                              :name (n2 / name
+                                                        :op1 "S6")
+                                              :location (d2 / downstream))))
+            :ARG1-of (r / reduce-01
+                        :ARG2 (m / marked))
+            :location (t / tumor
+                         :ARG1-of (t2 / treat-04)))
+   :ARG0-of (i2 / indicate-01
+                :ARG1 (a6 / and
+                          :op1 (s2 / suffice-01
+                                   :ARG0 (l2 / level
+                                             :quant-of (s / small-molecule
+                                                          :name (n3 / name
+                                                                    :op1 "PD0325901"))
+                                             :ARG1-of (r2 / reach-01
+                                                          :manner (i3 / in-vivo)))
+                                   :ARG1 (a2 / achieve-01
+                                             :ARG0 l2
+                                             :ARG1 (a4 / activate-01
+                                                       :polarity "-"
+                                                       :ARG1 e
+                                                       :ARG1-of (c / complete-02
+                                                                   :degree (a5 / almost)))))
+                          :op2 (c2 / cause-01
+                                   :ARG0 (a8 / activity-06
+                                             :ARG0 s
+                                             :ARG1-of (s3 / specific-02))
+                                   :ARG1 (a7 / affect-01
+                                             :ARG1-of (o / observe-01
+                                                         :location (t3 / tumor))))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "S3B"
+                         :part-of (f2 / file
+                                      :mod "5"
+                                      :mod (a9 / additional)))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Immunohistochemistry analysis of xenografts revealed decreased proliferation rates for treated tumors (lower Ki-67 expression in comparison with control tumors) and reduced activation of the Mek/Erk pathway (lower Erk phosphorylation) (Figure <xref ref-type="fig" rid="F4">4</xref>B).
+# ::file pmid_2423_8212_152.txt
+# ::date 2015-08-30T13:56:51
+# ::id pmid_2423_8212.152
+(r / reveal-01
+   :ARG0 (a / analyze-01
+            :ARG1 (x / xenograft)
+            :mod (i / immunohistochemistry))
+   :ARG1 (a2 / and
+             :op1 (r2 / rate
+                      :degree-of (p / proliferate-01
+                                    :ARG0 (t / tumor
+                                             :ARG1-of (t2 / treat-04)))
+                      :ARG1-of (d / decrease-01)
+                      :ARG1-of (m2 / mean-01
+                                   :ARG2 (e / express-03
+                                            :ARG2 (p2 / protein
+                                                      :name (n / name
+                                                               :op1 "Ki-67"))
+                                            :ARG1-of (l / low-04
+                                                        :degree (m / more)
+                                                        :ARG1-of (c / compare-01
+                                                                    :ARG2 (t3 / tumor
+                                                                              :mod (c2 / control)))))))
+             :op2 (a3 / activate-01
+                      :ARG1 (p3 / pathway
+                                :name (n2 / name
+                                          :op1 "Mek/Erk"))
+                      :ARG1-of (r3 / reduce-01)
+                      :ARG1-of (m3 / mean-01
+                                   :ARG2 (p4 / phosphorylate-01
+                                             :ARG1 (e2 / enzyme
+                                                       :name (n3 / name
+                                                                 :op1 "Erk"))
+                                             :ARG1-of (l2 / low-04
+                                                          :degree m)))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "4B")))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, staining with murine CD34 antibody demonstrated a strong inhibitory effect of PD0325901 on tumor vascularization, as control tumors contained large vessels, while treated tumors displayed drastically compromised vasculature composed by minuscule vessels (Figure <xref ref-type="fig" rid="F4">4</xref>B).
+# ::file pmid_2423_8212_153.txt
+# ::date 2015-08-30T15:22:02
+# ::id pmid_2423_8212.153
+(a2 / and
+    :op2 (d / demonstrate-01
+            :ARG0 (s / stain-01
+                     :ARG2 (a3 / antibody
+                               :ARG0-of (c2 / counter-01
+                                            :ARG1 (p / protein
+                                                     :name (n / name
+                                                              :op1 "CD34")
+                                                     :mod (o / organism
+                                                             :name (n3 / name
+                                                                       :op1 "Muridae"))))))
+            :ARG1 (a / affect-01
+                     :ARG0 (s2 / small-molecule
+                               :name (n2 / name
+                                         :op1 "PD0325901"))
+                     :ARG1 (v / vascularize-01
+                              :ARG1 (t / tumor))
+                     :ARG2 (i / inhibit-01)
+                     :ARG1-of (s3 / strong-02)
+                     :ARG1-of (c / cause-01
+                                 :ARG0 (c7 / contrast-01
+                                           :ARG1 (c3 / contain-01
+                                                     :ARG0 (t2 / tumor
+                                                               :mod (c4 / control))
+                                                     :ARG1 (v2 / vessel
+                                                               :mod (l / large)))
+                                           :ARG2 (d2 / display-01
+                                                     :ARG0 (t3 / tumor
+                                                               :ARG1-of (t4 / treat-04))
+                                                     :ARG1 (v3 / vasculature
+                                                               :ARG1-of (c5 / compromise-02
+                                                                            :manner (d3 / drastic))
+                                                               :ARG1-of (c6 / compose-01
+                                                                            :ARG2 (v4 / vessel
+                                                                                      :mod (m / minuscule)))))))))
+    :ARG1-of (d4 / describe-01
+                 :ARG0 (f / figure
+                          :mod "4B")))
+
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A decrease of tumor vascularization appeared also by macroscopic observation of the tumors (Additional file <xref ref-type="supplementary-material" rid="S5">5</xref>: Figure S3A).
+# ::file pmid_2423_8212_154.txt
+# ::date 2015-08-30T15:35:30
+# ::id pmid_2423_8212.154
+(a / appear-01
+      :ARG1 (d / decrease-01
+            :ARG1 (v / vascularize-01
+                  :ARG1 (t / tumor)))
+      :mod (a2 / also)
+      :manner (o / observe-01
+            :ARG1 t
+            :mod (m / macroscopy))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure
+                  :mod "S3A"
+                  :part-of (f2 / file
+                        :mod "5"
+                        :mod (a3 / additional)))))
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Importantly, similar results were obtained when xenografts were generated by wild type-BRAF melanospheres indicating that this strategy might constitute a potentially exploitable therapeutic approach both for mutated-BRAF and wild type-BRAF melanoma patients (Figure <xref ref-type="fig" rid="F4">4</xref>C and D).
+# ::file pmid_2423_8212_155.txt
+# ::date 2015-08-30T15:38:14
+# ::id pmid_2423_8212.155
+(o / obtain-01
+   :ARG1 (t / thing
+            :ARG2-of (r / result-01)
+            :ARG1-of (r2 / resemble-01))
+   :time (g / generate-01
+            :ARG0 (c / cell
+                     :wiki "-"
+                     :name (n / name
+                              :op1 "melanosphere")
+                     :mod (e3 / enzyme
+                              :wiki "-"
+                              :name (n2 / name
+                                        :op1 "BRAF")
+                              :mod (w / wild-type)))
+            :ARG1 (x / xenograft))
+   :ARG0-of (i / indicate-01
+               :ARG1 (p / possible-01
+                        :ARG1 (c2 / constitute-01
+                                  :ARG0 (s / strategy
+                                           :mod (t2 / this))
+                                  :ARG1 (a / approach-02
+                                           :ARG1-of (e / exploit-01
+                                                       :ARG1-of (p2 / possible-01)
+                                                       :manner (p5 / potential))
+                                           :mod (t3 / therapy)
+                                           :beneficiary (a4 / and
+                                                            :op1 (p3 / person
+                                                                     :ARG0-of (h2 / have-rel-role-91
+                                                                                  :ARG2 (p6 / patient))
+                                                                     :mod (m2 / medical-condition
+                                                                              :wiki "Melanoma"
+                                                                              :name (n3 / name
+                                                                                        :op1 "melanoma")
+                                                                              :mod (e2 / enzyme
+                                                                                       :wiki "-"
+                                                                                       :name (n4 / name
+                                                                                                 :op1 "BRAF")
+                                                                                       :ARG2-of (m / mutate-01))))
+                                                            :op2 (p4 / person
+                                                                     :ARG0-of (h3 / have-rel-role-91
+                                                                                  :ARG2 p6)
+                                                                     :mod (m3 / medical-condition
+                                                                              :wiki "Melanoma"
+                                                                              :name (n5 / name
+                                                                                        :op1 "melanoma")
+                                                                              :mod e3)))))))
+   :mod (i2 / important)
+   :ARG1-of (d3 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f2 / figure
+                                   :mod "4C")
+                          :op2 (f3 / figure
+                                   :mod "4D"))))
+
+# ::save-date Sat Sep 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Immunoblot analysis showed that VEGF levels were lower in treated-melanospheres (Figure <xref ref-type="fig" rid="F4">4</xref>E) and immunohistochemistry analysis showed that PD0325901-treated xenografts expressed reduced levels of VEGF in comparison with control tumors (Figure <xref ref-type="fig" rid="F4">4</xref>F).
+# ::file pmid_2423_8212_156.txt
+# ::date 2015-08-30T15:46:34
+# ::id pmid_2423_8212.156
+(a / and
+   :op1 (s / show-01
+           :ARG0 (a2 / analyze-01
+                     :mod (i / immunoblot-01))
+           :ARG1 (l / level
+                    :quant-of (p / protein
+                                 :name (n / name
+                                          :op1 "VEGF"))
+                    :ARG1-of (l2 / low-04
+                                 :degree (m / more))
+                    :location (c / cell
+                                 :name (n2 / name
+                                           :op1 "melanosphere")
+                                 :ARG1-of (t / treat-04))
+                    :ARG1-of (d / describe-01
+                                :ARG0 (f / figure
+                                         :mod "4E"))))
+   :op2 (s2 / show-01
+            :ARG0 (a3 / analyze-01
+                      :mod (i2 / immunohistochemistry))
+            :ARG1 (e / express-03
+                     :ARG2 (l3 / level
+                               :quant-of p
+                               :ARG1-of (r / reduce-01)
+                               :ARG1-of (c2 / compare-01
+                                            :ARG2 (t3 / tumor
+                                                      :mod (c3 / control))))
+                     :ARG3 (x / xenograft
+                              :ARG1-of (t2 / treat-04
+                                           :ARG2 (s3 / small-molecule
+                                                     :name (n3 / name
+                                                               :op1 "PD0325901"))))
+                     :ARG1-of (d2 / describe-01
+                                  :ARG0 (f2 / figure
+                                            :mod "4F")))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results were obtained both for mutated BRAF and wild type BRAF melanospheres and xenografts and suggest that Mek inhibition might determine, together with a direct cytotoxic/cytostatic effect on tumor cells, a reduction of the tumor cell-dependent pro-angiogenic activity <i>in vivo.</i>
+# ::file pmid_2423_8212_157.txt
+# ::date 2015-08-30T16:36:39
+# ::id pmid_2423_8212.157
+(a / and
+   :op1 (o / obtain-01
+           :ARG1 (t / thing
+                    :ARG2-of (r / result-01)
+                    :mod (t2 / this))
+           :beneficiary (a2 / and
+                            :op1 (a3 / and
+                                     :op1 (c / cell
+                                             :name (n / name
+                                                      :op1 "melanosphere")
+                                             :mod (e2 / enzyme
+                                                      :name (n2 / name
+                                                                :op1 "BRAF")
+                                                      :ARG2-of (m / mutate-01)))
+                                     :op2 (c2 / cell
+                                              :name (n3 / name
+                                                        :op1 "melanosphere")
+                                              :mod (e / enzyme
+                                                      :name (n4 / name
+                                                                :op1 "BRAF")
+                                                      :mod (w / wild-type))))
+                            :op2 (x / xenograft)))
+   :op2 (s / suggest-01
+           :ARG0 t
+           :ARG1 (p / possible-01
+                    :ARG1 (d / determine-01
+                             :ARG0 (i / inhibit-01
+                                      :ARG1 (e3 / enzyme
+                                                :name (n5 / name
+                                                          :op1 "Mek"))
+                                      :ARG1-of (a4 / accompany-01
+                                                   :ARG0 (a5 / affect-01
+                                                             :ARG1 (c5 / cell
+                                                                       :mod (t3 / tumor))
+                                                             :ARG2 (o2 / or
+                                                                       :op1 (c3 / cytotoxicity)
+                                                                       :op2 (c4 / cytostasis))
+                                                             :ARG1-of (d2 / direct-02))))
+                             :ARG1 (r2 / reduce-01
+                                       :ARG1 (a6 / activity-06
+                                                 :ARG0-of (d3 / depend-01
+                                                              :ARG1 c5)
+                                                 :manner (i2 / in-vivo)
+                                                 :ARG0-of (f / favor-01
+                                                             :ARG1 (a7 / angiogenesis))))))))

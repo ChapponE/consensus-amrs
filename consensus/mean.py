@@ -51,8 +51,13 @@ def _starting_points(nf: np.ndarray, ef: np.ndarray, n_restarts: int) -> list[in
     distance += np.square(edge_hist - edge_hist.mean(axis=0)).sum(axis=1)
 
     ranked = np.argsort(distance, kind="stable")
-    k = max(1, min(int(n_restarts), len(ranked)))
+    k = n_starts(len(ranked), n_restarts)
     return [int(ranked[r * len(ranked) // k]) for r in range(k)]
+
+
+def n_starts(n_graphs: int, n_restarts: int) -> int:
+    """Number of runs mean-AAC makes on a population: one per start, at most one per graph."""
+    return max(1, min(int(n_restarts), n_graphs))
 
 
 def frechet_mean(
@@ -74,16 +79,40 @@ def frechet_mean(
     The alternation only converges locally, so it can be restarted from several
     points; the run of lowest Fréchet energy is then returned.
     """
+    return best_run([
+        run_start(nf, ef, rank, n_restarts=n_restarts, max_iter=max_iter, tol=tol,
+                  faq_max_iter=faq_max_iter, faq_n_init=faq_n_init)
+        for rank in range(n_starts(len(nf), n_restarts))
+    ])
+
+
+def run_start(
+    nf: np.ndarray,
+    ef: np.ndarray,
+    rank: int,
+    *,
+    n_restarts: int,
+    max_iter: int = 30,
+    tol: float = 1e-4,
+    faq_max_iter: int = 30,
+    faq_n_init: int = 2,
+) -> tuple[np.ndarray, np.ndarray, dict]:
+    """The ``rank``-th run of :func:`frechet_mean`, from its ``rank``-th starting point.
+
+    Runs share nothing, so they can be computed in separate processes and
+    combined by :func:`best_run` into the mean :func:`frechet_mean` returns.
+    """
     # Sorting the population by content makes the run independent of the order
     # the chapter happens to be stored in.
     order = np.argsort([_content_key(nf[i], ef[i]) for i in range(len(nf))], kind="stable")
     nf, ef = nf[order], ef[order]
     lam = edge_weight(nf.shape[1], nf.shape[2])
+    start = _starting_points(nf, ef, n_restarts)[rank]
+    return _alternate(nf, ef, lam, start, max_iter, tol, faq_max_iter, faq_n_init)
 
-    runs = [
-        _alternate(nf, ef, lam, start, max_iter, tol, faq_max_iter, faq_n_init)
-        for start in _starting_points(nf, ef, n_restarts)
-    ]
+
+def best_run(runs: list[tuple[np.ndarray, np.ndarray, dict]]) -> tuple[np.ndarray, np.ndarray, dict]:
+    """The run of lowest Fréchet energy, the first one on ties; ``runs`` in rank order."""
     mean_nf, mean_ef, info = min(runs, key=lambda run: run[2]["energy"])
     info["energy_per_start"] = [run[2]["energy"] for run in runs]
     return mean_nf, mean_ef, info

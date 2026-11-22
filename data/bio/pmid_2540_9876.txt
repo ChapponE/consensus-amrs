@@ -1,0 +1,2285 @@
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt SPP86 inhibited MAPK signaling and proliferation in RET/PTC1 expressing TPC1 but not 8505C or C643 cells.
+# ::file pmid_2540_9876_11.txt
+# ::date 2015-09-01T04:12:39
+# ::id pmid_2540_9876.11
+(c2 / contrast-01
+      :ARG1 (i / inhibit-01
+            :ARG0 (s / small-molecule
+                  :name (n2 / name :op1 "SPP86"))
+            :ARG1 (a / and
+                  :op1 (s2 / signal-07
+                        :ARG0 (p / pathway
+                              :name (n / name :op1 "MAPK")))
+                  :op2 (p2 / proliferate-01
+                        :ARG0 p))
+            :location (c / cell-line
+                  :name (n3 / name :op1 "TPC1")
+                  :mod (d / disease
+                        :wiki "Cancer"
+                        :name (n4 / name :op1 "cancer"))
+                  :ARG3-of (e / express-03
+                        :ARG2 (p4 / protein
+                              :name (n5 / name :op1 "RET/PTC1")))))
+      :ARG2 (i2 / inhibit-01
+            :polarity "-"
+            :ARG0 s
+            :ARG1 a
+            :location (o / or
+                  :op1 (c3 / cell-line
+                        :name (n6 / name :op1 "8505C"))
+                  :op2 (c4 / cell-line
+                        :name (n7 / name :op1 "C643")))))
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In TPC1 cells, the inhibition of RET phosphorylation required co-exposure to SPP86 and the focal adhesion kinase (FAK) inhibitor PF573228.
+# ::file pmid_2540_9876_12.txt
+# ::date 2015-09-01T04:57:51
+# ::id pmid_2540_9876.12
+(r / require-01
+   :ARG0 (i / inhibit-01
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (p2 / protein
+                               :name (n / name
+                                        :op1 "RET"))))
+   :ARG1 (e / expose-01
+            :ARG2 (a / and
+                     :op1 (s / small-molecule
+                             :name (n2 / name
+                                       :op1 "SPP86"))
+                     :op2 (s2 / small-molecule
+                              :name (n4 / name
+                                        :op1 "PF573228")
+                              :ARG0-of (i2 / inhibit-01
+                                           :ARG1 (e2 / enzyme
+                                                     :name (n3 / name
+                                                               :op1 "focal-adhesion-kinase"))))))
+   :location (c / cell-line
+                :name (n5 / name
+                          :op1 "TPC1")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In MCF7 cells, SPP86 inhibited RET- induced phosphatidylinositide 3-kinases (PI3K)/Akt and MAPK signaling and estrogen receptorα (ERα) phosphorylation, and inhibited proliferation to a similar degree as tamoxifen.
+# ::file pmid_2540_9876_13.txt
+# ::date 2015-09-01T05:21:39
+# ::id pmid_2540_9876.13
+(a3 / and
+    :op1 (i / inhibit-01
+            :ARG0 (s / small-molecule
+                     :name (n2 / name
+                               :op1 "SPP86"))
+            :ARG1 (a2 / and
+                      :op1 (s2 / signal-07
+                               :ARG0 (a / and
+                                        :op1 (s3 / slash
+                                                 :op1 (e3 / enzyme
+                                                          :name (n9 / name
+                                                                    :op1 "phosphatidylinositide"
+                                                                    :op2 "3-kinase"))
+                                                 :op2 (e / enzyme
+                                                         :name (n4 / name
+                                                                   :op1 "Akt")))
+                                        :op2 (p / pathway
+                                                :name (n / name
+                                                         :op1 "MAPK")))
+                               :ARG2-of (i3 / induce-01
+                                            :ARG0 (p6 / protein
+                                                      :name (n8 / name
+                                                                :op1 "RET"))))
+                      :op2 (p2 / phosphorylate-01
+                               :ARG1 (p3 / protein
+                                         :name (n5 / name
+                                                   :op1 "estrogen-receptor-α")))))
+    :op2 (i2 / inhibit-01
+             :ARG0 s
+             :ARG1 (p5 / proliferate-01)
+             :degree (d / degree
+                        :ARG1-of (r / resemble-01
+                                    :ARG2 (s5 / small-molecule
+                                              :name (n6 / name
+                                                        :op1 "tamoxifen")))))
+    :location (c / cell-line
+                 :name (n7 / name
+                           :op1 "MCF7")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, SPP86 and PF573228 inhibited RET/PTC1 and GDNF- RET induced activation of Akt and MAPK signaling to a similar degree.
+# ::file pmid_2540_9876_14.txt
+# ::date 2015-09-01T05:36:03
+# ::id pmid_2540_9876.14
+(a / and
+   :op1 (i / inhibit-01
+           :ARG0 (a2 / and
+                     :op1 (s / small-molecule
+                             :name (n2 / name
+                                       :op1 "SPP86"))
+                     :op2 (s2 / small-molecule
+                              :name (n3 / name
+                                        :op1 "PF573228")))
+           :ARG1 (p2 / protein
+                     :name (n4 / name
+                               :op1 "RET/PTC1")))
+   :op2 (i2 / induce-01
+            :ARG0 (p3 / protein
+                      :name (n6 / name
+                                :op1 "GDNF-RET"))
+            :ARG2 (a3 / activate-01
+                      :ARG1 (s3 / signal-07
+                                :ARG0 (a4 / and
+                                          :op1 (p4 / pathway
+                                                   :name (n7 / name
+                                                             :op1 "Akt"))
+                                          :op2 (p / pathway
+                                                  :name (n8 / name
+                                                            :op1 "MAPK"))))
+                      :degree (d2 / degree
+                                  :ARG1-of (r2 / resemble-01))))
+   :ARG2-of (i3 / interest-01))
+
+# ::save-date Fri Jan 15, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We investigated the effect of SPP86 on ERK1/2 phosphorylation in thyroid cancer derived cell lines expressing the RET/PTC1 rearrangement (TPC1), BRAF<sup>V600E</sup> (8505C) or RAS<sup>G13R</sup> (C643) mutations [<xref ref-type="bibr" rid="CR47">47</xref>, <xref ref-type="bibr" rid="CR48">48</xref>].
+# ::file pmid_2540_9876_108.txt
+# ::date 2015-09-01T05:41:29
+# ::id pmid_2540_9876.108
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :ARG0 (s / small-molecule
+                     :name (n3 / name
+                               :op1 "SPP86"))
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (s2 / slash
+                               :op1 (e / enzyme
+                                       :name (n4 / name
+                                                 :op1 "ERK1"))
+                               :op2 (e2 / enzyme
+                                        :name (n5 / name
+                                                  :op1 "ERK2"))))
+            :location (o2 / or
+                          :op1 (c5 / cell-line
+                                   :name (n12 / name
+                                              :op1 "TPC1")
+                                   :ARG3-of (e3 / express-03
+                                                :ARG2 (r / rearrange-01
+                                                         :ARG1 (p2 / protein
+                                                                   :name (n6 / name
+                                                                             :op1 "RET/PTC1")))))
+                          :op2 (c4 / cell-line
+                                   :name (n2 / name
+                                             :op1 "8505C")
+                                   :ARG3-of (e6 / express-03
+                                                :ARG2 (e4 / enzyme
+                                                          :name (n9 / name
+                                                                    :op1 "BRAF")
+                                                          :ARG2-of (m2 / mutate-01
+                                                                       :value "V600E"))))
+                          :op3 (c2 / cell-line
+                                   :name (n11 / name
+                                              :op1 "C643")
+                                   :ARG3-of (e7 / express-03
+                                                :ARG2 (e5 / enzyme
+                                                          :name (n10 / name
+                                                                     :op1 "RAS")
+                                                          :ARG2-of (m4 / mutate-01
+                                                                       :value "G13R"))))
+                          :ARG1-of (d2 / derive-01
+                                       :ARG2 (d / disease
+                                                :wiki "Cancer"
+                                                :name (n / name
+                                                         :op1 "cancer")
+                                                :mod (t / thyroid)))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (p6 / publication
+                          :ARG1-of (c3 / cite-01
+                                       :ARG2 (a4 / and
+                                                 :op1 "47"
+                                                 :op2 "48")))))
+
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These mutations have previously been shown to induce constitutive activation of the MAPK signaling pathway in these cell lines [<xref ref-type="bibr" rid="CR47">47</xref>–<xref ref-type="bibr" rid="CR49">49</xref>].
+# ::file pmid_2540_9876_109.txt
+# ::date 2015-09-01T05:58:33
+# ::id pmid_2540_9876.109
+(s / show-01
+      :ARG1 (i / induce-01
+            :ARG0 (m / mutate-01
+                  :mod (t / this))
+            :ARG2 (a / activate-01
+                  :ARG1 (p2 / pathway
+                        :name (n2 / name :op1 "MAPK")
+                        :ARG0-of (s2 / signal-07))
+                  :mod (c / constitutive))
+            :location (c2 / cell-line
+                  :mod (t2 / this)))
+      :ARG1-of (d / describe-01
+            :ARG0 (p3 / publication
+                  :ARG1-of (c3 / cite-01
+                        :ARG2 (v / value-interval :op1 "47" :op2 "49"))))
+      :time (p4 / previous))
+
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Since TPC1 but not 8505C and C643 cells depend predominantly on RET/PTC1 signaling for proliferation, we hypothesized that SPP86 should only inhibit the proliferation of the former.
+# ::file pmid_2540_9876_110.txt
+# ::date 2015-09-01T06:04:04
+# ::id pmid_2540_9876.110
+(h / hypothesize-01
+      :ARG0 (w / we)
+      :ARG1 (r / recommend-01
+            :ARG1 (i / inhibit-01
+                  :ARG0 (s2 / small-molecule
+                        :name (n / name :op1 "SPP86"))
+                  :ARG1 (p2 / proliferate-01 :ARG0 "c3")
+                  :mod (o / only)))
+      :ARG1-of (c / cause-01
+            :ARG0 (c2 / contrast-01
+                  :ARG1 (d / depend-01
+                        :ARG0 (c3 / cell-line
+                              :name (n2 / name :op1 "TPC1"))
+                        :ARG1 (s / signal-07
+                              :ARG0 (p3 / protein
+                                    :name (n3 / name :op1 "RET/PTC1")))
+                        :purpose (p4 / proliferate-01
+                              :ARG0 c3)
+                        :ARG1-of (p5 / predominate-01))
+                  :ARG2 (d2 / depend-01
+                        :polarity "-"
+                        :ARG0 (a / and
+                              :op1 (c4 / cell-line
+                                    :name (n4 / name :op1 "8505C"))
+                              :op2 (c5 / cell-line
+                                    :name (n5 / name :op1 "C643")))
+                        :ARG1 s
+                        :purpose (p6 / proliferate-01
+                              :ARG0 (a2 / and
+                                    :op1 c4
+                                    :op2 c5))))))
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Sorafenib, which inhibits both RET and RAF family kinases, was used as an internal control in these experiments.
+# ::file pmid_2540_9876_111.txt
+# ::date 2015-09-02T22:45:56
+# ::id pmid_2540_9876.111
+(u / use-01
+   :ARG1 (s / small-molecule
+            :name (n2 / name
+                      :op1 "sorafenib")
+            :ARG0-of (i2 / inhibit-01
+                         :ARG1 (a / and
+                                  :op1 (p / protein-family
+                                          :name (n3 / name
+                                                    :op1 "RET"))
+                                  :op2 (p2 / protein-family
+                                           :name (n4 / name
+                                                     :op1 "RAF")))))
+   :ARG2 (c / control-01
+            :ARG0 s
+            :ARG1-of (i / internal-02)
+            :location (e3 / experiment-01
+                          :mod (t / this))))
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As previously reported [<xref ref-type="bibr" rid="CR45">45</xref>], SPP86 effectively inhibits ERK1/2 phosphorylation in TPC1 cells expressing the RET/PTC1 rearrangement at a concentration of 1 μM (Figure <xref ref-type="fig" rid="Fig1">1</xref>A).
+# ::file pmid_2540_9876_113.txt
+# ::date 2015-09-02T22:56:23
+# ::id pmid_2540_9876.113
+(i / inhibit-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "SPP86"))
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (s2 / slash
+                      :op1 (e2 / enzyme
+                               :name (n2 / name
+                                         :op1 "ERK1"))
+                      :op2 (e3 / enzyme
+                               :name (n3 / name
+                                         :op1 "ERK2")))
+            :location (c / cell-line
+                         :name (n4 / name
+                                   :op1 "TPC1")
+                         :ARG3-of (e4 / express-03
+                                      :ARG2 (r2 / rearrange-01
+                                                :ARG1 (p2 / protein
+                                                          :name (n5 / name
+                                                                    :op1 "RET/PTC1"))
+                                                :quant (c2 / concentration-quantity
+                                                           :quant "1"
+                                                           :unit (m / micromolar))))))
+   :ARG1-of (e / effective-04)
+   :ARG1-of (r / report-01
+               :time (p3 / previous)
+               :ARG1-of (d / describe-01
+                           :ARG0 (p4 / publication
+                                     :ARG1-of (c3 / cite-01
+                                                  :ARG2 "45"))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1A")))
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, SPP86 had no effect on ERK1/2 phosphorylation in 8505C or C643 cells (Figure <xref ref-type="fig" rid="Fig1">1</xref>B and C).
+# ::file pmid_2540_9876_114.txt
+# ::date 2015-09-02T23:05:26
+# ::id pmid_2540_9876.114
+(c / contrast-01
+   :ARG2 (a / affect-01
+            :polarity "-"
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "SPP86"))
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (s2 / slash
+                               :op1 (e / enzyme
+                                       :name (n2 / name
+                                                 :op1 "ERK1"))
+                               :op2 (e2 / enzyme
+                                        :name (n3 / name
+                                                  :op1 "ERK2"))))
+            :location (o / or
+                         :op1 (c2 / cell-line
+                                  :name (n4 / name
+                                            :op1 "8505C"))
+                         :op2 (c3 / cell-line
+                                  :name (n5 / name
+                                            :op1 "C643"))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f / figure
+                                  :mod "1B")
+                          :op2 (f2 / figure
+                                   :mod "1C"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Sorafenib, which targets both RET and RAF kinases, effectively inhibited ERK1/2 phosphorylation in TPC1 cells at a concentration of 0.1 μM (Figure <xref ref-type="fig" rid="Fig1">1</xref>A).
+# ::file pmid_2540_9876_115.txt
+# ::date 2015-09-02T23:14:23
+# ::id pmid_2540_9876.115
+(i / inhibit-01
+   :ARG0 (s / small-molecule
+            :name (n2 / name
+                      :op1 "sorafenib")
+            :quant (c2 / concentration-quantity
+                       :quant "0.1"
+                       :unit (m / micromolar))
+            :ARG0-of (t / target-01
+                        :ARG1 (a / and
+                                 :op1 (p3 / protein-family
+                                          :name (n3 / name
+                                                    :op1 "RET"))
+                                 :op2 (p / protein-family
+                                         :name (n4 / name
+                                                   :op1 "RAF")))))
+   :ARG1 (p2 / phosphorylate-01
+             :ARG1 (s2 / slash
+                       :op1 (e2 / enzyme
+                                :name (n6 / name
+                                          :op1 "ERK1"))
+                       :op2 (e3 / enzyme
+                                :name (n7 / name
+                                          :op1 "ERK2"))))
+   :ARG1-of (e / effective-04)
+   :location (c / cell-line
+                :name (n5 / name
+                          :op1 "TPC1"))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1A")))
+
+# ::save-date Wed Nov 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Sorafenib (10 μM) also inhibited ERK1/2 phosphorylation in 8505C cells, and to a lesser extent in C643 cells consistent with previous reports [<xref ref-type="bibr" rid="CR49">49</xref>] (Figure <xref ref-type="fig" rid="Fig1">1</xref>B and C).
+# ::file pmid_2540_9876_116.txt
+# ::date 2015-09-02T23:22:12
+# ::id pmid_2540_9876.116
+(a2 / and
+    :op1 (i / inhibit-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "sorafenib")
+                     :quant (c / concentration-quantity
+                               :quant "10"
+                               :unit (m / micromolar)))
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (s2 / slash
+                               :op1 (e / enzyme
+                                       :name (n2 / name
+                                                 :op1 "ERK1"))
+                               :op2 (e2 / enzyme
+                                        :name (n3 / name
+                                                  :op1 "ERK2"))))
+            :location (c2 / cell-line
+                          :name (n4 / name
+                                    :op1 "8505C"))
+            :mod (a3 / also))
+    :op2 (i2 / inhibit-01
+             :ARG0 s
+             :ARG1 p
+             :location (c3 / cell-line
+                           :name (n5 / name
+                                     :op1 "C643"))
+             :ARG1-of (c4 / consistent-01
+                          :ARG2 (t / thing
+                                   :ARG1-of (r / report-01)
+                                   :time (p2 / previous)))
+             :ARG1-of (d2 / describe-01
+                          :ARG0 (p3 / publication
+                                    :ARG1-of (c5 / cite-01
+                                                 :ARG2 "49")))
+             :degree (l / less
+                        :degree (m2 / more))
+             :compared-to c2)
+    :ARG1-of (d3 / describe-01
+                 :ARG0 (a / and
+                          :op1 (f / figure
+                                  :mod "1B")
+                          :op2 (f2 / figure
+                                   :mod "1C"))))
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The differential sensitivity of 8505C and C643 cells to SPP86 and sorafenib likely results from the latter’s effect on RAF signaling [<xref ref-type="bibr" rid="CR49">49</xref>].
+# ::file pmid_2540_9876_117.txt
+# ::date 2015-09-02T23:55:19
+# ::id pmid_2540_9876.117
+(l / likely-01
+   :ARG1 (r / result-01
+            :ARG1 (a3 / affect-01
+                      :ARG0 "s3"
+                      :ARG1 (s4 / signal-07
+                                :ARG0 (e / enzyme
+                                         :name (n6 / name
+                                                   :op1 "RAF"))))
+            :ARG2 (s / sensitive-03
+                     :ARG0 (a / and
+                              :op1 (c / cell-line
+                                      :name (n2 / name
+                                                :op1 "8505C"))
+                              :op2 (c2 / cell-line
+                                       :name (n3 / name
+                                                 :op1 "C643")))
+                     :ARG1 (a2 / and
+                               :op1 (s2 / small-molecule
+                                        :name (n4 / name
+                                                  :op1 "SPP86"))
+                               :op2 (s3 / small-molecule
+                                        :name (n5 / name
+                                                  :op1 "sorafenib")))
+                     :ARG1-of (d / differ-02)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p2 / publication
+                          :ARG1-of (c3 / cite-01
+                                       :ARG2 "49"))))
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, SPP86 induced only modest inhibition of RET/PTC1 phosphorylation Tyr1062 at a concentration of 1 μM (Figure <xref ref-type="fig" rid="Fig1">1</xref>D).
+# ::file pmid_2540_9876_118.txt
+# ::date 2015-09-03T00:01:38
+# ::id pmid_2540_9876.118
+(i / induce-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "SPP86")
+            :quant (c / concentration-quantity
+                      :quant "1"
+                      :unit (m2 / micromolar)))
+   :ARG2 (i3 / inhibit-01
+             :ARG1 (p / phosphorylate-01
+                      :ARG1 (a / amino-acid
+                               :mod "1062"
+                               :name (n3 / name
+                                         :op1 "tyrosine")
+                               :part-of (p2 / protein
+                                            :name (n2 / name
+                                                      :op1 "RET/PTC1"))))
+             :mod (m / modest)
+             :mod (o / only))
+   :ARG2-of (i2 / interest-01)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1D")))
+
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Complete inhibition required 10 μM of SPP86 (Figure <xref ref-type="fig" rid="Fig1">1</xref>D).
+# ::file pmid_2540_9876_119.txt
+# ::date 2015-09-03T00:05:54
+# ::id pmid_2540_9876.119
+(r / require-01
+      :ARG0 (i / inhibit-01
+            :ARG1-of (c / complete-02))
+      :ARG1 (c2 / concentration-quantity
+            :quant "10"
+            :unit (m / micromolar)
+            :quant-of (s / small-molecule
+                  :name (n / name :op1 "SPP86")))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "1D")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, the ability of SPP86 to abolish ERK1/2 phosphorylation at 1 μM does not strictly correlate with its inhibition of RET phosphorylation.
+# ::file pmid_2540_9876_120.txt
+# ::date 2015-09-03T00:08:41
+# ::id pmid_2540_9876.120
+(c / cause-01
+   :ARG1 (c2 / correlate-01
+             :polarity "-"
+             :ARG1 (c3 / capable-01
+                       :ARG1 (s / small-molecule
+                                :name (n / name
+                                         :op1 "SPP86")
+                                :quant (c4 / concentration-quantity
+                                           :quant "1"
+                                           :unit (m / micromolar)))
+                       :ARG2 (a / abolish-01
+                                :ARG0 s
+                                :ARG1 (p / phosphorylate-01
+                                         :ARG1 (s2 / slash
+                                                   :op1 (e / enzyme
+                                                           :name (n2 / name
+                                                                     :op1 "ERK1"))
+                                                   :op2 (e2 / enzyme
+                                                            :name (n3 / name
+                                                                      :op1 "ERK2"))))))
+             :ARG2 (i / inhibit-01
+                      :ARG0 s
+                      :ARG1 (p2 / phosphorylate-01
+                                :ARG1 (p3 / protein
+                                          :name (n4 / name
+                                                    :op1 "RET"))))
+             :mod (s3 / strict)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similar observations have previously been reported with the RET inhibitor RPI-1 [<xref ref-type="bibr" rid="CR28">28</xref>].
+# ::file pmid_2540_9876_121.txt
+# ::date 2015-09-03T00:13:39
+# ::id pmid_2540_9876.121
+(r2 / report-01
+    :ARG1 (o / observe-01
+             :ARG1-of (r3 / resemble-01))
+    :time (p / previous)
+    :condition (i2 / inhibit-01
+                   :ARG0 (p2 / protein
+                             :name (n / name
+                                      :op1 "RPI-1"))
+                   :ARG1 (p4 / protein
+                             :name (n2 / name
+                                       :op1 "RET")))
+    :ARG1-of (d / describe-01
+                :ARG0 (p3 / publication
+                          :ARG1-of (c / cite-01
+                                      :ARG2 "28"))))
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt SPP86 also inhibited Akt phosphorylation on Ser473 at a concentration of 1.0 μM (Figure <xref ref-type="fig" rid="Fig1">1</xref>E and F).
+# ::file pmid_2540_9876_122.txt
+# ::date 2015-09-03T00:18:15
+# ::id pmid_2540_9876.122
+(i / inhibit-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "SPP86")
+            :quant (c / concentration-quantity
+                      :quant "1.0"
+                      :unit (m / micromolar)))
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (a / amino-acid
+                     :mod "473"
+                     :name (n3 / name
+                               :op1 "serine")
+                     :part-of (e / enzyme
+                                 :name (n2 / name
+                                           :op1 "Akt"))))
+   :mod (a2 / also)
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "1E")
+                         :op2 (f2 / figure
+                                  :mod "1F"))))
+
+# ::save-date Wed Nov 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Prolonged exposure (20 h) to 0.5- 1 μM SPP86 was also associated with a decline in cyclin D1 levels in this cell line (Figure <xref ref-type="fig" rid="Fig1">1</xref>E).
+# ::file pmid_2540_9876_123.txt
+# ::date 2015-09-03T00:21:27
+# ::id pmid_2540_9876.123
+(a / associate-01
+   :ARG1 (e / expose-01
+            :ARG2 (c / concentration-quantity
+                     :quant (v / value-interval
+                               :op1 "0.5"
+                               :op2 "1")
+                     :unit (m2 / micromolar)
+                     :quant-of (s / small-molecule
+                                  :name (n / name
+                                           :op1 "SPP86")))
+            :ARG1-of (p / prolong-01)
+            :ARG1-of (m / mean-01
+                        :ARG2 (t / temporal-quantity
+                                 :quant "20"
+                                 :unit (h / hour))))
+   :ARG2 (d / decline-01
+            :ARG1 (l / level
+                     :quant-of (p3 / protein
+                                   :name (n3 / name
+                                             :op1 "cyclin"
+                                             :op2 "D1")))
+            :location (c2 / cell-line
+                          :mod (t2 / this)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1E"))
+   :mod (a2 / also))
+
+# ::save-date Wed Nov 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, prolonged exposure to SPP86 did not affect ERK1/2 phosphorylation or cyclin D1 expression in 8505C and C643 cells (Figure <xref ref-type="fig" rid="Fig1">1</xref>G).
+# ::file pmid_2540_9876_124.txt
+# ::date 2015-09-03T00:28:11
+# ::id pmid_2540_9876.124
+(c / contrast-01
+   :ARG2 (a / affect-01
+            :polarity "-"
+            :ARG0 (e / expose-01
+                     :ARG2 (s / small-molecule
+                              :name (n / name
+                                       :op1 "SPP86"))
+                     :ARG1-of (p2 / prolong-01))
+            :ARG1 (o / or
+                     :op1 (p / phosphorylate-01
+                             :ARG1 (s2 / slash
+                                       :op1 (e2 / enzyme
+                                                :name (n2 / name
+                                                          :op1 "ERK1"))
+                                       :op2 (e3 / enzyme
+                                                :name (n3 / name
+                                                          :op1 "ERK2"))))
+                     :op2 (e4 / express-03
+                              :ARG2 (p4 / protein
+                                        :name (n7 / name
+                                                  :op1 "cyclin"
+                                                  :op2 "D1"))
+                              :ARG3 (a2 / and
+                                        :op1 (c2 / cell-line
+                                                 :name (n5 / name
+                                                           :op1 "8505C"))
+                                        :op2 (c3 / cell-line
+                                                 :name (n6 / name
+                                                           :op1 "C643"))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1G")))
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We noted however, that prolonged exposure to SPP86 (0.5- 1.0 μM) was associated with a decrease in Akt Ser473 phosphorylation in C643 in cells (Figure <xref ref-type="fig" rid="Fig1">1</xref>G).
+# ::file pmid_2540_9876_125.txt
+# ::date 2015-09-03T00:32:37
+# ::id pmid_2540_9876.125
+(c3 / contrast-01
+    :ARG2 (n / note-01
+             :ARG0 (w / we)
+             :ARG1 (a / associate-01
+                      :ARG1 (e / expose-01
+                               :ARG2 (s / small-molecule
+                                        :name (n2 / name
+                                                  :op1 "SPP86")
+                                        :quant (c / concentration-quantity
+                                                  :unit (m / micromolar)
+                                                  :quant (v / value-interval
+                                                            :op1 "0.5"
+                                                            :op2 "1.0")))
+                               :ARG1-of (p2 / prolong-01))
+                      :ARG2 (d / decrease-01
+                               :ARG1 (p / phosphorylate-01
+                                        :ARG1 (a2 / amino-acid
+                                                  :mod "473"
+                                                  :name (n3 / name
+                                                            :op1 "serine")
+                                                  :part-of (e2 / enzyme
+                                                               :name (n4 / name
+                                                                         :op1 "Akt")))
+                                        :location (c2 / cell-line
+                                                      :name (n5 / name
+                                                                :op1 "C643"))))))
+    :ARG1-of (d2 / describe-01
+                 :ARG0 (f / figure
+                          :mod "1G")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt C643 cells express wild type RET [<xref ref-type="bibr" rid="CR47">47</xref>].
+# ::file pmid_2540_9876_126.txt
+# ::date 2015-09-03T00:39:03
+# ::id pmid_2540_9876.126
+(e / express-03
+   :ARG2 (p2 / protein
+             :name (n2 / name
+                       :op1 "RET")
+             :mod (w / wild-type))
+   :ARG3 (c / cell-line
+            :name (n / name
+                     :op1 "C643"))
+   :ARG1-of (d / describe-01
+               :ARG0 (p / publication
+                        :ARG1-of (c2 / cite-01
+                                     :ARG2 "47"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt SPP86 may thus inhibit RET- mediated Akt activation in this cell line.
+# ::file pmid_2540_9876_127.txt
+# ::date 2015-09-03T00:41:05
+# ::id pmid_2540_9876.127
+(c / cause-01
+   :ARG1 (p / possible-01
+            :ARG1 (i / inhibit-01
+                     :ARG0 (s / small-molecule
+                              :name (n / name
+                                       :op1 "SPP86"))
+                     :ARG1 (a / activate-01
+                              :ARG1 (e / enzyme
+                                       :name (n2 / name
+                                                 :op1 "Akt"))
+                              :ARG1-of (m / mediate-01
+                                          :ARG0 (p2 / protein
+                                                    :name (n3 / name
+                                                              :op1 "RET"))))
+                     :location (c2 / cell-line
+                                   :mod (t / this)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results demonstrate that unlike sorafenib, SPP86 appears to selectively inhibit RET/PTC1- activated MAPK signaling in these cell lines.
+# ::file pmid_2540_9876_128.txt
+# ::date 2015-09-03T00:44:20
+# ::id pmid_2540_9876.128
+(d / demonstrate-01
+   :ARG0 (t / thing
+            :ARG2-of (r2 / result-01))
+   :ARG1 (a / appear-01
+            :ARG1 (i / inhibit-01
+                     :ARG0 (s / small-molecule
+                              :name (n2 / name
+                                        :op1 "SPP86"))
+                     :ARG1 (s3 / signal-07
+                               :ARG0 (p / pathway
+                                        :name (n3 / name
+                                                  :op1 "MAPK"))
+                               :ARG1-of (a2 / activate-01
+                                            :ARG0 (p3 / protein
+                                                      :name (n4 / name
+                                                                :op1 "RET/PTC1"))))
+                     :manner (s2 / selective)
+                     :location (c / cell-line
+                                  :mod (t2 / this))
+                     :ARG1-of (r / resemble-01
+                                 :polarity "-"
+                                 :ARG2 (s4 / small-molecule
+                                           :name (n5 / name
+                                                     :op1 "sorafenib"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next investigated if FAK could maintain RET phosphorylation on Tyr1062 despite the inhibition of RET autophosphorylation by SPP86 [<xref ref-type="bibr" rid="CR24">24</xref>].
+# ::file pmid_2540_9876_129.txt
+# ::date 2015-09-03T00:49:38
+# ::id pmid_2540_9876.129
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (p3 / possible-01
+             :mode "interrogative"
+             :ARG1 (m / maintain-01
+                      :ARG0 (e / enzyme
+                               :name (n2 / name
+                                         :op1 "FAK"))
+                      :ARG1 (p2 / phosphorylate-01
+                                :ARG1 (a2 / amino-acid
+                                          :mod "1062"
+                                          :name (n4 / name
+                                                    :op1 "tyrosine")
+                                          :part-of (p / protein
+                                                      :name (n3 / name
+                                                                :op1 "RET"))))
+                      :concession (i2 / inhibit-01
+                                      :ARG0 (s / small-molecule
+                                               :name (n5 / name
+                                                         :op1 "SPP86"))
+                                      :ARG1 (p4 / phosphorylate-01
+                                                :ARG1 p
+                                                :ARG2 p))))
+   :time (n / next)
+   :ARG1-of (d / describe-01
+               :ARG0 (p5 / publication
+                         :ARG1-of (c / cite-01
+                                     :ARG2 "24"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Exposure to 2.5 μM of the FAK inhibitor PF573228 [<xref ref-type="bibr" rid="CR50">50</xref>] alone, did not inhibit RET phosphorylation in TPC1 cells (Figure <xref ref-type="fig" rid="Fig2">2</xref>A).
+# ::file pmid_2540_9876_130.txt
+# ::date 2015-09-03T00:55:30
+# ::id pmid_2540_9876.130
+(i2 / inhibit-01
+    :polarity "-"
+    :ARG0 (e / expose-01
+             :ARG2 (c / concentration-quantity
+                      :quant "2.5"
+                      :unit (m / micromolar)
+                      :quant-of (s / small-molecule
+                                   :name (n / name
+                                            :op1 "PF573228")
+                                   :ARG0-of (i3 / inhibit-01
+                                                :ARG1 (e2 / enzyme
+                                                          :name (n2 / name
+                                                                    :op1 "FAK")))
+                                   :mod (a / alone)))
+             :ARG1-of (d / describe-01
+                         :ARG0 (p2 / publication
+                                   :ARG1-of (c2 / cite-01
+                                                :ARG2 "50"))))
+    :ARG1 (p / phosphorylate-01
+             :ARG1 (p3 / protein
+                       :name (n3 / name
+                                 :op1 "RET"))
+             :location (c3 / cell-line
+                           :name (n4 / name
+                                     :op1 "TPC1")))
+    :ARG1-of (d2 / describe-01
+                 :ARG0 (f / figure
+                          :mod "2A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, exposure to 2.5 μM of the FAK inhibitor PF573228 in combination with 1 μM SPP86 was sufficient to inhibit RET phosphorylation on Tyr1062 (Figure <xref ref-type="fig" rid="Fig2">2</xref>A).
+# ::file pmid_2540_9876_131.txt
+# ::date 2015-09-03T01:00:07
+# ::id pmid_2540_9876.131
+(c / contrast-01
+   :ARG2 (s2 / suffice-01
+             :ARG0 (e / expose-01
+                      :ARG2 (c2 / concentration-quantity
+                                :quant "2.5"
+                                :unit (m / micromolar)
+                                :quant-of (s3 / small-molecule
+                                              :name (n2 / name
+                                                        :op1 "PF573228")
+                                              :ARG0-of (i / inhibit-01
+                                                          :ARG1 (e2 / enzyme
+                                                                    :name (n / name
+                                                                             :op1 "FAK")))
+                                              :ARG1-of (c3 / combine-01
+                                                           :ARG2 (c4 / concentration-quantity
+                                                                     :quant "1"
+                                                                     :quant-of (s / small-molecule
+                                                                                  :name (n3 / name
+                                                                                            :op1 "SPP86"))
+                                                                     :unit m)))))
+             :ARG1 (i2 / inhibit-01
+                       :ARG0 e
+                       :ARG1 (p / phosphorylate-01
+                                :ARG1 (a2 / amino-acid
+                                          :mod "1062"
+                                          :name (n5 / name
+                                                    :op1 "tyrosine")
+                                          :part-of (p2 / protein
+                                                       :name (n4 / name
+                                                                 :op1 "RET")))))
+             :ARG1-of (d / describe-01
+                         :ARG0 (f / figure
+                                  :mod "2A"))))
+
+# ::save-date Thu Sep 3, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, PF273228 and SPP86 inhibited Akt and ERK1/2 phosphorylation to a similar degree (Figure <xref ref-type="fig" rid="Fig2">2</xref>B and C).
+# ::file pmid_2540_9876_132.txt
+# ::date 2015-09-03T01:25:07
+# ::id pmid_2540_9876.132
+(i / inhibit-01
+   :ARG0 (a / and
+            :op1 (s / small-molecule
+                    :name (n / name
+                             :op1 "PF273228"))
+            :op2 (s2 / small-molecule
+                     :name (n2 / name
+                               :op1 "SPP86")))
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (a2 / and
+                      :op1 (e / enzyme
+                              :name (n3 / name
+                                        :op1 "Akt"))
+                      :op2 (s3 / slash
+                               :op1 (e2 / enzyme
+                                        :name (n4 / name
+                                                  :op1 "ERK1"))
+                               :op2 (e3 / enzyme
+                                        :name (n5 / name
+                                                  :op1 "ERK2")))))
+   :ARG2-of (i2 / interest-01)
+   :degree (d / degree
+              :ARG1-of (r / resemble-01))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a3 / and
+                          :op1 (f / figure
+                                  :mod "2B")
+                          :op2 (f2 / figure
+                                   :mod "2C"))))
+
+# ::save-date Thu Sep 3, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Exposure to PF573288 but not SPP86 was associated with a reduction of FAK Tyr576 phosphorylation (Figure <xref ref-type="fig" rid="Fig2">2</xref>B).
+# ::file pmid_2540_9876_133.txt
+# ::date 2015-09-03T01:29:32
+# ::id pmid_2540_9876.133
+(c / contrast-01
+   :ARG1 (a / associate-01
+            :ARG1 (e / expose-01
+                     :ARG2 (s / small-molecule
+                              :name (n / name
+                                       :op1 "PF573288")))
+            :ARG2 (r / reduce-01
+                     :ARG1 (p / phosphorylate-01
+                              :ARG1 (a2 / amino-acid
+                                        :mod "576"
+                                        :name (n2 / name
+                                                  :op1 "tyrosine")
+                                        :part-of (e2 / enzyme
+                                                     :name (n3 / name
+                                                               :op1 "FAK"))))))
+   :ARG2 (a3 / associate-01
+             :polarity "-"
+             :ARG1 (e3 / expose-01
+                       :ARG2 (s2 / small-molecule
+                                 :name (n4 / name
+                                           :op1 "SPP86")))
+             :ARG2 r)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "2B")))
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Neither PF273228 nor SPP86 suppressed Src phosphorylation (Figure <xref ref-type="fig" rid="Fig2">2</xref>D).
+# ::file pmid_2540_9876_134.txt
+# ::date 2015-09-03T01:33:52
+# ::id pmid_2540_9876.134
+(s / suppress-01
+   :polarity "-"
+   :ARG0 (a / and
+            :op1 (s2 / small-molecule
+                     :name (n / name
+                              :op1 "PF273228"))
+            :op2 (s3 / small-molecule
+                     :name (n2 / name
+                               :op1 "SPP86")))
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (p2 / protein
+                      :name (n3 / name
+                                :op1 "Src")))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "2D")))
+
+# ::save-date Wed Nov 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt SPP86 inhibited TPC1 cell proliferation more effectively than PF573228 (49% proliferation <i>vs.</i> 77%) but no additive effect was observed following co-exposure to both drugs (Figure <xref ref-type="fig" rid="Fig2">2</xref>E).
+# ::file pmid_2540_9876_135.txt
+# ::date 2015-09-03T01:37:03
+# ::id pmid_2540_9876.135
+(c2 / contrast-01
+    :ARG1 (i / inhibit-01
+             :ARG0 (s / small-molecule
+                      :name (n / name
+                               :op1 "SPP86"))
+             :ARG1 (p3 / proliferate-01
+                       :ARG0 (c / cell-line
+                                :name (n2 / name
+                                          :op1 "TPC1"))
+                       :degree (p / percentage-entity
+                                  :value "49"))
+             :ARG1-of (e / effective-04
+                         :ARG0 s
+                         :degree (m / more)
+                         :compared-to (i2 / inhibit-01
+                                          :ARG0 (s3 / small-molecule
+                                                    :name (n4 / name
+                                                              :op1 "PF573228"))
+                                          :ARG1 (p4 / proliferate-01
+                                                    :ARG0 c
+                                                    :degree (p2 / percentage-entity
+                                                                :value "77")))))
+    :ARG2 (o / observe-01
+             :polarity "-"
+             :ARG1 (a / affect-01
+                      :ARG2 (a2 / add-02))
+             :ARG1-of (f2 / follow-01
+                          :ARG2 (e2 / expose-01
+                                    :ARG2 (a3 / and
+                                              :op1 s
+                                              :op2 s3))))
+    :ARG1-of (d2 / describe-01
+                 :ARG0 (f / figure
+                          :mod "2E")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Our observations strongly suggested that SPP86 would selectively inhibit RET- induced proliferation.
+# ::file pmid_2540_9876_136.txt
+# ::date 2015-09-03T01:45:25
+# ::id pmid_2540_9876.136
+(s / suggest-01
+   :ARG0 (o / observe-01
+            :ARG0 (w / we))
+   :ARG1 (i / inhibit-01
+            :ARG0 (s3 / small-molecule
+                      :name (n / name
+                               :op1 "SPP86"))
+            :ARG1 (p / proliferate-01
+                     :ARG2-of (i2 / induce-01
+                                  :ARG0 (p2 / protein
+                                            :name (n2 / name
+                                                      :op1 "RET"))))
+            :manner (s4 / select-01))
+   :ARG1-of (s2 / strong-02))
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We thus compared the effect of sorafenib and SPP86 on the proliferation of TPC1, 8505C and C643 cells in media containing 0.1% serum (i.e. low culture conditions).
+# ::file pmid_2540_9876_137.txt
+# ::date 2015-09-03T01:49:44
+# ::id pmid_2540_9876.137
+(c / cause-01
+   :ARG1 (c2 / compare-01
+             :ARG0 (w / we)
+             :ARG1 (a / affect-01
+                      :ARG0 (a2 / and
+                                :op1 (s / small-molecule
+                                        :name (n / name
+                                                 :op1 "sorafenib"))
+                                :op2 (s2 / small-molecule
+                                         :name (n2 / name
+                                                   :op1 "SPP86")))
+                      :ARG1 (p2 / proliferate-01
+                                :ARG0 (a3 / and
+                                          :op1 (c3 / cell-line
+                                                   :name (n3 / name
+                                                             :op1 "TPC1"))
+                                          :op2 (c4 / cell-line
+                                                   :name (n4 / name
+                                                             :op1 "8505C"))
+                                          :op3 (c5 / cell-line
+                                                   :name (n5 / name
+                                                             :op1 "C643"))))
+                      :location (m / medium
+                                   :ARG0-of (c6 / contain-01
+                                                :ARG1 (p / percentage-entity
+                                                         :value "0.1"
+                                                         :quant-of (s3 / serum))
+                                                :example (c7 / condition
+                                                             :mod (c8 / culture
+                                                                      :ARG1-of (l / low-04))))))))
+
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Under these conditions, signaling pathway activation is predominantly under the control of the respective oncogenes expressed by these cell lines.
+# ::file pmid_2540_9876_138.txt
+# ::date 2015-09-03T01:54:59
+# ::id pmid_2540_9876.138
+(a / activate-01
+      :ARG1 (p / pathway
+            :ARG0-of (s / signal-07))
+      :ARG1-of (c / control-01
+            :ARG0 (o / oncogene
+                  :mod (r / respective)
+                  :ARG1-of (e / express-03
+                        :ARG3 (c2 / cell-line
+                              :mod (t / this))))
+            :ARG1-of (p2 / predominate-01))
+      :condition (t2 / this))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt C643 and TPC1 cells showed marked differential sensitivity to SPP86 (IC<sub>50</sub>, 61.5 vs 1.5 μM for C643 and TPC1 cells respectively) (Figure <xref ref-type="fig" rid="Fig3">3</xref>A).
+# ::file pmid_2540_9876_139.txt
+# ::date 2015-09-03T02:03:13
+# ::id pmid_2540_9876.139
+(s / show-01
+      :ARG0 (a / and
+            :op1 (c / cell-line
+                  :name (n / name :op1 "C643"))
+            :op2 (c2 / cell-line
+                  :name (n2 / name :op1 "TPC1")))
+      :ARG1 (s2 / sensitive-03
+            :ARG0 a
+            :ARG1 (s3 / small-molecule
+                  :name (n3 / name :op1 "SPP86"))
+            :ARG1-of (d / differ-02)
+            :ARG1-of (m / mean-01
+                  :ARG2 (a2 / and
+                        :op1 (h3 / have-percentage-maximal-inhibitory-concentration-01
+                              :ARG1 s3
+                              :ARG2 "50"
+                              :ARG4 (c3 / concentration-quantity
+                                    :quant "61.5"
+                                    :unit (m2 / micromolar))
+                              :location c)
+                        :op2 (h / have-percentage-maximal-inhibitory-concentration-01
+                              :ARG1 s3
+                              :ARG2 "50"
+                              :ARG4 (c4 / concentration-quantity
+                                    :quant "1.5"
+                                    :unit m2)
+                              :location c2)))
+            :ARG1-of (m4 / mark-01))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure :mod "3A")))
+
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, 8505C cells grew poorly under low serum conditions (data not shown), but their proliferation was enhanced when exposed to doses of SPP86 from 1–10 μM (Figure <xref ref-type="fig" rid="Fig3">3</xref>A).
+# ::file pmid_2540_9876_140.txt
+# ::date 2015-09-03T02:10:59
+# ::id pmid_2540_9876.140
+(c / contrast-01
+      :ARG2 (c3 / contrast-01
+            :ARG1 (g / grow-01
+                  :ARG1 (c2 / cell-line
+                        :name (n / name :op1 "8505C"))
+                  :mod (p / poor)
+                  :condition (s / serum
+                        :ARG1-of (l / low-04))
+                  :ARG1-of (d / describe-01
+                        :ARG0 (d2 / data
+                              :ARG1-of (s2 / show-01 :polarity "-"))))
+            :ARG2 (e / enhance-01
+                  :ARG1 (p2 / proliferate-01
+                        :ARG0 c2)
+                  :condition (e2 / expose-01
+                        :ARG1 c2
+                        :ARG2 (d3 / dose-01
+                              :ARG1 (s3 / small-molecule
+                                    :name (n2 / name :op1 "SPP86")
+                                    :quant (c4 / concentration-quantity
+                                          :quant (v / value-interval :op1 "1" :op2 "10")
+                                          :unit (m / micromolar)))))))
+      :ARG1-of (d4 / describe-01
+            :ARG0 (f / figure :mod "3A")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Under similar conditions, the IC<sub>50</sub> values for sorafenib were 3.1 μM, 0.28 μM, and 33.3 μM for C643, TPC1 and 8505C cells respectively (Figure <xref ref-type="fig" rid="Fig3">3</xref>B).
+# ::file pmid_2540_9876_141.txt
+# ::date 2015-09-03T02:18:02
+# ::id pmid_2540_9876.141
+(a / and
+   :op1 (h4 / have-percentage-maximal-inhibitory-concentration-01
+            :ARG1 (s / small-molecule
+                     :name (n4 / name
+                               :op1 "sorafenib"))
+            :ARG2 "50"
+            :ARG4 (c2 / concentration-quantity
+                      :quant "3.1"
+                      :unit (m / micromolar))
+            :location (c / cell-line
+                         :name (n / name
+                                  :op1 "C643")))
+   :op2 (h / have-percentage-maximal-inhibitory-concentration-01
+           :ARG1 s
+           :ARG2 "50"
+           :ARG4 (c4 / concentration-quantity
+                     :quant "0.28"
+                     :unit m)
+           :location (c3 / cell-line
+                         :name (n2 / name
+                                   :op1 "TPC1")))
+   :op3 (h2 / have-percentage-maximal-inhibitory-concentration-01
+            :ARG1 s
+            :ARG2 "50"
+            :ARG4 (c6 / concentration-quantity
+                      :quant "33.3"
+                      :unit m)
+            :location (c5 / cell-line
+                          :name (n3 / name
+                                    :op1 "8505C")))
+   :condition (c7 / condition
+                  :ARG1-of (r / resemble-01))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3B")))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In general, low doses of SPP86 do not inhibit the activity of signaling proteins downstream of RET or other kinases that directly interact with it [<xref ref-type="bibr" rid="CR45">45</xref>].
+# ::file pmid_2540_9876_142.txt
+# ::date 2015-08-31T13:34:35
+# ::id pmid_2540_9876.142
+(i / inhibit-01
+   :polarity "-"
+   :ARG0 (d / dose-01
+            :ARG2 (s / small-molecule
+                     :name (n / name
+                              :op1 "SPP86"))
+            :ARG1-of (l / low-04))
+   :ARG1 (a / activity-06
+            :ARG0 (o2 / or
+                      :op1 (p / protein
+                              :ARG0-of (s2 / signal-07)
+                              :location (r / relative-position
+                                           :op1 (p2 / protein
+                                                    :name (n2 / name
+                                                              :op1 "RET"))
+                                           :direction (d2 / downstream)))
+                      :op2 (k / kinase
+                              :mod (o / other)
+                              :ARG0-of (i2 / interact-01
+                                           :ARG1 s
+                                           :ARG1-of (d3 / direct-02)))))
+   :ARG1-of (g / general-02)
+   :ARG1-of (d4 / describe-01
+                :ARG0 (p3 / publication
+                          :ARG1-of (c / cite-01
+                                      :ARG2 "45"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt SPP86 thus selectively inhibited the proliferation of TPC1 cells dependent on oncogenic RET but not 8505C and C643 cells respectively dependent on oncogenic BRAF and RAS.
+# ::file pmid_2540_9876_143.txt
+# ::date 2015-08-31T13:34:46
+# ::id pmid_2540_9876.143
+(c / cause-01
+   :ARG1 (c5 / contrast-01
+             :ARG1 (i / inhibit-01
+                      :ARG0 (s / small-molecule
+                               :name (n / name
+                                        :op1 "SPP86"))
+                      :ARG1 (p / proliferate-01
+                               :ARG0 (c2 / cell-line
+                                         :name (n2 / name
+                                                   :op1 "TPC1")
+                                         :ARG0-of (d / depend-01
+                                                     :ARG1 (p2 / protein
+                                                               :name (n3 / name
+                                                                         :op1 "RET")
+                                                               :ARG0-of (c3 / cause-01
+                                                                            :ARG1 (c4 / cancer)
+                                                                            :ARG0 a2)))))
+                      :manner (s3 / selective))
+             :ARG2 (i2 / inhibit-01
+                       :polarity "-"
+                       :ARG0 s
+                       :ARG1 (a / and
+                                :op1 (c6 / cell-line
+                                         :name (n4 / name
+                                                   :op1 "8505C"))
+                                :op2 (c7 / cell-line
+                                         :name (n5 / name
+                                                   :op1 "C643"))
+                                :ARG0-of (d2 / depend-01
+                                             :ARG1 (a2 / and
+                                                       :op1 (e / enzyme
+                                                               :name (n6 / name
+                                                                         :op1 "BRAF"))
+                                                       :op2 (e2 / enzyme
+                                                                :name (n7 / name
+                                                                          :op1 "RAS"))))
+                                :mod (r / respective)))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition to its role in thyroid cancers, RET has been shown to functionally interact with ERα in human breast cancer cell lines [<xref ref-type="bibr" rid="CR5">5</xref>, <xref ref-type="bibr" rid="CR6">6</xref>, <xref ref-type="bibr" rid="CR51">51</xref>, <xref ref-type="bibr" rid="CR52">52</xref>].
+# ::file pmid_2540_9876_145.txt
+# ::date 2015-08-31T14:03:46
+# ::id pmid_2540_9876.145
+(s / show-01
+   :ARG1 (i / interact-01
+            :ARG0 (p / protein
+                     :name (n / name
+                              :op1 "RET"))
+            :ARG1 (p2 / protein
+                      :name (n2 / name
+                                :op1 "ERα"))
+            :ARG1-of (f / function-01)
+            :location (c / cell-line
+                         :mod (h / human)
+                         :mod (c2 / cancer
+                                  :mod (b / breast))))
+   :ARG1-of (a / add-02
+               :ARG2 (r / role
+                        :topic (c3 / cancer
+                                   :mod (t / thyroid))
+                        :poss p))
+   :ARG1-of (d / describe-01
+               :ARG0 (p3 / publication
+                         :ARG1-of (c4 / cite-01
+                                      :ARG2 (a2 / and
+                                                :op1 "5"
+                                                :op2 "6"
+                                                :op3 "51"
+                                                :op4 "52")))))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We thus evaluated the utility of using SPP86 to interrogate RET signaling in MCF7 breast cancer cells.
+# ::file pmid_2540_9876_146.txt
+# ::date 2015-08-31T14:20:53
+# ::id pmid_2540_9876.146
+(c / cause-01
+   :ARG1 (e / evaluate-01
+            :ARG0 (w / we)
+            :ARG1 (u / utility
+                     :poss (u2 / use-01
+                               :ARG0 w
+                               :ARG1 (s / small-molecule
+                                        :name (n / name
+                                                 :op1 "SPP86"))
+                               :ARG2 (i / interrogate-01
+                                        :ARG0 w
+                                        :ARG1 (s2 / signal-07
+                                                  :ARG0 (p / protein
+                                                           :name (n2 / name
+                                                                     :op1 "RET")))
+                                        :location (c2 / cell-line
+                                                      :name (n3 / name
+                                                                :op1 "MCF7")
+                                                      :mod (c3 / cancer
+                                                               :mod (b / breast))))))))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Firstly, we studied the effect of SPP86 on RET- mediated ERα phosphorylation on serine residue 167 (Ser167).
+# ::file pmid_2540_9876_147.txt
+# ::date 2015-08-31T14:25:18
+# ::id pmid_2540_9876.147
+(s / study-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :ARG0 (s2 / small-molecule
+                      :name (n / name
+                               :op1 "SPP86"))
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (r / residue
+                              :mod (a2 / amino-acid
+                                       :mod "167"
+                                       :name (n4 / name
+                                                 :op1 "serine"))
+                              :part-of (p2 / protein
+                                           :name (n2 / name
+                                                     :op1 "ERα")))
+                     :ARG1-of (m / mediate-01
+                                 :ARG0 (p3 / protein
+                                           :name (n3 / name
+                                                     :op1 "RET")))))
+   :time (f / first))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Estrogen deprived and serum starved MCF7 cells were exposed to 10 ng/ml GDNF in the absence or presence of increasing does of SPP86.
+# ::file pmid_2540_9876_148.txt
+# ::date 2015-08-31T14:30:28
+# ::id pmid_2540_9876.148
+(e / expose-01
+   :ARG1 (c / cell-line
+            :name (n / name
+                     :op1 "MCF7")
+            :ARG2-of (d / deprive-01
+                        :ARG1 (s / small-molecule
+                                 :name (n2 / name
+                                           :op1 "estrogen")))
+            :ARG1-of (s2 / starve-01
+                         :ARG2 (s3 / serum)))
+   :ARG2 (p / protein
+            :name (n3 / name
+                      :op1 "GDNF")
+            :quant (c2 / concentration-quantity
+                       :quant "10"
+                       :unit (n4 / nanogram-per-milliliter)))
+   :condition (o / or
+                 :op1 (a / absent-01
+                         :ARG1 (d2 / dose-01
+                                   :ARG2 (s4 / small-molecule
+                                             :name (n5 / name
+                                                       :op1 "SPP86"))
+                                   :ARG1-of (i / increase-01)))
+                 :op2 (p2 / present-02
+                          :ARG1 d2)))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In these experiments, SPP86 effectively inhibited GDNF/RET- induced ERα phosphorylation at a concentration of 0.1 μM (Figure <xref ref-type="fig" rid="Fig4">4</xref>A).
+# ::file pmid_2540_9876_149.txt
+# ::date 2015-08-31T14:45:52
+# ::id pmid_2540_9876.149
+(i / inhibit-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "SPP86")
+            :quant (c / concentration-quantity
+                      :quant "0.1"
+                      :unit (m / micromolar)))
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (p2 / protein
+                      :name (n2 / name
+                                :op1 "ERα"))
+            :ARG2-of (i2 / induce-01
+                         :ARG0 (p3 / pathway
+                                   :name (n3 / name
+                                             :op1 "GDNF/RET"))))
+   :location (e / experiment-01
+                :mod (t / this))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4A"))
+   :ARG1-of (e2 / effective-04))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Higher concentrations of SPP86, 1–10 μM, reduced ERα phosphorylation even below baseline levels.
+# ::file pmid_2540_9876_150.txt
+# ::date 2015-08-31T14:53:18
+# ::id pmid_2540_9876.150
+(r / reduce-01
+   :ARG0 (c / concentrate-02
+            :ARG1 (s / small-molecule
+                     :name (n / name
+                              :op1 "SPP86")
+                     :quant (c2 / concentration-quantity
+                                :quant (v / value-interval
+                                          :op1 "1"
+                                          :op2 "10")
+                                :unit (m2 / micromolar)))
+            :ARG1-of (h / high-02
+                        :degree (m / more)))
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (p2 / protein
+                      :name (n3 / name
+                                :op1 "ERα")))
+   :ARG2 (b / below
+            :op1 (l / level
+                    :mod (b2 / baseline))
+            :mod (e / even)))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, exposure of MCF7 cells to SPP86 was associated with a moderate decrease in ERα levels in these experiments (Figure <xref ref-type="fig" rid="Fig4">4</xref>A) We next investigated the effect of SPP86 on RET- mediated activation of these pathways in MCF7 cells.
+# ::file pmid_2540_9876_151.txt
+# ::date 2015-08-31T14:57:44
+# ::id pmid_2540_9876.151
+(m / multi-sentence
+   :snt1 (a / associate-01
+            :ARG1 (e / expose-01
+                     :ARG1 (c / cell-line
+                              :name (n / name
+                                       :op1 "MCF7"))
+                     :ARG2 (s / small-molecule
+                              :name (n2 / name
+                                        :op1 "SPP86")))
+            :ARG2 (d / decrease-01
+                     :ARG1 (l / level
+                              :quant-of (p / protein
+                                           :name (n3 / name
+                                                     :op1 "ERα")))
+                     :ARG2 (m2 / moderate-03))
+            :location (e2 / experiment-01
+                          :mod (t / this))
+            :ARG1-of (d2 / describe-01
+                         :ARG0 (f / figure
+                                  :mod "4A"))
+            :ARG1-of (a4 / add-02))
+   :snt2 (i / investigate-01
+            :ARG0 (w / we)
+            :ARG1 (a2 / affect-01
+                      :ARG0 (s2 / small-molecule
+                                :name (n4 / name
+                                          :op1 "SPP86"))
+                      :ARG1 (a3 / activate-01
+                                :ARG1 (p3 / pathway
+                                          :mod t)
+                                :ARG1-of (m3 / mediate-01
+                                             :ARG0 (p2 / protein
+                                                       :name (n5 / name
+                                                                 :op1 "RET")))
+                                :location (c2 / cell-line
+                                              :name (n6 / name
+                                                        :op1 "MCF7"))))
+            :time (n7 / next)))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt SPP86 inhibited GDNF/ RET- induced phosphorylation of Akt and its downstream signaling at concentrations as low as 0.1 μM (Figure <xref ref-type="fig" rid="Fig4">4</xref>B).
+# ::file pmid_2540_9876_152.txt
+# ::date 2015-08-31T15:03:30
+# ::id pmid_2540_9876.152
+(i / inhibit-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "SPP86"))
+   :ARG1 (a / and
+            :op1 (p / phosphorylate-01
+                    :ARG1 (e / enzyme
+                             :name (n2 / name
+                                       :op1 "Akt"))
+                    :ARG2-of (i2 / induce-01
+                                 :ARG0 (p2 / pathway
+                                           :name (n3 / name
+                                                     :op1 "GDNF/RET"))))
+            :op2 (s3 / signal-07
+                     :ARG0 e
+                     :location (d / downstream)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "4B"))
+   :condition (c2 / concentration-quantity
+                  :quant "0.1"
+                  :unit (m / micromolar)
+                  :ARG1-of (l / low-04)))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We noted that SPP86 inhibited phosphorylation of Akt more effectively than that of its downstream target p70S6K at this concentration.
+# ::file pmid_2540_9876_153.txt
+# ::date 2015-08-31T15:17:08
+# ::id pmid_2540_9876.153
+(n / note-01
+   :ARG0 (w / we)
+   :ARG1 (i / inhibit-01
+            :ARG0 (s / small-molecule
+                     :name (n2 / name
+                               :op1 "SPP86"))
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (e / enzyme
+                              :name (n3 / name
+                                        :op1 "Akt")))
+            :ARG1-of (e2 / effective-04
+                         :degree (m / more)
+                         :compared-to (t / target-01
+                                         :ARG0 s
+                                         :ARG1 (e3 / enzyme
+                                                   :name (n4 / name
+                                                             :op1 "p70S6K"))
+                                         :location (d / downstream)))
+            :condition (c / concentration-quantity
+                          :mod (t2 / this))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similarly, SPP86 inhibited Akt phosphorylation at markedly lower concentrations than those required to inhibit MAPK phosphorylation (0.1 vs. 1.0 μM) (Figure <xref ref-type="fig" rid="Fig4">4</xref>B).
+# ::file pmid_2540_9876_154.txt
+# ::date 2015-08-31T15:24:08
+# ::id pmid_2540_9876.154
+(i / inhibit-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "SPP86"))
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (e / enzyme
+                     :name (n2 / name
+                               :op1 "Akt")))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4B"))
+   :ARG1-of (r2 / resemble-01)
+   :condition (c3 / concentration-quantity
+                  :quant "0.1"
+                  :unit (m3 / micromolar)
+                  :ARG1-of (l / low-04
+                              :degree (m / more
+                                         :degree (m4 / marked))
+                              :compared-to (c4 / concentration-quantity
+                                               :quant "1.0"
+                                               :unit m3
+                                               :ARG1-of (r / require-01
+                                                           :ARG2 (i2 / inhibit-01
+                                                                     :ARG1 (p2 / phosphorylate-01
+                                                                               :ARG1 (e2 / enzyme
+                                                                                         :name (n3 / name
+                                                                                                   :op1 "MAPK")))))))))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt SPP86 effectively inhibited GDNF- induced RET phosphorylation Tyr1062 at a concentration of 1.0 μM.
+# ::file pmid_2540_9876_155.txt
+# ::date 2015-08-31T15:24:58
+# ::id pmid_2540_9876.155
+(i / inhibit-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "SPP86")
+            :quant (c / concentration-quantity
+                      :quant "1.0"
+                      :unit (m / micromolar)))
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (a / amino-acid
+                     :mod "1062"
+                     :name (n4 / name
+                               :op1 "tyrosine")
+                     :part-of (p2 / protein
+                                  :name (n2 / name
+                                            :op1 "RET")))
+            :ARG2-of (i2 / induce-01
+                         :ARG0 (p3 / protein
+                                   :name (n3 / name
+                                             :op1 "GDNF"))))
+   :ARG1-of (e / effective-04))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, FAK inhibition with PF573228 only moderately inhibited RET phosphorylation.
+# ::file pmid_2540_9876_156.txt
+# ::date 2015-09-01T12:41:21
+# ::id pmid_2540_9876.156
+(c / contrast-01
+   :ARG2 (i / inhibit-01
+            :ARG0 (i2 / inhibit-01
+                      :ARG0 (s / small-molecule
+                               :name (n / name
+                                        :op1 "PF573228"))
+                      :ARG1 (e / enzyme
+                               :name (n2 / name
+                                         :op1 "FAK")))
+            :ARG1 (p2 / phosphorylate-01
+                      :ARG1 (p3 / protein
+                                :name (n3 / name
+                                          :op1 "RET")))
+            :ARG1-of (m / moderate-03
+                        :mod (o / only))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Co- exposure to PF573228 and SPP86 however, exerted an additive inhibitory effect on RET phosphorylation (Figure <xref ref-type="fig" rid="Fig4">4</xref>C).
+# ::file pmid_2540_9876_157.txt
+# ::date 2015-09-01T12:46:41
+# ::id pmid_2540_9876.157
+(h / have-concession-91
+   :ARG1 (e / exert-01
+            :ARG0 (c / coexpose-00
+                     :ARG2 (a / and
+                              :op1 (s / small-molecule
+                                      :name (n / name
+                                               :op1 "PF573228"))
+                              :op2 (s2 / small-molecule
+                                       :name (n2 / name
+                                                 :op1 "SPP86"))))
+            :ARG1 (a2 / affect-01
+                      :ARG0 c
+                      :ARG1 (p / phosphorylate-01
+                               :ARG1 (p2 / protein
+                                         :name (n3 / name
+                                                   :op1 "RET")))
+                      :ARG2 (i / inhibit-01)
+                      :ARG1-of (a3 / add-02)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4C")))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Both PF573228 and SPP86 inhibited GDNF- induced ERK1/2 and Akt phosphorylation (Figure <xref ref-type="fig" rid="Fig4">4</xref>C and Additional file <xref ref-type="media" rid="MOESM1">1</xref>A).
+# ::file pmid_2540_9876_158.txt
+# ::date 2015-09-01T13:02:40
+# ::id pmid_2540_9876.158
+(i / inhibit-01
+   :ARG0 (a / and
+            :op1 (s / small-molecule
+                    :name (n / name
+                             :op1 "PF573228"))
+            :op2 (s2 / small-molecule
+                     :name (n2 / name
+                               :op1 "SPP86")))
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (a2 / and
+                      :op1 (e / enzyme
+                              :name (n3 / name
+                                        :op1 "ERK1/2"))
+                      :op2 (e2 / enzyme
+                               :name (n4 / name
+                                         :op1 "Akt")))
+            :ARG2-of (i2 / induce-01
+                         :ARG0 (p2 / protein
+                                   :name (n5 / name
+                                             :op1 "GDNF"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "4C")
+                         :op2 (f2 / file
+                                  :mod "1A"
+                                  :ARG1-of (a4 / add-02)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Prolonged exposure of MCF7 cells to SPP86 also lead to the suppression of cyclin D1 expression (Figure <xref ref-type="fig" rid="Fig4">4</xref>D).
+# ::file pmid_2540_9876_159.txt
+# ::date 2015-09-01T13:07:39
+# ::id pmid_2540_9876.159
+(l / lead-03
+   :ARG0 (e / expose-01
+            :ARG1 (c / cell-line
+                     :name (n / name
+                              :op1 "MCF7"))
+            :ARG2 (s / small-molecule
+                     :name (n2 / name
+                               :op1 "SPP86"))
+            :ARG1-of (p / prolong-01))
+   :ARG2 (s2 / suppress-01
+             :ARG0 e
+             :ARG1 (e2 / express-03
+                       :ARG1 (p2 / protein
+                                 :name (n3 / name
+                                           :op1 "cyclin"
+                                           :op2 "D1"))))
+   :mod (a / also)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4D")))
+
+# ::save-date Wed Nov 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next compared the effects of sorafenib and SPP86 on PI3K/Akt and MAPK pathway signaling, with a view to discriminate the direct effects of RET inhibition from those of a combined inhibition of RET and RAF.
+# ::file pmid_2540_9876_160.txt
+# ::date 2015-09-01T13:12:05
+# ::id pmid_2540_9876.160
+(c / compare-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :ARG0 (a2 / and
+                      :op1 (s / small-molecule
+                              :name (n / name
+                                       :op1 "sorafenib"))
+                      :op2 (s2 / small-molecule
+                               :name (n2 / name
+                                         :op1 "SPP86")))
+            :ARG1 (s3 / signal-07
+                      :ARG0 (a3 / and
+                                :op1 (p / pathway
+                                        :name (n3 / name
+                                                  :op1 "PI3K/Akt"))
+                                :op2 (p2 / pathway
+                                         :name (n4 / name
+                                                   :op1 "MAPK")))))
+   :purpose (d / discriminate-01
+               :ARG0 w
+               :ARG1 (a5 / and
+                         :op1 (a4 / affect-01
+                                  :ARG0 (i / inhibit-01
+                                           :ARG1 (p3 / protein
+                                                     :name (n5 / name
+                                                               :op1 "RET")))
+                                  :ARG1-of (d2 / direct-02))
+                         :op2 (a6 / affect-01
+                                  :ARG0 (i2 / inhibit-01
+                                            :ARG1 (a7 / and
+                                                      :op1 p3
+                                                      :op2 (p5 / protein-family
+                                                               :name (n7 / name
+                                                                         :op1 "RAF")))
+                                            :ARG1-of (c2 / combine-01)))))
+   :time (n8 / next))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In these experiments, estrogen deprived and serum starved MCF7 cells were exposed to 10 ng/ml GDNF alone or in the presence of either sorafenib or SPP86.
+# ::file pmid_2540_9876_161.txt
+# ::date 2015-09-01T13:23:36
+# ::id pmid_2540_9876.161
+(e / expose-01
+   :ARG1 (c / cell-line
+            :name (n / name
+                     :op1 "MCF7")
+            :ARG2-of (d / deprive-01
+                        :ARG1 (s / small-molecule
+                                 :name (n2 / name
+                                           :op1 "estrogen")))
+            :ARG1-of (s2 / starve-01
+                         :ARG2 (s3 / serum)))
+   :ARG2 (p / protein
+            :name (n3 / name
+                      :op1 "GDNF")
+            :quant (c2 / concentration-quantity
+                       :quant "10"
+                       :unit (n4 / nanogram-per-milliliter)))
+   :manner (o / or
+              :op1 (a / alone)
+              :op2 (p2 / present-02
+                       :ARG1 (o2 / or
+                                 :op1 (s4 / small-molecule
+                                          :name (n5 / name
+                                                    :op1 "sorafenib"))
+                                 :op2 (s5 / small-molecule
+                                          :name (n6 / name
+                                                    :op1 "SPP86")))))
+   :location (e2 / experiment-01
+                 :mod (t / this)))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Analyses of the relative levels of phosphorylated Akt and ERK1/2 demonstrated that both compounds effectively block GDNF- induced RET signaling at concentrations as low as 1 μM (Figure <xref ref-type="fig" rid="Fig4">4</xref>E).
+# ::file pmid_2540_9876_162.txt
+# ::date 2015-09-01T13:33:49
+# ::id pmid_2540_9876.162
+(d / demonstrate-01
+   :ARG0 (a / analyze-01
+            :ARG1 (a2 / and
+                      :op1 (l / level
+                              :quant-of (e / enzyme
+                                           :name (n / name
+                                                    :op1 "Akt")
+                                           :ARG3-of (p / phosphorylate-01
+                                                       :ARG3 e2))
+                              :ARG1-of (r / relative-05
+                                          :ARG1 l2))
+                      :op2 (l2 / level
+                               :quant-of (e2 / enzyme
+                                             :name (n2 / name
+                                                       :op1 "ERK1/2")))))
+   :ARG1 (b / block-01
+            :ARG0 (c / compound
+                     :mod (b2 / both)
+                     :quant (c2 / concentration-quantity
+                                :quant "1"
+                                :unit (m / micromolar)
+                                :ARG1-of (l3 / low-04)))
+            :ARG1 (s / signal-07
+                     :ARG0 (p2 / protein
+                               :name (n3 / name
+                                         :op1 "RET"))
+                     :ARG2-of (i / induce-01
+                                 :ARG0 (p3 / protein
+                                           :name (n4 / name
+                                                     :op1 "GDNF"))))
+            :ARG1-of (e3 / effective-04))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "4E")))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We noted however, that sorafenib inhibited Akt and ERK1/2 slightly more effectively than SPP86 under these conditions (Figure <xref ref-type="fig" rid="Fig4">4</xref>E).
+# ::file pmid_2540_9876_163.txt
+# ::date 2015-09-01T13:45:51
+# ::id pmid_2540_9876.163
+(h / have-concession-91
+   :ARG1 (n / note-01
+            :ARG0 (w / we)
+            :ARG1 (i / inhibit-01
+                     :ARG0 (s / small-molecule
+                              :name (n2 / name
+                                        :op1 "sorafenib"))
+                     :ARG1 (a / and
+                              :op1 (e / enzyme
+                                      :name (n3 / name
+                                                :op1 "Akt"))
+                              :op2 (e3 / enzyme
+                                       :name (n5 / name
+                                                 :op1 "ERK1/2")))
+                     :ARG1-of (e2 / effective-04
+                                  :degree (m / more
+                                             :degree (s2 / slight))
+                                  :compared-to (s3 / small-molecule
+                                                   :name (n4 / name
+                                                             :op1 "SPP86")))
+                     :condition (c / condition
+                                   :mod (t / this))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4E")))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These differential effects on PI3K/Akt and MAPK signaling may result may stem from the fact that sorafenib and SPP86 target different kinases at low concentrations.
+# ::file pmid_2540_9876_164.txt
+# ::date 2015-09-01T13:52:38
+# ::id pmid_2540_9876.164
+(p / possible-01
+   :ARG1 (s / stem-01
+            :ARG1 (a / affect-01
+                     :ARG1 (s2 / signal-07
+                               :ARG0 (a2 / and
+                                         :op1 (p2 / pathway
+                                                  :name (n / name
+                                                           :op1 "PI3K/Akt"))
+                                         :op2 (p3 / pathway
+                                                  :name (n2 / name
+                                                            :op1 "MAPK"))))
+                     :mod (d / differential)
+                     :mod (t / this))
+            :ARG2 (t2 / target-01
+                      :ARG0 (a3 / and
+                                :op1 (s3 / small-molecule
+                                         :name (n3 / name
+                                                   :op1 "sorafenib"))
+                                :op2 (s4 / small-molecule
+                                         :name (n4 / name
+                                                   :op1 "SPP86")))
+                      :ARG1 (k / kinase
+                               :ARG1-of (d2 / differ-02))
+                      :condition (c / concentration-quantity
+                                    :ARG1-of (l / low-04)))))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The enhanced inhibition of MAPK signaling observed with sorafenib may also result from the fact that it targets both RET and RAF family kinases [<xref ref-type="bibr" rid="CR37">37</xref>, <xref ref-type="bibr" rid="CR45">45</xref>].
+# ::file pmid_2540_9876_165.txt
+# ::date 2015-09-01T14:03:25
+# ::id pmid_2540_9876.165
+(p / possible-01
+   :ARG1 (r / result-01
+            :ARG1 (t / target-01
+                     :ARG0 "s2"
+                     :ARG1 (a / and
+                              :op1 (p3 / protein-family
+                                       :name (n3 / name
+                                                 :op1 "RET"))
+                              :op2 (p4 / protein-family
+                                       :name (n4 / name
+                                                 :op1 "RAF"))))
+            :ARG2 (i / inhibit-01
+                     :ARG0 (s2 / small-molecule
+                               :name (n2 / name
+                                         :op1 "sorafenib"))
+                     :ARG1 (s / signal-07
+                              :ARG0 (p2 / pathway
+                                        :name (n / name
+                                                 :op1 "MAPK")))
+                     :ARG1-of (e / enhance-01)
+                     :ARG1-of (o / observe-01)))
+   :ARG1-of (d / describe-01
+               :ARG0 (p5 / publication
+                         :ARG1-of (c / cite-01
+                                     :ARG2 (a2 / and
+                                               :op2 "37"
+                                               :op2 "45"))))
+   :mod (a3 / also))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Since these observations suggested that SPP86 disrupts ERα- RET crosstalk, we investigated the effect of SPP86 on the proliferation of MCF7 cells.
+# ::file pmid_2540_9876_166.txt
+# ::date 2015-09-01T14:15:02
+# ::id pmid_2540_9876.166
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "SPP86"))
+            :ARG1 (p / proliferate-01
+                     :ARG0 (c / cell-line
+                              :name (n2 / name
+                                        :op1 "MCF7"))))
+   :ARG1-of (c2 / cause-01
+                :ARG0 (s2 / suggest-01
+                          :ARG0 (o / observe-01
+                                   :mod (t / this))
+                          :ARG1 (d / disrupt-01
+                                   :ARG0 s
+                                   :ARG1 (c3 / crosstalk-00
+                                             :ARG1 (p2 / protein
+                                                       :name (n3 / name
+                                                                 :op1 "ERα"))
+                                             :ARG2 (p3 / protein
+                                                       :name (n4 / name
+                                                                 :op1 "RET")))))))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Estrogen deprived and serum starved cells were cultured in the presence of 1 ng/ml β- estradiol (E2) or 10 ng/ml GDNF alone and in combination in the presence of 1 μM SPP86 for 7 days.
+# ::file pmid_2540_9876_167.txt
+# ::date 2015-09-01T14:22:15
+# ::id pmid_2540_9876.167
+(c / culture-01
+   :ARG1 (c2 / cell
+             :ARG2-of (d / deprive-01
+                         :ARG1 (s / small-molecule
+                                  :name (n / name
+                                           :op1 "estrogen")))
+             :ARG1-of (s2 / starve-01
+                          :ARG2 (s3 / serum)))
+   :manner (a2 / and
+               :op1 (p2 / present-02
+                        :ARG1 (o / or
+                                 :op1 (s4 / small-molecule
+                                          :name (n2 / name
+                                                    :op1 "β-estradiol")
+                                          :quant (c3 / concentration-quantity
+                                                     :quant "1"
+                                                     :unit (n3 / nanogram-per-milliliter)))
+                                 :op2 (p / protein
+                                         :name (n4 / name
+                                                   :op1 "GDNF")
+                                         :quant (c4 / concentration-quantity
+                                                    :quant "10"
+                                                    :unit n3)))
+                        :mod (a / alone))
+               :op2 (p3 / present-02
+                        :ARG1 (s5 / small-molecule
+                                  :name (n5 / name
+                                            :op1 "SPP86")
+                                  :quant (c5 / concentration-quantity
+                                             :quant "1"
+                                             :unit (m / micromolar)))
+                        :mod (c6 / combine-01)))
+   :duration (t / temporal-quantity
+                :quant "7"
+                :unit (d2 / day)))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt SPP86 effectively inhibited E2 and/or GDNF- induced proliferation (<i>p</i> <0.05) (Figure <xref ref-type="fig" rid="Fig5">5</xref>A).
+# ::file pmid_2540_9876_168.txt
+# ::date 2015-09-01T14:39:04
+# ::id pmid_2540_9876.168
+(i / inhibit-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "SPP86"))
+   :ARG1 (p2 / proliferate-01
+             :ARG2-of (i2 / induce-01
+                          :ARG0 (a / and-or
+                                   :op1 (s2 / small-molecule
+                                            :name (n2 / name
+                                                      :op1 "E2"))
+                                   :op2 (p / protein
+                                           :name (n3 / name
+                                                     :op1 "GDNF")))))
+   :ARG1-of (e / effective-04)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5A"))
+   :ARG1-of (s3 / statistical-test-91
+                :ARG2 (l / less-than
+                         :op1 "0.05")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, SPP86 did not inhibit proliferation when MCF7 cells were co-exposed to 1 ng/ml E2 and 5 ng/insulin under similar conditions (Figure <xref ref-type="fig" rid="Fig5">5</xref>B).
+# ::file pmid_2540_9876_169.txt
+# ::date 2015-09-01T14:47:26
+# ::id pmid_2540_9876.169
+(c / contrast-01
+   :ARG2 (i / inhibit-01
+            :polarity "-"
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "SPP86"))
+            :ARG1 (p / proliferate-01)
+            :condition (c2 / coexpose-00
+                           :ARG1 (c3 / cell-line
+                                     :name (n2 / name
+                                               :op1 "MCF7"))
+                           :ARG2 (a / and
+                                    :op1 (s2 / small-molecule
+                                             :name (n3 / name
+                                                       :op1 "E2")
+                                             :quant (c4 / concentration-quantity
+                                                        :quant "1"
+                                                        :unit (n4 / nanogram-per-milliliter)))
+                                    :op2 (p2 / protein
+                                             :name (n5 / name
+                                                       :op1 "insulin")
+                                             :quant (c5 / concentration-quantity
+                                                        :quant "5"
+                                                        :unit n4)))
+                           :condition (c6 / condition
+                                          :ARG1-of (r / resemble-01))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5B")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next compared the effect of SPP86 and tamoxifen on the proliferation of MCF7 cells.
+# ::file pmid_2540_9876_170.txt
+# ::date 2015-09-01T14:53:57
+# ::id pmid_2540_9876.170
+(c / compare-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :ARG0 (a2 / and
+                      :op1 (s / small-molecule
+                              :name (n / name
+                                       :op1 "SPP86"))
+                      :op2 (s2 / small-molecule
+                               :name (n2 / name
+                                         :op1 "tamoxifen")))
+            :ARG1 (p / proliferate-01
+                     :ARG0 (c2 / cell-line
+                               :name (n3 / name
+                                         :op1 "MCF7"))))
+   :time (n4 / next))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Estrogen deprived and serum starved cells were cultured in the presence of 1 ng/ml β- estradiol (E2) and 10 ng/ml GDNF with increasing doses of either SPP86 or tamoxifen, in medium containing 1 ng/ml β- estradiol (E2) and 10 ng/ml GDNF and incubated for 7 days.
+# ::file pmid_2540_9876_171.txt
+# ::date 2015-09-01T14:56:00
+# ::id pmid_2540_9876.171
+(a3 / and
+    :op1 (c / culture-01
+            :ARG1 (c2 / cell
+                      :ARG2-of (d / deprive-01
+                                  :ARG1 (s / small-molecule
+                                           :name (n / name
+                                                    :op1 "estrogen")))
+                      :ARG1-of (s2 / starve-01
+                                   :ARG2 (s3 / serum)))
+            :manner (a2 / and
+                        :op1 (p2 / present-02
+                                 :ARG1 (a / and
+                                          :op1 (s4 / small-molecule
+                                                   :name (n2 / name
+                                                             :op1 "β-estradiol")
+                                                   :quant (c3 / concentration-quantity
+                                                              :quant "1"
+                                                              :unit (n3 / nanogram-per-milliliter)))
+                                          :op2 (p / protein
+                                                  :name (n4 / name
+                                                            :op1 "GDNF")
+                                                  :quant (c4 / concentration-quantity
+                                                             :quant "10"
+                                                             :unit n3))))
+                        :op2 (d2 / dose-01
+                                 :ARG2 (o / or
+                                          :op1 (s5 / small-molecule
+                                                   :name (n5 / name
+                                                             :op1 "SPP86"))
+                                          :op2 (s6 / small-molecule
+                                                   :name (n6 / name
+                                                             :op1 "tamoxifen")))
+                                 :ARG1-of (i / increase-01)))
+            :location (m / medium
+                         :ARG0-of (c5 / contain-01
+                                      :ARG1 a)))
+    :op2 (i2 / incubate-01
+             :ARG1 c2
+             :duration (t / temporal-quantity
+                          :quant "7"
+                          :unit (d3 / day))))
+
+# ::save-date Wed Nov 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In these experiments, SPP86 and tamoxifen inhibited proliferation to a similar degree with IC<sub>50</sub> values of 1.0 and 1.4 μM respectively (Figure <xref ref-type="fig" rid="Fig5">5</xref>C).
+# ::file pmid_2540_9876_172.txt
+# ::date 2015-09-01T15:08:49
+# ::id pmid_2540_9876.172
+(i / inhibit-01
+   :ARG0 (a / and
+            :op1 (s / small-molecule
+                    :name (n / name
+                             :op1 "SPP86"))
+            :op2 (s2 / small-molecule
+                     :name (n2 / name
+                               :op1 "tamoxifen")))
+   :ARG1 (p / proliferate-01)
+   :degree (r / resemble-01
+              :ARG2 (a3 / and
+                        :op1 (v / value
+                                :mod (c3 / concentrate-02
+                                         :ARG1-of (e / equal-01
+                                                     :ARG2 (c / concentration-quantity
+                                                              :quant "1.0"
+                                                              :unit (m / micromolar)))
+                                         :mod (i2 / inhibit-01
+                                                  :degree (p2 / percentage-entity
+                                                              :value "50"))))
+                        :op2 (v2 / value
+                                 :mod (c4 / concentrate-02
+                                          :ARG1-of (e3 / equal-01
+                                                       :ARG2 (c2 / concentration-quantity
+                                                                 :quant "1.4"
+                                                                 :unit m))
+                                          :mod i2))
+                        :mod (r2 / respective)))
+   :location (e2 / experiment-01
+                 :mod (t2 / this))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5C")))

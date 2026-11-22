@@ -1,0 +1,1595 @@
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patient characteristics are summarized in <xref ref-type="table" rid="T1">Table 1</xref>.
+# ::file pmid_2290_9976_30.txt
+# ::date 2015-08-24T02:16:46
+# ::id pmid_2290_9976.30
+(s / summarize-01
+      :ARG1 (t / thing
+            :ARG2-of (c / characteristic-02
+                  :ARG1 (p / person
+                        :ARG0-of (h / have-rel-role-91
+                              :ARG2 (p2 / patient)))))
+      :ARG2 (t2 / table :mod "1"))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The median age of the patients included in this study was 65 y (181 women, 92 men).
+# ::file pmid_2290_9976_31.txt
+# ::date 2015-08-24T02:19:16
+# ::id pmid_2290_9976.31
+(a / age-01
+      :ARG1 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG2 (p2 / patient))
+            :ARG1-of (i / include-01
+                  :ARG2 (s / study-01
+                        :mod (t2 / this)))
+            :ARG1-of (m2 / mean-01
+                  :ARG2 (a2 / and
+                        :op1 (w / woman :quant "181")
+                        :op2 (m3 / man :quant "92"))))
+      :ARG2 (t / temporal-quantity
+            :quant "65"
+            :unit (y / year))
+      :mod (m / median))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Most underwent primary tumor resection (260/273 patients, 95.2%), while secondary metastatic disease was diagnosed in 194 patients (71.1%), of whom 70 (36.1%) underwent resection and 22 (11.3%) underwent thermoablation.
+# ::file pmid_2290_9976_32.txt
+# ::date 2015-08-24T02:23:03
+# ::id pmid_2290_9976.32
+(c / contrast-01
+      :ARG1 (u / undergo-28
+            :ARG1 (p5 / person
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG2 (p6 / patient))
+                  :quant (m / most)
+                  :ARG1-of (m2 / mean-01
+                        :ARG2 (i / include-91
+                              :ARG1 (p8 / person
+                                    :quant "260"
+                                    :ARG0-of h)
+                              :ARG2 (p9 / person
+                                    :quant "273"
+                                    :ARG0-of h)
+                              :ARG3 (p / percentage-entity :value "95.2"))))
+            :ARG2 (r / resection
+                  :mod (t / tumor
+                        :mod (p7 / primary))))
+      :ARG2 (d / diagnose-01
+            :ARG1 (p10 / person
+                  :quant "194"
+                  :ARG0-of h
+                  :ARG1-of (m4 / mean-01
+                        :ARG2 (p2 / percentage-entity :value "71.1"))
+                  :ARG2-of (i2 / include-91
+                        :ARG1 (a / and
+                              :op1 (p11 / person
+                                    :quant "70"
+                                    :ARG0-of h
+                                    :ARG1-of (m5 / mean-01
+                                          :ARG2 (p3 / percentage-entity :value "36.1"))
+                                    :ARG1-of (u2 / undergo-28
+                                          :ARG2 (r2 / resection)))
+                              :op2 (p12 / person
+                                    :quant "22"
+                                    :ARG0-of h
+                                    :ARG1-of (u3 / undergo-28
+                                          :ARG2 (t2 / thermoablation))
+                                    :ARG1-of (m6 / mean-01
+                                          :ARG2 (p4 / percentage-entity :value "11.3"))))))
+            :ARG2 (d2 / disease
+                  :mod (s / secondary)
+                  :ARG1-of (m3 / metastasize-101))))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The primary tumor was located in the colon in 112 patients (41.1%), sigmoid colon in 100 patients (36.6%) and rectum in 61 patients (22.3%).
+# ::file pmid_2290_9976_33.txt
+# ::date 2015-08-24T02:30:42
+# ::id pmid_2290_9976.33
+(a / and
+      :op1 (b / be-located-at-91
+            :ARG1 (t / tumor
+                  :mod (p4 / primary))
+            :ARG2 (c / colon)
+            :location (p5 / person
+                  :quant "112"
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG2 (p6 / patient))
+                  :ARG1-of (m / mean-01
+                        :ARG2 (p / percentage-entity :value "41.1"))))
+      :op2 (b2 / be-located-at-91
+            :ARG1 t
+            :ARG2 (c2 / colon
+                  :mod (s / sigmoid))
+            :location (p7 / person
+                  :quant "100"
+                  :ARG0-of h
+                  :ARG1-of (m2 / mean-01
+                        :ARG2 (p2 / percentage-entity :value "36.6"))))
+      :op3 (b3 / be-located-at-91
+            :ARG1 t
+            :ARG2 (r / rectum)
+            :location (p8 / person
+                  :quant "61"
+                  :ARG0-of h
+                  :ARG1-of (m3 / mean-01
+                        :ARG2 (p3 / percentage-entity :value "22.3")))))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The metastases were located in the liver in 129 (66.5% of patients with metastases), in the lungs in 39 (20.1%), and in other organs in 126 patients (64.9%).
+# ::file pmid_2290_9976_34.txt
+# ::date 2015-08-24T02:36:18
+# ::id pmid_2290_9976.34
+(a / and
+      :op1 (b / be-located-at-91
+            :ARG1 (m / metastasize-101)
+            :ARG2 (l2 / liver)
+            :location (p4 / person
+                  :quant "129"
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG2 (p5 / patient))
+                  :ARG1-of (m2 / mean-01
+                        :ARG2 (p / percentage-entity
+                              :value "66.5"
+                              :ARG3-of (i / include-91
+                                    :ARG2 (p6 / person
+                                          :ARG0-of h
+                                          :ARG0-of (h2 / have-03
+                                                :ARG1 m)))))))
+      :op2 (b2 / be-located-at-91
+            :ARG1 m
+            :ARG2 (l4 / lung)
+            :location (p7 / person
+                  :quant "39"
+                  :ARG0-of h
+                  :ARG1-of (m5 / mean-01
+                        :ARG2 (p2 / percentage-entity :value "20.1"))))
+      :op3 (b3 / be-located-at-91
+            :ARG1 m
+            :ARG2 (o / organ
+                  :mod (o2 / other))
+            :location (p8 / person
+                  :quant "126"
+                  :ARG0-of h
+                  :ARG1-of (m7 / mean-01
+                        :ARG2 (p3 / percentage-entity :value "64.9")))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Pretreatment carcinoembryonic antigen (CEA) levels were elevated above the normal range in 89 patients (32.6%).
+# ::file pmid_2290_9976_35.txt
+# ::date 2015-08-24T02:41:35
+# ::id pmid_2290_9976.35
+(e / elevate-01
+   :ARG1 (l / level
+            :quant-of (p2 / protein
+                          :name (n / name
+                                   :op1 "carcinoembryonic"
+                                   :op2 "antigen"))
+            :time (b / before
+                     :op1 (t / treat-04)))
+   :ARG2 (a / above
+            :op1 (r / range
+                    :ARG1-of (n2 / normal-02)))
+   :location (p3 / person
+                 :quant "89"
+                 :ARG0-of (h / have-rel-role-91
+                             :ARG2 (p4 / patient))
+                 :ARG1-of (m / mean-01
+                             :ARG2 (p / percentage-entity
+                                      :value "32.6"))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>K-Ras</i> gene mutations were present in 89 patients (32.6%), of whom 76 (85.4%) had mutations in codon 12 and 10 (11.2%) had mutations in codon 13.
+# ::file pmid_2290_9976_38.txt
+# ::date 2015-08-24T02:50:26
+# ::id pmid_2290_9976.38
+(p4 / present-102
+    :ARG0 (p5 / person
+              :quant "89"
+              :ARG0-of (h / have-rel-role-91
+                          :ARG2 (p6 / patient))
+              :ARG1-of (m2 / mean-01
+                           :ARG2 (p / percentage-entity
+                                    :value "32.6"))
+              :ARG2-of (i / include-91
+                          :ARG1 (a / and
+                                   :op1 (p7 / person
+                                            :quant "76"
+                                            :ARG0-of h
+                                            :ARG1-of (m3 / mean-01
+                                                         :ARG2 (p2 / percentage-entity
+                                                                   :value "85.4"))
+                                            :ARG0-of (h2 / have-03
+                                                         :ARG1 (m4 / mutate-01
+                                                                   :ARG1 (c / codon
+                                                                            :mod "12"))))
+                                   :op2 (p8 / person
+                                            :quant "10"
+                                            :ARG0-of h
+                                            :ARG1-of (m5 / mean-01
+                                                         :ARG2 (p3 / percentage-entity
+                                                                   :value "11.2"))
+                                            :ARG0-of (h3 / have-03
+                                                         :ARG1 (m6 / mutate-01
+                                                                   :ARG1 (c2 / codon
+                                                                             :mod "13")))))))
+    :ARG1 (m / mutate-01
+             :ARG1 (g / gene
+                      :name (n / name
+                               :op1 "K-Ras"))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Women showed a higher incidence of <i>K-Ras</i> gene mutations relative to men (p = 0.0290).
+# ::file pmid_2290_9976_39.txt
+# ::date 2015-08-24T02:57:07
+# ::id pmid_2290_9976.39
+(s / show-01
+   :ARG0 (w / woman)
+   :ARG1 (i / incidence
+            :ARG1-of (h / high-02
+                        :degree (m / more)
+                        :compared-to (m3 / man)
+                        :ARG1-of (s2 / statistical-test-91
+                                     :ARG2 "0.0290"))
+            :frequency-of (m2 / mutate-01
+                              :ARG1 (g / gene
+                                       :name (n / name
+                                                :op1 "K-Ras")))))
+
+# ::save-date Mon Aug 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No significant differences were observed with respect to tumor size, lymph node involvement grade, histological grade, histopathological type, primary tumor localization, performance status, age, or pretreatment CEA level.
+# ::file pmid_2290_9976_40.txt
+# ::date 2015-08-24T04:25:35
+# ::id pmid_2290_9976.40
+(o / observe-01
+   :ARG1 (d / differ-02
+            :polarity "-"
+            :ARG3 (o2 / or
+                      :op1 (s2 / size
+                               :poss (t / tumor))
+                      :op2 (g / grade
+                              :extent-of (i / involve-01
+                                            :ARG1 (n / node
+                                                     :mod (l / lymph))))
+                      :op3 (g2 / grade
+                               :mod (h / histology))
+                      :op4 (t2 / type
+                               :mod (h2 / histopathology))
+                      :op5 (b2 / be-located-at-91
+                               :ARG1 (t3 / tumor
+                                         :mod (p / primary)))
+                      :op6 (s3 / status
+                               :mod (p2 / perform-02))
+                      :op7 (a / age-01)
+                      :op8 (l3 / level
+                               :quant-of (p3 / protein
+                                             :name (n2 / name
+                                                       :op1 "CEA"))
+                               :time (b / before
+                                        :op1 (t4 / treat-03))))
+            :ARG1-of (s / significant-02)))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>B-Raf</i> gene mutations were present in 17 patients (6.9%), of whom 6 (35.3%) had mutations in exon 15.
+# ::file pmid_2290_9976_41.txt
+# ::date 2015-08-24T04:32:41
+# ::id pmid_2290_9976.41
+(p3 / present-102
+    :ARG0 (p4 / person
+              :quant "17"
+              :ARG0-of (h / have-rel-role-91
+                          :ARG2 (p5 / patient))
+              :ARG1-of (m2 / mean-01
+                           :ARG2 (p / percentage-entity
+                                    :value "6.9"))
+              :ARG2-of (i / include-91
+                          :ARG1 (p6 / person
+                                    :quant "6"
+                                    :ARG0-of h
+                                    :ARG0-of (h2 / have-03
+                                                 :ARG1 (m4 / mutate-01
+                                                           :ARG1 (e / exon
+                                                                    :mod "15"))))
+                          :ARG3 (p2 / percentage-entity
+                                    :value "35.3")))
+    :ARG1 (m / mutate-01
+             :ARG1 (g / gene
+                      :name (n2 / name
+                                :op1 "B-Raf"))))
+
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt One patient had a mutation in exon 11, while mutation status was not determined in 10 patients (58.8%).
+# ::file pmid_2290_9976_42.txt
+# ::date 2015-08-24T04:35:32
+# ::id pmid_2290_9976.42
+(c / contrast-01
+      :ARG1 (h / have-03
+            :ARG0 (p2 / person
+                  :quant "1"
+                  :ARG0-of (h2 / have-rel-role-91
+                        :ARG2 (p3 / patient)))
+            :ARG1 (m / mutate-01
+                  :ARG1 (e / exon :mod "11")))
+      :ARG2 (d2 / determine-01
+            :polarity "-"
+            :ARG1 (s / status
+                  :mod (m2 / mutate-01))
+            :location (p4 / person
+                  :quant "10"
+                  :ARG0-of h2
+                  :ARG1-of (m3 / mean-01
+                        :ARG2 (p / percentage-entity :value "58.8")))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A higher incidence of <i>B-Raf</i> gene mutations was detected in patients with low-grade neoplasm (p < 0.0001), primary tumor localization outside the sigmoid colon (p = 0.0467) and with non-tubular neoplasms (p = 0.0468).
+# ::file pmid_2290_9976_43.txt
+# ::date 2015-08-24T04:37:58
+# ::id pmid_2290_9976.43
+(d / detect-01
+   :ARG1 (i / incidence
+            :ARG1-of (h / high-02
+                        :degree (m / more))
+            :frequency-of (m2 / mutate-01
+                              :ARG1 (g / gene
+                                       :name (n / name
+                                                :op1 "B-Raf"))))
+   :location (a / and
+                :op1 (p / person
+                        :ARG0-of (h2 / have-rel-role-91
+                                     :ARG2 (p2 / patient))
+                        :ARG0-of (h3 / have-03
+                                     :ARG1 (n2 / neoplasm
+                                               :mod (g2 / grade
+                                                        :ARG1-of (l / low-04))
+                                               :ARG1-of (s2 / statistical-test-91
+                                                            :ARG2 (l2 / less-than
+                                                                      :op1 "0.0001")))))
+                :op2 (p4 / person
+                         :ARG0-of h2
+                         :ARG0-of (h4 / have-03
+                                      :ARG1 (b / be-located-at-91
+                                               :ARG1 (t / tumor
+                                                        :mod (p5 / primary)
+                                                        :ARG1-of (s3 / statistical-test-91
+                                                                     :ARG2 "0.0467"))
+                                               :ARG2 (o / outside
+                                                        :op1 (c / colon
+                                                                :mod (s / sigmoid))))))
+                :op3 (p7 / person
+                         :ARG0-of h2
+                         :ARG0-of (h5 / have-03
+                                      :ARG1 (n3 / neoplasm
+                                                :mod (t2 / tubular
+                                                         :polarity "-")
+                                                :ARG1-of (s4 / statistical-test-91
+                                                             :ARG2 "0.0468"))))))
+
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Other parameters assessed were not statistically different.
+# ::file pmid_2290_9976_44.txt
+# ::date 2015-08-24T04:46:49
+# ::id pmid_2290_9976.44
+(d / differ-02
+      :polarity "-"
+      :ARG1 (p / parameter
+            :mod (o / other)
+            :ARG1-of (a / assess-01))
+      :manner (s / statistic))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There were no significant differences in OS rates between patients with <i>K-Ras</i> mutations and wild-type <i>K-Ras</i> genes (p = 0.6869; <xref ref-type="fig" rid="F1">Fig. 1</xref>).
+# ::file pmid_2290_9976_46.txt
+# ::date 2015-08-24T04:51:02
+# ::id pmid_2290_9976.46
+(d / differ-02
+   :polarity "-"
+   :ARG1 (r / rate
+            :mod (s2 / survive-01
+                     :ARG0 (p / person
+                              :ARG0-of (h / have-rel-role-91
+                                          :ARG2 (p2 / patient))
+                              :ARG0-of (h2 / have-03
+                                           :ARG1 (m / mutate-01
+                                                    :ARG1 (g / gene
+                                                             :name (n / name
+                                                                      :op1 "K-Ras")))))
+                     :mod (o2 / overall)))
+   :ARG2 (r2 / rate
+             :mod (s3 / survive-01
+                      :ARG1 (p3 / person
+                                :ARG0-of h
+                                :ARG0-of (h3 / have-03
+                                             :ARG1 (g2 / gene
+                                                       :name (n2 / name
+                                                                 :op1 "K-Ras")
+                                                       :mod (w / wild-type))))
+                      :mod o2))
+   :ARG1-of (s / significant-02)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1"))
+   :ARG1-of (s4 / statistical-test-91
+                :ARG2 "0.6869"))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A perceptible trend to prolongation of OS was apparent when <i>K-Ras</i> mutations were present in codon 13 relative to codon 12 (p = 0.0830; <xref ref-type="fig" rid="F2">Fig. 2</xref>).
+# ::file pmid_2290_9976_47.txt
+# ::date 2015-08-24T04:55:59
+# ::id pmid_2290_9976.47
+(a / appear-02
+   :ARG1 (t / trend-01
+            :ARG1 (p / prolong-01
+                     :ARG1 (s / survive-01
+                              :mod (o2 / overall)))
+            :ARG1-of (p2 / perceptive-02
+                         :ARG1-of (p5 / possible-01)))
+   :time (p3 / present-102
+             :ARG1 (m / mutate-01
+                      :ARG1 (c / codon
+                               :mod "13"
+                               :part-of (g / gene
+                                           :name (n3 / name
+                                                     :op1 "K-Ras"))))
+             :ARG1-of (r / relative-05
+                         :ARG3 (p4 / present-102
+                                   :ARG1 (m2 / mutate-01
+                                             :ARG1 (c2 / codon
+                                                       :mod "12"
+                                                       :part-of g)))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "2"))
+   :ARG1-of (s2 / statistical-test-91
+                :ARG2 "0.0830"))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similarly, mutations in the <i>B-Raf</i> gene showed no prognostic significance (<xref ref-type="fig" rid="F3">Fig. 3</xref>).
+# ::file pmid_2290_9976_48.txt
+# ::date 2015-08-24T05:02:20
+# ::id pmid_2290_9976.48
+(s / show-01
+   :ARG0 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n2 / name
+                               :op1 "B-Raf")))
+   :ARG1 (s2 / significant-02
+             :polarity "-"
+             :ARG1 m
+             :mod (p / prognostic))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3"))
+   :ARG1-of (r / resemble-01))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients with disseminated CRC (M+) and <i>B-Raf</i> gene mutations tended toward shorter OS relative to those with wild-type <i>B-Raf</i> genes (p = 0.06723).
+# ::file pmid_2290_9976_49.txt
+# ::date 2015-08-24T05:04:05
+# ::id pmid_2290_9976.49
+(t / tend-02
+   :ARG1 (p / person
+            :ARG0-of (h / have-rel-role-91
+                        :ARG2 (p2 / patient))
+            :ARG0-of (h2 / have-03
+                         :ARG1 (a / and
+                                  :op1 (d / disease
+                                          :wiki "Colorectal_cancer"
+                                          :name (n3 / name
+                                                    :op1 "colorectal"
+                                                    :op2 "cancer")
+                                          :ARG1-of (d2 / disseminate-01)
+                                          :ARG1-of (l / label-01
+                                                      :ARG2 (s4 / string-entity
+                                                                :value "M+")))
+                                  :op2 (m2 / mutate-01
+                                           :ARG1 (g / gene
+                                                    :name (n2 / name
+                                                              :op1 "B-Raf"))))))
+   :ARG2 (s / short-07
+            :ARG1 (s2 / survive-01
+                      :ARG0 p
+                      :mod (o2 / overall))
+            :degree (m3 / more)
+            :ARG1-of (r / relative-05
+                        :ARG3 (p3 / person
+                                  :ARG0-of h
+                                  :ARG0-of (h4 / have-03
+                                               :ARG1 (g2 / gene
+                                                         :name (n / name
+                                                                  :op1 "B-Raf")
+                                                         :mod (w / wild-type))))))
+   :ARG1-of (s3 / statistical-test-91
+                :ARG2 "0.06723"))
+
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results are summarized in <xref ref-type="table" rid="T2">Table 2</xref>.
+# ::file pmid_2290_9976_51.txt
+# ::date 2015-08-24T05:16:05
+# ::id pmid_2290_9976.51
+(s / summarize-01
+      :ARG1 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+      :ARG2 (t3 / table :mod "2"))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Univariate analysis identified the following prognostic factors as influencing OS rate in this patient cohort: Age, patients 75 y and older lived for 36.7 mo relative to those younger than 75 (58.9 mo) (p = 0.0472); Gender, female patients lived for 62.7 mo relative to 42.6 mo for male patients (p = 0.0328); Primary tumor localization, patients with primary tumors in the sigmoid colon lived for 68.0 mo compared with 43.5 mo in patients with primary tumors located in the colon or rectum (p = 0.0039); Performance status, patients with a good performance score e.g., WHO 0–1 (58.4 mo) and Karnofsky status 81–100% (58.1 mo) lived longer relative to those with poor performance status (19.0 and 19.4 mo for patients with WHO 2–3 and Karnofsky status ≤ 80%, respectively) (p = 0.0027 and p = 0.0036, respectively); Lymph node involvement grade, survival in patients without lymph node metastases was 65.3 mo relative to 46.3 mo in patients presenting with metastases (p = 0.0031); Pretreatment CEA level, median time to progression in patients with normal pretreatment CEA level ≤ 5 ng/ml was 76.3 mo relative to 25.6 mo in patients with increased pretreatment CEA level (p < 0.0001; <xref ref-type="table" rid="T2">Table 2</xref>).
+# ::file pmid_2290_9976_52.txt
+# ::date 2015-08-26T01:05:51
+# ::id pmid_2290_9976.52
+(i / identify-01
+   :ARG0 (a / analyze-01
+            :mod (u / univariate))
+   :ARG1 (f / factor
+            :ARG1-of (f2 / follow-04)
+            :mod (p / prognostic)
+            :ARG0-of (i2 / influence-01
+                         :ARG1 (r / rate
+                                  :mod (s11 / survive-01
+                                            :mod (o6 / overall)))
+                         :location (c / cohort
+                                      :mod (t / this)
+                                      :consist-of (p2 / person
+                                                      :ARG0-of (h / have-rel-role-91
+                                                                  :ARG2 (p3 / patient)
+                                                                  :ARG0 p7
+                                                                  :ARG0 p8))))
+            :ARG1-of (m / mean-01
+                        :ARG2 (a2 / and
+                                  :op1 (a3 / age-01
+                                           :ARG1-of (m2 / mean-01
+                                                        :ARG2 (l / live-01
+                                                                 :ARG0 (p4 / person
+                                                                           :ARG0-of h
+                                                                           :age (a5 / and
+                                                                                    :op1 (t2 / temporal-quantity
+                                                                                             :quant "75"
+                                                                                             :unit (y / year))
+                                                                                    :op2 (m3 / more-than
+                                                                                             :op1 t2)))
+                                                                 :duration (t3 / temporal-quantity
+                                                                               :quant "36.7"
+                                                                               :unit (m4 / month)
+                                                                               :ARG1-of (r2 / relative-05
+                                                                                            :ARG3 (p5 / person
+                                                                                                      :ARG0-of h
+                                                                                                      :age (l2 / less-than
+                                                                                                               :op1 t2)
+                                                                                                      :ARG0-of (l3 / live-01
+                                                                                                                   :duration (t4 / temporal-quantity
+                                                                                                                                 :quant "58.9"
+                                                                                                                                 :unit m4)))))))
+                                           :ARG1-of (s12 / statistical-test-91
+                                                         :ARG2 "0.0472"))
+                                  :op2 (g / gender
+                                          :ARG1-of (m5 / mean-01
+                                                       :ARG2 (l4 / live-01
+                                                                 :ARG0 (p7 / person
+                                                                           :mod (f3 / female))
+                                                                 :duration (t5 / temporal-quantity
+                                                                               :quant "62.7"
+                                                                               :unit m4
+                                                                               :ARG1-of (r3 / relative-05
+                                                                                            :ARG3 (t6 / temporal-quantity
+                                                                                                      :quant "42.6"
+                                                                                                      :unit m4
+                                                                                                      :duration-of (l5 / live-01
+                                                                                                                       :ARG0 (p8 / person
+                                                                                                                                 :mod (m6 / male))))))))
+                                          :ARG1-of (s13 / statistical-test-91
+                                                        :ARG2 "0.0328"))
+                                  :op3 (b6 / be-located-at-91
+                                           :ARG1 (t7 / tumor
+                                                     :mod (p10 / primary))
+                                           :ARG1-of (m7 / mean-01
+                                                        :ARG2 (l7 / live-01
+                                                                  :ARG0 (p11 / person
+                                                                             :ARG0-of h
+                                                                             :ARG0-of (h2 / have-03
+                                                                                          :ARG1 t7
+                                                                                          :location (c2 / colon
+                                                                                                        :mod (s / sigmoid))))
+                                                                  :duration (t8 / temporal-quantity
+                                                                                :quant "68.0"
+                                                                                :unit m4
+                                                                                :compared-to (t9 / temporal-quantity
+                                                                                                 :quant "43.5"
+                                                                                                 :unit m4
+                                                                                                 :duration-of (l8 / live-01
+                                                                                                                  :ARG0 (p12 / person
+                                                                                                                             :ARG0-of h
+                                                                                                                             :ARG0-of (h3 / have-03
+                                                                                                                                          :ARG1 t7
+                                                                                                                                          :location (o2 / or
+                                                                                                                                                        :op1 (c3 / colon)
+                                                                                                                                                        :op2 (r4 / rectum)))))))))
+                                           :ARG1-of (s14 / statistical-test-91
+                                                         :ARG2 "0.0039"))
+                                  :op4 (s2 / status
+                                           :mod (p14 / perform-01)
+                                           :ARG1-of (m8 / mean-01
+                                                        :ARG2 (l9 / live-01
+                                                                  :ARG0 (p15 / person
+                                                                             :ARG0-of h
+                                                                             :ARG1-of (s3 / score-01
+                                                                                          :ARG2 (a7 / and
+                                                                                                    :op1 (s4 / status
+                                                                                                             :value (b / between
+                                                                                                                       :op1 "0"
+                                                                                                                       :op2 "1")
+                                                                                                             :mod (o / organization
+                                                                                                                     :wiki "World_Health_Organization"
+                                                                                                                     :name (n6 / name
+                                                                                                                               :op1 "World"
+                                                                                                                               :op2 "Health"
+                                                                                                                               :op3 "Organization")))
+                                                                                                    :op2 (s5 / status
+                                                                                                             :value (b2 / between
+                                                                                                                        :op1 (p16 / percentage-entity
+                                                                                                                                  :value "81")
+                                                                                                                        :op2 (p17 / percentage-entity
+                                                                                                                                  :value "100"))
+                                                                                                             :mod (p34 / person
+                                                                                                                       :name (n / name
+                                                                                                                                :op1 "Karnofsky"))))
+                                                                                          :ARG3 p14
+                                                                                          :ARG1-of (g2 / good-02)))
+                                                                  :ARG1-of (l10 / long-03
+                                                                                :ARG2 (m9 / more)
+                                                                                :ARG1-of (r5 / relative-05
+                                                                                             :ARG3 (p18 / person
+                                                                                                        :ARG0-of h
+                                                                                                        :ARG0-of (h4 / have-03
+                                                                                                                     :ARG1 (s6 / status
+                                                                                                                               :mod p14
+                                                                                                                               :mod (p19 / poor)))
+                                                                                                        :ARG1-of (m10 / mean-01
+                                                                                                                      :ARG2 (a8 / and
+                                                                                                                                :op1 (t12 / temporal-quantity
+                                                                                                                                          :quant "19.0"
+                                                                                                                                          :unit m4
+                                                                                                                                          :duration-of (l11 / live-01
+                                                                                                                                                            :ARG0 (p20 / person
+                                                                                                                                                                       :ARG0-of h
+                                                                                                                                                                       :ARG0-of (h5 / have-03
+                                                                                                                                                                                    :ARG1 (s7 / status
+                                                                                                                                                                                              :value (b3 / between
+                                                                                                                                                                                                         :op1 "2"
+                                                                                                                                                                                                         :op2 "3")
+                                                                                                                                                                                              :mod o))))
+                                                                                                                                          :ARG1-of (s15 / statistical-test-91
+                                                                                                                                                        :ARG2 "0.0027"))
+                                                                                                                                :op2 (t13 / temporal-quantity
+                                                                                                                                          :quant "19.4"
+                                                                                                                                          :unit m4
+                                                                                                                                          :duration-of (l12 / live-01
+                                                                                                                                                            :ARG0 (p21 / person
+                                                                                                                                                                       :ARG0-of h
+                                                                                                                                                                       :ARG0-of (h6 / have-03
+                                                                                                                                                                                    :ARG1 (s8 / status
+                                                                                                                                                                                              :value (o4 / or
+                                                                                                                                                                                                         :op1 (l13 / less-than
+                                                                                                                                                                                                                   :op1 (p22 / percentage-entity
+                                                                                                                                                                                                                             :value "80"
+                                                                                                                                                                                                                             :op2-of o4)))
+                                                                                                                                                                                              :mod p34))))
+                                                                                                                                          :ARG1-of (s16 / statistical-test-91
+                                                                                                                                                        :ARG2 "0.0036"))))))
+                                                                                :ARG1-of (m15 / mean-01
+                                                                                              :ARG2 (a9 / and
+                                                                                                        :op1 (t10 / temporal-quantity
+                                                                                                                  :quant "58.4"
+                                                                                                                  :unit m4
+                                                                                                                  :condition s4)
+                                                                                                        :op2 (t11 / temporal-quantity
+                                                                                                                  :quant "58.1"
+                                                                                                                  :unit m4
+                                                                                                                  :condition s5)))))))
+                                  :op5 (g3 / grade
+                                           :degree-of (i3 / involve-01
+                                                          :ARG1 (n2 / node
+                                                                    :mod (l14 / lymph)))
+                                           :ARG1-of (m11 / mean-01
+                                                         :ARG2 (s9 / survive-01
+                                                                   :ARG0 (p25 / person
+                                                                              :ARG0-of h
+                                                                              :ARG0-of (h7 / have-03
+                                                                                           :polarity "-"
+                                                                                           :ARG1 (m12 / metastasize-101
+                                                                                                      :ARG2 n2)))
+                                                                   :duration (t14 / temporal-quantity
+                                                                                  :quant "65.3"
+                                                                                  :unit m4
+                                                                                  :ARG1-of (r6 / relative-05
+                                                                                               :ARG3 (t15 / temporal-quantity
+                                                                                                          :quant "46.3"
+                                                                                                          :unit m4
+                                                                                                          :duration-of (s10 / survive-01
+                                                                                                                            :ARG0 (p26 / person
+                                                                                                                                       :ARG0-of h
+                                                                                                                                       :ARG0-of (p27 / present-102
+                                                                                                                                                     :ARG1 m12))))))))
+                                           :ARG1-of (s17 / statistical-test-91
+                                                         :ARG2 "0.0031"))
+                                  :op6 (l15 / level
+                                            :time (b4 / before
+                                                      :op1 (t16 / treat-03))
+                                            :quant-of (p29 / protein
+                                                           :name (n3 / name
+                                                                     :op1 "CEA")
+                                                           :quant l16
+                                                           :quant l18)
+                                            :ARG1-of (m13 / mean-01
+                                                          :ARG2 (t17 / time
+                                                                     :time (b5 / before
+                                                                               :op1 (p30 / progress-01))
+                                                                     :mod (m14 / median)
+                                                                     :location (p31 / person
+                                                                                    :ARG0-of h
+                                                                                    :ARG0-of (h8 / have-03
+                                                                                                 :ARG1 (l16 / level
+                                                                                                            :ARG1-of (n4 / normal-02)
+                                                                                                            :time b4
+                                                                                                            :quant (o5 / or
+                                                                                                                       :op1 (c4 / concentration-quantity
+                                                                                                                                :quant "5"
+                                                                                                                                :unit (n5 / nanogram-per-milliliter))
+                                                                                                                       :op2 (l17 / less-than
+                                                                                                                                 :op1 c4)))))
+                                                                     :duration (t18 / temporal-quantity
+                                                                                    :quant "76.3"
+                                                                                    :unit m4
+                                                                                    :ARG1-of (r7 / relative-05
+                                                                                                 :ARG3 (t19 / temporal-quantity
+                                                                                                            :quant "25.6"
+                                                                                                            :unit m4
+                                                                                                            :duration-of (t20 / time
+                                                                                                                              :location (p32 / person
+                                                                                                                                             :ARG0-of h
+                                                                                                                                             :ARG0-of (h9 / have-03
+                                                                                                                                                          :ARG1 (l18 / level
+                                                                                                                                                                     :ARG1-of (i4 / increase-01)
+                                                                                                                                                                     :time b4)))
+                                                                                                                              :mod m14
+                                                                                                                              :time b5))))))
+                                            :ARG1-of (d / describe-01
+                                                        :ARG0 (t21 / table
+                                                                   :mod "2"))
+                                            :ARG1-of (s18 / statistical-test-91
+                                                          :ARG2 "0.0001"))))))
+
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Other clinical parameters such as histological differentiation grade and primary tumor size showed no significant differences between groups.
+# ::file pmid_2290_9976_54.txt
+# ::date 2015-08-24T05:20:26
+# ::id pmid_2290_9976.54
+(s / show-01
+      :ARG0 (p / parameter
+            :mod (o / other)
+            :mod (c / clinic)
+            :example (a / and
+                  :op1 (g / grade
+                        :degree-of (d / differentiate-01
+                              :mod (h / histology)))
+                  :op2 (s2 / size
+                        :poss (t / tumor
+                              :mod (p2 / primary)))))
+      :ARG1 (d2 / differ-02
+            :polarity "-"
+            :ARG1 (g2 / group)
+            :ARG3 p
+            :ARG1-of (s3 / significant-02)))
+
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results are summarized in <xref ref-type="table" rid="T2">Table 2</xref>.
+# ::file pmid_2290_9976_56.txt
+# ::date 2015-08-24T05:26:02
+# ::id pmid_2290_9976.56
+(s / summarize-01
+      :ARG1 (t / thing
+            :mod (t2 / this)
+            :ARG2-of (r / result-01))
+      :ARG2 (t3 / table :mod "2"))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Multivariate analysis identified the following independent prognostic factors affecting OS rates: Primary tumor localization (HR 0.53; p = 0.0032); Pretreatment CEA level (HR 2.68; p < 0.0001); WHO performance status (HR 0.34; p = 0.0008); Lymph node involvement grade (HR 1.94; p = 0.0107).
+# ::file pmid_2290_9976_57.txt
+# ::date 2015-08-26T00:29:29
+# ::id pmid_2290_9976.57
+(i / identify-01
+   :ARG0 (a / analyze-01
+            :mod (m / multivariate))
+   :ARG1 (f / factor
+            :ARG1-of (f2 / follow-04)
+            :ARG0-of (d / depend-01
+                        :polarity "-")
+            :mod (p / prognostic)
+            :ARG0-of (a2 / affect-01
+                         :ARG1 (r / rate
+                                  :mod (s2 / survive-01
+                                           :mod (o3 / overall))))
+            :ARG1-of (m2 / mean-01
+                         :ARG2 (a3 / and
+                                   :op1 (b2 / be-located-at-91
+                                            :ARG1 (t / tumor
+                                                     :mod (p2 / primary))
+                                            :ARG1-of (m3 / mean-01
+                                                         :ARG2 (r2 / ratio-of
+                                                                   :quant "0.53"
+                                                                   :op1 (h / hazard)))
+                                            :ARG1-of (s3 / statistical-test-91
+                                                         :ARG2 "0.0032"))
+                                   :op2 (l2 / level
+                                            :quant-of (p4 / protein
+                                                          :name (n / name
+                                                                   :op1 "CEA"))
+                                            :time (b / before
+                                                     :op1 (t2 / treat-03))
+                                            :ARG1-of (m4 / mean-01
+                                                         :ARG2 (r3 / ratio-of
+                                                                   :quant "2.68"
+                                                                   :op1 h))
+                                            :ARG1-of (s4 / statistical-test-91
+                                                         :ARG2 (l3 / less-than
+                                                                   :op1 "0.0001")))
+                                   :op3 (s / status
+                                           :mod (p6 / perform-02
+                                                    :ARG2 (o2 / organization
+                                                              :wiki "World_Health_Organization"
+                                                              :name (n2 / name
+                                                                        :op1 "World"
+                                                                        :op2 "Health"
+                                                                        :op3 "Organization")))
+                                           :ARG1-of (m5 / mean-01
+                                                        :ARG2 (r4 / ratio-of
+                                                                  :quant "0.34"
+                                                                  :op1 h))
+                                           :ARG1-of (s5 / statistical-test-91
+                                                        :ARG2 "0.0008"))
+                                   :op4 (g / grade
+                                           :degree-of (i2 / involve-01
+                                                          :ARG1 (n3 / node
+                                                                    :mod (l4 / lymph)))
+                                           :ARG1-of (m6 / mean-01
+                                                        :ARG2 (r5 / ratio-of
+                                                                  :quant "1.94"
+                                                                  :op1 h))
+                                           :ARG1-of (s6 / statistical-test-91
+                                                        :ARG2 "0.01077"))))))
+
+
+# ::save-date Mon Sep 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Other clinical parameters such as age, gender, and Karnofsky performance status showed no significant differences in this analysis.
+# ::file pmid_2290_9976_58.txt
+# ::date 2015-08-24T05:27:22
+# ::id pmid_2290_9976.58
+(s / show-01
+      :ARG0 (p / parameter
+            :mod (o / other)
+            :mod (c / clinic)
+            :example (a / and
+                  :op1 (a2 / age-01)
+                  :op2 (g / gender)
+                  :op3 (s2 / status
+                        :mod (p2 / perform-02)
+                        :mod (p3 / person
+                              :name (n / name :op1 "Karnofsky")))))
+      :ARG1 (d / differ-02
+            :polarity "-"
+            :ARG1 p
+            :time (a3 / analyze-01
+                  :mod (t / this))
+            :ARG1-of (s3 / significant-02)))
+
+
+# ::save-date Tue Aug 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results are summarized in <xref ref-type="table" rid="T3">Table 3</xref>.
+# ::file pmid_2290_9976_60.txt
+# ::date 2015-08-25T07:51:16
+# ::id pmid_2290_9976.60
+(s / summarize-01
+      :ARG1 (t / thing
+            :mod (t2 / this)
+            :ARG2-of (r / result-01))
+      :ARG2 (t3 / table :mod "3"))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients with higher pretreatment levels of CEA (> 5 ng/ml) showed a median time to progression of 9.0 mo relative to 13.0 mo in patients with normal levels (≤ 5 ng/ml, p = 0.0085).
+# ::file pmid_2290_9976_61.txt
+# ::date 2015-08-25T07:54:08
+# ::id pmid_2290_9976.61
+(s / show-01
+   :ARG0 (p / person
+            :ARG0-of (h / have-rel-role-91
+                        :ARG2 (p2 / patient))
+            :ARG0-of (h2 / have-03
+                         :ARG1 (l / level
+                                  :ARG1-of (h3 / high-02
+                                               :degree (m / more))
+                                  :quant-of (p3 / protein
+                                                :name (n / name
+                                                         :op1 "CEA"))
+                                  :ARG1-of (m2 / mean-01
+                                               :ARG2 (m3 / more-than
+                                                         :op1 (c / concentration-quantity
+                                                                 :quant "5"
+                                                                 :unit (n2 / nanogram-per-milliliter))))
+                                  :time (b / before
+                                           :op1 (t / treat-03)))))
+   :ARG1 (t2 / time
+             :time (b2 / before
+                       :op1 (p4 / progress-01))
+             :mod (m4 / median)
+             :ARG1-of (r / relative-05
+                         :ARG3 (t4 / time
+                                   :ARG1-of (s2 / show-01
+                                                :ARG0 (p5 / person
+                                                          :ARG0-of h
+                                                          :ARG0-of (h4 / have-03
+                                                                       :ARG1 (l2 / level
+                                                                                 :ARG1-of (n3 / normal-02)
+                                                                                 :ARG1-of (m6 / mean-01
+                                                                                              :ARG2 (o / or
+                                                                                                       :op1 (l3 / less-than
+                                                                                                                :op1 c)
+                                                                                                       :op2 c))
+                                                                                 :ARG1-of (s3 / statistical-test-91
+                                                                                              :ARG2 "0.0085")))))
+                                   :duration (t5 / temporal-quantity
+                                                 :quant "13"
+                                                 :unit "m5")
+                                   :time b2))
+             :duration (t3 / temporal-quantity
+                           :quant "9"
+                           :unit (m5 / month))))
+
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients without resection of metastases showed a median time to progression of 9.0 mo relative to 14.0 mo in patients who underwent resection (p = 0.0131).
+# ::file pmid_2290_9976_62.txt
+# ::date 2015-08-25T08:11:40
+# ::id pmid_2290_9976.62
+(s / show-01
+      :ARG0 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG2 (p2 / patient))
+            :ARG1-of (u / undergo-28
+                  :polarity "-"
+                  :ARG2 (r / resection
+                        :mod (m / metastasize-101))))
+      :ARG1 (t / time
+            :mod (m2 / median)
+            :time (b / before
+                  :op1 (p3 / progress-01))
+            :ARG1-of (r2 / relative-05
+                  :ARG3 (t3 / time
+                        :ARG1-of (s2 / show-01
+                              :ARG0 (p4 / person
+                                    :ARG0-of h
+                                    :ARG1-of (u2 / undergo-28
+                                          :ARG2 r)))
+                        :duration (t4 / temporal-quantity :quant "14" :unit "m3")
+                        :time b))
+            :duration (t2 / temporal-quantity
+                  :quant "9"
+                  :unit (m3 / month)))
+      :ARG1-of (s3 / statistical-test-91 :ARG2 "0.0131"))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients with <i>K-Ras</i> gene mutations showed a median time to progression of 9.0 mo relative to 11.0 mo in those with the wild-type <i>K-Ras</i> gene (p = 0.05883).
+# ::file pmid_2290_9976_63.txt
+# ::date 2015-08-25T08:19:47
+# ::id pmid_2290_9976.63
+(s / show-01
+   :ARG0 (p / person
+            :ARG0-of (h / have-rel-role-91
+                        :ARG2 (p2 / patient))
+            :ARG0-of (h2 / have-03
+                         :ARG1 (m / mutate-01
+                                  :ARG1 (g / gene
+                                           :name (n / name
+                                                    :op1 "K-Ras")))))
+   :ARG1 (t / time
+            :mod (m2 / median)
+            :time (b / before
+                     :op1 (p3 / progress-01))
+            :ARG1-of (r / relative-05
+                        :ARG3 (t3 / time
+                                  :ARG1-of (s2 / show-01
+                                               :ARG0 (p4 / person
+                                                         :ARG0-of h
+                                                         :ARG0-of (h3 / have-03
+                                                                      :ARG1 (g2 / gene
+                                                                                :name (n2 / name
+                                                                                          :op1 "K-Ras")
+                                                                                :mod (w / wild-type)))))
+                                  :duration (t4 / temporal-quantity
+                                                :quant "11"
+                                                :unit "m3")
+                                  :time b))
+            :duration (t2 / temporal-quantity
+                          :quant "9"
+                          :unit (m3 / month)))
+   :ARG1-of (s3 / statistical-test-91
+                :ARG2 "0.05883"))
+
+# ::save-date Mon Aug 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Other clinical parameters including histological differentiation grade, primary tumor location and size, lymph node involvement grade, and <i>B-Raf</i> gene mutation status showed no predictive significance in this analysis.
+# ::file pmid_2290_9976_64.txt
+# ::date 2015-08-25T08:24:18
+# ::id pmid_2290_9976.64
+(s / show-01
+   :ARG0 (p / parameter
+            :mod (o / other)
+            :mod (c / clinic)
+            :ARG2-of (i / include-91
+                        :ARG1 (a / and
+                                 :op1 (g / grade
+                                         :degree-of (d / differentiate-01
+                                                       :mod (h / histology)))
+                                 :op2 (b / be-located-at-91
+                                         :ARG1 (t / tumor
+                                                  :mod (p2 / primary)))
+                                 :op3 (s2 / size
+                                          :poss t)
+                                 :op4 (g2 / grade
+                                          :degree-of (i2 / involve-01
+                                                         :ARG1 (n3 / node
+                                                                   :mod (l2 / lymph))))
+                                 :op5 (s3 / status
+                                          :mod (m / mutate-01
+                                                  :ARG1 (g3 / gene
+                                                            :name (n2 / name
+                                                                      :op1 "B-Raf")))))))
+   :ARG1 (s4 / significant-02
+             :polarity "-"
+             :ARG1 p
+             :ARG0-of (p3 / predict-01))
+   :time (a2 / analyze-01
+             :mod (t2 / this)))
+
+
+# ::save-date Tue Aug 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results are summarized in <xref ref-type="table" rid="T3">Table 3</xref>.
+# ::file pmid_2290_9976_67.txt
+# ::date 2015-08-25T08:52:20
+# ::id pmid_2290_9976.67
+(s / summarize-01
+      :ARG1 (t / thing
+            :mod (t2 / this)
+            :ARG2-of (r / result-01))
+      :ARG2 (t3 / table :mod "3"))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Multivariate analysis identified the following independent favorable predictive factors in patients with disseminated CRC treated with irinotecan-based first-line palliative chemotherapy: Wild-type <i>K-Ras</i> gene (HR 0.59; p = 0.0459) and normal pretreatment CEA levels (HR 0.52; p = 0.0065).
+# ::file pmid_2290_9976_68.txt
+# ::date 2015-08-25T08:57:13
+# ::id pmid_2290_9976.68
+(i / identify-01
+   :ARG0 (a / analyze-01
+            :mod (m / multivariate))
+   :ARG1 (f / factor
+            :ARG1-of (f2 / follow-04)
+            :ARG0-of (d / depend-01
+                        :polarity "-")
+            :ARG0-of (p / predict-01)
+            :ARG1-of (m2 / mean-01
+                         :ARG2 (a2 / and
+                                   :op1 (g / gene
+                                           :name (n3 / name
+                                                     :op1 "K-Ras")
+                                           :mod (w / wild-type)
+                                           :ARG1-of (m3 / mean-01
+                                                        :ARG2 (r / ratio-of
+                                                                 :quant "0.59"
+                                                                 :op1 (h3 / hazard)))
+                                           :ARG1-of (s2 / statistical-test-91
+                                                        :ARG2 "0.0459"))
+                                   :op2 (l2 / level
+                                            :ARG1-of (n4 / normal-02)
+                                            :time (b2 / before
+                                                      :op1 (t2 / treat-03))
+                                            :quant-of (p6 / protein
+                                                          :name (n5 / name
+                                                                    :op1 "CEA"))
+                                            :ARG1-of (m4 / mean-01
+                                                         :ARG2 (r2 / ratio-of
+                                                                   :quant "0.52"
+                                                                   :op1 h3))
+                                            :ARG1-of (s3 / statistical-test-91
+                                                         :ARG2 "0.065"))))
+            :mod (f3 / favorable))
+   :location (p2 / person
+                 :ARG0-of (h / have-rel-role-91
+                             :ARG2 (p3 / patient))
+                 :ARG0-of (h2 / have-03
+                              :ARG1 (d2 / disease
+                                        :wiki "Colorectal_cancer"
+                                        :name (n / name
+                                                 :op1 "colorectal"
+                                                 :op2 "cancer")
+                                        :ARG1-of (d3 / disseminate-01)))
+                 :ARG1-of (t / treat-03
+                             :ARG2 (c / chemotherapy
+                                      :ARG1-of (b / base-02
+                                                  :ARG2 (s / small-molecule
+                                                           :name (n2 / name
+                                                                     :op1 "irinotecan")))
+                                      :mod (l / line
+                                              :ord (o / ordinal-entity
+                                                      :value "1"))
+                                      :mod (p4 / palliative)))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, this analysis did not reveal any significant differences between patients with and without resection of metastases, with different histological types of neoplasms and <i>B-Raf</i> gene mutation status.
+# ::file pmid_2290_9976_69.txt
+# ::date 2015-08-25T08:57:38
+# ::id pmid_2290_9976.69
+(c / contrast-01
+   :ARG2 (r / reveal-01
+            :polarity "-"
+            :ARG0 (a / analyze-01
+                     :mod (t2 / this))
+            :ARG1 (d / differ-02
+                     :ARG1 (a2 / and
+                               :op1 (p / person
+                                       :ARG0-of (h2 / have-rel-role-91
+                                                    :ARG2 (p2 / patient))
+                                       :ARG0-of (h3 / have-03
+                                                    :ARG1 (r2 / resection
+                                                              :mod (m / metastasize-101))))
+                               :op2 (p3 / person
+                                        :ARG0-of h2
+                                        :ARG0-of (h4 / have-03
+                                                     :polarity "-"
+                                                     :ARG1 r2)))
+                     :ARG2 (a3 / and
+                               :op1 (p4 / person
+                                        :ARG0-of h2
+                                        :ARG0-of (h5 / have-03
+                                                     :ARG1 (t / type
+                                                              :mod (n3 / neoplasm)
+                                                              :mod (h6 / histology)
+                                                              :ARG1-of (d2 / differ-02))))
+                               :op2 (p5 / person
+                                        :ARG0-of h2
+                                        :ARG0-of (h7 / have-03
+                                                     :ARG1 (s2 / status
+                                                               :ARG1-of d2
+                                                               :mod (m2 / mutate-01
+                                                                        :ARG1 (g / gene
+                                                                                 :name (n2 / name
+                                                                                           :op1 "B-Raf")))))))
+                     :ARG1-of (s / significant-02))))
+
+
+# ::save-date Tue Aug 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results are summarized in <xref ref-type="table" rid="T4">Table 4</xref>.
+# ::file pmid_2290_9976_71.txt
+# ::date 2015-08-25T09:11:40
+# ::id pmid_2290_9976.71
+(s / summarize-01
+      :ARG1 (t / thing
+            :mod (t2 / this)
+            :ARG2-of (r / result-01))
+      :ARG2 (t3 / table :mod "4"))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Univariate analysis of time to progression in patients treated with oxaliplatin-based first-line chemotherapy regimens reveals that increased CEA levels and resection of metastases exerted significant influences on median time to progression.
+# ::file pmid_2290_9976_72.txt
+# ::date 2015-08-25T09:12:43
+# ::id pmid_2290_9976.72
+(r / reveal-01
+   :ARG0 (a / analyze-01
+            :ARG1 (t / time
+                     :time (b / before
+                              :op1 (p / progress-01)))
+            :mod (u / univariate))
+   :ARG1 (e / exert-01
+            :ARG0 (a2 / and
+                      :op1 (l2 / level
+                               :quant-of (p4 / protein
+                                             :name (n2 / name
+                                                       :op1 "CEA"))
+                               :ARG1-of (i / increase-01))
+                      :op2 (r3 / resection
+                               :mod (m / metastasize-101)))
+            :ARG1 (i2 / influence-01
+                      :ARG1-of (s2 / significant-02))
+            :ARG2 (t3 / time
+                      :time b
+                      :mod (m2 / median)))
+   :location (p2 / person
+                 :ARG0-of (h / have-rel-role-91
+                             :ARG2 (p3 / patient))
+                 :ARG1-of (t2 / treat-03
+                              :ARG2 (r2 / regimen
+                                        :mod (c / chemotherapy
+                                                :ARG1-of (b2 / base-02
+                                                             :ARG2 (s / small-molecule
+                                                                      :name (n / name
+                                                                               :op1 "oxaliplatin")))
+                                                :mod (l / line
+                                                        :ord (o / ordinal-entity
+                                                                :value "1")))))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients with increased pretreatment CEA levels had a time to progression of 8.0 mo compared with 13.0 mo in patients with normal CEA levels (p = 0.0084).
+# ::file pmid_2290_9976_73.txt
+# ::date 2015-08-25T09:17:59
+# ::id pmid_2290_9976.73
+(h / have-03
+   :ARG0 (p / person
+            :ARG0-of (h2 / have-rel-role-91
+                         :ARG2 (p2 / patient))
+            :ARG0-of (h3 / have-03
+                         :ARG1 (l / level
+                                  :quant-of (p3 / protein
+                                                :name (n / name
+                                                         :op1 "CEA")
+                                                :quant l2)
+                                  :ARG1-of (i / increase-01)
+                                  :time (b / before
+                                           :op1 (t / treat-03)))))
+   :ARG1 (t2 / time
+             :time (b2 / before
+                       :op1 (p4 / progress-01))
+             :duration (t3 / temporal-quantity
+                           :quant "8"
+                           :unit (m / month))
+             :compared-to (t4 / time
+                              :time b2
+                              :duration (t5 / temporal-quantity
+                                            :quant "13"
+                                            :unit m)
+                              :ARG1-of (h4 / have-03
+                                           :ARG0 (p5 / person
+                                                     :ARG0-of h2
+                                                     :ARG0-of (h5 / have-03
+                                                                  :ARG1 (l2 / level
+                                                                            :ARG1-of (n2 / normal-02)))))))
+   :ARG1-of (s / statistical-test-91
+               :ARG2 "0.0084"))
+
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients without resection of metastases had a time to progression of 9.0 mo relative to 16.0 mo in patients who underwent resection (p = 0.0226).
+# ::file pmid_2290_9976_74.txt
+# ::date 2015-08-25T09:27:02
+# ::id pmid_2290_9976.74
+(h / have-03
+      :ARG0 (p / person
+            :ARG0-of (h2 / have-rel-role-91
+                  :ARG2 (p2 / patient))
+            :ARG1-of (u / undergo-28
+                  :polarity "-"
+                  :ARG2 (r / resection
+                        :mod (m / metastasize-101))))
+      :ARG1 (t / time
+            :time (b / before
+                  :op1 (p3 / progress-01))
+            :duration (t2 / temporal-quantity
+                  :quant "9"
+                  :unit (m2 / month))
+            :ARG1-of (r2 / relative-05
+                  :ARG3 (t3 / time
+                        :time b
+                        :duration (t4 / temporal-quantity
+                              :quant "16"
+                              :unit m2)
+                        :ARG1-of (h3 / have-03
+                              :ARG0 (p4 / person
+                                    :ARG0-of h2
+                                    :ARG1-of (u2 / undergo-28
+                                          :ARG2 r))))))
+      :ARG1-of (s / statistical-test-91 :ARG2 "0.0226"))
+
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients with tubular tumors showed a time to progression of 9.0 mo compared with 13.0 mo in those with other histological types (p = 0.0462).
+# ::file pmid_2290_9976_75.txt
+# ::date 2015-08-25T09:37:34
+# ::id pmid_2290_9976.75
+(s / show-01
+      :ARG0 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG2 (p2 / patient))
+            :ARG0-of (h2 / have-03
+                  :ARG1 (t / tumor
+                        :mod (t2 / tubular))))
+      :ARG1 (t3 / time
+            :time (b / before
+                  :op1 (p3 / progress-01))
+            :duration (t4 / temporal-quantity
+                  :quant "9"
+                  :unit (m / month))
+            :compared-to (t5 / time
+                  :time b
+                  :duration (t6 / temporal-quantity
+                        :quant "13"
+                        :unit m)
+                  :ARG1-of (s2 / show-01
+                        :ARG0 (p4 / person
+                              :ARG0-of h
+                              :mod (t7 / type
+                                    :mod (h3 / histology)
+                                    :mod (o / other))))))
+      :ARG1-of (s3 / statistical-test-91 :ARG2 "0.0462"))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients with <i>K-Ras</i> gene mutations did not show a significant difference in time to progression when treated with oxaliplatin chemotherapy, when compared with those with the wild-type <i>K-Ras</i> gene (<xref ref-type="fig" rid="F4">Fig. 4</xref>).
+# ::file pmid_2290_9976_76.txt
+# ::date 2015-08-25T09:41:49
+# ::id pmid_2290_9976.76
+(s / show-01
+   :polarity "-"
+   :ARG0 (p / person
+            :ARG0-of (h / have-rel-role-91
+                        :ARG2 (p2 / patient))
+            :ARG0-of (h2 / have-03
+                         :ARG1 (m / mutate-01
+                                  :ARG1 (g / gene
+                                           :name (n / name
+                                                    :op1 "K-Ras")))))
+   :ARG1 (d / differ-02
+            :ARG1 (t / time
+                     :time (b / before
+                              :op1 (p3 / progress-01)))
+            :ARG1-of (s2 / significant-02))
+   :time (t2 / treat-03
+             :ARG1 p
+             :ARG2 (c / chemotherapy
+                      :mod (s3 / small-molecule
+                               :name (n2 / name
+                                         :op1 "oxaliplatin"))))
+   :compared-to (p4 / person
+                    :ARG0-of h
+                    :mod (g2 / gene
+                             :name (n3 / name
+                                       :op1 "K-Ras")
+                             :mod (w / wild-type)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "4")))
+
+# ::save-date Fri Nov 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The significance of <i>B-Raf</i> gene status, WHO performance status, and Karnofsky performance status could not be assessed.
+# ::file pmid_2290_9976_77.txt
+# ::date 2015-08-25T09:46:40
+# ::id pmid_2290_9976.77
+(p2 / possible-01
+    :polarity "-"
+    :ARG1 (a / assess-01
+             :ARG1 (s / signify-01
+                      :ARG0 (a2 / and
+                                :op1 (s2 / status
+                                         :mod (g / gene
+                                                 :name (n / name
+                                                          :op1 "B-RAF")))
+                                :op2 (s3 / status
+                                         :mod (p3 / perform-02)
+                                         :mod (o / organization
+                                                 :wiki "World_Health_Organization"
+                                                 :name (n2 / name
+                                                           :op1 "World"
+                                                           :op2 "Health"
+                                                           :op3 "Organization")))
+                                :op3 (s4 / status
+                                         :mod (p4 / perform-02)
+                                         :mod (p / person
+                                                 :name (n3 / name
+                                                           :op1 "Karnofsky")))))))
+
+
+# ::save-date Tue Aug 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results are summarized in <xref ref-type="table" rid="T4">Table 4</xref>.
+# ::file pmid_2290_9976_80.txt
+# ::date 2015-08-25T10:00:53
+# ::id pmid_2290_9976.80
+(s / summarize-01
+      :ARG1 (t / thing
+            :mod (t2 / this)
+            :ARG2-of (r / result-01))
+      :ARG2 (t3 / table :mod "4"))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Multivariate analysis identified resection of metastases (HR 0.43; p = 0.0249) and wild-type <i>K-Ras</i> gene (HR 0.49; p = 0.0451) as independent favorable predictive factors in patients with disseminated CRC who were treated with oxaliplatin-based first-line palliative chemotherapy regimens.
+# ::file pmid_2290_9976_81.txt
+# ::date 2015-08-25T10:01:37
+# ::id pmid_2290_9976.81
+(i / identify-01
+   :ARG0 (a / analyze-01
+            :mod (m / multivariate))
+   :ARG1 (a2 / and
+             :op1 (r / resection
+                     :mod (m2 / metastasize-101)
+                     :ARG1-of (m3 / mean-01
+                                  :ARG2 (r2 / ratio-of
+                                            :quant "0.43"
+                                            :op1 (h / hazard)))
+                     :ARG1-of (s2 / statistical-test-91
+                                  :ARG2 "0.0249"))
+             :op2 (g / gene
+                     :name (n / name
+                              :op1 "K-Ras")
+                     :mod (w / wild-type)
+                     :ARG1-of (m4 / mean-01
+                                  :ARG2 (r3 / ratio-of
+                                            :quant "0.49"
+                                            :op1 h))
+                     :ARG1-of (s3 / statistical-test-91
+                                  :ARG2 "0.0451")))
+   :ARG2 (f / factor
+            :ARG0-of (d / depend-01
+                        :polarity "-")
+            :ARG0-of (p3 / predict-01)
+            :mod (f3 / favorable))
+   :location (p4 / person
+                 :ARG0-of (h2 / have-rel-role-91
+                              :ARG2 (p5 / patient))
+                 :ARG0-of (h3 / have-03
+                              :ARG1 (d2 / disease
+                                        :wiki "Colorectal_cancer"
+                                        :name (n2 / name
+                                                  :op1 "colorectal"
+                                                  :op2 "cancer")
+                                        :ARG1-of (d3 / disseminate-01)))
+                 :ARG1-of (t / treat-03
+                             :ARG2 (r4 / regimen
+                                       :mod (c / chemotherapy
+                                               :ARG1-of (b / base-02
+                                                           :ARG2 (s / small-molecule
+                                                                    :name (n3 / name
+                                                                              :op1 "oxaliplatin")))
+                                               :mod (l / line
+                                                       :ord (o / ordinal-entity
+                                                               :value "1"))
+                                               :mod (p6 / palliative))))))
+
+# ::save-date Tue Aug 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, no statistically significant effects of CEA levels and types of neoplasm could be seen.
+# ::file pmid_2290_9976_82.txt
+# ::date 2015-08-25T10:01:56
+# ::id pmid_2290_9976.82
+(h / have-concession-91
+   :ARG1 (p / possible-01
+            :ARG1 (s / see-01
+                     :ARG1 (a / affect-01
+                              :polarity "-"
+                              :ARG0 (a2 / and
+                                        :op1 (l / level
+                                                :quant-of (p2 / protein
+                                                              :name (n / name
+                                                                       :op1 "CEA")))
+                                        :op2 (t / type
+                                                :mod (n2 / neoplasm)))
+                              :ARG1-of (s2 / significant-02
+                                           :manner (s3 / statistic))))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The significance of <i>B-Raf</i> gene status, WHO performance status, and Karnofsky performance status could not be assessed due to the small number of patients.
+# ::file pmid_2290_9976_83.txt
+# ::date 2015-08-25T10:04:26
+# ::id pmid_2290_9976.83
+(p2 / possible-01
+    :polarity "-"
+    :ARG1 (a / assess-01
+             :ARG1 (s2 / signify-01
+                       :ARG0 (a2 / and
+                                 :op1 (s / status
+                                         :mod (g / gene
+                                                 :name (n2 / name
+                                                           :op1 "B-Raf")))
+                                 :op2 (s3 / status
+                                          :mod (p3 / perform-02)
+                                          :mod (o / organization
+                                                  :wiki "World_Health_Organization"
+                                                  :name (n3 / name
+                                                            :op1 "World"
+                                                            :op2 "Health"
+                                                            :op3 "Organization")))
+                                 :op3 (s4 / status
+                                          :mod (p4 / perform-02)
+                                          :mod (p / person
+                                                  :name (n4 / name
+                                                            :op1 "Karnofsky"))))))
+    :ARG1-of (c / cause-01
+                :ARG0 (n / number
+                         :mod (s5 / small)
+                         :quant-of (p5 / person
+                                       :ARG0-of (h / have-rel-role-91
+                                                   :ARG2 (p6 / patient))))))

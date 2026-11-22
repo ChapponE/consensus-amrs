@@ -1,0 +1,15 @@
+,value
+runs,495.0
+share_stop_tol,0.08484848484848485
+share_stop_delta_increase,0.9131313131313131
+n_iter_median,6.0
+n_iter_max,30.0
+energy_gap_median,0.011807330686820161
+energy_gap_p90,0.05160941710693848
+energy_gap_max,0.1812489701763056
+share_other_starts_same_graph_loco,0.02564102564102564
+agreement_median_loco,0.6429
+agreement_p10_loco,0.4375
+score_spread_median_loco,0.03956428571428572
+energy_score_spearman_median_loco,-0.23609022556390977
+chapters_best_energy_is_best_score_loco,6.0

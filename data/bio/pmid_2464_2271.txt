@@ -1,0 +1,3113 @@
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We find that oncogenic ETS expression negatively correlates with <i>RAS</i> and <i>RAF</i> mutations in prostate tumors.
+# ::file pmid_2464_2271_9.txt
+# ::date 2015-08-08T13:41:18
+# ::id pmid_2464_2271.9
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (c / correlate-01
+            :ARG1 (e / express-03
+                     :ARG2 (p2 / protein
+                               :name (n / name
+                                        :op1 "ETS")
+                               :ARG0-of (c2 / cause-01
+                                            :ARG1 (d / disease
+                                                     :wiki "Cancer"
+                                                     :name (n2 / name
+                                                               :op1 "cancer")))))
+            :ARG2 (m / mutate-01
+                     :ARG1 (a / and
+                              :op1 (g / gene
+                                      :name (n3 / name
+                                                :op1 "RAS"))
+                              :op2 (g2 / gene
+                                       :name (n4 / name
+                                                 :op1 "RAF"))))
+            :ARG2-of (n5 / negative-01)
+            :location (t / tumor
+                         :mod (p / prostate))))
+
+
+# ::save-date Thu Sep 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, the oncogenic ETS transcription factors only increased cell migration in the absence of RAS/ERK activation.
+# ::file pmid_2464_2271_10.txt
+# ::date 2015-08-08T13:52:38
+# ::id pmid_2464_2271.10
+(a / and
+      :op2 (i / increase-01
+            :ARG0 (p / protein-family
+                  :name (n / name
+                        :op1 "ETS"
+                        :op2 "transcription"
+                        :op3 "factor")
+                  :ARG0-of (c2 / cause-01
+                        :ARG1 (d / disease
+                              :wiki "Cancer"
+                              :name (n3 / name :op1 "cancer"))))
+            :ARG1 (m / migrate-01
+                  :ARG0 (c / cell))
+            :mod (o / only)
+            :condition (a2 / absent-01
+                  :ARG1 (a3 / activate-01
+                        :ARG1 (p2 / pathway
+                              :name (n2 / name :op1 "RAS/ERK"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast to RAS/ERK, it has been reported that oncogenic ETS expression positively correlates with PI3K/AKT activation.
+# ::file pmid_2464_2271_11.txt
+# ::date 2015-08-08T23:49:25
+# ::id pmid_2464_2271.11
+(c / contrast-01
+   :ARG1 (r / report-01
+            :ARG1 (c2 / correlate-01
+                      :ARG1 (e / express-03
+                               :ARG2 (p4 / protein
+                                         :name (n2 / name
+                                                   :op1 "ETS")
+                                         :ARG0-of (c3 / cause-01
+                                                      :ARG1 (d / disease
+                                                               :wiki "Cancer"
+                                                               :name (n4 / name
+                                                                         :op1 "cancer")))))
+                      :ARG2 (a / activate-01
+                               :ARG1 (p / pathway
+                                        :name (n / name
+                                                 :op1 "PI3K/AKT")))
+                      :manner (p2 / positive)))
+   :ARG2 (p3 / pathway
+             :name (n3 / name
+                       :op1 "RAS/ERK")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We identified a mechanistic explanation for this finding by showing that oncogenic ETS proteins required AKT signaling to activate a cell migration gene expression program through ETS/AP-1 binding sequences.
+# ::file pmid_2464_2271_12.txt
+# ::date 2015-08-08T23:52:16
+# ::id pmid_2464_2271.12
+(i / identify-01
+   :ARG0 (w / we)
+   :ARG1 (e / explain-01
+            :ARG1 (t / thing
+                     :mod (t2 / this)
+                     :ARG1-of (f / find-01))
+            :mod (m2 / mechanistic))
+   :manner (s / show-01
+              :ARG0 w
+              :ARG1 (r / require-01
+                       :ARG0 (a / activate-01
+                                :ARG0 (p / protein
+                                         :name (n / name
+                                                  :op1 "ETS")
+                                         :ARG0-of (c / cause-01
+                                                     :ARG1 (d / disease
+                                                              :wiki "Cancer"
+                                                              :name (n2 / name
+                                                                        :op1 "cancer"))))
+                                :ARG1 (p2 / program
+                                          :mod (e2 / express-03
+                                                   :ARG1 (g / gene)
+                                                   :ARG3 (c2 / cell
+                                                             :ARG0-of (m / migrate-01))))
+                                :instrument (p4 / protein-segment
+                                                :name (n3 / name
+                                                          :op1 "ETS/AP-1")
+                                                :ARG2-of (b / bind-01)))
+                       :ARG1 (s2 / signal-07
+                                 :ARG0 (p3 / pathway
+                                           :name (n4 / name
+                                                     :op1 "AKT"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Levels of pAKT correlated with the ability of oncogenic ETS proteins to increase cell migration, but this process did not require mTORC1.
+# ::file pmid_2464_2271_13.txt
+# ::date 2015-08-09T00:02:43
+# ::id pmid_2464_2271.13
+(c / correlate-01
+   :ARG1 (l / level
+            :quant-of (e / enzyme
+                         :name (n / name
+                                  :op1 "AKT")
+                         :ARG3-of (p / phosphorylate-01)))
+   :ARG2 (c2 / capable-01
+             :ARG1 (p2 / protein
+                       :name (n2 / name
+                                 :op1 "ETS")
+                       :ARG0-of (c3 / cause-01
+                                    :ARG1 (d / disease
+                                             :wiki "Cancer"
+                                             :name (n3 / name
+                                                       :op1 "cancer"))))
+             :ARG2 (i / increase-01
+                      :ARG0 p2
+                      :ARG1 (m / migrate-01
+                               :ARG0 (c4 / cell))))
+   :ARG1-of (c5 / contrast-01
+                :ARG2 (r / require-01
+                         :polarity "-"
+                         :ARG0 (p3 / process
+                                   :mod (t / this))
+                         :ARG1 (m2 / macro-molecular-complex
+                                   :name (n4 / name
+                                             :op1 "mTORC1")))))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt If oncogenic ETS gene rearrangements replace RAS/ERK activation, we predict that RAS/ERK mutations will occur only in ETS rearrangement negative tumors.
+# ::file pmid_2464_2271_50.txt
+# ::date 2015-08-09T00:15:42
+# ::id pmid_2464_2271.50
+(p / predict-01
+      :ARG0 (w / we)
+      :ARG1 (m / mutate-01
+            :ARG1 (p2 / pathway
+                  :name (n / name :op1 "RAS/ERK"))
+            :location (t / tumor
+                  :mod (r / rearrange-01
+                        :polarity "-"
+                        :ARG1 (g / gene
+                              :ARG0-of (e / encode-01
+                                    :ARG1 (p3 / protein-family
+                                          :name (n2 / name :op1 "ETS")))
+                              :ARG0-of (c / cause-01
+                                    :ARG1 (d / disease
+                                          :wiki "Cancer"
+                                          :name (n3 / name :op1 "cancer")))))
+                  :mod (o / only)))
+      :condition (r2 / replace-01
+            :ARG1 (a / activate-01
+                  :ARG1 p2)
+            :ARG2 (r3 / rearrange-01
+                  :ARG1 g)))
+
+# ::save-date Tue Jan 19, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test this hypothesis, we examined the results of three recently published studies [<xref ref-type="bibr" rid="B6">6</xref>,<xref ref-type="bibr" rid="B22">22</xref>,<xref ref-type="bibr" rid="B23">23</xref>] that both sequence exons and identify chromosome rearrangements in prostate tumors (Table <xref ref-type="table" rid="T1">1</xref>).
+# ::file pmid_2464_2271_51.txt
+# ::date 2015-08-09T00:22:36
+# ::id pmid_2464_2271.51
+(e / examine-01
+   :ARG0 (w / we)
+   :ARG1 (a2 / and
+             :op1 (s2 / sequence-01
+                      :ARG0 (b / both)
+                      :ARG1 (e2 / exon))
+             :op2 (i / identify-01
+                     :ARG0 b
+                     :ARG1 (r3 / rearrange-01
+                               :ARG1 (c2 / chromosome)
+                               :location (t4 / tumor
+                                             :mod (p2 / prostate))))
+             :ARG2-of (r / result-01
+                         :ARG1 (s / study-01
+                                  :quant "3"
+                                  :ARG1-of (p / publish-01
+                                              :time (r2 / recent))
+                                  :ARG1-of (c / cite-01
+                                              :ARG2 (a / and
+                                                       :op1 "6"
+                                                       :op2 "22"
+                                                       :op3 "23")))))
+   :purpose (t3 / test-01
+                :ARG0 w
+                :ARG1 (t / thing
+                         :ARG1-of (h / hypothesize-01)
+                         :mod (t6 / this)))
+   :ARG1-of (d / describe-01
+               :ARG0 (t5 / table
+                         :mod "1")))
+
+
+# ::save-date Sun Aug 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Together these studies examine 266 prostate tumors.
+# ::file pmid_2464_2271_52.txt
+# ::date 2015-08-09T00:55:20
+# ::id pmid_2464_2271.52
+(e / examine-01
+      :ARG0 (s / study-01
+            :mod (t / this)
+            :mod (t3 / together))
+      :ARG1 (t2 / tumor
+            :quant "266"
+            :mod (p / prostate)))
+
+# ::save-date Sun Aug 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt One-half (133) have ERG or ETV1 chromosome rearrangements.
+# ::file pmid_2464_2271_53.txt
+# ::date 2015-08-09T00:56:38
+# ::id pmid_2464_2271.53
+(h / have-03
+   :ARG0 (t / thing
+            :quant "133"
+            :ARG1-of (i / include-91
+                        :ARG2 (t2 / thing)
+                        :ARG3 "1/2"))
+   :ARG1 (r / rearrange-01
+            :ARG1 (o / or
+                     :op1 (c / chromosome
+                             :mod (g / gene
+                                     :name (n / name
+                                              :op1 "ERG")))
+                     :op2 (c2 / chromosome
+                              :mod (g2 / gene
+                                       :name (n2 / name
+                                                 :op1 "ETV1"))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We searched for either gene fusions, or point mutations in canonical RAS/ERK pathway genes (RAS, RAF, MEK, and ERK encoding genes).
+# ::file pmid_2464_2271_54.txt
+# ::date 2015-08-09T01:07:18
+# ::id pmid_2464_2271.54
+(s / search-01
+   :ARG0 (w / we)
+   :ARG2 (o / or
+            :op1 (f / fuse-01
+                    :ARG1 (g / gene
+                             :mod (p2 / pathway
+                                      :name (n5 / name
+                                                :op1 "RAS/ERK")
+                                      :mod (c / canonical))
+                             :ARG1-of (m2 / mean-01
+                                          :ARG2 (g2 / gene
+                                                    :ARG0-of (e5 / encode-01
+                                                                 :ARG1 (a / and
+                                                                          :op1 (e / enzyme
+                                                                                  :name (n / name
+                                                                                           :op1 "RAS"))
+                                                                          :op2 (e2 / enzyme
+                                                                                   :name (n2 / name
+                                                                                             :op1 "RAF"))
+                                                                          :op3 (e3 / enzyme
+                                                                                   :name (n3 / name
+                                                                                             :op1 "MEK"))
+                                                                          :op4 (e4 / enzyme
+                                                                                   :name (n4 / name
+                                                                                             :op1 "ERK"))))))))
+            :op2 (m / mutate-01
+                    :ARG1 g
+                    :mod (p / point))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Eight tumors had such aberrations, and all eight were negative for oncogenic ETS rearrangements.
+# ::file pmid_2464_2271_55.txt
+# ::date 2015-08-09T01:14:37
+# ::id pmid_2464_2271.55
+(a / and
+   :op1 (h / have-03
+           :ARG0 (t / tumor
+                    :quant "8")
+           :ARG1 (a2 / aberration
+                     :mod (s / such)))
+   :op2 (n / negative-01
+           :ARG1 (t2 / tumor
+                     :ARG1-of (i / include-91
+                                 :ARG2 t
+                                 :ARG3 (a3 / all)))
+           :ARG2 (r / rearrange-01
+                    :ARG1 (g / gene
+                             :name (n2 / name
+                                       :op1 "ETS")
+                             :ARG0-of (c / cause-01
+                                         :ARG1 (d / disease
+                                                  :wiki "Cancer"
+                                                  :name (n3 / name
+                                                            :op1 "cancer")))))))
+
+# ::save-date Mon Dec 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This indicates that, while genomic alterations in RAS/ERK pathway components are rare in prostate cancer, there is a statistically significant (P = 0.007; Fisher’s exact test) mutual exclusivity of these alterations and ETS rearrangements.
+# ::file pmid_2464_2271_56.txt
+# ::date 2015-08-09T01:19:56
+# ::id pmid_2464_2271.56
+(i / indicate-01
+   :ARG0 (t / this)
+   :ARG1 (s / significant-02
+            :ARG1 (e / exclusive-02
+                     :ARG0 "a3"
+                     :ARG2 (r / rearrange-01
+                              :ARG1 (g / gene
+                                       :name (n2 / name
+                                                 :op1 "ETS")))
+                     :manner (m / mutual))
+            :mod (s2 / statistics)
+            :concession (r2 / rare-02
+                            :ARG1 (a3 / alter-01
+                                      :ARG1 (c / component
+                                               :mod (p2 / pathway
+                                                        :name (n3 / name
+                                                                  :op1 "RAS/ERK")))
+                                      :mod (g2 / genome))
+                            :location (d2 / disease
+                                          :wiki "Prostate_cancer"
+                                          :name (n5 / name
+                                                    :op1 "prostate"
+                                                    :op2 "cancer")))
+            :ARG1-of (s3 / statistical-test-91
+                         :ARG2 "0.007"
+                         :ARG4 (t2 / thing
+                                   :name (n / name
+                                            :op1 "Fisher’s"
+                                            :op2 "exact"
+                                            :op3 "test")))))
+
+# ::save-date Mon Sep 28, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt It has been previously reported that PI3K/AKT activation via PTEN deletion positively correlates with ETS gene rearrangements [<xref ref-type="bibr" rid="B16">16</xref>,<xref ref-type="bibr" rid="B20">20</xref>].
+# ::file pmid_2464_2271_57.txt
+# ::date 2015-08-09T01:40:18
+# ::id pmid_2464_2271.57
+(r / report-01
+   :ARG1 (c / correlate-01
+            :ARG1 (a / activate-01
+                     :ARG1 (p3 / pathway
+                               :name (n / name
+                                        :op1 "PI3K/AKT"))
+                     :manner (d / delete-01
+                                :ARG1 (p4 / protein
+                                          :name (n2 / name
+                                                    :op1 "PTEN"))))
+            :ARG2 (r2 / rearrange-01
+                      :ARG1 (g / gene
+                               :ARG0-of (e / encode-01
+                                           :ARG1 (p6 / protein-family
+                                                     :name (n3 / name
+                                                               :op1 "ETS")))))
+            :manner (p2 / positive))
+   :time (p / previous)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p5 / publication
+                          :ARG1-of (c2 / cite-01
+                                       :ARG2 (a2 / and
+                                                 :op1 "16"
+                                                 :op2 "20")))))
+
+# ::save-date Mon Dec 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A search for PTEN loss in these 266 tumors (Table <xref ref-type="table" rid="T1">1</xref>) confirms these findings and indicates that PTEN loss is more than twice as likely in tumors with ETS gene rearrangements than in those without (P = 0.0008; Fisher’s exact test).
+# ::file pmid_2464_2271_58.txt
+# ::date 2015-08-09T01:48:03
+# ::id pmid_2464_2271.58
+(a / and
+   :op1 (c / confirm-01
+           :ARG0 (s / search-01
+                    :ARG1 (t / tumor
+                             :quant "266"
+                             :mod (t2 / this))
+                    :ARG2 (l / lose-02
+                             :ARG1 (p / protein
+                                      :name (n / name
+                                               :op1 "PTEN")))
+                    :ARG1-of (d / describe-01
+                                :ARG0 (t3 / table
+                                          :mod "1")))
+           :ARG1 (t4 / thing
+                     :mod t2
+                     :ARG1-of (f / find-01)))
+   :op2 (i / indicate-01
+           :ARG0 s
+           :ARG1 (l2 / likely-01
+                     :ARG1 (l3 / lose-02
+                               :ARG1 p
+                               :location (t5 / tumor
+                                             :mod (r / rearrange-01
+                                                     :ARG1 (g / gene
+                                                              :ARG0-of (e / encode-01
+                                                                          :ARG1 (p4 / protein-family
+                                                                                    :name (n2 / name
+                                                                                              :op1 "ETS")))))))
+                     :degree (m / more-than
+                                :op1 (p2 / product-of
+                                         :op1 "2"
+                                         :op2 (t6 / tumor
+                                                  :mod (r2 / rearrange-01
+                                                           :polarity "-"
+                                                           :ARG1 g))))
+                     :ARG1-of (s2 / statistical-test-91
+                                  :ARG2 "0.0008"
+                                  :ARG4 (t7 / thing
+                                            :name (n3 / name
+                                                      :op1 "Fisher’s"
+                                                      :op2 "exact"
+                                                      :op3 "test"))))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In conclusion, <i>ERG</i> and <i>ETV1</i> gene rearrangements positively correlate with PTEN loss and negatively correlate with RAS/ERK mutations in tumors.
+# ::file pmid_2464_2271_59.txt
+# ::date 2015-08-09T02:08:28
+# ::id pmid_2464_2271.59
+(c / conclude-01
+   :ARG1 (a / and
+            :op1 (c2 / correlate-01
+                     :ARG1 (r / rearrange-01
+                              :ARG1 (a2 / and
+                                        :op1 (g / gene
+                                                :name (n / name
+                                                         :op1 "ERG"))
+                                        :op2 (g2 / gene
+                                                 :name (n2 / name
+                                                           :op1 "ETV1"))))
+                     :ARG2 (l / lose-02
+                              :ARG1 (p2 / protein
+                                        :name (n4 / name
+                                                  :op1 "PTEN")))
+                     :manner (p / positive))
+            :op2 (c3 / correlate-01
+                     :ARG1 r
+                     :ARG2 (m / mutate-01
+                              :ARG1 (p3 / pathway
+                                        :name (n5 / name
+                                                  :op1 "RAS/ERK")))
+                     :ARG2-of (n3 / negative-01))
+            :location (t / tumor)))
+
+# ::save-date Mon Sep 28, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test the effect of RAS/ERK signaling and PI3K/AKT signaling on oncogenic ETS function in prostate cell lines, we must first determine which cell lines have these characteristics.
+# ::file pmid_2464_2271_61.txt
+# ::date 2015-08-09T02:21:44
+# ::id pmid_2464_2271.61
+(o / obligate-01
+   :ARG1 (w / we)
+   :ARG2 (d / determine-01
+            :ARG0 w
+            :ARG1 (c4 / cell-line
+                      :mod (a3 / amr-unknown)
+                      :ARG0-of (h / have-03
+                                  :ARG1 (t2 / thing
+                                            :mod (t3 / this)
+                                            :ARG2-of (c3 / characteristic-02))))
+            :ord (o2 / ordinal-entity
+                     :value "1"))
+   :purpose (t / test-01
+               :ARG0 w
+               :ARG1 (a / affect-01
+                        :ARG0 (a2 / and
+                                  :op1 (s / signal-07
+                                          :ARG0 (p / pathway
+                                                   :name (n / name
+                                                            :op1 "RAS/ERK")))
+                                  :op2 (s2 / signal-07
+                                           :ARG0 (p2 / pathway
+                                                     :name (n2 / name
+                                                               :op1 "PI3K/AKT"))))
+                        :ARG1 (f / function-01
+                                 :ARG0 (g / gene
+                                          :name (n3 / name
+                                                    :op1 "ETS")
+                                          :ARG0-of (c / cause-01
+                                                      :ARG1 (d2 / disease
+                                                                :wiki "Cancer"
+                                                                :name (n4 / name
+                                                                          :op1 "cancer"))))
+                                 :location (c2 / cell-line
+                                               :source (p3 / prostate))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Although some prostate cancer cell lines, such as VCaP (<i>ERG</i>) and LNCaP (<i>ETV1</i>) are reported to have oncogenic ETS gene rearrangements [<xref ref-type="bibr" rid="B11">11</xref>,<xref ref-type="bibr" rid="B14">14</xref>], the full extent of oncogenic ETS protein expression, including fusion-independent expression, in commonly used prostate cancer cell lines has not been determined.
+# ::file pmid_2464_2271_62.txt
+# ::date 2015-08-09T02:33:40
+# ::id pmid_2464_2271.62
+(d / determine-01
+   :polarity "-"
+   :ARG1 (e / extent
+            :degree-of (e2 / express-03
+                           :ARG2 (p / protein
+                                    :name (n / name
+                                             :op1 "ETS")
+                                    :ARG0-of (c / cause-01
+                                                :ARG1 (d2 / disease
+                                                          :wiki "Cancer"
+                                                          :name (n2 / name
+                                                                    :op1 "cancer"))))
+                           :ARG3 (c2 / cell-line
+                                     :mod d2
+                                     :ARG1-of (u / use-01
+                                                 :mod (c3 / common)))
+                           :ARG2-of (i / include-91
+                                       :ARG1 (e3 / express-03
+                                                 :ARG0-of (d3 / depend-01
+                                                              :polarity "-"
+                                                              :ARG1 (f2 / fuse-01)))))
+            :ARG1-of (f / full-09))
+   :concession (r / report-01
+                  :ARG1 (h / have-03
+                           :ARG0 (c4 / cell-line
+                                     :mod (s / some)
+                                     :example (a / and
+                                                 :op1 (c5 / cell-line
+                                                          :name (n4 / name
+                                                                    :op1 "VCaP")
+                                                          :mod (g / gene
+                                                                  :name (n6 / name
+                                                                            :op1 "ERG")))
+                                                 :op2 (c6 / cell-line
+                                                          :name (n5 / name
+                                                                    :op1 "LNCaP")
+                                                          :mod (g2 / gene
+                                                                   :name (n7 / name
+                                                                             :op1 "ETV1"))))
+                                     :mod (d4 / disease
+                                              :wiki "Prostate_cancer"
+                                              :name (n3 / name
+                                                        :op1 "prostate"
+                                                        :op2 "cancer")))
+                           :ARG1 (r2 / rearrange-01
+                                     :ARG1 (g3 / gene
+                                               :ARG0-of c
+                                               :ARG0-of (e4 / encode-01
+                                                            :ARG1 (p4 / protein-family
+                                                                      :name (n8 / name
+                                                                                :op1 "ETS"))))))
+                  :ARG1-of (d5 / describe-01
+                               :ARG0 (p3 / publication
+                                         :ARG1-of (c7 / cite-01
+                                                      :ARG2 (a2 / and
+                                                                :op1 "11"
+                                                                :op2 "14"))))))
+
+# ::save-date Mon Sep 28, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To identify the expression level of the four oncogenic ETS proteins, we first tested available antibodies using purified recombinant proteins (Figure <xref ref-type="fig" rid="F1">1</xref>A).
+# ::file pmid_2464_2271_63.txt
+# ::date 2015-08-09T03:41:50
+# ::id pmid_2464_2271.63
+(t / test-01
+   :ARG0 (w / we)
+   :ARG1 (a / antibody
+            :ARG2-of (a2 / available-02))
+   :ord (o / ordinal-entity
+           :value "1")
+   :manner (u / use-01
+              :ARG0 w
+              :ARG1 (p / protein
+                       :ARG1-of (p2 / purify-01)
+                       :ARG3-of (r / recombine-01)))
+   :purpose (i / identify-01
+               :ARG0 w
+               :ARG1 (l / level
+                        :degree-of (e / express-03
+                                      :ARG2 (p3 / protein
+                                                :quant "4"
+                                                :name (n / name
+                                                         :op1 "ETS")
+                                                :ARG0-of (c / cause-01
+                                                            :ARG1 (d / disease
+                                                                     :wiki "Cancer"
+                                                                     :name (n2 / name
+                                                                               :op1 "cancer")))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1A")))
+
+# ::save-date Sun Aug 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We identified antibodies to ERG, ETV1, ETV4, and ETV5 that could detect each protein at femtomolar levels.
+# ::file pmid_2464_2271_64.txt
+# ::date 2015-08-09T03:49:20
+# ::id pmid_2464_2271.64
+(i / identify-01
+   :ARG0 (w / we)
+   :ARG1 (a / antibody
+            :ARG0-of (c / counter-01
+                        :ARG1 (a2 / and
+                                  :op1 (p / protein
+                                          :name (n / name
+                                                   :op1 "ERG"))
+                                  :op2 (p2 / protein
+                                           :name (n2 / name
+                                                     :op1 "ETV1"))
+                                  :op3 (p3 / protein
+                                           :name (n3 / name
+                                                     :op1 "ETV4"))
+                                  :op4 (p4 / protein
+                                           :name (n4 / name
+                                                     :op1 "ETV5"))))
+            :ARG0-of (d / detect-01
+                        :ARG1 (p6 / protein
+                                  :mod (e / each)
+                                  :quant (l / level
+                                            :mod (f / femtomolar)))
+                        :ARG1-of (p5 / possible-01))))
+
+# ::save-date Sun Aug 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Because ETV1, ETV4, and ETV5 are homologous proteins, the sensitivity and specificity of these antibodies were compared.
+# ::file pmid_2464_2271_65.txt
+# ::date 2015-08-09T04:02:33
+# ::id pmid_2464_2271.65
+(c / compare-01
+   :ARG1 (a / and
+            :op1 (s / sensitive-03
+                    :ARG0 (a2 / antibody
+                              :mod (t / this)))
+            :op2 (s2 / specific-02
+                     :ARG1 a2))
+   :ARG1-of (c2 / cause-01
+                :ARG0 (p / protein
+                         :mod (h / homologous)
+                         :domain (a3 / and
+                                     :op1 (p2 / protein
+                                              :name (n / name
+                                                       :op1 "ETV1"))
+                                     :op2 (p3 / protein
+                                              :name (n2 / name
+                                                        :op1 "ETV4"))
+                                     :op3 (p4 / protein
+                                              :name (n3 / name
+                                                        :op1 "ETV5"))))))
+
+# ::save-date Sun Aug 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt ETV1 and ETV4 antibodies were specific, but the ETV5 antibody recognized ETV4 and ETV5 equally.
+# ::file pmid_2464_2271_66.txt
+# ::date 2015-08-09T04:05:16
+# ::id pmid_2464_2271.66
+(c / contrast-01
+   :ARG1 (s / specific-02
+            :ARG1 (a / and
+                     :op1 (a2 / antibody
+                              :ARG0-of (c2 / counter-01
+                                           :ARG1 (p / protein
+                                                    :name (n / name
+                                                             :op1 "ETV1"))))
+                     :op2 (a3 / antibody
+                              :ARG0-of (c3 / counter-01
+                                           :ARG1 (p2 / protein
+                                                     :name (n2 / name
+                                                               :op1 "ETV4"))))))
+   :ARG2 (r / recognize-02
+            :ARG0 (a4 / antibody
+                      :ARG0-of (c4 / counter-01
+                                   :ARG1 (p3 / protein
+                                             :name (n3 / name
+                                                       :op1 "ETV5"))))
+            :ARG1 (a5 / and
+                      :op1 p2
+                      :op2 p3)
+            :manner (e / equal-01)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We then examined oncogenic ETS protein levels, along with phosphorylated ERK (pERK: RAS/ERK pathway) and phosphorylated AKT (pAKT: PI3K/AKT pathway) levels in six prostate cancer cell lines (Figure <xref ref-type="fig" rid="F1">1</xref>B and Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S1A).
+# ::file pmid_2464_2271_67.txt
+# ::date 2015-08-09T05:16:30
+# ::id pmid_2464_2271.67
+(e2 / examine-01
+    :ARG0 (w / we)
+    :ARG1 (a / and
+             :op1 (l / level
+                     :quant-of (p / protein
+                                  :name (n4 / name
+                                            :op1 "ETS")
+                                  :ARG0-of (c2 / cause-01
+                                               :ARG1 (d3 / disease
+                                                         :wiki "Cancer"
+                                                         :name (n2 / name
+                                                                   :op1 "cancer")))))
+             :op2 (l2 / level
+                      :quant-of (p3 / pathway
+                                    :name (n5 / name
+                                              :op1 "ERK")
+                                    :ARG3-of (p4 / phosphorylate-01
+                                                 :ARG3 p6)
+                                    :ARG1-of (m / mean-01
+                                                :ARG2 (p5 / pathway
+                                                          :name (n6 / name
+                                                                    :op1 "RAS/ERK")))))
+             :op3 (l3 / level
+                      :quant-of (p6 / pathway
+                                    :name (n7 / name
+                                              :op1 "AKT")
+                                    :ARG1-of (m2 / mean-01
+                                                 :ARG2 (p7 / pathway
+                                                           :name (n8 / name
+                                                                     :op1 "PI3K/AKT")))))
+             :location (c / cell-line
+                          :quant "6"
+                          :mod (d / disease
+                                  :wiki "Prostate_cancer"
+                                  :name (n / name
+                                           :op1 "prostate"
+                                           :op2 "cancer"))))
+    :time (t / then)
+    :ARG1-of (d2 / describe-01
+                 :ARG0 (a2 / and
+                           :op1 (f / figure
+                                   :mod "1B")
+                           :op2 (f2 / figure
+                                    :mod "S1A"
+                                    :location (f3 / file
+                                                  :mod "1"
+                                                  :ARG1-of (a3 / add-02))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt DU145 cells, which have a KRAS gene rearrangement [<xref ref-type="bibr" rid="B24">24</xref>], did not have high levels of any oncogenic ETS protein, or pAKT, but did have pERK, consistent with the small fraction of prostate cancers with RAS/ERK pathway mutations (Table <xref ref-type="table" rid="T1">1</xref>).
+# ::file pmid_2464_2271_68.txt
+# ::date 2015-08-09T13:29:31
+# ::id pmid_2464_2271.68
+(c / contrast-01
+   :ARG1 (h / have-03
+            :polarity "-"
+            :ARG0 (c2 / cell-line
+                      :name (n2 / name
+                                :op1 "DU145")
+                      :ARG0-of (h3 / have-03
+                                   :ARG1 (r / rearrange-01
+                                            :ARG1 (g / gene
+                                                     :name (n5 / name
+                                                               :op1 "KRAS")))
+                                   :ARG1-of (d2 / describe-01
+                                                :ARG0 (p3 / publication
+                                                          :ARG1-of (c4 / cite-01
+                                                                       :ARG2 "24")))))
+            :ARG1 (o / or
+                     :op1 (l / level
+                             :quant-of (p / protein
+                                          :name (n / name
+                                                   :op1 "ETS")
+                                          :mod (a / any)
+                                          :ARG0-of (c3 / cause-01
+                                                       :ARG1 (d / disease
+                                                                :wiki "Cancer"
+                                                                :name (n3 / name
+                                                                          :op1 "cancer")))))
+                     :op2 (l2 / level
+                              :quant-of (e / enzyme
+                                           :name (n4 / name
+                                                     :op1 "AKT")
+                                           :ARG3-of (p2 / phosphorylate-01
+                                                        :ARG3 e2)))
+                     :ARG1-of (h2 / high-02)))
+   :ARG2 (h4 / have-03
+             :ARG0 c2
+             :ARG1 (e2 / enzyme
+                       :name (n6 / name
+                                 :op1 "ERK"))
+             :ARG1-of (c5 / consistent-01
+                          :ARG2 (f / fraction
+                                   :mod (s / small)
+                                   :quant-of (d5 / disease
+                                                 :wiki "Prostate_cancer"
+                                                 :name (n9 / name
+                                                           :op1 "prostate"
+                                                           :op2 "cancer")
+                                                 :ARG0-of (h5 / have-03
+                                                              :ARG1 (m / mutate-01
+                                                                       :ARG1 (p5 / pathway
+                                                                                 :name (n8 / name
+                                                                                           :op1 "RAS/ERK"))))))))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (t / table
+                         :mod "1")))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of the remaining five prostate cancer cell lines, four had high expression of a single oncogenic protein.
+# ::file pmid_2464_2271_69.txt
+# ::date 2015-08-09T13:40:22
+# ::id pmid_2464_2271.69
+(e / express-03
+      :ARG2 (p2 / protein
+            :ARG1-of (s / single-02)
+            :ARG0-of (c3 / cause-01
+                  :ARG1 (d2 / disease
+                        :wiki "Cancer"
+                        :name (n2 / name :op1 "cancer"))))
+      :ARG3 (c / cell-line
+            :quant "4"
+            :ARG1-of (i / include-91
+                  :ARG2 (c2 / cell-line
+                        :quant "5"
+                        :ARG1-of (r / remain-01)
+                        :mod (d3 / disease
+                              :wiki "Prostate_cancer"
+                              :name (n3 / name :op1 "prostate" :op2 "cancer")))))
+      :ARG1-of (h / high-02))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These included ERG in VCaP, consistent with a <i>TMRPSS2/ERG</i> rearrangement [<xref ref-type="bibr" rid="B11">11</xref>], ETV1 in MDA-PCa-2B, consistent with an <i>ETV1</i> gene rearrangement [<xref ref-type="bibr" rid="B14">14</xref>], and ETV4 in PC3, consistent with high <i>ETV4</i> mRNA [<xref ref-type="bibr" rid="B25">25</xref>].
+# ::file pmid_2464_2271_70.txt
+# ::date 2015-08-09T13:44:13
+# ::id pmid_2464_2271.70
+(i / include-91
+   :ARG1 (a / and
+            :op1 (p / protein
+                    :name (n / name
+                             :op1 "ERG")
+                    :location (c / cell-line
+                                 :name (n4 / name
+                                           :op1 "VCaP"))
+                    :ARG1-of (c4 / consistent-01
+                                 :ARG2 (r / rearrange-01
+                                          :ARG1 (g / gene
+                                                   :name (n7 / name
+                                                             :op1 "TMRPSS2/ERG")))
+                                 :ARG1-of (d / describe-01
+                                             :ARG0 (p4 / publication
+                                                       :ARG1-of (c5 / cite-01
+                                                                    :ARG2 "11")))))
+            :op2 (p2 / protein
+                     :name (n2 / name
+                               :op1 "ETV1")
+                     :location (c2 / cell-line
+                                   :name (n5 / name
+                                             :op1 "MDA-PCa-2B"))
+                     :ARG1-of (c6 / consistent-01
+                                  :ARG2 (r2 / rearrange-01
+                                            :ARG1 (g2 / gene
+                                                      :name (n8 / name
+                                                                :op1 "ETV1")))
+                                  :ARG1-of (d2 / describe-01
+                                               :ARG0 (p5 / publication
+                                                         :ARG1-of (c7 / cite-01
+                                                                      :ARG2 "14")))))
+            :op3 (p3 / protein
+                     :name (n3 / name
+                               :op1 "ETV4")
+                     :location (c3 / cell-line
+                                   :name (n6 / name
+                                             :op1 "PC3"))
+                     :ARG1-of (c8 / consistent-01
+                                  :ARG2 (n11 / nucleic-acid
+                                             :name (n9 / name
+                                                       :op1 "mRNA")
+                                             :ARG0-of (e / encode-01
+                                                         :ARG1 (p7 / protein
+                                                                   :name (n10 / name
+                                                                              :op1 "ETV4")))
+                                             :ARG1-of (h / high-02))
+                                  :ARG1-of (d3 / describe-01
+                                               :ARG0 (p6 / publication
+                                                         :ARG1-of (c9 / cite-01
+                                                                      :ARG2 "25"))))))
+   :ARG2 (t / this))
+
+# ::save-date Sun Aug 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt ETV4 protein was also present at high levels in CWR22Rv1.
+# ::file pmid_2464_2271_71.txt
+# ::date 2015-08-09T13:53:46
+# ::id pmid_2464_2271.71
+(p / present-02
+   :ARG1 (p2 / protein
+             :name (n / name
+                      :op1 "ETV4")
+             :quant (l / level
+                       :ARG1-of (h / high-02)))
+   :ARG2 (c / cell-line
+            :name (n2 / name
+                      :op1 "CWR22Rv1"))
+   :mod (a / also))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of the four lines with high oncogenic ETS protein expression, all had high levels of pAKT, but only one (CWR22Rv1) had high levels of pERK, consistent with the analysis of prostate tumors in Table <xref ref-type="table" rid="T1">1</xref>.
+# ::file pmid_2464_2271_72.txt
+# ::date 2015-08-09T13:55:13
+# ::id pmid_2464_2271.72
+(c / contrast-01
+   :ARG1 (h / have-03
+            :ARG0 (c2 / cell-line
+                      :ARG1-of (i / include-91
+                                  :ARG2 (c3 / cell-line
+                                            :quant "4"
+                                            :ARG3-of (e / express-03
+                                                        :ARG2 (p / protein
+                                                                 :name (n / name
+                                                                          :op1 "ETS")
+                                                                 :ARG0-of (c4 / cause-01
+                                                                              :ARG1 (d / disease
+                                                                                       :wiki "Cancer"
+                                                                                       :name (n2 / name
+                                                                                                 :op1 "cancer"))))
+                                                        :ARG1-of (h2 / high-02
+                                                                     :ARG1 l)))
+                                  :ARG3 (a / all)))
+            :ARG1 (l / level
+                     :quant-of (e2 / enzyme
+                                   :name (n3 / name
+                                             :op1 "AKT")
+                                   :ARG3-of (p2 / phosphorylate-01
+                                                :ARG3 e3))))
+   :ARG2 (h3 / have-03
+             :ARG0 (c5 / cell-line
+                       :quant "1"
+                       :mod (o / only)
+                       :ARG1-of (m / mean-01
+                                   :ARG2 (c6 / cell-line
+                                             :name (n4 / name
+                                                       :op1 "CWR22Rv1")))
+                       :ARG1-of (i2 / include-91
+                                    :ARG2 c3))
+             :ARG1 (l2 / level
+                       :ARG1-of h2
+                       :quant-of (e3 / enzyme
+                                     :name (n5 / name
+                                               :op1 "ERK"))))
+   :ARG1-of (c7 / consistent-01
+                :ARG2 (a2 / analyze-01
+                          :ARG1 (t / tumor
+                                   :mod (p3 / prostate))
+                          :location (t2 / table
+                                        :mod "1"))))
+
+# ::save-date Mon Sep 28, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Surprisingly, despite an ETV1 gene rearrangement [<xref ref-type="bibr" rid="B14">14</xref>], and high ETV1 mRNA levels [<xref ref-type="bibr" rid="B25">25</xref>], ETV1 protein was not observed in LNCaP cells.
+# ::file pmid_2464_2271_73.txt
+# ::date 2015-08-09T14:01:34
+# ::id pmid_2464_2271.73
+(o / observe-01
+   :polarity "-"
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "ETV1"))
+   :location (c / cell-line
+                :name (n2 / name
+                          :op1 "LNCaP"))
+   :concession (a / and
+                  :op1 (r / rearrange-01
+                          :ARG1 (g / gene
+                                   :name (n3 / name
+                                             :op1 "ETV1"))
+                          :ARG1-of (d / describe-01
+                                      :ARG0 (p2 / publication
+                                                :ARG1-of (c2 / cite-01
+                                                             :ARG2 "14"))))
+                  :op2 (l / level
+                          :ARG1-of (h / high-02)
+                          :quant-of (n5 / nucleic-acid
+                                        :name (n4 / name
+                                                  :op1 "mRNA")
+                                        :ARG0-of (e / encode-01
+                                                    :ARG1 g))
+                          :ARG1-of (d2 / describe-01
+                                       :ARG0 (p3 / publication
+                                                 :ARG1-of (c3 / cite-01
+                                                              :ARG2 "25")))))
+   :ARG0-of (s / surprise-01))
+
+# ::save-date Wed Nov 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, this is consistent with results from Vitari <i>et al.</i> who showed low ETV1 protein levels in LNCaP cells due to proteasomal targeting by the COP1 E3 ubiquitin ligase [<xref ref-type="bibr" rid="B26">26</xref>].
+# ::file pmid_2464_2271_74.txt
+# ::date 2015-08-09T14:05:59
+# ::id pmid_2464_2271.74
+(c / contrast-01
+   :ARG2 (c2 / consistent-01
+             :ARG1 (t / this)
+             :ARG2 (t2 / thing
+                       :ARG2-of (r / result-01
+                                   :ARG1 (p / publication-91
+                                            :ARG0 (a / and
+                                                     :op1 (p2 / person
+                                                              :name (n / name
+                                                                       :op1 "Vitari"))
+                                                     :op2 (p3 / person
+                                                              :mod (o / other))
+                                                     :ARG0-of (s / show-01
+                                                                 :ARG1 (l / level
+                                                                          :ARG1-of (l2 / low-04
+                                                                                       :ARG1-of (c4 / cause-01
+                                                                                                    :ARG0 (t3 / target-01
+                                                                                                              :ARG0 (e / enzyme
+                                                                                                                       :name (n4 / name
+                                                                                                                                 :op1 "COP1"
+                                                                                                                                 :op2 "E3"
+                                                                                                                                 :op3 "ubiquitin"
+                                                                                                                                 :op4 "ligase"))
+                                                                                                              :ARG1 (m / macro-molecular-complex
+                                                                                                                       :name (n5 / name
+                                                                                                                                 :op1 "proteasome")))))
+                                                                          :quant-of (p4 / protein
+                                                                                        :name (n2 / name
+                                                                                                  :op1 "ETV1"))
+                                                                          :location (c3 / cell-line
+                                                                                        :name (n3 / name
+                                                                                                  :op1 "LNCaP")))))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p6 / publication
+                         :ARG1-of (c5 / cite-01
+                                      :ARG2 "26"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Long exposures could identify pERK, pAKT, and some ETS proteins at low levels in immunoblots from most cell lines.
+# ::file pmid_2464_2271_75.txt
+# ::date 2015-08-09T14:17:15
+# ::id pmid_2464_2271.75
+(p / possible-01
+   :ARG1 (i / identify-01
+            :ARG0 (e3 / expose-01
+                      :ARG1-of (l3 / long-03))
+            :ARG1 (a / and
+                     :op1 (e / enzyme
+                             :name (n / name
+                                      :op1 "ERK")
+                             :ARG3-of (p3 / phosphorylate-01
+                                          :ARG3 e2))
+                     :op2 (e2 / enzyme
+                              :name (n2 / name
+                                        :op1 "AKT"))
+                     :op3 (p2 / protein
+                              :name (n3 / name
+                                        :op1 "ETS")
+                              :mod (s / some))
+                     :quant (l / level
+                               :ARG1-of (l2 / low-04)))
+            :location (i2 / immunoblot-01
+                          :ARG2 (c / cell-line
+                                   :quant (m / most)))))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To more quantitatively establish the “high-level” threshold shown in Figure <xref ref-type="fig" rid="F1">1</xref>B, ETS proteins in cell extracts were compared with purified standards (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S1B).
+# ::file pmid_2464_2271_76.txt
+# ::date 2015-08-10T16:25:15
+# ::id pmid_2464_2271.76
+(c / compare-01
+      :ARG1 (p / protein-family
+            :name (n / name :op1 "ETS")
+            :location (e / extract-01
+                  :ARG1 (c2 / cell)))
+      :ARG2 (s / standard-02
+            :ARG1-of (p2 / purify-01))
+      :purpose (e2 / establish-01
+            :ARG1 (t / threshold
+                  :mod (l / level
+                        :ARG1-of (h / high-02))
+                  :ARG1-of (s2 / show-01
+                        :ARG0 (f / figure :mod "1B")))
+            :manner (q / quantitative
+                  :degree (m / more)))
+      :ARG1-of (d / describe-01
+            :ARG0 (f2 / file
+                  :mod "1"
+                  :ARG1-of (a / add-02)
+                  :part (f3 / figure :mod "S1B"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All “high-level” expression for ETS proteins exceeded 50,000 proteins per cell, and was highest at 330,000 proteins per cell for ERG in VCaP.
+# ::file pmid_2464_2271_77.txt
+# ::date 2015-08-10T17:02:28
+# ::id pmid_2464_2271.77
+(a / and
+   :op1 (e / exceed-01
+           :ARG0 (e2 / express-03
+                     :ARG2 (p / protein-family
+                              :name (n / name
+                                       :op1 "ETS"))
+                     :mod (l / level
+                             :ARG1-of (h / high-02))
+                     :mod (a2 / all))
+           :ARG1 (r / rate-entity-91
+                    :ARG1 (p2 / protein
+                              :quant "50000")
+                    :ARG2 (c / cell)))
+   :op2 (h2 / high-02
+            :ARG1 (e3 / express-03
+                      :ARG1 (g / gene
+                               :name (n2 / name
+                                         :op1 "ERG"))
+                      :ARG2 p
+                      :ARG3 (c2 / cell-line
+                                :name (n3 / name
+                                          :op1 "VCaP")))
+            :ARG2 (r2 / rate-entity-91
+                      :ARG1 (p3 / protein
+                                :quant "330000")
+                      :ARG2 c)
+            :degree (m / most)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Low-level ETS expression was 10,000 proteins per cell (ETV4 in DU145) or less (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S1B and data not shown).
+# ::file pmid_2464_2271_78.txt
+# ::date 2015-08-10T17:28:10
+# ::id pmid_2464_2271.78
+(e / express-03
+   :ARG2 (p / protein-family
+            :name (n / name
+                     :op1 "ETS"))
+   :mod (l / level
+           :ARG1-of (l2 / low-04))
+   :quant (o / or
+             :op1 (r / rate-entity-91
+                     :ARG1 (p2 / protein
+                               :quant "10000")
+                     :ARG2 (c / cell))
+             :op2 (l3 / less-than
+                      :op1 r))
+   :ARG1-of (m / mean-01
+               :ARG2 (e2 / express-03
+                         :ARG1 (p3 / protein
+                                   :name (n2 / name
+                                             :op1 "ETV4"))
+                         :ARG3 (c2 / cell-line
+                                   :name (n3 / name
+                                             :op1 "DU145"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a / and
+                        :op1 (f / file
+                                :mod "1"
+                                :ARG1-of (a2 / add-02)
+                                :part (f2 / figure
+                                          :mod "S1B"))
+                        :op1 (d2 / data
+                                 :ARG1-of (s / show-01
+                                             :polarity "-")))))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt It is possible that oncogenic ETS expression and signaling pathway activation could influence each other.
+# ::file pmid_2464_2271_79.txt
+# ::date 2015-08-11T01:50:25
+# ::id pmid_2464_2271.79
+(p / possible-01
+   :ARG1 (p2 / possible-01
+             :ARG1 (a / and
+                      :op1 (i / influence-01
+                              :ARG0 (e / express-03
+                                       :ARG2 (p3 / protein
+                                                 :name (n / name
+                                                          :op1 "ETS")
+                                                 :ARG0-of (c / cause-01
+                                                             :ARG1 (d / disease
+                                                                      :wiki "Cancer"
+                                                                      :name (n2 / name
+                                                                                :op1 "cancer")))))
+                              :ARG1 (a2 / activate-01
+                                        :ARG1 (p4 / pathway
+                                                  :ARG0-of (s / signal-07))))
+                      :op2 (i2 / influence-01
+                               :ARG0 a2
+                               :ARG1 e))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test this, RWPE-1 (RWPE) cells derived from normal prostate [<xref ref-type="bibr" rid="B27">27</xref>] or variations of this line that express either Ki-RAS (RWPE-KRAS, also known as RWPE-2) or ERG (RWPE-ERG) were compared.
+# ::file pmid_2464_2271_80.txt
+# ::date 2015-08-11T01:57:10
+# ::id pmid_2464_2271.80
+(c / compare-01
+   :ARG1 (c2 / cell-line
+             :name (n / name
+                      :op1 "RWPE-1")
+             :ARG1-of (d / derive-01
+                         :ARG2 (p / prostate
+                                  :ARG1-of (n2 / normal-02)))
+             :ARG1-of (d2 / describe-01
+                          :ARG0 (p2 / publication
+                                    :ARG1-of (c3 / cite-01
+                                                 :ARG2 "27"))))
+   :ARG2 (o / or
+            :op1 (v / vary-01
+                    :ARG1 c2
+                    :ARG3-of (e / express-03
+                                :ARG2 (e4 / enzyme
+                                          :name (n4 / name
+                                                    :op1 "Ki-RAS")))
+                    :ARG1-of (k / know-02
+                                :ARG2 (c4 / cell-line
+                                          :name (n5 / name
+                                                    :op1 "RWPE-2"))
+                                :mod (a / also)))
+            :op2 (v2 / vary-01
+                     :ARG1 c2
+                     :ARG3-of (e2 / express-03
+                                  :ARG2 (p4 / protein
+                                            :name (n3 / name
+                                                      :op1 "ERG"))))
+            :mod (e3 / either))
+   :purpose (t / test-01
+               :ARG1 (t2 / this)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt ERG levels in RWPE-ERG cells were similar to VCaP cells (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S1C).
+# ::file pmid_2464_2271_81.txt
+# ::date 2015-08-11T02:27:33
+# ::id pmid_2464_2271.81
+(r / resemble-01
+   :ARG1 (l / level
+            :quant-of (p / protein
+                         :name (n / name
+                                  :op1 "ERG"))
+            :location (c / cell-line
+                         :name (n2 / name
+                                   :op1 "RWPE-ERG")))
+   :ARG2 (l2 / level
+             :quant-of p
+             :location (c2 / cell-line
+                           :name (n3 / name
+                                     :op1 "VCaP")))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / file
+                        :mod "1"
+                        :ARG1-of (a / add-02)
+                        :part (f2 / figure
+                                  :mod "S1C"))))
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt None of the oncogenic ETS were expressed at high levels in RWPE or RWPE-KRAS cells, and only ERG was expressed in RWPE-ERG cells (Figure <xref ref-type="fig" rid="F1">1</xref>B).
+# ::file pmid_2464_2271_82.txt
+# ::date 2015-08-11T02:35:58
+# ::id pmid_2464_2271.82
+(a / and
+   :op1 (e / express-03
+           :ARG2 (i / include-91
+                    :ARG1 (n / none)
+                    :ARG2 (p / protein
+                             :name (n2 / name
+                                       :op1 "ETS")
+                             :ARG0-of (c / cause-01
+                                         :ARG1 (d2 / disease
+                                                   :wiki "Cancer"
+                                                   :name (n3 / name
+                                                             :op1 "cancer")))))
+           :ARG3 (o2 / or
+                     :op1 (c2 / cell-line
+                              :name (n4 / name
+                                        :op1 "RWPE"))
+                     :op2 (c3 / cell-line
+                              :name (n6 / name
+                                        :op1 "RWPE-KRAS")))
+           :quant (l / level
+                     :ARG1-of (h / high-02)))
+   :op2 (e2 / express-03
+            :ARG2 (p2 / protein
+                      :name (n5 / name
+                                :op1 "ERG"))
+            :ARG3 (c4 / cell-line
+                      :name (n7 / name
+                                :op1 "RWPE-ERG"))
+            :mod (o3 / only))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1B")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As expected, KRAS increased both pERK and pAKT levels (Figure <xref ref-type="fig" rid="F1">1</xref>B).
+# ::file pmid_2464_2271_83.txt
+# ::date 2015-08-11T02:51:39
+# ::id pmid_2464_2271.83
+(i / increase-01
+   :ARG0 (e / enzyme
+            :name (n / name
+                     :op1 "KRAS"))
+   :ARG1 (a / and
+            :op1 (l / level
+                    :quant-of (e2 / enzyme
+                                  :name (n2 / name
+                                            :op1 "ERK")
+                                  :ARG3-of (p / phosphorylate-01
+                                              :ARG3 e3)))
+            :op2 (l2 / level
+                     :quant-of (e3 / enzyme
+                                   :name (n3 / name
+                                             :op1 "AKT"))))
+   :ARG1-of (e4 / expect-01)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1B")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, over-expression of ERG also resulted in activation of AKT and a small increase in pERK (Figure <xref ref-type="fig" rid="F1">1</xref>B).
+# ::file pmid_2464_2271_84.txt
+# ::date 2015-08-11T03:02:30
+# ::id pmid_2464_2271.84
+(r / result-01
+   :ARG1 (o / overexpress-01
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "ERG")))
+   :ARG2 (a / and
+            :op1 (a2 / activate-01
+                     :ARG1 (e / enzyme
+                              :name (n2 / name
+                                        :op1 "AKT")))
+            :op2 (i / increase-01
+                    :ARG1 (e2 / enzyme
+                              :name (n3 / name
+                                        :op1 "ERK")
+                              :ARG3-of (p2 / phosphorylate-01))
+                    :degree (s / small)))
+   :mod (a3 / also)
+   :ARG2-of (i2 / interest-01)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1B")))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In other cell types, the RAS/ERK pathway activates ETV1, ETV4, and ETV5 expression [<xref ref-type="bibr" rid="B28">28</xref>].
+# ::file pmid_2464_2271_85.txt
+# ::date 2015-08-11T03:12:42
+# ::id pmid_2464_2271.85
+(a / activate-01
+   :ARG0 (p / pathway
+            :name (n / name
+                     :op1 "RAS/ERK"))
+   :ARG1 (e / express-03
+            :ARG2 (a2 / and
+                      :op1 (p2 / protein
+                               :name (n2 / name
+                                         :op1 "ETV1"))
+                      :op2 (p3 / protein
+                               :name (n3 / name
+                                         :op1 "ETV4"))
+                      :op3 (p4 / protein
+                               :name (n4 / name
+                                         :op1 "ETV5"))))
+   :location (t / type
+                :mod (c / cell)
+                :mod (o / other))
+   :ARG1-of (d / describe-01
+               :ARG0 (p5 / publication
+                         :ARG1-of (c2 / cite-01
+                                      :ARG2 "28"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, high ETV4 expression in CWR22Rv1 cells could be the result of ERK activation.
+# ::file pmid_2464_2271_86.txt
+# ::date 2015-08-11T03:17:33
+# ::id pmid_2464_2271.86
+(c / cause-01
+   :ARG1 (p / possible-01
+            :ARG1 (r / result-01
+                     :ARG1 (a / activate-01
+                              :ARG1 (e / enzyme
+                                       :name (n / name
+                                                :op1 "ERK")))
+                     :ARG2 (e2 / express-03
+                               :ARG2 (p2 / protein
+                                         :name (n2 / name
+                                                   :op1 "ETV4"))
+                               :ARG3 (c2 / cell-line
+                                         :name (n3 / name
+                                                   :op1 "CWR22Rv1"))
+                               :ARG1-of (h / high-02)))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test this, CWR22Rv1 and DU145 cells were treated with the MEK inhibitor U0126 for 24 hours.
+# ::file pmid_2464_2271_87.txt
+# ::date 2015-08-11T03:23:36
+# ::id pmid_2464_2271.87
+(t / treat-04
+   :ARG1 (a / and
+            :op1 (c / cell-line
+                    :name (n / name
+                             :op1 "CWR22Rv1"))
+            :op2 (c2 / cell-line
+                     :name (n2 / name
+                               :op1 "DU145")))
+   :ARG2 (s / small-molecule
+            :name (n3 / name
+                      :op1 "U0126")
+            :ARG0-of (i / inhibit-01
+                        :ARG1 (p / protein-family
+                                 :name (n4 / name
+                                           :op1 "MEK"))))
+   :duration (t2 / temporal-quantity
+                 :quant "24"
+                 :unit (h / hour))
+   :purpose (t3 / test-01
+                :ARG1 (t4 / this)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In both cell lines, U0126 decreased pERK levels, but did not alter levels of ETV4 (Figure <xref ref-type="fig" rid="F1">1</xref>C).
+# ::file pmid_2464_2271_88.txt
+# ::date 2015-08-11T03:29:53
+# ::id pmid_2464_2271.88
+(c / contrast-01
+   :ARG1 (d / decrease-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "U0126"))
+            :ARG1 (l / level
+                     :quant-of (e / enzyme
+                                  :name (n2 / name
+                                            :op1 "ERK")
+                                  :ARG3-of (p / phosphorylate-01))))
+   :ARG2 (a / alter-01
+            :polarity "-"
+            :ARG0 s
+            :ARG1 (l2 / level
+                      :quant-of (p2 / protein
+                                    :name (n3 / name
+                                              :op1 "ETV4"))))
+   :location (c2 / cell-line
+                 :mod (b / both))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1C")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, RAS/ERK activation does not drive oncogenic ETS expression in prostate cancer cell lines, however in at least one context (ERG in RWPE) an oncogenic ETS could induce the phosphorylation of both AKT and, to a lesser degree, ERK.
+# ::file pmid_2464_2271_89.txt
+# ::date 2015-08-11T03:37:05
+# ::id pmid_2464_2271.89
+(c / cause-01
+   :ARG1 (h / have-concession-91
+            :ARG1 (d / drive-02
+                     :polarity "-"
+                     :ARG0 (a / activate-01
+                              :ARG0 (p / pathway
+                                       :name (n / name
+                                                :op1 "RAS/ERK")))
+                     :ARG1 (e / express-03
+                              :ARG2 (p2 / protein
+                                        :name (n2 / name
+                                                  :op1 "ETS")
+                                        :ARG0-of (c2 / cause-01
+                                                     :ARG1 (d2 / disease
+                                                               :wiki "Cancer"
+                                                               :name (n3 / name
+                                                                         :op1 "cancer"))
+                                                     :ARG0 p5))
+                              :ARG3 (c3 / cell-line
+                                        :mod (d3 / disease
+                                                 :wiki "Prostate_cancer"
+                                                 :name (n4 / name
+                                                           :op1 "prostate"
+                                                           :op2 "cancer")))))
+            :ARG2 (p4 / possible-01
+                      :ARG1 (i / induce-01
+                               :ARG0 (p5 / protein
+                                         :quant "1"
+                                         :name (n5 / name
+                                                   :op1 "ETS"))
+                               :ARG2 (a2 / and
+                                         :op1 (p6 / phosphorylate-01
+                                                  :ARG1 (e2 / enzyme
+                                                            :name (n6 / name
+                                                                      :op1 "AKT")))
+                                         :op2 (p7 / phosphorylate-01
+                                                  :ARG1 (e3 / enzyme
+                                                            :name (n7 / name
+                                                                      :op1 "ERK"))
+                                                  :degree (l / less
+                                                             :degree (m / more)))))
+                      :location (c4 / context
+                                    :quant (a3 / at-least
+                                               :op1 "1")
+                                    :ARG1-of (m2 / mean-01
+                                                 :ARG2 (e4 / express-03
+                                                           :ARG2 (p8 / protein
+                                                                     :name (n8 / name
+                                                                               :op1 "ERG"))
+                                                           :ARG3 (c5 / cell-line
+                                                                     :name (n9 / name
+                                                                               :op1 "RWPE"))))))))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next tested the role of signaling pathways in the ability of oncogenic ETS proteins to drive cell migration.
+# ::file pmid_2464_2271_91.txt
+# ::date 2015-08-11T04:31:25
+# ::id pmid_2464_2271.91
+(t / test-01
+   :ARG0 (w / we)
+   :ARG1 (r / role
+            :poss (p / pathway
+                     :ARG0-of (s / signal-07))
+            :topic (c / capable-01
+                      :ARG1 (p2 / protein
+                                :name (n / name
+                                         :op1 "ETS")
+                                :ARG0-of (c2 / cause-01
+                                             :ARG1 (d / disease
+                                                      :wiki "Cancer"
+                                                      :name (n2 / name
+                                                                :op1 "cancer"))))
+                      :ARG2 (d2 / drive-02
+                                :ARG0 p2
+                                :ARG1 (m / migrate-01
+                                         :ARG0 (c3 / cell)))))
+   :time (n3 / next))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Because cancer derived cell lines have many mutations and copy number alterations that affect cellular phenotypes, we used the RWPE-ERG and RWPE-KRAS cell lines to compare the ability of oncogenic ETS and RAS signaling to promote cell migration in the same cellular background.
+# ::file pmid_2464_2271_92.txt
+# ::date 2015-08-11T04:36:13
+# ::id pmid_2464_2271.92
+(c / cause-01
+   :ARG0 (h / have-03
+            :ARG0 (c2 / cell-line
+                      :ARG1-of (d / derive-01
+                                  :ARG2 (d2 / disease
+                                            :wiki "Cancer"
+                                            :name (n / name
+                                                     :op1 "cancer"))))
+            :ARG1 (a / and
+                     :op1 (m / mutate-01
+                             :ARG2 c2
+                             :quant (m2 / many))
+                     :op2 (a2 / alter-01
+                              :ARG1 (n2 / number-01
+                                        :ARG1 (c3 / copy-01
+                                                  :ARG1 c2)))
+                     :ARG0-of (a3 / affect-01
+                                  :ARG1 (p / phenotype
+                                           :mod (c4 / cell)))))
+   :ARG1 (u / use-01
+            :ARG0 (w / we)
+            :ARG1 (a4 / and
+                      :op1 (c5 / cell-line
+                               :name (n3 / name
+                                         :op1 "RWPE-ERG"))
+                      :op2 (c6 / cell-line
+                               :name (n4 / name
+                                         :op1 "RWPE-KRAS")))
+            :ARG2 (c7 / compare-01
+                      :ARG0 w
+                      :ARG1 (c8 / capable-01
+                                :ARG1 (s / signal-07
+                                         :ARG0 (a5 / and
+                                                   :op1 (p2 / protein
+                                                            :name (n5 / name
+                                                                      :op1 "ETS")
+                                                            :ARG0-of (c9 / cause-01
+                                                                         :ARG1 d2))
+                                                   :op2 (e / enzyme
+                                                           :name (n6 / name
+                                                                     :op1 "RAS"))))
+                                :ARG2 (p3 / promote-01
+                                          :ARG0 a5
+                                          :ARG1 (m3 / migrate-01
+                                                    :ARG0 (c10 / cell)))))
+            :location (b / background
+                         :mod (c11 / cell)
+                         :ARG1-of (s2 / same-01))))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RWPE-ERG and RWPE-KRAS cells migrated 5- and 10-fold more than RWPE cells (Figure <xref ref-type="fig" rid="F2">2</xref>A and Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S2), indicating that both ERG and KRAS induce cell migration.
+# ::file pmid_2464_2271_93.txt
+# ::date 2015-08-11T04:58:36
+# ::id pmid_2464_2271.93
+(m / migrate-01
+   :ARG0 (a / and
+            :op1 (c / cell-line
+                    :name (n / name
+                             :op1 "RWPE-ERG"))
+            :op2 (c2 / cell-line
+                     :name (n2 / name
+                               :op1 "RWPE-KRAS")))
+   :degree (m2 / more-than
+               :op1 (a2 / and
+                        :op1 (p / product-of
+                                :op1 "5")
+                        :op2 (p2 / product-of
+                                 :op1 "10")
+                        :compared-to (c3 / cell-line
+                                         :name (n3 / name
+                                                   :op1 "RWPE"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "2A")
+                         :op2 (f2 / file
+                                  :mod "2"
+                                  :ARG1-of (a4 / add-02)
+                                  :part (f3 / figure
+                                            :mod "S2"))))
+   :ARG0-of (i / indicate-01
+               :ARG1 (i2 / induce-01
+                         :ARG0 (a5 / and
+                                   :op1 (p3 / protein
+                                            :name (n4 / name
+                                                      :op1 "ERG"))
+                                   :op2 (e / enzyme
+                                           :name (n5 / name
+                                                     :op1 "KRAS")))
+                         :ARG2 (m3 / migrate-01
+                                   :ARG0 (c4 / cell)))))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similar to our previous findings [<xref ref-type="bibr" rid="B15">15</xref>], overexpression of oncogenic ETS proteins ETV1, ETV5, and ERG, but not other ETS proteins (FLI1 and SPDEF), promoted RWPE cell migration (Figure <xref ref-type="fig" rid="F2">2</xref>B and Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S2).
+# ::file pmid_2464_2271_94.txt
+# ::date 2015-08-11T05:19:48
+# ::id pmid_2464_2271.94
+(p / promote-01
+   :ARG0 (o / overexpress-01
+            :ARG1 (p2 / protein
+                      :name (n / name
+                               :op1 "ETS")
+                      :ARG0-of (c / cause-01
+                                  :ARG1 (d / disease
+                                           :wiki "Cancer"
+                                           :name (n2 / name
+                                                     :op1 "cancer")))
+                      :ARG1-of (m / mean-01
+                                  :ARG2 (a / and
+                                           :op1 (p3 / protein
+                                                    :name (n3 / name
+                                                              :op1 "ETV1"))
+                                           :op2 (p4 / protein
+                                                    :name (n4 / name
+                                                              :op1 "ETV5"))
+                                           :op3 (p5 / protein
+                                                    :name (n5 / name
+                                                              :op1 "ERG")))))
+            :ARG1-of (c2 / contrast-01
+                         :ARG2 (o2 / overexpress-01
+                                   :ARG1 (p6 / protein
+                                             :name (n6 / name
+                                                       :op1 "ETS")
+                                             :ARG1-of (m2 / mean-01
+                                                          :ARG2 (a2 / and
+                                                                    :op1 (p7 / protein
+                                                                             :name (n7 / name
+                                                                                       :op1 "FLI1"))
+                                                                    :op2 (p8 / protein
+                                                                             :name (n8 / name
+                                                                                       :op1 "SPDEF"))))
+                                             :mod (o3 / other)))))
+   :ARG1 (m3 / migrate-01
+             :ARG0 (c3 / cell-line
+                       :name (n9 / name
+                                 :op1 "RWPE")))
+   :ARG1-of (r / resemble-01
+               :ARG2 (t / thing
+                        :ARG1-of (f / find-01
+                                    :ARG0 (w / we))
+                        :time (p9 / previous)
+                        :ARG1-of (d2 / describe-01
+                                     :ARG0 (p10 / publication
+                                                :ARG1-of (c4 / cite-01
+                                                             :ARG2 "15")))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (a3 / and
+                          :op1 (f2 / figure
+                                   :mod "2B")
+                          :op2 (f3 / file
+                                   :mod "2"
+                                   :ARG1-of (a4 / add-02)
+                                   :part (f4 / figure
+                                             :mod "S2")))))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, when the same ETS proteins were over-expressed in RWPE-KRAS cells, none of the oncogenic ETS proteins induced additional cell migration (Figure <xref ref-type="fig" rid="F2">2</xref>C and Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S2), suggesting that these ETS proteins and KRAS were functioning to activate the same pathway.
+# ::file pmid_2464_2271_95.txt
+# ::date 2015-08-11T05:47:02
+# ::id pmid_2464_2271.95
+(c / contrast-01
+   :ARG2 (i / induce-01
+            :ARG0 (i2 / include-91
+                      :ARG2 (p / protein
+                               :name (n / name
+                                        :op1 "ETS")
+                               :ARG0-of (c2 / cause-01
+                                            :ARG1 (d / disease
+                                                     :wiki "Cancer"
+                                                     :name (n2 / name
+                                                               :op1 "cancer"))))
+                      :ARG3 (n3 / none))
+            :ARG2 (m / migrate-01
+                     :ARG0 (c3 / cell)
+                     :ARG1-of (a / add-02))
+            :time (o / overexpress-01
+                     :ARG1 (p2 / protein
+                               :name (n4 / name
+                                         :op1 "ETS")
+                               :ARG1-of (s / same-01))
+                     :location (c4 / cell-line
+                                   :name (n5 / name
+                                             :op1 "RWPE-KRAS")))
+            :ARG1-of (d2 / describe-01
+                         :ARG0 (a2 / and
+                                   :op1 (f / figure
+                                           :mod "2C")
+                                   :op2 (f2 / file
+                                            :mod "2"
+                                            :part (f3 / figure
+                                                      :mod "S2"))))
+            :ARG0-of (s2 / suggest-01
+                         :ARG1 (f4 / function-01
+                                   :ARG0 (a3 / and
+                                             :op1 p2
+                                             :op2 (e / enzyme
+                                                     :name (n6 / name
+                                                               :op1 "KRAS")))
+                                   :ARG1 (a4 / activate-01
+                                             :ARG0 a3
+                                             :ARG1 (p3 / pathway
+                                                       :ARG1-of s))))))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These findings are consistent with our model that oncogenic ETS proteins can mimic RAS activation in cell lines lacking RAS activity, and are distinct from ETS proteins expressed in normal prostate.
+# ::file pmid_2464_2271_96.txt
+# ::date 2015-08-11T06:04:53
+# ::id pmid_2464_2271.96
+(c / consistent-01
+   :ARG1 (t / thing
+            :ARG1-of (f / find-01)
+            :mod (t2 / this))
+   :ARG2 (m / model-01
+            :ARG0 (w / we)
+            :ARG1 (a / and
+                     :op1 (p / possible-01
+                             :ARG1 (m2 / mimic-01
+                                       :ARG0 (p2 / protein
+                                                 :name (n / name
+                                                          :op1 "ETS")
+                                                 :ARG0-of (c2 / cause-01
+                                                              :ARG1 (d / disease
+                                                                       :wiki "Cancer"
+                                                                       :name (n2 / name
+                                                                                 :op1 "cancer"))))
+                                       :ARG1 (a2 / activate-01
+                                                 :ARG1 (e / enzyme
+                                                          :name (n3 / name
+                                                                    :op1 "RAS"))))
+                             :location (c3 / cell-line
+                                           :ARG0-of (l / lack-01
+                                                       :ARG1 (a3 / activity-06
+                                                                 :ARG0 e))))
+                     :op2 (d2 / distinct
+                              :domain p2
+                              :compared-to (p3 / protein
+                                               :name (n4 / name
+                                                         :op1 "ETS")
+                                               :ARG2-of (e2 / express-03
+                                                            :ARG3 (p4 / prostate
+                                                                      :ARG1-of (n5 / normal-02))))))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To identify signaling pathways required for the oncogenic function of ETS factors, a microarray analysis of <i>ETV4</i> knockdown in PC3 prostate cancer cells [<xref ref-type="bibr" rid="B25">25</xref>] was compared to the Connectivity Map database [<xref ref-type="bibr" rid="B29">29</xref>] that contains microarray data of PC3 cells treated with 1309 small molecules, including many signaling pathway inhibitors.
+# ::file pmid_2464_2271_98.txt
+# ::date 2015-08-11T06:20:56
+# ::id pmid_2464_2271.98
+(c / compare-01
+   :ARG1 (a / analyze-01
+            :ARG1 (k / knock-down-02
+                     :ARG1 (g / gene
+                              :name (n / name
+                                       :op1 "ETV4"))
+                     :location (c2 / cell-line
+                                   :name (n2 / name
+                                             :op1 "PC3")
+                                   :mod (d / disease
+                                           :wiki "Prostate_cancer"
+                                           :name (n3 / name
+                                                     :op1 "prostate"
+                                                     :op2 "cancer"))))
+            :mod (m / microarray)
+            :ARG1-of (d2 / describe-01
+                         :ARG0 (p2 / publication
+                                   :ARG1-of (c3 / cite-01
+                                                :ARG2 "25"))))
+   :ARG2 (d3 / database
+             :name (n4 / name
+                       :op1 "Connectivity"
+                       :op2 "Map")
+             :ARG1-of (d4 / describe-01
+                          :ARG0 (p3 / publication
+                                    :ARG1-of (c4 / cite-01
+                                                 :ARG2 "29")))
+             :ARG0-of (c5 / contain-01
+                          :ARG1 (d5 / data
+                                    :mod m
+                                    :topic (c6 / cell-line
+                                               :name (n5 / name
+                                                         :op1 "PC3")
+                                               :ARG1-of (t / treat-04
+                                                           :ARG2 (s / small-molecule
+                                                                    :quant "1309"
+                                                                    :ARG2-of (i / include-91
+                                                                                :ARG1 (m2 / molecular-physical-entity
+                                                                                          :ARG0-of (i2 / inhibit-01
+                                                                                                       :ARG1 (p4 / pathway
+                                                                                                                 :ARG0-of (s2 / signal-07)))
+                                                                                          :quant (m3 / many)))))))))
+   :purpose (i3 / identify-01
+                :ARG1 (p5 / pathway
+                          :ARG0-of s2
+                          :ARG1-of (r / require-01
+                                      :ARG0 (f / function-01
+                                               :ARG0 (f2 / factor
+                                                         :mod (p6 / protein
+                                                                  :name (n6 / name
+                                                                            :op1 "ETS")))
+                                               :ARG0-of (c7 / cause-01
+                                                            :ARG1 (d6 / disease
+                                                                      :wiki "Cancer"
+                                                                      :name (n7 / name
+                                                                                :op1 "cancer"))))))))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similarities between the gene expression profile of a signaling pathway inhibitor and <i>ETV4</i> knockdown would predict a role for that pathway in oncogenic ETS function.
+# ::file pmid_2464_2271_99.txt
+# ::date 2015-08-11T06:48:24
+# ::id pmid_2464_2271.99
+(p / predict-01
+   :ARG0 (r / resemble-01
+            :ARG1 (p2 / profile-01
+                      :ARG0 (e / express-03
+                               :ARG1 (g / gene))
+                      :ARG1 (m / molecular-physical-entity
+                               :ARG0-of (i / inhibit-01
+                                           :ARG1 (p3 / pathway
+                                                     :ARG0-of (s / signal-07)))))
+            :ARG2 (k / knock-down-02
+                     :ARG1 (g2 / gene
+                               :name (n / name
+                                        :op1 "ETV4"))))
+   :ARG1 (r2 / role
+             :poss p3
+             :topic (f / function-01
+                       :ARG0 (p4 / protein
+                                 :name (n2 / name
+                                           :op1 "ETS")
+                                 :ARG0-of (c / cause-01
+                                             :ARG1 (d / disease
+                                                      :wiki "Cancer"
+                                                      :name (n3 / name
+                                                                :op1 "cancer")))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The top two, and three of the top five small molecules that induced gene expression changes most similar to <i>ETV4</i> knockdown were inhibitors of either PI3K or mTOR, a downstream effector of PI3K (Table <xref ref-type="table" rid="T2">2</xref>).
+# ::file pmid_2464_2271_100.txt
+# ::date 2015-08-11T07:09:12
+# ::id pmid_2464_2271.100
+(m / molecular-physical-entity
+   :domain (a / and
+              :op1 (s / small-molecule
+                      :quant "2"
+                      :ARG0-of (t / top-02))
+              :op2 (s2 / small-molecule
+                       :quant "3"
+                       :ARG1-of (i / include-91
+                                   :ARG2 (s3 / small-molecule
+                                             :quant "5"
+                                             :ARG0-of t)))
+              :ARG0-of (i2 / induce-01
+                           :ARG2 (c / change-01
+                                    :ARG1 (e / express-03
+                                             :ARG1 (g / gene))
+                                    :ARG1-of (r / resemble-01
+                                                :ARG2 (k / knock-down-02
+                                                         :ARG1 (g2 / gene
+                                                                   :name (n / name
+                                                                            :op1 "ETV4")))
+                                                :degree (m2 / most)))))
+   :ARG0-of (i3 / inhibit-01
+                :ARG1 (o / or
+                         :op1 (p2 / protein-family
+                                  :name (n2 / name
+                                            :op1 "PI3K"))
+                         :op2 (p / protein
+                                 :name (n3 / name
+                                           :op1 "mTOR")
+                                 :mod (e3 / effector
+                                          :poss p2
+                                          :location (d / downstream)))
+                         :mod (e4 / either)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (t2 / table
+                          :mod "2")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These data suggest that in PC3 cells, PI3K and ETV4 activate a similar gene expression program.
+# ::file pmid_2464_2271_101.txt
+# ::date 2015-08-11T07:37:29
+# ::id pmid_2464_2271.101
+(s / suggest-01
+   :ARG0 (d / data
+            :mod (t / this))
+   :ARG1 (a / activate-01
+            :ARG0 (a2 / and
+                      :op1 (e / enzyme
+                              :name (n / name
+                                       :op1 "PI3K"))
+                      :op2 (p / protein
+                              :name (n2 / name
+                                        :op1 "ETV4")))
+            :ARG1 (p2 / program-01
+                      :ARG1 (e2 / express-03
+                                :ARG1 (g / gene))
+                      :ARG1-of (r / resemble-01))
+            :location (c / cell-line
+                         :name (n3 / name
+                                   :op1 "PC3"))))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test if the PI3K pathway is required for an oncogenic ETS protein to promote the cell migration phenotype, RWPE-ERG and RWPE-KRAS cells were treated with the PI3K inhibitor, LY294002.
+# ::file pmid_2464_2271_102.txt
+# ::date 2015-08-11T07:48:58
+# ::id pmid_2464_2271.102
+(t / treat-04
+   :ARG1 (a / and
+            :op1 (c / cell-line
+                    :name (n / name
+                             :op1 "RWPE-ERG"))
+            :op2 (c2 / cell-line
+                     :name (n2 / name
+                               :op1 "RWPE-KRAS")))
+   :ARG2 (s / small-molecule
+            :name (n3 / name
+                      :op1 "LY294002")
+            :ARG0-of (i / inhibit-01
+                        :ARG1 (e / enzyme
+                                 :name (n4 / name
+                                           :op1 "PI3K"))))
+   :purpose (t2 / test-01
+                :ARG1 (r / require-01
+                         :mode "interrogative"
+                         :ARG0 (p / promote-01
+                                  :ARG0 (p2 / protein
+                                            :name (n5 / name
+                                                      :op1 "ETS")
+                                            :ARG0-of (c3 / cause-01
+                                                         :ARG1 (d / disease
+                                                                  :wiki "Cancer"
+                                                                  :name (n6 / name
+                                                                            :op1 "cancer"))))
+                                  :ARG1 (p3 / phenotype
+                                            :mod (m / migrate-01
+                                                    :ARG0 (c4 / cell))))
+                         :ARG1 (p4 / pathway
+                                   :name (n7 / name
+                                             :op1 "PI3K")))))
+
+# ::save-date Tue Aug 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt LY294002 reduced AKT phosphorylation in both lines, consistent with PI3K inhibition (Figure <xref ref-type="fig" rid="F3">3</xref>A).
+# ::file pmid_2464_2271_103.txt
+# ::date 2015-08-11T08:02:28
+# ::id pmid_2464_2271.103
+(r / reduce-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "LY294002"))
+   :ARG1 (p / phosphorylate-01
+            :ARG2 (e / enzyme
+                     :name (n2 / name
+                               :op1 "AKT")))
+   :location (c / cell-line
+                :mod (b / both))
+   :ARG1-of (c2 / consistent-01
+                :ARG2 (i / inhibit-01
+                         :ARG1 (e2 / enzyme
+                                   :name (n3 / name
+                                             :op1 "PI3K"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3A")))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Strikingly, PI3K inhibition completely abrogated cell migration induced by ERG, but not cell migration induced by KRAS (Figure <xref ref-type="fig" rid="F3">3</xref>B and Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S2).
+# ::file pmid_2464_2271_104.txt
+# ::date 2015-08-11T08:10:13
+# ::id pmid_2464_2271.104
+(c / contrast-01
+   :ARG1 (a / abrogate-01
+            :ARG0 (i / inhibit-01
+                     :ARG1 (e / enzyme
+                              :name (n / name
+                                       :op1 "PI3K")))
+            :ARG1 (m / migrate-01
+                     :ARG0 (c2 / cell)
+                     :ARG2-of (i2 / induce-01
+                                  :ARG0 (p / protein
+                                           :name (n2 / name
+                                                     :op1 "ERG"))))
+            :ARG1-of (c3 / complete-01))
+   :ARG2 (a2 / abrogate-01
+             :polarity "-"
+             :ARG0 i
+             :ARG1 (m2 / migrate-01
+                       :ARG0 c2
+                       :ARG2-of (i3 / induce-01
+                                    :ARG0 (e2 / enzyme
+                                              :name (n3 / name
+                                                        :op1 "KRAS")))))
+   :ARG1-of (s / strike-04)
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "3B")
+                         :op2 (f2 / file
+                                  :mod "2"
+                                  :ARG1-of (a4 / add-02)
+                                  :part (f3 / figure
+                                            :mod "S2")))))
+
+# ::save-date Tue Aug 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In fact RWPE-KRAS cells actually migrated more when PI3K was inhibited.
+# ::file pmid_2464_2271_105.txt
+# ::date 2015-08-11T08:21:52
+# ::id pmid_2464_2271.105
+(m / migrate-01
+   :ARG0 (c / cell-line
+            :name (n / name
+                     :op1 "RWPE-KRAS"))
+   :degree (m2 / more)
+   :time (i / inhibit-01
+            :ARG1 (e / enzyme
+                     :name (n2 / name
+                               :op1 "PI3K")))
+   :ARG1-of (a / actual-02)
+   :mod (i2 / in-fact))
+
+# ::save-date Tue Aug 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This increased migration may be due to relief of RAF inhibition by AKT [<xref ref-type="bibr" rid="B9">9</xref>], as RWPE-KRAS cells had higher pMEK levels after treatment by LY294002 (Figure <xref ref-type="fig" rid="F3">3</xref>A).
+# ::file pmid_2464_2271_106.txt
+# ::date 2015-08-11T08:31:42
+# ::id pmid_2464_2271.106
+(c / cause-01
+   :ARG0 (h / have-03
+            :ARG0 (c2 / cell-line
+                      :name (n / name
+                               :op1 "RWPE-KRAS"))
+            :ARG1 (l / level
+                     :quant-of (e / enzyme
+                                  :name (n2 / name
+                                            :op1 "MEK")
+                                  :ARG3-of (p / phosphorylate-01))
+                     :ARG1-of (h2 / high-02
+                                  :degree (m / more)))
+            :time (a / after
+                     :op1 (t / treat-04
+                             :ARG2 (s / small-molecule
+                                      :name (n3 / name
+                                                :op1 "LY294002")))))
+   :ARG1 (p2 / possible-01
+             :ARG1 (c3 / cause-01
+                       :ARG0 (r / relieve-01
+                                :ARG1 (i / inhibit-01
+                                         :ARG0 (e2 / enzyme
+                                                   :name (n4 / name
+                                                             :op1 "AKT"))
+                                         :ARG1 (e3 / enzyme
+                                                   :name (n5 / name
+                                                             :op1 "RAF"))))
+                       :ARG1 (m2 / migrate-01
+                                 :ARG1-of (i2 / increase-01)
+                                 :mod (t2 / this)))
+             :ARG1-of (d / describe-01
+                         :ARG0 (p3 / publication
+                                   :ARG1-of (c4 / cite-01
+                                                :ARG2 "9"))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "3A")))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To confirm the role of PI3K, a second PI3K inhibitor, ZSTK474, was also tested (Figures <xref ref-type="fig" rid="F3">3</xref>A and <xref ref-type="fig" rid="F3">3</xref>B).
+# ::file pmid_2464_2271_107.txt
+# ::date 2015-08-10T06:30:53
+# ::id pmid_2464_2271.107
+(t3 / test-01
+    :ARG1 (s2 / small-molecule
+              :name (n / name
+                       :op1 "ZSTK474")
+              :ARG1-of (m / mean-01
+                          :ARG2 (m2 / molecular-physical-entity
+                                    :ARG0-of (i2 / inhibit-01
+                                                 :ARG1 "p")
+                                    :ord (o / ordinal-entity
+                                            :value "2"))))
+    :mod (a / also)
+    :purpose (c / confirm-01
+                :ARG1 (r / role
+                         :poss (p / pathway
+                                  :name (n2 / name
+                                            :op1 "PI3K"))))
+    :ARG1-of (d / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f / figure
+                                  :mod "3A")
+                          :op2 (f2 / figure
+                                   :mod "3B"))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Like LY294002, ZSTK474 significantly reduced migration of RWPE-ERG cells, but not RWPE-KRAS cells.
+# ::file pmid_2464_2271_108.txt
+# ::date 2015-08-10T09:08:31
+# ::id pmid_2464_2271.108
+(c / contrast-01
+   :ARG1 (r / reduce-01
+            :ARG0 (s / small-molecule
+                     :name (n2 / name
+                               :op1 "ZSTK474"))
+            :ARG1 (m / migrate-01
+                     :ARG0 (c2 / cell-line
+                               :name (n3 / name
+                                         :op1 "RWPE-ERG")))
+            :ARG1-of (r2 / resemble-01
+                         :ARG2 (s2 / small-molecule
+                                   :name (n / name
+                                            :op1 "LY294002")))
+            :ARG1-of (s3 / significant-02))
+   :ARG2 (r3 / reduce-01
+             :polarity "-"
+             :ARG0 s
+             :ARG1 (m2 / migrate-01
+                       :ARG0 (c3 / cell-line
+                                 :name (n4 / name
+                                           :op1 "RWPE-KRAS")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cell migration induced by other oncogenic ETS factors, ETV1, and ETV5, was also abrogated by PI3K inhibition (Figure <xref ref-type="fig" rid="F3">3</xref>C and Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S2).
+# ::file pmid_2464_2271_109.txt
+# ::date 2015-08-10T09:13:11
+# ::id pmid_2464_2271.109
+(a / abrogate-01
+   :ARG1 (m / migrate-01
+            :ARG0 (c2 / cell)
+            :ARG2-of (i / induce-01
+                        :ARG0 (f / factor
+                                 :mod (p4 / protein
+                                          :name (n / name
+                                                   :op1 "ETS"))
+                                 :mod (o / other)
+                                 :ARG1-of (m2 / mean-01
+                                              :ARG2 (a2 / and
+                                                        :op1 (p2 / protein
+                                                                 :name (n3 / name
+                                                                           :op1 "ETV1"))
+                                                        :op2 (p / protein
+                                                                :name (n2 / name
+                                                                          :op1 "ETV5"))))
+                                 :ARG0-of (c3 / cause-01
+                                              :ARG1 (d2 / disease
+                                                        :wiki "Cancer"
+                                                        :name (n5 / name
+                                                                  :op1 "cancer"))))))
+   :ARG2 (i2 / inhibit-01
+             :ARG1 (e / enzyme
+                      :name (n4 / name
+                                :op1 "PI3K")))
+   :mod (a3 / also)
+   :ARG1-of (d / describe-01
+               :ARG0 (a4 / and
+                         :op1 (f2 / figure
+                                  :mod "3C")
+                         :op2 (f3 / file
+                                  :mod "2"
+                                  :mod (a5 / additional)
+                                  :location-of (f4 / figure
+                                                   :mod "S2")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A second cell migration assay, the scratch assay, confirmed that PI3K inhibition reduced migration caused by ERG expression, but not migration caused by KRAS (Figure <xref ref-type="fig" rid="F3">3</xref>D and Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>: Figure S3).
+# ::file pmid_2464_2271_110.txt
+# ::date 2015-08-11T02:15:34
+# ::id pmid_2464_2271.110
+(c / confirm-01
+   :ARG0 (a3 / assay-01
+             :ARG1 (m2 / migrate-01
+                       :ARG0 (c2 / cell))
+             :ARG1-of (m3 / mean-01
+                          :ARG2 (a4 / assay-01
+                                    :mod (s / scratch-02)))
+             :ord (o / ordinal-entity
+                     :value "2"))
+   :ARG1 (c3 / contrast-01
+             :ARG1 (r2 / reduce-01
+                       :ARG0 (i / inhibit-01
+                                :ARG1 (e2 / enzyme
+                                          :name (n / name
+                                                   :op1 "PI3K")))
+                       :ARG1 (m4 / migrate-01
+                                 :ARG1-of (c4 / cause-01
+                                              :ARG0 (e / express-03
+                                                       :ARG2 (p / protein
+                                                                :name (n2 / name
+                                                                          :op1 "ERG"))))))
+             :ARG2 (r / reduce-01
+                      :polarity "-"
+                      :ARG0 i
+                      :ARG1 (m5 / migrate-01
+                                :ARG1-of (c6 / cause-01
+                                             :ARG0 (g / gene
+                                                      :name (n3 / name
+                                                                :op1 "KRAS"))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a / and
+                        :op1 (f / figure
+                                :mod "3D")
+                        :op2 (f2 / file
+                                 :mod "3"
+                                 :location-of (f3 / figure
+                                                  :mod "S3")))))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt An AKT inhibitor had a similar effect (Figure <xref ref-type="fig" rid="F3">3</xref>D and Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>: Figure S3), indicating that PI3K is functioning via AKT activation.
+# ::file pmid_2464_2271_111.txt
+# ::date 2015-08-10T15:51:18
+# ::id pmid_2464_2271.111
+(a / affect-02
+   :ARG0 (m / molecular-physical-entity
+            :ARG0-of (i / inhibit-01
+                        :ARG1 "e"))
+   :ARG0-of (i2 / indicate-01
+                :ARG1 (f / function-01
+                         :ARG0 (p / pathway
+                                  :name (n2 / name
+                                            :op1 "PI3K"))
+                         :instrument (a2 / activate-01
+                                         :ARG1 (e / enzyme
+                                                  :name (n / name
+                                                           :op1 "AKT")))))
+   :ARG1-of (r / resemble-01)
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f2 / figure
+                                  :mod "3D")
+                         :op2 (f3 / file
+                                  :mod "3"
+                                  :mod (a4 / additional)
+                                  :part-of (f4 / figure
+                                               :mod "S3")))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results indicate that overexpression of an oncogenic ETS gene can switch the control of prostate cell migration from the RAS/ERK pathway to the PI3K/AKT pathway.
+# ::file pmid_2464_2271_112.txt
+# ::date 2015-08-10T16:04:45
+# ::id pmid_2464_2271.112
+(i / indicate-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG1 (p2 / possible-01
+             :ARG1 (s / switch-01
+                      :ARG0 (o / overexpress-01
+                               :ARG1 (g / gene
+                                        :name (n2 / name
+                                                  :op1 "ETS")
+                                        :ARG0-of (c4 / cause-01
+                                                     :ARG1 (d / disease
+                                                              :wiki "Cancer"
+                                                              :name (n / name
+                                                                       :op1 "cancer")))))
+                      :ARG1 (c / control-01
+                               :ARG1 (m / migrate-01
+                                        :ARG1 (c3 / cell
+                                                  :source (p3 / prostate))))
+                      :ARG2 (p5 / pathway
+                                :name (n4 / name
+                                          :op1 "PI3K/AKT"))
+                      :ARG3 (p4 / pathway
+                                :name (n3 / name
+                                          :op1 "RAS/ERK")))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next tested if the PI3K pathway was regulating the ability of ERG to activate the transcription of RAS- and ERG-responsive target genes near enhancers that are co-occupied by ETS and AP-1 proteins.
+# ::file pmid_2464_2271_113.txt
+# ::date 2015-08-10T16:13:59
+# ::id pmid_2464_2271.113
+(t / test-01
+   :ARG0 (w / we)
+   :ARG1 (r / regulate-01
+            :mode "interrogative"
+            :ARG0 (p / pathway
+                     :name (n3 / name
+                               :op1 "PI3K"))
+            :ARG1 (c / capable-01
+                     :ARG1 (p2 / protein
+                               :name (n4 / name
+                                         :op1 "ERG"))
+                     :ARG2 (a / activate-01
+                              :ARG0 p2
+                              :ARG1 (t2 / transcribe-01
+                                        :ARG1 (a2 / and
+                                                  :op1 (g / gene
+                                                          :ARG0-of (r2 / responsive-02
+                                                                       :ARG1 (e / enzyme
+                                                                                :name (n / name
+                                                                                         :op1 "Ras"))))
+                                                  :op2 (g2 / gene
+                                                           :ARG0-of (r3 / responsive-02
+                                                                        :ARG1 p2))
+                                                  :ARG1-of (t3 / target-01)))
+                              :ARG1-of (n6 / near-01
+                                           :ARG2 (m / molecular-physical-entity
+                                                    :ARG0-of (e3 / enhance-01)
+                                                    :ARG1-of (o / occupy-01
+                                                                :ARG0 (a3 / and
+                                                                          :op1 (p3 / protein
+                                                                                   :name (n7 / name
+                                                                                             :op1 "ETS"))
+                                                                          :op2 (p4 / protein
+                                                                                   :name (n8 / name
+                                                                                             :op1 "AP-1")))))))))
+   :time (n2 / next))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The expression levels of two such genes, <i>ARHGAP29</i>, and <i>SMAD3,</i> were measured by quantitative reverse transcription PCR (qRT-PCR) (Figure <xref ref-type="fig" rid="F4">4</xref>A and B).
+# ::file pmid_2464_2271_114.txt
+# ::date 2015-08-10T16:27:15
+# ::id pmid_2464_2271.114
+(m / measure-01
+   :ARG1 (l / level
+            :degree-of (e / express-03
+                          :ARG1 (a2 / and
+                                    :quant "2"
+                                    :op1 (g / gene
+                                            :name (n2 / name
+                                                      :op1 "ARHGAP29"))
+                                    :op2 (g2 / gene
+                                             :name (n3 / name
+                                                       :op1 "SMAD3"))
+                                    :mod (s / such))))
+   :ARG2 (r / react-01
+            :ARG0 (p / polymerase)
+            :ARG1-of (c / chain-01))
+   :ARG1-of (d / describe-01
+               :ARG0 (a / and
+                        :op1 (f / figure
+                                :mod "4A")
+                        :op2 (f2 / figure
+                                 :mod "4B"))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Both <i>ARHGAP29</i> and <i>SMAD3</i> have roles in cell migration and/or cell morphology [<xref ref-type="bibr" rid="B30">30</xref>,<xref ref-type="bibr" rid="B31">31</xref>], are direct targets of oncogenic ETS proteins and AP-1 by ChIP-seq [<xref ref-type="bibr" rid="B15">15</xref>], and are activated by KRAS and oncogenic ETS expression (Figure <xref ref-type="fig" rid="F4">4</xref>A and B).
+# ::file pmid_2464_2271_115.txt
+# ::date 2015-08-11T03:08:33
+# ::id pmid_2464_2271.115
+(a / and
+   :op1 (h / have-03
+           :ARG0 (a4 / and
+                     :op1 (g2 / gene
+                              :name (n2 / name
+                                        :op1 "ARHGAP29"))
+                     :op2 (g / gene
+                             :name (n / name
+                                      :op1 "SMAD3")))
+           :ARG1 (r / role
+                    :topic (o / or
+                              :op1 (m / migrate-01
+                                      :ARG0 (c / cell))
+                              :op2 (m2 / morphology
+                                       :mod c)))
+           :ARG1-of (d2 / describe-01
+                        :ARG0 (p / publication
+                                 :ARG1-of (c2 / cite-01
+                                              :ARG2 (a6 / and
+                                                        :op1 "30"
+                                                        :op2 "31")))))
+   :op2 (t / target-01
+           :ARG0 (a7 / and
+                     :op1 (p2 / protein
+                              :name (n3 / name
+                                        :op1 "ETS"))
+                     :op2 (p3 / protein
+                              :name (n4 / name
+                                        :op1 "AP-1"))
+                     :ARG0-of (c4 / cause-01
+                                  :ARG1 (d5 / disease
+                                            :wiki "Cancer"
+                                            :name (n8 / name
+                                                      :op1 "cancer"))
+                                  :ARG0 g4))
+           :ARG1 a4
+           :ARG2 (t2 / thing
+                     :name (n5 / name
+                               :op1 "ChIP-seq"))
+           :ARG1-of (d4 / describe-01
+                        :ARG0 (p4 / publication
+                                  :ARG1-of (c3 / cite-01
+                                               :ARG2 "15")))
+           :ARG1-of (d3 / direct-02))
+   :op3 (a3 / activate-01
+            :ARG0 (a8 / and
+                      :op1 (e / express-03
+                              :ARG1 (g3 / gene
+                                        :name (n7 / name
+                                                  :op1 "KRAS")))
+                      :op2 (e2 / express-03
+                               :ARG1 (g4 / gene
+                                         :name (n6 / name
+                                                   :op1 "ETS"))))
+            :ARG1 a4)
+   :ARG1-of (d / describe-01
+               :ARG0 (a2 / and
+                         :op1 (f / figure
+                                 :mod "4A")
+                         :op2 (f2 / figure
+                                  :mod "4b"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similar to the cell migration phenotype, the activation of both genes was significantly attenuated by PI3K inhibition in RWPE-ERG cells, but not in RWPE-KRAS cells (Figure <xref ref-type="fig" rid="F4">4</xref>A and B).
+# ::file pmid_2464_2271_116.txt
+# ::date 2015-08-11T02:28:11
+# ::id pmid_2464_2271.116
+(c5 / contrast-01
+    :ARG1 (a4 / attenuate-01
+              :ARG0 (i / inhibit-01
+                       :ARG1 (e / enzyme
+                                :name (n / name
+                                         :op1 "PI3K")))
+              :ARG1 (a2 / activate-01
+                        :ARG1 (g / gene
+                                 :mod (b / both)))
+              :ARG1-of (s / significant-02)
+              :location (c2 / cell-line
+                            :name (n2 / name
+                                      :op1 "RWPE-ERG")))
+    :ARG2 (a5 / attenuate-01
+              :polarity "-"
+              :ARG0 i
+              :ARG1 a2
+              :location (c / cell-line
+                           :name (n3 / name
+                                     :op1 "RWPE-KRAS")))
+    :ARG1-of (d / describe-01
+                :ARG0 (a3 / and
+                          :op1 (f / figure
+                                  :mod "4A")
+                          :op2 (f2 / figure
+                                   :mod "4B")))
+    :ARG1-of (r / resemble-01
+                :ARG2 (p2 / phenotype
+                          :mod (m / migrate-01
+                                  :ARG0 (c4 / cell)))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore cell migration changes are consistent with changes in the expression of these two oncogenic ETS target genes.
+# ::file pmid_2464_2271_117.txt
+# ::date 2015-08-10T13:36:55
+# ::id pmid_2464_2271.117
+(c6 / cause-01
+    :ARG1 (c / consistent-01
+             :ARG1 (c2 / change-01
+                       :ARG1 (m / migrate-01
+                                :ARG0 (c3 / cell)))
+             :ARG2 (c4 / change-01
+                       :ARG1 (e / express-03
+                                :ARG1 (g / gene
+                                         :quant "2"
+                                         :mod (t / this)
+                                         :ARG1-of (t2 / target-01
+                                                      :ARG0 (p / protein
+                                                               :name (n / name
+                                                                        :op1 "ETS")
+                                                               :ARG0-of (c7 / cause-01
+                                                                            :ARG1 (d / disease
+                                                                                     :wiki "Cancer"
+                                                                                     :name (n2 / name
+                                                                                               :op1 "cancer"))))))))))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results indicate that the PI3K/AKT pathway functions through ERG to regulate expression of cell migration genes.
+# ::file pmid_2464_2271_118.txt
+# ::date 2015-08-10T14:10:50
+# ::id pmid_2464_2271.118
+(i / indicate-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG1 (f / function-01
+            :ARG0 (p / pathway
+                     :name (n / name
+                              :op1 "PI3K/AKT"))
+            :ARG1 (r2 / regulate-01
+                      :ARG0 p
+                      :ARG1 (e / express-03
+                               :ARG1 (g / gene
+                                        :mod (m / migrate-01
+                                                :ARG0 (c2 / cell)))))
+            :instrument (p2 / protein
+                            :name (n2 / name
+                                      :op1 "ERG"))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next used a reporter assay to test if these gene expression changes were mediated by the ETS/AP-1 binding sequences we found in the enhancers of oncogenic ETS target genes.
+# ::file pmid_2464_2271_119.txt
+# ::date 2015-08-10T14:26:21
+# ::id pmid_2464_2271.119
+(u / use-01
+   :ARG0 (w / we)
+   :ARG1 (a / assay-01
+            :ARG1 (g / gene
+                     :ARG0-of (r / report-01)))
+   :ARG2 (t / test-01
+            :ARG0 w
+            :ARG1 (m / mediate-01
+                     :mode "interrogative"
+                     :ARG0 (p / protein-segment
+                              :name (n2 / name
+                                        :op1 "ETS/AP-1")
+                              :ARG2-of (b2 / bind-01)
+                              :ARG1-of (f / find-01
+                                          :ARG0 w
+                                          :location (m2 / molecular-physical-entity
+                                                        :ARG0-of (e2 / enhance-01
+                                                                     :ARG1 (g2 / gene
+                                                                               :ARG1-of (t4 / target-01
+                                                                                            :ARG0 (p4 / protein
+                                                                                                      :name (n3 / name
+                                                                                                                :op1 "ETS")
+                                                                                                      :ARG0-of (c3 / cause-01
+                                                                                                                   :ARG1 (d / disease
+                                                                                                                            :wiki "Cancer"
+                                                                                                                            :name (n4 / name
+                                                                                                                                      :op1 "cancer"))))))))))
+                     :ARG1 (c / change-01
+                              :ARG1 (e / express-03
+                                       :ARG1 g2))))
+   :time (n / next))
+
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Three copies of an ETS/AP-1 consensus sequence were cloned upstream of a minimal promoter driving firefly luciferase.
+# ::file pmid_2464_2271_120.txt
+# ::date 2015-08-10T14:32:21
+# ::id pmid_2464_2271.120
+(c / clone-01
+      :ARG1 (c2 / copy-01
+            :quant "3"
+            :ARG1 (p2 / protein-segment
+                  :name (n / name :op1 "ETS/AP-1")
+                  :mod (c3 / consensus)))
+      :direction (u / upstream
+            :op1 (m2 / molecular-physical-entity
+                  :ARG1-of (m / minimal-02)
+                  :ARG0-of (p / promote-01)
+                  :ARG0-of (d / drive-02
+                        :ARG1 (e / enzyme
+                              :name (n2 / name :op1 "firefly" :op2 "luciferase"))))))
+
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Luciferase expression from this vector was higher when the ERK pathway was active, indicating that this pathway regulates the reporter construct (Figure <xref ref-type="fig" rid="F4">4</xref>C).
+# ::file pmid_2464_2271_121.txt
+# ::date 2015-08-10T06:43:55
+# ::id pmid_2464_2271.121
+(h2 / high-02
+      :ARG1 (e2 / express-03
+            :ARG2 (l / luciferase)
+            :ARG3 (v / vector
+                  :mod (t / this)))
+      :degree (m / more)
+      :time (a / activity-06
+            :ARG0 (p / pathway
+                  :name (n / name :op1 "ERK")))
+      :ARG0-of (i / indicate-01
+            :ARG1 (r / regulate-01
+                  :ARG0 p
+                  :ARG1 (c / construct-01
+                        :ARG0 (g / gene
+                              :ARG0-of (r2 / report-01)))))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "4C")))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Point mutations in either the ETS or AP-1 binding sequences completely eliminated luciferase expression indicating that both binding sites are required for activity (Figure <xref ref-type="fig" rid="F4">4</xref>C).
+# ::file pmid_2464_2271_122.txt
+# ::date 2015-08-10T06:52:01
+# ::id pmid_2464_2271.122
+(e / eliminate-01
+   :ARG0 (m / mutate-01
+            :ARG1 (o / or
+                     :op1 (d2 / dna-sequence
+                              :ARG2-of (b2 / bind-01
+                                           :ARG1 (p2 / protein
+                                                     :name (n / name
+                                                              :op1 "ETS"))))
+                     :op2 (p4 / protein-segment
+                              :ARG2-of (b / bind-01
+                                          :ARG1 (p3 / protein
+                                                    :name (n2 / name
+                                                              :op1 "AP-1")))))
+            :mod (p / point))
+   :ARG1 (e2 / express-03
+             :ARG2 (l / luciferase))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4C"))
+   :ARG1-of (c / complete-02)
+   :ARG0-of (i / indicate-01
+               :ARG1 (r / require-01
+                        :ARG0 (a / activity-06
+                                 :ARG0 o)
+                        :ARG1 o)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The PI3K inhibitor, LY294002, caused a significant decrease in the activity of this reporter in RWPE-ERG cells (Figure <xref ref-type="fig" rid="F4">4</xref>D), but significantly increased activity in RWPE-KRAS cells (Figure <xref ref-type="fig" rid="F4">4</xref>E), consistent with the cell migration findings.
+# ::file pmid_2464_2271_123.txt
+# ::date 2015-08-11T02:02:21
+# ::id pmid_2464_2271.123
+(c / contrast-01
+   :ARG1 (c2 / cause-01
+             :ARG0 (s3 / small-molecule
+                       :name (n2 / name
+                                 :op1 "LY294002")
+                       :ARG0-of (i2 / inhibit-01
+                                    :ARG1 (p / protein-family
+                                             :name (n / name
+                                                      :op1 "PI3K"))))
+             :ARG1 (d / decrease-01
+                      :ARG1 (a / activity-06
+                               :ARG0 (g / gene
+                                        :ARG0-of (r / report-01)
+                                        :mod (t / this))
+                               :location (c5 / cell-line
+                                             :name (n3 / name
+                                                       :op1 "RWPE-ERG")))
+                      :ARG1-of (s / significant-02
+                                  :ARG1 i))
+             :ARG1-of (d2 / describe-01
+                          :ARG0 (f2 / figure
+                                    :mod "4D")))
+   :ARG2 (i / increase-01
+            :ARG0 s3
+            :ARG1 (a2 / activity-06
+                      :ARG0 g
+                      :location (c6 / cell-line
+                                    :name (n4 / name
+                                              :op1 "RWPE-KRAS")))
+            :ARG1-of (c3 / consistent-01
+                         :ARG2 (f / find-01
+                                  :ARG1 (m / migrate-01
+                                           :ARG0 (c4 / cell))))
+            :ARG1-of (d3 / describe-01
+                         :ARG0 (f3 / figure
+                                   :mod "4E"))))
+
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, the PI3K pathway can alter the expression of cell migration genes via ETS/AP-1 sites.
+# ::file pmid_2464_2271_124.txt
+# ::date 2015-08-10T14:54:42
+# ::id pmid_2464_2271.124
+(c / cause-01
+      :ARG1 (p / possible-01
+            :ARG1 (a / alter-01
+                  :ARG0 (p2 / pathway
+                        :name (n / name :op1 "PI3K"))
+                  :ARG1 (e / express-03
+                        :ARG1 (g / gene
+                              :mod (m / migrate-01
+                                    :ARG0 (c2 / cell))))
+                  :instrument (p3 / protein-segment
+                        :name (n2 / name :op1 "ETS/AP-1")))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PI3K/AKT signaling has a number of cellular functions including the activation of the mTOR-containing complexes mTORC1 and mTORC2 [<xref ref-type="bibr" rid="B8">8</xref>].
+# ::file pmid_2464_2271_126.txt
+# ::date 2015-08-10T14:31:32
+# ::id pmid_2464_2271.126
+(f2 / function-01
+    :ARG0 (s / signal-07
+             :ARG0 (p2 / pathway
+                       :name (n2 / name
+                                 :op1 "PI3K/AKT")))
+    :ARG1 (c / cell)
+    :ARG1-of (d / describe-01
+                :ARG0 (p3 / publication
+                          :ARG1-of (c3 / cite-01
+                                       :ARG2 "8")))
+    :ARG1-of (i / include-91
+                :ARG2 (a / activate-01
+                         :ARG0 p2
+                         :ARG1 (a2 / and
+                                   :op1 (m2 / macro-molecular-complex
+                                            :name (n3 / name
+                                                      :op1 "mTORC1"))
+                                   :op2 (m3 / macro-molecular-complex
+                                            :name (n4 / name
+                                                      :op1 "mTORC2"))
+                                   :ARG0-of (c2 / contain-01
+                                                :ARG1 (p / protein
+                                                         :name (n / name
+                                                                  :op1 "mTOR"))))))
+    :quant (n5 / number))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt mTORC1 includes the Raptor protein and regulates gene expression via translational control.
+# ::file pmid_2464_2271_127.txt
+# ::date 2015-08-10T08:01:38
+# ::id pmid_2464_2271.127
+(a / and
+   :op1 (i2 / include-91
+            :ARG1 (m2 / macro-molecular-complex
+                      :name (n2 / name
+                                :op1 "mTORC1"))
+            :ARG2 (p2 / protein
+                      :name (n / name
+                               :op1 "Raptor")))
+   :op2 (r / regulate-01
+           :ARG0 m2
+           :ARG1 (e / express-03
+                    :ARG1 (g / gene))
+           :instrument (c / control-01
+                          :ARG1 (t / translate-02))))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt mTORC2 includes the Rictor protein and provides positive feedback by phosphorylating and activating AKT.
+# ::file pmid_2464_2271_128.txt
+# ::date 2015-08-10T08:35:16
+# ::id pmid_2464_2271.128
+(a / and
+   :op1 (i / include-91
+           :ARG1 (m2 / macro-molecular-complex
+                     :name (n / name
+                              :op1 "mTORC2"))
+           :ARG2 (p5 / protein
+                     :name (n2 / name
+                               :op1 "Rictor")))
+   :op2 (p / provide-01
+           :ARG0 m2
+           :ARG1 (f / feedback
+                    :mod (p2 / positive))
+           :manner (a2 / and
+                       :op1 (p3 / phosphorylate-01
+                                :ARG1 "p4"
+                                :ARG2 m2)
+                       :op2 (a3 / activate-01
+                                :ARG0 m2
+                                :ARG1 (p4 / pathway
+                                          :name (n3 / name
+                                                    :op1 "AKT"))))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test the role of mTOR-containing complexes in oncogenic ETS function, shRNAs were used to knockdown mTOR, Raptor, and Rictor, in RWPE-ERG cells (Figure <xref ref-type="fig" rid="F5">5</xref>A).
+# ::file pmid_2464_2271_129.txt
+# ::date 2015-08-10T08:58:28
+# ::id pmid_2464_2271.129
+(u / use-01
+   :ARG1 (n8 / nucleic-acid
+             :name (n3 / name
+                       :op1 "shRNA"))
+   :ARG2 (k / knock-down-02
+            :ARG1 (a / and
+                     :op1 "m"
+                     :op2 (p2 / protein
+                              :name (n6 / name
+                                        :op1 "Raptor"))
+                     :op3 (p3 / protein
+                              :name (n7 / name
+                                        :op1 "Rictor"))
+                     :location (c3 / cell-line
+                                   :name (n4 / name
+                                             :op1 "RWPE-ERG"))))
+   :purpose (t / test-01
+               :ARG1 (r / role
+                        :poss (m / macro-molecular-complex
+                                 :ARG0-of (c / contain-01
+                                             :ARG1 (p / protein
+                                                      :name (n / name
+                                                               :op1 "mTOR"))))
+                        :topic (f / function-01
+                                  :ARG0 (g / gene
+                                           :name (n2 / name
+                                                     :op1 "ETS")
+                                           :ARG0-of (c4 / cause-01
+                                                        :ARG1 (d2 / disease
+                                                                  :wiki "Cancer"
+                                                                  :name (n5 / name
+                                                                            :op1 "cancer")))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "5A")))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Loss of Raptor resulted in an increase in cell migration, indicating that mTORC1 is not required for the ability of PI3K/AKT to promote cell migration (Figure <xref ref-type="fig" rid="F5">5</xref>B and Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S2).
+# ::file pmid_2464_2271_130.txt
+# ::date 2015-08-10T16:40:03
+# ::id pmid_2464_2271.130
+(r / result-01
+   :ARG1 (l / lose-02
+            :ARG1 (p2 / protein
+                      :name (n2 / name
+                                :op1 "Raptor")))
+   :ARG2 (i / increase-01
+            :ARG1 (m / migrate-01
+                     :ARG0 (c / cell)))
+   :ARG1-of (d / describe-01
+               :ARG0 (a / and
+                        :op1 (f / figure
+                                :mod "5B")
+                        :op2 (f2 / file
+                                 :mod "2"
+                                 :part (f3 / figure
+                                           :mod "S2"))))
+   :ARG0-of (i2 / indicate-01
+                :ARG1 (r2 / require-01
+                          :polarity "-"
+                          :ARG0 (c3 / capable-01
+                                    :ARG1 (p5 / pathway
+                                              :name (n4 / name
+                                                        :op1 "PI3K/AKT"))
+                                    :ARG2 (p4 / promote-01
+                                              :ARG0 p5
+                                              :ARG1 m))
+                          :ARG1 (m2 / macro-molecular-complex
+                                    :name (n3 / name
+                                              :op1 "mTORC1")))))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Loss of mTOR had little effect on RWPE-ERG migration, while loss of Rictor decreased migration (Figure <xref ref-type="fig" rid="F5">5</xref>B and Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>: Figure S2).
+# ::file pmid_2464_2271_131.txt
+# ::date 2015-08-10T14:44:02
+# ::id pmid_2464_2271.131
+(c / contrast-01
+   :ARG1 (a2 / affect-01
+             :ARG0 (l2 / lose-02
+                       :ARG1 (p / protein
+                                :name (n2 / name
+                                          :op1 "mTOR")))
+             :ARG1 (m2 / migrate-01
+                       :ARG0 (c2 / cell-line
+                                 :name (n / name
+                                          :op1 "RWPE-ERG")))
+             :degree (l / little))
+   :ARG2 (d2 / decrease-01
+             :ARG0 (l3 / lose-02
+                       :ARG1 (p2 / protein
+                                 :name (n3 / name
+                                           :op1 "Rictor")))
+             :ARG1 m2)
+   :ARG1-of (d / describe-01
+               :ARG0 (a / and
+                        :op1 (f / figure
+                                :mod "5B")
+                        :op2 (f2 / file
+                                 :mod "2"
+                                 :location-of (f3 / figure
+                                                  :mod "S2")))))
+
+# ::save-date Wed Nov 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Because the major role of the Rictor-containing mTORC2 complex is thought to be the phosphorylation of AKT, we hypothesized that these results were due to changes in AKT phosphorylation.
+# ::file pmid_2464_2271_132.txt
+# ::date 2015-08-10T14:53:58
+# ::id pmid_2464_2271.132
+(c / cause-01
+   :ARG0 (t / think-01
+            :ARG1 (r / role
+                     :mod (m / major)
+                     :poss (m2 / macro-molecular-complex
+                               :name (n2 / name
+                                         :op1 "mTORC2")
+                               :ARG0-of (c2 / contain-01
+                                            :ARG1 (p2 / protein
+                                                      :name (n3 / name
+                                                                :op1 "Rictor"))))
+                     :domain (p / phosphorylate-01
+                                :ARG1 (e / enzyme
+                                         :name (n / name
+                                                  :op1 "AKT")))))
+   :ARG1 (h / hypothesize-01
+            :ARG0 (w / we)
+            :ARG1 (c3 / cause-01
+                      :ARG0 (c4 / change-01
+                                :ARG1 p)
+                      :ARG1 (t2 / thing
+                                :ARG2-of (r2 / result-01)
+                                :mod (t3 / this)))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with previous findings [<xref ref-type="bibr" rid="B32">32</xref>-<xref ref-type="bibr" rid="B34">34</xref>], Raptor knockdown increased AKT phosphorylation, and Rictor knockdown decreased AKT phosphorylation (Figure <xref ref-type="fig" rid="F5">5</xref>C).
+# ::file pmid_2464_2271_133.txt
+# ::date 2015-08-10T13:23:58
+# ::id pmid_2464_2271.133
+(a / and
+   :op1 (i / increase-01
+           :ARG0 (k / knock-down-02
+                    :ARG1 (p3 / protein
+                              :name (n2 / name
+                                        :op1 "Raptor")))
+           :ARG1 (p / phosphorylate-01
+                    :ARG1 (e / enzyme
+                             :name (n / name
+                                      :op1 "AKT"))))
+   :op2 (d2 / decrease-01
+            :ARG0 (k2 / knock-down-02
+                      :ARG1 (p4 / protein
+                                :name (n3 / name
+                                          :op1 "Rictor")))
+            :ARG1 p)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5C"))
+   :ARG1-of (c / consistent-01
+               :ARG2 (t / thing
+                        :ARG1-of (f2 / find-01
+                                     :time (p2 / previous))
+                        :ARG1-of (d3 / describe-01
+                                     :ARG0 (p5 / publication
+                                               :ARG1-of (c2 / cite-01
+                                                            :ARG2 (v / value-interval
+                                                                     :op1 "32"
+                                                                     :op2 "34")))))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, the effect of mTOR containing complexes on RWPE-ERG cell migration can be explained indirectly by changes to pAKT levels, rather than by a direct role.
+# ::file pmid_2464_2271_134.txt
+# ::date 2015-08-10T15:06:02
+# ::id pmid_2464_2271.134
+(c / cause-01
+   :ARG1 (p / possible-01
+            :ARG1 (e / explain-01
+                     :ARG0 (c6 / change-01
+                               :ARG1 (l / level
+                                        :quant-of (e3 / enzyme
+                                                      :name (n3 / name
+                                                                :op1 "AKT")
+                                                      :ARG3-of (p5 / phosphorylate-01)))
+                               :ARG1-of (i / instead-of-91
+                                           :ARG2 (r / role
+                                                    :ARG1-of (d2 / direct-02))))
+                     :ARG1 (a / affect-01
+                              :ARG0 (m3 / macro-molecular-complex
+                                        :ARG0-of (c4 / contain-01
+                                                     :ARG1 (p3 / protein
+                                                               :name (n / name
+                                                                        :op1 "mTOR"))))
+                              :ARG1 (m2 / migrate-01
+                                        :ARG0 (c3 / cell-line
+                                                  :name (n2 / name
+                                                            :op1 "RWPE-ERG"))))
+                     :ARG1-of (d / direct-02
+                                 :polarity "-"))))

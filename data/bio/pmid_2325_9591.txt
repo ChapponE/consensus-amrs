@@ -1,0 +1,2859 @@
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Two of the 12 NSCLC cell lines tested, H3122 (ALK translocated) and H1437 (triple-negative), showed increased cytotoxicity upon dual MEK and PI3K inhibition.
+# ::file pmid_2325_9591_11.txt
+# ::date 2015-08-22T01:15:38
+# ::id pmid_2325_9591.11
+(s / show-01
+   :ARG0 (c / cell-line
+            :quant "2"
+            :ARG1-of (i / include-91
+                        :ARG2 (c2 / cell-line
+                                  :quant "12"
+                                  :ARG1-of (t / test-01)
+                                  :mod (d2 / disease
+                                           :name (n2 / name
+                                                     :op1 "NSCLC"))))
+            :ARG1-of (m / mean-01
+                        :ARG2 (a / and
+                                 :op1 (c3 / cell-line
+                                          :name (n4 / name
+                                                    :op1 "H3122")
+                                          :ARG2-of (t2 / translocate-01
+                                                       :ARG1 (e / enzyme
+                                                                :name (n5 / name
+                                                                          :op1 "ALK"))))
+                                 :op2 (c4 / cell-line
+                                          :name (n6 / name
+                                                    :op1 "H1437")
+                                          :ARG1-of (n3 / negative-01
+                                                       :ARG1-of (t3 / triple-01))))))
+   :ARG1 (c5 / cytotoxicity
+             :ARG1-of (i2 / increase-01
+                          :time (a2 / after
+                                    :op1 (i3 / inhibit-01
+                                             :ARG1 (a3 / and
+                                                       :op1 (e2 / enzyme
+                                                                :name (n / name
+                                                                         :op1 "MEK"))
+                                                       :op2 (e3 / enzyme
+                                                                :name (n8 / name
+                                                                          :op1 "PI3K")))
+                                             :mod (d / dual))))))
+
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, MDA-MB231 (breast) and HCT116 (colon), showed increased cytotoxicity upon dual inhibition, as in previous studies.
+# ::file pmid_2325_9591_12.txt
+# ::date 2015-08-22T01:08:49
+# ::id pmid_2325_9591.12
+(a / and
+      :op2 (s / show-01
+            :ARG0 (a2 / and
+                  :op1 (c / cell-line
+                        :name (n / name :op1 "MDA-MB231")
+                        :mod (b / breast))
+                  :op2 (c2 / cell-line
+                        :name (n2 / name :op1 "HCT116")
+                        :mod (c3 / colon)))
+            :ARG1 (c4 / cytotoxicity
+                  :ARG1-of (i / increase-01
+                        :ARG1-of (r / resemble-01
+                              :ARG2 (s2 / study-01
+                                    :time (p / previous)))
+                        :time (a3 / after
+                              :op1 (i2 / inhibit-01
+                                    :mod (d / dual)))))))
+
+
+# ::save-date Sat Aug 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Activation of parallel pathways in the dual inhibition-sensitive lines was also noted in response to single inhibitor treatment.
+# ::file pmid_2325_9591_13.txt
+# ::date 2015-08-22T02:25:46
+# ::id pmid_2325_9591.13
+(n / note-01
+      :ARG1 (a2 / activate-01
+            :ARG1 (p / pathway
+                  :ARG1-of (p2 / parallel-01))
+            :location (c / cell-line
+                  :ARG0-of (s / sensitive-03
+                        :ARG1 (i2 / inhibit-01
+                              :mod (d / dual)))))
+      :mod (a / also)
+      :ARG2-of (r / respond-01
+            :ARG1 (t2 / treat-04
+                  :ARG2 (s2 / small-molecule
+                        :ARG0-of (i / inhibit-01)
+                        :ARG1-of (s3 / single-02)))))
+
+# ::save-date Fri Nov 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Otherwise, no significant differences in downstream intracellular pathway activity (S6 and 4E-BPI) were noted between PI3K alone and dual inhibition other than the increased cytotoxicity of the latter.
+# ::file pmid_2325_9591_14.txt
+# ::date 2015-08-22T02:30:54
+# ::id pmid_2325_9591.14
+(h2 / have-condition-91
+    :ARG1 (n / note-01
+             :ARG1 (d / differ-02
+                      :polarity "-"
+                      :ARG1 (p4 / protein-family
+                                :name (n4 / name
+                                          :op1 "PI3K")
+                                :mod (a3 / alone))
+                      :ARG2 (i2 / inhibit-01
+                                :mod (d3 / dual))
+                      :ARG3 (a / activity-06
+                               :ARG0 (p / pathway
+                                        :mod (i / intracellular)
+                                        :location (d2 / downstream)
+                                        :ARG1-of (m / mean-01
+                                                    :ARG2 (a4 / activity-06
+                                                              :ARG0 (a2 / and
+                                                                        :op1 (p2 / protein
+                                                                                 :name (n2 / name
+                                                                                           :op1 "S6"))
+                                                                        :op2 (p3 / protein
+                                                                                 :name (n3 / name
+                                                                                           :op1 "4E-BPI")))))))
+                      :ARG1-of (s / significant-02)
+                      :ARG2-of (e2 / except-01
+                                   :ARG1 (c / cytotoxicity
+                                            :ARG1-of (i3 / increase-01)
+                                            :topic i2)))))
+
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the alternative dosing schedules two out of the four dual inhibition-sensitive cell lines showed similar cytotoxicity to continuous PI3K and short (15min) MEK inhibition treatment.
+# ::file pmid_2325_9591_15.txt
+# ::date 2015-08-22T02:48:35
+# ::id pmid_2325_9591.15
+(s / show-01
+      :ARG0 (c / cell-line
+            :quant "2"
+            :ARG1-of (i / include-91
+                  :ARG2 (c2 / cell-line
+                        :quant "4"
+                        :ARG0-of (s2 / sensitive-03
+                              :ARG1 (i2 / inhibit-01
+                                    :mod (d / dual))))))
+      :ARG1 (c3 / cytotoxicity
+            :ARG1-of (r2 / resemble-01))
+      :ARG2 (t / treat-04
+            :ARG2 (a2 / and
+                  :op1 (s4 / small-molecule
+                        :ARG0-of (i3 / inhibit-01
+                              :ARG1 (p2 / protein-family
+                                    :name (n2 / name :op1 "PI3K"))
+                              :mod (c4 / continuity)))
+                  :op2 (s6 / small-molecule
+                        :ARG0-of (i4 / inhibit-01
+                              :ARG1 (p / protein-family
+                                    :name (n / name :op1 "MEK"))
+                              :ARG1-of (s5 / short-07
+                                    :duration (t2 / temporal-quantity
+                                          :quant "15"
+                                          :unit (m / minute)))))))
+      :location (s3 / schedule-01
+            :ARG1 (d2 / dose-01
+                  :mod (a / alternative))))
+
+# ::save-date Sat Aug 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The inhibitors used were ZSTK474 (PI3K inhibitor) and PI-103 (PI3K and mTOR inhibitor) and CI-1040 (MEK inhibitor).
+# ::file pmid_2325_9591_81.txt
+# ::date 2015-08-22T03:52:47
+# ::id pmid_2325_9591.81
+(u / use-01
+   :ARG1 (s / small-molecule
+            :ARG0-of (i2 / inhibit-01)
+            :ARG1-of (m / mean-01
+                        :ARG2 (a / and
+                                 :op1 (s2 / small-molecule
+                                          :name (n2 / name
+                                                    :op1 "ZSTK474")
+                                          :ARG0-of (i3 / inhibit-01
+                                                       :ARG1 (p2 / protein-family
+                                                                 :name (n3 / name
+                                                                           :op1 "PI3K"))))
+                                 :op2 (s3 / small-molecule
+                                          :name (n4 / name
+                                                    :op1 "PI-103")
+                                          :ARG0-of (i4 / inhibit-01
+                                                       :ARG1 (a2 / and
+                                                                 :op1 p2
+                                                                 :op2 (p3 / protein
+                                                                          :name (n5 / name
+                                                                                    :op1 "mTOR")))))
+                                 :op3 (s4 / small-molecule
+                                          :name (n6 / name
+                                                    :op1 "CI-1040")
+                                          :ARG0-of (i5 / inhibit-01
+                                                       :ARG1 (p / protein-family
+                                                                :name (n / name
+                                                                         :op1 "MEK"))))))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We first addressed the effects of these inhibitors alone in the NSCLC lines A549 (<i>K</i>-<i>Ras</i> mutant), HCC827 (<i>EGFR</i> mutant) and H3122 (<i>EML4</i>-<i>ALK</i> translocated), representing the three most frequent oncogenic genotypes of the disease, to establish concentration frames for the target inhibition.
+# ::file pmid_2325_9591_82.txt
+# ::date 2015-08-22T04:02:16
+# ::id pmid_2325_9591.82
+(a / address-02
+   :ARG0 (w / we)
+   :ARG1 (a2 / affect-01
+             :ARG0 (s / small-molecule
+                      :mod (t2 / this)
+                      :mod (a3 / alone)
+                      :ARG0-of (i2 / inhibit-01))
+             :location (c / cell-line
+                          :ARG1-of (m / mean-01
+                                      :ARG2 (a4 / and
+                                                :op1 (c3 / cell-line
+                                                         :name (n5 / name
+                                                                   :op1 "A549")
+                                                         :mod (g / gene
+                                                                 :name (n4 / name
+                                                                           :op1 "K-Ras")
+                                                                 :ARG2-of (m2 / mutate-01)))
+                                                :op2 (c2 / cell-line
+                                                         :name (n6 / name
+                                                                   :op1 "HCC827")
+                                                         :mod (g2 / gene
+                                                                  :name (n7 / name
+                                                                            :op1 "EGFR")
+                                                                  :ARG2-of (m3 / mutate-01)))
+                                                :op3 (c4 / cell-line
+                                                         :name (n8 / name
+                                                                   :op1 "H3122")
+                                                         :ARG2-of (t3 / translocate-01
+                                                                      :ARG1 (e2 / enzyme
+                                                                                :name (n9 / name
+                                                                                          :op1 "EML4-ALK"))))
+                                                :ARG1-of (r / represent-01
+                                                            :ARG2 (g3 / genotype
+                                                                      :quant "3"
+                                                                      :ARG1-of (i3 / include-91
+                                                                                   :ARG2 (g4 / genotype
+                                                                                             :ARG1-of (f2 / frequent-02
+                                                                                                          :degree (m4 / most))
+                                                                                             :poss (d / disease)
+                                                                                             :ARG0-of (c6 / cause-01
+                                                                                                          :ARG1 (d3 / disease
+                                                                                                                    :wiki "Cancer"
+                                                                                                                    :name (n2 / name
+                                                                                                                              :op1 "cancer")))))))))
+                          :mod (d2 / disease
+                                   :name (n / name
+                                            :op1 "NSCLC"))))
+   :time (f / first)
+   :purpose (e3 / establish-01
+                :ARG0 w
+                :ARG1 (f3 / frame
+                          :mod (c5 / concentrate-02))
+                :ARG3 (i4 / inhibit-01
+                          :ARG1-of (t4 / target-01))))
+
+# ::save-date Sun Dec 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the Western blots ZSTK474 at a 3.3μM concentration induced complete downregulation of pAKT, an immediate downstream target of PI3K, while PI-103 induced a similar inhibition at concentrations of 1 to 3.3 μM (Figure <xref ref-type="fig" rid="F1">1A</xref>).
+# ::file pmid_2325_9591_83.txt
+# ::date 2015-08-22T04:21:32
+# ::id pmid_2325_9591.83
+(c / contrast-01
+   :ARG1 (i / induce-01
+            :ARG0 (c3 / concentrate-02
+                      :ARG1 (s / small-molecule
+                               :name (n / name
+                                        :op1 "ZSTK474"))
+                      :quant (c2 / concentration-quantity
+                                 :quant "3.3"
+                                 :unit (m / micromolar)))
+            :ARG2 (d / downregulate-01
+                     :ARG1 (e / enzyme
+                              :name (n3 / name
+                                        :op1 "AKT")
+                              :ARG3-of (p / phosphorylate-01))
+                     :ARG1-of (c4 / complete-02)
+                     :ARG1-of (t2 / target-01
+                                  :ARG0 (p2 / protein-family
+                                            :name (n4 / name
+                                                      :op1 "PI3K"))
+                                  :location (d2 / downstream)
+                                  :time (i2 / immediate)))
+            :location (i5 / immunoblot-01))
+   :ARG2 (i3 / induce-01
+             :ARG0 (s2 / small-molecule
+                       :name (n5 / name
+                                 :op1 "PI-103"))
+             :ARG2 (i4 / inhibit-01
+                       :ARG1-of (r / resemble-01))
+             :condition (c5 / concentrate-02
+                            :ARG1 s2
+                            :quant (v / value-interval
+                                      :op1 (c6 / concentration-quantity
+                                               :quant "1"
+                                               :unit m)
+                                      :op2 c2)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "1A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt pS6 downregulation correlated highly with pAKT downregulation (Figure <xref ref-type="fig" rid="F1">1A</xref>).
+# ::file pmid_2325_9591_84.txt
+# ::date 2015-08-22T04:38:54
+# ::id pmid_2325_9591.84
+(c / correlate-01
+   :ARG1 (d / downregulate-01
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "S6")
+                     :ARG3-of (p2 / phosphorylate-01
+                                  :ARG3 e)))
+   :ARG2 (d2 / downregulate-01
+             :ARG1 (e / enzyme
+                      :name (n2 / name
+                                :op1 "AKT")))
+   :ARG1-of (h / high-02)
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "1A")))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The MTS cytotoxicity assay showed a major reduction in the number of viable cells in all the cell lines with similar concentrations of both inhibitors, which were closely correlated with the concentrations inducing complete inhibition of pAKT in Western blot analysis (Figure <xref ref-type="fig" rid="F1">1A</xref>,C).
+# ::file pmid_2325_9591_85.txt
+# ::date 2015-08-22T04:56:44
+# ::id pmid_2325_9591.85
+(s / show-01
+   :ARG0 (a / assay-01
+            :ARG1 (c / cytotoxicity)
+            :mod (s3 / small-molecule
+                     :name (n2 / name
+                               :op1 "MTS")))
+   :ARG1 (r2 / reduce-01
+             :ARG1 (n / number
+                      :quant-of (c2 / cell
+                                    :mod (v / viable)))
+             :ARG1-of (m / major-02)
+             :location (c3 / cell-line
+                           :ARG0-of (h / have-03
+                                       :ARG1 (c4 / concentrate-02
+                                                 :ARG1 (s2 / small-molecule
+                                                           :ARG0-of (i2 / inhibit-01)
+                                                           :mod (b / both))
+                                                 :ARG1-of (r3 / resemble-01)
+                                                 :ARG1-of (c5 / correlate-01
+                                                              :ARG2 (c6 / concentrate-02
+                                                                        :ARG0-of (i3 / induce-01
+                                                                                     :ARG2 (i4 / inhibit-01
+                                                                                               :ARG1 (e / enzyme
+                                                                                                        :name (n4 / name
+                                                                                                                  :op1 "AKT")
+                                                                                                        :ARG3-of (p / phosphorylate-01))
+                                                                                               :ARG1-of (c7 / complete-02))
+                                                                                     :time (a2 / analyze-01
+                                                                                               :manner (i / immunoblot-01))))
+                                                              :ARG1-of (c8 / close-10))))
+                           :mod (a4 / all)))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "1A")
+                         :op2 (f2 / figure
+                                  :mod "1C"))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt CI-1040 induced complete inhibition of ERK1/2, an immediate downstream target of MEK, at a 1 μM concentration (Figure <xref ref-type="fig" rid="F1">1B</xref>).
+# ::file pmid_2325_9591_86.txt
+# ::date 2015-08-22T05:24:22
+# ::id pmid_2325_9591.86
+(i / induce-01
+   :ARG0 (s / small-molecule
+            :name (n2 / name
+                      :op1 "CI-1040")
+            :ARG1-of (c2 / concentrate-02
+                         :quant (c3 / concentration-quantity
+                                    :quant "1"
+                                    :unit (m / micromolar))))
+   :ARG2 (i2 / inhibit-01
+             :ARG1 (e / enzyme
+                      :name (n3 / name
+                                :op1 "ERK1/2")
+                      :ARG1-of (t / target-01
+                                  :ARG0 (e2 / enzyme
+                                            :name (n / name
+                                                     :op1 "MEK"))
+                                  :location (d / downstream)
+                                  :time (i3 / immediate)))
+             :ARG1-of (c / complete-02))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1B")))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Only the H3122 line showed any marked reduction in cell viability in the MTS assays in response to increasing concentrations of the inhibitor, correlating with maximal target inhibition, while the other lines displayed minor changes in viability, except for the 10 μM treatment in HCC827, despite the achieving of complete inhibition of pERK1/2 in all the lines tested at 1 μM (Figure <xref ref-type="fig" rid="F1">1C</xref>).
+# ::file pmid_2325_9591_87.txt
+# ::date 2015-08-22T05:37:16
+# ::id pmid_2325_9591.87
+(c13 / contrast-01
+     :ARG1 (s / show-01
+              :ARG0 (c / cell-line
+                       :name (n / name
+                                :op1 "H3122")
+                       :mod (o / only))
+              :ARG1 (r / reduce-01
+                       :ARG1 (v / viable
+                                :mod (c2 / cell)
+                                :location (a / assay-01
+                                             :mod (s4 / small-molecule
+                                                      :name (n2 / name
+                                                                :op1 "MTS"))))
+                       :manner (m / marked)
+                       :mod (a2 / any)
+                       :ARG2-of (r2 / respond-01
+                                    :ARG1 (c3 / concentrate-02
+                                              :ARG1 (s2 / small-molecule
+                                                        :ARG0-of (i3 / inhibit-01))
+                                              :ARG1-of (i2 / increase-01)
+                                              :ARG1-of (c4 / correlate-01
+                                                           :ARG2 (i4 / inhibit-01
+                                                                     :ARG1-of (t3 / target-01)
+                                                                     :degree (m2 / maximum)))))))
+     :ARG2 (d / display-01
+              :ARG0 (c6 / cell-line
+                        :mod (o2 / other)
+                        :ARG2-of (e / except-01
+                                    :ARG1 (t4 / treat-04
+                                              :ARG1 (c8 / cell-line
+                                                        :name (n3 / name
+                                                                  :op1 "HCC827"))
+                                              :ARG2 (s3 / small-molecule
+                                                        :quant (c9 / concentration-quantity
+                                                                   :quant "10"
+                                                                   :unit (m4 / micromolar))))))
+              :ARG1 (c7 / change-01
+                        :ARG1 (v2 / viability)
+                        :ARG1-of (m3 / minor-01))
+              :concession (a3 / achieve-01
+                              :ARG1 (i5 / inhibit-01
+                                        :ARG1 (e2 / enzyme
+                                                  :name (n4 / name
+                                                            :op1 "ERK1/2")
+                                                  :ARG3-of (p / phosphorylate-01))
+                                        :ARG1-of (c10 / complete-02)
+                                        :location (c11 / cell-line
+                                                       :mod (a4 / all)
+                                                       :ARG1-of (t5 / test-01
+                                                                    :manner (c12 / concentration-quantity
+                                                                                 :quant "1"
+                                                                                 :unit (m5 / micromolar)))))))
+     :ARG1-of (d2 / describe-01
+                  :ARG0 (f / figure
+                           :mod "1C")))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Dual inhibition of PI3K and MEK was tested in a panel of NSCLC lines (n=12) with the <i>K</i>-<i>Ras</i> (n=3), <i>EGFR</i> (n=3), <i>ALK</i> (n=3), or triple-negative (n=3) oncogenic genotypes.
+# ::file pmid_2325_9591_88.txt
+# ::date 2015-08-22T06:16:49
+# ::id pmid_2325_9591.88
+(t / test-01
+   :ARG1 (i / inhibit-01
+            :ARG1 (a / and
+                     :op1 (e / enzyme
+                             :name (n4 / name
+                                       :op1 "PI3K"))
+                     :op2 (e2 / enzyme
+                              :name (n / name
+                                       :op1 "MEK")))
+            :mod (d / dual))
+   :location (p4 / panel
+                 :consist-of (c / cell-line
+                                :ARG0-of (h / have-03
+                                            :ARG1 (o / or
+                                                     :op1 (g4 / genotype
+                                                              :mod (g / gene
+                                                                      :name (n6 / name
+                                                                                :op1 "K-Ras"))
+                                                              :ARG1-of (n3 / number-01
+                                                                           :ARG2 "3"))
+                                                     :op2 (g5 / genotype
+                                                              :mod (g2 / gene
+                                                                       :name (n7 / name
+                                                                                 :op1 "EGFR"))
+                                                              :ARG1-of (n10 / number-01
+                                                                            :ARG2 "3"))
+                                                     :op3 (g6 / genotype
+                                                              :mod (g3 / gene
+                                                                       :name (n8 / name
+                                                                                 :op1 "ALK"))
+                                                              :ARG1-of (n11 / number-01
+                                                                            :ARG2 "3"))
+                                                     :op4 (g7 / genotype
+                                                              :ARG1-of (n9 / negative-01
+                                                                           :ARG1-of (t2 / triple-01))
+                                                              :ARG1-of (n12 / number-01
+                                                                            :ARG2 "3"))
+                                                     :ARG0-of (c2 / cause-01
+                                                                  :ARG1 (d3 / disease
+                                                                            :wiki "Cancer"
+                                                                            :name (n5 / name
+                                                                                      :op1 "cancer")))))
+                                :ARG1-of (n2 / number-01
+                                             :ARG2 "12")
+                                :mod (d2 / disease
+                                         :name (n13 / name
+                                                    :op1 "NSCLC")))))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Analogously to the cell lines in the preliminary experiments, all the cell lines tested here showed a major reduction in cell growth in response to the PI3K inhibitors alone, with no significant differences between ZSTK474 or PI-103 (Figure <xref ref-type="fig" rid="F2">2A</xref>, eight of the twelve lines presented graphically).
+# ::file pmid_2325_9591_89.txt
+# ::date 2015-08-22T06:38:01
+# ::id pmid_2325_9591.89
+(s / show-01
+   :ARG0 (c / cell-line
+            :mod (a / all)
+            :ARG1-of (t2 / test-01
+                         :location (h / here))
+            :ARG1-of (r3 / resemble-01
+                         :ARG2 (c3 / cell-line
+                                   :location (e / experiment-01
+                                                :mod (p2 / preliminary)))))
+   :ARG1 (a3 / and
+             :op1 (r / reduce-01
+                     :ARG1 (g / grow-01
+                              :ARG1 (c2 / cell))
+                     :ARG1-of (m / major-02)
+                     :ARG2-of (r2 / respond-01
+                                  :ARG1 (s2 / small-molecule
+                                            :mod (a2 / alone)
+                                            :ARG0-of (i2 / inhibit-01
+                                                         :ARG1 (p / protein-family
+                                                                  :name (n / name
+                                                                           :op1 "PI3K"))))))
+             :op2 (d / differ-02
+                     :polarity "-"
+                     :ARG1 (s4 / small-molecule
+                               :name (n2 / name
+                                         :op1 "ZSTK474"))
+                     :ARG2 (s5 / small-molecule
+                               :name (n3 / name
+                                         :op1 "PI-103"))
+                     :ARG1-of (s3 / significant-02)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a4 / and
+                          :op1 (f / figure
+                                  :mod "2A")
+                          :op2 (c4 / cell-line
+                                   :quant "8"
+                                   :ARG1-of (i3 / include-01
+                                                :ARG2 (c5 / cell-line
+                                                          :quant "12"
+                                                          :ARG1-of (p3 / present-02
+                                                                       :manner (g2 / graphic))))))))
+
+# ::save-date Wed Jan 20, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The MEK inhibitor CI-1040 elicited variable responses with the majority of cell lines, showing only minor inhibition of growth or none at all.
+# ::file pmid_2325_9591_90.txt
+# ::date 2015-08-22T08:27:49
+# ::id pmid_2325_9591.90
+(e / elicit-01
+   :ARG0 (s / small-molecule
+            :name (n2 / name
+                      :op1 "CI-1040")
+            :ARG0-of (i2 / inhibit-01
+                         :ARG1 (p / protein-family
+                                  :name (n / name
+                                           :op1 "MEK"))))
+   :ARG1 (r / respond-01
+            :ARG1 (c / cell-line
+                     :ARG1-of (i3 / include-91
+                                  :ARG2 (c2 / cell-line))
+                     :quant (m / majority))
+            :ARG1-of (v2 / vary-01))
+   :ARG0-of (s2 / show-01
+                :ARG1 (o / or
+                         :op1 (i4 / inhibit-01
+                                  :ARG1-of (m2 / minor-01)
+                                  :mod (o2 / only))
+                         :op2 (i5 / inhibit-01
+                                  :polarity "-"
+                                  :mod (a / at-all)))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt When the cell lines were exposed to dual, concurrent inhibition of PI3K and MEK, two out of 12 tested cell lines, H3122 and H1437, showed marked additional cytotoxicity compared with treatment with a single agent (Figure <xref ref-type="fig" rid="F2">2A</xref>).
+# ::file pmid_2325_9591_91.txt
+# ::date 2015-08-22T10:06:00
+# ::id pmid_2325_9591.91
+(s / show-01
+   :ARG0 (c / cell-line
+            :quant "2"
+            :ARG1-of (i / include-91
+                        :ARG2 (c2 / cell-line
+                                  :quant "12"
+                                  :ARG1-of (t / test-01)))
+            :ARG1-of (m / mean-01
+                        :ARG2 (a / and
+                                 :op1 (c3 / cell-line
+                                          :name (n2 / name
+                                                    :op1 "H3122"))
+                                 :op2 (c4 / cell-line
+                                          :name (n3 / name
+                                                    :op1 "H1437")))))
+   :ARG1 (c5 / cytotoxicity
+             :ARG1-of (a2 / add-02)
+             :mod (m2 / marked)
+             :compared-to (t2 / treat-04
+                              :ARG2 (a3 / agent
+                                        :ARG1-of (s2 / single-02))))
+   :time (e / expose-01
+            :ARG1 c2
+            :ARG2 (i2 / inhibit-01
+                      :ARG1 (a4 / and
+                                :op1 (e2 / enzyme
+                                         :name (n4 / name
+                                                   :op1 "PI3K"))
+                                :op2 (e3 / enzyme
+                                         :name (n / name
+                                                  :op1 "MEK")))
+                      :ARG1-of (c6 / concurrent-02)
+                      :mod (d / dual)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "2A")))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The results were submitted to combination index (CI) analysis and average CI values were calculated based on combinations of ZSTK474 and PI-103.
+# ::file pmid_2325_9591_92.txt
+# ::date 2015-08-22T10:18:55
+# ::id pmid_2325_9591.92
+(a / and
+   :op1 (s / submit-01
+           :ARG1 (t / thing
+                    :ARG2-of (r / result-01))
+           :ARG2 (a2 / analyze-01
+                     :ARG1 (i / index-01
+                              :mod (c / combine-01))))
+   :op2 (c2 / calculate-01
+            :ARG1 (a3 / average-01
+                      :ARG1 (v / value-01
+                               :ARG1 i))
+            :ARG1-of (b / base-02
+                        :ARG2 (c3 / combine-01
+                                  :ARG1 (s2 / small-molecule
+                                            :name (n / name
+                                                     :op1 "ZSTK474"))
+                                  :ARG2 (s3 / small-molecule
+                                            :name (n2 / name
+                                                      :op1 "PI-103"))))))
+
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This analysis grouped the cell lines into three categories: antagonism (n=5, CI 1.10-3.3), nearly additive or slight synergy (n=5, CI 0.7-1.10), and synergy or strong synergy (n=2, CI <0.7) (Table <xref ref-type="table" rid="T1">1</xref>).
+# ::file pmid_2325_9591_93.txt
+# ::date 2015-08-22T10:26:43
+# ::id pmid_2325_9591.93
+(g / group-01
+      :ARG0 (a / analyze-01
+            :mod (t / this))
+      :ARG1 (c / cell-line)
+      :ARG2 (c2 / category
+            :quant "3"
+            :ARG1-of (m / mean-01
+                  :ARG2 (a2 / and
+                        :op1 (a3 / antagonize-01
+                              :ARG1-of (n / number-01 :ARG2 "5")
+                              :ARG1-of (i / index-01
+                                    :ARG2 (b / between :op1 "1.10" :op2 "3.3")
+                                    :mod (c3 / combine-01)))
+                        :op2 (o / or
+                              :op1 (a4 / additive
+                                    :mod (n2 / near))
+                              :op2 (s / synergize-01
+                                    :mod (s2 / slight))
+                              :ARG1-of (n3 / number-01 :ARG2 "5")
+                              :ARG1-of (i2 / index-01
+                                    :ARG2 (b2 / between :op1 "0.7" :op2 "1.10")))
+                        :op2 (o2 / or
+                              :op1 (s3 / synergize-01)
+                              :op2 (s4 / synergize-01
+                                    :ARG1-of (s5 / strong-02))
+                              :ARG1-of (n4 / number-01 :ARG2 "2")
+                              :ARG1-of (i3 / index-01
+                                    :ARG2 (l / less-than :op1 "0.7"))))))
+      :ARG1-of (d / describe-01
+            :ARG0 (t2 / table :mod "1")))
+
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Visual assessment of the dual inhibition in MTS curves did not suggest any major antagonism of treatment in any of the lines tested, however, since the combination treatment curves in the cell lines with antagonistic CI values closely followed the single PI3K inhibitor treatment curves (Figure <xref ref-type="fig" rid="F2">2A</xref>).
+# ::file pmid_2325_9591_94.txt
+# ::date 2015-08-22T10:51:19
+# ::id pmid_2325_9591.94
+(h / have-concession-91
+      :ARG1 (s / suggest-01
+            :polarity "-"
+            :ARG0 (a / assess-01
+                  :ARG1 (i2 / inhibit-01
+                        :mod (d / dual)
+                        :location (c / curve-01
+                              :mod (t2 / thing
+                                    :name (n / name :op1 "MTS"))))
+                  :mod (v / visual))
+            :ARG1 (a2 / antagonize-01
+                  :ARG1 (t3 / treat-04)
+                  :location (c2 / cell-line
+                        :mod (a3 / any)
+                        :ARG1-of (t4 / test-01))
+                  :ARG1-of (m / major-02)))
+      :ARG2 (f / follow-01
+            :ARG1 (c4 / curve-01
+                  :location (c5 / cell-line)
+                  :ARG0-of (h2 / have-03
+                        :ARG1 (v2 / value-01
+                              :mod (i3 / index-01
+                                    :mod (c6 / combine-01)
+                                    :ARG0-of (a4 / antagonize-01))))
+                  :ARG1-of (t5 / treat-04
+                        :mod (c3 / combine-01)))
+            :ARG2 (c7 / curve-01
+                  :ARG1-of (t6 / treat-04
+                        :ARG2 (s2 / small-molecule
+                              :ARG0-of (i4 / inhibit-01
+                                    :ARG1 (p / protein-family
+                                          :name (n2 / name :op1 "PI3K")))
+                              :ARG1-of (s3 / single-02))))
+            :ARG1-of (c8 / close-10))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f2 / figure :mod "2A")))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There was no correlation between the cancer genotypes in responsiveness to the dual inhibition, since an <i>ALK</i> translocated line (H3122) and a triple-negative negative line (H1437) showed synergistic responses to dual inhibition (Figure <xref ref-type="fig" rid="F2">2A</xref>, Table <xref ref-type="table" rid="T1">1</xref>).
+# ::file pmid_2325_9591_95.txt
+# ::date 2015-08-22T11:30:04
+# ::id pmid_2325_9591.95
+(c / correlate-01
+   :polarity "-"
+   :ARG1 (g / genotype
+            :mod (d / disease
+                    :wiki "Cancer"
+                    :name (n / name
+                             :op1 "cancer")))
+   :ARG2-of (r / respond-01
+               :ARG1 (i / inhibit-01
+                        :mod (d2 / dual)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f / figure
+                                  :mod "2A")
+                          :op2 (t4 / table
+                                   :mod "1")))
+   :ARG1-of (c7 / cause-01
+                :ARG0 (s / show-01
+                         :ARG0 (a / and
+                                  :op1 (c3 / cell-line
+                                           :ARG2-of (t / translocate-01
+                                                       :ARG1 (g2 / gene
+                                                                 :name (n2 / name
+                                                                           :op1 "ALK")))
+                                           :ARG1-of (m / mean-01
+                                                       :ARG2 (c4 / cell-line
+                                                                 :name (n3 / name
+                                                                           :op1 "H3122"))))
+                                  :op2 (c5 / cell-line
+                                           :ARG1-of (n4 / negative-01
+                                                        :ARG1-of (t2 / triple-01))
+                                           :ARG1-of (m2 / mean-01
+                                                        :ARG2 (c6 / cell-line
+                                                                  :name (n5 / name
+                                                                            :op1 "H1437")))))
+                         :ARG1 (t3 / thing
+                                   :ARG2-of (r2 / respond-01
+                                                :ARG1 i)
+                                   :ARG0-of (s2 / synergize-01)))))
+
+
+# ::save-date Wed Mar 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The NSCLC lines showing synergistic responses to dual inhibition seemed to be more responsive to low concentrations (<1 μM) of the MEK inhibitor alone (Figure <xref ref-type="fig" rid="F2">2A</xref>).
+# ::file pmid_2325_9591_96.txt
+# ::date 2015-08-22T23:02:38
+# ::id pmid_2325_9591.96
+(s / seem-01
+      :ARG1 (r2 / responsive-02
+            :ARG0 (c / cell-line
+                  :ARG0-of (s2 / show-01
+                        :ARG1 (t2 / thing
+                              :ARG2-of (r / respond-01
+                                    :ARG1 (i2 / inhibit-01
+                                          :mod (d / dual)))
+                              :ARG0-of (s3 / synergize-01)))
+                  :mod (d3 / disease
+                        :name (n3 / name :op1 "NSCLC")))
+            :ARG1 (c2 / concentrate-02
+                  :ARG1 (s4 / small-molecule
+                        :ARG0-of (i3 / inhibit-01
+                              :ARG1 (p / protein-family
+                                    :name (n / name :op1 "MEK")))
+                        :mod (a / alone))
+                  :ARG1-of (l / low-04)
+                  :quant (l2 / less-than
+                        :op1 (c3 / concentration-quantity
+                              :quant "1"
+                              :unit (m / micromolar)))))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure :mod "2A")))
+
+
+# ::save-date Wed Jan 20, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Analogously to the single inhibitor results, the lines sensitive to dual inhibition showed only a minor difference between the activities of the different PI3K inhibitors in combination with the MEK inhibitor.
+# ::file pmid_2325_9591_97.txt
+# ::date 2015-08-23T03:48:22
+# ::id pmid_2325_9591.97
+(s / show-01
+      :ARG0 (c / cell-line
+            :ARG0-of (s2 / sensitive-03
+                  :ARG1 (i2 / inhibit-01
+                        :mod (d / dual))))
+      :ARG1 (d2 / differ-02
+            :ARG1 (a / activity-06
+                  :ARG0 (s3 / small-molecule
+                        :ARG0-of (i3 / inhibit-01
+                              :ARG1 (p2 / protein-family
+                                    :name (n2 / name :op1 "PI3K")))
+                        :ARG1-of (d3 / differ-02)
+                        :ARG1-of (c2 / combine-01
+                              :ARG2 (s4 / small-molecule
+                                    :ARG0-of (i4 / inhibit-01
+                                          :ARG1 (p / protein-family
+                                                :name (n / name :op1 "MEK")))))))
+            :ARG1-of (m / minor-01))
+      :ARG1-of (r / resemble-01
+            :ARG2 (t / thing
+                  :ARG2-of (r2 / result-01
+                        :ARG1 (s5 / small-molecule
+                              :ARG0-of (i / inhibit-01)
+                              :ARG1-of (s6 / single-02))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Based on a literature search [<xref ref-type="bibr" rid="B4">4</xref>,<xref ref-type="bibr" rid="B7">7</xref>], additional cell lines known to be responsive to dual PI3K and MEK inhibition were studied.
+# ::file pmid_2325_9591_98.txt
+# ::date 2015-08-23T03:55:07
+# ::id pmid_2325_9591.98
+(s / study-01
+   :ARG1 (c / cell-line
+            :ARG1-of (a / add-02)
+            :ARG0-of (r / responsive-02
+                        :ARG1 (i / inhibit-01
+                                 :ARG1 (a2 / and
+                                           :op1 (e / enzyme
+                                                   :name (n2 / name
+                                                             :op1 "PI3K"))
+                                           :op2 (e2 / enzyme
+                                                    :name (n / name
+                                                             :op1 "MEK")))
+                                 :mod (d / dual))
+                        :ARG1-of (k / know-01)))
+   :ARG1-of (b / base-02
+               :ARG2 (s2 / search-01
+                         :ARG1 (l / literature)
+                         :ARG1-of (d2 / describe-01
+                                      :ARG0 (p3 / publication
+                                                :ARG1-of (c2 / cite-01
+                                                             :ARG2 (a3 / and
+                                                                       :op1 "4"
+                                                                       :op2 "7")))))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt MDA-MB231, a basal-like breast cancer line, and HCT116, a <i>K</i><i>Ras</i> mutant colorectal line, were exposed to single inhibitors or dual inhibition and analyzed with the MTS assay.
+# ::file pmid_2325_9591_99.txt
+# ::date 2015-08-23T04:00:16
+# ::id pmid_2325_9591.99
+(a2 / and
+    :op1 (e / expose-01
+            :ARG1 (a / and
+                     :op1 (c / cell-line
+                             :name (n3 / name
+                                       :op1 "MDA-MB231")
+                             :ARG1-of (r / resemble-01
+                                         :ARG2 (c3 / cell-line
+                                                   :mod (b2 / basal)
+                                                   :mod (d / disease
+                                                           :wiki "Breast_cancer"
+                                                           :name (n2 / name
+                                                                     :op1 "breast"
+                                                                     :op2 "cancer")))))
+                     :op2 (c4 / cell-line
+                              :name (n4 / name
+                                        :op1 "HCT116")
+                              :ARG1-of (m / mean-01
+                                          :ARG2 (c5 / cell-line
+                                                    :mod (c6 / colon)
+                                                    :mod (g / gene
+                                                            :name (n5 / name
+                                                                      :op1 "KRas")
+                                                            :ARG2-of (m2 / mutate-01))))))
+            :ARG2 (o / or
+                     :op1 (s / small-molecule
+                             :ARG1-of (s2 / single-02)
+                             :ARG0-of (i2 / inhibit-01))
+                     :op2 (i3 / inhibit-01
+                              :mod (d2 / dual))))
+    :op2 (a3 / analyze-01
+             :ARG1 a
+             :instrument (a4 / assay-01
+                             :mod (s3 / small-molecule
+                                      :name (n / name
+                                               :op1 "MTS")))))
+
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As in the previous work, both the cell lines showed synergistic responses to dual inhibition (Figure <xref ref-type="fig" rid="F2">2B</xref>, Table <xref ref-type="table" rid="T1">1</xref>).
+# ::file pmid_2325_9591_100.txt
+# ::date 2015-08-23T04:19:32
+# ::id pmid_2325_9591.100
+(s / show-01
+      :ARG0 (c / cell-line
+            :mod (b / both))
+      :ARG1 (t / thing
+            :ARG2-of (r / respond-01
+                  :ARG1 (i / inhibit-01
+                        :mod (d / dual)))
+            :ARG0-of (s2 / synergize-01))
+      :ARG1-of (r2 / resemble-01
+            :ARG2 (w / work-01
+                  :time (p / previous)))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (a / and
+                  :op1 (f / figure :mod "2B")
+                  :op2 (t2 / table :mod "1"))))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PI-103 was markedly less effective than ZSTK474 in the HCT116 cell line, while, like all the NSCLC cell lines, MDA-MB231 responded similarly to both PI3K inhibitors (Figure <xref ref-type="fig" rid="F2">2B</xref>, Table <xref ref-type="table" rid="T1">1</xref>).
+# ::file pmid_2325_9591_101.txt
+# ::date 2015-08-23T04:28:30
+# ::id pmid_2325_9591.101
+(c / contrast-01
+   :ARG1 (a / affect-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "PI-103"))
+            :degree (l / less)
+            :manner (m / marked)
+            :compared-to (s2 / small-molecule
+                             :name (n2 / name
+                                       :op1 "ZSTK474"))
+            :location (c2 / cell-line
+                          :name (n3 / name
+                                    :op1 "HCT116")))
+   :ARG2 (r / respond-01
+            :ARG1 (c3 / cell-line
+                      :name (n4 / name
+                                :op1 "MDA-MB231")
+                      :ARG1-of (r2 / resemble-01
+                                   :ARG2 (c4 / cell-line
+                                             :mod (a2 / all)
+                                             :mod (d2 / disease
+                                                      :name (n7 / name
+                                                                :op1 "NSCLC")))))
+            :ARG2 (s3 / small-molecule
+                      :ARG0-of (i2 / inhibit-01
+                                   :ARG1 (p / protein-family
+                                            :name (n6 / name
+                                                      :op1 "PI3K")))
+                      :mod (b / both))
+            :ARG1-of (r3 / resemble-01))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "2B")
+                         :op2 (t2 / table
+                                  :mod "1"))))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, we did not see any differences in target inhibition between ZSTK474 and PI-103 in the HCT116 line (Figure <xref ref-type="fig" rid="F3">3A</xref>), so that the mechanism of differential efficiency remains unknown.
+# ::file pmid_2325_9591_102.txt
+# ::date 2015-08-23T04:42:59
+# ::id pmid_2325_9591.102
+(s / see-01
+   :polarity "-"
+   :ARG0 (w / we)
+   :ARG1 (d / differ-02
+            :ARG1 (s2 / small-molecule
+                      :name (n / name
+                               :op1 "ZSTK474"))
+            :ARG2 (s3 / small-molecule
+                      :name (n2 / name
+                                :op1 "PI-103"))
+            :ARG3 (i / inhibit-01
+                     :ARG1-of (t / target-01))
+            :mod (a / any)
+            :location (c / cell-line
+                         :name (n3 / name
+                                   :op1 "HCT116")))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "3A"))
+   :ARG2-of (i3 / interest-01)
+   :ARG0-of (c2 / cause-01
+                :ARG1 (r / remain-01
+                         :ARG1 (m / mechanism
+                                  :ARG1-of (e / efficient-01
+                                              :mod (d3 / differential)))
+                         :ARG3 (k / know-01
+                                  :polarity "-"
+                                  :ARG1 m))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The lines H3122, H1437, MDA-MB231, and HCT116, which were sensitive to dual inhibition, were further analyzed with Western blot analysis for cleaved PARP, a well-characterized marker of apoptosis.
+# ::file pmid_2325_9591_103.txt
+# ::date 2015-08-23T05:02:06
+# ::id pmid_2325_9591.103
+(a / analyze-01
+   :ARG1 (a2 / and
+             :op1 (c / cell-line
+                     :name (n2 / name
+                               :op1 "H3122"))
+             :op2 (c2 / cell-line
+                      :name (n3 / name
+                                :op1 "H1437"))
+             :op3 (c3 / cell-line
+                      :name (n4 / name
+                                :op1 "MDA-MB231"))
+             :op4 (c4 / cell-line
+                      :name (n5 / name
+                                :op1 "HCT116"))
+             :ARG0-of (s / sensitive-03
+                         :ARG1 (i / inhibit-01
+                                  :mod (d / dual))))
+   :degree (f / further)
+   :manner (i2 / immunoblot-01
+               :ARG1 (p / protein
+                        :name (n7 / name
+                                  :op1 "PARP")
+                        :ARG1-of (c5 / cleave-01)
+                        :ARG0-of (m / mark-02
+                                    :ARG1 (a4 / apoptosis)
+                                    :ARG1-of (c6 / characterize-01)
+                                    :ARG1-of (w / well-09)))
+               :ARG2 a2))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No cleaved PARP was detected in any of the cell lines following the single agent treatments (Figure <xref ref-type="fig" rid="F4">4A</xref>), but when dual inhibition with either ZSTK474 or PI-103 was administered, marked PARP cleavage was seen in the H3122 line but not in the other lines tested (Figure <xref ref-type="fig" rid="F4">4A</xref>).
+# ::file pmid_2325_9591_104.txt
+# ::date 2015-08-23T05:45:54
+# ::id pmid_2325_9591.104
+(c / contrast-01
+   :ARG1 (d / detect-01
+            :polarity "-"
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "PARP")
+                     :ARG1-of (c2 / cleave-01))
+            :location (c3 / cell-line
+                          :mod (a / any))
+            :ARG1-of (d2 / describe-01
+                         :ARG0 (f2 / figure
+                                   :mod "4A")
+                         :ARG1 s2)
+            :ARG1-of (f / follow-01
+                        :ARG2 (t / treat-04
+                                 :ARG2 (a2 / agent
+                                           :ARG1-of (s / single-02)))))
+   :ARG2 (s2 / see-01
+             :ARG1 (p2 / protein
+                       :name (n2 / name
+                                 :op1 "PARP")
+                       :ARG1-of (c4 / cleave-01
+                                    :ARG1-of (m / mark-01)))
+             :location (c5 / cell-line
+                           :name (n3 / name
+                                     :op1 "H3122"))
+             :ARG1-of (c6 / contrast-01
+                          :ARG2 (s3 / see-01
+                                    :polarity "-"
+                                    :ARG1 p2
+                                    :location (c7 / cell-line
+                                                  :mod (o / other)
+                                                  :ARG1-of (t2 / test-01))))
+             :time (a3 / administer-01
+                       :ARG1 (i / inhibit-01
+                                :ARG0 (o2 / or
+                                          :op1 (s4 / small-molecule
+                                                   :name (n4 / name
+                                                             :op1 "ZSTK474"))
+                                          :op2 (s5 / small-molecule
+                                                   :name (n5 / name
+                                                             :op1 "PI-103")))
+                                :mod (d3 / dual)))))
+
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The NSCLC (H3122 and H1437), breast cancer (MDA-MB231) and colon cancer (HCT116) lines, which showing major synergy upon dual inhibition, were further studied for cell signaling in response to the inhibitors.
+# ::file pmid_2325_9591_106.txt
+# ::date 2015-08-23T06:58:06
+# ::id pmid_2325_9591.106
+(s / study-01
+      :ARG1 (a / and
+            :op1 (c / cell-line
+                  :ARG1-of (m / mean-01
+                        :ARG2 (a2 / and
+                              :op1 (c2 / cell-line
+                                    :name (n3 / name :op1 "H3122"))
+                              :op2 (c3 / cell-line
+                                    :name (n4 / name :op1 "H1437"))))
+                  :mod (d / disease
+                        :name (n / name :op1 "NSCLC")))
+            :op2 (c4 / cell-line
+                  :ARG1-of (m2 / mean-01
+                        :ARG2 (c6 / cell-line
+                              :name (n5 / name :op1 "MDA-MB231")))
+                  :mod (d3 / disease
+                        :wiki "Breast_cancer"
+                        :name (n2 / name :op1 "breast" :op2 "cancer")))
+            :op3 (c7 / cell-line
+                  :ARG1-of (m3 / mean-01
+                        :ARG2 (c10 / cell-line
+                              :name (n6 / name :op1 "HCT116")))
+                  :mod (d4 / disease
+                        :wiki "Colorectal_cancer"
+                        :name (n7 / name :op1 "colon" :op2 "cancer")))
+            :ARG0-of (s2 / show-01
+                  :ARG1 (s3 / synergize-01
+                        :ARG1-of (m4 / major-02))
+                  :time (a3 / after
+                        :op1 (i2 / inhibit-01
+                              :mod (d2 / dual)))))
+      :degree (f / further)
+      :purpose (s4 / signal-07
+            :ARG1 (c11 / cell)
+            :ARG2-of (r / respond-01
+                  :ARG1 (s5 / small-molecule
+                        :ARG0-of (i3 / inhibit-01)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All the cell lines downregulated pAKT and its downstream target pS6 completely in response to 6h of treatment with the PI3K inhibitor ZSTK474 or PI-103 (3.3 μM) (Figure <xref ref-type="fig" rid="F3">3A</xref>).
+# ::file pmid_2325_9591_107.txt
+# ::date 2015-08-23T07:03:47
+# ::id pmid_2325_9591.107
+(d / downregulate-01
+   :ARG0 (c / cell-line
+            :mod (a / all))
+   :ARG1 (a2 / and
+             :op1 (e / enzyme
+                     :name (n / name
+                              :op1 "AKT")
+                     :ARG3-of (p / phosphorylate-01
+                                 :ARG3 p3))
+             :op2 (p3 / protein
+                      :name (n2 / name
+                                :op1 "S6")
+                      :ARG1-of (t2 / target-01
+                                   :ARG0 e
+                                   :location (d2 / downstream))))
+   :ARG2-of (r / respond-01
+               :ARG1 (t3 / treat-04
+                         :ARG2 (o / or
+                                  :op1 (s / small-molecule
+                                          :name (n3 / name
+                                                    :op1 "ZSTK474")
+                                          :quant (c3 / concentration-quantity
+                                                     :quant "3.3"
+                                                     :unit (m / micromolar)))
+                                  :op2 (s2 / small-molecule
+                                           :name (n4 / name
+                                                     :op1 "PI-103")
+                                           :quant c3)
+                                  :ARG0-of (i2 / inhibit-01
+                                               :ARG1 (p2 / protein-family
+                                                         :name (n5 / name
+                                                                   :op1 "PI3K"))))
+                         :duration (t4 / temporal-quantity
+                                       :quant "6"
+                                       :unit (h / hour)))
+               :ARG1-of (c2 / complete-02))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "3A")))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Downregulation of p4E-BP1 was also noted with all the cell lines tested, but it was complete only in the H3122 cell line (Figure <xref ref-type="fig" rid="F3">3A</xref>).
+# ::file pmid_2325_9591_108.txt
+# ::date 2015-08-23T07:38:50
+# ::id pmid_2325_9591.108
+(c2 / contrast-01
+    :ARG1 (n / note-01
+             :ARG1 (d / downregulate-01
+                      :ARG1 (p / protein
+                               :name (n2 / name
+                                         :op1 "4E-BP1")
+                               :ARG3-of (p2 / phosphorylate-01))
+                      :location (c / cell-line
+                                   :ARG1-of (t / test-01))))
+    :ARG2 (c3 / complete-02
+              :ARG1 d
+              :location (c4 / cell-line
+                            :name (n3 / name
+                                      :op1 "H3122")
+                            :mod (o / only)))
+    :ARG1-of (d2 / describe-01
+                 :ARG0 (f / figure
+                          :mod "3A")))
+
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, concurrent activation of pERK1/2 was recognized in the H3122, MDA-MB231 and HCT116 cell lines during PI3K inhibitor treatment (Figure <xref ref-type="fig" rid="F3">3A</xref>).
+# ::file pmid_2325_9591_109.txt
+# ::date 2015-08-23T07:45:17
+# ::id pmid_2325_9591.109
+(a / and
+      :op2 (r / recognize-01
+            :ARG1 (a2 / activate-01
+                  :ARG1 (e / enzyme
+                        :name (n / name :op1 "ERK1/2")
+                        :ARG3-of (p / phosphorylate-01))
+                  :ARG1-of (c / concurrent-02))
+            :location (a3 / and
+                  :op1 (c2 / cell-line
+                        :name (n2 / name :op1 "H3122"))
+                  :op2 (c3 / cell-line
+                        :name (n3 / name :op1 "MDA-MB231"))
+                  :op3 (c4 / cell-line
+                        :name (n4 / name :op1 "HCT116")))
+            :time (t2 / treat-04
+                  :ARG2 (s / small-molecule
+                        :ARG0-of (i2 / inhibit-01
+                              :ARG1 (p2 / protein-family
+                                    :name (n5 / name :op1 "PI3K"))))))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "3A")))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt When the cell lines were treated with the MEK inhibitor CI-1040 (1 μM, 6 h), complete (H3122, H1437) or marked (MDA-MB231, HCT116) downregulation of pERK1/2 was seen (Figure <xref ref-type="fig" rid="F3">3A</xref>).
+# ::file pmid_2325_9591_110.txt
+# ::date 2015-08-23T08:05:45
+# ::id pmid_2325_9591.110
+(s / see-01
+   :ARG1 (o / or
+            :op1 (d / downregulate-01
+                    :ARG1 (e / enzyme
+                             :name (n2 / name
+                                       :op1 "ERK1/2")
+                             :ARG3-of (p2 / phosphorylate-01))
+                    :ARG1-of (c3 / complete-02)
+                    :location (a / and
+                                 :op1 (c4 / cell-line
+                                          :name (n4 / name
+                                                    :op1 "H3122"))
+                                 :op2 (c5 / cell-line
+                                          :name (n5 / name
+                                                    :op1 "H1437"))))
+            :op2 (d2 / downregulate-01
+                     :ARG1 e
+                     :location (a2 / and
+                                   :op1 (c6 / cell-line
+                                            :name (n6 / name
+                                                      :op1 "MDA-MB231"))
+                                   :op2 (c7 / cell-line
+                                            :name (n7 / name
+                                                      :op1 "HCT116")))
+                     :degree (m3 / marked)))
+   :time (t2 / treat-04
+             :ARG1 (c / cell-line)
+             :ARG2 (s2 / small-molecule
+                       :name (n3 / name
+                                 :op1 "CI-1040")
+                       :ARG0-of (i2 / inhibit-01
+                                    :ARG1 (p / protein-family
+                                             :name (n / name
+                                                      :op1 "MEK")))
+                       :quant (c2 / concentration-quantity
+                                  :quant "1"
+                                  :unit (m / micromolar)))
+             :duration (t3 / temporal-quantity
+                           :quant "6"
+                           :unit (h / hour)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "3A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This was accompanied by upregulation of pAKT in the H3122 and MDA-MB231 lines, but not by upregulation of pS6 or p4E-BP1 (H3122) (Figure <xref ref-type="fig" rid="F3">3A</xref>).
+# ::file pmid_2325_9591_111.txt
+# ::date 2015-08-23T08:15:41
+# ::id pmid_2325_9591.111
+(c / contrast-01
+   :ARG1 (a / accompany-01
+            :ARG0 (u / upregulate-01
+                     :ARG1 (e / enzyme
+                              :name (n / name
+                                       :op1 "AKT")
+                              :ARG3-of (p / phosphorylate-01
+                                          :ARG3 p3
+                                          :ARG3 p2))
+                     :location (a2 / and
+                                   :op1 (c2 / cell-line
+                                            :name (n2 / name
+                                                      :op1 "H3122"))
+                                   :op2 (c3 / cell-line
+                                            :name (n3 / name
+                                                      :op1 "MDA-MB231"))))
+            :ARG1 (t / this))
+   :ARG2 (a3 / accompany-01
+             :polarity "-"
+             :ARG0 (u2 / upregulate-01
+                       :ARG1 (o / or
+                                :op1 (p3 / protein
+                                         :name (n4 / name
+                                                   :op1 "S6"))
+                                :op2 (p2 / protein
+                                         :name (n5 / name
+                                                   :op1 "4E-BP1")))
+                       :location c2)
+             :ARG1 t)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3A")))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt p4E-BP1 was markedly upregulated in the MDA-MB231 line in response to CI-1040 treatment (Figure <xref ref-type="fig" rid="F3">3A</xref>).
+# ::file pmid_2325_9591_112.txt
+# ::date 2015-08-23T08:21:01
+# ::id pmid_2325_9591.112
+(u / upregulate-01
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "4E-BP1")
+            :ARG3-of (p2 / phosphorylate-01))
+   :manner (m / marked)
+   :location (c / cell-line
+                :name (n2 / name
+                          :op1 "MDA-MB231"))
+   :ARG2-of (r / respond-01
+               :ARG1 (t / treat-04
+                        :ARG2 (s / small-molecule
+                                 :name (n3 / name
+                                           :op1 "CI-1040"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3A")))
+
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt When the PI3K and MEK inhibitors were administered simultaneously the inhibition of the targets was similar to that seen with single inhibitor treatment (Figure <xref ref-type="fig" rid="F3">3A</xref>).
+# ::file pmid_2325_9591_113.txt
+# ::date 2015-08-23T08:40:22
+# ::id pmid_2325_9591.113
+(r2 / resemble-01
+      :ARG1 (i2 / inhibit-01
+            :ARG1 (t / thing
+                  :ARG1-of (t2 / target-01)))
+      :ARG2 (i3 / inhibit-01
+            :ARG1-of (s / see-01)
+            :time (t3 / treat-04
+                  :ARG2 (s2 / small-molecule
+                        :ARG0-of (i4 / inhibit-01)
+                        :ARG1-of (s3 / single-02))))
+      :time (a / administer-01
+            :ARG1 (a2 / and
+                  :op1 (s5 / small-molecule
+                        :ARG0-of (i5 / inhibit-01
+                              :ARG1 (p2 / protein-family
+                                    :name (n2 / name :op1 "PI3K"))))
+                  :op2 (s6 / small-molecule
+                        :ARG0-of (i6 / inhibit-01
+                              :ARG1 (p / protein-family
+                                    :name (n / name :op1 "MEK")))))
+            :manner (s4 / simultaneous))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "3A")))
+
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Dual inhibition was able to overcome the single inhibitor-induced stimulation of parallel pathway activation (Figure <xref ref-type="fig" rid="F3">3A</xref>).
+# ::file pmid_2325_9591_114.txt
+# ::date 2015-08-23T08:46:57
+# ::id pmid_2325_9591.114
+(c / capable-01
+      :ARG1 (i / inhibit-01
+            :mod (d / dual))
+      :ARG2 (o / overcome-01
+            :ARG0 i
+            :ARG1 (s3 / stimulate-01
+                  :ARG1 (a / activate-01
+                        :ARG1 (p2 / pathway
+                              :ARG1-of (p3 / parallel-01)))
+                  :ARG2-of (i3 / induce-01
+                        :ARG0 (s / small-molecule
+                              :ARG1-of (s2 / single-02)
+                              :ARG0-of (i2 / inhibit-01)))))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure :mod "3A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We were not able to detect any significant difference in the activity of either pS6 or p4E-BP1 following dual inhibitor treatment as compared with the single PI3K inhibitor treatments (Figure <xref ref-type="fig" rid="F3">3A</xref>).
+# ::file pmid_2325_9591_115.txt
+# ::date 2015-08-23T08:58:04
+# ::id pmid_2325_9591.115
+(c / capable-01
+   :polarity "-"
+   :ARG1 (w / we)
+   :ARG2 (d / detect-01
+            :ARG0 w
+            :ARG1 (d2 / differ-02
+                      :ARG3 (a2 / activity-06
+                                :ARG0 (o / or
+                                         :op1 (p / protein
+                                                 :name (n / name
+                                                          :op1 "S6")
+                                                 :ARG3-of (p2 / phosphorylate-01
+                                                              :ARG3 p3))
+                                         :op2 (p3 / protein
+                                                  :name (n2 / name
+                                                            :op1 "4E-BP1")))
+                                :ARG1-of (f / follow-01
+                                            :ARG2 (t2 / treat-04
+                                                      :ARG2 (s2 / small-molecule
+                                                                :ARG0-of (i2 / inhibit-01
+                                                                             :mod (d3 / dual)))
+                                                      :compared-to (t3 / treat-04
+                                                                       :ARG2 (s3 / small-molecule
+                                                                                 :ARG1-of (s4 / single-02)
+                                                                                 :ARG0-of (i3 / inhibit-01
+                                                                                              :ARG1 (p4 / protein-family
+                                                                                                        :name (n3 / name
+                                                                                                                  :op1 "PI3K"))))))))
+                      :mod (a / any)
+                      :ARG1-of (s / significant-02)))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "3A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Further analysis of the dual inhibition of the central RTKs and signaling nodes was carried out with the PathScan Antibody Array, which investigates the phosphorylation status of 28 RTKs and 11 signaling nodes concurrently.
+# ::file pmid_2325_9591_116.txt
+# ::date 2015-08-23T09:05:22
+# ::id pmid_2325_9591.116
+(c / carry-out-03
+   :ARG0 (p3 / product
+             :name (n3 / name
+                       :op1 "PathScan"
+                       :op2 "Antibody"
+                       :op3 "Array")
+             :ARG0-of (i2 / investigate-01
+                          :ARG1 (s2 / status
+                                    :mod (p4 / phosphorylate-01
+                                             :ARG1 (a4 / and
+                                                       :op1 (p5 / protein
+                                                                :quant "28"
+                                                                :ARG1-of (i3 / include-91
+                                                                             :ARG2 (p6 / protein-family
+                                                                                       :name (n4 / name
+                                                                                                 :op1 "RTK"))))
+                                                       :op2 (n5 / node
+                                                                :quant "11"
+                                                                :ARG0-of (s3 / signal-07)))))
+                          :ARG1-of (c3 / concurrent-02)))
+   :ARG1 (a / and
+            :op1 (a2 / analyze-01
+                     :ARG1 (a3 / and
+                               :op1 (i / inhibit-01
+                                       :ARG1 (p / protein
+                                                :name (n / name
+                                                         :op1 "RTK")
+                                                :mod (c2 / central))
+                                       :mod (d / dual))
+                               :op2 (n2 / node
+                                        :ARG0-of s3))
+                     :degree (f / further))))
+
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Attention was focused on the dual inhibition-sensitive H1437 and MDA-MB231 lines.
+# ::file pmid_2325_9591_117.txt
+# ::date 2015-08-23T09:15:57
+# ::id pmid_2325_9591.117
+(f / focus-01
+      :ARG1 (a / attend-02 :ARG1 "a2")
+      :ARG2 (a2 / and
+            :op1 (c / cell-line
+                  :name (n / name :op1 "H1437")
+                  :ARG0-of (s / sensitive-03
+                        :ARG1 (i / inhibit-01
+                              :mod (d / dual))))
+            :op2 (c2 / cell-line
+                  :name (n2 / name :op1 "MDA-MB231")
+                  :ARG0-of s)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A low level of RTK activation was noted in untreated cells of both cell lines, H1437 showing some activity with c-MET (Figure <xref ref-type="fig" rid="F5">5</xref>), while in the signaling nodes, pAKT, S6 and ERK1/2 showed activity in both cell lines and Src activity was also noted in H1437.
+# ::file pmid_2325_9591_118.txt
+# ::date 2015-08-25T23:59:57
+# ::id pmid_2325_9591.118
+(c3 / contrast-01
+    :ARG1 (n / note-02
+             :ARG1 (l / level
+                      :ARG1-of (l2 / low-04)
+                      :degree-of (a2 / activate-01
+                                     :ARG1 (e / enzyme
+                                              :name (n2 / name
+                                                        :op1 "RKT"))))
+             :location (c / cell-line
+                          :ARG1-of (t / treat-04
+                                      :polarity "-")
+                          :mod (b / both)
+                          :ARG1-of (m / mean-01
+                                      :ARG2 (c2 / cell-line
+                                                :name (n3 / name
+                                                          :op1 "H1437")
+                                                :ARG0-of (s / show-01
+                                                            :ARG1 (a / activity-06
+                                                                     :condition (t2 / treat-04
+                                                                                    :ARG1 c2
+                                                                                    :ARG2 (p / protein
+                                                                                             :name (n4 / name
+                                                                                                       :op1 "c-MET")))
+                                                                     :mod (s5 / some))
+                                                            :ARG1-of (d / describe-01
+                                                                        :ARG0 (f / figure
+                                                                                 :mod "5")))))))
+    :ARG2 (a5 / and
+              :op1 (s2 / show-01
+                       :ARG0 (a4 / and
+                                 :op1 (e2 / enzyme
+                                          :name (n5 / name
+                                                    :op1 "AKT")
+                                          :ARG3-of (p2 / phosphorylate-01))
+                                 :op2 (p4 / protein
+                                          :name (n6 / name
+                                                    :op1 "S6"))
+                                 :op3 (s3 / slash
+                                          :op1 (e4 / enzyme
+                                                   :name (n7 / name
+                                                             :op1 "ERK1"))
+                                          :op2 (e5 / enzyme
+                                                   :name (n8 / name
+                                                             :op1 "ERK2"))))
+                       :ARG1 (a3 / activity-06
+                                 :location c)
+                       :location (n9 / node
+                                     :ARG0-of (s4 / signal-07)))
+              :op2 (n10 / note-02
+                        :ARG1 (a6 / activity-06
+                                  :ARG0 (p3 / protein
+                                            :name (n11 / name
+                                                       :op1 "Src")))
+                        :location c2
+                        :mod (a7 / also))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the drug-treated cells, ZSTK474 (24 h) was able to inhibit both AKT and S6 phosphorylation, S6 showing a more pronounced effect (Figure <xref ref-type="fig" rid="F5">5</xref>).
+# ::file pmid_2325_9591_119.txt
+# ::date 2015-08-26T00:31:17
+# ::id pmid_2325_9591.119
+(c / capable-01
+   :ARG1 (s2 / small-molecule
+             :name (n / name
+                      :op1 "ZSTK474"))
+   :ARG2 (i / inhibit-01
+            :ARG1 (p2 / phosphorylate-01
+                      :ARG1 (a / and
+                               :op1 (e2 / enzyme
+                                        :name (n2 / name
+                                                  :op1 "AKT"))
+                               :op2 (p / protein
+                                       :name (n3 / name
+                                                 :op1 "S6")
+                                       :ARG0-of (s / show-01
+                                                   :ARG1 (a2 / affect-01
+                                                             :ARG1-of (p3 / pronounced-02))
+                                                   :ARG1-of (d2 / describe-01
+                                                                :ARG0 (f / figure
+                                                                         :mod "5"))))))
+            :time (a3 / after
+                      :op1 (t / temporal-quantity
+                              :quant "24"
+                              :unit (h / hour))))
+   :location (c2 / cell
+                 :ARG1-of (t2 / treat-04
+                              :ARG2 (d / drug))))
+
+# ::save-date Mon Aug 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, ZSTK474 induced a marked broad feedback RTK activation in the H1437 cell line (Figure <xref ref-type="fig" rid="F5">5</xref>).
+# ::file pmid_2325_9591_120.txt
+# ::date 2015-08-26T00:46:10
+# ::id pmid_2325_9591.120
+(a / and
+   :op2 (i / induce-01
+           :ARG0 (s / small-molecule
+                    :name (n / name
+                             :op1 "ZSTK474"))
+           :ARG2 (a2 / activate-01
+                     :ARG1 (e2 / enzyme
+                               :name (n2 / name
+                                         :op1 "RTK"))
+                     :mod (f / feedback)
+                     :mod (b / broad)
+                     :ARG1-of (m / mark-01))
+           :location (c / cell-line
+                        :name (n3 / name
+                                  :op1 "H1437"))
+           :ARG1-of (d / describe-01
+                       :ARG0 (f2 / figure
+                                 :mod "5"))))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt CI-1040 (24 h) effects were limited to the inhibition of ERK1/2 activity.
+# ::file pmid_2325_9591_121.txt
+# ::date 2015-08-26T00:49:57
+# ::id pmid_2325_9591.121
+(l / limit-01
+   :ARG1 (a / affect-01
+            :ARG0 (s2 / small-molecule
+                      :name (n3 / name
+                                :op1 "CI-1040"))
+            :time (a3 / after
+                      :op1 (t / temporal-quantity
+                              :quant "24"
+                              :unit (h / hour))))
+   :ARG2 (i / inhibit-01
+            :ARG1 (a2 / activity-06
+                      :ARG0 (s / slash
+                               :op1 (e / enzyme
+                                       :name (n / name
+                                                :op1 "ERK1"))
+                               :op2 (e2 / enzyme
+                                        :name (n2 / name
+                                                  :op1 "ERK2"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt When dual inhibition with ZSTK474 and CI-1040 was administered, downregulation of both pAKT/S6 and ERK1/2 was noted, but otherwise no marked difference was evident relative to the single agent treatments (Figure <xref ref-type="fig" rid="F5">5</xref>).
+# ::file pmid_2325_9591_122.txt
+# ::date 2015-08-26T00:54:29
+# ::id pmid_2325_9591.122
+(c / contrast-01
+   :ARG1 (n / note-02
+            :ARG1 (d / downregulate-01
+                     :ARG1 (a / and
+                              :op1 (s / slash
+                                      :op1 (e / enzyme
+                                              :name (n2 / name
+                                                        :op1 "AKT")
+                                              :ARG3-of (p / phosphorylate-01))
+                                      :op2 (p2 / protein
+                                               :name (n3 / name
+                                                         :op1 "S6")))
+                              :op2 (s2 / slash
+                                       :op1 (e3 / enzyme
+                                                :name (n4 / name
+                                                          :op1 "ERK1"))
+                                       :op2 (e4 / enzyme
+                                                :name (n5 / name
+                                                          :op1 "ERK2")))))
+            :condition (a2 / administer-01
+                           :ARG1 (i / inhibit-01
+                                    :ARG0 (a3 / and
+                                              :op1 (s3 / small-molecule
+                                                       :name (n6 / name
+                                                                 :op1 "ZSTK474"))
+                                              :op2 (s4 / small-molecule
+                                                       :name (n7 / name
+                                                                 :op1 "CI-1040"))))))
+   :ARG2 (e7 / evidence-01
+             :polarity "-"
+             :ARG1 (d2 / differ-02
+                       :ARG1-of (m / mark-01))
+             :ARG1-of (r / relative-05
+                         :ARG3 (t / treat-04
+                                  :ARG2 (o / or
+                                           :op1 s3
+                                           :op2 s4))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "5")))
+
+
+# ::save-date Mon Aug 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The results suggest specificity of the inhibitors for their targets and the existence of broad feedback activation.
+# ::file pmid_2325_9591_123.txt
+# ::date 2015-08-26T01:02:47
+# ::id pmid_2325_9591.123
+(s2 / suggest-01
+      :ARG0 (t2 / thing
+            :ARG2-of (r / result-01))
+      :ARG1 (a / and
+            :op1 (s / specific-02
+                  :ARG1 (m / molecular-physical-entity
+                        :ARG0-of (i / inhibit-01))
+                  :ARG2 (m2 / molecular-physical-entity
+                        :ARG1-of (t / target-01
+                              :ARG0 m)))
+            :op2 (a2 / activate-01
+                  :mod (f / feedback)
+                  :mod (b / broad))))
+
+# ::save-date Mon Aug 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Even though dual inhibition of PI3K and MEK was identified as an effective form of cancer therapy based on the <i>in vitro</i> models, administration of both drugs at doses inducing major downregulation of the target for long periods of time may be too toxic in a clinical setting.
+# ::file pmid_2325_9591_125.txt
+# ::date 2015-08-26T01:08:08
+# ::id pmid_2325_9591.125
+(h / have-concession-91
+   :ARG1 (p2 / possible-01
+             :ARG1 (t2 / toxic
+                       :degree (t3 / too)
+                       :domain (a3 / administer-01
+                                   :ARG1 (d3 / drug
+                                             :mod (b2 / both)
+                                             :ARG1-of (d4 / dose-01
+                                                          :ARG0-of (i4 / induce-01
+                                                                       :ARG2 (d5 / downregulate-01
+                                                                                 :ARG1 (m3 / molecular-physical-entity
+                                                                                           :ARG1-of (t4 / target-01))
+                                                                                 :time (p3 / period
+                                                                                           :ARG1-of (l / long-03))
+                                                                                 :ARG1-of (m2 / major-02))))))
+                       :condition (s / setting
+                                     :mod (c / clinical))))
+   :ARG2 (i / identify-01
+            :ARG1 (i2 / inhibit-01
+                      :ARG1 (a2 / and
+                                :op1 (e / enzyme
+                                        :name (n3 / name
+                                                  :op1 "PI3K"))
+                                :op2 (e2 / enzyme
+                                         :name (n4 / name
+                                                   :op1 "MEK"))))
+            :ARG2 (f / form
+                     :topic (t / therapy
+                               :mod (d2 / disease
+                                        :wiki "Cancer"
+                                        :name (n2 / name
+                                                  :op1 "cancer")))
+                     :ARG0-of (e3 / effective-04))
+            :ARG1-of (b / base-02
+                        :ARG2 (m / model
+                                 :mod (i3 / in-vitro)))))
+
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We therefore set out to investigate concurrent administration of PI3K and MEK inhibitors to cell lines sensitive to dual inhibition with alternative dosing schedules.
+# ::file pmid_2325_9591_126.txt
+# ::date 2015-08-26T01:49:39
+# ::id pmid_2325_9591.126
+(s / set-out-07
+      :ARG0 (w / we)
+      :ARG1 (i2 / investigate-01
+            :ARG0 w
+            :ARG1 (a2 / administer-01
+                  :ARG1 (a3 / and
+                        :op1 (m / molecular-physical-entity
+                              :ARG0-of (i / inhibit-01
+                                    :ARG1 (p2 / protein-family
+                                          :name (n2 / name :op1 "PI3K"))))
+                        :op2 (m2 / molecular-physical-entity
+                              :ARG0-of (i3 / inhibit-01
+                                    :ARG1 (p / protein-family
+                                          :name (n3 / name :op1 "MEK")))))
+                  :ARG2 (c3 / cell-line
+                        :ARG0-of (s2 / sensitive-03
+                              :ARG1 (i4 / inhibit-01
+                                    :ARG0 (s3 / schedule-01
+                                          :ARG1 (d2 / dose-01)
+                                          :ARG1-of (a4 / alternate-01))
+                                    :mod (d / dual))))
+                  :ARG1-of (c2 / concurrent-02)))
+      :ARG1-of (c / cause-01))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The MTS assays showed that for maximal reduction in the number of living cells in all the lines, dual inhibition needed to be administered for longer periods of time.
+# ::file pmid_2325_9591_127.txt
+# ::date 2015-08-26T02:00:30
+# ::id pmid_2325_9591.127
+(s / show-01
+   :ARG0 (a / assay-01
+            :instrument (s2 / small-molecule
+                            :name (n3 / name
+                                      :op1 "MTS")))
+   :ARG1 (n / need-01
+            :ARG0 (r / reduce-01
+                     :ARG1 (n2 / number
+                               :quant-of (c / cell
+                                            :ARG0-of (l2 / live-01)
+                                            :part-of (c2 / cell-line
+                                                         :mod (a3 / all))))
+                     :ARG2 (m3 / maximum))
+            :ARG1 (a2 / administer-01
+                      :ARG1 (i / inhibit-01
+                               :mod (d / dual))
+                      :duration (p / period
+                                   :ARG1-of (l / long-03
+                                               :degree (m2 / more))))))
+
+
+# ::save-date Mon Aug 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The therapy was significantly more effective when it was administered throughout the 72 h experiment as compared with 15 min, 4 h or 24 h periods (Figure <xref ref-type="fig" rid="F6">6</xref>).
+# ::file pmid_2325_9591_128.txt
+# ::date 2015-08-26T02:06:10
+# ::id pmid_2325_9591.128
+(e / effective-04
+      :ARG0 (t / therapy)
+      :ARG1-of (s / significant-02)
+      :condition (a / administer-01
+            :ARG1 t
+            :time (e2 / experiment-01
+                  :duration (t2 / temporal-quantity
+                        :quant "72"
+                        :unit (h / hour)
+                        :compared-to (o / or
+                              :op1 (p / period
+                                    :consist-of (t3 / temporal-quantity
+                                          :quant "15"
+                                          :unit (m2 / minute)))
+                              :op2 (p2 / period
+                                    :consist-of (t4 / temporal-quantity
+                                          :quant "4"
+                                          :unit (h2 / hour)))
+                              :op3 (p3 / period
+                                    :consist-of (t5 / temporal-quantity
+                                          :quant "24"
+                                          :unit (h3 / hour)))))))
+      :degree (m / more)
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "6")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, maximal cytotoxicity was seen in the <i>ALK</i> translocated H3122 line even with short courses of ALK inhibition (15 min), while similar cytotoxicity was seen with 72 h inhibition of PI3K and MEK concurrently (Figure <xref ref-type="fig" rid="F6">6</xref>), even though both approaches induced major inhibition of phosphorylated AKT and ERK in Western blots after 6 h treatments (Figure <xref ref-type="fig" rid="F3">3A</xref>).
+# ::file pmid_2325_9591_129.txt
+# ::date 2015-08-26T02:12:31
+# ::id pmid_2325_9591.129
+(h2 / have-concession-91
+    :ARG1 (c3 / contrast-01
+              :ARG1 (s / see-01
+                       :ARG1 (c4 / cytotoxic
+                                 :degree (m / maximal)
+                                 :condition (c2 / course-01
+                                                :ARG1-of (s2 / short-07)
+                                                :consist-of (i2 / inhibit-01
+                                                                :ARG1 "e5")
+                                                :ARG1-of (m2 / mean-01
+                                                             :ARG2 (t3 / temporal-quantity
+                                                                       :quant "15"
+                                                                       :unit (m3 / minute)))))
+                       :ARG2-of (i / interest-01)
+                       :location (c / cell-line
+                                    :name (n4 / name
+                                              :op1 "H3122")
+                                    :ARG1-of (t2 / translocate-01
+                                                 :ARG0 (e5 / enzyme
+                                                           :name (n5 / name
+                                                                     :op1 "ALK")))))
+              :ARG2 (s3 / see-01
+                        :ARG1 (c5 / cytotoxic
+                                  :ARG1-of (r2 / resemble-01
+                                               :ARG2 c4))
+                        :concession (i3 / inhibit-01
+                                        :ARG1 (a / and
+                                                 :op1 (e / enzyme
+                                                         :name (n6 / name
+                                                                   :op1 "PI3K"))
+                                                 :op2 (e2 / enzyme
+                                                          :name (n7 / name
+                                                                    :op1 "MEK"))
+                                                 :ARG1-of (c6 / concurrent-02))
+                                        :duration (t / temporal-quantity
+                                                     :quant "72"
+                                                     :unit (h / hour)))
+                        :ARG1-of (d / describe-01
+                                    :ARG0 (f / figure
+                                             :mod "6"))))
+    :ARG2 (i4 / induce-01
+              :ARG0 (a2 / approach-02
+                        :mod (b / both))
+              :ARG2 (i5 / inhibit-01
+                        :ARG1 (a3 / and
+                                  :op1 (e3 / enzyme
+                                           :name (n8 / name
+                                                     :op1 "AKT")
+                                           :ARG3-of (p3 / phosphorylate-01
+                                                        :ARG3 e4))
+                                  :op2 (e4 / enzyme
+                                           :name (n9 / name
+                                                     :op1 "ERK")))
+                        :ARG1-of (m4 / major-02))
+              :time (a4 / after
+                        :op1 (t4 / treat-04
+                                 :duration (t5 / temporal-quantity
+                                               :quant "6"
+                                               :unit (h3 / hour))))
+              :ARG1-of (d2 / describe-01
+                           :ARG0 (f2 / figure
+                                     :mod "3A"))
+              :location (i6 / immunoblot-01)))
+
+
+# ::save-date Mon Sep 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Since the results showed that dual inhibition needed to be administered for longer periods of time for maximal cytotoxicity, we turned next to investigating whether both inhibitors are required throughout the period of exposure.
+# ::file pmid_2325_9591_130.txt
+# ::date 2015-08-26T03:28:52
+# ::id pmid_2325_9591.130
+(c / cause-01
+      :ARG0 (s / show-01
+            :ARG0 (t2 / thing
+                  :ARG2-of (r / result-01))
+            :ARG1 (n / need-01
+                  :ARG0 (i / inhibit-01
+                        :mod (d / dual))
+                  :ARG1 (a / administer-01
+                        :ARG1 i
+                        :duration (p / period
+                              :consist-of (t3 / time)
+                              :ARG1-of (l / long-03
+                                    :degree (m / more))))
+                  :purpose (c2 / cytotoxic
+                        :degree (m2 / maximal))))
+      :ARG1 (t / turn-02
+            :ARG1 (w / we)
+            :ARG2 (i2 / investigate-01
+                  :ARG0 w
+                  :ARG1 (r2 / require-01
+                        :mode "interrogative"
+                        :ARG1 (m3 / molecular-physical-entity
+                              :ARG0-of (i3 / inhibit-01)
+                              :mod (b / both))
+                        :time (p2 / period
+                              :duration-of (e / expose-01))))
+            :time (n2 / next)))
+
+
+# ::save-date Mon Aug 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The dual inhibition-sensitive cell lines were exposed to one inhibitor throughout the treatment period (72 h) while the other inhibitor was administered concurrently for 15 min, 4 h or 24 h at the beginning of the drug exposure.
+# ::file pmid_2325_9591_131.txt
+# ::date 2015-08-26T03:37:33
+# ::id pmid_2325_9591.131
+(c2 / contrast-01
+      :ARG1 (e / expose-01
+            :ARG1 (c / cell-line
+                  :ARG0-of (s / sensitive-03
+                        :ARG1 (i2 / inhibit-01
+                              :mod (d / dual))))
+            :ARG2 (m / molecular-physical-entity
+                  :quant "1"
+                  :ARG0-of (i / inhibit-01))
+            :duration (t2 / treat-04
+                  :ARG1-of (m2 / mean-01
+                        :ARG2 (t3 / temporal-quantity
+                              :quant "72"
+                              :unit (h / hour)))))
+      :ARG2 (a / administer-01
+            :ARG1 (m3 / molecular-physical-entity
+                  :ARG0-of i)
+            :ARG1-of (c3 / concurrent-02)
+            :duration (o / or
+                  :op1 (t4 / temporal-quantity
+                        :quant "15"
+                        :unit (m4 / minute))
+                  :op2 (t5 / temporal-quantity
+                        :quant "4"
+                        :unit (h2 / hour))
+                  :op3 (t6 / temporal-quantity
+                        :quant "24"
+                        :unit (h3 / hour)))
+            :time (b / begin-01
+                  :ARG1 (e2 / expose-01
+                        :ARG2 (d2 / drug)))))
+
+
+# ::save-date Thu Aug 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The results varied significantly between the cell lines tested.
+# ::file pmid_2325_9591_132.txt
+# ::date 2015-08-27T02:55:02
+# ::id pmid_2325_9591.132
+(v / vary-01
+      :ARG1 (t / thing
+            :ARG2-of (r / result-01))
+      :ARG5 (c / cell-line
+            :ARG1-of (t2 / test-01))
+      :ARG1-of (s / significant-02))
+
+# ::save-date Mon Sep 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the H1437 and MDA-MB231 lines concurrent inhibition of PI3K and MEK for 15 min with continued PI3K inhibition for 72 h achieved similar cytotoxicity to concurrent inhibition for 72 h (Figure <xref ref-type="fig" rid="F6">6</xref>).
+# ::file pmid_2325_9591_133.txt
+# ::date 2015-08-27T03:01:13
+# ::id pmid_2325_9591.133
+(a / achieve-01
+   :ARG0 (a2 / and
+             :op1 (i / inhibit-01
+                     :ARG1 (a3 / and
+                               :op1 (e / enzyme
+                                       :name (n2 / name
+                                                 :op1 "PI3K"))
+                               :op2 (e2 / enzyme
+                                        :name (n3 / name
+                                                  :op1 "MEK")))
+                     :ARG1-of (c / concurrent-02)
+                     :duration (t / temporal-quantity
+                                  :quant "15"
+                                  :unit (m / minute))
+                     :location (a4 / and
+                                   :op1 (c2 / cell-line
+                                            :name (n4 / name
+                                                      :op1 "H1437"))
+                                   :op2 (c3 / cell-line
+                                            :name (n5 / name
+                                                      :op1 "MDA-MB231"))))
+             :op2 (i2 / inhibit-01
+                      :ARG1 e
+                      :duration (t2 / temporal-quantity
+                                    :quant "72"
+                                    :unit (h / hour))
+                      :ARG1-of (c4 / continue-01)))
+   :ARG1 (c5 / cytotoxic
+             :ARG1-of (r / resemble-01
+                         :ARG2 (i3 / inhibit-01
+                                   :ARG1-of c
+                                   :duration (t3 / temporal-quantity
+                                                 :quant "72"
+                                                 :unit (h2 / hour)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6")))
+
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Conversely, when these lines were exposed to the MEK inhibitor throughout the treatment period, short concurrent exposures (15 min, 4 h or 24 h) to PI3K inhibitors did not induce any comparable cytotoxicity (Figure <xref ref-type="fig" rid="F6">6</xref>).
+# ::file pmid_2325_9591_134.txt
+# ::date 2015-08-27T03:13:55
+# ::id pmid_2325_9591.134
+(c / contrast-01
+      :ARG2 (i2 / induce-01
+            :polarity "-"
+            :ARG0 (e / expose-01
+                  :ARG2 (m2 / molecular-physical-entity
+                        :ARG0-of (i / inhibit-01
+                              :ARG1 (p3 / protein-family
+                                    :name (n2 / name :op1 "PI3K"))))
+                  :ARG1-of (c2 / concurrent-02)
+                  :ARG1-of (s / short-07)
+                  :duration (o / or
+                        :op1 (t2 / temporal-quantity
+                              :quant "15"
+                              :unit (m / minute))
+                        :op2 (t3 / temporal-quantity
+                              :quant "4"
+                              :unit (h / hour))
+                        :op3 (t4 / temporal-quantity
+                              :quant "24"
+                              :unit h)))
+            :ARG2 (c3 / cytotoxic
+                  :ARG1-of (c4 / comparable-03)
+                  :mod (a / any)))
+      :time (e3 / expose-01
+            :ARG1 (c5 / cell-line
+                  :mod (t5 / this))
+            :ARG2 (m3 / molecular-physical-entity
+                  :ARG0-of (i3 / inhibit-01
+                        :ARG1 (p / protein-family
+                              :name (n3 / name :op1 "MEK"))))
+            :duration (p2 / period
+                  :duration-of (t7 / treat-04)))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "6")))
+
+# ::save-date Wed Jan 20, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt On the other hand, the effects of dual inhibition with PI-103 occurred faster in the H1437 line than with ZSTK474, since shorter exposures to the drug (24 h) seemed to be sufficient for maximal cytotoxicity as compared with 72h of ZSTK474 (Figure <xref ref-type="fig" rid="F6">6</xref>).
+# ::file pmid_2325_9591_135.txt
+# ::date 2015-08-27T03:35:24
+# ::id pmid_2325_9591.135
+(c / contrast-01
+   :ARG2 (a / affect-01
+            :ARG0 (i / inhibit-01
+                     :ARG0 (s / small-molecule
+                              :name (n / name
+                                       :op1 "PI-103"))
+                     :mod (d / dual))
+            :location (c2 / cell-line
+                          :name (n2 / name
+                                    :op1 "H1437"))
+            :ARG1-of (f / fast-02
+                        :degree (m / more)
+                        :compared-to (i2 / inhibit-01
+                                         :ARG0 (s2 / small-molecule
+                                                   :name (n3 / name
+                                                             :op1 "ZSTK474")))))
+   :ARG1-of (c3 / cause-01
+                :ARG0 (s5 / seem-01
+                          :ARG1 (s3 / suffice-01
+                                    :ARG0 (e / expose-01
+                                             :ARG2 s
+                                             :ARG1-of (s4 / short-07
+                                                          :degree (m2 / more))
+                                             :ARG1-of (m3 / mean-01
+                                                          :ARG2 (t / temporal-quantity
+                                                                   :quant "24"
+                                                                   :unit (h / hour)))
+                                             :compared-to (e2 / expose-01
+                                                              :ARG2 s2
+                                                              :duration (t2 / temporal-quantity
+                                                                            :quant "72"
+                                                                            :unit (h2 / hour))))
+                                    :ARG1 (c4 / cytotoxic
+                                              :mod (m4 / maximal)))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "6")))
+
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the case of the H3122 and HCT116 lines, both the PI3K and MEK inhibitors needed to be administered throughout the treatment period for maximal cytotoxicity (Figure <xref ref-type="fig" rid="F6">6</xref>).
+# ::file pmid_2325_9591_136.txt
+# ::date 2015-08-27T03:49:23
+# ::id pmid_2325_9591.136
+(n2 / need-01
+      :ARG0 (c / cytotoxicity
+            :mod (m3 / maximal))
+      :ARG1 (a2 / administer-01
+            :ARG1 (a / and
+                  :op1 (m / molecular-physical-entity
+                        :ARG0-of (i / inhibit-01
+                              :ARG1 (p3 / protein-family
+                                    :name (n3 / name :op1 "PI3K"))))
+                  :op2 (m2 / molecular-physical-entity
+                        :ARG0-of (i2 / inhibit-01
+                              :ARG1 (p / protein-family
+                                    :name (n4 / name :op1 "MEK")))))
+            :duration (p2 / period
+                  :duration-of (t2 / treat-04)))
+      :location (a3 / and
+            :op1 (c2 / cell-line
+                  :name (n5 / name :op1 "H3122"))
+            :op2 (c3 / cell-line
+                  :name (n6 / name :op1 "HCT116")))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "6")))
+
+
+# ::save-date Thu Aug 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next investigated alternative dosing of the dual inhibition of cell signaling.
+# ::file pmid_2325_9591_137.txt
+# ::date 2015-08-27T03:57:54
+# ::id pmid_2325_9591.137
+(i / investigate-01
+      :ARG0 (w / we)
+      :ARG1 (d / dose-01
+            :ARG1 (i2 / inhibit-01
+                  :ARG1 (s / signal-07
+                        :ARG0 (c / cell))
+                  :mod (d2 / dual))
+            :ARG1-of (a / alternate-01))
+      :time (n / next))
+
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The dual inhibition-sensitive lines were exposed to the PI3K inhibitors and MEK inhibitor concurrently for 15 min, after which treatment was continued with a single inhibitor for the remainder of the 6 h period.
+# ::file pmid_2325_9591_138.txt
+# ::date 2015-08-27T04:02:57
+# ::id pmid_2325_9591.138
+(c3 / continue-01
+      :ARG1 (t3 / treat-04
+            :ARG2 (m4 / molecular-physical-entity
+                  :ARG1-of (s2 / single-02)
+                  :ARG0-of (i4 / inhibit-01)))
+      :duration (p / period
+            :ARG1-of (r / remain-01)
+            :ARG1-of (m5 / mean-01
+                  :ARG2 (t4 / temporal-quantity
+                        :quant "6"
+                        :unit (h / hour))))
+      :time (a2 / after
+            :op1 (e / expose-01
+                  :ARG1 (c / cell-line
+                        :ARG0-of (s / sensitive-03
+                              :ARG1 (i2 / inhibit-01
+                                    :mod (d / dual))))
+                  :ARG2 (a / and
+                        :op1 (m / molecular-physical-entity
+                              :ARG0-of (i / inhibit-01
+                                    :ARG1 (p2 / protein-family
+                                          :name (n2 / name :op1 "PI3K"))))
+                        :op2 (m2 / molecular-physical-entity
+                              :ARG0-of (i3 / inhibit-01
+                                    :ARG1 (p3 / protein-family
+                                          :name (n3 / name :op1 "MEK")))))
+                  :ARG1-of (c2 / concurrent-02)
+                  :duration (t2 / temporal-quantity
+                        :quant "15"
+                        :unit (m3 / minute)))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt pAKT downregulation was complete or nearly complete when the cells were treated for only 15 min and with PI3K inhibitors for 6 h (Figure <xref ref-type="fig" rid="F3">3B</xref>), while conversely, pERK1/2 recovered completely in 6 h when the cells were treated with the MEK inhibitor for 15 min (Figure <xref ref-type="fig" rid="F3">3B</xref>).
+# ::file pmid_2325_9591_139.txt
+# ::date 2015-08-27T04:39:59
+# ::id pmid_2325_9591.139
+(c4 / contrast-01
+    :ARG1 (o / or
+             :op1 (c / complete-02
+                     :ARG1 (d / downregulate-01
+                              :ARG1 (e / enzyme
+                                       :name (n2 / name
+                                                 :op1 "AKT")
+                                       :ARG3-of (p2 / phosphorylate-01)))
+                     :condition (a / and
+                                   :op1 (t2 / treat-04
+                                            :ARG1 (c3 / cell)
+                                            :duration (t3 / temporal-quantity
+                                                          :quant "15"
+                                                          :unit (m / minute)
+                                                          :mod (o2 / only)))
+                                   :op2 (t4 / treat-04
+                                            :ARG1 c3
+                                            :ARG2 (m2 / molecular-physical-entity
+                                                      :ARG0-of (i / inhibit-01
+                                                                  :ARG1 (p / protein-family
+                                                                           :name (n4 / name
+                                                                                     :op1 "PI3K"))))
+                                            :duration (t5 / temporal-quantity
+                                                          :quant "6"
+                                                          :unit (h / hour)))))
+             :op2 (c2 / complete-02
+                      :ARG1 d
+                      :ARG1-of (n3 / near-01)
+                      :condition a)
+             :ARG1-of (d2 / describe-01
+                          :ARG0 (f / figure
+                                   :mod "3B")))
+    :ARG2 (r / recover-01
+             :ARG1 (s / slash
+                      :op1 (e3 / enzyme
+                               :name (n5 / name
+                                         :op1 "ERK1")
+                               :ARG3-of (p3 / phosphorylate-01
+                                            :ARG3 e4))
+                      :op2 (e4 / enzyme
+                               :name (n6 / name
+                                         :op1 "ERK2")))
+             :ARG1-of (c5 / complete-02)
+             :time (a2 / after
+                       :op1 t5)
+             :condition (t6 / treat-04
+                            :ARG1 (c6 / cell)
+                            :ARG2 (m3 / molecular-physical-entity
+                                      :ARG0-of (i2 / inhibit-01
+                                                   :ARG1 (p4 / protein-family
+                                                             :name (n7 / name
+                                                                       :op1 "MEK"))))
+                            :duration t3)
+             :ARG1-of (d3 / describe-01
+                          :ARG0 (f2 / figure
+                                    :mod "3B"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, we were able to see some recovery in the activity of the downstream targets of AKT when the PI3K inhibitors were administered for 15min despite the remaining pAKT downregulation.
+# ::file pmid_2325_9591_140.txt
+# ::date 2015-08-27T04:52:47
+# ::id pmid_2325_9591.140
+(c2 / capable-01
+    :ARG1 (w / we)
+    :ARG2 (s / see-01
+             :ARG0 w
+             :ARG1 (r / recover-02
+                      :ARG1 (a / activity-06
+                               :ARG0 (m3 / molecular-physical-entity
+                                         :ARG1-of (t2 / target-01
+                                                      :ARG0 (e / enzyme
+                                                               :name (n / name
+                                                                        :op1 "AKT")))
+                                         :mod (d / downstream)))
+                      :mod (s2 / some))
+             :condition (a2 / administer-01
+                            :ARG1 (m / molecular-physical-entity
+                                     :ARG0-of (i / inhibit-01
+                                                 :ARG1 (p / protein-family
+                                                          :name (n2 / name
+                                                                    :op1 "PI3K"))))
+                            :duration (t3 / temporal-quantity
+                                          :quant "15"
+                                          :unit (m2 / minute))))
+    :concession (d2 / downregulate-01
+                    :ARG1 (e3 / enzyme
+                              :name (n3 / name
+                                        :op1 "AKT")
+                              :ARG3-of (p2 / phosphorylate-01))
+                    :ARG1-of (r2 / remain-01))
+    :ARG2-of (i2 / interest-01))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The pS6 signal was able to recovery in the MDA-MB231 (with ZSTK474) and HCT116 (with both PI3K inhibitors) lines after short PI3K administration (Figure <xref ref-type="fig" rid="F3">3B</xref>).
+# ::file pmid_2325_9591_141.txt
+# ::date 2015-08-27T04:59:57
+# ::id pmid_2325_9591.141
+(a2 / and
+    :op1 (c / capable-01
+            :ARG1 (s / signal-07
+                     :ARG0 (p3 / protein
+                               :name (n / name
+                                        :op1 "S6")
+                               :ARG3-of (p2 / phosphorylate-01)))
+            :ARG2 (r / recover-01
+                     :ARG1 s
+                     :location (c2 / cell-line
+                                   :name (n2 / name
+                                             :op1 "MDA-MB231"))
+                     :condition (t2 / treat-04
+                                    :ARG2 (s2 / small-molecule
+                                              :name (n3 / name
+                                                        :op1 "ZSTK474")))))
+    :op2 (c3 / capable-01
+             :ARG1 s
+             :ARG2 (r2 / recover-01
+                       :location (c4 / cell-line
+                                     :name (n4 / name
+                                               :op1 "HCT116"))
+                       :condition (t3 / treat-04
+                                      :ARG2 (m / molecular-physical-entity
+                                               :ARG0-of (i / inhibit-01
+                                                           :ARG1 (p / protein-family
+                                                                    :name (n5 / name
+                                                                              :op1 "PI3K")))
+                                               :mod (b / both)))))
+    :time (a3 / after
+              :op1 (a4 / administer-01
+                       :ARG1 p
+                       :ARG1-of (s3 / short-07)))
+    :ARG1-of (d / describe-01
+                :ARG0 (f / figure
+                         :mod "3B")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, p4E-BP1 recovery was noted in the H3122 (with ZSTK474), MDA-MB231 (with ZSTK474), and HCT116 (with both PI3K inhibitors) lines (Figure <xref ref-type="fig" rid="F3">3B</xref>).
+# ::file pmid_2325_9591_142.txt
+# ::date 2015-08-27T05:08:03
+# ::id pmid_2325_9591.142
+(a / and
+   :op2 (n / note-02
+           :ARG1 (a2 / and
+                     :op1 (r / recover-01
+                             :ARG1 (p2 / protein
+                                       :name (n2 / name
+                                                 :op1 "4E-BP1")
+                                       :ARG3-of (p / phosphorylate-01))
+                             :location (c / cell-line
+                                          :name (n3 / name
+                                                    :op1 "H3122"))
+                             :condition (t2 / treat-04
+                                            :ARG2 (s / small-molecule
+                                                     :name (n4 / name
+                                                               :op1 "ZSTK474"))))
+                     :op2 (r2 / recover-01
+                              :ARG1 p2
+                              :location (c2 / cell-line
+                                            :name (n5 / name
+                                                      :op1 "MDA-MB231"))
+                              :condition t2)
+                     :op3 (r3 / recover-01
+                              :ARG1 p2
+                              :location (c3 / cell-line
+                                            :name (n6 / name
+                                                      :op1 "HCT116"))
+                              :condition (t3 / treat-04
+                                             :ARG2 (m / molecular-physical-entity
+                                                      :ARG0-of (i / inhibit-01
+                                                                  :ARG1 (p3 / protein-family
+                                                                            :name (n7 / name
+                                                                                      :op1 "PI3K")))
+                                                      :mod (b / both)))))
+           :ARG1-of (d / describe-01
+                       :ARG0 (f / figure
+                                :mod "3B"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, MEK inhibitor treatment induced upregulation of p4E-BP1 in the MDA-MB231 line (Figure <xref ref-type="fig" rid="F3">3A</xref>), and marked downregulation p4E-BP1 was noted only with PI-103 (PI3K and mTOR inhibitor) in the alternative dosing experiments, but not with ZSTK474 (with a PI3K inhibitor alone) (Figure <xref ref-type="fig" rid="F5">5</xref>), suggesting mTOR-mediated activation of 4E-BP1 in response to MEK inhibition.
+# ::file pmid_2325_9591_143.txt
+# ::date 2015-08-27T05:15:29
+# ::id pmid_2325_9591.143
+(a / and
+   :op1 (i2 / induce-01
+            :ARG0 (t2 / treat-04
+                      :ARG2 (m / molecular-physical-entity
+                               :ARG0-of (i / inhibit-01
+                                           :ARG1 (e / enzyme
+                                                    :name (n2 / name
+                                                              :op1 "MEK")))))
+            :ARG2 (u / upregulate-01
+                     :ARG1 (p4 / protein
+                               :name (n3 / name
+                                         :op1 "4E-BP1")
+                               :ARG3-of (p2 / phosphorylate-01))
+                     :location (c / cell-line
+                                  :name (n4 / name
+                                            :op1 "MDA-MB231")))
+            :ARG2-of (i3 / interest-01)
+            :ARG1-of (d / describe-01
+                        :ARG0 (f / figure
+                                 :mod "3A"))
+            :location (e4 / experiment-01
+                          :ARG2 (d3 / dose-01
+                                    :ARG1-of (a3 / alternate-01))))
+   :op2 (c2 / contrast-01
+            :ARG1 (n5 / note-02
+                      :ARG1 (d2 / downregulate-01
+                                :ARG1 p4
+                                :ARG1-of (m2 / mark-01))
+                      :condition (t3 / treat-04
+                                     :ARG2 (s / small-molecule
+                                              :name (n6 / name
+                                                        :op1 "PI-103")
+                                              :ARG0-of (i4 / inhibit-01
+                                                           :ARG1 (a2 / and
+                                                                     :op1 (p5 / protein-family
+                                                                              :name (n7 / name
+                                                                                        :op1 "PI3K"))
+                                                                     :op2 (p3 / protein
+                                                                              :name (n8 / name
+                                                                                        :op1 "mTOR")))))
+                                     :mod (o / only))
+                      :location e4)
+            :ARG2 (n9 / note-02
+                      :polarity "-"
+                      :ARG1 d2
+                      :condition (t4 / treat-04
+                                     :ARG2 (s2 / small-molecule
+                                               :name (n10 / name
+                                                          :op1 "ZSTK474")
+                                               :ARG1-of (m3 / mean-01
+                                                            :ARG2 (m4 / molecular-physical-entity
+                                                                      :ARG0-of (i5 / inhibit-01
+                                                                                   :ARG1 p5)
+                                                                      :mod (a4 / alone))))))
+            :ARG1-of (d4 / describe-01
+                         :ARG0 (f2 / figure
+                                   :mod "5")))
+   :ARG0-of (s3 / suggest-01
+                :ARG1 (a5 / activate-01
+                          :ARG1 (p / protein
+                                   :name (n11 / name
+                                              :op1 "4E-BP1"))
+                          :ARG1-of (m5 / mediate-01
+                                       :ARG0 p3)
+                          :ARG2-of (r / respond-01
+                                      :ARG1 i))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt TAE684, an ALK inhibitor, treatment was also included in the experiments conducted with the H3122 line, and this induced comparable pAKT, pERK1/2, and pS6 downregulation to that achieved with dual inhibition, whereas no change in p4E-BPI was noted (Figure <xref ref-type="fig" rid="F3">3B</xref>).
+# ::file pmid_2325_9591_144.txt
+# ::date 2015-08-27T05:48:36
+# ::id pmid_2325_9591.144
+(c4 / contrast-01
+    :ARG1 (a / and
+             :op1 (i2 / include-01
+                      :ARG1 (t2 / treat-04
+                                :ARG2 (s / small-molecule
+                                         :name (n / name
+                                                  :op1 "TAE684")
+                                         :ARG0-of (i / inhibit-01
+                                                     :ARG1 (e6 / enzyme
+                                                               :name (n2 / name
+                                                                         :op1 "ALK"))))
+                                :mod (a4 / also))
+                      :ARG2 (e / experiment-01
+                               :ARG1 (c2 / cell-line
+                                         :name (n3 / name
+                                                   :op1 "H3122"))
+                               :ARG1-of (c / conduct-01)))
+             :op2 (i3 / induce-01
+                      :ARG0 i2
+                      :ARG2 (d / downregulate-01
+                               :ARG1 (a2 / and
+                                         :op1 (e2 / enzyme
+                                                  :name (n4 / name
+                                                            :op1 "AKT")
+                                                  :ARG3-of (p / phosphorylate-01
+                                                              :ARG3 e3
+                                                              :ARG3 e4
+                                                              :ARG3 p3
+                                                              :ARG3 p2))
+                                         :op2 (s2 / slash
+                                                  :op1 (e3 / enzyme
+                                                           :name (n5 / name
+                                                                     :op1 "ERK1"))
+                                                  :op2 (e4 / enzyme
+                                                           :name (n6 / name
+                                                                     :op1 "ERK2")))
+                                         :op3 (p3 / protein
+                                                  :name (n7 / name
+                                                            :op1 "S6")))
+                               :ARG1-of (c3 / comparable-03
+                                            :ARG2 (d2 / downregulate-01
+                                                      :ARG1 a2
+                                                      :ARG1-of (a3 / achieve-01
+                                                                   :ARG0 (i4 / inhibit-01
+                                                                             :mod (d3 / dual))))))))
+    :ARG2 (n8 / note-02
+              :polarity "-"
+              :ARG1 (c5 / change-01
+                        :ARG1 (p2 / protein
+                                  :name (n9 / name
+                                            :op1 "4E-BPI"))))
+    :ARG1-of (d4 / describe-01
+                 :ARG0 (f / figure
+                          :mod "3B")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Some recovery of pAKT and pS6 was seen after a short treatment with TAE684 (Figure <xref ref-type="fig" rid="F3">3B</xref>).
+# ::file pmid_2325_9591_145.txt
+# ::date 2015-08-27T09:02:39
+# ::id pmid_2325_9591.145
+(s / see-01
+   :ARG1 (r / recover-02
+            :ARG1 (a / and
+                     :op1 (e / enzyme
+                             :name (n / name
+                                      :op1 "AKT")
+                             :ARG3-of (p / phosphorylate-01
+                                         :ARG3 p2))
+                     :op2 (p2 / protein
+                              :name (n2 / name
+                                        :op1 "S6")))
+            :degree (s4 / some))
+   :time (a2 / after
+             :op1 (t / treat-04
+                     :ARG2 (s3 / small-molecule
+                               :name (n3 / name
+                                         :op1 "TAE684"))
+                     :ARG1-of (s2 / short-07)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3B")))
+
+
+# ::save-date Mon Aug 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We went on further to analyze whether the alternative dosing could also result in apoptosis in the H3122 cell line, the only line identified as inducing apoptosis in response to dual inhibition.
+# ::file pmid_2325_9591_146.txt
+# ::date 2015-08-27T09:21:34
+# ::id pmid_2325_9591.146
+(g / go-06
+      :ARG0 (w / we)
+      :ARG1 (a / analyze-01
+            :ARG0 w
+            :ARG1 (p2 / possible-01
+                  :mode "interrogative"
+                  :ARG1 (r / result-01
+                        :ARG1 (d / dose-01
+                              :ARG1-of (a2 / alternate-01))
+                        :ARG2 (a3 / apoptosis)
+                        :location (c / cell-line
+                              :name (n / name :op1 "H3122")
+                              :ARG1-of (i / identify-01
+                                    :ARG2 (i2 / induce-01
+                                          :ARG0 c
+                                          :ARG2 a3
+                                          :ARG2-of (r2 / respond-01
+                                                :ARG1 (i3 / inhibit-01
+                                                      :mod (d2 / dual)))))
+                              :mod (o / only))
+                        :mod (a4 / also))))
+      :ARG2 (f / further))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt When the cells was treated for 15 min with dual inhibition and treatment with either the PI3K inhibitors or the MEK inhibitor was continued for 48 h, marked PARP cleavage was seen in all the treatments (Figure <xref ref-type="fig" rid="F4">4B</xref>).
+# ::file pmid_2325_9591_147.txt
+# ::date 2015-08-27T23:28:08
+# ::id pmid_2325_9591.147
+(s / see-01
+   :ARG1 (c / cleave-01
+            :ARG1 (p2 / protein
+                      :name (n2 / name
+                                :op1 "PARP"))
+            :ARG1-of (m / mark-01)
+            :location (t3 / treat-04
+                          :mod (a / all)))
+   :condition (a2 / and
+                  :op1 (t2 / treat-04
+                           :ARG1 (c2 / cell)
+                           :ARG2 (i2 / inhibit-01
+                                     :mod (d / dual))
+                           :duration (t4 / temporal-quantity
+                                         :quant "15"
+                                         :unit (m2 / minute)))
+                  :op2 (c3 / continue-01
+                           :ARG1 (t5 / treat-04
+                                     :ARG2 (o / or
+                                              :op1 (m3 / molecular-physical-entity
+                                                       :ARG0-of (i3 / inhibit-01
+                                                                    :ARG1 (p / protein-family
+                                                                             :name (n3 / name
+                                                                                       :op1 "PI3K"))))
+                                              :op2 (m4 / molecular-physical-entity
+                                                       :ARG0-of (i4 / inhibit-01
+                                                                    :ARG1 (p3 / protein-family
+                                                                              :name (n4 / name
+                                                                                        :op1 "MEK"))))))
+                           :duration (t6 / temporal-quantity
+                                         :quant "48"
+                                         :unit (h / hour))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "4B")))
+
+# ::save-date Fri Aug 28, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, 15 min treatment with an ALK inhibitor resulted in marked PARP cleavage (Figure <xref ref-type="fig" rid="F4">4B</xref>).
+# ::file pmid_2325_9591_148.txt
+# ::date 2015-08-27T23:45:35
+# ::id pmid_2325_9591.148
+(a / and
+   :op2 (r / result-01
+           :ARG1 (t2 / treat-04
+                     :ARG2 (m / molecular-physical-entity
+                              :ARG0-of (i / inhibit-01
+                                          :ARG1 (e / enzyme
+                                                   :name (n / name
+                                                            :op1 "ALK"))))
+                     :duration (t3 / temporal-quantity
+                                   :quant "15"
+                                   :unit (m2 / minute)))
+           :ARG2 (c / cleave-01
+                    :ARG1 (p / protein
+                             :name (n2 / name
+                                       :op1 "PARP"))
+                    :ARG1-of (m3 / mark-01))
+           :ARG1-of (d / describe-01
+                       :ARG0 (f / figure
+                                :mod "4B"))))
+
+# ::save-date Sun Dec 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cleaved PARP results were further verified with western blot analysis for cleaved caspase-3, another marker for apoptosis.
+# ::file pmid_2325_9591_149.txt
+# ::date 2015-08-27T23:50:24
+# ::id pmid_2325_9591.149
+(v / verify-01
+   :ARG1 (r / result-01
+            :ARG1 (p / protein
+                     :name (n2 / name
+                               :op1 "PARP")
+                     :ARG1-of (c / cleave-01)))
+   :mod (f / further)
+   :purpose (f2 / find-01
+                :ARG1 (p2 / protein
+                          :name (n3 / name
+                                    :op1 "caspase-3")
+                          :ARG1-of (c2 / cleave-01)
+                          :ARG1-of (m2 / mean-01
+                                       :ARG2 (t / thing
+                                                :ARG0-of (m / mark-01
+                                                            :ARG1 (a2 / apoptosis))
+                                                :mod (a3 / another)))))
+   :instrument (a / analyze-01
+                  :manner (i / immunoblot-01)))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cleaved caspase-3 was detected with concurrent PI3K and MEK, or ALK inhibition while no signal was seen in PI3K or MEK inhibitor treatments.
+# ::file pmid_2325_9591_150.txt
+# ::date 2015-08-27T23:56:19
+# ::id pmid_2325_9591.150
+(c2 / contrast-01
+    :ARG1 (d / detect-01
+             :ARG1 (p2 / protein
+                       :name (n2 / name
+                                 :op1 "caspase-3")
+                       :ARG1-of (c / cleave-01))
+             :condition (t2 / treat-04
+                            :ARG2 (o / or
+                                     :op1 (a / and
+                                             :op1 (m / molecular-physical-entity
+                                                     :ARG0-of (i / inhibit-01
+                                                                 :ARG1 (p3 / protein-family
+                                                                           :name (n3 / name
+                                                                                     :op1 "PI3K"))))
+                                             :op2 (m2 / molecular-physical-entity
+                                                      :ARG0-of (i2 / inhibit-01
+                                                                   :ARG1 (p / protein-family
+                                                                            :name (n4 / name
+                                                                                      :op1 "MEK")))))
+                                     :op2 (m3 / molecular-physical-entity
+                                              :ARG0-of (i3 / inhibit-01
+                                                           :ARG1 (e3 / enzyme
+                                                                     :name (n5 / name
+                                                                               :op1 "ALK")))))
+                            :ARG1-of (c3 / concurrent-02)))
+    :ARG2 (s / see-01
+             :polarity "-"
+             :ARG1 (s2 / signal-07)
+             :condition (t3 / treat-04
+                            :ARG2 (o2 / or
+                                      :op1 m
+                                      :op2 m2))))
+
+# ::save-date Mon Aug 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Conversely to cleaved PARP, the cleaved caspase-3 signal was much lower in alternative dosing schedules compared to continuous, concurrent PI3K and MEK inhibition (Figure <xref ref-type="fig" rid="F4">4C</xref>).
+# ::file pmid_2325_9591_151.txt
+# ::date 2015-08-28T00:08:26
+# ::id pmid_2325_9591.151
+(c / contrast-01
+   :ARG1 (l2 / low-04
+             :ARG1 (s / signal-07
+                      :ARG0 (p3 / protein
+                                :name (n3 / name
+                                          :op1 "caspase-3")
+                                :ARG1-of (c3 / cleave-01)))
+             :degree (m2 / more
+                         :mod (m3 / much))
+             :location (s2 / schedule-01
+                           :mod (d / dose-01
+                                   :ARG1-of (a / alternate-01)))
+             :compared-to (i / inhibit-01
+                             :ARG1 (a2 / and
+                                       :op1 (e / enzyme
+                                               :name (n4 / name
+                                                         :op1 "PI3K"))
+                                       :op2 (e2 / enzyme
+                                                :name (n5 / name
+                                                          :op1 "MEK")))
+                             :ARG1-of (c4 / continue-01)
+                             :ARG1-of (c5 / concurrent-02)))
+   :ARG2 (p2 / protein
+             :name (n2 / name
+                       :op1 "PARP")
+             :ARG1-of (c2 / cleave-01))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "4C")))

@@ -1,0 +1,1990 @@
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Overexpression of wild-type Aurora-A and mutation of Ras<sup>V12 </sup>were detected in human bladder and colon cancer tissues.
+# ::file pmid_2000_3375_13.txt
+# ::date 2015-06-19T18:45:48
+# ::id pmid_2000_3375.13
+(d / detect-01
+   :ARG1 (a / and
+            :op1 (o / overexpress-01
+                    :ARG1 (e / enzyme
+                             :name (n / name
+                                      :op1 "Aurora-A")
+                             :mod (w / wild-type)))
+            :op2 (m / mutate-01
+                    :value "V12"
+                    :ARG2 (e2 / enzyme
+                              :name (n2 / name
+                                        :op1 "Ras"))))
+   :location (a3 / and
+                 :op1 (t / tissue
+                         :mod (h / human)
+                         :mod (d4 / disease
+                                  :wiki "Cancer"
+                                  :name (n5 / name
+                                            :op1 "cancer")
+                                  :mod (b / bladder)))
+                 :op2 (t2 / tissue
+                          :mod h
+                          :mod (d2 / disease
+                                   :wiki "Colorectal_cancer"
+                                   :name (n3 / name
+                                             :op1 "colon"
+                                             :op2 "cancer")))))
+
+# ::save-date Sun Jul 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Wild-type Aurora-A induces focus formation and aggregation of the Ras<sup>V12 </sup>transformants.
+# ::file pmid_2000_3375_14.txt
+# ::date 2015-06-19T18:52:24
+# ::id pmid_2000_3375.14
+(i / induce-01
+   :ARG0 (e / enzyme
+            :name (n / name
+                     :op1 "Aurora-A")
+            :mod (w / wild-type))
+   :ARG2 (a / and
+            :op1 (f / form-01
+                    :ARG1 (f2 / focus))
+            :op2 (a2 / aggregate-01
+                     :ARG1 (c / cell
+                              :ARG2-of (t / transform-01
+                                          :ARG0 (e2 / enzyme
+                                                    :name (n2 / name
+                                                              :op1 "Ras")
+                                                    :ARG2-of (m / mutate-01
+                                                                :value "V12")))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Aurora-A activates Ral A and the phosphorylation of AKT as well as enhances the phosphorylation of MEK, ERK of WT cells.
+# ::file pmid_2000_3375_15.txt
+# ::date 2015-06-19T18:57:07
+# ::id pmid_2000_3375.15
+(a / and
+   :op1 (a2 / activate-01
+            :ARG0 (e / enzyme
+                     :name (n / name
+                              :op1 "Aurora-A"))
+            :ARG1 (a3 / and
+                      :op1 (e5 / enzyme
+                               :name (n2 / name
+                                         :op1 "Ral"
+                                         :op2 "A"))
+                      :op2 (p2 / phosphorylate-01
+                               :ARG1 (e2 / enzyme
+                                         :name (n3 / name
+                                                   :op1 "AKT")))))
+   :op2 (e3 / enhance-01
+            :ARG0 e
+            :ARG1 (p3 / phosphorylate-01
+                      :ARG1 (a4 / and
+                                :op1 (e4 / enzyme
+                                         :name (n4 / name
+                                                   :op1 "MEK"))
+                                :op2 (e6 / enzyme
+                                         :name (n5 / name
+                                                   :op1 "ERK"))
+                                :part-of (c / cell
+                                            :mod (w / wild-type))))))
+
+# ::save-date Fri Oct 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Finally, the Ras/MEK/ERK signaling pathway is responsible for Aurora-A induced aggregation of the Ras<sup>V12 </sup>transformants.
+# ::file pmid_2000_3375_16.txt
+# ::date 2015-06-20T16:51:14
+# ::id pmid_2000_3375.16
+(r / responsible-01
+   :li "-1"
+   :ARG0 (p / pathway
+            :name (n / name
+                     :op1 "Ras/MEK/ERK")
+            :ARG0-of (s / signal-07))
+   :ARG1 (a / aggregate-01
+            :ARG1 (c / cell
+                     :ARG1-of (t / transform-01
+                                 :ARG0 (e2 / enzyme
+                                           :name (n3 / name
+                                                     :op1 "Ras")
+                                           :ARG2-of (m / mutate-01
+                                                       :value "V12"))))
+            :ARG2-of (i / induce-01
+                        :ARG0 (e / enzyme
+                                 :name (n2 / name
+                                           :op1 "Aurora-A")))))
+
+# ::save-date Mon Jul 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Aurora-A overexpression accompanied with Ha-<i>ras </i>codon 12 mutation has been reported in bladder cancers [<xref ref-type="bibr" rid="B41">41</xref>].
+# ::file pmid_2000_3375_111.txt
+# ::date 2015-06-20T17:28:55
+# ::id pmid_2000_3375.111
+(r / report-01
+   :ARG1 (a / accompany-01
+            :ARG0 (m / mutate-01
+                     :ARG1 (c2 / codon
+                               :mod "12"
+                               :part-of (g / gene
+                                           :name (n3 / name
+                                                     :op1 "Ha-ras"))))
+            :ARG1 (o / overexpress-01
+                     :ARG1 (e / enzyme
+                              :name (n / name
+                                       :op1 "Aurora-A")))
+            :location (d / disease
+                         :wiki "Cancer"
+                         :name (n4 / name
+                                   :op1 "cancer")
+                         :mod (b / bladder)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p / publication-91
+                         :ARG1-of (c / cite-01
+                                     :ARG2 "41"))))
+
+# ::save-date Sat Jan 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In this study, Ha-<i>ras</i><sup>V12 </sup>mutation was detected in the tumour part of the bladder cancer specimen by SNP-real-time PCR and verified by sequence analysis (Figure <xref ref-type="fig" rid="F1">1A</xref>, Gly12 -> Val 12).
+# ::file pmid_2000_3375_112.txt
+# ::date 2015-06-20T17:42:56
+# ::id pmid_2000_3375.112
+(a2 / and
+    :op1 (d3 / detect-01
+             :ARG1 (m2 / mutate-01
+                       :value "V12"
+                       :ARG2 (e / enzyme
+                                :name (n3 / name
+                                          :op1 "Ha-ras")))
+             :ARG2 (p / polymorphism
+                      :mod (n2 / nucleotide
+                               :ARG1-of (s / single-02))
+                      :ARG1-of (a / analyze-01
+                                  :manner (r / real-time)
+                                  :mod (r2 / react-01
+                                           :ARG0 (p2 / polymerase)
+                                           :mod (c / chain)
+                                           :subevent (t / transcribe-01
+                                                        :ARG1-of (r3 / reverse-01)))))
+             :location (t2 / tumor
+                           :part-of (s2 / specimen
+                                        :mod (d4 / disease
+                                                 :wiki "Cancer"
+                                                 :name (n4 / name
+                                                           :op1 "cancer")
+                                                 :mod (b2 / bladder)))))
+    :op2 (v / verify-01
+            :ARG1 m2
+            :manner (a3 / analyze-01
+                        :mod (s3 / sequence)))
+    :medium (s4 / study-01
+                :mod (t3 / this))
+    :ARG1-of (d5 / describe-01
+                 :ARG0 (f / figure
+                          :mod "1A")
+                 :ARG2 (m3 / mutate-01
+                           :ARG1 (a4 / amino-acid
+                                     :mod "12"
+                                     :name (n5 / name
+                                               :op1 "glycine"))
+                           :ARG2 (a5 / amino-acid
+                                     :mod "12"
+                                     :name (n6 / name
+                                               :op1 "valine")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The Aurora-A protein overexpression was detected in the same cancer part of the bladder tissue compared to the normal part by IHC staining (Figure <xref ref-type="fig" rid="F1">1B</xref>, T vs. N).
+# ::file pmid_2000_3375_113.txt
+# ::date 2015-06-20T18:08:32
+# ::id pmid_2000_3375.113
+(d / detect-01
+   :ARG1 (o / overexpress-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "Aurora-A")))
+   :manner (s2 / stain-01
+               :ARG2 (i / immunohistochemistry))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "1B"))
+   :location (p2 / part
+                 :part-of (t / tissue
+                             :mod (b / bladder))
+                 :ARG1-of (c2 / compare-01
+                              :ARG2 (p4 / part
+                                        :ARG1-of (n4 / normal-02)))
+                 :ARG1-of (s / same-01)
+                 :mod (d2 / disease
+                          :wiki "Cancer"
+                          :name (n2 / name
+                                    :op1 "cancer"))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similarly, Ki-<i>ras </i>codon 12 mutation and higher expression level of Aurora-A were only detected in the cancer part of the colon tissue (Figure <xref ref-type="fig" rid="F1">1C</xref> and <xref ref-type="fig" rid="F1">1D</xref>).
+# ::file pmid_2000_3375_114.txt
+# ::date 2015-06-20T18:24:07
+# ::id pmid_2000_3375.114
+(r / resemble-01
+   :ARG2 (d / detect-01
+            :ARG1 (a / and
+                     :op1 (m / mutate-01
+                             :ARG1 (c3 / codon
+                                       :mod "12"
+                                       :part-of (g / gene
+                                                   :name (n2 / name
+                                                             :op1 "Ki-ras"))))
+                     :op2 (l / level
+                             :degree-of (e / express-03
+                                           :ARG2 (e2 / enzyme
+                                                     :name (n3 / name
+                                                               :op1 "Aurora-A")))
+                             :ARG1-of (h / high-02
+                                         :degree (m2 / more))))
+            :location (p / part
+                         :mod (d2 / disease
+                                  :wiki "Cancer"
+                                  :name (n4 / name
+                                            :op1 "cancer"))
+                         :part-of (t / tissue
+                                     :mod (c2 / colon)))
+            :manner (o / only)
+            :ARG1-of (d3 / describe-01
+                         :ARG0 (a3 / and
+                                   :op1 (f / figure
+                                           :mod "1C")
+                                   :op2 (f2 / figure
+                                            :mod "1D")))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Taken together, despite of the difference in transformation of NIH3T3 cells by Ki-<i>ras </i>and Ha-<i>ras</i>, overexpression of Aurora-A and Ras<sup>V12 </sup>(Ki- or Ha-) mutations are simultaneously detected in various cancers including bladder and colon.
+# ::file pmid_2000_3375_115.txt
+# ::date 2015-06-20T18:25:36
+# ::id pmid_2000_3375.115
+(d / detect-01
+   :ARG1 (a / and
+            :op1 (o / overexpress-01
+                    :ARG1 (e / enzyme
+                             :name (n / name
+                                      :op1 "Aurora-A")))
+            :op2 (m / mutate-01
+                    :value "V12"
+                    :ARG1 (o2 / or
+                              :op1 (e2 / enzyme
+                                       :name (n2 / name
+                                                 :op1 "Ki-Ras"))
+                              :op2 (e3 / enzyme
+                                       :name (n3 / name
+                                                 :op1 "Ha-Ras"))))
+            :ARG1-of (t3 / take-01
+                         :mod (t2 / together)))
+   :manner (s / simultaneous)
+   :concession (d2 / differ-02
+                   :ARG1 e2
+                   :ARG2 e3
+                   :ARG3 (t / transform-01
+                            :ARG1 (c / cell-line
+                                     :name (n4 / name
+                                               :op1 "NIH3T3"))))
+   :location (d6 / disease
+                 :wiki "Cancer"
+                 :name (n5 / name
+                           :op1 "cancer")
+                 :mod (v / various)
+                 :ARG1-of (i / include-91
+                             :ARG2 (a2 / and
+                                       :op1 (d3 / disease
+                                                :wiki "Cancer"
+                                                :name (n6 / name
+                                                          :op1 "cancer")
+                                                :mod (b / bladder))
+                                       :op2 (d4 / disease
+                                                :wiki "Colorectal_cancer"
+                                                :name (n7 / name
+                                                          :op1 "colon"
+                                                          :op2 "cancer"))))))
+
+# ::save-date Thu Sep 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt It is intriguing to unravel the combined effects of Aurora-A and mutant Ras<sup>V12 </sup>on the morphological change and tumorigenesis of the cells.
+# ::file pmid_2000_3375_117.txt
+# ::date 2015-06-20T19:01:09
+# ::id pmid_2000_3375.117
+(i / intrigue-01
+   :ARG0 (u / unravel-01
+            :ARG1 (a / affect-01
+                     :ARG0 (a2 / and
+                               :op1 (e / enzyme
+                                       :name (n / name
+                                                :op1 "Aurora-A"))
+                               :op2 (e2 / enzyme
+                                        :name (n2 / name
+                                                  :op1 "Ras")
+                                        :ARG2-of (m / mutate-01
+                                                    :value "V12")))
+                     :ARG1 (a3 / and
+                               :op1 (c2 / change-01
+                                        :ARG1 "c3"
+                                        :mod (m2 / morphology))
+                               :op2 (c4 / create-01
+                                        :ARG1 (t / tumor
+                                                 :mod (c3 / cell))))
+                     :ARG1-of (c / combine-01))))
+
+# ::save-date Wed Jan 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Stable cell lines were established by transfecting Vector DNA, wild-type Aurora-A or kinase-inactivated Aurora-A into 7-4 cells, which was derived from NIH/3T3 cells harboring the inducible Ha-<i>ras</i><sup>V12 </sup>oncogene [<xref ref-type="bibr" rid="B23">23</xref>], designated Vector, WT and KD cell line, respectively.
+# ::file pmid_2000_3375_118.txt
+# ::date 2015-06-21T16:11:15
+# ::id pmid_2000_3375.118
+(e / establish-01
+   :ARG1 (c / cell-line
+            :ARG1-of (s / stable-03))
+   :manner (t / transfect-01
+              :ARG1 (c2 / cell
+                        :mod (b / between
+                                :op1 "7"
+                                :op2 "4")
+                        :ARG1-of (d3 / derive-01
+                                     :ARG2 (c3 / cell-line
+                                               :name (n3 / name
+                                                         :op1 "NIH/3T3")
+                                               :ARG0-of (h / harbor-01
+                                                           :ARG1 (a / and
+                                                                    :op1 (g / gene
+                                                                            :name (n5 / name
+                                                                                      :op1 "Ha-ras")
+                                                                            :ARG1-of (d4 / describe-01
+                                                                                         :ARG0 (p / publication-91
+                                                                                                  :ARG1-of (c4 / cite-01
+                                                                                                               :ARG2 "23")))
+                                                                            :ARG2-of (m / mutate-01
+                                                                                        :value "V12")
+                                                                            :ARG2-of (i / induce-01
+                                                                                        :ARG1-of (p2 / possible-01))
+                                                                            :ARG0-of (c7 / cause-01
+                                                                                         :ARG1 (d / disease
+                                                                                                  :wiki "Cancer"
+                                                                                                  :name (n7 / name
+                                                                                                            :op1 "cancer"))))
+                                                                    :op2 (d5 / designate-01
+                                                                             :ARG1 (v2 / vector))
+                                                                    :op3 (a2 / and
+                                                                             :op1 (c5 / cell-line
+                                                                                      :mod (w3 / wild-type))
+                                                                             :op2 (c6 / cell-line
+                                                                                      :mod (k3 / knock-down-02))))
+                                                           :manner (r / respective)))))
+              :ARG2 (o / or
+                       :op1 (n4 / nucleic-acid
+                                :wiki "DNA"
+                                :name (n6 / name
+                                          :op1 "DNA")
+                                :mod (v / vector))
+                       :op2 (e2 / enzyme
+                                :name (n / name
+                                         :op1 "Aurora-A")
+                                :mod (w / wild-type))
+                       :op3 (e3 / enzyme
+                                :name (n2 / name
+                                          :op1 "Aurora-A")
+                                :ARG1-of (d2 / deactivate-01
+                                             :ARG0 (k / kinase))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The expression levels of Ha-<i>ras</i><sup>V12 </sup>in Vector, WT and KD cells in the presence of IPTG were much higher compared to the cells without IPTG (Figure <xref ref-type="fig" rid="F2">2A</xref>).
+# ::file pmid_2000_3375_119.txt
+# ::date 2015-06-21T16:42:04
+# ::id pmid_2000_3375.119
+(h / high-02
+   :ARG1 (l / level
+            :degree-of (e / express-03
+                          :ARG2 (g / gene
+                                   :name (n / name
+                                            :op1 "Ha-ras")
+                                   :ARG2-of (m3 / mutate-01
+                                                :value "V12"))
+                          :ARG3 (a2 / and
+                                    :op1 (c / cell
+                                            :mod (v / vector))
+                                    :op2 (c2 / cell
+                                             :mod (w / wild-type))
+                                    :op3 (c3 / cell
+                                             :mod (k / knock-down-02))))
+            :condition (s2 / small-molecule
+                           :name (n2 / name
+                                     :op1 "IPTG")))
+   :degree (m / more
+              :degree (m2 / much))
+   :compared-to (l2 / level
+                    :degree-of (e3 / express-03
+                                   :ARG3 (c4 / cell
+                                             :ARG0-of (l3 / lack-01
+                                                          :ARG1 s2))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "2A")))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Aurora-A can physically interact with the tail of Histone H3 (H3) and efficiently phosphorylates H3 at serine10 [<xref ref-type="bibr" rid="B45">45</xref>-<xref ref-type="bibr" rid="B48">48</xref>].
+# ::file pmid_2000_3375_120.txt
+# ::date 2015-06-21T17:25:40
+# ::id pmid_2000_3375.120
+(a / and
+   :op1 (p / possible-01
+           :ARG1 (i / interact-01
+                    :ARG0 (e / enzyme
+                             :name (n / name
+                                      :op1 "Aurora-A"))
+                    :ARG1 (t / tail
+                             :part-of (p2 / protein
+                                          :name (n2 / name
+                                                    :op1 "Histone"
+                                                    :op2 "H3")
+                                          :part a3))
+                    :ARG2 (p5 / physical)))
+   :op2 (p3 / phosphorylate-01
+            :ARG1 (a3 / amino-acid
+                      :mod "10"
+                      :name (n3 / name
+                                :op1 "serine"))
+            :ARG2 e
+            :ARG2-of (e2 / efficient-01))
+   :ARG1-of (d / describe-01
+               :ARG0 (p4 / publication-91
+                         :ARG1-of (c / cite-01
+                                     :ARG2 (v / value-interval
+                                              :op1 "45"
+                                              :op2 "48")))))
+
+# ::save-date Fri Sep 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, activation of ERK pathway in Ha-<i>ras </i>transformed mouse fibroblasts increases the level of p-H3S10.
+# ::file pmid_2000_3375_121.txt
+# ::date 2015-06-21T17:33:42
+# ::id pmid_2000_3375.121
+(a / and
+   :op2 (i / increase-01
+           :ARG0 (a2 / activate-01
+                     :ARG1 (p / pathway
+                              :name (n / name
+                                       :op1 "ERK"))
+                     :location (f / fibroblast
+                                  :source (m / mouse)
+                                  :ARG1-of (t / transform-01
+                                              :ARG0 (g / gene
+                                                       :name (n2 / name
+                                                                 :op1 "Ha-ras")))))
+           :ARG1 (l / level
+                    :quant-of (a4 / amino-acid
+                                  :mod "10"
+                                  :name (n5 / name
+                                            :op1 "serine")
+                                  :part-of (p2 / protein
+                                               :name (n4 / name
+                                                         :op1 "H3"))
+                                  :ARG3-of (p3 / phosphorylate-01)))))
+
+# ::save-date Mon Feb 1, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistently, our data showed the level of phosphorylated H3S10 (p-H3S10 detected by anti-p-H3S10 antibody) in WT cells (Figure <xref ref-type="fig" rid="F2">2A</xref>, lane 2, 1.8 fold) was higher than in Vector cells (Figure <xref ref-type="fig" rid="F2">2A</xref>, lane 1, 1.0 fold) and KD cells (Figure <xref ref-type="fig" rid="F2">2A</xref>, lane 3, 0.9 fold) in the absent of IPTG where Ras was not overexpressed.
+# ::file pmid_2000_3375_122.txt
+# ::date 2015-06-21T17:42:59
+# ::id pmid_2000_3375.122
+(s / show-01
+   :ARG0 (d / data
+            :poss (w / we))
+   :ARG1 (h / high-02
+            :ARG1 (l / level
+                     :quant-of (a5 / amino-acid
+                                   :mod "10"
+                                   :name (n / name
+                                            :op1 "serine")
+                                   :ARG3-of (p2 / phosphorylate-01)
+                                   :ARG1-of (d2 / detect-01
+                                                :ARG0 (a / antibody
+                                                         :ARG0-of (c5 / counter-01
+                                                                      :ARG1 a5)))
+                                   :part-of (p / protein
+                                               :name (n5 / name
+                                                         :op1 "H3")))
+                     :ARG1-of (d3 / describe-01
+                                  :part-of (l2 / lane
+                                               :mod "2"
+                                               :part-of (f2 / figure
+                                                            :mod "2A"))
+                                  :quant (p4 / product-of
+                                             :op1 "1.8"))
+                     :location (c / cell
+                                  :mod (w2 / wild-type)))
+            :degree (m / more)
+            :compared-to (a3 / and
+                             :op1 (c2 / cell
+                                      :mod (v / vector)
+                                      :ARG1-of (d4 / describe-01
+                                                   :part-of (l3 / lane
+                                                                :mod "1"
+                                                                :part-of f2)
+                                                   :quant (p5 / product-of
+                                                              :op1 "1.0")))
+                             :op2 (c3 / cell
+                                      :mod (k / knock-down-02)
+                                      :ARG1-of (d5 / describe-01
+                                                   :part-of (l4 / lane
+                                                                :mod "3"
+                                                                :part-of f2)
+                                                   :quant (p6 / product-of
+                                                              :op1 "0.9"))))
+            :condition (a6 / and
+                           :op1 (a7 / absent-01
+                                    :ARG1 (s2 / small-molecule
+                                              :name (n3 / name
+                                                        :op1 "IPTG")))
+                           :op2 (o / overexpress-01
+                                   :polarity "-"
+                                   :ARG1 (e2 / enzyme
+                                             :name (n4 / name
+                                                       :op1 "Ras")))))
+   :manner (c4 / consistent-02))
+
+# ::save-date Sun Jul 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Our data showed that the Aurora-A overexpressed in WT cells is functional.
+# ::file pmid_2000_3375_123.txt
+# ::date 2015-06-21T18:08:24
+# ::id pmid_2000_3375.123
+(s / show-01
+   :ARG0 (d / data
+            :poss (w / we))
+   :ARG1 (f / function-01
+            :ARG0 (e / enzyme
+                     :name (n / name
+                              :op1 "Aurora-A")
+                     :ARG1-of (o / overexpress-01
+                                 :location (c / cell
+                                              :mod (w2 / wild-type))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the presence of IPTG, where Ras<sup>V12 </sup>protein was overexpressed, the level of phosphorylated H3S10 was increased both in Vector (Figure <xref ref-type="fig" rid="F2">2A</xref>, lane 4, 2.8 fold), WT (Figure <xref ref-type="fig" rid="F2">2A</xref>, lane 5, 3.8 fold) and KD (Figure <xref ref-type="fig" rid="F2">2A</xref>, lane 6, 2.8 fold) cells.
+# ::file pmid_2000_3375_124.txt
+# ::date 2015-06-21T18:10:28
+# ::id pmid_2000_3375.124
+(i / increase-01
+   :ARG1 (l / level
+            :quant-of (a3 / amino-acid
+                          :mod "10"
+                          :name (n / name
+                                   :op1 "serine")
+                          :ARG3-of (p2 / phosphorylate-01)
+                          :part-of (p / protein
+                                      :name (n4 / name
+                                                :op1 "H3"))))
+   :location (a4 / and
+                 :op1 (c / cell
+                         :mod (v / vector
+                                 :ARG1-of (d / describe-01
+                                             :ARG0 (l2 / lane
+                                                       :mod "4"
+                                                       :part-of (f2 / figure
+                                                                    :mod "2A"))
+                                             :quant (p4 / product-of
+                                                        :op1 "2.8"))))
+                 :op2 (c2 / cell
+                          :mod (w / wild-type
+                                  :ARG1-of (d2 / describe-01
+                                               :ARG0 (l3 / lane
+                                                         :mod "5"
+                                                         :part-of f2)
+                                               :quant (p5 / product-of
+                                                          :op1 "3.8"))))
+                 :op3 (c3 / cell
+                          :mod (k / knock-down-02
+                                  :ARG1-of (d3 / describe-01
+                                               :ARG0 (l4 / lane
+                                                         :mod "6"
+                                                         :part-of f2)
+                                               :quant (p6 / product-of
+                                                          :op1 "2.8")))))
+   :condition (a5 / and
+                  :op1 (s / small-molecule
+                          :name (n2 / name
+                                    :op1 "IPTG"))
+                  :op2 (o / overexpress-01
+                          :ARG1 (e / enzyme
+                                   :name (n3 / name
+                                             :op1 "Ras")
+                                   :ARG2-of (m / mutate-01
+                                               :value "V12")))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Biological activity analysis showed that WT cells over-expressing wild-type Aurora-A became rounded and formed aggregates in the presence of IPTG compared to the Vector cells and KD cells (Figure <xref ref-type="fig" rid="F2">2B</xref>).
+# ::file pmid_2000_3375_125.txt
+# ::date 2015-06-21T18:22:43
+# ::id pmid_2000_3375.125
+(s / show-01
+   :ARG0 (a / analyze-01
+            :ARG1 (a2 / activity-06
+                      :mod (b / biology)))
+   :ARG1 (a3 / and
+             :op1 (r / round-04
+                     :ARG1 (c / cell
+                              :mod (w / wild-type)
+                              :ARG0-of (o / overexpress-01
+                                          :ARG1 (e / enzyme
+                                                   :name (n / name
+                                                            :op1 "Aurora-A")
+                                                   :mod (w2 / wild-type)))
+                              :compared-to (a5 / and
+                                               :op1 (c2 / cell
+                                                        :mod (v / vector))
+                                               :op2 (c3 / cell
+                                                        :mod (k / knock-down-02)))))
+             :op2 (f / form-01
+                     :ARG0 c
+                     :ARG1 (a4 / aggregate-01))
+             :condition (s2 / small-molecule
+                            :name (n2 / name
+                                      :op1 "IPTG")))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "2B")))
+
+
+# ::save-date Thu Jul 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Transforming analysis showed that WT cells form more foci compared to Vector and KD cells (Figure <xref ref-type="fig" rid="F2">2C</xref>).
+# ::file pmid_2000_3375_126.txt
+# ::date 2015-06-21T18:38:24
+# ::id pmid_2000_3375.126
+(s / show-01
+      :ARG0 (a / analyze-01
+            :mod (t / transform-01))
+      :ARG1 (f / form-01
+            :ARG0 (c / cell
+                  :mod (w / wild-type))
+            :ARG1 (f2 / focus
+                  :mod (m / more))
+            :compared-to (a3 / and
+                  :op1 (c2 / cell
+                        :mod (v / vector))
+                  :op2 (c3 / cell
+                        :mod (k / knock-down-02))))
+      :ARG1-of (d / describe-01
+            :ARG0 (f3 / figure :mod "2C")))
+
+# ::save-date Tue Jun 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Despite the fact that focus numbers were also increased in the other two cell lines, a further increase of focus number in WT cells was observed after IPTG induction (Figure <xref ref-type="fig" rid="F2">2C</xref>).
+# ::file pmid_2000_3375_127.txt
+# ::date 2015-06-23T07:19:26
+# ::id pmid_2000_3375.127
+(o / observe-01
+   :ARG1 (i / increase-01
+            :ARG1 (n / number
+                     :quant-of (f / focus))
+            :degree (f2 / further)
+            :location (c / cell
+                         :mod (w / wild-type)))
+   :time (a / after
+            :op1 (i2 / induce-01
+                     :ARG2 (s / small-molecule
+                              :name (n2 / name
+                                        :op1 "IPTG"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f5 / figure
+                         :mod "2C"))
+   :concession (i3 / increase-01
+                   :ARG1 n
+                   :mod (a2 / also)
+                   :location (c2 / cell-line
+                                 :quant "2"
+                                 :mod (o2 / other))))
+
+# ::save-date Tue Jun 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Taken together, both Aurora-A and mutant Ras<sup>V12 </sup>overexpression can induce focus formation.
+# ::file pmid_2000_3375_128.txt
+# ::date 2015-06-23T07:26:47
+# ::id pmid_2000_3375.128
+(h / have-condition-91
+   :ARG1 (p / possible-01
+            :ARG1 (i / induce-01
+                     :ARG0 (a / and
+                              :op1 (o / overexpress-01
+                                      :ARG1 (e / enzyme
+                                               :name (n / name
+                                                        :op1 "Aurora-A")))
+                              :op2 (o2 / overexpress-01
+                                       :ARG1 (e2 / enzyme
+                                                 :name (n2 / name
+                                                           :op1 "Ras")
+                                                 :ARG2-of (m / mutate-01
+                                                             :value "V12"))))
+                     :ARG2 (f / form-01
+                              :ARG1 (f2 / focus))))
+   :ARG2 (t / take-01
+            :ARG1 a
+            :mod (t2 / together)))
+
+
+# ::save-date Fri Mar 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Further induction of focus formation was detected when these two genes were overexpressed simultaneously.
+# ::file pmid_2000_3375_129.txt
+# ::date 2015-06-23T07:32:44
+# ::id pmid_2000_3375.129
+(d / detect-01
+      :ARG1 (i / induce-01
+            :ARG2 (f2 / form-01
+                  :ARG1 (f3 / focus))
+            :degree (f / further))
+      :condition (o / overexpress-01
+            :ARG1 (g / gene
+                  :quant "2"
+                  :mod (t / this))
+            :mod (s / simultaneous)))
+
+# ::save-date Tue Dec 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cell proliferation analysis showed that WT cells grew slower than Vector and KD cells in the absence of IPTG.
+# ::file pmid_2000_3375_130.txt
+# ::date 2015-06-23T07:34:41
+# ::id pmid_2000_3375.130
+(s / show-01
+   :ARG0 (a / analyze-01
+            :ARG1 (p / proliferate-01
+                     :ARG0 (c / cell)))
+   :ARG1 (g / grow-01
+            :ARG1 (c2 / cell
+                      :mod (w / wild-type))
+            :ARG2 (s2 / slow-05
+                      :degree (m / more)
+                      :compared-to (a2 / and
+                                       :op1 (c3 / cell
+                                                :mod (v / vector))
+                                       :op2 (c4 / cell
+                                                :mod (k / knock-down-02))))
+            :condition (a3 / absent-01
+                           :ARG1 (s3 / small-molecule
+                                     :name (n / name
+                                              :op1 "IPTG")))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Growth rate of Vector, WT and KD cells were decreased when mutant Ras was overexpressed (Fig. <xref ref-type="fig" rid="F2">2D</xref>).
+# ::file pmid_2000_3375_131.txt
+# ::date 2015-06-23T07:42:00
+# ::id pmid_2000_3375.131
+(d / decrease-01
+   :ARG1 (a / and
+            :op1 (r / rate
+                    :degree-of (g / grow-01
+                                  :ARG1 (c / cell
+                                           :mod (v / vector))))
+            :op2 (r2 / rate
+                     :degree-of (g2 / grow-01
+                                    :ARG1 (c2 / cell
+                                              :mod (w / wild-type))))
+            :op3 (r3 / rate
+                     :degree-of (g3 / grow-01
+                                    :ARG1 (c3 / cell
+                                              :mod (k / knock-down-02)))))
+   :time (o / overexpress-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "Ras")
+                     :ARG2-of (m / mutate-01)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "2D")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The increase of cell aggregation of WT cells in the presence of IPTG was independent of cell growth rate.
+# ::file pmid_2000_3375_132.txt
+# ::date 2015-06-23T07:45:33
+# ::id pmid_2000_3375.132
+(d / depend-01
+   :polarity "-"
+   :ARG0 (i / increase-01
+            :ARG1 (a / aggregate-01
+                     :ARG1 (c / cell
+                              :mod (w / wild-type))
+                     :mod (c2 / cell))
+            :condition (p / present-02
+                          :ARG1 (s / small-molecule
+                                   :name (n / name
+                                            :op1 "IPTG"))))
+   :ARG1 (r / rate
+            :degree-of (g / grow-01
+                          :ARG1 c)))
+
+# ::save-date Tue Jun 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To clarify the effects of Aurora-A on the signaling pathways related to Ras overexpression, three downstream signaling pathways of Ras, Raf/MEK, PI3K/AKT and RalGDS/Ral A were investigated.
+# ::file pmid_2000_3375_134.txt
+# ::date 2015-06-23T08:05:53
+# ::id pmid_2000_3375.134
+(i / investigate-01
+   :ARG1 (p / pathway
+            :quant "3"
+            :location (d / downstream)
+            :ARG0-of (s / signal-07
+                        :ARG1 (e / enzyme
+                                 :name (n / name
+                                          :op1 "Ras")))
+            :ARG1-of (m / mean-01
+                        :ARG2 (a / and
+                                 :op1 (p2 / pathway
+                                          :name (n2 / name
+                                                    :op1 "Raf/MEK"))
+                                 :op2 (p3 / pathway
+                                          :name (n3 / name
+                                                    :op1 "PI3K/AKT"))
+                                 :op3 (p4 / pathway
+                                          :name (n4 / name
+                                                    :op1 "RalGDS/RalA")))))
+   :ARG2 (c / clarify-10
+            :ARG1 (a2 / affect-01
+                      :ARG0 (e2 / enzyme
+                                :name (n5 / name
+                                          :op1 "Aurora-A"))
+                      :ARG1 (p6 / pathway
+                                :ARG0-of s
+                                :ARG1-of (r / relate-01
+                                            :ARG2 (o / overexpress-01
+                                                     :ARG2 e))))))
+
+# ::save-date Tue Dec 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The phosphorylation of MEK (p-MEK) was higher in WT cells (Figure <xref ref-type="fig" rid="F3">3A</xref>, lane 2, 1.7 fold) than that in Vector (Figure <xref ref-type="fig" rid="F3">3A</xref>, lane 1, 1.0 fold) and KD cells (Figure <xref ref-type="fig" rid="F3">3A</xref>, lane 3, 0.8 fold).
+# ::file pmid_2000_3375_135.txt
+# ::date 2015-06-23T08:16:40
+# ::id pmid_2000_3375.135
+(h / high-02
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "MEK")))
+   :degree (m / more)
+   :location (c / cell
+                :mod (w / wild-type)
+                :ARG1-of (d / describe-01
+                            :ARG0 (l2 / lane
+                                      :mod "2"
+                                      :part-of (f / figure
+                                                  :mod "3A"))
+                            :ARG2 (p3 / product-of
+                                      :op1 "1.7")))
+   :compared-to (p2 / phosphorylate-01
+                    :ARG1 e
+                    :location (a / and
+                                 :op1 (c2 / cell
+                                          :mod (v / vector)
+                                          :ARG1-of (d2 / describe-01
+                                                       :ARG0 (l3 / lane
+                                                                 :mod "1"
+                                                                 :part-of f)
+                                                       :ARG2 (p4 / product-of
+                                                                 :op1 "1.0")))
+                                 :op2 (c3 / cell
+                                          :mod (k / knock-down-02)
+                                          :ARG1-of (d3 / describe-01
+                                                       :ARG0 (l4 / lane
+                                                                 :mod "3"
+                                                                 :part-of f)
+                                                       :ARG2 (p5 / product-of
+                                                                 :op1 "0.8"))))))
+
+# ::save-date Tue Jun 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt P-MEK levels in each cell line were further increased after IPTG induction (Ras<sup>V12 </sup>is over-expressed) (Figure <xref ref-type="fig" rid="F3">3A</xref>, lane 4, 5, and 6).
+# ::file pmid_2000_3375_136.txt
+# ::date 2015-06-23T08:25:44
+# ::id pmid_2000_3375.136
+(i / increase-01
+   :ARG1 (l / level
+            :location (c / cell-line
+                         :mod (e2 / each))
+            :quant-of (e / enzyme
+                         :name (n / name
+                                  :op1 "MEK")
+                         :ARG3-of (p / phosphorylate-01)))
+   :degree (f / further)
+   :time (a / after
+            :op1 (i2 / induce-01
+                     :ARG2 (s / small-molecule
+                              :name (n2 / name
+                                        :op1 "IPTG"))))
+   :ARG1-of (m / mean-01
+               :ARG2 (o / overexpress-01
+                        :ARG1 (e3 / enzyme
+                                  :name (n3 / name
+                                            :op1 "Ras")
+                                  :ARG2-of (m2 / mutate-01
+                                               :value "V12"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a2 / and
+                         :op1 (l2 / lane
+                                  :mod "4")
+                         :op2 (l3 / lane
+                                  :mod "5")
+                         :op3 (l4 / lane
+                                  :mod "6")
+                         :part-of (f2 / figure
+                                      :mod "3A"))))
+
+# ::save-date Wed Nov 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The same phenomenon was also been observed in p-ERK1/2 (Figure <xref ref-type="fig" rid="F3">3A</xref>).
+# ::file pmid_2000_3375_137.txt
+# ::date 2015-06-24T05:09:24
+# ::id pmid_2000_3375.137
+(o / observe-01
+   :ARG1 (p / phenomenon
+            :ARG1-of (s / same-01))
+   :mod (a / also)
+   :condition (s2 / slash
+                  :op1 (e / enzyme
+                          :name (n / name
+                                   :op1 "ERK1"))
+                  :op2 (e2 / enzyme
+                           :name (n2 / name
+                                     :op1 "ERK2"))
+                  :ARG3-of (p2 / phosphorylate-01))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3A")))
+
+# ::save-date Tue Jun 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results indicated that Aurora-A may further increase Ras induced MEK/ERK phosphorylation.
+# ::file pmid_2000_3375_138.txt
+# ::date 2015-06-24T05:12:44
+# ::id pmid_2000_3375.138
+(i / indicate-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG1 (p3 / possible-01
+             :ARG1 (i2 / increase-01
+                       :ARG0 (e2 / enzyme
+                                 :name (n3 / name
+                                           :op1 "Aurora-A"))
+                       :ARG1 (p5 / phosphorylate-01
+                                 :ARG1 (p / pathway
+                                          :name (n2 / name
+                                                    :op1 "MEK/ERK"))
+                                 :ARG2-of (i3 / induce-01
+                                              :ARG0 (e / enzyme
+                                                       :name (n / name
+                                                                :op1 "Ras"))))
+                       :degree (f / further))))
+
+# ::save-date Tue Dec 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The effect of Aurora-A on the PI3K/AKT pathway was evaluated by detecting phosphorylation of AKT (p-AKT).
+# ::file pmid_2000_3375_139.txt
+# ::date 2015-06-24T05:18:34
+# ::id pmid_2000_3375.139
+(e / evaluate-01
+   :ARG1 (a / affect-01
+            :ARG0 (e3 / enzyme
+                      :name (n2 / name
+                                :op1 "Aurora-A"))
+            :ARG1 (p4 / pathway
+                      :name (n3 / name
+                                :op1 "PI3K/AKT")))
+   :manner (d / detect-01
+              :ARG1 (p2 / phosphorylate-01
+                        :ARG1 (e2 / enzyme
+                                  :name (n / name
+                                           :op1 "AKT")))))
+
+# ::save-date Tue Dec 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The p-AKT level was also higher in WT cells (Figure <xref ref-type="fig" rid="F3">3A</xref>, lane 2, 2.1 fold) compared to Vector and KD cells (Figure <xref ref-type="fig" rid="F3">3A</xref>, lane 1, 1.0 fold and lane 3, 1.1 fold, respectively).
+# ::file pmid_2000_3375_140.txt
+# ::date 2015-06-24T05:21:51
+# ::id pmid_2000_3375.140
+(h / high-02
+   :ARG1 (l / level
+            :quant-of (e / enzyme
+                         :name (n / name
+                                  :op1 "AKT")
+                         :ARG3-of (p / phosphorylate-01)))
+   :degree (m / more)
+   :mod (a / also)
+   :location (c / cell
+                :mod (w / wild-type)
+                :ARG1-of (d / describe-01
+                            :ARG0 (l2 / lane
+                                      :mod "2"
+                                      :part-of (f / figure
+                                                  :mod "3A"))
+                            :ARG2 (p2 / product-of
+                                      :op1 "2.1")))
+   :compared-to (a2 / and
+                    :op1 (c2 / cell
+                             :mod (v / vector)
+                             :ARG1-of (d2 / describe-01
+                                          :ARG0 (l3 / lane
+                                                    :mod "1"
+                                                    :part-of f)
+                                          :ARG2 (p3 / product-of
+                                                    :op1 "1.0")))
+                    :op2 (c3 / cell
+                             :mod (k / knock-down-02)
+                             :ARG1-of (d3 / describe-01
+                                          :ARG0 (l4 / lane
+                                                    :mod "3"
+                                                    :part-of f)
+                                          :ARG2 (p4 / product-of
+                                                    :op1 "1.1")))))
+
+# ::save-date Tue Dec 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Upon IPTG induction, Ras<sup>V12 </sup>overexpression increased the level of p-AKT in Vector and KD cells (Figure <xref ref-type="fig" rid="F3">3A</xref>, lane 4, 1.8 fold and lane 6, 2.1 fold, respectively).
+# ::file pmid_2000_3375_141.txt
+# ::date 2015-06-24T05:27:47
+# ::id pmid_2000_3375.141
+(i / increase-01
+   :ARG0 (o / overexpress-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "Ras")
+                     :ARG2-of (m / mutate-01
+                                 :value "V12"))
+            :location (a / and
+                         :op1 (c / cell
+                                 :mod (v / vector)
+                                 :ARG1-of (d / describe-01
+                                             :ARG0 (l2 / lane
+                                                       :mod "4"
+                                                       :part-of (f / figure
+                                                                   :mod "3A"))
+                                             :ARG2 (p2 / product-of
+                                                       :op1 "1.8")))
+                         :op2 (c2 / cell
+                                  :mod (k / knock-down-02)
+                                  :ARG1-of (d2 / describe-01
+                                               :ARG0 (l3 / lane
+                                                         :mod "6"
+                                                         :part-of f)
+                                               :ARG2 (p3 / product-of
+                                                         :op1 "2.1")))))
+   :ARG1 (l / level
+            :quant-of (e2 / enzyme
+                          :name (n2 / name
+                                    :op1 "AKT")
+                          :ARG3-of (p / phosphorylate-01)))
+   :condition (i2 / induce-01
+                  :ARG2 (s / small-molecule
+                           :name (n3 / name
+                                     :op1 "IPTG"))))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Co-expression of Ras<sup>V12 </sup>and wild-type Aurora-A in WT cells increases the level of p-AKT (Figure <xref ref-type="fig" rid="F3">3A</xref>, lane 5, 3.5 fold) as compared to Ras<sup>V12</sup>overexpression alone (Figure <xref ref-type="fig" rid="F3">3A</xref>, lane 4, 1.8 fold).
+# ::file pmid_2000_3375_142.txt
+# ::date 2015-06-24T06:10:24
+# ::id pmid_2000_3375.142
+(i / increase-01
+   :ARG0 (c / coexpress-01
+            :ARG2 (a / and
+                     :op1 (e / enzyme
+                             :name (n / name
+                                      :op1 "Ras")
+                             :ARG2-of (m / mutate-01
+                                         :value "V12"))
+                     :op2 (e3 / enzyme
+                              :name (n2 / name
+                                        :op1 "Aurora-A")
+                              :mod (w / wild-type)))
+            :ARG3 (c2 / cell
+                      :mod w))
+   :ARG1 (l / level
+            :quant-of (e2 / enzyme
+                          :name (n3 / name
+                                    :op1 "AKT")
+                          :ARG3-of (p2 / phosphorylate-01))
+            :ARG1-of (d / describe-01
+                        :ARG0 (l2 / lane
+                                  :mod "5"
+                                  :part-of (f / figure
+                                              :mod "3A"))
+                        :ARG2 (p3 / product-of
+                                  :op1 "3.5")))
+   :compared-to (o / overexpress-01
+                   :ARG1 e
+                   :mod (a2 / alone)
+                   :ARG1-of (d2 / describe-01
+                                :ARG0 (l3 / lane
+                                          :mod "4"
+                                          :part-of f)
+                                :ARG2 (p4 / product-of
+                                          :op1 "1.8"))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The RalGDS/RalA signaling pathway was determined by detecting the activity of RalA using GST-RalBD pull-down assay.
+# ::file pmid_2000_3375_143.txt
+# ::date 2015-06-24T06:16:23
+# ::id pmid_2000_3375.143
+(d / determine-01
+   :ARG1 (p / pathway
+            :name (n / name
+                     :op1 "RalGDS/RalA")
+            :ARG0-of (s / signal-07))
+   :manner (d2 / detect-01
+               :ARG1 (a / activity-06
+                        :ARG0 (p2 / protein
+                                  :name (n2 / name
+                                            :op1 "RalA")))
+               :manner (u / use-01
+                          :ARG1 (a2 / assay-01
+                                    :manner (p3 / pull-down-08
+                                                :ARG3 (p4 / protein
+                                                          :name (n3 / name
+                                                                    :op1 "GST-RalBD")))))))
+
+# ::save-date Tue Jun 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F3">3A</xref>, Aurora-A overexpression alone activated RalA (Figure <xref ref-type="fig" rid="F3">3A</xref>, lane 2, 2.0 fold) as compared to the parental Vector cells (Figure <xref ref-type="fig" rid="F3">3A</xref>, lane 1, 1.0 fold).
+# ::file pmid_2000_3375_144.txt
+# ::date 2015-06-24T06:19:50
+# ::id pmid_2000_3375.144
+(a / activate-01
+   :ARG0 (o / overexpress-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "Aurora-A"))
+            :mod (a2 / alone))
+   :ARG1 (p2 / protein
+             :name (n2 / name
+                       :op1 "RalA"))
+   :ARG1-of (d / describe-01
+               :ARG0 (l / lane
+                        :mod "2"
+                        :part-of (f / figure
+                                    :mod "3A"))
+               :ARG2 (p3 / product-of
+                         :op1 "2.0"))
+   :compared-to (c / cell
+                   :mod (p4 / parental)
+                   :mod (v / vector)
+                   :ARG1-of (d2 / describe-01
+                                :ARG0 (l2 / lane
+                                          :mod "1"
+                                          :part-of f)
+                                :ARG2 (p5 / product-of
+                                          :mod "1.0")))
+   :ARG1-of (s / show-01
+               :medium f))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt After IPTG induction, The RalA activity was increased by Ras<sup>V12 </sup>overexpression (Figure <xref ref-type="fig" rid="F3">3A</xref>, lane 4, 2.5 fold).
+# ::file pmid_2000_3375_145.txt
+# ::date 2015-06-24T06:24:16
+# ::id pmid_2000_3375.145
+(i / increase-01
+   :ARG0 (o / overexpress-01
+            :ARG1 (e / enzyme
+                     :name (n3 / name
+                               :op1 "Ras")
+                     :ARG2-of (m / mutate-01
+                                 :value "V12")))
+   :ARG1 (a / activity-06
+            :ARG0 (p / protein
+                     :name (n2 / name
+                               :op1 "RalA")))
+   :time (a2 / after
+             :op1 (i2 / induce-01
+                      :ARG2 (s / small-molecule
+                               :name (n / name
+                                        :op1 "IPTG"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (l / lane
+                        :mod "4"
+                        :part-of (f / figure
+                                    :mod "3A"))
+               :ARG2 (p2 / product-of
+                         :op1 "2.5")))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Co-expression of Ras<sup>V12 </sup>and wild-type Aurora-A in WT cells increase the activity of RalA of Ras<sup>V12 </sup>(Figure <xref ref-type="fig" rid="F3">3A</xref>, lane 5, 3.7 fold).
+# ::file pmid_2000_3375_146.txt
+# ::date 2015-06-24T06:27:58
+# ::id pmid_2000_3375.146
+(i / increase-01
+   :ARG0 (c / coexpress-01
+            :ARG2 (a / and
+                     :op1 (e / enzyme
+                             :name (n2 / name
+                                       :op1 "Ras")
+                             :ARG2-of (m / mutate-01
+                                         :value "V12"))
+                     :op2 (e2 / enzyme
+                              :name (n3 / name
+                                        :op1 "Aurora-A")
+                              :mod "w"))
+            :ARG3 (c2 / cell
+                      :mod (w / wild-type)))
+   :ARG1 (a2 / activity-06
+             :ARG0 (p2 / protein
+                       :name (n / name
+                                :op1 "RalA")
+                       :location (c3 / cell
+                                     :mod e)))
+   :ARG1-of (d / describe-01
+               :ARG0 (l / lane
+                        :mod "5"
+                        :part-of (f / figure
+                                    :mod "3A"))
+               :ARG2 (p3 / product-of
+                         :op1 "3.7")))
+
+# ::save-date Tue Jun 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Taken together, both Aurora-A and Ras<sup>V12 </sup>increased the levels of p-MEK, pERK1/2, and p-AKT and the activation of RalA.
+# ::file pmid_2000_3375_147.txt
+# ::date 2015-06-24T06:34:51
+# ::id pmid_2000_3375.147
+(h / have-condition-91
+   :ARG1 (i / increase-01
+            :ARG0 (a / and
+                     :op1 (e / enzyme
+                             :name (n2 / name
+                                       :op1 "Aurora-A"))
+                     :op2 (e2 / enzyme
+                              :name (n3 / name
+                                        :op1 "Ras")
+                              :ARG2-of (m / mutate-01
+                                          :value "V12")))
+            :ARG1 (a2 / and
+                      :op1 (l / level
+                              :quant-of (e3 / enzyme
+                                            :name (n4 / name
+                                                      :op1 "MEK")
+                                            :ARG3-of (p2 / phosphorylate-01
+                                                         :ARG3 s
+                                                         :ARG3 e6)))
+                      :op2 (l2 / level
+                               :quant-of (s / slash
+                                            :op1 (e4 / enzyme
+                                                     :name (n5 / name
+                                                               :op1 "ERK1"))
+                                            :op2 (e5 / enzyme
+                                                     :name (n6 / name
+                                                               :op1 "ERK2"))))
+                      :op3 (l3 / level
+                               :quant-of (e6 / enzyme
+                                             :name (n7 / name
+                                                       :op1 "AKT")))
+                      :op4 (a3 / activate-01
+                               :ARG1 (p3 / protein
+                                         :name (n / name
+                                                  :op1 "RalA")))))
+   :ARG2 (t / take-01
+            :ARG1 a
+            :mod (t2 / together)))
+
+# ::save-date Fri Mar 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This induction was further enhanced when Aurora-A and Ras<sup>V12 </sup>were overexpressed simultaneously.
+# ::file pmid_2000_3375_148.txt
+# ::date 2015-06-24T06:54:56
+# ::id pmid_2000_3375.148
+(e2 / enhance-01
+    :ARG1 (i / induce-01
+             :mod (t / this))
+    :degree (f / further)
+    :time (o / overexpress-01
+             :ARG1 (a / and
+                      :op1 (e / enzyme
+                              :name (n2 / name
+                                        :op1 "Aurora-A"))
+                      :op2 (e3 / enzyme
+                               :name (n3 / name
+                                         :op1 "Ras")
+                               :ARG2-of (m / mutate-01
+                                           :value "V12")))
+             :mod (s / simultaneous)))
+
+# ::save-date Tue Dec 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To further confirm our results, Aurora-A specific small interference RNA (siRNA) was used.
+# ::file pmid_2000_3375_149.txt
+# ::date 2015-06-24T06:57:48
+# ::id pmid_2000_3375.149
+(u / use-01
+   :ARG1 (n3 / nucleic-acid
+             :name (n / name
+                      :op1 "small"
+                      :op2 "interference"
+                      :op3 "RNA")
+             :ARG1-of (s / specific-02
+                         :ARG2 (e / enzyme
+                                  :name (n2 / name
+                                            :op1 "Aurora-A"))))
+   :ARG2 (c / confirm-01
+            :ARG1 (t / thing
+                     :ARG2-of (r2 / result-01)
+                     :poss (w / we))
+            :degree (f / further)))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F3">3B</xref>, Aurora-A specific siRNA decreased the expression level of Aurora-A in WT cells.
+# ::file pmid_2000_3375_150.txt
+# ::date 2015-06-24T07:01:06
+# ::id pmid_2000_3375.150
+(d / decrease-01
+   :ARG0 (n3 / nucleic-acid
+             :name (n / name
+                      :op1 "siRNA")
+             :ARG1-of (s / specific-02
+                         :ARG2 (e2 / enzyme
+                                   :name (n2 / name
+                                             :op1 "Aurora-A"))))
+   :ARG1 (l / level
+            :degree-of (e / express-03
+                          :ARG1 e2
+                          :ARG3 (c / cell
+                                   :mod (w / wild-type))))
+   :ARG1-of (s2 / show-01
+                :medium (f / figure
+                           :mod "3B")))
+
+# ::save-date Tue Jun 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Accordingly, levels of p-MEK/p-ERK, p-AKT and activation of RalA were also decreased when Aurora-A siRNA was introduced into WT cells upon IPTG induction.
+# ::file pmid_2000_3375_151.txt
+# ::date 2015-06-24T07:03:28
+# ::id pmid_2000_3375.151
+(d / decrease-01
+   :ARG1 (a / and
+            :op1 (l / level
+                    :quant-of (s / slash
+                                 :op1 (e / enzyme
+                                         :name (n / name
+                                                  :op1 "MEK"))
+                                 :op2 (e2 / enzyme
+                                          :name (n2 / name
+                                                    :op1 "ERK"))
+                                 :ARG3-of (p / phosphorylate-01
+                                             :ARG3 e3)))
+            :op2 (l2 / level
+                     :quant-of (e3 / enzyme
+                                   :name (n3 / name
+                                             :op1 "AKT")))
+            :op3 (l3 / level
+                     :degree-of (a2 / activate-01
+                                    :ARG1 (p2 / protein
+                                              :name (n4 / name
+                                                        :op1 "RalA")))))
+   :mod (a3 / also)
+   :time (i / introduce-02
+            :ARG1 (n8 / nucleic-acid
+                      :name (n5 / name
+                                :op1 "siRNA")
+                      :mod (e4 / enzyme
+                               :name (n6 / name
+                                         :op1 "Aurora-A")))
+            :ARG2 (c / cell
+                     :mod (w / wild-type))
+            :condition (i2 / induce-01
+                           :ARG2 (s3 / small-molecule
+                                     :name (n7 / name
+                                               :op1 "IPTG"))))
+   :manner (a4 / accordingly))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Our results confirmed that wild-type-Aurora-A enhance Ras downstream signaling pathways including MEK/ERK, AKT and RalA.
+# ::file pmid_2000_3375_152.txt
+# ::date 2015-06-24T07:11:06
+# ::id pmid_2000_3375.152
+(c / confirm-01
+   :ARG0 (t / thing
+            :poss (w / we)
+            :ARG2-of (r / result-01))
+   :ARG1 (e2 / enhance-01
+             :ARG0 (e4 / enzyme
+                       :name (n3 / name
+                                 :op1 "Aurora-A")
+                       :mod (w2 / wild-type))
+             :ARG1 (p3 / pathway
+                       :location (d / downstream)
+                       :ARG0-of (s / signal-07
+                                   :ARG1 (e / enzyme
+                                            :name (n / name
+                                                     :op1 "Ras")))
+                       :ARG2-of (i / include-91
+                                   :ARG1 (a / and
+                                            :op1 (p / pathway
+                                                    :name (n2 / name
+                                                              :op1 "MEK/ERK"))
+                                            :op2 (p2 / pathway
+                                                     :name (n4 / name
+                                                               :op1 "AKT"))
+                                            :op3 (p4 / pathway
+                                                     :name (n5 / name
+                                                               :op1 "RalA")))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The involvement of MEK/ERK, PI3K/AKT and RalGDS/RalA signaling pathways in Aurora-A-related cell aggregation (Fig. <xref ref-type="fig" rid="F2">2B</xref>, WT + IPTG) was clarified by treatment of the cells with the following inhibitors: FTI-277, a farnesylation inhibitor of Ras; PD-98059, the inhibitor of MEK kinase and LY-294002, the inhibitor of PI3K kinase and RalASa94A, a mutant of Ral.
+# ::file pmid_2000_3375_154.txt
+# ::date 2015-06-24T07:17:46
+# ::id pmid_2000_3375.154
+(c / clarify-10
+   :ARG1 (i2 / involve-01
+             :ARG1 (a / and
+                      :op1 (p / pathway
+                              :name (n / name
+                                       :op1 "MEK/ERK"))
+                      :op2 (p2 / pathway
+                               :name (n2 / name
+                                         :op1 "PI3K/AKT"))
+                      :op3 (p3 / pathway
+                               :name (n5 / name
+                                         :op1 "RalGDS/RalA"))
+                      :ARG0-of (s / signal-07))
+             :ARG2 (a2 / aggregate-01
+                       :ARG1 (c2 / cell)
+                       :ARG1-of (r / relate-01
+                                   :ARG2 (e2 / enzyme
+                                             :name (n6 / name
+                                                       :op1 "Aurora-A"))))
+             :ARG1-of (d / describe-01
+                         :ARG0 (f / figure
+                                  :mod "2B")))
+   :manner (t2 / treat-04
+               :ARG1 c2
+               :ARG2 (m / molecular-physical-entity
+                        :ARG0-of (i3 / inhibit-01)
+                        :ARG1-of (f2 / follow-01)
+                        :ARG1-of (m2 / mean-01
+                                     :ARG2 (a3 / and
+                                               :op1 (s2 / small-molecule
+                                                        :name (n7 / name
+                                                                  :op1 "FTI-277")
+                                                        :ARG0-of (i4 / inhibit-01
+                                                                     :ARG1 (p4 / protein-family
+                                                                               :name (n3 / name
+                                                                                         :op1 "Ras"))
+                                                                     :ARG2-of (f3 / farnesylate-01)))
+                                               :op2 (s3 / small-molecule
+                                                        :name (n8 / name
+                                                                  :op1 "PD-98059")
+                                                        :ARG0-of (i5 / inhibit-01
+                                                                     :ARG1 (k / kinase
+                                                                              :name (n4 / name
+                                                                                        :op1 "MEK"))))
+                                               :op3 (s4 / small-molecule
+                                                        :name (n9 / name
+                                                                  :op1 "LY-294002")
+                                                        :ARG0-of (i6 / inhibit-01
+                                                                     :ARG1 (a4 / and
+                                                                               :op1 (k2 / kinase
+                                                                                        :name (n10 / name
+                                                                                                   :op1 "PI3K"))
+                                                                               :op1 (p5 / protein
+                                                                                        :name (n11 / name
+                                                                                                   :op1 "RalASa94A")
+                                                                                        :ARG3-of (m6 / mutate-01
+                                                                                                     :ARG1 (p6 / protein
+                                                                                                               :name (n12 / name
+                                                                                                                          :op1 "Ral"))))))))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt FTI-277 restrains Ras protein as a non-farnesylated form and inhibits p-ERK1/2 expression dose-dependently but had no effect on p-AKT (Figure <xref ref-type="fig" rid="F4">4A</xref>, lanes 2 and 3).
+# ::file pmid_2000_3375_155.txt
+# ::date 2015-06-24T07:28:27
+# ::id pmid_2000_3375.155
+(c / contrast-01
+   :ARG1 (a / and
+            :op1 (r / restrain-01
+                    :ARG0 (s2 / small-molecule
+                              :name (n2 / name
+                                        :op1 "FTI-277"))
+                    :ARG1 (p / protein-family
+                             :name (n / name
+                                      :op1 "Ras"))
+                    :manner (f2 / form
+                                :ARG1-of (f / farnesylate-01
+                                            :polarity "-")))
+            :op2 (i / inhibit-01
+                    :ARG0 s2
+                    :ARG1 (e / express-03
+                             :ARG2 (s / slash
+                                      :op1 (e2 / enzyme
+                                               :name (n3 / name
+                                                         :op1 "ERK1"))
+                                      :op2 (e3 / enzyme
+                                               :name (n4 / name
+                                                         :op1 "ERK2"))
+                                      :ARG3-of (p2 / phosphorylate-01
+                                                   :ARG3 e4)))
+                    :manner (d / depend-01
+                               :ARG1 (d2 / dose))))
+   :ARG2 (a2 / affect-01
+             :polarity "-"
+             :ARG0 s2
+             :ARG1 (e4 / enzyme
+                       :name (n5 / name
+                                 :op1 "AKT")))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (a3 / and
+                          :op1 (l / lane
+                                  :mod "2")
+                          :op2 (l2 / lane
+                                   :mod "3")
+                          :part-of (f3 / figure
+                                       :mod "4A"))))
+
+# ::save-date Tue Dec 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PD-98059 decreased the phosphorylation of ERK1/2 (p-ERK1/2) but had no effect on other signaling pathways (Figure <xref ref-type="fig" rid="F4">4A</xref>, lanes 4 and 5).
+# ::file pmid_2000_3375_156.txt
+# ::date 2015-06-24T07:34:20
+# ::id pmid_2000_3375.156
+(c / contrast-01
+   :ARG1 (d / decrease-01
+            :ARG0 (s3 / small-molecule
+                      :name (n / name
+                               :op1 "PD-98059"))
+            :ARG1 (p2 / phosphorylate-01
+                      :ARG1 (s / slash
+                               :op1 (e / enzyme
+                                       :name (n2 / name
+                                                 :op1 "ERK1"))
+                               :op2 (e2 / enzyme
+                                        :name (n3 / name
+                                                  :op1 "ERK2")))))
+   :ARG2 (a / affect-01
+            :polarity "-"
+            :ARG0 s3
+            :ARG1 (p3 / pathway
+                      :ARG0-of (s2 / signal-07)
+                      :mod (o / other)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (l2 / lane
+                                   :mod "4")
+                          :op2 (l3 / lane
+                                   :mod "5")
+                          :part-of (f / figure
+                                      :mod "4A"))))
+
+# ::save-date Tue Dec 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt LY-294002 reduced the phosphorylation of AKT (p-AKT) but had no effect on another signaling pathway (Figure <xref ref-type="fig" rid="F4">4A</xref>, lanes 6 and 7).
+# ::file pmid_2000_3375_157.txt
+# ::date 2015-06-24T07:41:01
+# ::id pmid_2000_3375.157
+(c / contrast-01
+   :ARG1 (r / reduce-01
+            :ARG0 (s2 / small-molecule
+                      :name (n / name
+                               :op1 "LY-294002"))
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (e / enzyme
+                              :name (n2 / name
+                                        :op1 "AKT"))))
+   :ARG2 (a / affect-01
+            :polarity "-"
+            :ARG0 s2
+            :ARG1 (p2 / pathway
+                      :ARG0-of (s / signal-07)
+                      :mod (o / other)))
+   :ARG1-of (d / describe-01
+               :ARG0 (a2 / and
+                         :op1 (l2 / lane
+                                  :mod "6")
+                         :op2 (l3 / lane
+                                  :mod "7")
+                         :part-of (f / figure
+                                     :mod "4A"))))
+
+# ::save-date Tue Jun 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In summary, in WT cells Aurora-A increases the expression of p-ERK1/2 in a Ras dependent manner.
+# ::file pmid_2000_3375_158.txt
+# ::date 2015-06-24T07:43:38
+# ::id pmid_2000_3375.158
+(i / increase-01
+   :ARG0 (e5 / enzyme
+             :name (n2 / name
+                       :op1 "Aurora-A"))
+   :ARG1 (e2 / express-03
+             :ARG2 (s2 / slash
+                       :op1 (e3 / enzyme
+                                :name (n3 / name
+                                          :op1 "ERK1"))
+                       :op2 (e4 / enzyme
+                                :name (n4 / name
+                                          :op1 "ERK2"))
+                       :ARG3-of (p2 / phosphorylate-01))
+             :ARG3 (c / cell
+                      :mod (w / wild-type)))
+   :manner (d / depend-01
+              :ARG1 (e / enzyme
+                       :name (n / name
+                                :op1 "Ras")))
+   :ARG2-of (s / summarize-01))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, FTI-277 does not reduce the p-AKT in WT cells co-expressing Ras<sup>V12 </sup>and wild-type Aurora-A. Wild-type Aurora-A activates RalA (Figure <xref ref-type="fig" rid="F3">3A</xref> and <xref ref-type="fig" rid="F3">3B</xref>) and phosphorylates RalA at serine194 to promote cellular transformation and migration [<xref ref-type="bibr" rid="B38">38</xref>].
+# ::file pmid_2000_3375_159.txt
+# ::date 2015-06-24T07:46:55
+# ::id pmid_2000_3375.159
+(m / multi-sentence
+   :snt1 (h / have-concession-91
+            :ARG1 (r / reduce-01
+                     :polarity "-"
+                     :ARG0 (s / small-molecule
+                              :name (n2 / name
+                                        :op1 "FTI-277"))
+                     :ARG1 (e2 / enzyme
+                               :name (n3 / name
+                                         :op1 "AKT")
+                               :ARG3-of (p / phosphorylate-01))
+                     :location (c / cell
+                                  :mod (w / wild-type)
+                                  :ARG3-of (c2 / coexpress-01
+                                               :ARG2 (a / and
+                                                        :op1 (e / enzyme
+                                                                :name (n / name
+                                                                         :op1 "Ras")
+                                                                :ARG2-of (m3 / mutate-01
+                                                                             :value "V12"))
+                                                        :op2 (e3 / enzyme
+                                                                 :name (n4 / name
+                                                                           :op1 "Aurora-A")
+                                                                 :mod w))))))
+   :snt2 (a2 / and
+             :op1 (a3 / activate-01
+                      :ARG0 (e4 / enzyme
+                                :name (n5 / name
+                                          :op1 "Aurora-A"))
+                      :ARG1 (p4 / protein
+                                :name (n6 / name
+                                          :op1 "RalA")
+                                :part a5)
+                      :ARG1-of (d / describe-01
+                                  :ARG0 (a4 / and
+                                            :op1 (f / figure
+                                                    :mod "3A")
+                                            :op2 (f2 / figure
+                                                     :mod "3B"))))
+             :op2 (p5 / phosphorylate-01
+                      :ARG1 (a5 / amino-acid
+                                :mod "194"
+                                :name (n7 / name
+                                          :op1 "serine"))
+                      :ARG2 e4
+                      :purpose (p6 / promote-02
+                                   :ARG0 e4
+                                   :ARG1 (a6 / and
+                                             :op1 (t / transform-01
+                                                     :ARG1 (c3 / cell))
+                                             :op2 (m4 / migrate-01
+                                                      :ARG0 c3))))
+             :ARG1-of (d2 / describe-01
+                          :ARG0 (p7 / publication
+                                    :ARG1-of (c4 / cite-01
+                                                 :ARG2 "38")))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To reveal the role of RalA phosphorylation at ser194 in Aurora-A induced RalA activation in WT cells, the mutants RalAS183A or RalAS194A were transiently transfected into WT cells and the RalA activity was evaluated.
+# ::file pmid_2000_3375_160.txt
+# ::date 2015-06-24T07:54:16
+# ::id pmid_2000_3375.160
+(a / and
+   :op1 (t / transfect-01
+           :ARG1 (c / cell
+                    :mod (w / wild-type))
+           :ARG2 (o / or
+                    :op1 (p2 / protein
+                             :name (n / name
+                                      :op1 "RalAS183A"))
+                    :op2 (p3 / protein
+                             :name (n2 / name
+                                       :op1 "RalAS194A"))
+                    :ARG2-of (m / mutate-01))
+           :ARG1-of (t2 / transient-02))
+   :op2 (e / evaluate-01
+           :ARG1 (a2 / activity-06
+                     :ARG0 (p4 / protein
+                               :name (n3 / name
+                                         :op1 "RalA")
+                               :part a3)))
+   :purpose (r / reveal-01
+               :ARG1 (p5 / play-08
+                         :ARG0 (p / phosphorylate-01
+                                  :ARG1 (a3 / amino-acid
+                                            :mod "194"
+                                            :name (n4 / name
+                                                      :op1 "serine")))
+                         :ARG1 (a4 / activate-01
+                                   :ARG1 p4
+                                   :ARG2-of (i / induce-01
+                                               :ARG0 (e2 / enzyme
+                                                         :name (n5 / name
+                                                                   :op1 "Aurora-A"))))
+                         :location c)))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with a previous report [<xref ref-type="bibr" rid="B38">38</xref>], only RalAS194A could reduce the Ral A activity (Figure <xref ref-type="fig" rid="F4">4B</xref>, lane 3).
+# ::file pmid_2000_3375_161.txt
+# ::date 2015-06-24T08:02:31
+# ::id pmid_2000_3375.161
+(c / consistent-01
+   :ARG1 (p2 / possible-01
+             :ARG1 (r / reduce-01
+                      :ARG0 (p3 / protein
+                                :name (n / name
+                                         :op1 "RalAS194A")
+                                :mod (o / only))
+                      :ARG1 (a / activity-06
+                               :ARG0 (p4 / protein
+                                         :name (n2 / name
+                                                   :op1 "RalA"))))
+             :ARG1-of (d2 / describe-01
+                          :ARG0 (l / lane
+                                   :mod "3"
+                                   :part-of (f / figure
+                                               :mod "4B"))))
+   :ARG2 (r2 / report
+             :time (p / previous)
+             :ARG1-of (d / describe-01
+                         :ARG0 (p5 / publication
+                                   :ARG1-of (c2 / cite-01
+                                                :ARG2 "38")))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To determine which signaling pathway is involved in the aggregation of WT cells during Ras<sup>V12 </sup>overexpression, we first demonstrated that Aurora-A induced cell aggregation was blocked by Aurora-A specific small interfering RNA (Figure <xref ref-type="fig" rid="F4">4C</xref>).
+# ::file pmid_2000_3375_162.txt
+# ::date 2015-06-24T08:06:08
+# ::id pmid_2000_3375.162
+(d / demonstrate-01
+   :ARG0 (w / we)
+   :ARG1 (b / block-01
+            :ARG1 (a / aggregate-01
+                     :ARG1 (c / cell)
+                     :ARG2-of (i / induce-01
+                                 :ARG0 (e2 / enzyme
+                                           :name (n2 / name
+                                                     :op1 "Aurora-A"))))
+            :ARG2 (n4 / nucleic-acid
+                      :name (n3 / name
+                                :op1 "small"
+                                :op2 "interfering"
+                                :op3 "RNA")
+                      :ARG1-of (s / specific-02
+                                  :ARG2 e2)))
+   :time (f / first)
+   :purpose (d2 / determine-01
+                :ARG0 w
+                :ARG1 (i2 / involve-01
+                          :mode "interrogative"
+                          :ARG1 (p2 / pathway
+                                    :ARG0-of (s2 / signal-07))
+                          :ARG2 (a2 / aggregate-01
+                                    :ARG1 (c2 / cell
+                                              :mod (w3 / wild-type)))
+                          :time (o2 / overexpress-01
+                                    :ARG1 (e / enzyme
+                                             :name (n / name
+                                                      :op1 "Ras")
+                                             :ARG2-of (m / mutate-01
+                                                         :value "V12")))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "4C")))
+
+# ::save-date Mon Jun 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The WT cells were treated with FTI-277, PD-98059 or LY-294002 for 24 h and cell aggregation was observed.
+# ::file pmid_2000_3375_163.txt
+# ::date 2015-06-24T08:11:16
+# ::id pmid_2000_3375.163
+(a / and
+   :op1 (t / treat-04
+           :ARG1 (c / cell
+                    :mod (w / wild-type))
+           :ARG2 (o / or
+                    :op1 (s / small-molecule
+                            :name (n / name
+                                     :op1 "FTI-277"))
+                    :op2 (s2 / small-molecule
+                             :name (n2 / name
+                                       :op1 "PD-98059"))
+                    :op3 (s3 / small-molecule
+                             :name (n3 / name
+                                       :op1 "LY-294002")))
+           :duration (t2 / temporal-quantity
+                         :quant "24"
+                         :unit (h / hour)))
+   :op2 (o2 / observe-01
+            :ARG1 (a2 / aggregate-01
+                      :ARG1 c)))
+
+# ::save-date Mon Jun 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Both FTI-277 and PD98059 reversed the aggregation of WT cells, whereas LY-294002 showed no effect on cell aggregation (Figure <xref ref-type="fig" rid="F4">4C</xref>).
+# ::file pmid_2000_3375_164.txt
+# ::date 2015-06-24T08:13:39
+# ::id pmid_2000_3375.164
+(c / contrast-01
+   :ARG1 (r / reverse-01
+            :ARG0 (a / and
+                     :op1 (s3 / small-molecule
+                              :name (n / name
+                                       :op1 "FTI-277"))
+                     :op2 (s4 / small-molecule
+                              :name (n2 / name
+                                        :op1 "PD98059")))
+            :ARG1 (a2 / aggregate-01
+                      :ARG1 (c2 / cell
+                                :mod (w / wild-type))))
+   :ARG2 (s / show-01
+            :ARG0 (s2 / small-molecule
+                      :name (n3 / name
+                                :op1 "LY-294002"))
+            :ARG1 (a3 / affect-01
+                      :polarity "-"
+                      :ARG0 s2
+                      :ARG1 a2))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4C")))
+
+# ::save-date Tue Jun 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Because mutant RalAS194A was unable to block cell aggregation, its role in Aurora-A induced cell aggregation was excluded (Figure <xref ref-type="fig" rid="F4">4C</xref>).
+# ::file pmid_2000_3375_165.txt
+# ::date 2015-06-24T08:16:08
+# ::id pmid_2000_3375.165
+(e / exclude-01
+   :ARG1 (p / play-08
+            :ARG0 (p2 / protein
+                      :name (n / name
+                               :op1 "RalAS194A")
+                      :ARG2-of (m / mutate-01))
+            :ARG1 (a / aggregate-01
+                     :ARG1 (c / cell)
+                     :ARG2-of (i / induce-01
+                                 :ARG0 (e2 / enzyme
+                                           :name (n2 / name
+                                                     :op1 "Aurora-A")))))
+   :ARG1-of (c2 / cause-01
+                :ARG0 (c3 / capable-01
+                          :polarity "-"
+                          :ARG1 p2
+                          :ARG2 (b / block-01
+                                   :ARG0 p2
+                                   :ARG1 a))))
+
+# ::save-date Tue Jun 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Taken together, the Ras/MEK/ERK signaling pathway but not the PI3K/AKT or RalGDS/RalA pathway is responsible for Aurora-A induced cell aggregation.
+# ::file pmid_2000_3375_166.txt
+# ::date 2015-06-24T08:20:11
+# ::id pmid_2000_3375.166
+(h / have-condition-91
+   :ARG1 (c / contrast-01
+            :ARG1 (r / responsible-01
+                     :ARG0 (p2 / pathway
+                               :name (n2 / name
+                                         :op1 "Ras/MEK/ERK")
+                               :ARG0-of (s / signal-07))
+                     :ARG1 (a / aggregate-01
+                              :ARG1 (c2 / cell)
+                              :ARG2-of (i / induce-01
+                                          :ARG0 (e / enzyme
+                                                   :name (n3 / name
+                                                             :op1 "Aurora-A")))))
+            :ARG2 (r2 / responsible-01
+                      :polarity "-"
+                      :ARG0 (o / or
+                               :op1 (p / pathway
+                                       :name (n / name
+                                                :op1 "PI3K/AKT"))
+                               :op2 (p4 / pathway
+                                        :name (n4 / name
+                                                  :op1 "RalGDS/RalA")))
+                      :ARG1 a))
+   :ARG2 (t / take-01
+            :ARG1 p2
+            :mod (t2 / together)))

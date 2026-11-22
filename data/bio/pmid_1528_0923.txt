@@ -1,0 +1,1545 @@
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Immunoblotting revealed differences in basal levels of ERK1/2 phosphorylation in different breast cancer cell lines, while the expression of ERK1/2 protein, normalised to actin expression, was relatively consistent (<xref ref-type="fig" rid="fig1">Figure 1A</xref>).
+# ::file pmid_1528_0923_68.txt
+# ::date 2015-06-18T03:20:56
+# ::id pmid_1528_0923.68
+(c / contrast-01
+   :ARG1 (r / reveal-01
+            :ARG0 (i / immunoblot-01)
+            :ARG1 (d2 / differ-02
+                      :ARG1 (l / level
+                               :mod (b / basal)
+                               :quant-of (p2 / phosphorylate-01
+                                             :ARG1 (e / enzyme
+                                                      :name (n2 / name
+                                                                :op1 "ERK1/2"))
+                                             :location (c2 / cell-line
+                                                           :source (d4 / disease
+                                                                       :wiki "Breast_cancer"
+                                                                       :name (n / name
+                                                                                :op1 "breast"
+                                                                                :op2 "cancer"))
+                                                           :ARG1-of (d3 / differ-02))))))
+   :ARG2 (c4 / consistent-01
+             :ARG1 (e2 / express-03
+                       :ARG2 e
+                       :ARG1-of (n3 / normalize-01)
+                       :destination (e3 / express-03
+                                        :ARG2 (p3 / protein
+                                                  :name (n4 / name
+                                                            :op1 "actin"))))
+             :ARG2-of (r2 / relative-05))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1A")))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test whether the ERK1/2 activity was only a tissue culture phenomenon, selected cell lines were injected into the mammary fatpads of nude mice, and protein lysates were prepared from the tumours.
+# ::file pmid_1528_0923_69.txt
+# ::date 2015-06-18T04:12:42
+# ::id pmid_1528_0923.69
+(a / and
+      :op1 (i / inject-01
+            :ARG1 (c / cell-line
+                  :ARG1-of (s / select-01))
+            :ARG2 (f / fatpad
+                  :source (b / breast)
+                  :part-of (m / mouse
+                        :mod (n / nude))))
+      :op2 (p / prepare-01
+            :ARG1 (l / lysate
+                  :mod (p2 / protein))
+            :ARG2 (t / tumor))
+      :purpose (t2 / test-01
+            :ARG1 (p3 / phenomenon
+                  :mod (c2 / culture-01
+                        :ARG1 (t3 / tissue))
+                  :mod (o / only)
+                  :domain (a2 / activity-06
+                        :mode "interrogative"
+                        :ARG0 (e / enzyme
+                              :name (n2 / name :op1 "ERK1/2"))))))
+
+
+# ::save-date Tue Jun 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Taking into account the fact that lysates were of a mixture of tumour cells and surrounding stromal and infiltrating host cells, the immunoblotting of the tumour-derived proteins showed similar results to those obtained using lysates of cultured cells.
+# ::file pmid_1528_0923_70.txt
+# ::date 2015-06-18T05:40:38
+# ::id pmid_1528_0923.70
+(c / consider-02
+      :ARG1 (l / lysate
+            :source (m / mix-01
+                  :ARG1 (c2 / cell
+                        :mod (t / tumor))
+                  :ARG2 (a / and
+                        :op1 (c3 / cell
+                              :mod (s / stroma)
+                              :ARG1-of (s2 / surround-01))
+                        :op2 (c4 / cell
+                              :mod (h / host)
+                              :ARG0-of (i / infiltrate-01)))))
+      :ARG2 (s3 / show-01
+            :ARG0 (i2 / immunoblot-01
+                  :ARG1 (p / protein
+                        :ARG1-of (d / derive-01
+                              :ARG2 t)))
+            :ARG1 (t2 / thing
+                  :ARG1-of (r3 / resemble-01
+                        :ARG2 (t3 / thing
+                              :ARG1-of (o / obtain-01
+                                    :ARG2 (l2 / lysate
+                                          :source (c5 / cell
+                                                :ARG1-of (c6 / culture-01))))
+                              :ARG2-of (r2 / result-01)))
+                  :ARG2-of (r / result-01))))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt MDA-MB-231 and MDA-MB-435 tumour lysates showed high levels of p-ERK1/2 in comparison to MDA-MB-468 and GI101A tumours (<xref ref-type="fig" rid="fig1">Figure 1B</xref>).
+# ::file pmid_1528_0923_71.txt
+# ::date 2015-06-18T06:26:09
+# ::id pmid_1528_0923.71
+(s / show-01
+      :ARG0 (l / lysate
+            :source (a / and
+                  :op1 (c / cell-line
+                        :name (n / name :op1 "MDA-MB-231"))
+                  :op2 (c2 / cell-line
+                        :name (n2 / name :op1 "MDA-MB-435"))
+                  :mod (t / tumor)))
+      :ARG1 (l2 / level
+            :ARG1-of (h / high-02)
+            :quant-of (e / enzyme
+                  :name (n3 / name :op1 "ERK1/2")
+                  :ARG3-of (p / phosphorylate-01))
+            :ARG1-of (c3 / compare-01
+                  :ARG2 (a2 / and
+                        :op1 (c4 / cell-line
+                              :name (n4 / name :op1 "MDA-MB-468"))
+                        :op2 (c5 / cell-line
+                              :name (n5 / name :op1 "GI101A"))
+                        :mod (t2 / tumor))))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "1B")))
+
+# ::save-date Wed Feb 24, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Since ERK1/2 can be activated via EGFR and HER2 signalling, relative expression levels of these growth factor receptors were measured in the panel of cell lines, to test if there was a correlation between ERK activation and receptor expression levels.
+# ::file pmid_1528_0923_73.txt
+# ::date 2015-06-18T07:16:08
+# ::id pmid_1528_0923.73
+(c / cause-01
+   :ARG0 (p / possible-01
+            :ARG1 (a / activate-01
+                     :ARG1 (e4 / enzyme
+                               :name (n5 / name
+                                         :op1 "ERK1/2"))
+                     :manner (s2 / signal-07
+                                 :ARG0 (a2 / and
+                                           :op1 (e5 / enzyme
+                                                    :name (n6 / name
+                                                              :op1 "EGFR"))
+                                           :op2 (e6 / enzyme
+                                                    :name (n7 / name
+                                                              :op1 "HER2"))))))
+   :ARG1 (m / measure-01
+            :ARG1 (l / level
+                     :degree-of (e7 / express-03
+                                    :ARG2 (r2 / receptor
+                                              :mod (g / growth-factor)))
+                     :ARG1-of (r / relative-05))
+            :location (p2 / panel
+                          :consist-of (c2 / cell-line))
+            :purpose (t / test-01
+                        :ARG2 (c3 / correlate-01
+                                  :mode "interrogative"
+                                  :ARG1 (l3 / level
+                                            :degree-of (a3 / activate-01
+                                                           :ARG1 (e / enzyme
+                                                                    :name (n9 / name
+                                                                              :op1 "ERK"))))
+                                  :ARG2 (l2 / level
+                                            :degree-of e7)))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As expected from the heterogeneity seen in clinical specimens of breast cancer, there was variability in expression of EGFR, from high expression in MDA-MB-468 and minimal expression in MDA-MB-435 cells (<xref ref-type="fig" rid="fig1">Figure 1A</xref>).
+# ::file pmid_1528_0923_74.txt
+# ::date 2015-06-18T08:10:43
+# ::id pmid_1528_0923.74
+(v / vary-01
+   :ARG1 (e2 / express-03
+             :ARG2 (e3 / enzyme
+                       :name (n3 / name
+                                 :op1 "EGFR")))
+   :ARG3 (e4 / express-03
+             :ARG3 (c / cell-line
+                      :name (n4 / name
+                                :op1 "MDA-MB-468"))
+             :ARG1-of (h / high-02))
+   :ARG4 (e5 / express-03
+             :ARG3 (c2 / cell-line
+                       :name (n5 / name
+                                 :op1 "MDA-MB-435"))
+             :ARG1-of (m / minimal-02))
+   :ARG1-of (e6 / expect-01
+                :source (h2 / heterogenous
+                            :ARG1-of (s / see-01
+                                        :location (s2 / specimen
+                                                      :mod (c3 / clinic)
+                                                      :source (d2 / disease
+                                                                  :wiki "Breast_cancer"
+                                                                  :name (n / name
+                                                                           :op1 "breast"
+                                                                           :op2 "cancer"))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1A")))
+
+
+# ::save-date Wed Feb 24, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Comparing these results with the level of pERK1/2 indicated that there was no direct correlation between levels of these growth factor receptors and basal levels of ERK1/2 phosphorylation.
+# ::file pmid_1528_0923_75.txt
+# ::date 2015-06-19T00:21:32
+# ::id pmid_1528_0923.75
+(c / compare-01
+      :ARG1 (t3 / thing
+            :mod (t / this)
+            :ARG2-of (r / result-01))
+      :ARG2 (l / level
+            :quant-of (e / enzyme
+                  :name (n2 / name :op1 "ERK1/2")
+                  :ARG3-of (p / phosphorylate-01)))
+      :ARG0-of (i / indicate-01
+            :ARG1 (c2 / correlate-01
+                  :polarity "-"
+                  :ARG1 (l2 / level
+                        :quant-of (r2 / receptor
+                              :mod (g / growth-factor)
+                              :mod (t2 / this)))
+                  :ARG2 (l3 / level
+                        :mod (b / basal)
+                        :quant-of (p2 / phosphorylate-01
+                              :ARG1 (e2 / enzyme
+                                    :name (n4 / name :op1 "ERK1/2"))))
+                  :ARG1-of (d / direct-02))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, while the MDA-MB-231 cell line with highly activated ERK1/2 expressed a relatively high level of EGFR, other combinations occur.
+# ::file pmid_1528_0923_76.txt
+# ::date 2015-06-19T00:35:28
+# ::id pmid_1528_0923.76
+(c / cause-01
+   :ARG1 (c2 / contrast-01
+             :ARG1 (e2 / express-03
+                       :ARG1 (l2 / level
+                                 :quant-of (e3 / enzyme
+                                               :name (n3 / name
+                                                         :op1 "EGFR"))
+                                 :ARG1-of (h / high-02
+                                             :ARG2-of (r / relative-05)))
+                       :ARG3 (c3 / cell-line
+                                 :name (n2 / name
+                                           :op1 "MDA-MB-231")
+                                 :mod (e4 / enzyme
+                                          :name (n4 / name
+                                                    :op1 "ERK1/2")
+                                          :ARG1-of (a / activate-01
+                                                      :ARG1-of (h2 / high-02)))))
+             :ARG2 (c5 / combine-01
+                       :mod (o / other))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt High pERK1/2 levels were detected in MDA-MB-435 cells, which have very little EGFR, in contrast to the SUM149 cells with high EGFR expression and low ERK1/2 activity.
+# ::file pmid_1528_0923_77.txt
+# ::date 2015-06-19T00:53:23
+# ::id pmid_1528_0923.77
+(d / detect-01
+   :ARG1 (l / level
+            :quant-of (e2 / enzyme
+                          :name (n2 / name
+                                    :op1 "ERK1/2")
+                          :ARG3-of (p / phosphorylate-01))
+            :ARG1-of (h / high-02))
+   :location (c / cell-line
+                :name (n3 / name
+                          :op1 "MDA-MB-435")
+                :ARG0-of (h2 / have-03
+                             :ARG1 (e3 / enzyme
+                                       :name (n4 / name
+                                                 :op1 "EGFR")
+                                       :quant (l3 / little
+                                                  :degree (v / very)))
+                             :ARG1-of (c2 / contrast-01
+                                          :ARG2 (c3 / cell-line
+                                                    :name (n5 / name
+                                                              :op1 "SUM149")
+                                                    :poss (a / and
+                                                             :op1 (e4 / express-03
+                                                                      :ARG2 e3
+                                                                      :ARG1-of h)
+                                                             :op2 (a2 / activity-06
+                                                                      :ARG0 (e / enzyme
+                                                                               :name (n / name
+                                                                                        :op1 "ERK1/2"))
+                                                                      :ARG1-of (l2 / low-04))))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similarly, no correlation was found between the expression of HER2 receptor and the status of pERK (<xref ref-type="fig" rid="fig1">Figure 1A</xref>).
+# ::file pmid_1528_0923_78.txt
+# ::date 2015-06-21T05:31:55
+# ::id pmid_1528_0923.78
+(f / find-01
+   :ARG1 (c / correlate-01
+            :polarity "-"
+            :ARG1 (e2 / express-03
+                      :ARG2 (r2 / receptor
+                                :mod (e3 / enzyme
+                                         :name (n2 / name
+                                                   :op1 "HER2"))))
+            :ARG2 (s / status
+                     :poss (e / enzyme
+                              :name (n3 / name
+                                        :op1 "ERK")
+                              :ARG3-of (p / phosphorylate-01))))
+   :ARG1-of (r / resemble-01)
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "1A")))
+
+# ::save-date Wed Jul 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Six cell lines with different levels of EGFR expression were selected for treatment with PKI166.
+# ::file pmid_1528_0923_80.txt
+# ::date 2015-06-21T05:55:48
+# ::id pmid_1528_0923.80
+(s / select-01
+   :ARG1 (c / cell-line
+            :quant "6")
+   :ARG3 (t / treat-04
+            :ARG2 (s2 / small-molecule
+                      :name (n3 / name
+                                :op1 "PKI166")))
+   :poss-of (l / level
+               :ARG1-of (d / differ-02)
+               :quant-of (e2 / express-03
+                             :ARG2 (e3 / enzyme
+                                       :name (n2 / name
+                                                 :op1 "EGFR")))))
+
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Initial studies used a dose range of 0.1–5.0 <i>μ</i><sc>M</sc> (data not shown), and the results of treating cells with 0.5 and 5.0 <i>μ</i><sc>M</sc> are shown in <xref ref-type="table" rid="tbl1">Table 1</xref>.
+# ::file pmid_1528_0923_81.txt
+# ::date 2015-06-21T06:17:25
+# ::id pmid_1528_0923.81
+(a / and
+      :op1 (u / use-01
+            :ARG0 (s / study-01
+                  :mod (i / initial))
+            :ARG1 (r / range-01
+                  :ARG1 (d / dose)
+                  :ARG3 (c / concentration-quantity
+                        :quant "0.1"
+                        :unit (m / micromolar))
+                  :ARG4 (c2 / concentration-quantity
+                        :quant "5.0"
+                        :unit m))
+            :ARG1-of (s2 / show-01
+                  :polarity "-"
+                  :ARG0 (d2 / data)))
+      :op2 (s3 / show-01
+            :ARG1 (t3 / thing
+                  :ARG2-of (r2 / result-01
+                        :ARG1 (t / treat-04
+                              :ARG1 (c3 / cell)
+                              :ARG2 (a2 / and
+                                    :op1 (c4 / concentration-quantity
+                                          :quant "0.5"
+                                          :unit m)
+                                    :op2 c2))))
+            :location (t2 / table :mod "1")))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Growth inhibition was determined from the results of MTT assays, comparing PKI166 treated cells with cells exposed to medium with 0.1% DMSO.
+# ::file pmid_1528_0923_82.txt
+# ::date 2015-06-21T07:44:10
+# ::id pmid_1528_0923.82
+(d / determine-01
+   :ARG1 (i / inhibit-01
+            :ARG1 (g / grow-01))
+   :ARG2 (t4 / thing
+             :ARG2-of (r / result-01
+                         :ARG1 (a / assay-01
+                                  :instrument (s3 / small-molecule
+                                                  :name (n / name
+                                                           :op1 "MTT")))))
+   :manner (c / compare-01
+              :ARG1 (c2 / cell
+                        :ARG1-of (t2 / treat-04
+                                     :ARG2 (s / small-molecule
+                                              :name (n2 / name
+                                                        :op1 "PKI166"))))
+              :ARG2 (c3 / cell
+                        :ARG1-of (e / expose-01
+                                    :ARG2 (m / medium
+                                             :ARG0-of (h / have-03
+                                                         :ARG1 (s2 / small-molecule
+                                                                   :name (n3 / name
+                                                                             :op1 "DMSO")
+                                                                   :quant (p2 / percentage-entity
+                                                                              :value "0.1"))))))))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Treatment with 0.5 <i>μ</i><sc>M</sc> PKI166, a concentration less than plasma and tumour concentrations achieved in preclinical models from oral administration of the drug, and the higher dose of 5.0 <i>μ</i><sc>M</sc>, produced different levels of growth inhibition in different cell lines.
+# ::file pmid_1528_0923_83.txt
+# ::date 2015-06-21T08:19:01
+# ::id pmid_1528_0923.83
+(p / produce-01
+   :ARG0 (a / and
+            :op1 (t / treat-04
+                    :ARG2 (s / small-molecule
+                             :name (n / name
+                                      :op1 "PKI166")
+                             :mod (c / concentration-quantity
+                                     :quant "0.5"
+                                     :unit (m / micromolar)
+                                     :mod (l2 / less)
+                                     :compared-to (c4 / concentration
+                                                      :poss (a2 / and
+                                                                :op1 (p2 / plasma)
+                                                                :op2 (t2 / tumor))
+                                                      :ARG1-of (a3 / achieve-01
+                                                                   :location (m4 / model
+                                                                                 :mod (p3 / preclinical)
+                                                                                 :source (a4 / administer-01
+                                                                                             :ARG1 s
+                                                                                             :path (m5 / mouth))))))))
+            :op2 (d / dose
+                    :mod (c2 / concentration-quantity
+                             :quant "5.0"
+                             :unit (m2 / micromolar))
+                    :ARG1-of (h / high-02
+                                :degree (m3 / more))))
+   :ARG1 (l / level
+            :ARG1-of (d2 / differ-02)
+            :quant-of (i / inhibit-01
+                         :ARG1 (g / grow-01)))
+   :location (c3 / cell-line
+                 :ARG1-of d2))
+
+# ::save-date Tue Jun 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As expected, cells expressing low levels of EGFR and HER2, GI101A, MDA-MB-435 showed least growth inhibition.
+# ::file pmid_1528_0923_84.txt
+# ::date 2015-06-21T09:11:05
+# ::id pmid_1528_0923.84
+(s / show-01
+   :ARG0 (c / cell
+            :ARG3-of (e3 / express-03
+                         :ARG2 (l / level
+                                  :ARG1-of (l2 / low-04)
+                                  :quant-of (a / and
+                                               :op1 (e / enzyme
+                                                       :name (n / name
+                                                                :op1 "EGFR"))
+                                               :op2 (e2 / enzyme
+                                                        :name (n2 / name
+                                                                  :op1 "HER2")))))
+            :ARG1-of (m / mean-01
+                        :ARG2 (a2 / and
+                                  :op1 (c2 / cell-line
+                                           :name (n3 / name
+                                                     :op1 "GI101A"))
+                                  :op2 (c3 / cell-line
+                                           :name (n4 / name
+                                                     :op1 "MDA-MB-435")))))
+   :ARG1 (i / inhibit-01
+            :ARG1 (g / grow-01)
+            :degree (l3 / least))
+   :ARG1-of (e4 / expect-01))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, not all of the high EGFR-expressing lines were sensitive to PKI166.
+# ::file pmid_1528_0923_85.txt
+# ::date 2015-06-21T09:24:57
+# ::id pmid_1528_0923.85
+(c / contrast-01
+   :ARG2 (s / sensitive-03
+            :ARG0 (l / line
+                     :ARG3-of (e / express-03
+                                 :ARG2 (e2 / enzyme
+                                           :name (n / name
+                                                    :op1 "EGFR"))
+                                 :ARG1-of (h / high-02))
+                     :mod (a / all
+                             :polarity "-"))
+            :ARG1 (s2 / small-molecule
+                      :name (n2 / name
+                                :op1 "PKI166"))))
+
+
+# ::save-date Fri Dec 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The lower dose produced 46 and 21% growth inhibition of SUM149 and MDA-MB-468 cells, respectively, but had little effect (3.3% inhibition) on the growth of MDA-MB-231 cells.
+# ::file pmid_1528_0923_86.txt
+# ::date 2015-06-21T09:55:03
+# ::id pmid_1528_0923.86
+(c / contrast-01
+      :ARG1 (p3 / produce-01
+            :ARG0 (d / dose
+                  :ARG1-of (l / low-04
+                        :degree (m2 / more)))
+            :ARG1 (a / and
+                  :op1 (i / inhibit-01
+                        :ARG1 (g / grow-01
+                              :ARG1 (c2 / cell-line
+                                    :name (n / name :op1 "SUM149")))
+                        :quant (p4 / percentage-entity :value "46"))
+                  :op2 (i2 / inhibit-01
+                        :ARG1 (g2 / grow-01
+                              :ARG1 (c3 / cell-line
+                                    :name (n2 / name :op1 "MDA-MB-468")))
+                        :quant (p5 / percentage-entity :value "21")))
+            :mod (r / respective))
+      :ARG2 (a2 / affect-01
+            :ARG0 d
+            :ARG1 (g3 / grow-01
+                  :ARG1 (c4 / cell-line
+                        :name (n3 / name :op1 "MDA-MB-231")))
+            :degree (l3 / little)
+            :ARG1-of (m3 / mean-01
+                  :ARG2 (i3 / inhibit-01
+                        :quant (p6 / percentage-entity :value "3.3")))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The SKBR3 cells, expressing EGFR and also high levels of HER2, were most sensitive, showing 55% growth inhibition with 0.5 <i>μ</i><sc>M</sc> and 76% inhibition with 5.0 <i>μ</i><sc>M</sc> PKI166.
+# ::file pmid_1528_0923_87.txt
+# ::date 2015-06-21T10:26:54
+# ::id pmid_1528_0923.87
+(e / express-03
+   :ARG2 (a / and
+            :op1 (e2 / enzyme
+                     :name (n2 / name
+                               :op1 "EGFR"))
+            :op2 (l / level
+                    :ARG1-of (h / high-02)
+                    :quant-of (e3 / enzyme
+                                  :name (n3 / name
+                                            :op1 "HER2"))))
+   :ARG3 (c / cell-line
+            :name (n / name
+                     :op1 "SKBR3")
+            :ARG0-of (s / sensitive-03
+                        :degree (m / most)))
+   :manner (s2 / show-01
+               :ARG0 c
+               :ARG1 (a2 / and
+                         :op1 (i / inhibit-01
+                                 :ARG0 (s3 / small-molecule
+                                           :name (n4 / name
+                                                     :op1 "PKI166")
+                                           :mod (c2 / concentration-quantity
+                                                    :quant "0.5"
+                                                    :unit (m2 / micromolar)))
+                                 :ARG1 (g / grow-01)
+                                 :quant (p / percentage-entity
+                                           :value "55"))
+                         :op2 (i2 / inhibit-01
+                                  :ARG0 (s4 / small-molecule
+                                            :name (n5 / name
+                                                      :op1 "PKI166")
+                                            :mod (c3 / concentration-quantity
+                                                     :quant "5.0"
+                                                     :unit m2))
+                                  :quant (p2 / percentage-entity
+                                             :value "76")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To demonstrate inhibition of EGFR and HER2 phosphorylation by the concentrations of PKI166 used for the growth inhibition assays, cell lysates were prepared from MDA-MB-231, MDA-MB-468, SUM149 and SKBR3 cells after treatment with PKI166 and stimulation with EGF, and phosphorylation of the receptors assessed.
+# ::file pmid_1528_0923_89.txt
+# ::date 2015-06-21T11:00:46
+# ::id pmid_1528_0923.89
+(a / and
+   :op1 (p2 / prepare-01
+            :ARG1 (l / lysate
+                     :mod (c / cell))
+            :ARG2 (a2 / and
+                      :op1 (c2 / cell-line
+                               :name (n3 / name
+                                         :op1 "MDA-MB-231"))
+                      :op2 (c3 / cell-line
+                               :name (n4 / name
+                                         :op1 "MDA-MB-468"))
+                      :op3 (c4 / cell-line
+                               :name (n5 / name
+                                         :op1 "SUM149"))
+                      :op4 (c5 / cell-line
+                               :name (n6 / name
+                                         :op1 "SKBR3")))
+            :time (a3 / after
+                      :op1 (a4 / and
+                               :op1 (t / treat-04
+                                       :ARG2 (s / small-molecule
+                                                :name (n7 / name
+                                                          :op1 "PKI166")))
+                               :op2 (s2 / stimulate-01
+                                        :ARG2 (p / protein
+                                                 :name (n8 / name
+                                                           :op1 "EGF"))))))
+   :op2 (a5 / assess-01
+            :ARG1 (p3 / phosphorylate-01
+                      :ARG1 (r / receptor)))
+   :purpose (d / demonstrate-01
+               :ARG1 (i / inhibit-01
+                        :ARG0 (s4 / small-molecule
+                                  :name (n / name
+                                           :op1 "PKI166")
+                                  :ARG1-of (c6 / concentrate-02
+                                               :ARG1-of (u / use-01
+                                                           :ARG2 (a7 / assay-01
+                                                                     :ARG1 (i2 / inhibit-01
+                                                                               :ARG1 (g / grow-01))))))
+                        :ARG1 (p4 / phosphorylate-01
+                                  :ARG1 (a6 / and
+                                            :op1 (e3 / enzyme
+                                                     :name (n9 / name
+                                                               :op1 "EGFR"))
+                                            :op2 (e4 / enzyme
+                                                     :name (n10 / name
+                                                                :op1 "HER2")))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PKI166 inhibited ligand-induced EGFR phosphorylation in a dose dependent manner in these four cell lines, and also phosphorylation of HER2 in SKBR3 cells, in the absence or presence of 50 ng ml<sup>−1</sup> EGF (<xref ref-type="fig" rid="fig2">Figure 2</xref>) (data for other cell lines not shown).
+# ::file pmid_1528_0923_90.txt
+# ::date 2015-06-21T11:17:53
+# ::id pmid_1528_0923.90
+(a / and
+   :op1 (i / inhibit-01
+           :ARG0 (s / small-molecule
+                    :name (n3 / name
+                              :op1 "PKI166"))
+           :ARG1 (p2 / phosphorylate-01
+                     :ARG1 (e3 / enzyme
+                               :name (n4 / name
+                                         :op1 "EGFR"))
+                     :ARG2-of (i3 / induce-01
+                                  :ARG0 (l / ligand)))
+           :ARG0-of (d / depend-01
+                       :ARG1 (d2 / dose))
+           :location (c2 / cell-line
+                         :quant "4"
+                         :mod (t / this)))
+   :op2 (i2 / inhibit-01
+            :ARG1 (p3 / phosphorylate-01
+                      :ARG1 (e4 / enzyme
+                                :name (n5 / name
+                                          :op1 "HER2"))
+                      :location (c3 / cell-line
+                                    :name (n6 / name
+                                              :op1 "SKBR3")))
+            :condition (o / or
+                          :op1 (p / protein
+                                  :name (n7 / name
+                                            :op1 "EGF")
+                                  :quant (c5 / concentration-quantity
+                                             :quant "50"
+                                             :unit (n8 / nanogram-per-milliliter)))
+                          :op2 (a2 / absent-01
+                                   :ARG1 p)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "2"))
+   :ARG1-of (s3 / show-01
+                :polarity "-"
+                :ARG0 (d4 / data
+                          :topic (c4 / cell-line
+                                     :mod (o2 / other)))))
+
+# ::save-date Thu Sep 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Inhibition of growth by PKI166 was most effective in cells with high levels of EGFR and nonactivated ERK1/2 (SUM149, MDA-MB-468) when compared with cells with high EGFR and high basal level of phosphorylated ERK1/2 (MDA-MB-231).
+# ::file pmid_1528_0923_92.txt
+# ::date 2015-06-21T12:18:34
+# ::id pmid_1528_0923.92
+(e2 / effective-04
+    :ARG0 (i / inhibit-01
+             :ARG0 (s / small-molecule
+                      :name (n2 / name
+                                :op1 "PKI166"))
+             :ARG1 (g / grow-01))
+    :degree (m / most)
+    :location (c / cell
+                 :ARG0-of (h / have-03
+                             :ARG1 (l / level
+                                      :ARG1-of (h2 / high-02)
+                                      :quant-of (a / and
+                                                   :op1 (e3 / enzyme
+                                                            :name (n3 / name
+                                                                      :op1 "EGFR")
+                                                            :quant l3)
+                                                   :op2 (e4 / enzyme
+                                                            :name (n4 / name
+                                                                      :op1 "ERK1/2")
+                                                            :ARG1-of (a2 / activate-01
+                                                                         :polarity "-")))))
+                 :ARG1-of (m2 / mean-01
+                              :ARG2 (a3 / and
+                                        :op1 (c2 / cell-line
+                                                 :name (n5 / name
+                                                           :op1 "SUM149"))
+                                        :op2 (c3 / cell-line
+                                                 :name (n6 / name
+                                                           :op1 "MDA-MB-468")))))
+    :compared-to (c4 / cell
+                     :ARG0-of (h3 / have-03
+                                  :ARG1 (a4 / and
+                                            :op1 (l3 / level
+                                                     :ARG1-of (h6 / high-02))
+                                            :op2 (l2 / level
+                                                     :mod (b / basal)
+                                                     :quant-of (e6 / enzyme
+                                                                   :name (n8 / name
+                                                                             :op1 "ERK1/2")
+                                                                   :ARG3-of (p / phosphorylate-01))
+                                                     :ARG1-of (h5 / high-02))))
+                     :ARG1-of (m3 / mean-01
+                                  :ARG2 (c5 / cell-line
+                                            :name (n9 / name
+                                                      :op1 "MDA-MB-231")))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test whether the basal ERK1/2 activity was providing an escape mechanism from inhibition by PKI166, cells were treated with a combination of PKI166 and UO126, an inhibitor of MEK (<xref ref-type="table" rid="tbl1">Table 1</xref>).
+# ::file pmid_1528_0923_93.txt
+# ::date 2015-06-21T13:04:23
+# ::id pmid_1528_0923.93
+(t2 / treat-04
+    :ARG1 (c / cell)
+    :ARG2 (c2 / combine-01
+              :ARG1 (s / small-molecule
+                       :name (n2 / name
+                                 :op1 "PKI166"))
+              :ARG2 (s2 / small-molecule
+                        :name (n3 / name
+                                  :op1 "UO126")
+                        :ARG0-of (i / inhibit-01
+                                    :ARG1 (p2 / protein-family
+                                              :name (n / name
+                                                       :op1 "MEK")))))
+    :purpose (t3 / test-01
+                 :ARG1 (p / provide-01
+                          :mode "interrogative"
+                          :ARG0 (a / activity-06
+                                   :ARG0 (e3 / enzyme
+                                             :name (n5 / name
+                                                       :op1 "ERK1/2")
+                                             :mod (b / basal)))
+                          :ARG1 (m2 / mechanism
+                                    :purpose (e4 / escape-01
+                                                 :ARG1 (i3 / inhibit-01
+                                                           :ARG0 s)))))
+    :ARG1-of (d / describe-01
+                :ARG0 (t / table
+                         :mod "1")))
+
+# ::save-date Sun Jun 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt GI101A cells, with low EGFR and nonactivated ERK1/2, showed modest growth inhibition when treated with an individual inhibitor and no significant difference with the combination of the two.
+# ::file pmid_1528_0923_94.txt
+# ::date 2015-06-15T12:42:09
+# ::id pmid_1528_0923.94
+(s2 / show-01
+    :ARG0 (c / cell-line
+             :name (n2 / name
+                       :op1 "GI101A")
+             :ARG0-of (h / have-03
+                         :ARG1 (a2 / and
+                                   :op1 (e2 / enzyme
+                                            :name (n3 / name
+                                                      :op1 "EGFR")
+                                            :ARG1-of (l / low-04))
+                                   :op2 (e3 / enzyme
+                                            :name (n4 / name
+                                                      :op1 "ERK1/2")
+                                            :ARG1-of (a3 / activate-01
+                                                         :polarity "-")))))
+    :ARG1 (a4 / and
+              :op1 (i2 / inhibit-01
+                       :ARG1 (g / grow-01)
+                       :time (t2 / treat-04
+                                 :ARG1 c
+                                 :ARG2 (m2 / molecular-physical-entity
+                                           :ARG0-of (i / inhibit-01)
+                                           :mod (i3 / individual)))
+                       :mod (m / modest))
+              :op2 (d / differ-02
+                      :ARG1 c
+                      :ARG2 (c2 / combine-01
+                                :ARG1 (t / thing
+                                         :quant "2"))
+                      :ARG1-of (s / significant-02
+                                  :polarity "-"))))
+
+# ::save-date Sun Jun 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt MDA-MB-435 cells were significantly inhibited by U0126 alone, and the addition of PKI166 made no difference.
+# ::file pmid_1528_0923_95.txt
+# ::date 2015-06-15T13:48:11
+# ::id pmid_1528_0923.95
+(a / and
+   :op1 (i / inhibit-01
+           :ARG0 (s / small-molecule
+                    :name (n / name
+                             :op1 "U0126")
+                    :mod (a2 / alone))
+           :ARG1 (c / cell-line
+                    :name (n2 / name
+                              :op1 "MDA-MB-435"))
+           :ARG1-of (s2 / significant-02))
+   :op2 (m / make-01
+           :polarity "-"
+           :ARG0 (a3 / add-02
+                     :ARG1 (s3 / small-molecule
+                               :name (n3 / name
+                                         :op1 "PKI166")))
+           :ARG1 (d / differ-02)))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The combination of agents significantly increased the antiproliferative action of PKI166 at the 0.5 and 5.0 <i>μ</i><sc>M</sc> doses in cells expressing higher levels of EGFR or HER2 (SUM149, MDA-MB-468, SKBR3), including MDA-MB-231 cells.
+# ::file pmid_1528_0923_96.txt
+# ::date 2015-06-15T13:52:51
+# ::id pmid_1528_0923.96
+(i / increase-01
+   :ARG0 (c / combine-01
+            :ARG1 (a / agent))
+   :ARG1 (a2 / act-01
+             :ARG0 (s2 / small-molecule
+                       :name (n / name
+                                :op1 "PKI166")
+                       :ARG2-of (d3 / dose-01
+                                    :quant (a4 / and
+                                               :op1 (c2 / concentration-quantity
+                                                        :quant "0.5"
+                                                        :unit (m / micromolar))
+                                               :op2 (c3 / concentration-quantity
+                                                        :quant "5"
+                                                        :unit (m2 / micromolar)))))
+             :ARG0-of (c9 / counter-01
+                          :ARG1 (p / proliferate-01)))
+   :ARG1-of (s / significant-02)
+   :location (c4 / cell
+                 :ARG3-of (e / express-03
+                             :ARG2 (o / or
+                                      :op1 (l / level
+                                              :quant-of (e2 / enzyme
+                                                            :name (n2 / name
+                                                                      :op1 "EGFR"))
+                                              :ARG1-of (h / high-02
+                                                          :degree (m3 / more)
+                                                          :ARG1 l2))
+                                      :op2 (l2 / level
+                                               :quant-of (e3 / enzyme
+                                                             :name (n3 / name
+                                                                       :op1 "HER2")))))
+                 :ARG1-of (m4 / mean-01
+                              :ARG2 (a5 / and
+                                        :op1 (c5 / cell-line
+                                                 :name (n4 / name
+                                                           :op1 "SUM149"))
+                                        :op2 (c6 / cell-line
+                                                 :name (n5 / name
+                                                           :op1 "MDA-MB-468"))
+                                        :op3 (c7 / cell-line
+                                                 :name (n6 / name
+                                                           :op1 "SKBR3"))))
+                 :ARG2-of (i2 / include-01
+                              :ARG1 (c8 / cell-line
+                                        :name (n7 / name
+                                                  :op1 "MDA-MB-231")))))
+
+# ::save-date Tue Jun 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Treating the MDA-MB-231 cells with U0126 alone produced 8.5% inhibition, which was not significantly different from control values.
+# ::file pmid_1528_0923_97.txt
+# ::date 2015-06-15T14:09:53
+# ::id pmid_1528_0923.97
+(p2 / produce-01
+    :ARG0 (t / treat-04
+             :ARG1 (c / cell-line
+                      :name (n2 / name
+                                :op1 "MDA-MB-231"))
+             :ARG2 (s2 / small-molecule
+                       :name (n3 / name
+                                 :op1 "U0126")
+                       :mod (a / alone)))
+    :ARG1 (i / inhibit-01
+             :quant (p / percentage-entity
+                       :value "8.5"))
+    :ARG1-of (d / differ-02
+                :polarity "-"
+                :ARG2 (v / value
+                         :mod (c2 / control))
+                :ARG1-of (s / significant-02)))
+
+# ::save-date Wed Jan 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The addition of U0126 to 0.5 or 5.0 <i>μ</i><sc>M</sc> PKI166 significantly increased the growth inhibition produced by the receptor tyrosine kinase inhibitor alone (<xref ref-type="table" rid="tbl1">Table 1</xref>).
+# ::file pmid_1528_0923_98.txt
+# ::date 2015-06-15T14:13:28
+# ::id pmid_1528_0923.98
+(i / increase-01
+   :ARG0 (a / add-02
+            :ARG1 (s2 / small-molecule
+                      :name (n / name
+                               :op1 "U0126"))
+            :ARG2 (o / or
+                     :op1 (s3 / small-molecule
+                              :name (n2 / name
+                                        :op1 "PKI166")
+                              :quant (c / concentration-quantity
+                                        :quant "0.5"
+                                        :unit (m / micromolar)))
+                     :op2 (s4 / small-molecule
+                              :name (n3 / name
+                                        :op1 "PKI166")
+                              :quant (c2 / concentration-quantity
+                                         :quant "5"
+                                         :unit (m3 / micromolar)))))
+   :ARG1 (i2 / inhibit-01
+             :ARG1 (g / grow-01)
+             :ARG1-of (p / produce-01
+                         :ARG0 (m2 / molecular-physical-entity
+                                   :ARG0-of (i3 / inhibit-01
+                                                :ARG1 (e / enzyme
+                                                         :name (n4 / name
+                                                                   :op1 "receptor"
+                                                                   :op2 "tyrosine"
+                                                                   :op3 "kinase")))
+                                   :mod (a2 / alone))))
+   :ARG2 (s / significant-02)
+   :ARG1-of (d / describe-01
+               :ARG0 (t / table
+                        :mod "1")))
+
+# ::save-date Sun Jun 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Apoptosis induced by PKI166 and U0126 was assessed by measuring DNA fragmentation by propidium iodide staining and FACS analysis, and determining the proportions of hypodiploid cells.
+# ::file pmid_1528_0923_99.txt
+# ::date 2015-06-15T14:19:24
+# ::id pmid_1528_0923.99
+(a8 / assess-01
+    :ARG0 (a7 / and
+              :op1 (m / measure-01
+                      :ARG1 (f / fragment-01
+                               :ARG0 (a5 / and
+                                         :op1 (s4 / stain-01
+                                                  :ARG2 (s3 / small-molecule
+                                                            :name (n4 / name
+                                                                      :op1 "propidium"
+                                                                      :op2 "iodide")))
+                                         :op2 (a6 / analyze-01
+                                                  :mod (t / thing
+                                                          :name (n5 / name
+                                                                    :op1 "FACS"))))
+                               :ARG1 (n6 / nucleic-acid
+                                         :wiki "DNA"
+                                         :name (n7 / name
+                                                   :op1 "DNA")
+                                         :name (n3 / name
+                                                   :op1 "DNA"))))
+              :op2 (d2 / determine-01
+                       :ARG1 (p / proportion-01
+                                :ARG1 (c / cell
+                                         :mod (h / hypodiploid)))))
+    :ARG1 (a3 / apoptosis
+              :ARG2-of (i / induce-01
+                          :ARG0 (a4 / and
+                                    :op1 (s2 / small-molecule
+                                             :name (n2 / name
+                                                       :op1 "PKI166"))
+                                    :op2 (s / small-molecule
+                                            :name (n / name
+                                                     :op1 "U0126"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This showed that PKI166 alone or in combination with U0126 induced apoptosis in the EGFR or HER2 expressing cell lines MDA-MB-231, MDA-MB-468, SKBR3 and SUM149 cells (<xref ref-type="fig" rid="fig3">Figure 3</xref>), although the proportions of hypodiploid cells varied between the different lines.
+# ::file pmid_1528_0923_100.txt
+# ::date 2015-06-15T14:29:24
+# ::id pmid_1528_0923.100
+(s2 / show-01
+    :ARG0 (t / this)
+    :ARG1 (i / induce-01
+             :ARG0 (o / or
+                      :op1 (s3 / small-molecule
+                               :name (n4 / name
+                                         :op1 "PKI166")
+                               :mod (a / alone))
+                      :op2 (s4 / small-molecule
+                               :name (n9 / name
+                                         :op1 "PKI166")
+                               :ARG1-of (c / combine-01
+                                           :ARG2 (s / small-molecule
+                                                    :name (n / name
+                                                             :op1 "U0126")))))
+             :ARG2 (a2 / apoptosis)
+             :ARG1-of (d / describe-01
+                         :ARG0 (f / figure
+                                  :mod "3"))
+             :concession (v / vary-01
+                            :ARG1 (p / proportion-01
+                                     :ARG1 (c6 / cell
+                                               :mod (h2 / hypodiploid)))
+                            :location (l / line
+                                         :ARG1-of (d2 / differ-02)))
+             :location (a3 / and
+                           :op1 (c2 / cell-line
+                                    :name (n5 / name
+                                              :op1 "MDA-MB-231"))
+                           :op2 (c3 / cell-line
+                                    :name (n6 / name
+                                              :op1 "MDA-MB-468"))
+                           :op3 (c4 / cell-line
+                                    :name (n7 / name
+                                              :op1 "SKBR3"))
+                           :op4 (c5 / cell-line
+                                    :name (n8 / name
+                                              :op1 "SUM149"))
+                           :ARG3-of (e3 / express-03
+                                        :ARG2 (o2 / or
+                                                  :op1 (e / enzyme
+                                                          :name (n2 / name
+                                                                    :op1 "EGFR"))
+                                                  :op2 (e2 / enzyme
+                                                           :name (n3 / name
+                                                                     :op1 "HER2")))))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similar to the MTT results in <xref ref-type="table" rid="tbl1">Table 1</xref>, SKBR3 and SUM 149 cells were most sensitive to treatment with the inhibitors, while the proportions of hypodiploid MDA-MB-231 cells were lower.
+# ::file pmid_1528_0923_101.txt
+# ::date 2015-06-15T14:47:46
+# ::id pmid_1528_0923.101
+(c / contrast-01
+   :ARG1 (s / sensitive-03
+            :ARG0 (a / and
+                     :op1 (c2 / cell-line
+                              :name (n / name
+                                       :op1 "SKBR3"))
+                     :op2 (c3 / cell-line
+                              :name (n2 / name
+                                        :op1 "SUM149")))
+            :ARG1 (t2 / treat-04
+                      :ARG1 a
+                      :ARG2 (m3 / molecular-physical-entity
+                                :ARG0-of (i2 / inhibit-01)))
+            :degree (m2 / most))
+   :ARG2 (l / low-04
+            :ARG1 (p / proportion-01
+                     :ARG1 (c4 / cell-line
+                               :name (n3 / name
+                                         :op1 "MDA-MB-231")
+                               :mod (h / hypodiploid)))
+            :degree (m / more))
+   :ARG1-of (r / resemble-01
+               :ARG2 (t4 / thing
+                         :ARG2-of (r2 / result-01
+                                      :ARG1 (s2 / small-molecule
+                                                :name (n4 / name
+                                                          :op1 "MTT")))
+                         :location (t3 / table
+                                       :mod "1"))))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Treatment with U0126 alone significantly increased the numbers of MDA-MB-231 in the G<sub>1</sub> phase of the cell cycle (89–93% compared with 70–72% of control or PKI 166 treated cells, <i>P</i><0.001).
+# ::file pmid_1528_0923_102.txt
+# ::date 2015-06-16T10:36:10
+# ::id pmid_1528_0923.102
+(i / increase-01
+   :ARG0 (t / treat-04
+            :ARG2 (s / small-molecule
+                     :name (n / name
+                              :op1 "U0126")
+                     :mod (a / alone)))
+   :ARG1 (n2 / number-01
+             :ARG1 (c / cell-line
+                      :name (n3 / name
+                                :op1 "MDA-MB-231")))
+   :ARG2 (v / value-interval
+            :op1 (p4 / percentage-entity
+                     :value "89")
+            :op2 (p / percentage-entity
+                    :value "93"))
+   :ARG1-of (s2 / significant-02)
+   :time (e / event
+            :name (n5 / name
+                      :op1 "G1"
+                      :op2 "phase")
+            :part-of (c2 / cycle-02
+                         :ARG1 (c3 / cell)))
+   :compared-to (v2 / value-interval
+                    :op1 (p5 / percentage-entity
+                             :value "70")
+                    :op2 (p2 / percentage-entity
+                             :value "72")
+                    :quant-of (o / or
+                                 :op1 (c4 / cell
+                                          :mod (c5 / control))
+                                 :op2 (c6 / cell
+                                          :ARG1-of (t2 / treat-04
+                                                       :ARG2 (s3 / small-molecule
+                                                                 :name (n4 / name
+                                                                           :op1 "PKI166"))))))
+   :ARG1-of (s4 / statistical-test-91
+                :ARG2 (l / less-than
+                         :op1 "0.001")))
+
+# ::save-date Fri Dec 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The proportion of SUM149 cells in G<sub>1</sub> was significantly increased by treatment with either inhibitor alone and the combination, while apoptosis was significantly increased in cells exposed to PKI166, with or without U0126.
+# ::file pmid_1528_0923_103.txt
+# ::date 2015-06-16T10:44:12
+# ::id pmid_1528_0923.103
+(c / contrast-01
+   :ARG1 (i2 / increase-01
+             :ARG0 (t2 / treat-04
+                       :ARG2 (a / and
+                                :op1 (m / molecular-physical-entity
+                                        :ARG0-of (i / inhibit-01)
+                                        :mod (a2 / alone))
+                                :op2 (m2 / molecular-physical-entity
+                                         :ARG0-of (i4 / inhibit-01)
+                                         :ARG1-of (c3 / combine-01))))
+             :ARG1 (p / proportion-01
+                      :ARG1 (c2 / cell-line
+                                :name (n2 / name
+                                          :op1 "SUM149"))
+                      :time (e2 / event
+                                :name (n4 / name
+                                          :op1 "G1")))
+             :ARG2 (s2 / significant-02
+                       :ARG1 i3))
+   :ARG2 (i3 / increase-01
+             :ARG1 (a3 / apoptosis)
+             :location (c4 / cell
+                           :ARG1-of (e / expose-01
+                                       :ARG2 (o / or
+                                                :op1 (a4 / and
+                                                         :op1 (s4 / small-molecule
+                                                                  :name (n3 / name
+                                                                            :op1 "PKI166"))
+                                                         :op2 (s / small-molecule
+                                                                 :name (n / name
+                                                                          :op1 "U0126")))
+                                                :op2 s4)))))
+
+# ::save-date Sat Jan 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Induction of the cyclin-dependent kinase inhibitor p27<sup>KIP1</sup> generally corresponded with increases in the proportion of cells in G<sub>1</sub>, as shown for MDA-MB-231 and SUM149 (<xref ref-type="fig" rid="fig4">Figure 4</xref>).
+# ::file pmid_1528_0923_104.txt
+# ::date 2015-06-16T10:52:27
+# ::id pmid_1528_0923.104
+(c / correspond-02
+   :ARG1 (i2 / induce-01
+             :ARG2 (p2 / protein
+                       :name (n4 / name
+                                 :op1 "p27KIP1")
+                       :ARG0-of (i / inhibit-01
+                                   :ARG1 (p3 / protein-family
+                                             :name (n / name
+                                                      :op1 "cyclin-dependent"
+                                                      :op2 "kinase")))))
+   :ARG2 (i3 / increase-01
+             :ARG1 (p / proportion-01
+                      :ARG1 (c2 / cell)
+                      :time (e2 / event
+                                :name (n5 / name
+                                          :op1 "G1"))))
+   :ARG1-of (g / general-02)
+   :ARG1-of (s / show-01
+               :ARG2 (a / and
+                        :op1 (c3 / cell-line
+                                 :name (n2 / name
+                                           :op1 "MDA-MB-231"))
+                        :op2 (c4 / cell-line
+                                 :name (n3 / name
+                                           :op1 "SUM149"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4")))
+
+# ::save-date Wed Mar 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To evaluate whether the antiproliferative effects of EGFR inhibition involve ERK1/2 activation, the status of pERK1/2 was determined in cells exposed to the same concentrations of PKI166 used for the growth inhibition assays, in the presence and absence of U0126 (10 <i>μ</i><sc>M</sc>) (<xref ref-type="fig" rid="fig5">Figure 5</xref>).
+# ::file pmid_1528_0923_106.txt
+# ::date 2015-06-16T11:03:57
+# ::id pmid_1528_0923.106
+(d / determine-01
+   :ARG1 (s2 / status
+             :poss-of (e2 / enzyme
+                          :name (n3 / name
+                                    :op1 "ERK1/2")
+                          :ARG3-of (p / phosphorylate-01)))
+   :location (c / cell
+                :ARG1-of (e3 / expose-01
+                             :ARG2 (c2 / concentrate-02
+                                       :ARG1 (s3 / small-molecule
+                                                 :name (n4 / name
+                                                           :op1 "PKI166")
+                                                 :ARG1-of (u / use-01
+                                                             :ARG2 (a / assay-01
+                                                                      :ARG1 (i / inhibit-01
+                                                                               :ARG1 (g / grow-01)))))
+                                       :ARG1-of (s4 / same-01))
+                             :manner (a2 / and
+                                         :op1 (p2 / present-02
+                                                  :ARG1 (s / small-molecule
+                                                           :name (n2 / name
+                                                                     :op1 "U0126")
+                                                           :quant (c3 / concentration-quantity
+                                                                      :quant "10"
+                                                                      :unit (m / micromolar))))
+                                         :op2 (a3 / absent-01
+                                                  :ARG1 s))))
+   :purpose (e4 / evaluate-01
+                :ARG1 (i3 / involve-01
+                          :mode "interrogative"
+                          :ARG0 (a4 / affect-01
+                                    :ARG0 (i2 / inhibit-01
+                                              :ARG1 (e / enzyme
+                                                       :name (n / name
+                                                                :op1 "EGFR")))
+                                    :ARG0-of (c4 / counter-01
+                                                 :ARG1 (p3 / proliferate-01)))
+                          :ARG1 (a5 / activate-01
+                                    :ARG1 (e5 / enzyme
+                                              :name (n5 / name
+                                                        :op1 "ERK1/2")))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5")))
+
+# ::save-date Sun Jun 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt U1026 alone inhibited ERK1/2 phosphorylation in MDA-MB-435 cells, with PKI 166 having no effect, as expected from minimal expression of EGFR in these cells.
+# ::file pmid_1528_0923_107.txt
+# ::date 2015-06-16T11:29:16
+# ::id pmid_1528_0923.107
+(a / and
+   :op1 (i / inhibit-01
+           :ARG0 (s / small-molecule
+                    :name (n2 / name
+                              :op1 "U1026")
+                    :mod (a2 / alone))
+           :ARG1 (p / phosphorylate-01
+                    :ARG1 (e2 / enzyme
+                              :name (n3 / name
+                                        :op1 "ERK1/2")))
+           :location (c / cell-line
+                        :name (n4 / name
+                                  :op1 "MDA-MB-435")))
+   :op2 (a3 / affect-01
+            :polarity "-"
+            :ARG0 (s2 / small-molecule
+                      :name (n5 / name
+                                :op1 "PKI166")))
+   :ARG1-of (e3 / expect-01
+                :source (e4 / express-03
+                            :ARG2 (e / enzyme
+                                     :name (n / name
+                                              :op1 "EGFR"))
+                            :ARG3 c
+                            :ARG1-of (m / minimal-02))))
+
+# ::save-date Tue Jun 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PKI166 inhibited ERK1/2 phosphorylation in SUM149 cells, as did U0126 alone, and further inhibition by the combination of drugs was barely discernible.
+# ::file pmid_1528_0923_108.txt
+# ::date 2015-06-16T11:44:35
+# ::id pmid_1528_0923.108
+(a / and
+   :op1 (i / inhibit-01
+           :ARG0 (s2 / small-molecule
+                     :name (n2 / name
+                               :op1 "PKI166"))
+           :ARG1 (p / phosphorylate-01
+                    :ARG1 (e / enzyme
+                             :name (n3 / name
+                                       :op1 "ERK1/2")))
+           :location (c / cell-line
+                        :name (n4 / name
+                                  :op1 "SUM149"))
+           :ARG1-of (r / resemble-01
+                       :ARG2 (s / small-molecule
+                                :name (n / name
+                                         :op1 "U0126")
+                                :mod (a2 / alone))))
+   :op2 (d / discern-01
+           :ARG1 (i2 / inhibit-01
+                     :ARG0 (c2 / combine-01
+                               :ARG1 (d2 / drug))
+                     :time (f / further))
+           :degree (b / bare)
+           :ARG1-of (p2 / possible-01)))
+
+
+# ::save-date Tue Jun 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Treatment of MDA-MB-468 with either drug resulted in similar inhibition of ERK1/2 phosphorylation, with almost complete elimination of phosphorylated proteins by the combination.
+# ::file pmid_1528_0923_109.txt
+# ::date 2015-06-16T11:50:30
+# ::id pmid_1528_0923.109
+(r2 / result-01
+      :ARG1 (t / treat-04
+            :ARG1 (c / cell-line
+                  :name (n / name :op1 "MDA-MB-468"))
+            :ARG2 (d / drug
+                  :mod (e / either)))
+      :ARG2 (a / and
+            :op1 (i / inhibit-01
+                  :ARG1 (p / phosphorylate-01
+                        :ARG1 (e2 / enzyme
+                              :name (n2 / name :op1 "ERK1/2")))
+                  :ARG1-of (r / resemble-01))
+            :op2 (e3 / eliminate-01
+                  :ARG0 (c3 / combine-01)
+                  :ARG1 (p2 / protein
+                        :ARG3-of (p3 / phosphorylate-01))
+                  :ARG1-of (c2 / complete-01
+                        :mod (a2 / almost)))))
+
+# ::save-date Sun Jun 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PKI166 alone minimally altered the ERK1/2 status in the MDA-MB-231 cells, and U0126 produced some inhibition, while the combination resulted in a substantial reduction, reflecting the effect on cell proliferation and apoptosis.
+# ::file pmid_1528_0923_110.txt
+# ::date 2015-06-16T11:55:33
+# ::id pmid_1528_0923.110
+(c / contrast-01
+   :ARG1 (a / and
+            :op1 (a2 / alter-01
+                     :ARG0 (s2 / small-molecule
+                               :wiki "-"
+                               :name (n2 / name
+                                         :op1 "PKI166")
+                               :mod (a3 / alone))
+                     :ARG1 (s3 / status
+                               :mod (e / enzyme
+                                       :wiki "Extracellular_signal-regulated_kinases"
+                                       :name (n3 / name
+                                                 :op1 "ERK1/2")))
+                     :ARG1-of (m / minimal-02)
+                     :location (c2 / cell-line
+                                   :wiki "-"
+                                   :name (n4 / name
+                                             :op1 "MDA-MB-231")))
+            :op2 (p / produce-01
+                    :ARG0 (s4 / small-molecule
+                              :wiki "U0126"
+                              :name (n5 / name
+                                        :op1 "U0126"))
+                    :ARG1 (i / inhibit-01
+                             :mod (s5 / some))))
+   :ARG2 (r / result-01
+            :ARG1 (c3 / combine-01)
+            :ARG2 (r2 / reduce-01
+                      :ARG1 s3
+                      :degree (s6 / substantial))
+            :ARG1-of (r3 / reflect-01
+                         :ARG2 (a4 / affect-01
+                                   :ARG1 (a5 / and
+                                             :op1 (p2 / proliferate-01
+                                                      :ARG0 (c4 / cell))
+                                             :op2 (a6 / apoptosis))))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt For SUM149 and MDA-MB-468 cells the combination of the inhibitors almost completely eliminated ERK1/2 phosphorylation after 1 h incubation, although growth inhibition over 72 h was 54–63% with 0.5 <i>μ</i><sc>M</sc> PKI166 plus 10 <i>μ</i><sc>M</sc> U0126, and 63–81% with 5.0 <i>μ</i><sc>M</sc> PKI166 plus 10 <i>μ</i><sc>M</sc> U0126 (<xref ref-type="table" rid="tbl1">Table 1</xref>).
+# ::file pmid_1528_0923_111.txt
+# ::date 2015-06-16T12:02:26
+# ::id pmid_1528_0923.111
+(e / eliminate-01
+   :ARG0 (c / combine-01
+            :ARG1 (m / molecular-physical-entity
+                     :ARG0-of (i / inhibit-01)))
+   :ARG1 (p3 / phosphorylate-01
+             :ARG1 (e2 / enzyme
+                       :name (n / name
+                                :op1 "ERK1/2")))
+   :ARG2 (a3 / and
+             :op1 (c3 / cell-line
+                      :name (n2 / name
+                                :op1 "SUM149"))
+             :op2 (c4 / cell-line
+                      :name (n3 / name
+                                :op1 "MDA-MB-468")))
+   :ARG1-of (c2 / complete-01
+                :mod (a / almost))
+   :time (a2 / after
+             :op1 (i2 / incubate-01)
+             :quant (t / temporal-quantity
+                       :quant "1"
+                       :unit (h / hour)))
+   :concession (a5 / and
+                   :op1 (i3 / inhibit-01
+                            :ARG0 (a4 / and
+                                      :op1 (s2 / small-molecule
+                                               :name (n4 / name
+                                                         :op1 "PKI166")
+                                               :quant (c5 / concentration-quantity
+                                                          :quant "0.5"
+                                                          :unit (m2 / micromolar)))
+                                      :op2 (s / small-molecule
+                                              :name (n5 / name
+                                                        :op1 "U0126")
+                                              :quant (c6 / concentration-quantity
+                                                         :quant "10"
+                                                         :unit (m3 / micromolar))))
+                            :ARG1 (g / grow-01)
+                            :quant (v / value-interval
+                                      :op1 (p4 / percentage-entity
+                                               :value "54")
+                                      :op2 (p / percentage-entity
+                                              :value "63"))
+                            :duration (o2 / over
+                                          :op1 (t2 / temporal-quantity
+                                                   :quant "72"
+                                                   :unit (h3 / hour))))
+                   :op2 (i4 / inhibit-01
+                            :ARG0 (a6 / and
+                                      :op1 (s3 / small-molecule
+                                               :name (n6 / name
+                                                         :op1 "PKI166")
+                                               :quant (c7 / concentration-quantity
+                                                          :quant "5"
+                                                          :unit (m4 / micromolar)))
+                                      :op2 s)
+                            :ARG1 (g2 / grow-01)
+                            :quant (v2 / value-interval
+                                       :op1 (p5 / percentage-entity
+                                                :value "63")
+                                       :op2 (p2 / percentage-entity
+                                                :value "81"))
+                            :duration o2))
+   :ARG1-of (d / describe-01
+               :ARG0 (t3 / table
+                         :mod "1")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Recovery of ERK1/2 phosphorylation in the U0126-treated cells over the period of the growth inhibition assays was not investigated, but the data may also suggest that other signal pathways were contributing to the growth and survival of the cells.
+# ::file pmid_1528_0923_112.txt
+# ::date 2015-06-16T12:21:26
+# ::id pmid_1528_0923.112
+(c / contrast-01
+   :ARG1 (i / investigate-01
+            :polarity "-"
+            :ARG1 (r / recover-02
+                     :ARG1 (p / phosphorylate-01
+                              :ARG1 (e / enzyme
+                                       :name (n / name
+                                                :op1 "ERK1/2"))
+                              :location (c2 / cell
+                                            :ARG1-of (t / treat-04
+                                                        :ARG2 (s / small-molecule
+                                                                 :name (n2 / name
+                                                                           :op1 "U0126")))))
+                     :time (a / assay-01
+                              :ARG1 (i2 / inhibit-01
+                                        :ARG1 (g / grow-01)))))
+   :ARG2 (p3 / possible-01
+             :ARG1 (s2 / suggest-01
+                       :ARG0 (d / data)
+                       :ARG1 (c3 / contribute-01
+                                 :ARG0 (p4 / pathway
+                                           :ARG0-of (s3 / signal-07)
+                                           :mod (o2 / other))
+                                 :ARG2 (a3 / and
+                                           :op1 (g2 / grow-01
+                                                    :ARG1 (c4 / cell))
+                                           :op2 (s4 / survive-01
+                                                    :ARG0 c4)))
+                       :mod (a2 / also))))
+
+
+# ::save-date Sun Jun 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The effects of the inhibitors were not related to downregulation of total ERK1/2 proteins, as the levels did not decrease with treatment (<xref ref-type="fig" rid="fig5">Figure 5</xref>).
+# ::file pmid_1528_0923_113.txt
+# ::date 2015-06-16T12:35:01
+# ::id pmid_1528_0923.113
+(r2 / relate-01
+      :polarity "-"
+      :ARG1 (a / affect-01
+            :ARG0 (m / molecular-physical-entity
+                  :ARG0-of (i2 / inhibit-01)))
+      :ARG2 (d / downregulate-01
+            :ARG1 (e / enzyme
+                  :name (n / name :op1 "ERK1/2")
+                  :mod (t2 / total)))
+      :ARG1-of (c / cause-01
+            :ARG0 (d2 / decrease-01
+                  :polarity "-"
+                  :ARG0 (t3 / treat-04)
+                  :ARG1 (l / level)))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f / figure :mod "5")))

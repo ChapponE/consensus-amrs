@@ -1,0 +1,529 @@
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of the 11 uveal melanoma cell lines under study, only one cell line (Ocm 1) carried a <i>BRAF</i> mutation, the common V599E (also described by Calipel <i>et al</i> and Kilic <i>et al</i>).
+# ::file pmid_1592_8660_83.txt
+# ::date 2015-06-30T09:31:21
+# ::id pmid_1592_8660.83
+(i / include-91
+   :ARG1 (c2 / cell-line
+             :quant "1"
+             :name (n3 / name
+                       :op1 "Ocm"
+                       :op2 "1")
+             :mod (o / only)
+             :ARG0-of (c3 / carry-01
+                          :ARG1 (m / mutate-01
+                                   :value "V599E"
+                                   :ARG1 (g / gene
+                                            :name (n2 / name
+                                                      :op1 "BRAF"))
+                                   :ARG1-of (d2 / describe-01
+                                                :ARG0 (a5 / and
+                                                          :op1 (p / publication-91
+                                                                  :ARG0 (a3 / and
+                                                                            :op1 (p2 / person
+                                                                                     :name (n4 / name
+                                                                                               :op1 "Calipel"))
+                                                                            :op2 (p3 / person
+                                                                                     :mod (o2 / other))))
+                                                          :op2 (p6 / publication-91
+                                                                   :ARG0 (a4 / and
+                                                                             :op1 (p4 / person
+                                                                                      :name (n5 / name
+                                                                                                :op1 "Kilic"))
+                                                                             :op2 p3)))
+                                                :mod (a / also))
+                                   :mod (c4 / common))))
+   :ARG2 (c / cell-line
+            :quant "11"
+            :mod (m2 / medical-condition
+                     :name (n / name
+                              :op1 "melanoma")
+                     :mod (u / uveal))
+            :ARG1-of (s / study-01)))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All primary tumour specimens were wild type for <i>BRAF</i>.
+# ::file pmid_1592_8660_84.txt
+# ::date 2015-06-30T10:14:11
+# ::id pmid_1592_8660.84
+(w / wild-type
+   :domain (s / specimen
+              :mod (t / tumor)
+              :mod (a / all)
+              :mod (p / primary))
+   :prep-for (g / gene
+                :name (n / name
+                         :op1 "BRAF")))
+
+# ::save-date Thu Jul 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No mutations were found in the <i>NRAS</i>, <i>HRAS</i> or <i>KRAS</i> genes, in both the cell lines and primary tissue.
+# ::file pmid_1592_8660_85.txt
+# ::date 2015-06-30T10:36:01
+# ::id pmid_1592_8660.85
+(f / find-01
+   :polarity "-"
+   :ARG1 (m / mutate-01
+            :ARG1 (a / and
+                     :op1 (g / gene
+                             :name (n / name
+                                      :op1 "NRAS"))
+                     :op2 (g2 / gene
+                              :name (n2 / name
+                                        :op1 "HRAS")
+                              :location "a2")
+                     :op3 (g3 / gene
+                              :name (n3 / name
+                                        :op1 "KRAS")
+                              :location "a2")))
+   :location (a2 / and
+                 :op1 (c / cell-line)
+                 :op2 (t / tissue
+                         :mod (p / primary))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to assess the level of expression and the activation (by phosphorylation) of members of the MAPK pathway downstream of <i>RAS</i> and <i>BRAF</i>, Western blot analysis was performed on uveal melanoma cell lines (<xref ref-type="table" rid="tbl2">Table 2A</xref>).
+# ::file pmid_1592_8660_87.txt
+# ::date 2015-06-30T10:56:22
+# ::id pmid_1592_8660.87
+(p3 / perform-01
+    :ARG1 (i2 / immunoblot-01
+              :ARG2 (c / cell-line
+                       :mod (m2 / medical-condition
+                                :name (n2 / name
+                                          :op1 "melanoma")
+                                :mod (u / uveal)))
+              :purpose (a2 / assess-01
+                           :ARG1 (a3 / and
+                                     :op1 (l / level
+                                             :degree-of (e / express-03
+                                                           :ARG2 (m / member
+                                                                    :ARG1-of (i / include-91
+                                                                                :ARG2 (p2 / pathway
+                                                                                          :name (n3 / name
+                                                                                                    :op1 "MAPK"))))
+                                                           :location (r / relative-position
+                                                                        :op1 (g / gene
+                                                                                :name (n4 / name
+                                                                                          :op1 "RAS"))
+                                                                        :op2 (g2 / gene
+                                                                                 :name (n5 / name
+                                                                                           :op1 "BRAF"))
+                                                                        :direction (d2 / downstream))))
+                                     :op2 (a4 / activate-01
+                                              :ARG0 (p / phosphorylate-01)
+                                              :ARG1 m
+                                              :location r)))
+              :ARG1-of (d3 / describe-01
+                           :ARG0 (t2 / table
+                                     :mod "2A"))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The expression levels of the downstream members of RAS and BRAF are presented in <xref ref-type="fig" rid="fig1">Figure 1</xref>.
+# ::file pmid_1592_8660_88.txt
+# ::date 2015-06-30T12:14:56
+# ::id pmid_1592_8660.88
+(p / present-01
+   :ARG1 (l / level
+            :degree-of (e / express-03
+                          :ARG2 (m / member
+                                   :ARG1-of (i / include-91
+                                               :ARG2 (a / and
+                                                        :op1 (p2 / protein-family
+                                                                 :name (n / name
+                                                                          :op1 "RAS"))
+                                                        :op2 (e3 / enzyme
+                                                                 :name (n2 / name
+                                                                           :op1 "BRAF"))))
+                                   :mod (d / downstream))))
+   :location (f / figure
+                :mod "3"))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In response to the constitutively activating <i>BRAF</i> mutation in Ocm 1, downstream members of the MAPK pathway show activation (phosphorylated MEK, ERK and ELK).
+# ::file pmid_1592_8660_89.txt
+# ::date 2015-06-30T12:39:19
+# ::id pmid_1592_8660.89
+(s / show-01
+   :ARG0 (m / member
+            :ARG1-of (i / include-91
+                        :ARG2 (p / pathway
+                                 :name (n / name
+                                          :op1 "MAPK")))
+            :mod (d / downstream))
+   :ARG1 (a / activate-01
+            :ARG1 (a2 / and
+                      :op1 (e / enzyme
+                              :name (n2 / name
+                                        :op1 "MEK")
+                              :ARG3-of (p2 / phosphorylate-01
+                                           :ARG3 e2
+                                           :ARG3 e3))
+                      :op2 (e2 / enzyme
+                               :name (n3 / name
+                                         :op1 "ERK"))
+                      :op3 (e3 / enzyme
+                               :name (n4 / name
+                                         :op1 "ELK"))))
+   :ARG2-of (r / respond-01
+               :ARG1 (m2 / mutate-01
+                         :ARG1 (g / gene
+                                  :name (n5 / name
+                                            :op1 "BRAF"))
+                         :ARG0-of (a3 / activate-01
+                                      :manner (c / constitutive))
+                         :location (c2 / cell-line
+                                       :name (n6 / name
+                                                 :op1 "Ocm"
+                                                 :op2 "1")))))
+
+# ::save-date Fri Nov 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Levels of expression of the downstream members were not different in the two cell lines derived from the same primary tumour (92.1 and 92.2), except for phosphorylated MEK, indicating that there had been little clonal divergence between the cell populations during <i>in vitro</i> culturing.
+# ::file pmid_1592_8660_90.txt
+# ::date 2015-06-30T13:10:18
+# ::id pmid_1592_8660.90
+(d / differ-02
+   :polarity "-"
+   :ARG1 (l / level
+            :degree-of (e / express-03
+                          :ARG2 (m / member
+                                   :mod (d2 / downstream)
+                                   :ARG2-of (e2 / except-01
+                                                :ARG1 (e3 / enzyme
+                                                          :name (n / name
+                                                                   :op1 "MEK")
+                                                          :ARG3-of (p2 / phosphorylate-01))))))
+   :location (a / and
+                :op1 (c6 / cell-line
+                         :name (n4 / name
+                                   :op1 "92.1")
+                         :ARG1-of (d3 / derive-01
+                                      :ARG2 (t / tumor
+                                               :ARG1-of (s / same-01)
+                                               :mod (p / primary))
+                                      :ARG1 c))
+                :op2 (c / cell-line
+                        :name (n2 / name
+                                  :op1 "92.2")))
+   :ARG0-of (i / indicate-01
+               :ARG1 (d4 / diverge-01
+                         :ARG0 (p3 / population
+                                   :mod (c3 / cell))
+                         :degree (l2 / little)
+                         :location (t2 / there)
+                         :mod (c2 / clone-01)
+                         :time (c4 / culture-01
+                                   :manner (i2 / in-vitro)))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, compared to the phosphorylation status of these members in Ocm 1, most cell lines show activation of MEK, ERK and ELK; however, these cell lines show this activation in the absence of mutations in the upstream <i>RAS</i> and <i>BRAF</i> genes.
+# ::file pmid_1592_8660_91.txt
+# ::date 2015-06-30T14:23:57
+# ::id pmid_1592_8660.91
+(s / show-01
+   :ARG0 (c / cell-line
+            :quant (m / most))
+   :ARG1 (a / activate-01
+            :ARG1 (a2 / and
+                      :op1 (e / enzyme
+                              :name (n / name
+                                       :op1 "MEK"))
+                      :op2 (e2 / enzyme
+                               :name (n2 / name
+                                         :op1 "ERK"))
+                      :op3 (e3 / enzyme
+                               :name (n3 / name
+                                         :op1 "ELK")))
+            :compared-to (s2 / status
+                             :mod (p / phosphorylate-01)
+                             :poss (m2 / member
+                                       :mod (t / this))
+                             :location (c2 / cell-line
+                                           :name (n4 / name
+                                                     :op1 "Ocm"
+                                                     :op2 "1"))))
+   :mod (i / interesting)
+   :concession-of (s3 / show-01
+                      :ARG0 c
+                      :ARG1 a
+                      :condition (a3 / absent-01
+                                     :ARG1 (m3 / mutate-01
+                                               :ARG1 (a4 / and
+                                                         :op1 (g / gene
+                                                                 :name (n5 / name
+                                                                           :op1 "RAS")
+                                                                 :location (u / upstream))
+                                                         :op2 (g2 / gene
+                                                                  :name (n6 / name
+                                                                            :op1 "BRAF")
+                                                                  :location u))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The levels of total ERK were remarkably similar across all cell lines, with the exception of two cell lines Mel 285 and Mel 290, which had significantly higher levels of total ERK than the others.
+# ::file pmid_1592_8660_92.txt
+# ::date 2015-06-30T21:20:26
+# ::id pmid_1592_8660.92
+(r2 / resemble-01
+    :ARG1 (l / level
+             :quant-of (e / enzyme
+                          :name (n / name
+                                   :op1 "ERK")
+                          :mod (t / total)
+                          :quant l2))
+    :ARG1-of (r / remarkable-02)
+    :location (a / across
+                 :op1 (c / cell-line
+                         :mod (a2 / all)
+                         :ARG2-of (e2 / except-01
+                                      :ARG1 (a3 / and
+                                                :op1 (c3 / cell-line
+                                                         :name (n3 / name
+                                                                   :op1 "Mel"
+                                                                   :op2 "285")
+                                                         :ARG0-of (h / have-03
+                                                                     :ARG1 (l2 / level
+                                                                               :ARG1-of (h2 / high-02
+                                                                                            :degree (m / more)
+                                                                                            :ARG1-of (s / significant-02)
+                                                                                            :compared-to (c2 / cell-line
+                                                                                                             :mod (o / other))))
+                                                                     :ARG0 c4))
+                                                :op2 (c4 / cell-line
+                                                         :name (n5 / name
+                                                                   :op1 "Mel"
+                                                                   :op2 "290")))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In keeping with this observation, these two cell lines also have the highest levels of phosphorylated-ERK.
+# ::file pmid_1592_8660_93.txt
+# ::date 2015-07-01T03:03:20
+# ::id pmid_1592_8660.93
+(h / have-03
+   :ARG0 (c / cell-line
+            :quant "2"
+            :mod (t / this))
+   :ARG1 (l / level
+            :ARG1-of (h2 / high-02
+                         :degree (m / most))
+            :quant-of (e / enzyme
+                         :name (n / name
+                                  :op1 "ERK")
+                         :ARG3-of (p / phosphorylate-01)))
+   :mod (a / also)
+   :ARG1-of (k / keep-06
+               :ARG2 (o / observe-01
+                        :ARG1 (t2 / this))))
+
+
+# ::save-date Tue Jul 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <xref ref-type="fig" rid="fig2">Figure 2</xref> shows that there is no significant influence of serum on the activity of ERK1/2 in these cell lines, as reported recently by <xref ref-type="other" rid="bib3">Calipel <i>et al</i> (2003)</xref>.
+# ::file pmid_1592_8660_94.txt
+# ::date 2015-07-01T09:03:14
+# ::id pmid_1592_8660.94
+(s / show-01
+      :ARG0 (f / figure :mod "2")
+      :ARG1 (i / influence-01
+            :ARG0 (s3 / serum)
+            :ARG1 (a / activity-06
+                  :ARG0 (e / enzyme
+                        :name (n / name :op1 "ERK1/2")))
+            :ARG1-of (s2 / significant-02 :polarity "-")
+            :location (c / cell-line
+                  :mod (t / this)))
+      :ARG1-of (r / report-01
+            :ARG0 (p4 / publication-91
+                  :ARG0 (a2 / and
+                        :op1 (p / person
+                              :name (n2 / name :op1 "Calipel"))
+                        :op2 (p2 / person
+                              :mod (o / other)))))
+      :ARG1-of (d / describe-01
+            :ARG0 (p3 / publication-91
+                  :time (d2 / date-entity :year "2003"))))
+
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Immunofluorescence results of total and phospho-ERK1/2 on a panel of 19 fresh frozen uveal melanoma sections are listed in <xref ref-type="table" rid="tbl2">Table 2 (B)</xref>.
+# ::file pmid_1592_8660_96.txt
+# ::date 2015-07-01T09:41:34
+# ::id pmid_1592_8660.96
+(l / list-01
+      :ARG1 (r / result-01
+            :ARG2 (a / and
+                  :op1 (e / enzyme
+                        :name (n / name :op1 "ERK1/2")
+                        :mod (t / total))
+                  :op2 (e2 / enzyme
+                        :name (n3 / name :op1 "ERK1/2")
+                        :ARG3-of (p / phosphorylate-01)))
+            :location (p2 / panel
+                  :consist-of (s / section-01
+                        :mod (m / medical-condition
+                              :name (n2 / name :op1 "melanoma"))
+                        :mod (u / uveal
+                              :quant "19"
+                              :ARG1-of (f / fresh-04)
+                              :ARG1-of (f2 / freeze-01))))
+            :instrument (i / immunofluoresce-01))
+      :ARG2 (t2 / table
+            :mod "2"
+            :ARG1-of (d2 / describe-01
+                  :ARG0 (f3 / figure :mod "B"))))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In seven of the 19 primary tumours, less than 5% of the tumour cells stained positively for ERK1/2 and nine tumours for phosphorylated ERK1/2.
+# ::file pmid_1592_8660_97.txt
+# ::date 2015-07-01T10:35:38
+# ::id pmid_1592_8660.97
+(a / and
+      :op1 (s / stain-01
+            :ARG1 (c / cell
+                  :ARG1-of (i / include-91
+                        :ARG2 (c2 / cell
+                              :mod (t / tumor))
+                        :ARG3 (l / less-than
+                              :op1 (p / percentage-entity :value "5")))
+                  :mod t)
+            :manner (p2 / positive)
+            :location (t3 / tumor
+                  :quant "7"
+                  :ARG1-of (i3 / include-91
+                        :ARG2 (t4 / tumor
+                              :quant "19"
+                              :mod (p4 / primary))))
+            :beneficiary (e / enzyme
+                  :name (n2 / name :op1 "ERK1/2")))
+      :op2 (s2 / stain-01
+            :ARG1 (t2 / tumor
+                  :quant "9"
+                  :ARG1-of (i2 / include-91
+                        :ARG2 t4))
+            :beneficiary (e2 / enzyme
+                  :name (n3 / name :op1 "ERK1/2")
+                  :ARG3-of (p3 / phosphorylate-01))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Despite the lack of mutations in the <i>RAS</i> and <i>BRAF</i> genes in this set of uveal melanomas, it is noteworthy that we observed phosphorylated (active) ERK1/2 expression in 10 of 19 tumours.
+# ::file pmid_1592_8660_98.txt
+# ::date 2015-07-01T11:14:08
+# ::id pmid_1592_8660.98
+(n / note-01
+   :ARG1 (o / observe-01
+            :ARG0 (w / we)
+            :ARG1 (e / express-01
+                     :ARG2 (e2 / enzyme
+                               :name (n2 / name
+                                         :op1 "ERK1/2")
+                               :ARG3-of (p / phosphorylate-01
+                                           :ARG1-of (m / mean-01
+                                                       :ARG2 (a / activity-06)))))
+            :location (t / tumor
+                         :quant "10"
+                         :ARG1-of (i / include-91
+                                     :ARG2 (t2 / tumor
+                                               :quant "19")))
+            :concession (l / lack-01
+                           :ARG1 (m2 / mutate-01
+                                     :ARG1 (a2 / and
+                                               :op1 (g / gene
+                                                       :name (n3 / name
+                                                                 :op1 "RAS")
+                                                       :location (s / set
+                                                                    :mod (t3 / this)
+                                                                    :consist-of (m3 / medical-condition
+                                                                                    :name (n5 / name
+                                                                                              :op1 "melanoma")
+                                                                                    :mod (u / uveal))))
+                                               :op2 (g2 / gene
+                                                        :name (n4 / name
+                                                                  :op1 "BRAF")
+                                                        :location s)))))
+   :ARG1-of (r / recommend-01))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There was no significant association between ERK1/2 activation and tumour location or cell type.
+# ::file pmid_1592_8660_99.txt
+# ::date 2015-07-01T12:06:57
+# ::id pmid_1592_8660.99
+(a / associate-01
+      :ARG1 (a2 / activate-01
+            :ARG1 (e / enzyme
+                  :name (n / name :op1 "ERK1/2")))
+      :ARG2 (o / or
+            :op1 (l / location
+                  :location-of (t / tumor))
+            :op2 (t2 / type-03
+                  :ARG1 (c / cell)))
+      :ARG1-of (s / significant-02 :polarity "-"))
+
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The scoring system for each antibody cannot be compared between antibodies since the antibodies recognise different epitopes and with different affinities; therefore, the staining intensity on Western or by immunohistochemistry is relative only to the other samples for the particular antibody used.
+# ::file pmid_1592_8660_100.txt
+# ::date 2015-07-01T12:18:55
+# ::id pmid_1592_8660.100
+(p2 / possible-01
+      :polarity "-"
+      :ARG1 (c / compare-01
+            :ARG1 (s / system
+                  :instrument-of (s2 / score-01
+                        :ARG1 (a / antibody
+                              :mod (e / each))))
+            :ARG2 (s3 / system
+                  :instrument-of (s4 / score-01
+                        :ARG1 (a2 / antibody)))
+            :ARG1-of (c2 / cause-01
+                  :ARG0 (r / recognize-02
+                        :ARG0 a
+                        :ARG1 (e2 / epitope
+                              :ARG1-of (d / differ-02)
+                              :ARG0-of (h / have-03
+                                    :ARG1 (a3 / affinity
+                                          :ARG1-of d)))))
+            :ARG0-of (c3 / cause-01
+                  :ARG1 (r2 / relative-05
+                        :ARG1 (i / intensity
+                              :mod (s5 / stain-01)
+                              :instrument (o / or
+                                    :op1 (i3 / immunoblot-01)
+                                    :op2 (i2 / immunohistochemistry)))
+                        :ARG3 (t / thing
+                              :mod (o3 / other)
+                              :beneficiary (a4 / antibody
+                                    :mod (p / particular)
+                                    :ARG1-of (u / use-01))
+                              :ARG1-of (s6 / sample-01))
+                        :mod (o2 / only)))))

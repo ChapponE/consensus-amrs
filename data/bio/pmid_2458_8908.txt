@@ -1,0 +1,1504 @@
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In a cohort of 144 metastatic melanoma patients we found that patients with N-RAS mutant melanoma had a worse prognosis.
+# ::file a_pmid_2458_8908_10.txt
+# ::date 2015-06-04T08:56:43
+# ::id a_pmid_2458_8908.10
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (h / have-03
+            :ARG0 (p / person
+                     :ARG0-of (h2 / have-03
+                                  :ARG1 (m5 / medical-condition
+                                            :name (n / name
+                                                     :op1 "melanoma")
+                                            :mod (e / enzyme
+                                                    :name (n2 / name
+                                                              :op1 "N-RAS")
+                                                    :ARG2-of (m / mutate-01))))
+                     :ARG0-of (h4 / have-rel-role-91
+                                  :ARG2 (p4 / patient))
+                     :ARG1-of (i / include-91
+                                 :ARG2 (c / cohort
+                                          :consist-of (p3 / person
+                                                          :quant "144"
+                                                          :ARG0-of (h3 / have-03
+                                                                       :ARG1 (m4 / medical-condition
+                                                                                 :name (n3 / name
+                                                                                           :op1 "melanoma")
+                                                                                 :ARG1-of (m3 / metastasize-101)))
+                                                          :ARG0-of (h5 / have-rel-role-91
+                                                                       :ARG2 (p5 / patient))))))
+            :ARG1 (p2 / prognosis
+                      :ARG1-of (b / bad-07
+                                  :degree (m2 / more)))))
+
+# ::save-date Wed Oct 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These patients were more likely to have brain metastases at the time of presentation with metastatic disease than their N-RAS-wild-type counterparts.
+# ::file a_pmid_2458_8908_11.txt
+# ::date 2015-06-04T09:02:21
+# ::id a_pmid_2458_8908.11
+(l / likely-01
+   :ARG1 (h / have-03
+            :ARG0 (p / person
+                     :mod (t / this)
+                     :compared-to (c / counterpart
+                                     :mod (e / enzyme
+                                             :name (n / name
+                                                      :op1 "N-RAS")
+                                             :mod (w / wild-type)))
+                     :ARG0-of (h2 / have-rel-role-91
+                                  :ARG2 (p3 / patient)))
+            :ARG1 (m / metastasize-101
+                     :ARG2 (b / brain))
+            :time (p2 / present-102
+                      :ARG0 p
+                      :ARG1 (d / disease
+                               :ARG1-of (m2 / metastasize-101))))
+   :degree (m3 / more))
+
+# ::save-date Mon Feb 15, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All N-RAS mutant melanoma cultures tested in our study (n = 7) were sensitive to MEK inhibition162.
+# ::file a_pmid_2458_8908_12.txt
+# ::date 2015-06-04T11:08:51
+# ::id a_pmid_2458_8908.12
+(s / sensitive-03
+   :ARG0 (c / culture-01
+            :quant "7"
+            :ARG1 (m2 / medical-condition
+                      :name (n3 / name
+                                :op1 "melanoma")
+                      :mod (e / enzyme
+                              :name (n4 / name
+                                        :op1 "N-RAS")
+                              :ARG2-of (m / mutate-01)))
+            :ARG1-of (t / test-01
+                        :medium (s2 / study-01
+                                    :ARG0 (w / we)))
+            :mod (a / all))
+   :ARG1 (i / inhibit-01
+            :ARG0 (s3 / small-molecule
+                      :name (n2 / name
+                                :op1 "MEK"
+                                :op2 "162"))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Exposure to MEK162 reduced ERK1/2 phosphorylation, and induced apoptosis.
+# ::file a_pmid_2458_8908_13.txt
+# ::date 2015-06-04T09:06:40
+# ::id a_pmid_2458_8908.13
+(a / and
+   :op1 (r2 / reduce-01
+            :ARG0 (e2 / expose-01
+                      :ARG2 (s2 / small-molecule
+                                :name (n3 / name
+                                          :op1 "MEK162")))
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (e4 / enzyme
+                               :name (n4 / name
+                                         :op1 "ERK1/2"))))
+   :op2 (i2 / induce-01
+            :ARG0 e2
+            :ARG2 (a3 / apoptosis)))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Clonogenic survival was significantly reduced in sensitive melanoma cell cultures.
+# ::file a_pmid_2458_8908_14.txt
+# ::date 2015-06-04T09:17:01
+# ::id a_pmid_2458_8908.14
+(r / reduce-01
+      :ARG1 (s2 / survive-01
+            :mod (c / clonogen))
+      :ARG2 (s / significant-02)
+      :location (c2 / culture-01
+            :ARG1 (c3 / cell
+                  :ARG0-of (s3 / sensitive-03)
+                  :mod (m / medical-condition
+                        :name (n / name :op1 "melanoma")))))
+
+
+# ::save-date Tue Dec 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Characteristics of our cohort of 144 patients with stage IV melanoma are shown in Table <xref ref-type="table" rid="T1">1</xref>.
+# ::file a_pmid_2458_8908_59.txt
+# ::date 2015-06-04T10:05:57
+# ::id a_pmid_2458_8908.59
+(s / show-01
+      :ARG0 (t / table :mod "1")
+      :ARG1 (c / characteristic-02
+            :ARG1 (p / person
+                  :quant "144"
+                  :ARG0-of (h / have-03
+                        :ARG1 (m / medical-condition
+                              :name (n / name :op1 "melanoma")
+                              :ARG1-of (s2 / stage-02 :ARG2 "IV")))
+                  :ARG0-of (h2 / have-rel-role-91
+                        :ARG2 (p2 / patient))
+                  :ARG1-of (i / include-91
+                        :ARG2 (c2 / cohort
+                              :poss (w / we))))))
+
+# ::save-date Fri Jun 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Mutations were found in B-RAF in 43.7%, N-RAS in 27.7%, and 28.4% were wild type (WT) for both.
+# ::file a_pmid_2458_8908_60.txt
+# ::date 2015-06-04T10:24:42
+# ::id a_pmid_2458_8908.60
+(f / find-01
+   :ARG1 (m / mutate-01
+            :ARG1 (a2 / and
+                      :op1 (e / enzyme
+                              :name (n3 / name
+                                        :op1 "B-RAF")
+                              :quant (p4 / percentage-entity
+                                         :value "43.7"))
+                      :op2 (e2 / enzyme
+                               :name (n4 / name
+                                         :op1 "N-RAS")
+                               :quant (p5 / percentage-entity
+                                          :value "27.7"))
+                      :ARG2-of (i / include-91
+                                  :ARG1 (e3 / enzyme
+                                            :mod (w2 / wild-type))
+                                  :ARG3 (p6 / percentage-entity
+                                            :value "28.4")))))
+
+# ::save-date Fri Jun 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The majority of B-RAF mutations were represented by substitution of valine at position 600 to glutamic acid (74.6% were B-RAF<sup>V600E</sup>) or to lysine (19% were B-RAF<sup>V600K</sup>).
+# ::file a_pmid_2458_8908_61.txt
+# ::date 2015-06-04T10:42:40
+# ::id a_pmid_2458_8908.61
+(o2 / or
+    :op1 (r / represent-01
+            :ARG0 (s / substitute-01
+                     :ARG1 (a / amino-acid
+                              :name (n2 / name
+                                        :op1 "glutamic"
+                                        :op2 "acid"))
+                     :ARG2 (a2 / amino-acid
+                               :mod "600"
+                               :name (n5 / name
+                                         :op1 "valine")))
+            :ARG1 (m / mutate-01
+                     :ARG1-of (i / include-91
+                                 :ARG2 (m5 / mutate-01
+                                           :ARG2 (e2 / enzyme
+                                                     :name (n / name
+                                                              :op1 "B-RAF")))
+                                 :ARG3 (m2 / majority))
+                     :ARG2-of (i2 / include-91
+                                  :ARG1 (m3 / mutate-01
+                                            :value "V600E"
+                                            :ARG2 e2)
+                                  :ARG3 (p / percentage-entity
+                                           :value "74.6"))))
+    :op2 (r2 / represent-01
+             :ARG0 (s2 / substitute-01
+                       :ARG1 (a4 / amino-acid
+                                 :name (n7 / name
+                                           :op1 "lysine"))
+                       :ARG2 a2)
+             :ARG1 (m6 / mutate-01
+                       :ARG1-of i
+                       :ARG2-of (i3 / include-91
+                                    :ARG1 (m4 / mutate-01
+                                              :value "V600K"
+                                              :ARG2 e2)
+                                    :ARG3 (p2 / percentage-entity
+                                              :value "19")))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Substitutions of glutamine 61 accounted for 95% of N-RAS mutations (most frequently Q61R/K/L/H).
+# ::file a_pmid_2458_8908_62.txt
+# ::date 2015-06-14T01:04:39
+# ::id a_pmid_2458_8908.62
+(a / account-01
+   :ARG0 (s / substitute-01
+            :ARG2 (a2 / amino-acid
+                      :mod "61"
+                      :name (n / name
+                               :op1 "glutamine")))
+   :ARG2 (m / mutate-01
+            :ARG1 (e / enzyme
+                     :name (n2 / name
+                               :op1 "N-RAS"))
+            :ARG2-of (i / include-91
+                        :ARG1 (a3 / and
+                                  :op1 (m2 / mutate-01
+                                           :value "Q61R")
+                                  :op2 (m5 / mutate-01
+                                           :value "Q61K")
+                                  :op3 (m6 / mutate-01
+                                           :value "Q61L")
+                                  :op4 (m7 / mutate-01
+                                           :value "Q61H"))
+                        :ARG1-of (f / frequent-02
+                                    :degree (m3 / most)))
+            :ARG1-of (i2 / include-91
+                         :ARG2 (m4 / mutate-01
+                                   :ARG1 e)
+                         :ARG3 (p2 / percentage-entity
+                                   :value "95"))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The slightly higher percentage of N-RAS mutant melanomas in our population than what is commonly reported may be a result of the relatively small sample size or a reflection of local demographics.
+# ::file a_pmid_2458_8908_63.txt
+# ::date 2015-06-04T11:25:19
+# ::id a_pmid_2458_8908.63
+(p / possible-01
+   :ARG1 (o2 / or
+             :op1 (r / result-01
+                     :ARG1 (s2 / size-01
+                               :ARG1 (t2 / thing
+                                         :ARG1-of (s3 / sample-01))
+                               :ARG2 (s4 / small
+                                         :ARG2-of (r4 / relative-05)))
+                     :ARG2 (p2 / percentage
+                               :ARG1-of (h / high-02
+                                           :degree (m2 / more
+                                                       :degree (s / slight)))
+                               :quant-of (m / medical-condition
+                                            :name (n / name
+                                                     :op1 "melanoma")
+                                            :mod (e / enzyme
+                                                    :name (n2 / name
+                                                              :op1 "N-RAS")
+                                                    :ARG2-of (m3 / mutate-01)))
+                               :location (p3 / population
+                                             :poss (w / we))
+                               :compared-to (t / thing
+                                               :ARG1-of (r2 / report-01
+                                                            :mod (c / common)))))
+             :op2 (r3 / reflect-01
+                      :ARG1 p2
+                      :ARG2 (d / demographics
+                               :ARG1-of (l / local-02)))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients with B-RAF mutations tended to be younger; median age at initial diagnosis of melanoma was 57.6 in patients with B-RAF mutations, 68.2 in patients with N-RAS mutations and 66.3 years in patients wild-type for both (P <0.0001).
+# ::file a_pmid_2458_8908_65.txt
+# ::date 2015-06-04T09:05:27
+# ::id a_pmid_2458_8908.65
+(a3 / and
+    :op1 (t / tend-02
+            :ARG1 (p / person
+                     :ARG0-of (h4 / have-rel-role-91
+                                  :ARG2 (p3 / patient
+                                            :mod (e3 / enzyme
+                                                     :name (n / name
+                                                              :op1 "B-RAF")
+                                                     :ARG2-of (m / mutate-01)))))
+            :ARG2 (p2 / person
+                      :mod (y / young
+                              :degree (m3 / more))))
+    :op2 (a / and
+            :op1 (a4 / age-01
+                     :ARG1 p
+                     :ARG2 (t2 / temporal-quantity
+                               :quant "57.6"
+                               :unit (y2 / year)))
+            :op2 (a5 / age-01
+                     :ARG1 (p4 / person
+                               :ARG0-of (h6 / have-rel-role-91
+                                            :ARG2 (p7 / patient
+                                                      :mod (e / enzyme
+                                                              :name (n4 / name
+                                                                        :op1 "N-RAS")
+                                                              :ARG2-of (m6 / mutate-01)))))
+                     :ARG2 (t3 / temporal-quantity
+                               :quant "68.2"
+                               :unit (y3 / year)))
+            :op3 (a6 / age-01
+                     :ARG1 (p5 / person
+                               :ARG0-of (h7 / have-rel-role-91
+                                            :ARG2 (p8 / patient
+                                                      :mod e
+                                                      :mod e3
+                                                      :mod (w / wild-type))))
+                     :ARG2 (t4 / temporal-quantity
+                               :quant "66.3"
+                               :unit (y4 / year)))
+            :mod (m4 / median)
+            :time (d / diagnose-01
+                     :ARG2 (m2 / medical-condition
+                               :name (n2 / name
+                                         :op1 "melanoma"))
+                     :mod (i / initial))
+            :ARG1-of (p6 / possible-01
+                         :quant (l / less-than
+                                   :value "0.0001"))))
+
+# ::save-date Wed Oct 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Our cohort included 22 patients who received either dabrafenib (N = 1), vemurafenib (N = 19), a pan-RAF inhibitor (N = 1) or a pan-RAF inhibitor and vemurafenib (N = 1).
+# ::file a_pmid_2458_8908_66.txt
+# ::date 2015-06-14T02:18:32
+# ::id a_pmid_2458_8908.66
+(i2 / include-01
+    :ARG1 (p / person
+             :quant "22"
+             :ARG0-of (h / have-rel-role-91
+                         :ARG2 (p6 / patient
+                                   :ARG2-of (i7 / include-91
+                                                :ARG1 (a2 / and
+                                                          :op1 (p2 / person
+                                                                   :quant "1"
+                                                                   :ARG0-of (h2 / have-rel-role-91
+                                                                                :ARG2 (p7 / patient))
+                                                                   :ARG0-of (r2 / receive-01
+                                                                                :ARG1 (s / small-molecule
+                                                                                         :name (n / name
+                                                                                                  :op1 "dabrafenib"))))
+                                                          :op2 (p3 / person
+                                                                   :quant "19"
+                                                                   :ARG0-of h2
+                                                                   :ARG0-of (r3 / receive-01
+                                                                                :ARG1 (s2 / small-molecule
+                                                                                          :name (n2 / name
+                                                                                                    :op1 "vemurafenib"))))
+                                                          :op3 (p4 / person
+                                                                   :quant "1"
+                                                                   :ARG0-of h2
+                                                                   :ARG0-of (r4 / receive-01
+                                                                                :ARG1 (m / molecular-physical-entity
+                                                                                         :ARG0-of (i / inhibit-01
+                                                                                                     :ARG1 (e / enzyme
+                                                                                                              :name (n4 / name
+                                                                                                                        :op1 "pan-RAF"))))))
+                                                          :op4 (p5 / person
+                                                                   :quant "1"
+                                                                   :ARG0-of h2
+                                                                   :ARG0-of (r5 / receive-01
+                                                                                :ARG2 (a3 / and
+                                                                                          :op1 m
+                                                                                          :op2 s2))))))))
+    :ARG2 (c / cohort
+             :poss (w / we)))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients with N-RAS mutated melanomas appear to have an increased rate of skin and soft tissue involvement (70%) compared to B-RAF mutated counterparts and WT patients (37% and 41% respectively, P = 0.0025).
+# ::file a_pmid_2458_8908_67.txt
+# ::date 2015-06-14T02:45:57
+# ::id a_pmid_2458_8908.67
+(a / appear-01
+   :ARG1 (i / increase-01
+            :ARG1 (r / rate
+                     :degree-of (i2 / involve-01
+                                    :ARG1 (a2 / and
+                                              :op1 (s / skin)
+                                              :op2 (t / tissue
+                                                      :ARG1-of (s2 / soft-02))))
+                     :mod (p6 / percentage-entity
+                              :value "70"))
+            :ARG1-of (h / have-03
+                        :ARG0 (p2 / person
+                                  :ARG0-of (h2 / have-03
+                                               :ARG1 (m2 / medical-condition
+                                                         :name (n3 / name
+                                                                   :op1 "melanoma")
+                                                         :mod (e / enzyme
+                                                                 :name (n4 / name
+                                                                           :op1 "N-RAS")
+                                                                 :ARG2-of (m / mutate-01))))
+                                  :ARG0-of (h3 / have-rel-role-91
+                                               :ARG2 (p3 / patient))))
+            :ARG1-of (c / compare-01
+                        :ARG2 (a3 / and
+                                  :op1 (r3 / rate
+                                           :degree-of i2
+                                           :mod (c3 / counterpart
+                                                    :mod (e2 / enzyme
+                                                             :name (n5 / name
+                                                                       :op1 "B-RAF")
+                                                             :ARG2-of (m3 / mutate-01)))
+                                           :mod (p7 / percentage-entity
+                                                    :value "37"))
+                                  :op2 (r4 / rate
+                                           :degree-of i2
+                                           :mod (p4 / person
+                                                    :ARG0-of (h4 / have-rel-role-91
+                                                                 :ARG2 (p5 / patient
+                                                                           :mod (e3 / enzyme
+                                                                                    :name (n / name
+                                                                                             :op1 "B-RAF")
+                                                                                    :mod (w2 / wild-type)))))
+                                           :mod (p8 / percentage-entity
+                                                    :value "41"))
+                                  :mod (r2 / respective))))
+   :ARG1-of (p / possible-01
+               :value "0.0025"))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The rate of lymph node metastasis was also noted to be higher in patients with N-RAS mutations (75%) compared to B-RAF mutant and WT patients (46% and 61%, respectively) (P = 0.01).
+# ::file a_pmid_2458_8908_68.txt
+# ::date 2015-06-14T02:55:18
+# ::id a_pmid_2458_8908.68
+(n3 / note-02
+    :ARG1 (r / rate
+             :mod (p4 / percentage-entity
+                      :value "75")
+             :ARG1-of (h2 / high-02
+                          :degree (m3 / more))
+             :mod (m / metastasize-101
+                     :ARG2 (n4 / node
+                               :mod (l / lymph)))
+             :condition (p / person
+                           :ARG0-of (h / have-rel-role-91
+                                       :ARG2 (p2 / patient
+                                                 :mod (e / enzyme
+                                                         :name (n5 / name
+                                                                   :op1 "N-RAS")
+                                                         :ARG2-of (m4 / mutate-01)))))
+             :ARG1-of (c / compare-01
+                         :ARG2 (a / and
+                                  :op1 (r3 / rate
+                                           :mod (p3 / person
+                                                    :ARG0-of (h3 / have-rel-role-91
+                                                                 :ARG2 (p5 / patient))
+                                                    :mod (e2 / enzyme
+                                                             :name (n6 / name
+                                                                       :op1 "B-RAF")
+                                                             :ARG2-of (m5 / mutate-01)))
+                                           :mod (p7 / percentage-entity
+                                                    :value "46"))
+                                  :op2 (r2 / rate
+                                           :mod (p6 / person
+                                                    :ARG0-of h3
+                                                    :mod (w / wild-type))
+                                           :mod (p8 / percentage-entity
+                                                    :value "61")))))
+    :ARG1-of (p9 / possible-01
+                 :value "0.01")
+    :mod (a2 / also))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No statistically significant difference was seen between the genotypes and other clinical characteristics, such as M stage and LDH levels.Seeing that B-RAF inhibitors can affect survival in patients with B-RAF mutant melanomas, this group of patients was removed from the survival analysis.
+# ::file a_pmid_2458_8908_69.txt
+# ::date 2015-06-15T08:03:17
+# ::id a_pmid_2458_8908.69
+(m / multi-sentence
+   :snt1 (s / see-01
+            :polarity "-"
+            :ARG1 (d / differ-02
+                     :ARG1 (g / genotype)
+                     :ARG2 (c / characteristic-02
+                              :ARG2 (a / and
+                                       :op1 (e5 / event
+                                                :name (n4 / name
+                                                          :op1 "M"
+                                                          :op2 "stage"))
+                                       :op2 (l / level
+                                               :quant-of (e3 / enzyme
+                                                             :name (n3 / name
+                                                                       :op1 "LDH")))
+                                       :ARG1-of (e / exemplify-01))
+                              :mod (c2 / clinic)
+                              :mod (o / other))
+                     :ARG1-of (s2 / significant-02
+                                  :mod (s3 / statistic))))
+   :snt2 (s7 / see-01
+             :ARG1 (p / possible-01
+                      :ARG1 (a2 / affect-01
+                                :ARG0 (m3 / molecular-physical-entity
+                                          :ARG0-of (i2 / inhibit-01
+                                                       :ARG1 (e4 / enzyme
+                                                                 :name (n / name
+                                                                          :op1 "B-RAF"))))
+                                :ARG1 (s5 / survive-01
+                                          :ARG0 (p2 / person
+                                                    :ARG0-of (h / have-03
+                                                                :ARG1 (m2 / medical-condition
+                                                                          :name (n5 / name
+                                                                                    :op1 "melanoma")
+                                                                          :mod (e2 / enzyme
+                                                                                   :name (n2 / name
+                                                                                             :op1 "B-RAF")
+                                                                                   :ARG2-of (m4 / mutate-01))))
+                                                    :ARG0-of (h2 / have-rel-role-91
+                                                                 :ARG2 (p3 / patient))))))
+             :ARG0-of (c4 / cause-01
+                          :ARG1 (r / remove-01
+                                   :ARG1 (g2 / group
+                                             :mod (t / this)
+                                             :ARG2-of (i / include-91
+                                                         :ARG1 p2))
+                                   :ARG2 (a3 / analyze-01
+                                             :ARG1 (s6 / survive-01))))))
+
+# ::save-date Wed Aug 5, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt By Cox univariate analysis we found a trend towards shorter survival in the N-RAS mutant population, compared to the B-RAF and WT groups combined (p = 0.12).
+# ::file a_pmid_2458_8908_70.txt
+# ::date 2015-06-15T08:21:07
+# ::id a_pmid_2458_8908.70
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (t / trend-01
+            :ARG2 (s / survive-01
+                     :ARG1 (p / population
+                              :ARG0-of (h / have-03
+                                          :ARG1 (e3 / enzyme
+                                                    :name (n3 / name
+                                                              :op1 "N-RAS")
+                                                    :ARG2-of (m / mutate-01))))
+                     :ARG1-of (s2 / short-07
+                                  :degree (m2 / more))
+                     :ARG1-of (c / compare-01
+                                 :ARG2 (a / and
+                                          :op1 (g / group
+                                                  :mod (e4 / enzyme
+                                                           :name (n4 / name
+                                                                     :op1 "B-RAF")))
+                                          :op2 (g2 / group
+                                                   :mod (w2 / wild-type))
+                                          :ARG1-of (c3 / combine-01)))))
+   :ARG1-of (p2 / possible-01
+                :value "0.12")
+   :manner (a3 / analyze-01
+               :name (n / name
+                        :op1 "Cox")
+               :mod (u / univariate)))
+
+
+# ::save-date Tue Jun 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The median survival was 13 and 19.6 months, respectively.
+# ::file a_pmid_2458_8908_71.txt
+# ::date 2015-06-14T07:59:42
+# ::id a_pmid_2458_8908.71
+(s / survive-01
+      :mod (m2 / median)
+      :duration (a / and
+            :op1 (t / temporal-quantity
+                  :quant "13"
+                  :unit (m / month))
+            :op2 (t4 / temporal-quantity
+                  :quant "19.6"
+                  :unit m)
+            :mod (r / respective)))
+
+# ::save-date Wed Oct 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Kaplan-Meier survival curves are shown in Figure <xref ref-type="fig" rid="F1">1</xref>a for the three groups of patients (BRAF or NRAS mutant or WT for both) and Figure <xref ref-type="fig" rid="F1">1</xref>b for the two groups (NRAS compared to BRAF mutant and WT combined) to visually demonstrate the differences between the groups.
+# ::file a_pmid_2458_8908_72.txt
+# ::date 2015-06-14T08:03:21
+# ::id a_pmid_2458_8908.72
+(s / show-01
+   :ARG0 (a / and
+            :op1 (f / figure
+                    :mod "1a"
+                    :beneficiary (g / group-01
+                                    :quant "3"
+                                    :ARG1 (p / person
+                                             :ARG0-of (h2 / have-rel-role-91
+                                                          :ARG2 (p2 / patient))
+                                             :mod (o2 / or
+                                                      :op1 (e / enzyme
+                                                              :name (n / name
+                                                                       :op1 "BRAF")
+                                                              :ARG2-of (m4 / mutate-01))
+                                                      :op2 (e3 / enzyme
+                                                               :name (n4 / name
+                                                                         :op1 "BRAF")
+                                                               :mod (w2 / wild-type))
+                                                      :op3 (e2 / enzyme
+                                                               :name (n2 / name
+                                                                         :op1 "NRAS")
+                                                               :ARG2-of (m5 / mutate-01))
+                                                      :op4 (e4 / enzyme
+                                                               :name (n5 / name
+                                                                         :op1 "NRAS")
+                                                               :mod (w3 / wild-type))))))
+            :op2 (f2 / figure
+                     :mod "1b"
+                     :beneficiary (g2 / group-01
+                                      :quant "2"
+                                      :mod (c / compare-01
+                                              :ARG1 (e5 / enzyme
+                                                        :name (n3 / name
+                                                                  :op1 "NRAS"))
+                                              :ARG2 (c2 / combine-01
+                                                        :ARG1 e
+                                                        :ARG2 e3)))))
+   :ARG1 (c4 / curve
+             :name (n6 / name
+                       :op1 "Kaplan-Meier")
+             :mod (s2 / survive-01))
+   :purpose (d / demonstrate-01
+               :ARG1 (d2 / differ-02
+                         :ARG1 g
+                         :ARG2 g2)
+               :mod (v / visual)))
+
+# ::save-date Tue Dec 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, analysis of anatomic sites at the time of initial diagnosis of stage IV disease revealed a higher rate of brain involvement among B-RAF (16%) and N-RAS (15%) mutant melanoma patients, compared with patients with WT disease (2.5%) (P =0.04).
+# ::file a_pmid_2458_8908_73.txt
+# ::date 2015-06-14T13:58:23
+# ::id a_pmid_2458_8908.73
+(r / reveal-01
+   :ARG0 (a / analyze-01
+            :ARG1 (s / site
+                     :mod (a2 / anatomy))
+            :time (d / diagnose-01
+                     :ARG2 (d2 / disease
+                               :ARG1-of (s2 / stage-02
+                                            :ARG2 "IV"))
+                     :mod (i / initial)))
+   :ARG1 (a4 / and
+             :op1 (r3 / rate
+                      :mod (i4 / involve-01
+                               :ARG1 (b / brain)
+                               :prep-among (p3 / person
+                                               :ARG0-of (h / have-rel-role-91
+                                                           :ARG2 (p8 / patient
+                                                                     :mod (m3 / medical-condition
+                                                                              :name (n5 / name
+                                                                                        :op1 "melanoma")
+                                                                              :mod (e / enzyme
+                                                                                      :name (n / name
+                                                                                               :op1 "B-RAF")
+                                                                                      :ARG2-of (m / mutate-01)))))))
+                      :mod (p4 / percentage-entity
+                               :value "16"))
+             :op2 (r4 / rate
+                      :mod (i5 / involve-01
+                               :ARG1 b
+                               :prep-among (p9 / person
+                                               :ARG0-of (h5 / have-rel-role-91
+                                                            :ARG2 (p10 / patient
+                                                                       :mod (m5 / medical-condition
+                                                                                :name (n2 / name
+                                                                                          :op1 "melanoma")
+                                                                                :mod (e2 / enzyme
+                                                                                         :name (n6 / name
+                                                                                                   :op1 "N-RAS")
+                                                                                         :ARG2-of (m4 / mutate-01)))))))
+                      :mod (p5 / percentage-entity
+                               :value "15"))
+             :ARG1-of (h2 / high-02
+                          :degree (m2 / more))
+             :ARG1-of (c / compare-01
+                         :ARG2 (r2 / rate
+                                   :mod (i3 / involve-01
+                                            :ARG1 b)
+                                   :condition (p6 / person
+                                                  :ARG0-of (h3 / have-rel-role-91
+                                                               :ARG2 (p7 / patient
+                                                                         :mod (d6 / disease
+                                                                                  :mod (w2 / wild-type)))))
+                                   :mod (p / percentage-entity
+                                           :value "2.5"))))
+   :ARG2-of (i2 / interest-01)
+   :ARG1-of (p2 / possible-01
+                :value "0.04"))
+
+
+# ::save-date Fri Jun 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt With longitudinal follow-up, however, the rate of development of brain metastases did not differ among the three groups, possibly because the WT groups lived longer and thus developed brain metastases over time.
+# ::file a_pmid_2458_8908_74.txt
+# ::date 2015-06-14T14:27:14
+# ::id a_pmid_2458_8908.74
+(c3 / contrast-01
+      :ARG2 (d / differ-02
+            :polarity "-"
+            :ARG1 (g / group :quant "3")
+            :ARG3 (r / rate
+                  :mod (d2 / develop-01
+                        :ARG2 (m / metastasize-101
+                              :ARG2 (b / brain))))
+            :ARG1-of (c2 / cause-01
+                  :ARG0 (a2 / and
+                        :op1 (l2 / live-01
+                              :ARG0 (g2 / group
+                                    :mod (w / wild-type))
+                              :ARG1-of (l3 / long-03
+                                    :degree (m2 / more)))
+                        :op2 (d3 / develop-01
+                              :ARG2 m
+                              :duration (o / over
+                                    :mod (t / time))
+                              :ARG1-of (c4 / cause-01
+                                    :ARG0 l2)))
+                  :ARG1-of (p / possible-01)))
+      :ARG1-of (c / condition-01
+            :ARG2 (f / follow-up-03
+                  :mod (l / longitude))))
+
+# ::save-date Tue Jan 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To investigate the effect of B-RAF and MEK inhibition in melanoma cultures, we used RAF265 (a pan-RAF inhibitor), MEK162 (a MEK1/2 inhibitor) and the MEK inhibitor trametinib.
+# ::file a_pmid_2458_8908_76.txt
+# ::date 2015-06-14T03:05:52
+# ::id a_pmid_2458_8908.76
+(u / use-01
+   :ARG0 (w / we)
+   :ARG1 (a / and
+            :op1 (s2 / small-molecule
+                     :wiki "-"
+                     :name (n4 / name
+                               :op1 "RAF265")
+                     :ARG0-of (i2 / inhibit-01
+                                  :ARG1 (e / enzyme
+                                           :wiki "-"
+                                           :name (n5 / name
+                                                     :op1 "pan-RAF"))))
+            :op2 (s3 / small-molecule
+                     :wiki "Binimetinib"
+                     :name (n6 / name
+                               :op1 "MEK162")
+                     :ARG0-of (i3 / inhibit-01
+                                  :ARG1 (e7 / enzyme
+                                            :wiki "Mitogen-activated_protein_kinase_kinase"
+                                            :name (n7 / name
+                                                      :op1 "MEK1/2"))))
+            :op3 (s / small-molecule
+                    :wiki "Trametinib"
+                    :name (n8 / name
+                              :op1 "trametinib")
+                    :ARG0-of (i4 / inhibit-01
+                                 :ARG1 (p / protein-family
+                                          :wiki "Mitogen-activated_protein_kinase_kinase"
+                                          :name (n9 / name
+                                                    :op1 "MEK")))))
+   :ARG2 (i5 / investigate-01
+             :ARG0 w
+             :ARG1 (a2 / affect-01
+                       :ARG0 (i6 / inhibit-01
+                                 :ARG0 (a3 / and
+                                           :op1 (e9 / enzyme
+                                                    :wiki "-"
+                                                    :name (n10 / name
+                                                               :op1 "B-RAF"))
+                                           :op2 p))
+                       :ARG1 (c / culture
+                                :mod (m / medical-condition
+                                        :wiki "Melanoma"
+                                        :name (n12 / name
+                                                   :op1 "melanoma"))))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A panel of 22 patient-derived melanoma cultures was used; the IC<sub>50</sub> for RAF265 and MEK162 are shown in Table <xref ref-type="table" rid="T2">2</xref>.
+# ::file a_pmid_2458_8908_77.txt
+# ::date 2015-06-14T03:27:04
+# ::id a_pmid_2458_8908.77
+(m / multi-sentence
+   :snt1 (u / use-01
+            :ARG1 (p / panel
+                     :consist-of (c / culture-01
+                                    :quant "22"
+                                    :ARG1 (m2 / medical-condition
+                                              :name (n / name
+                                                       :op1 "melanoma"))
+                                    :ARG1-of (d / derive-01
+                                                :ARG2 (p2 / person
+                                                          :ARG0-of (h / have-rel-role-91
+                                                                      :ARG2 (p3 / patient)))))))
+   :snt2 (s / show-01
+            :ARG0 (t2 / table
+                      :mod "1")
+            :ARG1 (c2 / concentration-quantity
+                      :ARG4-of (h2 / have-percentage-maximal-inhibitory-concentration-01
+                                   :ARG1 (a / and
+                                            :op1 (s2 / small-molecule
+                                                     :name (n3 / name
+                                                               :op1 "RAF265"))
+                                            :op2 (s3 / small-molecule
+                                                     :name (n4 / name
+                                                               :op1 "MEK162")))
+                                   :ARG2 "50"))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This was compared to the IC<sub>50</sub> for trametinib (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Table S1).
+# ::file a_pmid_2458_8908_78.txt
+# ::date 2015-06-14T03:51:15
+# ::id a_pmid_2458_8908.78
+(c / compare-01
+   :ARG1 (t / this)
+   :ARG2 (h / have-percentage-maximal-inhibitory-concentration-01
+            :ARG1 (s / small-molecule
+                     :name (n2 / name
+                               :op1 "trametinib"))
+            :ARG2 "50")
+   :ARG1-of (d / describe-01
+               :ARG0 (t3 / table
+                         :mod "S1"
+                         :location (f / file
+                                      :mod "1"
+                                      :mod (a / additional)))))
+
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cells were treated with each drug individually at concentrations ranging from 1 nM to 1000 nM and analyzed three days later.
+# ::file a_pmid_2458_8908_80.txt
+# ::date 2015-06-14T04:31:40
+# ::id a_pmid_2458_8908.80
+(a / and
+      :op1 (t / treat-04
+            :ARG1 (c / cell)
+            :ARG2 (d / drug
+                  :mod (c2 / concentration
+                        :ARG1-of (r / range-01
+                              :ARG3 (c3 / concentration-quantity
+                                    :quant "1"
+                                    :unit (n / nanomolar))
+                              :ARG4 (c4 / concentration-quantity
+                                    :quant "1000"
+                                    :unit n)))
+                  :mod (e / each))
+            :manner (i / individual))
+      :op2 (a2 / analyze-01
+            :ARG1 c
+            :time (l3 / late
+                  :op1 (t3 / temporal-quantity
+                        :quant "3"
+                        :unit (d3 / day))
+                  :degree (m4 / more))))
+
+# ::save-date Wed Mar 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Table <xref ref-type="table" rid="T2">2</xref>, the IC<sub>50</sub> for RAF265 ranged from 24 to >10000 nM, 4 to 2004 nM, and 62 to 2082 nM for WT, B-RAF mutant and N-RAS mutant cultures, respectively.
+# ::file a_pmid_2458_8908_81.txt
+# ::date 2015-06-14T04:50:12
+# ::id a_pmid_2458_8908.81
+(s / show-01
+   :ARG0 (t / table
+            :mod "2")
+   :ARG1 (a / and
+            :op1 (r / range-01
+                    :ARG1 (c10 / concentration-quantity
+                               :ARG4-of (h / have-percentage-maximal-inhibitory-concentration-01
+                                           :ARG1 (s2 / small-molecule
+                                                     :name (n / name
+                                                              :op1 "RAF265"))
+                                           :ARG2 "50"))
+                    :ARG3 (c4 / concentration-quantity
+                              :quant "24"
+                              :unit (n5 / nanomolar))
+                    :ARG4 (m / more-than
+                             :op1 (c5 / concentration-quantity
+                                      :quant "10000"
+                                      :unit n5))
+                    :location (c / culture-01
+                                 :mod (w / wild-type)))
+            :op2 (r2 / range-01
+                     :ARG1 (c11 / concentration-quantity
+                                :ARG4-of (h2 / have-percentage-maximal-inhibitory-concentration-01
+                                             :ARG1 s2
+                                             :ARG2 "50"))
+                     :ARG3 (c6 / concentration-quantity
+                               :quant "4"
+                               :unit n5)
+                     :ARG4 (c7 / concentration-quantity
+                               :quant "2004"
+                               :unit n5)
+                     :location (c2 / culture-01
+                                   :mod (m2 / mutate-01
+                                            :ARG2 (e / enzyme
+                                                     :name (n2 / name
+                                                               :op1 "B-RAF")))))
+            :op3 (r3 / range-01
+                     :ARG1 (c12 / concentration-quantity
+                                :ARG4-of (h3 / have-percentage-maximal-inhibitory-concentration-01
+                                             :ARG1 s2
+                                             :ARG2 "50"))
+                     :ARG3 (c8 / concentration-quantity
+                               :quant "62"
+                               :unit n5)
+                     :ARG4 (c9 / concentration-quantity
+                               :quant "2082"
+                               :unit n5)
+                     :location (c3 / culture-01
+                                   :mod (m3 / mutate-01
+                                            :ARG2 (e2 / enzyme
+                                                      :name (n3 / name
+                                                                :op1 "N-RAS")))))
+            :mod (r4 / respective)))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The IC<sub>50</sub> for MEK162 ranged from 10 to >10000 nM, < 1 to 150 nM, and 4 to 13 nM for WT, B-RAF mutant and N-RAS mutant melanoma cultures, respectively.
+# ::file a_pmid_2458_8908_82.txt
+# ::date 2015-06-15T10:43:18
+# ::id a_pmid_2458_8908.82
+(a / and
+   :op1 (r / range-01
+           :ARG1 (c10 / concentration-quantity
+                      :ARG4-of (h / have-percentage-maximal-inhibitory-concentration-01
+                                  :ARG1 (s / small-molecule
+                                           :name (n3 / name
+                                                     :op1 "MEK162"))
+                                  :ARG2 "50")
+                      :location (c / culture-01
+                                   :mod (w / wild-type)))
+           :ARG3 (c4 / concentration-quantity
+                     :quant "10"
+                     :unit (n2 / nanomolar))
+           :ARG4 (m / more-than
+                    :op1 (c5 / concentration-quantity
+                             :quant "10000"
+                             :unit n2)))
+   :op2 (r2 / range-01
+            :ARG1 (c11 / concentration-quantity
+                       :ARG4-of (h2 / have-percentage-maximal-inhibitory-concentration-01
+                                    :ARG1 s
+                                    :ARG2 "50")
+                       :location (c2 / culture-01
+                                     :mod (m2 / medical-condition
+                                              :name (n5 / name
+                                                        :op1 "melanoma")
+                                              :mod (e2 / enzyme
+                                                       :name (n6 / name
+                                                                 :op1 "B-RAF")
+                                                       :ARG2-of (m3 / mutate-01)))))
+            :ARG3 (l / less-than
+                     :op1 (c6 / concentration-quantity
+                              :quant "1"
+                              :unit n2))
+            :ARG4 (c7 / concentration-quantity
+                      :quant "150"
+                      :unit n2))
+   :op3 (r3 / range-01
+            :ARG1 (c12 / concentration-quantity
+                       :ARG4-of (h3 / have-percentage-maximal-inhibitory-concentration-01
+                                    :ARG1 s
+                                    :ARG2 "50")
+                       :location (c3 / culture-01
+                                     :mod (m5 / medical-condition
+                                              :name n5
+                                              :mod (e / enzyme
+                                                      :name (n9 / name
+                                                                :op1 "N-RAS")
+                                                      :ARG2-of (m4 / mutate-01)))))
+            :ARG3 (c8 / concentration-quantity
+                      :quant "4"
+                      :unit n2)
+            :ARG4 (c9 / concentration-quantity
+                      :quant "13"
+                      :unit n2))
+   :mod (r4 / respective))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The sensitivity to RAF265 in wild type (2 out of 5) and N-RAS (2 out of 7) melanoma cultures was low.
+# ::file a_pmid_2458_8908_83.txt
+# ::date 2015-06-14T04:51:15
+# ::id a_pmid_2458_8908.83
+(s / sensitive-03
+   :ARG0 (a2 / and
+             :op1 (c2 / culture-01
+                      :quant "2"
+                      :ARG1 (m / medical-condition
+                               :name (n4 / name
+                                         :op1 "melanoma")
+                               :mod (w2 / wild-type))
+                      :ARG1-of (i3 / include-91
+                                   :ARG2 (c / culture-01
+                                            :quant "5")))
+             :op2 (c3 / culture-01
+                      :quant "2"
+                      :ARG1 (m2 / medical-condition
+                                :name (n5 / name
+                                          :op1 "melanoma")
+                                :mod (e / enzyme
+                                        :name (n6 / name
+                                                  :op1 "N-RAS")))
+                      :ARG1-of (i4 / include-91
+                                   :ARG2 (c4 / culture-01
+                                             :quant "7"))))
+   :ARG1 (s2 / small-molecule
+             :name (n / name
+                      :op1 "RAF265"))
+   :ARG1-of (l / low-04))
+
+# ::save-date Mon Jun 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Two wild type cultures (YUROB and YUSOC) are sensitive to both RAF265 and MEK162.
+# ::file a_pmid_2458_8908_84.txt
+# ::date 2015-06-14T05:44:21
+# ::id a_pmid_2458_8908.84
+(s / sensitive-03
+   :ARG0 (c / culture-01
+            :quant "2"
+            :mod (w / wild-type)
+            :ARG1-of (m / mean-01
+                        :ARG2 (a / and
+                                 :op1 (c2 / cell-line
+                                          :name (n / name
+                                                   :op1 "YUROB"))
+                                 :op2 (c3 / cell-line
+                                          :name (n2 / name
+                                                    :op1 "YUSOC")))))
+   :ARG1 (a2 / and
+             :op1 (s2 / small-molecule
+                      :name (n3 / name
+                                :op1 "RAF265"))
+             :op2 (s3 / small-molecule
+                      :name (n4 / name
+                                :op1 "MEK162"))
+             :mod (b / both)))
+
+# ::save-date Fri Jun 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Six of ten B-RAF mutant cultures were sensitive to RAF265, and seven out of ten were sensitive to MEK162.
+# ::file a_pmid_2458_8908_85.txt
+# ::date 2015-06-14T05:48:43
+# ::id a_pmid_2458_8908.85
+(a / and
+   :op1 (s / sensitive-03
+           :ARG0 (c / culture-01
+                    :quant "6"
+                    :mod (m / mutate-01
+                            :ARG2 (e3 / enzyme
+                                      :name (n3 / name
+                                                :op1 "B-RAF")))
+                    :ARG1-of (i3 / include-91
+                                 :ARG2 (c2 / culture-01
+                                           :quant "10")))
+           :ARG1 (s3 / small-molecule
+                     :name (n4 / name
+                               :op1 "RAF265")))
+   :op2 (s2 / sensitive-03
+            :ARG0 (c3 / culture-01
+                      :quant "7"
+                      :ARG1-of (i / include-91
+                                  :ARG2 c2)
+                      :mod m)
+            :ARG1 (s4 / small-molecule
+                      :name (n5 / name
+                                :op1 "MEK162"))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In N-RAS mutant melanoma cultures, 2 out of 7 were sensitive to RAF265 and, strikingly, all were sensitive to MEK162.
+# ::file a_pmid_2458_8908_86.txt
+# ::date 2015-06-14T05:57:55
+# ::id a_pmid_2458_8908.86
+(a / and
+   :op1 (s / sensitive-03
+           :ARG0 (c / culture-01
+                    :quant "2"
+                    :ARG1 (m2 / medical-condition
+                              :name (n3 / name
+                                        :op1 "melanoma"))
+                    :mod (m / mutate-01
+                            :ARG1 (e3 / enzyme
+                                      :name (n4 / name
+                                                :op1 "N-RAS")))
+                    :ARG1-of (i2 / include-91
+                                 :ARG2 (c2 / culture-01
+                                           :quant "7")))
+           :ARG1 (s4 / small-molecule
+                     :name (n / name
+                              :op1 "RAF265")))
+   :op2 (s2 / sensitive-03
+            :ARG0 (a2 / all)
+            :ARG1 (s5 / small-molecule
+                      :name (n2 / name
+                                :op1 "MEK162"))
+            :ARG1-of (s3 / strike-04)))
+
+# ::save-date Mon Jun 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of the 7 N-RAS mutant cultures, 5 were sensitive to trametinib.
+# ::file a_pmid_2458_8908_87.txt
+# ::date 2015-06-14T06:03:39
+# ::id a_pmid_2458_8908.87
+(s / sensitive-03
+   :ARG0 (c / culture-01
+            :quant "5"
+            :mod (m / mutate-01
+                    :ARG2 (e / enzyme
+                             :name (n2 / name
+                                       :op1 "N-RAS")))
+            :ARG1-of (i / include-91
+                        :ARG2 (c2 / culture-01
+                                  :quant "7")))
+   :ARG1 (s2 / small-molecule
+             :name (n / name
+                      :op1 "trametinib")))
+
+
+# ::save-date Mon Jun 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt YUFIC and YUTICA were more resistant.
+# ::file a_pmid_2458_8908_88.txt
+# ::date 2015-06-14T06:11:25
+# ::id a_pmid_2458_8908.88
+(r / resist-01
+      :ARG0 (a / and
+            :op1 (c / cell-line
+                  :name (n / name :op1 "YUFIC"))
+            :op2 (c2 / cell-line
+                  :name (n2 / name :op1 "YUTICA")))
+      :degree (m / more))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Due to the striking sensitivity patterns of MEK162, we conducted additional studies to verify target down-regulation in the sensitive and resistant cultures.
+# ::file a_pmid_2458_8908_90.txt
+# ::date 2015-06-14T06:18:36
+# ::id a_pmid_2458_8908.90
+(c / cause-01
+   :ARG0 (p / pattern-01
+            :ARG1 (s / sensitive-03
+                     :ARG1 (s5 / small-molecule
+                               :name (n / name
+                                        :op1 "MEK162")))
+            :ARG1-of (s2 / strike-04))
+   :ARG1 (c2 / conduct-01
+             :ARG0 (w / we)
+             :ARG1 (s3 / study-01
+                       :ARG0 w
+                       :mod (a / additional))
+             :purpose (v / verify-01
+                         :ARG0 w
+                         :ARG1 (d / downregulate-01
+                                  :ARG1 (t / target-01)
+                                  :location (a2 / and
+                                                :op1 (c3 / culture-01
+                                                         :ARG0-of (s6 / sensitive-03))
+                                                :op2 (c4 / culture-01
+                                                         :ARG0-of (r2 / resist-01)))))))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt ERK1/2 isoforms are the immediate downstream substrates and best studied effectors of dual specificity kinases MEK1/2.
+# ::file a_pmid_2458_8908_91.txt
+# ::date 2015-06-14T06:28:34
+# ::id a_pmid_2458_8908.91
+(a2 / and
+      :op1 (s / substrate
+            :location (d / downstream)
+            :mod (i2 / immediacy))
+      :op2 (e3 / effector
+            :ARG1-of (s4 / study-01
+                  :ARG1-of (g / good-02
+                        :degree (m / most)))
+            :poss (k / kinase
+                  :name (n2 / name :op1 "MEK1/2")
+                  :mod (s3 / specificity
+                        :mod (d2 / dual))))
+      :domain (i / isoform
+            :mod (e2 / enzyme
+                  :name (n / name :op1 "ERK1/2"))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To assess the effect of MEK1/2 inhibition on ERK1/2 activation state (phosphorylation at T202/Y204 sites), melanoma cultures were treated with MEK162 and compared with untreated controls.
+# ::file a_pmid_2458_8908_92.txt
+# ::date 2015-06-14T06:30:15
+# ::id a_pmid_2458_8908.92
+(a / and
+   :op1 (t / treat-04
+           :ARG1 (c2 / culture-01
+                     :ARG1 (m2 / medical-condition
+                               :name (n3 / name
+                                         :op1 "melanoma")))
+           :ARG2 (s3 / small-molecule
+                     :name (n4 / name
+                               :op1 "MEK162")))
+   :op2 (c / compare-01
+           :ARG1 c2
+           :ARG2 (c3 / control
+                     :ARG1-of (t2 / treat-04
+                                  :polarity "-")))
+   :purpose (a2 / assess-01
+                :ARG1 (a3 / affect-01
+                          :ARG0 (i / inhibit-01
+                                   :ARG1 (e / enzyme
+                                            :name (n / name
+                                                     :op1 "MEK1/2")))
+                          :ARG1 (s / state
+                                   :mod (a4 / activate-01
+                                            :ARG1 (e2 / enzyme
+                                                      :name (n2 / name
+                                                                :op1 "ERK1/2"))))
+                          :ARG2-of (m / mean-01
+                                      :ARG1 (p2 / phosphorylate-01
+                                                :ARG1 (s4 / slash
+                                                          :op1 (a5 / amino-acid
+                                                                   :mod "202"
+                                                                   :name (n6 / name
+                                                                             :op1 "threonine"))
+                                                          :op2 (a6 / amino-acid
+                                                                   :mod "204"
+                                                                   :name (n7 / name
+                                                                             :op1 "tyrosine"))))))))
+
+# ::save-date Mon Jun 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We selected one sensitive and one resistant culture in the WT and B-RAF mutant categories.
+# ::file a_pmid_2458_8908_93.txt
+# ::date 2015-06-14T06:43:14
+# ::id a_pmid_2458_8908.93
+(s / select-01
+   :ARG0 (w / we)
+   :ARG1 (a3 / and
+             :op1 (c3 / culture-01
+                      :quant "1"
+                      :ARG0-of (s3 / sensitive-03))
+             :op2 (c4 / culture-01
+                      :quant "1"
+                      :ARG0-of (r2 / resist-01)))
+   :ARG2 (a / and
+            :op1 (c / category
+                    :mod (w4 / wild-type))
+            :op2 (c5 / category
+                     :mod (m / mutate-01
+                             :ARG2 (e3 / enzyme
+                                       :wiki "-"
+                                       :name (n3 / name
+                                                 :op1 "B-RAF"))))))
+
+# ::save-date Mon Jun 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Seeing that all N-RAS mutant cultures were sensitive to MEK162, we selected two sensitive cultures for these studies.
+# ::file a_pmid_2458_8908_94.txt
+# ::date 2015-06-14T07:01:32
+# ::id a_pmid_2458_8908.94
+(c / cause-01
+   :ARG0 (s / see-01
+            :ARG1 (s3 / sensitive-03
+                      :ARG0 (c2 / culture-01
+                                :mod (m / mutate-01
+                                        :ARG2 (e / enzyme
+                                                 :name (n / name
+                                                          :op1 "N-RAS")))
+                                :mod (a / all))
+                      :ARG1 (s6 / small-molecule
+                                :name (n2 / name
+                                          :op1 "MEK162"))))
+   :ARG1 (s2 / select-01
+             :ARG0 (w / we)
+             :ARG1 (c3 / culture-01
+                       :quant "2"
+                       :ARG0-of (s4 / sensitive-03))
+             :ARG3 (s5 / study-01
+                       :mod (t / this))))
+
+# ::save-date Wed Aug 5, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt WT (YUVON and YUROB), B-RAF mutant (YUKSI and YUMAC) and N-RAS mutant (YUDOSO and YUKIM) cells were treated with increasing doses (10-1000 nM) of MEK162 or left untreated for 4 and 24 hours.
+# ::file a_pmid_2458_8908_95.txt
+# ::date 2015-06-14T07:07:30
+# ::id a_pmid_2458_8908.95
+(o / or
+   :op1 (t2 / treat-04
+            :ARG1 (a6 / and
+                      :op1 (a7 / and
+                               :op1 (c2 / cell-line
+                                        :name (n / name
+                                                 :op1 "YUVON"))
+                               :op2 (c3 / cell-line
+                                        :name (n2 / name
+                                                  :op1 "YUROB"))
+                               :mod (w2 / wild-type))
+                      :op2 (a2 / and
+                               :op1 (c4 / cell-line
+                                        :name (n6 / name
+                                                  :op1 "YUKSI"))
+                               :op2 (c5 / cell-line
+                                        :name (n7 / name
+                                                  :op1 "YUMAC"))
+                               :mod (e / enzyme
+                                       :name (n8 / name
+                                                 :op1 "B-RAF")
+                                       :ARG2-of (m3 / mutate-01)))
+                      :op3 (a3 / and
+                               :op1 (c6 / cell-line
+                                        :name (n3 / name
+                                                  :op1 "YUDOSO"))
+                               :op3 (c7 / cell-line
+                                        :name (n9 / name
+                                                  :op1 "YUKIM"))
+                               :mod (e2 / enzyme
+                                        :name (n10 / name
+                                                   :op1 "N-RAS")
+                                        :ARG2-of (m / mutate-01))))
+            :ARG2 (s / small-molecule
+                     :name (n5 / name
+                               :op1 "MEK162")
+                     :quant (d / dose
+                               :quant (b / between
+                                         :op1 (c8 / concentration-quantity
+                                                  :quant "10"
+                                                  :unit (n4 / nanomolar))
+                                         :op2 (c9 / concentration-quantity
+                                                  :quant "1000"
+                                                  :unit n4))
+                               :ARG1-of (i / increase-01))))
+   :op2 (l / leave-14
+           :ARG1 (t3 / treat-04
+                     :polarity "-"
+                     :ARG1 a6))
+   :duration (a5 / and
+                 :op1 (t / temporal-quantity
+                         :quant "4"
+                         :unit (h / hour))
+                 :op2 (t4 / temporal-quantity
+                          :quant "24"
+                          :unit h)))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Western blot analysis was performed using phospho-ERK1/2, total ERK1/2 and β-actin antibodies, and results are shown in Figure <xref ref-type="fig" rid="F2">2</xref>A.In the MEK162 resistant melanoma cultures (YUVON and YUKSI), the baseline level of phospho-ERK1/2 and the ratio of phospho-ERK1/2 to total ERK1/2 was lower compared to sensitive cultures (YUROB, YUMAC, YUDOSO, YUKIM).
+# ::file a_pmid_2458_8908_96.txt
+# ::date 2015-06-14T07:20:15
+# ::id a_pmid_2458_8908.96
+(m2 / multi-sentence
+    :snt1 (a / and
+             :op1 (p / perform-01
+                     :ARG1 (i / immunoblot-01)
+                     :ARG2 (a3 / and
+                               :op1 (e3 / enzyme
+                                        :name (n2 / name
+                                                  :op1 "ERK1/2")
+                                        :ARG3-of (p2 / phosphorylate-01))
+                               :op2 (e4 / enzyme
+                                        :name (n3 / name
+                                                  :op1 "ERK1/2")
+                                        :mod (t / total))
+                               :op3 (a4 / antibody
+                                        :ARG0-of (c4 / counter-01
+                                                     :ARG2 (p7 / protein
+                                                               :name (n4 / name
+                                                                         :op1 "β-actin"))))))
+             :op2 (s / show-01
+                     :ARG0 (f / figure
+                              :mod "2A")
+                     :ARG1 (t2 / thing
+                               :ARG2-of (r / result-01))))
+    :snt2 (l2 / low-04
+              :ARG1 (a5 / and
+                        :op1 (l3 / level
+                                 :domain (b2 / baseline)
+                                 :quant-of (e / enzyme
+                                              :name (n8 / name
+                                                        :op1 "ERK1/2")
+                                              :ARG3-of (p8 / phosphorylate-01)))
+                        :op2 (r2 / ratio-of
+                                 :op1 e
+                                 :op2 (e2 / enzyme
+                                          :name (n9 / name
+                                                    :op1 "ERK1/2")
+                                          :mod (t3 / total)))
+                        :ARG1-of (c2 / compare-01
+                                     :ARG2 (c3 / culture-01
+                                               :ARG0-of (s3 / sensitive-03)
+                                               :ARG1-of (m4 / mean-01
+                                                            :ARG2 (a6 / and
+                                                                      :op1 (c7 / cell-line
+                                                                               :name (n11 / name
+                                                                                          :op1 "YUROB"))
+                                                                      :op2 (c8 / cell-line
+                                                                               :name (n12 / name
+                                                                                          :op1 "YUMAC"))
+                                                                      :op3 (c9 / cell-line
+                                                                               :name (n13 / name
+                                                                                          :op1 "YUDOSO"))
+                                                                      :op4 (c10 / cell-line
+                                                                                :name (n14 / name
+                                                                                           :op1 "YUKIM")))))))
+              :degree (m3 / more)
+              :location (c / culture-01
+                           :ARG1 (m5 / medical-condition
+                                     :name (n6 / name
+                                               :op1 "melanoma"))
+                           :ARG0-of (r3 / resist-01
+                                        :ARG1 (s2 / small-molecule
+                                                  :name (n7 / name
+                                                            :op1 "MEK162")))
+                           :ARG1-of (m / mean-01
+                                       :ARG2 (a8 / and
+                                                 :op1 (c5 / cell-line
+                                                          :name (n5 / name
+                                                                    :op1 "YUVON"))
+                                                 :op2 (c6 / cell-line
+                                                          :name (n10 / name
+                                                                     :op1 "YUKSI")))))))
+
+# ::save-date Fri Dec 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In MEK162-sensitive melanomas exposure to MEK162 resulted in a significant decrease in the level of ERK1/2 phosphorylation (Figure <xref ref-type="fig" rid="F2">2</xref>A).
+# ::file a_pmid_2458_8908_97.txt
+# ::date 2015-06-14T07:22:57
+# ::id a_pmid_2458_8908.97
+(r / result-01
+   :ARG1 (e / expose-01
+            :ARG1 (m / medical-condition
+                     :name (n / name
+                              :op1 "melanoma")
+                     :ARG0-of (s / sensitive-03
+                                 :ARG1 (s4 / small-molecule
+                                           :name (n2 / name
+                                                     :op1 "MEK162"))))
+            :ARG2 s4)
+   :ARG2 (d2 / decrease-01
+             :ARG0 e
+             :ARG1 (l / level
+                      :degree-of (p2 / phosphorylate-01
+                                     :ARG1 (e2 / enzyme
+                                               :name (n4 / name
+                                                         :op1 "ERK1/2"))))
+             :ARG2 (s2 / significant-02))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "2A")))

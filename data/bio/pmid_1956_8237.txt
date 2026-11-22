@@ -1,0 +1,1352 @@
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We identified Src as a kinase that is associated with ERK1/2 activation in UM.
+# ::file pmid_1956_8237_9.txt
+# ::date 2015-08-15T07:27:39
+# ::id pmid_1956_8237.9
+(i / identify-01
+   :ARG0 (w / we)
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "Src"))
+   :ARG2 (k / kinase
+            :ARG1-of (a / associate-01
+                        :ARG2 (a2 / activate-01
+                                  :ARG1 (e / enzyme
+                                           :name (n2 / name
+                                                     :op1 "ERK1/2"))
+                                  :location (m / medical-condition
+                                               :name (n3 / name
+                                                         :op1 "melanoma")
+                                               :mod (u / uveal))))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, low Src levels and reduced ERK1/2 activation in metastatic cell lines suggest that proliferation in metastases can become independent of Src and RAS/RAF/MEK/ERK signalling.
+# ::file pmid_1956_8237_10.txt
+# ::date 2015-08-15T07:30:45
+# ::id pmid_1956_8237.10
+(h / have-concession-91
+   :ARG1 (s / suggest-01
+            :ARG0 (a / and
+                     :op1 (l / level
+                             :ARG1-of (l2 / low-04)
+                             :quant-of (p / protein
+                                          :name (n / name
+                                                   :op1 "Src")))
+                     :op2 (a4 / activate-01
+                              :ARG1 (e / enzyme
+                                       :name (n2 / name
+                                                 :op1 "ERK1/2"))
+                              :ARG1-of (r / reduce-01))
+                     :location (c / cell-line
+                                  :ARG1-of (m / metastasize-101)))
+            :ARG1 (p2 / possible-01
+                      :ARG1 (b / become-01
+                               :ARG1 (p3 / proliferate-01
+                                         :location m)
+                               :ARG2 (d / depend-01
+                                        :polarity "-"
+                                        :ARG0 p3
+                                        :ARG1 (a3 / and
+                                                  :op1 p
+                                                  :op2 (s2 / signal-07
+                                                           :ARG0 (p4 / pathway
+                                                                     :name (n3 / name
+                                                                               :op1 "RAS/RAF/MEK/ERK")))))))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Inhibition of Src led to the growth reduction of primary UM cultures and cell lines, whereas metastatic cell line growth was only slightly reduced.
+# ::file pmid_1956_8237_11.txt
+# ::date 2015-08-15T07:42:29
+# ::id pmid_1956_8237.11
+(c / contrast-01
+   :ARG1 (l / lead-03
+            :ARG0 (i / inhibit-01
+                     :ARG1 (p / protein
+                              :name (n / name
+                                       :op1 "Src")))
+            :ARG2 (r / reduce-01
+                     :ARG1 (g / grow-01
+                              :ARG1 (a / and
+                                       :op1 (c2 / cell-line
+                                                :mod (m2 / medical-condition
+                                                         :name (n2 / name
+                                                                   :op1 "melanoma")
+                                                         :mod (u / uveal))
+                                                :mod (p2 / primary))
+                                       :op2 (c3 / culture-01
+                                                :mod m2
+                                                :mod p2)))))
+   :ARG2 (r2 / reduce-01
+             :ARG1 (g2 / grow-01
+                       :ARG1 (c4 / cell-line
+                                 :ARG1-of (m / metastasize-101)))
+             :mod (o / only)
+             :degree (s / slight)))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt An antibody array was applied to investigate the MAPK pathway in 10 UM cell lines, in three primary UM and three UM metastasis.
+# ::file pmid_1956_8237_94.txt
+# ::date 2015-08-15T07:48:49
+# ::id pmid_1956_8237.94
+(a / apply-03
+      :ARG1 (a2 / array-01
+            :ARG1 (a3 / antibody))
+      :purpose (i / investigate-01
+            :ARG1 (p / pathway
+                  :name (n / name :op1 "MAPK"))
+            :location (a4 / and
+                  :op1 (c / cell-line
+                        :quant "10"
+                        :mod (m2 / medical-condition
+                              :name (n2 / name :op1 "melanoma")
+                              :mod (u / uveal)))
+                  :op2 (m3 / medical-condition
+                        :quant "3"
+                        :name (n3 / name :op1 "melanoma")
+                        :mod u
+                        :mod (p2 / primary))
+                  :op3 (m / metastasize-101
+                        :quant "3"
+                        :mod m2))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We observed a uniform HSP27 phosphorylation, with the exception of in three UM cell lines (OCM1, -3, -8).
+# ::file pmid_1956_8237_95.txt
+# ::date 2015-08-15T07:56:17
+# ::id pmid_1956_8237.95
+(o / observe-01
+   :ARG0 (w / we)
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (p2 / protein
+                      :name (n / name
+                               :op1 "HSP27"))
+            :ARG1-of (u / uniform-02)
+            :ARG2-of (e / except-01
+                        :ARG1 (p3 / phosphorylate-01
+                                  :ARG1 p2
+                                  :location (c / cell-line
+                                               :quant "3"
+                                               :mod (m2 / medical-condition
+                                                        :name (n2 / name
+                                                                  :op1 "melanoma")
+                                                        :mod (u2 / uveal))
+                                               :ARG1-of (m / mean-01
+                                                           :ARG2 (a / and
+                                                                    :op1 (c2 / cell-line
+                                                                             :name (n3 / name
+                                                                                       :op1 "OCM1"))
+                                                                    :op2 (c3 / cell-line
+                                                                             :name (n4 / name
+                                                                                       :op1 "OCM3"))
+                                                                    :op3 (c4 / cell-line
+                                                                             :name (n5 / name
+                                                                                       :op1 "OCM8")))))))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt UMs displaying activated ERK1/2 as well as phosphorylated HSP27 were most common, whereas signals for phosphorylated ERK1/2 were low in metastasis tissue (MET1-3) and metastatic UM cell lines (OMM1, OMM2.3 and OMM2.5) (<xref ref-type="fig" rid="fig1">Figure 1</xref>).
+# ::file pmid_1956_8237_96.txt
+# ::date 2015-08-15T08:02:04
+# ::id pmid_1956_8237.96
+(c / contrast-01
+   :ARG1 (c2 / common
+             :domain (m4 / medical-condition
+                         :name (n / name
+                                  :op1 "melanoma")
+                         :mod (u / uveal)
+                         :ARG0-of (d2 / display-01
+                                      :ARG1 (a / and
+                                               :op1 (e / enzyme
+                                                       :name (n2 / name
+                                                                 :op1 "ERK1/2")
+                                                       :ARG1-of (a2 / activate-01))
+                                               :op2 (p2 / protein
+                                                        :name (n3 / name
+                                                                  :op1 "HSP27")
+                                                        :ARG3-of (p / phosphorylate-01)))))
+             :degree (m / most))
+   :ARG2 (l / low-04
+            :ARG1 (s / signal-07
+                     :beneficiary (e2 / enzyme
+                                      :name (n4 / name
+                                                :op1 "ERK1/2")
+                                      :ARG3-of (p3 / phosphorylate-01)))
+            :location (a3 / and
+                          :op1 (t / tissue
+                                  :ARG1-of (m2 / metastasize-101)
+                                  :ARG1-of (l2 / label-01
+                                               :ARG2 (t2 / thing
+                                                         :name (n5 / name
+                                                                   :op1 "MET")
+                                                         :value (v / value-interval
+                                                                   :op1 "1"
+                                                                   :op2 "3"))))
+                          :op2 (c3 / cell-line
+                                   :mod m4
+                                   :mod m2
+                                   :ARG1-of (m3 / mean-01
+                                                :ARG2 (a4 / and
+                                                          :op1 (c4 / cell-line
+                                                                   :name (n6 / name
+                                                                             :op1 "OMM1"))
+                                                          :op2 (c5 / cell-line
+                                                                   :name (n7 / name
+                                                                             :op1 "OMM2.3"))
+                                                          :op3 (c6 / cell-line
+                                                                   :name (n8 / name
+                                                                             :op1 "OMM2.5")))))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "1")))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Remarkably, two of the metastatic cell lines (OMM2.3, OMM2.5) are derived from the same patient as cell line Mel270 but contained far less activated ERK1/2.
+# ::file pmid_1956_8237_97.txt
+# ::date 2015-08-15T08:21:25
+# ::id pmid_1956_8237.97
+(c / contrast-01
+      :ARG1 (d / derive-01
+            :ARG1 (c2 / cell-line
+                  :quant "2"
+                  :ARG1-of (m2 / mean-01
+                        :ARG2 (a / and
+                              :op1 (c4 / cell-line
+                                    :name (n / name :op1 "OMM2.3"))
+                              :op2 (c5 / cell-line
+                                    :name (n2 / name :op1 "OMM2.5")))
+                        :ARG1-of (m / metastasize-101))
+                  :ARG1-of (i / include-91
+                        :ARG2 (c3 / cell-line)))
+            :ARG2 (p / person
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG2 (p2 / patient))
+                  :ARG1-of (s / same-01))
+            :ARG4 (c6 / cell-line
+                  :name (n3 / name :op1 "Mel270")))
+      :ARG2 (c7 / contain-01
+            :ARG0 c2
+            :ARG1 (e / enzyme
+                  :name (n4 / name :op1 "ERK1/2")
+                  :ARG1-of (a2 / activate-01)
+                  :quant (l / less
+                        :degree (f / far))))
+      :ARG1-of (r / remarkable-02))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Reduction of ERK1/2 activation in metastatic cell lines compared with that in primary UM cell lines provides a model to identify the underlying mechanism of ERK1/2 activation in the absence of <i>BRAF</i> and <i>NRAS</i> mutations.
+# ::file pmid_1956_8237_99.txt
+# ::date 2015-08-15T08:32:15
+# ::id pmid_1956_8237.99
+(p / provide-01
+   :ARG0 (r / reduce-01
+            :ARG1 (a / activate-01
+                     :ARG1 (e / enzyme
+                              :name (n / name
+                                       :op1 "ERK1/2"))
+                     :location (c / cell-line
+                                  :ARG1-of (m / metastasize-101)))
+            :ARG1-of (c2 / compare-01
+                         :ARG2 (r2 / reduce-01
+                                   :ARG1 a
+                                   :location (c3 / cell-line
+                                                 :mod (m6 / medical-condition
+                                                          :name (n2 / name
+                                                                    :op1 "melanoma")
+                                                          :mod (u / uveal)
+                                                          :mod (p2 / primary))))))
+   :ARG1 (m2 / model-01
+             :purpose (i / identify-01
+                         :ARG1 (m3 / mechanism
+                                   :ARG1-of (u2 / underlie-01)
+                                   :mod (a2 / activate-01
+                                            :ARG1 e
+                                            :condition (a3 / absent-01
+                                                           :ARG1 (a4 / and
+                                                                     :op1 (m4 / mutate-01
+                                                                              :ARG1 (g / gene
+                                                                                       :name (n3 / name
+                                                                                                 :op1 "BRAF")))
+                                                                     :op2 (m5 / mutate-01
+                                                                              :ARG1 (g2 / gene
+                                                                                        :name (n4 / name
+                                                                                                  :op1 "NRAS"))))))))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To investigate whether a kinase is differentially activated between primary UM cell lines and metastatic UM cell lines, we used peptide-based tyrosine kinase arrays (<xref ref-type="other" rid="bib18">Lemeer <i>et al</i>, 2007</xref>).
+# ::file pmid_1956_8237_100.txt
+# ::date 2015-08-15T08:41:09
+# ::id pmid_1956_8237.100
+(u3 / use-01
+    :ARG0 (w / we)
+    :ARG1 (a3 / array-01
+              :ARG1 (e2 / enzyme
+                        :name (n5 / name
+                                  :op1 "tyrosine"
+                                  :op2 "kinase"))
+              :ARG1-of (b / base-02
+                          :ARG2 (p2 / peptide))
+              :ARG1-of (d4 / describe-01
+                           :ARG0 (p3 / publication-91
+                                     :ARG0 (a4 / and
+                                               :op1 (p4 / person
+                                                        :name (n4 / name
+                                                                  :op1 "Lemeer"))
+                                               :op2 (p5 / person
+                                                        :mod (o / other)))
+                                     :time (d5 / date-entity
+                                               :year "2007"))))
+    :ARG2 (i / investigate-01
+             :ARG0 w
+             :ARG1 (a / activate-01
+                      :mode "interrogative"
+                      :ARG1 (k / kinase)
+                      :manner (d / differential)
+                      :location (a2 / and
+                                    :op1 (c / cell-line
+                                            :mod (m2 / medical-condition
+                                                     :name (n / name
+                                                              :op1 "melanoma")
+                                                     :mod (u / uveal)
+                                                     :mod (p / primary)))
+                                    :op2 (c2 / cell-line
+                                             :mod (m3 / medical-condition
+                                                      :name (n2 / name
+                                                                :op1 "melanoma")
+                                                      :mod u
+                                                      :ARG1-of (m / metastasize-101)))))))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The UM cell lines displayed a high kinase activity, whereas the metastatic UM cell lines displayed a low kinase activity, although the same amount of lysate was incubated (<xref ref-type="fig" rid="fig2">Figure 2A</xref>).
+# ::file pmid_1956_8237_101.txt
+# ::date 2015-08-15T08:52:19
+# ::id pmid_1956_8237.101
+(h2 / have-concession-91
+      :ARG1 (c / contrast-01
+            :ARG1 (d / display-01
+                  :ARG0 (c2 / cell-line
+                        :mod (m3 / medical-condition
+                              :name (n / name :op1 "melanoma")
+                              :mod (u / uveal)))
+                  :ARG1 (a / activity-06
+                        :ARG0 (k / kinase)
+                        :ARG1-of (h / high-02)))
+            :ARG2 (d3 / display-01
+                  :ARG0 (c3 / cell-line
+                        :mod (m2 / medical-condition
+                              :name (n2 / name :op1 "melanoma")
+                              :ARG1-of (m / metastasize-101)))
+                  :ARG1 (a2 / activity-06
+                        :ARG0 k
+                        :ARG1-of (l / low-04))))
+      :ARG2 (i / incubate-01
+            :ARG1 (a3 / amount
+                  :quant-of (l2 / lysate)
+                  :ARG1-of (s / same-01)))
+      :ARG1-of (d5 / describe-01
+            :ARG0 (f / figure :mod "2A")))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt After normalisation, we could analyse the kinase data and identify nine substrates that were significantly differentially phosphorylated between primary and metastatic UM cell lines (<xref ref-type="fig" rid="fig2">Figure 2B</xref>, <xref ref-type="table" rid="tbl1">Table 1</xref>).
+# ::file pmid_1956_8237_102.txt
+# ::date 2015-08-15T08:59:57
+# ::id pmid_1956_8237.102
+(p / possible-01
+      :ARG1 (a / and
+            :op1 (a2 / analyze-01
+                  :ARG0 (w / we)
+                  :ARG1 (d / data
+                        :topic (k / kinase)))
+            :op2 (i / identify-01
+                  :ARG0 w
+                  :ARG1 (s / substrate
+                        :quant "9"
+                        :ARG3-of (p2 / phosphorylate-01
+                              :ARG1-of (s2 / significant-02)
+                              :manner (d2 / differential)
+                              :location (a3 / and
+                                    :op1 (c / cell-line
+                                          :mod (m2 / medical-condition
+                                                :name (n / name :op1 "melanoma")
+                                                :mod (u / uveal)
+                                                :mod (p3 / primary)))
+                                    :op2 (c2 / cell-line
+                                          :mod (m3 / medical-condition
+                                                :name (n2 / name :op1 "melanoma")
+                                                :mod (u2 / uveal)
+                                                :ARG1-of (m / metastasize-101))))))))
+      :time (a4 / after
+            :op1 (n3 / normalize-01))
+      :ARG1-of (d5 / describe-01
+            :ARG0 (a5 / and
+                  :op1 (f / figure :mod "2B")
+                  :op2 (t / table :mod "1"))))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Primary UM and metastatic tissue also showed differential phosphorylation of these nine peptides, although not as clearly as observed in the cell lines (<xref ref-type="fig" rid="fig2">Figure 2C</xref>).
+# ::file pmid_1956_8237_103.txt
+# ::date 2015-08-15T09:08:13
+# ::id pmid_1956_8237.103
+(s / show-01
+      :ARG0 (a / and
+            :op1 (m2 / medical-condition
+                  :name (n / name :op1 "melanoma")
+                  :mod (u / uveal)
+                  :mod (p / primary))
+            :op2 (t / tissue
+                  :ARG1-of (m / metastasize-101)))
+      :ARG1 (p2 / phosphorylate-01
+            :ARG1 (p3 / peptide
+                  :quant "9"
+                  :mod (t2 / this))
+            :mod (d2 / differential))
+      :concession (c / clear-06
+            :polarity "-"
+            :ARG1 "s"
+            :compared-to (p4 / phosphorylate-01
+                  :ARG1-of (o / observe-01
+                        :location (c2 / cell-line))))
+      :mod (a2 / also)
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f / figure :mod "2C")))
+
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We identified nine peptides derived from eight proteins that were differentially phosphorylated between primary and metastatic cell line lysates.
+# ::file pmid_1956_8237_105.txt
+# ::date 2015-08-15T09:18:54
+# ::id pmid_1956_8237.105
+(i / identify-01
+      :ARG0 (w / we)
+      :ARG1 (p / peptide
+            :quant "9"
+            :ARG1-of (d / derive-01
+                  :ARG2 (p2 / protein
+                        :quant "8"
+                        :ARG3-of (p3 / phosphorylate-01
+                              :manner (d2 / differential)
+                              :location (a / and
+                                    :op1 (l / lysate
+                                          :mod (c / cell-line)
+                                          :mod (p4 / primary))
+                                    :op2 (l2 / lysate
+                                          :mod (c2 / cell-line)
+                                          :ARG1-of (m / metastasize-101))))))))
+
+# ::save-date Fri Nov 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt On the basis of a literature search, we identified candidate tyrosine kinases for eight out of nine peptides (<xref ref-type="table" rid="tbl1">Table 1</xref>) (<xref ref-type="other" rid="bib5">Cooper <i>et al</i>, 1983</xref>; <xref ref-type="other" rid="bib35">Thomas and Brugge, 1997</xref>; <xref ref-type="other" rid="bib16">Koike <i>et al</i>, 2003</xref>; <xref ref-type="other" rid="bib8">Diella <i>et al</i>, 2004</xref>).
+# ::file pmid_1956_8237_106.txt
+# ::date 2015-08-15T09:22:18
+# ::id pmid_1956_8237.106
+(i / identify-01
+   :ARG0 (w / we)
+   :ARG1 (e / enzyme
+            :name (n7 / name
+                      :op1 "tyrosine"
+                      :op2 "kinase")
+            :mod (c / candidate))
+   :beneficiary (p / peptide
+                   :quant "8"
+                   :ARG1-of (i2 / include-91
+                                :ARG2 (p2 / peptide
+                                          :quant "9")))
+   :ARG1-of (d5 / describe-01
+                :ARG0 (t / table
+                         :mod "1"))
+   :ARG1-of (b / base-02
+               :ARG2 (s / search-01
+                        :ARG1 (l / literature
+                                 :ARG2-of (i3 / include-91
+                                              :ARG1 (a / and
+                                                       :op1 (p3 / publication-91
+                                                                :ARG0 (a2 / and
+                                                                          :op1 (p4 / person
+                                                                                   :name (n2 / name
+                                                                                             :op1 "Cooper"))
+                                                                          :op2 (p5 / person
+                                                                                   :mod (o / other)))
+                                                                :time (d / date-entity
+                                                                         :year "1983"))
+                                                       :op2 (p6 / publication-91
+                                                                :ARG0 (a3 / and
+                                                                          :op1 (p7 / person
+                                                                                   :name (n3 / name
+                                                                                             :op1 "Thomas"))
+                                                                          :op2 (p8 / person
+                                                                                   :name (n4 / name
+                                                                                             :op1 "Brugge")))
+                                                                :time (d2 / date-entity
+                                                                          :year "1997"))
+                                                       :op3 (p9 / publication-91
+                                                                :ARG0 (a4 / and
+                                                                          :op1 (p10 / person
+                                                                                    :name (n5 / name
+                                                                                              :op1 "Koike"))
+                                                                          :op2 (p11 / person
+                                                                                    :mod (o2 / other)))
+                                                                :time (d3 / date-entity
+                                                                          :year "2003"))
+                                                       :op4 (p12 / publication-91
+                                                                 :ARG0 (a5 / and
+                                                                           :op1 (p13 / person
+                                                                                     :name (n6 / name
+                                                                                               :op1 "Diella"))
+                                                                           :op2 (p14 / person
+                                                                                     :mod (o3 / other)))
+                                                                 :time (d4 / date-entity
+                                                                           :year "2004"))))))))
+
+# ::save-date Fri Jan 15, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Among the candidates, Src and Src family members were most prominent.
+# ::file pmid_1956_8237_107.txt
+# ::date 2015-08-15T09:32:25
+# ::id pmid_1956_8237.107
+(p / prominent
+   :domain (a / and
+              :op1 (p2 / protein
+                       :name (n / name
+                                :op1 "Src"))
+              :op2 (m / member
+                      :ARG1-of (i2 / include-91
+                                   :ARG2 (p3 / protein-family
+                                             :name (n2 / name
+                                                       :op1 "Src"))))
+              :ARG1-of (i / include-91
+                          :ARG2 (c / candidate)))
+   :degree (m2 / most))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To validate the candidacy of Src, we performed <i>in vitro</i> inhibition experiments with the Src-kinase-specific inhibitors PP1 and the PP1 analogue, PP2.
+# ::file pmid_1956_8237_108.txt
+# ::date 2015-08-15T09:36:03
+# ::id pmid_1956_8237.108
+(p / perform-02
+   :ARG0 (w / we)
+   :ARG1 (e / experiment-01
+            :ARG1 (i / inhibit-01)
+            :ARG2 (s / small-molecule
+                     :ARG0-of (i3 / inhibit-01)
+                     :ARG1-of (s2 / specific-02
+                                  :ARG2 (k / kinase
+                                           :name (n / name
+                                                    :op1 "Src")))
+                     :ARG1-of (m / mean-01
+                                 :ARG2 (a / and
+                                          :op1 (p2 / protein
+                                                   :name (n2 / name
+                                                             :op1 "PP1"))
+                                          :op2 (p3 / protein
+                                                   :name (n3 / name
+                                                             :op1 "PP2")
+                                                   :mod (a2 / analogue
+                                                            :mod p2)))))
+            :manner (i2 / in-vitro))
+   :purpose (v / validate-01
+               :ARG0 w
+               :ARG1 (c / candidacy
+                        :mod k)))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We added PP1 and PP2 (10 <i>μ</i><sc>M</sc>) to lysates of primary UM tissue and of a primary UM cell line and measured the inhibitory effect of these Src inhibitors using kinase array (<xref ref-type="fig" rid="fig3">Figure 3A</xref>).
+# ::file pmid_1956_8237_109.txt
+# ::date 2015-08-15T09:46:46
+# ::id pmid_1956_8237.109
+(a / and
+      :op1 (a2 / add-02
+            :ARG0 (w / we)
+            :ARG1 (a3 / and
+                  :op1 (s / small-molecule)
+                  :op2 (s2 / small-molecule)
+                  :quant (c2 / concentration-quantity
+                        :quant "10"
+                        :unit (m / micromolar)))
+            :ARG2 (a7 / and
+                  :op1 (l / lysate
+                        :source (t / tissue
+                              :mod (m3 / medical-condition
+                                    :name (n3 / name :op1 "melanoma")
+                                    :mod (u / uveal)
+                                    :mod (p / primary))))
+                  :op1 (l2 / lysate
+                        :source (c / cell-line
+                              :mod m3))))
+      :op2 (m2 / measure-01
+            :ARG0 w
+            :ARG1 (a5 / affect-01
+                  :ARG0 (s3 / small-molecule
+                        :ARG0-of (i2 / inhibit-01
+                              :ARG1 (p2 / protein-family
+                                    :name (n4 / name :op1 "Src"))))
+                  :ARG2 (i / inhibit-01))
+            :instrument (a6 / array-01
+                  :ARG1 (k / kinase)))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure :mod "3A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A total of seven out of nine substrates that identified Src in the first screen displayed a significantly reduced phosphorylation when PP1 or PP2 were added to lysates of UM1 and Mel270 (<xref ref-type="fig" rid="fig3">Figure 3A</xref>).
+# ::file pmid_1956_8237_110.txt
+# ::date 2015-08-15T09:55:58
+# ::id pmid_1956_8237.110
+(d / display-01
+   :ARG0 (s / substrate
+            :quant "7"
+            :ARG1-of (i2 / include-91
+                         :ARG2 (s3 / substrate
+                                   :quant "9"
+                                   :ARG0-of (i / identify-01
+                                               :ARG1 (p / protein
+                                                        :name (n / name
+                                                                 :op1 "Src"))
+                                               :location (s2 / screen
+                                                             :ord (o / ordinal-entity
+                                                                     :value "1")))))
+            :ARG1-of (t / total-01))
+   :ARG1 (p2 / phosphorylate-01
+             :ARG1-of (r / reduce-01
+                         :ARG2 (s4 / significant-02)))
+   :time (a / add-02
+            :ARG1 (o2 / or
+                      :op1 (p3 / protein
+                               :name (n2 / name
+                                         :op1 "PP1"))
+                      :op2 (p4 / protein
+                               :name (n3 / name
+                                         :op1 "PP2")))
+            :ARG2 (a3 / and
+                      :op1 (l / lysate
+                              :source (t2 / thing
+                                          :name (n4 / name
+                                                    :op1 "UM1")))
+                      :op2 (l2 / lysate
+                               :source (c / cell-line
+                                          :name (n5 / name
+                                                    :op1 "Mel270")))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "3A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The PLCG1 peptide and one of the PAX1 (Y31) substrates did not reach significance but were still phosphorylated at a reduced level after PP1 and PP2 treatments.
+# ::file pmid_1956_8237_111.txt
+# ::date 2015-08-15T10:06:58
+# ::id pmid_1956_8237.111
+(c / contrast-01
+   :ARG1 (r / reach-01
+            :polarity "-"
+            :ARG0 (a / and
+                     :op1 (p / peptide
+                             :name (n / name
+                                      :op1 "PLCG1"))
+                     :op1 (s / substrate
+                             :name (n2 / name
+                                       :op1 "Y31")
+                             :ARG1-of (i / include-91
+                                         :ARG2 (s2 / substrate
+                                                   :name (n3 / name
+                                                             :op1 "PAX1")))))
+            :ARG1 (s3 / significance))
+   :ARG2 (p2 / phosphorylate-01
+             :ARG1 a
+             :degree (l / level
+                        :ARG1-of (r2 / reduce-01))
+             :time (a2 / after
+                       :op1 (t / treat-04
+                               :ARG2 (a3 / and
+                                         :op1 (p3 / protein
+                                                  :name (n4 / name
+                                                            :op1 "PP1"))
+                                         :op2 (p4 / protein
+                                                  :name (n5 / name
+                                                            :op1 "PP2")))))
+             :mod (s6 / still)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The peptide representing FAK1 Y576/Y577 is a genuine substrate for Src, which was not detected in the UM cell line comparison, but phosphorylation was significantly downregulated by PP1 and PP2 treatments.
+# ::file pmid_1956_8237_112.txt
+# ::date 2015-08-15T10:14:03
+# ::id pmid_1956_8237.112
+(c / contrast-01
+   :ARG1 (s / substrate
+            :mod (g / genuine)
+            :domain (p / peptide
+                       :ARG0-of (r / represent-01
+                                   :ARG1 (o / or
+                                            :op1 (a / amino-acid
+                                                    :mod "576"
+                                                    :name (n / name
+                                                             :op1 "tyrosine"))
+                                            :op2 (a2 / amino-acid
+                                                     :mod "577"
+                                                     :name (n2 / name
+                                                               :op1 "tyrosine"))
+                                            :part-of (e / enzyme
+                                                        :mod "1"
+                                                        :name (n3 / name
+                                                                  :op1 "FAK")))))
+            :beneficiary (p2 / protein
+                             :name (n4 / name
+                                       :op1 "Src"))
+            :ARG1-of (d / detect-01
+                        :polarity "-"
+                        :time (c2 / compare-01
+                                  :ARG1 (c3 / cell-line
+                                            :mod (m / medical-condition
+                                                    :name (n5 / name
+                                                              :op1 "melanoma")
+                                                    :mod (u / uveal))))))
+   :ARG2 (d3 / downregulate-01
+             :ARG1 (p3 / phosphorylate-01)
+             :ARG2 (t / treat-04
+                      :ARG2 (a3 / and
+                                :op1 (p4 / protein
+                                         :name (n6 / name
+                                                   :op1 "PP1"))
+                                :op2 (p5 / protein
+                                         :name (n7 / name
+                                                   :op1 "PP2"))))
+             :ARG1-of (s4 / significant-02)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the control experiment, in which we added the inactive analogue of PP1 (PP3) to cell lysates, we did not observe a loss of kinase activity (not shown).
+# ::file pmid_1956_8237_113.txt
+# ::date 2015-08-15T12:22:11
+# ::id pmid_1956_8237.113
+(o / observe-01
+   :polarity "-"
+   :ARG0 (w / we)
+   :ARG1 (l / lose-02
+            :ARG1 (a / activity-06
+                     :ARG0 (k / kinase))
+            :ARG1-of (s2 / show-01
+                         :polarity "-"))
+   :location (e / experiment-01
+                :mod (c / control)
+                :location-of (a2 / add-02
+                                 :ARG0 w
+                                 :ARG1 (a3 / analogue
+                                           :name (n2 / name
+                                                     :op1 "PP3")
+                                           :ARG0-of (a4 / activity-06
+                                                        :polarity "-")
+                                           :poss (p / protein
+                                                    :name (n / name
+                                                             :op1 "PP1")))
+                                 :ARG2 (l2 / lysate
+                                           :mod (c2 / cell)))))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The kinase activity of metastasis tissue and UM tissue differed marginally (<xref ref-type="fig" rid="fig2">Figure 2C</xref>), and incubation with PP1 (10 <i>μ</i><sc>M</sc>) resulted in a decimation of kinase activity similar to the inhibition that we observed in UM tissue (<xref ref-type="fig" rid="fig3">Figure 3B</xref>).
+# ::file pmid_1956_8237_114.txt
+# ::date 2015-08-15T12:29:33
+# ::id pmid_1956_8237.114
+(a / and
+      :op1 (d / differ-02
+            :ARG1 (t2 / tissue
+                  :mod (m4 / medical-condition
+                        :name (n / name :op1 "melanoma")
+                        :mod (u / uveal)))
+            :ARG2 (t / tissue
+                  :ARG1-of (m / metastasize-101))
+            :ARG3 (a2 / activity-06
+                  :mod (k / kinase))
+            :ARG1-of (m2 / marginal-02)
+            :ARG1-of (d3 / describe-01
+                  :ARG0 (f / figure :mod "2C")))
+      :op2 (r / result-01
+            :ARG1 (i / incubate-01
+                  :ARG2 (s / small-molecule
+                        :quant (c / concentration-quantity
+                              :quant "10"
+                              :unit (m3 / micromolar))))
+            :ARG2 (d4 / decimate-01
+                  :ARG1 (a4 / activity-06
+                        :mod (k2 / kinase)
+                        :ARG1-of (r2 / resemble-01
+                              :ARG2 (i2 / inhibit-01
+                                    :ARG1-of (o / observe-01
+                                          :ARG0 (w / we)
+                                          :location t2)))))
+            :ARG1-of (d5 / describe-01
+                  :ARG0 (f2 / figure :mod "3B"))))
+
+# ::save-date Sat Aug 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To validate Src activity, Mel270 was transfected with two siRNA constructs that target Src and reduced kinase activity (<xref ref-type="fig" rid="fig3">Figure 3B</xref>).
+# ::file pmid_1956_8237_115.txt
+# ::date 2015-08-15T12:36:16
+# ::id pmid_1956_8237.115
+(a / and
+   :op1 (t / transfect-01
+           :ARG1 (c / cell-line
+                    :name (n / name
+                             :op1 "Mel270"))
+           :ARG2 (c2 / construct
+                     :quant "2"
+                     :mod (n4 / nucleic-acid
+                              :name (n2 / name
+                                        :op1 "siRNA"))
+                     :ARG0-of (t2 / target-01
+                                  :ARG1 (p / protein
+                                           :name (n3 / name
+                                                     :op1 "Src")))))
+   :op2 (r2 / reduce-01
+            :ARG1 (a2 / activity-06
+                      :mod (k / kinase)))
+   :purpose (v / validate-01
+               :ARG1 (a3 / activity-06
+                         :ARG0 p))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3B")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To investigate whether Src contributes to ERK1/2 activation in Mel270, we analysed the two Src siRNA-transfected cell cultures with the MAPK antibody array.
+# ::file pmid_1956_8237_117.txt
+# ::date 2015-08-15T12:49:54
+# ::id pmid_1956_8237.117
+(a / analyze-01
+   :ARG0 (w / we)
+   :ARG1 (c / culture
+            :quant "2"
+            :mod (c2 / cell)
+            :ARG1-of (t / transfect-01
+                        :ARG2 (n6 / nucleic-acid
+                                  :name (n / name
+                                           :op1 "siRNA")))
+            :mod (p2 / protein
+                     :name (n3 / name
+                               :op1 "Src")))
+   :instrument (a2 / array-01
+                   :ARG1 (a3 / antibody
+                             :ARG0-of (c5 / counter-01
+                                          :ARG1 (e2 / enzyme
+                                                    :name (n2 / name
+                                                              :op1 "MAPK")))))
+   :purpose (i / investigate-01
+               :ARG0 w
+               :ARG1 (c3 / contribute-01
+                         :mode "interrogative"
+                         :ARG0 p2
+                         :ARG1 (a4 / activate-01
+                                   :ARG1 (e / enzyme
+                                            :name (n4 / name
+                                                      :op1 "ERK1/2"))
+                                   :location (c4 / cell-line
+                                                 :name (n5 / name
+                                                           :op1 "Mel270"))))))
+
+# ::save-date Sat Aug 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At 24 and 48 h after transfection with Src siRNA, we observed a reduced ERK1 phosphorylation, whereas ERK2 phosphorylation was minimally affected (<xref ref-type="fig" rid="fig4">Figure 4</xref>).
+# ::file pmid_1956_8237_118.txt
+# ::date 2015-08-15T12:54:56
+# ::id pmid_1956_8237.118
+(c / contrast-01
+   :ARG1 (o / observe-01
+            :ARG0 (w / we)
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (e / enzyme
+                              :name (n / name
+                                       :op1 "ERK1"))
+                     :ARG1-of (r / reduce-01)))
+   :ARG2 (a / affect-01
+            :ARG1 (p2 / phosphorylate-01
+                      :ARG1 (e2 / enzyme
+                                :name (n2 / name
+                                          :op1 "ERK2")))
+            :ARG1-of (m / minimal-02))
+   :time (a2 / after
+             :op1 (t / transfect-01
+                     :ARG2 (n5 / nucleic-acid
+                               :name (n3 / name
+                                         :op1 "siRNA")
+                               :mod (p3 / protein
+                                        :name (n4 / name
+                                                  :op1 "Src"))))
+             :quant (a3 / and
+                        :op1 (t2 / temporal-quantity
+                                 :quant "24"
+                                 :unit (h / hour))
+                        :op2 (t3 / temporal-quantity
+                                 :quant "48"
+                                 :unit (h2 / hour))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Whether Src inhibition and consequently a lowered ERK activation in UM cell lines is associated with a reduced growth was investigated with the WST-1 viability assay (<xref ref-type="fig" rid="fig5">Figure 5</xref>).
+# ::file pmid_1956_8237_119.txt
+# ::date 2015-08-15T13:02:49
+# ::id pmid_1956_8237.119
+(i / investigate-01
+   :ARG1 (a / associate-01
+            :mode "interrogative"
+            :ARG1 (a2 / and
+                      :op1 (i2 / inhibit-01
+                               :ARG1 (p / protein
+                                        :name (n / name
+                                                 :op1 "Src")))
+                      :op2 (a3 / activate-01
+                               :ARG1 (e / enzyme
+                                        :name (n2 / name
+                                                  :op1 "ERK"))
+                               :ARG1-of (l / lower-05)
+                               :location (c / cell-line
+                                            :mod (m / medical-condition
+                                                    :name (n3 / name
+                                                              :op1 "melanoma")
+                                                    :mod (u / uveal)))
+                               :manner (c2 / consequent)))
+            :ARG2 (g / grow-01
+                     :ARG1-of (r / reduce-01)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5"))
+   :instrument (a4 / assay-01
+                   :mod (v / viable)
+                   :mod (t / thing
+                           :name (n4 / name
+                                     :op1 "WST-1"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All UM cell lines showed a PP1-dose and time (1–6 days)-dependent reduction in cell viability but the magnitude of the response differed widely.
+# ::file pmid_1956_8237_120.txt
+# ::date 2015-08-15T13:10:11
+# ::id pmid_1956_8237.120
+(c / contrast-01
+   :ARG1 (s / show-01
+            :ARG0 (c2 / cell-line
+                      :mod (m2 / medical-condition
+                               :name (n / name
+                                        :op1 "melanoma")
+                               :mod (u / uveal))
+                      :mod (a / all))
+            :ARG1 (r / reduce-01
+                     :ARG1 (v / viable
+                              :mod (c3 / cell))
+                     :ARG0-of (d3 / depend-01
+                                  :ARG1 (a2 / and
+                                            :op1 (d4 / dose-01
+                                                     :ARG2 (p / protein
+                                                              :name (n2 / name
+                                                                        :op1 "PP1")))
+                                            :op2 (t / time
+                                                    :quant (b / between
+                                                              :op1 (t2 / temporal-quantity
+                                                                       :quant "1"
+                                                                       :unit (d5 / day))
+                                                              :op2 (t3 / temporal-quantity
+                                                                       :quant "6"
+                                                                       :unit d5)))))))
+   :ARG2 (d2 / differ-02
+             :ARG1 (m / magnitude
+                      :mod (r2 / respond-01))
+             :ARG2-of (w / wide-02)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In general, the metastatic UM cell lines were less affected by PP1.
+# ::file pmid_1956_8237_121.txt
+# ::date 2015-08-15T13:19:50
+# ::id pmid_1956_8237.121
+(a / affect-01
+   :ARG0 (p / protein
+            :name (n2 / name
+                      :op1 "PP1"))
+   :ARG1 (c / cell-line
+            :mod (m2 / medical-condition
+                     :name (n / name
+                              :op1 "melanoma")
+                     :mod (u / uveal)
+                     :ARG1-of (m / metastasize-101)))
+   :degree (l / less)
+   :ARG1-of (g / general-02))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We also determined the growth inhibition rate of PP1 in cultures of five primary UM cell cultures and observed an increased sensitivity to PP1 treatment compared with the cell lines.
+# ::file pmid_1956_8237_122.txt
+# ::date 2015-08-15T13:22:34
+# ::id pmid_1956_8237.122
+(a / and
+   :op1 (d / determine-01
+           :ARG0 (w / we)
+           :ARG1 (r / rate
+                    :degree-of (i / inhibit-01
+                                  :ARG0 (p2 / protein
+                                            :name (n / name
+                                                     :op1 "PP1"))
+                                  :ARG1 (g / grow-01))
+                    :location (c / culture
+                                 :ARG1-of (i2 / include-91
+                                              :ARG2 (c2 / culture
+                                                        :quant "5"
+                                                        :mod (c3 / cell)
+                                                        :mod (m / medical-condition
+                                                                :name (n2 / name
+                                                                          :op1 "melanoma")
+                                                                :mod (u / uveal)
+                                                                :mod (p / primary))))))
+           :mod (a2 / also))
+   :op2 (o / observe-01
+           :ARG0 w
+           :ARG1 (s2 / sensitive-03
+                     :ARG1 (t / treat-04
+                              :ARG2 p2)
+                     :ARG1-of (i3 / increase-01)
+                     :compared-to (c4 / cell-line))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We had to take samples at day 3 of PP1 treatment because, thereafter, massive cell death occurred (<xref ref-type="fig" rid="fig5">Figure 5B</xref>).
+# ::file pmid_1956_8237_123.txt
+# ::date 2015-08-15T13:29:10
+# ::id pmid_1956_8237.123
+(o / obligate-01
+   :ARG1 (w / we)
+   :ARG2 (t / take-01
+            :ARG0 w
+            :ARG1 (t4 / thing
+                      :ARG1-of (s / sample-01))
+            :time (a / after
+                     :op1 (t2 / treat-04
+                              :ARG2 (p / protein
+                                       :name (n / name
+                                                :op1 "PP1")))
+                     :quant (t3 / temporal-quantity
+                                :quant "3"
+                                :unit (d / day))))
+   :ARG1-of (c / cause-01
+               :ARG0 (d2 / die-01
+                         :ARG1 (c2 / cell)
+                         :mod (m / massive)
+                         :time (a2 / after
+                                   :op1 a)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "5B")))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Src is regulated by the phosphorylation of tyrosine residues at position 416 (Y416) and 527 (Y527).
+# ::file pmid_1956_8237_125.txt
+# ::date 2015-08-15T13:36:45
+# ::id pmid_1956_8237.125
+(r / regulate-01
+   :ARG0 (p2 / phosphorylate-01
+             :ARG1 (a3 / and
+                       :op1 (r2 / residue
+                                :mod (a / amino-acid
+                                        :mod "416"
+                                        :name (n2 / name
+                                                  :op1 "tyrosine")))
+                       :op2 (r3 / residue
+                                :mod (a4 / amino-acid
+                                         :mod "527"
+                                         :name (n3 / name
+                                                   :op1 "tyrosine")))))
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "Src")))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The expression of phosphorylated Src Y416, which is associated with an active conformation, was low in the metastatic UM cell lines (<xref ref-type="fig" rid="fig6">Figure 6A</xref>).
+# ::file pmid_1956_8237_126.txt
+# ::date 2015-08-15T13:43:45
+# ::id pmid_1956_8237.126
+(l / low-04
+   :ARG1 (e / express-03
+            :ARG2 (a3 / amino-acid
+                      :mod "416"
+                      :name (n3 / name
+                                :op1 "tyrosine")
+                      :part-of (p2 / protein
+                                   :name (n / name
+                                            :op1 "Src")
+                                   :ARG3-of (p3 / phosphorylate-01)))
+            :ARG1-of (a / associate-01
+                        :ARG2 (c / conformation
+                                 :ARG0-of (a2 / activity-06))))
+   :location (c2 / cell-line
+                 :mod (m2 / medical-condition
+                          :name (n2 / name
+                                    :op1 "melanoma")
+                          :mod (u / uveal)
+                          :ARG1-of (m / metastasize-101)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "6A")))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Surprisingly, the phosphorylation of Y527, which is associated with an inactive conformation, was also low, and a subsequent analysis indicated that Src expression is low in metastatic UM cell lines.
+# ::file pmid_1956_8237_127.txt
+# ::date 2015-08-15T13:49:40
+# ::id pmid_1956_8237.127
+(a / and
+   :op1 (l / low-04
+           :ARG1 (p / phosphorylate-01
+                    :ARG1 (a2 / amino-acid
+                              :mod "527"
+                              :name (n / name
+                                       :op1 "tyrosine"))
+                    :ARG1-of (a3 / associate-01
+                                 :ARG2 (c / conformation
+                                          :ARG0-of (a4 / activity-06
+                                                       :polarity "-"))))
+           :mod (a5 / also)
+           :manner (s2 / surprise-01))
+   :op2 (i / indicate-01
+           :ARG0 (a6 / analyze-01
+                     :time (s / subsequent))
+           :ARG1 (l2 / low-04
+                     :ARG1 (e / express-03
+                              :ARG2 (p3 / protein
+                                        :name (n2 / name
+                                                  :op1 "Src"))
+                              :ARG3 (c2 / cell-line
+                                        :mod (m2 / medical-condition
+                                                 :name (n3 / name
+                                                           :op1 "melanoma")
+                                                 :mod (u / uveal)
+                                                 :ARG1-of (m / metastasize-101)))))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, the difference between kinase activity in metastatic cell lines (OMM1, OMM2.3 and OMM2.5) and UM cell lines (OCM1, OCM3, OCM8, Mel202, Mel270, Mel285, Mel290 and 92.1) seems to be the result of a difference in Src expression.
+# ::file pmid_1956_8237_128.txt
+# ::date 2015-08-15T13:55:18
+# ::id pmid_1956_8237.128
+(c14 / cause-01
+     :ARG1 (s / seem-01
+              :ARG1 (t / thing
+                       :ARG2-of (r / result-01
+                                   :ARG1 (d / differ-02
+                                            :ARG3 (e / express-03
+                                                     :ARG2 (p / protein
+                                                              :name (n / name
+                                                                       :op1 "Src")))))
+                       :domain (d2 / differ-02
+                                   :ARG1 (c / cell-line
+                                            :ARG1-of (m / metastasize-101)
+                                            :ARG2-of (i / include-91
+                                                        :ARG1 (a2 / and
+                                                                  :op1 (c2 / cell-line
+                                                                           :name (n2 / name
+                                                                                     :op1 "OMM1"))
+                                                                  :op2 (c3 / cell-line
+                                                                           :name (n3 / name
+                                                                                     :op1 "OMM2.3"))
+                                                                  :op3 (c4 / cell-line
+                                                                           :name (n4 / name
+                                                                                     :op1 "OMM2.5")))))
+                                   :ARG2 (c5 / cell-line
+                                             :mod (m3 / medical-condition
+                                                      :name (n5 / name
+                                                                :op1 "melanoma")
+                                                      :mod (u / uveal))
+                                             :ARG1-of (m2 / mean-01
+                                                          :ARG2 (a3 / and
+                                                                    :op1 (c6 / cell-line
+                                                                             :name (n6 / name
+                                                                                       :op1 "OCM1"))
+                                                                    :op2 (c7 / cell-line
+                                                                             :name (n7 / name
+                                                                                       :op1 "OCM3"))
+                                                                    :op3 (c8 / cell-line
+                                                                             :name (n8 / name
+                                                                                       :op1 "OCM8"))
+                                                                    :op4 (c9 / cell-line
+                                                                             :name (n9 / name
+                                                                                       :op1 "Mel202"))
+                                                                    :op5 (c10 / cell-line
+                                                                              :name (n10 / name
+                                                                                         :op1 "Mel270"))
+                                                                    :op6 (c11 / cell-line
+                                                                              :name (n11 / name
+                                                                                         :op1 "Mel285"))
+                                                                    :op7 (c12 / cell-line
+                                                                              :name (n12 / name
+                                                                                         :op1 "Mel290"))
+                                                                    :op8 (c13 / cell-line
+                                                                              :name (n13 / name
+                                                                                         :op1 "Mel292.1")))))
+                                   :ARG3 (a / activity-06
+                                            :ARG0 (k / kinase))))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To investigate the origin of a lowered Src expression, we performed a gene expression analysis (<xref ref-type="fig" rid="fig6">Figure 6B</xref>).
+# ::file pmid_1956_8237_129.txt
+# ::date 2015-08-15T14:08:25
+# ::id pmid_1956_8237.129
+(p / perform-02
+   :ARG0 (w / we)
+   :ARG1 (a / analyze-01
+            :ARG0 w
+            :ARG1 (e / express-03
+                     :ARG2 (g / gene)))
+   :purpose (i / investigate-01
+               :ARG0 w
+               :ARG1 (o / originate-01
+                        :ARG1 (e2 / express-03
+                                  :ARG2 (p2 / protein
+                                            :name (n / name
+                                                     :op1 "Src"))
+                                  :ARG1-of (l / lower-05))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6B")))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Src gene expression varied widely in the cell lines and in the metastatic cell lines, but a correlation between protein and gene expression was not observed in UM cell lines.
+# ::file pmid_1956_8237_130.txt
+# ::date 2015-08-15T14:11:06
+# ::id pmid_1956_8237.130
+(c / contrast-01
+   :ARG1 (v / vary-01
+            :ARG0 (e / express-03
+                     :ARG2 (g / gene
+                              :wiki "-"
+                              :name (n / name
+                                       :op1 "Src"))
+                     :ARG3 (a / and
+                              :op1 (c2 / cell-line)
+                              :op2 (c3 / cell-line
+                                       :ARG1-of (m / metastasize-101))))
+            :ARG1-of (w / wide-02))
+   :ARG2 (o / observe-01
+            :polarity "-"
+            :ARG1 (c4 / correlate-01
+                      :ARG1 (e2 / express-03
+                                :ARG2 (p / protein)
+                                :ARG3 (c5 / cell-line
+                                          :mod (m2 / medical-condition
+                                                   :wiki "Melanoma"
+                                                   :name (n2 / name
+                                                             :op1 "melanoma")
+                                                   :mod (u / uveal))))
+                      :ARG2 (e3 / express-03
+                                :ARG2 (g2 / gene)
+                                :ARG3 c5))))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A western analysis of Src expression in UM and metastasis tissue revealed a very high Src expression in only one out of three primary UM, whereas all three metastasis tissues displayed medium expression of Src protein (<xref ref-type="fig" rid="fig6">Figure 6C</xref>).
+# ::file pmid_1956_8237_131.txt
+# ::date 2015-08-15T14:19:02
+# ::id pmid_1956_8237.131
+(c / contrast-01
+   :ARG1 (r / reveal-01
+            :ARG0 (a / analyze-01
+                     :ARG1 (e / express-03
+                              :ARG2 (p / protein
+                                       :name (n2 / name
+                                                 :op1 "Src"))
+                              :ARG3 (a2 / and
+                                        :op1 (m6 / medical-condition
+                                                 :name (n3 / name
+                                                           :op1 "melanoma")
+                                                 :mod (u / uveal))
+                                        :op2 (t / tissue
+                                                :mod (m / metastasis))))
+                     :mod (w / western))
+            :ARG1 (e2 / express-03
+                      :ARG2 p
+                      :ARG3 (m4 / medical-condition
+                                :quant "1"
+                                :name (n4 / name
+                                          :op1 "melanoma")
+                                :ARG1-of (i / include-91
+                                            :ARG2 (m5 / medical-condition
+                                                      :quant "3"
+                                                      :name (n5 / name
+                                                                :op1 "melanoma")
+                                                      :mod (p2 / primary)
+                                                      :mod u))
+                                :mod u)
+                      :ARG1-of (h / high-02
+                                  :degree (v / very))
+                      :mod (o / only)))
+   :ARG2 (d4 / display-01
+             :ARG0 (t2 / tissue
+                       :quant "3"
+                       :ARG1-of (m2 / metastasize-101)
+                       :mod (a3 / all))
+             :ARG1 (e3 / express-03
+                       :ARG2 p
+                       :degree (m3 / medium)))
+   :ARG1-of (d5 / describe-01
+                :ARG0 (f / figure
+                         :mod "6C")))

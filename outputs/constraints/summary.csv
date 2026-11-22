@@ -1,0 +1,7 @@
+results,selected_for,n_graphs,C1,C2,C3,C4,C5,C6,C7
+results,smatch,27,27,27,27,27,27,27,27
+results,s2match,27,27,27,27,27,27,27,27
+results_bio,smatch,44,44,44,44,44,44,44,44
+results_bio,s2match,44,44,44,44,44,44,44,44
+results_proxy,smatch,367,367,367,367,364,367,367,338
+results_proxy,s2match,367,367,367,367,365,367,367,340

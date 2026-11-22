@@ -1,0 +1,783 @@
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Expression of RKIP, p-MEK, and p-ERK was found in 69 (66%), 54 (51%), and 64 (61%) of all tumours, respectively.
+# ::file pmid_2246_3874_9.txt
+# ::date 2015-08-08T10:30:48
+# ::id pmid_2246_3874.9
+(f / find-01
+   :ARG1 (a2 / and
+             :op1 (e / express-03
+                     :ARG2 (p / protein
+                              :name (n / name
+                                       :op1 "RKIP"))
+                     :ARG3 (t / tumor
+                              :quant "69"
+                              :ARG1-of (i / include-91
+                                          :ARG2 (t2 / tumor
+                                                    :mod (a / all))
+                                          :ARG3 (p2 / percentage-entity
+                                                    :value "66"))))
+             :op2 (e2 / express-03
+                      :ARG2 (e3 / enzyme
+                                :name (n2 / name
+                                          :op1 "MEK")
+                                :ARG3-of (p3 / phosphorylate-01
+                                             :ARG3 e5))
+                      :ARG3 (t3 / tumor
+                                :quant "54"
+                                :ARG1-of (i2 / include-91
+                                             :ARG2 t2
+                                             :ARG3 (p4 / percentage-entity
+                                                       :value "51"))))
+             :op3 (e4 / express-03
+                      :ARG2 (e5 / enzyme
+                                :name (n3 / name
+                                          :op1 "ERK"))
+                      :ARG3 (t4 / tumor
+                                :quant "64"
+                                :ARG1-of (i3 / include-91
+                                             :ARG2 t2
+                                             :ARG3 (p6 / percentage-entity
+                                                       :value "61"))))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RKIP expression negatively correlated with the depth of invasion (p < 0.001), lymph node involvement (p = 0.028), and Union for International Cancer Control (UICC) stage (p = 0.007).
+# ::file pmid_2246_3874_10.txt
+# ::date 2015-08-08T10:37:52
+# ::id pmid_2246_3874.10
+(a2 / and
+    :op1 (c / correlate-01
+            :ARG1 (e / express-03
+                     :ARG2 (p / protein
+                              :name (n2 / name
+                                        :op1 "RKIP")))
+            :ARG2 (d / depth
+                     :mod (i / invade-01))
+            :ARG2-of (n / negative-01)
+            :ARG1-of (s / statistical-test-91
+                        :ARG2 (l / less-than
+                                 :value "0.001")))
+    :op2 (c2 / correlate-01
+             :ARG1 e
+             :ARG2 (i2 / involve-01
+                       :ARG1 (n3 / node
+                                 :mod (l2 / lymph)))
+             :ARG1-of (s3 / statistical-test-91
+                          :ARG2 "0.028"))
+    :op3 (c3 / correlate-01
+             :ARG1 e
+             :ARG2 (s2 / stage
+                       :mod (o / organization
+                               :name (n5 / name
+                                         :op1 "UICC")))
+             :ARG1-of (s4 / statistical-test-91
+                          :ARG2 "0.007")))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RKIP expression was associated with significantly longer relapse-free survival (RFS) (p = 0.0033), whereas p-MEK was not (p = 0.79).
+# ::file pmid_2246_3874_11.txt
+# ::date 2015-08-08T10:58:20
+# ::id pmid_2246_3874.11
+(c / contrast-01
+   :ARG1 (a / associate-01
+            :ARG1 (e / express-03
+                     :ARG2 (p / protein
+                              :name (n / name
+                                       :op1 "RKIP")))
+            :ARG2 (s / survive-01
+                     :ARG1-of (f / free-04
+                                 :ARG2 (r / relapse-01))
+                     :ARG1-of (l / long-03
+                                 :degree (m / more)
+                                 :ARG1-of (s2 / significant-02)))
+            :ARG1-of (s3 / statistical-test-91
+                         :ARG2 "0.0033"))
+   :ARG2 (a2 / associate-01
+             :polarity "-"
+             :ARG1 (e2 / enzyme
+                       :name (n2 / name
+                                 :op1 "MEK")
+                       :ARG3-of (p4 / phosphorylate-01))
+             :ARG2 s
+             :ARG1-of (s4 / statistical-test-91
+                          :ARG2 "0.79")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients with p-ERK expression had slightly, but not significantly shorter RFS than those without such expression (p = 0.054).
+# ::file pmid_2246_3874_12.txt
+# ::date 2015-08-08T11:18:24
+# ::id pmid_2246_3874.12
+(h / have-03
+   :ARG0 (p / person
+            :ARG0-of (h2 / have-rel-role-91
+                         :ARG2 (p2 / patient))
+            :ARG3-of (e / express-03
+                        :ARG2 (e2 / enzyme
+                                  :name (n / name
+                                           :op1 "ERK")
+                                  :ARG3-of (p3 / phosphorylate-01))))
+   :ARG1 (s / survive-01
+            :ARG1-of (f / free-04
+                        :ARG2 (r / relapse-01))
+            :ARG1-of (s2 / short-07
+                         :degree (s5 / slight
+                                     :ARG1-of (c / contrast-01
+                                                 :ARG2 (s4 / significant-02
+                                                           :polarity "-")))
+                         :degree (m / more))
+            :compared-to (p4 / person
+                             :ARG0-of h2
+                             :ARG3-of (e3 / express-03
+                                          :polarity "-"
+                                          :ARG2 e2))
+            :ARG1-of (s3 / statistical-test-91
+                         :ARG2 "0.054")))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients with positive p-ERK and negative RKIP expression had significantly shorter RFS than the other patients (p < 0.001).
+# ::file pmid_2246_3874_13.txt
+# ::date 2015-08-08T11:32:19
+# ::id pmid_2246_3874.13
+(h / have-03
+   :ARG0 (p / person
+            :ARG0-of (h2 / have-rel-role-91
+                         :ARG2 (p2 / patient)
+                         :ARG0 p6)
+            :compared-to (p6 / person
+                             :mod (o / other))
+            :ARG3-of (e2 / express-03
+                         :ARG2 (e / enzyme
+                                  :name (n / name
+                                           :op1 "ERK")
+                                  :ARG3-of (p3 / phosphorylate-01))
+                         :mod (p4 / positive))
+            :ARG3-of (e3 / express-03
+                         :ARG2 (p5 / protein
+                                   :name (n2 / name
+                                             :op1 "RKIP")
+                                   :ARG2-of (m / mutate-01
+                                               :mod "-/-"))))
+   :ARG1 (s / survive-01
+            :ARG1-of (f / free-04
+                        :ARG2 (r / relapse-01))
+            :ARG1-of (s2 / short-07
+                         :ARG1-of (s3 / significant-02)
+                         :ARG1-of (s4 / statistical-test-91
+                                      :ARG2 (l / less-than
+                                               :value "0.001")))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The combination of RKIP and p-ERK expression was an independent prognostic factor (hazard ratio, 2.4; 95% confidence interval, 1.3 - 4.6; p = 0.008).
+# ::file pmid_2246_3874_14.txt
+# ::date 2015-08-08T11:41:45
+# ::id pmid_2246_3874.14
+(f / factor
+   :domain (c / combine-01
+              :ARG3 (e / express-03
+                       :ARG2 (a / and
+                                :op1 (p / protein
+                                        :name (n / name
+                                                 :op1 "RKIP"))
+                                :op2 (e2 / enzyme
+                                         :name (n2 / name
+                                                   :op1 "ERK")
+                                         :ARG3-of (p2 / phosphorylate-01)))))
+   :mod (p3 / prognostic)
+   :ARG0-of (d / depend-01
+               :polarity "-")
+   :mod (r / ratio
+           :quant "2.4"
+           :mod (h / hazard))
+   :mod (i / interval
+           :mod (c2 / confidence)
+           :value (v / value-interval
+                     :op1 "1.3"
+                     :op2 "4.6")
+           :mod (p4 / percentage-entity
+                    :value "95"))
+   :ARG1-of (s / statistical-test-91
+               :ARG2 "0.008"))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RKIP, p-MEK, and p-ERK were respectively expressed by 69 (66%), 54 (51%), and 64 (61%) of all tumours (Figure <xref ref-type="fig" rid="F1">1a-c</xref>).
+# ::file pmid_2246_3874_79.txt
+# ::date 2015-08-08T11:48:03
+# ::id pmid_2246_3874.79
+(a / and
+   :op1 (e / express-03
+           :ARG2 (p / protein
+                    :name (n / name
+                             :op1 "RKIP"))
+           :ARG3 (t / tumor
+                    :quant "69"
+                    :ARG1-of (i / include-91
+                                :ARG2 (t4 / tumor
+                                          :mod (a2 / all))
+                                :ARG3 (p4 / percentage-entity
+                                          :value "66"))))
+   :op2 (e2 / express-03
+            :ARG2 (e3 / enzyme
+                      :name (n2 / name
+                                :op1 "MEK")
+                      :ARG3-of (p2 / phosphorylate-01
+                                   :ARG3 e5))
+            :ARG3 (t2 / tumor
+                      :quant "54"
+                      :ARG1-of (i2 / include-91
+                                   :ARG2 t4
+                                   :ARG3 (p5 / percentage-entity
+                                             :value "51"))))
+   :op3 (e4 / express-03
+            :ARG2 (e5 / enzyme
+                      :name (n3 / name
+                                :op1 "ERK"))
+            :ARG3 (t3 / tumor
+                      :quant "64"
+                      :ARG1-of (i3 / include-91
+                                   :ARG2 t4
+                                   :ARG3 (p6 / percentage-entity
+                                             :value "61"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "1a")
+                         :op2 (f2 / figure
+                                  :mod "1b")
+                         :op3 (f3 / figure
+                                  :mod "1c"))))
+
+# ::save-date Wed Mar 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RKIP expression was mainly observed in the cytoplasm of tumour or non-tumour cells.
+# ::file pmid_2246_3874_80.txt
+# ::date 2015-08-08T11:55:57
+# ::id pmid_2246_3874.80
+(o / observe-01
+   :ARG1 (e / express-03
+            :ARG2 (p / protein
+                     :name (n / name
+                              :op1 "RKIP")))
+   :location (c / cytoplasm
+                :part-of (o2 / or
+                             :op1 (c2 / cell
+                                      :mod (t / tumor))
+                             :op2 (c3 / cell
+                                      :mod (t2 / tumor
+                                               :polarity "-"))))
+   :manner (m / main))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Expressions of p-MEK and p-ERK were found in both the cytoplasm and nucleus.
+# ::file pmid_2246_3874_81.txt
+# ::date 2015-08-08T11:58:30
+# ::id pmid_2246_3874.81
+(f / find-01
+   :ARG1 (e / express-03
+            :ARG2 (a / and
+                     :op1 (e2 / enzyme
+                              :name (n / name
+                                       :op1 "MEK")
+                              :ARG3-of (p / phosphorylate-01
+                                          :ARG3 e3))
+                     :op2 (e3 / enzyme
+                              :name (n2 / name
+                                        :op1 "ERK"))))
+   :location (a2 / and
+                 :op1 (c / cytoplasm)
+                 :op2 (n3 / nucleus)
+                 :mod (b / both)))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Expressions of RKIP, p-MEK, and p-ERK were respectively detected in 5 (19%), 9 (35%), and 21 (81%) of 26 metastatic lymph nodes obtained from patients with recurrent disease (Figure <xref ref-type="fig" rid="F1">1d-f</xref>).
+# ::file pmid_2246_3874_82.txt
+# ::date 2015-08-08T12:02:03
+# ::id pmid_2246_3874.82
+(d / detect-01
+   :ARG1 (a / and
+            :op1 (e / express-03
+                    :ARG2 (p / protein
+                             :name (n / name
+                                      :op1 "RKIP"))
+                    :ARG3 (n2 / node
+                              :quant "5"
+                              :ARG1-of (i / include-91
+                                          :ARG2 (n7 / node
+                                                    :quant "26"
+                                                    :mod (l / lymph)
+                                                    :mod (m / metastasis)
+                                                    :ARG1-of (o / obtain-01
+                                                                :ARG2 (p2 / person
+                                                                          :ARG0-of (h / have-rel-role-91
+                                                                                      :ARG2 (p3 / patient))
+                                                                          :mod (d2 / disease
+                                                                                   :ARG1-of (r / reoccur-01)))))
+                                          :ARG3 (p5 / percentage-entity
+                                                    :value "19"))))
+            :op2 (e2 / express-03
+                     :ARG2 (e3 / enzyme
+                               :name (n3 / name
+                                         :op1 "MEK")
+                               :ARG3-of (p4 / phosphorylate-01
+                                            :ARG3 e4))
+                     :ARG3 (n4 / node
+                               :quant "9"
+                               :ARG1-of (i2 / include-91
+                                            :ARG2 n7
+                                            :ARG3 (p6 / percentage-entity
+                                                      :value "35"))))
+            :op3 (e5 / express-03
+                     :ARG2 (e4 / enzyme
+                               :name (n5 / name
+                                         :op1 "ERK"))
+                     :ARG3 (n6 / node
+                               :quant "21"
+                               :ARG1-of (i3 / include-91
+                                            :ARG2 n7
+                                            :ARG3 (p7 / percentage-entity
+                                                      :value "81")))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f / figure
+                                  :mod "1d")
+                          :op2 (f2 / figure
+                                   :mod "1e")
+                          :op3 (f3 / figure
+                                   :mod "1f"))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Expression of p-ERK was found mainly in the nuclei of metastatic tumour cells.
+# ::file pmid_2246_3874_83.txt
+# ::date 2015-08-08T12:14:06
+# ::id pmid_2246_3874.83
+(f / find-01
+   :ARG1 (e / express-03
+            :ARG2 (e2 / enzyme
+                      :name (n / name
+                               :op1 "ERK")
+                      :ARG3-of (p / phosphorylate-01)))
+   :manner (m / main)
+   :location (n2 / nucleus
+                 :part-of (c / cell
+                             :mod (t / tumor
+                                     :ARG1-of (m2 / metastasize-101)))))
+
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These proteins were also detected in tumour cells associated with venous invasion (Figure <xref ref-type="fig" rid="F1">1g-i</xref>).
+# ::file pmid_2246_3874_84.txt
+# ::date 2015-08-08T13:29:32
+# ::id pmid_2246_3874.84
+(d / detect-01
+      :ARG1 (p / protein
+            :mod (t / this))
+      :mod (a / also)
+      :location (c / cell
+            :mod (t2 / tumor)
+            :ARG1-of (a2 / associate-01
+                  :ARG2 (i / invade-01
+                        :ARG1 (v / vein))))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (a3 / and
+                  :op1 (f / figure :mod "1g")
+                  :op2 (f2 / figure :mod "1h")
+                  :op3 (f3 / figure :mod "1i"))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No p-ERK or p-MEK staining was detected in normal gastric mucosa.
+# ::file pmid_2246_3874_85.txt
+# ::date 2015-08-08T13:32:16
+# ::id pmid_2246_3874.85
+(d / detect-01
+   :ARG1 (s / stain-01
+            :polarity "-"
+            :ARG2 (o / or
+                     :op1 (e / enzyme
+                             :name (n / name
+                                      :op1 "ERK")
+                             :ARG3-of (p / phosphorylate-01
+                                         :ARG3 e2))
+                     :op2 (e2 / enzyme
+                              :name (n2 / name
+                                        :op1 "MEK"))))
+   :location (m / mucosa
+                :mod (s2 / stomach)
+                :ARG1-of (n3 / normal-02)))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The expression of p-MEK positively correlated with the expressions of RKIP (p = 0.042) and p-ERK (p = 0.007), whereas there was no relation between RKIP and p-ERK expressions (p = 0.98) (Table <xref ref-type="table" rid="T1">1</xref>).
+# ::file pmid_2246_3874_86.txt
+# ::date 2015-08-08T14:34:35
+# ::id pmid_2246_3874.86
+(c / contrast-01
+   :ARG1 (a2 / and
+             :op1 (c2 / correlate-01
+                      :ARG1 (e / express-03
+                               :ARG2 (e2 / enzyme
+                                         :name (n / name
+                                                  :op1 "MEK")
+                                         :ARG3-of (p / phosphorylate-01
+                                                     :ARG3 e4)))
+                      :ARG2 (e3 / express-03
+                                :ARG2 (p2 / protein
+                                          :name (n2 / name
+                                                    :op1 "RKIP")))
+                      :manner (p6 / positive)
+                      :ARG1-of (s / statistical-test-91
+                                  :ARG2 "0.042"))
+             :op2 (c3 / correlate-01
+                      :ARG1 e
+                      :ARG2 (e4 / enzyme
+                                :name (n3 / name
+                                          :op1 "ERK"))
+                      :ARG1-of (s2 / statistical-test-91
+                                   :ARG2 "0.007")))
+   :ARG2 (r / relate-01
+            :polarity "-"
+            :ARG1 (e5 / express-03
+                      :ARG2 p2)
+            :ARG2 (e6 / express-03
+                      :ARG2 e4)
+            :ARG1-of (s3 / statistical-test-91
+                         :ARG2 "0.098"))
+   :ARG1-of (d / describe-01
+               :ARG0 (t / table
+                        :mod "1")))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RKIP expression negatively correlated with the depth of invasion (p < 0.001), lymph node involvement (p = 0.028), and UICC stage (p = 0.007).
+# ::file pmid_2246_3874_87.txt
+# ::date 2015-08-08T14:42:43
+# ::id pmid_2246_3874.87
+(a2 / and
+    :op1 (c / correlate-01
+            :ARG1 (e / express-03
+                     :ARG2 (p / protein
+                              :name (n / name
+                                       :op1 "RKIP")))
+            :ARG2 (d / depth
+                     :mod (i / invade-01))
+            :ARG2-of (n3 / negative-01)
+            :ARG1-of (s / statistical-test-91
+                        :ARG2 (l2 / less-than
+                                  :op1 "0.001")))
+    :op2 (c2 / correlate-01
+             :ARG1 e
+             :ARG2 (i2 / involve-01
+                       :ARG1 (n2 / node
+                                 :mod (l / lymph)))
+             :ARG1-of (s3 / statistical-test-91
+                          :ARG2 "0.028"))
+    :op3 (c3 / correlate-01
+             :ARG1 e
+             :ARG2 (s2 / stage
+                       :mod (o / organization
+                               :name (n5 / name
+                                         :op1 "UICC")))
+             :ARG1-of (s4 / statistical-test-91
+                          :ARG2 "0.007")))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RKIP was more commonly found in differentiated type than in undifferentiated type tumours (p = 0.042).
+# ::file pmid_2246_3874_88.txt
+# ::date 2015-08-08T14:50:15
+# ::id pmid_2246_3874.88
+(f / find-01
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "RKIP"))
+   :location (t / tumor
+                :mod (t2 / type
+                         :ARG1-of (d / differentiate-01))
+                :compared-to (t3 / tumor
+                                 :mod (t4 / type
+                                          :ARG1-of (d2 / differentiate-01
+                                                       :polarity "-"))))
+   :manner (c / common
+              :degree (m / more))
+   :ARG1-of (s / statistical-test-91
+               :ARG2 "0.042"))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The expressions of p-ERK and p-MEK significantly correlated with gender (p = 0.027, p = 0.036, respectively), but were not related to any other clinicopathological factor (Table <xref ref-type="table" rid="T2">2</xref>).
+# ::file pmid_2246_3874_89.txt
+# ::date 2015-08-08T15:04:42
+# ::id pmid_2246_3874.89
+(c / contrast-01
+   :ARG1 (a3 / and
+             :op1 (c2 / correlate-01
+                      :ARG1 (e / express-03
+                               :ARG2 (e2 / enzyme
+                                         :name (n / name
+                                                  :op1 "ERK")
+                                         :ARG3-of (p / phosphorylate-01
+                                                     :ARG3 e3)))
+                      :ARG2 (g / gender)
+                      :ARG1-of (s / significant-02)
+                      :ARG1-of (s2 / statistical-test-91
+                                   :ARG2 "0.027"))
+             :op2 (c4 / correlate-01
+                      :ARG1 (e4 / express-03
+                                :ARG2 (e3 / enzyme
+                                          :name (n2 / name
+                                                    :op1 "MEK")))
+                      :ARG2 g
+                      :ARG1-of (s3 / statistical-test-91
+                                   :ARG2 "0.036")))
+   :ARG2 (r / relate-01
+            :polarity "-"
+            :ARG1 e
+            :ARG2 (f / factor
+                     :mod (c3 / clinicopathology)
+                     :mod (o / other
+                             :mod (a2 / any))))
+   :ARG1-of (d / describe-01
+               :ARG0 (t / table
+                        :mod "2")))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RKIP expression was associated with significantly longer RFS (p = 0.003), whereas p-MEK was not (p = 0.79).
+# ::file pmid_2246_3874_90.txt
+# ::date 2015-08-08T15:08:56
+# ::id pmid_2246_3874.90
+(c / contrast-01
+   :ARG1 (a / associate-01
+            :ARG1 (e / express-03
+                     :ARG2 (p / protein
+                              :name (n / name
+                                       :op1 "RKIP")))
+            :ARG2 (s / survive-01
+                     :ARG1-of (l / long-03
+                                 :degree (m / more)
+                                 :ARG1-of (s2 / significant-02))
+                     :ARG1-of (f / free-04
+                                 :ARG2 (r / relapse-01)))
+            :ARG1-of (s3 / statistical-test-91
+                         :ARG2 "0.003"))
+   :ARG2 (a2 / associate-01
+             :polarity "-"
+             :ARG1 (e2 / express-03
+                       :ARG2 (e3 / enzyme
+                                 :name (n2 / name
+                                           :op1 "MEK")
+                                 :ARG3-of (p3 / phosphorylate-01)))
+             :ARG2 s
+             :ARG1-of (s4 / statistical-test-91
+                          :ARG2 "0.79")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The presence of p-ERK expression was associated with slightly, but not significantly shorter RFS than the absence of such expression (p = 0.054) (Table <xref ref-type="table" rid="T3">3</xref>).
+# ::file pmid_2246_3874_91.txt
+# ::date 2015-08-09T06:11:55
+# ::id pmid_2246_3874.91
+(a / associate-01
+   :ARG1 (p / present-02
+            :ARG1 (e / express-03
+                     :ARG2 (e2 / enzyme
+                               :name (n / name
+                                        :op1 "ERK")
+                               :ARG3-of (p2 / phosphorylate-01)))
+            :compared-to (a2 / absent-01
+                             :ARG1 e))
+   :ARG2 (s / survive-01
+            :ARG1-of (s2 / short-07
+                         :degree (m / more)
+                         :degree (s3 / slight
+                                     :ARG1-of (c / contrast-01
+                                                 :ARG2 (s4 / significant-02
+                                                           :polarity "-"))))
+            :ARG1-of (f / free-04
+                        :ARG2 (r / relapse-01)))
+   :ARG1-of (d / describe-01
+               :ARG0 (t / table
+                        :mod "3"))
+   :ARG1-of (s5 / statistical-test-91
+                :ARG2 "0.054"))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients with positive p-ERK and negative RKIP expression had significantly shorter RFS than the other patients (p < 0.001) (Figure <xref ref-type="fig" rid="F2">2</xref>).
+# ::file pmid_2246_3874_92.txt
+# ::date 2015-08-09T06:16:56
+# ::id pmid_2246_3874.92
+(h / have-03
+   :ARG0 (p / person
+            :ARG0-of (h2 / have-rel-role-91
+                         :ARG2 (p2 / patient)
+                         :ARG0 p6)
+            :compared-to (p6 / person
+                             :mod (o / other))
+            :ARG3-of (e / express-03
+                        :ARG2 (e2 / enzyme
+                                  :name (n / name
+                                           :op1 "ERK")
+                                  :ARG3-of (p3 / phosphorylate-01))
+                        :mod (p4 / positive))
+            :ARG3-of (e3 / express-03
+                         :ARG2 (p5 / protein
+                                   :name (n2 / name
+                                             :op1 "RKIP")
+                                   :ARG2-of (m2 / mutate-01
+                                                :mod "-/-"))))
+   :ARG1 (s / survive-01
+            :ARG1-of (s2 / short-07
+                         :ARG1-of (s3 / significant-02)
+                         :degree (m / more)
+                         :ARG1-of (s4 / statistical-test-91
+                                      :ARG2 (l / less-than
+                                               :op1 "0.001")))
+            :ARG1-of (f / free-04
+                        :ARG2 (r / relapse-01)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "2")))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The prognostic relevance of positive p-ERK expression combined with negative RKIP expression was therefore assessed using a multivariate proportional-hazards model adjusted for established clinical prognostic factors (i.e., age, gender, histopathology, depth of invasion, lymph node involvement).
+# ::file pmid_2246_3874_93.txt
+# ::date 2015-08-09T06:23:40
+# ::id pmid_2246_3874.93
+(a / assess-01
+   :ARG1 (r / relevant-01
+            :ARG1 (e / express-03
+                     :ARG2 (e2 / enzyme
+                               :name (n / name
+                                        :op1 "ERK")
+                               :ARG3-of (p / phosphorylate-01))
+                     :ARG1-of (c / combine-01
+                                 :ARG2 (e3 / express-03
+                                           :ARG2 (p2 / protein
+                                                     :name (n2 / name
+                                                               :op1 "RKIP")
+                                                     :ARG2-of (m3 / mutate-01
+                                                                  :mod "-/-"))))
+                     :mod (p3 / positive))
+            :mod (p4 / prognostic))
+   :instrument (m / model-01
+                  :ARG1-of (a2 / adjust-01
+                               :ARG2 (f / factor
+                                        :mod (c2 / clinic)
+                                        :ARG1-of (e4 / establish-01)
+                                        :mod p4
+                                        :example (a3 / and
+                                                     :op1 (a4 / age)
+                                                     :op2 (g / gender)
+                                                     :op3 (h / histopathology)
+                                                     :op4 (d / depth
+                                                             :mod (i2 / invade-01))
+                                                     :op5 (i3 / involve-01
+                                                              :ARG1 (n4 / node
+                                                                        :mod (l / lymph))))))
+                  :mod (h2 / hazard
+                           :mod (p5 / proportional))
+                  :mod (m2 / multivariate))
+   :ARG1-of (c3 / cause-01))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The combination of RKIP and p-ERK expression was found to be an independent prognostic factor (hazard ratio [HR], 2.4; 95% confidence interval [CI], 1.3 - 4.6; p = 0.008).
+# ::file pmid_2246_3874_94.txt
+# ::date 2015-08-09T06:33:02
+# ::id pmid_2246_3874.94
+(f / find-01
+   :ARG1 (f2 / factor
+             :mod (p3 / prognostic)
+             :ARG0-of (d / depend-01
+                         :polarity "-")
+             :domain (c / combine-01
+                        :ARG1 (e / express-03
+                                 :ARG2 (a / and
+                                          :op1 (p / protein
+                                                  :name (n / name
+                                                           :op1 "RKIP"))
+                                          :op2 (e2 / enzyme
+                                                   :name (n2 / name
+                                                             :op1 "ERK")
+                                                   :ARG3-of (p2 / phosphorylate-01)))))
+             :ARG1-of (s / statistical-test-91
+                         :ARG2 "0.008"))
+   :mod (r / ratio
+           :value "2.4"
+           :mod (h / hazard))
+   :mod (i / interval
+           :mod (c2 / confidence)
+           :mod (p4 / percentage-entity
+                    :value "95")
+           :value (v / value-interval
+                     :op1 "1.3"
+                     :op2 "4.6")))
+
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Histopathological type and depth of invasion were also independent prognostic factors (HR, 2.1; 95% CI, 1.0 - 4.2; p = 0.043 and HR, 4.7; 95% CI, 1.0-22; p = 0.048, respectively) (Table <xref ref-type="table" rid="T3">3</xref>).
+# ::file pmid_2246_3874_95.txt
+# ::date 2015-08-09T06:41:27
+# ::id pmid_2246_3874.95
+(f / factor
+      :mod (p / prognostic)
+      :ARG0-of (d / depend-01 :polarity "-")
+      :domain (a / and
+            :op1 (t / type
+                  :mod (h / histopathological)
+                  :mod (r / ratio
+                        :value "2.1"
+                        :mod (h2 / hazard))
+                  :mod (i2 / interval
+                        :mod (c / confidence)
+                        :mod (p2 / percentage-entity :value "95")
+                        :value (b / between :op1 "1.0" :op2 "4.2"))
+                  :ARG1-of (s / statistical-test-91 :ARG2 "0.043"))
+            :op2 (d2 / depth
+                  :mod (i / invade-01)
+                  :mod (r2 / ratio
+                        :value "4.7"
+                        :mod (h3 / hazard))
+                  :mod (i3 / interval
+                        :mod (c2 / confidence)
+                        :mod (p4 / percentage-entity :value "95")
+                        :value (v / value-interval :op1 "1.0" :op2 "22"))
+                  :ARG1-of (s2 / statistical-test-91 :ARG2 "0.048")))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (t2 / table :mod "3"))
+      :mod (a2 / also))

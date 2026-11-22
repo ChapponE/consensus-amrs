@@ -1,0 +1,2989 @@
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Inhibitors of Jak2/Stat3, MEK/Erk and PI3-K/Akt pathways down-regulated IL-6 secretion in the lung adenocarcinoma PC14PE6/AS2 (AS2) cells, which spontaneously secreted IL-6 and possessed constitutively activated Stat3.
+# ::file pmid_2112_2157_10.txt
+# ::date 2015-07-18T17:59:40
+# ::id pmid_2112_2157.10
+(d / downregulate-01
+   :ARG1 (s / secrete-01
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "IL-6")))
+   :ARG2 (m / molecular-physical-entity
+            :ARG0-of (i / inhibit-01
+                        :ARG1 (a / and
+                                 :op1 (p2 / pathway
+                                          :name (n2 / name
+                                                    :op1 "Jak2/Stat3"))
+                                 :op2 (p3 / pathway
+                                          :name (n3 / name
+                                                    :op1 "MEK/Erk"))
+                                 :op3 (p4 / pathway
+                                          :name (n4 / name
+                                                    :op1 "PI3-K/Akt")))))
+   :location (c / cell
+                :name (n5 / name
+                          :op1 "PC14PE6/AS2")
+                :part-of (l / lung)
+                :ARG0-of (s2 / secrete-01
+                             :ARG1 p
+                             :manner (s3 / spontaneous))
+                :ARG0-of (p5 / possess-01
+                             :ARG1 (p6 / protein
+                                       :name (n6 / name
+                                                 :op1 "Stat3")
+                                       :ARG1-of (a3 / activate-01
+                                                    :manner (c2 / constitutive))))
+                :mod (m2 / medical-condition
+                         :name (n7 / name
+                                   :op1 "adenocarcinoma"))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Transfection with dominant-negative Stat3, Stat3 siRNA, or Stat3 shRNA decreased IL-6 expression in AS2 cells.
+# ::file pmid_2112_2157_11.txt
+# ::date 2015-07-18T18:20:06
+# ::id pmid_2112_2157.11
+(d / decrease-01
+   :ARG0 (t / transfect-01
+            :ARG2 (o / or
+                     :op1 (p / protein
+                             :name (n / name
+                                      :op1 "Stat3"))
+                     :op2 (n6 / nucleic-acid
+                              :name (n2 / name
+                                        :op1 "siRNA")
+                              :mod p)
+                     :op3 (n7 / nucleic-acid
+                              :name (n3 / name
+                                        :op1 "shRNA")
+                              :mod p)
+                     :ARG0-of (d2 / dominate-01)
+                     :ARG2-of (m / mutate-01
+                                 :mod "-/-")))
+   :ARG1 (e / express-03
+            :ARG2 (p2 / protein
+                      :name (n4 / name
+                                :op1 "IL-6")))
+   :location (c / cell-line
+                :name (n5 / name
+                          :op1 "AS2")))
+
+# ::save-date Sat Jul 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Conversely, transfection with constitutively-activated Stat3 increased the production of IL-6.
+# ::file pmid_2112_2157_12.txt
+# ::date 2015-07-18T18:31:11
+# ::id pmid_2112_2157.12
+(c / contrast-01
+   :ARG2 (i / increase-01
+            :ARG0 (t / transfect-01
+                     :ARG2 (p / protein
+                              :name (n / name
+                                       :op1 "Stat3")
+                              :ARG1-of (a / activate-01
+                                          :manner (c2 / constitutive))))
+            :ARG1 (p2 / produce-01
+                      :ARG1 (p3 / protein
+                                :name (n2 / name
+                                          :op1 "IL-6")))))
+
+# ::save-date Mon Jul 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In AS2 derived cells, resistance to paclitaxel was positively correlated with Stat3 activation status and the expression of IL-6, which is commonly secreted in drug resistant cancer cells.
+# ::file pmid_2112_2157_13.txt
+# ::date 2015-07-18T18:36:31
+# ::id pmid_2112_2157.13
+(c / correlate-01
+   :ARG1 (r / resist-01
+            :ARG1 (s / small-molecule
+                     :name (n / name
+                              :op1 "paclitaxel")))
+   :ARG2 (a / and
+            :op1 (s2 / status
+                     :mod (a2 / activate-01
+                              :ARG1 (p / protein
+                                       :name (n2 / name
+                                                 :op1 "Stat3"))))
+            :op2 (e / express-03
+                    :ARG2 (p2 / protein
+                              :name (n3 / name
+                                        :op1 "IL-6")
+                              :ARG1-of (s3 / secrete-01
+                                           :manner (c2 / common)
+                                           :location (c3 / cell
+                                                         :mod (d / disease
+                                                                 :wiki "Cancer"
+                                                                 :name (n4 / name
+                                                                           :op1 "cancer"))
+                                                         :ARG0-of (r2 / resist-01
+                                                                      :ARG1 (d2 / drug-01)))))))
+   :manner (p3 / positive)
+   :location (c4 / cell
+                 :ARG1-of (d3 / derive-01
+                              :ARG2 (c5 / cell-line
+                                        :name (n5 / name
+                                                  :op1 "AS2")))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The pharmacological inhibition of NF-?B, PI3-K/Akt and MEK/Erk and the pharmacological inhibition and genetic inhibition (Stat3 siRNA) of Jak2/Stat3 pathway decreased IL-6 autocrine production in various drug resistant cancer cell lines and similarly decreased IL-6 autocrine production in clinically isolated lung cancer cells.
+# ::file pmid_2112_2157_14.txt
+# ::date 2015-07-18T18:53:49
+# ::id pmid_2112_2157.14
+(a / and
+   :op1 (d / decrease-01
+           :ARG0 (a2 / and
+                     :op1 (i / inhibit-01
+                             :ARG1 (a3 / and
+                                       :op1 (p / pathway
+                                               :name (n / name
+                                                        :op1 "NF-κB"))
+                                       :op2 (p2 / pathway
+                                                :name (n2 / name
+                                                          :op1 "PI3-K/Akt"))
+                                       :op3 (p3 / pathway
+                                                :name (n3 / name
+                                                          :op1 "MEK/Erk")))
+                             :mod (p4 / pharmacology))
+                     :op2 (a4 / and
+                              :op1 (i2 / inhibit-01
+                                       :ARG1 (p5 / pathway
+                                                 :name (n4 / name
+                                                           :op1 "Jak2/Stat3"))
+                                       :mod p4)
+                              :op2 (i3 / inhibit-01
+                                       :ARG0 (n9 / nucleic-acid
+                                                 :name (n5 / name
+                                                           :op1 "siRNA")
+                                                 :mod (p6 / protein
+                                                          :name (n6 / name
+                                                                    :op1 "Stat3")))
+                                       :ARG1 p5
+                                       :mod (g / genetics))))
+           :ARG1 (p7 / produce-01
+                     :ARG1 (p8 / protein
+                               :name (n7 / name
+                                         :op1 "IL-6"))
+                     :mod (a5 / autocrine))
+           :location (c / cell-line
+                        :mod (d2 / disease
+                                 :wiki "Cancer"
+                                 :name (n8 / name
+                                           :op1 "cancer"))
+                        :ARG0-of (r2 / resist-01
+                                     :ARG1 (d3 / drug))
+                        :quant (v / various)))
+   :op2 (d4 / decrease-01
+            :ARG0 a2
+            :ARG1 p7
+            :location (c2 / cell
+                          :mod d2
+                          :part-of (l / lung)
+                          :ARG1-of (i4 / isolate-01
+                                       :manner (c3 / clinic)))
+            :ARG1-of (r3 / resemble-01)))
+
+# ::save-date Thu Nov 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We previously demonstrated that AS2 cells produced autocrine IL-6 and the secreted IL-6 induced Stat3 activation and subsequently promoted tumor progression [2].
+# ::file pmid_2112_2157_110.txt
+# ::date 2015-07-19T00:55:40
+# ::id pmid_2112_2157.110
+(d / demonstrate-01
+   :ARG0 (w / we)
+   :ARG1 (a / and
+            :op1 (p / produce-01
+                    :ARG0 (c / cell-line
+                             :name (n / name
+                                      :op1 "AS2"))
+                    :ARG1 (a2 / and
+                              :op1 (p2 / protein
+                                       :name (n2 / name
+                                                 :op1 "IL-6")
+                                       :mod (a3 / autocrine))
+                              :op2 (i / induce-01
+                                      :ARG0 (p4 / protein
+                                                :name (n4 / name
+                                                          :op1 "IL-6")
+                                                :ARG1-of (s / secrete-01))
+                                      :ARG2 (a4 / activate-01
+                                                :ARG1 (p3 / protein
+                                                          :name (n3 / name
+                                                                    :op1 "Stat3"))))))
+            :op2 (p5 / promote-01
+                     :ARG0 c
+                     :ARG1 (p6 / progress-01
+                               :ARG1 (t / tumor))
+                     :time (s2 / subsequent)))
+   :time (p7 / previous)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p8 / publication
+                          :ARG1-of (c2 / cite-01
+                                       :ARG2 "2"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We used ELISA and Western blot analysis to measure IL-6 secretion and Stat3 activation (phosphorylation) after medium replacement to remove the existing IL-6 in the old medium and make it possible to measure the amount of newly secreted IL-6 time-dependently in AS2 cells, respectively.
+# ::file pmid_2112_2157_111.txt
+# ::date 2015-07-19T01:06:51
+# ::id pmid_2112_2157.111
+(u / use-01
+   :ARG0 (w / we)
+   :ARG1 (a / and
+            :op1 (a2 / analyze-01
+                     :instrument (t2 / thing
+                                     :name (n / name
+                                              :op1 "ELISA")))
+            :op2 (a3 / analyze-01
+                     :manner (i / immunoblot-01
+                                :ARG0 w)))
+   :ARG2 (m / measure-01
+            :ARG0 w
+            :ARG1 (a4 / and
+                      :op1 (s / secrete-01
+                              :ARG1 (p / protein
+                                       :name (n3 / name
+                                                 :op1 "IL-6")))
+                      :op2 (a5 / activate-01
+                               :ARG1 (p2 / protein
+                                         :name (n4 / name
+                                                   :op1 "Stat3"))
+                               :ARG1-of (m2 / mean-01
+                                            :ARG2 (p3 / phosphorylate-01
+                                                      :ARG1 p2)))))
+   :time (a6 / after
+             :op1 (r / replace-01
+                     :ARG1 (m3 / medium)))
+   :purpose (a7 / and
+                :op1 (r2 / remove-01
+                         :ARG1 (p4 / protein
+                                   :name (n5 / name
+                                             :op1 "IL-6")
+                                   :ARG1-of (e / exist-01))
+                         :location (m4 / medium
+                                       :mod (o / old)))
+                :op2 (m5 / make-02
+                         :ARG0 w
+                         :ARG1 (p5 / possible-01
+                                   :ARG1 (m6 / measure-01
+                                             :ARG1 (a8 / amount-01
+                                                       :ARG1 (p6 / protein
+                                                                 :name (n6 / name
+                                                                           :op1 "IL-6")
+                                                                 :ARG1-of (s2 / secrete-01
+                                                                              :ARG1-of (n7 / new-01))))
+                                             :ARG0-of (d / depend-01
+                                                         :ARG1 (t / time))
+                                             :location (c / cell-line
+                                                          :name (n8 / name
+                                                                    :op1 "AS2")))))
+                :mod (r3 / respective)))
+
+# ::save-date Mon Jul 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We found the constitutive secretion of IL-6 at hours 1 to 24 and the activation of Stat3 peaked at hours 3 and 8, confirming the autocrine production of IL-6 and the subsequent activation of Stat3 in AS2 cells (Figure 1A and 1B).
+# ::file pmid_2112_2157_112.txt
+# ::date 2015-07-19T01:42:34
+# ::id pmid_2112_2157.112
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (a / and
+            :op1 (s / secrete-01
+                    :ARG1 (p / protein
+                             :name (n / name
+                                      :op1 "IL-6"))
+                    :mod (c / constitutive)
+                    :time (a2 / after
+                              :op1 (t / temporal-quantity
+                                      :quant (v / value-interval
+                                                :op1 "1"
+                                                :op2 "24")
+                                      :unit (h / hour))))
+            :op2 (p2 / peak-01
+                     :ARG1 (a3 / activate-01
+                               :ARG1 (p3 / protein
+                                         :name (n2 / name
+                                                   :op1 "Stat3")))
+                     :time (a4 / after
+                               :op1 (a5 / and
+                                        :op1 (t2 / temporal-quantity
+                                                 :quant "3"
+                                                 :unit h)
+                                        :op2 (t3 / temporal-quantity
+                                                 :quant "8"
+                                                 :unit h))))
+            :ARG0-of (c2 / confirm-01
+                         :ARG1 (a6 / and
+                                   :op1 (p4 / produce-01
+                                            :ARG1 p
+                                            :mod (a7 / autocrine))
+                                   :op2 (a8 / activate-01
+                                            :ARG1 p3
+                                            :time (s2 / subsequent))
+                                   :location (c3 / cell-line
+                                                 :name (n3 / name
+                                                           :op1 "AS2")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a9 / and
+                         :op1 (f2 / figure
+                                  :mod "1A")
+                         :op2 (f3 / figure
+                                  :mod "1B"))))
+
+# ::save-date Mon Jul 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt It has been shown that cancer cells resistant to chemotherapeutic agents express elevated levels of IL-6, and the IL-6 contributes to the drug resistance of cancer cells [30,39].
+# ::file pmid_2112_2157_113.txt
+# ::date 2015-07-19T01:59:33
+# ::id pmid_2112_2157.113
+(s / show-01
+   :ARG1 (a / and
+            :op1 (e / express-03
+                    :ARG2 (l / level
+                             :quant-of (p / protein
+                                          :name (n / name
+                                                   :op1 "IL-6"))
+                             :ARG1-of (e2 / elevate-01))
+                    :ARG3 (c / cell
+                             :mod (d / disease
+                                     :wiki "Cancer"
+                                     :name (n2 / name
+                                               :op1 "cancer"))
+                             :ARG0-of (r / resist-01
+                                         :ARG1 (a2 / agent
+                                                   :mod (c2 / chemotherapy)))))
+            :op2 (c3 / contribute-01
+                     :ARG0 p
+                     :ARG2 (r2 / resist-01
+                               :ARG0 (c4 / cell
+                                         :mod d)
+                               :ARG1 (d2 / drug))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (p2 / publication
+                          :ARG1-of (c5 / cite-01
+                                       :ARG2 (a3 / and
+                                                 :op1 "30"
+                                                 :op2 "39")))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In our MTT assay of the effect of IL-6 on paclitaxel sensitivity in AS2 cells, we found a significant increase (about 15%) in cell viability in cells pre-treated with exogenous IL-6 and a significant decrease (about 15%) in cell viability in cells treated with anti-IL-6R, compared to the un-pretreated cells (both p < 0.001), indicating that autocrine IL-6 contributed to the paclitaxel resistance in AS2 cells (Figure 1C).
+# ::file pmid_2112_2157_114.txt
+# ::date 2015-07-19T02:16:09
+# ::id pmid_2112_2157.114
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (a / and
+            :op1 (i / increase-01
+                    :ARG1 (v / viability
+                             :mod (c / cell))
+                    :ARG2 (s / significant-02
+                             :ARG1-of (m / mean-01
+                                         :ARG2 (a2 / about
+                                                   :op1 (p / percentage-entity
+                                                           :value "15"))))
+                    :location (c2 / cell
+                                  :ARG1-of (p2 / pretreat-01
+                                               :ARG3 (p3 / protein
+                                                         :name (n / name
+                                                                  :op1 "IL-6")
+                                                         :mod (e / exogenous)))))
+            :op2 (d / decrease-01
+                    :ARG1 v
+                    :ARG1-of s
+                    :location (c3 / cell
+                                  :ARG1-of (t / treat-04
+                                              :ARG2 (m2 / molecular-physical-entity
+                                                        :ARG0-of (c8 / counter-01
+                                                                     :ARG1 p3)))))
+            :compared-to (a3 / and
+                             :op1 (c4 / cell
+                                      :ARG1-of (p4 / pretreat-01
+                                                   :polarity "-"
+                                                   :ARG3 p3))
+                             :op2 (c5 / cell
+                                      :ARG1-of (t2 / treat-04
+                                                   :polarity "-"
+                                                   :ARG2 m2)))
+            :ARG1-of (s4 / statistical-test-91
+                         :ARG2 (l / less-than
+                                  :op1 "0.001")))
+   :ARG0-of (i2 / indicate-01
+                :ARG1 (c7 / contribute-01
+                          :ARG0 (p6 / protein
+                                    :name (n6 / name
+                                              :op1 "IL-6")
+                                    :mod (a6 / autocrine))
+                          :ARG2 (r / resist-01
+                                   :ARG1 "s3")
+                          :location "c6"))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "1C"))
+   :time (a4 / assay-01
+             :ARG0 w
+             :ARG1 (a5 / affect-01
+                       :ARG0 p3
+                       :ARG1 (s2 / sensitive-03
+                                 :ARG1 (s3 / small-molecule
+                                           :name (n4 / name
+                                                     :op1 "paclitaxel")))
+                       :location (c6 / cell-line
+                                     :name (n5 / name
+                                               :op1 "AS2")))
+             :instrument (s5 / small-molecule
+                             :name (n2 / name
+                                       :op1 "MTT"))))
+
+# ::save-date Tue Dec 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To investigate whether Jak2/Stat3 as well as the other three IL-6 downstream pathways (PI3-K/Akt, MEK/Erk, and NF-?B) known to be involved in IL-6 expression in various cells would act as an upstream regulator of IL-6 autocrine production in AS2 cells, we used ELISA to measure IL-6 secretion in one control AS2 group and in four different AS2 treatment groups each with one pathway (Jak2/Stat3, PI3-K/Akt, MEK/Erk, or NF-?B) pharmacologically inhibited by the inhibitors AG490, LY294002, U0126, or BAY11-7082, respectively.
+# ::file pmid_2112_2157_116.txt
+# ::date 2015-07-19T15:32:43
+# ::id pmid_2112_2157.116
+(u / use-01
+   :ARG0 (w / we)
+   :ARG1 (t / thing
+            :name (n / name
+                     :op1 "ELISA"))
+   :ARG2 (m / measure-01
+            :ARG0 w
+            :ARG1 (s / secrete-01
+                     :ARG1 (p / protein
+                              :name (n2 / name
+                                        :op1 "IL-6"))))
+   :location (a / and
+                :op1 (g / group-01
+                        :quant "1"
+                        :ARG2 (c / cell-line
+                                 :name (n3 / name
+                                           :op1 "AS2"))
+                        :ARG2-of (c2 / control-01))
+                :op2 (g2 / group-01
+                         :quant "4"
+                         :mod (t2 / treat-04
+                                  :ARG1 c)
+                         :ARG1-of (d / differ-02)
+                         :mod (p2 / pathway
+                                  :quant "1"
+                                  :ARG1-of (m2 / mean-01
+                                               :ARG2 (o / or
+                                                        :op1 (p3 / pathway
+                                                                 :name (n4 / name
+                                                                           :op1 "Jak2/Stat3")
+                                                                 :ARG1-of (i / inhibit-01
+                                                                             :ARG0 (s2 / small-molecule
+                                                                                       :name (n5 / name
+                                                                                                 :op1 "AG490"))
+                                                                             :manner (p4 / pharmacology)))
+                                                        :op2 (p5 / pathway
+                                                                 :name (n6 / name
+                                                                           :op1 "PI3-K/Akt")
+                                                                 :ARG1-of (i2 / inhibit-01
+                                                                              :ARG0 (s3 / small-molecule
+                                                                                        :name (n7 / name
+                                                                                                  :op1 "LY294002"))
+                                                                              :manner p4))
+                                                        :op3 (p6 / pathway
+                                                                 :name (n8 / name
+                                                                           :op1 "MEK/Erk")
+                                                                 :ARG1-of (i3 / inhibit-01
+                                                                              :ARG0 (s4 / small-molecule
+                                                                                        :name (n9 / name
+                                                                                                  :op1 "U0126"))
+                                                                              :manner p4))
+                                                        :op4 (p7 / pathway
+                                                                 :name (n10 / name
+                                                                            :op1 "NF-κB")
+                                                                 :ARG1-of (i4 / inhibit-01
+                                                                              :ARG0 (s5 / small-molecule
+                                                                                        :name (n11 / name
+                                                                                                   :op1 "BAY11-7082"))
+                                                                              :manner p4)))))
+                         :mod (e / each)))
+   :purpose (i5 / investigate-01
+                :ARG0 w
+                :ARG1 (a2 / act-01
+                          :mode "interrogative"
+                          :ARG0 (a3 / and
+                                    :op1 p3
+                                    :op2 (p8 / pathway
+                                             :quant "3"
+                                             :mod (o2 / other)
+                                             :direction (d2 / downstream
+                                                            :mod p)
+                                             :ARG1-of (m3 / mean-01
+                                                          :ARG2 (a4 / and
+                                                                    :op1 p5
+                                                                    :op2 p6
+                                                                    :op3 p7)))
+                                    :ARG1-of (i6 / involve-01
+                                                 :ARG2 (e2 / express-03
+                                                           :ARG2 p
+                                                           :ARG3 (c3 / cell
+                                                                     :mod (v / various)))
+                                                 :ARG1-of (k / know-01)))
+                          :ARG1 (r / regulate-01
+                                   :ARG0 a3
+                                   :ARG1 (p9 / produce-01
+                                             :ARG1 p
+                                             :mod (a5 / autocrine))
+                                   :direction (u2 / upstream))
+                          :location c)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We found that, compared to the controls, MEK/Erk inhibitor and PI3-K/Akt inhibitor reduced IL-6 secretion in AS2 cells by about 80% and 90% (both p < 0.01), but NF-?B inhibitor decreased it by only 20% (p < 0.05) (Figure 2A).
+# ::file pmid_2112_2157_117.txt
+# ::date 2015-07-19T16:31:32
+# ::id pmid_2112_2157.117
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (c / contrast-01
+            :ARG1 (r / reduce-01
+                     :ARG0 (a / and
+                              :op1 (m / molecular-physical-entity
+                                      :ARG0-of (i / inhibit-01
+                                                  :ARG1 (p / pathway
+                                                           :name (n / name
+                                                                    :op1 "MEK/Erk"))))
+                              :op2 (m2 / molecular-physical-entity
+                                       :ARG0-of (i2 / inhibit-01
+                                                    :ARG1 (p2 / pathway
+                                                              :name (n2 / name
+                                                                        :op1 "PI3-K/Akt")))))
+                     :ARG1 (s / secrete-01
+                              :ARG1 (p3 / protein
+                                        :name (n3 / name
+                                                  :op1 "IL-6")))
+                     :ARG2 (a2 / about
+                               :op1 (a3 / and
+                                        :op1 (p4 / percentage-entity
+                                                 :value "80")
+                                        :op2 (p5 / percentage-entity
+                                                 :value "90")))
+                     :location (c2 / cell-line
+                                   :name (n4 / name
+                                             :op1 "AS2"))
+                     :ARG1-of (s2 / statistical-test-91
+                                  :ARG2 (l / less-than
+                                           :op1 "0.01")))
+            :ARG2 (d / decrease-01
+                     :ARG0 (m3 / molecular-physical-entity
+                               :ARG0-of (i3 / inhibit-01
+                                            :ARG1 (p7 / pathway
+                                                      :name (n5 / name
+                                                                :op1 "NF-κB"))))
+                     :ARG1 s
+                     :ARG2 (p8 / percentage-entity
+                               :value "20")
+                     :mod (o / only)
+                     :ARG1-of (s3 / statistical-test-91
+                                  :ARG2 (l2 / less-than
+                                            :op1 "0.05")))
+            :ARG1-of (c3 / compare-01
+                         :ARG2 (m4 / molecular-physical-entity
+                                   :ARG2-of (c4 / control-01))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "2A")))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Importantly, Jak2/Stat3 inhibitor also reduced IL-6 secretion by more than 60% (p < 0.01).
+# ::file pmid_2112_2157_118.txt
+# ::date 2015-07-19T16:59:11
+# ::id pmid_2112_2157.118
+(r / reduce-01
+   :ARG0 (m / molecular-physical-entity
+            :ARG0-of (i / inhibit-01
+                        :ARG1 (p / pathway
+                                 :name (n / name
+                                          :op1 "Jak2/Stat3"))))
+   :ARG1 (s / secrete-01
+            :ARG1 (p2 / protein
+                      :name (n2 / name
+                                :op1 "IL-6")))
+   :ARG2 (m2 / more-than
+             :op1 (p3 / percentage-entity
+                      :value "60"))
+   :mod (a / also)
+   :mod (i2 / important)
+   :ARG1-of (s2 / statistical-test-91
+                :ARG2 (l / less-than
+                         :op1 "0.01")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Though Jak2/Stat3 inhibitor was not the most efficient, Jak2/Stat3 pathway clearly participates in the regulation of IL-6 and should be significant an upstream regulator of IL-6 secretion in AS2 cells (Figure 2A).
+# ::file pmid_2112_2157_119.txt
+# ::date 2015-07-19T17:11:30
+# ::id pmid_2112_2157.119
+(a / and
+   :op1 (p / participate-01
+           :ARG0 (p2 / pathway
+                     :name (n / name
+                              :op1 "Jak2/Stat3"))
+           :ARG1 (r / regulate-01
+                    :ARG1 (p3 / protein
+                              :name (n2 / name
+                                        :op1 "IL-6")))
+           :ARG1-of (c / clear-06))
+   :op2 (r2 / recommend-01
+            :ARG1 (s / significant-02
+                     :ARG1 p2
+                     :ARG1-of (c3 / cause-01
+                                  :ARG0 (r3 / regulate-01
+                                            :ARG0 p2
+                                            :ARG1 (s2 / secrete-01
+                                                      :ARG1 p3)
+                                            :location (u / upstream))))
+            :location (c2 / cell-line
+                          :name (n4 / name
+                                    :op1 "AS2")))
+   :concession (e / efficient-01
+                  :polarity "-"
+                  :ARG1 (m / molecular-physical-entity
+                           :ARG0-of (i / inhibit-01
+                                       :ARG1 p2))
+                  :degree (m2 / most))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "2A")))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To exclude the possibility that the reduction of IL-6 secretion was mainly caused by the reduction of cell survival, cell viability was measured by MTT assay after being treated with each one of four inhibitors.
+# ::file pmid_2112_2157_120.txt
+# ::date 2015-07-19T17:34:19
+# ::id pmid_2112_2157.120
+(m / measure-01
+   :ARG1 (v / viability
+            :mod (c / cell))
+   :manner (a / assay-01
+              :instrument (s3 / small-molecule
+                              :name (n / name
+                                       :op1 "MTT")))
+   :time (a2 / after
+             :op1 (t / treat-04
+                     :ARG1 c
+                     :ARG2 (m2 / molecular-physical-entity
+                               :quant "4"
+                               :ARG0-of (i / inhibit-01)
+                               :mod (e / each))))
+   :purpose (e2 / exclude-01
+                :ARG1 (p / possible-01
+                         :ARG1 (c2 / cause-01
+                                   :ARG0 (r / reduce-01
+                                            :ARG1 (s / survive-01
+                                                     :ARG0 (c3 / cell)))
+                                   :ARG1 (r2 / reduce-01
+                                             :ARG1 (s2 / secrete-01
+                                                       :ARG1 (p2 / protein
+                                                                 :name (n2 / name
+                                                                           :op1 "IL-6"))))
+                                   :mod (m3 / main)))))
+
+
+# ::save-date Mon Jul 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt None of these inhibitors compromised the viability of AS2 cells during the treatment period at the indicated doses (Additional file 1, Figure S1A).
+# ::file pmid_2112_2157_121.txt
+# ::date 2015-07-19T17:47:34
+# ::id pmid_2112_2157.121
+(c / compromise-02
+      :polarity "-"
+      :ARG0 (m / molecular-physical-entity
+            :ARG0-of (i / inhibit-01)
+            :mod (t / this)
+            :ARG1-of (d / dose-01
+                  :ARG1-of (i2 / indicate-01)))
+      :ARG1 (v / viability
+            :poss (c2 / cell-line
+                  :name (n / name :op1 "AS2")))
+      :time (p / period
+            :mod (t2 / treat-04))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (a / and
+                  :op1 (a2 / add-02
+                        :ARG1 (f / file))
+                  :op2 (f2 / figure :mod "S1A"))))
+
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To confirm our findings, we performed inhibition experiments on AS2 cells using increasing doses of Jak2/Stat3 inhibitor.
+# ::file pmid_2112_2157_122.txt
+# ::date 2015-07-19T17:57:50
+# ::id pmid_2112_2157.122
+(p / perform-01
+      :ARG0 (w / we)
+      :ARG1 (e / experiment-01
+            :ARG0 w
+            :ARG1 (c / cell-line
+                  :name (n / name :op1 "AS2"))
+            :ARG2 (i / inhibit-01))
+      :ARG2 (d / dose-01
+            :ARG1 c
+            :ARG2 (m / molecular-physical-entity
+                  :ARG0-of (i2 / inhibit-01
+                        :ARG1 (p2 / pathway
+                              :name (n2 / name :op1 "Jak2/Stat3"))))
+            :ARG1-of (i3 / increase-01))
+      :purpose (c2 / confirm-01
+            :ARG0 w
+            :ARG1 (t / thing
+                  :ARG1-of (f / find-01
+                        :ARG0 w))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Decrease in Stat3 phosphorylation was confirmed by Western blot analysis, and IL-6 secretion was measured by ELISA.
+# ::file pmid_2112_2157_123.txt
+# ::date 2015-07-19T18:07:59
+# ::id pmid_2112_2157.123
+(a / and
+   :op1 (c / confirm-01
+           :ARG0 (a2 / analyze-01
+                     :manner (i / immunoblot-01))
+           :ARG1 (d / decrease-01
+                    :ARG1 (p / phosphorylate-01
+                             :ARG1 (p2 / protein
+                                       :name (n / name
+                                                :op1 "Stat3")))))
+   :op2 (m / measure-01
+           :ARG1 (s / secrete-01
+                    :ARG1 (p3 / protein
+                              :name (n3 / name
+                                        :op1 "IL-6")))
+           :manner (t / thing
+                      :name (n4 / name
+                                :op1 "ELISA"))))
+
+# ::save-date Wed Feb 24, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We found the Jak2/Stat3 inhibitor dose-dependently decreased Stat3 phosphorylation (Figure 2B) and IL-6 secretion (p < 0.05 at doses higher than 20 �M) (Figure 2C).
+# ::file pmid_2112_2157_124.txt
+# ::date 2015-07-19T18:14:21
+# ::id pmid_2112_2157.124
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (d / decrease-01
+            :ARG0 (m / molecular-physical-entity
+                     :ARG0-of (i / inhibit-01
+                                 :ARG1 (p / pathway
+                                          :name (n / name
+                                                   :op1 "Jak2/Stat3"))))
+            :ARG1 (a / and
+                     :op1 (p2 / phosphorylate-01
+                              :ARG1 (p3 / protein
+                                        :name (n2 / name
+                                                  :op1 "Stat3"))
+                              :ARG1-of (d2 / describe-01
+                                           :ARG0 (f2 / figure
+                                                     :mod "2B")))
+                     :op2 (s / secrete-01
+                             :ARG1 (p4 / protein
+                                       :name (n3 / name
+                                                 :op1 "IL-6"))
+                             :ARG1-of (d3 / dose-01
+                                          :quant (m3 / more-than
+                                                     :op1 (c / concentration-quantity
+                                                             :quant "20"
+                                                             :unit (m2 / micromolar))))
+                             :ARG1-of (d4 / describe-01
+                                          :ARG0 (f3 / figure
+                                                    :mod "2C"))))
+            :ARG0-of (d5 / depend-01
+                         :ARG1 d3)
+            :ARG1-of (s2 / statistical-test-91
+                         :ARG2 (l / less-than
+                                  :op1 "0.05"))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We also used MTT assay to analyze the effect of the increasing doses of AG490 on cell viability and showed that only a minor reduction in cell survival (about 15%) was found when cells exposed to 80 �M AG490 (Additional file 1, Figure S1B).
+# ::file pmid_2112_2157_125.txt
+# ::date 2015-07-19T18:32:17
+# ::id pmid_2112_2157.125
+(a / and
+   :op1 (u / use-01
+           :ARG0 (w / we)
+           :ARG1 (a2 / assay-01
+                     :instrument (s5 / small-molecule
+                                     :name (n / name
+                                              :op1 "MTT")))
+           :ARG2 (a3 / analyze-01
+                     :ARG0 w
+                     :ARG1 (a4 / affect-01
+                               :ARG0 (d / dose-01
+                                        :ARG1 (s3 / small-molecule
+                                                  :name (n2 / name
+                                                            :op1 "AG490"))
+                                        :ARG1-of (i / increase-01))
+                               :ARG1 (v / viability
+                                        :mod (c / cell))))
+           :mod (a5 / also))
+   :op2 (s / show-01
+           :ARG0 w
+           :ARG1 (f / find-01
+                    :ARG0 w
+                    :ARG1 (r / reduce-01
+                             :ARG1 (s2 / survive-01
+                                       :ARG0 (c2 / cell))
+                             :ARG1-of (m / minor-01
+                                         :ARG1-of (m3 / mean-01
+                                                      :ARG2 (a6 / about
+                                                                :op1 (p / percentage-entity
+                                                                        :value "15"))))
+                             :mod (o / only))
+                    :time (e / expose-01
+                             :ARG0 w
+                             :ARG1 (c3 / cell)
+                             :ARG2 (s4 / small-molecule
+                                       :name (n3 / name
+                                                 :op1 "AG490")
+                                       :quant (c4 / concentration-quantity
+                                                  :quant "80"
+                                                  :unit (m5 / micromolar))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a7 / and
+                          :op1 (a8 / add-02
+                                   :ARG1 (f2 / file
+                                             :mod "1"))
+                          :op2 (f3 / figure
+                                   :mod "S1B"))))
+
+# ::save-date Fri Dec 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, we showed that treatment with AG490 (40 �M) significantly decreased IL-6 promoter activity (Figure 2D).
+# ::file pmid_2112_2157_126.txt
+# ::date 2015-07-19T22:40:30
+# ::id pmid_2112_2157.126
+(a / and
+   :op1 (s / show-01
+           :ARG0 (w / we)
+           :ARG1 (d / decrease-01
+                    :ARG0 (t / treat-04
+                             :ARG2 (s2 / small-molecule
+                                       :name (n / name
+                                                :op1 "AG490")
+                                       :quant (c / concentration-quantity
+                                                 :quant "40"
+                                                 :unit (m / micromolar))))
+                    :ARG1 (a2 / activity-06
+                              :ARG0 (m2 / molecular-physical-entity
+                                        :ARG0-of (p / promote-01
+                                                    :ARG1 (p2 / protein
+                                                              :name (n2 / name
+                                                                        :op1 "IL-6")))))
+                    :ARG2 (s3 / significant-02)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "2D")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Our results suggest that Jak2/Stat3 pathway may regulate the autocrine production of IL-6 in AS2 cells.
+# ::file pmid_2112_2157_127.txt
+# ::date 2015-07-19T22:48:40
+# ::id pmid_2112_2157.127
+(s / suggest-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :poss (w / we))
+   :ARG1 (p / possible-01
+            :ARG1 (r2 / regulate-01
+                      :ARG0 (p2 / pathway
+                                :name (n / name
+                                         :op1 "Jak2/Stat3"))
+                      :ARG1 (p3 / produce-01
+                                :ARG1 (p4 / protein
+                                          :name (n2 / name
+                                                    :op1 "IL-6"))
+                                :mod (a / autocrine)
+                                :location (c / cell-line
+                                             :name (n3 / name
+                                                       :op1 "AS2"))))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To clarify the role of Stat3 on IL-6 autocrine production proposed by the biochemical studies, we performed genetic studies to investigate the effect of varying degrees of Stat3 activation and inactivation on the mRNA expression and the secretion of IL-6 using parental AS2 cells and various previously established AS2-derived cell lines with different Stat3 activation status: vector control cells, two AS2/S3C cells, two AS2/S3D cells, and two AS2/S3F cells [2,10].
+# ::file pmid_2112_2157_129.txt
+# ::date 2015-07-15T23:57:49
+# ::id pmid_2112_2157.129
+(h / have-purpose-91
+   :ARG1 (p4 / perform-01
+             :ARG0 (w / we)
+             :ARG1 (s2 / study-01
+                       :mod (g / genetic))
+             :purpose (i / investigate-01
+                         :ARG0 w
+                         :ARG1 (a2 / affect-01
+                                   :ARG0 (a3 / and
+                                             :op1 (a4 / activate-01
+                                                      :ARG1 "p")
+                                             :op2 (a5 / activate-01
+                                                      :polarity "-"
+                                                      :ARG1 "p")
+                                             :degree (d / degree
+                                                        :ARG1-of (v / vary-01)))
+                                   :ARG1 (a6 / and
+                                             :op1 (e2 / express-03
+                                                      :ARG2 (n / nucleic-acid
+                                                               :name (n3 / name
+                                                                         :op1 "mRNA")))
+                                             :op2 (s3 / secrete-01
+                                                      :ARG1 (p10 / protein
+                                                                 :name (n4 / name
+                                                                           :op1 "IL-6"))))
+                                   :ARG2 (a7 / and
+                                             :op1 (c2 / cell-line
+                                                      :name (n5 / name
+                                                                :op1 "AS2")
+                                                      :mod (p5 / parent))
+                                             :op2 (e4 / establish-01
+                                                      :ARG1 (c3 / cell-line
+                                                                :ARG1-of (d2 / derive-01
+                                                                             :ARG2 c2)
+                                                                :ARG1-of (v2 / vary-01)
+                                                                :ARG0-of (h3 / have-03
+                                                                             :ARG1 (s4 / status
+                                                                                       :mod (a8 / activate-01
+                                                                                                :ARG1 (p7 / protein
+                                                                                                          :name (n6 / name
+                                                                                                                    :op1 "Stat3")))
+                                                                                       :ARG1-of (d3 / differ-02)))
+                                                                :ARG1-of (m / mean-01
+                                                                            :ARG2 (a9 / and
+                                                                                      :op1 (c4 / cell
+                                                                                               :ARG1-of (c5 / control-01
+                                                                                                            :ARG0 (v3 / vector)))
+                                                                                      :op2 (c6 / cell-line
+                                                                                               :quant "2"
+                                                                                               :name (n7 / name
+                                                                                                         :op1 "AS2/S3C"))
+                                                                                      :op3 (c7 / cell-line
+                                                                                               :quant "2"
+                                                                                               :name (n8 / name
+                                                                                                         :op1 "AS2/S3D"))
+                                                                                      :op4 (c8 / cell-line
+                                                                                               :quant "2"
+                                                                                               :name (n9 / name
+                                                                                                         :op1 "AS2/S3F")))))
+                                                      :time (p6 / previous))))))
+   :ARG2 (c / clarify-10
+            :ARG1 (r / role
+                     :poss (p / protein
+                              :name n6
+                              :ARG0-of (p2 / produce-01
+                                           :ARG1 (p9 / protein
+                                                     :name n4)
+                                           :mod (a / autocrine))
+                              :ARG1-of (p3 / propose-01
+                                           :ARG0 (s / study-01
+                                                    :mod (b / biochimic))))))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (p8 / publication-91
+                          :ARG1-of (c9 / cite-01
+                                       :ARG2 (a10 / and
+                                                  :op1 "2"
+                                                  :op2 "10")))))
+
+# ::save-date Sat Aug 8, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In this current study, we used S3C as active form Stat3, and S3D and S3F as inactivated forms of Stat3.
+# ::file pmid_2112_2157_130.txt
+# ::date 2015-07-16T01:10:14
+# ::id pmid_2112_2157.130
+(u / use-01
+   :ARG0 (w / we)
+   :ARG1 (a / and
+            :op1 (p / protein
+                    :name (n / name
+                             :op1 "S3C")
+                    :mod (c / consider-01
+                            :ARG1 (p2 / protein
+                                      :name (n2 / name
+                                                :op1 "Stat3")
+                                      :ARG0-of (a5 / activity-06))))
+            :op2 (a3 / and
+                     :op1 (p3 / protein
+                              :name (n3 / name
+                                        :op1 "S3D"))
+                     :op2 (p4 / protein
+                              :name (n4 / name
+                                        :op1 "S3F"))
+                     :mod (c2 / consider-01
+                              :ARG1 (p5 / protein
+                                        :name (n5 / name
+                                                  :op1 "Stat3")
+                                        :ARG0-of (a2 / activity-06
+                                                     :polarity "-")))))
+   :medium (s / study-01
+              :mod (c3 / current)
+              :mod (t / this)))
+
+# ::save-date Sun Dec 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Western blot analysis showed increased expression of Stat3 protein in all mutant cells, in the AS2/S3C cells (AS2/S3C-A and AS2/S3C-C), in the AS2/S3D cells (AS2/S3D-8 and AS2/S3D-9) and in the AS2/S3F cells (AS2/S3F-3 and AS2/S3F-7), compared to the parental cells (AS2) and vector control cells (AS2/Vec-11) (Figure 3A).
+# ::file pmid_2112_2157_131.txt
+# ::date 2015-07-16T01:25:16
+# ::id pmid_2112_2157.131
+(s / show-01
+   :ARG0 (a / analyze-01
+            :manner (i2 / immunoblot-01))
+   :ARG1 (e / express-03
+            :ARG2 (p / protein
+                     :name (n2 / name
+                               :op1 "Stat3"))
+            :ARG3 (c14 / cell
+                       :ARG2-of (m4 / mutate-01)
+                       :mod (a7 / all)
+                       :ARG1-of (m5 / mean-01
+                                    :ARG2 (a3 / and
+                                              :op1 (c5 / cell-line
+                                                       :name (n3 / name
+                                                                 :op1 "AS2/S3C")
+                                                       :ARG1-of (m / mean-01
+                                                                   :ARG2 (a4 / and
+                                                                             :op1 (c6 / cell-line
+                                                                                      :name (n4 / name
+                                                                                                :op1 "AS2/S3C-A"))
+                                                                             :op2 (c7 / cell-line
+                                                                                      :name (n5 / name
+                                                                                                :op1 "AS2/S3C-C")))))
+                                              :op2 (c8 / cell-line
+                                                       :name (n6 / name
+                                                                 :op1 "AS2/S3D")
+                                                       :ARG1-of (m2 / mean-01
+                                                                    :ARG2 (a5 / and
+                                                                              :op1 (c9 / cell-line
+                                                                                       :name (n7 / name
+                                                                                                 :op1 "AS2/S3D-8"))
+                                                                              :op2 (c10 / cell-line
+                                                                                        :name (n8 / name
+                                                                                                  :op1 "AS2/S3D-9")))))
+                                              :op3 (c11 / cell-line
+                                                        :name (n9 / name
+                                                                  :op1 "AS2/S3F")
+                                                        :ARG1-of (m3 / mean-01
+                                                                     :ARG2 (a6 / and
+                                                                               :op1 (c12 / cell-line
+                                                                                         :name (n10 / name
+                                                                                                    :op1 "AS2/S3F-3"))
+                                                                               :op2 (c13 / cell-line
+                                                                                         :name (n11 / name
+                                                                                                    :op1 "AS2/S3F-7"))))))))
+            :ARG1-of (i / increase-01
+                        :ARG1-of (c / compare-01
+                                    :ARG2 (a2 / and
+                                              :op1 (c2 / cell-line
+                                                       :name (n12 / name
+                                                                  :op1 "AS2")
+                                                       :mod (p2 / parent))
+                                              :op2 (c3 / cell-line
+                                                       :name (n13 / name
+                                                                  :op1 "AS2/Vec-11")
+                                                       :mod (c4 / control-01
+                                                                :ARG0 (v / vector)))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, only AS2/S3F cells but not AS2/S3C or AS2/S3D cells were found to have decreases in Stat3 phosphorylation (Figure 3A).
+# ::file pmid_2112_2157_132.txt
+# ::date 2015-07-16T01:38:44
+# ::id pmid_2112_2157.132
+(c5 / contrast-01
+    :ARG2 (f2 / find-01
+              :ARG1 (h / have-03
+                       :ARG0 (c2 / cell-line
+                                 :name (n / name
+                                          :op1 "AS2/S3F")
+                                 :mod (o2 / only))
+                       :ARG1 (d2 / decrease-01
+                                 :ARG1 (p / protein
+                                          :name (n2 / name
+                                                    :op1 "Stat3")
+                                          :ARG1-of (p2 / phosphorylate-01))))
+              :ARG1-of (c3 / contrast-01
+                           :ARG2 (o / or
+                                    :op1 (c4 / cell-line
+                                             :name (n3 / name
+                                                       :op1 "AS2/S3C"))
+                                    :op2 (c / cell-line
+                                            :name (n4 / name
+                                                      :op1 "AS2/S3D"))))
+              :ARG1-of (d / describe-01
+                          :ARG0 (f / figure
+                                   :mod "3A"))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RT-PCR showed that the AS2/S3C cells expressed 3 to 4 times more IL-6 mRNA than the parental and vector control cells and that AS2/S3D and AS2/S3F cells expressed 30 to 70 percent less IL-6 mRNA (Figure 3B).
+# ::file pmid_2112_2157_133.txt
+# ::date 2015-07-16T01:45:37
+# ::id pmid_2112_2157.133
+(s / show-01
+   :ARG0 (r / react-01
+            :ARG0 (p5 / polymerase)
+            :mod (c7 / chain)
+            :subevent (t / transcribe-01
+                         :ARG1-of (r2 / reverse-01)))
+   :ARG1 (a / and
+            :op1 (e / express-03
+                    :ARG2 (n7 / nucleic-acid
+                              :name (n3 / name
+                                        :op1 "mRNA")
+                              :ARG0-of (e2 / encode-01
+                                           :ARG1 (p4 / protein
+                                                     :name (n4 / name
+                                                               :op1 "IL-6"))))
+                    :ARG3 (c / cell-line
+                             :name (n2 / name
+                                       :op1 "AS2/S3C"))
+                    :quant (p / product-of
+                              :op1 (v2 / value-interval
+                                       :op1 "3"
+                                       :op2 "4"))
+                    :degree (m / more)
+                    :compared-to (a2 / and
+                                     :op1 (c2 / cell
+                                              :mod (p2 / parent))
+                                     :op2 (c3 / cell
+                                              :mod (c4 / control-01
+                                                       :ARG0 (v / vector)))))
+            :op2 (e3 / express-03
+                     :ARG2 n7
+                     :ARG3 (a3 / and
+                               :op1 (c5 / cell-line
+                                        :name (n5 / name
+                                                  :op1 "AS2/S3D"))
+                               :op2 (c6 / cell-line
+                                        :name (n6 / name
+                                                  :op1 "AS2/S3F")))
+                     :quant (p3 / percentage-entity
+                                :op1 (v3 / value-interval
+                                         :op1 "30"
+                                         :op2 "70")
+                                :mod (l / less))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3B")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similarly, transient transfection with S3C plasmid increased IL-6 promoter luciferase activity by more than 70% and transient transfection with S3F plasmid decreased IL-6 promoter luciferase activity by more than 40% compared with the mock and vector control groups (both p < 0.001) (Figure 3C).
+# ::file pmid_2112_2157_134.txt
+# ::date 2015-07-16T02:07:56
+# ::id pmid_2112_2157.134
+(c / compare-01
+   :ARG1 (a / and
+            :op1 (t / transfect-01
+                    :ARG2 (p9 / plasmid
+                              :mod (p / protein
+                                      :name (n2 / name
+                                                :op1 "S3C")))
+                    :ARG1-of (t2 / transient-02
+                                 :ARG1 t3)
+                    :ARG0-of (i / increase-01
+                                :ARG1 (m2 / molecular-physical-entity
+                                          :ARG0-of (p10 / promote-01
+                                                        :ARG1 (p7 / protein
+                                                                  :name (n3 / name
+                                                                            :op1 "IL-6")
+                                                                  :ARG0-of (a2 / activity-06
+                                                                               :ARG1 (l / luciferase)))))
+                                :ARG2 (m4 / more-than
+                                          :op1 (p3 / percentage-entity
+                                                   :value "70"))))
+            :op2 (t3 / transfect-01
+                     :ARG2 (p8 / plasmid
+                               :mod (p4 / protein
+                                        :name (n5 / name
+                                                  :op1 "S3F")))
+                     :ARG0-of (d / decrease-01
+                                 :ARG1 p7
+                                 :ARG2 (m / more-than
+                                          :op1 (p5 / percentage-entity
+                                                   :value "40"))))
+            :ARG1-of (s / statistical-test-91
+                        :ARG2 (l2 / less-than
+                                  :op1 "0.001")))
+   :ARG2 (a3 / and
+             :op1 (g / group
+                     :mod (m3 / mock))
+             :op2 (g2 / group
+                      :mod (c2 / control-01
+                               :ARG0 (v / vector))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "3C"))
+   :ARG1-of (r / resemble-01))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt ELISA showed that AS2/S3C cells secreted 5 to 10 times more IL-6 than the parental and vector control cells (both p < 0.001) (Figure 3D) and AS2/S3D and AS2/S3F cells secreted 40 to 80 percent less IL-6 (both p < 0.01 in AS2/S3D cells and both p < 0.001 in S3F cells) (Figure 3E).
+# ::file pmid_2112_2157_135.txt
+# ::date 2015-07-16T02:48:05
+# ::id pmid_2112_2157.135
+(s / show-01
+   :ARG0 (t / thing
+            :name (n / name
+                     :op1 "ELISA"))
+   :ARG1 (a / and
+            :op1 (s2 / secrete-01
+                     :ARG0 (c / cell-line
+                              :name (n2 / name
+                                        :op1 "AS2/S3C"))
+                     :ARG1 (p / protein
+                              :name (n3 / name
+                                        :op1 "IL-6"))
+                     :quant (p2 / product-of
+                                :op1 (v3 / value-interval
+                                         :op1 "5"
+                                         :op2 "10"))
+                     :degree (m / more)
+                     :compared-to (a2 / and
+                                      :op1 (c2 / cell
+                                               :mod (p3 / parent))
+                                      :op2 (c3 / cell
+                                               :mod (c4 / control-01
+                                                        :ARG0 (v / vector))))
+                     :ARG1-of (d / describe-01
+                                 :ARG0 (f / figure
+                                          :mod "3D"))
+                     :ARG1-of (s4 / statistical-test-91
+                                  :ARG2 (l / less-than
+                                           :op1 "0.001")))
+            :op2 (s3 / secrete-01
+                     :ARG0 (a3 / and
+                               :op1 (c5 / cell-line
+                                        :name (n4 / name
+                                                  :op1 "AS2/S3D"))
+                               :op2 (c6 / cell-line
+                                        :name (n5 / name
+                                                  :op1 "AS2/S3F")))
+                     :ARG1 p
+                     :quant (p5 / percentage-entity
+                                :op1 (v2 / value-interval
+                                         :op1 "40"
+                                         :op2 "80")
+                                :mod (l2 / less))
+                     :ARG1-of (d2 / describe-01
+                                  :ARG0 (f2 / figure
+                                            :mod "3E"))
+                     :ARG1-of (s5 / statistical-test-91
+                                  :ARG2 (a4 / and
+                                            :op1 (l3 / less-than
+                                                     :op1 "0.01"
+                                                     :location c5)
+                                            :op2 (l4 / less-than
+                                                     :op1 "0.001"
+                                                     :location c6))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results show that Stat3 may positively regulate the expression of IL-6 mRNA expression and the secretion of IL-6 in AS2 cells.
+# ::file pmid_2112_2157_136.txt
+# ::date 2015-07-16T03:28:23
+# ::id pmid_2112_2157.136
+(s / show-01
+   :ARG0 (t2 / thing
+             :ARG2-of (r / result-01)
+             :mod (t / this))
+   :ARG1 (p / possible-01
+            :ARG1 (r2 / regulate-01
+                      :ARG0 (p3 / protein
+                                :name (n / name
+                                         :op1 "Stat3"))
+                      :ARG1 (a / and
+                               :op1 (e / express-03
+                                       :ARG2 (n5 / nucleic-acid
+                                                 :name (n2 / name
+                                                           :op1 "mRNA")
+                                                 :mod (p4 / protein
+                                                          :name (n3 / name
+                                                                    :op1 "IL-6")))
+                                       :ARG3 (c / cell-line
+                                                :name (n4 / name
+                                                          :op1 "AS2")))
+                               :op2 (s2 / secrete-01
+                                        :ARG0 c
+                                        :ARG1 p4))
+                      :mod (p2 / positive))))
+
+# ::save-date Sat Aug 8, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To evaluate drug resistance, we treated the parental AS2 cells, vector control cells (AS2/Vec-11), the AS2/S3C cells (AS2/S3C-C), the AS2/S3D cells (AS2/S3D-9), and the AS2/S3F cells (AS2/S3F-3) with paclitaxel for 72 hours.
+# ::file pmid_2112_2157_137.txt
+# ::date 2015-07-16T03:41:56
+# ::id pmid_2112_2157.137
+(h / have-purpose-91
+   :ARG1 (t / treat-04
+            :ARG0 (w / we)
+            :ARG1 (a / and
+                     :op1 (c / cell-line
+                             :name (n / name
+                                      :op1 "AS2")
+                             :mod (p2 / parent))
+                     :op2 (c2 / cell-line
+                              :name (n2 / name
+                                        :op1 "AS2/Vec-11")
+                              :mod (c3 / control-01
+                                       :ARG0 (v / vector)))
+                     :op3 (c4 / cell-line
+                              :name (n3 / name
+                                        :op1 "AS2/S3C")
+                              :ARG1-of (m / mean-01
+                                          :ARG2 (c5 / cell-line
+                                                    :name (n4 / name
+                                                              :op1 "AS2/S3C-C"))))
+                     :op4 (c6 / cell-line
+                              :name (n5 / name
+                                        :op1 "AS2/S3D")
+                              :ARG1-of (m2 / mean-01
+                                           :ARG2 (c8 / cell-line
+                                                     :name (n7 / name
+                                                               :op1 "AS2/S3D-9"))))
+                     :op5 (c7 / cell-line
+                              :name (n6 / name
+                                        :op1 "AS2/S3F")
+                              :ARG1-of (m3 / mean-01
+                                           :ARG2 (c9 / cell-line
+                                                     :name (n8 / name
+                                                               :op1 "AS2/S3F-3")))))
+            :ARG2 (s / small-molecule
+                     :name (n9 / name
+                               :op1 "paclitaxel"))
+            :duration (t2 / temporal-quantity
+                          :quant "72"
+                          :unit (h2 / hour)))
+   :ARG2 (e / evaluate-01
+            :ARG0 w
+            :ARG1 (r / resist-01
+                     :ARG1 (d / drug))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Using MTT assay to access cell viability, we found AS2 cells with increased Stat3 activity (AS2/S3C-C) to be more resistant to paclitaxel than AS2 and AS2/Vec-11 cells (p < 0.05), and AS2 cells with decreased Stat3 activity (AS2/S3D-9 and AS2/S3F-3) to be less resistant to paclitaxel (p < 0.05) (Figure 3F).
+# ::file pmid_2112_2157_138.txt
+# ::date 2015-07-16T03:53:44
+# ::id pmid_2112_2157.138
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (a3 / and
+             :op1 (r / resist-01
+                     :ARG0 (c2 / cell-line
+                               :name (n / name
+                                        :op1 "AS2")
+                               :ARG0-of (h / have-03
+                                           :ARG1 (i / increase-01
+                                                    :ARG1 (a4 / activity-06
+                                                              :ARG0 (p / protein
+                                                                       :name (n2 / name
+                                                                                 :op1 "Stat3")))))
+                               :ARG1-of (m / mean-01
+                                           :ARG2 (c3 / cell-line
+                                                     :name (n3 / name
+                                                               :op1 "AS2/S2C-C"))))
+                     :ARG1 (s / small-molecule
+                              :name (n4 / name
+                                        :op1 "paclitaxel"))
+                     :degree (m2 / more)
+                     :compared-to (a5 / and
+                                      :op1 (c4 / cell
+                                               :name n)
+                                      :op2 (c5 / cell-line
+                                               :name (n5 / name
+                                                         :op1 "AS2/Vec-11")))
+                     :ARG1-of (s2 / statistical-test-91
+                                  :ARG2 (l / less-than
+                                           :op1 "0.05")))
+             :op2 (r2 / resist-01
+                      :ARG0 (c6 / cell
+                                :name n
+                                :ARG0-of (h2 / have-03
+                                             :ARG1 (d / decrease-01
+                                                      :ARG1 a4))
+                                :ARG1-of (m3 / mean-01
+                                             :ARG2 (a6 / and
+                                                       :op1 (c7 / cell-line
+                                                                :name (n7 / name
+                                                                          :op1 "AS2/S3D-9"))
+                                                       :op2 (c8 / cell-line
+                                                                :name (n8 / name
+                                                                          :op1 "AS2/S3F-3")))))
+                      :ARG1 s
+                      :degree (l2 / less)
+                      :ARG1-of (s3 / statistical-test-91
+                                   :ARG2 l)))
+   :manner (u / use-01
+              :ARG0 w
+              :ARG1 (a7 / assay-01
+                        :instrument (s4 / small-molecule
+                                        :name (n6 / name
+                                                  :op1 "MTT")))
+              :ARG2 (a2 / access-01
+                        :ARG0 w
+                        :ARG1 (v / viability
+                                 :mod (c / cell))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "3F")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Together, these findings suggest that the activation of Stat3 may contribute to the regulation of IL-6 autocrine production and resistance to paclitaxel in AS2 cells.
+# ::file pmid_2112_2157_139.txt
+# ::date 2015-07-16T04:12:04
+# ::id pmid_2112_2157.139
+(s / suggest-01
+   :ARG0 (t3 / thing
+             :ARG1-of (f / find-01)
+             :mod (t / this)
+             :mod (t2 / together))
+   :ARG1 (p / possible-01
+            :ARG1 (c / contribute-01
+                     :ARG0 (a / activate-01
+                              :ARG1 (p2 / protein
+                                        :name (n / name
+                                                 :op1 "Stat3")))
+                     :ARG2 (a2 / and
+                               :op1 (r / regulate-01
+                                       :ARG1 (p3 / produce-01
+                                                 :ARG1 (p5 / protein
+                                                           :name (n2 / name
+                                                                     :op1 "IL-6"))
+                                                 :mod (a3 / autocrine)))
+                               :op2 (r2 / resist-01
+                                        :ARG1 (s2 / small-molecule
+                                                  :name (n4 / name
+                                                            :op1 "paclitaxel")))
+                               :location (c2 / cell-line
+                                             :name (n3 / name
+                                                       :op1 "AS2"))))))
+
+# ::save-date Thu Nov 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To confirm that Stat3 regulated IL-6 expression in cancer cells, we transiently transfected AS2 cells with Stat3 siRNA to knock-down the expression of Stat3.
+# ::file pmid_2112_2157_141.txt
+# ::date 2015-07-16T05:39:42
+# ::id pmid_2112_2157.141
+(h / have-purpose-91
+   :ARG1 (t / transfect-01
+            :ARG0 (w / we)
+            :ARG1 (c / cell-line
+                     :name (n / name
+                              :op1 "AS2"))
+            :ARG2 (n6 / nucleic-acid
+                      :name (n2 / name
+                                :op1 "siRNA")
+                      :ARG0-of (e2 / encode-01
+                                   :ARG1 (p / protein
+                                            :name (n3 / name
+                                                      :op1 "Stat3"))))
+            :ARG1-of (t2 / transient-02)
+            :purpose (k / knock-down-02
+                        :ARG1 (e / express-03
+                                 :ARG2 p)))
+   :ARG2 (c2 / confirm-01
+             :ARG0 w
+             :ARG1 (r2 / regulate-01
+                       :ARG0 p
+                       :ARG1 (p2 / protein
+                                 :name (n4 / name
+                                           :op1 "IL-6")
+                                 :ARG2-of (e3 / express-03
+                                              :ARG3 (c3 / cell
+                                                        :mod (d / disease
+                                                                :wiki "Cancer"
+                                                                :name (n5 / name
+                                                                          :op1 "cancer"))))))))
+
+# ::save-date Sun Dec 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Western blot analysis showed transfection with Stat3 siRNA (Stat3#1) dose-dependently decreased the total amount of Stat3 protein and phosphorylated Stat3 (Figure 4A).
+# ::file pmid_2112_2157_142.txt
+# ::date 2015-07-16T05:58:33
+# ::id pmid_2112_2157.142
+(s / show-01
+   :ARG0 (a / analyze-01
+            :manner (i / immunoblot-01))
+   :ARG1 (t / transfect-01
+            :ARG2 (n5 / nucleic-acid
+                      :name (n2 / name
+                                :op1 "siRNA")
+                      :mod (p / protein
+                              :name (n3 / name
+                                        :op1 "Stat3"))
+                      :ARG1-of (l / label-01
+                                  :ARG2 (n7 / name
+                                            :op1 "Stat3#1")))
+            :ARG0-of (d3 / decrease-01
+                         :ARG1 (a2 / amount-01
+                                   :ARG1 (a3 / and
+                                             :op1 (p2 / protein
+                                                      :name n3)
+                                             :op2 (p3 / protein
+                                                      :name n3
+                                                      :ARG3-of (p4 / phosphorylate-01)))
+                                   :ARG2 (t2 / total))
+                         :ARG0-of (d2 / depend-01
+                                      :ARG1 (d / dose-01
+                                               :ARG1 n5))))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (f / figure
+                         :mod "4A")))
+
+# ::save-date Wed Mar 9, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RT-PCR and ELISA showed transfection with Stat3#1 reduced the expression of IL-6 mRNA (Figure 4B) and the secretion of IL-6 at 3, 8, and 24 hours after medium replacement (p < 0.01 in the lower dose and p < 0.001 in the higher doses) (Figure 4C).
+# ::file pmid_2112_2157_143.txt
+# ::date 2015-07-16T06:15:56
+# ::id pmid_2112_2157.143
+(s / show-01
+   :ARG0 (a / and
+            :op1 (r3 / react-01
+                     :ARG0 (p3 / polymerase)
+                     :mod (c / chain)
+                     :subevent (t / transcribe-01)
+                     :ARG1-of (r / reverse-01))
+            :op2 (a9 / assay-01
+                     :instrument (i / immunosorbent)
+                     :ARG1-of (l4 / link-01
+                                  :ARG2 (e2 / enzyme))))
+   :ARG1 (t3 / transfect-01
+             :ARG2 (p / protein
+                      :name (n3 / name
+                                :op1 "Stat3#1"))
+             :ARG0-of (r2 / reduce-01
+                          :ARG1 (a2 / and
+                                    :op1 (e / express-03
+                                            :ARG2 (n6 / nucleic-acid
+                                                      :name (n4 / name
+                                                                :op1 "mRNA")
+                                                      :ARG0-of (e3 / encode-01
+                                                                   :ARG1 (p2 / protein
+                                                                             :name (n5 / name
+                                                                                       :op1 "IL-6"))))
+                                            :ARG1-of (d / describe-01
+                                                        :ARG0 (f / figure
+                                                                 :mod "4B")))
+                                    :op2 (s2 / secrete-01
+                                             :ARG1 p2
+                                             :time (a4 / and
+                                                       :op1 (a5 / after
+                                                                :op1 (r4 / replace-01
+                                                                         :ARG1 (m / medium))
+                                                                :quant (t4 / temporal-quantity
+                                                                           :quant "3"
+                                                                           :unit (h / hour)))
+                                                       :op2 (a6 / after
+                                                                :op1 r4
+                                                                :quant (t5 / temporal-quantity
+                                                                           :quant "8"
+                                                                           :unit h))
+                                                       :op3 (a7 / after
+                                                                :op1 r4
+                                                                :quant (t6 / temporal-quantity
+                                                                           :quant "24"
+                                                                           :unit h)))
+                                             :ARG1-of (d4 / describe-01
+                                                          :ARG0 (f2 / figure
+                                                                    :mod "4C"))
+                                             :ARG1-of (s3 / statistical-test-91
+                                                          :ARG2 (a8 / and
+                                                                    :op1 (l / less-than
+                                                                            :op1 "0.01"
+                                                                            :condition (d2 / dose-01
+                                                                                           :ARG1-of (l2 / low-04
+                                                                                                        :degree (m2 / more))))
+                                                                    :op2 (l3 / less-than
+                                                                             :op1 "0.001"
+                                                                             :condition (d3 / dose-01
+                                                                                            :ARG1-of (h2 / high-02
+                                                                                                         :degree (m3 / more)))))))))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To make sure our results were not confounded by differences in cell viability, we performed MTT assay of the transfected and untransfected cells, and found that these siRNAs did not affect the viability of AS2 cells (Figure 4D).
+# ::file pmid_2112_2157_144.txt
+# ::date 2015-07-16T06:35:09
+# ::id pmid_2112_2157.144
+(a / and
+   :op1 (p / perform-01
+           :ARG0 (w / we)
+           :ARG1 (a5 / assay-01
+                     :ARG1 (a3 / and
+                               :op1 (c5 / cell
+                                        :ARG1-of (t4 / transfect-01))
+                               :op2 (c6 / cell
+                                        :ARG1-of (t5 / transfect-01
+                                                     :polarity "-")))
+                     :instrument (s / small-molecule
+                                    :name (n3 / name
+                                              :op1 "MTT")))
+           :purpose (e / ensure-01
+                       :ARG0 w
+                       :ARG1 (c2 / confound-01
+                                 :ARG0 (d / differ-02
+                                          :ARG3 (v / viability
+                                                   :mod (c3 / cell)))
+                                 :ARG1 (t / thing
+                                          :ARG2-of (r3 / result-01)
+                                          :poss w))))
+   :op2 (f / find-01
+           :ARG0 w
+           :ARG1 (a4 / affect-01
+                     :polarity "-"
+                     :ARG0 (n4 / nucleic-acid
+                               :name (n / name
+                                        :op1 "siRNA")
+                               :mod (t3 / this))
+                     :ARG1 (c / cell-line
+                              :name (n2 / name
+                                        :op1 "AS2")
+                              :mod (v2 / viability))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "4D")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The findings suggested that the suppression of IL-6 production by knocking-down Stat3 was not likely a result of a decrease in cell number.
+# ::file pmid_2112_2157_145.txt
+# ::date 2015-07-16T07:27:19
+# ::id pmid_2112_2157.145
+(s / suggest-01
+   :ARG0 (t / thing
+            :ARG1-of (f / find-01))
+   :ARG1 (l / likely-01
+            :polarity "-"
+            :ARG1 (r / result-01
+                     :ARG1 (d / decrease-01
+                              :ARG1 (n / number-01
+                                       :ARG1 (c / cell)))
+                     :ARG2 (s2 / suppress-01
+                               :ARG1 (p3 / protein
+                                         :name (n2 / name
+                                                   :op1 "IL-6")
+                                         :ARG1-of (p / produce-01))
+                               :manner (k / knock-down-02
+                                          :ARG1 (p2 / protein
+                                                    :name (n3 / name
+                                                              :op1 "Stat3")))))))
+
+# ::save-date Thu Nov 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As can be seen in Figures S2A and S2B in Additional file 2, the other Stat3 siRNA (Stat3#2) with a different targeting sequence also knocked-down Stat3 expression and reduced IL-6 secretion but did not compromise cell proliferation (Additional file 3, Figure S3A), a further confirmation of our findings.
+# ::file pmid_2112_2157_146.txt
+# ::date 2015-07-16T07:39:36
+# ::id pmid_2112_2157.146
+(c / contrast-01
+   :ARG1 (a3 / and
+             :op1 (k / knock-down-02
+                     :ARG0 (n4 / nucleic-acid
+                               :name (n / name
+                                        :op1 "siRNA")
+                               :mod (p / protein
+                                       :name (n2 / name
+                                                 :op1 "Stat3"))
+                               :ARG1-of (m / mean-01
+                                           :ARG2 (n6 / nucleic-acid
+                                                     :name (n3 / name
+                                                               :op1 "Stat3#2")))
+                               :mod (o / other)
+                               :ARG0-of (h / have-03
+                                           :ARG1 (s / sequence
+                                                    :ARG0-of (t / target-01
+                                                                :ARG1-of (d2 / differ-02)))))
+                     :ARG1 (p2 / protein
+                               :name n2
+                               :ARG2-of (e / express-03)))
+             :op2 (r4 / reduce-01
+                      :ARG0 n4
+                      :ARG1 (p5 / protein
+                                :name (n5 / name
+                                          :op1 "IL-6")
+                                :ARG1-of (s2 / secrete-01)))
+             :mod (a / also))
+   :ARG2 (c2 / compromise-02
+             :polarity "-"
+             :ARG0 n4
+             :ARG1 (c3 / cell
+                       :ARG0-of (p3 / proliferate-01))
+             :ARG1-of (d / describe-01
+                         :ARG0 (f / figure
+                                  :mod "S3A"
+                                  :part-of (f2 / file
+                                               :mod "3"
+                                               :mod (a2 / additional)))))
+   :ARG0-of (c4 / confirm-01
+                :ARG1 (t2 / thing
+                          :ARG1-of (f3 / find-01
+                                       :ARG0 (w / we)))
+                :ARG1-of (f4 / further-01))
+   :ARG1-of (s3 / see-01
+                :ARG1-of (p4 / possible-01)
+                :location (a5 / and
+                              :op1 (f7 / figure
+                                       :mod "S2A")
+                              :op2 (f8 / figure
+                                       :mod "S2B")
+                              :part-of (f6 / file
+                                           :mod "2"
+                                           :mod (a4 / additional)))))
+
+# ::save-date Thu Nov 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To further investigate the possible role of Stat3 in the regulation of IL-6, we stably transfected AS2 cells with the control vector from which we selected one cell line (AS2/shVec) and the vector expressing Stat3 shRNA from which we selected two cell lines (AS2/shStat3-1 and AS2/shStat3-2).
+# ::file pmid_2112_2157_148.txt
+# ::date 2015-07-16T08:01:23
+# ::id pmid_2112_2157.148
+(h / have-purpose-91
+   :ARG1 (t / transfect-01
+            :ARG1 (c / cell-line
+                     :name (n / name
+                              :op1 "AS2"))
+            :ARG2 (a / and
+                     :op1 (c2 / control-01
+                              :ARG0 (v / vector)
+                              :ARG2-of (s / select-01
+                                          :ARG0 (w / we)
+                                          :ARG1 (c3 / cell-line
+                                                    :quant "1"
+                                                    :name (n2 / name
+                                                              :op1 "AS2/shVec"))))
+                     :op2 (v2 / vector
+                              :ARG1-of (e / express-03
+                                          :ARG2 (n8 / nucleic-acid
+                                                    :name (n3 / name
+                                                              :op1 "shRNA")
+                                                    :ARG0-of (e2 / encode-01
+                                                                 :ARG1 (p / protein
+                                                                          :name (n4 / name
+                                                                                    :op1 "Stat3")))))
+                              :ARG2-of (s2 / select-01
+                                           :ARG0 w
+                                           :ARG1 (a2 / and
+                                                     :quant "2"
+                                                     :op1 (c6 / cell-line
+                                                              :name (n5 / name
+                                                                        :op1 "AS2/shStat3-1"))
+                                                     :op2 (c7 / cell-line
+                                                              :name (n7 / name
+                                                                        :op1 "AS2/shStat3-2")))))))
+   :ARG2 (i / investigate-01
+            :ARG0 w
+            :ARG1 (r2 / role
+                      :ARG1-of (p3 / possible-01)
+                      :topic (r3 / regulate-01
+                                 :ARG1 (p4 / protein
+                                           :name (n6 / name
+                                                     :op1 "IL-6")))
+                      :poss (p2 / protein
+                                :name n4))
+            :ARG1-of (f / further-01)))
+
+# ::save-date Sun Dec 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Western blot analysis showed a lower expression of Stat3 protein and a lower level of Stat3 phosphorylation in both cell lines expressing Stat3 shRNA than in either the parental cells or the vector control cells (Figure <xref ref-type="fig" rid="F5">5A</xref>).
+# ::file pmid_2112_2157_149.txt
+# ::date 2015-07-20T13:30:44
+# ::id pmid_2112_2157.149
+(s / show-01
+   :ARG0 (a / analyze-01
+            :manner (i / immunoblot-01))
+   :ARG1 (a2 / and
+             :op1 (l / low-04
+                     :ARG1 (e / express-03
+                              :ARG2 (p / protein
+                                       :name (n2 / name
+                                                 :op1 "Stat3")))
+                     :degree (m / more))
+             :op2 (l3 / low-04
+                      :ARG1 (l2 / level
+                                :quant-of (p2 / phosphorylate-01
+                                              :ARG3 p))
+                      :degree m))
+   :location (c / cell-line
+                :mod (b / both)
+                :ARG3-of (e2 / express-03
+                             :ARG2 (n4 / nucleic-acid
+                                       :name (n3 / name
+                                                 :op1 "shRNA")
+                                       :mod p))
+                :compared-to (o / or
+                                :op1 (c2 / cell
+                                         :mod (p3 / parent)
+                                         :mod (e3 / either))
+                                :op2 (c3 / cell
+                                         :mod (v / vector)
+                                         :mod (c4 / control))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5A")))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RT-PCR showed a continuing decrease in the expression of IL-6 mRNA in both cell lines expressing Stat3 shRNA (Figure <xref ref-type="fig" rid="F5">5B</xref>).
+# ::file pmid_2112_2157_150.txt
+# ::date 2015-07-20T13:31:00
+# ::id pmid_2112_2157.150
+(s / show-01
+   :ARG0 (r3 / react-01
+             :ARG0 (p3 / polymerase)
+             :mod (c3 / chain)
+             :subevent (t / transcribe-01
+                          :ARG1-of (r / reverse-01)))
+   :ARG1 (d / decrease-01
+            :ARG1 (e / express-03
+                     :ARG2 (n / nucleic-acid
+                              :name (n2 / name
+                                        :op1 "mRNA")
+                              :mod (p / protein
+                                      :name (n3 / name
+                                                :op1 "IL-6"))))
+            :ARG1-of (c / continue-01)
+            :location (c2 / cell-line
+                          :ARG3-of (e2 / express-03
+                                       :ARG2 (n6 / nucleic-acid
+                                                 :name (n4 / name
+                                                           :op1 "shRNA")
+                                                 :mod (p2 / protein
+                                                          :name (n5 / name
+                                                                    :op1 "Stat3"))))
+                          :mod (b / both)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5B")))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt ELISA also showed a continuing decrease IL-6 secretion in both cell lines expressing Stat3 shRNA compared to the parental AS2 (90% in AS2/shStat3-1 and 95% AS2/shStat3-2 at 24 hours) (p < 0.001) (Figure <xref ref-type="fig" rid="F5">5C</xref>).
+# ::file pmid_2112_2157_151.txt
+# ::date 2015-07-20T14:09:37
+# ::id pmid_2112_2157.151
+(s / show-01
+   :ARG0 (t / thing
+            :name (n / name
+                     :op1 "ELISA")
+            :mod (i / immunosorbent)
+            :ARG1-of (l2 / link-01
+                         :ARG2 (e2 / enzyme)))
+   :ARG1 (d / decrease-01
+            :ARG1 (s2 / secrete-01
+                      :ARG1 (p / protein
+                               :name (n2 / name
+                                         :op1 "IL-6")))
+            :location (c / cell-line
+                         :mod (b / both)
+                         :ARG3-of (e / express-03
+                                     :ARG2 (n8 / nucleic-acid
+                                               :name (n3 / name
+                                                         :op1 "shRNA")
+                                               :mod (p8 / protein
+                                                        :name (n7 / name
+                                                                  :op1 "Stat3"))))
+                         :compared-to (c2 / cell-line
+                                          :name (n4 / name
+                                                    :op1 "AS2")
+                                          :mod (p2 / parent)))
+            :ARG1-of (m / mean-01
+                        :ARG2 (a / and
+                                 :op1 (c3 / cell-line
+                                          :name (n5 / name
+                                                    :op1 "AS2/shStat3-1")
+                                          :quant (p4 / percentage-entity
+                                                     :value "90"))
+                                 :op2 (c4 / cell-line
+                                          :name (n6 / name
+                                                    :op1 "AS2/shStat3-2")
+                                          :quant (p6 / percentage-entity
+                                                     :value "95"))
+                                 :time (a3 / after
+                                           :op1 (t2 / temporal-quantity
+                                                    :quant "24"
+                                                    :unit (h / hour)))))
+            :ARG1-of (c5 / continue-01)
+            :ARG1-of (s3 / statistical-test-91
+                         :ARG2 (l / less-than
+                                  :op1 "0.001")))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5C"))
+   :mod (a2 / also))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We also analyzed the drug resistance of these cells to paclitaxel by MTT assay.
+# ::file pmid_2112_2157_152.txt
+# ::date 2015-07-20T14:22:09
+# ::id pmid_2112_2157.152
+(a / analyze-01
+   :ARG0 (w / we)
+   :ARG1 (r / resist-01
+            :ARG0 (c / cell
+                     :mod (t / this))
+            :ARG1 (s / small-molecule
+                     :name (n / name
+                              :op1 "paclitaxel"))
+            :mod (d / drug))
+   :mod (a2 / also)
+   :manner (a3 / assay-01
+               :instrument (s2 / small-molecule
+                               :name (n2 / name
+                                         :op1 "MTT"))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt MTT assay showed that the permanent knock-down of Stat3 in AS2/shStat3-1 and AS2/shStat3-2 cells significantly reduced their resistance to paclitaxel (p < 0.001) (Figure <xref ref-type="fig" rid="F5">5D</xref>).
+# ::file pmid_2112_2157_153.txt
+# ::date 2015-07-20T14:25:48
+# ::id pmid_2112_2157.153
+(s / show-01
+   :ARG0 (a / assay-01
+            :instrument (s5 / small-molecule
+                            :name (n / name
+                                     :op1 "MTT")))
+   :ARG1 (r / reduce-01
+            :ARG0 (k / knock-down-02
+                     :ARG1 (p / protein
+                              :name (n2 / name
+                                        :op1 "Stat3"))
+                     :location (a2 / and
+                                   :op1 (c / cell-line
+                                           :name (n3 / name
+                                                     :op1 "AS2/shStat3-1"))
+                                   :op2 (c2 / cell-line
+                                            :name (n4 / name
+                                                      :op1 "AS2/shStat3-2")))
+                     :mod (p3 / permanent))
+            :ARG1 (r2 / resist-01
+                      :ARG0 a2
+                      :ARG1 (s3 / small-molecule
+                                :name (n5 / name
+                                          :op1 "paclitaxel")))
+            :ARG2 (s2 / significant-02)
+            :ARG1-of (s4 / statistical-test-91
+                         :ARG2 (l / less-than
+                                  :op1 "0.001")))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5D")))
+
+# ::save-date Tue Jan 19, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Pretreatment with exogenous IL-6 modestly restored the resistance (p < 0.01) (Figure <xref ref-type="fig" rid="F5">5D</xref>).
+# ::file pmid_2112_2157_154.txt
+# ::date 2015-07-20T14:40:15
+# ::id pmid_2112_2157.154
+(r / restore-01
+   :ARG0 (p / pretreat-01
+            :ARG3 (p2 / protein
+                      :name (n / name
+                               :op1 "IL-6")
+                      :mod (e / exogenous)))
+   :ARG1 (r2 / resist-01)
+   :degree (m / modest)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5D"))
+   :ARG1-of (s / statistical-test-91
+               :ARG2 (l / less-than
+                        :op1 "0.01")))
+
+# ::save-date Thu Nov 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These data suggest that the IL-6-induced paclitaxel resistance is mediated by both Stat3-dependent and Stat3-independent pathways.
+# ::file pmid_2112_2157_155.txt
+# ::date 2015-07-20T14:44:19
+# ::id pmid_2112_2157.155
+(s / suggest-01
+   :ARG0 (d / data
+            :mod (t / this))
+   :ARG1 (m / mediate-01
+            :ARG0 (a / and
+                     :op1 (p2 / pathway
+                              :ARG0-of (d2 / depend-01
+                                           :ARG1 "p5"))
+                     :op2 (p4 / pathway
+                              :ARG0-of (d3 / depend-01
+                                           :polarity "-"
+                                           :ARG1 (p5 / protein
+                                                     :name (n4 / name
+                                                               :op1 "Stat3")))))
+            :ARG1 (r / resist-01
+                     :ARG1 (s2 / small-molecule
+                               :name (n / name
+                                        :op1 "paclitaxel"))
+                     :ARG2-of (i / induce-01
+                                 :ARG0 (p / protein
+                                          :name (n2 / name
+                                                    :op1 "IL-6"))))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt It has been shown that cancer cells resistant to chemotherapeutic agents express elevated levels of IL-6 [<xref ref-type="bibr" rid="B30">30</xref>,<xref ref-type="bibr" rid="B39">39</xref>].
+# ::file pmid_2112_2157_157.txt
+# ::date 2015-07-20T22:05:22
+# ::id pmid_2112_2157.157
+(s / show-01
+   :ARG1 (e / express-03
+            :ARG2 (l / level
+                     :ARG1-of (e2 / elevate-01)
+                     :quant-of (p / protein
+                                  :name (n / name
+                                           :op1 "IL-6")))
+            :ARG3 (c / cell
+                     :mod (d2 / disease
+                              :wiki "Cancer"
+                              :name (n2 / name
+                                        :op1 "cancer")
+                              :ARG0-of (r / resist-01
+                                          :ARG1 (a / agent
+                                                   :mod (c3 / chemotherapy))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p2 / publication
+                         :ARG1-of (c4 / cite-01
+                                      :ARG2 (a2 / and
+                                                :op1 "30"
+                                                :op2 "39")))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, drug resistant cancer cells are ideal models for studying IL-6 autocrine production.
+# ::file pmid_2112_2157_158.txt
+# ::date 2015-07-20T22:11:03
+# ::id pmid_2112_2157.158
+(i / infer-01
+   :ARG1 (m / model
+            :mod (i2 / ideal)
+            :domain (c / cell
+                       :mod (d2 / disease
+                                :wiki "Cancer"
+                                :name (n2 / name
+                                          :op1 "cancer")
+                                :ARG0-of (r / resist-01
+                                            :ARG1 (d / drug))))
+            :purpose (s / study-01
+                        :ARG1 (p / produce-01
+                                 :ARG1 (p2 / protein
+                                           :name (n / name
+                                                    :op1 "IL-6"))
+                                 :mod (a / autocrine)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To find out whether IL-6 would be regulated by Stat3 in cancer cell lines other than AS2, we performed genetic siRNA experiments on two drug resistant cancer cell lines (KB-CPT100 and MCF-7/ADR).
+# ::file pmid_2112_2157_159.txt
+# ::date 2015-07-20T22:21:32
+# ::id pmid_2112_2157.159
+(p / perform-02
+   :ARG0 (w / we)
+   :ARG1 (e / experiment-01
+            :ARG0 w
+            :ARG1 (c / cell-line
+                     :quant "2"
+                     :ARG1-of (m / mean-01
+                                 :ARG2 (a / and
+                                          :op1 (c2 / cell-line
+                                                   :name (n2 / name
+                                                             :op1 "KB-CPT100"))
+                                          :op2 (c4 / cell-line
+                                                   :name (n3 / name
+                                                             :op1 "MCF-7/ADR"))))
+                     :mod (d2 / disease
+                              :wiki "Cancer"
+                              :name (n8 / name
+                                        :op1 "cancer")
+                              :ARG0-of (r / resist-01
+                                          :ARG1 (d / drug))))
+            :mod (g / genetic)
+            :mod (n7 / nucleic-acid
+                     :name (n / name
+                              :op1 "siRNA")))
+   :purpose (f / find-out-03
+               :ARG0 w
+               :ARG1 (r3 / regulate-01
+                         :mode "interrogative"
+                         :ARG0 (p2 / protein
+                                   :name (n4 / name
+                                             :op1 "Stat3"))
+                         :ARG1 (p3 / protein
+                                   :name (n5 / name
+                                             :op1 "IL-6"))
+                         :location (c5 / cell-line
+                                       :ARG2-of (e2 / except-01
+                                                    :ARG1 (c7 / cell-line
+                                                              :name (n6 / name
+                                                                        :op1 "AS2")))
+                                       :mod (d3 / disease
+                                                :wiki "Cancer"
+                                                :name (n9 / name
+                                                          :op1 "cancer"))))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt MTT assay revealed that KB-CPT100 cells were more resistant to the chemotherapeutic agent camptothecin than the parental KB cells (Figure <xref ref-type="fig" rid="F6">6A</xref>) and MCF-7/ADR cells were much more resistant to the chemotherapeutic agent epirubicin than the parental MCF-7 cells (p < 0.001) (Figure <xref ref-type="fig" rid="F6">6B</xref>).
+# ::file pmid_2112_2157_160.txt
+# ::date 2015-07-20T22:30:54
+# ::id pmid_2112_2157.160
+(r / reveal-01
+   :ARG0 (a / assay-01
+            :instrument (s4 / small-molecule
+                            :name (n / name
+                                     :op1 "MTT")))
+   :ARG1 (a2 / and
+             :op1 (r2 / resist-01
+                      :ARG0 (c / cell-line
+                               :name (n2 / name
+                                         :op1 "KB-CPT100")
+                               :compared-to (c3 / cell-line
+                                                :name (n4 / name
+                                                          :op1 "KB")
+                                                :mod (p / parent)))
+                      :ARG1 (s / small-molecule
+                               :name (n3 / name
+                                         :op1 "camptothecin")
+                               :ARG1-of (m / mean-01
+                                           :ARG2 (a3 / agent
+                                                     :mod (c2 / chemotherapy))))
+                      :ARG1-of (d / describe-01
+                                  :ARG0 (f / figure
+                                           :mod "6A"))
+                      :degree (m2 / more))
+             :op2 (r3 / resist-01
+                      :ARG0 (c4 / cell-line
+                                :name (n5 / name
+                                          :op1 "MCF-7/ADR")
+                                :compared-to (c6 / cell-line
+                                                 :name (n7 / name
+                                                           :op1 "MCF-7")
+                                                 :mod p))
+                      :ARG1 (s2 / small-molecule
+                                :name (n6 / name
+                                          :op1 "epirubicin")
+                                :ARG1-of (m5 / mean-01
+                                             :ARG2 a3))
+                      :degree (m3 / more
+                                  :mod (m4 / much))
+                      :ARG1-of (d2 / describe-01
+                                   :ARG0 (f2 / figure
+                                             :mod "6B"))
+                      :ARG1-of (s3 / statistical-test-91
+                                   :ARG2 (l / less-than
+                                            :op1 "0.001")))))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The two drug resistant cell lines were found by ELISA to secrete more IL-6 than their parental cells (Figures <xref ref-type="fig" rid="F6">6C</xref> and <xref ref-type="fig" rid="F6">6D</xref>).
+# ::file pmid_2112_2157_161.txt
+# ::date 2015-07-20T22:45:06
+# ::id pmid_2112_2157.161
+(f / find-01
+   :ARG0 (t / thing
+            :name (n / name
+                     :op1 "ELISA"))
+   :ARG1 (s / secrete-01
+            :ARG0 (c / cell-line
+                     :quant "2"
+                     :ARG0-of (r / resist-01
+                                 :ARG1 (d / drug)))
+            :ARG1 (p / protein
+                     :name (n2 / name
+                               :op1 "IL-6")
+                     :quant (m / more)
+                     :compared-to (c2 / cell
+                                      :mod (p2 / parent)
+                                      :poss c)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a / and
+                         :op1 (f2 / figure
+                                  :mod "6C")
+                         :op2 (f3 / figure
+                                  :mod "6D"))))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We transiently transfected the two drug resistant cells with Stat3#1 to knock-down Stat3.
+# ::file pmid_2112_2157_162.txt
+# ::date 2015-07-20T22:49:59
+# ::id pmid_2112_2157.162
+(t / transfect-01
+   :ARG0 (w / we)
+   :ARG1 (c / cell
+            :quant "2"
+            :ARG0-of (r / resist-01
+                        :ARG1 (d / drug)))
+   :ARG2 (p / protein
+            :name (n / name
+                     :op1 "Stat3#1"))
+   :ARG1-of (t2 / transient-02)
+   :purpose (k / knock-down-02
+               :ARG1 (p2 / protein
+                         :name (n2 / name
+                                   :op1 "Stat3"))))
+
+# ::save-date Sun Dec 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Western blot analysis confirmed that the total amount of Stat3 protein and phosphorylated Stat3 had been knocked-down in both resistant cells (Figures <xref ref-type="fig" rid="F6">6E</xref> and <xref ref-type="fig" rid="F6">6F</xref>).
+# ::file pmid_2112_2157_163.txt
+# ::date 2015-07-20T22:54:51
+# ::id pmid_2112_2157.163
+(c / confirm-01
+   :ARG0 (a / analyze-01
+            :manner (i / immunoblot-01))
+   :ARG1 (k / knock-down-02
+            :ARG1 (a2 / amount
+                      :quant-of (a3 / and
+                                    :op1 (p / protein
+                                            :wiki "STAT3"
+                                            :name (n2 / name
+                                                      :op1 "Stat3"))
+                                    :op2 (p2 / protein
+                                             :wiki "STAT3"
+                                             :name (n3 / name
+                                                       :op1 "Stat3")
+                                             :ARG3-of (p3 / phosphorylate-01)))
+                      :mod (t / total))
+            :location (c2 / cell
+                          :mod (b / both)
+                          :ARG0-of (r / resist-01)))
+   :ARG1-of (d / describe-01
+               :ARG0 (a4 / and
+                         :op1 (f / figure
+                                 :mod "6E")
+                         :op2 (f2 / figure
+                                  :mod "6F"))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt MTT assay found no change in cell viability (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>, Figure S3B and S3C).
+# ::file pmid_2112_2157_164.txt
+# ::date 2015-07-21T10:15:41
+# ::id pmid_2112_2157.164
+(f / find-01
+   :ARG0 (a / assay-01
+            :instrument (s / small-molecule
+                           :name (n / name
+                                    :op1 "MTT")))
+   :ARG1 (c / change-01
+            :polarity "-"
+            :ARG1 (v / viability
+                     :mod (c2 / cell)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / file
+                         :mod "3"
+                         :ARG1-of (a3 / add-02)
+                         :ARG1-of (m / mean-01
+                                     :ARG2 (a2 / and
+                                               :op1 (f3 / figure
+                                                        :mod "S3B")
+                                               :op2 (f4 / figure
+                                                        :mod "S3C"))))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt ELISA revealed that knocking-down Stat3 decreased the secretion of IL-6 in KB-CPT100 cells by one-third (p < 0.001) (Figure <xref ref-type="fig" rid="F6">6G</xref>) and by one-half in MCF-7/ADR cells (p < 0.001) (Figure <xref ref-type="fig" rid="F6">6H</xref>).
+# ::file pmid_2112_2157_165.txt
+# ::date 2015-07-21T10:36:30
+# ::id pmid_2112_2157.165
+(r / reveal-01
+   :ARG0 (t / thing
+            :name (n / name
+                     :op1 "ELISA"))
+   :ARG1 (a / and
+            :op1 (d / decrease-01
+                    :ARG0 (k / knock-down-02
+                             :ARG1 (p / protein
+                                      :name (n2 / name
+                                                :op1 "Stat3")))
+                    :ARG1 (s / secrete-01
+                             :ARG1 (p2 / protein
+                                       :name (n3 / name
+                                                 :op1 "IL-6")))
+                    :ARG2 (p5 / product-of
+                              :op1 "1/3")
+                    :location (c / cell-line
+                                 :name (n4 / name
+                                           :op1 "KB-CPT100"))
+                    :ARG1-of (d4 / describe-01
+                                 :ARG0 (f2 / figure
+                                           :mod "6G"))
+                    :ARG1-of (s2 / statistical-test-91
+                                 :ARG2 (l / less-than
+                                          :op1 "0.001")))
+            :op2 (d2 / decrease-01
+                     :ARG0 k
+                     :ARG1 s
+                     :ARG2 (p6 / product-of
+                               :op1 "1/2")
+                     :location (c2 / cell-line
+                                   :name (n5 / name
+                                             :op1 "MCF-7/ADR"))
+                     :ARG1-of (d3 / describe-01
+                                  :ARG0 (f / figure
+                                           :mod "6H"))
+                     :ARG1-of (s3 / statistical-test-91
+                                  :ARG2 l))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results suggest that the Stat3 also contributes to the elevation of IL-6 in drug resistant cancer cells.
+# ::file pmid_2112_2157_166.txt
+# ::date 2015-07-21T11:10:29
+# ::id pmid_2112_2157.166
+(s / suggest-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG1 (c / contribute-01
+            :ARG0 (p / protein
+                     :name (n / name
+                              :op1 "Stat3"))
+            :ARG1 (e / elevate-01
+                     :ARG0 p
+                     :ARG1 (p2 / protein
+                               :name (n2 / name
+                                         :op1 "IL-6")))
+            :ARG2 (c2 / cell
+                      :mod (d2 / disease
+                               :wiki "Cancer"
+                               :name (n3 / name
+                                         :op1 "cancer")
+                               :ARG0-of (r2 / resist-01
+                                            :ARG1 (d / drug))))
+            :mod (a / also)))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To find out whether IL-6 could be regulated by different combinations of its downstream pathways including Jak2/Stat3 in various cancer cells, we pharmacologically inhibited the four IL-6 downstream pathways in six drug resistant cancer cell lines derived from cervical cancer, breast cancer, and lung cancer cells.
+# ::file pmid_2112_2157_168.txt
+# ::date 2015-07-21T11:18:37
+# ::id pmid_2112_2157.168
+(i / inhibit-01
+   :ARG0 (w / we)
+   :ARG1 (p2 / pathway
+             :quant "4"
+             :name (n / name
+                      :op1 "IL-6")
+             :mod (d4 / downstream)
+             :mod "p4")
+   :manner (p / pharmacological)
+   :location (c / cell-line
+                :quant "6"
+                :ARG0-of (r / resist-01
+                            :ARG1 (d / drug))
+                :ARG1-of (d2 / derive-01
+                             :ARG2 (a / and
+                                      :op1 (c10 / cell
+                                                :mod (d5 / disease
+                                                         :wiki "Cervical_cancer"
+                                                         :name (n4 / name
+                                                                   :op1 "cervical"
+                                                                   :op2 "cancer")))
+                                      :op2 (c11 / cell
+                                                :mod (d6 / disease
+                                                         :wiki "Breast_cancer"
+                                                         :name (n5 / name
+                                                                   :op1 "breast"
+                                                                   :op2 "cancer")))
+                                      :op3 (c5 / cell
+                                               :mod (d7 / disease
+                                                        :wiki "Lung_cancer"
+                                                        :name (n6 / name
+                                                                  :op1 "lung"
+                                                                  :op2 "cancer"))))))
+   :purpose (f / find-out-03
+               :ARG0 w
+               :ARG1 (p3 / possible-01
+                         :mode "interrogative"
+                         :ARG1 (r2 / regulate-01
+                                   :ARG0 (c7 / combine-01
+                                             :ARG1 (p5 / pathway
+                                                       :ARG2-of (i2 / include-01
+                                                                    :ARG1 (p6 / pathway
+                                                                              :name (n3 / name
+                                                                                        :op1 "Jak2/Stat3"))
+                                                                    :location (c8 / cell
+                                                                                  :mod (v / various)
+                                                                                  :mod (d8 / disease
+                                                                                           :wiki "Cancer"
+                                                                                           :name (n7 / name
+                                                                                                     :op1 "cancer"))))
+                                                       :mod d4)
+                                             :ARG1-of (d3 / differ-02))
+                                   :ARG1 (p4 / protein
+                                             :name (n2 / name
+                                                       :op1 "IL-6"))))))
+
+# ::save-date Thu Nov 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt ELISA revealed that all drug resistant cells secreted more IL-6 than their parental cells.
+# ::file pmid_2112_2157_169.txt
+# ::date 2015-07-21T11:52:51
+# ::id pmid_2112_2157.169
+(r / reveal-01
+   :ARG0 (t / thing
+            :name (n / name
+                     :op1 "ELISA"))
+   :ARG1 (s / secrete-01
+            :ARG0 (c / cell
+                     :ARG0-of (r2 / resist-01
+                                  :ARG1 (d / drug))
+                     :mod (a / all))
+            :ARG1 (p / protein
+                     :name (n2 / name
+                               :op1 "IL-6")
+                     :quant (m / more))
+            :compared-to (c2 / cell
+                             :mod (p2 / parent)
+                             :poss c)))
+
+# ::save-date Tue Jul 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Different cells used different combinations of signaling pathways, including Jak2/Stat3, to regulate secretion of IL-6 (Figures <xref ref-type="fig" rid="F7">7A</xref> to <xref ref-type="fig" rid="F7">7F</xref>).
+# ::file pmid_2112_2157_170.txt
+# ::date 2015-07-21T11:56:15
+# ::id pmid_2112_2157.170
+(u / use-01
+   :ARG0 (c / cell
+            :ARG1-of (d / differ-02))
+   :ARG1 (c2 / combine-01
+             :ARG1 (p / pathway
+                      :ARG0-of (s / signal-07)
+                      :ARG2-of (i / include-01
+                                  :ARG1 (p2 / pathway
+                                            :name (n / name
+                                                     :op1 "Jak2/Stat3")))))
+   :ARG2 (r / regulate-01
+            :ARG0 c
+            :ARG1 (s2 / secrete-01
+                      :ARG1 (p3 / protein
+                                :name (n2 / name
+                                          :op1 "IL-6"))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a / and
+                         :op1 (f / figure
+                                 :mod "7A")
+                         :op2 (f2 / figure
+                                  :mod "7F"))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To exclude the possibility that the reduction of IL-6 secretion was caused by the reduction of cell survival, we used MTT assay to analyze the effect of these inhibitors on cell viability (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>, Figure S1C to S1H).
+# ::file pmid_2112_2157_171.txt
+# ::date 2015-07-21T12:03:36
+# ::id pmid_2112_2157.171
+(u / use-01
+   :ARG0 (w / we)
+   :ARG1 (a / assay-01
+            :instrument (s3 / small-molecule
+                            :name (n / name
+                                     :op1 "MTT")))
+   :ARG2 (a2 / analyze-01
+             :ARG0 w
+             :ARG1 (a3 / affect-01
+                       :ARG0 (m / molecular-physical-entity
+                                :ARG0-of (i / inhibit-01)
+                                :mod (t / this))
+                       :ARG1 (v / viability
+                                :mod (c / cell))))
+   :purpose (e / exclude-01
+               :ARG0 w
+               :ARG1 (p / possible-01
+                        :ARG1 (c2 / cause-01
+                                  :ARG0 (r / reduce-01
+                                           :ARG1 (s / survive-01
+                                                    :ARG0 (c3 / cell)))
+                                  :ARG1 (r2 / reduce-01
+                                            :ARG1 (s2 / secrete-01
+                                                      :ARG1 (p2 / protein
+                                                                :name (n2 / name
+                                                                          :op1 "IL-6")))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / file
+                        :mod "1"
+                        :ARG1-of (a5 / add-02)
+                        :ARG1-of (m2 / mean-01
+                                     :ARG2 (v2 / value-interval
+                                               :op1 (f2 / figure
+                                                        :mod "S1C")
+                                               :op2 (f3 / figure
+                                                        :mod "S1H"))))))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We showed that the majority of inhibitors had only limited suppressive effect on cell viability (below 25%) (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>, Figure S1C-S1H) except that the PI3-K/Akt pathway inhibitor LY294002 had more suppressive activity on the cellular viability by 30 to 50% (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>, Figure S1C-S1F).
+# ::file pmid_2112_2157_172.txt
+# ::date 2015-07-21T12:40:35
+# ::id pmid_2112_2157.172
+(s / show-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :ARG0 (s2 / small-molecule
+                      :ARG0-of (i / inhibit-01)
+                      :quant (m / majority))
+            :ARG1 (v / viability
+                     :mod (c / cell)
+                     :quant (b / below
+                               :op1 (p / percentage-entity
+                                       :value "25")))
+            :ARG2 (s3 / suppress-01)
+            :ARG1-of (l / limit-01
+                        :mod (o / only))
+            :ARG1-of (d / describe-01
+                        :ARG0 (f / file
+                                 :mod "1"
+                                 :ARG1-of (a2 / add-02
+                                              :ARG1 f4)
+                                 :ARG1-of (m2 / mean-01
+                                              :ARG2 (v2 / value-interval
+                                                        :op1 (f2 / figure
+                                                                 :mod "S1C")
+                                                        :op2 (f3 / figure
+                                                                 :mod "S1F")))))
+            :ARG2-of (e / except-01
+                        :ARG1 (a3 / activity-06
+                                  :ARG0 (s4 / small-molecule
+                                            :name (n / name
+                                                     :op1 "LY294002")
+                                            :ARG0-of (i2 / inhibit-01
+                                                         :ARG1 (p2 / pathway
+                                                                   :name (n2 / name
+                                                                             :op1 "PI3-K/Akt"))))
+                                  :ARG1 (s5 / suppress-01
+                                            :ARG1 (v3 / viability
+                                                      :mod c
+                                                      :quant (v4 / value-interval
+                                                                 :op1 (p3 / percentage-entity
+                                                                          :value "30")
+                                                                 :op2 (p4 / percentage-entity
+                                                                          :value "50")))
+                                            :degree (m3 / more)))
+                        :ARG1-of (d2 / describe-01
+                                     :ARG0 (f4 / file
+                                               :mod "1"
+                                               :ARG1-of (m4 / mean-01
+                                                            :ARG2 (v5 / value-interval
+                                                                      :op1 f2
+                                                                      :op2 (f5 / figure
+                                                                               :mod "S1F"))))))))
+
+# ::save-date Mon Aug 3, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, LY294002 induced much greater (75 to 90%) decrease of IL-6 in these cells (Figure <xref ref-type="fig" rid="F7">7A</xref> to <xref ref-type="fig" rid="F7">7D</xref>).
+# ::file pmid_2112_2157_173.txt
+# ::date 2015-07-21T13:15:32
+# ::id pmid_2112_2157.173
+(c2 / contrast-01
+    :ARG2 (i / induce-01
+             :ARG0 (s / small-molecule
+                      :name (n / name
+                               :op1 "LY294002"))
+             :ARG2 (d / decrease-01
+                      :ARG1 (p / protein
+                               :name (n2 / name
+                                         :op1 "IL-6"))
+                      :ARG2 (v / value-interval
+                               :op1 (p2 / percentage-entity
+                                        :value "75")
+                               :op2 (p3 / percentage-entity
+                                        :value "90"))
+                      :location (c / cell
+                                   :mod (t / this))
+                      :mod (g / great
+                              :degree (m / more
+                                         :mod (m2 / much)))))
+    :ARG1-of (d2 / describe-01
+                 :ARG0 (v2 / value-interval
+                           :op1 (f / figure
+                                   :mod "7A")
+                           :op2 (f2 / figure
+                                    :mod "7D"))))
+
+# ::save-date Tue Jul 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There is only one exception that the AG490-induced reductions of cell survival and IL-6 secretion were both about 30% in KB-7D cells (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>, Figure S1F and Figure <xref ref-type="fig" rid="F7">7D</xref>).
+# ::file pmid_2112_2157_174.txt
+# ::date 2015-07-21T13:44:28
+# ::id pmid_2112_2157.174
+(a / and
+   :op1 (r / reduce-01
+           :ARG1 (s / survive-01
+                    :ARG0 (c / cell))
+           :ARG2-of (i / induce-01
+                       :ARG0 (s2 / small-molecule
+                                 :name (n / name
+                                          :op1 "AG490"))))
+   :op2 (s3 / secrete-01
+            :ARG1 (p / protein
+                     :name (n2 / name
+                               :op1 "IL-6")))
+   :quant (a2 / about
+              :op1 (p2 / percentage-entity
+                       :value "30"))
+   :location (c2 / cell-line
+                 :name (n3 / name
+                           :op1 "KB-7D"))
+   :ARG1-of (e / except-01
+               :mod "1"
+               :mod (o / only))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / file
+                        :mod "1"
+                        :ARG1-of (a3 / add-02)
+                        :ARG1-of (m / mean-01
+                                    :ARG2 (a4 / and
+                                              :op1 (f2 / figure
+                                                       :mod "S1F")
+                                              :op2 (f3 / figure
+                                                       :mod "7D"))))))
+
+# ::save-date Mon Aug 3, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Because previous studies suggesting Stat3 on IL-6 were all <i>in vitro </i>cell line studies, not clinical studies, we also wanted to find out whether IL-6 could be regulated by different combinations of pathways including Jak2/Stat3 in not just cell lines but also in the human body.
+# ::file pmid_2112_2157_176.txt
+# ::date 2015-07-21T14:07:47
+# ::id pmid_2112_2157.176
+(w / want-01
+   :ARG0 (w2 / we)
+   :ARG1 (f / find-out-03
+            :ARG0 w2
+            :ARG1 (p4 / possible-01
+                      :mode "interrogative"
+                      :ARG1 (r / regulate-01
+                               :ARG0 (c / combine-01
+                                        :ARG1 (p2 / pathway
+                                                  :ARG2-of (i / include-01
+                                                              :ARG1 (p3 / pathway
+                                                                        :name (n2 / name
+                                                                                  :op1 "Jak2/Stat3"))))
+                                        :ARG1-of (d / differ-02))
+                               :ARG1 (p / protein
+                                        :name (n / name
+                                                 :op1 "IL-6"))
+                               :location (a / and
+                                            :op1 (c2 / cell-line
+                                                     :mod (j / just
+                                                             :polarity "-"))
+                                            :op2 (b / body
+                                                    :mod (h / human)
+                                                    :mod (a2 / also))))))
+   :ARG1-of (c3 / cause-01
+                :ARG0 (s / study-01
+                         :ARG1 (c5 / cell-line)
+                         :mod (i2 / in-vitro
+                                  :ARG1-of (c6 / contrast-01
+                                               :ARG2 (s4 / study-01
+                                                         :mod (c4 / clinical))))
+                         :domain (s2 / study-01
+                                     :ARG0-of (s3 / suggest-01
+                                                  :ARG1 (r2 / regulate-01
+                                                            :ARG0 (p5 / protein
+                                                                      :name (n3 / name
+                                                                                :op1 "Stat3"))
+                                                            :ARG1 p))
+                                     :time (p6 / previous)
+                                     :mod (a3 / all))))
+   :mod a2)
+
+# ::save-date Tue Dec 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We had previously found IL-6 levels to be increased in MPE of patients with lung cancer [<xref ref-type="bibr" rid="B2">2</xref>].
+# ::file pmid_2112_2157_177.txt
+# ::date 2015-07-21T14:33:06
+# ::id pmid_2112_2157.177
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (i / increase-01
+            :ARG1 (l / level
+                     :quant-of (p / protein
+                                  :name (n / name
+                                           :op1 "IL-6")))
+            :location (m2 / medical-condition
+                          :wiki "Malignant_pleural_effusion"
+                          :name (n3 / name
+                                    :op1 "malignant"
+                                    :op2 "pleural"
+                                    :op3 "effusion")
+                          :poss (p2 / patient
+                                    :mod (d / disease
+                                            :wiki "Lung_cancer"
+                                            :name (n2 / name
+                                                      :op1 "lung"
+                                                      :op2 "cancer")))))
+   :time (p3 / previous))
+
+
+# ::save-date Tue Dec 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To do this, we pharmacologically inhibited the four IL-6 downstream pathways in 20 clinical samples of human lung cancer obtained from MPE.
+# ::file pmid_2112_2157_178.txt
+# ::date 2015-07-21T14:39:50
+# ::id pmid_2112_2157.178
+(i / inhibit-01
+      :ARG0 (w / we)
+      :ARG1 (p2 / pathway
+            :mod "4"
+            :name (n / name :op1 "IL-6")
+            :mod (d / downstream))
+      :manner (p / pharmacological)
+      :location (s / sample-01
+            :quant "20"
+            :ARG1 (d3 / disease
+                  :wiki "Lung_cancer"
+                  :name (n2 / name :op1 "lung" :op2 "cancer")
+                  :mod (h / human))
+            :mod (c / clinical)
+            :ARG1-of (o / obtain-01
+                  :ARG2 (m / medical-condition
+                        :wiki "Malignant_pleural_effusion"
+                        :name (n3 / name
+                              :op1 "malignant"
+                              :op2 "pleural"
+                              :op3 "effusion"))))
+      :purpose (d2 / do-02
+            :ARG0 w
+            :ARG1 (t / this)))
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt ELISA revealed that IL-6 was expressed in the conditioned medium of all samples, ranging from 16.58 ± 0.21 to 1016.47 ± 12.45 pg/ml (Figure <xref ref-type="fig" rid="F8">8A</xref>), with a mean of 393.14 pg/ml.
+# ::file pmid_2112_2157_179.txt
+# ::date 2015-07-21T14:48:15
+# ::id pmid_2112_2157.179
+(r / reveal-01
+   :ARG0 (t / thing
+            :name (n / name
+                     :op1 "ELISA"))
+   :ARG1 (e / express-03
+            :ARG2 (p / protein
+                     :name (n2 / name
+                               :op1 "IL-6")
+                     :ARG1-of (r2 / range-01
+                                  :ARG3 (c2 / concentration-quantity
+                                            :quant (v / value-interval
+                                                      :op1 (a2 / add-02
+                                                               :ARG1 "16.58"
+                                                               :ARG2 "0.21")
+                                                      :op2 (s2 / subtract-01
+                                                               :ARG1 "0.21"
+                                                               :ARG2 "16.58"))
+                                            :unit (p3 / picogram-per-milliliter))
+                                  :ARG4 (c3 / concentration-quantity
+                                            :quant (v2 / value-interval
+                                                       :op1 (a3 / add-02
+                                                                :ARG1 "1016.47"
+                                                                :ARG2 "12.45")
+                                                       :op2 (s3 / subtract-01
+                                                                :ARG1 "12.45"
+                                                                :ARG2 "1016.47"))
+                                            :unit p3)))
+            :ARG3 (m / medium
+                     :ARG1-of (c / condition-01)
+                     :poss (t2 / thing
+                               :mod (a / all)
+                               :mod (c4 / concentration-quantity
+                                        :quant "393.14"
+                                        :unit p3
+                                        :mod (m2 / mean))
+                               :ARG1-of (s / sample-01))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "8A")))
+
+# ::save-date Fri Dec 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The four aforementioned inhibitors significantly decreased IL-6 secretion in the clinically isolated cancer cells differently (U0126, p < 0.01; AG490, LY294002 and BAY11-7082, all p < 0.001) (Figure <xref ref-type="fig" rid="F8">8A</xref>).
+# ::file pmid_2112_2157_180.txt
+# ::date 2015-07-21T15:25:46
+# ::id pmid_2112_2157.180
+(d / decrease-01
+   :ARG0 (s / small-molecule
+            :quant "4"
+            :ARG1-of (i / inhibit-01)
+            :ARG1-of (m / mention-01
+                        :time (b / before)))
+   :ARG1 (s3 / secrete-01
+             :ARG1 (p / protein
+                      :name (n / name
+                               :op1 "IL-6")))
+   :ARG2 (s2 / significant-02)
+   :location (c / cell
+                :manner (c3 / clinical)
+                :mod (d4 / disease
+                         :wiki "Cancer"
+                         :name (n6 / name
+                                   :op1 "cancer")
+                         :ARG1-of (i2 / isolate-01)))
+   :ARG1-of (d2 / differ-02)
+   :ARG1-of (m2 / mean-01
+                :ARG2 (a / and
+                         :op1 (d5 / decrease-01
+                                  :ARG0 (s7 / small-molecule
+                                            :name (n2 / name
+                                                      :op1 "U0126"))
+                                  :ARG1 s3
+                                  :location c
+                                  :ARG1-of (s8 / statistical-test-91
+                                               :ARG2 (l / less-than
+                                                        :op1 "0.01"))
+                                  :location c)
+                         :op2 (d6 / decrease-01
+                                  :ARG0 (a2 / and
+                                            :op1 (s4 / small-molecule
+                                                     :name (n3 / name
+                                                               :op1 "AG490"))
+                                            :op2 (s5 / small-molecule
+                                                     :name (n4 / name
+                                                               :op1 "LY294002"))
+                                            :op2 (s6 / small-molecule
+                                                     :name (n5 / name
+                                                               :op1 "BAY11-7082"))
+                                            :mod (a3 / all))
+                                  :ARG1 s3
+                                  :ARG1-of (s9 / statistical-test-91
+                                               :ARG2 (l2 / less-than
+                                                         :op1 "0.001")))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "8A")))
+
+# ::save-date Tue Jul 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We further analyzed the percent of inhibition by each inhibitor on IL-6 secretion.
+# ::file pmid_2112_2157_181.txt
+# ::date 2015-07-21T15:38:17
+# ::id pmid_2112_2157.181
+(a / analyze-01
+   :ARG0 (w / we)
+   :ARG1 (p / percent
+            :quant-of (i / inhibit-01
+                         :ARG0 (s / small-molecule
+                                  :ARG1-of i
+                                  :mod (e / each))
+                         :ARG1 (s2 / secrete-01
+                                   :ARG1 (p2 / protein
+                                             :name (n / name
+                                                      :op1 "IL-6")))))
+   :time (f / further))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt BAY11-7082 had the greatest inhibitory activity on the autocrine production of IL-6 in the clinical samples (BAY11-7082 > LY294002 > AG490 > U0126) (Figure <xref ref-type="fig" rid="F8">8B</xref>).
+# ::file pmid_2112_2157_182.txt
+# ::date 2015-07-21T15:41:32
+# ::id pmid_2112_2157.182
+(h / have-03
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "BAY11-7082"))
+   :ARG1 (a / activity-06
+            :ARG1 (i / inhibit-01
+                     :ARG1 (p / produce-01
+                              :ARG1 (p2 / protein
+                                        :name (n2 / name
+                                                  :op1 "IL-6"))
+                              :mod (a2 / autocrine)))
+            :mod (g / great
+                    :degree (m / most)))
+   :location (t / thing
+                :mod (c / clinical)
+                :ARG1-of (s2 / sample-01))
+   :ARG1-of (m2 / mean-01
+                :ARG2 (s3 / small-molecule
+                          :name (n3 / name
+                                    :op1 "BAY11-7082")
+                          :quant (m3 / more-than
+                                     :op1 (s4 / small-molecule
+                                              :name (n4 / name
+                                                        :op1 "LY294002")
+                                              :quant (m4 / more-than
+                                                         :op1 (s5 / small-molecule
+                                                                  :name (n5 / name
+                                                                            :op1 "AG490")
+                                                                  :quant (m5 / more-than
+                                                                             :op1 (s6 / small-molecule
+                                                                                      :name (n6 / name
+                                                                                                :op1 "U0126")))))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "8B")))

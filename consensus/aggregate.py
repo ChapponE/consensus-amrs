@@ -4,6 +4,17 @@
 *global_in_sample* takes the configuration that is best over the 27 chapters and
 *loco* selects it on 26 chapters and reads it on the held-out one, both from the
 corpus study. Selection is done per metric, ties going to the smallest threshold.
+
+A population with no consensus to score — its decoder keeps at most one node at every
+threshold, or at the threshold one of the experiments selects for it — is left out of
+every table and listed, with the reason, in ``populations_without_consensus.csv``. Leaving
+one out changes the folds of the others, so the check is repeated until it is stable.
+No population is left out on the three corpora of the paper.
+
+Each comparison is tested over populations with the one-sided paired t-test and
+sign test of the paper, and with the distribution-free statistics of
+``consensus.stats``: permutation and Wilcoxon tests, and a percentile bootstrap interval
+of the mean gain.
 """
 from __future__ import annotations
 
@@ -13,6 +24,8 @@ import numpy as np
 import pandas as pd
 from scipy import stats
 
+from . import stats as robust
+from .corpus import natural_key
 from .metrics import METRICS
 
 BASELINES = ("medoid_smatch", "medoid_s2match", "text_medoid")
@@ -45,6 +58,43 @@ def _select(chapter_pool: pd.DataFrame, corpus_pool: pd.DataFrame) -> dict:
     }
 
 
+def _pools(ours_per_chapter: pd.DataFrame, metric: str, chapters: list[str]) -> dict:
+    """Score of the consensus per searched threshold (rows) and chapter (columns), per study."""
+    return {
+        study: ours_per_chapter[ours_per_chapter["study"] == study]
+        .pivot(index="threshold", columns="chapter", values=metric)
+        .reindex(columns=chapters)
+        for study in ("chapter", "corpus")
+    }
+
+
+def _without_consensus(ours_per_chapter: pd.DataFrame, chapters: list[str]) -> tuple[list, list]:
+    """Chapters kept, and those left out for want of a consensus where they are read.
+
+    A chapter is left out when no threshold gives it a consensus, or when the
+    threshold an experiment selects for it, under either metric, gives none. Leaving
+    one out changes the folds of the others, so the check repeats until every kept
+    chapter has a consensus wherever it is read.
+    """
+    scored = set(ours_per_chapter["chapter"])
+    kept = [c for c in chapters if c in scored]
+    excluded = [dict(chapter=c, reason="no consensus at any threshold")
+                for c in chapters if c not in scored]
+    while True:
+        missing = {}
+        for metric in METRICS:
+            pools = _pools(ours_per_chapter, metric, kept)
+            for experiment, configs in _select(pools["chapter"], pools["corpus"]).items():
+                for c, (study, threshold) in configs.items():
+                    if c not in missing and pd.isna(pools[study].loc[threshold, c]):
+                        missing[c] = (f"no consensus at the threshold {experiment} selects "
+                                      f"for it ({metric}, {threshold})")
+        if not missing:
+            return kept, excluded
+        kept = [c for c in kept if c not in missing]
+        excluded += [dict(chapter=c, reason=reason) for c, reason in missing.items()]
+
+
 def _paired_test(ours: np.ndarray, theirs: np.ndarray, alternative: str) -> float:
     """One-sided paired t-test, NaN when the two series are identical."""
     return float(stats.ttest_rel(ours, theirs, alternative=alternative).pvalue)
@@ -62,18 +112,21 @@ def run(out_dir: Path) -> None:
 
     keys = ["chapter", "method", "study", "threshold"]
     per_chapter = raw.groupby(keys, dropna=False)[list(METRICS)].mean().reset_index()
-    chapters = sorted(per_chapter["chapter"].unique(), key=lambda c: int(c.split("_")[1]))
+    chapters = sorted(per_chapter["chapter"].unique(), key=natural_key)
     ours_per_chapter = per_chapter[per_chapter["method"] == "meanaac"]
+    chapters, excluded = _without_consensus(ours_per_chapter, chapters)
+    listed = out_dir / "populations_without_consensus.csv"
+    listed.unlink(missing_ok=True)
+    if excluded:
+        pd.DataFrame(excluded).to_csv(listed, index=False)
+        print(f"{len(excluded)} population(s) left out for want of a consensus:")
+        for entry in excluded:
+            print(f"  {entry['chapter']}: {entry['reason']}")
     ordered = raw.sort_values("graph_idx")  # per-input scores, paired by input
 
     rows, params, consensus = [], [], {}
     for metric in METRICS:
-        pools = {
-            study: ours_per_chapter[ours_per_chapter["study"] == study]
-            .pivot(index="threshold", columns="chapter", values=metric)
-            .reindex(columns=chapters)
-            for study in ("chapter", "corpus")
-        }
+        pools = _pools(ours_per_chapter, metric, chapters)
         by_baseline = {
             b: per_chapter[per_chapter["method"] == b].set_index("chapter")[metric][chapters]
             for b in BASELINES
@@ -121,6 +174,7 @@ def run(out_dir: Path) -> None:
                     n_better=int((delta > 0).sum()),
                     n_sig_better=sum(_paired_test(a, b, "greater") < ALPHA for a, b in paired),
                     n_sig_worse=sum(_paired_test(a, b, "less") < ALPHA for a, b in paired),
+                    **robust.paired_summary(ours, theirs.to_numpy()),
                 ))
 
     pd.DataFrame(rows).to_csv(out_dir / "experiment_scores.csv", index=False, float_format="%.6g")

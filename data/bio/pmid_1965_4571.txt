@@ -1,0 +1,2614 @@
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cetuximab with cisplatin and radiation achieved maximum cytotoxic effects for A431, Caski and C33A cells (high, intermediate and low EGFR expression, respectively) in CA.
+# ::file pmid_1965_4571_10.txt
+# ::date 2015-08-05T05:31:02
+# ::id pmid_1965_4571.10
+(a / achieve-01
+   :ARG0 (a6 / and
+             :op1 (s / small-molecule
+                     :name (n3 / name
+                               :op1 "cetuximab"))
+             :op2 (s2 / small-molecule
+                      :name (n4 / name
+                                :op1 "cisplatin"))
+             :op3 (r2 / radiate-01))
+   :ARG1 (a3 / affect-01
+             :ARG1 (a4 / and
+                       :op1 (c2 / cell-line
+                                :name (n5 / name
+                                          :op1 "A431"))
+                       :op2 (c3 / cell-line
+                                :name (n6 / name
+                                          :op1 "Caski"))
+                       :op3 (c4 / cell-line
+                                :name (n7 / name
+                                          :op1 "C33A")))
+             :mod (c / cytotoxic)
+             :ARG1-of (m2 / mean-01
+                          :ARG2 (a5 / and
+                                    :op1 (e2 / express-03
+                                             :ARG2 (e / enzyme
+                                                      :name (n / name
+                                                               :op1 "EGFR"))
+                                             :ARG1-of (h2 / high-02))
+                                    :op2 (e3 / express-03
+                                             :ARG2 e
+                                             :degree (i / intermediate))
+                                    :op3 (e4 / express-03
+                                             :ARG2 e
+                                             :ARG1-of (l2 / low-04))
+                                    :mod (r3 / respective)))
+             :degree (m / maximum)
+             :time (a2 / assay-01
+                       :mod (c5 / clonogenic))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cetuximab efficiently decreased MAPK and AKT phosphorylation in A431 cells but slightly less in Caski and C33A cells.
+# ::file pmid_1965_4571_11.txt
+# ::date 2015-08-06T00:09:49
+# ::id pmid_1965_4571.11
+(c2 / contrast-01
+    :ARG1 (d / decrease-01
+             :ARG0 (s2 / small-molecule
+                       :name (n2 / name
+                                 :op1 "cetuximab"))
+             :ARG1 (p2 / phosphorylate-01
+                       :ARG1 (a3 / and
+                                 :op1 (e3 / enzyme
+                                          :name (n / name
+                                                   :op1 "MAPK"))
+                                 :op2 (e2 / enzyme
+                                          :name (n3 / name
+                                                    :op1 "AKT"))))
+             :manner (e / efficient-01)
+             :location (c / cell-line
+                          :name (n4 / name
+                                    :op1 "A431")))
+    :ARG2 (d2 / decrease-01
+              :ARG0 s2
+              :ARG1 a3
+              :ARG2 (l / less
+                       :mod (s / slight))
+              :location (a2 / and
+                            :op1 (c3 / cell-line
+                                     :name (n5 / name
+                                               :op1 "Caski"))
+                            :op2 (c4 / cell-line
+                                     :name (n6 / name
+                                               :op1 "C33A")))
+              :compared-to d))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To check whether further EGFR, HER2 or MAPK inhibition would improve cetuximab's cytotoxicity, we combined it with an EGFR tyrosine kinase inhibitor (TKI), trastuzumab or a MEK1/2 inhibitor (PD98059).
+# ::file pmid_1965_4571_12.txt
+# ::date 2015-08-06T01:01:31
+# ::id pmid_1965_4571.12
+(c / combine-01
+   :ARG0 (w / we)
+   :ARG1 (i / inhibit-01
+            :ARG1 (o / or
+                     :op1 (e3 / enzyme
+                              :name (n4 / name
+                                        :op1 "EGFR"))
+                     :op2 (e4 / enzyme
+                              :name (n5 / name
+                                        :op1 "HER2"))
+                     :op3 (e / enzyme
+                             :name (n6 / name
+                                       :op1 "MAPK")))
+            :degree (f / further))
+   :ARG2 (o2 / or
+             :op1 (m / molecular-physical-entity
+                     :ARG0-of (i2 / inhibit-01
+                                  :ARG1 e3))
+             :op2 (s / small-molecule
+                     :name (n8 / name
+                               :op1 "trastuzumab"))
+             :op3 (m2 / molecular-physical-entity
+                      :ARG0-of (i3 / inhibit-01
+                                   :ARG1 (e2 / enzyme
+                                             :name (n9 / name
+                                                       :op1 "MEK1/2")))
+                      :ARG1-of (m3 / mean-01
+                                   :ARG2 (s3 / small-molecule
+                                             :name (n / name
+                                                      :op1 "PD98059")))))
+   :purpose (c2 / check-01
+                :ARG0 w
+                :ARG1 (i4 / improve-01
+                          :mode "interrogative"
+                          :ARG0 i
+                          :ARG1 (c3 / cytotoxic
+                                    :domain (s2 / small-molecule
+                                                :name (n10 / name
+                                                           :op1 "cetuximab"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In Caski, but not in C33A cells, cetuximab cooperated with the TKI, reducing cell survival and AKT and MAPK phosphorylation.
+# ::file pmid_1965_4571_13.txt
+# ::date 2015-08-06T01:20:05
+# ::id pmid_1965_4571.13
+(c3 / contrast-01
+    :ARG1 (c / cooperate-01
+             :ARG0 (s2 / small-molecule
+                       :name (n2 / name
+                                 :op1 "cetuximab"))
+             :ARG1 (m / molecular-physical-entity
+                      :ARG0-of (i / inhibit-01
+                                  :ARG1 (k / kinase
+                                           :mod (t / tyrosine))))
+             :ARG2 (r2 / reduce-01
+                       :ARG0 s2
+                       :ARG1 (a / and
+                                :op1 (s / survive-01
+                                        :ARG0 (c6 / cell))
+                                :op2 (p2 / phosphorylate-01
+                                         :ARG1 (a2 / and
+                                                   :op1 (e / enzyme
+                                                           :name (n6 / name
+                                                                     :op1 "AKT"))
+                                                   :op2 (e2 / enzyme
+                                                            :name (n / name
+                                                                     :op1 "MAPK"))))))
+             :location (c2 / cell-line
+                           :name (n4 / name
+                                     :op1 "Caski")))
+    :ARG2 (c4 / cooperate-01
+              :polarity "-"
+              :ARG0 s2
+              :ARG1 m
+              :location (c5 / cell-line
+                            :name (n5 / name
+                                      :op1 "C33A"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, cetuximab with trastuzumab or PD98059 reduced survival and MAPK phosphorylation of both cell lines.
+# ::file pmid_1965_4571_14.txt
+# ::date 2015-08-06T01:30:11
+# ::id pmid_1965_4571.14
+(h / have-concession-91
+   :ARG2 (r / reduce-01
+            :ARG0 (a2 / and
+                      :op1 (s3 / small-molecule
+                               :name (n2 / name
+                                         :op1 "cetuximab"))
+                      :op2 (o / or
+                              :op1 (s4 / small-molecule
+                                       :name (n3 / name
+                                                 :op1 "trastuzumab"))
+                              :op2 (s / small-molecule
+                                      :name (n4 / name
+                                                :op1 "PD98059"))))
+            :ARG1 (a / and
+                     :op1 (s2 / survive-01
+                              :ARG0 (c / cell-line
+                                       :mod (b / both)))
+                     :op2 (p2 / phosphorylate-01
+                              :ARG1 (e / enzyme
+                                       :name (n / name
+                                                :op1 "MAPK"))
+                              :location c))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We examined the antiproliferative effects of isolated RxT, cisplatin and cetuximab treatments on A431, Caski and C33A cells (<xref ref-type="fig" rid="fig1">Figures 1A–F</xref>), which express high to low EGFR levels, respectively (see Figures 3A and 5A).
+# ::file pmid_1965_4571_87.txt
+# ::date 2015-08-06T03:28:54
+# ::id pmid_1965_4571.87
+(e2 / examine-01
+    :ARG0 (w / we)
+    :ARG1 (a / affect-01
+             :ARG0 (a2 / and
+                       :op1 (r3 / radiotherapy
+                                :ARG1-of (i / isolate-01))
+                       :op2 (t3 / treat-04
+                                :ARG2 (s2 / small-molecule
+                                          :name (n3 / name
+                                                    :op1 "cisplatin")))
+                       :op3 (t2 / treat-04
+                                :ARG2 (s3 / small-molecule
+                                          :name (n4 / name
+                                                    :op1 "cetuximab"))))
+             :ARG1 (a3 / and
+                       :op1 (c / cell-line
+                               :name (n5 / name
+                                         :op1 "A431"))
+                       :op2 (c2 / cell-line
+                                :name (n6 / name
+                                          :op1 "Caski"))
+                       :op3 (c3 / cell-line
+                                :name (n7 / name
+                                          :op1 "C33A"))
+                       :ARG3-of (e3 / express-03
+                                    :ARG2 (v2 / value-interval
+                                              :op1 (l / level
+                                                      :quant-of (e / enzyme
+                                                                   :name (n / name
+                                                                            :op1 "EGFR"))
+                                                      :ARG1-of (h / high-02))
+                                              :op2 (l2 / level
+                                                       :quant-of e
+                                                       :ARG1-of (l3 / low-04)))
+                                    :mod (r2 / respective)
+                                    :ARG1-of (d2 / describe-01
+                                                 :ARG0 (a4 / and
+                                                           :op1 (f3 / figure
+                                                                    :mod "3A")
+                                                           :op2 (f4 / figure
+                                                                    :mod "5A")
+                                                           :ARG1-of (s / see-01
+                                                                       :ARG0 (y / you))))))
+             :ARG0-of (o / oppose-01
+                         :ARG1 (p / proliferate-01)))
+    :ARG1-of (d / describe-01
+                :ARG0 (v / value-interval
+                         :op1 (f / figure
+                                 :mod "1A")
+                         :op2 (f2 / figure
+                                  :mod "1F"))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A431 growth is impaired by EGFR inhibitors (<xref ref-type="other" rid="bib9">Janmaat <i>et al</i>, 2003</xref>), so we used this cell line for comparison with the CC cell lines.
+# ::file pmid_1965_4571_88.txt
+# ::date 2015-08-06T03:47:03
+# ::id pmid_1965_4571.88
+(i2 / impair-01
+    :ARG0 (m / molecular-physical-entity
+             :ARG0-of (i3 / inhibit-01
+                          :ARG1 (e2 / enzyme
+                                    :name (n2 / name
+                                              :op1 "EGFR"))))
+    :ARG1 (g / grow-01
+             :ARG1 (c / cell-line
+                      :name (n3 / name
+                                :op1 "A431")))
+    :ARG1-of (d2 / describe-01
+                 :ARG0 (p / publication-91
+                          :ARG0 (a / and
+                                   :op1 (p2 / person
+                                            :name (n4 / name
+                                                      :op1 "Janmaat"))
+                                   :op2 (p3 / person
+                                            :mod (o / other)))
+                          :time (d / date-entity
+                                   :year "2003")))
+    :ARG0-of (c2 / cause-01
+                 :ARG1 (u / use-01
+                          :ARG0 (w / we)
+                          :ARG1 c
+                          :ARG2 (c4 / compare-01
+                                    :ARG1 c
+                                    :ARG2 (c5 / cell-line
+                                              :mod (d3 / disease
+                                                       :wiki "Cervical_cancer"
+                                                       :name (n / name
+                                                                :op1 "cervical"
+                                                                :op2 "cancer")))))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A431 and Caski cells showed similar resistance to RxT and low cisplatin concentrations (IC<sub>30</sub>) in CA and MTT assays (<xref ref-type="fig" rid="fig1">Figures 1A and B</xref>), but Caski cells showed increased resistance at higher cisplatin concentrations (IC<sub>50</sub> and IC<sub>80</sub>; <xref ref-type="fig" rid="fig1">Figure 1B</xref>).
+# ::file pmid_1965_4571_89.txt
+# ::date 2015-08-06T04:21:11
+# ::id pmid_1965_4571.89
+(c4 / contrast-01
+    :ARG1 (s2 / show-01
+              :ARG0 (a / and
+                       :op1 (c / cell-line
+                               :name (n2 / name
+                                         :op1 "A431"))
+                       :op2 (c2 / cell-line
+                                :name (n3 / name
+                                          :op1 "Caski")))
+              :ARG1 (a2 / and
+                        :op1 (r2 / resist-01
+                                 :ARG0 a
+                                 :ARG1 (r / radiotherapy)
+                                 :ARG1-of (r3 / resemble-01))
+                        :op2 (h2 / have-percentage-maximal-inhibitory-concentration-01
+                                 :ARG1 (s / small-molecule
+                                          :name (n5 / name
+                                                    :op1 "cisplatin"))
+                                 :ARG2 "30"
+                                 :ARG1-of (l / low-04)
+                                 :time (a3 / and
+                                           :op1 (a4 / assay-01
+                                                    :mod (c5 / clonogenic))
+                                           :op2 (a5 / assay-01
+                                                    :instrument (s4 / small-molecule
+                                                                    :name (n / name
+                                                                             :op1 "MTT"))))
+                                 :ARG1-of (m4 / mean-01
+                                              :ARG2 (c7 / concentrate-02
+                                                        :mod (i2 / inhibit-01
+                                                                 :degree (p / percentage-entity
+                                                                            :value "30"))))))
+              :ARG1-of (d / describe-01
+                          :ARG0 (a6 / and
+                                    :op1 (f / figure
+                                            :mod "1A")
+                                    :op2 (f2 / figure
+                                             :mod "1B"))))
+    :ARG2 (s3 / show-01
+              :ARG0 c2
+              :ARG1 (r4 / resist-01
+                        :ARG0 c2
+                        :ARG1-of (i / increase-01))
+              :condition (c6 / concentrate-02
+                             :ARG1 s
+                             :ARG1-of (m / mean-01
+                                         :ARG2 (a7 / and
+                                                   :op1 (h3 / have-percentage-maximal-inhibitory-concentration-01
+                                                            :ARG1 s
+                                                            :ARG2 "50")
+                                                   :op2 (h4 / have-percentage-maximal-inhibitory-concentration-01
+                                                            :ARG1 s
+                                                            :ARG2 "80")))
+                             :ARG1-of (h / high-02
+                                         :degree (m2 / more)))
+              :ARG1-of (d2 / describe-01
+                           :ARG0 (f3 / figure
+                                     :mod "1B"))))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt C33A cells were, in turn, quite sensitive to both treatments (<xref ref-type="fig" rid="fig1">Figures 1A and B</xref>).
+# ::file pmid_1965_4571_90.txt
+# ::date 2015-08-06T04:39:14
+# ::id pmid_1965_4571.90
+(s / sensitive-03
+      :ARG0 (c / cell-line
+            :name (n / name :op1 "C33A"))
+      :ARG1 (t / treat-04
+            :mod (b / both))
+      :degree (q / quite)
+      :mod (i / in-turn)
+      :ARG1-of (d / describe-01
+            :ARG0 (a / and
+                  :op1 (f / figure :mod "1A")
+                  :op2 (f2 / figure :mod "1B"))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cetuximab treatment decreased the viability of all cell lines in CA and MTT experiments at all concentrations tested (<xref ref-type="fig" rid="fig1">Figures 1C and D</xref>).
+# ::file pmid_1965_4571_91.txt
+# ::date 2015-08-06T05:32:04
+# ::id pmid_1965_4571.91
+(d / decrease-01
+   :ARG0 (t / treat-04
+            :ARG2 (s / small-molecule
+                     :name (n2 / name
+                               :op1 "cetuximab")))
+   :ARG1 (v / viable
+            :mod (c / cell-line
+                    :mod (a2 / all)
+                    :time (e / experiment-01
+                             :ARG1 (a3 / and
+                                       :op1 (a4 / assay-01
+                                                :mod (c3 / clonogenic))
+                                       :op2 (a5 / assay-01
+                                                :instrument (s2 / small-molecule
+                                                                :name (n / name
+                                                                         :op1 "MTT")))))))
+   :condition (c2 / concentrate-02
+                  :ARG1-of (t2 / test-01)
+                  :mod (a6 / all))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a7 / and
+                          :op1 (f / figure
+                                  :mod "1C")
+                          :op2 (f2 / figure
+                                   :mod "1D"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These effects were related to an increase of 14.1, 12.6 and 6.5% in cell number at G<sub>0</sub>/G<sub>1</sub> for A431, Caski and C33A cells on cetuximab treatment, respectively (<xref ref-type="fig" rid="fig1">Figure 1E</xref>) and a decrease in the population of cells at S and G<sub>2</sub>/M phases when compared to controls (CT; <xref ref-type="fig" rid="fig1">Figure 1E</xref>).
+# ::file pmid_1965_4571_92.txt
+# ::date 2015-08-06T05:40:15
+# ::id pmid_1965_4571.92
+(r / relate-01
+   :ARG1 (a5 / affect-01
+             :mod (t / this))
+   :ARG2 (a3 / and
+             :op1 (i / increase-01
+                     :ARG1 (n / number
+                              :quant-of (c2 / cell-line
+                                            :name (n2 / name
+                                                      :op1 "A431")))
+                     :ARG2 (a / and
+                              :op1 (p / percentage-entity
+                                      :value "14.1"))
+                     :time (s / slash
+                              :op1 (e / event
+                                      :name (n8 / name
+                                                :op1 "G0"))
+                              :op2 (e2 / event
+                                       :name (n9 / name
+                                                 :op1 "G1")))
+                     :condition (t2 / treat-04
+                                    :ARG2 (s3 / small-molecule
+                                              :name (n5 / name
+                                                        :op1 "cetuximab"))))
+             :op2 (i2 / increase-01
+                      :ARG1 (n6 / number
+                                :quant-of (c3 / cell-line
+                                              :name (n3 / name
+                                                        :op1 "Caski")))
+                      :ARG2 (p2 / percentage-entity
+                                :value "12.6")
+                      :time s
+                      :condition t2)
+             :op3 (i3 / increase-01
+                      :ARG1 (n7 / number
+                                :quant-of (c4 / cell-line
+                                              :name (n4 / name
+                                                        :op1 "C33A")))
+                      :ARG2 (p3 / percentage-entity
+                                :value "6.5")
+                      :time s
+                      :condition t2)
+             :op4 (d2 / decrease-01
+                      :ARG1 (p5 / population
+                                :mod (c5 / cell))
+                      :time (a4 / and
+                                :op1 (p7 / phase
+                                         :mod (s4 / synthesize-01))
+                                :op2 (t3 / time
+                                         :mod (s2 / slash
+                                                  :op1 (e3 / event
+                                                           :name (n10 / name
+                                                                      :op1 "G2"
+                                                                      :op2 "phase"))
+                                                  :op2 (e4 / event
+                                                           :name (n11 / name
+                                                                      :op1 "M"
+                                                                      :op2 "phase")))))
+                      :ARG1-of (d3 / describe-01
+                                   :ARG0 (f2 / figure
+                                             :mod "1E"))
+                      :condition (c / compare-01
+                                    :ARG1 (c6 / control))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1E")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Apoptotic cells are usually found in the sub-G<sub>1</sub> phases and, accordingly, 24-h cetuximab treatment increased this cell population by 4.6, 3.9 and 2.9% in A431, Caski and C33A cells, respectively (<xref ref-type="fig" rid="fig1">Figure 1E</xref>).
+# ::file pmid_1965_4571_93.txt
+# ::date 2015-08-07T03:22:02
+# ::id pmid_1965_4571.93
+(a2 / and
+    :op1 (f / find-01
+            :ARG1 (c / cell
+                     :mod (a / apoptotic))
+            :time (u / usual)
+            :location (e / event
+                         :name (n / name
+                                  :op1 "sub-G1"
+                                  :op2 "phase")))
+    :op2 (a5 / and
+             :op1 (i / increase-01
+                     :ARG0 (t / treat-04
+                              :ARG2 (s / small-molecule
+                                       :name (n2 / name
+                                                 :op1 "cetuximab"))
+                              :duration (t2 / temporal-quantity
+                                            :quant "24"
+                                            :unit (h / hour)))
+                     :ARG1 (p2 / population
+                               :mod (c3 / cell-line
+                                        :name (n3 / name
+                                                  :op1 "A431")))
+                     :ARG2 (p3 / percentage-entity
+                               :value "4.6"))
+             :op2 (i2 / increase-01
+                      :ARG0 t
+                      :ARG1 (p6 / population
+                                :mod (c4 / cell-line
+                                         :name (n4 / name
+                                                   :op1 "Caski")))
+                      :ARG2 (p4 / percentage-entity
+                                :value "3.9"))
+             :op3 (i3 / increase-01
+                      :ARG0 t
+                      :ARG1 (p7 / population
+                                :mod (c2 / cell-line
+                                         :name (n5 / name
+                                                   :op1 "C33A")))
+                      :ARG2 (p5 / percentage-entity
+                                :value "2.9")))
+    :ARG1-of (d / describe-01
+                :ARG0 (f2 / figure
+                          :mod "1E")))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Additionally, apoptotic cells were also observed by Hoechst staining in all cell lines after cetuximab treatment (<xref ref-type="fig" rid="fig1">Figure 1F</xref>) and, even in C33A cells, which express low EGFR levels, a reduction of 21% in cell proliferation was obtained, especially at high MAb concentration (100 <i>μ</i>g ml<sup>−1</sup>; <xref ref-type="fig" rid="fig1">Figure 1D</xref>).
+# ::file pmid_1965_4571_94.txt
+# ::date 2015-08-07T03:29:29
+# ::id pmid_1965_4571.94
+(a6 / and
+    :op2 (a7 / and
+             :op1 (a / add-01
+                     :ARG1 (o / observe-01
+                              :ARG1 (c / cell
+                                       :mod (a2 / apoptotic))
+                              :instrument (s / stain-01
+                                             :ARG2 (p3 / product
+                                                       :name (n5 / name
+                                                                 :op1 "Hoechst")))
+                              :time (a4 / after
+                                        :op1 (t / treat-04
+                                                :ARG2 (s2 / small-molecule
+                                                          :name (n2 / name
+                                                                    :op1 "cetuximab"))))
+                              :ARG1-of (d / describe-01
+                                          :ARG0 (f / figure
+                                                   :mod "1F"))
+                              :location (c2 / cell-line
+                                            :mod (a3 / all))
+                              :mod (a8 / also)))
+             :op2 (o2 / obtain-01
+                      :ARG1 (r2 / reduce-01
+                                :ARG1 (p2 / proliferate-01
+                                          :ARG0 (c4 / cell))
+                                :ARG2 (p / percentage-entity
+                                         :value "21"))
+                      :location (c3 / cell-line
+                                    :name (n3 / name
+                                              :op1 "C33A")
+                                    :ARG1-of (e2 / express-03
+                                                 :ARG2 (l / level
+                                                          :quant-of (e / enzyme
+                                                                       :name (n / name
+                                                                                :op1 "EGFR"))
+                                                          :ARG1-of (l3 / low-04)))
+                                    :mod (e5 / even))
+                      :condition (c5 / concentrate-02
+                                     :ARG1 (a5 / antibody
+                                               :mod (m2 / monoclone))
+                                     :degree (e3 / especially)
+                                     :ARG1-of (e4 / equal-01
+                                                  :ARG2 (c6 / concentration-quantity
+                                                            :quant "100"
+                                                            :unit (m / microgram-per-milliliter)))
+                                     :ARG1-of (h2 / high-02))
+                      :ARG1-of (d2 / describe-01
+                                   :ARG0 (f2 / figure
+                                             :mod "1D")))))
+
+# ::save-date Sun Aug 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We evaluated whether the combination of cetuximab (100 <i>μ</i>g ml<sup>−1</sup>) with RxT and/or cisplatin could enhance the cytotoxic effects observed in CA.
+# ::file pmid_1965_4571_96.txt
+# ::date 2015-08-07T03:48:58
+# ::id pmid_1965_4571.96
+(e / evaluate-01
+   :ARG0 (w / we)
+   :ARG1 (p / possible-01
+            :ARG1 (e2 / enhance-01
+                      :mode "interrogative"
+                      :ARG0 (c / combine-01
+                               :ARG1 (s / small-molecule
+                                        :name (n2 / name
+                                                  :op1 "cetuximab")
+                                        :quant (c2 / concentration-quantity
+                                                   :quant "100"
+                                                   :unit (m / microgram-per-milliliter)))
+                               :ARG2 (a / and-or
+                                        :op1 (r / radiotherapy)
+                                        :op2 (s2 / small-molecule
+                                                 :name (n4 / name
+                                                           :op1 "cisplatin"))))
+                      :ARG1 (a2 / affect-01
+                                :ARG2 (c3 / cytotoxic)
+                                :ARG1-of (o / observe-01
+                                            :time (a3 / assay-01
+                                                      :mod (c4 / clonogenic)))))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Isolated cetuximab, cisplatin and RxT treatments decreased the survival of all cell lines (<xref ref-type="fig" rid="fig2">Figures 2A–D</xref>) but the combination of cetuximab with either RxT or cisplatin enhanced these effects (<i>P</i><0.05).
+# ::file pmid_1965_4571_97.txt
+# ::date 2015-08-07T03:56:06
+# ::id pmid_1965_4571.97
+(c2 / contrast-01
+    :ARG1 (d / decrease-01
+             :ARG0 (a / and
+                      :op1 (t2 / treat-04
+                               :ARG2 (s2 / small-molecule
+                                         :name (n / name
+                                                  :op1 "cetuximab")
+                                         :ARG1-of (i / isolate-01)))
+                      :op2 (t3 / treat-04
+                               :ARG2 (s3 / small-molecule
+                                         :name (n2 / name
+                                                   :op1 "cisplatin")))
+                      :op3 (t4 / treat-04
+                               :ARG2 (r / radiotherapy)))
+             :ARG1 (s / survive-01
+                      :ARG0 (c / cell-line
+                               :mod (a2 / all)))
+             :ARG1-of (d2 / describe-01
+                          :ARG0 (v / value-interval
+                                   :op1 (f / figure
+                                           :mod "2A")
+                                   :op2 (f2 / figure
+                                            :mod "2D"))))
+    :ARG2 (e / enhance-01
+             :ARG0 (c3 / combine-01
+                       :ARG1 s2
+                       :ARG2 (o / or
+                                :op1 r
+                                :op2 s3))
+             :ARG1 (a3 / affect-01
+                       :mod (t5 / this))
+             :ARG1-of (s4 / statistical-test-91
+                          :ARG2 (l2 / less-than
+                                    :op1 "0.05"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, the triple combination of cetuximab, cisplatin and RxT achieved maximum effects for all cell lines in CA (demonstrative pictures of A431 cells are shown in <xref ref-type="fig" rid="fig2">Figure 2D</xref>).
+# ::file pmid_1965_4571_98.txt
+# ::date 2015-08-07T04:15:06
+# ::id pmid_1965_4571.98
+(m2 / multi-sentence
+    :snt1 (a / and
+             :op2 (a2 / achieve-01
+                      :ARG0 (c / combine-01
+                               :ARG1 (s / small-molecule
+                                        :name (n2 / name
+                                                  :op1 "cetuximab"))
+                               :ARG2 (a3 / and
+                                         :op1 (s2 / small-molecule
+                                                  :name (n3 / name
+                                                            :op1 "cisplatin"))
+                                         :op2 (r / radiotherapy))
+                               :mod (t / triple))
+                      :ARG1 (a4 / affect-01
+                                :degree (m / maximum))
+                      :location (c2 / cell-line
+                                    :mod (a5 / all))
+                      :ARG1-of (d / describe-01)
+                      :time (a6 / assay-01
+                                :mod (c4 / clonogenic))))
+    :snt2 (s3 / show-01
+              :ARG1 (p / picture
+                       :ARG0-of (d2 / demonstrate-01
+                                    :ARG1 (c3 / cell-line
+                                              :name (n6 / name
+                                                        :op1 "A431"))))
+              :location (f / figure
+                           :mod "2D")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Caski cells are HPV-positive and express intermediate levels of EGFR and HER2, resembling typical CC tumours.
+# ::file pmid_1965_4571_99.txt
+# ::date 2015-08-07T04:20:31
+# ::id pmid_1965_4571.99
+(a / and
+   :op1 (p / positive
+           :topic (d / disease
+                     :name (n3 / name
+                               :op1 "HPV"))
+           :domain (c / cell-line
+                      :name (n4 / name
+                                :op1 "Caski")
+                      :ARG1-of (r / resemble-01
+                                  :ARG2 (t / tumor
+                                           :ARG0-of (t2 / typify-01)
+                                           :mod (d2 / disease
+                                                    :wiki "Cervical_cancer"
+                                                    :name (n5 / name
+                                                              :op1 "cervical"
+                                                              :op2 "cancer"))))))
+   :op2 (e3 / express-03
+            :ARG2 (a2 / and
+                      :op1 (l / level
+                              :quant-of (e / enzyme
+                                           :name (n / name
+                                                    :op1 "EGFR"))
+                              :degree (i / intermediate))
+                      :op2 (l2 / level
+                               :quant-of (e2 / enzyme
+                                             :name (n2 / name
+                                                       :op1 "HER2"))
+                               :degree i))
+            :ARG3 c))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In this cell line, the triple combination reached up to 70% inhibition in CA (<xref ref-type="fig" rid="fig2">Figure 2B</xref>) whereas in C33A cells, an inhibition of 60% was observed (<xref ref-type="fig" rid="fig2">Figure 2C</xref>).
+# ::file pmid_1965_4571_100.txt
+# ::date 2015-08-07T04:25:51
+# ::id pmid_1965_4571.100
+(c3 / contrast-01
+      :ARG1 (r / reach-01
+            :ARG0 (c2 / combine-01
+                  :mod (t2 / triple))
+            :ARG1 (i / inhibit-01
+                  :degree (p / percentage-entity :value "70"))
+            :location (c / cell-line
+                  :mod (t / this))
+            :ARG1-of (d / describe-01
+                  :ARG0 (f / figure :mod "2B"))
+            :time (a / assay-01
+                  :mod (c4 / clonogenic)))
+      :ARG2 (o / observe-01
+            :ARG1 (i2 / inhibit-01
+                  :degree (p2 / percentage-entity :value "60"))
+            :ARG1-of (d2 / describe-01
+                  :ARG0 (f2 / figure :mod "2C"))
+            :location (c5 / cell-line
+                  :name (n / name :op1 "C33A"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A431 cells strongly express EGFR (<xref ref-type="other" rid="bib9">Janmaat <i>et al</i>, 2003</xref>) whereas Caski and C33A cells show moderate and low expression levels, respectively (<xref ref-type="fig" rid="fig3">Figure 3A</xref>).
+# ::file pmid_1965_4571_102.txt
+# ::date 2015-08-07T05:16:37
+# ::id pmid_1965_4571.102
+(c2 / contrast-01
+    :ARG1 (e2 / express-03
+              :ARG2 (e / enzyme
+                       :name (n / name
+                                :op1 "EGFR"))
+              :ARG3 (c / cell-line
+                       :name (n2 / name
+                                 :op1 "A431"))
+              :manner (s / strong)
+              :ARG1-of (d2 / describe-01
+                           :ARG0 (p / publication-91
+                                    :ARG0 (a / and
+                                             :op1 (p2 / person
+                                                      :name (n3 / name
+                                                                :op1 "Janmaat"))
+                                             :op2 (p3 / person
+                                                      :mod (o / other)))
+                                    :time (d3 / date-entity
+                                              :year "2003"))))
+    :ARG2 (s2 / show-01
+              :ARG0 (a2 / and
+                        :op1 (c3 / cell-line
+                                 :name (n4 / name
+                                           :op1 "Caski"))
+                        :op2 (c4 / cell-line
+                                 :name (n5 / name
+                                           :op1 "C33A")))
+              :ARG1 (a3 / and
+                        :op1 (l / level
+                                :degree-of (e3 / express-03
+                                               :ARG1-of (m / moderate-03)))
+                        :op2 (l2 / level
+                                 :degree-of (e4 / express-03
+                                                :ARG1-of (l3 / low-04))))
+              :mod (r / respective)
+              :ARG1-of (d4 / describe-01
+                           :ARG0 (f / figure
+                                    :mod "3A"))))
+
+# ::save-date Sat Jan 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Additionally, we confirmed EGFR expression by real-time RT-PCR and by FACS analysis.
+# ::file pmid_1965_4571_103.txt
+# ::date 2015-08-07T05:23:28
+# ::id pmid_1965_4571.103
+(a / and
+   :op2 (c / confirm-01
+           :ARG0 (w / we)
+           :ARG1 (e2 / express-03
+                     :ARG2 (e / enzyme
+                              :name (n / name
+                                       :op1 "EGFR")))
+           :instrument (a3 / and
+                           :op1 (a2 / analyze-01
+                                    :manner (r / real-time)
+                                    :mod (r3 / react-01
+                                             :ARG0 (p / polymerase)
+                                             :mod (c2 / chain)
+                                             :subevent (t / transcribe-01
+                                                          :ARG1-of (r2 / reverse-01))))
+                           :op2 (a4 / analyze-01
+                                    :mod r
+                                    :mod (s / sort-01
+                                            :ARG1 (c3 / cell)
+                                            :ARG1-of (a5 / activate-01
+                                                         :ARG0 (f / fluorescence)))))))
+
+# ::save-date Fri Feb 26, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The relative <i>EGFR</i> mRNA level of A431 is high and Caski cells express two times more <i>EGFR</i> than C33A (Figure 5A).
+# ::file pmid_1965_4571_104.txt
+# ::date 2015-08-07T05:27:44
+# ::id pmid_1965_4571.104
+(a / and
+   :op1 (h / high-02
+           :ARG1 (l / level
+                    :quant-of (n7 / nucleic-acid
+                                  :name (n2 / name
+                                            :op1 "mRNA")
+                                  :ARG0-of (e4 / encode-01
+                                               :ARG1 (e / enzyme
+                                                        :name (n / name
+                                                                 :op1 "EGFR"))))
+                    :quant-of (c / cell-line
+                                 :name (n3 / name
+                                           :op1 "A431"))
+                    :ARG1-of (r2 / relative-05)))
+   :op2 (e2 / express-03
+            :ARG2 (e3 / enzyme
+                      :name (n5 / name
+                                :op1 "EGFR")
+                      :quant (p / product-of
+                                :op1 "2"
+                                :op2 (m / mass-quantity
+                                        :quant-of (e5 / enzyme
+                                                      :name (n8 / name
+                                                                :op1 "EGFR")
+                                                      :ARG2-of (e6 / express-03
+                                                                   :ARG3 (c3 / cell-line
+                                                                             :name (n6 / name
+                                                                                       :op1 "C33A")))))))
+            :ARG3 (c2 / cell-line
+                      :name (n4 / name
+                                :op1 "Caski")))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, FACS analysis showed that both a murine anti-EGFR MAb and cetuximab could detect high EGFR expression on the surface of A431 cells and intermediate and low levels in Caski and C33A cells, respectively (Figure 5B).
+# ::file pmid_1965_4571_105.txt
+# ::date 2015-08-07T05:34:56
+# ::id pmid_1965_4571.105
+(a / and
+   :op2 (s / show-01
+           :ARG0 (a2 / analyze-01
+                     :mod (s4 / sort-01
+                              :ARG1 (c4 / cell)
+                              :ARG1-of (a4 / activate-01
+                                           :ARG0 (f2 / fluorescence))))
+           :ARG1 (p / possible-01
+                    :ARG1 (d / detect-01
+                             :ARG0 (a3 / and
+                                       :op1 (a7 / antibody
+                                                :ARG0-of (o / oppose-01
+                                                            :ARG1 (e / enzyme
+                                                                     :name (n / name
+                                                                              :op1 "EGFR")))
+                                                :mod (m / mouse))
+                                       :op2 (s3 / small-molecule
+                                                :name (n3 / name
+                                                          :op1 "cetuximab")))
+                             :ARG1 (a5 / and
+                                       :op1 (e2 / express-03
+                                                :ARG2 e
+                                                :ARG3 (s2 / surface
+                                                          :poss (c / cell-line
+                                                                   :name (n4 / name
+                                                                             :op1 "A431")))
+                                                :ARG1-of (h2 / high-02))
+                                       :op2 (a6 / and
+                                                :op1 (l / level
+                                                        :degree (i / intermediate)
+                                                        :location (c2 / cell-line
+                                                                      :name (n5 / name
+                                                                                :op1 "Caski")))
+                                                :op2 (l2 / level
+                                                         :ARG1-of (l3 / low-04)
+                                                         :location (c3 / cell-line
+                                                                       :name (n6 / name
+                                                                                 :op1 "C33A")))
+                                                :mod (r2 / respective))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5B"))
+   :mod (m2 / monoclone))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt HER2 expression was more homogenous among the cell lines with Caski and C33A cells expressing 20 and 40% more HER2 than A431 cells, respectively.
+# ::file pmid_1965_4571_106.txt
+# ::date 2015-08-07T05:42:00
+# ::id pmid_1965_4571.106
+(h / homogenous
+   :domain (e2 / express-03
+               :ARG2 (e3 / enzyme
+                         :name (n2 / name
+                                   :op1 "HER2")))
+   :degree (m / more)
+   :location (a / and
+                :op1 (c / cell-line
+                        :name (n3 / name
+                                  :op1 "Caski")
+                        :ARG3-of (e4 / express-03
+                                     :ARG2 (e5 / enzyme
+                                               :name (n5 / name
+                                                         :op1 "HER2")
+                                               :quant (p2 / percentage-entity
+                                                          :value "20"
+                                                          :mod (m2 / more)
+                                                          :compared-to (c3 / cell-line
+                                                                           :name (n6 / name
+                                                                                     :op1 "A431"))))))
+                :op2 (c2 / cell-line
+                         :name (n4 / name
+                                   :op1 "C33A")
+                         :ARG3-of (e6 / express-03
+                                      :ARG2 (e7 / enzyme
+                                                :name (n7 / name
+                                                          :op1 "HER2")
+                                                :quant (p3 / percentage-entity
+                                                           :value "40"
+                                                           :mod (m3 / more)
+                                                           :compared-to c3))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The basal phosphorylation status of EGFR and HER2 was inversely correlated, with higher levels of p-EGFR in A431 cells and higher levels of p-HER2 in C33A and Caski cells (<xref ref-type="fig" rid="fig3">Figure 3A</xref>).
+# ::file pmid_1965_4571_107.txt
+# ::date 2015-08-07T05:48:13
+# ::id pmid_1965_4571.107
+(c / correlate-01
+   :ARG1 (s / status
+            :topic (p / phosphorylate-01
+                      :ARG3 e3
+                      :ARG3 e4)
+            :mod (b / basal)
+            :poss (e / enzyme
+                     :name (n / name
+                              :op1 "EGFR")))
+   :ARG2 (s2 / status
+             :topic p
+             :mod b
+             :poss (e2 / enzyme
+                       :name (n2 / name
+                                 :op1 "HER2")))
+   :manner (i / inverse)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3A"))
+   :ARG0-of (h2 / have-03
+                :ARG1 (a / and
+                         :op1 (l / level
+                                 :ARG1-of (h / high-02
+                                             :degree (m / more))
+                                 :quant-of (e3 / enzyme
+                                               :name (n3 / name
+                                                         :op1 "EGFR"))
+                                 :location (c2 / cell-line
+                                               :name (n4 / name
+                                                         :op1 "A431")))
+                         :op2 (l2 / level
+                                  :ARG1-of h
+                                  :quant-of (e4 / enzyme
+                                                :name (n5 / name
+                                                          :op1 "HER2"))
+                                  :location (a3 / and
+                                                :op1 (c3 / cell-line
+                                                         :name (n6 / name
+                                                                   :op1 "C33A"))
+                                                :op2 (c4 / cell-line
+                                                         :name (n7 / name
+                                                                   :op1 "Caski")))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt On EGF binding, the major signalling pathways activated are the MAPK and AKT cascades (<xref ref-type="other" rid="bib5">Citri and Yarden, 2006</xref>).
+# ::file pmid_1965_4571_108.txt
+# ::date 2015-08-07T05:53:45
+# ::id pmid_1965_4571.108
+(p / pathway
+   :ARG0-of (s / signal-07)
+   :ARG1-of (a / activate-01
+               :condition (b / bind-01
+                             :ARG1 (p4 / protein
+                                       :name (n2 / name
+                                                 :op1 "EGF")))
+               :ARG1-of (d2 / describe-01
+                            :ARG0 (p5 / publication-91
+                                      :ARG0 (a3 / and
+                                                :op1 (p6 / person
+                                                         :name (n5 / name
+                                                                   :op1 "Citri"))
+                                                :op2 (p7 / person
+                                                         :name (n6 / name
+                                                                   :op1 "Yarden")))
+                                      :time (d3 / date-entity
+                                                :year "2006"))))
+   :mod (m / major)
+   :domain (a2 / and
+               :op1 (p2 / pathway
+                        :name (n / name
+                                 :op1 "MAPK"))
+               :op2 (p3 / pathway
+                        :name (n3 / name
+                                  :op1 "AKT"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A431 and Caski cells show low basal levels of p-AKT whereas C33A cells have a much higher level.
+# ::file pmid_1965_4571_109.txt
+# ::date 2015-08-07T05:58:36
+# ::id pmid_1965_4571.109
+(c3 / contrast-01
+    :ARG1 (s / show-01
+             :ARG0 (a / and
+                      :op1 (c / cell-line
+                              :name (n / name
+                                       :op1 "A431"))
+                      :op2 (c2 / cell-line
+                               :name (n2 / name
+                                         :op1 "Caski")))
+             :ARG1 (l / level
+                      :ARG1-of (l2 / low-04)
+                      :mod (b / basal)
+                      :quant-of (e / enzyme
+                                   :name (n3 / name
+                                             :op1 "AKT")
+                                   :ARG3-of (p / phosphorylate-01))))
+    :ARG2 (h2 / have-03
+              :ARG0 (c4 / cell-line
+                        :name (n4 / name
+                                  :op1 "C33A"))
+              :ARG1 (l3 / level
+                        :ARG1-of (h / high-02
+                                    :degree (m / more
+                                               :mod (m2 / much))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A431 and C33A cells had higher levels of activated ERK1/2 (p-p44/42 MAPK) but no significant differences in total MAPK were observed among the cell lines (<xref ref-type="fig" rid="fig3">Figure 3A</xref>).
+# ::file pmid_1965_4571_110.txt
+# ::date 2015-08-07T06:01:28
+# ::id pmid_1965_4571.110
+(c / contrast-01
+   :ARG1 (h2 / have-03
+             :ARG0 (a / and
+                      :op1 (c2 / cell-line
+                               :name (n2 / name
+                                         :op1 "A431"))
+                      :op2 (c3 / cell-line
+                               :name (n3 / name
+                                         :op1 "C33A")))
+             :ARG1 (l / level
+                      :ARG1-of (h / high-02
+                                  :degree (m / more))
+                      :quant-of (s / slash
+                                   :op1 (e / enzyme
+                                           :name (n4 / name
+                                                     :op1 "ERK1")
+                                           :ARG1-of (a2 / activate-01
+                                                        :ARG1 e2))
+                                   :op2 (e2 / enzyme
+                                            :name (n5 / name
+                                                      :op1 "ERK2")))
+                      :ARG1-of (m2 / mean-01
+                                   :ARG2 (s2 / slash
+                                             :op1 (e3 / enzyme
+                                                      :name (n8 / name
+                                                                :op1 "p44"
+                                                                :op2 "MAPK")
+                                                      :ARG3-of (p2 / phosphorylate-01
+                                                                   :ARG3 e4))
+                                             :op2 (e4 / enzyme
+                                                      :name (n / name
+                                                               :op1 "p42"
+                                                               :op2 "MAPK"))))))
+   :ARG2 (o / observe-01
+            :polarity "-"
+            :ARG1 (d / differ-02
+                     :ARG1 (e5 / enzyme
+                               :name (n7 / name
+                                         :op1 "MAPK")
+                               :mod (t / total))
+                     :ARG1-of (s3 / significant-02))
+            :location (c4 / cell-line))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "3A")))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To investigate the molecular determinants for cetuximab's effects in MTT and CA, we analysed EGFR phosphorylation by WB in cells treated with cetuximab (100 <i>μ</i>g ml<sup>−1</sup>) alone or in the presence of EGF.
+# ::file pmid_1965_4571_112.txt
+# ::date 2015-08-07T06:10:35
+# ::id pmid_1965_4571.112
+(a / analyze-01
+   :ARG0 (w / we)
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (e / enzyme
+                     :name (n2 / name
+                               :op1 "EGFR")))
+   :location (c / cell
+                :ARG1-of (t / treat-04
+                            :ARG2 (o / or
+                                     :op1 (s / small-molecule
+                                             :name (n3 / name
+                                                       :op1 "cetuximab")
+                                             :quant (c2 / concentration-quantity
+                                                        :quant "100"
+                                                        :unit (m / microgram-per-milliliter))
+                                             :mod (a2 / alone))
+                                     :op2 (s2 / small-molecule
+                                              :name (n4 / name
+                                                        :op1 "cetuximab")
+                                              :quant c2
+                                              :condition (p2 / present-02
+                                                             :ARG1 (p3 / protein
+                                                                       :name (n5 / name
+                                                                                 :op1 "EGF")))))))
+   :purpose (i / investigate-01
+               :ARG0 w
+               :ARG1 (t2 / thing
+                         :ARG0-of (d / determine-01
+                                     :ARG1 (a3 / affect-01
+                                               :ARG0 s
+                                               :time (a4 / and
+                                                         :op1 (a5 / assay-01
+                                                                  :instrument (s3 / small-molecule
+                                                                                  :name (n / name
+                                                                                           :op1 "MTT")))
+                                                         :op2 (a6 / assay-01
+                                                                  :mod (c3 / clonogenic)))))
+                         :mod (m2 / molecule)))
+   :manner (i2 / immunoblot-01
+               :ARG0 w))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Receptor phosphorylation was increased by EGF in A431 and Caski cells, whereas cetuximab reduced it (<xref ref-type="fig" rid="fig3">Figures 3B and C</xref>).
+# ::file pmid_1965_4571_113.txt
+# ::date 2015-08-07T06:18:13
+# ::id pmid_1965_4571.113
+(c3 / contrast-01
+    :ARG1 (i / increase-01
+             :ARG0 (p2 / protein
+                       :name (n / name
+                                :op1 "EGF"))
+             :ARG1 (p / phosphorylate-01
+                      :ARG1 (r / receptor))
+             :location (a / and
+                          :op1 (c / cell-line
+                                  :name (n2 / name
+                                            :op1 "A431"))
+                          :op2 (c2 / cell-line
+                                   :name (n3 / name
+                                             :op1 "Caski"))))
+    :ARG2 (r2 / reduce-01
+              :ARG0 (s2 / small-molecule
+                        :name (n4 / name
+                                  :op1 "cetuximab"))
+              :ARG1 p)
+    :ARG1-of (d / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f / figure
+                                  :mod "3B")
+                          :op2 (f2 / figure
+                                   :mod "3C"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Epidermal growth factor and cetuximab also induced a slight decrease in the total amount of EGFR in these cells (<xref ref-type="fig" rid="fig3">Figures 3B and C</xref>).
+# ::file pmid_1965_4571_114.txt
+# ::date 2015-08-07T06:20:52
+# ::id pmid_1965_4571.114
+(i / induce-01
+   :ARG0 (a / and
+            :op1 (p / protein
+                    :name (n4 / name
+                              :op1 "epidermal"
+                              :op2 "growth"
+                              :op3 "factor"))
+            :op2 (s / small-molecule
+                    :name (n3 / name
+                              :op1 "cetuximab")))
+   :ARG2 (d / decrease-01
+            :ARG1 (a3 / amount
+                      :mod (t / total)
+                      :quant-of (e / enzyme
+                                   :name (n2 / name
+                                             :op1 "EGFR")))
+            :degree (s2 / slight)
+            :location (c / cell
+                         :mod (t2 / this)))
+   :mod (a2 / also)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a4 / and
+                          :op1 (f / figure
+                                  :mod "3B")
+                          :op2 (f2 / figure
+                                   :mod "3C"))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Epidermal growth factor receptor can interact with another member of the ErbB family, HER2, to form heterodimers that are very potent in activating signal transduction pathways (<xref ref-type="other" rid="bib5">Citri and Yarden, 2006</xref>).
+# ::file pmid_1965_4571_115.txt
+# ::date 2015-08-04T07:50:24
+# ::id pmid_1965_4571.115
+(p / possible-01
+   :ARG1 (i / interact-01
+            :ARG0 (e / enzyme
+                     :name (n3 / name
+                               :op1 "epidermal"
+                               :op2 "growth"
+                               :op3 "factor"
+                               :op4 "receptor"))
+            :ARG1 (m / member
+                     :mod (a / another)
+                     :ARG1-of (i2 / include-91
+                                  :ARG2 (p2 / protein-family
+                                            :name (n4 / name
+                                                      :op1 "ErbB")))
+                     :ARG1-of (m2 / mean-01
+                                  :ARG2 (e3 / enzyme
+                                            :name (n5 / name
+                                                      :op1 "HER2"))))
+            :purpose (f2 / form-01
+                         :ARG0 e
+                         :ARG1 (h / heterodimer
+                                  :ARG1-of (c / capable-01
+                                              :ARG2 (a2 / activate-01
+                                                        :ARG1 (p3 / pathway
+                                                                  :ARG2-of (t / transduce-01
+                                                                              :ARG1 (s2 / signal-07))))
+                                              :degree (v / very)))
+                         :ARG2 (a4 / and
+                                   :op1 e
+                                   :op2 m)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p4 / publication-91
+                          :ARG0 (a3 / and
+                                    :op1 (p5 / person
+                                             :name (n7 / name
+                                                       :op1 "Citri"))
+                                    :op2 (p6 / person
+                                             :name (n8 / name
+                                                       :op1 "Yarden"))
+                                    :time (d / date-entity
+                                             :year "2006")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt On cetuximab treatment there were no changes in total HER2 in the CC cell lines, whereas EGF-induced HER2 phosphorylation was inhibited in A431 and Caski cells (<xref ref-type="fig" rid="fig3">Figures 3B and C</xref>).
+# ::file pmid_1965_4571_116.txt
+# ::date 2015-08-04T08:49:30
+# ::id pmid_1965_4571.116
+(c / contrast-01
+   :ARG1 (h / have-condition-91
+            :ARG1 (c2 / change-01
+                      :polarity "-"
+                      :ARG1 (e / enzyme
+                               :name (n / name
+                                        :op1 "HER2")
+                               :mod (t2 / total))
+                      :location (c3 / cell-line
+                                    :mod (d / disease
+                                            :wiki "Cervical_cancer"
+                                            :name (n3 / name
+                                                      :op1 "cervical"
+                                                      :op2 "cancer"))))
+            :ARG2 (t / treat-04
+                     :ARG2 (s / small-molecule
+                              :name (n2 / name
+                                        :op1 "cetuximab"))))
+   :ARG2 (i / inhibit-01
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 e
+                     :ARG2-of (i2 / induce-01
+                                  :ARG0 (p2 / protein
+                                            :name (n4 / name
+                                                      :op1 "EGF"))))
+            :location (a / and
+                         :op1 (c4 / cell-line
+                                  :name (n5 / name
+                                            :op1 "A431"))
+                         :op2 (c5 / cell-line
+                                  :name (n6 / name
+                                            :op1 "Caski"))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f / figure
+                                  :mod "3B")
+                          :op2 (f2 / figure
+                                   :mod "3C"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, in C33A cells, which express more HER2 than EGFR (<xref ref-type="fig" rid="fig3">Fig 3A</xref>), cetuximab markedly reduced EGF-induced HER2 phosphorylation (<xref ref-type="fig" rid="fig3">Figure 3D</xref>).
+# ::file pmid_1965_4571_117.txt
+# ::date 2015-08-04T09:24:51
+# ::id pmid_1965_4571.117
+(r / reduce-01
+   :ARG0 (s / small-molecule
+            :name (n3 / name
+                      :op1 "cetuximab"))
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "HER2"))
+            :ARG2-of (i / induce-01
+                        :ARG0 (p2 / protein
+                                  :name (n2 / name
+                                            :op1 "EGF"))))
+   :manner (m / marked)
+   :location (c / cell-line
+                :name (n4 / name
+                          :op1 "C33A")
+                :ARG3-of (e3 / express-03
+                             :ARG2 e
+                             :ARG1-of (d / describe-01
+                                         :ARG0 (f / figure
+                                                  :mod "3A"))
+                             :degree (m2 / more)
+                             :compared-to (e2 / enzyme
+                                              :name (n5 / name
+                                                        :op1 "EGFR"))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "3D"))
+   :mod (i2 / interesting))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There were no changes in total AKT and MAPK proteins in all cell lines on cetuximab treatment (<xref ref-type="fig" rid="fig3">Figures 3B–D</xref>).
+# ::file pmid_1965_4571_118.txt
+# ::date 2015-08-04T09:45:20
+# ::id pmid_1965_4571.118
+(c / change-01
+   :polarity "-"
+   :ARG1 (a / and
+            :op1 (p2 / protein-family
+                     :name (n2 / name
+                               :op1 "AKT"))
+            :op2 (p / protein-family
+                    :name (n / name
+                             :op1 "MAPK"))
+            :mod (t2 / total))
+   :location (c2 / cell-line
+                 :mod (a2 / all)
+                 :ARG1-of (t / treat-04
+                             :ARG2 (s / small-molecule
+                                      :name (n3 / name
+                                                :op1 "cetuximab"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (v / value-interval
+                        :op1 (f / figure
+                                :mod "3B")
+                        :op2 (f2 / figure
+                                 :mod "3D"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Epidermal growth factor increased AKT and ERK1/2 phosphorylation in A431 and Caski cells but in C33A cells there was only a slight increase.
+# ::file pmid_1965_4571_119.txt
+# ::date 2015-08-04T10:32:43
+# ::id pmid_1965_4571.119
+(c / contrast-01
+   :ARG1 (i / increase-01
+            :ARG0 (p2 / protein
+                      :name (n2 / name
+                                :op1 "epidermal"
+                                :op2 "growth"
+                                :op3 "factor"))
+            :ARG1 (a / and
+                     :op1 (p / phosphorylate-01
+                             :ARG1 (e / enzyme
+                                      :name (n3 / name
+                                                :op1 "AKT")))
+                     :op1 (p3 / phosphorylate-01
+                              :ARG1 (e2 / enzyme
+                                        :name (n4 / name
+                                                  :op1 "ERK1/2"))))
+            :location (a2 / and
+                          :op1 (c2 / cell-line
+                                   :name (n5 / name
+                                             :op1 "A431"))
+                          :op2 (c3 / cell-line
+                                   :name (n6 / name
+                                             :op1 "Caski"))))
+   :ARG2 (i2 / increase-01
+             :ARG0 p2
+             :ARG1 a
+             :location (c4 / cell-line
+                           :name (n7 / name
+                                     :op1 "C33A"))
+             :mod (o / only)
+             :degree (s2 / slight)))
+
+
+# ::save-date Wed Aug 5, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This was not unexpected, because both pathways are activated in this cell line (<xref ref-type="fig" rid="fig3">Figure 3A</xref>).
+# ::file pmid_1965_4571_120.txt
+# ::date 2015-08-04T10:54:11
+# ::id pmid_1965_4571.120
+(c / cause-01
+      :ARG0 (a / activate-01
+            :ARG1 (p / pathway
+                  :mod (b / both))
+            :location (c2 / cell-line
+                  :mod (t / this)))
+      :ARG1 (e / expect-01
+            :polarity "-"
+            :ARG1 (t2 / this))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "3A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cetuximab inhibited EGF-induced AKT phosphorylation more strongly in A431 cells and less so in Caski and C33A cells.
+# ::file pmid_1965_4571_121.txt
+# ::date 2015-08-04T11:10:51
+# ::id pmid_1965_4571.121
+(a2 / and
+    :op1 (i / inhibit-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "cetuximab"))
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (e / enzyme
+                              :name (n2 / name
+                                        :op1 "AKT"))
+                     :ARG2-of (i2 / induce-01
+                                  :ARG0 (p2 / protein
+                                            :name (n3 / name
+                                                      :op1 "EGF"))))
+            :ARG1-of (s2 / strong-02
+                         :degree (m / more))
+            :location (c / cell-line
+                         :name (n4 / name
+                                   :op1 "A431")))
+    :op2 (i3 / inhibit-01
+             :ARG0 s
+             :ARG1 p
+             :degree (l / less)
+             :location (a / and
+                          :op1 (c2 / cell-line
+                                   :name (n5 / name
+                                             :op1 "Caski"))
+                          :op2 (c3 / cell-line
+                                   :name (n6 / name
+                                             :op1 "C33A")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Indeed, it markedly reduced EGF-induced ERK1/2 phosphorylation in A431 cells, but in Caski and C33A cells the reduction was more modest (60 and 20% inhibition, respectively; <xref ref-type="fig" rid="fig3">Figures 3B–D</xref>), suggesting that persistent signalling through these pathways led to increased survival of Caski and C33A cells, when compared to A431 cells in the presence of cetuximab.
+# ::file pmid_1965_4571_122.txt
+# ::date 2015-08-04T11:17:17
+# ::id pmid_1965_4571.122
+(c / contrast-01
+   :ARG1 (r / reduce-01
+            :ARG0 (i / it)
+            :ARG1 (p2 / phosphorylate-01
+                      :ARG1 (e / enzyme
+                               :name (n / name
+                                        :op1 "ERK1/2"))
+                      :ARG2-of (i2 / induce-01
+                                   :ARG0 (p3 / protein
+                                             :name (n2 / name
+                                                       :op1 "EGF"))))
+            :location (c2 / cell-line
+                          :name (n3 / name
+                                    :op1 "A431"))
+            :manner (m4 / marked))
+   :ARG2 (r3 / reduce-01
+             :ARG1 p2
+             :mod (m / modest
+                     :degree (m2 / more))
+             :location (a / and
+                          :op1 (c3 / cell-line
+                                   :name (n4 / name
+                                             :op1 "Caski"))
+                          :op2 (c4 / cell-line
+                                   :name (n5 / name
+                                             :op1 "C33A")))
+             :ARG1-of (m3 / mean-01
+                          :ARG2 (a2 / and
+                                    :op1 (i3 / inhibit-01
+                                             :quant (p4 / percentage-entity
+                                                        :value "60")
+                                             :location c3)
+                                    :op2 (i4 / inhibit-01
+                                             :quant (p / percentage-entity
+                                                       :value "20")
+                                             :location c4)
+                                    :mod (r2 / respective))))
+   :ARG0-of (s / suggest-01
+               :ARG1 (l / lead-03
+                        :ARG0 (s2 / signal-07
+                                  :ARG0 (p6 / pathway
+                                            :mod (t / this))
+                                  :ARG1-of (p5 / persist-01))
+                        :ARG2 (s3 / survive-01
+                                  :ARG1 (a3 / and
+                                            :op1 c3
+                                            :op2 c4)
+                                  :ARG1-of (i5 / increase-01))
+                        :time (c5 / compare-01
+                                  :ARG2 (c6 / cell-line
+                                            :name (n6 / name
+                                                      :op1 "A431")
+                                            :ARG2-of (p7 / present-02
+                                                         :ARG1 (s4 / small-molecule
+                                                                   :name (n7 / name
+                                                                             :op1 "cetuximab")))))))
+   :mod (i6 / indeed)
+   :ARG1-of (d / describe-01
+               :ARG0 (v / value-interval
+                        :op1 (f / figure
+                                :mod "3B")
+                        :op2 (f2 / figure
+                                 :mod "3D"))))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We speculated that cells expressing higher EGFR/HER2 ratios, such as A431 cells, rely more on EGFR signalling for MAPK pathway activation and cell proliferation, whereas cells with a lower EGFR/HER2 ratio, such as C33A cells, depend more on EGFR/HER2 heterodimer signalling.
+# ::file pmid_1965_4571_124.txt
+# ::date 2015-08-04T11:41:50
+# ::id pmid_1965_4571.124
+(s / speculate-01
+   :ARG0 (w / we)
+   :ARG1 (c / contrast-01
+            :ARG1 (r / rely-01
+                     :ARG0 (c2 / cell-line
+                               :ARG3-of (e2 / express-03
+                                            :ARG2 (r2 / ratio-of
+                                                      :op1 (m3 / macro-molecular-complex
+                                                               :part (e3 / enzyme
+                                                                         :name (n3 / name
+                                                                                   :op1 "EGFR"))
+                                                               :part (e4 / enzyme
+                                                                         :name (n4 / name
+                                                                                   :op1 "HER2")))
+                                                      :ARG1-of (h2 / high-02
+                                                                   :degree (m4 / more))
+                                                      :part e3))
+                               :example (c3 / cell-line
+                                            :name (n5 / name
+                                                      :op1 "A431")))
+                     :ARG1 (a / and
+                              :op1 (a2 / activate-01
+                                       :ARG1 (p2 / pathway
+                                                 :name (n6 / name
+                                                           :op1 "MAPK")
+                                                 :ARG0-of (s2 / signal-07
+                                                              :ARG1 e3)))
+                              :op2 (p3 / proliferate-01
+                                       :ARG0 (c4 / cell)))
+                     :degree m4)
+            :ARG2 (d / depend-01
+                     :ARG0 (c5 / cell-line
+                               :ARG0-of (h3 / have-03
+                                            :ARG1 (r3 / ratio-of
+                                                      :op1 m3
+                                                      :ARG1-of (l2 / low-04
+                                                                   :degree m4)
+                                                      :part e4))
+                               :example (c6 / cell-line
+                                            :name (n7 / name
+                                                      :op1 "C33A")))
+                     :ARG1 (s3 / signal-07
+                               :ARG1 (h / heterodimer
+                                        :mod m3))
+                     :degree m4)))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Based on this assumption, the inhibition of the EGFR/HER2 heterodimer by anti-EGFR (cetuximab) and anti-HER2 (trastuzumab) MAbs should interfere with C33A cell proliferation.
+# ::file pmid_1965_4571_125.txt
+# ::date 2015-08-04T11:51:49
+# ::id pmid_1965_4571.125
+(p / possible-01
+   :ARG1 (i / interfere-01
+            :ARG0 (i2 / inhibit-01
+                      :ARG0 (a3 / antibody
+                                :mod (m3 / monoclone)
+                                :ARG1-of (m / mean-01
+                                            :ARG2 (a / and
+                                                     :op1 (s / small-molecule
+                                                             :name (n / name
+                                                                      :op1 "cetuximab")
+                                                             :ARG0-of (c / counter-01
+                                                                         :ARG1 "e"))
+                                                     :op2 (s2 / small-molecule
+                                                              :name (n5 / name
+                                                                        :op1 "trastuzumab")
+                                                              :ARG0-of (c2 / counter-01
+                                                                           :ARG1 "e2")))))
+                      :ARG1 (h / heterodimer
+                               :part (e / enzyme
+                                        :name (n2 / name
+                                                  :op1 "EGFR"))
+                               :part (e2 / enzyme
+                                         :name (n3 / name
+                                                   :op1 "HER2"))))
+            :ARG1 (p2 / proliferate-01
+                      :ARG0 (c3 / cell-line
+                                :name (n7 / name
+                                          :op1 "C33A"))))
+   :ARG1-of (b / base-02
+               :ARG2 (a2 / assume-02
+                         :mod (t / this))))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As expected, this combination markedly reduced C33A cell colony formation leading to a synergistic interaction (<i>R</i>=0.58; <xref ref-type="fig" rid="fig4">Figures 4A and B</xref>), with concomitant reduction of MAPK and AKT phosphorylation (<xref ref-type="fig" rid="fig4">Figure 4D</xref>).
+# ::file pmid_1965_4571_126.txt
+# ::date 2015-08-04T13:29:57
+# ::id pmid_1965_4571.126
+(r / reduce-01
+   :ARG0 (c / combine-01
+            :mod (t / this))
+   :ARG1 (f / form-01
+            :ARG1 (c2 / colony
+                      :mod (c3 / cell-line
+                               :name (n2 / name
+                                         :op1 "C33A"))))
+   :manner (m / marked)
+   :ARG0-of (l / lead-03
+               :ARG2 (i / interact-01
+                        :ARG0-of (s / synergize-01)
+                        :ARG0-of (h / have-03
+                                    :ARG1 (r3 / reduce-01
+                                              :ARG1 (a3 / and
+                                                        :op1 (p2 / phosphorylate-01
+                                                                 :ARG1 (e4 / enzyme
+                                                                           :name (n / name
+                                                                                    :op1 "MAPK")))
+                                                        :op2 (p3 / phosphorylate-01
+                                                                 :ARG1 (e / enzyme
+                                                                          :name (n3 / name
+                                                                                    :op1 "AKT"))))
+                                              :mod (c4 / concomitant)
+                                              :ARG1-of (d2 / describe-01
+                                                           :ARG0 (f4 / figure
+                                                                     :mod "4D"))))
+                        :ARG1-of (m2 / mean-01
+                                     :ARG2 (s2 / string-entity
+                                               :value "R"
+                                               :ARG1-of (e3 / equal-01
+                                                            :ARG2 "0.58")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a2 / and
+                         :op1 (f2 / figure
+                                  :mod "4A")
+                         :op2 (f3 / figure
+                                  :mod "4B")))
+   :ARG1-of (e2 / expect-01))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Indeed, an additive effect (<i>R</i>=0.84) was also noted for Caski cells, that express intermediate levels of EGFR and HER2 (<xref ref-type="fig" rid="fig3">Figure 3A</xref>), with a decrease of almost 60% in cell survival (<xref ref-type="fig" rid="fig4">Figures 4A and B</xref>) and inhibition of downstream signalling pathways (MAPK and AKT; <xref ref-type="fig" rid="fig4">Figure 4C</xref>).
+# ::file pmid_1965_4571_127.txt
+# ::date 2015-08-04T13:47:05
+# ::id pmid_1965_4571.127
+(n4 / note-02
+    :ARG1 (a / affect-01
+             :ARG1-of (a2 / add-02)
+             :ARG1-of (m2 / mean-01
+                          :ARG2 (s3 / string-entity
+                                    :value "R"
+                                    :ARG1-of (e4 / equal-01
+                                                 :ARG2 "0.84"))))
+    :ARG2 (c / cell-line
+             :name (n5 / name
+                       :op1 "Caski")
+             :ARG3-of (e3 / express-03
+                          :ARG2 (a4 / and
+                                    :op1 (l / level
+                                            :quant-of (e / enzyme
+                                                         :name (n / name
+                                                                  :op1 "EGFR")))
+                                    :op2 (l2 / level
+                                             :quant-of (e2 / enzyme
+                                                           :name (n2 / name
+                                                                     :op1 "HER2")))
+                                    :mod (i2 / intermediate))
+                          :ARG1-of (d / describe-01
+                                      :ARG0 (f / figure
+                                               :mod "3A")))
+             :ARG0-of (h / have-03
+                         :ARG1 (d2 / decrease-01
+                                   :ARG1 (a5 / and
+                                             :op1 (s / survive-01
+                                                     :ARG1 (c2 / cell)
+                                                     :ARG1-of (d3 / describe-01
+                                                                  :ARG0 (a6 / and
+                                                                            :op1 (f2 / figure
+                                                                                     :mod "4A")
+                                                                            :op2 (f3 / figure
+                                                                                     :mod "4B"))))
+                                             :op2 (i3 / inhibit-01
+                                                      :ARG1 (p3 / pathway
+                                                                :ARG0-of (s2 / signal-07
+                                                                             :location (d4 / downstream))
+                                                                :ARG1-of (m / mean-01
+                                                                            :ARG2 (a7 / and
+                                                                                      :op1 (p2 / pathway
+                                                                                               :name (n3 / name
+                                                                                                         :op1 "MAPK"))
+                                                                                      :op2 (p4 / pathway
+                                                                                               :name (n6 / name
+                                                                                                         :op1 "AKT")))))
+                                                      :ARG1-of (d5 / describe-01
+                                                                   :ARG0 (f4 / figure
+                                                                             :mod "4C"))))
+                                   :ARG2 (p / percentage-entity
+                                            :value "60"
+                                            :mod (a8 / almost)))))
+    :mod (a3 / also)
+    :mod (i / indeed))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There were no changes in total AKT and MAPK proteins in Caski and C33A cell lines on treatments (data not shown).
+# ::file pmid_1965_4571_128.txt
+# ::date 2015-08-04T14:02:11
+# ::id pmid_1965_4571.128
+(c / change-01
+      :polarity "-"
+      :ARG1 (a / and
+            :op1 (p2 / protein-family
+                  :name (n2 / name :op1 "AKT")
+                  :mod (t / total))
+            :op2 (p / protein-family
+                  :name (n / name :op1 "MAPK")))
+      :location (a2 / and
+            :op1 (c2 / cell-line
+                  :name (n3 / name :op1 "Caski"))
+            :op2 (c3 / cell-line
+                  :name (n4 / name :op1 "C33A"))
+            :ARG1-of (t2 / treat-04))
+      :ARG1-of (d / describe-01
+            :ARG0 (d2 / data
+                  :ARG1-of (s / show-01 :polarity "-"))))
+
+# ::save-date Tue Jan 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Based on the idea of an EGFR/HER2 heterodimer signalling dependency of C33A cells, we investigated whether further EGFR inhibition with another targeted drug, such as TKIs, affected more Caski than C33A cells.
+# ::file pmid_1965_4571_130.txt
+# ::date 2015-08-04T14:12:43
+# ::id pmid_1965_4571.130
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :mode "interrogative"
+            :ARG0 (i2 / inhibit-01
+                      :ARG0 (d / drug
+                               :mod (a2 / another)
+                               :ARG1-of (t / target-01)
+                               :example (s / small-molecule
+                                           :wiki "Tyrosine-kinase_inhibitor"
+                                           :name (n2 / name
+                                                     :op1 "TKI")))
+                      :ARG1 (e / enzyme
+                               :wiki "Epidermal_growth_factor_receptor"
+                               :name (n / name
+                                        :op1 "EGFR"))
+                      :degree (f / further))
+            :ARG1 (c / cell-line
+                     :wiki "-"
+                     :name (n3 / name
+                               :op1 "Caski"))
+            :degree (m2 / more)
+            :compared-to (c2 / cell-line
+                             :wiki "-"
+                             :name (n4 / name
+                                       :op1 "C33A")))
+   :ARG1-of (b / base-02
+               :ARG0 (i3 / idea
+                         :topic (d2 / depend-01
+                                    :ARG0 c2
+                                    :ARG1 (s2 / signal-07
+                                              :ARG1 (h / heterodimer
+                                                       :part e
+                                                       :part (e2 / enzyme
+                                                                 :wiki "HER2/neu"
+                                                                 :name (n6 / name
+                                                                           :op1 "HER2"))))))))
+
+# ::save-date Tue Aug 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, we tested the combination of cetuximab with a specific EGFR TKI (PD153035).
+# ::file pmid_1965_4571_131.txt
+# ::date 2015-08-04T14:20:43
+# ::id pmid_1965_4571.131
+(c / cause-01
+   :ARG1 (t / test-01
+            :ARG0 (w / we)
+            :ARG1 (c2 / combine-01
+                      :ARG1 (s / small-molecule
+                               :name (n2 / name
+                                         :op1 "cetuximab"))
+                      :ARG2 (s2 / small-molecule
+                                :name (n3 / name
+                                          :op1 "TKI")
+                                :mod (s3 / specific)
+                                :ARG0-of (i / inhibit-01
+                                            :ARG1 (e / enzyme
+                                                     :name (n / name
+                                                              :op1 "EGFR")))
+                                :ARG1-of (m / mean-01
+                                            :ARG2 (s4 / small-molecule
+                                                      :name (n4 / name
+                                                                :op1 "PD153035")))))))
+
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As expected, combined treatments reduced Caski cell survival leading to an additive interaction (<i>R</i>=0.94) when compared to treatments alone (<xref ref-type="fig" rid="fig4">Figure 4E</xref>).
+# ::file pmid_1965_4571_132.txt
+# ::date 2015-08-05T09:07:28
+# ::id pmid_1965_4571.132
+(r / reduce-01
+      :ARG0 (t / treat-04
+            :ARG1-of (c / combine-01))
+      :ARG1 (s / survive-01
+            :ARG1 (c2 / cell-line
+                  :name (n / name :op1 "Caski")))
+      :ARG0-of (l / lead-03
+            :ARG2 (i / interact-01
+                  :ARG1-of (a / add-02)
+                  :ARG1-of (m / mean-01
+                        :ARG2 (s2 / string-entity
+                              :value "R"
+                              :ARG1-of (e2 / equal-01 :ARG2 "0.94"))))
+            :condition (c3 / compare-01
+                  :ARG1 t
+                  :ARG2 (t2 / treat-04
+                        :mod (a2 / alone))))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "4E"))
+      :ARG1-of (e / expect-01))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Additionally, the double treatment in Caski cells was accompanied by a greater reduction of EGFR, HER2, AKT and MAPK phosphorylation (<xref ref-type="fig" rid="fig4">Figure 4G</xref>).
+# ::file pmid_1965_4571_133.txt
+# ::date 2015-08-05T09:20:24
+# ::id pmid_1965_4571.133
+(a / and
+   :op2 (a2 / accompany-01
+            :ARG0 (r / reduce-01
+                     :ARG1 (a3 / and
+                               :op1 (p2 / phosphorylate-01
+                                        :ARG1 (e / enzyme
+                                                 :name (n / name
+                                                          :op1 "EGFR")))
+                               :op2 (p3 / phosphorylate-01
+                                        :ARG1 (e2 / enzyme
+                                                  :name (n2 / name
+                                                            :op1 "HER2")))
+                               :op3 (p4 / phosphorylate-01
+                                        :ARG1 (e3 / enzyme
+                                                  :name (n5 / name
+                                                            :op1 "AKT")))
+                               :op4 (p5 / phosphorylate-01
+                                        :ARG1 (e4 / enzyme
+                                                  :name (n3 / name
+                                                            :op1 "MAPK"))))
+                     :mod (g / great
+                             :degree (m / more)))
+            :ARG1 (t / treat-04
+                     :ARG1 (c / cell-line
+                              :name (n4 / name
+                                        :op1 "Caski"))
+                     :mod (d / double)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "4G")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Isolated cetuximab or PD153035 treatments reduced the survival of C33A cells in CA by the same proportion, reaching a more modest inhibition of HER2, AKT and MAPK phosphorylation than in Caski cells (<xref ref-type="fig" rid="fig4">Figures 4E and G</xref>).
+# ::file pmid_1965_4571_134.txt
+# ::date 2015-08-05T09:29:36
+# ::id pmid_1965_4571.134
+(r / reduce-01
+   :ARG0 (o / or
+            :op1 (t / treat-04
+                    :ARG2 (s2 / small-molecule
+                              :name (n4 / name
+                                        :op1 "cetuximab")
+                              :ARG1-of (i / isolate-01)))
+            :op2 (t2 / treat-04
+                     :ARG2 (s3 / small-molecule
+                               :name (n5 / name
+                                         :op1 "PD153035"))))
+   :ARG1 (s4 / survive-01
+             :ARG1 (c / cell-line
+                      :name (n6 / name
+                                :op1 "C33A")))
+   :ARG2 (p3 / proportion-01
+             :ARG1-of (s5 / same-01))
+   :ARG0-of (c2 / cause-01
+                :ARG1 (r2 / reach-01
+                          :ARG1 (i2 / inhibit-01
+                                    :ARG1 (a / and
+                                             :op1 (p2 / phosphorylate-01
+                                                      :ARG1 (e / enzyme
+                                                               :name (n2 / name
+                                                                         :op1 "HER2")))
+                                             :op2 (p4 / phosphorylate-01
+                                                      :ARG1 (e2 / enzyme
+                                                                :name (n8 / name
+                                                                          :op1 "AKT")))
+                                             :op3 (p5 / phosphorylate-01
+                                                      :ARG1 (e3 / enzyme
+                                                                :name (n3 / name
+                                                                          :op1 "MAPK"))))
+                                    :mod (m / modest
+                                            :degree (m2 / more))
+                                    :compared-to (c3 / cell-line
+                                                     :name (n9 / name
+                                                               :op1 "Caski")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a2 / and
+                         :op1 (f / figure
+                                 :mod "4E")
+                         :op2 (f2 / figure
+                                  :mod "4G")))
+   :time (a3 / assay-01
+             :mod (c4 / clonogenic)))
+
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, the combined treatment proved to be antagonistic (<i>R</i>=1.28), with no decrease in phosphorylated proteins when compared to either drug alone (<xref ref-type="fig" rid="fig4">Figures 4E and G</xref>).
+# ::file pmid_1965_4571_135.txt
+# ::date 2015-08-05T09:46:52
+# ::id pmid_1965_4571.135
+(c / contrast-01
+      :ARG2 (a2 / and
+            :op1 (p / prove-01
+                  :ARG1 (a / antagonize-01
+                        :ARG0 (t / treat-04
+                              :ARG1-of (c2 / combine-01))
+                        :ARG1-of (m / mean-01
+                              :ARG2 (s / string-entity
+                                    :value "R"
+                                    :ARG1-of (e2 / equal-01 :ARG2 "1.28")))))
+            :op2 (d / decrease-01
+                  :polarity "-"
+                  :ARG1 (p2 / protein
+                        :ARG3-of (p3 / phosphorylate-01))
+                  :time (c3 / compare-01
+                        :ARG1 t
+                        :ARG2 (d2 / drug
+                              :mod (e / either)
+                              :mod (a3 / alone)))))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (a4 / and
+                  :op1 (f / figure :mod "4E")
+                  :op2 (f2 / figure :mod "4G"))))
+
+# ::save-date Tue Aug 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Altogether, these data corroborate with our hypothesis that C33A cells are not so dependent on EGFR signalling for proliferation, as double EGFR inhibition with different drugs did not enhance the toxicity achieved by either agent alone.
+# ::file pmid_1965_4571_136.txt
+# ::date 2015-08-05T09:57:43
+# ::id pmid_1965_4571.136
+(c / corroborate-01
+   :ARG0 (a / and
+            :op1 (d / data
+                    :mod (t2 / this))
+            :op2 (t / thing
+                    :ARG1-of (h / hypothesize-01
+                                :ARG0 (w / we))))
+   :ARG1 (d2 / depend-01
+             :polarity "-"
+             :ARG0 (c2 / cell-line
+                       :name (n2 / name
+                                 :op1 "C33A"))
+             :ARG1 (s / signal-07
+                      :ARG1 (e / enzyme
+                               :name (n / name
+                                        :op1 "EGFR")))
+             :purpose (p / proliferate-01)
+             :ARG1-of (c3 / cause-01
+                          :ARG0 (e2 / enhance-01
+                                    :polarity "-"
+                                    :ARG0 (i / inhibit-01
+                                             :ARG0 (d3 / drug
+                                                       :ARG1-of (d4 / differ-02))
+                                             :ARG1 e
+                                             :mod (d5 / double))
+                                    :ARG1 (t3 / toxicity
+                                              :ARG1-of (a2 / achieve-01
+                                                           :ARG0 (a3 / agent
+                                                                     :mod (e3 / either)
+                                                                     :mod (a4 / alone))))))
+             :mod (s2 / so))
+   :mod (a5 / altogether))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Additionally, the targeting of EGFR and HER2 with two different MAbs showed synergistic inhibitory effects (<xref ref-type="fig" rid="fig4">Figures 4A and B</xref>) demonstrating that heterodimer signalling is necessary for C33A cell proliferation.
+# ::file pmid_1965_4571_137.txt
+# ::date 2015-08-05T10:07:59
+# ::id pmid_1965_4571.137
+(a / and
+   :op2 (s / show-01
+           :ARG0 (t / target-01
+                    :ARG1 (a2 / and
+                              :op1 (e / enzyme
+                                      :name (n / name
+                                               :op1 "EGFR"))
+                              :op2 (e2 / enzyme
+                                       :name (n2 / name
+                                                 :op1 "HER2")))
+                    :ARG2 (a5 / antibody
+                              :ARG1-of (d / differ-02)))
+           :ARG1 (a3 / affect-01
+                     :ARG2 (s2 / synergize-01)
+                     :ARG0-of (i / inhibit-01))
+           :ARG1-of (d2 / describe-01
+                        :ARG0 (a4 / and
+                                  :op1 (f / figure
+                                          :mod "4A")
+                                  :op2 (f2 / figure
+                                           :mod "4B")))
+           :ARG0-of (d3 / demonstrate-01
+                        :ARG1 (n3 / need-01
+                                  :ARG1 (s4 / signal-07
+                                            :ARG1 (h / heterodimer))
+                                  :purpose (p / proliferate-01
+                                              :ARG0 (c / cell-line
+                                                       :name (n6 / name
+                                                                 :op1 "C33A")))))))
+
+# ::save-date Tue Aug 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, these data indicate that the successful inhibition of the MAPK and/or AKT pathways is a determinant factor for cetuximab efficacy in all CC cell lines.
+# ::file pmid_1965_4571_138.txt
+# ::date 2015-08-05T10:15:32
+# ::id pmid_1965_4571.138
+(a / and
+   :op2 (i / indicate-01
+           :ARG0 (d / data
+                    :mod (t / this))
+           :ARG1 (f / factor
+                    :domain (i2 / inhibit-01
+                                :ARG1 (a3 / and-or
+                                          :op1 (p / pathway
+                                                  :name (n / name
+                                                           :op1 "MAPK"))
+                                          :op2 (p2 / pathway
+                                                   :name (n2 / name
+                                                             :op1 "AKT")))
+                                :ARG0-of (s / succeed-01))
+                    :ARG1-of (d2 / determine-01
+                                 :ARG3 (e / efficient-01
+                                          :ARG1 (s3 / small-molecule
+                                                    :name (n3 / name
+                                                              :op1 "cetuximab"))
+                                          :location (c / cell-line
+                                                       :mod (d3 / disease
+                                                                :name (n4 / name
+                                                                          :op1 "CC"))
+                                                       :mod (a2 / all)))))))
+
+# ::save-date Wed Aug 5, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To confirm that the MAPK pathway is relevant for cetuximab response, drug combination experiments with PD98059 (MEK1/2 inhibitor) were performed.
+# ::file pmid_1965_4571_140.txt
+# ::date 2015-08-05T10:29:40
+# ::id pmid_1965_4571.140
+(p2 / perform-01
+    :ARG1 (e / experiment-01
+             :ARG1 (s / small-molecule
+                      :name (n2 / name
+                                :op1 "PD98059")
+                      :ARG0-of (i / inhibit-01
+                                  :ARG1 (e2 / enzyme
+                                            :name (n3 / name
+                                                      :op1 "MEK1/2"))))
+             :ARG2 (c / combine-01
+                      :ARG1 (d / drug)))
+    :purpose (c2 / confirm-01
+                 :ARG1 (r / relevant-01
+                          :ARG1 (p / pathway
+                                   :name (n / name
+                                            :op1 "MAPK"))
+                          :ARG2 (r2 / respond-01
+                                    :ARG1 (s2 / small-molecule
+                                              :name (n4 / name
+                                                        :op1 "cetuximab"))))))
+
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Both treatments inhibited Caski and C33A cell proliferation by the same magnitude, with a reduction of 50% and an additive effect for the combination over single-drug treatment in both cell lines (<i>R</i>=0.88 and <i>R</i>=0.92, respectively; <xref ref-type="fig" rid="fig4">Figure 4F</xref>).
+# ::file pmid_1965_4571_141.txt
+# ::date 2015-08-05T11:05:10
+# ::id pmid_1965_4571.141
+(i / inhibit-01
+      :ARG0 (t / treat-04
+            :mod (b / both))
+      :ARG1 (a / and
+            :op1 (p2 / proliferate-01
+                  :ARG0 (c / cell-line
+                        :name (n / name :op1 "Caski")))
+            :op2 (p3 / proliferate-01
+                  :ARG0 (c2 / cell-line
+                        :name (n2 / name :op1 "C33A"))))
+      :manner (m / magnitude
+            :ARG1-of (s / same-01))
+      :ARG0-of (c3 / cause-01
+            :ARG1 (a2 / and
+                  :op1 (r / reduce-01
+                        :ARG2 (p / percentage-entity :value "50")
+                        :ARG1-of (m2 / mean-01
+                              :ARG2 (s3 / string-entity
+                                    :value "R"
+                                    :ARG1-of (e / equal-01 :ARG2 "0.88"))))
+                  :op2 (a3 / affect-01
+                        :ARG1 (c4 / combine-01
+                              :compared-to (t2 / treat-01
+                                    :ARG1 (c5 / cell-line)
+                                    :ARG2 (d / drug
+                                          :ARG1-of (s2 / single-02))))
+                        :ARG1-of (a4 / add-02)
+                        :ARG1-of (m3 / mean-01
+                              :ARG2 (s4 / string-entity
+                                    :value "R"
+                                    :ARG1-of (e2 / equal-01 :ARG2 "0.92"))))
+                  :mod (r2 / respective)))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure :mod "4F")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As expected, <xref ref-type="fig" rid="fig4">Figure 4H</xref> shows that a strong inhibition of MAPK phosphorylation was seen in both cell lines on treatment with PD98059 alone or in combination with cetuximab.
+# ::file pmid_1965_4571_142.txt
+# ::date 2015-08-05T11:14:16
+# ::id pmid_1965_4571.142
+(s / show-01
+   :ARG0 (f / figure
+            :mod "4H")
+   :ARG1 (s2 / see-01
+             :ARG1 (i / inhibit-01
+                      :ARG1 (p2 / phosphorylate-01
+                                :ARG1 (e2 / enzyme
+                                          :name (n5 / name
+                                                    :op1 "MAPK")))
+                      :ARG1-of (s3 / strong-02))
+             :location (c / cell-line
+                          :mod (b / both)
+                          :ARG1-of (t / treat-04
+                                      :ARG2 (o / or
+                                               :op1 (s4 / small-molecule
+                                                        :name (n2 / name
+                                                                  :op1 "PD98059")
+                                                        :mod (a / alone))
+                                               :op2 (c2 / combine-01
+                                                        :ARG1 (s5 / small-molecule
+                                                                  :name (n3 / name
+                                                                            :op1 "PD98059"))
+                                                        :ARG2 (s6 / small-molecule
+                                                                  :name (n4 / name
+                                                                            :op1 "cetuximab")))))))
+   :ARG1-of (e / expect-01))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As the combination of both treatments led to a near complete MAPK cascade blockage, accompanied by a significant reduction of CC cell proliferation, we confirmed that the inhibition of this pathway plays an important role in cetuximab's efficacy.
+# ::file pmid_1965_4571_143.txt
+# ::date 2015-08-05T11:26:24
+# ::id pmid_1965_4571.143
+(c / confirm-01
+   :ARG0 (w / we)
+   :ARG1 (p2 / play-02
+             :ARG0 (i / inhibit-01
+                      :ARG1 "p")
+             :ARG1 (r / role
+                      :topic (e / efficient-01
+                                :ARG1 (s / small-molecule
+                                         :name (n2 / name
+                                                   :op1 "cetuximab")))
+                      :mod (i2 / important)))
+   :ARG1-of (c2 / cause-01
+                :ARG0 (l / lead-03
+                         :ARG0 (c3 / combine-01
+                                   :ARG1 (t / treat-04
+                                            :mod (b / both)))
+                         :ARG2 (b2 / block-01
+                                   :ARG1 (p / pathway
+                                            :name (n / name
+                                                     :op1 "MAPK"))
+                                   :ARG1-of (c5 / complete-01
+                                                :degree (n3 / near))
+                                   :ARG1-of (a / accompany-01
+                                               :ARG0 (r2 / reduce-01
+                                                         :ARG1 (p3 / proliferate-01
+                                                                   :ARG0 (c6 / cell-line
+                                                                             :mod (d / disease
+                                                                                     :wiki "Cervical_cancer"
+                                                                                     :name (n4 / name
+                                                                                               :op1 "cervical"
+                                                                                               :op2 "cancer"))))
+                                                         :ARG1-of (s2 / significant-02)))))))
+
+# ::save-date Tue Aug 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Antibody-dependent cellular cytotoxicity response is dependent on the number of EGFR molecules per cell and on how efficiently cetuximab recognises its target (<xref ref-type="other" rid="bib21">Vincenzi <i>et al</i>, 2008</xref>).
+# ::file pmid_1965_4571_145.txt
+# ::date 2015-08-05T11:44:06
+# ::id pmid_1965_4571.145
+(d2 / depend-01
+    :ARG0 (r / respond-01
+             :ARG2 (c / cytotoxicity
+                      :mod (c2 / cell)
+                      :ARG0-of (d3 / depend-01
+                                   :ARG1 (a / antibody))))
+    :ARG1 (a2 / and
+              :op1 (r2 / rate-entity-91
+                       :ARG1 (n2 / number
+                                 :quant-of (m / molecule
+                                              :mod (e / enzyme
+                                                      :name (n / name
+                                                               :op1 "EGFR"))))
+                       :ARG2 (c3 / cell))
+              :op2 (r3 / recognize-02
+                       :ARG0 (s / small-molecule
+                                :name (n3 / name
+                                          :op1 "cetuximab"))
+                       :ARG1 (t2 / thing
+                                 :ARG1-of (t / target-01
+                                             :ARG0 s))
+                       :ARG1-of (e2 / efficient-01)))
+    :ARG1-of (d4 / describe-01
+                 :ARG0 (p / publication-91
+                          :ARG0 (a3 / and
+                                    :op1 (p2 / person
+                                             :name (n4 / name
+                                                       :op1 "Vincenzi"))
+                                    :op2 (p3 / person
+                                             :mod (o / other)))
+                          :time (d / date-entity
+                                   :year "2008"))))
+
+# ::save-date Wed Jan 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt FACS analysis showed that cetuximab detected even more cell surface receptors in A431 and Caski cells (<i>P</i><0.05), when compared to a commercially available murine anti-EGFR MAb, although the same was not observed for C33A cells (<xref ref-type="fig" rid="fig5">Figure 5B</xref>).
+# ::file pmid_1965_4571_146.txt
+# ::date 2015-08-05T12:02:50
+# ::id pmid_1965_4571.146
+(s / show-01
+   :ARG0 (a / analyze-01
+            :mod (t / thing
+                    :name (n / name
+                             :op1 "FACS")))
+   :ARG1 (d / detect-01
+            :ARG0 (s2 / small-molecule
+                      :name (n2 / name
+                                :op1 "cetuximab"))
+            :ARG1 (r / receptor
+                     :mod (s3 / surface
+                              :mod (c / cell))
+                     :degree (m2 / more
+                                 :mod (e3 / even)))
+            :location (a2 / and
+                          :op1 (c2 / cell-line
+                                   :name (n3 / name
+                                             :op1 "A431"))
+                          :op2 (c3 / cell-line
+                                   :name (n4 / name
+                                             :op1 "Caski")))
+            :time (c4 / compare-01
+                      :ARG1 s2
+                      :ARG2 (a4 / antibody
+                                :ARG0-of (c5 / counter-01
+                                             :ARG1 (e2 / enzyme
+                                                       :name (n6 / name
+                                                                 :op1 "EGFR")))
+                                :ARG2-of (a3 / available-02
+                                             :manner (c6 / commerce))
+                                :mod (o2 / organism
+                                         :name (n8 / name
+                                                   :op1 "Muridae"))
+                                :mod (m / monoclone)))
+            :concession (o / observe-01
+                           :polarity "-"
+                           :ARG1 (s5 / same-01)
+                           :location (c7 / cell-line
+                                         :name (n7 / name
+                                                   :op1 "C33A")))
+            :ARG1-of (s6 / statistical-test-91
+                         :ARG2 (l / less-than
+                                  :op1 "0.05")))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5B")))
+
+# ::save-date Tue Aug 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Accordingly, at E/T ratios of 20 : 1, cetuximab mediated ADCC in 26.4 and 15.1% of A431 and Caski cells, respectively, but not in C33A cells (1.75%; <xref ref-type="fig" rid="fig5">Figure 5C</xref>).
+# ::file pmid_1965_4571_147.txt
+# ::date 2015-08-05T12:30:23
+# ::id pmid_1965_4571.147
+(c3 / contrast-01
+    :ARG1 (m / mediate-01
+             :ARG0 (s / small-molecule
+                      :name (n / name
+                               :op1 "cetuximab"))
+             :ARG1 (c5 / cytotoxicity
+                       :mod (c6 / cellular)
+                       :ARG0-of (d2 / depend-01
+                                    :ARG1 (a3 / antibody)))
+             :location (a / and
+                          :op1 (c / cell-line
+                                  :name (n3 / name
+                                            :op1 "A431")
+                                  :quant (p3 / percentage-entity
+                                             :value "26.4"))
+                          :op2 (c2 / cell-line
+                                   :name (n4 / name
+                                             :op1 "Caski")
+                                   :quant (p / percentage-entity
+                                             :value "15.1"))
+                          :mod (r / respective))
+             :manner (a2 / accordingly))
+    :ARG2 (m2 / mediate-01
+              :polarity "-"
+              :ARG0 s
+              :ARG1 (t / thing)
+              :location (c4 / cell-line
+                            :name (n5 / name
+                                      :op1 "C33A")
+                            :quant (p2 / percentage-entity
+                                       :value "1.75")))
+    :condition (e / equal-01
+                  :ARG1 (r3 / ratio-of
+                            :op1 (e2 / effector)
+                            :op2 (t2 / target-01))
+                  :ARG2 (r4 / ratio-of
+                            :op1 "20"
+                            :op2 "1"))
+    :ARG1-of (d / describe-01
+                :ARG0 (f / figure
+                         :mod "5C")))
+
+# ::save-date Tue Aug 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Anti-EGFR MAbs show suppressive effects on VEGF expression <i>in vitro</i> and <i>in vivo</i> (<xref ref-type="other" rid="bib21">Vincenzi <i>et al</i>, 2008</xref>; <xref ref-type="other" rid="bib16">Meira <i>et al</i>, 2009</xref>).
+# ::file pmid_1965_4571_149.txt
+# ::date 2015-08-05T12:52:37
+# ::id pmid_1965_4571.149
+(s / show-01
+   :ARG0 (s2 / small-molecule
+             :name (n / name
+                      :op1 "MAbs")
+             :ARG0-of (c / counter-01
+                         :ARG1 (e / enzyme
+                                  :name (n2 / name
+                                            :op1 "EGFR"))))
+   :ARG1 (a / affect-01
+            :ARG1 (e2 / express-03
+                      :ARG2 (p / protein
+                               :name (n3 / name
+                                         :op1 "VEGF"))
+                      :manner (a2 / and
+                                  :op1 (i / in-vitro)
+                                  :op2 (i2 / in-vivo)))
+            :ARG0-of (s3 / suppress-01))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (a3 / and
+                          :op1 (p2 / publication-91
+                                   :ARG0 (a4 / and
+                                             :op1 (p3 / person
+                                                      :name (n4 / name
+                                                                :op1 "Vincenzi"))
+                                             :op2 (p4 / person
+                                                      :mod (o / other)))
+                                   :time (d / date-entity
+                                            :year "2008"))
+                          :op2 (p5 / publication-91
+                                   :ARG0 (a5 / and
+                                             :op1 (p6 / person
+                                                      :name (n5 / name
+                                                                :op1 "Meira"))
+                                             :op2 p4)
+                                   :time (d2 / date-entity
+                                             :year "2009")))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To examine whether cetuximab (100 <i>μ</i>g ml<sup>−1</sup>) had this effect in CC cells, we tested it alone or combined with RxT (5 Gy) and VEGF expression was analysed by ELISA.
+# ::file pmid_1965_4571_150.txt
+# ::date 2015-08-05T13:41:18
+# ::id pmid_1965_4571.150
+(a / and
+   :op1 (t / test-01
+           :ARG0 (w / we)
+           :ARG1 (o / or
+                    :op1 "s4"
+                    :op2 (c / combine-01
+                            :ARG1 "s4"
+                            :ARG2 (r2 / radiotherapy
+                                      :quant (r / radiation-quantity
+                                                :quant "5"
+                                                :unit (g / gray))))))
+   :op2 (a3 / analyze-01
+            :ARG0 (t2 / thing
+                      :name (n5 / name
+                                :op1 "ELISA"))
+            :ARG1 (e / express-03
+                     :ARG2 (p / protein
+                              :name (n4 / name
+                                        :op1 "VEGF"))))
+   :purpose (e2 / examine-01
+                :ARG0 w
+                :ARG1 (h / have-03
+                         :mode "interrogative"
+                         :ARG0 (s4 / small-molecule
+                                   :name (n7 / name
+                                             :op1 "cetuximab")
+                                   :quant (v / volume-quantity
+                                             :quant "100"
+                                             :unit (m / microgram-per-milliliter)))
+                         :ARG1 (a4 / affect-01
+                                   :location (c2 / cell-line
+                                                 :mod (d / disease
+                                                         :wiki "Cervical_cancer"
+                                                         :name (n / name
+                                                                  :op1 "cervical"
+                                                                  :op2 "cancer")))))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cetuximab or RxT treatments decreased VEGF secretion in all cell lines (<xref ref-type="fig" rid="fig5">Figures 5D–F</xref>; <i>P</i><0.05).
+# ::file pmid_1965_4571_151.txt
+# ::date 2015-08-05T13:55:48
+# ::id pmid_1965_4571.151
+(d / decrease-01
+   :ARG0 (o / or
+            :op1 (t / treat-04
+                    :ARG2 (s / small-molecule
+                             :name (n / name
+                                      :op1 "cetuximab")))
+            :op2 (t2 / treat-04
+                     :ARG2 (r / radiotherapy)))
+   :ARG1 (s3 / secrete-01
+             :ARG1 (p / protein
+                      :name (n3 / name
+                                :op1 "VEGF")))
+   :location (c / cell-line
+                :mod (a / all))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (v / value-interval
+                         :op1 (f / figure
+                                 :mod "5D")
+                         :op2 (f2 / figure
+                                  :mod "5F")))
+   :ARG1-of (s2 / statistical-test-91
+                :ARG2 (l / less-than
+                         :op1 "0.05")))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The combination of cetuximab with RxT for 24 h had an additive effect and, after 48 h of treatment, a further reduction was observed (<xref ref-type="fig" rid="fig5">Figures 5D–F</xref>), suggesting that these treatments have the potential of interfering with angiogenesis even in cells that do not express high EGFR levels.
+# ::file pmid_1965_4571_152.txt
+# ::date 2015-08-05T13:59:31
+# ::id pmid_1965_4571.152
+(a / and
+   :op1 (h / have-03
+           :ARG0 (c / combine-01
+                    :ARG1 (s / small-molecule
+                             :name (n2 / name
+                                       :op1 "cetuximab"))
+                    :ARG2 (r2 / radiotherapy)
+                    :duration (t / temporal-quantity
+                                 :quant "24"
+                                 :unit (h2 / hour)))
+           :ARG1 (a2 / affect-01
+                     :ARG1-of (a3 / add-02)))
+   :op2 (o / observe-01
+           :ARG1 (r / reduce-01
+                    :degree (f / further)
+                    :ARG0-of (s3 / suggest-01
+                                 :ARG1 (c2 / capable-01
+                                           :ARG1 (t2 / treat-04
+                                                     :mod (t3 / this))
+                                           :ARG2 (i / interfere-01
+                                                    :ARG0 t2
+                                                    :ARG1 (a4 / angiogenesis)
+                                                    :location (c3 / cell-line
+                                                                  :mod (e2 / even)
+                                                                  :ARG3-of (e3 / express-03
+                                                                               :polarity "-"
+                                                                               :ARG2 (l / level
+                                                                                        :quant-of (e4 / enzyme
+                                                                                                      :name (n4 / name
+                                                                                                                :op1 "EGFR"))
+                                                                                        :ARG1-of (h3 / high-02))))))))
+           :ARG1-of (d / describe-01
+                       :ARG0 (a6 / and
+                                 :op1 (f2 / figure
+                                          :mod "5D")
+                                 :op2 (f3 / figure
+                                          :mod "5E")
+                                 :op3 (f4 / figure
+                                          :mod "5F")))
+           :time (a5 / after
+                     :op1 (t4 / treat-04)
+                     :quant (t5 / temporal-quantity
+                                :quant "48"
+                                :unit (h4 / hour)))))

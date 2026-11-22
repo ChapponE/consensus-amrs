@@ -1,0 +1,2418 @@
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt 1- RT-PCR and western blot analyses confirmed the strong up-regulation of serpinE2 expression and secretion by IECs expressing oncogenic MEK, Ras or BRAF.
+# ::file a_pmid_2094_2929_7.txt
+# ::date 2015-05-20T09:19:50
+# ::id a_pmid_2094_2929.7
+(c / confirm-01
+   :li "1"
+   :ARG0 (a / and
+            :op1 (a2 / analyze-01
+                     :instrument (t / thing
+                                    :name (n4 / name
+                                              :op1 "RT-PCR")))
+            :op2 (i / immunoblot-01))
+   :ARG1 (a4 / and
+             :op1 (u / upregulate-01
+                     :ARG1 (e3 / express-03
+                               :ARG2 (p / protein
+                                        :name (n6 / name
+                                                  :op1 "serpinE2")))
+                     :ARG1-of (s / strong-02))
+             :op2 (s2 / secrete-01
+                      :ARG0 (c2 / cell
+                                :name (n7 / name
+                                          :op1 "IEC")
+                                :ARG3-of (e4 / express-03
+                                             :ARG2 (o2 / or
+                                                       :op1 (e / enzyme
+                                                               :name (n2 / name
+                                                                         :op1 "MEK"))
+                                                       :op2 (e2 / enzyme
+                                                                :name (n3 / name
+                                                                          :op1 "Ras"))
+                                                       :op3 (e5 / enzyme
+                                                                :name (n8 / name
+                                                                          :op1 "BRAF"))
+                                                       :ARG0-of (c3 / cause-01
+                                                                    :ARG1 (d / disease
+                                                                             :wiki "Cancer"
+                                                                             :name (n / name
+                                                                                      :op1 "cancer"))))))
+                      :ARG1 p)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt 2- Interestingly, serpinE2 mRNA and protein were also markedly enhanced in human CRC cells exhibiting mutation in <i>KRAS </i>and <i>BRAF</i>.
+# ::file a_pmid_2094_2929_8.txt
+# ::date 2015-05-20T10:16:34
+# ::id a_pmid_2094_2929.8
+(e / enhance-01
+   :li "2"
+   :ARG1 (a3 / and
+             :op1 (n6 / nucleic-acid
+                      :name (n / name
+                               :op1 "mRNA")
+                      :ARG0-of (e2 / encode-01
+                                   :ARG1 "p"))
+             :op2 (p / protein
+                     :name (n2 / name
+                               :op1 "serpinE2")))
+   :manner (m / marked)
+   :mod (a2 / also)
+   :location (c / cell
+                :ARG0-of (e3 / exhibit-01
+                             :ARG1 (m2 / mutate-01
+                                       :ARG1 (a4 / and
+                                                 :op1 (g / gene
+                                                         :name (n4 / name
+                                                                   :op1 "KRAS"))
+                                                 :op2 (g2 / gene
+                                                          :name (n5 / name
+                                                                    :op1 "BRAF")))))
+                :mod (h / human)
+                :mod (d / disease
+                        :name (n3 / name
+                                  :op1 "CRC")))
+   :manner (i / interesting))
+
+# ::save-date Fri Feb 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt 3- RNAi directed against serpinE2 in caMEK-transformed rat IECs or in human CRC cell lines HCT116 and LoVo markedly decreased foci formation, anchorage-independent growth in soft agarose, cell migration and tumor formation in nude mice.
+# ::file a_pmid_2094_2929_9.txt
+# ::date 2015-05-20T10:25:33
+# ::id a_pmid_2094_2929.9
+(d / decrease-01
+   :li "3"
+   :ARG0 (i2 / interfere-01
+             :ARG1 (n / nucleic-acid
+                      :name (n11 / name
+                                 :op1 "RNA"))
+             :ARG1-of (d2 / direct-01
+                          :ARG2 (o2 / oppose-01
+                                    :ARG1 (o / or
+                                             :op1 (p / protein
+                                                     :name (n2 / name
+                                                               :op1 "serpinE2")
+                                                     :location (c / cell
+                                                                  :name (n3 / name
+                                                                            :op1 "IEC")
+                                                                  :mod (r / rat)
+                                                                  :ARG1-of (t / transform-01
+                                                                              :ARG0 (e / enzyme
+                                                                                       :name (n4 / name
+                                                                                                 :op1 "MEK")
+                                                                                       :ARG2-of (m5 / mutate-01)
+                                                                                       :mod (c3 / constitutive)
+                                                                                       :ARG1-of (a4 / activate-01)))))
+                                             :op2 (p2 / protein
+                                                      :name (n5 / name
+                                                                :op1 "serpinE2")
+                                                      :location (c6 / cell
+                                                                    :ARG2-of (i / include-91
+                                                                                :ARG1 (a3 / and
+                                                                                          :op1 (c2 / cell-line
+                                                                                                   :name (n6 / name
+                                                                                                             :op1 "HCT116"))
+                                                                                          :op2 (c4 / cell-line
+                                                                                                   :name (n8 / name
+                                                                                                             :op1 "LoVo"))))
+                                                                    :mod (h / human)
+                                                                    :mod (d4 / disease
+                                                                             :name (n10 / name
+                                                                                        :op1 "CRC"))))))))
+   :ARG1 (a / and
+            :op1 (f / form-01
+                    :ARG1 (f2 / focus))
+            :op2 (g / grow-01
+                    :ARG1-of (d3 / depend-01
+                                 :polarity "-"
+                                 :ARG0 (a2 / anchorage))
+                    :location (a5 / agarose
+                                  :ARG1-of (s / soft-02)))
+            :op3 (m3 / migrate-01
+                     :ARG0 (c5 / cell))
+            :op4 (f3 / form-01
+                     :ARG1 (t2 / tumor)
+                     :location (m4 / mouse
+                                   :mod (n9 / nude))))
+   :manner (m2 / marked))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt 4- Treatment of CRC cell lines with U0126 markedly reduced <i>serpinE2 </i>mRNA levels, indicating that expression of <i>serpinE2 </i>is likely dependent of ERK activity.
+# ::file a_pmid_2094_2929_10.txt
+# ::date 2015-05-20T10:50:46
+# ::id a_pmid_2094_2929.10
+(r / reduce-01
+   :li "4"
+   :ARG0 (t / treat-04
+            :ARG1 (c / cell-line
+                     :mod (d2 / disease
+                              :name (n3 / name
+                                        :op1 "CRC")))
+            :ARG2 (s / small-molecule
+                     :name (n / name
+                              :op1 "U0126")))
+   :ARG1 (l / level
+            :quant-of (n6 / nucleic-acid
+                          :name (n4 / name
+                                    :op1 "mRNA")
+                          :ARG0-of (e2 / encode-01
+                                       :ARG1 (p / protein
+                                                :name (n5 / name
+                                                          :op1 "serpinE2")))))
+   :manner (m / marked)
+   :ARG0-of (i / indicate-01
+               :ARG1 (l2 / likely-01
+                         :ARG1 (d / depend-01
+                                  :ARG0 (e3 / express-03
+                                            :ARG2 p)
+                                  :ARG1 (a / activity-06
+                                           :ARG0 (e / enzyme
+                                                    :name (n2 / name
+                                                              :op1 "ERK")))))))
+
+# ::save-date Thu Jan 7, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt 5- Finally, Q-PCR analyses demonstrated that mRNA levels of serpinE2 were markedly increased in human adenomas in comparison to healthy adjacent tissues and in colorectal tumors, regardless of tumor stage and grade.
+# ::file a_pmid_2094_2929_11.txt
+# ::date 2015-05-20T11:37:23
+# ::id a_pmid_2094_2929.11
+(d / demonstrate-01
+   :li "5"
+   :li "-1"
+   :ARG0 (a / analyze-01
+            :mod (t / thing
+                    :name (n / name
+                             :op1 "Q-PCR")))
+   :ARG1 (i / increase-01
+            :ARG1 (l / level
+                     :quant-of (n4 / nucleic-acid
+                                   :name (n2 / name
+                                             :op1 "mRNA")
+                                   :ARG0-of (e / encode-01
+                                               :ARG1 (p / protein
+                                                        :name (n3 / name
+                                                                  :op1 "serpinE2")))))
+            :location (a2 / and
+                          :op1 (a3 / adenomas
+                                   :mod (h / human))
+                          :op2 (t3 / tumor
+                                   :mod (c / colon)))
+            :ARG1-of (r / regardless-91
+                        :ARG2 (a5 / and
+                                  :op1 (t5 / thing
+                                           :ARG2-of (s / stage-02
+                                                       :ARG1 (t4 / tumor)))
+                                  :op2 (g / grade
+                                          :mod t4)))
+            :manner (m / marked)
+            :compared-to (t2 / tissue
+                             :mod (a4 / adjacent)
+                             :mod (h2 / healthy))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Among the most harmful of all genetic abnormalities that appear in CRC development are mutations of KRAS and its downstream effector BRAF as they result in abnormal ERK signaling.
+# ::file a_pmid_2094_2929_40.txt
+# ::date 2015-05-20T12:22:30
+# ::id a_pmid_2094_2929.40
+(i / include-91
+   :ARG1 (a4 / and
+             :op1 (m2 / mutate-01
+                      :ARG1 (e4 / enzyme
+                                :name (n3 / name
+                                          :op1 "KRAS")))
+             :op2 (e2 / effector
+                      :mod (d2 / downstream)
+                      :mod (e3 / enzyme
+                               :name (n4 / name
+                                         :op1 "BRAF"))
+                      :poss e4)
+             :ARG1-of (r / result-01
+                         :ARG2 (s / signal-07
+                                  :ARG0 (e / enzyme
+                                           :name (n / name
+                                                    :op1 "ERK"))
+                                  :ARG1-of (n6 / normal-02
+                                               :polarity "-"))))
+   :ARG2 (n5 / normal-02
+             :polarity "-"
+             :ARG2 (g / genetics)
+             :mod (a2 / all)
+             :ARG0-of (h / harmful-02
+                         :degree (m / most))
+             :ARG1-of (a3 / appear-01
+                          :time (d / develop-02
+                                   :ARG1 (c / cell
+                                            :mod (d3 / disease
+                                                     :name (n2 / name
+                                                               :op1 "CRC")))))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In a previous report, we had shown that expression of a constitutive active mutant of MEK1 (caMEK) in the intestinal epithelial cell line IEC-6 induced morphological transformation and growth in soft agar; in marked contrast, wtMEK overexpression had no effect on IEC-6 phenotype [<xref ref-type="bibr" rid="B3">3</xref>].
+# ::file a_pmid_2094_2929_41.txt
+# ::date 2015-05-20T12:49:26
+# ::id a_pmid_2094_2929.41
+(a / and
+   :op1 (s / show-01
+           :ARG0 (w / we)
+           :ARG1 (i / induce-01
+                    :ARG0 (e / express-03
+                             :ARG2 (m / mutate-01
+                                      :ARG2 (e2 / enzyme
+                                                :name (n / name
+                                                         :op1 "MEK1"))
+                                      :mod (c / constitutive)
+                                      :ARG0-of (a2 / activity-06))
+                             :ARG3 (c2 / cell-line
+                                       :name (n3 / name
+                                                 :op1 "IEC-6")
+                                       :mod (e4 / epithelium
+                                                :part-of (i2 / intestine))))
+                    :ARG2 (a3 / and
+                              :op1 (t / transform-01
+                                      :mod (m3 / morphological))
+                              :op2 (g / grow-01
+                                      :location (a4 / agar
+                                                    :ARG1-of (s2 / soft-02)))))
+           :medium (r / report
+                      :time (p / previous)))
+   :op2 (a5 / affect-01
+            :polarity "-"
+            :ARG0 (o / overexpress-01
+                     :ARG1 (e5 / enzyme
+                               :name (n4 / name
+                                         :op1 "MEK")
+                               :mod (w2 / wild-type)))
+            :ARG1 (p2 / phenotype
+                      :mod (c3 / cell-line
+                               :name (n5 / name
+                                         :op1 "IEC-6")))
+            :ARG1-of (d / describe-01
+                        :ARG0 (p3 / publication
+                                  :ARG1-of (c4 / cite-01
+                                               :ARG2 "3")))
+            :ARG2-of (c5 / contrast-01
+                         :ARG1-of (m4 / mark-01))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to understand the mechanisms by which activated MEK1 induces intestinal cell tumorigenesis, the pattern of gene expression was analyzed by microarray in IEC-6 cells overexpressing activated MEK1.
+# ::file a_pmid_2094_2929_42.txt
+# ::date 2015-05-20T13:09:11
+# ::id a_pmid_2094_2929.42
+(a3 / analyze-01
+    :ARG0 (m2 / microarray)
+    :ARG1 (p / pattern-01
+             :ARG1 (e2 / express-03
+                       :ARG2 (g / gene)))
+    :location (c2 / cell-line
+                  :name (n2 / name
+                            :op1 "IEC-6")
+                  :ARG0-of (o / overexpress-01
+                              :ARG1 "e"))
+    :purpose (u / understand-01
+                :ARG1 (m / mechanism
+                         :instrument-of (i / induce-01
+                                           :ARG0 (e / enzyme
+                                                    :name (n / name
+                                                             :op1 "MEK1")
+                                                    :ARG1-of (a / activate-01))
+                                           :ARG2 (c3 / create-01
+                                                     :ARG1 (t / tumor
+                                                              :mod (c / cell
+                                                                      :part-of (i2 / intestine))))))))
+
+# ::save-date Sat May 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Results from microarrays comparing control (wtMEK) to caMEK-expressing IEC-6 cells identified the <i>Serpin clade E member 2 </i>(<i>serpinE2 </i>or <i>PN-1</i>) gene as a potential target of activated MEK1.
+# ::file a_pmid_2094_2929_43.txt
+# ::date 2015-05-20T13:24:51
+# ::id a_pmid_2094_2929.43
+(i / identify-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :source (m / microarray
+                       :ARG0-of (c / compare-01
+                                   :ARG1 (c2 / control
+                                             :ARG1-of (m2 / mean-01
+                                                          :ARG2 (e / enzyme
+                                                                   :name (n / name
+                                                                            :op1 "MEK")
+                                                                   :mod (w / wild-type))))
+                                   :ARG2 (c3 / cell-line
+                                             :name (n2 / name
+                                                       :op1 "IEC-6")
+                                             :ARG3-of (e2 / express-03
+                                                          :ARG2 (e3 / enzyme
+                                                                    :name (n3 / name
+                                                                              :op1 "MEK")
+                                                                    :ARG2-of (m4 / mutate-01)
+                                                                    :mod (c4 / constitutive)
+                                                                    :ARG1-of (a4 / activate-01)))))))
+   :ARG1 (g / gene
+            :name (n4 / name
+                      :op1 "Serpin"
+                      :op2 "clade"
+                      :op3 "E"
+                      :op4 "member"
+                      :op5 "2")
+            :ARG1-of (m3 / mean-01
+                         :ARG2 (a / and
+                                  :op1 (g2 / gene
+                                           :name (n5 / name
+                                                     :op1 "serpinE2"))
+                                  :op2 (g3 / gene
+                                           :name (n6 / name
+                                                     :op1 "PN-1")))))
+   :ARG2 (t2 / target-01
+             :ARG0 (e4 / enzyme
+                       :name (n7 / name
+                                 :op1 "MEK1")
+                       :ARG1-of (a2 / activate-01))
+             :ARG1 g
+             :mod (p / potential)))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Indeed, <i>serpinE2 </i>expression was significantly induced by more that 28-fold (p < 0.05) in cells overexpressing activated MEK1 in comparison to cells expressing wtMEK (data not shown).
+# ::file a_pmid_2094_2929_44.txt
+# ::date 2015-05-20T13:31:22
+# ::id a_pmid_2094_2929.44
+(i / induce-01
+   :ARG2 (e / express-03
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "serpinE2")))
+   :mod (i2 / indeed)
+   :ARG1-of (s / significant-02)
+   :location (c / cell
+                :location-of (o / overexpress-01
+                                :ARG1 (e2 / enzyme
+                                          :name (n2 / name
+                                                    :op1 "MEK1")
+                                          :ARG1-of (a / activate-01))))
+   :compared-to (c2 / cell
+                    :ARG3-of (e3 / express-03
+                                 :ARG2 (e4 / enzyme
+                                           :name (n3 / name
+                                                     :op1 "MEK")
+                                           :mod (w / wild-type))))
+   :ARG1-of (d / describe-01
+               :ARG0 (d2 / data
+                         :ARG1-of (s2 / show-01
+                                      :polarity "-")))
+   :quant (m2 / more-than
+              :op1 (p / product-of
+                      :op1 "28"))
+   :ARG1-of (s3 / statistical-test-91
+                :ARG2 (l / less-than
+                         :op1 "0.05")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Overexpression of <i>serpinE2 </i>in caMEK-expressing IECs was furthermore confirmed following RT-PCR analysis as shown in Figure <xref ref-type="fig" rid="F1">1A</xref>.
+# ::file a_pmid_2094_2929_45.txt
+# ::date 2015-05-20T13:46:38
+# ::id a_pmid_2094_2929.45
+(a / and
+   :op2 (c / confirm-01
+           :ARG1 (o / overexpress-01
+                    :ARG1 (g / gene
+                             :name (n / name
+                                      :op1 "serpinE2"))
+                    :location (c2 / cell
+                                  :name (n2 / name
+                                            :op1 "IEC")
+                                  :ARG3-of (e / express-03
+                                              :ARG2 (e2 / enzyme
+                                                        :name (n3 / name
+                                                                  :op1 "MEK")
+                                                        :mod (c3 / constitutive)
+                                                        :ARG2-of (m / mutate-01)
+                                                        :ARG1-of (a4 / activate-01)))))
+           :time (f / follow-01
+                    :ARG2 (a2 / analyze-01
+                              :mod (t / thing
+                                      :name (n4 / name
+                                                :op1 "RT-PCR")))))
+   :ARG1-of (s / show-01
+               :ARG0 (f2 / figure
+                         :mod "1A")))
+
+# ::save-date Fri Jan 15, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt SerpinE2 expression was also markedly enhanced in IEC-6 cells transformed by oncogenic RAS (26-fold) or BRAF (12-fold after 12 h of 4-hydroxytamoxifen (4-OHT) (Figure <xref ref-type="fig" rid="F1">1B</xref> and <xref ref-type="fig" rid="F1">1C</xref>).
+# ::file a_pmid_2094_2929_46.txt
+# ::date 2015-05-20T13:59:27
+# ::id a_pmid_2094_2929.46
+(o / or
+   :op1 (e2 / enhance-01
+            :ARG1 (e3 / express-03
+                      :ARG2 (p / protein
+                               :name (n2 / name
+                                         :op1 "SerpinE2")))
+            :ARG3 (p2 / product-of
+                      :op1 "26")
+            :manner (m / marked)
+            :mod (a / also)
+            :location (c / cell-line
+                         :name (n3 / name
+                                   :op1 "IEC-6")
+                         :ARG1-of (t / transform-01
+                                     :ARG0 (e / enzyme
+                                              :name (n / name
+                                                       :op1 "Ras")
+                                              :ARG0-of (c2 / cause-01
+                                                           :ARG1 (d2 / disease
+                                                                     :wiki "Cancer"
+                                                                     :name (n6 / name
+                                                                               :op1 "cancer"))
+                                                           :ARG0 e5)))))
+   :op2 (e4 / enhance-01
+            :ARG1 e3
+            :ARG3 (p4 / product-of
+                      :op1 "12")
+            :time (a2 / after
+                      :op1 (s / stimulate-01
+                              :ARG2 (s2 / small-molecule
+                                        :name (n5 / name
+                                                  :op1 "4-hydroxytamoxifen")))
+                      :quant (t2 / temporal-quantity
+                                 :quant "12"
+                                 :unit (h / hour)))
+            :location (c4 / cell-line
+                          :name (n7 / name
+                                    :op1 "IEC-6")
+                          :ARG1-of (t3 / transform-01
+                                       :ARG0 (e5 / enzyme
+                                                 :name (n4 / name
+                                                           :op1 "BRAF")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "1B")
+                         :op2 (f2 / figure
+                                  :mod "1C"))))
+
+# ::save-date Fri Feb 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of note, the induction of serpinE2 was induced within 1 h following ERK activation as observed in cells expressing the inducible BRAF:ER fusion protein stimulated with 4-OHT (Figure <xref ref-type="fig" rid="F1">1C</xref>).
+# ::file a_pmid_2094_2929_47.txt
+# ::date 2015-05-20T14:21:28
+# ::id a_pmid_2094_2929.47
+(n2 / note-02
+    :ARG1 (i / induce-01
+             :ARG2 (i2 / induce-01
+                       :ARG2 (p / protein
+                                :name (n3 / name
+                                          :op1 "serpinE2")))
+             :time (a / after
+                      :op1 (a2 / activate-01
+                               :ARG1 (e / enzyme
+                                        :name (n / name
+                                                 :op1 "ERK")))
+                      :quant (u / up-to
+                                :op1 (t / temporal-quantity
+                                        :quant "1"
+                                        :unit (h / hour))))
+             :ARG1-of (f / follow-01)
+             :ARG1-of (o / observe-01
+                         :location (c / cell
+                                      :ARG3-of (e2 / express-03
+                                                   :ARG2 (p3 / protein
+                                                             :name (n5 / name
+                                                                       :op1 "BRAF:ER"
+                                                                       :op2 "fusion")
+                                                             :ARG1-of (i3 / induce-01
+                                                                          :ARG1-of (p2 / possible-01))
+                                                             :ARG1-of (s / stimulate-01
+                                                                         :ARG2 (s2 / small-molecule
+                                                                                   :name (n4 / name
+                                                                                             :op1 "4-OHT"))))))))
+    :ARG1-of (d / describe-01
+                :ARG0 (f2 / figure
+                          :mod "1C")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Treatment with the MEK-inhibitor U0126 completely abrogated serpinE2 gene expression induced by oncogenic MEK1 (Figure <xref ref-type="fig" rid="F1">1A</xref>) and BRAF (Figure <xref ref-type="fig" rid="F1">1C</xref>), indicating that induction of serpinE2 is an early and direct event occurring following the activation of ERK signaling.
+# ::file a_pmid_2094_2929_48.txt
+# ::date 2015-05-21T09:43:34
+# ::id a_pmid_2094_2929.48
+(a / abrogate-01
+   :ARG1 (e3 / express-03
+             :ARG2 (g / gene
+                      :name (n5 / name
+                                :op1 "serpinE2"))
+             :ARG2-of (i2 / induce-01
+                          :ARG0 (e4 / enzyme
+                                    :name (n6 / name
+                                              :op1 "MEK1")
+                                    :ARG0-of (c2 / cause-01
+                                                 :ARG1 (d4 / disease
+                                                           :wiki "Cancer"
+                                                           :name (n / name
+                                                                    :op1 "cancer"))
+                                                 :ARG0 e7))
+                          :ARG1-of (d / describe-01
+                                      :ARG0 (f / figure
+                                               :mod "1A")))
+             :ARG2-of (i3 / induce-01
+                          :ARG0 (e7 / enzyme
+                                    :name (n7 / name
+                                              :op1 "BRAF"))
+                          :ARG1-of (d2 / describe-01
+                                       :ARG0 (f2 / figure
+                                                 :mod "1C"))))
+   :ARG2 (t / treat-04
+            :ARG2 (s2 / small-molecule
+                      :name (n3 / name
+                                :op1 "U0126")
+                      :ARG0-of (i / inhibit-01
+                                  :ARG1 (p2 / protein-family
+                                            :name (n4 / name
+                                                      :op1 "MEK")))))
+   :ARG1-of (c / complete-02)
+   :ARG0-of (i4 / indicate-01
+                :ARG1 (e5 / event
+                          :mod (e6 / early)
+                          :ARG1-of (d3 / direct-02)
+                          :domain (i5 / induce-01
+                                      :ARG1 g)
+                          :ARG1-of (f3 / follow-01
+                                       :ARG2 (a2 / activate-01
+                                                 :ARG1 (s3 / signal-07
+                                                           :ARG0 (p / protein-family
+                                                                    :name (n2 / name
+                                                                              :op1 "ERK"))))))))
+
+# ::save-date Mon Nov 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Since serpinE2 protein is known to be secreted [<xref ref-type="bibr" rid="B22">22</xref>,<xref ref-type="bibr" rid="B33">33</xref>], we easily confirmed its presence in conditioned culture medium of caMEK-expressing IECs whereas no serpinE2 protein was detected in the culture medium of wtMEK-expressing or parental IECs (Figure <xref ref-type="fig" rid="F1">1D</xref>).
+# ::file a_pmid_2094_2929_49.txt
+# ::date 2015-05-21T10:05:41
+# ::id a_pmid_2094_2929.49
+(c / confirm-01
+   :ARG0 (w2 / we)
+   :ARG1 (p / present-02
+            :ARG1 (p2 / protein
+                      :name (n / name
+                               :op1 "serpinE2"))
+            :ARG2 (m / medium
+                     :mod (c3 / culture)
+                     :ARG1-of (c4 / condition-01)
+                     :poss (c7 / cell
+                               :name (n4 / name
+                                         :op1 "IEC")
+                               :ARG3-of (e2 / express-03
+                                            :ARG2 (e / enzyme
+                                                     :name (n3 / name
+                                                               :op1 "MEK")
+                                                     :ARG2-of (m2 / mutate-01)
+                                                     :mod (c6 / constitutive)
+                                                     :ARG1-of (a3 / activate-01))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1D"))
+   :ARG1-of (e5 / easy-05)
+   :ARG0-of (c10 / cause-01
+                 :ARG1 (k / know-01
+                          :ARG1 (s2 / secrete-01
+                                    :ARG1 p2))
+                 :ARG1-of (d3 / describe-01
+                              :ARG0 (p5 / publication
+                                        :ARG1-of (c9 / cite-01
+                                                     :ARG2 (a2 / and
+                                                               :op1 "22"
+                                                               :op2 "33")))))
+   :ARG1-of (c2 / contrast-01
+                :ARG2 (d / detect-01
+                         :polarity "-"
+                         :ARG1 p2
+                         :location (o / or
+                                      :op1 (m3 / medium
+                                               :mod (c5 / culture-01)
+                                               :poss (c12 / cell
+                                                          :name (n2 / name
+                                                                    :op1 "IEC")
+                                                          :ARG3-of (e4 / express-03
+                                                                       :ARG2 (e3 / enzyme
+                                                                                 :name (n5 / name
+                                                                                           :op1 "MEK")
+                                                                                 :mod (w / wild-type)))))
+                                      :op2 (m4 / medium
+                                               :mod (c11 / culture-01)
+                                               :poss (c8 / cell
+                                                         :name (n6 / name
+                                                                   :op1 "IEC")
+                                                         :mod (p4 / parent)))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Again, treatment with the MEK-inhibitor U0126 completely abrogated serpinE2 secretion (Figure <xref ref-type="fig" rid="F1">1D</xref>).
+# ::file a_pmid_2094_2929_50.txt
+# ::date 2015-05-21T10:23:01
+# ::id a_pmid_2094_2929.50
+(a / abrogate-01
+   :ARG1 (s2 / secrete-01
+             :ARG1 (p / protein
+                      :name (n3 / name
+                                :op1 "serpinE2")))
+   :ARG2 (t / treat-04
+            :ARG2 (s / small-molecule
+                     :name (n / name
+                              :op1 "U0126")
+                     :ARG0-of (i / inhibit-01
+                                 :ARG1 (p2 / protein-family
+                                           :name (n2 / name
+                                                     :op1 "MEK")))))
+   :mod (a2 / again)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1D"))
+   :ARG1-of (c / complete-02))
+
+# ::save-date Sun May 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, serpinE2 protein was difficult to detect in total cell lysates (Figure <xref ref-type="fig" rid="F1">1E</xref>, lane 2).
+# ::file a_pmid_2094_2929_51.txt
+# ::date 2015-05-21T10:26:14
+# ::id a_pmid_2094_2929.51
+(d / difficult
+   :ARG1-of (d3 / describe-01
+                :ARG0 (a / and
+                         :op1 (f / figure
+                                 :mod "1E"
+                                 :part (l2 / lane
+                                           :mod "2"))))
+   :mod (i / interesting)
+   :domain (d2 / detect-01
+               :ARG1 (p / protein
+                        :name (n / name
+                                 :op1 "serpinE2"))
+               :location (l / lysate
+                            :mod (c / cell)
+                            :mod (t / total))))
+
+# ::save-date Wed Mar 9, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, serpinE2 was easily observed in lysates prepared from foci of post-confluent caMEK-expressing cells (Figure <xref ref-type="fig" rid="F1">1E</xref>, lane 4), while it was not detectable in the surrounding monolayer (Figure <xref ref-type="fig" rid="F1">1E</xref>, lane 3).
+# ::file a_pmid_2094_2929_52.txt
+# ::date 2015-05-21T10:42:36
+# ::id a_pmid_2094_2929.52
+(h / have-concession-91
+   :ARG1 (c / contrast-01
+            :ARG1 (o / observe-01
+                     :ARG1 (p / protein
+                              :name (n / name
+                                       :op1 "serpinE2"))
+                     :ARG1-of (e / easy-05)
+                     :location (l / lysate
+                                  :ARG1-of (p2 / prepare-01
+                                               :ARG2 (f / focus
+                                                        :part-of (c2 / cell
+                                                                     :time (a / after
+                                                                              :op1 (c4 / confluent
+                                                                                       :domain c2))
+                                                                     :ARG3-of (e3 / express-03
+                                                                                  :ARG2 (e2 / enzyme
+                                                                                            :name (n2 / name
+                                                                                                      :op1 "MEK")
+                                                                                            :mod (c3 / constitutive)
+                                                                                            :ARG2-of (m / mutate-01)
+                                                                                            :ARG1-of (a4 / activate-01)))))))
+                     :ARG1-of (d / describe-01
+                                 :ARG0 (a2 / and
+                                           :op1 (f2 / figure
+                                                    :mod "1E"
+                                                    :part (l2 / lane
+                                                              :mod "4")))))
+            :ARG2 (p4 / possible-01
+                      :ARG1 (d2 / detect-01
+                                :polarity "-"
+                                :ARG1 p
+                                :location (m2 / monolayer
+                                              :ARG1-of (s / surround-01))
+                                :ARG1-of (d3 / describe-01
+                                             :ARG0 (a3 / and
+                                                       :op1 (f3 / figure
+                                                                :mod "1E"
+                                                                :part (l3 / lane
+                                                                          :mod "3"))))))))
+
+# ::save-date Fri Jul 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This indicates a stronger expression of serpinE2 protein by the transformed IECs forming the foci.
+# ::file a_pmid_2094_2929_53.txt
+# ::date 2015-05-21T10:57:06
+# ::id a_pmid_2094_2929.53
+(i / indicate-01
+   :ARG0 (t / this)
+   :ARG1 (e / express-03
+            :ARG2 (p / protein
+                     :name (n / name
+                              :op1 "serpinE2"))
+            :ARG3 (c / cell
+                     :name (n2 / name
+                               :op1 "IEC")
+                     :ARG1-of (t2 / transform-01)
+                     :ARG0-of (f / form-01
+                                 :ARG1 (f2 / focus)))
+            :ARG1-of (s / strong-02
+                        :degree (m / more))))
+
+# ::save-date Wed Mar 9, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to determine the contribution of serpinE2 in intestinal transformation induced by activated MEK, foci from post-confluent caMEK-expressing IECs were retrieved by aspiration with a pipette and pooled as one caMEK-expressing cell population.
+# ::file a_pmid_2094_2929_55.txt
+# ::date 2015-05-21T11:19:25
+# ::id a_pmid_2094_2929.55
+(a5 / and
+    :op1 (r / retrieve-01
+            :ARG1 (f / focus)
+            :ARG2 (c2 / cell
+                      :name (n3 / name
+                                :op1 "IEC")
+                      :ARG3-of (e2 / express-03
+                                   :ARG2 (e3 / enzyme
+                                             :name (n4 / name
+                                                       :op1 "MEK")
+                                             :mod (c3 / constitutive)
+                                             :ARG2-of (m / mutate-01)
+                                             :ARG1-of (a4 / activate-01)))
+                      :time (a2 / after
+                                :op1 (c5 / confluent
+                                         :domain c2)))
+            :manner (a3 / aspirate-101
+                        :ARG1 f
+                        :ARG2 c2
+                        :instrument (p3 / pipette)))
+    :op2 (p4 / pool-01
+             :ARG1 f
+             :ARG2 (p5 / population
+                       :mod (c4 / cell
+                                :ARG3-of (e4 / express-03
+                                             :ARG2 e3))))
+    :purpose (d / determine-01
+                :ARG1 (c / contribute-01
+                         :ARG0 (p / protein
+                                  :name (n2 / name
+                                            :op1 "serpinE2"))
+                         :ARG2 (t / transform-01
+                                  :mod (i / intestine)
+                                  :ARG2-of (i2 / induce-01
+                                               :ARG0 (e / enzyme
+                                                        :name (n / name
+                                                                 :op1 "MEK")
+                                                        :ARG1-of (a / activate-01)))))))
+
+# ::save-date Tue Jul 28, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All further experiments were performed with this previously characterized caMEK-expressing IEC population [<xref ref-type="bibr" rid="B14">14</xref>] and compared with wtMEK-expressing cell populations.
+# ::file a_pmid_2094_2929_56.txt
+# ::date 2015-05-21T11:35:30
+# ::id a_pmid_2094_2929.56
+(a3 / and
+    :op1 (p / perform-02
+            :ARG1 (e / experiment-01
+                     :ARG1 (p2 / population
+                               :ARG1-of (c / characterize-01
+                                           :time (p3 / previous))
+                               :mod (c2 / cell
+                                        :name (n / name
+                                                 :op1 "IEC")
+                                        :ARG3-of (e2 / express-03
+                                                     :ARG2 (e3 / enzyme
+                                                               :name (n2 / name
+                                                                         :op1 "MEK")
+                                                               :mod (c3 / constitutive)
+                                                               :ARG2-of (m / mutate-01)
+                                                               :ARG1-of (a4 / activate-01))))
+                               :mod (t / this))
+                     :degree (f / further)
+                     :mod (a / all))
+            :ARG1-of (d / describe-01
+                        :ARG0 (p4 / publication
+                                  :ARG1-of (c4 / cite-01
+                                               :ARG2 "14"))))
+    :op2 (c5 / compare-01
+             :ARG1 e
+             :ARG2 (p5 / population
+                       :mod (c6 / cell
+                                :ARG3-of (e4 / express-03
+                                             :ARG2 (e5 / enzyme
+                                                       :name (n3 / name
+                                                                 :op1 "MEK")
+                                                       :mod (w / wild-type)))))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Recombinant lentiviruses encoding anti-<i>serpinE2 </i>short hairpin RNA (shRNA) were therefore developed to stably suppress serpinE2 levels in these cells.
+# ::file a_pmid_2094_2929_57.txt
+# ::date 2015-05-21T11:50:42
+# ::id a_pmid_2094_2929.57
+(c / cause-01
+   :ARG1 (d / develop-02
+            :ARG1 (l / lentivirus
+                     :ARG3-of (r / recombine-01)
+                     :ARG0-of (e / encode-01
+                                 :ARG1 (n4 / nucleic-acid
+                                           :name (n / name
+                                                    :op1 "short"
+                                                    :op2 "hairpin")
+                                           :ARG0-of (e2 / encode-01
+                                                        :ARG1 (a / antibody
+                                                                 :ARG0-of (o / oppose-01
+                                                                             :ARG1 (p / protein
+                                                                                      :name (n2 / name
+                                                                                                :op1 "serpinE2")))))
+                                           :ARG1-of (m / mean-01
+                                                       :ARG2 (n5 / nucleic-acid
+                                                                 :name (n3 / name
+                                                                           :op1 "shRNA"))))))
+            :ARG4 (s / suppress-01
+                     :ARG1 (l2 / level
+                               :quant-of p)
+                     :ARG1-of (s2 / stable-03)
+                     :location (c2 / cell
+                                   :mod (t / this)))))
+
+# ::save-date Thu Jun 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Several lentiviral constructs were generated and tested for their ability to knock down serpinE2 protein.
+# ::file a_pmid_2094_2929_58.txt
+# ::date 2015-05-21T12:13:53
+# ::id a_pmid_2094_2929.58
+(a / and
+   :op1 (g / generate-01
+           :ARG1 (c / construct-01
+                    :ARG1 (l / lentiviral)
+                    :quant (s / several)))
+   :op2 (t / test-01
+           :ARG1 c
+           :ARG2 (c2 / capable-01
+                     :ARG1 c
+                     :ARG2 (k / knock-down-02
+                              :ARG0 c
+                              :ARG1 (p / protein
+                                       :name (n / name
+                                                :op1 "serpinE2"))))))
+
+# ::save-date Fri Feb 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt One of these viral shRNAs was selected and designated as shSerpinE2.
+# ::file a_pmid_2094_2929_59.txt
+# ::date 2015-05-21T12:19:50
+# ::id a_pmid_2094_2929.59
+(a / and
+   :op1 (s / select-01
+           :ARG1 (n6 / nucleic-acid
+                     :ARG1-of (i / include-91
+                                 :ARG2 (n4 / nucleic-acid
+                                           :name (n / name
+                                                    :op1 "shRNA")
+                                           :mod (v / virus)
+                                           :mod (t / this)))))
+   :op2 (d / designate-01
+           :ARG1 n6
+           :ARG2 (n5 / nucleic-acid
+                     :name (n2 / name
+                               :op1 "shRNA")
+                     :ARG0-of (e / encode-01
+                                 :ARG1 (p / protein
+                                          :name (n3 / name
+                                                    :op1 "serpinE2"))))))
+
+# ::save-date Sun May 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt caMEK-expressing cells were henceforth infected with shSerpinE2 lentiviruses or with lentiviruses expressing a control shRNA (shScrambled).
+# ::file a_pmid_2094_2929_60.txt
+# ::date 2015-05-21T12:27:20
+# ::id a_pmid_2094_2929.60
+(i / infect-01
+   :ARG1 (c / cell
+            :ARG3-of (e / express-03
+                        :ARG2 (e2 / enzyme
+                                  :name (n / name
+                                           :op1 "MEK")
+                                  :mod (c2 / constitutive)
+                                  :ARG2-of (m / mutate-01)
+                                  :ARG1-of (a2 / activate-01))))
+   :ARG2 (o / or
+            :op1 (l / lentivirus
+                    :mod (n6 / nucleic-acid
+                             :name (n2 / name
+                                       :op1 "shRNA")
+                             :ARG0-of (e3 / encode-01
+                                          :ARG1 (p / protein
+                                                   :name (n3 / name
+                                                             :op1 "serpinE2")))))
+            :op2 (l2 / lentivirus
+                     :ARG1-of (e4 / express-03
+                                  :ARG2 (n7 / nucleic-acid
+                                            :name (n4 / name
+                                                      :op1 "shRNA")
+                                            :ARG0-of (c3 / control-01)
+                                            :ARG1-of (m2 / mean-01
+                                                         :ARG2 (n8 / nucleic-acid
+                                                                   :name (n5 / name
+                                                                             :op1 "shScrambled")))))))
+   :time (h / henceforth))
+
+# ::save-date Fri Feb 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Secretion of serpinE2 protein was analyzed 14 days after selection with blasticidin S in these populations.
+# ::file a_pmid_2094_2929_61.txt
+# ::date 2015-05-21T12:35:49
+# ::id a_pmid_2094_2929.61
+(a / analyze-01
+   :ARG1 (s / secrete-01
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "serpinE2")))
+   :time (a2 / after
+             :op1 (s2 / select-01
+                      :ARG2 (p2 / population
+                                :mod (t2 / this))
+                      :instrument (s3 / small-molecule
+                                      :name (n2 / name
+                                                :op1 "blasticidin"
+                                                :op2 "S")))
+             :quant (t / temporal-quantity
+                       :quant "14"
+                       :unit (d2 / day))))
+
+# ::save-date Thu May 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F2">2A</xref>, secreted serpinE2 levels were markedly reduced (> 60%) in cells-expressing shSerpinE2; in contrast, shScrambled had no effect on the secretion of serpinE2 (data not shown).
+# ::file a_pmid_2094_2929_62.txt
+# ::date 2015-05-21T12:49:09
+# ::id a_pmid_2094_2929.62
+(a / and
+   :op1 (r / reduce-01
+           :ARG1 (l / level
+                    :quant-of (p2 / protein
+                                  :name (n / name
+                                           :op1 "serpinE2"))
+                    :ARG1-of (s / secrete-01))
+           :ARG2 (m2 / more-than
+                     :op1 (p / percentage-entity
+                             :value "60"))
+           :manner (m / marked)
+           :location (c / cell
+                        :ARG3-of (e2 / express-03
+                                     :ARG2 (n4 / nucleic-acid
+                                               :name (n2 / name
+                                                         :op1 "shRNA")
+                                               :ARG0-of (e / encode-01
+                                                           :ARG1 p2))))
+           :ARG1-of (s3 / show-01
+                        :ARG0 (f / figure
+                                 :mod "2A")))
+   :op2 (c2 / contrast-01
+            :ARG2 (a2 / affect-01
+                      :polarity "-"
+                      :ARG0 (n5 / nucleic-acid
+                                :name (n3 / name
+                                          :op1 "shScrambled"))
+                      :ARG1 (s2 / secrete-01
+                                :ARG1 p2))
+            :ARG1-of (d / describe-01
+                        :ARG0 (d2 / data
+                                  :ARG1-of (s4 / show-01
+                                               :polarity "-")))))
+
+# ::save-date Sun May 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To determine the functional role of serpinE2 in caMEK-expressing cells, the proliferation rate of these cell populations was assessed when cultured on plastic.
+# ::file a_pmid_2094_2929_63.txt
+# ::date 2015-05-21T13:19:55
+# ::id a_pmid_2094_2929.63
+(a3 / assess-01
+    :ARG1 (r2 / rate
+              :degree-of (p2 / proliferate-01
+                             :ARG0 (p3 / population
+                                       :mod (c3 / cell)
+                                       :mod (t / this))))
+    :time (c4 / culture-01
+              :ARG1 p3
+              :manner (p4 / plastic))
+    :purpose (d / determine-01
+                :ARG1 (r / role
+                         :topic (p / protein
+                                   :name (n / name
+                                            :op1 "serpinE2"))
+                         :ARG1-of (f / function-01)
+                         :location (c / cell
+                                      :ARG3-of (e / express-03
+                                                  :ARG2 (e2 / enzyme
+                                                            :name (n2 / name
+                                                                      :op1 "MEK")
+                                                            :mod (c2 / constitutive)
+                                                            :ARG2-of (m / mutate-01)
+                                                            :ARG1-of (a2 / activate-01)))))))
+
+# ::save-date Wed May 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No difference was observed in the proliferation rate of subconfluent caMEK-expressing cells when serpinE2 expression was downregulated (Figure <xref ref-type="fig" rid="F2">2B</xref>).
+# ::file a_pmid_2094_2929_64.txt
+# ::date 2015-05-20T05:45:12
+# ::id a_pmid_2094_2929.64
+(o / observe-01
+   :ARG1 (d / differ-02
+            :polarity "-"
+            :ARG1 (r / rate
+                     :degree-of (p / proliferate-01
+                                   :ARG0 (c / cell
+                                            :ARG3-of (e / express-03
+                                                        :ARG2 (e2 / enzyme
+                                                                  :name (n / name
+                                                                           :op1 "caMEK")))
+                                            :mod (s / subconfluent)))))
+   :time (d2 / downregulate-01
+             :ARG1 (e3 / express-03
+                       :ARG2 (p2 / protein
+                                 :name (n2 / name
+                                           :op1 "serpinE2"))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "2B")))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In a previous study, we had shown that expression of activated MEK in intestinal epithelial cells resulted in loss of cell-cell contact growth inhibition and produced colonies or multilayered domes which grew to increased saturation density and formed tumors when transplanted into nude mice [<xref ref-type="bibr" rid="B14">14</xref>].
+# ::file a_pmid_2094_2929_65.txt
+# ::date 2015-05-20T05:53:44
+# ::id a_pmid_2094_2929.65
+(s / show-01
+   :ARG0 (w / we)
+   :ARG1 (a2 / and
+             :op1 (r / result-01
+                     :ARG1 (e / express-03
+                              :ARG2 (e2 / enzyme
+                                        :name (n / name
+                                                 :op1 "MEK")
+                                        :ARG1-of (a / activate-01))
+                              :ARG3 (c / cell
+                                       :source (e3 / epithelium
+                                                   :part-of (i / intestine))))
+                     :ARG2 (l / lose-02
+                              :ARG1 (i2 / inhibit-01
+                                        :ARG0 (c2 / contact-01
+                                                  :ARG0 (c4 / cell)
+                                                  :ARG1 (c3 / cell))
+                                        :ARG1 (g / grow-01))))
+             :op2 (p / produce-01
+                     :ARG0 e
+                     :ARG1 (o / or
+                              :op1 (c5 / colony)
+                              :op2 (d / dome
+                                      :mod (m / multilayered))
+                              :ARG1-of (g2 / grow-01
+                                           :ARG4 (d2 / density
+                                                     :mod (s2 / saturate-01)
+                                                     :ARG1-of (i3 / increase-01)))
+                              :ARG0-of (f / form-01
+                                          :ARG1 (t / tumor)
+                                          :time (t2 / transplant-01
+                                                    :ARG1 o
+                                                    :ARG2 (m2 / mouse
+                                                              :mod (n2 / nude)))))))
+   :medium (s3 / study-01
+               :time (p2 / previous))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (p3 / publication
+                          :ARG1-of (c6 / cite-01
+                                       :ARG2 "14"))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of note, focus formation assays performed herein revealed that initially, there was little difference in the number of foci obtained between control cells and serpinE2-depleted cells (data not shown).
+# ::file a_pmid_2094_2929_66.txt
+# ::date 2015-05-20T06:09:22
+# ::id a_pmid_2094_2929.66
+(r / reveal-01
+   :ARG0 (a / assay-01
+            :ARG1 (f2 / form-01
+                      :ARG1 (f3 / focus))
+            :ARG1-of (p / perform-02
+                        :medium (h / herein)))
+   :ARG1 (d / differ-02
+            :ARG1 (c / cell
+                     :mod (c2 / control))
+            :ARG2 (c3 / cell
+                      :ARG1-of (d2 / deplete-01
+                                   :ARG2 (p2 / protein
+                                             :name (n3 / name
+                                                       :op1 "serpinE2"))))
+            :ARG3 (n2 / number
+                      :quant-of (f / focus)
+                      :ARG1-of (o / obtain-01))
+            :degree (l / little)
+            :time (i / initial))
+   :ARG1-of (n4 / note-02)
+   :ARG1-of (d3 / describe-01
+                :ARG0 (d4 / data
+                          :ARG1-of (s / show-01
+                                      :polarity "-"))))
+
+# ::save-date Fri Jun 5, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, <i>serpinE2 </i>silencing markedly reduced the size of foci (Figure <xref ref-type="fig" rid="F2">2C</xref>) suggesting a reduced capacity of these foci to grow.
+# ::file a_pmid_2094_2929_67.txt
+# ::date 2015-05-20T06:21:04
+# ::id a_pmid_2094_2929.67
+(c2 / contrast-01
+    :ARG2 (r / reduce-01
+             :ARG0 (s / silence-01
+                      :ARG1 (g2 / gene
+                                :name (n / name
+                                         :op1 "serpinE2")))
+             :ARG1 (s2 / size
+                       :poss (f / focus))
+             :manner (m / marked)
+             :ARG1-of (d / describe-01
+                         :ARG0 (f2 / figure
+                                   :mod "2C"))
+             :ARG0-of (s3 / suggest-01
+                          :ARG1 (c / capable-01
+                                   :ARG1 f
+                                   :ARG2 (g / grow-01
+                                            :ARG1 f)
+                                   :ARG1-of (r2 / reduce-01)))))
+
+# ::save-date Wed May 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Indeed, phase-contrast microscopy revealed that the colonies were smaller when serpinE2 was downregulated (Figure <xref ref-type="fig" rid="F2">2D</xref>).
+# ::file a_pmid_2094_2929_68.txt
+# ::date 2015-05-20T06:29:21
+# ::id a_pmid_2094_2929.68
+(r / reveal-01
+   :ARG0 (t / thing
+            :name (n / name
+                     :op1 "phase-contrast"
+                     :op2 "microscopy"))
+   :ARG1 (s / small
+            :degree (m / more)
+            :domain (c / colony)
+            :time (d / downregulate-01
+                     :ARG1 (p / protein
+                              :name (n2 / name
+                                        :op1 "serpinE2"))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "2D"))
+   :mod (i / indeed))
+
+# ::save-date Fri Oct 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Finally, expression of shSerpinE2 led to a significant decrease in the ability of caMEK-expressing cells to grow under anchorage-independent conditions in soft agarose (Figure <xref ref-type="fig" rid="F2">2E</xref>).
+# ::file a_pmid_2094_2929_69.txt
+# ::date 2015-05-20T06:32:08
+# ::id a_pmid_2094_2929.69
+(l / lead-03
+   :li "-1"
+   :ARG0 (e / express-03
+            :ARG2 (p / protein
+                     :name (n / name
+                              :op1 "shSerpinE2")))
+   :ARG1 (d / decrease-01
+            :ARG1 (c / capable-01
+                     :ARG1 (c2 / cell
+                               :ARG3-of (e2 / express-03
+                                            :ARG2 (e3 / enzyme
+                                                      :name (n2 / name
+                                                                :op1 "caMEK"))))
+                     :ARG2 (g / grow-01
+                              :ARG1 c2
+                              :location (a2 / agarose
+                                            :ARG1-of (s2 / soft-02))
+                              :condition (d2 / depend-01
+                                             :polarity "-"
+                                             :ARG0 g
+                                             :ARG1 (a / anchorage))))
+            :ARG2 (s / significant-02))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "2E")))
+
+
+# ::save-date Mon Jul 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cell migration is an important process of tumorigenesis and metastasis.
+# ::file a_pmid_2094_2929_70.txt
+# ::date 2015-05-20T06:46:14
+# ::id a_pmid_2094_2929.70
+(p / process-02
+      :ARG1 (m / migrate-01
+            :ARG0 (c / cell))
+      :mod (i / important)
+      :subevent-of (a / and
+            :op1 (c2 / create-01
+                  :ARG1 (t / tumor))
+            :op2 (m2 / metastasis)))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, we recently reported that intestinal epithelial cells expressing activated MEK1 clearly acquire an increased capacity to migrate as compared to wtMEK-expressing cells [<xref ref-type="bibr" rid="B14">14</xref>].
+# ::file a_pmid_2094_2929_71.txt
+# ::date 2015-05-20T06:48:09
+# ::id a_pmid_2094_2929.71
+(a / and
+   :op2 (r / report-01
+           :ARG0 (w / we)
+           :ARG1 (a2 / acquire-01
+                     :ARG0 (c2 / cell
+                               :source (e / epithelium
+                                          :part-of (i / intestine))
+                               :ARG3-of (e2 / express-03
+                                            :ARG2 (e3 / enzyme
+                                                      :name (n / name
+                                                               :op1 "MEK1")
+                                                      :ARG1-of (a3 / activate-01))))
+                     :ARG1 (c3 / capable-01
+                               :ARG1 c2
+                               :ARG2 (m / migrate-01
+                                        :ARG0 c2)
+                               :ARG1-of (i2 / increase-01)
+                               :compared-to (c4 / capable-01
+                                                :ARG1 (c5 / cell
+                                                          :ARG3-of (e4 / express-03
+                                                                       :ARG2 (e5 / enzyme
+                                                                                 :name (n2 / name
+                                                                                           :op1 "MEK")
+                                                                                 :mod (w2 / wild-type))))
+                                                :ARG2 m))
+                     :ARG1-of (c / clear-06))
+           :time (r2 / recent))
+   :ARG1-of (d / describe-01
+               :ARG0 (p / publication
+                        :ARG1-of (c6 / cite-01
+                                     :ARG2 "14"))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Herein, in an <i>in vitro </i>transwell migration assay, serpinE2 deficiency significantly reduced caMEK-expressing IEC migration to the undersurface of the polycarbonate membrane of Boyden chambers coated with fibronectin or vitronectin (Figure <xref ref-type="fig" rid="F2">2F</xref>), two extracellular matrix proteins which can interact with serpinE2 [<xref ref-type="bibr" rid="B34">34</xref>,<xref ref-type="bibr" rid="B35">35</xref>].
+# ::file a_pmid_2094_2929_72.txt
+# ::date 2015-05-20T06:54:31
+# ::id a_pmid_2094_2929.72
+(r / reduce-01
+   :ARG0 (l / lack-01
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "serpinE2")))
+   :ARG1 (m / migrate-01
+            :ARG0 (c / cell
+                     :name (n2 / name
+                               :op1 "IEC")
+                     :ARG3-of (e / express-03
+                                 :ARG2 (e2 / enzyme
+                                           :name (n3 / name
+                                                     :op1 "caMEK"))))
+            :ARG1 (u / undersurface
+                     :part-of (m2 / membrane
+                                  :consist-of (p2 / polycarbonate)
+                                  :poss (t / thing
+                                           :name (n4 / name
+                                                     :op1 "Boyden"
+                                                     :op2 "chamber")))
+                     :ARG1-of (c2 / coat-01
+                                  :ARG2 (o / or
+                                           :op1 (p3 / protein
+                                                    :name (n5 / name
+                                                              :op1 "fibronectin"))
+                                           :op2 (p4 / protein
+                                                    :name (n6 / name
+                                                              :op1 "vitronectin"))
+                                           :ARG1-of (m3 / mean-01
+                                                        :ARG2 (p5 / protein
+                                                                  :quant "2"
+                                                                  :ARG1-of (d / describe-01
+                                                                              :ARG0 (p7 / publication
+                                                                                        :ARG1-of (c3 / cite-01
+                                                                                                     :ARG2 (a / and
+                                                                                                              :op1 "34"
+                                                                                                              :op2 "35"))))
+                                                                  :ARG0-of (i / interact-01
+                                                                              :ARG1 p
+                                                                              :ARG1-of (p6 / possible-01))
+                                                                  :mod (m4 / matrix
+                                                                           :mod (e3 / extracellular))))))))
+   :ARG2 (s / significant-02)
+   :medium (h / herein)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "2F"))
+   :condition (a2 / assay-01
+                  :ARG1 (m5 / migrate-01
+                            :mod (t3 / transwell))
+                  :manner (i2 / in-vitro)))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Taken together, these results support a role of serpinE2 in MEK1-induced transformation whereby serpinE2 activates anchorage-independent growth and cell migration.
+# ::file a_pmid_2094_2929_73.txt
+# ::date 2015-05-20T07:10:51
+# ::id a_pmid_2094_2929.73
+(h / have-condition-91
+   :ARG1 (s / support-01
+            :ARG0 (t / thing
+                     :mod (t2 / this)
+                     :ARG2-of (r / result-01))
+            :ARG1 (r2 / role
+                      :poss (p / protein
+                               :name (n / name
+                                        :op1 "serpinE2"))
+                      :purpose (t3 / transform-01
+                                   :ARG2-of (i / induce-01
+                                               :ARG0 (e / enzyme
+                                                        :name (n2 / name
+                                                                  :op1 "MEK1")))
+                                   :subevent (a / activate-01
+                                                :ARG0 p
+                                                :ARG1 (a2 / and
+                                                          :op1 (g / grow-01
+                                                                  :ARG1 (c2 / cell)
+                                                                  :ARG0-of (d / depend-01
+                                                                              :polarity "-"
+                                                                              :ARG1 (a3 / anchorage)))
+                                                          :op2 (m / migrate-01
+                                                                  :ARG0 c2))))))
+   :ARG2 (t4 / take-01
+             :ARG1 t
+             :mod (t5 / together)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To assess the contribution of serpinE2 in human colorectal cancer, serpinE2 expression was first examined in various CRC cell lines including Caco-2/15 as well as others exhibiting mutation in <i>KRAS </i>(HCT-116, DLD-1, LoVo, SW480, T84) or <i>BRAF </i>(Colo-205, HT-29) [<xref ref-type="bibr" rid="B36">36</xref>].
+# ::file a_pmid_2094_2929_75.txt
+# ::date 2015-05-20T07:19:36
+# ::id a_pmid_2094_2929.75
+(e / examine-01
+   :ARG1 (e2 / express-03
+             :ARG2 (p / protein
+                      :name (n / name
+                               :op1 "serpinE2")))
+   :time (f / first)
+   :location (c / cell-line
+                :mod (v / various)
+                :ARG2-of (i / include-01
+                            :ARG1 (a / and
+                                     :op1 (c2 / cell-line
+                                              :name (n3 / name
+                                                        :op1 "Caco-2/15"))
+                                     :op2 (c3 / cell-line
+                                              :mod (o / other)
+                                              :ARG0-of (e3 / exhibit-01
+                                                           :ARG1 (m / mutate-01
+                                                                    :ARG1 (g / gene
+                                                                             :name (n4 / name
+                                                                                       :op1 "KRAS"))))
+                                              :ARG1-of (m3 / mean-01
+                                                           :ARG2 (a2 / and
+                                                                     :op1 (c5 / cell-line
+                                                                              :name (n6 / name
+                                                                                        :op1 "HCT-116"))
+                                                                     :op2 (c6 / cell-line
+                                                                              :name (n7 / name
+                                                                                        :op1 "DLD-1"))
+                                                                     :op3 (c7 / cell-line
+                                                                              :name (n8 / name
+                                                                                        :op1 "LoVo"))
+                                                                     :op4 (c8 / cell-line
+                                                                              :name (n9 / name
+                                                                                        :op1 "SW480"))
+                                                                     :op5 (c9 / cell-line
+                                                                              :name (n10 / name
+                                                                                         :op1 "T84")))))
+                                     :op3 (c4 / cell-line
+                                              :ARG0-of (e4 / exhibit-01
+                                                           :ARG1 (m2 / mutate-01
+                                                                     :ARG1 (g2 / gene
+                                                                               :name (n5 / name
+                                                                                         :op1 "BRAF"))))
+                                              :mod o
+                                              :ARG1-of (m4 / mean-01
+                                                           :ARG2 (a3 / and
+                                                                     :op1 (c10 / cell-line
+                                                                               :name (n11 / name
+                                                                                          :op1 "Colo-205"))
+                                                                     :op2 (c11 / cell-line
+                                                                               :name (n12 / name
+                                                                                          :op1 "HT-29")))))))
+                :mod (d3 / disease
+                         :name (n2 / name
+                                   :op1 "CRC")))
+   :ARG1-of (d / describe-01
+               :ARG0 (p2 / publication
+                         :ARG1-of (c12 / cite-01
+                                       :ARG2 "36")))
+   :purpose (a4 / assess-01
+                :ARG1 (c13 / contribute-01
+                           :ARG0 p
+                           :ARG2 (d2 / disease
+                                     :name (n13 / name
+                                                :op1 "colorectal"
+                                                :op2 "cancer")
+                                     :mod (h / human)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F3">3A</xref>, <i>serpinE2 </i>mRNA levels were barely detectable in the Caco-2/15 cell line while being markedly expressed in all other CRC cell lines tested.
+# ::file a_pmid_2094_2929_76.txt
+# ::date 2015-05-20T07:31:52
+# ::id a_pmid_2094_2929.76
+(c / contrast-01
+   :ARG1 (p / possible-01
+            :ARG1 (d / detect-01
+                     :ARG1 (l / level
+                              :quant-of (n5 / nucleic-acid
+                                            :name (n / name
+                                                     :op1 "mRNA")
+                                            :ARG0-of (e / encode-01
+                                                        :ARG1 (g / gene
+                                                                 :name (n2 / name
+                                                                           :op1 "serpinE2")))))
+                     :degree (b / bare)
+                     :location (c2 / cell-line
+                                   :name (n3 / name
+                                             :op1 "Caco-2/15"))))
+   :ARG2 (e2 / express-03
+             :ARG1 n5
+             :ARG3 (c3 / cell-line
+                       :mod (a / all)
+                       :mod (o / other)
+                       :ARG1-of (t / test-01)
+                       :mod (d2 / disease
+                                :name (n4 / name
+                                          :op1 "CRC")))
+             :manner (m / marked))
+   :ARG1-of (s / show-01
+               :medium (f / figure
+                          :mod "3A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Two human CRC cell lines, namely HCT116 and LoVo, which have an activating mutation in the <i>KRAS </i>gene resulting in elevated MEK/ERK activities [<xref ref-type="bibr" rid="B37">37</xref>], were thereby chosen to further analyze the regulation and role of serpinE2 expression in human colorectal cancer cells.
+# ::file a_pmid_2094_2929_77.txt
+# ::date 2015-05-20T07:45:39
+# ::id a_pmid_2094_2929.77
+(c9 / cause-01
+    :ARG1 (c / choose-01
+             :ARG1 (c2 / cell-line
+                       :quant "2"
+                       :mod (h / human)
+                       :location-of (m2 / mutate-01
+                                        :ARG1 (g / gene
+                                                 :name (n4 / name
+                                                           :op1 "KRAS"))
+                                        :ARG1-of (r / result-01
+                                                    :ARG2 (a3 / act-02
+                                                              :ARG0 (p3 / pathway
+                                                                        :name (n8 / name
+                                                                                  :op1 "MEK/ERK"))
+                                                              :ARG1-of (e / elevate-01)))
+                                        :ARG0-of (a2 / activate-01)
+                                        :ARG1-of (d / describe-01
+                                                    :ARG0 (p / publication
+                                                             :ARG1-of (c5 / cite-01
+                                                                          :ARG2 "37"))))
+                       :ARG1-of (m / mean-01
+                                   :ARG2 (a / and
+                                            :op1 (c3 / cell-line
+                                                     :name (n2 / name
+                                                               :op1 "HCT116"))
+                                            :op2 (c4 / cell-line
+                                                     :name (n3 / name
+                                                               :op1 "LoVo"))))
+                       :mod (d3 / disease
+                                :name (n / name
+                                         :op1 "CRC")))
+             :purpose (a4 / analyze-01
+                          :ARG1 (a5 / and
+                                    :op1 (r2 / regulate-01
+                                             :ARG1 (e4 / express-03
+                                                       :ARG2 (p2 / protein
+                                                                 :name (n7 / name
+                                                                           :op1 "serpinE2"))
+                                                       :ARG3 (c6 / cell
+                                                                 :source (d2 / disease
+                                                                             :name (n5 / name
+                                                                                       :op1 "colorectal"
+                                                                                       :op2 "cancer")
+                                                                             :mod (h2 / human)))))
+                                    :op2 (r3 / role
+                                             :poss e4))
+                          :degree (f / further))))
+
+# ::save-date Thu Jun 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, the impact of U0126 treatment was also investigated to evaluate the contribution of endogenous MEK/ERK activities in serpinE2 expression in human cell models.
+# ::file a_pmid_2094_2929_78.txt
+# ::date 2015-05-20T10:43:47
+# ::id a_pmid_2094_2929.78
+(a / and
+   :op2 (i2 / investigate-01
+            :ARG1 (i / impact-01
+                     :ARG0 (t / treat-04
+                              :ARG2 (s / small-molecule
+                                       :name (n / name
+                                                :op1 "U0126"))))
+            :ARG2 (e / evaluate-01
+                     :ARG1 (c / contribute-01
+                              :ARG0 (a3 / act-02
+                                        :ARG0 (p / pathway
+                                                 :name (n2 / name
+                                                           :op1 "MEK/ERK")
+                                                 :mod (e2 / endogenous)))
+                              :ARG2 (e3 / express-03
+                                        :ARG2 (p2 / protein
+                                                  :name (n4 / name
+                                                            :op1 "serpinE2"))
+                                        :ARG3 (m / model
+                                                 :mod (c2 / cell
+                                                          :mod (h / human))))))
+            :mod (a2 / also)))
+
+# ::save-date Mon Jul 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Forty-eight-hour treatment of HCT116 and LoVo cell lines with U0126 efficiently blocked endogenous MEK activity as confirmed by the marked inhibition of ERK1/2 phosphorylation (data not shown) [<xref ref-type="bibr" rid="B14">14</xref>].
+# ::file a_pmid_2094_2929_79.txt
+# ::date 2015-05-20T10:49:34
+# ::id a_pmid_2094_2929.79
+(b2 / block-01
+    :ARG0 (t2 / treat-04
+              :ARG1 (a / and
+                       :op1 (c / cell-line
+                               :name (n3 / name
+                                         :op1 "HCT116"))
+                       :op2 (c2 / cell-line
+                                :name (n4 / name
+                                          :op1 "LoVo")))
+              :ARG2 (s / small-molecule
+                       :name (n / name
+                                :op1 "U0126"))
+              :duration (t / temporal-quantity
+                           :quant "48"
+                           :unit (h / hour)))
+    :ARG1 (a2 / activity-06
+              :ARG0 (e / enzyme
+                       :name (n2 / name
+                                 :op1 "MEK")
+                       :mod (e3 / endogenous)))
+    :ARG2-of (e2 / efficient-01)
+    :ARG1-of (c3 / confirm-01
+                 :ARG0 (i / inhibit-01
+                          :ARG1 (p / phosphorylate-01
+                                   :ARG1 (s2 / slash
+                                             :op1 (e4 / enzyme
+                                                      :name (n5 / name
+                                                                :op1 "ERK1"))
+                                             :op2 (e5 / enzyme
+                                                      :name (n6 / name
+                                                                :op1 "ERK2"))))
+                          :mod (m / marked)))
+    :ARG1-of (d / describe-01
+                :ARG0 (a3 / and
+                          :op1 (d2 / data
+                                   :ARG1-of (s3 / show-01
+                                                :polarity "-"))
+                          :op2 (p2 / publication
+                                   :ARG1-of (c4 / cite-01
+                                                :ARG2 "14")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F3">3B</xref>, treatment of these CRC cell lines with U0126 markedly and significantly reduced <i>serpinE2 </i>mRNA levels, indicating that expression of <i>serpinE2 </i>is likely dependent of ERK activity in these cell lines.
+# ::file a_pmid_2094_2929_80.txt
+# ::date 2015-05-20T10:59:16
+# ::id a_pmid_2094_2929.80
+(r / reduce-01
+   :ARG0 (t / treat-04
+            :ARG1 (c / cell-line
+                     :mod (t2 / this)
+                     :mod (d2 / disease
+                              :name (n3 / name
+                                        :op1 "CRC")))
+            :ARG2 (s / small-molecule
+                     :name (n / name
+                              :op1 "U0126")))
+   :ARG1 (l / level
+            :quant-of (n6 / nucleic-acid
+                          :name (n4 / name
+                                    :op1 "mRNA")
+                          :ARG0-of (e2 / encode-01
+                                       :ARG1 (g / gene
+                                                :name (n5 / name
+                                                          :op1 "serpinE2")))))
+   :ARG2 (a / and
+            :op1 (m / marked)
+            :op2 (s2 / significant-02))
+   :ARG0-of (i / indicate-01
+               :ARG1 (l2 / likely-01
+                         :ARG1 (d / depend-01
+                                  :ARG0 (e3 / express-03
+                                            :ARG1 g
+                                            :ARG3 c)
+                                  :ARG1 (a2 / activity-06
+                                            :ARG0 (p / protein-family
+                                                     :name (n2 / name
+                                                               :op1 "ERK"))))))
+   :ARG1-of (s3 / show-01
+                :medium (f / figure
+                           :mod "3B")))
+
+# ::save-date Thu Jun 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next investigated the effect of serpinE2 knockdown on anchorage independent growth and cell migration after downregulation of <i>serpinE2 </i>gene expression by RNA interference in HCT116 and LoVo cells.
+# ::file a_pmid_2094_2929_82.txt
+# ::date 2015-05-20T11:08:56
+# ::id a_pmid_2094_2929.82
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :ARG0 (k / knock-down-02
+                     :ARG1 (p / protein
+                              :name (n2 / name
+                                        :op1 "serpinE2")))
+            :ARG1 (a2 / and
+                      :op1 (g / grow-01
+                              :ARG0-of (d / depend-01
+                                          :polarity "-"
+                                          :ARG1 (a3 / anchorage)))
+                      :op2 (m / migrate-01
+                              :ARG0 (c / cell))))
+   :time (n / next)
+   :time (a4 / after
+             :op1 (d2 / downregulate-01
+                      :ARG1 (e / express-03
+                               :ARG1 (g2 / gene
+                                         :name (n3 / name
+                                                   :op1 "serpinE2"))
+                               :ARG3 (a5 / and
+                                         :op1 (c2 / cell-line
+                                                  :name (n4 / name
+                                                            :op1 "HCT116"))
+                                         :op2 (c3 / cell-line
+                                                  :name (n5 / name
+                                                            :op1 "LoVo"))))
+                      :ARG2 (i2 / interfere-01
+                                :ARG0 (n6 / nucleic-acid
+                                          :name (n7 / name
+                                                    :op1 "RNA"))))))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F4">4A</xref>, <i>serpinE2 </i>mRNA were significantly reduced by respectively 37% and 88% in LoVo cells expressing shSerpinE2(#15) or shSerpinE2(#16) and by 77% and 92% in HCT116 expressing shSerpinE2(#15) or shSerpinE2(#16); conversely, expression of the control shRNA (shTGFP) had no effect on endogenous <i>serpinE2 </i>expression (data not shown).
+# ::file a_pmid_2094_2929_83.txt
+# ::date 2015-05-20T11:17:25
+# ::id a_pmid_2094_2929.83
+(c5 / contrast-01
+    :ARG1 (a5 / and
+              :op1 (r / reduce-01
+                      :ARG1 (n12 / nucleic-acid
+                                 :name (n / name
+                                          :op1 "mRNA")
+                                 :ARG0-of (e / encode-01
+                                             :ARG1 (g / gene
+                                                      :name (n2 / name
+                                                                :op1 "serpinE2"))))
+                      :ARG2 (p / percentage-entity
+                               :value "37")
+                      :ARG1-of (s / significant-02
+                                  :ARG1 r8
+                                  :ARG1 r9
+                                  :ARG1 r10)
+                      :location (c / cell-line
+                                   :name (n3 / name
+                                             :op1 "LoVo")
+                                   :ARG3-of (e2 / express-03
+                                                :ARG2 (p5 / protein
+                                                          :name (n5 / name
+                                                                    :op1 "shSerpinE2")
+                                                          :ARG1-of (l / label-01
+                                                                      :ARG2 "15"))
+                                                :ARG3 c2)))
+              :op2 (r8 / reduce-01
+                       :ARG1 n12
+                       :ARG2 (p2 / percentage-entity
+                                 :value "88")
+                       :location (c6 / cell-line
+                                     :name (n10 / name
+                                                :op1 "LoVo")
+                                     :ARG3-of (e6 / express-03
+                                                  :ARG2 (p6 / protein
+                                                            :name (n4 / name
+                                                                      :op1 "shSerpinE2")
+                                                            :ARG1-of (l2 / label-01
+                                                                         :ARG2 "16"))
+                                                  :ARG3 c7)))
+              :op3 (r9 / reduce-01
+                       :ARG1 n12
+                       :ARG2 (p3 / percentage-entity
+                                 :value "77")
+                       :location (c2 / cell-line
+                                     :name (n6 / name
+                                               :op1 "HCT116")))
+              :op4 (r10 / reduce-01
+                        :ARG1 n12
+                        :ARG2 (p4 / percentage-entity
+                                  :value "92")
+                        :location (c7 / cell-line
+                                      :name (n11 / name
+                                                 :op1 "HCT116")))
+              :ARG1-of (s3 / show-01
+                           :medium (f / figure
+                                      :mod "4A")))
+    :ARG2 (c3 / contrast-01
+              :ARG1 (a4 / affect-01
+                        :polarity "-"
+                        :ARG0 (e3 / express-03
+                                  :ARG2 (n15 / nucleic-acid
+                                             :name (n7 / name
+                                                       :op1 "shRNA")
+                                             :mod (c4 / control)
+                                             :ARG1-of (d / describe-01
+                                                         :ARG2 (p7 / protein
+                                                                   :name (n8 / name
+                                                                             :op1 "shTGFP")))))
+                        :ARG1 (e4 / express-03
+                                  :ARG1 (g2 / gene
+                                            :name (n9 / name
+                                                      :op1 "serpinE2")
+                                            :mod (e5 / endogenous))))
+              :ARG1-of (d2 / describe-01
+                           :ARG0 (d3 / data
+                                     :ARG1-of (s2 / show-01
+                                                  :polarity "-")))))
+
+
+# ::save-date Thu May 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Again, the proliferation rate of these cell populations was assessed when cultured on plastic.
+# ::file a_pmid_2094_2929_84.txt
+# ::date 2015-05-20T11:40:23
+# ::id a_pmid_2094_2929.84
+(a / assess-01
+      :ARG1 (r / rate
+            :degree-of (p / proliferate-01
+                  :ARG0 (p2 / population
+                        :mod (t / this)
+                        :mod (c / cell))))
+      :time (c2 / culture-01
+            :ARG1 p2
+            :location (p3 / plastic))
+      :mod (a2 / again))
+
+# ::save-date Thu May 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No difference was observed in the proliferation rate of subconfluent cells when serpinE2 expression was downregulated (Figure <xref ref-type="fig" rid="F4">4B</xref>).
+# ::file a_pmid_2094_2929_85.txt
+# ::date 2015-05-20T11:43:30
+# ::id a_pmid_2094_2929.85
+(o / observe-01
+   :ARG1 (d / differ-02
+            :polarity "-"
+            :ARG1 (r / rate
+                     :degree-of (p / proliferate-01
+                                   :ARG0 (c / cell
+                                            :mod (s / subconfluent)))))
+   :time (d2 / downregulate-01
+             :ARG1 (e / express-03
+                      :ARG2 (p2 / protein
+                                :name (n / name
+                                         :op1 "serpinE2"))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "4B")))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We then verified whether the reduction in <i>serpinE2 </i>expression alters the ability of colon cancer cells to form colonies in soft agarose.
+# ::file a_pmid_2094_2929_86.txt
+# ::date 2015-05-20T11:46:44
+# ::id a_pmid_2094_2929.86
+(v / verify-01
+   :ARG0 (w / we)
+   :ARG1 (a / alter-01
+            :mode "interrogative"
+            :ARG0 (r / reduce-01
+                     :ARG1 (e / express-03
+                              :ARG1 (g / gene
+                                       :name (n / name
+                                                :op1 "serpinE2"))))
+            :ARG1 (c / capable-01
+                     :ARG1 (c2 / cell
+                               :source (d / disease
+                                          :name (n2 / name
+                                                    :op1 "colon"
+                                                    :op2 "cancer")))
+                     :ARG2 (f / form-01
+                              :ARG0 c2
+                              :ARG1 (c5 / colony)
+                              :location (a2 / agarose
+                                            :ARG1-of (s / soft-02)))))
+   :time (t / then))
+
+# ::save-date Mon Jul 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F4">4C</xref>, expression of both shRNA against SerpinE2 (#15 and #16) decreased the ability of HCT116 and LoVo cells to form colonies in soft agarose.
+# ::file a_pmid_2094_2929_87.txt
+# ::date 2015-05-20T11:50:05
+# ::id a_pmid_2094_2929.87
+(d / decrease-01
+   :ARG0 (e / express-03
+            :ARG2 (n7 / nucleic-acid
+                      :name (n / name
+                               :op1 "shRNA")
+                      :mod (b / both)
+                      :ARG0-of (c / counter-01
+                                  :ARG1 (p / protein
+                                           :name (n2 / name
+                                                     :op1 "SerpinE2")
+                                           :ARG1-of (m / mean-01
+                                                       :ARG2 (a / and
+                                                                :op1 (p2 / protein
+                                                                         :name (n3 / name
+                                                                                   :op1 "SerpinE2")
+                                                                         :ARG1-of (l / label-01
+                                                                                     :ARG2 "15"))
+                                                                :op2 (p3 / protein
+                                                                         :name (n4 / name
+                                                                                   :op1 "SerpinE2")
+                                                                         :ARG1-of (l2 / label-01
+                                                                                      :ARG2 "16"))))))))
+   :ARG1 (c2 / capable-01
+             :ARG1 (a2 / and
+                       :op1 (c3 / cell-line
+                                :name (n5 / name
+                                          :op1 "HCT116"))
+                       :op2 (c4 / cell-line
+                                :name (n6 / name
+                                          :op1 "LoVo")))
+             :ARG2 (f / form-01
+                      :ARG0 a2
+                      :ARG1 (c5 / colony)
+                      :location (a3 / agarose
+                                    :ARG1-of (s / soft-02))))
+   :ARG1-of (s2 / show-01
+                :ARG0 (f2 / figure
+                          :mod "4C")))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of note, shSerpinE2(#15) which was less efficient than the shRNA (#16) to reduce <i>serpinE2 </i>gene expression (Figure <xref ref-type="fig" rid="F4">4A</xref>) was also less efficient to reduce colony formation.
+# ::file a_pmid_2094_2929_88.txt
+# ::date 2015-05-21T00:44:50
+# ::id a_pmid_2094_2929.88
+(e / efficient-01
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "shSerpinE2")
+            :ARG1-of (e2 / efficient-01
+                         :ARG2 (r4 / reduce-01
+                                   :ARG0 p
+                                   :ARG1 (e3 / express-03
+                                             :ARG1 (g / gene
+                                                      :name (n3 / name
+                                                                :op1 "serpinE2"))))
+                         :degree (l / less)
+                         :ARG1-of (d / describe-01
+                                     :ARG0 (f2 / figure
+                                               :mod "4A"))
+                         :compared-to (n6 / nucleic-acid
+                                          :name (n2 / name
+                                                    :op1 "shRNA")
+                                          :ARG1-of (l3 / label-01
+                                                       :ARG2 "16")))
+            :ARG1-of (l2 / label-01
+                         :ARG2 "15")
+            :ARG1-of (n4 / note-02))
+   :ARG2 (r / reduce-01
+            :ARG0 p
+            :ARG1 (f / form-01
+                     :ARG1 (c / colony)))
+   :mod (a / also)
+   :degree l)
+
+# ::save-date Thu May 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This indicates that serpinE2 controls anchorage-independent growth of human colon carcinoma cells.
+# ::file a_pmid_2094_2929_89.txt
+# ::date 2015-05-21T00:50:43
+# ::id a_pmid_2094_2929.89
+(i / indicate-01
+   :ARG0 (t / this)
+   :ARG1 (c / control-01
+            :ARG0 (p / protein
+                     :name (n / name
+                              :op1 "serpinE2"))
+            :ARG1 (g / grow-01
+                     :ARG1 (c2 / cell
+                               :source (c3 / carcinoma
+                                           :mod (h / human)
+                                           :mod (c4 / colon)))
+                     :ARG0-of (d / depend-01
+                                 :polarity "-"
+                                 :ARG1 (a / anchorage)))))
+
+# ::save-date Sat Jun 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Additionally, as observed in caMEK-expressing IECs, the size of foci formed at post-confluency was significantly decreased in serpinE2-depleted LoVo cells (Figure <xref ref-type="fig" rid="F4">4D</xref>).
+# ::file a_pmid_2094_2929_90.txt
+# ::date 2015-05-21T00:52:39
+# ::id a_pmid_2094_2929.90
+(a / and
+   :op2 (d / decrease-01
+           :ARG1 (s2 / size
+                     :poss (f / focus
+                              :ARG1-of (f2 / form-01
+                                           :time (a2 / after
+                                                     :op1 (c3 / confluency)))))
+           :ARG2 (s / significant-02)
+           :location (c / cell-line
+                        :name (n / name
+                                 :op1 "LoVo")
+                        :ARG1-of (d2 / deplete-01
+                                     :ARG2 (p2 / protein
+                                               :name (n2 / name
+                                                         :op1 "serpinE2"))))
+           :ARG1-of (o / observe-01
+                       :location (c2 / cell
+                                     :name (n3 / name
+                                               :op1 "IEC")
+                                     :ARG3-of (e / express-03
+                                                 :ARG2 (e2 / enzyme
+                                                           :name (n4 / name
+                                                                     :op1 "caMEK"))))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f3 / figure
+                          :mod "4D")))
+
+
+# ::save-date Thu Sep 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The tumorigenicity of colorectal cell lines was next assessed after subcutaneous (s.c.) injection into the flank of nude mice.
+# ::file a_pmid_2094_2929_91.txt
+# ::date 2015-05-21T00:57:22
+# ::id a_pmid_2094_2929.91
+(a / assess-01
+      :ARG1 (p / possible-01
+            :ARG1 (c3 / create-01
+                  :ARG0 (c / cell-line
+                        :source (c2 / colorectal))
+                  :ARG1 (t / tumor)))
+      :time (n / next)
+      :time (a2 / after
+            :op1 (i / inject-01
+                  :ARG2 (f / flank
+                        :poss (m / mouse
+                              :mod (n2 / nude)))
+                  :mod (s / subcutaneous))))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F5">5A</xref> and <xref ref-type="fig" rid="F5">5B</xref>, HCT116 and LoVo cell lines induced palpable tumors with a short latency period of respectively 15 and 10 days after their injection.
+# ::file a_pmid_2094_2929_92.txt
+# ::date 2015-05-21T01:00:22
+# ::id a_pmid_2094_2929.92
+(i / induce-01
+      :ARG0 (a / and
+            :op1 (c / cell-line
+                  :name (n / name :op1 "HCT116"))
+            :op2 (c2 / cell-line
+                  :name (n2 / name :op1 "LoVo")))
+      :ARG2 (t2 / tumor
+            :mod (p / palpable)
+            :mod (p2 / period
+                  :mod (l / latency)
+                  :ARG1-of (s / short-07)
+                  :time (a3 / after
+                        :op1 (i2 / inject-01
+                              :ARG1 a)
+                        :quant (a2 / and
+                              :op1 (t3 / temporal-quantity
+                                    :quant "15"
+                                    :unit (d2 / day))
+                              :op2 (t4 / temporal-quantity
+                                    :quant "10"
+                                    :unit (d / day))
+                              :mod (r / respective)))))
+      :ARG1-of (s2 / show-01
+            :medium (a4 / and
+                  :op1 (f / figure :mod "5A")
+                  :op2 (f2 / figure :mod "5B"))))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt More importantly, downregulation of serpinE2 expression with shSerpinE2(#16) in these cell lines severely impaired their capacity to grow as tumors in nude mice.
+# ::file a_pmid_2094_2929_93.txt
+# ::date 2015-05-21T01:06:14
+# ::id a_pmid_2094_2929.93
+(i / impair-01
+   :ARG0 (d / downregulate-01
+            :ARG1 (e / express-03
+                     :ARG2 (p / protein
+                              :name (n / name
+                                       :op1 "serpinE2"))
+                     :ARG3 (c / cell-line
+                              :mod (t / this)))
+            :ARG2 (p2 / protein
+                      :name (n2 / name
+                                :op1 "shSerpinE2")
+                      :ARG1-of (l / label-01
+                                  :ARG2 "16")))
+   :ARG1 (c2 / capable-01
+             :ARG1 c
+             :ARG2 (g / grow-02
+                      :ARG1 c
+                      :ARG2 (t2 / tumor)
+                      :location (m / mouse
+                                   :mod (n3 / nude))))
+   :manner (s / severe)
+   :mod (i2 / important
+            :degree (m2 / more)))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Finally, <i>in vitro </i>transwell migration assays were performed to verify the importance of serpinE2 in colon carcinoma cell migration.
+# ::file a_pmid_2094_2929_94.txt
+# ::date 2015-05-21T01:10:20
+# ::id a_pmid_2094_2929.94
+(p / perform-02
+   :li "-1"
+   :ARG1 (a / assay-01
+            :ARG1 (m2 / migrate-01
+                      :mod (t2 / transwell))
+            :manner (i / in-vitro))
+   :purpose (v / verify-01
+               :ARG1 (i2 / important
+                         :domain (p2 / protein
+                                     :name (n2 / name
+                                               :op1 "serpinE2"))
+                         :purpose (m / migrate-01
+                                     :ARG0 (c / cell
+                                              :source (c2 / carcinoma
+                                                          :mod (c3 / colon)))))))
+
+# ::save-date Sun Jul 5, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As illustrated in Figure <xref ref-type="fig" rid="F6">6A</xref>, serpinE2 deficiency significantly reduced HCT116 (not shown) and LoVo cell migration to the undersurface of the membrane coated or not with fibronectin or vitronectin (data not shown).
+# ::file a_pmid_2094_2929_95.txt
+# ::date 2015-05-21T01:17:17
+# ::id a_pmid_2094_2929.95
+(r / reduce-01
+   :ARG0 (l / lack-01
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "serpinE2")))
+   :ARG1 (m / migrate-01
+            :ARG0 (a / and
+                     :op1 (c2 / cell-line
+                              :name (n2 / name
+                                        :op1 "HCT116")
+                              :ARG1-of (s2 / show-01
+                                           :polarity "-"))
+                     :op2 (c4 / cell-line
+                              :name (n3 / name
+                                        :op1 "LoVo")))
+            :ARG2 (u / undersurface
+                     :part-of (m2 / membrane)
+                     :ARG1-of (c5 / coat-01
+                                  :ARG2 (o / or
+                                           :op1 (p2 / protein
+                                                    :name (n4 / name
+                                                              :op1 "fibronectin"))
+                                           :op2 (p3 / protein
+                                                    :name (n5 / name
+                                                              :op1 "vitronectin")))
+                                  :op1-of (o2 / or
+                                              :op2 (c6 / coat-01
+                                                       :polarity "-"
+                                                       :ARG1 u
+                                                       :ARG2 o)))))
+   :ARG2 (s / significant-02)
+   :ARG1-of (i / illustrate-01
+               :medium (f / figure
+                          :mod "6A"))
+   :ARG1-of (d / describe-01
+               :ARG0 (d2 / data
+                         :ARG1-of s2)))
+
+# ::save-date Tue Jul 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The net effect of serpinE2 knockdown was also determined on invasion by using BD Biocoat Matrigel invasion chambers, in presence of hydroxyurea.
+# ::file a_pmid_2094_2929_96.txt
+# ::date 2015-05-21T01:28:49
+# ::id a_pmid_2094_2929.96
+(d / determine-01
+   :ARG1 (a / affect-01
+            :ARG0 (k / knock-down-02
+                     :ARG1 (p / protein
+                              :name (n2 / name
+                                        :op1 "serpinE2")))
+            :mod (n / net))
+   :mod (a2 / also)
+   :time (i / invade-01)
+   :manner (u / use-01
+              :ARG1 (t / thing
+                       :name (n3 / name
+                                 :op1 "BD"
+                                 :op2 "Biocoat"
+                                 :op3 "Matrigel"
+                                 :op4 "invasion"
+                                 :op5 "chamber")))
+   :condition (p2 / present-02
+                  :ARG1 (s / small-molecule
+                           :name (n4 / name
+                                     :op1 "hydroxyurea"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F6">6B</xref>, the capacity of LoVo cells to invade Matrigel was also altered by serpinE2 silencing
+# ::file a_pmid_2094_2929_97.txt
+# ::date 2015-05-21T01:35:43
+# ::id a_pmid_2094_2929.97
+(a / alter-01
+   :ARG0 (s / silence-01
+            :ARG1 (p2 / protein
+                      :name (n3 / name
+                                :op1 "serpinE2")))
+   :ARG1 (c / capable-01
+            :ARG1 (c2 / cell-line
+                      :name (n / name
+                               :op1 "LoVo"))
+            :ARG2 (i / invade-01
+                     :ARG0 c2
+                     :ARG1 (p / protein
+                              :name (n2 / name
+                                        :op1 "Matrigel"))))
+   :mod (a2 / also)
+   :ARG1-of (s2 / show-01
+                :medium (f / figure
+                           :mod "6B")))
+
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test the hypothesis that this altered migration and invasion capacity could result from a defect in cell adhesion, adhesion strength to the substrate was examined for control and shSerpinE2(#16)-expressing LoVo cells.
+# ::file a_pmid_2094_2929_98.txt
+# ::date 2015-05-21T01:41:10
+# ::id a_pmid_2094_2929.98
+(e / examine-01
+      :ARG1 (s / strong-02
+            :degree-of (a / adhere-01
+                  :ARG1 (a2 / and
+                        :op1 (c / cell-line
+                              :name (n / name :op1 "LoVo")
+                              :mod (c2 / control))
+                        :op2 (c3 / cell-line
+                              :name (n2 / name :op1 "LoVo")
+                              :ARG3-of (e2 / express-03
+                                    :ARG2 (p2 / protein
+                                          :name (n3 / name :op1 "shSerpinE2")
+                                          :ARG1-of (l / label-01 :ARG2 "16")))))
+                  :ARG2 (s2 / substrate)))
+      :ARG2 (t2 / test-01
+            :ARG1 (h / hypothesize-01
+                  :ARG1 (p / possible-01
+                        :ARG1 (r2 / result-01
+                              :ARG1 (d / defect
+                                    :topic (a5 / adhere-01
+                                          :ARG1 (c5 / cell)))
+                              :ARG2 (c4 / capable-01
+                                    :ARG2 (a3 / and
+                                          :op1 (m / migrate-01)
+                                          :op2 (i / invade-01))
+                                    :ARG1-of (a4 / alter-01)
+                                    :mod (t3 / this)))))))
+
+# ::save-date Thu Dec 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Using a trypsin-mediated de-adhesion assay, downregulation of serpinE2 significantly delayed LoVo cell detachment after trypsinization (Figure <xref ref-type="fig" rid="F6">6C</xref>), suggesting that serpinE2 expression decreases adhesion of colorectal carcinoma cells to the substrate.
+# ::file a_pmid_2094_2929_99.txt
+# ::date 2015-05-21T01:49:37
+# ::id a_pmid_2094_2929.99
+(d / delay-01
+   :ARG0 (d2 / downregulate-01
+             :ARG1 (p / protein
+                      :name (n / name
+                               :op1 "serpinE2")))
+   :ARG1 (d3 / detach-01
+             :ARG1 (c / cell-line
+                      :name (n2 / name
+                                :op1 "LoVo")))
+   :ARG2 (s / significant-02)
+   :time (a / after
+            :op1 (t / trypsinize-00))
+   :manner (u / use-01
+              :ARG1 (a2 / assay-01
+                        :ARG1 (a3 / adhere-01
+                                  :polarity "-")
+                        :ARG1-of (m / mediate-01
+                                    :ARG0 (e / enzyme
+                                             :name (n4 / name
+                                                       :op1 "trypsin")))))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (f / figure
+                         :mod "6C"))
+   :ARG0-of (s2 / suggest-01
+                :ARG1 (d5 / decrease-01
+                          :ARG0 (e2 / express-03
+                                    :ARG2 p)
+                          :ARG1 (a4 / adhere-01
+                                    :ARG1 (c2 / cell
+                                              :source (c3 / carcinoma
+                                                          :mod (c4 / colorectal)))
+                                    :ARG2 (s3 / substrate)))))
+
+# ::save-date Thu May 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next analyzed <i>serpinE2 </i>gene expression in a series of human paired specimens (resection margins and primary tumors) by Q-PCR analysis.
+# ::file a_pmid_2094_2929_101.txt
+# ::date 2015-05-21T02:00:52
+# ::id a_pmid_2094_2929.101
+(a / analyze-01
+   :ARG0 (w / we)
+   :ARG1 (e / express-03
+            :ARG1 (g / gene
+                     :name (n2 / name
+                               :op1 "serpinE2"))
+            :ARG3 (s / series
+                     :consist-of (s2 / specimen
+                                     :mod (h / human)
+                                     :ARG1-of (p / pair-01)
+                                     :ARG1-of (m / mean-01
+                                                 :ARG2 (a2 / and
+                                                           :op1 (m2 / margin
+                                                                    :mod (r / resection))
+                                                           :op2 (t / tumor
+                                                                   :mod (p2 / primary)))))))
+   :time (n / next)
+   :manner (t2 / thing
+               :name (n3 / name
+                         :op1 "Q-PCR"
+                         :op2 "analysis")))
+
+# ::save-date Mon Dec 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F7">7</xref>, mRNA levels of serpinE2 were markedly increased in human adenomas in comparison to healthy adjacent tissues.
+# ::file a_pmid_2094_2929_102.txt
+# ::date 2015-05-21T02:08:57
+# ::id a_pmid_2094_2929.102
+(i / increase-01
+   :ARG1 (l / level
+            :quant-of (n4 / nucleic-acid
+                          :name (n / name
+                                   :op1 "mRNA")
+                          :ARG0-of (e / encode-01
+                                      :ARG1 (p / protein
+                                               :name (n2 / name
+                                                         :op1 "serpinE2")))
+                          :quant l2))
+   :manner (m / marked)
+   :ARG1-of (s / show-01
+               :medium (f / figure
+                          :mod "7"))
+   :compared-to (l2 / level
+                    :location (t / tissue
+                                 :mod (h2 / healthy)
+                                 :mod (a2 / adjacent)))
+   :location (m2 / medical-condition
+                 :name (n3 / name
+                           :op1 "adenoma")
+                 :mod (h / human)))
+
+# ::save-date Thu Jan 7, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, serpinE2 expression was also significantly enhanced in colorectal tumors, regardless of tumor stage and grade.
+# ::file a_pmid_2094_2929_103.txt
+# ::date 2015-05-21T02:14:26
+# ::id a_pmid_2094_2929.103
+(a / and
+   :op2 (e / enhance-01
+           :ARG1 (e2 / express-03
+                     :ARG2 (p / protein
+                              :name (n / name
+                                       :op1 "serpinE2"))
+                     :ARG3 (t / tumor
+                              :mod (c / colorectal)))
+           :ARG3 (s / significant-02)
+           :mod (a2 / also)
+           :ARG1-of (r / regardless-91
+                       :ARG2 (a3 / and
+                                 :op1 (t2 / thing
+                                          :ARG2-of (s2 / stage-02
+                                                       :ARG1 t))
+                                 :op2 (g / grade
+                                         :mod t)))))

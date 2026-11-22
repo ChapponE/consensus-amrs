@@ -1,0 +1,3075 @@
+# ::save-date Tue Aug 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To explore the potential therapeutic value of the JAK2 inhibitor AZD1480 in HL, we initially examined the expression pattern of its protein target, the active, phosphorylated form of JAK2 Y1007/1008, in cultured HL cells.
+# ::file pmid_2282_9094_74.txt
+# ::date 2015-07-23T10:10:53
+# ::id pmid_2282_9094.74
+(e / examine-01
+   :ARG0 (w / we)
+   :ARG1 (p / pattern-01
+            :ARG1 (e2 / express-03
+                      :ARG2 (t2 / target-01
+                                :ARG0 "s"
+                                :ARG1 (a / amino-acid
+                                         :mod "1007/1008"
+                                         :name (n2 / name
+                                                   :op1 "tyrosine")
+                                         :part-of (e3 / enzyme
+                                                      :name (n / name
+                                                               :op1 "JAK2")
+                                                      :mod (f / form))
+                                         :ARG3-of (p3 / phosphorylate-01)
+                                         :ARG1-of (a2 / activate-01)))
+                      :ARG3 (c / cell
+                               :ARG1-of (c2 / culture-01)
+                               :mod (d / disease
+                                       :name (n4 / name
+                                                 :op1 "HL")))))
+   :time (i2 / initial)
+   :purpose (e4 / explore-01
+                :ARG0 w
+                :ARG1 c
+                :ARG2 (v / value-01
+                         :ARG1 (s / small-molecule
+                                  :name (n3 / name
+                                            :op1 "AZD1480")
+                                  :ARG0-of (i / inhibit-01
+                                              :ARG1 e3))
+                         :mod (t3 / therapy)
+                         :mod (p4 / potential))))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We hypothesized that cells with high levels of p-JAK2 would be more sensitive to the antiproliferative effect of AZD1480 than cells with lower levels of p-JAK2.
+# ::file pmid_2282_9094_75.txt
+# ::date 2015-07-23T12:05:11
+# ::id pmid_2282_9094.75
+(h / hypothesize-01
+   :ARG0 (w / we)
+   :ARG1 (s / sensitive-03
+            :ARG0 (c / cell
+                     :ARG0-of (h2 / have-03
+                                  :ARG1 (l2 / level
+                                            :quant-of (e2 / enzyme
+                                                          :name (n / name
+                                                                   :op1 "JAK2")
+                                                          :ARG3-of (p / phosphorylate-01))
+                                            :ARG1-of (h3 / high-02))))
+            :ARG1 (a / affect-01
+                     :ARG0 (s2 / small-molecule
+                               :name (n2 / name
+                                         :op1 "AZD1480"))
+                     :ARG0-of (c2 / counter-01
+                                  :ARG1 (p2 / proliferate-01)))
+            :degree (m2 / more)
+            :compared-to (c3 / cell
+                             :ARG0-of (h4 / have-03
+                                          :ARG1 (l3 / level
+                                                    :quant-of e2
+                                                    :ARG1-of (l / low-04
+                                                                :degree (m / more)))))))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We found p-JAK2 to be expressed in two of the four HL cell lines (<xref ref-type="fig" rid="fig1">Figure 1a</xref>).
+# ::file pmid_2282_9094_76.txt
+# ::date 2015-07-23T12:13:13
+# ::id pmid_2282_9094.76
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (e / express-03
+            :ARG2 (e2 / enzyme
+                      :name (n / name
+                               :op1 "JAK2")
+                      :ARG3-of (p / phosphorylate-01))
+            :ARG3 (c / cell-line
+                     :quant "2"
+                     :ARG1-of (i / include-91
+                                 :ARG2 (c2 / cell-line
+                                           :quant "4"
+                                           :mod (d2 / disease
+                                                    :name (n2 / name
+                                                              :op1 "HL"))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "1a")))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt None of the HL cell lines expressed p-JAK1 Y1022/1023, two cell lines expressed p-TYK2 Y1054/1055, and only one cell line (L-540) expressed p-JAK3 Y980 (<xref ref-type="fig" rid="fig1">Figure 1a</xref>).
+# ::file pmid_2282_9094_77.txt
+# ::date 2015-07-23T12:18:55
+# ::id pmid_2282_9094.77
+(a / and
+   :op1 (e / express-03
+           :ARG2 (e2 / enzyme
+                     :name (n2 / name
+                               :op1 "JAK1")
+                     :ARG3-of (p / phosphorylate-01
+                                 :ARG1 (a2 / amino-acid
+                                           :mod "1022/1023"
+                                           :name (n3 / name
+                                                     :op1 "tyrosine"))))
+           :ARG3 (c / cell-line
+                    :quant (n / none)
+                    :mod (d2 / disease
+                             :name (n9 / name
+                                       :op1 "HL"))))
+   :op2 (e3 / express-03
+            :ARG2 (e4 / enzyme
+                      :name (n4 / name
+                                :op1 "TYK2")
+                      :ARG3-of (p2 / phosphorylate-01
+                                   :ARG1 (a3 / amino-acid
+                                             :mod "1054/1055"
+                                             :name (n5 / name
+                                                       :op1 "tyrosine"))))
+            :ARG3 (c2 / cell-line
+                      :quant "2"))
+   :op3 (e5 / express-03
+            :ARG2 (e6 / enzyme
+                      :name (n7 / name
+                                :op1 "JAK3")
+                      :ARG3-of (p3 / phosphorylate-01
+                                   :ARG1 (a4 / amino-acid
+                                             :mod "980"
+                                             :name (n8 / name
+                                                       :op1 "tyrosine"))))
+            :ARG3 (c3 / cell-line
+                      :quant "1"
+                      :mod (o / only)
+                      :ARG1-of (m / mean-01
+                                  :ARG2 (c4 / cell-line
+                                            :name (n6 / name
+                                                      :op1 "L-540")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1a")))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, the activation pattern of the JAK family members is rather heterogeneous in the HL cell lines.
+# ::file pmid_2282_9094_78.txt
+# ::date 2015-07-23T12:39:42
+# ::id pmid_2282_9094.78
+(c / cause-01
+      :ARG1 (h / heterogeneity
+            :domain (p / pattern-01
+                  :ARG1 (a / activate-01
+                        :ARG1 (m / member
+                              :ARG1-of (i / include-91
+                                    :ARG2 (p2 / protein-family
+                                          :name (n / name :op1 "JAK")))))
+                  :location (c2 / cell-line
+                        :mod (d / disease
+                              :name (n2 / name :op1 "HL"))))))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Next, we investigated the expression pattern of the active phosphorylated form of downstream (p-STATs).
+# ::file pmid_2282_9094_79.txt
+# ::date 2015-07-23T12:44:38
+# ::id pmid_2282_9094.79
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (p / pattern-01
+            :ARG1 (e / express-03
+                     :ARG2 (d / downstream
+                              :mod (f / form)
+                              :ARG3-of (p2 / phosphorylate-01
+                                           :ARG3 p3)
+                              :ARG1-of (a / activate-01)
+                              :ARG1-of (m / mean-01
+                                          :ARG2 (p3 / protein
+                                                    :name (n2 / name
+                                                              :op1 "STAT"))))))
+   :time (n / next))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We found p-STAT3, p-STAT5 and p-STAT6 to be expressed in the three cell lines that expressed at least one active phosphorylated member of the JAK family: HD-LM2, L-428 and L-540 (<xref ref-type="fig" rid="fig1">Figure 1a</xref>).
+# ::file pmid_2282_9094_80.txt
+# ::date 2015-07-23T13:05:30
+# ::id pmid_2282_9094.80
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (e / express-03
+            :ARG2 (a3 / and
+                      :op1 (p / protein
+                              :name (n / name
+                                       :op1 "STAT3")
+                              :ARG3-of (p2 / phosphorylate-01
+                                           :ARG3 p3
+                                           :ARG3 p5
+                                           :ARG3 m))
+                      :op2 (p3 / protein
+                               :name (n2 / name
+                                         :op1 "STAT5"))
+                      :op3 (p5 / protein
+                               :name (n3 / name
+                                         :op1 "STAT6")))
+            :ARG3 (c / cell-line
+                     :quant "3"
+                     :ARG1-of (e2 / express-03
+                                  :ARG2 (m / member
+                                           :ARG1-of (a4 / activate-01)
+                                           :quant (a / at-least
+                                                     :op1 "1")
+                                           :ARG1-of (i / include-91
+                                                       :ARG2 (p4 / protein-family
+                                                                 :name (n4 / name
+                                                                           :op1 "JAK")))))
+                     :ARG1-of (m2 / mean-01
+                                  :ARG2 (a5 / and
+                                            :op1 (c2 / cell-line
+                                                     :name (n5 / name
+                                                               :op1 "HD-LM2"))
+                                            :op2 (c3 / cell-line
+                                                     :name (n6 / name
+                                                               :op1 "L-428"))
+                                            :op3 (c4 / cell-line
+                                                     :name (n7 / name
+                                                               :op1 "L-540"))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f3 / figure
+                         :mod "1a")))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with a previous report, the KM-H2 cell line did not express p-JAKs or p-STAT3, pSTAT5 or pSTAT6 proteins;<sup><xref ref-type="bibr" rid="bib19">19</xref></sup> neither did the three samples of PBMCs isolated from healthy donors.
+# ::file pmid_2282_9094_81.txt
+# ::date 2015-07-23T13:14:15
+# ::id pmid_2282_9094.81
+(a / and
+   :op1 (e / express-03
+           :polarity "-"
+           :ARG2 (o / or
+                    :op1 (e2 / enzyme
+                             :name (n2 / name
+                                       :op1 "JAK")
+                             :ARG3-of (p2 / phosphorylate-01
+                                          :ARG3 p3
+                                          :ARG3 p5
+                                          :ARG3 p7))
+                    :op2 (p3 / protein
+                             :name (n3 / name
+                                       :op1 "STAT3"))
+                    :op3 (p5 / protein
+                             :name (n4 / name
+                                       :op1 "STAT5"))
+                    :op4 (p7 / protein
+                             :name (n5 / name
+                                       :op1 "STAT6")))
+           :ARG3 (c / cell-line
+                    :name (n / name
+                             :op1 "KM-H2"))
+           :ARG1-of (d2 / describe-01
+                        :ARG0 (p4 / publication
+                                  :ARG1-of (c4 / cite-01
+                                               :ARG2 "19"))))
+   :op2 (e3 / express-03
+            :polarity "-"
+            :ARG3 (c2 / cell
+                      :quant "3"
+                      :name (n6 / name
+                                :op1 "PBMC")
+                      :ARG1-of (s / sample-01)
+                      :ARG1-of (i / isolate-01
+                                  :ARG2 (p / person
+                                           :ARG0-of (d / donate-01)
+                                           :mod (h / healthy)))))
+   :ARG1-of (c3 / consistent-01
+                :ARG2 (r / report-01
+                         :time (p10 / previous))))
+
+# ::save-date Fri Nov 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We found p-STAT1 to be expressed in all HL cell lines and in only one PBMC sample from a healthy donor.
+# ::file pmid_2282_9094_82.txt
+# ::date 2015-07-23T13:35:48
+# ::id pmid_2282_9094.82
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (e / express-03
+            :ARG2 (p2 / protein
+                      :name (n / name
+                               :op1 "STAT1")
+                      :ARG3-of (p3 / phosphorylate-01))
+            :ARG3 (a / and
+                     :op1 (c / cell-line
+                             :mod (a2 / all)
+                             :mod (d2 / disease
+                                      :name (n3 / name
+                                                :op1 "Hodgkin's"
+                                                :op2 "lymphoma")))
+                     :op2 (s / sample-01
+                             :quant "1"
+                             :ARG1 (c2 / cell
+                                       :name (n2 / name
+                                                 :op1 "PBMC"))
+                             :ARG2 (p / person
+                                      :ARG0-of (d / donate-01)
+                                      :mod (h2 / healthy))
+                             :mod (o / only)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The differential expression of JAK/STAT family members in HL cell lines gave us an opportunity to determine the biological effect of AZD1480 in cells that have thee different patterns of expression: HD-LM2 and L-428 (which expressed p-JAK2 and p-TYK2), L-540 (which expressed p-JAK3), and KM-H2 (which lacked p-JAKs expression).
+# ::file pmid_2282_9094_84.txt
+# ::date 2015-07-23T14:15:16
+# ::id pmid_2282_9094.84
+(g / give-01
+   :ARG0 (e / express-03
+            :ARG2 (m / member
+                     :ARG1-of (i / include-91
+                                 :ARG2 (s / slash
+                                          :op1 (p4 / protein-family
+                                                   :name (n2 / name
+                                                             :op1 "JAK"))
+                                          :op2 (p / protein-family
+                                                  :name (n3 / name
+                                                            :op1 "STAT")))))
+            :ARG3 (c2 / cell-line
+                      :mod (d3 / disease
+                               :name (n / name
+                                        :op1 "HL")))
+            :ARG1-of (d / differ-02
+                        :ARG1 p2))
+   :ARG1 (o / opportunity
+            :purpose (d2 / determine-01
+                         :ARG0 "w"
+                         :ARG1 (a / affect-01
+                                  :ARG0 (s2 / small-molecule
+                                            :name (n4 / name
+                                                      :op1 "AZD1480"))
+                                  :mod (b / biology)
+                                  :location (c3 / cell
+                                                :ARG0-of (h2 / have-03
+                                                             :ARG1 (p2 / pattern-01
+                                                                       :quant "3"
+                                                                       :ARG1 (e3 / express-03)))
+                                                :ARG1-of (m2 / mean-01
+                                                             :ARG2 (a2 / and
+                                                                       :op1 (a3 / and
+                                                                                :op1 (c4 / cell-line
+                                                                                         :name (n5 / name
+                                                                                                   :op1 "HD-LM2"))
+                                                                                :op2 (c5 / cell-line
+                                                                                         :name (n6 / name
+                                                                                                   :op1 "L-428"))
+                                                                                :ARG3-of (e4 / express-03
+                                                                                             :ARG2 (a4 / and
+                                                                                                       :op1 (e5 / enzyme
+                                                                                                                :name (n7 / name
+                                                                                                                          :op1 "JAK2")
+                                                                                                                :ARG3-of (p3 / phosphorylate-01
+                                                                                                                             :ARG3 e6
+                                                                                                                             :ARG3 e8
+                                                                                                                             :ARG3 e10))
+                                                                                                       :op2 (e6 / enzyme
+                                                                                                                :name (n8 / name
+                                                                                                                          :op1 "TYK2")))))
+                                                                       :op2 (c6 / cell-line
+                                                                                :name (n9 / name
+                                                                                          :op1 "L-540")
+                                                                                :ARG3-of (e7 / express-03
+                                                                                             :ARG2 (e8 / enzyme
+                                                                                                       :name (n10 / name
+                                                                                                                  :op1 "JAK3"))))
+                                                                       :op3 (c7 / cell-line
+                                                                                :name (n11 / name
+                                                                                           :op1 "KM-H2")
+                                                                                :ARG0-of (l / lack-01
+                                                                                            :ARG1 (e9 / express-03
+                                                                                                      :ARG2 (e10 / enzyme
+                                                                                                                 :name (n12 / name
+                                                                                                                            :op1 "JAK")))))))))))
+   :ARG2 (w / we))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Increasing concentrations of AZD1480 (0.1–5 μ) inhibited STAT1, STAT3, STAT5 and STAT6 phosphorylation in all three cell lines that showed evidence of full JAK/STAT activation: HD-LM2, L-428 and L-540 (<xref ref-type="fig" rid="fig1">Figure 1b</xref>).
+# ::file pmid_2282_9094_85.txt
+# ::date 2015-07-25T01:42:52
+# ::id pmid_2282_9094.85
+(i / inhibit-01
+   :ARG0 (c / concentrate-02
+            :ARG1 (s / small-molecule
+                     :name (n / name
+                              :op1 "AZD1480"))
+            :ARG1-of (i2 / increase-01
+                         :ARG2 (v / value-interval
+                                  :op1 (c2 / concentration-quantity
+                                           :quant "0.1"
+                                           :unit (m / micromolar))
+                                  :op2 (c3 / concentration-quantity
+                                           :quant "5"
+                                           :unit m))))
+   :ARG1 (a / and
+            :op1 (p / phosphorylate-01
+                    :ARG1 (p2 / protein
+                              :name (n2 / name
+                                        :op1 "STAT1")))
+            :op2 (p3 / phosphorylate-01
+                     :ARG1 (p4 / protein
+                               :name (n3 / name
+                                         :op1 "STAT3")))
+            :op3 (p5 / phosphorylate-01
+                     :ARG1 (p6 / protein
+                               :name (n4 / name
+                                         :op1 "STAT5")))
+            :op4 (p7 / phosphorylate-01
+                     :ARG1 (p8 / protein
+                               :name (n5 / name
+                                         :op1 "STAT6"))))
+   :location (c4 / cell-line
+                 :quant "3"
+                 :ARG0-of (s2 / show-01
+                              :ARG1 (e / evidence-01
+                                       :ARG1 (a2 / activate-01
+                                                 :ARG1 (a3 / and
+                                                           :op1 (e2 / enzyme
+                                                                    :name (n6 / name
+                                                                              :op1 "JAK"))
+                                                           :op2 (p9 / protein
+                                                                    :name (n7 / name
+                                                                              :op1 "STAT")))
+                                                 :degree (f2 / full))))
+                 :ARG1-of (m2 / mean-01
+                              :ARG2 (a4 / and
+                                        :op1 (c5 / cell-line
+                                                 :name (n8 / name
+                                                           :op1 "LM2"))
+                                        :op2 (c6 / cell-line
+                                                 :name (n9 / name
+                                                           :op1 "L-428"))
+                                        :op3 (c7 / cell-line
+                                                 :name (n10 / name
+                                                            :op1 "L-540"))))
+                 :mod (a5 / all))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1b")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results suggest that in addition to JAK2, AZD1480 may also inhibit JAK3 activity in HL cell lines.
+# ::file pmid_2282_9094_86.txt
+# ::date 2015-07-25T01:59:02
+# ::id pmid_2282_9094.86
+(s / suggest-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG1 (p / possible-01
+            :ARG1 (i / inhibit-01
+                     :ARG0 (s2 / small-molecule
+                               :name (n / name
+                                        :op1 "AZD1480"))
+                     :ARG1 (a2 / activity-06
+                               :ARG0 (e / enzyme
+                                        :name (n2 / name
+                                                  :op1 "JAK3")
+                                        :ARG1-of (a3 / add-02
+                                                     :ARG2 (e2 / enzyme
+                                                               :name (n3 / name
+                                                                         :op1 "JAK2"))))
+                               :location (c / cell-line
+                                            :mod (d / disease
+                                                    :name (n4 / name
+                                                              :op1 "HL"))))
+                     :mod (a / also))))
+
+# ::save-date Sat Jul 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Potent inhibition of STAT3 phosphorylation was observed as soon as after 30 min of incubation with AZD1480 and was maintained up to 72 h (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S1A and B</xref>).
+# ::file pmid_2282_9094_87.txt
+# ::date 2015-07-25T02:17:16
+# ::id pmid_2282_9094.87
+(a3 / and
+    :op1 (o / observe-01
+            :ARG1 (i / inhibit-01
+                     :ARG1 (p / phosphorylate-01
+                              :ARG1 (p2 / protein
+                                        :name (n / name
+                                                 :op1 "STAT3")))
+                     :mod (p3 / potent))
+            :time (a / as-soon-as
+                     :op1 (a2 / after
+                              :op1 (i2 / incubate-01
+                                       :ARG1 i
+                                       :ARG2 (s / small-molecule
+                                                :name (n2 / name
+                                                          :op1 "AZD1480")))
+                              :quant (t / temporal-quantity
+                                        :quant "30"
+                                        :unit (m / minute)))))
+    :op2 (m2 / maintain-01
+             :ARG1 i
+             :duration (u / up-to
+                          :op1 (t2 / temporal-quantity
+                                   :quant "72"
+                                   :unit (h / hour))))
+    :ARG1-of (d / describe-01
+                :ARG0 (a4 / and
+                          :op1 (f / figure
+                                  :mod "S1A")
+                          :op2 (f2 / figure
+                                   :mod "S1B")
+                          :ARG2-of (s2 / supplement-01))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Previous studies have demonstrated that HL cell lines are addicted to the JAK/STAT pathway, and selective inhibition of STAT proteins by RNA interference has been shown to result in antiproliferative effects in HL cell lines.<sup><xref ref-type="bibr" rid="bib2">2</xref></sup>
+# ::file pmid_2282_9094_89.txt
+# ::date 2015-07-25T02:38:42
+# ::id pmid_2282_9094.89
+(a / and
+   :op1 (d / demonstrate-01
+           :ARG0 (t / thing
+                    :ARG1-of (s / study-01)
+                    :time (p / previous))
+           :ARG1 (a2 / addict-01
+                     :ARG1 (c / cell-line
+                              :mod (d3 / disease
+                                       :name (n4 / name
+                                                 :op1 "HL")))
+                     :ARG2 (p2 / pathway
+                               :name (n / name
+                                        :op1 "JAK/STAT"))))
+   :op2 (s2 / show-01
+            :ARG1 (i / inhibit-01
+                     :ARG0 (i3 / interfere-01
+                               :ARG1 (n5 / nucleic-acid
+                                         :name (n2 / name
+                                                   :op1 "RNA")))
+                     :ARG1 (p3 / protein
+                               :name (n3 / name
+                                         :op1 "STAT"))
+                     :manner (s3 / selective)
+                     :ARG1-of (r2 / result-01
+                                  :ARG2 (a3 / affect-01
+                                            :ARG2 (c2 / counter-01
+                                                      :ARG1 (p4 / proliferate-01))
+                                            :location c))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p5 / publication
+                          :ARG1-of (c3 / cite-01
+                                       :ARG2 "2"))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Because AZD1480 inhibited p-STAT3, p-STAT5 and p-STAT6, we investigated the antiproliferative effect of AZD1480 in HL cells by using the MTS assay.
+# ::file pmid_2282_9094_90.txt
+# ::date 2015-07-25T02:49:26
+# ::id pmid_2282_9094.90
+(i2 / investigate-01
+    :ARG0 (w / we)
+    :ARG1 (a2 / affect-01
+              :ARG0 "s"
+              :ARG2 (c3 / counter-01
+                        :ARG1 (p7 / proliferate-01))
+              :location (c2 / cell
+                            :mod (d / disease
+                                    :name (n5 / name
+                                              :op1 "HL"))))
+    :ARG1-of (c / cause-01
+                :ARG0 (i / inhibit-01
+                         :ARG0 (s / small-molecule
+                                  :name (n / name
+                                           :op1 "AZD1480"))
+                         :ARG1 (a / and
+                                  :op1 (p / protein
+                                          :name (n2 / name
+                                                    :op1 "STAT3")
+                                          :ARG3-of (p2 / phosphorylate-01
+                                                       :ARG3 p3
+                                                       :ARG3 p5))
+                                  :op2 (p3 / protein
+                                           :name (n3 / name
+                                                     :op1 "STAT5"))
+                                  :op3 (p5 / protein
+                                           :name (n4 / name
+                                                     :op1 "STAT6")))))
+    :manner (u / use-01
+               :ARG1 (a3 / assay-01
+                         :instrument (s2 / small-molecule
+                                         :name (n6 / name
+                                                   :op1 "MTS")))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt AZD1480 induced antiproliferative effects in a time- and dose-dependent manner (<xref ref-type="fig" rid="fig1">Figure 1c</xref>).
+# ::file pmid_2282_9094_91.txt
+# ::date 2015-07-25T04:11:11
+# ::id pmid_2282_9094.91
+(i / induce-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "AZD1480"))
+   :ARG2 (a / affect-01
+            :ARG2 (c / counter-01
+                     :ARG1 (p / proliferate-01)))
+   :manner (d / depend-01
+              :ARG1 (a2 / and
+                        :op1 (t / time)
+                        :op2 (d2 / dose-01)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "1c")))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt After 72 h of incubation, the half maximal inhibitory concentration (IC<sub>50</sub>) values for AZD1480 ranged from 1 to 8 μ; L-540 cells were the most sensitive to AZD1480 (<xref ref-type="fig" rid="fig1">Figure 1c and d</xref>).
+# ::file pmid_2282_9094_92.txt
+# ::date 2015-07-25T04:21:38
+# ::id pmid_2282_9094.92
+(a / and
+   :op1 (r / range-01
+           :ARG1 (c5 / concentration-quantity
+                     :ARG4-of (h3 / have-percentage-maximal-inhibitory-concentration-01
+                                  :ARG1 (s2 / small-molecule
+                                            :name (n / name
+                                                     :op1 "AZD1480"))
+                                  :ARG2 "50"))
+           :ARG3 (c2 / concentration-quantity
+                     :quant "1"
+                     :unit (m2 / micromolar))
+           :ARG4 (c3 / concentration-quantity
+                     :quant "8"
+                     :unit m2)
+           :time (a2 / after
+                     :op1 (i2 / incubate-01)
+                     :quant (t / temporal-quantity
+                               :quant "72"
+                               :unit (h2 / hour))))
+   :op2 (s / sensitive-03
+           :ARG0 (c4 / cell-line
+                     :name (n2 / name
+                               :op1 "L-540"))
+           :ARG1 s2
+           :degree (m4 / most))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "1c")
+                         :op2 (f2 / figure
+                                  :mod "1d"))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, although submicromolar concentrations of AZD1480 inhibited STAT phosphorylation, these low concentrations were not sufficient to induce a significant antiproliferative activity, especially in the HD-LM2 and L-428 cells.
+# ::file pmid_2282_9094_93.txt
+# ::date 2015-07-25T04:41:53
+# ::id pmid_2282_9094.93
+(c / cause-01
+   :ARG1 (h / have-concession-91
+            :ARG1 (s3 / suffice-01
+                      :polarity "-"
+                      :ARG0 (c3 / concentrate-02
+                                :ARG1-of (l / low-04)
+                                :mod (t / this))
+                      :ARG1 (i2 / induce-01
+                                :ARG0 c3
+                                :ARG2 (a / activity-06
+                                         :ARG0-of (c4 / counter-01
+                                                      :ARG1 (p3 / proliferate-01))
+                                         :ARG1-of (s4 / significant-02))
+                                :location (a2 / and
+                                              :op1 (c5 / cell-line
+                                                       :name (n3 / name
+                                                                 :op1 "HD-LM2"))
+                                              :op2 (c6 / cell-line
+                                                       :name (n4 / name
+                                                                 :op1 "L-428"))
+                                              :mod (e / especially))))
+            :ARG2 (i / inhibit-01
+                     :ARG0 (c2 / concentrate-01
+                               :ARG1 (s / small-molecule
+                                        :name (n / name
+                                                 :op1 "AZD1480"))
+                               :mod (s2 / submicromolar))
+                     :ARG1 (p / phosphorylate-01
+                              :ARG1 (p2 / protein
+                                        :name (n2 / name
+                                                  :op1 "STAT"))))))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, at a higher concentration (5 μ), AZD1480 had a stronger effect in all cell lines, including KM-H2, which lacked active JAK/STAT proteins.
+# ::file pmid_2282_9094_94.txt
+# ::date 2015-07-25T04:50:30
+# ::id pmid_2282_9094.94
+(c / contrast-01
+   :ARG2 (h2 / have-condition-91
+             :ARG1 (a / affect-01
+                      :ARG0 (s2 / small-molecule
+                                :name (n / name
+                                         :op1 "AZD1480"))
+                      :ARG1-of (s / strong-02
+                                  :degree (m2 / more))
+                      :location (c2 / cell-line
+                                    :ARG2-of (i / include-01
+                                                :ARG1 (c3 / cell-line
+                                                          :name (n2 / name
+                                                                    :op1 "KM-H2")
+                                                          :ARG0-of (l / lack-01
+                                                                      :ARG1 (s3 / slash
+                                                                                :op1 (e / enzyme
+                                                                                        :name (n3 / name
+                                                                                                  :op1 "JAK"))
+                                                                                :op2 (p / protein
+                                                                                        :name (n4 / name
+                                                                                                  :op1 "STAT"))
+                                                                                :ARG1-of (a3 / activate-01)))))
+                                    :mod (a5 / all)))
+             :ARG2 (c4 / concentrate-02
+                       :ARG1-of (h / high-02
+                                   :degree (m / more))
+                       :quant (c5 / concentration-quantity
+                                  :quant "5"
+                                  :unit (m3 / micromolar)))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These data suggest that at this higher concentration (5 μ), AZD1480 induced antiproliferative effects in HL cell lines in a JAK/STAT-independent manner.
+# ::file pmid_2282_9094_95.txt
+# ::date 2015-07-25T05:04:30
+# ::id pmid_2282_9094.95
+(s / suggest-01
+   :ARG0 (d / data
+            :mod (t / this))
+   :ARG1 (i / induce-01
+            :ARG0 (s2 / small-molecule
+                      :name (n / name
+                               :op1 "AZD1480"))
+            :ARG2 (a / affect-01
+                     :ARG2 (c / counter-01
+                              :ARG1 (p / proliferate-01))
+                     :location (c2 / cell-line
+                                   :mod (d3 / disease
+                                            :name (n4 / name
+                                                      :op1 "HL"))))
+            :manner (d2 / depend-01
+                        :polarity "-"
+                        :ARG1 (s3 / slash
+                                  :op1 (e / enzyme
+                                          :name (n2 / name
+                                                    :op1 "JAK"))
+                                  :op2 (p2 / protein
+                                           :name (n3 / name
+                                                     :op1 "STAT"))))
+            :condition (c3 / concentrate-02
+                           :ARG1 s2
+                           :ARG1-of (h / high-02
+                                       :degree (m / more))
+                           :quant (c4 / concentration-quantity
+                                      :quant "5"
+                                      :unit (m2 / micromolar)))))
+
+# ::save-date Tue Aug 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To further investigate the mechanisms of the antiproliferative activity of AZD1480, we determined the inhibitor's effect on apoptosis.
+# ::file pmid_2282_9094_96.txt
+# ::date 2015-07-25T05:09:06
+# ::id pmid_2282_9094.96
+(d / determine-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :ARG0 (m / molecular-physical-entity
+                     :ARG0-of (i / inhibit-01))
+            :ARG1 (a2 / apoptosis))
+   :purpose (i2 / investigate-01
+                :ARG0 w
+                :ARG1 (m2 / mechanism
+                          :poss (a3 / activity-06
+                                    :ARG0 (s / small-molecule
+                                             :name (n / name
+                                                      :op1 "AZD1480"))
+                                    :ARG0-of (c / counter-01
+                                                :ARG1 (p / proliferate-01))))
+                :degree (f / further)))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with the MTS data in <xref ref-type="fig" rid="fig1">Figure 1c</xref>, we found that AZD1480 induced apoptotic cell death in a dose-dependent manner (<xref ref-type="fig" rid="fig2">Figure 2a and b</xref>).
+# ::file pmid_2282_9094_97.txt
+# ::date 2015-07-25T05:14:50
+# ::id pmid_2282_9094.97
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (i / induce-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "AZD1480"))
+            :ARG2 (d / die-01
+                     :ARG1 (c / cell
+                              :mod (a / apoptotic)))
+            :manner (d2 / depend-01
+                        :ARG1 (d3 / dose-01)))
+   :ARG1-of (c2 / consistent-01
+                :ARG2 (d4 / data
+                          :location (f2 / figure
+                                        :mod "1c")
+                          :source (a3 / assay-01
+                                      :instrument (s2 / small-molecule
+                                                      :name (n2 / name
+                                                                :op1 "MTS")))))
+   :ARG1-of (d5 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f3 / figure
+                                   :mod "2a")
+                          :op2 (f4 / figure
+                                   :mod "2b"))))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At the lower concentration of AZD1480 (1 μ), L-540 cells were the most sensitive (43.3% cell death after 72 h of incubation) and L-428 cells were modestly sensitive (27.6% cell death).
+# ::file pmid_2282_9094_98.txt
+# ::date 2015-07-25T05:18:52
+# ::id pmid_2282_9094.98
+(h / have-condition-91
+   :ARG1 (a / and
+            :op1 (s / sensitive-03
+                    :ARG0 (c / cell-line
+                             :name (n / name
+                                      :op1 "L-540"))
+                    :degree (m2 / most)
+                    :ARG1-of (m3 / mean-01
+                                 :ARG2 (d / die-01
+                                          :ARG1 (c2 / cell
+                                                    :quant (p / percentage-entity
+                                                              :value "43.3"))
+                                          :time (a2 / after
+                                                    :op1 (i / incubate-01)
+                                                    :quant (t / temporal-quantity
+                                                              :quant "72"
+                                                              :unit (h2 / hour))))))
+            :op2 (s2 / sensitive-03
+                     :ARG0 (c3 / cell-line
+                               :name (n2 / name
+                                         :op1 "L-428"))
+                     :ARG1-of (m4 / mean-01
+                                  :ARG2 (d2 / die-01
+                                            :ARG1 (c4 / cell
+                                                      :quant (p2 / percentage-entity
+                                                                 :value "27.6"))))
+                     :degree (m6 / modest)))
+   :ARG2 (c5 / concentrate-02
+             :ARG1 (s3 / small-molecule
+                       :name (n3 / name
+                                 :op1 "AZD1480"))
+             :ARG1-of (l / low-04
+                         :degree (m / more))
+             :quant (c6 / concentration-quantity
+                        :quant "1"
+                        :unit (m5 / micromolar))))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At the higher concentration (5 μ), AZD1480 induced apoptosis in all four cell lines, but L-540 cells remained the most sensitive.
+# ::file pmid_2282_9094_99.txt
+# ::date 2015-07-25T05:29:00
+# ::id pmid_2282_9094.99
+(c / contrast-01
+   :ARG1 (i / induce-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "AZD1480"))
+            :ARG2 (a / apoptosis)
+            :location (c2 / cell-line
+                          :quant "4"
+                          :mod (a2 / all)))
+   :ARG2 (r / remain-01
+            :ARG1 (c3 / cell-line
+                      :name (n2 / name
+                                :op1 "L-540"))
+            :ARG3 (s2 / sensitive-03
+                      :degree (m2 / most)))
+   :condition (c4 / concentrate-02
+                  :quant (c5 / concentration-quantity
+                             :quant "5"
+                             :unit (m3 / micromolar))
+                  :ARG1-of (h / high-02
+                              :degree (m / more))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with induction of apoptosis, AZD1480 activated caspases 9 and 3, and induced poly (adenosine diphosphate ribose) polymerase cleavage.
+# ::file pmid_2282_9094_100.txt
+# ::date 2015-07-25T05:36:45
+# ::id pmid_2282_9094.100
+(a / and
+   :op1 (a2 / activate-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "AZD1480"))
+            :ARG1 (a3 / and
+                      :op1 (p2 / protein
+                               :name (n3 / name
+                                         :op1 "caspase"
+                                         :op2 "9"))
+                      :op2 (p3 / protein
+                               :name (n4 / name
+                                         :op1 "caspase"
+                                         :op2 "3"))))
+   :op2 (i / induce-01
+           :ARG0 s
+           :ARG2 (c3 / cleave-01
+                     :ARG1 (p / protein
+                              :name (n2 / name
+                                        :op1 "poly"
+                                        :op2 "adenosine"
+                                        :op3 "diphosphate"
+                                        :op4 "ribose"
+                                        :op5 "polymerase"))))
+   :ARG1-of (c4 / consistent-01
+                :ARG2 (i2 / induce-01
+                          :ARG2 (a4 / apoptosis))))
+
+
+# ::save-date Sat Jul 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt (<xref ref-type="fig" rid="fig2">Figure 2c</xref>).
+# ::file pmid_2282_9094_101.txt
+# ::date 2015-07-25T05:41:44
+# ::id pmid_2282_9094.101
+(f / figure :mod "2c")
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This was observed as soon as after 24 h of incubation with AZD1480 in all cell lines, when high doses (5 μ) were used (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S1C</xref>).
+# ::file pmid_2282_9094_102.txt
+# ::date 2015-07-26T11:19:42
+# ::id pmid_2282_9094.102
+(o / observe-01
+   :ARG1 (t / this)
+   :time (a / as-soon-as
+            :op1 (a2 / after
+                     :op1 (i / incubate-01
+                             :ARG2 (s / small-molecule
+                                      :name (n / name
+                                               :op1 "AZD1480"))
+                             :location (c / cell-line
+                                          :mod (a3 / all)))
+                     :quant (t2 / temporal-quantity
+                                :quant "24"
+                                :unit (h / hour))))
+   :time (u / use-01
+            :ARG1 (d / dose-01
+                     :quant (c2 / concentration-quantity
+                                :quant "5"
+                                :unit (m / micromolar))
+                     :ARG1-of (h2 / high-02)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "S1C"
+                         :ARG2-of (s2 / supplement-01))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Although AZD1480 inhibited phosphorylation of STATs, its effect on the phosphorylation of the JAK family members in HL cells is unknown.
+# ::file pmid_2282_9094_104.txt
+# ::date 2015-07-26T11:44:30
+# ::id pmid_2282_9094.104
+(h / have-concession-91
+   :ARG1 (k / know-01
+            :polarity "-"
+            :ARG1 (a / affect-01
+                     :ARG0 "s"
+                     :ARG1 (p3 / phosphorylate-01
+                               :ARG1 (m / member
+                                        :ARG1-of (i2 / include-91
+                                                     :ARG2 (p4 / protein-family
+                                                               :name (n3 / name
+                                                                         :op1 "JAK")))))
+                     :location (c / cell
+                                  :mod (d / disease
+                                          :name (n4 / name
+                                                    :op1 "HL")))))
+   :ARG2 (i / inhibit-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "AZD1480"))
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (p2 / protein
+                               :name (n2 / name
+                                         :op1 "STAT")))))
+
+# ::save-date Tue Aug 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Only the Tyr-phosphorylated forms of JAKs are known to exhibit kinase activity, and phosphorylation at two tandem Tyr residues in the activation loop appears to be required for enzymatic activity.<sup><xref ref-type="bibr" rid="bib20">20</xref></sup>
+# ::file pmid_2282_9094_105.txt
+# ::date 2015-07-26T11:50:15
+# ::id pmid_2282_9094.105
+(a / and
+   :op1 (k / know-01
+           :ARG1 (e / enzyme
+                    :name (n / name
+                             :op1 "JAK")
+                    :ARG3-of (p / phosphorylate-01
+                                :ARG1 (a2 / amino-acid
+                                          :name (n2 / name
+                                                    :op1 "tyrosine")))
+                    :mod (f2 / form)
+                    :mod (o / only)
+                    :ARG0-of (e2 / exhibit-01
+                                 :ARG1 (a3 / activity-06
+                                           :ARG0 (k2 / kinase)))))
+   :op2 (a4 / appear-01
+            :ARG1 (r2 / require-01
+                      :ARG1 (p2 / phosphorylate-01
+                                :ARG1 (r / residue
+                                         :mod (a5 / amino-acid
+                                                  :name (n3 / name
+                                                            :op1 "tyrosine"))
+                                         :mod (t / tandem
+                                                 :quant "2"))
+                                :location (l / loop
+                                             :ARG0-of (a6 / activate-01)))
+                      :purpose (a7 / activity-06
+                                   :ARG0 (e3 / enzyme))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p3 / publication
+                         :ARG1-of (c / cite-01
+                                     :ARG2 "20"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As levels of baseline p-JAK2 expression and p-STATs inhibition did not predict sensitivity to AZD1480 in HD-LM2 and L-428 cells, we investigated the effect of AZD1480 on the phosphorylation status of the JAK family members at the activation loop.
+# ::file pmid_2282_9094_106.txt
+# ::date 2015-07-26T11:58:38
+# ::id pmid_2282_9094.106
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "AZD1480"))
+            :ARG1 (s2 / status
+                      :poss (m / member
+                               :ARG1-of (i3 / include-91
+                                            :ARG2 (p5 / protein-family
+                                                      :name (n2 / name
+                                                                :op1 "JAK"))))
+                      :mod (p / phosphorylate-01))
+            :location (l / loop
+                         :ARG0-of (a2 / activate-01)))
+   :ARG1-of (c3 / cause-01
+                :ARG0 (p2 / predict-01
+                          :polarity "-"
+                          :ARG0 (a3 / and
+                                    :op1 (l2 / level
+                                             :degree-of (e2 / express-03
+                                                            :ARG2 (e3 / enzyme
+                                                                      :name (n3 / name
+                                                                                :op1 "JAK2")
+                                                                      :ARG3-of (p3 / phosphorylate-01
+                                                                                   :ARG3 p4)
+                                                                      :mod (b / baseline))))
+                                    :op2 (l3 / level
+                                             :degree-of (i2 / inhibit-01
+                                                            :ARG1 (p4 / protein
+                                                                      :name (n4 / name
+                                                                                :op1 "STAT")))))
+                          :ARG1 (s3 / sensitive-03
+                                    :ARG1 s
+                                    :location (a4 / and
+                                                  :op1 (c / cell-line
+                                                          :name (n6 / name
+                                                                    :op1 "HD-LM2"))
+                                                  :op2 (c2 / cell-line
+                                                           :name (n7 / name
+                                                                     :op1 "L-428")))))))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To determine the effect of AZD1480 on p-JAKs, we focused our experiments on the three cell lines that expressed active JAK/STAT proteins: HD-LM2, L-428 and L-540 (<xref ref-type="fig" rid="fig3">Figure 3a</xref>).
+# ::file pmid_2282_9094_107.txt
+# ::date 2015-07-26T12:23:18
+# ::id pmid_2282_9094.107
+(f / focus-01
+   :ARG0 (w / we)
+   :ARG1 (e / experiment-01
+            :ARG0 w
+            :ARG1 (c / cell-line
+                     :quant "3"
+                     :ARG3-of (e2 / express-03
+                                  :ARG2 (s / slash
+                                           :op1 (e3 / enzyme
+                                                    :name (n / name
+                                                             :op1 "JAK"))
+                                           :op2 (p / protein
+                                                   :name (n2 / name
+                                                             :op1 "STAT"))
+                                           :ARG1-of (a / activate-01)))
+                     :ARG1-of (m / mean-01
+                                 :ARG2 (a3 / and
+                                           :op1 (c2 / cell-line
+                                                    :name (n3 / name
+                                                              :op1 "HD-LM2"))
+                                           :op2 (c3 / cell-line
+                                                    :name (n4 / name
+                                                              :op1 "L-428"))
+                                           :op3 (c4 / cell-line
+                                                    :name (n5 / name
+                                                              :op1 "L-540"))))))
+   :purpose (d / determine-01
+               :ARG0 w
+               :ARG1 (a4 / affect-01
+                         :ARG0 (s2 / small-molecule
+                                   :name (n6 / name
+                                             :op1 "AZD1480"))
+                         :ARG1 (e4 / enzyme
+                                   :name (n7 / name
+                                             :op1 "JAK")
+                                   :ARG3-of (p2 / phosphorylate-01))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "3a")))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In L-540, which was the most sensitive cell line and which expressed only p-JAK3, increasing concentrations of AZD1480 (0.1–5 μ) completely inhibited JAK3 Y980 phosphorylation.
+# ::file pmid_2282_9094_108.txt
+# ::date 2015-07-26T12:30:48
+# ::id pmid_2282_9094.108
+(i / inhibit-01
+   :ARG0 (c / concentrate-02
+            :ARG1 (s / small-molecule
+                     :name (n / name
+                              :op1 "AZD1480"))
+            :ARG1-of (i2 / increase-01
+                         :ARG2 (v / value-interval
+                                  :op1 (c2 / concentration-quantity
+                                           :quant "0.1"
+                                           :unit (m / micromolar))
+                                  :op2 (c3 / concentration-quantity
+                                           :quant "5"
+                                           :unit m))))
+   :ARG1 (p2 / phosphorylate-01
+             :ARG1 (a / amino-acid
+                      :mod "980"
+                      :name (n2 / name
+                                :op1 "tyrosine")
+                      :part-of (e / enzyme
+                                  :name (n3 / name
+                                            :op1 "JAK3"))))
+   :manner (c4 / complete)
+   :location (c5 / cell-line
+                 :name (n4 / name
+                           :op1 "L-540")
+                 :ARG0-of (s2 / sensitive-03
+                              :degree (m3 / most))
+                 :ARG3-of (e2 / express-03
+                              :ARG2 (e3 / enzyme
+                                        :name (n5 / name
+                                                  :op1 "JAK3")
+                                        :ARG3-of (p3 / phosphorylate-01))
+                              :mod (o / only))))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, when HD-LM2 and L-428 cells were incubated with AZD1480, a paradoxical increase in JAK2 Y1007/1008 and TYK2 Y1054/1055 phosphorylation was observed after 72 h of incubation (<xref ref-type="fig" rid="fig3">Figure 3a</xref>).
+# ::file pmid_2282_9094_109.txt
+# ::date 2015-07-26T12:39:58
+# ::id pmid_2282_9094.109
+(c / contrast-01
+   :ARG2 (o / observe-01
+            :ARG1 (a / and
+                     :op1 (i / increase-01
+                             :ARG1 (a2 / amino-acid
+                                       :mod "1007/1008"
+                                       :name (n / name
+                                                :op1 "tyrosine")
+                                       :part-of (e / enzyme
+                                                   :name (n2 / name
+                                                             :op1 "JAK2")))
+                             :manner (p2 / paradox))
+                     :op2 (p / phosphorylate-01
+                             :ARG1 (a3 / amino-acid
+                                       :mod "1054/1055"
+                                       :name (n3 / name
+                                                 :op1 "tyrosine")
+                                       :part-of (e2 / enzyme
+                                                    :name (n4 / name
+                                                              :op1 "TYK2")))))
+            :time (a4 / after
+                      :op1 "i3"
+                      :quant (t / temporal-quantity
+                                :quant "72"
+                                :unit (h / hour)))
+            :condition (i3 / incubate-01
+                           :ARG1 (a5 / and
+                                     :op1 (c2 / cell-line
+                                              :name (n5 / name
+                                                        :op1 "HD-LM2"))
+                                     :op2 (c3 / cell-line
+                                              :name (n6 / name
+                                                        :op1 "L-428")))
+                           :ARG2 (s / small-molecule
+                                    :name (n7 / name
+                                              :op1 "AZD1480"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3a")))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The hyperphosphorylation of JAK2 at the activation loop was confirmed using two antibodies obtained from different clones.
+# ::file pmid_2282_9094_110.txt
+# ::date 2015-07-26T12:47:45
+# ::id pmid_2282_9094.110
+(c / confirm-01
+   :ARG1 (h / hyperphosphorylate-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "JAK2"))
+            :location (l / loop
+                         :ARG0-of (a / activate-01)))
+   :manner (u / use-01
+              :ARG1 (a2 / antibody
+                        :quant "2"
+                        :ARG1-of (o / obtain-01
+                                    :ARG2 (c2 / clone-01
+                                              :ARG1-of (d / differ-02))))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The phosphorylation of the immediate downstream target STAT3 was abrogated at the same time point in all the three cell lines (<xref ref-type="fig" rid="fig1">Figure 1b</xref>), suggesting that the function of the JAKs was effectively inhibited by AZD1480.
+# ::file pmid_2282_9094_111.txt
+# ::date 2015-07-26T12:54:04
+# ::id pmid_2282_9094.111
+(a / abrogate-01
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (t2 / target-01
+                      :ARG1 (p2 / protein
+                                :name (n / name
+                                         :op1 "STAT3"))
+                      :mod (d / downstream)
+                      :mod (i / immediacy)))
+   :time (p3 / point
+             :ARG1-of (s / same-01)
+             :mod (t3 / time))
+   :location (c / cell-line
+                :quant "3"
+                :mod (a2 / all))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1b"))
+   :ARG0-of (s3 / suggest-01
+                :ARG1 (i2 / inhibit-01
+                          :ARG0 (s4 / small-molecule
+                                    :name (n3 / name
+                                              :op1 "AZD1480"))
+                          :ARG1 (f2 / function-01
+                                    :ARG0 (e / enzyme
+                                             :name (n2 / name
+                                                       :op1 "JAK")))
+                          :ARG1-of (e2 / effective-04))))
+
+# ::save-date Wed Mar 9, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt When JAKs phosphorylation was analyzed over a shorter time period, a strong increase in JAK2 Y1007/1008 phosphorylation was observed in HD-LM2 and L-428 cells after 30 min of incubation with 1 μ AZD1480 (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S1A</xref>), whereas JAK3 Y980 phosphorylation was abrogated in L-540 cells (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S1A</xref>).
+# ::file pmid_2282_9094_112.txt
+# ::date 2015-07-26T13:13:04
+# ::id pmid_2282_9094.112
+(c / contrast-01
+   :ARG1 (o / observe-01
+            :ARG1 (i / increase-01
+                     :ARG1 (p / phosphorylate-01
+                              :ARG1 (a / amino-acid
+                                       :mod "1007/1008"
+                                       :name (n / name
+                                                :op1 "tyrosine")
+                                       :part-of (e / enzyme
+                                                   :name (n2 / name
+                                                             :op1 "JAK2"))))
+                     :ARG1-of (s / strong-02))
+            :location (a2 / and
+                          :op1 (c2 / cell-line
+                                   :name (n3 / name
+                                             :op1 "HD-LM2"))
+                          :op2 (c3 / cell-line
+                                   :name (n4 / name
+                                             :op1 "L-428")))
+            :time (a3 / after
+                      :op1 (i2 / incubate-01
+                               :ARG2 (s2 / small-molecule
+                                         :name (n5 / name
+                                                   :op1 "AZD1480")
+                                         :quant (c4 / concentration-quantity
+                                                    :quant "1"
+                                                    :unit (m2 / micromolar))))
+                      :quant (t / temporal-quantity
+                                :quant "30"
+                                :unit (m / minute)))
+            :ARG1-of (d / describe-01
+                        :ARG0 (f / figure
+                                 :mod "S1A"
+                                 :ARG2-of (s3 / supplement-01))))
+   :ARG2 (a4 / abrogate-01
+             :ARG1 (p2 / phosphorylate-01
+                       :ARG1 (a5 / amino-acid
+                                 :mod "980"
+                                 :name (n6 / name
+                                           :op1 "tyrosine")
+                                 :part-of (e2 / enzyme
+                                              :name (n7 / name
+                                                        :op1 "JAK3"))))
+             :location (c5 / cell-line
+                           :name (n8 / name
+                                     :op1 "L-540"))
+             :ARG1-of (d2 / describe-01
+                          :ARG0 (f2 / figure
+                                    :mod "S1A"
+                                    :ARG2-of (s4 / supplement-01))))
+   :time (a6 / analyze-01
+             :ARG1 (p3 / phosphorylate-01
+                       :ARG1 (e3 / enzyme
+                                 :name (n9 / name
+                                           :op1 "JAK")))
+             :duration (s5 / short-07
+                           :degree (m3 / more))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The phosphorylation of the immediate downstream target STAT3 was abrogated at the same time point (30 min) in all the three cell lines, suggesting that the function of the JAKs was effectively inhibited after 30 min of incubation with AZD1480 (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S1A</xref>).
+# ::file pmid_2282_9094_113.txt
+# ::date 2015-07-26T13:27:46
+# ::id pmid_2282_9094.113
+(a / abrogate-01
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (t2 / target-01
+                      :ARG1 (p2 / protein
+                                :name (n / name
+                                         :op1 "STAT3"))
+                      :mod (d / downstream)
+                      :mod (i / immediacy)))
+   :time (p3 / point
+             :mod (t3 / time)
+             :ARG1-of (s2 / same-01)
+             :ARG1-of (m3 / mean-01
+                          :ARG2 (t4 / temporal-quantity
+                                    :quant "30"
+                                    :unit (m / minute))))
+   :location (c / cell-line
+                :quant "3"
+                :mod (a2 / all))
+   :ARG0-of (s3 / suggest-01
+                :ARG1 (i2 / inhibit-01
+                          :ARG1 (f / function-01
+                                   :ARG0 (e / enzyme
+                                            :name (n2 / name
+                                                      :op1 "JAK")))
+                          :ARG1-of (e2 / effective-04)
+                          :time (a3 / after
+                                    :op1 (i3 / incubate-01
+                                             :ARG2 (s4 / small-molecule
+                                                       :name (n3 / name
+                                                                 :op1 "AZD1480")))
+                                    :quant t4)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "S1A"
+                          :ARG2-of (s5 / supplement-01))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As AZD1480 inhibition of STATs activity did not translate into antiproliferative activity in two cell lines, we hypothesized that these cells may depend on other signaling pathways to promote their survival.
+# ::file pmid_2282_9094_115.txt
+# ::date 2015-07-26T13:44:05
+# ::id pmid_2282_9094.115
+(h / hypothesize-01
+   :ARG0 (w / we)
+   :ARG1 (p / possible-01
+            :ARG1 (d2 / depend-01
+                      :ARG0 (c / cell
+                               :mod (t / this))
+                      :ARG1 (p2 / pathway
+                                :ARG0-of (s / signal-07)
+                                :mod (o / other))
+                      :purpose (p3 / promote-01
+                                   :ARG0 p2
+                                   :ARG1 (s2 / survive-01
+                                             :ARG1 c))))
+   :ARG1-of (c4 / cause-01
+                :ARG0 (t2 / translate-01
+                          :polarity "-"
+                          :ARG1 (i / inhibit-01
+                                   :ARG0 (s3 / small-molecule
+                                             :name (n / name
+                                                      :op1 "AZD1480"))
+                                   :ARG1 (a / activity-06
+                                            :ARG0 (p4 / protein
+                                                      :name (n2 / name
+                                                                :op1 "STAT"))))
+                          :ARG2 (a2 / activity-06
+                                    :ARG0-of (c2 / counter-01
+                                                 :ARG1 (p5 / proliferate-01)))
+                          :location (c3 / cell-line
+                                        :quant "2"))))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test this hypothesis, we examined the effect of AZD1480 on ERK, p38 and phosphatidylinositol-3 kinase/AKT signaling pathways, which are known to promote HL survival.
+# ::file pmid_2282_9094_116.txt
+# ::date 2015-07-26T13:54:57
+# ::id pmid_2282_9094.116
+(e2 / examine-01
+    :ARG0 (w / we)
+    :ARG1 (a / affect-01
+             :ARG0 (s / small-molecule
+                      :name (n2 / name
+                                :op1 "AZD1480"))
+             :ARG1 (a2 / and
+                       :op1 (p / pathway
+                               :name (n3 / name
+                                         :op1 "ERK")
+                               :ARG0-of (s2 / signal-07
+                                            :ARG0 p2
+                                            :ARG0 p3))
+                       :op2 (p2 / pathway
+                                :name (n4 / name
+                                          :op1 "p38"))
+                       :op3 (p3 / pathway
+                                :name (n5 / name
+                                          :op1 "phosphatidylinositol-3"
+                                          :op2 "kinase/AKT"))
+                       :ARG0-of (p4 / promote-01
+                                    :ARG1 (s5 / survive-01
+                                              :ARG1 (d / disease
+                                                       :name (n / name
+                                                                :op1 "HL")))
+                                    :ARG1-of (k / know-01))))
+    :purpose (t2 / test-01
+                 :ARG0 w
+                 :ARG1 (t / thing
+                          :ARG1-of (h / hypothesize-01)
+                          :mod (t3 / this))))
+
+# ::save-date Sun Jul 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We found that AZD1480 had no effect on phosphatidylinositol-3 kinase/AKT signaling in any of these cell lines (data not shown).
+# ::file pmid_2282_9094_117.txt
+# ::date 2015-07-26T14:02:45
+# ::id pmid_2282_9094.117
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :polarity "-"
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "AZD1480"))
+            :ARG1 (s2 / signal-07
+                      :ARG0 (p / pathway
+                               :name (n2 / name
+                                         :op1 "phosphatidylinositol-3"
+                                         :op2 "kinase/AKT")))
+            :location (c / cell-line
+                         :mod (a2 / any)
+                         :mod (t / this)))
+   :ARG1-of (d / describe-01
+               :ARG0 (d2 / data
+                         :ARG1-of (s3 / show-01
+                                      :polarity "-"))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, AZD1480 increased the levels of ERK and p38 phosphorylation in the resistant HD-LM2 and L-428 cells, whereas it inhibited ERK and p38 phosphorylation in the sensitive L-540 cells (<xref ref-type="fig" rid="fig3">Figure 3b</xref>).
+# ::file pmid_2282_9094_118.txt
+# ::date 2015-07-26T14:11:49
+# ::id pmid_2282_9094.118
+(c / contrast-01
+   :ARG2 (c2 / contrast-01
+             :ARG1 (i / increase-01
+                      :ARG0 (s / small-molecule
+                               :name (n2 / name
+                                         :op1 "AZD1480"))
+                      :ARG1 (a / and
+                               :op1 (l / level
+                                       :degree-of (p / phosphorylate-01
+                                                     :ARG1 (e / enzyme
+                                                              :name (n / name
+                                                                       :op1 "ERK"))))
+                               :op2 (l2 / level
+                                        :degree-of (p2 / phosphorylate-01
+                                                       :ARG1 (e2 / enzyme
+                                                                 :name (n3 / name
+                                                                           :op1 "p38")))))
+                      :location (a2 / and
+                                    :op1 (c3 / cell-line
+                                             :name (n4 / name
+                                                       :op1 "HD-LM2"))
+                                    :op2 (c4 / cell-line
+                                             :name (n5 / name
+                                                       :op1 "L-428"))
+                                    :ARG0-of (r / resist-01)))
+             :ARG2 (i2 / inhibit-01
+                       :ARG0 s
+                       :ARG1 a
+                       :location (c5 / cell-line
+                                     :name (n6 / name
+                                               :op1 "L-540")
+                                     :ARG0-of (s2 / sensitive-03))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3b")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To define the mechanism of ERK and p38 activation in the two resistant cell lines, we first assessed the expression and activation levels of the Src homology 2 domain-containing protein phosphatase 2 (SHP-2) and SOCS-3 (a STAT3 target gene<sup><xref ref-type="bibr" rid="bib21">21</xref></sup>), two known regulators of JAK/STAT and mitogen-activated protein kinase (MAPK) signaling.
+# ::file pmid_2282_9094_119.txt
+# ::date 2015-07-26T14:24:54
+# ::id pmid_2282_9094.119
+(a / assess-01
+   :ARG0 (w / we)
+   :ARG1 (a2 / and
+             :op1 (l / level
+                     :degree-of (e / express-03
+                                   :ARG2 (a8 / and
+                                             :op1 (e5 / enzyme
+                                                      :name (n4 / name
+                                                                :op1 "protein"
+                                                                :op2 "phosphatase"
+                                                                :op3 "2"))
+                                             :op2 (p4 / protein
+                                                      :name (n5 / name
+                                                                :op1 "SOCS-3")
+                                                      :ARG0-of (t / target-01
+                                                                  :ARG1 (p5 / protein
+                                                                            :name (n6 / name
+                                                                                      :op1 "STAT3"))
+                                                                  :ARG1-of (d / describe-01
+                                                                              :ARG0 (p6 / publication-91
+                                                                                        :mod "21"))))
+                                             :ARG0-of (c / contain-01
+                                                         :ARG1 (p2 / protein-segment
+                                                                   :name (n3 / name
+                                                                             :op1 "Src"
+                                                                             :op2 "homology"
+                                                                             :op3 "2"
+                                                                             :op4 "domain")
+                                                                   :quant l2))
+                                             :ARG0-of (r2 / regulate-01
+                                                          :ARG1 (a5 / and
+                                                                    :op1 (s / signal-07
+                                                                            :ARG0 (p7 / pathway
+                                                                                      :name (n7 / name
+                                                                                                :op1 "JAK-STAT")))
+                                                                    :op2 (s2 / signal-07
+                                                                             :ARG0 (p / pathway
+                                                                                      :name (n8 / name
+                                                                                                :op1 "mitogen-activated"
+                                                                                                :op2 "protein"
+                                                                                                :op3 "kinase"))))
+                                                          :ARG1-of (k / know-01)))))
+             :op2 (l2 / level
+                      :ARG1-of (a4 / activate-01)))
+   :time (f / first)
+   :purpose (d2 / define-01
+                :ARG0 w
+                :ARG1 (m / mechanism
+                         :poss (a6 / activate-01
+                                   :ARG1 (a7 / and
+                                             :op1 (e2 / enzyme
+                                                      :name (n9 / name
+                                                                :op1 "ERK"))
+                                             :op2 (e4 / enzyme
+                                                      :name (n10 / name
+                                                                 :op1 "p38")))
+                                   :location (c2 / cell-line
+                                                 :quant "2"
+                                                 :ARG0-of (r3 / resist-01))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In fact, SHP-2 has been reported to be a negative regulator of the JAK/STAT activation, whereas having a positive effect on ERK activation.<sup><xref ref-type="bibr" rid="bib22">22</xref>, <xref ref-type="bibr" rid="bib23">23</xref>, <xref ref-type="bibr" rid="bib24">24</xref>, <xref ref-type="bibr" rid="bib25">25</xref></sup>
+# ::file pmid_2282_9094_120.txt
+# ::date 2015-07-23T07:45:53
+# ::id pmid_2282_9094.120
+(r / report-01
+   :ARG1 (d / downregulate-01
+            :ARG1 (a / activate-01
+                     :ARG1 (p2 / pathway
+                               :name (n2 / name
+                                         :op1 "JAK/STAT")))
+            :ARG2 (p / protein
+                     :name (n / name
+                              :op1 "SHP-2")))
+   :manner (i / in-fact)
+   :ARG1-of (c / contrast-01
+               :ARG2 (a2 / affect-01
+                         :ARG0 p
+                         :ARG1 (a3 / activate-01
+                                   :ARG1 (e / enzyme
+                                            :name (n3 / name
+                                                      :op1 "ERK")))
+                         :mod (p3 / positive)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p4 / publication
+                          :ARG1-of (c2 / cite-01
+                                       :ARG0 (a4 / and
+                                                 :op1 "22"
+                                                 :op2 "23"
+                                                 :op3 "24"
+                                                 :op4 "25")))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, numerous studies have described enhanced SHP-2 and ERK activation after <i>SOCS-3</i> deletion in both <i>in vitro</i> and <i>in vivo</i> models, postulating a negative-feedback loop between SOCS-3 and SHP-2.<sup><xref ref-type="bibr" rid="bib22">22</xref>, <xref ref-type="bibr" rid="bib23">23</xref>, <xref ref-type="bibr" rid="bib26">26</xref></sup>
+# ::file pmid_2282_9094_121.txt
+# ::date 2015-07-24T04:03:11
+# ::id pmid_2282_9094.121
+(a / and
+   :op2 (d / describe-01
+           :ARG0 (s / study-01
+                    :mod (n4 / numerous)
+                    :ARG0-of (p / postulate-01
+                                :ARG1 (l / loop-01
+                                         :ARG2 (b / between
+                                                  :op1 "p4"
+                                                  :op2 (p3 / protein
+                                                           :name (n3 / name
+                                                                     :op1 "SHP-2")))
+                                         :mod (f / feedback
+                                                 :ARG0-of (n / negative-03)))))
+           :ARG1 (a2 / and
+                     :op1 (a3 / activate-01
+                              :ARG1 p3)
+                     :op2 (a4 / activate-01
+                              :ARG1 (e / enzyme
+                                       :name (n5 / name
+                                                 :op1 "ERK"))
+                              :time (a5 / after
+                                        :op1 (d2 / delete-01
+                                                 :ARG1 (p4 / protein
+                                                           :name (n6 / name
+                                                                     :op1 "SOCS-3"))
+                                                 :ARG2 (a6 / and
+                                                           :op1 (m / model
+                                                                   :mod (i / in-vivo))
+                                                           :op2 (m2 / model
+                                                                    :mod (i2 / in-vitro))))))
+                     :ARG1-of (e2 / enhance-01)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (p5 / publication
+                          :ARG0-of (c / cite-01
+                                      :ARG1 (a7 / and
+                                                :op1 "22"
+                                                :op2 "23"
+                                                :op3 "26")))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with the described changes in ERK phosphorylation status, after 72 h of incubation with increasing doses of AZD1480 (0.1–5 μ), an increase in SHP-2 phosphorylation on Tyr542 (the major site of SHP-2 activation) coupled with SOCS3 downregulation was observed in the HD-LM2 and L-428 cell lines, but not in the L-540 cells (<xref ref-type="fig" rid="fig3">Figure 3b</xref>).
+# ::file pmid_2282_9094_122.txt
+# ::date 2015-07-25T13:33:25
+# ::id pmid_2282_9094.122
+(c8 / contrast-01
+    :ARG1 (o3 / observe-01
+              :ARG1 (i3 / increase-01
+                        :ARG1 (p2 / phosphorylate-01
+                                  :ARG1 (a2 / amino-acid
+                                            :name (n4 / name
+                                                      :op1 "Tyr542")
+                                            :ARG1-of (m3 / mean-01
+                                                         :ARG2 (s2 / site-01
+                                                                   :ARG1 (a3 / activate-01
+                                                                             :ARG1 "p3")
+                                                                   :ARG1-of (m4 / major-02))))
+                                  :ARG2 (p3 / protein
+                                            :name (n3 / name
+                                                      :op1 "SHP-2"))
+                                  :ARG1-of (c5 / couple-01
+                                               :ARG2 (d4 / downregulate-01
+                                                         :ARG1 (p4 / protein
+                                                                   :name (n5 / name
+                                                                             :op1 "SOCS3"))))))
+              :ARG1-of (c / consistent-01
+                          :ARG2 (c2 / change-01
+                                    :ARG1 (s / status
+                                             :topic (p / phosphorylate-01
+                                                       :ARG1 (e / enzyme
+                                                                :name (n / name
+                                                                         :op1 "ERK"))))
+                                    :ARG1-of (d / describe-01)))
+              :time (a / after
+                       :op1 (i / incubate-01
+                               :ARG2 (d2 / dose-01
+                                         :ARG2 (s3 / small-molecule
+                                                   :name (n2 / name
+                                                             :op1 "AZD1480"))
+                                         :ARG1-of (i2 / increase-01)
+                                         :quant (b / between
+                                                   :op1 (c3 / concentration-quantity
+                                                            :quant "0.1"
+                                                            :unit (m / micromolar))
+                                                   :op2 (c4 / concentration-quantity
+                                                            :quant "5"
+                                                            :unit m))))
+                       :quant (t / temporal-quantity
+                                 :quant "72"
+                                 :unit (h / hour)))
+              :ARG1-of (d3 / describe-01
+                           :ARG0 (f / figure
+                                    :mod "3b"))
+              :location (a4 / and
+                            :op1 (c6 / cell-line
+                                     :name (n6 / name
+                                               :op1 "HD-LM2"))
+                            :op2 (c7 / cell-line
+                                     :name (n7 / name
+                                               :op1 "L-428"))))
+    :ARG2 (o2 / observe-01
+              :polarity "-"
+              :ARG1 i3
+              :location (c9 / cell-line
+                            :name (n8 / name
+                                      :op1 "L-540"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt On the other hand, in the L-540 cells, SOCS3 downregulation was not coupled with SHP-2 hyperphosphorylation, and ERK phosphorylation was in fact inhibited after treatment with AZD1480, suggesting a different model of MAPK activation in this cell line.
+# ::file pmid_2282_9094_123.txt
+# ::date 2015-07-25T05:57:53
+# ::id pmid_2282_9094.123
+(c / contrast-01
+   :ARG2 (a / and
+            :op1 (c2 / couple-01
+                     :polarity "-"
+                     :ARG1 (d2 / downregulate-01
+                               :ARG1 (p3 / protein
+                                         :name (n4 / name
+                                                   :op1 "SOCS3"))
+                               :location (c3 / cell-line
+                                             :name (n6 / name
+                                                       :op1 "L-540")))
+                     :ARG2 (h / hyperphosphorylate-01
+                              :ARG1 (p4 / protein
+                                        :name (n5 / name
+                                                  :op1 "SHP-2"))))
+            :op2 (i / inhibit-01
+                    :ARG1 (p / phosphorylate-01
+                             :ARG1 (e / enzyme
+                                      :name (n / name
+                                               :op1 "ERK")))
+                    :time (a2 / after
+                              :op1 (t / treat-04
+                                      :ARG2 (s2 / small-molecule
+                                                :name (n3 / name
+                                                          :op1 "AZD1480"))))
+                    :mod (i2 / in-fact))
+            :ARG0-of (s / suggest-01
+                        :ARG1 (m / model
+                                 :ARG1-of (d / differ-02)
+                                 :mod (a3 / activate-01
+                                          :ARG1 (p2 / pathway
+                                                    :name (n2 / name
+                                                              :op1 "MAPK"))
+                                          :location c3)))))
+
+# ::save-date Wed Aug 5, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The activation of p38 signaling observed in the HD-LM2 and L-428 cell lines after incubation with AZD1480 was probably related to the activity of autocrine and paracrine chemokine and cytokine loops, triggered by SHP-2/ERK activation.
+# ::file pmid_2282_9094_124.txt
+# ::date 2015-07-25T06:29:12
+# ::id pmid_2282_9094.124
+(r / relate-01
+   :ARG1 (a5 / activate-01
+             :ARG1 (s / signal-07
+                      :ARG0 (e / enzyme
+                               :name (n2 / name
+                                         :op1 "p38"))
+                      :ARG1-of (o / observe-01
+                                  :location (a6 / and
+                                                :op1 (c3 / cell-line
+                                                         :name (n3 / name
+                                                                   :op1 "HD-LM2"))
+                                                :op2 (c4 / cell-line
+                                                         :name (n4 / name
+                                                                   :op1 "L-428")))
+                                  :time (a7 / after
+                                            :op1 (i / incubate-01
+                                                    :ARG2 (s2 / small-molecule
+                                                              :name (n5 / name
+                                                                        :op1 "AZD1480")))))))
+   :ARG2 (a / activity-06
+            :ARG0 (a2 / and
+                      :op1 (l3 / loop
+                               :mod (c / chemokine
+                                       :mod (a3 / autocrine)))
+                      :op2 (l / loop
+                              :mod (c5 / chemokine
+                                       :mod "p2"))
+                      :op3 (l2 / loop
+                               :mod (c6 / cytokine
+                                        :mod a3))
+                      :op4 (l4 / loop
+                               :mod (c2 / cytokine
+                                        :mod (p2 / paracrine)))
+                      :ARG1-of (t / trigger-01
+                                  :ARG2 (a4 / activate-01
+                                            :ARG1 (p3 / pathway
+                                                      :name (n / name
+                                                               :op1 "SHP-2/ERK"))))))
+   :mod (p / probable))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Over a shorter time period, we observed a strong correlation between SOCS-3 downregulation and SHP-2/ERK activation in the HD-LM2 cell line after 6 h of incubation with AZD1480, whereas in the L-540 cell line, ERK phosphorylation was inhibited without an increase in SHP-2 phosphorylation or a decrease in SOCS-3 levels (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure S1D</xref>).
+# ::file pmid_2282_9094_125.txt
+# ::date 2015-07-26T03:40:24
+# ::id pmid_2282_9094.125
+(c / contrast-01
+   :ARG1 (o / observe-01
+            :ARG0 (w / we)
+            :ARG1 (c2 / correlate-01
+                      :ARG1 (d / downregulate-01
+                               :ARG1 (p / protein
+                                        :name (n / name
+                                                 :op1 "SOCS-3")))
+                      :ARG2 (a / activate-01
+                               :ARG1 (p3 / pathway
+                                         :name (n2 / name
+                                                   :op1 "SHP-2/ERK")))
+                      :ARG1-of (s2 / strong-02))
+            :time (o2 / over
+                      :op1 (p2 / period
+                               :ARG1-of (s / short-07
+                                           :degree (m / more))))
+            :location (c3 / cell-line
+                          :name (n3 / name
+                                    :op1 "HD-LM2"))
+            :time (a2 / after
+                      :op1 (i / incubate-01
+                              :ARG2 (s4 / small-molecule
+                                        :name (n4 / name
+                                                  :op1 "AZD1480"))
+                              :duration (t2 / temporal-quantity
+                                            :quant "6"
+                                            :unit (h / hour)))))
+   :ARG2 (i2 / inhibit-01
+             :polarity "-"
+             :ARG1 (p4 / phosphorylate-01
+                       :ARG1 (p7 / protein-family
+                                 :name (n5 / name
+                                           :op1 "ERK")))
+             :ARG0-of (i3 / increase-01
+                          :polarity "-"
+                          :ARG1 (o3 / or
+                                    :op1 (p5 / phosphorylate-01
+                                             :ARG1 (p6 / protein
+                                                       :name (n6 / name
+                                                                 :op1 "SHP-2")))))
+             :location (c4 / cell-line
+                           :name (n8 / name
+                                     :op1 "L-540"))
+             :ARG0-of (d2 / decrease-01
+                          :polarity "-"
+                          :ARG1 (l / level
+                                   :quant-of p)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "S1D"
+                         :ARG2-of (s3 / supplement-01))))
+
+
+# ::save-date Sat Aug 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The interaction between HRS cells and the surrounding reactive infiltrate provides an environment that supports the growth and survival of HRS cells through a complex network of autocrine and paracrine loops involving a variety of cytokines and chemokines.<sup><xref ref-type="bibr" rid="bib1">1</xref>, <xref ref-type="bibr" rid="bib27">27</xref></sup>
+# ::file pmid_2282_9094_127.txt
+# ::date 2015-07-24T14:34:32
+# ::id pmid_2282_9094.127
+(p / provide-01
+      :ARG0 (i / interact-01
+            :ARG0 (c / cell-line
+                  :name (n / name :op1 "HRS"))
+            :ARG1 (i2 / infiltrate
+                  :ARG0-of (r / react-01)
+                  :ARG1-of (s / surround-01)))
+      :ARG1 (e / environment
+            :ARG0-of (s2 / support-01
+                  :ARG1 (a / and
+                        :op1 (g / grow-01
+                              :ARG1 c)
+                        :op2 (s3 / survive-01
+                              :ARG0 c))
+                  :manner (n2 / network-01
+                        :ARG1 (l / loop-01
+                              :ARG1 (a2 / autocrine))
+                        :ARG2 (l2 / loop-01
+                              :ARG1 (p2 / paracrine))
+                        :ARG2-of (i3 / involve-01
+                              :ARG1 (a3 / and
+                                    :op1 (v / vary-01
+                                          :ARG1 (c2 / cytokine))
+                                    :op2 (v2 / vary-01
+                                          :ARG1 (c3 / chemokine))))
+                        :mod (c4 / complex))))
+      :ARG1-of (d / describe-01
+            :ARG0 (p3 / publication
+                  :ARG0-of (c5 / cite-01
+                        :ARG1 (a4 / and :op1 "1" :op2 "27")))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The chemokines IP-10, RANTES and IL-8 are known to be upregulated by MAPK (ERK and p38) activation and have previously been reported to have a role in tumorigenesis and Hodgkin lymphomagenesis by promoting cell proliferation and survival.<sup><xref ref-type="bibr" rid="bib1">1</xref>, <xref ref-type="bibr" rid="bib27">27</xref>, <xref ref-type="bibr" rid="bib28">28</xref>, <xref ref-type="bibr" rid="bib29">29</xref>, <xref ref-type="bibr" rid="bib30">30</xref>, <xref ref-type="bibr" rid="bib31">31</xref></sup>
+# ::file pmid_2282_9094_128.txt
+# ::date 2015-07-25T12:30:33
+# ::id pmid_2282_9094.128
+(a / and
+   :op1 (k / know-01
+           :ARG1 (u / upregulate-01
+                    :ARG1 (a3 / and
+                              :op1 (c2 / chemokine
+                                       :name (n3 / name
+                                                 :op1 "IP-10"))
+                              :op2 (c3 / chemokine
+                                       :name (n4 / name
+                                                 :op1 "RANTES"))
+                              :op3 (c4 / chemokine
+                                       :name (n5 / name
+                                                 :op1 "IL-8")))
+                    :ARG2 (a5 / activate-01
+                              :ARG1 (p3 / pathway
+                                        :name (n6 / name
+                                                  :op1 "MAPK")
+                                        :ARG1-of (m / mean-01
+                                                    :ARG2 (a4 / and
+                                                              :op1 (e / enzyme
+                                                                      :name (n / name
+                                                                               :op1 "ERK"))
+                                                              :op2 (e2 / enzyme
+                                                                       :name (n2 / name
+                                                                                 :op1 "p38"))))))))
+   :op2 (r / report-01
+           :ARG1 (h / have-03
+                    :ARG0 a3
+                    :ARG1 (r2 / role
+                              :prep-in (c6 / create-01
+                                           :ARG1 (a8 / and
+                                                     :op1 (t2 / tumor)
+                                                     :op2 (d2 / disease
+                                                              :name (n8 / name
+                                                                        :op1 "Hodgkin"
+                                                                        :op2 "lymphoma")))))
+                    :manner (p4 / promote-01
+                                :ARG0 a3
+                                :ARG1 (a7 / and
+                                          :op1 (p5 / proliferate-01
+                                                   :ARG0 (c5 / cell))
+                                          :op2 (s / survive-01
+                                                  :ARG0 c5))))
+           :time (p / previous))
+   :ARG1-of (d / describe-01
+               :ARG0 (p2 / publication
+                         :ARG0-of (c / cite-01
+                                     :ARG1 (a2 / and
+                                               :op1 "1"
+                                               :op2 "27"
+                                               :op3 "28"
+                                               :op4 "29"
+                                               :op5 "30"
+                                               :op6 "31")))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with the observed changes in SHP2, ERK and p38 phosphorylation, AZD1480 increased the production of IP-10, RANTES and IL-8 in the supernatants of the resistant HD-LM2 and L-428, and not the sensitive L-540 cells.
+# ::file pmid_2282_9094_129.txt
+# ::date 2015-07-25T05:10:48
+# ::id pmid_2282_9094.129
+(i / increase-01
+   :ARG0 (s3 / small-molecule
+             :name (n / name
+                      :op1 "AZD1480"))
+   :ARG1 (p / produce-01
+            :ARG1 (a2 / and
+                      :op1 (p2 / protein
+                               :name (n5 / name
+                                         :op1 "IP-10"))
+                      :op2 (p3 / protein
+                               :name (n6 / name
+                                         :op1 "RANTES"))
+                      :op3 (p4 / protein
+                               :name (n7 / name
+                                         :op1 "IL-8")))
+            :location (s / supernatant
+                         :poss (a3 / and
+                                   :op1 (c3 / cell-line
+                                            :name (n9 / name
+                                                      :op1 "HD-LM2"))
+                                   :op2 (c4 / cell-line
+                                            :name (n10 / name
+                                                       :op1 "L-428"))
+                                   :ARG0-of (r / resist-01))
+                         :ARG1-of (c5 / contrast-01
+                                      :ARG2 (c6 / cell-line
+                                                :name (n8 / name
+                                                          :op1 "L-540")
+                                                :ARG0-of (s2 / sensitive-03)))))
+   :ARG1-of (c / consistent-01
+               :ARG2 (c2 / change-01
+                         :ARG1 (p5 / phosphorylate-01
+                                   :ARG1 (a / and
+                                            :op1 (e2 / enzyme
+                                                     :name (n2 / name
+                                                               :op1 "SHP2"))
+                                            :op2 (e / enzyme
+                                                    :name (n3 / name
+                                                              :op1 "ERK"))
+                                            :op3 (e4 / enzyme
+                                                     :name (n4 / name
+                                                               :op1 "p38"))))
+                         :ARG1-of (o / observe-01))))
+
+
+# ::save-date Sat Jul 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt (<xref ref-type="fig" rid="fig3">Figure 3c</xref>).
+# ::file pmid_2282_9094_130.txt
+# ::date 2015-07-25T05:22:20
+# ::id pmid_2282_9094.130
+(f / figure :mod "3c")
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This data suggest that the efficacy of AZD1480 may have been attenuated in the HD-LM2 and L-428 cells by an autocrine negative-feedback loop involving cytokines that activate ERK/p38 survival signaling pathway.
+# ::file pmid_2282_9094_131.txt
+# ::date 2015-07-25T03:53:53
+# ::id pmid_2282_9094.131
+(s / suggest-01
+   :ARG0 (d / data
+            :mod (t / this))
+   :ARG1 (p / possible-01
+            :ARG1 (a / attenuate-01
+                     :ARG0 (l2 / loop-01
+                               :mod (f / feedback
+                                       :mod (a3 / autocrine)
+                                       :ARG0-of (n3 / negative-03)
+                                       :ARG2-of (i / involve-01
+                                                   :ARG1 (c3 / cytokine
+                                                             :ARG0-of (a4 / activate-01
+                                                                          :ARG1 (p2 / pathway
+                                                                                    :name (n4 / name
+                                                                                              :op1 "ERK/p38")
+                                                                                    :ARG0-of (s2 / signal-07
+                                                                                                 :ARG1 (s3 / survive-01))))))))
+                     :ARG1 (e / efficacy
+                              :poss (s4 / small-molecule
+                                        :name (n5 / name
+                                                  :op1 "AZD1480")))
+                     :location (a2 / and
+                                   :op1 (c / cell-line
+                                           :name (n / name
+                                                    :op1 "HD-LM2"))
+                                   :op2 (c2 / cell-line
+                                            :name (n2 / name
+                                                      :op1 "L-428"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To assess whether the observed activation of the SHP-2/ERK pathway is involved in the resistance to JAK/STAT inhibition, HL cells were treated with 1 μ AZD1480 in combination with two commercially available MEK inhibitors (UO126 and PD98059).
+# ::file pmid_2282_9094_133.txt
+# ::date 2015-07-24T14:42:28
+# ::id pmid_2282_9094.133
+(t2 / treat-04
+    :ARG1 (c2 / cell-line
+              :mod (d / disease
+                      :name (n / name
+                               :op1 "HL")))
+    :ARG2 (s / small-molecule
+             :name (n4 / name
+                       :op1 "AZD1480")
+             :quant (c / concentration-quantity
+                       :quant "1"
+                       :unit (m / micromolar))
+             :ARG1-of (c3 / combine-01
+                          :ARG2 (m2 / molecular-physical-entity
+                                    :quant "2"
+                                    :ARG0-of (i / inhibit-01
+                                                :ARG1 (p / protein-family
+                                                         :name (n5 / name
+                                                                   :op1 "MEK")))
+                                    :ARG2-of (a3 / available-02
+                                                 :manner (c4 / commercial))
+                                    :ARG1-of (m3 / mean-01
+                                                 :ARG2 (a4 / and
+                                                           :op1 (s2 / small-molecule
+                                                                    :name (n6 / name
+                                                                              :op1 "UO126"))
+                                                           :op2 (s3 / small-molecule
+                                                                    :name (n7 / name
+                                                                              :op1 "PD98059")))))))
+    :purpose (a / assess-01
+                :ARG1 (i2 / involve-01
+                          :mode "interrogative"
+                          :ARG1 (a2 / activate-01
+                                    :ARG1 (p2 / pathway
+                                              :name (n2 / name
+                                                        :op1 "SHP-2/ERK"))
+                                    :ARG1-of (o / observe-01))
+                          :ARG2 (r / resist-01
+                                   :ARG1 (i3 / inhibit-01
+                                             :ARG1 (p3 / pathway
+                                                       :name (n3 / name
+                                                                 :op1 "JAK/STAT")))))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cells were incubated with increasing concentrations of UO126 or PD98059 (10–100 μ), with or without 1 μ AZD1480 for 24, 48 and 72 h, and cell viability was assessed using the MTS assay.
+# ::file pmid_2282_9094_134.txt
+# ::date 2015-07-25T10:41:30
+# ::id pmid_2282_9094.134
+(a / and
+   :op1 (i / incubate-01
+           :ARG1 (c2 / cell)
+           :ARG2 (c3 / concentrate-01
+                     :ARG1 (o / or
+                              :op1 (s2 / small-molecule
+                                       :name (n2 / name
+                                                 :op1 "UO126"))
+                              :op2 (s3 / small-molecule
+                                       :name (n3 / name
+                                                 :op1 "PD98059"))
+                              :quant (b / between
+                                        :op1 (c4 / concentration-quantity
+                                                 :quant "10"
+                                                 :unit (m2 / micromolar))
+                                        :op2 (c5 / concentration-quantity
+                                                 :quant "100"
+                                                 :unit m2)))
+                     :ARG1-of (i2 / increase-01))
+           :manner (o2 / or
+                       :op1 (s / small-molecule
+                               :name (n4 / name
+                                         :op1 "AZD1480")
+                               :quant (c6 / concentration-quantity
+                                          :quant "1"
+                                          :unit m2))
+                       :op2 (s4 / small-molecule
+                                :polarity "-"
+                                :name (n5 / name
+                                          :op1 "AZD1480")))
+           :duration (a4 / and
+                         :op1 (t2 / temporal-quantity
+                                  :quant "24"
+                                  :unit (h / hour))
+                         :op2 (t3 / temporal-quantity
+                                  :quant "48"
+                                  :unit (h2 / hour))
+                         :op3 (t4 / temporal-quantity
+                                  :quant "72"
+                                  :unit (h3 / hour))))
+   :op2 (a2 / assess-01
+            :ARG1 (v2 / viability
+                      :poss (c / cell))
+            :ARG2-of (u / use-01
+                        :ARG1 (a3 / assay-01
+                                  :instrument (s5 / small-molecule
+                                                  :name (n / name
+                                                           :op1 "MTS"))))))
+
+# ::save-date Sat Aug 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Both UO126 and PD98059 enhanced the effect of AZD1480 in the HD-LM2 and L-428 cells at 72 h (<xref ref-type="fig" rid="fig3">Figure 3d</xref>).
+# ::file pmid_2282_9094_135.txt
+# ::date 2015-07-25T04:06:42
+# ::id pmid_2282_9094.135
+(e / enhance-01
+   :ARG0 (a / and
+            :op1 (s / small-molecule
+                    :name (n2 / name
+                              :op1 "UO126"))
+            :op2 (s2 / small-molecule
+                     :name (n / name
+                              :op1 "PD98059")))
+   :ARG1 (a2 / affect-01
+             :ARG0 (s3 / small-molecule
+                       :name (n3 / name
+                                 :op1 "AZD1480")))
+   :location (a3 / and
+                 :op1 (c / cell-line
+                         :name (n4 / name
+                                   :op1 "HD-LM2"))
+                 :op2 (c2 / cell-line
+                          :name (n5 / name
+                                    :op1 "L-428"))
+                 :time (a4 / after
+                           :op1 (t / temporal-quantity
+                                   :quant "72"
+                                   :unit (h / hour))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3d")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This effect was associated with inhibition of AZD1480-induced ERK phosphorylation (<xref ref-type="fig" rid="fig3">Figure 3e</xref>).
+# ::file pmid_2282_9094_136.txt
+# ::date 2015-07-25T04:18:22
+# ::id pmid_2282_9094.136
+(a / associate-01
+   :ARG1 (a2 / affect-01
+             :mod (t / this))
+   :ARG2 (i / inhibit-01
+            :ARG1 (p2 / phosphorylate-01
+                      :ARG1 (e / enzyme
+                               :name (n / name
+                                        :op1 "ERK"))
+                      :ARG2-of (i2 / induce-01
+                                   :ARG0 (s / small-molecule
+                                            :name (n2 / name
+                                                      :op1 "AZD1480")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3e")))
+
+# ::save-date Wed Aug 5, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PD-L1 and PD-L2 are members of the B7 family, which inhibit T-cell function by interacting with the programmed cell death 1 receptor expressed on T cells.
+# ::file pmid_2282_9094_138.txt
+# ::date 2015-07-24T14:49:55
+# ::id pmid_2282_9094.138
+(m / member
+   :ARG1-of (i3 / include-91
+                :ARG2 (f / family
+                         :mod (p4 / protein
+                                  :name (n5 / name
+                                            :op1 "B7"))))
+   :domain (a / and
+              :op1 (p2 / protein
+                       :name (n / name
+                                :op1 "PD-L1"))
+              :op2 (p3 / protein
+                       :name (n2 / name
+                                 :op1 "PD-L2")))
+   :ARG0-of (i / inhibit-01
+               :ARG1 (f2 / function-01
+                         :ARG0 (c3 / cell
+                                   :name (n3 / name
+                                             :op1 "T")))
+               :manner (i2 / interact-01
+                           :ARG0 a
+                           :ARG1 (p / protein
+                                    :name (n4 / name
+                                              :op1 "programmed"
+                                              :op2 "cell"
+                                              :op3 "death"
+                                              :op4 "1"
+                                              :op5 "receptor")
+                                    :ARG2-of (e / express-03
+                                                :ARG3 c3)))))
+
+# ::save-date Fri Jul 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PD-L1 and PD-L2 have been reported to be regulated by the JAK/STAT pathway or the MAPK pathway, depending on the cellular context.<sup><xref ref-type="bibr" rid="bib9">9</xref>, <xref ref-type="bibr" rid="bib11">11</xref>, <xref ref-type="bibr" rid="bib13">13</xref></sup>
+# ::file pmid_2282_9094_139.txt
+# ::date 2015-07-24T23:32:16
+# ::id pmid_2282_9094.139
+(r / report-01
+   :ARG1 (r2 / regulate-01
+             :ARG0 (o / or
+                      :op1 (p4 / pathway
+                               :name (n4 / name
+                                         :op1 "JAK/STAT"))
+                      :op2 (p5 / pathway
+                               :name (n5 / name
+                                         :op1 "MAPK")))
+             :ARG1 (a / and
+                      :op1 (p2 / protein
+                               :name (n2 / name
+                                         :op1 "PD-L1"))
+                      :op2 (p3 / protein
+                               :name (n3 / name
+                                         :op1 "PD-L2")))
+             :ARG0-of (d / depend-01
+                         :ARG1 (c / context
+                                  :mod (c2 / cell))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p / publication
+                         :ARG1-of (c3 / cite-01
+                                      :ARG0 (a2 / and
+                                                :op1 "9"
+                                                :op2 "11"
+                                                :op3 "13")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, we assessed the effect of AZD1480 on PD-L1 and PD-L2 expression in HL cells by flow cytometry.
+# ::file pmid_2282_9094_140.txt
+# ::date 2015-07-24T23:39:14
+# ::id pmid_2282_9094.140
+(c / cause-01
+   :ARG1 (a / assess-01
+            :ARG0 (w / we)
+            :ARG1 (a2 / and
+                      :op1 (a3 / affect-01
+                               :ARG0 (s / small-molecule
+                                        :name (n / name
+                                                 :op1 "AZD1480"))
+                               :ARG1 (e2 / express-03
+                                         :ARG1 (p / protein
+                                                  :name (n2 / name
+                                                            :op1 "PD-L1"))))
+                      :op2 (a4 / affect-01
+                               :ARG1 (e / express-03
+                                        :ARG2 (p2 / protein
+                                                  :name (n3 / name
+                                                            :op1 "PD-L2"))
+                                        :ARG3 (c2 / cell-line
+                                                  :mod (d / disease
+                                                          :name (n4 / name
+                                                                    :op1 "HL"))))))
+            :instrument (c3 / cytometry
+                            :mod (f / flow))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt After incubation with AZD1480 1 μ for 72 h, we observed a significant downregulation of PD-L1 and PD-L2 in the PD-L1/PD-L2-positive HL cell lines HD-LM2 and L-540 (<xref ref-type="fig" rid="fig4">Figure 4a and b</xref>).
+# ::file pmid_2282_9094_141.txt
+# ::date 2015-07-24T23:57:12
+# ::id pmid_2282_9094.141
+(o / observe-01
+   :ARG0 (w / we)
+   :ARG1 (d2 / downregulate-01
+             :ARG1 (a3 / and
+                       :op1 (p / protein
+                               :name (n4 / name
+                                         :op1 "PD-L1"))
+                       :op2 (p2 / protein
+                                :name (n5 / name
+                                          :op1 "PD-L2")))
+             :ARG1-of (s / significant-02)
+             :location (c4 / cell-line
+                           :ARG1-of (m2 / mean-01
+                                        :ARG0 (a4 / and
+                                                  :op1 (c2 / cell-line
+                                                           :name (n2 / name
+                                                                     :op1 "HD-LM2"))
+                                                  :op2 (c3 / cell-line
+                                                           :name (n3 / name
+                                                                     :op1 "L-540"))))
+                           :mod (p4 / positive
+                                    :topic p2)
+                           :mod (d3 / disease
+                                    :name (n6 / name
+                                              :op1 "HL"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a / and
+                        :op1 (f / figure
+                                :mod "4a")
+                        :op2 (f2 / figure
+                                 :mod "4b")))
+   :time (a2 / after
+             :op1 (i / incubate-01
+                     :ARG2 (s2 / small-molecule
+                               :name (n / name
+                                        :op1 "AZD1480")
+                               :quant (c / concentration-quantity
+                                         :quant "1"
+                                         :unit (m / micromolar)))
+                     :duration (t / temporal-quantity
+                                  :quant "72"
+                                  :unit (h / hour)))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No significant dowregulation was detected following incubation with MEK inhibitors (UO126 and PD98059 25 μ for 72 h) in the L-540 cell line (data not shown).
+# ::file pmid_2282_9094_142.txt
+# ::date 2015-07-25T02:45:28
+# ::id pmid_2282_9094.142
+(d / detect-01
+   :polarity "-"
+   :ARG1 (d2 / downregulate-01
+             :ARG1-of (s / significant-02))
+   :ARG1-of (f / follow-01
+               :ARG2 (i2 / incubate-01
+                         :ARG2 (m3 / molecular-physical-entity
+                                   :ARG0-of (i / inhibit-01
+                                               :ARG1 (p / protein-family
+                                                        :name (n / name
+                                                                 :op1 "MEK")))
+                                   :location (c / cell-line
+                                                :name (n2 / name
+                                                          :op1 "L-540"))
+                                   :ARG1-of (m / mean-01
+                                               :ARG2 (a / and
+                                                        :op1 (s3 / small-molecule
+                                                                 :name (n3 / name
+                                                                           :op1 "UO126"))
+                                                        :op2 (s4 / small-molecule
+                                                                 :name (n4 / name
+                                                                           :op1 "PD98059"))
+                                                        :quant (c2 / concentration-quantity
+                                                                   :quant "25"
+                                                                   :unit (m2 / micromolar)))))
+                         :duration (t2 / temporal-quantity
+                                       :quant "72"
+                                       :unit (h / hour))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (d4 / data
+                          :ARG1-of (s2 / show-01
+                                       :polarity "-"))))
+
+# ::save-date Tue Jan 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt On the other hand, in the HD-LM2 cell line, an increase in the activation of ERK was observed after incubation with AZD1480, ruling out a role of this pathway in the regulation of PD ligands expression in this cell line (<xref ref-type="fig" rid="fig3">Figure 3b</xref>).
+# ::file pmid_2282_9094_143.txt
+# ::date 2015-07-25T03:52:34
+# ::id pmid_2282_9094.143
+(c2 / contrast-01
+    :ARG2 (o / observe-01
+             :ARG1 (i / increase-01
+                      :ARG1 (a / activate-01
+                               :ARG1 (e / enzyme
+                                        :wiki "Extracellular_signal-regulated_kinases"
+                                        :name (n2 / name
+                                                  :op1 "ERK")))
+                      :location (c / cell-line
+                                   :wiki "-"
+                                   :name (n3 / name
+                                             :op1 "HD-LM2")))
+             :time (a2 / after
+                       :op1 (i2 / incubate-01
+                                :ARG2 (s / small-molecule
+                                         :wiki "-"
+                                         :name (n / name
+                                                  :op1 "AZD1480"))))
+             :ARG0-of (r / rule-out-02
+                         :ARG1 (r2 / role
+                                   :poss e)
+                         :ARG2 (r3 / regulate-01
+                                   :ARG0 e
+                                   :ARG1 (e2 / express-03
+                                             :ARG2 (p / protein
+                                                      :wiki "PD-L1"
+                                                      :name (n4 / name
+                                                                :op1 "PD-ligand"))
+                                             :ARG3 c))))
+    :ARG1-of (d / describe-01
+                :ARG0 (f / figure
+                         :mod "3b")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Given the potent inhibition of STAT proteins phosphorylation observed with low doses AZD1480 (0.1–1 μ), we also assessed the effect of AZD1480 on the expression of STAT-regulated cytokines and chemokines involved in HL cell survival (IL-6) and immune escape (IL-13, TARC), focusing on the three cell lines with baseline JAK/STAT activation.
+# ::file pmid_2282_9094_144.txt
+# ::date 2015-07-25T11:29:38
+# ::id pmid_2282_9094.144
+(a / assess-01
+   :ARG0 (w / we)
+   :ARG1 (a4 / and
+             :op1 (a5 / affect-01
+                      :ARG0 "s2"
+                      :ARG1 (e3 / express-03
+                                :ARG2 (a7 / and
+                                          :op1 (c4 / cytokine)
+                                          :op2 (c6 / chemokine)
+                                          :ARG1-of (r / regulate-01
+                                                      :ARG0 (p4 / protein
+                                                                :name (n3 / name
+                                                                          :op1 "STAT")))
+                                          :ARG1-of (m3 / mean-01
+                                                       :ARG2 (a9 / and
+                                                                 :op1 (p6 / protein
+                                                                          :name (n6 / name
+                                                                                    :op1 "IL-13"))
+                                                                 :op2 (p7 / protein
+                                                                          :name (n7 / name
+                                                                                    :op1 "TARC"))
+                                                                 :ARG1-of (i4 / involve-01
+                                                                              :ARG2 (e2 / escape-01
+                                                                                        :ARG1 (i3 / immune-02)))))
+                                          :ARG1-of (m2 / mean-01
+                                                       :ARG2 (p8 / protein
+                                                                 :name (n8 / name
+                                                                           :op1 "IL-6")
+                                                                 :ARG1-of (i2 / involve-01
+                                                                              :ARG2 (s / survive-01
+                                                                                       :ARG0 (c5 / cell-line
+                                                                                                 :mod (d2 / disease
+                                                                                                          :name (n / name
+                                                                                                                   :op1 "HL")))))))))))
+   :ARG1-of (c / cause-01
+               :ARG0 (i / inhibit-01
+                        :ARG0 (s2 / small-molecule
+                                  :name (n2 / name
+                                            :op1 "AZD1480")
+                                  :ARG2-of (d / dose-01
+                                              :ARG1-of (l / low-04)
+                                              :quant (a2 / and
+                                                         :op1 (c2 / concentration-quantity
+                                                                  :quant "0.1"
+                                                                  :unit (m / micromolar))
+                                                         :op2 (c3 / concentration-quantity
+                                                                  :quant "1"
+                                                                  :unit m))))
+                        :ARG1 (p / phosphorylate-01
+                                 :ARG1 p4)
+                        :ARG1-of (o / observe-01)
+                        :mod (p3 / potent)))
+   :mod (a3 / also)
+   :ARG1-of (f / focus-01
+               :ARG2 (c7 / cell-line
+                         :quant "3"
+                         :mod (a8 / activate-01
+                                  :ARG1 (p5 / pathway
+                                            :name (n5 / name
+                                                      :op1 "JAK/STAT"))
+                                  :mod (b / baseline)))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Following incubation with AZD1480 1 μ for 72 h, cell culture supernatants were analyzed by enzyme-linked immunosorbent assay; consistent with the inhibition of STAT3 and STAT6 phosphorylation, decreased levels of IL-6, IL-13 and TARC were observed in HD-LM2, L-428 and L-540 (<xref ref-type="fig" rid="fig4">Figure 4b</xref>).
+# ::file pmid_2282_9094_145.txt
+# ::date 2015-07-25T12:31:06
+# ::id pmid_2282_9094.145
+(m / multi-sentence
+   :snt1 (a / analyze-01
+            :ARG0 (a6 / assay-01
+                      :instrument (i / immunosorbent)
+                      :ARG1-of (l / link-01
+                                  :ARG2 (e / enzyme)))
+            :ARG1 (s / supernatant
+                     :ARG0-of (c / culture-01)
+                     :mod (c8 / cell))
+            :ARG1-of (f / follow-01
+                        :ARG2 (i2 / incubate-01
+                                  :ARG2 (s2 / small-molecule
+                                            :name (n / name
+                                                     :op1 "AZD1480")
+                                            :quant (c3 / concentration-quantity
+                                                       :quant "1"
+                                                       :unit (m2 / micromolar)))
+                                  :duration (t / temporal-quantity
+                                               :quant "72"
+                                               :unit (h / hour)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "4b"))
+   :snt2 (c4 / consistent-01
+             :ARG1 (o / observe-01
+                      :ARG1 (l2 / level
+                                :quant-of (a4 / and
+                                              :op1 (p4 / protein
+                                                       :name (n4 / name
+                                                                 :op1 "IL-6"))
+                                              :op2 (p5 / protein
+                                                       :name (n5 / name
+                                                                 :op1 "IL-13"))
+                                              :op3 (p6 / protein
+                                                       :name (n6 / name
+                                                                 :op1 "TARC")))
+                                :ARG1-of (d2 / decrease-01))
+                      :location (a5 / and
+                                    :op1 (c5 / cell-line
+                                             :name (n7 / name
+                                                       :op1 "HD-LM2"))
+                                    :op2 (c6 / cell-line
+                                             :name (n8 / name
+                                                       :op1 "L-428"))
+                                    :op3 (c7 / cell-line
+                                             :name (n9 / name
+                                                       :op1 "L-540"))))
+             :ARG2 (i3 / inhibit-01
+                       :ARG1 (p / phosphorylate-01
+                                :ARG1 (a3 / and
+                                          :op1 (p2 / protein
+                                                   :name (n2 / name
+                                                             :op1 "STAT3"))
+                                          :op2 (p3 / protein
+                                                   :name (n3 / name
+                                                             :op1 "STAT6")))))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Higher concentrations (5 μ) of AZD1480 promoted a marked increase in the G2/M fraction in all four cell lines after 24 h of incubation, especially pronounced in HD-LM2 and L-428 cells (<xref ref-type="fig" rid="fig5">Figure 5a and b</xref>).
+# ::file pmid_2282_9094_147.txt
+# ::date 2015-07-24T14:27:09
+# ::id pmid_2282_9094.147
+(p / promote-01
+   :ARG0 (c / concentrate-02
+            :ARG1 (s / small-molecule
+                     :name (n / name
+                              :op1 "AZD1480"))
+            :ARG1-of (h / high-02
+                        :degree (m / more))
+            :ARG1-of (m2 / mean-01
+                         :ARG2 (c2 / concentration-quantity
+                                   :quant "5"
+                                   :unit (m3 / micromolar))))
+   :ARG1 (i / increase-01
+            :ARG1 (f3 / fraction-01
+                      :time (e2 / event
+                                :name (n2 / name
+                                          :op1 "G2/M")))
+            :location (c3 / cell-line
+                          :quant "4")
+            :ARG1-of (p3 / pronounced-02
+                         :mod (e / especially)
+                         :location (a3 / and
+                                       :op1 (c4 / cell-line
+                                                :name (n3 / name
+                                                          :op1 "HD-LM2"))
+                                       :op2 (c5 / cell-line
+                                                :name (n4 / name
+                                                          :op1 "L-428"))))
+            :ARG1-of (m4 / mark-01)
+            :time (a2 / after
+                      :op1 (i2 / incubate-01
+                               :duration (t / temporal-quantity
+                                            :quant "72"
+                                            :unit (h2 / hour)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a / and
+                        :op1 (f / figure
+                                :mod "5a")
+                        :op2 (f2 / figure
+                                 :mod "5b"))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, treatment with a lower AZD1480 concentration (1 μ) for 24 h did not significantly affect the cell cycle fractions (<xref ref-type="fig" rid="fig5">Figure 5a and b</xref>).
+# ::file pmid_2282_9094_148.txt
+# ::date 2015-07-25T05:23:36
+# ::id pmid_2282_9094.148
+(c / contrast-01
+   :ARG2 (a / affect-01
+            :polarity "-"
+            :ARG0 (t / treat-04
+                     :ARG2 (c4 / concentrate-02
+                               :ARG1 (s2 / small-molecule
+                                         :name (n / name
+                                                  :op1 "AZD1480"))
+                               :ARG1-of (l / low-04
+                                           :degree (m2 / more))
+                               :quant (c5 / concentration-quantity
+                                          :quant "1"
+                                          :unit (m / micromolar)))
+                     :duration (t2 / temporal-quantity
+                                   :quant "24"
+                                   :unit (h / hour)))
+            :ARG1 (f / fraction-01
+                     :ARG1 (c2 / cycle-02
+                               :ARG1 (c3 / cell)))
+            :ARG1-of (s / significant-02))
+   :ARG1-of (d / describe-01
+               :ARG0 (a2 / and
+                         :op1 (f2 / figure
+                                  :mod "5a")
+                         :op2 (f3 / figure
+                                  :mod "5b"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As AZD1480 was reported to inhibit Aurora A kinase in enzymatic assays,<sup><xref ref-type="bibr" rid="bib14">14</xref></sup> we assessed whether the significant increase in the G2/M fraction observed in HL cell lines after incubation with 5 μ AZD1480 was related to the inhibition of Aurora A.
+# ::file pmid_2282_9094_149.txt
+# ::date 2015-07-25T05:51:04
+# ::id pmid_2282_9094.149
+(a / assess-01
+   :ARG0 (w / we)
+   :ARG1 (r / relate-01
+            :mode "interrogative"
+            :ARG1 (i / increase-01
+                     :ARG1 (f / fraction-01
+                              :time (e / event
+                                       :name (n / name
+                                                :op1 "G2/M")))
+                     :ARG2 (s / significant-02)
+                     :ARG1-of (o / observe-01
+                                 :location (c / cell-line
+                                              :mod (d / disease
+                                                      :name (n2 / name
+                                                                :op1 "HL")))
+                                 :time (a2 / after
+                                           :op1 (i2 / incubate-01
+                                                    :ARG2 (s2 / small-molecule
+                                                              :name (n3 / name
+                                                                        :op1 "AZD1480")
+                                                              :quant (c2 / concentration-quantity
+                                                                         :quant "5"
+                                                                         :unit (m / micromolar)))))))
+            :ARG2 (i3 / inhibit-01
+                      :ARG1 "k"))
+   :ARG0-of (c3 / cause-01
+                :ARG1 (r2 / report-01
+                          :ARG1 (i4 / inhibit-01
+                                    :ARG0 s2
+                                    :ARG1 (k / kinase
+                                             :name (n5 / name
+                                                       :op1 "Aurora"
+                                                       :op2 "A"))
+                                    :time (a3 / assay-01
+                                              :ARG1 (e2 / enzyme))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt First, we analyzed the baseline expression of Aurora A and B kinases in exponentially growing HL cells by western blotting.
+# ::file pmid_2282_9094_150.txt
+# ::date 2015-07-25T00:30:18
+# ::id pmid_2282_9094.150
+(a / analyze-01
+   :ARG0 (w / we)
+   :ARG1 (e / express-03
+            :ARG2 (a2 / and
+                      :op1 (k / kinase
+                              :name (n3 / name
+                                        :op1 "Aurora"
+                                        :op2 "A"))
+                      :op2 (k2 / kinase
+                               :name (n4 / name
+                                         :op1 "Aurora"
+                                         :op2 "B")))
+            :ARG3 (c / cell-line
+                     :ARG1-of (g / grow-01
+                                 :manner (e2 / exponential))
+                     :mod (d / disease
+                             :name (n / name
+                                      :op1 "HL")))
+            :manner (i / immunoblot-01)
+            :mod (b / baseline))
+   :ord (o / ordinal-entity
+           :value "1"))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All four cell lines showed overexpression of Aurora A and B, and histone H3, compared with PBMCs from healthy donors (<xref ref-type="fig" rid="fig5">Figure 5c</xref>).
+# ::file pmid_2282_9094_151.txt
+# ::date 2015-07-25T00:03:02
+# ::id pmid_2282_9094.151
+(s / show-01
+   :ARG0 (c2 / cell-line
+             :quant "4"
+             :mod (a / all))
+   :ARG1 (o / overexpress-01
+            :ARG1 (a2 / and
+                      :op1 (e / enzyme
+                              :name (n / name
+                                       :op1 "Aurora"
+                                       :op2 "A"))
+                      :op2 (e2 / enzyme
+                               :name (n2 / name
+                                         :op1 "Aurora"
+                                         :op2 "B"))
+                      :op3 (p3 / protein
+                               :name (n3 / name
+                                         :op1 "histone"
+                                         :op2 "H3"))))
+   :ARG1-of (c / compare-01
+               :ARG2 (c3 / cell
+                         :name (n4 / name
+                                   :op1 "PBMC")
+                         :source (p / person
+                                    :mod (h / healthy)
+                                    :ARG0-of (d / donate-01))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5c")))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Aurora A kinase activity depends on autophosphorylation at Thr288 in the activation loop.
+# ::file pmid_2282_9094_152.txt
+# ::date 2015-07-24T14:50:35
+# ::id pmid_2282_9094.152
+(d / depend-01
+   :ARG0 (a / activity-06
+            :ARG0 (k / kinase
+                     :name (n / name
+                              :op1 "Aurora")
+                     :part a3
+                     :ARG2-of p2))
+   :ARG1 (p2 / phosphorylate-01
+             :ARG1 (a3 / amino-acid
+                       :mod "288"
+                       :name (n2 / name
+                                 :op1 "threonine"))
+             :location (l / loop-01
+                          :ARG0-of (a4 / activate-01
+                                       :ARG1 k))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, to determine the effect of AZD1480 on Aurora A kinase, we evaluated the levels of autophosphorylation at Thr288 by western blotting.
+# ::file pmid_2282_9094_153.txt
+# ::date 2015-07-24T14:54:27
+# ::id pmid_2282_9094.153
+(c / cause-01
+   :ARG1 (e2 / evaluate-01
+             :ARG0 (w / we)
+             :ARG2 (l / level
+                      :degree-of (p2 / phosphorylate-01
+                                     :ARG1 (a2 / amino-acid
+                                               :mod "288"
+                                               :name (n / name
+                                                        :op1 "threonine")
+                                               :part-of "k")
+                                     :ARG2 "k"))
+             :manner (i / immunoblot-01))
+   :purpose (d / determine-01
+               :ARG0 w
+               :ARG1 (a3 / affect-01
+                         :ARG0 (s / small-molecule
+                                  :name (n3 / name
+                                            :op1 "AZD1480"))
+                         :ARG1 (k / kinase
+                                  :name (n4 / name
+                                            :op1 "Aurora"
+                                            :op2 "A")))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cells were pretreated with nocodazole (400 ng/ml) for 18 h, to achieve a mitotic block, and then exposed to AZD1480 (1 or 5 μ) with or without the proteasome inhibitor MG132 (20 μ; to prevent a potential override of the nocodazole-induced mitotic block by proteasome-dependent mechanisms) for 3 h (<xref ref-type="fig" rid="fig5">Figure 5d</xref>).
+# ::file pmid_2282_9094_154.txt
+# ::date 2015-07-24T23:31:16
+# ::id pmid_2282_9094.154
+(a / and
+   :op1 (p / pretreat-01
+           :ARG1 (c / cell)
+           :ARG3 (s2 / small-molecule
+                     :name (n / name
+                              :op1 "nocodazole")
+                     :quant (c2 / concentration-quantity
+                                :quant "400"
+                                :unit (n2 / nanogram-per-milliliter)))
+           :duration (t / temporal-quantity
+                        :quant "18"
+                        :unit (h / hour))
+           :purpose (a2 / achieve-01
+                        :ARG0 c
+                        :ARG1 (b / block
+                                 :mod (m / mitosis))))
+   :op2 (e / expose-01
+           :ARG1 c
+           :ARG2 (s / small-molecule
+                    :name (n3 / name
+                              :op1 "AZD1480")
+                    :quant (o / or
+                              :op1 (c3 / concentration-quantity
+                                       :quant "1"
+                                       :unit (m2 / micromolar))
+                              :op2 (c4 / concentration-quantity
+                                       :quant "5"
+                                       :unit m2))
+                    :accompanier (o2 / or
+                                     :op1 (s3 / small-molecule
+                                              :name (n4 / name
+                                                        :op1 "MG132")
+                                              :mod (c5 / concentration-quantity
+                                                       :quant "20"
+                                                       :unit m2)
+                                              :ARG0-of (i / inhibit-01
+                                                          :ARG1 (p2 / proteasome))
+                                              :purpose (p3 / prevent-01
+                                                           :ARG1 (o3 / override-01
+                                                                     :ARG0 (m7 / mechanism
+                                                                               :ARG0-of (d2 / depend-01
+                                                                                            :ARG1 (m3 / macro-molecular-complex
+                                                                                                      :name (n6 / name
+                                                                                                                :op1 "proteasome"))))
+                                                                     :ARG1 (b2 / block
+                                                                               :mod (m8 / mitosis)
+                                                                               :ARG2-of (i2 / induce-01
+                                                                                            :ARG0 s2))
+                                                                     :mod (p5 / potential))))
+                                     :op2 (s4 / small-molecule
+                                              :polarity "-"
+                                              :name (n5 / name
+                                                        :op1 "MG132"))))
+           :time (t2 / then)
+           :duration (t3 / temporal-quantity
+                         :quant "3"
+                         :unit (h2 / hour)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5d")))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Dose-dependent inhibition of Aurora A was detected after 3 h of incubation in all the four cell lines, and Thr288 autophosphorylation was abrogated when a higher dose of AZD1480 (5 μ) was used (<xref ref-type="fig" rid="fig5">Figure 5d</xref>).
+# ::file pmid_2282_9094_155.txt
+# ::date 2015-07-25T01:10:07
+# ::id pmid_2282_9094.155
+(a / and
+   :op1 (d2 / detect-01
+            :ARG1 (i / inhibit-01
+                     :ARG1 (e / enzyme
+                              :name (n2 / name
+                                        :op1 "Aurora"
+                                        :op2 "A")
+                              :part a6
+                              :ARG2-of p)
+                     :ARG0-of (d4 / depend-01
+                                  :ARG1 (d5 / dose-01)))
+            :time (a3 / after
+                      :op1 (i2 / incubate-01
+                               :location (c2 / cell-line
+                                             :quant "4"
+                                             :mod (a4 / all)))
+                      :quant (t / temporal-quantity
+                                :quant "3"
+                                :unit (h2 / hour))))
+   :op2 (a2 / abrogate-01
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (a6 / amino-acid
+                               :mod "288"
+                               :name (n3 / name
+                                         :op1 "Threonine")))
+            :time (u / use-01
+                     :ARG1 (d3 / dose-01
+                               :ARG2 (s / small-molecule
+                                        :name (n / name
+                                                 :op1 "AZD1480"))
+                               :ARG1-of (h / high-02
+                                           :degree (m / more))
+                               :quant (c / concentration-quantity
+                                         :quant "5"
+                                         :unit (m2 / micromolar)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5d")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These findings are consistent with the analysis of the cell cycle fractions, showing major dose-dependent changes in the cell cycle after incubation with AZD1480.
+# ::file pmid_2282_9094_156.txt
+# ::date 2015-07-25T00:41:13
+# ::id pmid_2282_9094.156
+(c / consistent-01
+   :ARG1 (t / thing
+            :ARG1-of (f / find-01)
+            :mod (t2 / this)
+            :ARG0-of (s / show-01
+                        :ARG1 (c4 / change-01
+                                  :ARG1 (c5 / cycle-02
+                                            :ARG1 (c6 / cell))
+                                  :ARG0-of (d / depend-01
+                                              :ARG1 (d2 / dose))
+                                  :ARG1-of (m / major-02)
+                                  :time (a2 / after
+                                            :op1 (i / incubate-01
+                                                    :ARG1 c6
+                                                    :ARG2 (s2 / small-molecule
+                                                              :name (n / name
+                                                                       :op1 "AZD1480")))))))
+   :ARG2 (a / analyze-01
+            :ARG1 (f2 / fraction
+                      :mod c5)))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In L-428 and L-540 cells, a dose-dependent inhibition of the phosphorylation of histone H3 at Ser10 was observed, suggesting a dual inhibition of Aurora A and B in these cell lines.
+# ::file pmid_2282_9094_157.txt
+# ::date 2015-07-25T00:56:01
+# ::id pmid_2282_9094.157
+(o / observe-01
+   :ARG1 (i2 / inhibit-01
+             :ARG1 (p / phosphorylate-01
+                      :ARG1 (a2 / amino-acid
+                                :mod "10"
+                                :name (n4 / name
+                                          :op1 "Serine")
+                                :part-of (p4 / protein
+                                             :name (n3 / name
+                                                       :op1 "histone"
+                                                       :op2 "H3"))))
+             :ARG0-of (d2 / depend-01
+                          :ARG1 (d3 / dose)))
+   :ARG0-of (s / suggest-01
+               :ARG1 (i / inhibit-01
+                        :ARG1 (a / and
+                                 :op1 (e / enzyme
+                                         :name (n / name
+                                                  :op1 "Aurora"
+                                                  :op2 "A"))
+                                 :op2 (e2 / enzyme
+                                          :name (n2 / name
+                                                    :op1 "Aurora"
+                                                    :op2 "B")))
+                        :location "a3"
+                        :mod (d / dual)))
+   :location (a3 / and
+                 :op1 (c / cell-line
+                         :name (n5 / name
+                                   :op1 "L-428"))
+                 :op2 (c2 / cell-line
+                          :name (n6 / name
+                                    :op1 "L-540"))))

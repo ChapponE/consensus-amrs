@@ -1,0 +1,1459 @@
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt One mutation was present in 23.4% (47/201) of the cases and 3.0% additional cases (6/201) had two concomitant mutations.
+# ::file pmid_2354_8132_10.txt
+# ::date 2015-08-25T19:28:11
+# ::id pmid_2354_8132.10
+(a / and
+      :op1 (p / present-02
+            :ARG1 (m / mutate-01 :quant "1")
+            :ARG2 (c / case-04
+                  :quant "47"
+                  :ARG1-of (i / include-91
+                        :ARG2 (c2 / case-04 :quant "201")
+                        :ARG3 (p2 / percentage-entity :value "23.4"))))
+      :op2 (h / have-03
+            :ARG0 (c3 / case-04
+                  :quant "6"
+                  :ARG1-of (i2 / include-91
+                        :ARG2 c2
+                        :ARG3 (p3 / percentage-entity :value "3.0"))
+                  :ARG1-of (a2 / add-02))
+            :ARG1 (m2 / mutate-01
+                  :quant "2"
+                  :mod (c4 / concomitant))))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A total of 53 cases showed 59 mutations, with the following distribution: 44.1% (26/59) in <i>KRAS</i> (13 in exon 3 and 13 in exon 4), 18.6% (11/59) in <i>BRAF</i> (two in exon 11 and nine in exon 15) and 37.3% (22/59) in <i>PIK3CA</i> (16 in exon 9 and six in exon 20).
+# ::file pmid_2354_8132_11.txt
+# ::date 2015-08-26T02:51:01
+# ::id pmid_2354_8132.11
+(s / show-01
+   :ARG0 (c / case-04
+            :quant "53"
+            :ARG1-of (t / total-01))
+   :ARG1 (m / mutate-01
+            :quant "59"
+            :ARG1-of (d / distribute-01
+                        :ARG2 (a / and
+                                 :op1 (m2 / mutate-01
+                                          :quant "26"
+                                          :ARG1 (g / gene
+                                                   :name (n / name
+                                                            :op1 "KRAS"))
+                                          :ARG1-of (i / include-91
+                                                      :ARG2 m
+                                                      :ARG3 (p / percentage-entity
+                                                               :value "44.1"))
+                                          :ARG1-of (m3 / mean-01
+                                                       :ARG2 (a2 / and
+                                                                 :op1 (m4 / mutate-01
+                                                                          :quant "13"
+                                                                          :location (e6 / exon
+                                                                                        :mod "3"))
+                                                                 :op2 (m5 / mutate-01
+                                                                          :quant "13"
+                                                                          :location (e5 / exon
+                                                                                        :mod "4")))))
+                                 :op2 (m6 / mutate-01
+                                          :quant "11"
+                                          :ARG1 (g2 / gene
+                                                    :name (n4 / name
+                                                              :op1 "BRAF"))
+                                          :ARG1-of (i2 / include-91
+                                                       :ARG2 m
+                                                       :ARG3 (p2 / percentage-entity
+                                                                 :value "18.6"))
+                                          :ARG1-of (m7 / mean-01
+                                                       :ARG2 (a3 / and
+                                                                 :op1 (m8 / mutate-01
+                                                                          :quant "2"
+                                                                          :location (e3 / exon
+                                                                                        :mod "11"))
+                                                                 :op2 (m9 / mutate-01
+                                                                          :quant "9"
+                                                                          :location (e4 / exon
+                                                                                        :mod "15")))))
+                                 :op3 (m10 / mutate-01
+                                           :quant "22"
+                                           :ARG1 (g3 / gene
+                                                     :name (n7 / name
+                                                               :op1 "PIK3CA"))
+                                           :ARG1-of (i3 / include-91
+                                                        :ARG2 m
+                                                        :ARG3 (p3 / percentage-entity
+                                                                  :value "37.3"))
+                                           :ARG1-of (m11 / mean-01
+                                                         :ARG2 (a4 / and
+                                                                   :op1 (m12 / mutate-01
+                                                                             :quant "16"
+                                                                             :location (e / exon
+                                                                                          :mod "9"))
+                                                                   :op2 (m13 / mutate-01
+                                                                             :quant "6"
+                                                                             :location (e2 / exon
+                                                                                           :mod "20"))))))
+                        :ARG1-of (f / follow-01))))
+
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In total, 26.4% (53/201) of the cases had at least one mutation and the remaining 73.6% (148/201) were wild-type for all regions studied.
+# ::file pmid_2354_8132_12.txt
+# ::date 2015-08-26T15:50:30
+# ::id pmid_2354_8132.12
+(a / and
+      :op1 (h / have-03
+            :ARG0 (c / case-04
+                  :quant "53"
+                  :ARG1-of (i / include-91
+                        :ARG2 (c2 / case-04 :quant "201")
+                        :ARG3 (p / percentage-entity :value "26.4")))
+            :ARG1 (m / mutate-01
+                  :quant (a2 / at-least :op1 "1")))
+      :op2 (w / wild-type
+            :domain (c3 / case-04
+                  :quant "148"
+                  :ARG1-of (i2 / include-91
+                        :ARG2 c2
+                        :ARG3 (p2 / percentage-entity :value "73.6"))
+                  :ARG1-of (r / remain-01))
+            :location (r2 / region
+                  :mod (a3 / all)
+                  :ARG1-of (s / study-01)))
+      :ARG1-of (t / total-01))
+
+# ::save-date Sat Sep 12, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Five of the mutations we report, four in <i>KRAS</i> and one in <i>BRAF</i>, have not previously been described in CRC.
+# ::file pmid_2354_8132_13.txt
+# ::date 2015-08-27T11:54:07
+# ::id pmid_2354_8132.13
+(d / describe-01
+   :polarity "-"
+   :ARG1 (m / mutate-01
+            :quant "5"
+            :ARG1-of (i / include-91
+                        :ARG2 (m2 / mutate-01
+                                  :ARG1-of (r / report-01
+                                              :ARG0 (w / we))))
+            :ARG2-of (i2 / include-91
+                         :ARG1 (a / and
+                                  :op1 (m3 / mutate-01
+                                           :quant "4"
+                                           :ARG1 (g / gene
+                                                    :name (n / name
+                                                             :op1 "KRAS")))
+                                  :op2 (m4 / mutate-01
+                                           :quant "1"
+                                           :ARG1 (g2 / gene
+                                                     :name (n2 / name
+                                                               :op1 "BRAF"))))))
+   :time (p / previous)
+   :location (d2 / disease
+                 :name (n3 / name
+                           :op1 "CRC")))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>BRAF</i> and <i>PIK3CA</i> mutations were more frequent in the colon than in the sigmoid or rectum: 20.8% <i>vs.</i> 1.6% <i>vs.</i> 0.0% (<i>P=</i>0.000) for <i>BRAF</i> and 23.4% <i>vs.</i> 12.1% <i>vs.</i> 5.4% (<i>P</i>=0.011) for <i>PIK3CA</i> mutations.
+# ::file pmid_2354_8132_14.txt
+# ::date 2015-08-27T12:05:21
+# ::id pmid_2354_8132.14
+(f / frequent-02
+   :ARG1 (a / and
+            :op1 (m / mutate-01
+                    :ARG1 (g / gene
+                             :name (n / name
+                                      :op1 "BRAF")))
+            :op2 (m2 / mutate-01
+                     :ARG1 (g2 / gene
+                               :name (n2 / name
+                                         :op1 "PIK3CA"))))
+   :degree (m3 / more)
+   :location (c / colon)
+   :compared-to (o / or
+                   :op1 (s / sigmoid)
+                   :op2 (r / rectum))
+   :ARG1-of (m4 / mean-01
+                :ARG2 (a2 / and
+                          :op1 (m5 / mutate-01
+                                   :ARG1 g
+                                   :quant (p / percentage-entity
+                                             :value "20.8")
+                                   :location c
+                                   :compared-to (m6 / mutate-01
+                                                    :ARG1 g
+                                                    :quant (p2 / percentage-entity
+                                                               :value "1.6")
+                                                    :location s)
+                                   :compared-to (m7 / mutate-01
+                                                    :ARG1 g
+                                                    :quant (p3 / percentage-entity
+                                                               :value "0.0")
+                                                    :location r)
+                                   :ARG1-of (s2 / statistical-test-91
+                                                :ARG2 "0.000"))
+                          :op2 (m8 / mutate-01
+                                   :ARG1 g2
+                                   :quant (p5 / percentage-entity
+                                              :value "23.4")
+                                   :location c
+                                   :compared-to (m9 / mutate-01
+                                                    :ARG1 g2
+                                                    :quant (p6 / percentage-entity
+                                                               :value "12.1")
+                                                    :location s)
+                                   :compared-to (m10 / mutate-01
+                                                     :ARG1 g2
+                                                     :quant (p7 / percentage-entity
+                                                                :value "5.4")
+                                                     :location r)
+                                   :ARG1-of (s3 / statistical-test-91
+                                                :ARG2 "0.011")))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A total of 201 <i>KRAS</i> exon 2 wild-type mCRC samples were screened by HRM for mutations in exons 3 and 4 of <i>KRAS</i>, exons 11 and 15 of <i>BRAF,</i> and exons 9 and 20 of <i>PIK3CA</i> (Figure <xref ref-type="fig" rid="F1">1</xref>).
+# ::file pmid_2354_8132_76.txt
+# ::date 2015-08-27T12:36:42
+# ::id pmid_2354_8132.76
+(s / screen-01
+   :ARG1 (s2 / sample-01
+             :ARG1 (d / disease
+                      :name (n / name
+                               :op1 "mCRC")
+                      :mod (w / wild-type)
+                      :mod (e / exon
+                              :mod "2"
+                              :part-of (g / gene
+                                          :name (n3 / name
+                                                    :op1 "KRAS")
+                                          :part a2)))
+             :ARG1-of (t / total-01
+                         :ARG2 "201"))
+   :manner (t2 / thing
+               :name (n4 / name
+                         :op1 "HRM"))
+   :purpose (a / and
+               :op1 (m / mutate-01
+                       :location (a2 / and
+                                     :op1 (e2 / exon
+                                              :mod "3")
+                                     :op2 (e3 / exon
+                                              :mod "4")))
+               :op2 (m2 / mutate-01
+                        :location (a3 / and
+                                      :op1 (e4 / exon
+                                               :mod "11")
+                                      :op2 (e5 / exon
+                                               :mod "15")
+                                      :part-of (g2 / gene
+                                                   :name (n9 / name
+                                                             :op1 "BRAF"))))
+               :op3 (m3 / mutate-01
+                        :location (a4 / and
+                                      :op1 (e6 / exon
+                                               :mod "9")
+                                      :op2 (e7 / exon
+                                               :mod "20")
+                                      :part-of (g3 / gene
+                                                   :name (n12 / name
+                                                              :op1 "PIK3CA")))))
+   :ARG1-of (d9 / describe-01
+                :ARG0 (f / figure
+                         :mod "1")))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Subsequent automated sequencing of HRM positive cases confirmed the presence of 59 mutations in 53 cases, with the following distribution: 44.1% (26/59) in <i>KRAS</i> (13 in exon 3 and 13 in exon 4), 18.6% (11/59) in <i>BRAF</i> (two in exon 11 and nine in exon 15) and 37.3% (22/59) in <i>PIK3CA</i> (16 in exon 9 and six in exon 20).
+# ::file pmid_2354_8132_77.txt
+# ::date 2015-08-27T12:56:55
+# ::id pmid_2354_8132.77
+(c / confirm-01
+   :ARG0 (s / sequence-01
+            :ARG1 (c2 / case-04
+                      :ARG1 (t / thing
+                               :name (n / name
+                                        :op1 "HRM"))
+                      :mod (p / positive))
+            :ARG1-of (a / automate-01)
+            :time (s2 / subsequent))
+   :ARG1 (p2 / present-02
+             :ARG1 (m / mutate-01
+                      :quant "59")
+             :ARG2 (c3 / case-04
+                       :quant "53")
+             :ARG1-of (d / distribute-01
+                         :ARG2 (a2 / and
+                                   :op1 (m2 / mutate-01
+                                            :quant "26"
+                                            :ARG1 (g / gene
+                                                     :name (n2 / name
+                                                               :op1 "KRAS"))
+                                            :ARG1-of (i / include-91
+                                                        :ARG2 m
+                                                        :ARG3 (p3 / percentage-entity
+                                                                  :value "44.1"))
+                                            :ARG1-of (m3 / mean-01
+                                                         :ARG2 (a3 / and
+                                                                   :op1 (m4 / mutate-01
+                                                                            :quant "13"
+                                                                            :location (e / exon
+                                                                                         :mod "3"))
+                                                                   :op2 (m5 / mutate-01
+                                                                            :quant "13"
+                                                                            :location (e2 / exon
+                                                                                          :mod "4")))))
+                                   :op2 (m6 / mutate-01
+                                            :quant "11"
+                                            :ARG1 (g2 / gene
+                                                      :name (n5 / name
+                                                                :op1 "BRAF"))
+                                            :ARG1-of (i2 / include-91
+                                                         :ARG2 m
+                                                         :ARG3 (p4 / percentage-entity
+                                                                   :value "18.6"))
+                                            :ARG1-of (m7 / mean-01
+                                                         :ARG2 (a4 / and
+                                                                   :op1 (m8 / mutate-01
+                                                                            :quant "2"
+                                                                            :location (e3 / exon
+                                                                                          :mod "11"))
+                                                                   :op2 (m9 / mutate-01
+                                                                            :quant "9"
+                                                                            :location (e4 / exon
+                                                                                          :mod "15")))))
+                                   :op3 (m10 / mutate-01
+                                             :quant "22"
+                                             :ARG1 (g3 / gene
+                                                       :name (n8 / name
+                                                                 :op1 "PIK3CA"))
+                                             :ARG1-of (i3 / include-91
+                                                          :ARG2 m
+                                                          :ARG3 (p5 / percentage-entity
+                                                                    :value "37.3"))
+                                             :ARG1-of (m11 / mean-01
+                                                           :ARG2 (a5 / and
+                                                                     :op1 (m12 / mutate-01
+                                                                               :quant "16"
+                                                                               :location (e5 / exon
+                                                                                             :mod "9"))
+                                                                     :op2 (m13 / mutate-01
+                                                                               :quant "6"
+                                                                               :location (e6 / exon
+                                                                                             :mod "20"))))))
+                         :ARG1-of (f / follow-01))))
+
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt One mutation was present in 23.4% (47/201) of the cases and 3.0% additional cases (6/201) had two concomitant mutations.
+# ::file pmid_2354_8132_78.txt
+# ::date 2015-08-27T13:30:31
+# ::id pmid_2354_8132.78
+(a / and
+      :op1 (p / present-02
+            :ARG1 (m / mutate-01 :quant "1")
+            :ARG2 (c / case-04
+                  :quant "47"
+                  :ARG1-of (i / include-91
+                        :ARG2 (c2 / case-04 :quant "201")
+                        :ARG3 (p2 / percentage-entity :value "23.4"))))
+      :op2 (h / have-03
+            :ARG0 (c3 / case-04
+                  :quant "6"
+                  :ARG1-of (i2 / include-91
+                        :ARG2 c2
+                        :ARG3 (p3 / percentage-entity :value "3.0"))
+                  :ARG1-of (a2 / add-02))
+            :ARG1 (m2 / mutate-01
+                  :quant "2"
+                  :mod (c4 / concomitant))))
+
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In total, 26.4% (53/201) of the cases had at least one mutation and the remaining 73.6% (148/201) were wild-type for all regions studied.
+# ::file pmid_2354_8132_79.txt
+# ::date 2015-08-27T14:55:59
+# ::id pmid_2354_8132.79
+(a / and
+      :op1 (h / have-03
+            :ARG0 (c / case-04
+                  :quant "53"
+                  :ARG1-of (i / include-91
+                        :ARG2 (c2 / case-04 :quant "201")
+                        :ARG3 (p / percentage-entity :value "26.4")))
+            :ARG1 (m / mutate-01
+                  :quant (a2 / at-least :op1 "1")))
+      :op2 (w / wild-type
+            :domain (c3 / case-04
+                  :quant "148"
+                  :ARG1-of (i2 / include-91
+                        :ARG2 c2
+                        :ARG3 (p2 / percentage-entity :value "73.6"))
+                  :ARG1-of (r / remain-01))
+            :location (r2 / region
+                  :mod (a3 / all)
+                  :ARG1-of (s / study-01)))
+      :ARG1-of (t / total-01))
+
+
+# ::save-date Tue Jan 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All mutations were found in heterozygosity and were confirmed in a second HRM and DNA sequence analysis.
+# ::file pmid_2354_8132_80.txt
+# ::date 2015-08-27T15:05:50
+# ::id pmid_2354_8132.80
+(a / and
+      :op1 (f / find-01
+            :ARG1 (m / mutate-01
+                  :mod (a2 / all))
+            :manner (h / heterozygosity))
+      :op2 (c / confirm-01
+            :ARG0 (a3 / and
+                  :op1 (a4 / analyze-01
+                        :ARG1 m
+                        :manner (m2 / melt-01
+                              :mod (r / resolution
+                                    :ARG1-of (h2 / high-02))))
+                  :op2 (a5 / analyze-01
+                        :ARG1 m
+                        :mod (d / dna-sequence))
+                  :ord (o / ordinal-entity :value "2"))
+            :ARG1 m))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Samples with single mutations were distributed as follows: 10.0% (20/201) were <i>KRAS</i> mutated, 5.0% (10/201) in exon 3 and 5.0% (10/201) in exon 4; 5.0% (10/201) had one <i>BRAF</i> mutation, 0.5% (1/201) in exon 11 and 4.5% (9/201) in exon 15; 8.5% (17/201) were <i>PIK3CA</i> mutated, 7.0% (14/201) in exon 9 and 1.5% (3/201) in exon 20 (Table <xref ref-type="table" rid="T1">1</xref>).
+# ::file pmid_2354_8132_81.txt
+# ::date 2015-08-30T17:47:13
+# ::id pmid_2354_8132.81
+(d / distribute-01
+   :ARG1 (t / thing
+            :ARG1-of (s / sample-01)
+            :ARG0-of (h / have-03
+                        :ARG1 (m / mutate-01
+                                 :ARG1-of (s2 / single-02))))
+   :ARG2 (a / and
+            :op1 (t3 / thing
+                     :quant "20"
+                     :ARG1-of (i / include-91
+                                 :ARG2 (t4 / thing
+                                           :quant "201"
+                                           :ARG1-of (s4 / sample-01))
+                                 :ARG3 (p / percentage-entity
+                                          :value "10.0"
+                                          :ARG1-of (m2 / mean-01
+                                                       :ARG2 (a2 / and
+                                                                 :op1 (t5 / thing
+                                                                          :quant "10"
+                                                                          :ARG1-of (i2 / include-91
+                                                                                       :ARG2 t4
+                                                                                       :ARG3 (p2 / percentage-entity
+                                                                                                 :value "5.0"))
+                                                                          :ARG2-of (m3 / mutate-01
+                                                                                       :location (e / exon
+                                                                                                    :mod "3")))
+                                                                 :op2 (t6 / thing
+                                                                          :quant "10"
+                                                                          :ARG1-of i2
+                                                                          :ARG2-of (m4 / mutate-01
+                                                                                       :location (e2 / exon
+                                                                                                     :mod "4")))))))
+                     :location-of (m5 / mutate-01
+                                      :ARG1 (g / gene
+                                               :name (n3 / name
+                                                         :op1 "KRAS"))))
+            :op2 (t7 / thing
+                     :quant "10"
+                     :ARG1-of (i3 / include-91
+                                  :ARG2 t4
+                                  :ARG3 (p3 / percentage-entity
+                                            :value "5.0"
+                                            :ARG1-of (m6 / mean-01
+                                                         :ARG2 (a3 / and
+                                                                   :op1 (t8 / thing
+                                                                            :quant "1"
+                                                                            :ARG1-of (i4 / include-91
+                                                                                         :ARG2 t4
+                                                                                         :ARG3 (p4 / percentage-entity
+                                                                                                   :value "0.5"))
+                                                                            :ARG2-of (m7 / mutate-01
+                                                                                         :location (e3 / exon
+                                                                                                       :mod "11")))
+                                                                   :op2 (t9 / thing
+                                                                            :quant "9"
+                                                                            :ARG1-of (i5 / include-91
+                                                                                         :ARG2 t4
+                                                                                         :ARG3 (p5 / percentage-entity
+                                                                                                   :value "4.5"))
+                                                                            :ARG2-of (m8 / mutate-01
+                                                                                         :location (e4 / exon
+                                                                                                       :mod "15")))))))
+                     :ARG0-of (h2 / have-03
+                                  :ARG1 (m9 / mutate-01
+                                            :quant "1"
+                                            :ARG1 (g2 / gene
+                                                      :name (n6 / name
+                                                                :op1 "BRAF")))))
+            :op3 (t10 / thing
+                      :quant "17"
+                      :ARG1-of (i6 / include-91
+                                   :ARG2 t4
+                                   :ARG3 (p6 / percentage-entity
+                                             :value "8.5"
+                                             :ARG1-of (m10 / mean-01
+                                                           :ARG2 (a4 / and
+                                                                     :op1 (t11 / thing
+                                                                               :quant "14"
+                                                                               :ARG1-of (i7 / include-91
+                                                                                            :ARG2 t4
+                                                                                            :ARG3 (p7 / percentage-entity
+                                                                                                      :value "7.0"))
+                                                                               :ARG2-of (m11 / mutate-01
+                                                                                             :location (e5 / exon
+                                                                                                           :mod "9")))
+                                                                     :op2 (t12 / thing
+                                                                               :quant "3"
+                                                                               :ARG1-of (i8 / include-91
+                                                                                            :ARG2 t4
+                                                                                            :ARG3 (p8 / percentage-entity
+                                                                                                      :value "1.5"))
+                                                                               :ARG2-of (m12 / mutate-01
+                                                                                             :location (e6 / exon
+                                                                                                           :mod "20")))))))
+                      :location-of (m13 / mutate-01
+                                        :ARG1 (g3 / gene
+                                                  :name (n9 / name
+                                                            :op1 "PIK3CA")))))
+   :ARG1-of (f / follow-01)
+   :ARG1-of (d8 / describe-01
+                :ARG0 (t2 / table
+                          :mod "1")))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Concomitant mutations were found with the following distribution: 2.0% (4/201) of cases had simultaneous mutations in <i>PIK3CA</i> and <i>KRAS</i>, 0.5% (1/201) in <i>PIK3CA</i> and <i>BRAF</i>, and 0.5% (1/201) two mutations in <i>KRAS</i> (Table <xref ref-type="table" rid="T2">2</xref>).
+# ::file pmid_2354_8132_82.txt
+# ::date 2015-08-27T16:34:18
+# ::id pmid_2354_8132.82
+(f / find-01
+   :ARG1 (m / mutate-01
+            :mod (c / concomitant)
+            :ARG1-of (d / distribute-01
+                        :ARG2 (a / and
+                                 :op1 (h / have-03
+                                         :ARG0 (c2 / case-04
+                                                   :quant "4"
+                                                   :ARG1-of (i / include-91
+                                                               :ARG2 (c3 / case-04
+                                                                         :quant "201")
+                                                               :ARG3 (p / percentage-entity
+                                                                        :value "2.0")))
+                                         :ARG1 (m2 / mutate-01
+                                                   :ARG1 (a2 / and
+                                                             :op1 (g / gene
+                                                                     :name (n / name
+                                                                              :op1 "PIK3CA"))
+                                                             :op2 (g2 / gene
+                                                                      :name (n2 / name
+                                                                                :op1 "KRAS")))
+                                                   :mod (s / simultaneous)))
+                                 :op2 (h2 / have-03
+                                          :ARG0 (c4 / case-04
+                                                    :quant "1"
+                                                    :ARG1-of (i2 / include-91
+                                                                 :ARG2 c3
+                                                                 :ARG3 (p2 / percentage-entity
+                                                                           :value "0.5")))
+                                          :ARG1 (m3 / mutate-01
+                                                    :ARG1 (a3 / and
+                                                              :op1 g
+                                                              :op2 (g3 / gene
+                                                                       :name (n3 / name
+                                                                                 :op1 "BRAF")))))
+                                 :op3 (h3 / have-03
+                                          :ARG0 c4
+                                          :ARG1 (m4 / mutate-01
+                                                    :quant "2"
+                                                    :ARG1 g2)))
+                        :ARG1-of (f2 / follow-01)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (t / table
+                         :mod "2")))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of all mutations here reported, five have not been previously described in colorectal cancer [<xref ref-type="bibr" rid="B23">23</xref>-<xref ref-type="bibr" rid="B25">25</xref>]: two duplications, one deletion, and one point mutation in <i>KRAS</i> and one point mutation in <i>BRAF</i> (Figure <xref ref-type="fig" rid="F2">2</xref>).
+# ::file pmid_2354_8132_83.txt
+# ::date 2015-08-27T17:12:25
+# ::id pmid_2354_8132.83
+(d / describe-01
+   :polarity "-"
+   :ARG1 (m / mutate-01
+            :quant "5"
+            :ARG1-of (i / include-91
+                        :ARG2 (m2 / mutate-01
+                                  :mod (a / all)
+                                  :ARG1-of (r / report-01
+                                              :location (h / here))))
+            :ARG1-of (m3 / mean-01
+                         :ARG2 (a2 / and
+                                   :op1 (d2 / duplicate-01
+                                            :quant "2")
+                                   :op2 (d3 / delete-01
+                                            :quant "1")
+                                   :op3 (a3 / and
+                                            :op1 (m4 / mutate-01
+                                                     :ARG1 (g / gene
+                                                              :name (n / name
+                                                                       :op1 "KRAS"))
+                                                     :degree (p / point
+                                                                :quant "1"))
+                                            :op2 (m5 / mutate-01
+                                                     :ARG1 (g2 / gene
+                                                               :name (n2 / name
+                                                                         :op1 "BRAF"))
+                                                     :degree p)))))
+   :time (p2 / previous)
+   :location (d4 / disease
+                 :name (n3 / name
+                           :op1 "colorectal"
+                           :op2 "cancer"))
+   :ARG1-of (d5 / describe-01
+                :ARG0 (p3 / publication
+                          :ARG1-of (c / cite-01
+                                      :ARG2 (v / value-interval
+                                               :op1 "23"
+                                               :op2 "25"))))
+   :ARG1-of (d6 / describe-01
+                :ARG0 (f / figure
+                         :mod "2")))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The eight <i>KRAS</i> codon 61 mutations present in our series result in four different amino acid substitutions (p.Gln61His, p.Gln61Lys, p.Gln61Leu, and p.Gln61Arg), with the p.Gln61Leu being the most frequent codon 61 mutation in this series (37.5%; 3/8).
+# ::file pmid_2354_8132_85.txt
+# ::date 2015-08-27T17:27:13
+# ::id pmid_2354_8132.85
+(r / result-01
+   :ARG1 (m / mutate-01
+            :quant "8"
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "KRAS"))
+            :location (c / codon
+                         :mod "61")
+            :ARG1-of (p / present-02
+                        :ARG2 (s / series
+                                 :poss (w / we))))
+   :ARG2 (s2 / substitute-01
+             :quant "4"
+             :ARG2 (a / amino-acid)
+             :ARG1-of (d2 / differ-02)
+             :ARG1-of (m2 / mean-01
+                          :ARG2 (a2 / and
+                                    :op1 (s3 / substitute-01
+                                             :ARG1 (a3 / amino-acid
+                                                       :name (n3 / name
+                                                                 :op1 "histidine"))
+                                             :ARG2 (a4 / amino-acid
+                                                       :mod "61"
+                                                       :name (n4 / name
+                                                                 :op1 "glutamine")))
+                                    :op2 (s4 / substitute-01
+                                             :ARG1 (a5 / amino-acid
+                                                       :name (n5 / name
+                                                                 :op1 "lysine"))
+                                             :ARG2 a4)
+                                    :op3 (s5 / substitute-01
+                                             :ARG1 (a6 / amino-acid
+                                                       :name (n6 / name
+                                                                 :op1 "leucine"))
+                                             :ARG2 a4
+                                             :ARG1-of (f / frequent-02
+                                                         :degree (m3 / most)
+                                                         :location (s6 / series
+                                                                       :mod (t / this))
+                                                         :ARG1-of (m5 / mean-01
+                                                                      :ARG2 (m6 / mutate-01
+                                                                                :quant "3"
+                                                                                :location c
+                                                                                :ARG1-of (i / include-91
+                                                                                            :ARG2 m
+                                                                                            :ARG3 (p2 / percentage-entity
+                                                                                                      :value "37.5"))))))
+                                    :op4 (s7 / substitute-01
+                                             :ARG1 (a7 / amino-acid
+                                                       :name (n7 / name
+                                                                 :op1 "arginine"))
+                                             :ARG2 a4)))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Mutations found in codon 146 were restricted to the p.Ala146Thr substitution.
+# ::file pmid_2354_8132_86.txt
+# ::date 2015-08-29T04:21:32
+# ::id pmid_2354_8132.86
+(r / restrict-01
+   :ARG1 (f / find-01
+            :ARG1 (m / mutate-01)
+            :location (c / codon
+                         :mod "146"))
+   :ARG2 (s / substitute-01
+            :ARG1 (a / amino-acid
+                     :name (n2 / name
+                               :op1 "threonine"))
+            :ARG2 (a2 / amino-acid
+                      :mod "146"
+                      :name (n3 / name
+                                :op1 "alanine"))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Besides those in codons 61 and 146, other <i>KRAS</i> exon 3 mutations represented 19% (5/26) of all <i>KRAS</i> changes, including one deletion (p.Ala59del), two point mutations (p.Glu49Lys and p.Gly60Val) and two large in frame duplications (p.Cys51_Ser65dup and p.Thr58_Met72dup).
+# ::file pmid_2354_8132_87.txt
+# ::date 2015-08-29T04:28:03
+# ::id pmid_2354_8132.87
+(r / represent-01
+   :ARG0 (a / and
+            :op1 (m / mutate-01
+                    :location (a2 / and
+                                  :op1 (c4 / codon
+                                           :mod "61")
+                                  :op2 (c5 / codon
+                                           :mod "146")))
+            :op2 (m2 / mutate-01
+                     :ARG1 (g / gene
+                              :name (n3 / name
+                                        :op1 "KRAS"))
+                     :location (e / exon
+                                  :mod "3")
+                     :mod (o / other)))
+   :ARG1 (c / change-01
+            :quant "5"
+            :ARG1-of (i / include-91
+                        :ARG2 (c2 / change-01
+                                  :quant "26")
+                        :ARG3 (p / percentage-entity
+                                 :value "19"))
+            :ARG1-of (i2 / include-91
+                         :ARG2 (c3 / change-01
+                                   :ARG1 g
+                                   :mod (a3 / all)))
+            :ARG2-of (i3 / include-01
+                         :ARG1 (a4 / and
+                                   :op1 (d4 / delete-01
+                                            :quant "1"
+                                            :ARG1 (a5 / amino-acid
+                                                      :mod "59"
+                                                      :name (n5 / name
+                                                                :op1 "alanine")))
+                                   :op2 (m3 / mutate-01
+                                            :quant "2"
+                                            :ARG1-of (m4 / mean-01
+                                                         :ARG2 (a6 / and
+                                                                   :op1 (m5 / mutate-01
+                                                                            :ARG2 (a7 / amino-acid
+                                                                                      :name (n6 / name
+                                                                                                :op1 "lysine"))
+                                                                            :ARG3 (a8 / amino-acid
+                                                                                      :mod "49"
+                                                                                      :name (n7 / name
+                                                                                                :op1 "glutamic"
+                                                                                                :op2 "acid")))
+                                                                   :op2 (m6 / mutate-01
+                                                                            :ARG2 (a9 / amino-acid
+                                                                                      :name (n8 / name
+                                                                                                :op1 "valine"))
+                                                                            :ARG3 (a10 / amino-acid
+                                                                                       :mod "60"
+                                                                                       :name (n9 / name
+                                                                                                 :op1 "glycine")))))
+                                            :degree (p2 / point))
+                                   :op3 (d5 / duplicate-01
+                                            :quant "2"
+                                            :ARG1-of (m7 / mean-01
+                                                         :ARG2 (a11 / and
+                                                                    :op1 (d6 / duplicate-01
+                                                                             :ARG0 (a12 / amino-acid
+                                                                                        :mod "51"
+                                                                                        :name (n10 / name
+                                                                                                   :op1 "cysteine"))
+                                                                             :ARG1 (a13 / amino-acid
+                                                                                        :mod "65"
+                                                                                        :name (n11 / name
+                                                                                                   :op1 "serine")))
+                                                                    :op2 (d7 / duplicate-01
+                                                                             :ARG0 (a14 / amino-acid
+                                                                                        :mod "58"
+                                                                                        :name (n12 / name
+                                                                                                   :op1 "threonine"))
+                                                                             :ARG1 (a15 / amino-acid
+                                                                                        :mod "72"
+                                                                                        :name (n13 / name
+                                                                                                   :op1 "methionine")))))
+                                            :mod (l / large)
+                                            :mod (i4 / in-frame))))))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of these five mutations, only p.Gly60Val has been recently reported in CRC [<xref ref-type="bibr" rid="B26">26</xref>], whereas the other four are novel mutations in CRC [<xref ref-type="bibr" rid="B23">23</xref>].
+# ::file pmid_2354_8132_88.txt
+# ::date 2015-08-30T04:22:04
+# ::id pmid_2354_8132.88
+(c / contrast-01
+   :ARG1 (r / report-01
+            :ARG1 (m / mutate-01
+                     :ARG2 (a / amino-acid
+                              :name (n / name
+                                       :op1 "valine"))
+                     :ARG3 (a2 / amino-acid
+                               :mod "60"
+                               :name (n2 / name
+                                         :op1 "glycine"))
+                     :mod (o / only)
+                     :ARG1-of (i / include-91
+                                 :ARG2 (m2 / mutate-01
+                                           :quant "5"
+                                           :mod (t / this))))
+            :time (r2 / recent)
+            :location (d / disease
+                         :name (n3 / name
+                                   :op1 "CRC"))
+            :ARG1-of (d2 / describe-01
+                         :ARG0 (p / publication
+                                  :ARG1-of (c2 / cite-01
+                                               :ARG2 "26"))))
+   :ARG2 (m3 / mutate-01
+             :quant "4"
+             :mod (n4 / novel)
+             :mod (o2 / other)
+             :location d
+             :ARG1-of (d3 / describe-01
+                          :ARG0 (p2 / publication
+                                    :ARG1-of (c3 / cite-01
+                                                 :ARG2 "23")))))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt One of the cases carrying a <i>KRAS</i> p.Gln61His mutation had a concomitant <i>PIK3CA</i> p.Glu542Lys substitution.
+# ::file pmid_2354_8132_89.txt
+# ::date 2015-08-30T04:29:42
+# ::id pmid_2354_8132.89
+(h / have-03
+   :ARG0 (c / case-04
+            :quant "1"
+            :ARG0-of (c2 / carry-01
+                         :ARG1 (m / mutate-01
+                                  :ARG1 (g / gene
+                                           :name (n / name
+                                                    :op1 "KRAS"))
+                                  :ARG2 (a / amino-acid
+                                           :name (n2 / name
+                                                     :op1 "histidine"))
+                                  :ARG3 (a2 / amino-acid
+                                            :mod "61"
+                                            :name (n3 / name
+                                                      :op1 "glutamine"))))
+            :ARG1-of (i / include-91
+                        :ARG2 (c3 / case-04
+                                  :ARG0-of c2)))
+   :ARG1 (s / substitute-01
+            :ARG1 (a3 / amino-acid
+                      :name (n4 / name
+                                :op1 "lysine"))
+            :ARG2 (a4 / amino-acid
+                      :mod "542"
+                      :name (n5 / name
+                                :op1 "glutamic"
+                                :op2 "acid"))
+            :ARG3 (g2 / gene
+                      :name (n6 / name
+                                :op1 "PIK3CA"))
+            :mod (c4 / concomitant)))
+
+# ::save-date Fri Nov 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The p.Thr58_Met72dup duplication occurred in one tumor carrying a <i>PIK3CA</i> p.His1047Tyr substitution.
+# ::file pmid_2354_8132_90.txt
+# ::date 2015-08-30T04:39:32
+# ::id pmid_2354_8132.90
+(d / duplicate-01
+   :ARG0 (a / amino-acid
+            :mod "58"
+            :name (n / name
+                     :op1 "threonine"))
+   :ARG1 (a2 / amino-acid
+             :mod "72"
+             :name (n2 / name
+                       :op1 "methionine"))
+   :location (t / tumor
+                :quant "1"
+                :ARG0-of (c / carry-01
+                            :ARG1 (s / substitute-01
+                                     :ARG1 (a3 / amino-acid
+                                               :name (n3 / name
+                                                         :op1 "tyrosine"))
+                                     :ARG2 (a4 / amino-acid
+                                               :mod "1047"
+                                               :name (n4 / name
+                                                         :op1 "histidine"))
+                                     :ARG3 (g / gene
+                                              :name (n5 / name
+                                                        :op1 "PIK3CA"))))))
+
+# ::save-date Fri Nov 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Two tumors with <i>KRAS</i> Ala146Thr mutations also had a <i>PIK3CA</i> mutation, either p.Glu545Lys or p.His1046Arg.
+# ::file pmid_2354_8132_91.txt
+# ::date 2015-08-30T04:56:54
+# ::id pmid_2354_8132.91
+(h / have-03
+   :ARG0 (t / tumor
+            :quant "2"
+            :poss (m / mutate-01
+                     :ARG1 (g / gene
+                              :name (n / name
+                                       :op1 "KRAS"))
+                     :ARG2 (a / amino-acid
+                              :name (n2 / name
+                                        :op1 "threonine"))
+                     :ARG3 (a2 / amino-acid
+                               :mod "146"
+                               :name (n3 / name
+                                         :op1 "alanine"))))
+   :ARG1 (o / or
+            :op1 (m2 / mutate-01
+                     :ARG1 (g2 / gene
+                               :name (n8 / name
+                                         :op1 "PIK3CA"))
+                     :ARG2 (a3 / amino-acid
+                               :name (n4 / name
+                                         :op1 "lysine"))
+                     :ARG3 (a4 / amino-acid
+                               :mod "545"
+                               :name (n5 / name
+                                         :op1 "glutamic"
+                                         :op2 "acid")))
+            :op2 (m3 / mutate-01
+                     :ARG1 g2
+                     :ARG2 (a5 / amino-acid
+                               :name (n6 / name
+                                         :op1 "arginine"))
+                     :ARG3 (a6 / amino-acid
+                               :mod "1046"
+                               :name (n7 / name
+                                         :op1 "histidine")))
+            :mod (e / either))
+   :mod (a7 / also))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, one case harbored two <i>KRAS</i> mutations, namely p.Glu49Lys and p.Ala146Thr.
+# ::file pmid_2354_8132_92.txt
+# ::date 2015-08-30T05:04:01
+# ::id pmid_2354_8132.92
+(a / and
+   :op2 (h / harbor-01
+           :ARG0 (c / case-04
+                    :quant "1")
+           :ARG1 (m / mutate-01
+                    :quant "2"
+                    :ARG1 (a2 / and
+                              :op1 (m2 / mutate-01
+                                       :ARG2 (a3 / amino-acid
+                                                 :name (n2 / name
+                                                           :op1 "lysine"))
+                                       :ARG3 (a4 / amino-acid
+                                                 :mod "49"
+                                                 :name (n3 / name
+                                                           :op1 "glutamic"
+                                                           :op2 "acid")))
+                              :op2 (m3 / mutate-01
+                                       :ARG2 (a5 / amino-acid
+                                                 :name (n4 / name
+                                                           :op1 "threonine"))
+                                       :ARG3 (a6 / amino-acid
+                                                 :mod "146"
+                                                 :name (n5 / name
+                                                           :op1 "alanine")))
+                              :mod (n6 / namely))
+                    :ARG2 (g / gene
+                             :name (n / name
+                                      :op1 "KRAS")))))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The frequency of <i>BRAF</i> p.Val600Glu mutations found in this series was 4.0% (8/201).
+# ::file pmid_2354_8132_94.txt
+# ::date 2015-08-30T05:13:03
+# ::id pmid_2354_8132.94
+(f / frequent-02
+   :ARG1 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "BRAF"))
+            :ARG2 (a / amino-acid
+                     :name (n2 / name
+                               :op1 "glutamic"
+                               :op2 "acid"))
+            :ARG3 (a2 / amino-acid
+                      :mod "600"
+                      :name (n3 / name
+                                :op1 "valine"))
+            :ARG1-of (f2 / find-01
+                         :location (s / series
+                                      :mod (t / this))))
+   :quant (p / percentage-entity
+             :value "4.0"
+             :ARG1-of (m2 / mean-01
+                          :ARG2 (m3 / mutate-01
+                                    :quant "8"
+                                    :ARG1 g
+                                    :ARG2 a
+                                    :ARG3 a2
+                                    :ARG1-of (i / include-91
+                                                :ARG2 (m4 / mutate-01
+                                                          :quant "201"))))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This mutation represented 89% (8/9) of exon 15 mutations and 73% (8/11) of all <i>BRAF</i> mutations.
+# ::file pmid_2354_8132_95.txt
+# ::date 2015-08-30T05:23:48
+# ::id pmid_2354_8132.95
+(r / represent-01
+   :ARG0 (m / mutate-01
+            :mod (t / this))
+   :ARG1 (a / and
+            :op1 (m2 / mutate-01
+                     :quant "8"
+                     :mod t
+                     :ARG1-of (i / include-91
+                                 :ARG2 (m3 / mutate-01
+                                           :quant "9")
+                                 :ARG3 (p / percentage-entity
+                                          :value "89"))
+                     :location (e / exon
+                                  :mod "15"))
+            :op2 (m4 / mutate-01
+                     :quant "8"
+                     :mod t
+                     :ARG1-of (i2 / include-91
+                                  :ARG2 (m5 / mutate-01
+                                            :quant "11"
+                                            :ARG1 (g / gene
+                                                     :name (n2 / name
+                                                               :op1 "BRAF"))
+                                            :mod (a2 / all))
+                                  :ARG3 (p2 / percentage-entity
+                                            :value "73")))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We also found mutations in codons 601 (p.Lys601Glu), 466 (p.Gly466Glu), and 471 (p.Val471Ala) of <i>BRAF</i>, the latter not previously described in mCRC [<xref ref-type="bibr" rid="B23">23</xref>].
+# ::file pmid_2354_8132_96.txt
+# ::date 2015-08-30T05:41:42
+# ::id pmid_2354_8132.96
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (a / and
+            :op1 (m / mutate-01
+                    :ARG1 (g / gene
+                             :name (n / name
+                                      :op1 "BRAF"))
+                    :ARG2 (a8 / amino-acid
+                              :name (n2 / name
+                                        :op1 "glutamic"
+                                        :op2 "acid"))
+                    :ARG3 (a3 / amino-acid
+                              :mod "601"
+                              :name (n3 / name
+                                        :op1 "lysine"))
+                    :location (c2 / codon
+                                  :mod "601"))
+            :op2 (m2 / mutate-01
+                     :ARG1 g
+                     :ARG2 a8
+                     :ARG3 (a4 / amino-acid
+                               :mod "466"
+                               :name (n5 / name
+                                         :op1 "glycine"))
+                     :location (c3 / codon
+                                   :mod "466"))
+            :op3 (m3 / mutate-01
+                     :ARG1 g
+                     :ARG2 (a5 / amino-acid
+                               :name (n6 / name
+                                         :op1 "alanine"))
+                     :ARG3 (a6 / amino-acid
+                               :mod "471"
+                               :name (n7 / name
+                                         :op1 "valine"))
+                     :location (c4 / codon
+                                   :mod "471")
+                     :ARG1-of (d4 / describe-01
+                                  :polarity "-"
+                                  :ARG0 (d5 / disease
+                                            :name (n10 / name
+                                                       :op1 "mCRC"))
+                                  :time (p / previous))))
+   :mod (a7 / also)
+   :ARG1-of (d6 / describe-01
+                :ARG0 (p2 / publication
+                          :ARG1-of (c / cite-01
+                                      :ARG2 "23"))))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt One <i>BRAF</i> mutation, p.Val471Ala, occurred in a tumor also carrying a <i>PIK3CA</i> p.His1047Arg mutation.
+# ::file pmid_2354_8132_97.txt
+# ::date 2015-08-30T05:54:05
+# ::id pmid_2354_8132.97
+(m / mutate-01
+   :quant "1"
+   :ARG1 (g / gene
+            :name (n / name
+                     :op1 "BRAF"))
+   :ARG2 (a / amino-acid
+            :name (n2 / name
+                      :op1 "alanine"))
+   :ARG3 (a2 / amino-acid
+             :mod "471"
+             :name (n3 / name
+                       :op1 "valine"))
+   :location (t / tumor
+                :ARG0-of (c / carry-01
+                            :ARG1 (m2 / mutate-01
+                                      :ARG1 (g2 / gene
+                                                :name (n4 / name
+                                                          :op1 "PIK3CA"))
+                                      :ARG2 (a3 / amino-acid
+                                                :name (n5 / name
+                                                          :op1 "arginine"))
+                                      :ARG3 (a4 / amino-acid
+                                                :mod "1047"
+                                                :name (n6 / name
+                                                          :op1 "histidine")))
+                            :mod (a5 / also))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>PIK3CA</i> mutations were present in 10.9% (22/201) of the tumors, unequally distributed between exons 9 and 20: 73% (16/22) were helical domain mutants (p.Glu542Lys, p.Glu545Lys, p.Glu545Asp, and p.Gln546Lys) and 27% (6/22) kinase domain mutants (p.Met1043Ile, p.His1047Arg, p.His1047Leu, and p.His1047Tyr).
+# ::file pmid_2354_8132_99.txt
+# ::date 2015-08-30T06:12:00
+# ::id pmid_2354_8132.99
+(p / present-02
+   :ARG1 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "PIK3CA"))
+            :ARG1-of (d / distribute-01
+                        :ARG2 (b / between
+                                 :op1 (e2 / exon
+                                          :mod "9")
+                                 :op2 (e3 / exon
+                                          :mod "20"))
+                        :manner (e / equal-01
+                                   :polarity "-")
+                        :ARG1-of (m2 / mean-01
+                                     :ARG2 (a / and
+                                              :op1 (m3 / mutate-01
+                                                       :quant "16"
+                                                       :ARG1 (d4 / domain
+                                                                 :mod (h / helical))
+                                                       :ARG1-of (i / include-91
+                                                                   :ARG2 (m4 / mutate-01
+                                                                             :quant "22")
+                                                                   :ARG3 (p2 / percentage-entity
+                                                                             :value "73"))
+                                                       :ARG1-of (m5 / mean-01
+                                                                    :ARG2 (a2 / and
+                                                                              :op1 (m6 / mutate-01
+                                                                                       :ARG2 (a3 / amino-acid
+                                                                                                 :name (n4 / name
+                                                                                                           :op1 "lysine"))
+                                                                                       :ARG3 (a4 / amino-acid
+                                                                                                 :mod "542"
+                                                                                                 :name (n5 / name
+                                                                                                           :op1 "glutamic"
+                                                                                                           :op2 "acid")))
+                                                                              :op2 (m7 / mutate-01
+                                                                                       :ARG2 a3
+                                                                                       :ARG3 (a5 / amino-acid
+                                                                                                 :mod "545"
+                                                                                                 :name (n6 / name
+                                                                                                           :op1 "glutamic"
+                                                                                                           :op2 "acid")))
+                                                                              :op3 (m8 / mutate-01
+                                                                                       :ARG2 (a6 / amino-acid
+                                                                                                 :name (n7 / name
+                                                                                                           :op1 "aspartic"
+                                                                                                           :op2 "acid"))
+                                                                                       :ARG3 a5)
+                                                                              :op4 (m9 / mutate-01
+                                                                                       :ARG2 a3
+                                                                                       :ARG3 (a7 / amino-acid
+                                                                                                 :mod "546"
+                                                                                                 :name (n8 / name
+                                                                                                           :op1 "glutamine"))))))
+                                              :op2 (m10 / mutate-01
+                                                        :quant "6"
+                                                        :ARG1 (d5 / domain
+                                                                  :mod (k / kinase))
+                                                        :ARG1-of (i2 / include-91
+                                                                     :ARG2 m4
+                                                                     :ARG3 (p3 / percentage-entity
+                                                                               :value "27"))
+                                                        :ARG1-of (m11 / mean-01
+                                                                      :ARG2 (a8 / and
+                                                                                :op1 (m12 / mutate-01
+                                                                                          :ARG2 (a9 / amino-acid
+                                                                                                    :name (n9 / name
+                                                                                                              :op1 "isoleucine"))
+                                                                                          :ARG3 (a10 / amino-acid
+                                                                                                     :mod "1043"
+                                                                                                     :name (n10 / name
+                                                                                                                :op1 "methionine")))
+                                                                                :op2 (m13 / mutate-01
+                                                                                          :ARG2 (a11 / amino-acid
+                                                                                                     :name (n11 / name
+                                                                                                                :op1 "arginine"))
+                                                                                          :ARG3 (a12 / amino-acid
+                                                                                                     :mod "1047"
+                                                                                                     :name (n12 / name
+                                                                                                                :op1 "histidine")))
+                                                                                :op3 (m14 / mutate-01
+                                                                                          :ARG2 (a13 / amino-acid
+                                                                                                     :name (n13 / name
+                                                                                                                :op1 "leucine"))
+                                                                                          :ARG3 a12)
+                                                                                :op4 (m15 / mutate-01
+                                                                                          :ARG2 (a14 / amino-acid
+                                                                                                     :name (n14 / name
+                                                                                                                :op1 "tyrosine"))
+                                                                                          :ARG3 a12))))))))
+   :ARG2 (t / tumor
+            :quant "22"
+            :ARG1-of (i3 / include-91
+                         :ARG2 (t2 / tumor
+                                   :quant "201")
+                         :ARG3 (p4 / percentage-entity
+                                   :value "10.9"))))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Five of the <i>PIK3CA</i> mutants also contained another mutation in either <i>KRAS</i> or <i>BRAF</i>.
+# ::file pmid_2354_8132_100.txt
+# ::date 2015-08-30T07:12:42
+# ::id pmid_2354_8132.100
+(c / contain-01
+   :ARG0 (m / mutate-01
+            :quant "5"
+            :ARG2 (g / gene
+                     :name (n / name
+                              :op1 "PIK3CA"))
+            :ARG1-of (i / include-91
+                        :ARG2 (m2 / mutate-01
+                                  :ARG2 g)))
+   :ARG1 (m3 / mutate-01
+             :ARG1 (o / or
+                      :op1 (g2 / gene
+                               :name (n2 / name
+                                         :op1 "KRAS"))
+                      :op2 (g3 / gene
+                               :name (n3 / name
+                                         :op1 "BRAF")))
+             :mod (a / another))
+   :mod (a2 / also))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>KRAS</i> mutations were more frequent in patients older than the median age of diagnosis (21.5% <i>vs.</i> 8.2%; <i>P</i>=0.034), whereas no statistically significant differences were found for <i>BRAF</i> or <i>PIK3CA</i> mutations regarding this parameter.
+# ::file pmid_2354_8132_102.txt
+# ::date 2015-08-30T07:20:16
+# ::id pmid_2354_8132.102
+(c / contrast-01
+   :ARG1 (f / frequent-02
+            :ARG1 (m / mutate-01
+                     :ARG1 (g / gene
+                              :name (n / name
+                                       :op1 "KRAS")))
+            :location (p / person
+                         :ARG0-of (h / have-rel-role-91
+                                     :ARG2 (p2 / patient))
+                         :mod (o / old
+                                 :degree (m2 / more)
+                                 :compared-to (a / age
+                                                 :mod (d / diagnose-01)
+                                                 :mod (m3 / median))))
+            :degree (m4 / more)
+            :ARG1-of (m5 / mean-01
+                         :ARG2 (c2 / contrast-01
+                                   :ARG1 (p3 / percentage-entity
+                                             :value "21.5")
+                                   :ARG2 (p4 / percentage-entity
+                                             :value "8.2")))
+            :ARG1-of (s3 / statistical-test-91
+                         :ARG2 "0.034"))
+   :ARG2 (f2 / find-01
+             :polarity "-"
+             :ARG1 (d2 / differ-02
+                       :ARG1 (o2 / or
+                                 :op1 (m6 / mutate-01
+                                          :ARG1 (g2 / gene
+                                                    :name (n2 / name
+                                                              :op1 "BRAF")))
+                                 :op2 (m7 / mutate-01
+                                          :ARG1 (g3 / gene
+                                                    :name (n3 / name
+                                                              :op1 "PIK3CA"))))
+                       :ARG3 (p6 / parameter
+                                 :mod (t / this))
+                       :ARG1-of (s / significant-02
+                                   :manner (s2 / statistics)))
+             :ARG0-of (r / regard-01)))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>BRAF</i> and <i>PIK3CA</i> mutations were more frequent in the colon than in the sigmoid or rectum: 20.8% <i>vs.</i> 1.6% <i>vs.</i> 0.0% (<i>P=</i>0.000) for <i>BRAF</i> and 23.4% <i>vs.</i> 12.1% <i>vs.</i> 5.4% (<i>P</i>=0.011) for <i>PIK3CA</i> mutations (Figure <xref ref-type="fig" rid="F3">3</xref>).
+# ::file pmid_2354_8132_103.txt
+# ::date 2015-08-30T13:14:08
+# ::id pmid_2354_8132.103
+(f / frequent-02
+   :ARG1 (a / and
+            :op1 (m / mutate-01
+                    :ARG1 (g / gene
+                             :name (n / name
+                                      :op1 "BRAF")))
+            :op2 (m2 / mutate-01
+                     :ARG1 (g2 / gene
+                               :name (n2 / name
+                                         :op1 "PIK3CA"))))
+   :degree (m3 / more)
+   :location (c / colon)
+   :compared-to (o / or
+                   :op1 (s / sigmoid)
+                   :op2 (r / rectum))
+   :ARG1-of (m4 / mean-01
+                :ARG2 (a2 / and
+                          :op1 (m5 / mutate-01
+                                   :ARG1 g
+                                   :quant (p / percentage-entity
+                                             :value "20.8")
+                                   :location c
+                                   :compared-to (m6 / mutate-01
+                                                    :ARG1 g
+                                                    :quant (p2 / percentage-entity
+                                                               :value "1.6")
+                                                    :location s)
+                                   :compared-to (m7 / mutate-01
+                                                    :ARG1 g
+                                                    :quant (p3 / percentage-entity
+                                                               :value "0.0")
+                                                    :location r)
+                                   :ARG1-of (s2 / statistical-test-91
+                                                :ARG2 "0.000"))
+                          :op2 (m8 / mutate-01
+                                   :ARG1 g2
+                                   :quant (p5 / percentage-entity
+                                              :value "23.4")
+                                   :location c
+                                   :compared-to (m9 / mutate-01
+                                                    :ARG1 "2"
+                                                    :quant (p6 / percentage-entity
+                                                               :value "12.1")
+                                                    :location s)
+                                   :compared-to (m10 / mutate-01
+                                                     :ARG1 g2
+                                                     :quant (p7 / percentage-entity
+                                                                :value "5.4")
+                                                     :location r)
+                                   :ARG1-of (s3 / statistical-test-91
+                                                :ARG2 "0.011"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "3")))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Although the frequency of <i>KRAS</i> mutations is higher in sigmoid and rectum, the difference is not statistically significant.
+# ::file pmid_2354_8132_104.txt
+# ::date 2015-08-30T13:31:52
+# ::id pmid_2354_8132.104
+(s / significant-02
+   :polarity "-"
+   :ARG1 (d / differ-02)
+   :manner (s2 / statistics)
+   :concession (h / high-02
+                  :ARG1 (f / frequent-02
+                           :ARG1 (m / mutate-01
+                                    :ARG1 (g / gene
+                                             :name (n / name
+                                                      :op1 "KRAS"))))
+                  :location (a / and
+                               :op1 (s3 / sigmoid)
+                               :op2 (r / rectum))
+                  :degree (m2 / more)))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No significant differences were found between genders regarding <i>KRAS</i>, <i>BRAF</i>, or <i>PIK3CA</i> mutation frequencies.
+# ::file pmid_2354_8132_105.txt
+# ::date 2015-08-30T13:44:03
+# ::id pmid_2354_8132.105
+(f / find-01
+   :polarity "-"
+   :ARG1 (d / differ-02
+            :ARG1 (g / gender)
+            :ARG3 (f2 / frequent-02
+                      :ARG1 (o / or
+                               :op1 (m / mutate-01
+                                       :ARG1 (g2 / gene
+                                                 :name (n / name
+                                                          :op1 "KRAS")))
+                               :op2 (m2 / mutate-01
+                                        :ARG1 (g3 / gene
+                                                  :name (n2 / name
+                                                            :op1 "BRAF")))
+                               :op3 (m3 / mutate-01
+                                        :ARG1 (g4 / gene
+                                                  :name (n3 / name
+                                                            :op1 "PIK3CA")))))
+            :ARG1-of (s / significant-02)))

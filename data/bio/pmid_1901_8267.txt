@@ -1,0 +1,1175 @@
+# ::save-date Wed Jul 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The mutational status of <i>KRAS</i> and <i>BRAF</i> in all 45 ovarian carcinomas is summarised in <xref ref-type="table" rid="tbl1">Table 1</xref>.
+# ::file pmid_1901_8267_121.txt
+# ::date 2015-07-09T12:49:58
+# ::id pmid_1901_8267.121
+(s / summarize-01
+   :ARG1 (s2 / status
+             :mod (m / mutate-01)
+             :poss (a / and
+                      :op1 (g / gene
+                              :name (n / name
+                                       :op1 "KRAS"))
+                      :op2 (g2 / gene
+                               :name (n2 / name
+                                         :op1 "BRAF")))
+             :location (c / carcinoma
+                          :quant "45"
+                          :mod (o / ovary)
+                          :mod (a2 / all)))
+   :location (t / table
+                :mod "1"))
+
+# ::save-date Sat Jul 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Somatic mutations of <i>KRAS</i> were identified in 8 (13.7%) out of 58 ovarian carcinomas.
+# ::file pmid_1901_8267_122.txt
+# ::date 2015-07-09T13:02:24
+# ::id pmid_1901_8267.122
+(i / identify-01
+   :ARG1 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "KRAS"))
+            :mod (s / somatic))
+   :location (c / carcinoma
+                :quant "8"
+                :ARG1-of (i2 / include-91
+                             :ARG2 (c2 / carcinoma
+                                       :quant "58"
+                                       :mod (o / ovary))
+                             :ARG3 (p / percentage-entity
+                                      :value "13.7"))))
+
+# ::save-date Thu Jul 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, somatic mutations of <i>BRAF</i> were identified in 5 (8.6%) out of 58 ovarian carcinomas.
+# ::file pmid_1901_8267_123.txt
+# ::date 2015-07-09T13:06:40
+# ::id pmid_1901_8267.123
+(c / contrast-01
+   :ARG2 (i / identify-01
+            :ARG1 (m / mutate-01
+                     :ARG1 (g / gene
+                              :name (n / name
+                                       :op1 "BRAF"))
+                     :mod (s / somatic))
+            :location (c2 / carcinoma
+                          :quant "5"
+                          :ARG1-of (i2 / include-91
+                                       :ARG2 (c3 / carcinoma
+                                                 :quant "58"
+                                                 :mod (o / ovary))
+                                       :ARG3 (p / percentage-entity
+                                                :value "8.6")))))
+
+# ::save-date Thu Jul 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Somatic mutations of either <i>KRAS</i> or <i>BRAF</i> were identified in 12 (20.6%) out of 58 ovarian carcinomas.
+# ::file pmid_1901_8267_124.txt
+# ::date 2015-07-09T13:09:29
+# ::id pmid_1901_8267.124
+(i / identify-01
+   :ARG1 (m / mutate-01
+            :ARG1 (o / or
+                     :op1 (g / gene
+                             :name (n / name
+                                      :op1 "KRAS"))
+                     :op2 (g2 / gene
+                              :name (n2 / name
+                                        :op1 "BRAF")))
+            :mod (s / somatic))
+   :location (c / carcinoma
+                :quant "12"
+                :ARG1-of (i2 / include-91
+                             :ARG2 (c2 / carcinoma
+                                       :quant "58"
+                                       :mod (o2 / ovary))
+                             :ARG3 (p / percentage-entity
+                                      :value "20.6"))))
+
+# ::save-date Thu Jul 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Most <i>KRAS</i> mutations were located at codon 12 and all <i>BRAF</i> mutations at codon 600.
+# ::file pmid_1901_8267_125.txt
+# ::date 2015-07-09T13:13:40
+# ::id pmid_1901_8267.125
+(a / and
+   :op1 (b / be-located-at-91
+           :ARG1 (m / mutate-01
+                    :ARG1 (g / gene
+                             :name (n / name
+                                      :op1 "KRAS"))
+                    :mod (m2 / most))
+           :ARG2 (c / codon
+                    :mod "12"))
+   :op2 (b2 / be-located-at-91
+            :ARG1 (m3 / mutate-01
+                      :ARG1 (g2 / gene
+                                :name (n2 / name
+                                          :op1 "BRAF"))
+                      :mod (a2 / all))
+            :ARG2 (c2 / codon
+                      :mod "600")))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Both of these codons are mutation hot spots.
+# ::file pmid_1901_8267_126.txt
+# ::date 2015-07-09T13:19:54
+# ::id pmid_1901_8267.126
+(s / spot
+      :ARG1-of (h / hot-03)
+      :location-of (m / mutate-01)
+      :domain (c / codon
+            :mod (t / this)
+            :mod (b / both)))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, simultaneous mutations of <i>KRAS</i> and <i>BRAF</i> did not occur in the tested ovarian carcinomas with the exception of one mucinous case.
+# ::file pmid_1901_8267_127.txt
+# ::date 2015-07-09T13:22:58
+# ::id pmid_1901_8267.127
+(b / be-located-at-91
+   :polarity "-"
+   :ARG1 (a / and
+            :op1 (m / mutate-01
+                    :ARG1 (g / gene
+                             :name (n / name
+                                      :op1 "KRAS")))
+            :op2 (m2 / mutate-01
+                     :ARG1 (g2 / gene
+                               :name (n2 / name
+                                         :op1 "BRAF")))
+            :mod (s / simultaneous))
+   :ARG2 (c / carcinoma
+            :ARG1-of (t / test-01)
+            :mod (o / ovary))
+   :ARG2-of (e / except-01
+               :ARG1 (c2 / case-04
+                         :ARG1 (m3 / mucin)))
+   :ARG2-of (i / interest-01))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A panel of ovarian cancer cell lines and primary cultures was first analysed for tumour mutation status in the <i>KRAS</i> and <i>BRAF</i> genes.
+# ::file pmid_1901_8267_128.txt
+# ::date 2015-07-09T13:53:31
+# ::id pmid_1901_8267.128
+(a / analyze-01
+   :ARG1 (p / panel
+            :consist-of (a2 / and
+                            :op1 (c / cell-line
+                                    :mod (d / disease
+                                            :wiki "Ovarian_cancer"
+                                            :name (n / name
+                                                     :op1 "ovarian"
+                                                     :op2 "cancer")))
+                            :op2 (t2 / thing
+                                     :ARG1-of (c3 / culture-01)
+                                     :mod (p2 / primary))))
+   :time (f / first)
+   :purpose (s / status
+               :mod (m / mutate-01
+                       :ARG1 (t / tumor))
+               :location (a3 / and
+                             :op1 (g / gene
+                                     :name (n2 / name
+                                               :op1 "KRAS"))
+                             :op2 (g2 / gene
+                                      :name (n3 / name
+                                                :op1 "BRAF")))))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in <xref ref-type="fig" rid="fig1">Figure 1</xref>, three ovarian cancer cell lines harboured either <i>KRAS</i> or <i>BRAF</i> mutations.
+# ::file pmid_1901_8267_129.txt
+# ::date 2015-07-09T14:01:29
+# ::id pmid_1901_8267.129
+(h / harbor-01
+   :ARG0 (c / cell-line
+            :quant "3"
+            :mod (d / disease
+                    :wiki "Ovarian_cancer"
+                    :name (n / name
+                             :op1 "ovarian"
+                             :op2 "cancer")))
+   :ARG1 (o2 / or
+             :op1 (m / mutate-01
+                     :ARG1 (g / gene
+                              :name (n2 / name
+                                        :op1 "KRAS")))
+             :op2 (m2 / mutate-01
+                      :ARG1 (g2 / gene
+                                :name (n3 / name
+                                          :op1 "BRAF"))))
+   :ARG1-of (s / show-01
+               :ARG0 (f / figure
+                        :mod "1")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The frequency of either <i>KRAS</i> or <i>BRAF</i> mutations in conventional serous high-grade carcinomas (4.0% : 1/25) was significantly lower than in the other histological type (32.2% : 10/31).
+# ::file pmid_1901_8267_130.txt
+# ::date 2015-07-09T14:06:45
+# ::id pmid_1901_8267.130
+(l2 / low-04
+    :ARG1 (o3 / or
+              :op1 (h3 / have-frequency-91
+                       :ARG1 (m2 / mutate-01
+                                 :ARG1 (g / gene
+                                          :name (n / name
+                                                   :op1 "KRAS"))))
+              :op2 (h4 / have-frequency-91
+                       :ARG1 (m3 / mutate-01
+                                 :ARG1 (g2 / gene
+                                           :name (n2 / name
+                                                     :op1 "BRAF"))))
+              :location (c / carcinoma
+                           :quant "1"
+                           :ARG1-of (i / include-91
+                                       :ARG2 (c3 / carcinoma
+                                                 :quant "25"
+                                                 :mod (g3 / grade
+                                                          :ARG1-of (h / high-02))
+                                                 :mod (s / serum
+                                                         :mod (c2 / conventional)))
+                                       :ARG3 (p / percentage-entity
+                                                :value "4")))
+              :compared-to (t / type
+                              :quant "10"
+                              :ARG1-of (i2 / include-91
+                                           :ARG2 (t2 / type
+                                                     :quant "31"
+                                                     :mod (h2 / histology)
+                                                     :mod (o2 / other))
+                                           :ARG3 (p2 / percentage-entity
+                                                     :value "32.2"))))
+    :degree (m / more))
+
+# ::save-date Wed Nov 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The immunoreactivity of active p-ERK1/2 was detected in both the nucleus and the cytoplasm of the tumour cells (<xref ref-type="fig" rid="fig2">Figure 2</xref>).
+# ::file pmid_1901_8267_132.txt
+# ::date 2015-07-09T14:24:53
+# ::id pmid_1901_8267.132
+(d / detect-01
+   :ARG1 (i / immunoreact-00
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "ERK1/2")
+                     :ARG3-of (p / phosphorylate-01)
+                     :ARG1-of (a / activate-01)))
+   :location (a2 / and
+                 :op1 (n2 / nucleus
+                          :part-of (c / cell
+                                      :mod (t / tumor)))
+                 :op2 (c2 / cytoplasm
+                          :part-of c))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "2")))
+
+
+# ::save-date Thu Jul 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This is consistent with an earlier report (<xref ref-type="other" rid="bib14">Mizumoto <i>et al</i>, 2007</xref>).
+# ::file pmid_1901_8267_133.txt
+# ::date 2015-07-09T14:28:12
+# ::id pmid_1901_8267.133
+(c / consistent-01
+      :ARG1 (t / this)
+      :ARG2 (r / report-01
+            :time (e2 / early
+                  :degree (m / more)))
+      :ARG1-of (d / describe-01
+            :ARG0 (p / publication-91
+                  :ARG0 (a / and
+                        :op1 (p2 / person
+                              :name (n / name :op1 "Mizumoto"))
+                        :op2 (p3 / person
+                              :mod (o / other)))
+                  :time (d2 / date-entity :year "2007"))))
+
+
+# ::save-date Wed Jul 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Positive active p-ERK1/2 was identified in 27 (46.6%) out of 58 ovarian carcinomas.
+# ::file pmid_1901_8267_134.txt
+# ::date 2015-07-10T11:50:58
+# ::id pmid_1901_8267.134
+(i / identify-01
+      :ARG1 (e / enzyme
+            :name (n / name :op1 "ERK1/2")
+            :ARG3-of (p / phosphorylate-01)
+            :ARG1-of (a / activate-01)
+            :mod (p2 / positive))
+      :location (c / carcinoma
+            :quant "27"
+            :ARG1-of (i2 / include-91
+                  :ARG2 (c2 / carcinoma
+                        :quant "58"
+                        :mod (o / ovary))
+                  :ARG3 (p3 / percentage-entity :value "46.6"))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The patients were stratified into two groups depending on the mutational status of <i>KRAS/BRAF</i>.
+# ::file pmid_1901_8267_135.txt
+# ::date 2015-07-10T11:53:27
+# ::id pmid_1901_8267.135
+(s / stratify-01
+   :ARG1 (p2 / person
+             :ARG0-of (h / have-rel-role-91
+                         :ARG2 (p / patient)))
+   :manner (g / group
+              :quant "2")
+   :ARG0-of (d / depend-01
+               :ARG1 (s2 / status
+                         :mod (m / mutate-01)
+                         :poss (s3 / slash
+                                   :op1 (g2 / gene
+                                            :name (n / name
+                                                     :op1 "KRAS"))
+                                   :op2 (g3 / gene
+                                            :name (n2 / name
+                                                      :op1 "BRAF"))))))
+
+# ::save-date Wed Jul 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The relationships between <i>KRAS/BRAF</i> mutations and clinicopathological factors, including p-ERK1/2 expression are shown in <xref ref-type="table" rid="tbl2">Table 2</xref>.
+# ::file pmid_1901_8267_136.txt
+# ::date 2015-07-10T11:56:44
+# ::id pmid_1901_8267.136
+(s / show-01
+   :ARG0 (t / table
+            :mod "2")
+   :ARG1 (a2 / and
+             :op1 (r / relation-03
+                     :ARG0 (m / mutate-01
+                              :ARG1 (s2 / slash
+                                        :op1 (g / gene
+                                                :name (n / name
+                                                         :op1 "KRAS"))
+                                        :op2 (g2 / gene
+                                                 :name (n2 / name
+                                                           :op1 "BRAF"))))
+                     :ARG2 (f / factor
+                              :mod (c / clinicopathologic)
+                              :ARG2-of (i / include-01
+                                          :ARG1 (e / express-03
+                                                   :ARG2 (e2 / enzyme
+                                                             :name (n3 / name
+                                                                       :op1 "ERK1/2")
+                                                             :ARG3-of (p / phosphorylate-01))))))))
+
+# ::save-date Fri Dec 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There was no significant correlation between <i>KRAS/BRAF</i> mutations and the patient's age.
+# ::file pmid_1901_8267_137.txt
+# ::date 2015-07-10T12:02:59
+# ::id pmid_1901_8267.137
+(c / correlate-01
+   :polarity "-"
+   :ARG1 (m / mutate-01
+            :ARG1 (s2 / slash
+                      :op1 (g / gene
+                              :name (n / name
+                                       :op1 "KRAS"))
+                      :op2 (g2 / gene
+                               :name (n2 / name
+                                         :op1 "BRAF"))))
+   :ARG2 (a / age-01
+            :ARG1 (p2 / person
+                      :ARG0-of (h / have-rel-role-91
+                                  :ARG2 (p / patient))))
+   :ARG1-of (s / significant-02))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The results in <xref ref-type="table" rid="tbl2">Table 2</xref> show that <i>KRAS/BRAF</i> mutation is correlated significantly with FIGO stage I, II (<i>P</i><0.001), and p-ERK1/2 (<i>P</i><0.001).
+# ::file pmid_1901_8267_138.txt
+# ::date 2015-07-10T12:05:31
+# ::id pmid_1901_8267.138
+(s / show-01
+   :ARG0 (t2 / thing
+             :ARG2-of (r / result-01
+                         :location (t / table
+                                      :mod "2")))
+   :ARG1 (a / and
+            :op1 (c / correlate-01
+                    :ARG1 (m / mutate-01
+                             :ARG1 (s5 / slash
+                                       :op1 (g / gene
+                                               :name (n / name
+                                                        :op1 "KRAS"))
+                                       :op2 (g2 / gene
+                                                :name (n2 / name
+                                                          :op1 "BRAF"))))
+                    :ARG2 (a3 / and
+                              :op1 (s3 / stage
+                                       :mod "I")
+                              :op2 (s4 / stage
+                                       :mod "II")
+                              :mod (o / organization
+                                      :name (n3 / name
+                                                :op1 "FIGO")))
+                    :ARG1-of (s6 / statistical-test-91
+                                 :ARG2 (l / less-than
+                                          :op1 "0.001")))
+            :op2 (c2 / correlate-01
+                     :ARG1 m
+                     :ARG2 (e / enzyme
+                              :name (n4 / name
+                                        :op1 "ERK1/2")
+                              :ARG3-of (p2 / phosphorylate-01))
+                     :ARG1-of (s7 / statistical-test-91
+                                  :ARG2 l))
+            :ARG1-of (s2 / significant-02)))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, there were significant correlations between <i>KRAS/BRA</i>F mutations and pathological grade (<i>P</i>=0.004), and histological subtype (<i>P</i>=0.014).
+# ::file pmid_1901_8267_139.txt
+# ::date 2015-07-10T12:14:33
+# ::id pmid_1901_8267.139
+(a / and
+   :op2 (a2 / and
+            :op1 (c / correlate-01
+                    :ARG1 (m / mutate-01
+                             :ARG1 (s3 / slash
+                                       :op1 (g / gene
+                                               :name (n / name
+                                                        :op1 "KRAS"))
+                                       :op2 (g2 / gene
+                                                :name (n2 / name
+                                                          :op1 "BRAF"))))
+                    :ARG2 (g3 / grade
+                              :mod (p / pathology))
+                    :ARG1-of (s4 / statistical-test-91
+                                 :ARG2 "0.004"))
+            :op2 (c2 / correlate-01
+                     :ARG1 m
+                     :ARG2 (s2 / subtype
+                               :mod (h / histology))
+                     :ARG1-of (s5 / statistical-test-91
+                                  :ARG2 "0.014"))
+            :ARG1-of (s / significant-02)))
+
+# ::save-date Wed Jul 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Next, we examined the prognostic effect of <i>KRAS/BRAF</i> mutations and p-ERK1/2 expression.
+# ::file pmid_1901_8267_141.txt
+# ::date 2015-07-10T12:28:43
+# ::id pmid_1901_8267.141
+(e / examine-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :ARG0 (a2 / and
+                      :op1 (m / mutate-01
+                              :ARG1 (s / slash
+                                       :op1 (g / gene
+                                               :name (n / name
+                                                        :op1 "KRAS"))
+                                       :op2 (g2 / gene
+                                                :name (n2 / name
+                                                          :op1 "BRAF"))))
+                      :op2 (e2 / express-03
+                               :ARG2 (e3 / enzyme
+                                         :name (n3 / name
+                                                   :op1 "ERK1/2")
+                                         :ARG3-of (p2 / phosphorylate-01))))
+            :mod (p / prognostic))
+   :time (n4 / next))
+
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Out of the 58 samples that we examined, 45 were available for prognostic analysis.
+# ::file pmid_1901_8267_142.txt
+# ::date 2015-07-10T12:37:05
+# ::id pmid_1901_8267.142
+(a / available-02
+      :ARG1 (a2 / analyze-01
+            :mod (p / prognostic))
+      :ARG2 (t / thing
+            :quant "45"
+            :ARG1-of (i / include-91
+                  :ARG2 (t2 / thing
+                        :quant "58"
+                        :ARG2-of (s2 / sample-01)
+                        :ARG1-of (e / examine-01
+                              :ARG0 (w / we))))))
+
+
+# ::save-date Fri Dec 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Kaplan–Meier estimates of overall survival are plotted in <xref ref-type="fig" rid="fig3">Figure 3</xref>.
+# ::file pmid_1901_8267_143.txt
+# ::date 2015-07-10T12:40:50
+# ::id pmid_1901_8267.143
+(p / plot-01
+      :ARG1 (e / estimate-01
+            :ARG1 (s / survive-01
+                  :mod (o / overall))
+            :instrument (t / thing
+                  :name (n / name :op1 "Kaplan–Meier")))
+      :medium (f / figure :mod "3"))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There was no significant relationship between <i>KRAS/BRAF</i> mutations or p-ERK1/2 expression and overall survival in patients with ovarian carcinoma (<i>P</i>=0.2460, <i>P</i>=0.9339, respectively).
+# ::file pmid_1901_8267_144.txt
+# ::date 2015-07-10T12:45:52
+# ::id pmid_1901_8267.144
+(r / relation-03
+   :polarity "-"
+   :ARG0 (o4 / or
+             :op1 (m / mutate-01
+                     :ARG1 (s3 / slash
+                               :op1 (g / gene
+                                       :name (n / name
+                                                :op1 "KRAS"))
+                               :op2 (g2 / gene
+                                        :name (n2 / name
+                                                  :op1 "BRAF"))))
+             :op2 (e / express-03
+                     :ARG2 (e2 / enzyme
+                               :name (n3 / name
+                                         :op1 "ERK1/2")
+                               :ARG3-of (p / phosphorylate-01)))
+             :mod (r2 / respective)
+             :ARG1-of (s4 / statistical-test-91
+                          :ARG2 "0.2460"))
+   :ARG2 (s2 / survive-01
+             :ARG0 (p5 / person
+                       :ARG0-of (h / have-rel-role-91
+                                   :ARG2 (p2 / patient))
+                       :ARG0-of (h2 / have-03
+                                    :ARG1 (c / carcinoma
+                                             :mod (o3 / ovary))))
+             :mod (o2 / overall)
+             :ARG1-of (s5 / statistical-test-91
+                          :ARG2 "0.9339"))
+   :ARG1-of (s / significant-02))
+
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Univariate analysis showed that only FIGO stage III, IV affected the overall survival of patients with ovarian carcinoma significantly(<i>P</i>=0.014).
+# ::file pmid_1901_8267_145.txt
+# ::date 2015-07-10T12:52:48
+# ::id pmid_1901_8267.145
+(s / show-01
+      :ARG0 (a / analyze-01
+            :mod (u / univariate))
+      :ARG1 (a2 / affect-01
+            :ARG0 (a3 / and
+                  :op1 (s2 / stage :mod "III")
+                  :op2 (s3 / stage :mod "IV")
+                  :mod (o / organization
+                        :name (n / name :op1 "FIGO"))
+                  :mod (o4 / only))
+            :ARG1 (s4 / survive-01
+                  :ARG0 (p3 / person
+                        :ARG0-of (h2 / have-rel-role-91
+                              :ARG2 (p / patient))
+                        :ARG0-of (h / have-03
+                              :ARG1 (c / carcinoma
+                                    :mod (o3 / ovary))))
+                  :mod (o2 / overall))
+            :ARG1-of (s5 / significant-02)
+            :ARG1-of (s6 / statistical-test-91 :ARG2 "0.014")))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A panel of ovarian cancer cell lines and primary cultures of ovarian cancer were first analysed for <i>KRAS</i> and <i>BRAF</i> gene mutation status.
+# ::file pmid_1901_8267_147.txt
+# ::date 2015-07-10T13:04:45
+# ::id pmid_1901_8267.147
+(a / analyze-01
+   :ARG1 (a2 / and
+             :op1 (p / panel
+                     :consist-of (c / cell-line
+                                    :mod (d / disease
+                                            :wiki "Ovarian_cancer"
+                                            :name (n / name
+                                                     :op1 "ovarian"
+                                                     :op2 "cancer"))))
+             :op2 (c3 / culture-01
+                      :ARG1 (d2 / disease
+                                :wiki "Cancer"
+                                :name (n4 / name
+                                          :op1 "cancer"))
+                      :mod (p2 / primary)))
+   :time (f / first)
+   :purpose (s / status
+               :mod (m / mutate-01
+                       :ARG1 (a4 / and
+                                 :op1 (g / gene
+                                         :name (n2 / name
+                                                   :op1 "KRAS"))
+                                 :op2 (g2 / gene
+                                          :name (n3 / name
+                                                    :op1 "BRAF"))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Mutational status was correlated with growth inhibition and apoptosis induction by the MEK inhibitor CI-1040 that prevented activation of the downstream target, ERK1/2.
+# ::file pmid_1901_8267_148.txt
+# ::date 2015-07-10T13:09:35
+# ::id pmid_1901_8267.148
+(c / correlate-01
+   :ARG0 (s2 / small-molecule
+             :name (n2 / name
+                       :op1 "CI-1040")
+             :ARG0-of (i / inhibit-01
+                         :ARG1 (p2 / protein-family
+                                   :name (n / name
+                                            :op1 "MEK")))
+             :ARG0-of (p / prevent-01
+                         :ARG1 (a3 / activate-01
+                                   :ARG1 (t2 / target
+                                             :ARG1-of (m2 / mean-01
+                                                          :ARG2 (e2 / enzyme
+                                                                    :name (n3 / name
+                                                                              :op1 "ERK1/2")))
+                                             :location (d / downstream)))))
+   :ARG1 (s / status
+            :mod (m / mutate-01))
+   :ARG2 (a / and
+            :op1 (i2 / inhibit-01
+                     :ARG1 (g / grow-01))
+            :op2 (i3 / induce-01
+                     :ARG2 (a2 / apoptosis))))
+
+# ::save-date Fri Jan 15, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Western blot analysis showed a dose-dependent effect on the expression of active ERK1/2 in ES2 cells, and active ERK1/2 was not detectable 6 h after treating the cells with CI-1040 at a concentration of 5 <i>μ</i><sc>M</sc> (<xref ref-type="fig" rid="fig4">Figure 4</xref>).
+# ::file pmid_1901_8267_149.txt
+# ::date 2015-07-11T01:55:31
+# ::id pmid_1901_8267.149
+(a / and
+   :op1 (s / show-01
+           :ARG0 (a2 / analyze-01
+                     :manner (i / immunoblot-01))
+           :ARG1 (a3 / affect-01
+                     :ARG1 (e / express-03
+                              :ARG2 (e2 / enzyme
+                                        :name (n3 / name
+                                                  :op1 "ERK1/2")
+                                        :ARG1-of (a4 / activate-01)
+                                        :location (c / cell-line
+                                                     :name (n4 / name
+                                                               :op1 "ES2"))))
+                     :ARG0-of (d / depend-01
+                                 :ARG1 (d2 / dose))))
+   :op2 (p / possible-01
+           :polarity "-"
+           :ARG1 (d3 / detect-01
+                     :ARG1 e2
+                     :time (a5 / after
+                               :op1 (t3 / treat-04
+                                        :ARG1 c
+                                        :ARG2 (s2 / small-molecule
+                                                  :name (n5 / name
+                                                            :op1 "CI-1040")
+                                                  :quant (c3 / concentration-quantity
+                                                             :quant "5"
+                                                             :unit (m / micromolar))))
+                               :quant (t2 / temporal-quantity
+                                          :quant "6"
+                                          :unit (h / hour)))))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (f / figure
+                         :mod "4")))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in <xref ref-type="fig" rid="fig5">Figure 5</xref>, four of the tumours harbouring either <i>KRAS</i> or <i>BRAF</i> mutations showed a marked reduction (<50% of DMSO control) in the cell number in the CI-1040-treated group as compared with the other 14 tumours containing wild-type <i>KRAS</i> and <i>BRAF</i> (<i>P</i><0.001).
+# ::file pmid_1901_8267_150.txt
+# ::date 2015-07-11T02:05:12
+# ::id pmid_1901_8267.150
+(s / show-01
+   :ARG0 (t / tumor
+            :quant "4"
+            :ARG1-of (i / include-01
+                        :ARG2 (t2 / tumor
+                                  :ARG0-of (h / harbor-01
+                                              :ARG1 (o / or
+                                                       :op1 (m / mutate-01
+                                                               :ARG1 (g / gene
+                                                                        :name (n / name
+                                                                                 :op1 "KRAS")))
+                                                       :op2 (m2 / mutate-01
+                                                                :ARG1 (g2 / gene
+                                                                          :name (n2 / name
+                                                                                    :op1 "BRAF"))))))))
+   :ARG1 (r / reduce-01
+            :ARG1 (n4 / number
+                      :quant-of (c2 / cell))
+            :ARG2 (l / less-than
+                     :op1 (p / percentage-entity
+                             :value "50"
+                             :quant-of (c / control
+                                          :mod (s4 / small-molecule
+                                                   :name (n3 / name
+                                                             :op1 "DMSO")))))
+            :ARG1-of (m3 / mark-01)
+            :location (g3 / group
+                          :ARG1-of (t3 / treat-04
+                                       :ARG2 (s2 / small-molecule
+                                                 :name (n5 / name
+                                                           :op1 "CI-1040"))))
+            :compared-to (t4 / tumor
+                             :quant "14"
+                             :mod (o2 / other)
+                             :ARG0-of (c3 / contain-01
+                                          :ARG1 (a / and
+                                                   :op1 (g4 / gene
+                                                            :name (n6 / name
+                                                                      :op1 "KRAS")
+                                                            :mod (w / wild-type))
+                                                   :op2 (g5 / gene
+                                                            :name (n7 / name
+                                                                      :op1 "BRAF")
+                                                            :mod w)))))
+   :ARG1-of (s3 / show-01
+                :ARG0 (f / figure
+                         :mod "5"))
+   :ARG1-of (s5 / statistical-test-91
+                :ARG2 (l2 / less-than
+                          :op1 "0.001")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt CI-1040 had no significant effect on the growth of normal cells, including the OSE cells.
+# ::file pmid_1901_8267_151.txt
+# ::date 2015-07-11T02:22:17
+# ::id pmid_1901_8267.151
+(a / affect-01
+   :polarity "-"
+   :ARG0 (s2 / small-molecule
+             :name (n / name
+                      :op1 "CI-1040"))
+   :ARG1 (g / grow-01
+            :ARG1 (c / cell
+                     :ARG1-of (n2 / normal-02)
+                     :ARG2-of (i / include-01
+                                 :ARG1 (c2 / cell
+                                           :source (e / epithelium
+                                                      :location (s3 / surface)
+                                                      :part-of (o / ovary))))))
+   :ARG1-of (s / significant-02))
+
+# ::save-date Wed Jul 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt It is likely that <i>KRAS/BRAF</i> mutation is not the only determinant for activating ERK1/2.
+# ::file pmid_1901_8267_152.txt
+# ::date 2015-07-11T02:26:44
+# ::id pmid_1901_8267.152
+(l / likely-01
+   :ARG1 (d / determine-01
+            :polarity "-"
+            :ARG0 (m / mutate-01
+                     :ARG1 (s / slash
+                              :op1 (g / gene
+                                      :name (n / name
+                                               :op1 "KRAS"))
+                              :op2 (g2 / gene
+                                       :name (n2 / name
+                                                 :op1 "BRAF"))))
+            :ARG1 (a / activate-01
+                     :ARG1 (e / enzyme
+                              :name (n3 / name
+                                        :op1 "ERK1/2")))
+            :mod (o / only)))
+
+
+# ::save-date Wed Jul 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, we analysed p-ERK1/2 expression in each of the cell lines listed in <xref ref-type="fig" rid="fig5">Figure 5</xref>.
+# ::file pmid_1901_8267_153.txt
+# ::date 2015-07-11T02:33:19
+# ::id pmid_1901_8267.153
+(c / cause-01
+      :ARG1 (a / analyze-01
+            :ARG0 (w / we)
+            :ARG1 (e / express-03
+                  :ARG2 (e2 / enzyme
+                        :name (n / name :op1 "ERK1/2")
+                        :ARG3-of (p / phosphorylate-01))
+                  :ARG3 (c2 / cell-line
+                        :mod (e3 / each)
+                        :ARG1-of (l / list-01
+                              :ARG2 (f / figure :mod "5"))))))
+
+
+# ::save-date Wed Jul 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Only four of these cell lines, MDAH2774, ES2, MPSC1, and POC1, strongly expressed p-ERK1/2.
+# ::file pmid_1901_8267_154.txt
+# ::date 2015-07-11T02:40:40
+# ::id pmid_1901_8267.154
+(e / express-03
+      :ARG2 (e2 / enzyme
+            :name (n5 / name :op1 "ERK1/2")
+            :ARG3-of (p / phosphorylate-01))
+      :ARG3 (c / cell-line
+            :quant "4"
+            :mod (o / only)
+            :ARG1-of (i / include-91
+                  :ARG2 (c2 / cell-line
+                        :mod (t / this)))
+            :ARG1-of (m / mean-01
+                  :ARG2 (a / and
+                        :op1 (c3 / cell-line
+                              :name (n / name :op1 "MDAH2774"))
+                        :op2 (c4 / cell-line
+                              :name (n2 / name :op1 "ES2"))
+                        :op3 (c5 / cell-line
+                              :name (n3 / name :op1 "MPSC1"))
+                        :op4 (c6 / cell-line
+                              :name (n4 / name :op1 "POC1")))))
+      :ARG1-of (s / strong-02))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt SKOV3 and A2780 showed weak expression of ERK1/2.These results suggest that activation of ERK1/2 may depend on <i>KRAS/BRAF</i> mutation in ovarian cancer cells.
+# ::file pmid_1901_8267_155.txt
+# ::date 2015-07-11T12:38:54
+# ::id pmid_1901_8267.155
+(m / multi-sentence
+   :snt1 (s / show-01
+            :ARG0 (a / and
+                     :op1 (c / cell-line
+                             :name (n2 / name
+                                       :op1 "SKOV3"))
+                     :op2 (c2 / cell-line
+                              :name (n3 / name
+                                        :op1 "A2780")))
+            :ARG1 (e / express-03
+                     :ARG2 (e2 / enzyme
+                               :name (n4 / name
+                                         :op1 "ERK1/2"))
+                     :ARG1-of (w / weak-02)))
+   :snt2 (s2 / suggest-01
+             :ARG0 (t2 / thing
+                       :ARG2-of (r / result-01)
+                       :mod (t / this))
+             :ARG1 (p / possible-01
+                      :ARG1 (d2 / depend-01
+                                :ARG0 (a2 / activate-01
+                                          :ARG1 (e3 / enzyme
+                                                    :name (n5 / name
+                                                              :op1 "ERK1/2")))
+                                :ARG1 (m2 / mutate-01
+                                          :ARG1 (s3 / slash
+                                                    :op1 (g / gene
+                                                            :name (n6 / name
+                                                                      :op1 "KRAS"))
+                                                    :op2 (g2 / gene
+                                                             :name (n7 / name
+                                                                       :op1 "BRAF")))
+                                          :location (c3 / cell
+                                                        :mod (d / disease
+                                                                :wiki "Ovarian_cancer"
+                                                                :name (n / name
+                                                                         :op1 "ovarian"
+                                                                         :op2 "cancer"))))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To assess the mechanisms underlying growth inhibition by CI-1040, we measured the percentages of BrdUrd-labelled cells and Annexin V-labelled cells to estimate proliferation and apoptosis, respectively.
+# ::file pmid_1901_8267_156.txt
+# ::date 2015-07-11T12:46:17
+# ::id pmid_1901_8267.156
+(m / measure-01
+   :ARG0 (w / we)
+   :ARG1 (a / and
+            :op1 (p / percentage
+                    :ARG3-of (i3 / include-91
+                                 :ARG1 (c / cell
+                                          :ARG1-of (l / label-01
+                                                      :ARG0 (s2 / small-molecule
+                                                                :name (n / name
+                                                                         :op1 "BrdUrd"))))))
+            :op2 (p2 / percentage
+                     :ARG3-of (i2 / include-91
+                                  :ARG1 (c2 / cell
+                                            :ARG1-of (l2 / label-01
+                                                         :ARG0 (p4 / protein
+                                                                   :name (n2 / name
+                                                                             :op1 "Annexin"
+                                                                             :op2 "V")))))))
+   :purpose (e / estimate-01
+               :ARG0 w
+               :ARG1 (a2 / and
+                         :op1 (p3 / proliferate-01)
+                         :op2 (a3 / apoptosis)
+                         :mod (r / respective)))
+   :purpose (a4 / assess-01
+                :ARG0 w
+                :ARG1 (m4 / mechanism
+                          :ARG0-of (u / underlie-01
+                                      :ARG1 (i / inhibit-01
+                                               :ARG0 (s / small-molecule
+                                                        :name (n3 / name
+                                                                  :op1 "CI-1040"))
+                                               :ARG1 (g / grow-01))))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We found that CI-1040 significantly reduced cellular proliferation and induced apoptosis in cell lines with either <i>KRAS</i> or <i>BRAF</i> mutations in comparison with cell lines with wild-type sequences (<xref ref-type="fig" rid="fig6">Figure 6</xref>, <xref ref-type="other" rid="sup1">Supplementary Figure 1</xref>).
+# ::file pmid_1901_8267_157.txt
+# ::date 2015-07-11T12:55:02
+# ::id pmid_1901_8267.157
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (a2 / and
+             :op1 (r / reduce-01
+                     :ARG0 (s / small-molecule
+                              :name (n / name
+                                       :op1 "CI-1040"))
+                     :ARG1 (p / proliferate-01
+                              :ARG0 (c / cell))
+                     :ARG2 (s2 / significant-02))
+             :op2 (i / induce-01
+                     :ARG0 s
+                     :ARG2 (a / apoptosis))
+             :location (c2 / cell-line
+                           :ARG0-of (h / have-03
+                                       :ARG1 (o / or
+                                                :op1 (m / mutate-01
+                                                        :ARG1 (g / gene
+                                                                 :name (n2 / name
+                                                                           :op1 "KRAS")))
+                                                :op2 (m2 / mutate-01
+                                                         :ARG1 (g2 / gene
+                                                                   :name (n3 / name
+                                                                             :op1 "BRAF")))))
+                           :compared-to (c3 / cell-line
+                                            :ARG0-of (h2 / have-03
+                                                         :ARG1 (s3 / sequence
+                                                                   :mod (w2 / wild-type))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f2 / figure
+                                  :mod "6")
+                         :op2 (f3 / figure
+                                  :mod "1"
+                                  :ARG1-of (s4 / supplement-01)))))
+
+# ::save-date Wed Nov 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt On the basis of the above findings, we investigated whether CI-1040 had a growth-inhibitory effect on tumour formation and development <i>in vivo</i>.
+# ::file pmid_1901_8267_159.txt
+# ::date 2015-07-11T13:10:17
+# ::id pmid_1901_8267.159
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :mode "interrogative"
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "CI-1040"))
+            :ARG1 (a2 / and
+                      :op1 (f / form-01
+                              :ARG1 (t / tumor))
+                      :op2 (d / develop-01
+                              :ARG2 t))
+            :ARG2 (i3 / inhibit-01
+                      :ARG0 s
+                      :ARG1 (g / grow-01))
+            :manner (i2 / in-vivo))
+   :ARG1-of (b / base-02
+               :ARG0 (t2 / thing
+                         :ARG1-of (f2 / find-01)
+                         :mod (a3 / above))))
+
+# ::save-date Wed Nov 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Tumour xenografts from both MDAH2774 (<i>KRAS</i> mutant) and SKOV3 (wild type of <i>KRAS</i> and <i>BRAF</i>) cell lines were established in a <i>nu</i>/<i>nu</i> mouse model.
+# ::file pmid_1901_8267_160.txt
+# ::date 2015-07-11T13:17:34
+# ::id pmid_1901_8267.160
+(e / establish-01
+   :ARG1 (a2 / and
+             :op1 (x / xenograft
+                     :mod (t / tumor)
+                     :source (c / cell-line
+                                :name (n / name
+                                         :op1 "MDAH2774")
+                                :ARG1-of (m4 / mean-01
+                                             :ARG2 (g / gene
+                                                      :name (n2 / name
+                                                                :op1 "KRAS")
+                                                      :ARG2-of (m / mutate-01)))))
+             :op2 (x2 / xenograft
+                      :mod t
+                      :source (c2 / cell-line
+                                  :name (n3 / name
+                                            :op1 "SKOV3")
+                                  :ARG1-of (m5 / mean-01
+                                               :ARG2 (a / and
+                                                        :op1 (g2 / gene
+                                                                 :name (n4 / name
+                                                                           :op1 "KRAS")
+                                                                 :mod (w / wild-type))
+                                                        :op2 (g3 / gene
+                                                                 :name (n5 / name
+                                                                           :op1 "BRAF")
+                                                                 :mod w))))))
+   :location (m2 / model
+                 :mod (m3 / mouse
+                          :mod (n6 / nude))))
+
+# ::save-date Wed Nov 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All mice injected with CI-1040 developed significantly smaller intra-abdominal xenograft tumours than the mice carrying diluent control cells of the <i>KRAS</i> mutant cell line MADH2774 (<xref ref-type="fig" rid="fig7">Figure 7A</xref>).
+# ::file pmid_1901_8267_161.txt
+# ::date 2015-07-11T13:26:20
+# ::id pmid_1901_8267.161
+(d / develop-01
+   :ARG1 (m / mouse
+            :mod (a / all)
+            :ARG2-of (i / inject-01
+                        :ARG1 (s / small-molecule
+                                 :name (n / name
+                                          :op1 "CI-1040"))))
+   :ARG2 (t / tumor
+            :mod (x / xenograft)
+            :mod (i2 / intra-abdominal)
+            :mod (s2 / small
+                     :degree (m2 / more))
+            :ARG1-of (s3 / significant-02))
+   :compared-to (m3 / mouse
+                    :ARG0-of (c / carry-01
+                                :ARG1 (c2 / cell
+                                          :mod (c3 / control)
+                                          :mod (d2 / diluent)
+                                          :poss (c4 / cell-line
+                                                    :name (n2 / name
+                                                              :op1 "MADH2774")
+                                                    :mod (g / gene
+                                                            :name (n3 / name
+                                                                      :op1 "KRAS")
+                                                            :ARG2-of (m4 / mutate-01))))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "7A")))
+
+# ::save-date Wed Nov 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There were no differences in intra-abdominal xenograft tumour weights between the CI-1040-treated group and control groups transplanted with the wild-type <i>KRAS/BRA</i>F cell line SKOV3 (<xref ref-type="fig" rid="fig7">Figure 7B</xref>).
+# ::file pmid_1901_8267_162.txt
+# ::date 2015-07-11T13:33:49
+# ::id pmid_1901_8267.162
+(d / differ-02
+   :polarity "-"
+   :ARG1 (g / group
+            :ARG1-of (t / treat-04
+                        :ARG2 (s / small-molecule
+                                 :wiki "-"
+                                 :name (n / name
+                                          :op1 "CI-1040"))))
+   :ARG2 (g2 / group
+             :mod (c / control)
+             :ARG2-of (t2 / transplant-01
+                          :ARG1 (c2 / cell-line
+                                    :wiki "-"
+                                    :name (n2 / name
+                                              :op1 "SKOV3")
+                                    :mod (g5 / gene
+                                             :mod (s2 / slash
+                                                      :op1 (g3 / gene
+                                                               :wiki "-"
+                                                               :name (n3 / name
+                                                                         :op1 "KRAS")
+                                                               :mod (w / wild-type))
+                                                      :op2 (g4 / gene
+                                                               :wiki "BRAF_(gene)"
+                                                               :name (n4 / name
+                                                                         :op1 "BRAF")
+                                                               :mod w))))))
+   :ARG3 (w2 / weight-01
+             :ARG1 (t3 / tumor
+                       :mod (x / xenograft)
+                       :mod (i / intra-abdominal)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "7B")))
+
+# ::save-date Wed Nov 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Histological examination of the tumours after CI-1040 treatment showed inactivation of p-ERK1/2 in tumour cells based on immunohistochemistry (<xref ref-type="fig" rid="fig7">Figure 7C and D</xref>).
+# ::file pmid_1901_8267_163.txt
+# ::date 2015-07-11T13:43:37
+# ::id pmid_1901_8267.163
+(s / show-01
+   :ARG0 (e / examine-01
+            :ARG1 (t / tumor)
+            :mod (h / histologic)
+            :time (a / after
+                     :op1 (t2 / treat-04
+                              :ARG2 (s2 / small-molecule
+                                        :name (n / name
+                                                 :op1 "CI-1040")))))
+   :ARG1 (a2 / activate-01
+             :polarity "-"
+             :ARG1 (e2 / enzyme
+                       :name (n2 / name
+                                 :op1 "ERK1/2")
+                       :ARG3-of (p / phosphorylate-01))
+             :location (c / cell
+                          :mod t)
+             :ARG1-of (b / base-02
+                         :ARG2 (i / immunohistochemistry)))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "7C")
+                         :op2 (f2 / figure
+                                  :mod "7D"))))

@@ -1,0 +1,3801 @@
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We show, for the first time, that constitutive activation of either Grb2 or Shc signals in IEC-6 cells, promotes morphological transformation associated with down-regulation of E-cadherin, as well as increased cell growth, loss of growth contact inhibition, anchorage-independent growth, and resistance to serum deprivation and anoikis.
+# ::file pmid_2470_8867_10.txt
+# ::date 2015-08-26T09:39:11
+# ::id pmid_2470_8867.10
+(s / show-01
+   :ARG0 (w / we)
+   :ARG1 (p / promote-02
+            :ARG0 (a / activate-01
+                     :ARG1 (s2 / signal-07
+                               :ARG0 (o2 / or
+                                         :op1 (p2 / protein
+                                                  :name (n / name
+                                                           :op1 "Grb2"))
+                                         :op2 (p3 / protein
+                                                  :name (n2 / name
+                                                            :op1 "Shc"))))
+                     :mod (c / constitutive)
+                     :location (c2 / cell-line
+                                   :name (n3 / name
+                                             :op1 "IEC-6")))
+            :ARG1 (a2 / and
+                      :op1 (t / transform-01
+                              :mod (m / morphological)
+                              :ARG1-of (a3 / associate-01
+                                           :ARG2 (d / downregulate-01
+                                                    :ARG1 (p4 / protein
+                                                              :name (n4 / name
+                                                                        :op1 "E-cadherin")))))
+                      :op2 (g / grow-01
+                              :ARG1 (c3 / cell)
+                              :ARG1-of (i / increase-01))
+                      :op3 (l / lose-01
+                              :ARG1 (i2 / inhibit-01
+                                        :ARG0 (c4 / contact-01)
+                                        :ARG1 (g2 / grow-01)))
+                      :op4 (g3 / grow-01
+                               :ARG0-of (d2 / depend-01
+                                            :polarity "-"
+                                            :ARG1 (a4 / anchorage)))
+                      :op5 (r / resist-01
+                              :ARG1 (a5 / and
+                                        :op1 (d3 / deprive-01
+                                                 :ARG1 (s3 / serum))
+                                        :op2 (a6 / anoikis)))))
+   :ord (o / ordinal-entity
+           :value "1"))
+
+# ::save-date Sun Sep 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Oncogenic activation of Met was revealed to induce morphological transformation, E-cadherin down-regulation, and protection against anoikis by mechanisms dependent on Grb2, while Shc was shown to be partly required for enhanced cell growth.
+# ::file pmid_2470_8867_11.txt
+# ::date 2015-08-26T10:20:39
+# ::id pmid_2470_8867.11
+(c / contrast-01
+   :ARG1 (r / reveal-01
+            :ARG1 (i / induce-01
+                     :ARG0 (a / activate-01
+                              :ARG1 (p5 / protein
+                                        :name (n / name
+                                                 :op1 "Met"))
+                              :ARG0-of (c2 / cause-01
+                                           :ARG1 (c3 / cancer)))
+                     :ARG1 (a2 / and
+                               :op1 (t / transform-01
+                                       :mod (m / morphological))
+                               :op2 (d / downregulate-01
+                                       :ARG1 (p / protein
+                                                :name (n2 / name
+                                                          :op1 "E-cadherin")))
+                               :op3 (p2 / protect-01
+                                        :ARG2 (a3 / anoikis)
+                                        :ARG3 (m2 / mechanism
+                                                  :ARG0-of (d2 / depend-01
+                                                               :ARG1 (p3 / protein
+                                                                         :name (n3 / name
+                                                                                   :op1 "Grb2"))))))))
+   :ARG2 (s / show-01
+            :ARG1 (r3 / require-01
+                      :ARG0 (g / grow-01
+                               :ARG1 (c4 / cell)
+                               :ARG1-of (e / enhance-01))
+                      :ARG1 (p4 / protein
+                                :name (n4 / name
+                                          :op1 "Shc"))
+                      :degree (p6 / part))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The coupling of activated Met to the Ras/MEK/Erk and PI3K/Akt pathways, and the sustained engagement of Grb2 or Shc in IECs, was shown to trigger negative feedback, limiting the extent of activation of these pathways.
+# ::file pmid_2470_8867_12.txt
+# ::date 2015-08-26T10:48:31
+# ::id pmid_2470_8867.12
+(s / show-01
+   :ARG1 (t / trigger-01
+            :ARG0 (a / and
+                     :op1 (c / couple-01
+                             :ARG1 (p / protein
+                                      :name (n / name
+                                               :op1 "Met")
+                                      :ARG1-of (a3 / activate-01))
+                             :ARG2 (a2 / and
+                                       :op1 (p2 / pathway
+                                                :name (n2 / name
+                                                          :op1 "Ras/MEK/Erk"))
+                                       :op2 (p3 / pathway
+                                                :name (n3 / name
+                                                          :op1 "PI3K/Akt"))))
+                     :op2 (e / engage-01
+                             :ARG1 (o / or
+                                      :op1 (p4 / protein
+                                               :name (n4 / name
+                                                         :op1 "Grb2"))
+                                      :op2 (p5 / protein
+                                               :name (n5 / name
+                                                         :op1 "Shc")))
+                             :ARG2 (c2 / cell
+                                       :name (n6 / name
+                                                 :op1 "IEC"))
+                             :ARG1-of (s2 / sustain-01)))
+            :ARG1 (f / feedback
+                     :ARG0-of (n7 / negative-03))
+            :ARG0-of (l / limit-01
+                        :ARG1 (e2 / extent
+                                  :extent-of (a5 / activate-01
+                                                 :ARG1 (a6 / and
+                                                           :op1 p2
+                                                           :op2 p3
+                                                           :mod (t2 / this)))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Nonetheless, morphological alterations and E-cadherin down-regulation induced by the oncogenic Tpr-Met, and by Grb2 or Shc signals, were blocked by MEK, but not PI3K, inhibitors while the enhanced growth and resistance to anoikis induced by Tpr-Met were nearly abolished by co-treatment with both inhibitors.
+# ::file pmid_2470_8867_13.txt
+# ::date 2015-08-26T11:07:52
+# ::id pmid_2470_8867.13
+(h / have-concession-91
+   :ARG1 (c / contrast-01
+            :ARG1 (c2 / contrast-01
+                      :ARG1 (b / block-01
+                               :ARG0 (m2 / molecular-physical-entity
+                                         :ARG0-of (i2 / inhibit-01
+                                                      :ARG1 (p6 / protein-family
+                                                                :name (n5 / name
+                                                                          :op1 "MEK"))))
+                               :ARG1 (a / and
+                                        :op1 (a2 / alter-01
+                                                 :mod (m / morphological))
+                                        :op2 (d / downregulate-01
+                                                :ARG1 (p / protein
+                                                         :name (n / name
+                                                                  :op1 "E-cadherin"))
+                                                :ARG2-of (i / induce-01
+                                                            :ARG0 (a3 / and
+                                                                      :op1 (p2 / protein
+                                                                               :name (n2 / name
+                                                                                         :op1 "Tpr-Met")
+                                                                               :ARG0-of (c3 / cause-01
+                                                                                            :ARG1 (c4 / cancer)))
+                                                                      :op1 (s / signal-07
+                                                                              :ARG0 (o / or
+                                                                                       :op1 (p3 / protein
+                                                                                                :name (n3 / name
+                                                                                                          :op1 "Grb2"))
+                                                                                       :op2 (p4 / protein
+                                                                                                :name (n4 / name
+                                                                                                          :op1 "Shc")))))))))
+                      :ARG2 (b2 / block-01
+                                :polarity "-"
+                                :ARG0 (m3 / molecular-physical-entity
+                                          :ARG0-of (i3 / inhibit-01
+                                                       :ARG1 (p5 / protein-family
+                                                                 :name (n6 / name
+                                                                           :op1 "PI3K"))))
+                                :ARG1 a))
+            :ARG2 (a4 / abolish-01
+                      :ARG1 (a5 / and
+                                :op1 (g / grow-01
+                                        :ARG1-of (e3 / enhance-01))
+                                :op2 (r / resist-01
+                                        :ARG1 (a6 / anoikis
+                                                  :ARG2-of (i4 / induce-01
+                                                               :ARG0 p2))))
+                      :mod (n7 / near)
+                      :instrument (t / treat-04
+                                     :ARG2 (a7 / and
+                                               :op1 m2
+                                               :op2 m3)))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast with many other RTKs, the ability of the Met receptor to recruit signaling proteins, and thus its biological activities, is dependent on two phospho-Tyr residues located within its C-terminus (Y1349/Y1356 in Met; Y482/Y489 in Tpr-Met [<xref ref-type="bibr" rid="B28">28</xref>-<xref ref-type="bibr" rid="B30">30</xref>]).
+# ::file pmid_2470_8867_97.txt
+# ::date 2015-08-26T12:23:55
+# ::id pmid_2470_8867.97
+(c / contrast-01
+   :ARG1 (d / depend-01
+            :ARG0 (c2 / capable-01
+                      :ARG1 (r / receptor
+                               :name (n / name
+                                        :op1 "Met")
+                               :part p3)
+                      :ARG2 (r2 / recruit-01
+                                :ARG0 r
+                                :ARG1 (p / protein
+                                         :ARG0-of (s / signal-07)))
+                      :ARG0-of (c3 / cause-01
+                                   :ARG1 (a4 / activity-06
+                                             :ARG0 r
+                                             :mod (b2 / biology))))
+            :ARG1 (a2 / and
+                      :op1 (r3 / residue
+                               :ARG1-of (p2 / phosphorylate-01)
+                               :location (p3 / protein-segment
+                                             :name (n3 / name
+                                                       :op1 "C-terminus"))
+                               :mod (s2 / slash
+                                        :op1 (a / amino-acid
+                                                :mod "1349"
+                                                :name (n5 / name
+                                                          :op1 "tyrosine"))
+                                        :op2 (a3 / amino-acid
+                                                 :mod "1356"
+                                                 :name (n6 / name
+                                                           :op1 "tyrosine"))
+                                        :part-of (p7 / protein
+                                                     :name (n10 / name
+                                                                :op1 "Met"))))
+                      :op2 (r4 / residue
+                               :ARG1-of p2
+                               :mod (s3 / slash
+                                        :op1 (a5 / amino-acid
+                                                 :mod "482"
+                                                 :name (n4 / name
+                                                           :op1 "tyrosine"))
+                                        :op2 (a6 / amino-acid
+                                                 :mod "489"
+                                                 :name (n9 / name
+                                                           :op1 "tyrosine"))
+                                        :part-of (p4 / protein
+                                                     :name (n2 / name
+                                                               :op1 "Tpr-Met"))))
+                      :ARG1-of (d2 / describe-01
+                                   :ARG0 (p6 / publication
+                                             :ARG1-of (c4 / cite-01
+                                                          :ARG2 (v / value-interval
+                                                                   :op1 "28"
+                                                                   :op2 "30"))))))
+   :ARG2 (e / enzyme
+            :name (n7 / name
+                      :op1 "RTK")
+            :quant (m / many)
+            :mod (o / other)))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This unique characteristic has been exploited to generate Met receptor variants capable of binding exclusively to a single RTK-proximal signaling protein [<xref ref-type="bibr" rid="B8">8</xref>].
+# ::file pmid_2470_8867_98.txt
+# ::date 2015-08-26T13:29:45
+# ::id pmid_2470_8867.98
+(e / exploit-01
+   :ARG1 (t2 / thing
+             :mod (u / unique)
+             :mod (t / this)
+             :ARG2-of (c / characteristic-02))
+   :ARG2 (g / generate-01
+            :ARG1 (v / variant
+                     :mod (r / receptor
+                             :wiki "C-Met"
+                             :name (n / name
+                                      :op1 "Met"))
+                     :ARG1-of (c2 / capable-01
+                                  :ARG2 (b / bind-01
+                                           :ARG1 v
+                                           :ARG2 (p / protein
+                                                    :ARG0-of (s / signal-07
+                                                                :ARG1 (e3 / enzyme
+                                                                          :wiki "Receptor_tyrosine_kinase"
+                                                                          :name (n2 / name
+                                                                                    :op1 "RTK"))
+                                                                :mod (p2 / proximal))
+                                                    :ARG1-of (s2 / single-02))
+                                           :manner (e2 / exclusive-02)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p3 / publication
+                         :ARG0-of (c3 / cite-01
+                                      :ARG2 "8"))))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These well-characterized docking-specific Met variants consist of the cytosolic oncogenic form of the Met receptor, Tpr-Met, in which the multi-substrate binding region has been replaced with a motif selective for the recruitment of a single signaling protein, found in other RTKs (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref> and [<xref ref-type="bibr" rid="B8">8</xref>]).
+# ::file pmid_2470_8867_99.txt
+# ::date 2015-08-26T13:44:55
+# ::id pmid_2470_8867.99
+(c / consist-01
+   :ARG1 (v / variant
+            :mod (r / receptor
+                    :name (n / name
+                             :op1 "Met")
+                    :mod (o / other))
+            :ARG1-of (s / specific-02
+                        :ARG2 (d / dock-01))
+            :ARG1-of (c2 / characterize-01
+                         :ARG1-of (w / well-09))
+            :mod (t / this))
+   :ARG2 (f / form
+            :ARG0-of (c3 / cause-01
+                         :ARG1 (c4 / cancer))
+            :mod (c5 / cytosol)
+            :mod (r2 / receptor
+                     :name (n2 / name
+                               :op1 "Met"))
+            :ARG1-of (m / mean-01
+                        :ARG2 (r3 / receptor
+                                  :name (n3 / name
+                                            :op1 "Tpr-Met")))
+            :location-of (r4 / region
+                             :ARG1-of (b2 / bind-01)
+                             :mod (s5 / substrate
+                                      :quant (m2 / multiple))
+                             :ARG1-of (r5 / replace-01
+                                          :ARG2 (m3 / motif
+                                                    :ARG0-of (s2 / select-01
+                                                                 :ARG1 (r6 / recruit-01
+                                                                           :ARG1 (p / protein
+                                                                                    :ARG0-of (s3 / signal-07)
+                                                                                    :ARG1-of (s4 / single-02)
+                                                                                    :ARG1-of (f3 / find-01
+                                                                                                 :location (e / enzyme
+                                                                                                              :name (n4 / name
+                                                                                                                        :op1 "RTK")
+                                                                                                              :mod (o2 / other))))))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a / and
+                         :op1 (f2 / file
+                                  :mod "1"
+                                  :mod (a2 / additional))
+                         :op2 (p2 / publication
+                                  :ARG0-of (c6 / cite-01
+                                               :ARG2 "8")))))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To determine whether the selective oncogenic engagement of either the Grb2 or the Shc adaptor protein was sufficient to induce transformation of IECs, we generated populations of IEC-6 cells [<xref ref-type="bibr" rid="B25">25</xref>] expressing Tpr-Met variants that specifically bind to either the Grb2 (TM-Grb2-IEC-6 cells) or Shc (TM-Shc1-IEC-6 and TM-Shc2-IEC-6 cells, respectively) adaptor proteins, through retroviral infection.
+# ::file pmid_2470_8867_100.txt
+# ::date 2015-08-26T14:38:58
+# ::id pmid_2470_8867.100
+(g / generate-01
+   :ARG0 (w / we)
+   :ARG1 (p / population
+            :consist-of (c / cell-line
+                           :name (n / name
+                                    :op1 "IEC-6")
+                           :ARG1-of (d / describe-01
+                                       :ARG0-of (c2 / cite-01
+                                                    :ARG2 "25"))
+                           :ARG3-of (e / express-03
+                                       :ARG2 (v / variant
+                                                :mod (p2 / protein
+                                                         :name (n2 / name
+                                                                   :op1 "Tpr-Met"))
+                                                :ARG1-of (b / bind-01
+                                                            :ARG2 (o / or
+                                                                     :op1 (p3 / protein
+                                                                              :name (n3 / name
+                                                                                        :op1 "Grb2")
+                                                                              :mod (a / adaptor)
+                                                                              :location (c3 / cell-line
+                                                                                            :name (n4 / name
+                                                                                                      :op1 "TM-Grb2-IEC-6")))
+                                                                     :op2 (p4 / protein
+                                                                              :name (n5 / name
+                                                                                        :op1 "Shc")
+                                                                              :mod a
+                                                                              :location (a3 / and
+                                                                                            :op1 (c4 / cell-line
+                                                                                                     :name (n6 / name
+                                                                                                               :op1 "TM-Shc1-IEC-6"))
+                                                                                            :op2 (c5 / cell-line
+                                                                                                     :name (n7 / name
+                                                                                                               :op1 "TM-Shc2-IEC-6")))))
+                                                            :instrument (i / infect-01
+                                                                           :mod (r / retrovirus))
+                                                            :manner (s / specific-02))))))
+   :purpose (d2 / determine-01
+                :ARG0 w
+                :ARG1 (s2 / suffice-01
+                          :mode "interrogative"
+                          :ARG0 (e2 / engage-01
+                                    :ARG1 (o2 / or
+                                              :op1 (p5 / protein
+                                                       :name (n8 / name
+                                                                 :op1 "Grb2")
+                                                       :mod a)
+                                              :op2 (p6 / protein
+                                                       :name (n9 / name
+                                                                 :op1 "Shc")
+                                                       :mod a))
+                                    :ARG0-of (c6 / cause-01
+                                                 :ARG1 (c7 / cancer))
+                                    :mod (s3 / selective))
+                          :ARG1 (i2 / induce-01
+                                    :ARG0 e2
+                                    :ARG2 (t / transform-01
+                                             :ARG2 (c8 / cell
+                                                       :name (n10 / name
+                                                                  :op1 "IEC")))))))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt For each experiment, these cells were compared with the previously characterized untransformed sham-infected IEC-6 (Control-IEC-6) cells or those transformed by unmodified Tpr-Met (Tpr-Met-IEC-6) [<xref ref-type="bibr" rid="B5">5</xref>].
+# ::file pmid_2470_8867_101.txt
+# ::date 2015-08-26T15:35:43
+# ::id pmid_2470_8867.101
+(c / compare-01
+   :ARG1 (c2 / cell
+             :mod (t / this))
+   :ARG2 (o / or
+            :op1 (c5 / cell-line
+                     :name (n / name
+                              :op1 "IEC-6")
+                     :ARG1-of (c4 / characterize-01
+                                  :time (p / previous))
+                     :ARG1-of (t2 / transform-01
+                                  :polarity "-")
+                     :ARG1-of (i / infect-01
+                                 :mod (s / sham))
+                     :ARG1-of (m / mean-01
+                                 :ARG2 (c3 / cell-line
+                                           :name (n2 / name
+                                                     :op1 "Control-IEC-6"))))
+            :op2 (c6 / cell
+                     :ARG1-of c4
+                     :ARG1-of (t3 / transform-01
+                                  :ARG0 (p3 / protein
+                                            :name (n3 / name
+                                                      :op1 "Tpr-Met")
+                                            :ARG1-of (m3 / modify-01
+                                                         :polarity "-")))
+                     :ARG1-of (m2 / mean-01
+                                  :ARG2 (c7 / cell-line
+                                            :name (n4 / name
+                                                      :op1 "Tpr-Met-IEC-6")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p2 / publication
+                         :ARG0-of (c9 / cite-01
+                                      :ARG2 "5")))
+   :beneficiary (e / experiment-01
+                   :mod (e2 / each)))
+
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt TM-Grb2-IEC-6, TM-Shc1-IEC-6, and TM-Shc2-IEC-6 cells were morphologically transformed to a similar extent relative to Control-IEC-6 cells, which grew in colonies and displayed typical normal epithelioid morphology (Figure <xref ref-type="fig" rid="F1">1</xref>A).
+# ::file pmid_2470_8867_102.txt
+# ::date 2015-08-26T16:01:38
+# ::id pmid_2470_8867.102
+(t / transform-01
+      :ARG1 (a / and
+            :op1 (c / cell-line
+                  :name (n / name :op1 "TM-Grb2-IEC-6"))
+            :op2 (c2 / cell-line
+                  :name (n2 / name :op1 "TM-Shc1-IEC-6"))
+            :op3 (c3 / cell-line
+                  :name (n3 / name :op1 "TM-Shc2-IEC-6")))
+      :ARG2 (e / extent
+            :ARG1-of (r / resemble-01)
+            :ARG1-of (r2 / relative-05
+                  :ARG3 (c4 / cell-line
+                        :name (n4 / name :op1 "Control-IEC-6")
+                        :ARG1-of (g / grow-01
+                              :location (c5 / colony))
+                        :ARG0-of (d / display-01
+                              :ARG1 (m2 / morphology
+                                    :ARG1-of (t2 / typical-02)
+                                    :ARG1-of (n5 / normal-02)
+                                    :ARG1-of (r3 / resemble-01
+                                          :ARG2 (e2 / epithelium)))))))
+      :manner (m / morphological)
+      :ARG1-of (d2 / describe-01
+            :ARG2 (f / figure :mod "1A")))
+
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Morphological changes induced in the TM-Grb2-IEC-6, TM-Shc1-IEC-6, and TM-Shc2-IEC-6 cells include an apparent breakdown of cell-cell contacts, cell dispersal, the acquisition of a fibroblast-like spindle-shaped morphology, and a more refractile appearance than the Control-IEC-6 cells.
+# ::file pmid_2470_8867_103.txt
+# ::date 2015-08-26T16:28:03
+# ::id pmid_2470_8867.103
+(i / include-01
+      :ARG1 (a2 / and
+            :op1 (b / break-down-12
+                  :ARG1 (c5 / contact-01
+                        :ARG0 (c6 / cell)
+                        :ARG1 (c7 / cell))
+                  :ARG1-of (a3 / appear-01))
+            :op2 (d / disperse-01
+                  :ARG1 c6)
+            :op3 (a4 / acquire-01
+                  :ARG1 (m2 / morphology
+                        :ARG1-of (r / resemble-01
+                              :ARG2 (f / fibroblast))
+                        :ARG1-of (s / shape-01
+                              :ARG2 (s2 / spindle))))
+            :op4 (a5 / appear-01
+                  :mod (r2 / refractile
+                        :degree (m3 / more))
+                  :compared-to (c8 / cell-line
+                        :name (n4 / name :op1 "Control-IEC-6"))))
+      :ARG2 (c / change-01
+            :mod (m / morphology)
+            :ARG2-of (i2 / induce-01
+                  :location (a / and
+                        :op1 (c2 / cell-line
+                              :name (n / name :op1 "TM-Grb2-IEC-6"))
+                        :op2 (c3 / cell-line
+                              :name (n2 / name :op1 "TM-Shc1-IEC-6"))
+                        :op3 (c4 / cell-line
+                              :name (n3 / name :op1 "TM-Shc2-IEC-6"))))))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cells expressing the Grb2 and Shc docking-specific oncoproteins also displayed many cell membrane protrusions typical of lamellipodia and invadopodia-like structures.
+# ::file pmid_2470_8867_104.txt
+# ::date 2015-08-26T17:03:03
+# ::id pmid_2470_8867.104
+(d / display-01
+   :ARG0 (c / cell
+            :ARG3-of (e / express-03
+                        :ARG2 (a / and
+                                 :op1 (p2 / protein
+                                          :name (n / name
+                                                   :op1 "Grb2")
+                                          :ARG0-of (c2 / cause-01
+                                                       :ARG1 (c3 / cancer)
+                                                       :ARG0 p))
+                                 :op2 (p / protein
+                                         :name (n2 / name
+                                                   :op1 "Shc"))
+                                 :ARG1-of (s / specific-02
+                                             :ARG2 (d2 / dock-01)))))
+   :ARG1 (p3 / protrude-01
+             :ARG2 (m / membrane
+                      :part-of (c4 / cell))
+             :ARG1-of (t / typical-02
+                         :ARG2 (a3 / and
+                                   :op1 (s2 / structure
+                                            :mod (l / lamellipodium))
+                                   :op2 (s3 / structure
+                                            :ARG1-of (r / resemble-01
+                                                        :ARG2 (i / invadopodium)))))
+             :quant (m2 / many))
+   :mod (a2 / also))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The Tpr-Met variants exhibited comparable levels of Tyr phosphorylation in IEC-6 cells, relative to their expression levels (Figure <xref ref-type="fig" rid="F1">1</xref>A).
+# ::file pmid_2470_8867_105.txt
+# ::date 2015-08-26T22:13:53
+# ::id pmid_2470_8867.105
+(e / exhibit-01
+   :ARG0 (v / variant
+            :mod (p / protein
+                    :name (n / name
+                             :op1 "Tpr-Met")))
+   :ARG1 (l / level
+            :ARG1-of (c / comparable-03)
+            :degree-of (p2 / phosphorylate-01
+                           :ARG1 (a / amino-acid
+                                    :name (n3 / name
+                                              :op1 "tyrosine"))
+                           :location (c2 / cell-line
+                                         :name (n2 / name
+                                                   :op1 "IEC-6")))
+            :ARG1-of (r / relative-05
+                        :ARG3 (l2 / level
+                                  :degree-of (e2 / express-03
+                                                 :ARG2 v))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1A")))
+
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt They also demonstrated the predicted binding selectivity [<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B9">9</xref>,<xref ref-type="bibr" rid="B15">15</xref>,<xref ref-type="bibr" rid="B16">16</xref>,<xref ref-type="bibr" rid="B20">20</xref>] (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>).
+# ::file pmid_2470_8867_106.txt
+# ::date 2015-08-26T22:51:34
+# ::id pmid_2470_8867.106
+(d / demonstrate-01
+      :ARG0 (t / they)
+      :ARG1 (s / select-01
+            :ARG1-of (p / predict-01)
+            :mod (b / bind-01))
+      :mod (a / also)
+      :ARG1-of (d2 / describe-01
+            :ARG0 (a2 / and
+                  :op1 (p2 / publication
+                        :ARG1-of (c / cite-01
+                              :ARG2 (a3 / and
+                                    :op1 "8"
+                                    :op2 "9"
+                                    :op3 "15"
+                                    :op4 "16"
+                                    :op5 "20")))
+                  :op2 (f / file
+                        :mod "1"
+                        :mod (a4 / additional)))))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Since such morphological changes in epithelial cells are typically associated with down-regulation of E-cadherin, immunoblot (IB) analysis of the E-cadherin protein levels were performed [<xref ref-type="bibr" rid="B31">31</xref>].
+# ::file pmid_2470_8867_107.txt
+# ::date 2015-08-27T04:13:27
+# ::id pmid_2470_8867.107
+(c / cause-01
+   :ARG0 (a / associate-01
+            :ARG1 (c2 / change-01
+                      :ARG1 (c3 / cell
+                                :source (e / epithelium))
+                      :mod (m / morphological)
+                      :mod (s / such))
+            :ARG2 (d / downregulate-01
+                     :ARG1 (p / protein
+                              :name (n / name
+                                       :op1 "E-cadherin")))
+            :ARG1-of (t / typical-02))
+   :ARG1 (p2 / perform-02
+             :ARG2 (a2 / analyze-01
+                       :ARG1 (l / level
+                                :quant-of p)
+                       :mod (i2 / immunoblot-01)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p4 / publication
+                          :ARG1-of (c4 / cite-01
+                                       :ARG2 "31"))))
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with the previous characterization of Tpr-Met-IEC-6 cells [<xref ref-type="bibr" rid="B5">5</xref>], also presented herein, oncogenic activation of Grb2- and especially Shc-specific signals led to a dramatic decrease in E-cadherin protein levels relative to the Control-IEC-6 cells (Figure <xref ref-type="fig" rid="F1">1</xref>B).
+# ::file pmid_2470_8867_108.txt
+# ::date 2015-08-27T10:32:19
+# ::id pmid_2470_8867.108
+(l / lead-03
+   :ARG0 (a / activate-01
+            :ARG1 (s / signal-07
+                     :ARG1-of (s2 / specific-02
+                                  :ARG2 (a2 / and
+                                            :op1 (p / protein
+                                                    :name (n / name
+                                                             :op1 "Grb2"))
+                                            :op2 (p2 / protein
+                                                     :name (n2 / name
+                                                               :op1 "Shc")
+                                                     :ARG1-of (s3 / special-02)))))
+            :ARG0-of (c / cause-01
+                        :ARG1 (c2 / cancer)))
+   :ARG2 (d / decrease-01
+            :ARG1 (l2 / level
+                      :quant-of (p3 / protein
+                                    :name (n3 / name
+                                              :op1 "E-cadherin"))
+                      :ARG1-of (r / relative-05
+                                  :ARG2 (c3 / cell-line
+                                            :name (n4 / name
+                                                      :op1 "Control-IEC-6"))))
+            :manner (d2 / dramatic))
+   :ARG1-of (c4 / consistent-01
+                :ARG2 (c5 / characterize-01
+                          :ARG1 (c6 / cell-line
+                                    :name (n5 / name
+                                              :op1 "Tpr-Met-IEC-6"))
+                          :time (p4 / previous)
+                          :ARG1-of (p6 / present-01
+                                       :mod (a3 / also)
+                                       :medium (h / herein)))
+                :ARG1-of (d3 / describe-01
+                             :ARG0 (p5 / publication
+                                       :ARG0-of (c7 / cite-01
+                                                    :ARG2 "5"))))
+   :ARG1-of (d4 / describe-01
+                :ARG2 (f / figure
+                         :mod "1B")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Likewise, a marked reduction in E-cadherin (<i>Cdh1</i>) mRNA levels was observed in these cells, as determined by semi-quantitative and quantitative real-time RT–PCR analyses (Figure <xref ref-type="fig" rid="F1">1</xref>C and D).
+# ::file pmid_2470_8867_109.txt
+# ::date 2015-08-27T11:05:01
+# ::id pmid_2470_8867.109
+(o / observe-01
+   :ARG1 (r / reduce-01
+            :ARG1 (l / level
+                     :quant-of (n5 / nucleic-acid
+                                   :name (n / name
+                                            :op1 "mRNA")
+                                   :ARG0-of (e / encode-01
+                                               :ARG1 (p / protein
+                                                        :name (n2 / name
+                                                                  :op1 "E-cadherin")
+                                                        :ARG1-of (m2 / mean-01
+                                                                     :ARG2 (p2 / protein
+                                                                               :name (n3 / name
+                                                                                         :op1 "Cdh1")))))))
+            :ARG1-of (m / mark-01))
+   :location (c / cell
+                :mod (t / this))
+   :ARG1-of (d / determine-01
+               :ARG0 (a / and
+                        :op1 (a2 / analyze-01
+                                 :mod (t2 / thing
+                                          :name (n4 / name
+                                                    :op1 "RT-PCR"))
+                                 :mod (q / quantitative
+                                         :degree (s / semi))
+                                 :mod (r3 / real-time))
+                        :op2 (a3 / analyze-01
+                                 :mod (q2 / quantitative)
+                                 :mod r3
+                                 :mod t2)))
+   :manner (l2 / likewise)
+   :ARG1-of (d2 / describe-01
+                :ARG2 (a4 / and
+                          :op1 (f / figure
+                                  :mod "1C")
+                          :op2 (f2 / figure
+                                   :mod "1D"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Analysis of the expression profiles of E-cadherin transcriptional repressors in these IECs suggests that a combined up-regulation of <i>Snail2</i>, <i>Twist1,</i> or <i>Twist2</i>, but not of <i>Snail1</i> or <i>Zeb1</i>, may partly account for the E-cadherin repression induced by oncogenic Met-dependent signaling, including that one driven by Grb2 and Shc signals (Additional file <xref ref-type="supplementary-material" rid="S2">2</xref>).
+# ::file pmid_2470_8867_110.txt
+# ::date 2015-08-27T12:19:27
+# ::id pmid_2470_8867.110
+(s / suggest-01
+   :ARG0 (a / analyze-01
+            :ARG1 (p / profile-01
+                     :ARG1 (e / express-03
+                              :ARG2 (m / molecular-physical-entity
+                                       :ARG0-of (r / repress-01
+                                                   :ARG1 (t / transcribe-01
+                                                            :ARG1 (p2 / protein
+                                                                      :name (n / name
+                                                                               :op1 "E-cadherin")))))))
+            :location (c / cell
+                         :name (n2 / name
+                                   :op1 "IEC")
+                         :mod (t2 / this)))
+   :ARG1 (c2 / contrast-01
+             :ARG1 (p3 / possible-01
+                       :ARG1 (a2 / account-01
+                                 :ARG0 (u / upregulate-01
+                                          :ARG1 (o / or
+                                                   :op1 (g / gene
+                                                           :name (n3 / name
+                                                                     :op1 "Snail2"))
+                                                   :op2 (g2 / gene
+                                                            :name (n4 / name
+                                                                      :op1 "Twist1"))
+                                                   :op3 (g3 / gene
+                                                            :name (n5 / name
+                                                                      :op1 "Twist2")))
+                                          :ARG1-of (c3 / combine-01
+                                                       :ARG1 u2))
+                                 :ARG1 (r2 / repress-01
+                                           :ARG1 p2
+                                           :ARG2-of (i / induce-01
+                                                       :ARG0 (s2 / signal-07
+                                                                 :ARG0-of (d / depend-01
+                                                                             :ARG1 (p6 / protein
+                                                                                       :name (n7 / name
+                                                                                                 :op1 "Met")))
+                                                                 :ARG0-of (c4 / cause-01
+                                                                              :ARG1 (c5 / cancer))))
+                                           :ARG2-of (i2 / include-01
+                                                        :ARG1 (r3 / repress-01
+                                                                  :ARG1-of (d2 / drive-02
+                                                                               :ARG0 (s3 / signal-07
+                                                                                         :ARG0 (a3 / and
+                                                                                                   :op1 (p7 / protein
+                                                                                                            :name (n8 / name
+                                                                                                                      :op1 "Grb2"))
+                                                                                                   :op2 (p8 / protein
+                                                                                                            :name (n9 / name
+                                                                                                                      :op1 "Shc"))))))))
+                                 :degree (p4 / part)))
+             :ARG2 (a5 / account-01
+                       :polarity "-"
+                       :ARG0 (u2 / upregulate-01
+                                 :ARG1 (o2 / or
+                                           :op1 (g4 / gene
+                                                    :name (n10 / name
+                                                               :op1 "Snail1"))
+                                           :op2 (g5 / gene
+                                                    :name (n11 / name
+                                                               :op1 "Zeb1"))))
+                       :ARG1 r2))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "2"
+                         :mod (a4 / additional))))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Overall, these results demonstrate that oncogenic activation of Grb2- and Shc-dependent signaling pathways, such as those activated by Tpr-Met, is sufficient to induce an epithelial-mesenchymal morphological-like transformation in normal IECs.
+# ::file pmid_2470_8867_111.txt
+# ::date 2015-08-27T13:11:30
+# ::id pmid_2470_8867.111
+(d / demonstrate-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG1 (s / suffice-01
+            :ARG0 (a / activate-01
+                     :ARG1 (p / pathway
+                              :ARG0-of (s2 / signal-07
+                                           :ARG0-of (d2 / depend-01
+                                                        :ARG1 (a2 / and
+                                                                  :op1 (p2 / protein
+                                                                           :name (n / name
+                                                                                    :op1 "Grb2"))
+                                                                  :op2 (p3 / protein
+                                                                           :name (n2 / name
+                                                                                     :op1 "Shc")))))
+                              :example (p4 / pathway
+                                           :ARG1-of (a3 / activate-01
+                                                        :ARG0 (p5 / protein
+                                                                  :name (n3 / name
+                                                                            :op1 "Tpr-Met")))))
+                     :ARG0-of (c / cause-01
+                                 :ARG1 (c2 / cancer)))
+            :ARG1 (i / induce-01
+                     :ARG0 a
+                     :ARG2 (t3 / transform-01
+                               :ARG1 (c3 / cell
+                                         :name (n4 / name
+                                                   :op1 "IEC")
+                                         :ARG1-of (n5 / normal-02))
+                               :ARG1-of (r2 / resemble-01
+                                            :ARG2 (m / morphology))
+                               :mod (e2 / epithelium
+                                        :mod (m2 / mesenchyme)))))
+   :mod (o / overall))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next tested the oncogenic growth characteristics of IEC-6 cells transformed by the Tpr-Met variants.
+# ::file pmid_2470_8867_113.txt
+# ::date 2015-08-27T13:45:40
+# ::id pmid_2470_8867.113
+(t / test-01
+   :ARG0 (w / we)
+   :ARG1 (c / characteristic-02
+            :ARG1 (c4 / cell-line
+                      :name (n / name
+                               :op1 "IEC-6")
+                      :ARG1-of (t2 / transform-01
+                                   :ARG0 (v / variant
+                                            :mod (p / protein
+                                                    :name (n3 / name
+                                                              :op1 "Tpr-Met")))))
+            :ARG2 (g / grow-01
+                     :ARG1 c4)
+            :ARG0-of (c2 / cause-01
+                         :ARG1 (c3 / cancer)))
+   :time (n2 / next))
+
+
+# ::save-date Thu Aug 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt First, cell-counting assays were performed to determine the growth rate of each cell population.
+# ::file pmid_2470_8867_114.txt
+# ::date 2015-08-27T13:58:25
+# ::id pmid_2470_8867.114
+(p / perform-02
+      :ARG1 (a / assay-01
+            :ARG1 (c / count-01
+                  :ARG1 (c2 / cell)))
+      :purpose (d / determine-01
+            :ARG1 (r / rate-01
+                  :mod (g / grow-01
+                        :ARG1 (p2 / population
+                              :consist-of (c3 / cell)
+                              :mod (e / each)))))
+      :ord (o / ordinal-entity :value "1"))
+
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The TM-Grb2-IEC-6, TM-Shc1-IEC-6, and TM-Shc2-IEC-6 cells displayed more rapid growth than Control-IEC-6 cells, albeit to a lesser extent than Tpr-Met-IEC-6 cells (Figure <xref ref-type="fig" rid="F2">2</xref>A).
+# ::file pmid_2470_8867_115.txt
+# ::date 2015-08-27T14:11:23
+# ::id pmid_2470_8867.115
+(d / display-01
+      :ARG0 (a / and
+            :op1 (c / cell-line
+                  :name (n / name :op1 "TM-Grb2-IEC-6"))
+            :op2 (c2 / cell-line
+                  :name (n2 / name :op1 "TM-Shc1-IEC-6"))
+            :op3 (c3 / cell-line
+                  :name (n3 / name :op1 "TM-Shc2-IEC-6")))
+      :ARG1 (g / grow-01
+            :mod (r / rapid
+                  :degree (m / more)
+                  :compared-to (c4 / cell-line
+                        :name (n4 / name :op1 "Control-IEC-6"))))
+      :concession (d2 / display-01
+            :ARG0 a
+            :ARG1 (g2 / grow-01
+                  :mod (r2 / rapid
+                        :degree (l / less)
+                        :compared-to (c5 / cell-line
+                              :name (n5 / name :op1 "Tpr-Met-IEC-6")))))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f / figure :mod "2A")))
+
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Notably, TM-Shc1-IEC-6 cells exhibited accelerated growth relative to TM-Grb2-IEC-6 and TM-Shc2-IEC-6 cells, between which the doubling time did not differ significantly.
+# ::file pmid_2470_8867_116.txt
+# ::date 2015-08-27T14:27:53
+# ::id pmid_2470_8867.116
+(e / exhibit-01
+      :ARG0 (c / cell-line
+            :name (n / name :op1 "TM-Shc1-IEC-6"))
+      :ARG1 (g / grow-01
+            :ARG1-of (a / accelerate-01)
+            :ARG1-of (r / relative-05
+                  :ARG3 (a2 / and
+                        :op1 (c3 / cell-line
+                              :name (n3 / name :op1 "TM-Grb2-IEC-6")
+                              :ARG1-of (d / differ-02
+                                    :polarity "-"
+                                    :ARG2 "c2"
+                                    :ARG3 (t / time
+                                          :duration-of (d2 / double-01))
+                                    :ARG1-of (s / significant-02)))
+                        :op2 (c2 / cell-line
+                              :name (n2 / name :op1 "TM-Shc2-IEC-6")))))
+      :ARG1-of (n4 / notable-04))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The enhanced growth promoting activity of the TM-Shc1 relative to the TM-Shc2 correlates with the affinity of their respective Shc binding sites [<xref ref-type="bibr" rid="B8">8</xref>].
+# ::file pmid_2470_8867_117.txt
+# ::date 2015-08-27T14:44:54
+# ::id pmid_2470_8867.117
+(c / correlate-01
+   :ARG1 (a / activity-06
+            :ARG0 (p3 / protein
+                      :name (n / name
+                               :op1 "TM-Shc1"))
+            :ARG1-of (e / enhance-01)
+            :ARG0-of (p / promote-02
+                        :ARG1 (g / grow-01))
+            :ARG1-of (r / relative-05
+                        :ARG2 (p2 / protein
+                                  :name (n2 / name
+                                            :op1 "TM-Shc2"))))
+   :ARG2 (a2 / affinity
+             :poss (a3 / and
+                       :op1 (p6 / protein-segment
+                                :part-of p3)
+                       :op2 (p7 / protein-segment
+                                :part-of p2)
+                       :ARG2-of (b / bind-01
+                                   :ARG1 (p4 / protein
+                                             :name (n3 / name
+                                                       :op1 "Shc")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p5 / publication
+                         :ARG1-of (c2 / cite-01
+                                      :ARG2 "8"))))
+
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Typical of untransformed cells, IEC-6 cells ceased proliferation upon the establishment of cell-cell contacts [<xref ref-type="bibr" rid="B5">5</xref>,<xref ref-type="bibr" rid="B25">25</xref>].
+# ::file pmid_2470_8867_118.txt
+# ::date 2015-08-27T15:09:18
+# ::id pmid_2470_8867.118
+(c / cease-01
+      :ARG1 (p / proliferate-01
+            :ARG0 (c2 / cell-line
+                  :name (n / name :op1 "IEC-6")))
+      :time (e / establish-01
+            :ARG1 (c3 / contact-01
+                  :ARG0 (c4 / cell)
+                  :ARG1 (c5 / cell)))
+      :ARG1-of (t / typical-02
+            :ARG2 (c6 / cell
+                  :ARG1-of (t2 / transform-01 :polarity "-")))
+      :ARG1-of (d / describe-01
+            :ARG0 (p2 / publication
+                  :ARG1-of (c7 / cite-01
+                        :ARG2 (a / and :op1 "5" :op2 "25")))))
+
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As such, Control-IEC-6 cells formed a monolayer of well-organized epithelial cells upon reaching confluence (Figure <xref ref-type="fig" rid="F2">2</xref>B).
+# ::file pmid_2470_8867_119.txt
+# ::date 2015-08-27T15:20:08
+# ::id pmid_2470_8867.119
+(f / form-01
+      :ARG0 (c / cell-line
+            :name (n / name :op1 "Control-IEC-6"))
+      :ARG1 (l / layer
+            :quant "1"
+            :consist-of (c2 / cell
+                  :source (e / epithelium)
+                  :ARG1-of (o / organize-01
+                        :ARG1-of (w / well-09))))
+      :prep-as (s / such)
+      :time (r / reach-01
+            :ARG1 (c3 / confluence))
+      :ARG1-of (d / describe-01
+            :ARG2 (f2 / figure :mod "2B")))
+
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In sharp contrast, each of the oncogenic transformed IEC-6 cell populations appeared highly disorganized and grew in multiple layers at confluence (Figure <xref ref-type="fig" rid="F2">2</xref>B).
+# ::file pmid_2470_8867_120.txt
+# ::date 2015-08-27T15:28:37
+# ::id pmid_2470_8867.120
+(c / contrast-01
+      :ARG2 (a / and
+            :op1 (a2 / appear-02
+                  :ARG1 (o2 / organize-01
+                        :polarity "-"
+                        :ARG1 (p / population
+                              :consist-of (c2 / cell-line
+                                    :name (n / name :op1 "IEC-6"))
+                              :ARG0-of (c3 / cause-01
+                                    :ARG1 (c4 / cancer))
+                              :ARG1-of (t / transform-01)
+                              :mod (e / each))
+                        :ARG1-of (h / high-02)))
+            :op2 (g / grow-01
+                  :ARG1 p
+                  :manner (l / layer
+                        :quant (m / multiple))
+                  :time (c5 / confluence)))
+      :ARG1-of (s / sharp-02)
+      :ARG1-of (d / describe-01
+            :ARG2 (f / figure :mod "2B")))
+
+# ::save-date Thu Aug 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, oncogenic specific activation of Grb2- or Shc-dependent signals permits IECs to bypass contact inhibition of growth.
+# ::file pmid_2470_8867_121.txt
+# ::date 2015-08-27T15:42:31
+# ::id pmid_2470_8867.121
+(i / infer-01
+   :ARG1 (p / permit-01
+            :ARG0 (a / activate-01
+                     :ARG1 (s / signal-07
+                              :ARG0-of (d / depend-01
+                                          :ARG1 (a2 / and
+                                                    :op1 (p2 / protein
+                                                             :name (n / name
+                                                                      :op1 "Grb2"))
+                                                    :op2 (p3 / protein
+                                                             :name (n2 / name
+                                                                       :op1 "Shc")))))
+                     :ARG0-of (c / cause-01
+                                 :ARG1 (c2 / cancer))
+                     :ARG1-of (s2 / specific-02))
+            :ARG1 (b / bypass-01
+                     :ARG0 "c3"
+                     :ARG1 (i2 / inhibit-01
+                               :ARG0 (c4 / contact-01)
+                               :ARG1 (g / grow-01)))
+            :ARG2 (c3 / cell
+                      :name (n3 / name
+                                :op1 "IEC"))))
+
+
+# ::save-date Thu Aug 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To validate this in a quantitative manner, focus formation assays were performed.
+# ::file pmid_2470_8867_122.txt
+# ::date 2015-08-27T15:53:01
+# ::id pmid_2470_8867.122
+(p / perform-02
+      :ARG1 (a / assay-01
+            :ARG1 (f / form-01
+                  :ARG1 (f2 / focus)))
+      :purpose (v / validate-01
+            :ARG1 (t / this)
+            :manner (q / quantitative)))
+
+
+# ::save-date Sun Sep 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As expected [<xref ref-type="bibr" rid="B5">5</xref>], Control-IEC-6 cells failed to form foci, whereas TM-Grb2-IEC-6, TM-Shc1-IEC-6, and TM-Shc2-IEC-6 cells displayed strong focus-forming capacities, though less than that of Tpr-Met-IEC-6 cells (Figure <xref ref-type="fig" rid="F2">2</xref>C and D).
+# ::file pmid_2470_8867_123.txt
+# ::date 2015-08-27T15:57:54
+# ::id pmid_2470_8867.123
+(c / contrast-01
+      :ARG1 (f / fail-01
+            :ARG1 (c2 / cell-line
+                  :name (n / name :op1 "Control-IEC-6"))
+            :ARG2 (f2 / form-01
+                  :ARG0 c2
+                  :ARG1 (f3 / focus)))
+      :ARG2 (d / display-01
+            :ARG0 (a / and
+                  :op1 (c3 / cell-line
+                        :name (n2 / name :op1 "TM-Grb2-IEC-6"))
+                  :op2 (c4 / cell-line
+                        :name (n3 / name :op1 "TM-Shc1-IEC-6"))
+                  :op3 (c5 / cell-line
+                        :name (n4 / name :op1 "TM-Shc2-IEC-6")))
+            :ARG1 (c6 / capable-01
+                  :ARG1 a
+                  :ARG2 (f4 / form-01
+                        :ARG0 a
+                        :ARG1 (f5 / focus))
+                  :ARG1-of (s / strong-02))
+            :concession (d2 / display-01
+                  :ARG0 a
+                  :ARG1 (c7 / capable-01
+                        :ARG1 a
+                        :ARG2 f4
+                        :degree (l / less)
+                        :compared-to (c8 / cell-line
+                              :name (n5 / name :op1 "Tpr-Met-IEC-6")))))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (a2 / and
+                  :op1 (f6 / figure :mod "2C")
+                  :op2 (f7 / figure :mod "2D")))
+      :ARG1-of (e / expect-01
+            :ARG1-of (d4 / describe-01
+                  :ARG0 (p / publication
+                        :ARG0-of (c9 / cite-01 :ARG2 "5")))))
+
+
+# ::save-date Fri Sep 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The number and size of foci formed by the TM-Shc1-IEC-6 cells were markedly greater than those of the TM-Grb2-IEC-6 or TM-Shc2-IEC-6 cells (Figure <xref ref-type="fig" rid="F2">2</xref>C and D), likely reflecting their accelerated growth rate (Figure <xref ref-type="fig" rid="F2">2</xref>A).
+# ::file pmid_2470_8867_124.txt
+# ::date 2015-08-28T06:33:59
+# ::id pmid_2470_8867.124
+(g2 / great
+      :domain (a3 / and
+            :op1 (n / number
+                  :quant-of (f / focus
+                        :ARG1-of (f2 / form-01
+                              :ARG0 (c4 / cell-line
+                                    :name (n8 / name :op1 "TM-Shc1-IEC-6")))))
+            :op2 (s / size
+                  :poss f)
+            :manner (m3 / marked))
+      :compared-to (a2 / and
+            :op1 (n4 / number
+                  :quant-of (f3 / focus
+                        :ARG1-of (f4 / form-01
+                              :ARG0 (o / or
+                                    :op1 (c2 / cell-line
+                                          :name (n2 / name :op1 "TM-Grb2-IEC-6"))
+                                    :op2 (c5 / cell-line
+                                          :name (n3 / name :op1 "TM-Shc2-IEC-6"))))))
+            :op2 (s2 / size
+                  :poss f3))
+      :ARG1-of (d / describe-01
+            :ARG0 (a4 / and
+                  :op1 (f5 / figure :mod "2C")
+                  :op2 (f6 / figure :mod "2D")))
+      :ARG1-of (r2 / reflect-01
+            :ARG2 (a5 / accelerate-01
+                  :ARG1 (r3 / rate
+                        :mod (g / grow-01
+                              :ARG1 f)))
+            :ARG1-of (l / likely-01)
+            :ARG1-of (d2 / describe-01
+                  :ARG0 (f7 / figure :mod "2A")))
+      :degree (m / more))
+
+# ::save-date Tue Sep 8, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results indicate that the oncogenic engagement of Grb2- and Shc-dependent signals is sufficient to relieve contact inhibition of growth in IECs.
+# ::file pmid_2470_8867_125.txt
+# ::date 2015-08-28T09:02:27
+# ::id pmid_2470_8867.125
+(i / indicate-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG1 (s / suffice-01
+            :ARG0 (e / engage-01
+                     :ARG1 (s2 / signal-07
+                               :ARG0-of (d / depend-01
+                                           :ARG1 (a / and
+                                                    :op1 (p / protein
+                                                            :name (n / name
+                                                                     :op1 "Grb2"))
+                                                    :op2 (p2 / protein
+                                                             :name (n2 / name
+                                                                       :op1 "Shc")))))
+                     :ARG2 (c / cancer))
+            :ARG1 (r2 / relieve-01
+                      :ARG0 e
+                      :ARG1 (i2 / inhibit-01
+                                :ARG0 (c3 / contact-01)
+                                :ARG1 (g / grow-01
+                                         :location (c2 / cell
+                                                       :name (n3 / name
+                                                                 :op1 "IEC")))))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next verified whether the oncogenic activation of Grb2- or Shc-dependent signals is sufficient to confer to non-transformed IEC-6 cells the capacity to grow in the absence of anchorage to the extra-cellular matrix (ECM), by performing soft agar growth assays.
+# ::file pmid_2470_8867_127.txt
+# ::date 2015-08-29T02:24:53
+# ::id pmid_2470_8867.127
+(v / verify-01
+   :ARG0 (w / we)
+   :ARG1 (s / suffice-01
+            :mode "interrogative"
+            :ARG0 (a / activate-01
+                     :ARG1 (s2 / signal-07
+                               :ARG0-of (d / depend-01
+                                           :ARG1 (o / or
+                                                    :op1 (p / protein
+                                                            :name (n2 / name
+                                                                      :op1 "Grb2"))
+                                                    :op2 (p2 / protein
+                                                             :name (n3 / name
+                                                                       :op1 "Shc")))))
+                     :ARG0-of (c5 / cause-01
+                                  :ARG1 (c6 / cancer)))
+            :ARG1 (c2 / confer-02
+                      :ARG0 a
+                      :ARG1 (c / capable-01
+                               :ARG1 (c3 / cell-line
+                                         :name (n4 / name
+                                                   :op1 "IEC-6")
+                                         :ARG1-of (t / transform-01
+                                                     :polarity "-"))
+                               :ARG2 (g / grow-01
+                                        :ARG1 c3
+                                        :condition (a2 / absent-01
+                                                       :ARG1 (a3 / anchor-01
+                                                                 :location (m / matrix
+                                                                              :mod (e / extracellular))))))
+                      :ARG2 c3))
+   :time (n / next)
+   :manner (p3 / perform-01
+               :ARG0 w
+               :ARG1 (a4 / assay-01
+                         :ARG1 (g2 / grow-01
+                                   :condition (a5 / agar
+                                                  :ARG1-of (s3 / soft-02))))))
+
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with previous findings [<xref ref-type="bibr" rid="B5">5</xref>], Control-IEC-6 cells failed to grow in soft agar whereas Tpr-Met-IEC-6 cells grew efficiently, forming numerous large colonies (Figure <xref ref-type="fig" rid="F3">3</xref>A–C).
+# ::file pmid_2470_8867_128.txt
+# ::date 2015-08-29T02:47:46
+# ::id pmid_2470_8867.128
+(c / contrast-01
+      :ARG1 (f2 / fail-01
+            :ARG1 (c8 / cell-line
+                  :name (n5 / name :op1 "IEC-6")
+                  :ARG0-of (c5 / control-01))
+            :ARG2 (g / grow-01
+                  :ARG1 c8
+                  :location (a / agar
+                        :ARG1-of (s / soft-02))))
+      :ARG2 (g2 / grow-01
+            :ARG1 (c4 / cell-line
+                  :name (n / name :op1 "Tpr-Met-IEC-6")
+                  :ARG2-of (f3 / form-01
+                        :ARG1 (c6 / colony
+                              :mod (l / large)
+                              :quant (n4 / numerous))))
+            :ARG2-of (e2 / efficient-01))
+      :ARG1-of (c2 / consistent-01
+            :ARG2 (t / thing
+                  :ARG1-of (f / find-01)
+                  :time (p / previous))
+            :ARG1-of (d / describe-01
+                  :ARG0 (p3 / publication
+                        :ARG1-of (c7 / cite-01 :ARG2 "5"))))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (a2 / and
+                  :op1 (f4 / figure :mod "3A")
+                  :op2 (f5 / figure :mod "3B")
+                  :op3 (f6 / figure :mod "3C"))))
+
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt TM-Grb2-IEC-6, TM-Shc1-IEC-6, and TM-Shc2-IEC-6 cells also formed colonies in soft agar, but with lower efficiencies.
+# ::file pmid_2470_8867_129.txt
+# ::date 2015-08-30T00:33:57
+# ::id pmid_2470_8867.129
+(f / form-01
+      :ARG0 (a / and
+            :op1 (c6 / cell-line
+                  :name (n7 / name :op1 "TM-Grb2-IEC-6"))
+            :op2 (c7 / cell-line
+                  :name (n8 / name :op1 "TM-Shc1-IEC-6"))
+            :op3 (c8 / cell-line
+                  :name (n9 / name :op1 "TM-Shc2-IEC-6")))
+      :ARG1 (c4 / colony)
+      :location (a2 / agar
+            :ARG1-of (s / soft-02))
+      :ARG1-of (c5 / contrast-01
+            :ARG2 (e4 / efficient-01
+                  :ARG2 "f"
+                  :ARG1-of (l / low-04
+                        :degree (m2 / more))))
+      :mod (a3 / also))
+
+# ::save-date Thu Sep 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt While the three IEC-6 cell populations expressing docking-specific Tpr-Met variants formed similar numbers of colonies (Figure <xref ref-type="fig" rid="F3">3</xref>A), those produced by the TM-Shc1-IEC-6 cells were larger and displayed a different morphology from those produced by the TM-Shc2-IEC-6 and TM-Grb2-IEC-6 cells (Figure <xref ref-type="fig" rid="F3">3</xref>B and C).
+# ::file pmid_2470_8867_130.txt
+# ::date 2015-08-30T00:51:32
+# ::id pmid_2470_8867.130
+(c / contrast-01
+   :ARG1 (f / form-01
+            :ARG0 (p / population
+                     :quant "3"
+                     :mod (c2 / cell-line
+                              :name (n / name
+                                       :op1 "IEC-6"))
+                     :ARG3-of (e / express-03
+                                 :ARG2 (v / variant
+                                          :mod (p2 / protein
+                                                   :name (n2 / name
+                                                             :op1 "Tpr-Met")
+                                                   :ARG1-of (s2 / specific-02
+                                                                :ARG2 (d / dock-01))))))
+            :ARG1 (n3 / number-01
+                      :ARG1 (c3 / colony)
+                      :ARG1-of (r / resemble-01))
+            :ARG1-of (d2 / describe-01
+                         :ARG0 (f2 / figure
+                                   :mod "3A")))
+   :ARG2 (p3 / produce-01
+             :ARG0 (c4 / cell-line
+                       :name (n4 / name
+                                 :op1 "TM-Shc1-IEC-6"))
+             :ARG1 (c6 / colony
+                       :mod (l / large
+                               :degree (m / more))
+                       :ARG0-of (d3 / display-01
+                                    :ARG1 (m2 / morphology
+                                              :ARG1-of (d4 / differ-02
+                                                           :ARG2 (c7 / colony
+                                                                     :ARG1-of (p5 / produce-01
+                                                                                  :ARG0 (a / and
+                                                                                           :op1 (c5 / cell-line
+                                                                                                    :name (n6 / name
+                                                                                                              :op1 "TM-Shc2-IEC-6"))
+                                                                                           :op2 (c8 / cell-line
+                                                                                                    :name (n7 / name
+                                                                                                              :op1 "TM-Grb2-IEC-6")))))))))
+             :ARG1-of (d5 / describe-01
+                          :ARG0 (a2 / and
+                                    :op1 (f3 / figure
+                                             :mod "3B")
+                                    :op2 (f4 / figure
+                                             :mod "3C")))))
+
+
+# ::save-date Thu Sep 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Colonies formed by the TM-Shc1-IEC-6 cells were composed mainly of loosely associated cells with apparently limited cell-cell contacts, similar to Tpr-Met-IEC-6 colonies (Figure <xref ref-type="fig" rid="F3">3</xref>B).
+# ::file pmid_2470_8867_131.txt
+# ::date 2015-08-30T01:11:28
+# ::id pmid_2470_8867.131
+(c / compose-01
+      :ARG1 (c3 / colony
+            :ARG1-of (f / form-01
+                  :ARG0 (c2 / cell-line
+                        :name (n / name :op1 "TM-Shc1-IEC-6"))))
+      :ARG2 (c4 / cell
+            :ARG1-of (a / associate-01
+                  :ARG1-of (l / loose-04))
+            :ARG0-of (h / have-03
+                  :ARG1 (c5 / contact-01
+                        :ARG0 (c6 / cell)
+                        :ARG1 (c7 / cell)
+                        :ARG1-of (l2 / limit-01))
+                  :ARG1-of (a2 / appear-02)))
+      :mod (m / main)
+      :ARG1-of (r / resemble-01
+            :ARG2 (c9 / colony
+                  :mod (c10 / cell-line
+                        :name (n3 / name :op1 "Tpr-Met-IEC-6"))))
+      :ARG1-of (d / describe-01
+            :ARG0 (f2 / figure :mod "3B")))
+
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt By contrast, colonies produced by the TM-Grb2-IEC-6 or TM-Shc2-IEC-6 cells were compact and composed of tightly associated cells (Figure <xref ref-type="fig" rid="F3">3</xref>B).
+# ::file pmid_2470_8867_132.txt
+# ::date 2015-08-30T01:20:15
+# ::id pmid_2470_8867.132
+(c / contrast-01
+      :ARG2 (p / produce-01
+            :ARG0 (o / or
+                  :op1 (c3 / cell-line
+                        :name (n / name :op1 "TM-Grb2-IEC-6"))
+                  :op2 (c4 / cell-line
+                        :name (n2 / name :op1 "TM-Shc2-IEC-6")))
+            :ARG2 (c2 / colony
+                  :ARG1-of (c5 / compact-01)
+                  :ARG1-of (c6 / compose-01
+                        :ARG2 (c7 / cell
+                              :ARG1-of (a / associate-01
+                                    :ARG1-of (t / tight-05))))))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "3B")))
+
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Growth in soft agar reflects not only the capacity of cells to proliferate in the absence of ECM attachment, but also to avoid anoikis, a form of apoptosis induced upon loss of matrix attachment [<xref ref-type="bibr" rid="B32">32</xref>].
+# ::file pmid_2470_8867_133.txt
+# ::date 2015-08-30T01:24:53
+# ::id pmid_2470_8867.133
+(r / reflect-01
+      :ARG1 (g / grow-01
+            :location (a / agar
+                  :ARG1-of (s / soft-02)))
+      :ARG2 (c / capable-01
+            :ARG1 (c2 / cell)
+            :ARG2 (a2 / and
+                  :op1 (p / proliferate-01
+                        :condition (a3 / absent-01
+                              :ARG1 (a4 / attach-01
+                                    :ARG1 c2
+                                    :ARG2 (m3 / matrix
+                                          :mod (e / extracellular)))))
+                  :op2 (a5 / avoid-01
+                        :ARG1 (a6 / anoikis)
+                        :ARG1-of (m / mean-01
+                              :ARG2 (f / form
+                                    :mod (a7 / apoptosis
+                                          :ARG2-of (i / induce-01
+                                                :condition (l / lose-02
+                                                      :ARG1 (a8 / attach-01
+                                                            :ARG2 (m2 / matrix))))))))))
+      :ARG1-of (d / describe-01
+            :ARG0 (p2 / publication
+                  :ARG1-of (c3 / cite-01 :ARG2 "32"))))
+
+
+# ::save-date Thu Sep 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Anoikis assays were performed by monitoring the viability of cells seeded in the absence of serum under adherent and suspension conditions.
+# ::file pmid_2470_8867_134.txt
+# ::date 2015-08-30T01:43:03
+# ::id pmid_2470_8867.134
+(p / perform-01
+      :ARG1 (a / assay-01
+            :ARG1 (a2 / anoikis))
+      :ARG2 (m / monitor-01
+            :ARG1 (v / viable
+                  :domain (c / cell
+                        :ARG2-of (s / seed-02
+                              :condition (a3 / absent-01
+                                    :ARG1 (s2 / serum)
+                                    :condition (a4 / and
+                                          :op1 (a5 / adhere-01)
+                                          :op2 (s3 / suspend-02))))))))
+
+
+# ::save-date Thu Sep 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As expected for normal IECs [<xref ref-type="bibr" rid="B33">33</xref>,<xref ref-type="bibr" rid="B34">34</xref>], Control-IEC-6 cells displayed anoikis sensitivity under suspension culture conditions (Figure <xref ref-type="fig" rid="F3">3</xref>D).
+# ::file pmid_2470_8867_135.txt
+# ::date 2015-08-30T02:07:23
+# ::id pmid_2470_8867.135
+(d / display-01
+      :ARG0 (c / cell-line
+            :name (n / name :op1 "IEC-6")
+            :ARG0-of (c2 / control-01))
+      :ARG1 (s / sensitive-03
+            :ARG0 c
+            :ARG1 (a / anoikis))
+      :condition (c3 / culture
+            :ARG1-of (s2 / suspend-02))
+      :ARG1-of (e / expect-01
+            :topic (c4 / cell
+                  :name (n2 / name :op1 "IEC")
+                  :ARG1-of (n3 / normal-02))
+            :ARG1-of (d2 / describe-01
+                  :ARG0 (p / publication
+                        :ARG1-of (c5 / cite-01
+                              :ARG2 (a2 / and :op1 "33" :op2 "34")))))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f / figure :mod "3D")))
+
+# ::save-date Tue Jan 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, IEC-6 cells transformed by either Tpr-Met, or the Grb2 or Shc docking-specific oncoproteins, displayed potent resistance to anoikis, with more than half surviving under non-adherent conditions.
+# ::file pmid_2470_8867_136.txt
+# ::date 2015-08-30T02:13:33
+# ::id pmid_2470_8867.136
+(c / contrast-01
+   :ARG2 (d / display-01
+            :ARG0 (c2 / cell-line
+                      :wiki "-"
+                      :name (n / name
+                               :op1 "IEC-6")
+                      :ARG1-of (t / transform-01
+                                  :ARG0 (o / or
+                                           :op1 (p / protein
+                                                   :wiki "Tpr-met_fusion_protein"
+                                                   :name (n2 / name
+                                                             :op1 "Tpr-Met"))
+                                           :op2 (o4 / or
+                                                    :op1 (p2 / protein
+                                                             :wiki "GRB2"
+                                                             :name (n5 / name
+                                                                       :op1 "Grb2"))
+                                                    :op2 (p3 / protein
+                                                             :wiki "SHC1"
+                                                             :name (n6 / name
+                                                                       :op1 "Shc"))
+                                                    :ARG0-of (c5 / cause-01
+                                                                 :ARG1 (d3 / disease
+                                                                           :wiki "Cancer"
+                                                                           :name (n3 / name
+                                                                                     :op1 "cancer"))))
+                                           :mod (e / either)
+                                           :ARG1-of (s / specific-02
+                                                       :ARG2 (d2 / dock-01)))))
+            :ARG1 (r / resist-01
+                     :ARG0 c2
+                     :ARG1 (a / anoikis)
+                     :mod (p4 / potent)
+                     :mod (s2 / survive-01
+                              :ARG0 (c4 / cell
+                                        :ARG1-of (i / include-91
+                                                    :ARG2 c2
+                                                    :ARG3 (m2 / more-than
+                                                              :op1 "1/2")))
+                              :ARG1 (c3 / condition
+                                        :ARG1-of (a2 / adhere-01
+                                                     :polarity "-"))))))
+
+
+# ::save-date Fri Sep 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Likewise, the viability of these transformed cells was significantly higher than that of Control-IEC-6 cells when seeded in the absence of serum and under adherent conditions (Figure <xref ref-type="fig" rid="F3">3</xref>E).
+# ::file pmid_2470_8867_137.txt
+# ::date 2015-08-30T02:25:28
+# ::id pmid_2470_8867.137
+(h / high-02
+      :ARG1 (v / viable
+            :domain (c2 / cell
+                  :ARG1-of (t / transform-01)
+                  :mod (t2 / this)
+                  :ARG0-of (s / seed-01
+                        :condition (a / and
+                              :op1 (a2 / absent-01
+                                    :ARG1 (s2 / serum))
+                              :op2 (c5 / condition
+                                    :mod (a3 / adhere-01)))))
+            :ARG1-of (s3 / significant-02))
+      :compared-to (c3 / cell-line
+            :name (n / name :op1 "IEC-6")
+            :ARG0-of (c4 / control-01))
+      :manner (l / likewise)
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "3E"))
+      :degree (m / more))
+
+# ::save-date Wed Feb 24, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Overall, these results indicate that the oncogenic engagement of signals downstream of Grb2 or Shc is sufficient to alleviate the anchorage-dependence of growth, and to reduce sensitivity to growth factor deprivation and to anoikis in IECs.
+# ::file pmid_2470_8867_138.txt
+# ::date 2015-08-30T02:32:52
+# ::id pmid_2470_8867.138
+(i / indicate-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG1 (s / suffice-01
+            :ARG0 (e / engage-01
+                     :ARG1 (s2 / signal-07
+                               :ARG1 (o2 / or
+                                         :op1 (p / protein
+                                                 :name (n / name
+                                                          :op1 "Grb2"))
+                                         :op2 (p2 / protein
+                                                  :name (n2 / name
+                                                            :op1 "Shc")))
+                               :mod (d / downstream))
+                     :ARG2 (c / cancer))
+            :ARG1 (a2 / and
+                      :op1 (a3 / alleviate-01
+                               :ARG0 e
+                               :ARG1 (d2 / depend-01
+                                         :ARG0 (g / grow-01)
+                                         :ARG1 (a4 / anchorage)))
+                      :op2 (r2 / reduce-01
+                               :ARG0 e
+                               :ARG1 (s3 / sensitive-03
+                                         :ARG1 (a5 / and
+                                                   :op1 (d3 / deprive-01
+                                                            :ARG1 (g2 / growth-factor))
+                                                   :op2 (a6 / anoikis)
+                                                   :location (c2 / cell
+                                                                 :name (n3 / name
+                                                                           :op1 "IEC")))))))
+   :mod (o / overall))
+
+# ::save-date Fri Sep 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The above results with the docking-specific Tpr-Met-derived variants established that the oncogenic activation of either Grb2 or Shc signaling pathways was each sufficient to promote transformation of IECs, conferring upon them aberrant growth characteristics and resistance to anoikis.
+# ::file pmid_2470_8867_140.txt
+# ::date 2015-08-30T03:03:22
+# ::id pmid_2470_8867.140
+(e / establish-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :location (a / above)
+            :accompanier (v / variant
+                            :ARG1-of (d / derive-01
+                                        :ARG2 (p / protein
+                                                 :name (n / name
+                                                          :op1 "Tpr-Met")))
+                            :ARG1-of (s / specific-02
+                                        :ARG2 (d2 / dock-01))))
+   :ARG1 (s2 / suffice-01
+             :ARG0 (a2 / activate-01
+                       :ARG1 (o / or
+                                :op1 (p6 / pathway
+                                         :name (n5 / name
+                                                   :op1 "Grb2"))
+                                :op2 (p7 / pathway
+                                         :name (n6 / name
+                                                   :op1 "Shc"))
+                                :ARG0-of (s4 / signal-07))
+                       :ARG0-of (c4 / cause-01
+                                    :ARG1 (c5 / cancer)))
+             :ARG1 (p5 / promote-01
+                       :ARG0 a2
+                       :ARG1 (t2 / transform-01
+                                 :ARG1 (c / cell
+                                          :name (n4 / name
+                                                    :op1 "IEC")
+                                          :ARG2-of (c2 / confer-02
+                                                       :ARG1 (a3 / and
+                                                                 :op1 (c3 / characteristic-02
+                                                                          :ARG1 c
+                                                                          :ARG2 (g / grow-01
+                                                                                   :mod (a4 / aberrant)))
+                                                                 :op2 (r2 / resist-01
+                                                                          :ARG0 c
+                                                                          :ARG1 (a5 / anoikis)))))))
+             :mod (e3 / each)))
+
+# ::save-date Fri Sep 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next sought to determine whether signaling pathways downstream of these adaptor proteins were required for the oncogenic potential of Met in IECs.
+# ::file pmid_2470_8867_141.txt
+# ::date 2015-08-30T03:46:12
+# ::id pmid_2470_8867.141
+(s / seek-01
+   :ARG0 (w / we)
+   :ARG1 (d / determine-01
+            :ARG0 w
+            :ARG1 (r / require-01
+                     :mode "interrogative"
+                     :ARG0 (p3 / potential
+                               :poss (p4 / protein
+                                         :name (n2 / name
+                                                   :op1 "Met"))
+                               :location (c2 / cell
+                                             :name (n3 / name
+                                                       :op1 "IEC"))
+                               :ARG0-of (c3 / cause-01
+                                            :ARG1 (c4 / cancer)))
+                     :ARG1 (p / pathway
+                              :ARG0-of (s2 / signal-07)
+                              :mod (d2 / downstream)
+                              :poss (p2 / protein
+                                        :mod (t / this)
+                                        :ARG0-of (a / adapt-01)))))
+   :time (n / next))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The impact of silencing the expression of Grb2 or Shc on the features of the Tpr-Met-IEC-6 cells was evaluated.
+# ::file pmid_2470_8867_142.txt
+# ::date 2015-08-30T04:35:55
+# ::id pmid_2470_8867.142
+(e / evaluate-01
+   :ARG1 (i / impact-01
+            :ARG0 (s / silence-01
+                     :ARG1 (e2 / express-03
+                               :ARG2 (o / or
+                                        :op1 (p / protein
+                                                :name (n / name
+                                                         :op1 "Grb2"))
+                                        :op2 (p2 / protein
+                                                 :name (n2 / name
+                                                           :op1 "Shc")))))
+            :ARG1 (f / feature-01
+                     :ARG1 (c / cell-line
+                              :name (n3 / name
+                                        :op1 "IEC-6")
+                              :ARG3-of (e3 / express-03
+                                           :ARG2 (p3 / protein
+                                                     :name (n4 / name
+                                                               :op1 "Tpr-Met")))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Stable populations of Tpr-Met-IEC-6 cells displaying marked and selective knockdown of Grb2 (TM-shGrb2) or Shc (TM-shShc) were generated using shRNAs.
+# ::file pmid_2470_8867_143.txt
+# ::date 2015-08-30T04:39:21
+# ::id pmid_2470_8867.143
+(g / generate-01
+   :ARG1 (p / population
+            :mod (c / cell-line
+                    :name (n2 / name
+                              :op1 "Tpr-Met-IEC-6")
+                    :ARG1-of (m4 / mean-01
+                                 :ARG2 (a / and
+                                          :op1 (c2 / cell-line
+                                                   :name (n5 / name
+                                                             :op1 "TM-shGrb2")
+                                                   :ARG0-of (d / display-01
+                                                               :ARG1 (k / knock-down-02
+                                                                        :ARG1 (p3 / protein
+                                                                                  :name (n4 / name
+                                                                                            :op1 "Grb2"))
+                                                                        :ARG2-of (m3 / mark-02
+                                                                                     :ARG2 k2)
+                                                                        :mod (s2 / selective))))
+                                          :op2 (c3 / cell-line
+                                                   :name (n7 / name
+                                                             :op1 "TM-shShc")
+                                                   :ARG0-of (d2 / display-01
+                                                                :ARG1 (k2 / knock-down-02
+                                                                          :ARG1 (p5 / protein
+                                                                                    :name (n6 / name
+                                                                                              :op1 "Shc"))
+                                                                          :mod s2))))))
+            :ARG1-of (s / stable-02))
+   :ARG2-of (u / use-01
+               :ARG1 (n3 / nucleic-acid
+                         :name (n / name
+                                  :op1 "shRNA"))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As demonstrated by IB analyses (Figure <xref ref-type="fig" rid="F4">4</xref>A), Grb2 and Shc (all ShcA isoforms) protein levels were selectively reduced by more than 60% in TM-shGrb2 and TM-shShc cell populations, respectively, compared to Tpr-Met-IEC-6 cells expressing a non-targeting shRNA (TM-shCTRL).
+# ::file pmid_2470_8867_144.txt
+# ::date 2015-08-30T04:57:14
+# ::id pmid_2470_8867.144
+(r / reduce-01
+   :ARG1 (l / level
+            :quant-of (a / and
+                         :op1 (p2 / protein
+                                  :name (n / name
+                                           :op1 "Grb2"))
+                         :op2 (p3 / protein
+                                  :name (n2 / name
+                                            :op1 "Shc"))
+                         :ARG1-of (m / mean-01
+                                     :ARG2 (i / isoform
+                                              :mod (p4 / protein
+                                                       :name (n3 / name
+                                                                 :op1 "ShcA"))
+                                              :mod (a2 / all)))))
+   :ARG2 (m2 / more-than
+             :op2 (p5 / percentage-entity
+                      :value "60"))
+   :mod (s / selective)
+   :location (p / population
+                :mod (r2 / respective)
+                :mod (c3 / cell-line
+                         :name (n11 / name
+                                    :op1 "TM-shGrb2"))
+                :mod (c4 / cell-line
+                         :name (n12 / name
+                                    :op1 "TM-shShc")))
+   :compared-to (c / cell-line
+                   :name (n6 / name
+                             :op1 "Tpr-Met-IEC-6")
+                   :ARG3-of (e3 / express-03
+                                :ARG2 (n4 / nucleic-acid
+                                          :name (n9 / name
+                                                    :op1 "shRNA")
+                                          :ARG0-of (t / target-01
+                                                      :polarity "-")))
+                   :ARG1-of (m3 / mean-01
+                                :ARG2 (c2 / cell-line
+                                          :name (n8 / name
+                                                    :op1 "TM-shCTRL"))))
+   :ARG1-of (d / demonstrate-01
+               :ARG0 (a3 / analyze-01
+                         :mod (i2 / immunoblot-01))
+               :ARG1-of (d2 / describe-01
+                            :ARG0 (f / figure
+                                     :mod "4A"))))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Protein levels of Tpr-Met and actin remained equivalent amongst all these cell populations.
+# ::file pmid_2470_8867_145.txt
+# ::date 2015-08-30T04:58:42
+# ::id pmid_2470_8867.145
+(r / remain-01
+   :ARG1 (a / and
+            :op1 (l / level
+                    :quant-of (p5 / protein
+                                  :name (n3 / name
+                                            :op1 "Tpr-Met")))
+            :op2 (l2 / level
+                     :quant-of (p6 / protein
+                                   :name (n4 / name
+                                             :op1 "actin"))))
+   :ARG3 (e / equal-01)
+   :location (p4 / population
+                 :mod (c / cell)
+                 :mod (t / this)
+                 :mod (a2 / all)))
+
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Phase contrast microscopy revealed that the TM-shGrb2 cells exhibited a partial reversal of the transformed morphology, relative to TM-shCTRL cells, characterized by a decrease in cell refractility and an increase in cell spreading (Figure <xref ref-type="fig" rid="F4">4</xref>B).
+# ::file pmid_2470_8867_146.txt
+# ::date 2015-08-30T05:06:31
+# ::id pmid_2470_8867.146
+(r / reveal-01
+      :ARG0 (m2 / microscopy
+            :mod (c2 / contrast-01
+                  :ARG1 (p / phase)))
+      :ARG1 (e / exhibit-01
+            :ARG0 (c6 / cell-line
+                  :name (n4 / name :op1 "TM-shGrb2")
+                  :ARG1-of (r3 / relative-05
+                        :ARG3 (c / cell-line
+                              :name (n / name :op1 "TM-shCTRL"))))
+            :ARG1 (r2 / reverse-01
+                  :ARG1 (t / transform-01
+                        :ARG1 (m / morphology))
+                  :degree (p2 / part)
+                  :ARG1-of (c3 / characterize-01
+                        :ARG2 (a / and
+                              :op1 (d / decrease-01
+                                    :ARG1 (r4 / refractility
+                                          :mod (c4 / cell)))
+                              :op2 (i / increase-01
+                                    :ARG1 (s / spread-02
+                                          :ARG1 c4))))))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure :mod "4B")))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, the TM-shShc cells maintained the transformed morphology, and even adopted a slightly more elongated and spindle-shaped appearance than the control TM-shCTRL cells.
+# ::file pmid_2470_8867_147.txt
+# ::date 2015-08-30T05:10:33
+# ::id pmid_2470_8867.147
+(c / contrast-01
+      :ARG2 (a / and
+            :op1 (m / maintain-01
+                  :ARG0 (c3 / cell-line
+                        :name (n2 / name :op1 "TM-shShc"))
+                  :ARG1 (t / transform-01
+                        :ARG1 (m2 / morphology)))
+            :op2 (a2 / adopt-01
+                  :ARG0 (c2 / cell)
+                  :ARG1 (a3 / appear-02
+                        :ARG1-of (e3 / elongate-01)
+                        :ARG1-of (s / shape-01
+                              :mod (s2 / spindle))
+                        :mod (s3 / slight)
+                        :degree (m3 / more)
+                        :compared-to (c5 / cell-line
+                              :name (n3 / name :op1 "TM-shCTRL")
+                              :ARG0-of (c6 / control-01)))
+                  :mod (e2 / even))))
+
+# ::save-date Fri Sep 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Concordant with these morphological changes, E-cadherin protein levels were enhanced in TM-shGrb2 cells and reduced in TM-shShc cells, when compared to TM-shCTRL cells (Figure <xref ref-type="fig" rid="F4">4</xref>C and D).
+# ::file pmid_2470_8867_148.txt
+# ::date 2015-08-30T05:34:54
+# ::id pmid_2470_8867.148
+(a / and
+   :op1 (e / enhance-01
+           :ARG1 (l / level
+                    :quant-of (p / protein
+                                 :name (n / name
+                                          :op1 "E-cadherin")))
+           :location (c5 / cell-line
+                         :name (n5 / name
+                                   :op1 "TM-shGrb2")))
+   :op2 (r / reduce-01
+           :ARG1 l
+           :location (c / cell-line
+                        :name (n2 / name
+                                  :op1 "TM-shShc")))
+   :ARG1-of (a2 / accord-02
+                :ARG2 (c4 / change-01
+                          :ARG1 (m / morphology)
+                          :mod (t / this)))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "4C")
+                         :op2 (f2 / figure
+                                  :mod "4D")))
+   :compared-to (c2 / cell-line
+                    :name (n3 / name
+                              :op1 "TM-shCTRL")))
+
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Growth and survival characteristics of these cells were then evaluated in cell-count and anoikis assays, respectively.
+# ::file pmid_2470_8867_149.txt
+# ::date 2015-08-30T05:43:36
+# ::id pmid_2470_8867.149
+(e / evaluate-01
+      :ARG1 (c / characteristic-02
+            :ARG1 (c2 / cell
+                  :mod (t / this))
+            :ARG2 (a / and
+                  :op1 (g / grow-01
+                        :ARG1 c2)
+                  :op2 (s / survive-01
+                        :ARG0 c2)))
+      :time (t2 / then)
+      :manner (a2 / and
+            :op1 (a5 / assay-01
+                  :ARG1 (c3 / count-02
+                        :ARG1 (c4 / cell)))
+            :op2 (a3 / assay-01
+                  :ARG1 (a4 / anoikis))
+            :mod (r / respective)))
+
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt While the TM-shGrb2 cells displayed similar growth capacity to TM-shCTRL cells, growth of the TM-shShc cells was observed to decrease in a time-dependent manner, reaching significant inhibition (37.67 ± 5.32%) 3 days after seeding (Figure <xref ref-type="fig" rid="F4">4</xref>E).
+# ::file pmid_2470_8867_150.txt
+# ::date 2015-08-30T05:48:40
+# ::id pmid_2470_8867.150
+(h / have-concession-91
+      :ARG1 (d2 / display-01
+            :ARG0 (c6 / cell-line
+                  :name (n4 / name :op1 "TM-shGrb2"))
+            :ARG1 (c2 / capacity
+                  :domain (g / grow-01)
+                  :ARG1-of (c3 / comparable-03
+                        :ARG2 (c / cell-line
+                              :name (n / name :op1 "TM-shCTRL")))))
+      :ARG2 (o / observe-01
+            :ARG1 (g2 / grow-01
+                  :ARG1 (c4 / cell-line
+                        :name (n2 / name :op1 "TM-shShc"))
+                  :ARG1-of (d3 / decrease-01
+                        :manner (d4 / depend-01
+                              :ARG1 (t2 / time)))
+                  :ARG0-of (r2 / reach-01
+                        :ARG1 (i / inhibit-01
+                              :ARG1-of (s / significant-02)
+                              :mod (p5 / percentage-entity
+                                    :value (v / value-interval :op1 "37.67" :op2 "5.32"))
+                              :time (a2 / after
+                                    :op1 (t3 / temporal-quantity
+                                          :quant "3"
+                                          :unit (d5 / day)
+                                          :time (a / after
+                                                :op1 (s2 / seed-01))))))))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "4E")))
+
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The TM-shGrb2 cells displayed enhanced anoikis sensitivity when compared to the TM-shCTRL and TM-shShc cells, between which no difference in survival in suspension was observed (Figure <xref ref-type="fig" rid="F4">4</xref>F).
+# ::file pmid_2470_8867_151.txt
+# ::date 2015-08-30T06:13:53
+# ::id pmid_2470_8867.151
+(d / display-01
+      :ARG0 (c4 / cell-line
+            :name (n4 / name :op1 "TM-shGrb2"))
+      :ARG1 (s / sensitive-03
+            :ARG0 c4
+            :ARG1 (a / anoikis)
+            :ARG1-of (e2 / enhance-01))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f / figure :mod "4F"))
+      :time (c3 / compare-01
+            :ARG1 c4
+            :ARG2 (a3 / and
+                  :op1 (c / cell-line
+                        :name (n / name :op1 "TM-shCTRL"))
+                  :op2 (c5 / cell-line
+                        :name (n5 / name :op1 "TM-shShc"))
+                  :location-of (o / observe-01
+                        :ARG1 (d2 / differ-02
+                              :polarity "-"
+                              :ARG3 (s2 / survive-01
+                                    :ARG1 (s3 / suspend-02)))))))
+
+
+# ::save-date Fri Sep 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F4">4</xref>G, no significant difference in cell viability was observed between the TM-shGrb2, TM-shShc, and TM-shCTRL cells 18 hours following seeding in the absence of serum under adherent conditions (Figure <xref ref-type="fig" rid="F4">4</xref>G).
+# ::file pmid_2470_8867_152.txt
+# ::date 2015-08-30T06:41:00
+# ::id pmid_2470_8867.152
+(o / observe-01
+      :ARG1 (d / differ-02
+            :polarity "-"
+            :ARG1 (a3 / and
+                  :op1 (c5 / cell-line
+                        :name (n3 / name :op1 "TM-shGrb2"))
+                  :op2 (c6 / cell-line
+                        :name (n5 / name :op1 "TM-shCTRL"))
+                  :op3 (c7 / cell-line
+                        :name (n6 / name :op1 "TM-shShc")))
+            :ARG3 (v / viable
+                  :domain (c / cell))
+            :ARG1-of (s / significant-02))
+      :duration (t2 / temporal-quantity
+            :quant "18"
+            :unit (h2 / hour)
+            :ARG1-of (f / follow-01
+                  :ARG2 (s2 / seed-02
+                        :condition (a / absent-01
+                              :ARG1 (s3 / serum)
+                              :condition (a2 / adhere-01)))))
+      :ARG1-of (s4 / show-01
+            :location (f2 / figure :mod "4G"))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f3 / figure :mod "4G")))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Together, these results suggest that signals downstream of Grb2 and Shc proteins are required for non-overlapping functions promoted by the oncogenic Met receptor in IECs.
+# ::file pmid_2470_8867_153.txt
+# ::date 2015-08-30T06:51:58
+# ::id pmid_2470_8867.153
+(s / suggest-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this)
+            :mod (t3 / together))
+   :ARG1 (r2 / require-01
+             :ARG0 (f / function-01
+                      :ARG1-of (p3 / promote-01
+                                   :ARG0 (r5 / receptor
+                                             :name (n5 / name
+                                                       :op1 "Met"))
+                                   :location (c2 / cell
+                                                 :name (n4 / name
+                                                           :op1 "IEC")))
+                      :ARG0-of (o / overlap-01
+                                  :polarity "-"))
+             :ARG1 (s2 / signal-07
+                       :location (r4 / relative-position
+                                     :op1 (a / and
+                                             :op1 (p / protein
+                                                     :name (n / name
+                                                              :op1 "Grb2"))
+                                             :op2 (p2 / protein
+                                                      :name (n2 / name
+                                                                :op1 "Shc")))
+                                     :direction (d / downstream)))))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The Grb2 and Shc adaptor proteins are known to couple RTKs, such as the Met receptor, to the Ras/MAPK and PI3K/Akt signaling pathways [<xref ref-type="bibr" rid="B28">28</xref>-<xref ref-type="bibr" rid="B30">30</xref>].
+# ::file pmid_2470_8867_155.txt
+# ::date 2015-08-30T07:12:25
+# ::id pmid_2470_8867.155
+(k / know-02
+   :ARG1 (a5 / and
+             :op1 (p3 / protein
+                      :name (n2 / name
+                                :op1 "Grb2"))
+             :op2 (p4 / protein
+                      :name (n3 / name
+                                :op1 "Shc"))
+             :ARG0-of (a6 / adapt-01))
+   :ARG3 (c / couple-01
+            :ARG0 a5
+            :ARG1 (e / enzyme
+                     :name (n4 / name
+                               :op1 "RTK")
+                     :example (r2 / receptor
+                                  :name (n6 / name
+                                            :op1 "Met")))
+            :ARG2 (a2 / and
+                      :op1 (p6 / pathway
+                               :name (n5 / name
+                                         :op1 "Ras/MAPK"))
+                      :op2 (p7 / pathway
+                               :name (n7 / name
+                                         :op1 "PI3K/Akt"))
+                      :ARG0-of (s2 / signal-07)))
+   :ARG1-of (d / describe-01
+               :ARG0 (p8 / publication
+                         :ARG1-of (c2 / cite-01
+                                      :ARG2 (a4 / and
+                                                :op1 "28"
+                                                :op2 "30")))))
+
+# ::save-date Fri Sep 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The Ras/MAPK and PI3K/Akt pathways are important regulators of RTK-mediated epithelial cell transformation, but their actions are cell type-specific [<xref ref-type="bibr" rid="B31">31</xref>].
+# ::file pmid_2470_8867_156.txt
+# ::date 2015-08-30T07:27:05
+# ::id pmid_2470_8867.156
+(c / contrast-01
+   :ARG1 (r2 / regulate-01
+             :ARG0 (a / and
+                      :op1 (p2 / pathway
+                               :name (n2 / name
+                                         :op1 "Ras/MAPK"))
+                      :op2 (p3 / pathway
+                               :name (n3 / name
+                                         :op1 "PI3K/Akt")))
+             :ARG1 (t / transform-01
+                      :ARG1 (c2 / cell
+                                :part-of (e / epithelium))
+                      :ARG1-of (m / mediate-01
+                                  :ARG0 (e2 / enzyme
+                                            :name (n4 / name
+                                                      :op1 "RTK"))))
+             :mod (i / important))
+   :ARG2 (a2 / act-02
+             :ARG0 a
+             :ARG1-of (s / specific-02
+                         :ARG2 (t3 / type
+                                   :mod (c3 / cell))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p4 / publication
+                         :ARG1-of (c4 / cite-01
+                                      :ARG2 "31"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To define the role of these signaling pathways in IEC transformation, we first compared their activation status in IEC-6 cells transformed by the Tpr-Met, TM-Grb2, TM-Shc1, and TM-Shc2 oncoproteins, to that one in non-transformed Control-IEC-6 cells.
+# ::file pmid_2470_8867_157.txt
+# ::date 2015-08-30T07:34:06
+# ::id pmid_2470_8867.157
+(c / compare-01
+   :ARG0 (w / we)
+   :ARG1 (s3 / status
+             :mod (a3 / activate-01)
+             :location (c3 / cell-line
+                           :name (n2 / name
+                                     :op1 "IEC-6")
+                           :ARG1-of (t4 / transform-01
+                                        :ARG0 (a2 / and
+                                                  :op1 (p2 / protein
+                                                           :name (n3 / name
+                                                                     :op1 "Tpr-Met"))
+                                                  :op2 (p3 / protein
+                                                           :name (n4 / name
+                                                                     :op1 "TM-Grb2"))
+                                                  :op3 (p4 / protein
+                                                           :name (n5 / name
+                                                                     :op1 "TM-Shc1"))
+                                                  :op4 (p5 / protein
+                                                           :name (n6 / name
+                                                                     :op1 "TM-Shc2"))
+                                                  :ARG0-of (c5 / cause-01
+                                                               :ARG1 (d2 / disease
+                                                                         :wiki "Cancer"
+                                                                         :name (n8 / name
+                                                                                   :op1 "cancer"))))))
+             :poss "p")
+   :ARG2 (s4 / status
+             :mod (t3 / that)
+             :location (c4 / cell-line
+                           :name (n7 / name
+                                     :op1 "Control-IEC-6")
+                           :ARG1-of (t6 / transform-01
+                                        :polarity "-"))
+             :mod a3
+             :poss "p")
+   :time (f / first)
+   :purpose (d / define-01
+               :ARG0 w
+               :ARG1 (r / role
+                        :poss (p / pathway
+                                 :ARG1-of (s / signal-07)
+                                 :mod (t / this))
+                        :purpose (t2 / transform-01
+                                     :ARG1 (c2 / cell
+                                               :name (n / name
+                                                        :op1 "IEC"))))))
+
+# ::save-date Fri Sep 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The phosphorylation/activation levels of the downstream effectors of MEK and PI3K, Erk1/2 and Akt, respectively, were assessed by IB analyses of lysates prepared from serum-starved IEC-6 cells.
+# ::file pmid_2470_8867_158.txt
+# ::date 2015-08-30T07:55:41
+# ::id pmid_2470_8867.158
+(a / assess-01
+   :ARG1 (l / level
+            :degree-of (s / slash
+                          :op1 (p2 / phosphorylate-01
+                                   :ARG1 (a3 / and
+                                             :op1 (e / enzyme
+                                                     :name (n2 / name
+                                                               :op1 "MEK"))
+                                             :op2 (e3 / enzyme
+                                                      :name (n3 / name
+                                                                :op1 "PI3K"))
+                                             :op3 (e4 / enzyme
+                                                      :name (n4 / name
+                                                                :op1 "Erk1/2"))
+                                             :op4 (e5 / enzyme
+                                                      :name (n5 / name
+                                                                :op1 "Akt"))
+                                             :mod (e2 / effector
+                                                      :mod (d2 / downstream))
+                                             :mod (r / respective)))
+                          :op2 (a2 / activate-01
+                                   :ARG1 a3)))
+   :manner (a4 / analyze-01
+               :ARG1 (l2 / lysate
+                         :ARG1-of (p / prepare-01
+                                     :ARG2 (c / cell-line
+                                              :name (n6 / name
+                                                        :op1 "IEC-6")
+                                              :ARG1-of (s2 / starve-01
+                                                           :ARG2 (s3 / serum)))))
+               :mod (i / immunoblot-01)))
+
+# ::save-date Fri Sep 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Phosphorylation levels of neither Erk1/2 nor Akt were elevated in Tpr-Met-IEC-6, TM-Grb2-IEC-6, TM-Shc1-IEC-6, or TM-Shc2-IEC-6 cells, relative to Control-IEC-6 cells (Figure <xref ref-type="fig" rid="F5">5</xref>A).
+# ::file pmid_2470_8867_159.txt
+# ::date 2015-08-30T08:05:47
+# ::id pmid_2470_8867.159
+(e / elevate-01
+   :polarity "-"
+   :ARG1 (l / level
+            :degree-of (p2 / phosphorylate-01
+                           :ARG1 (a / and
+                                    :op1 (e2 / enzyme
+                                             :name (n / name
+                                                      :op1 "Erk1/2"))
+                                    :op2 (e3 / enzyme
+                                             :name (n2 / name
+                                                       :op1 "Akt"))))
+            :location (o / or
+                         :op1 (c3 / cell-line
+                                  :name (n9 / name
+                                            :op1 "Tpr-Met-IEC-6"))
+                         :op2 (c4 / cell-line
+                                  :name (n10 / name
+                                             :op1 "Tpr-Grb2-IEC-6"))
+                         :op3 (c5 / cell-line
+                                  :name (n11 / name
+                                             :op1 "Tpr-Shc1-IEC-6"))
+                         :op4 (c6 / cell-line
+                                  :name (n12 / name
+                                             :op1 "Tpr-Shc2-IEC-6"))))
+   :ARG1-of (r / relative-05
+               :ARG3 (c / cell-line
+                        :name (n8 / name
+                                  :op1 "Control-IEC-6")))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5A")))
+
+# ::save-date Fri Sep 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Both Erk2 and Akt protein levels were comparable in all IEC-6 cell populations.
+# ::file pmid_2470_8867_160.txt
+# ::date 2015-08-30T08:27:59
+# ::id pmid_2470_8867.160
+(c / comparable-03
+   :ARG1 (l / level
+            :quant-of (p2 / protein
+                          :name (n / name
+                                   :op1 "Erk2")))
+   :ARG2 (l2 / level
+             :quant-of (p / protein
+                          :name (n2 / name
+                                    :op1 "Akt")))
+   :mod (b / both)
+   :location (p3 / population
+                 :mod (c2 / cell-line
+                          :name (n3 / name
+                                    :op1 "IEC-6"))
+                 :mod (a / all)))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A similar trend of Erk1/2 and Akt phosphorylation was observed in cells maintained in the presence of serum (data not shown).
+# ::file pmid_2470_8867_161.txt
+# ::date 2015-08-30T08:30:54
+# ::id pmid_2470_8867.161
+(o / observe-01
+   :ARG1 (t / trend-01
+            :ARG1 (p3 / phosphorylate-01
+                      :ARG1 (a2 / and
+                                :op1 (e / enzyme
+                                        :name (n / name
+                                                 :op1 "Erk1/2"))
+                                :op2 (e2 / enzyme
+                                         :name (n2 / name
+                                                   :op1 "Akt"))))
+            :ARG1-of (r2 / resemble-01))
+   :location (c / cell
+                :ARG1-of (m / maintain-01
+                            :condition (p2 / present-02
+                                           :ARG1 (s / serum))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (d3 / data
+                          :ARG1-of (s3 / show-01
+                                       :polarity "-"))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The lack of evidence for Erk1/2 and Akt activation in IEC-6 cells stably expressing the constitutively activated form of the Met receptor, or the Grb2 and Shc docking-specific oncoproteins, is consistent with both the Ras/MAPK and PI3K/Akt pathways being subject to negative feedback mechanisms [<xref ref-type="bibr" rid="B35">35</xref>].
+# ::file pmid_2470_8867_162.txt
+# ::date 2015-08-30T08:36:15
+# ::id pmid_2470_8867.162
+(c / consistent-01
+   :ARG1 (l / lack-01
+            :ARG1 (e / evidence-01
+                     :ARG1 (a / activate-01
+                              :ARG1 (a2 / and
+                                        :op1 (e2 / enzyme
+                                                 :name (n2 / name
+                                                           :op1 "Erk1/2"))
+                                        :op2 (e3 / enzyme
+                                                 :name (n3 / name
+                                                           :op1 "Akt")))
+                              :location (c2 / cell-line
+                                            :name (n4 / name
+                                                      :op1 "IEC-6")
+                                            :ARG3-of (e4 / express-03
+                                                         :ARG2 (o2 / or
+                                                                   :op1 (r / receptor
+                                                                           :name (n6 / name
+                                                                                     :op1 "Met")
+                                                                           :ARG1-of (a6 / activate-01
+                                                                                        :mod (c5 / constitutive)))
+                                                                   :op2 (a4 / and
+                                                                            :op1 (p4 / protein
+                                                                                     :name (n / name
+                                                                                              :op1 "Grb2"))
+                                                                            :op2 (p5 / protein
+                                                                                     :name (n5 / name
+                                                                                               :op1 "Shc"))
+                                                                            :ARG1-of (s2 / specific-02
+                                                                                         :ARG2 (d / dock-01))
+                                                                            :ARG0-of (c3 / cause-01
+                                                                                         :ARG1 (d3 / disease
+                                                                                                   :wiki "Cancer"
+                                                                                                   :name (n10 / name
+                                                                                                              :op1 "cancer")))))
+                                                         :ARG1-of (s / stable-02))))))
+   :ARG2 (a5 / and
+             :op1 (p / pathway
+                     :name (n7 / name
+                               :op1 "Ras/MAPK"))
+             :op2 (p2 / pathway
+                      :name (n8 / name
+                                :op1 "PI3K/Akt"))
+             :ARG1-of (s3 / subject-01
+                          :ARG2 (m / mechanism
+                                   :mod (f2 / feedback
+                                            :ARG0-of (n9 / negative-03))))
+             :mod (b / both))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p3 / publication
+                          :ARG1-of (c4 / cite-01
+                                       :ARG2 "35"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt It cannot be explained as merely a cell type–specific event, since similarly stable expression of these oncoproteins in fibroblasts failed to promote Erk1/2 or Akt activation [<xref ref-type="bibr" rid="B36">36</xref>] and unpublished observation].
+# ::file pmid_2470_8867_163.txt
+# ::date 2015-08-31T23:38:53
+# ::id pmid_2470_8867.163
+(p2 / possible-01
+    :polarity "-"
+    :ARG1 (e / explain-01
+             :ARG1 (i / it)
+             :manner (e2 / event
+                         :ARG1-of (s / specific-02
+                                     :ARG2 (t / type
+                                              :mod (c / cell))
+                                     :degree (m / mere))))
+    :ARG1-of (c2 / cause-01
+                 :ARG0 (f / fail-01
+                          :ARG1 (e3 / express-03
+                                    :ARG2 (p / protein
+                                             :ARG0-of (c3 / cause-01
+                                                          :ARG1 (c4 / cancer))
+                                             :mod (t2 / this))
+                                    :ARG3 (f2 / fibroblast)
+                                    :ARG1-of (s2 / stable-03
+                                                 :ARG1-of (r / resemble-01)))
+                          :ARG2 (p3 / promote-01
+                                    :ARG0 e3
+                                    :ARG1 (a / activate-01
+                                             :ARG1 (o / or
+                                                      :op1 (s3 / slash
+                                                               :op1 (e6 / enzyme
+                                                                        :name (n / name
+                                                                                 :op1 "Erk1"))
+                                                               :op2 (e5 / enzyme
+                                                                        :name (n2 / name
+                                                                                  :op1 "Erk2")))
+                                                      :op2 (e4 / enzyme
+                                                               :name (n3 / name
+                                                                         :op1 "Akt")))))))
+    :ARG1-of (d / describe-01
+                :ARG0 (a2 / and
+                          :op1 (p4 / publication
+                                   :ARG1-of (c5 / cite-01
+                                                :ARG2 "36"))
+                          :op2 (t3 / thing
+                                   :ARG1-of (o2 / observe-01)
+                                   :ARG1-of (p5 / publish-01
+                                                :polarity "-")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next investigated whether, even at the low levels observed, MEK or PI3K activities were implicated in the induction of transformation features in IEC-6 cells by the Tpr-Met, TM-Grb2, TM-Shc1, or TM-Shc2 oncoproteins.
+# ::file pmid_2470_8867_164.txt
+# ::date 2015-08-31T23:48:44
+# ::id pmid_2470_8867.164
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (i2 / implicate-01
+             :mode "interrogative"
+             :ARG1 (a / activity-06
+                      :ARG0 (o / or
+                               :op1 (e / enzyme
+                                       :name (n / name
+                                                :op1 "MEK"))
+                               :op2 (e2 / enzyme
+                                        :name (n3 / name
+                                                  :op1 "PI3K"))))
+             :ARG2 (i3 / induce-01
+                       :ARG2 (f / feature
+                                :mod (t / transform-01
+                                        :ARG0 (o2 / or
+                                                  :op1 (p / protein
+                                                          :name (n5 / name
+                                                                    :op1 "Tpr-Met"))
+                                                  :op2 (p2 / protein
+                                                           :name (n6 / name
+                                                                     :op1 "TM-Grb2"))
+                                                  :op3 (p3 / protein
+                                                           :name (n7 / name
+                                                                     :op1 "TM-Shc1"))
+                                                  :op4 (p4 / protein
+                                                           :name (n8 / name
+                                                                     :op1 "TM-Shc2"))
+                                                  :ARG0-of (c2 / cause-01
+                                                               :ARG1 (c3 / cancer)))
+                                        :ARG1 (c / cell-line
+                                                 :name (n4 / name
+                                                           :op1 "IEC-6")))))
+             :condition (l / level
+                           :ARG1-of (l2 / low-04)
+                           :ARG1-of (o3 / observe-01)
+                           :mod (e3 / even)))
+   :time (n2 / next))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cells were treated with vehicle (DMSO), 10 μM U0126 (a MEK1/2 inhibitor), 10 μM LY294002 (a PI3K inhibitor), or a combination of both inhibitors, and their morphology was examined by phase contrast microscopy, following 24 (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>) and 48 hours of treatment (Figure <xref ref-type="fig" rid="F5">5</xref>B).
+# ::file pmid_2470_8867_165.txt
+# ::date 2015-08-31T23:57:07
+# ::id pmid_2470_8867.165
+(a / and
+   :op1 (t3 / treat-04
+            :ARG1 (c / cell)
+            :ARG2 (o / or
+                     :op1 (v / vehicle
+                             :mod (s2 / small-molecule
+                                      :name (n2 / name
+                                                :op1 "DMSO")))
+                     :op2 (s / small-molecule
+                             :name (n / name
+                                      :op1 "U0126")
+                             :quant (c2 / concentration-quantity
+                                        :quant "10"
+                                        :unit (m / micromolar))
+                             :ARG0-of (i2 / inhibit-01
+                                          :ARG1 (s3 / slash
+                                                    :op1 (e / enzyme
+                                                            :name (n3 / name
+                                                                      :op1 "MEK1"))
+                                                    :op2 (e2 / enzyme
+                                                             :name (n4 / name
+                                                                       :op1 "MEK2")))))
+                     :op3 (s4 / small-molecule
+                              :name (n5 / name
+                                        :op1 "LY294002")
+                              :quant c2
+                              :ARG0-of (i3 / inhibit-01
+                                           :ARG1 (p2 / protein-family
+                                                     :name (n6 / name
+                                                               :op1 "PI3K"))))
+                     :op4 (c3 / combine-01
+                              :ARG1 s
+                              :ARG2 s4
+                              :mod (b / both))))
+   :op2 (e4 / examine-01
+            :ARG1 (m2 / morphology
+                      :poss c)
+            :manner (m3 / microscopy
+                        :mod (c4 / contrast-01
+                                 :ARG1 (p / phase)))
+            :time (a2 / and
+                      :op1 (a3 / after
+                               :op1 t3
+                               :quant (t5 / temporal-quantity
+                                          :quant "24"
+                                          :unit (h / hour))
+                               :ARG1-of (d / describe-01
+                                           :ARG0 (f / file
+                                                    :mod "3"
+                                                    :mod (a5 / additional))))
+                      :op2 (a4 / after
+                               :op1 t3
+                               :quant (t / temporal-quantity
+                                         :quant "48"
+                                         :unit h)
+                               :ARG1-of (d2 / describe-01
+                                            :ARG0 (f2 / figure
+                                                      :mod "5B"))))))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Neither individual inhibitor treatment, nor the combination, had an obvious effect on the morphology of the Control-IEC-6 cells.
+# ::file pmid_2470_8867_166.txt
+# ::date 2015-09-01T00:09:13
+# ::id pmid_2470_8867.166
+(a / affect-01
+      :polarity "-"
+      :ARG0 (a2 / and
+            :op1 (t2 / treat-04
+                  :ARG2 (m2 / molecular-physical-entity
+                        :ARG0-of (i / inhibit-01)
+                        :mod (i2 / individual)))
+            :op2 (c / combine-01))
+      :ARG1 (m / morphology
+            :poss (c2 / cell-line
+                  :name (n / name :op1 "IEC-6")
+                  :mod (c3 / control)))
+      :ARG1-of (o / obvious-01))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, the MEK1/2 inhibitor, but not the PI3K inhibitor, induced a potent reversion of the transformed morphological features of the Tpr-Met-IEC-6, TM-Grb2-IEC-6, TM-Shc1-IEC-6, and TM-Shc2-IEC-6 cells, observed within 24 hours of treatment (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>) and more striking in appearance after 48 hours (Figure <xref ref-type="fig" rid="F5">5</xref>B).
+# ::file pmid_2470_8867_167.txt
+# ::date 2015-09-01T00:14:23
+# ::id pmid_2470_8867.167
+(c8 / contrast-01
+    :ARG1 (i2 / induce-01
+              :ARG0 (m3 / molecular-physical-entity
+                        :ARG0-of (i / inhibit-01
+                                    :ARG1 (s2 / slash
+                                              :op1 (e / enzyme
+                                                      :name (n / name
+                                                               :op1 "MEK1"))
+                                              :op2 (e2 / enzyme
+                                                       :name (n2 / name
+                                                                 :op1 "MEK2")))))
+              :ARG2 (r / reverse-01
+                       :ARG1 (f / feature
+                                :mod (m / morphology)
+                                :ARG1-of (t4 / transform-01)
+                                :poss (a / and
+                                         :op1 (c / cell-line
+                                                 :name (n3 / name
+                                                           :op1 "IEC-6")
+                                                 :ARG1-of (t3 / transform-01
+                                                              :ARG0 (p2 / protein
+                                                                        :name (n7 / name
+                                                                                  :op1 "Tpr-Met"))))
+                                         :op2 (c2 / cell-line
+                                                  :name (n4 / name
+                                                            :op1 "IEC-6")
+                                                  :ARG3-of (e4 / express-03
+                                                               :ARG2 (p3 / protein
+                                                                         :name (n8 / name
+                                                                                   :op1 "TM-Grb2"))))
+                                         :op3 (c3 / cell-line
+                                                  :name (n5 / name
+                                                            :op1 "IEC-6")
+                                                  :ARG3-of (e5 / express-03
+                                                               :ARG2 (p4 / protein
+                                                                         :name (n9 / name
+                                                                                   :op1 "TM-Shc1"))))
+                                         :op4 (c4 / cell-line
+                                                  :name (n6 / name
+                                                            :op1 "IEC-6")
+                                                  :ARG3-of (e6 / express-03
+                                                               :ARG2 (p5 / protein
+                                                                         :name (n10 / name
+                                                                                    :op1 "TM-Shc2"))))))
+                       :mod (p / potent)
+                       :ARG1-of (o / observe-01
+                                   :time (a2 / after
+                                             :op1 (t5 / treat-04)
+                                             :quant (u / up-to
+                                                       :op1 (t / temporal-quantity
+                                                               :quant "24"
+                                                               :unit (h / hour))))
+                                   :ARG1-of (d / describe-01
+                                               :ARG0 (f2 / file
+                                                         :mod "3"
+                                                         :mod (a3 / additional))))
+                       :ARG1-of (s3 / strike-04
+                                    :ARG2 (a4 / appear-01)
+                                    :degree (m2 / more)
+                                    :time (a5 / after
+                                              :op1 t5
+                                              :quant (t2 / temporal-quantity
+                                                         :quant "48"
+                                                         :unit (h2 / hour)))
+                                    :ARG1-of (d2 / describe-01
+                                                 :ARG0 (f3 / figure
+                                                           :mod "5B")))))
+    :ARG2 (i4 / induce-01
+              :polarity "-"
+              :ARG0 (m4 / molecular-physical-entity
+                        :ARG0-of (i5 / inhibit-01
+                                     :ARG1 (p6 / protein-family
+                                               :name (n11 / name
+                                                          :op1 "PI3K"))))
+              :ARG1 r)
+    :ARG2-of (i3 / interest-01))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the presence of U0126, the MEK1/2 inhibitor, either alone or in combination with the PI3K inhibitor, the formerly transformed Tpr-IEC-6 cells progressively lost their fibroblast-like spindle-shaped morphology, adopted a flatter cobblestone-like appearance, reformed apparent cell-cell contacts and grew again in colonies; much like the non-transformed Control-IEC-6 cells.
+# ::file pmid_2470_8867_168.txt
+# ::date 2015-09-01T00:33:10
+# ::id pmid_2470_8867.168
+(a / and
+   :op1 (l / lose-02
+           :ARG0 (c / cell-line
+                    :name (n2 / name
+                              :op1 "IEC-6")
+                    :ARG1-of (t2 / transform-01
+                                 :ARG0 (p / protein
+                                          :name (n3 / name
+                                                    :op1 "Tpr"))
+                                 :time (f / former)))
+           :ARG1 (m / morphology
+                    :ARG1-of (r / resemble-01
+                                :ARG2 (f2 / fibroblast))
+                    :ARG1-of (s2 / shape-01
+                                 :ARG2 (s3 / spindle)))
+           :manner (p2 / progress-01))
+   :op2 (a2 / adopt-01
+            :ARG0 c
+            :ARG1 (a3 / appear-01
+                      :ARG1 c
+                      :ARG1-of (f3 / flat-06
+                                   :degree (m2 / more))
+                      :ARG1-of (r2 / resemble-01
+                                   :ARG2 (c4 / cobblestone))))
+   :op3 (r3 / reform-01
+            :ARG0 c
+            :ARG1 (c5 / contact-01
+                      :ARG0 (c6 / cell)
+                      :ARG1 (c7 / cell)
+                      :ARG1-of (a4 / appear-01)))
+   :op4 (g / grow-02
+           :ARG1 c
+           :ARG2 (c8 / colony)
+           :mod (a5 / again))
+   :condition (p3 / present-02
+                  :ARG1 (s / small-molecule
+                           :name (n / name
+                                    :op1 "U0126")
+                           :ARG0-of (i / inhibit-01
+                                       :ARG1 (s4 / slash
+                                                 :op1 (e / enzyme
+                                                         :name (n4 / name
+                                                                   :op1 "MEK1"))
+                                                 :op2 (e2 / enzyme
+                                                          :name (n5 / name
+                                                                    :op1 "MEK2")))))
+                  :manner (o / or
+                             :op1 (a6 / alone)
+                             :op2 (c9 / combine-01
+                                      :ARG1 s
+                                      :ARG2 (m4 / molecular-physical-entity
+                                                :ARG0-of (i2 / inhibit-01
+                                                             :ARG1 (p4 / protein-family
+                                                                       :name (n6 / name
+                                                                                 :op1 "PI3K")))))))
+   :ARG1-of (r4 / resemble-01
+                :ARG2 (c10 / cell
+                           :name (n7 / name
+                                     :op1 "IEC-6")
+                           :ARG1-of (t / transform-01
+                                       :polarity "-")
+                           :mod (c11 / control))
+                :degree (m3 / much)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Concordant with this restoration of epithelioid-like morphological features in IEC-6 cells transformed by the oncogenic Tpr-Met and its derived variants, treatment with U0126 also induced an increase in E-cadherin protein levels (Figure <xref ref-type="fig" rid="F5">5</xref>C and D, and Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>).
+# ::file pmid_2470_8867_169.txt
+# ::date 2015-09-01T00:52:54
+# ::id pmid_2470_8867.169
+(i / induce-01
+   :ARG0 (t / treat-04
+            :ARG2 (s / small-molecule
+                     :name (n / name
+                              :op1 "U0126")))
+   :ARG2 (i2 / increase-01
+             :ARG1 (l / level
+                      :quant-of (p / protein
+                                   :name (n2 / name
+                                             :op1 "E-cadherin"))))
+   :mod (a / also)
+   :ARG0-of (a2 / agree-01
+                :ARG2 (r / restore-02
+                         :ARG1 (f / feature
+                                  :mod (m / morphology)
+                                  :ARG1-of (r2 / resemble-01
+                                               :ARG2 (e / epithelioid))
+                                  :poss (c / cell-line
+                                           :name (n3 / name
+                                                     :op1 "IEC-6")
+                                           :ARG1-of (t2 / transform-01
+                                                        :ARG0 (a3 / and
+                                                                  :op1 (p2 / protein
+                                                                           :name (n4 / name
+                                                                                     :op1 "Tpr-Met")
+                                                                           :ARG0-of (c2 / cause-01
+                                                                                        :ARG1 (c3 / cancer)))
+                                                                  :op2 (v / variant
+                                                                          :ARG1-of (d / derive-01
+                                                                                      :ARG0 p2))))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a4 / and
+                          :op1 (f2 / figure
+                                   :mod "5C")
+                          :op2 (f3 / figure
+                                   :mod "5D")
+                          :op3 (f4 / file
+                                   :mod "3"
+                                   :mod (a5 / additional)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt By contrast, none of the inhibitor treatments affected E-cadherin protein levels in the Control-IEC-6 cells (Figure <xref ref-type="fig" rid="F5">5</xref>C and D).
+# ::file pmid_2470_8867_170.txt
+# ::date 2015-09-01T01:01:49
+# ::id pmid_2470_8867.170
+(c / contrast-01
+   :ARG2 (a / affect-01
+            :polarity "-"
+            :ARG0 (t2 / treat-04
+                      :ARG2 (m / molecular-physical-entity
+                               :ARG0-of (i / inhibit-01)))
+            :ARG1 (l / level
+                     :quant-of (p / protein
+                                  :name (n / name
+                                           :op1 "E-cadherin")))
+            :location (c2 / cell-line
+                          :name (n2 / name
+                                    :op1 "IEC-6")
+                          :mod (c3 / control)))
+   :ARG1-of (d / describe-01
+               :ARG0 (a2 / and
+                         :op1 (f / figure
+                                 :mod "5C")
+                         :op2 (f2 / figure
+                                  :mod "5D"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Notably, reversion of the transformed phenotype and E-cadherin up-regulation were also promoted in transformed IEC-6 cell populations by treatment with 10 μM AZD6244 or PD184352, two additional pharmacological inhibitors of MEK1/2 (Figure <xref ref-type="fig" rid="F5">5</xref>B and C, and Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>).
+# ::file pmid_2470_8867_171.txt
+# ::date 2015-09-01T01:04:58
+# ::id pmid_2470_8867.171
+(p / promote-01
+   :ARG0 (t3 / treat-04
+             :ARG2 (o / or
+                      :op1 (s2 / small-molecule
+                               :name (n4 / name
+                                         :op1 "AZD6244"))
+                      :op2 (s3 / small-molecule
+                               :name (n5 / name
+                                         :op1 "PD184352"))
+                      :quant (c2 / concentration-quantity
+                                 :quant "10"
+                                 :unit (m / micromolar))
+                      :mod (s / small-molecule
+                              :quant "2"
+                              :mod (a3 / additional)
+                              :ARG0-of (i / inhibit-01
+                                          :ARG1 (s4 / slash
+                                                    :op1 (e / enzyme
+                                                            :name (n / name
+                                                                     :op1 "MEK1"))
+                                                    :op2 (e2 / enzyme
+                                                             :name (n6 / name
+                                                                       :op1 "MEK2"))))
+                              :mod (p5 / pharmacology))))
+   :ARG1 (a / and
+            :op1 (r / reverse-01
+                    :ARG1 (p2 / phenotype
+                              :ARG1-of (t2 / transform-01
+                                           :ARG1 c)))
+            :op2 (u / upregulate-01
+                    :ARG1 (p3 / protein
+                              :name (n2 / name
+                                        :op1 "E-cadherin"))))
+   :mod (a2 / also)
+   :location (p4 / population
+                 :consist-of (c / cell-line
+                                :name (n3 / name
+                                          :op1 "IEC-6")))
+   :ARG1-of (d / describe-01
+               :ARG0 (a4 / and
+                         :op1 (f / figure
+                                 :mod "5B")
+                         :op2 (f2 / figure
+                                  :mod "5C")
+                         :op3 (f3 / file
+                                  :mod "3"
+                                  :mod a3)))
+   :ARG1-of (n7 / notable-04))
+
+# ::save-date Mon Sep 7, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, these observations could not be attributed to the cytosolic localization of the Tpr-Met oncoprotein, since both the morphological transformation and the E-cadherin down-regulation induced by a cell surface-localized active chimeric colony stimulating factor 1 (CSF)-Met receptor [<xref ref-type="bibr" rid="B37">37</xref>], were reverted in a similar manner upon the inhibition of MEK1/2 activity, but not of PI3K activity (Additional file <xref ref-type="supplementary-material" rid="S3">3</xref>).
+# ::file pmid_2470_8867_172.txt
+# ::date 2015-09-01T01:13:06
+# ::id pmid_2470_8867.172
+(a7 / and
+    :op2 (p2 / possible-01
+             :polarity "-"
+             :ARG1 (a / attribute-01
+                      :ARG1 (t / thing
+                               :ARG1-of (o / observe-01)
+                               :mod (t2 / this))
+                      :ARG2 (b2 / be-located-at-91
+                                :ARG1 (p / protein
+                                         :name (n / name
+                                                  :op1 "Tpr-Met")
+                                         :ARG0-of (c2 / cause-01
+                                                      :ARG1 (c3 / cancer)))
+                                :ARG2 (c / cytosol)))
+             :ARG1-of (c4 / cause-01
+                          :ARG0 (c8 / contrast-01
+                                    :ARG1 (r2 / revert-01
+                                              :ARG0 (i2 / inhibit-01
+                                                        :ARG1 (a4 / activity-06
+                                                                  :ARG0 (s2 / slash
+                                                                            :op1 (e / enzyme
+                                                                                    :name (n4 / name
+                                                                                              :op1 "MEK1"))
+                                                                            :op2 (e2 / enzyme
+                                                                                     :name (n5 / name
+                                                                                               :op1 "MEK2")))))
+                                              :ARG1 (a2 / and
+                                                        :op1 (t3 / transform-01
+                                                                 :ARG1 (m2 / morphology))
+                                                        :op2 (d / downregulate-01
+                                                                :ARG1 (p3 / protein
+                                                                          :name (n2 / name
+                                                                                    :op1 "E-cadherin")))
+                                                        :ARG2-of (i / induce-01
+                                                                    :ARG0 (p4 / protein
+                                                                              :name (n3 / name
+                                                                                        :op1 "colony"
+                                                                                        :op2 "stimulating"
+                                                                                        :op3 "factor"
+                                                                                        :op4 "1"
+                                                                                        :op5 "Met"
+                                                                                        :op6 "receptor")
+                                                                              :location (s / surface
+                                                                                           :part-of (c5 / cell))
+                                                                              :ARG1-of (a3 / activate-01)
+                                                                              :mod (c6 / chimera)))
+                                                        :ARG1-of (d2 / describe-01
+                                                                     :ARG0 (p5 / publication
+                                                                               :ARG1-of (c7 / cite-01
+                                                                                            :ARG2 "37"))))
+                                              :manner (m / manner
+                                                         :ARG1-of (r / resemble-01)))
+                                    :ARG2 (r3 / revert-01
+                                              :polarity "-"
+                                              :ARG0 (i3 / inhibit-01
+                                                        :ARG1 (a5 / activity-06
+                                                                  :ARG0 (e3 / enzyme
+                                                                            :name (n6 / name
+                                                                                      :op1 "PI3K"))))
+                                              :ARG1 a2
+                                              :manner m
+                                              :ARG1-of (d3 / describe-01
+                                                           :ARG0 (f / file
+                                                                    :mod "3"
+                                                                    :mod (a6 / additional))))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Since Erk1/2 and Akt activities remained at basal levels in transformed IEC-6 cell populations, the efficacy of these pharmacological inhibitors was evaluated by testing their ability to suppress serum-induced Erk1/2 and Akt phosphorylation.
+# ::file pmid_2470_8867_173.txt
+# ::date 2015-09-01T01:38:47
+# ::id pmid_2470_8867.173
+(e / evaluate-01
+   :ARG1 (e2 / efficient-01
+             :ARG1 (m / molecular-physical-entity
+                      :ARG0-of (i / inhibit-01)
+                      :mod (t2 / this)
+                      :mod (p2 / pharmacology)))
+   :manner (t3 / test-01
+               :ARG1 (c / capable-01
+                        :ARG1 m
+                        :ARG2 (s2 / suppress-01
+                                  :ARG0 m
+                                  :ARG1 (p / phosphorylate-01
+                                           :ARG1 (a / and
+                                                    :op1 (s4 / slash
+                                                             :op1 (e3 / enzyme
+                                                                      :name (n / name
+                                                                               :op1 "Erk1"))
+                                                             :op2 (e4 / enzyme
+                                                                      :name (n2 / name
+                                                                                :op1 "Erk2")))
+                                                    :op2 (e5 / enzyme
+                                                             :name (n3 / name
+                                                                       :op1 "Akt")))
+                                           :ARG2-of (i2 / induce-01
+                                                        :ARG0 (s3 / serum))))))
+   :ARG1-of (c2 / cause-01
+                :ARG0 (r / remain-01
+                         :ARG1 (a2 / activity-06
+                                   :ARG0 a)
+                         :ARG3 (l / level
+                                  :mod (b / base))
+                         :location (p3 / population
+                                       :consist-of (c3 / cell-line
+                                                       :name (n4 / name
+                                                                 :op1 "IEC-6")
+                                                       :ARG1-of (t / transform-01))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Serum-starved Tpr-Met and control IEC-6 cell populations were treated for 1 hour with DMSO or inhibitors, followed by 5 minutes of stimulation with 10% serum.
+# ::file pmid_2470_8867_174.txt
+# ::date 2015-09-01T01:52:42
+# ::id pmid_2470_8867.174
+(t4 / treat-04
+    :ARG1 (a / and
+             :op1 (p4 / population
+                      :consist-of (c / cell-line
+                                     :name (n4 / name
+                                               :op1 "IEC-6")
+                                     :ARG1-of (t3 / transform-01
+                                                  :ARG0 (p2 / protein
+                                                            :name (n / name
+                                                                     :op1 "Tpr-Met")))))
+             :op2 (p3 / population
+                      :consist-of (c2 / cell-line
+                                      :name (n2 / name
+                                                :op1 "IEC-6"))
+                      :mod (c4 / control))
+             :ARG1-of (s / starve-01
+                         :ARG2 (s2 / serum)))
+    :ARG2 (o / or
+             :op1 (s3 / small-molecule
+                      :name (n3 / name
+                                :op1 "DMSO"))
+             :op2 (m2 / molecular-physical-entity
+                      :ARG0-of (i / inhibit-01)))
+    :duration (t / temporal-quantity
+                 :quant "1"
+                 :unit (h / hour))
+    :ARG2-of (f / follow-01
+                :ARG1 (s5 / stimulate-01
+                          :ARG1 a
+                          :ARG2 (s6 / serum
+                                    :quant (p / percentage-entity
+                                              :value "10"))
+                          :duration (t2 / temporal-quantity
+                                        :quant "5"
+                                        :unit (m / minute)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A robust phosphorylation of Erk1/2 and Akt proteins was seen upon serum stimulation of Control-IEC-6 cells (Figure <xref ref-type="fig" rid="F5">5</xref>E).
+# ::file pmid_2470_8867_175.txt
+# ::date 2015-09-01T02:10:22
+# ::id pmid_2470_8867.175
+(s / see-01
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (a / and
+                     :op1 (s2 / slash
+                              :op1 (e / enzyme
+                                      :name (n / name
+                                               :op1 "Erk1"))
+                              :op2 (e2 / enzyme
+                                       :name (n2 / name
+                                                 :op1 "Erk2")))
+                     :op2 (p4 / protein-family
+                              :name (n3 / name
+                                        :op1 "Akt")))
+            :mod (r / robust))
+   :time (s3 / stimulate-01
+             :ARG1 (c / cell-line
+                      :name (n4 / name
+                                :op1 "IEC-6")
+                      :mod (c2 / control))
+             :ARG2 (s4 / serum))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5E")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In sharp contrast, although the levels of Erk2 and Akt proteins were equivalent for each cell population, serum-induced Erk1/2 and Akt activation were severely attenuated in the Tpr-Met-IEC-6 cells (Figure <xref ref-type="fig" rid="F5">5</xref>E).
+# ::file pmid_2470_8867_176.txt
+# ::date 2015-09-01T02:15:14
+# ::id pmid_2470_8867.176
+(c / contrast-01
+   :ARG2 (a / attenuate-01
+            :ARG1 (a4 / and
+                      :op1 (a2 / activate-01
+                               :ARG1 (s2 / slash
+                                         :op1 (e2 / enzyme
+                                                  :name (n / name
+                                                           :op1 "Erk1"))
+                                         :op2 (e3 / enzyme
+                                                  :name (n2 / name
+                                                            :op1 "Erk2"))))
+                      :op2 (a5 / activate-01
+                               :ARG1 (p2 / protein-family
+                                         :name (n3 / name
+                                                   :op1 "Akt")))
+                      :ARG2-of (i / induce-01
+                                  :ARG0 (s3 / serum)))
+            :degree (s4 / severe)
+            :location (c2 / cell-line
+                          :name (n4 / name
+                                    :op1 "IEC-6")
+                          :ARG1-of (t / transform-01
+                                      :ARG0 (p / protein
+                                               :name (n5 / name
+                                                         :op1 "Tpr-Met"))))
+            :concession (e5 / equal-01
+                            :ARG1 (l / level
+                                     :quant-of e3)
+                            :ARG2 (l2 / level
+                                      :quant-of p2)
+                            :ARG3 (p5 / population
+                                      :mod (c5 / cell)
+                                      :mod (e / each))))
+   :ARG1-of (s / sharp-02)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5E")))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This further substantiates the conclusion that sustained activation of Met signaling pathways, such as those downstream of Grb2 and Shc, can activate negative feedback control of both the Erk1/2 and Akt pathways in IECs.
+# ::file pmid_2470_8867_177.txt
+# ::date 2015-09-01T02:26:41
+# ::id pmid_2470_8867.177
+(s / substantiate-01
+   :ARG0 (t / this)
+   :ARG1 (c / conclude-01
+            :ARG1 (p / possible-01
+                     :ARG1 (a / activate-01
+                              :ARG0 (a2 / activate-01
+                                        :ARG1 (p2 / pathway
+                                                  :name (n / name
+                                                           :op1 "Met")
+                                                  :ARG0-of (s3 / signal-07)
+                                                  :example (p3 / pathway
+                                                               :location (r / relative-position
+                                                                            :op1 (a3 / and
+                                                                                     :op1 (p4 / protein
+                                                                                              :name (n2 / name
+                                                                                                        :op1 "Grb2"))
+                                                                                     :op2 (p5 / protein
+                                                                                              :name (n3 / name
+                                                                                                        :op1 "Shc")))
+                                                                            :direction (d / downstream))
+                                                               :mod (t2 / that)))
+                                        :ARG1-of (s2 / sustain-01))
+                              :ARG1 (c2 / control-01
+                                        :ARG1 (a4 / and
+                                                  :op1 (p6 / pathway
+                                                           :name (n5 / name
+                                                                     :op1 "Erk1/2"))
+                                                  :op2 (p7 / pathway
+                                                           :name (n6 / name
+                                                                     :op1 "Akt")))
+                                        :ARG2-of (n4 / negative-01)
+                                        :mod (f2 / feedback))
+                              :location (c3 / cell
+                                            :name (n7 / name
+                                                      :op1 "IEC")))))
+   :degree (f / further))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Importantly, the MEK1/2 and PI3K inhibitors were confirmed to efficiently suppress serum-induced Erk1/2 and Akt phosphorylation, respectively (Figure <xref ref-type="fig" rid="F5">5</xref>E).
+# ::file pmid_2470_8867_178.txt
+# ::date 2015-09-01T02:34:56
+# ::id pmid_2470_8867.178
+(c / confirm-01
+   :ARG1 (a / and
+            :op1 (s / suppress-01
+                    :ARG0 (m / molecular-physical-entity
+                             :ARG0-of (i / inhibit-01
+                                         :ARG1 (s5 / slash
+                                                   :op1 (e2 / enzyme
+                                                            :name (n3 / name
+                                                                      :op1 "MEK1"))
+                                                   :op2 (e3 / enzyme
+                                                            :name (n4 / name
+                                                                      :op1 "MEK2")))))
+                    :ARG1 (p / phosphorylate-01
+                             :ARG1 (s3 / slash
+                                       :op1 (e5 / enzyme
+                                                :name (n / name
+                                                         :op1 "Erk1"))
+                                       :op2 (e6 / enzyme
+                                                :name (n2 / name
+                                                          :op1 "Erk2")))
+                             :ARG2-of (i2 / induce-01
+                                          :ARG0 (s2 / serum)
+                                          :ARG2 p4))
+                    :ARG2-of (e / efficient-01
+                                :ARG2 s6))
+            :op2 (s6 / suppress-01
+                     :ARG0 (m2 / molecular-physical-entity
+                               :ARG0-of (i3 / inhibit-01
+                                            :ARG1 (p6 / protein-family
+                                                      :name (n5 / name
+                                                                :op1 "PI3K"))))
+                     :ARG1 (p4 / phosphorylate-01
+                               :ARG1 (e4 / enzyme
+                                         :name (n6 / name
+                                                   :op1 "Akt"))))
+            :manner (r / respective))
+   :mod (i4 / important)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5E")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Although the potential off-target effects of these inhibitors cannot be excluded in these experiments, our results suggest that the morphological transformation induced by the oncogenic Met receptor, and driven by the constitutive activation of Grb2 and Shc signals in IECs, relies, at least in part, on the activation of the Ras/MAPK pathway, but not on PI3K signaling.
+# ::file pmid_2470_8867_179.txt
+# ::date 2015-09-01T02:42:49
+# ::id pmid_2470_8867.179
+(s / suggest-01
+   :ARG0 (t2 / thing
+             :ARG2-of (r / result-01)
+             :poss (w / we))
+   :ARG1 (c5 / contrast-01
+             :ARG1 (r2 / rely-01
+                       :ARG0 (t3 / transform-01
+                                 :ARG1 (m / morphology)
+                                 :ARG2-of (i2 / induce-01
+                                              :ARG0 (r4 / receptor
+                                                        :name (n / name
+                                                                 :op1 "Met")
+                                                        :ARG0-of (c / cause-01
+                                                                    :ARG1 (c2 / cancer))))
+                                 :ARG1-of (d / drive-02
+                                             :ARG0 (a2 / activate-01
+                                                       :ARG1 (a3 / and
+                                                                 :op1 (s2 / signal-07
+                                                                          :ARG0 (p3 / protein
+                                                                                    :name (n2 / name
+                                                                                              :op1 "Grb2")))
+                                                                 :op2 (s3 / signal-07
+                                                                          :ARG0 (p4 / protein
+                                                                                    :name (n3 / name
+                                                                                              :op1 "Shc"))))
+                                                       :mod (c3 / constitutive)
+                                                       :location (c4 / cell
+                                                                     :name (n4 / name
+                                                                               :op1 "IEC")))))
+                       :ARG1 (a5 / activate-01
+                                 :ARG1 (p6 / pathway
+                                           :name (n5 / name
+                                                     :op1 "Ras/MAPK")))
+                       :degree (p5 / part
+                                   :mod (a4 / at-least)))
+             :ARG2 (r3 / rely-01
+                       :polarity "-"
+                       :ARG0 t3
+                       :ARG1 (s4 / signal-07
+                                 :ARG0 (p8 / pathway
+                                           :name (n6 / name
+                                                     :op1 "PI3K")))))
+   :concession (p / possible-01
+                  :polarity "-"
+                  :ARG1 (e2 / exclude-01
+                            :ARG1 (a6 / affect-01
+                                      :ARG0 (m2 / molecular-physical-entity
+                                                :ARG0-of (i / inhibit-01)
+                                                :mod (t / this))
+                                      :mod (p7 / potential)
+                                      :mod (t4 / target
+                                               :mod (o / off)))
+                            :ARG2 (e3 / experiment-01
+                                      :mod t))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next investigated whether the growth capacity promoted by the oncogenic Met in IECs required MEK or PI3K activity.
+# ::file pmid_2470_8867_181.txt
+# ::date 2015-09-01T03:02:03
+# ::id pmid_2470_8867.181
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (r / require-01
+            :mode "interrogative"
+            :ARG0 (c / capable-01
+                     :ARG1 (c4 / cell
+                               :name (n4 / name
+                                         :op1 "IEC"))
+                     :ARG2 (g / grow-01)
+                     :ARG1-of (p2 / promote-01
+                                  :ARG0 (p3 / protein
+                                            :name (n3 / name
+                                                      :op1 "Met")
+                                            :ARG0-of (c2 / cause-01
+                                                         :ARG1 (c3 / cancer)))))
+            :ARG1 (o / or
+                     :op1 (a / activity-06
+                             :ARG0 (e / enzyme
+                                      :name (n / name
+                                               :op1 "MEK")))
+                     :op2 (a2 / activity-06
+                              :ARG0 (e2 / enzyme
+                                        :name (n5 / name
+                                                  :op1 "PI3K")))))
+   :time (n2 / next))
+
+# ::save-date Tue Jan 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cell-count assays were performed with Tpr-Met and Control-IEC-6 cells that were treated for 24 or 48 hours with vehicle, U0126 or LY294002 inhibitor, or a combination of both inhibitors.
+# ::file pmid_2470_8867_182.txt
+# ::date 2015-09-01T03:06:13
+# ::id pmid_2470_8867.182
+(p / perform-01
+   :ARG1 (a / assay-01
+            :mod (c / count-01
+                    :ARG1 (c2 / cell)))
+   :ARG2 (a2 / and
+             :op1 (c3 / cell-line
+                      :wiki "-"
+                      :name (n5 / name
+                                :op1 "IEC-6")
+                      :ARG1-of (t2 / transform-01
+                                   :ARG0 (p2 / protein
+                                             :wiki "Tpr-met_fusion_protein"
+                                             :name (n2 / name
+                                                       :op1 "Tpr-Met"))))
+             :op2 (c4 / cell-line
+                      :wiki "-"
+                      :name (n3 / name
+                                :op1 "IEC-6")
+                      :mod (c6 / control))
+             :ARG1-of (t3 / treat-04
+                          :ARG2 (o2 / or
+                                    :op1 (v / vehicle)
+                                    :op2 (s / small-molecule
+                                            :wiki "U0126"
+                                            :name (n / name
+                                                     :op1 "U0126")
+                                            :ARG0-of (i / inhibit-01
+                                                        :ARG0 s2))
+                                    :op3 (s2 / small-molecule
+                                             :wiki "LY294002"
+                                             :name (n4 / name
+                                                       :op1 "LY294002"))
+                                    :op4 (c7 / combine-01
+                                             :ARG1 s
+                                             :ARG2 s2
+                                             :mod (b / both)))
+                          :duration (o / or
+                                       :op1 (t4 / temporal-quantity
+                                                :quant "24"
+                                                :unit "h")
+                                       :op2 (t / temporal-quantity
+                                               :quant "48"
+                                               :unit (h / hour))))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As anticipated, treatment with DMSO did not significantly impact cell growth, even after 48 hours.
+# ::file pmid_2470_8867_183.txt
+# ::date 2015-09-01T03:14:55
+# ::id pmid_2470_8867.183
+(i / impact-01
+   :polarity "-"
+   :ARG0 (t2 / treat-04
+             :ARG2 (s2 / small-molecule
+                       :name (n / name
+                                :op1 "DMSO")))
+   :ARG1 (g / grow-01
+            :ARG1 (c / cell))
+   :ARG1-of (s / significant-02)
+   :time (a / after
+            :quant (t / temporal-quantity
+                      :quant "48"
+                      :unit (h / hour))
+            :mod (e / even))
+   :ARG1-of (a2 / anticipate-01))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Treatment with LY294002 exerted similar inhibitory effects upon the growth of both the Tpr-Met-transformed and control IEC-6 cells, reducing the number of cells by 44% and 36%, respectively relative to DMSO-treated cells, after 48 hours (Figure <xref ref-type="fig" rid="F6">6</xref>A).
+# ::file pmid_2470_8867_184.txt
+# ::date 2015-09-01T03:17:17
+# ::id pmid_2470_8867.184
+(e / exert-01
+   :ARG0 (t2 / treat-04
+             :ARG2 (s / small-molecule
+                      :name (n / name
+                               :op1 "LY294002")))
+   :ARG1 (a / affect-01
+            :ARG1-of (r / resemble-01)
+            :ARG0-of (i / inhibit-01))
+   :ARG2 (a2 / and
+             :op1 (g / grow-01
+                     :ARG1 (c / cell-line
+                              :name (n7 / name
+                                        :op1 "IEC-6")
+                              :ARG1-of (t3 / transform-01
+                                           :ARG0 (p3 / protein
+                                                     :name (n2 / name
+                                                               :op1 "Tpr-Met")))))
+             :op2 (g2 / grow-01
+                      :ARG1 (c2 / cell-line
+                                :name (n3 / name
+                                          :op1 "IEC-6")
+                                :mod (c5 / control)))
+             :mod (b / both))
+   :ARG0-of (r2 / reduce-01
+                :ARG1 (n4 / number
+                          :quant-of c)
+                :ARG2 (p / percentage-entity
+                         :value "44"
+                         :ARG1-of (r4 / relative-05
+                                      :ARG3 (c6 / cell
+                                                :ARG1-of (t4 / treat-04
+                                                             :ARG2 (s2 / small-molecule
+                                                                       :name (n6 / name
+                                                                                 :op1 "DMSO"))))))
+                :time (a3 / after
+                          :quant (t / temporal-quantity
+                                    :quant "48"
+                                    :unit (h / hour))))
+   :ARG0-of (r3 / reduce-01
+                :ARG1 (n5 / number
+                          :quant-of c2)
+                :ARG2 (p2 / percentage-entity
+                          :value "36"
+                          :ARG1-of r4)
+                :time a3)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, in the presence of U0126, the growth of Tpr-Met-IEC-6 cells was significantly attenuated but not that of Control-IEC-6 cells (Figure <xref ref-type="fig" rid="F6">6</xref>A).
+# ::file pmid_2470_8867_185.txt
+# ::date 2015-09-01T03:26:40
+# ::id pmid_2470_8867.185
+(c / contrast-01
+   :ARG2 (c2 / contrast-01
+             :ARG1 (a / attenuate-01
+                      :ARG1 (g / grow-01
+                               :ARG1 (c3 / cell-line
+                                         :name (n2 / name
+                                                   :op1 "IEC-6")
+                                         :ARG1-of (t / transform-01
+                                                     :ARG0 (p / protein
+                                                              :name (n3 / name
+                                                                        :op1 "Tpr-Met")))))
+                      :ARG1-of (s2 / significant-02
+                                   :ARG1 a2))
+             :ARG2 (a2 / attenuate-01
+                       :polarity "-"
+                       :ARG1 (g2 / grow-01
+                                 :ARG1 (c4 / cell-line
+                                           :name (n4 / name
+                                                     :op1 "IEC-6")
+                                           :mod (c7 / control))))
+             :condition (p2 / present-02
+                            :ARG1 (s / small-molecule
+                                     :name (n / name
+                                              :op1 "U0126"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, while co-treatment with U0126 failed to potentiate the growth inhibiting effect of LY294002 in Control-IEC-6 cells, the growth of Tpr-Met-IEC-6 cells was further reduced in a time-dependent manner upon exposure to both inhibitors (Figure <xref ref-type="fig" rid="F6">6</xref>A).
+# ::file pmid_2470_8867_186.txt
+# ::date 2015-09-01T04:11:44
+# ::id pmid_2470_8867.186
+(a / and
+   :op2 (c / contrast-01
+           :ARG1 (r / reduce-01
+                    :ARG0 (e2 / expose-01
+                              :ARG1 "c3"
+                              :ARG2 (a3 / and
+                                        :op1 "s"
+                                        :op2 "s2"
+                                        :ARG0-of (i2 / inhibit-01)))
+                    :ARG1 (g2 / grow-01
+                              :ARG1 (c3 / cell-line
+                                        :name (n4 / name
+                                                  :op1 "IEC-6")
+                                        :ARG1-of (t2 / transform-01
+                                                     :ARG0 (p2 / protein
+                                                               :name (n5 / name
+                                                                         :op1 "Tpr-Met")))))
+                    :degree (f2 / further)
+                    :manner (d / depend-01
+                               :ARG0 r
+                               :ARG1 (t / time)))
+           :ARG2 (f / fail-01
+                    :ARG1 (t3 / treat-04
+                              :ARG2 (a4 / and
+                                        :op1 "s2"
+                                        :op2 (s / small-molecule
+                                                :name (n / name
+                                                         :op1 "U0126"))))
+                    :ARG2 (p / potentiate-01
+                             :ARG1 (a2 / affect-01
+                                       :ARG0 (s2 / small-molecule
+                                                 :name (n2 / name
+                                                           :op1 "LY294002"))
+                                       :ARG1 (c2 / cell-line
+                                                 :name (n3 / name
+                                                           :op1 "IEC-6")
+                                                 :mod (c4 / control))
+                                       :ARG0-of (i / inhibit-01
+                                                   :ARG1 (g / grow-01))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f3 / figure
+                          :mod "6A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The impact of inhibiting MEK1/2 or PI3K activity on the viability of Tpr-Met-IEC-6 cells in suspension was also evaluated.
+# ::file pmid_2470_8867_187.txt
+# ::date 2015-09-01T04:22:57
+# ::id pmid_2470_8867.187
+(e / evaluate-01
+   :ARG1 (i / impact-01
+            :ARG0 (i2 / inhibit-01
+                      :ARG1 (o / or
+                               :op1 (a2 / activity-06
+                                        :ARG0 (s / slash
+                                                 :op1 (e2 / enzyme
+                                                          :name (n / name
+                                                                   :op1 "MEK1"))
+                                                 :op2 (e3 / enzyme
+                                                          :name (n2 / name
+                                                                    :op1 "MEK2"))))
+                               :op2 (a3 / activity-06
+                                        :ARG0 (e4 / enzyme
+                                                  :name (n3 / name
+                                                            :op1 "PI3K")))))
+            :ARG1 (v / viability
+                     :poss (c / cell-line
+                              :name (n4 / name
+                                        :op1 "IEC-6")
+                              :ARG1-of (s2 / suspend-02)
+                              :ARG1-of (t / transform-01
+                                          :ARG0 (p / protein
+                                                   :name (n5 / name
+                                                             :op1 "Tpr-Met"))))))
+   :mod (a / also))
+
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In these anoikis assays, vehicle or the indicated inhibitors were added when cells were seeded and cell viability was measured 24 and 48 hours later.
+# ::file pmid_2470_8867_188.txt
+# ::date 2015-09-01T04:28:30
+# ::id pmid_2470_8867.188
+(a / and
+      :op1 (a2 / add-02
+            :ARG1 (o / or
+                  :op1 (v / vehicle)
+                  :op2 (m3 / molecular-physical-entity
+                        :ARG0-of (i / inhibit-01)
+                        :ARG1-of (i2 / indicate-01)))
+            :time (s / seed-02
+                  :ARG2 (c / cell)))
+      :op2 (m4 / measure-01
+            :ARG1 (v2 / viability
+                  :mod c)
+            :time (a3 / and
+                  :op1 (l2 / late
+                        :degree (m2 / more
+                              :quant (t2 / temporal-quantity :quant "24" :unit "h")))
+                  :op2 (l / late
+                        :degree (m / more
+                              :quant (t / temporal-quantity
+                                    :quant "48"
+                                    :unit (h / hour))))))
+      :condition (a4 / assay-01
+            :mod (a5 / anoikis)
+            :mod (t3 / this)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Treatment with the PI3K inhibitor restored anoikis sensitivity to the Tpr-Met-IEC-6 cells in a time-dependent manner, reducing their viability by close to 45% relative to DMSO-treated cells after 48 hours (Figure <xref ref-type="fig" rid="F6">6</xref>B).
+# ::file pmid_2470_8867_189.txt
+# ::date 2015-09-01T04:34:49
+# ::id pmid_2470_8867.189
+(r / restore-02
+   :ARG0 (t3 / treat-04
+             :ARG2 (m / molecular-physical-entity
+                      :ARG0-of (i / inhibit-01
+                                  :ARG1 (p3 / protein-family
+                                            :name (n / name
+                                                     :op1 "PI3K")))))
+   :ARG1 (s / sensitive-03
+            :ARG0 (c / cell-line
+                     :name (n2 / name
+                               :op1 "IEC-6")
+                     :ARG1-of (t5 / transform-01
+                                  :ARG0 (p2 / protein
+                                            :name (n3 / name
+                                                      :op1 "Tpr-Met"))))
+            :ARG1 (a / anoikis))
+   :manner (d / depend-01
+              :ARG0 "r"
+              :ARG1 (t2 / time))
+   :ARG0-of (r2 / reduce-01
+                :ARG1 (v / viability
+                         :poss c)
+                :ARG2 (c4 / close-11
+                          :ARG2 (p / percentage-entity
+                                   :value "45")
+                          :ARG1-of (r3 / relative-05
+                                       :ARG3 (c5 / cell
+                                                 :ARG1-of (t4 / treat-04
+                                                              :ARG2 (s2 / small-molecule
+                                                                        :name (n4 / name
+                                                                                  :op1 "DMSO"))))))
+                :time (a2 / after
+                          :quant (t / temporal-quantity
+                                    :quant "48"
+                                    :unit (h / hour))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "6B")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The MEK1/2 inhibitor, on the other hand, did not substantially impact the viability of the Tpr-Met-IEC-6 cells grown in suspension.
+# ::file pmid_2470_8867_190.txt
+# ::date 2015-09-01T04:42:15
+# ::id pmid_2470_8867.190
+(c / contrast-01
+   :ARG2 (i2 / impact-01
+             :polarity "-"
+             :ARG0 (m / molecular-physical-entity
+                      :ARG0-of (i / inhibit-01
+                                  :ARG1 (s / slash
+                                           :op1 (e / enzyme
+                                                   :name (n / name
+                                                            :op1 "MEK1"))
+                                           :op2 (e2 / enzyme
+                                                    :name (n2 / name
+                                                              :op1 "MEK2")))))
+             :ARG1 (v / viability
+                      :poss (c2 / cell-line
+                                :name (n3 / name
+                                          :op1 "IEC-6")
+                                :ARG1-of (g / grow-01
+                                            :manner (s3 / suspend-02))
+                                :ARG1-of (t / transform-01
+                                            :ARG0 (p / protein
+                                                     :name (n4 / name
+                                                               :op1 "Tpr-Met")))))
+             :manner (s2 / substantial)))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Nonetheless, U0126 treatment did elicit a marked synergistic effect on LY294002-induced anoikis, reducing Tpr-Met-IEC-6 cell viability to levels well below those seen upon treatment with the PI3K inhibitor alone (Figure <xref ref-type="fig" rid="F6">6</xref>B).
+# ::file pmid_2470_8867_191.txt
+# ::date 2015-09-01T04:48:43
+# ::id pmid_2470_8867.191
+(h / have-concession-91
+   :ARG1 (e / elicit-01
+            :ARG0 (t2 / treat-04
+                      :ARG2 (s / small-molecule
+                               :name (n / name
+                                        :op1 "U0126")))
+            :ARG1 (a / affect-01
+                     :ARG1 (a2 / anoikis
+                               :ARG2-of (i2 / induce-01
+                                            :ARG0 (s4 / small-molecule
+                                                      :name (n2 / name
+                                                                :op1 "LY294002"))))
+                     :ARG2 (s2 / synergize-01)
+                     :mod (m / marked))
+            :ARG0-of (r / reduce-01
+                        :ARG1 (v / viability
+                                 :poss (c / cell-line
+                                          :name (n3 / name
+                                                    :op1 "IEC-6")
+                                          :ARG1-of (t / transform-01
+                                                      :ARG0 (p / protein
+                                                               :name (n4 / name
+                                                                         :op1 "Tpr-Met")))))
+                        :ARG4 (l / level
+                                 :mod (b / below
+                                         :degree (w / well)
+                                         :compared-to (l2 / level
+                                                          :mod (t3 / that)
+                                                          :ARG1-of (s3 / see-01
+                                                                       :time (t4 / treat-04
+                                                                                 :ARG2 (m3 / molecular-physical-entity
+                                                                                           :ARG0-of (i / inhibit-01
+                                                                                                       :ARG1 (p2 / protein-family
+                                                                                                                 :name (n5 / name
+                                                                                                                           :op1 "PI3K")))
+                                                                                           :mod (a3 / alone)))))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6B")))
+
+# ::save-date Mon Sep 7, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results suggest that Tpr-Met-mediated growth promoting effects observed in IECs implicate MEK-dependent mechanisms, but that the anoikis resistance involves the integration of both MEK- and PI3K-dependent signaling pathways.
+# ::file pmid_2470_8867_192.txt
+# ::date 2015-09-01T04:56:10
+# ::id pmid_2470_8867.192
+(s2 / suggest-01
+    :ARG0 (t / thing
+             :ARG2-of (r / result-01)
+             :mod (t2 / this))
+    :ARG1 (c / contrast-01
+             :ARG1 (i / implicate-01
+                      :ARG0 (a / affect-01
+                               :ARG0-of (p2 / promote-01
+                                            :ARG1 (g / grow-01))
+                               :ARG1-of (m / mediate-01
+                                           :ARG0 (p3 / protein
+                                                     :name (n2 / name
+                                                               :op1 "Tpr-Met")))
+                               :ARG1-of (o / observe-01
+                                           :location (c4 / cell
+                                                         :name (n3 / name
+                                                                   :op1 "IEC"))))
+                      :ARG1 (m2 / mechanism
+                                :ARG0-of (d / depend-01
+                                            :ARG1 (e / enzyme
+                                                     :name (n / name
+                                                              :op1 "MEK")))))
+             :ARG2 (i2 / involve-01
+                       :ARG1 (i3 / integrate-01
+                                 :ARG1 (a3 / and
+                                           :op1 (p / pathway
+                                                   :ARG0-of (d2 / depend-01
+                                                                :ARG1 e))
+                                           :op2 (p4 / pathway
+                                                    :ARG0-of (d3 / depend-01
+                                                                 :ARG1 (e2 / enzyme
+                                                                           :name (n4 / name
+                                                                                     :op1 "PI3K"))))
+                                           :ARG0-of (s / signal-07)))
+                       :ARG2 (r2 / resist-01
+                                 :ARG1 (a2 / anoikis)))))

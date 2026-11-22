@@ -1,0 +1,125 @@
+{
+  "petit_prince": {
+    "populations": 27,
+    "max_nodes": 15,
+    "amrs_in_files": 1562,
+    "body_amrs_before_cap": 1535,
+    "dropped_root_pruned": 3,
+    "dropped_above_cap": 67,
+    "dropped_undecodable": 0,
+    "kept": 1465,
+    "kept_share_percent": 95.44,
+    "kept_share_of_unpruned_percent": 95.63,
+    "nodes_mean_per_kept_graph": 6.216,
+    "n_range": [
+      8,
+      159
+    ],
+    "n_median": 47.0,
+    "N_range": [
+      9,
+      15
+    ],
+    "C_range": [
+      38,
+      324
+    ],
+    "R_range": [
+      12,
+      35
+    ]
+  },
+  "bio": {
+    "populations": 44,
+    "max_nodes": 34,
+    "amrs_in_files": 3836,
+    "body_amrs_before_cap": 3836,
+    "dropped_root_pruned": 0,
+    "dropped_above_cap": 167,
+    "dropped_undecodable": 0,
+    "kept": 3669,
+    "kept_share_percent": 95.65,
+    "kept_share_of_unpruned_percent": 95.65,
+    "nodes_mean_per_kept_graph": 17.532,
+    "n_range": [
+      16,
+      370
+    ],
+    "n_median": 63.0,
+    "N_range": [
+      28,
+      34
+    ],
+    "C_range": [
+      89,
+      993
+    ],
+    "R_range": [
+      19,
+      48
+    ],
+    "source": {
+      "amrs_in_source": 6452,
+      "by_group": {
+        "pubmed_papers": 4210,
+        "bel": 1012,
+        "other_non_pubmed": 286,
+        "chicago": 944
+      },
+      "left_out_not_pubmed": 2242,
+      "non_pubmed_other_groups": 14,
+      "papers": 44,
+      "pubmed_amrs": 4210,
+      "section_titles_removed": 374,
+      "section_titles_by_reason": {
+        "no final punctuation": 117,
+        "paper title": 34,
+        "sec-title tag": 223
+      },
+      "body_amrs": 3836,
+      "pubmed_graphs_with_xref_layer_removed": 3208,
+      "body_graphs_with_xref_layer_removed": 2994
+    }
+  },
+  "proxy": {
+    "populations": 367,
+    "max_nodes": 24,
+    "amrs_in_files": 6595,
+    "body_amrs_before_cap": 6595,
+    "dropped_root_pruned": 0,
+    "dropped_above_cap": 311,
+    "dropped_undecodable": 0,
+    "kept": 6284,
+    "kept_share_percent": 95.28,
+    "kept_share_of_unpruned_percent": 95.28,
+    "nodes_mean_per_kept_graph": 11.584,
+    "n_range": [
+      3,
+      66
+    ],
+    "n_median": 14.0,
+    "N_range": [
+      11,
+      24
+    ],
+    "C_range": [
+      33,
+      390
+    ],
+    "R_range": [
+      8,
+      38
+    ],
+    "source": {
+      "amrs_in_source": 8252,
+      "documents": 367,
+      "removed_total": 1657,
+      "removed_by_snt_type": {
+        "summary": 556,
+        "date": 367,
+        "country": 367,
+        "topic": 367
+      }
+    }
+  }
+}

@@ -1,0 +1,1669 @@
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt HIF-1α mRNA and protein was increased in RGP vs melanocytes, VGP vs RGP and MET vs VGP melanoma cell lines.
+# ::file pmid_1991_9690_7.txt
+# ::date 2015-08-13T09:51:45
+# ::id pmid_1991_9690.7
+(i / increase-01
+   :ARG1 (a / and
+            :op1 (n3 / nucleic-acid
+                     :name (n / name
+                              :op1 "mRNA")
+                     :ARG0-of (e / encode-01
+                                 :ARG1 (p / protein
+                                          :name (n2 / name
+                                                    :op1 "HIF-1α"))))
+            :op2 p)
+   :location (a2 / and
+                 :op1 (c / contrast-01
+                         :ARG1 (c2 / cell-line
+                                   :mod (m / medical-condition
+                                           :name (n6 / name
+                                                     :op1 "melanoma"))
+                                   :mod (p2 / phase
+                                            :mod (g / grow-01
+                                                    :manner (r2 / radius))))
+                         :ARG2 (m3 / melanocyte
+                                   :mod m))
+                 :op2 (c4 / contrast-01
+                          :ARG1 (c5 / cell-line
+                                    :mod m
+                                    :mod (p3 / phase
+                                             :mod (g2 / grow-01
+                                                      :manner (v / vertical))))
+                          :ARG2 c2)
+                 :op3 (c7 / contrast-01
+                          :ARG1 (c6 / cell-line
+                                    :mod m
+                                    :ARG1-of (m2 / metastasize-101))
+                          :ARG2 c5)))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We also detected expression of a HIF-1α mRNA splice variant that lacks part of the oxygen-dependent regulation domain in WM1366 and WM9 melanoma cells.
+# ::file pmid_1991_9690_8.txt
+# ::date 2015-08-13T10:05:00
+# ::id pmid_1991_9690.8
+(d / detect-01
+   :ARG0 (w / we)
+   :ARG1 (e / express-03
+            :ARG2 (v / variant
+                     :ARG1-of (s / splice-01)
+                     :mod (n6 / nucleic-acid
+                              :name (n / name
+                                       :op1 "mRNA")
+                              :ARG0-of (e2 / encode-01
+                                           :ARG1 (p / protein
+                                                    :name (n2 / name
+                                                              :op1 "HIF-1α"))))
+                     :ARG0-of (l / lack-01
+                                 :ARG1 (t / thing
+                                          :part-of (d2 / domain
+                                                       :ARG0-of (r2 / regulate-01)
+                                                       :ARG0-of (d3 / depend-01
+                                                                    :ARG1 (o / oxygen))))
+                                 :location (a2 / and
+                                               :op1 (c / cell-line
+                                                       :name (n3 / name
+                                                                 :op1 "WM1366")
+                                                       :mod (m / medical-condition
+                                                               :name (n4 / name
+                                                                         :op1 "melanoma")))
+                                               :op2 (c2 / cell-line
+                                                        :name (n5 / name
+                                                                  :op1 "WM9")
+                                                        :mod m)))))
+   :mod (a / also))
+
+# ::save-date Sun Aug 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Over-expression of HIF-1α and its splice variant in the RGP cell line SbCl2 resulted in a small increase in soft agar colony formation and a large increase in matrigel invasion relative to control transfected cells.
+# ::file pmid_1991_9690_9.txt
+# ::date 2015-08-13T14:08:13
+# ::id pmid_1991_9690.9
+(r / result-01
+   :ARG1 (o / overexpress-01
+            :ARG1 (a2 / and
+                      :op1 (p / protein
+                              :name (n / name
+                                       :op1 "HIF-1α"))
+                      :op2 (v / variant
+                              :ARG1-of (s / splice-01)
+                              :poss p))
+            :location (c / cell-line
+                         :name (n2 / name
+                                   :op1 "SbCl2")
+                         :mod (p3 / phase
+                                  :mod (g / grow-01
+                                          :manner (r3 / radius)))))
+   :ARG2 (a / and
+            :op1 (i / increase-01
+                    :ARG1 (f / form-01
+                             :ARG1 (c2 / colony
+                                       :mod (a3 / agar
+                                                :ARG1-of (s3 / soft-02))))
+                    :mod (s2 / small))
+            :op2 (i2 / increase-01
+                     :ARG1 (i3 / invade-01
+                               :ARG0 (p2 / protein
+                                         :name (n4 / name
+                                                   :op1 "matrigel")))
+                     :mod (l / large))
+            :ARG1-of (r2 / relative-05
+                         :ARG3 (c3 / cell
+                                   :mod (c4 / control)
+                                   :ARG1-of (t2 / transfect-01)))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Knockdown of HIF-1α expression by siRNA in the MET WM9 melanoma cell line resulted in a large decrease in both soft agar colony formation and matrigel invasion relative to cells treated with non-specific siRNA.
+# ::file pmid_1991_9690_10.txt
+# ::date 2015-08-13T14:19:28
+# ::id pmid_1991_9690.10
+(r / result-01
+   :ARG1 (k / knock-down-02
+            :ARG0 (n5 / nucleic-acid
+                      :name (n2 / name
+                                :op1 "siRNA"))
+            :ARG1 (e / express-03
+                     :ARG2 (p / protein
+                              :name (n / name
+                                       :op1 "HIF-1α"))
+                     :ARG3 (c / cell-line
+                              :name (n3 / name
+                                        :op1 "WM9")
+                              :mod (m / medical-condition
+                                      :name (n4 / name
+                                                :op1 "melanoma"))
+                              :ARG1-of (m2 / metastasize-101))))
+   :ARG2 (d2 / decrease-01
+             :ARG1 (a / and
+                      :op1 (f / form-01
+                              :ARG1 (c2 / colony
+                                        :mod (a2 / agar
+                                                 :ARG1-of (s / soft-02))))
+                      :op2 (i / invade-01
+                              :ARG0 (p2 / protein
+                                        :name (n6 / name
+                                                  :op1 "matrigel"))))
+             :ARG1-of (r3 / relative-05
+                          :ARG3 (c3 / cell
+                                    :ARG1-of (t2 / treat-04
+                                                 :ARG2 (n8 / nucleic-acid
+                                                           :name (n7 / name
+                                                                     :op1 "siRNA")
+                                                           :ARG1-of (s2 / specific-02
+                                                                        :polarity "-")))))
+             :mod (l / large)))
+
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There is a high level of ERK1/2 phosphorylation in WM9 cells, indicating an activated Ras-Raf-MEK-ERK1/2 MAPK pathway.
+# ::file pmid_1991_9690_11.txt
+# ::date 2015-08-14T06:57:56
+# ::id pmid_1991_9690.11
+(l2 / level
+      :ARG1-of (h / high-02)
+      :quant-of (p / phosphorylate-01
+            :ARG1 (e / enzyme
+                  :name (n2 / name :op1 "ERK1/2"))
+            :location (c / cell-line
+                  :name (n3 / name :op1 "WM9")))
+      :ARG0-of (i / indicate-01
+            :ARG1 (p3 / pathway
+                  :name (n4 / name :op1 "Ras-Raf-MEK-ERK1/2" :op2 "MAPK")
+                  :ARG1-of (a / activate-01))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Treatment of WM9 cells with 30 μM U0126 MEK inhibitor, decreased ERK1/2 phosphorylation and resulted in a decrease in HIF-1α expression.
+# ::file pmid_1991_9690_12.txt
+# ::date 2015-08-14T07:11:55
+# ::id pmid_1991_9690.12
+(a / and
+   :op1 (d / decrease-01
+           :ARG0 (t2 / treat-04
+                     :ARG1 (c / cell-line
+                              :name (n3 / name
+                                        :op1 "WM9"))
+                     :ARG2 (s2 / small-molecule
+                               :name (n4 / name
+                                         :op1 "U0126")
+                               :ARG0-of (i2 / inhibit-01
+                                            :ARG1 (p / protein-family
+                                                     :name (n5 / name
+                                                               :op1 "MEK")))
+                               :quant (c2 / concentration-quantity
+                                          :quant "30"
+                                          :unit (m / micromolar))))
+           :ARG1 (p2 / phosphorylate-01
+                     :ARG1 (e2 / enzyme
+                               :name (n6 / name
+                                         :op1 "ERK1/2"))))
+   :op2 (r / result-01
+           :ARG1 t2
+           :ARG2 (d2 / decrease-01
+                     :ARG1 (e3 / express-03
+                               :ARG2 (p3 / protein
+                                         :name (n7 / name
+                                                   :op1 "HIF-1α"))))))
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, a 24 h treatment with 10 μM U0126 totally eliminated Erk1/2 phosphorylation, but did not change HIF-1alpha levels.
+# ::file pmid_1991_9690_13.txt
+# ::date 2015-08-14T07:17:27
+# ::id pmid_1991_9690.13
+(c / contrast-01
+   :ARG2 (c2 / contrast-01
+             :ARG1 (e / eliminate-01
+                      :ARG0 (t / treat-04
+                               :ARG2 (s / small-molecule
+                                        :name (n / name
+                                                 :op1 "U0126")
+                                        :quant (c3 / concentration-quantity
+                                                   :quant "10"
+                                                   :unit (m / micromolar)))
+                               :duration (t2 / temporal-quantity
+                                             :quant "24"
+                                             :unit (h / hour)))
+                      :ARG1 (p / phosphorylate-01
+                               :ARG1 (e2 / enzyme
+                                         :name (n2 / name
+                                                   :op1 "ERK1/2")))
+                      :degree (t3 / total))
+             :ARG2 (c4 / change-01
+                       :polarity "-"
+                       :ARG0 t
+                       :ARG1 (l / level
+                                :quant-of (p2 / protein
+                                              :name (n3 / name
+                                                        :op1 "HIF-1alpha"))))))
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, siRNA knockdown of MEK siRNA did not change HIF-1alpha levels.
+# ::file pmid_1991_9690_14.txt
+# ::date 2015-08-14T07:25:55
+# ::id pmid_1991_9690.14
+(a / and
+   :op2 (c / change-01
+           :polarity "-"
+           :ARG0 (k / knock-down-02
+                    :ARG0 (n / nucleic-acid
+                             :name (n2 / name
+                                       :op1 "siRNA"))
+                    :ARG1 (n6 / nucleic-acid
+                              :name (n3 / name
+                                        :op1 "siRNA")
+                              :ARG0-of (e / encode-01
+                                          :ARG1 (e2 / enzyme
+                                                    :name (n4 / name
+                                                              :op1 "MEK")))))
+           :ARG1 (l / level
+                    :quant-of (p2 / protein
+                                  :name (n5 / name
+                                            :op1 "HIF-1alpha")))))
+
+# ::save-date Wed Feb 24, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition to the well known pathway of HIF-1alpha protein stabilization under hpoxic conditions, it has been established that many oncoproteins and growth factor signaling pathways up-regulate HIF-1α expression under normoxic conditions [<xref ref-type="bibr" rid="B18">18</xref>,<xref ref-type="bibr" rid="B19">19</xref>].
+# ::file pmid_1991_9690_49.txt
+# ::date 2015-08-14T08:12:39
+# ::id pmid_1991_9690.49
+(e / establish-01
+   :ARG1 (a / and
+            :op1 (o / oncoprotein
+                    :quant (m / many))
+            :op2 (p / pathway
+                    :ARG0-of (s2 / signal-07)
+                    :ARG0-of (u / upregulate-01
+                                :ARG1 (e2 / express-03
+                                          :ARG2 (p2 / protein
+                                                    :name (n2 / name
+                                                              :op1 "HIF-1α")))
+                                :ARG1-of (c / condition-01
+                                            :ARG2 (n3 / normoxia)))
+                    :mod (g / growth-factor)))
+   :ARG1-of (a2 / add-02
+                :ARG2 (k / know-01
+                         :ARG1 (p3 / pathway
+                                   :ARG0-of (s3 / stabilize-01
+                                                :ARG1 p2
+                                                :ARG1-of (c2 / condition-01
+                                                             :ARG2 (h / hypoxia))))
+                         :ARG1-of (w / well-09)))
+   :ARG1-of (d / describe-01
+               :ARG0 (p4 / publication
+                         :ARG1-of (c3 / cite-01
+                                      :ARG2 (a3 / and
+                                                :op1 "18"
+                                                :op2 "19")))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, there are few investigations into the normoxic expression of HIF-1α in human melanoma and its role in the malignant progression of this disease.
+# ::file pmid_1991_9690_50.txt
+# ::date 2015-08-14T08:51:55
+# ::id pmid_1991_9690.50
+(c / contrast-01
+   :ARG2 (i / investigate-01
+            :ARG1 (a / and
+                     :op1 (e / express-03
+                             :ARG2 (p / protein
+                                      :name (n / name
+                                               :op1 "HIF-1α"))
+                             :ARG3 (m2 / medical-condition
+                                       :name (n2 / name
+                                                 :op1 "melanoma")
+                                       :mod (h / human))
+                             :mod (n3 / normoxia))
+                     :op2 (r / role
+                             :poss e
+                             :topic (p2 / progress-01
+                                        :ARG1 m2
+                                        :ARG1-of (m / malignant-02))))
+            :quant (f / few)))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Here, we show that in human melanoma cells, the oxygen-labile HIF-1α protein as well as its mRNA is expressed endogenously under normoxic conditions.
+# ::file pmid_1991_9690_51.txt
+# ::date 2015-08-14T08:57:27
+# ::id pmid_1991_9690.51
+(s / show-01
+   :ARG0 (w / we)
+   :ARG1 (e / express-03
+            :ARG2 (a / and
+                     :op1 (p / protein
+                             :name (n2 / name
+                                       :op1 "HIF-1α")
+                             :mod (l2 / labile
+                                      :topic (o / oxygen)))
+                     :op2 (n5 / nucleic-acid
+                              :name (n3 / name
+                                        :op1 "mRNA")
+                              :ARG0-of (e2 / encode-01
+                                           :ARG1 p)))
+            :ARG3 (c / cell
+                     :mod (m / medical-condition
+                             :name (n / name
+                                      :op1 "melanoma"))
+                     :mod (h / human))
+            :manner (e3 / endogenous)
+            :ARG1-of (c2 / condition-01
+                         :ARG2 (n4 / normoxic)))
+   :medium (h2 / here))
+
+# ::save-date Tue Aug 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Figure <xref ref-type="fig" rid="F1">1A</xref> shows that HIF-1α protein is highly expressed in WM9 cells relative to normal human melanocyte (HEMn-LP), but radial growth phase (SbCl2), and vertical growth phase (WM1366) also express a higher amount of HIF-1α protein relative to human melanocytes.
+# ::file pmid_1991_9690_52.txt
+# ::date 2015-08-14T09:07:06
+# ::id pmid_1991_9690.52
+(s / show-01
+   :ARG0 (f / figure
+            :mod "1A")
+   :ARG1 (c / contrast-01
+            :ARG1 (e / express-03
+                     :ARG2 (p / protein
+                              :name (n / name
+                                       :op1 "HIF-1α"))
+                     :ARG3 (c2 / cell-line
+                               :name (n2 / name
+                                         :op1 "WM9"))
+                     :ARG1-of (h2 / high-02)
+                     :ARG1-of (r / relative-05
+                                 :ARG3 (m3 / melanocyte
+                                           :ARG1-of (n9 / normal-02)
+                                           :mod (h3 / human)
+                                           :ARG1-of (m2 / mean-01
+                                                        :ARG2 (c7 / cell-line
+                                                                  :name (n8 / name
+                                                                            :op1 "HEMn-LP"))))))
+            :ARG2 (e2 / express-03
+                      :ARG2 (a3 / amount-01
+                                :ARG1 p
+                                :ARG1-of (h / high-02
+                                            :degree (m / more)))
+                      :ARG3 (a / and
+                               :op1 (p2 / phase
+                                        :mod (g / grow-01
+                                                :manner (r2 / radius))
+                                        :example (c4 / cell-line
+                                                     :name (n5 / name
+                                                               :op1 "SbCI2")))
+                               :op2 (p3 / phase
+                                        :mod (g2 / grow-01
+                                                 :manner (v / vertical))
+                                        :example (c5 / cell-line
+                                                     :name (n6 / name
+                                                               :op1 "WM1366"))))
+                      :mod (a2 / also)
+                      :ARG1-of (r3 / relative-05
+                                   :mod (m4 / melanocyte
+                                            :mod h3)))))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similar results are seen in second set of RGP, VGP and MET melanoma cell lines (Fig. <xref ref-type="fig" rid="F1">1B</xref>).
+# ::file pmid_1991_9690_53.txt
+# ::date 2015-08-14T10:16:13
+# ::id pmid_1991_9690.53
+(s / see-01
+      :ARG1 (t / thing
+            :ARG2-of (r2 / result-01)
+            :ARG1-of (r / resemble-01))
+      :location (s2 / set
+            :ord (o / ordinal-entity :value "2")
+            :consist-of (a / and
+                  :op1 (c / cell-line
+                        :mod (p / phase
+                              :mod (g / grow-01
+                                    :manner (r3 / radius))))
+                  :op2 (c2 / cell-line
+                        :mod (p2 / phase
+                              :mod (g2 / grow-01
+                                    :manner (v / vertical))))
+                  :op3 (c3 / cell-line
+                        :ARG1-of (m2 / metastasize-101))
+                  :mod (m / medical-condition
+                        :name (n / name :op1 "melanoma"))))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure :mod "1B")))
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt HIF-1α was detected as 120 kD protein in nuclear extracts while no protein was detected in cytoplasmic extracts (data not shown).
+# ::file pmid_1991_9690_54.txt
+# ::date 2015-08-14T10:37:38
+# ::id pmid_1991_9690.54
+(c / contrast-01
+   :ARG1 (d / detect-01
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "HIF-1α")
+                     :quant (m / mass-quantity
+                               :quant "120"
+                               :unit (k / kilodalton)))
+            :location (t / thing
+                         :ARG1-of (e / extract-01)
+                         :mod (n2 / nucleus)))
+   :ARG2 (d2 / detect-01
+             :polarity "-"
+             :ARG1 (p2 / protein)
+             :location (t2 / thing
+                           :ARG1-of (e2 / extract-01)
+                           :mod (c2 / cytoplasm)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (d4 / data
+                          :ARG1-of (s / show-01
+                                      :polarity "-"))))
+
+# ::save-date Tue Aug 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Hypoxic stabilization of HIF-1α occurs at the protein level [<xref ref-type="bibr" rid="B3">3</xref>].
+# ::file pmid_1991_9690_55.txt
+# ::date 2015-08-14T11:12:27
+# ::id pmid_1991_9690.55
+(s / stabilize-01
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "HIF-1α"))
+   :ARG2 (l / level
+            :quant-of (p2 / protein))
+   :mod (h / hypoxia)
+   :ARG1-of (d / describe-01
+               :ARG0 (p3 / publication
+                         :ARG1-of (c / cite-01
+                                     :ARG2 "3"))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Since HIF-1α protein was increased in human melanoma cells under normoxic conditions, we determined whether this increase might be due to increased HIF-1α mRNA levels.
+# ::file pmid_1991_9690_56.txt
+# ::date 2015-08-14T11:15:07
+# ::id pmid_1991_9690.56
+(d / determine-01
+   :ARG0 (w / we)
+   :ARG1 (p2 / possible-01
+             :mode "interrogative"
+             :ARG1 (c / cause-01
+                      :ARG0 (l / level
+                               :quant-of (n5 / nucleic-acid
+                                             :name (n / name
+                                                      :op1 "mRNA")
+                                             :ARG0-of (e / encode-01
+                                                         :ARG1 (p3 / protein
+                                                                   :name (n2 / name
+                                                                             :op1 "HIF-1α"))))
+                               :ARG1-of (i3 / increase-01))
+                      :ARG1 (i / increase-01
+                               :mod (t / this))))
+   :ARG1-of (c4 / cause-01
+                :ARG0 (i2 / increase-01
+                          :ARG1 p3
+                          :location (c2 / cell
+                                        :mod (m / medical-condition
+                                                :name (n3 / name
+                                                          :op1 "melanoma"))
+                                        :mod (h / human)
+                                        :ARG1-of (c3 / condition-01
+                                                     :ARG2 (n4 / normoxia))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Initially we used semi-quantitative RT-PCR to assess expression of HIF-1α full length (FL) and a splice variant HIF-1α785 that is missing the acetylation site lys<sup>532 </sup>due to lack of exon 11 (Fig. <xref ref-type="fig" rid="F2">2A</xref>).
+# ::file pmid_1991_9690_57.txt
+# ::date 2015-08-14T12:05:32
+# ::id pmid_1991_9690.57
+(u / use-01
+   :ARG0 (w / we)
+   :ARG1 (t / thing
+            :name (n / name
+                     :op1 "RT-PCR")
+            :mod (q / quantitative
+                    :degree (s / semi)))
+   :ARG2 (a / assess-01
+            :ARG0 w
+            :ARG1 (a2 / and
+                      :op1 (e / express-03
+                              :ARG2 (p / protein
+                                       :name (n2 / name
+                                                 :op1 "HIF-1α"))
+                              :ARG1-of (l / long-03
+                                          :degree (f / full)))
+                      :op2 (v / variant
+                              :ARG1-of (s2 / splice-01)
+                              :ARG1-of (m2 / mean-01
+                                           :ARG2 (p2 / protein
+                                                     :name (n4 / name
+                                                               :op1 "HIF-1α785")))
+                              :ARG0-of (m / miss-01
+                                          :ARG1 (s3 / site-01
+                                                    :ARG0-of (a4 / acetylate-01)
+                                                    :mod (a3 / amino-acid
+                                                             :mod "532"
+                                                             :name (n3 / name
+                                                                       :op1 "lysine")))
+                                          :ARG1-of (c / cause-01
+                                                      :ARG0 (l2 / lack-01
+                                                                :ARG1 (e2 / exon
+                                                                          :mod "11")))))))
+   :time (i / initial)
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "2A")))
+
+# ::save-date Tue Aug 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This splice variant encodes HIF-1α protein that has been reported to be stable under normoxic conditions [<xref ref-type="bibr" rid="B17">17</xref>,<xref ref-type="bibr" rid="B20">20</xref>].
+# ::file pmid_1991_9690_58.txt
+# ::date 2015-08-15T02:35:20
+# ::id pmid_1991_9690.58
+(e / encode-01
+   :ARG0 (v / variant
+            :ARG1-of (s / splice-01)
+            :mod (t / this))
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "HIF-1α")
+            :ARG1-of (s2 / stable-03
+                         :ARG1-of (c / condition-01
+                                     :ARG2 (n2 / normoxia))
+                         :ARG1-of (r / report-01)))
+   :ARG1-of (d / describe-01
+               :ARG0 (p2 / publication
+                         :ARG1-of (c2 / cite-01
+                                      :ARG2 (a / and
+                                               :op1 "17"
+                                               :op2 "20")))))
+
+# ::save-date Fri Nov 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Primers were designed so that full length HIF-1α would exclude HIF-1α785 by targeting exon 11, which is absent in HIF-1α785.
+# ::file pmid_1991_9690_59.txt
+# ::date 2015-08-15T02:46:07
+# ::id pmid_1991_9690.59
+(d / design-01
+   :ARG1 (p3 / primer)
+   :ARG3 (e / exclude-01
+            :ARG0 (p / protein
+                     :name (n2 / name
+                               :op1 "HIF-1α")
+                     :ARG1-of (l2 / long-03
+                                  :degree (f / full)))
+            :ARG1 (p2 / protein
+                      :name (n3 / name
+                                :op1 "HIF-1α785"))
+            :manner (t / target-01
+                       :ARG0 p
+                       :ARG1 (e2 / exon
+                                 :mod "11"
+                                 :ARG1-of (a / absent-01
+                                             :ARG2 p2)))))
+
+# ::save-date Fri Nov 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Primers for HIF-1α785 excluded HIF-1α by targeting the exon 10:12 boundary only present in HIF-1α785.
+# ::file pmid_1991_9690_60.txt
+# ::date 2015-08-15T03:01:12
+# ::id pmid_1991_9690.60
+(e / exclude-01
+   :ARG0 (p4 / primer
+             :beneficiary (p / protein
+                             :name (n2 / name
+                                       :op1 "HIF-1α758")))
+   :ARG1 (p2 / protein
+             :name (n3 / name
+                       :op1 "HIF-1α"))
+   :manner (t / target-01
+              :ARG0 p4
+              :ARG1 (b / boundary
+                       :ARG1-of (p3 / present-02
+                                    :ARG2 p
+                                    :mod (o / only))
+                       :mod (b2 / between
+                                :op1 (e2 / exon
+                                         :mod "10")
+                                :op2 (e3 / exon
+                                         :mod "12")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Fig. <xref ref-type="fig" rid="F2">2B</xref> shows that human melanoma cell lines express both full-length and the 785 splice variant HIF-1α mRNA at a level that appeared to be higher than normal human melanocytes.
+# ::file pmid_1991_9690_61.txt
+# ::date 2015-08-15T03:08:45
+# ::id pmid_1991_9690.61
+(s / show-01
+   :ARG0 (f / figure
+            :mod "2B")
+   :ARG1 (e / express-03
+            :ARG2 (a / and
+                     :op1 (n6 / nucleic-acid
+                              :name (n2 / name
+                                        :op1 "mRNA")
+                              :ARG0-of (e2 / encode-01
+                                           :ARG1 (p / protein
+                                                    :name (n3 / name
+                                                              :op1 "HIF-1α")
+                                                    :ARG1-of (l3 / long-03
+                                                                 :degree (f2 / full)))))
+                     :op2 (n7 / nucleic-acid
+                              :name (n4 / name
+                                        :op1 "mRNA")
+                              :ARG0-of (e3 / encode-01
+                                           :ARG1 (v / variant
+                                                    :ARG1-of (s2 / splice-01)
+                                                    :ARG1-of (m2 / mean-01
+                                                                 :ARG2 (p2 / protein
+                                                                           :name (n5 / name
+                                                                                     :op1 "HIF-1α785")))))))
+            :ARG3 (c / cell-line
+                     :mod (m4 / medical-condition
+                              :name (n / name
+                                       :op1 "melanoma"))
+                     :mod (h2 / human))
+            :manner (l2 / level
+                        :ARG1-of (a2 / appear-01)
+                        :ARG1-of (h / high-02
+                                    :degree (m / more)
+                                    :compared-to (m3 / melanocyte
+                                                     :ARG1-of (n8 / normal-02)
+                                                     :mod (h3 / human))))))
+
+
+# ::save-date Tue Aug 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These findings were verified by qRT-PCR measurement of full-length and HIF-1α785 mRNA levels (Fig. <xref ref-type="fig" rid="F3">3</xref>).
+# ::file pmid_1991_9690_62.txt
+# ::date 2015-08-15T03:20:33
+# ::id pmid_1991_9690.62
+(v / verify-01
+      :ARG0 (m / measure-01
+            :ARG1 (a / and
+                  :op1 (l / level
+                        :quant-of (n3 / nucleic-acid
+                              :name (n2 / name :op1 "mRNA")
+                              :ARG1-of (l4 / long-03
+                                    :degree (f2 / full))))
+                  :op2 (l3 / level
+                        :quant-of (n6 / nucleic-acid
+                              :name (n4 / name :op1 "mRNA")
+                              :ARG0-of (e2 / encode-01
+                                    :ARG1 (p2 / protein-segment
+                                          :name (n5 / name :op1 "HIF-1α785"))))))
+            :mod (t3 / thing
+                  :name (n / name :op1 "RT-PCR")
+                  :mod (q / quantitative)))
+      :ARG1 (t / thing
+            :ARG1-of (f / find-01)
+            :mod (t2 / this))
+      :ARG1-of (d / describe-01
+            :ARG0 (f3 / figure :mod "3")))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All melanoma cell lines had increased expression of HIF-1α mRNA relative to normal human melanocytes.
+# ::file pmid_1991_9690_63.txt
+# ::date 2015-08-15T03:57:36
+# ::id pmid_1991_9690.63
+(i / increase-01
+   :ARG1 (e / express-03
+            :ARG2 (n4 / nucleic-acid
+                      :name (n2 / name
+                                :op1 "mRNA")
+                      :ARG0-of (e2 / encode-01
+                                   :ARG1 (p / protein
+                                            :name (n3 / name
+                                                      :op1 "HIF-1α"))))
+            :ARG3 (c / cell-line
+                     :mod (m2 / medical-condition
+                              :name (n / name
+                                       :op1 "melanoma"))
+                     :mod (a / all))
+            :ARG1-of (r2 / relative-05
+                         :ARG3 (m / melanocyte
+                                  :ARG1-of (n6 / normal-02)
+                                  :mod (h / human)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition VGP and MET cell lines expressed more of the 785 HIF-1α mRNA than full length HIF-1α mRNA.
+# ::file pmid_1991_9690_64.txt
+# ::date 2015-08-15T04:02:27
+# ::id pmid_1991_9690.64
+(a / and
+   :op2 (e / express-03
+           :ARG2 (n / nucleic-acid
+                    :name (n3 / name
+                              :op1 "mRNA")
+                    :ARG0-of (e2 / encode-01
+                                 :ARG1 (p / protein
+                                          :name (n4 / name
+                                                    :op1 "HIF-1α785"))))
+           :ARG3 (a2 / and
+                     :op1 (c / cell-line
+                             :mod (p3 / phase
+                                      :mod (g / grow-01
+                                              :manner (v / vertical))))
+                     :op2 (c2 / cell-line
+                              :mod (m2 / metastasis)))
+           :compared-to (e3 / express-03
+                            :ARG2 (n2 / nucleic-acid
+                                      :name (n5 / name
+                                                :op1 "mRNA")
+                                      :ARG0-of (e4 / encode-01
+                                                   :ARG1 (p2 / protein
+                                                             :name (n6 / name
+                                                                       :op1 "HIF-1α")
+                                                             :ARG1-of (l2 / long-03
+                                                                          :degree (f / full)))))
+                            :ARG3 a2)
+           :degree (m / more)))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Overall the WM9 metastatic melanoma expressed the highest amount of 785 HIF-1α mRNA (~79× higher than normal human melanocytes).
+# ::file pmid_1991_9690_65.txt
+# ::date 2015-08-15T04:13:53
+# ::id pmid_1991_9690.65
+(e / express-03
+      :ARG2 (a / amount-01
+            :ARG1 (n5 / nucleic-acid
+                  :name (n3 / name :op1 "mRNA")
+                  :ARG0-of (e2 / encode-01
+                        :ARG1 (p / protein-segment
+                              :name (n4 / name :op1 "HIF-1α785"))))
+            :ARG2 (h2 / high-02
+                  :degree (m2 / more)
+                  :mod (a2 / approximately
+                        :op1 (p2 / product-of :op1 "79"))
+                  :compared-to (m3 / melanocyte
+                        :ARG1-of (n7 / normal-02)
+                        :mod (h3 / human)))
+            :ARG1-of (h / high-02
+                  :degree (m / most)))
+      :ARG3 (c / cell-line
+            :name (n / name :op1 "WM9")
+            :mod (m5 / medical-condition
+                  :name (n2 / name :op1 "melanoma")
+                  :ARG1-of (m4 / metastasize-101)))
+      :mod (o / overall))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The level of HIF-1α protein is low in the radial growth phase SbCl2 cells relative to VGP or MET cell lines.
+# ::file pmid_1991_9690_67.txt
+# ::date 2015-08-15T04:58:43
+# ::id pmid_1991_9690.67
+(l / low-04
+   :ARG1 (l2 / level
+             :quant-of (p / protein
+                          :name (n / name
+                                   :op1 "HIF-1α")))
+   :location (c / cell-line
+                :name (n2 / name
+                          :op1 "SbCl2")
+                :mod (p2 / phase
+                         :mod (g / grow-01
+                                 :manner (r / radius))))
+   :ARG1-of (r2 / relative-05
+                :ARG3 (a / and
+                         :op1 (c2 / cell-line
+                                  :mod (p3 / phase
+                                           :mod (g2 / grow-01
+                                                    :manner (v / vertical))))
+                         :op2 (c3 / cell-line
+                                  :ARG1-of (m / metastasize-101)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We determined the effect of HIF-1αFL or HIF-1α785 overexpression on SbCl2 anchorage-independent growth and Matrigel invasion.
+# ::file pmid_1991_9690_68.txt
+# ::date 2015-08-15T05:31:43
+# ::id pmid_1991_9690.68
+(d / determine-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :ARG0 (o / overexpress-01
+                     :ARG1 (o2 / or
+                               :op1 (p / protein
+                                       :wiki "HIF1A"
+                                       :name (n / name
+                                                :op1 "HIF-1α")
+                                       :ARG1-of (l2 / long-03
+                                                    :degree (f / full)))
+                               :op2 (p2 / protein
+                                        :wiki "-"
+                                        :name (n2 / name
+                                                  :op1 "HIF-1α785")))
+                     :location (c / cell-line
+                                  :wiki "-"
+                                  :name (n4 / name
+                                            :op1 "SbCl2")))
+            :ARG1 (a2 / and
+                      :op1 (g / grow-01
+                              :ARG0-of (d2 / depend-01
+                                           :polarity "-"
+                                           :ARG1 (a3 / anchorage)))
+                      :op2 (i / invade-01
+                              :ARG0 (p3 / protein
+                                        :wiki "Matrigel"
+                                        :name (n3 / name
+                                                  :op1 "Matrigel"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt HIF-1αFL and HIF-1α785 were cloned into the pLenti-V5-D-TOPO vector and transiently overexpressed in SbCl2 cells (Fig. <xref ref-type="fig" rid="F4">4A</xref>).
+# ::file pmid_1991_9690_69.txt
+# ::date 2015-08-15T05:40:38
+# ::id pmid_1991_9690.69
+(a / and
+   :op1 (c / clone-01
+           :ARG1 (a2 / and
+                     :op1 (p / protein
+                             :name (n / name
+                                      :op1 "HIF-1α")
+                             :ARG1-of (l2 / long-03
+                                          :degree (f3 / full)))
+                     :op2 (p2 / protein
+                              :name (n2 / name
+                                        :op1 "HIF-1α785")))
+           :instrument (v / vector
+                          :name (n3 / name
+                                    :op1 "pLenti-V5-D-TOPO")))
+   :op2 (o / overexpress-01
+           :ARG1 a2
+           :ARG1-of (t / transient-02)
+           :location (c2 / cell-line
+                         :name (n4 / name
+                                   :op1 "SbCl2")))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "4A")))
+
+# ::save-date Fri Nov 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt HIF-1α785 overexpression resulted in a small, but statistically significant increase in anchorage-independent growth, relative to mock or lacz transfected cells (Fig. <xref ref-type="fig" rid="F4">4C</xref> and <xref ref-type="fig" rid="F4">4D</xref>).
+# ::file pmid_1991_9690_70.txt
+# ::date 2015-08-15T06:25:07
+# ::id pmid_1991_9690.70
+(r / result-01
+   :ARG1 (o / overexpress-01
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "HIF-1α785")))
+   :ARG2 (i2 / increase-01
+             :ARG1 (g / grow-01
+                      :ARG0-of (d / depend-01
+                                  :ARG1 (a / anchorage)))
+             :mod (s / small
+                     :ARG1-of (c / contrast-01
+                                 :ARG2 (s2 / significant-02
+                                           :mod (s3 / statistics)))
+                     :ARG1-of (r2 / relative-05
+                                  :ARG3 (o2 / or
+                                            :op1 (c4 / cell
+                                                     :ARG1-of (t2 / transfect-01
+                                                                  :mod (m / mock)))
+                                            :op2 (c2 / cell
+                                                     :ARG1-of (t / transfect-01
+                                                                 :ARG2 (p2 / protein
+                                                                           :name (n3 / name
+                                                                                     :op1 "lacz"))))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f / figure
+                                  :mod "4C")
+                          :op2 (f2 / figure
+                                   :mod "4D"))))
+
+# ::save-date Fri Nov 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast overexpression of both HIF-1αFL and HIF-α785 in SbCl2 resulted in a large and significant 3-fold increase in Matrigel invasion relative to mock or Lacz transfected cells (Fig. <xref ref-type="fig" rid="F4">4B</xref>).
+# ::file pmid_1991_9690_71.txt
+# ::date 2015-08-16T03:28:58
+# ::id pmid_1991_9690.71
+(c / contrast-01
+   :ARG2 (r / result-01
+            :ARG1 (o / overexpress-01
+                     :ARG1 (a / and
+                              :op1 (p / protein
+                                      :name (n / name
+                                               :op1 "HIF-1α")
+                                      :ARG1-of (l4 / long-03
+                                                   :degree (f / full)))
+                              :op2 (p2 / protein
+                                       :name (n2 / name
+                                                 :op1 "HIF-1α785")))
+                     :location (c2 / cell-line
+                                   :name (n3 / name
+                                             :op1 "SbCl2")))
+            :ARG2 (i / increase-01
+                     :ARG1 (i2 / invade-01
+                               :ARG0 (p4 / protein
+                                         :name (n4 / name
+                                                   :op1 "matrigel")))
+                     :ARG2 (p3 / product-of
+                               :op1 "3")
+                     :mod (l3 / large)
+                     :ARG1-of (s / significant-02)
+                     :ARG1-of (r2 / relative-05
+                                  :ARG3 (t2 / transfect-01
+                                            :ARG1 (c5 / cell)
+                                            :ARG2 (o3 / or
+                                                      :op1 (v / vector
+                                                              :mod (m / mock))
+                                                      :op2 (p5 / protein
+                                                               :name (n6 / name
+                                                                         :op1 "lacz")))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "4B")))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt HIF-1α protein is highly expressed under normoxic conditions in the WM9 human metastatic melanoma cell line.
+# ::file pmid_1991_9690_73.txt
+# ::date 2015-08-16T04:31:24
+# ::id pmid_1991_9690.73
+(e / express-03
+   :ARG2 (p / protein
+            :name (n / name
+                     :op1 "HIF-1α"))
+   :ARG3 (c / cell-line
+            :name (n2 / name
+                      :op1 "WM9")
+            :mod (h / human)
+            :mod (m / medical-condition
+                    :name (n3 / name
+                              :op1 "melanoma"))
+            :ARG1-of (m2 / metastasize-101))
+   :ARG1-of (c2 / condition-01
+                :ARG2 (n4 / normoxia))
+   :ARG1-of (h2 / high-02))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To determine whether HIF-1α could be contributing to the malignant characteristics of these cells, we knocked down its expression and examine how this affected anchorage independent growth and Matrigel invasion.
+# ::file pmid_1991_9690_74.txt
+# ::date 2015-08-16T04:35:16
+# ::id pmid_1991_9690.74
+(a / and
+   :op1 (k / knock-down-02
+           :ARG0 (w / we)
+           :ARG1 (e / express-03
+                    :ARG2 (p2 / protein
+                              :name (n / name
+                                       :op1 "HIF-1α"))))
+   :op2 (e2 / examine-01
+            :ARG0 w
+            :ARG1 (t2 / thing
+                      :manner-of (a2 / affect-01
+                                     :ARG0 k
+                                     :ARG1 (a3 / and
+                                               :op1 (g / grow-01
+                                                       :ARG0-of (d / depend-01
+                                                                   :polarity "-"
+                                                                   :ARG1 (a4 / anchorage)))
+                                               :op2 (i / invade-01
+                                                       :ARG0 (p3 / protein
+                                                                 :name (n2 / name
+                                                                           :op1 "matrigel")))))))
+   :purpose (d2 / determine-01
+                :ARG0 w
+                :ARG1 (p / possible-01
+                         :mode "interrogative"
+                         :ARG1 (c / contribute-01
+                                  :ARG0 p2
+                                  :ARG1 (c2 / characteristic-02
+                                            :ARG1 (c3 / cell
+                                                      :mod (t / this))
+                                            :ARG2 (m / malignant-02))))))
+
+# ::save-date Mon Feb 1, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt WM9 cells were treated with 100 nM siRNA targeting HIF-1α (Dharmacon) which consistently decreased its expression by ~75-85% (Fig. <xref ref-type="fig" rid="F5">5A</xref>).
+# ::file pmid_1991_9690_75.txt
+# ::date 2015-08-16T04:43:42
+# ::id pmid_1991_9690.75
+(t / treat-04
+   :ARG1 (c / cell-line
+            :name (n / name
+                     :op1 "WM9"))
+   :ARG2 (n5 / nucleic-acid
+             :name (n2 / name
+                       :op1 "siRNA")
+             :ARG0-of (t2 / target-01
+                          :ARG1 (p / protein
+                                   :name (n3 / name
+                                             :op1 "HIF-1α")))
+             :quant (c2 / concentration-quantity
+                        :quant "100"
+                        :unit (n4 / nanomolar))
+             :source (c4 / company
+                         :name (n6 / name
+                                   :op1 "Dharmacon")))
+   :ARG0-of (d / decrease-01
+               :ARG1 (e / express-03
+                        :ARG2 p)
+               :ARG2 (a / approximately
+                        :op1 (v / value-interval
+                                :op1 (p2 / percentage-entity
+                                         :value "75")
+                                :op2 (p3 / percentage-entity
+                                         :value "85")))
+               :manner (c3 / consistent-02))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5A")))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Colony formation after 5 days in soft agarose was inhibited by 70% in HIF-1α-siRNA transfected WM9 cells in comparison to cells transfected with control siRNA (Fig. <xref ref-type="fig" rid="F5">5B</xref>).
+# ::file pmid_1991_9690_76.txt
+# ::date 2015-08-16T04:54:11
+# ::id pmid_1991_9690.76
+(i / inhibit-01
+   :ARG1 (f / form-01
+            :ARG1 (c / colony)
+            :time (a / after
+                     :quant (t2 / temporal-quantity
+                                :quant "5"
+                                :unit (d2 / day)))
+            :location (a2 / agarose
+                          :ARG1-of (s / soft-02)))
+   :quant (p / percentage-entity
+             :value "70")
+   :location (c2 / cell-line
+                 :name (n2 / name
+                           :op1 "WM9")
+                 :ARG1-of (t3 / transfect-01
+                              :ARG2 (n6 / nucleic-acid
+                                        :name (n3 / name
+                                                  :op1 "siRNA")
+                                        :ARG0-of (e / encode-01
+                                                    :ARG1 (p2 / protein
+                                                              :name (n4 / name
+                                                                        :op1 "HIF-1α"))))))
+   :compared-to (c3 / cell
+                    :ARG1-of (t4 / transfect-01
+                                 :ARG2 (n7 / nucleic-acid
+                                           :name (n5 / name
+                                                     :op1 "siRNA")
+                                           :mod (c4 / control))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "5B")))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A photo (Fig. <xref ref-type="fig" rid="F5">5C</xref>) of the colonies formed at this time point in control vs. HIF-1α transfected cells verifies this decrease in soft agar colony formation.
+# ::file pmid_1991_9690_77.txt
+# ::date 2015-08-16T05:04:33
+# ::id pmid_1991_9690.77
+(v / verify-01
+   :ARG0 (p / photograph-01
+            :ARG1 (c / colony
+                     :ARG1-of (f / form-01
+                                 :time (p2 / point)
+                                 :location (c2 / contrast-01
+                                               :ARG1 (c3 / cell
+                                                         :ARG1-of (t / transfect-01
+                                                                     :ARG2 (p3 / protein
+                                                                               :name (n / name
+                                                                                        :op1 "HIF-1α"))))
+                                               :ARG2 (c4 / cell
+                                                         :mod (c5 / control)
+                                                         :ARG1-of (t2 / transfect-01)))))
+            :ARG1-of (d2 / describe-01
+                         :ARG0 (f3 / figure
+                                   :mod "5C")))
+   :ARG1 (d / decrease-01
+            :ARG1 (f2 / form-01
+                      :ARG1 (c6 / colony
+                                :location (a / agar
+                                             :ARG1-of (s / soft-02))))
+            :mod (t3 / this)))
+
+# ::save-date Sun Aug 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Matrigel invasion was also significantly decreased in HIF-1α-siRNA transfected WM9 cells compared to control siRNA transfected WM9 cells (Fig. <xref ref-type="fig" rid="F5">5D</xref>).
+# ::file pmid_1991_9690_78.txt
+# ::date 2015-08-16T05:16:14
+# ::id pmid_1991_9690.78
+(d / decrease-01
+   :ARG1 (i / invade-01
+            :ARG0 (p / protein
+                     :name (n / name
+                              :op1 "matrigel")))
+   :mod (a / also)
+   :ARG1-of (s / significant-02)
+   :location (c / cell-line
+                :name (n2 / name
+                          :op1 "WM9")
+                :ARG1-of (t / transfect-01
+                            :ARG2 (n7 / nucleic-acid
+                                      :name (n3 / name
+                                                :op1 "siRNA")
+                                      :ARG0-of (e / encode-01
+                                                  :ARG1 (p2 / protein
+                                                            :name (n4 / name
+                                                                      :op1 "HIF-1α"))))))
+   :compared-to (c2 / cell-line
+                    :name (n5 / name
+                              :op1 "WM9")
+                    :ARG1-of (t2 / transfect-01
+                                 :ARG2 (n8 / nucleic-acid
+                                           :name (n6 / name
+                                                     :op1 "siRNA")
+                                           :mod (c3 / control))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5D")))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Measurement of cell viability in the Matrigel chambers shows no difference between control vs. HIF-1α siRNA transfected cells (Fig. <xref ref-type="fig" rid="F5">5E</xref>).
+# ::file pmid_1991_9690_79.txt
+# ::date 2015-08-16T05:23:15
+# ::id pmid_1991_9690.79
+(s / show-01
+   :ARG0 (m / measure-01
+            :ARG1 (v / viable
+                     :domain (c / cell))
+            :location (c2 / chamber
+                          :mod (p / protein
+                                  :name (n / name
+                                           :op1 "matrigel"))))
+   :ARG1 (d / differ-02
+            :polarity "-"
+            :ARG1 (c4 / cell
+                      :ARG1-of (t / transfect-01
+                                  :ARG2 (n5 / nucleic-acid
+                                            :name (n2 / name
+                                                      :op1 "siRNA")
+                                            :mod (c5 / control))))
+            :ARG2 (c6 / cell
+                      :ARG1-of (t2 / transfect-01
+                                   :ARG2 (n6 / nucleic-acid
+                                             :name (n3 / name
+                                                       :op1 "siRNA")
+                                             :ARG0-of (e / encode-01
+                                                         :ARG1 (p2 / protein
+                                                                   :name (n4 / name
+                                                                             :op1 "HIF-1α")))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5E")))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These knock down studies suggest that increased non-hypoxic expression of HIF-1α plays an important role in key malignant properties exhibited by these human melanoma cells.
+# ::file pmid_1991_9690_80.txt
+# ::date 2015-08-16T06:02:49
+# ::id pmid_1991_9690.80
+(s / suggest-01
+   :ARG0 (s2 / study-01
+             :ARG1 (k / knock-down-02)
+             :mod (t / this))
+   :ARG1 (p / play-02
+            :ARG0 (e / express-03
+                     :ARG2 (p2 / protein
+                               :wiki "HIF1A"
+                               :name (n / name
+                                        :op1 "HIF-1α"))
+                     :mod (h / hypoxic
+                             :polarity "-")
+                     :ARG1-of (i / increase-01))
+            :ARG1 (r / role
+                     :mod (i2 / important)
+                     :topic (p3 / property
+                                :ARG1-of (m / malignant-02)
+                                :ARG1-of (k2 / key-02)
+                                :ARG1-of (e2 / exhibit-01
+                                             :ARG0 (c / cell
+                                                      :mod (m2 / medical-condition
+                                                               :wiki "Melanoma"
+                                                               :name (n2 / name
+                                                                         :op1 "melanoma"))
+                                                      :mod (h2 / human)
+                                                      :mod (t2 / this)))))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Hypoxia independent expression of HIF-1α is thought to be regulated by growth signaling pathways [<xref ref-type="bibr" rid="B18">18</xref>,<xref ref-type="bibr" rid="B19">19</xref>] and the majority of melanomas have constitutively active ERK1/2 MAPK pathway due to BRAF or N-Ras mutations [<xref ref-type="bibr" rid="B14">14</xref>,<xref ref-type="bibr" rid="B15">15</xref>].
+# ::file pmid_1991_9690_82.txt
+# ::date 2015-08-16T06:28:49
+# ::id pmid_1991_9690.82
+(a2 / and
+    :op1 (t / think-01
+            :ARG1 (r / regulate-01
+                     :ARG0 (p3 / pathway
+                               :ARG0-of (s / signal-07
+                                           :ARG1 (g / grow-01)))
+                     :ARG1 (e / express-03
+                              :ARG2 (p2 / protein
+                                        :name (n2 / name
+                                                  :op1 "HIF-1α"))
+                              :ARG0-of (d / depend-01
+                                          :polarity "-"
+                                          :ARG1 (h / hypoxia))))
+            :ARG1-of (d2 / describe-01
+                         :ARG0 (p4 / publication
+                                   :ARG1-of (c / cite-01
+                                               :ARG2 (a / and
+                                                        :op1 "18"
+                                                        :op2 "19")))))
+    :op2 (h2 / have-03
+             :ARG0 (m4 / medical-condition
+                       :name (n3 / name
+                                 :op1 "melanoma")
+                       :quant (m / majority)
+                       :ARG1-of (i / include-91
+                                   :ARG2 (m5 / medical-condition
+                                             :name (n4 / name
+                                                       :op1 "melanoma"))))
+             :ARG1 (p5 / pathway
+                       :name (n5 / name
+                                 :op1 "ERK1/2"
+                                 :op2 "MAPK")
+                       :mod (c2 / constitutive)
+                       :ARG1-of (c3 / cause-01
+                                    :ARG0 (o / or
+                                             :op1 (m2 / mutate-01
+                                                      :ARG1 (e2 / enzyme
+                                                                :name (n6 / name
+                                                                          :op1 "BRAF")))
+                                             :op2 (m3 / mutate-01
+                                                      :ARG1 (e3 / enzyme
+                                                                :name (n7 / name
+                                                                          :op1 "N-Ras")))))
+                       :ARG0-of (a5 / activity-06))
+             :ARG1-of (d5 / describe-01
+                          :ARG0 (p6 / publication
+                                    :ARG1-of (c4 / cite-01
+                                                 :ARG2 (a4 / and
+                                                           :op1 "14"
+                                                           :op2 "15"))))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, we determined whether HIF-1α expression in human metastatic melanoma WM9 cells was dependent on activation of ERK1/2 MAPK signaling.
+# ::file pmid_1991_9690_83.txt
+# ::date 2015-08-16T06:54:04
+# ::id pmid_1991_9690.83
+(c / cause-01
+   :ARG1 (d / determine-01
+            :ARG0 (w / we)
+            :ARG1 (d2 / depend-01
+                      :mode "interrogative"
+                      :ARG0 (e / express-03
+                               :ARG2 (p2 / protein
+                                         :name (n2 / name
+                                                   :op1 "HIF-1α"))
+                               :ARG3 (c2 / cell-line
+                                         :name (n3 / name
+                                                   :op1 "WM9")
+                                         :mod (m / medical-condition
+                                                 :name (n4 / name
+                                                           :op1 "melanoma"))
+                                         :mod (h / human)
+                                         :ARG1-of (m2 / metastasize-101)))
+                      :ARG1 (a / activate-01
+                               :ARG1 (s / signal-07
+                                        :ARG0 (p3 / pathway
+                                                  :name (n5 / name
+                                                            :op1 "ERK1/2"
+                                                            :op2 "MAPK")))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These cells have an active ERK1/2 MAPK pathway as evidenced by the high phosphorylation of ERK (Fig. <xref ref-type="fig" rid="F6">6A</xref>).
+# ::file pmid_1991_9690_84.txt
+# ::date 2015-08-16T07:07:13
+# ::id pmid_1991_9690.84
+(h / have-03
+   :ARG0 (c / cell
+            :mod (t / this))
+   :ARG1 (p4 / pathway
+             :name (n3 / name
+                       :op1 "ERK1/2"
+                       :op2 "MAPK")
+             :ARG0-of (a2 / activity-06))
+   :ARG1-of (e / evidence-01
+               :ARG0 (p2 / phosphorylate-01
+                         :ARG1 (e2 / enzyme
+                                   :name (n2 / name
+                                             :op1 "ERK"))
+                         :ARG1-of (h2 / high-02)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6A")))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Treatment of WM9 cells with 30 μM U0126, a selective U0126 MEK inhibitor, decreased ERK1/2 phosphorylation and led to a time-dependent decrease in HIF-1α protein expression (Fig. <xref ref-type="fig" rid="F6">6A</xref>).
+# ::file pmid_1991_9690_85.txt
+# ::date 2015-08-16T07:40:03
+# ::id pmid_1991_9690.85
+(a / and
+   :op1 (d / decrease-01
+           :ARG0 (t2 / treat-04
+                     :ARG1 (c / cell-line
+                              :name (n3 / name
+                                        :op1 "WM9"))
+                     :ARG2 (s2 / small-molecule
+                               :name (n4 / name
+                                         :op1 "U0126")
+                               :quant (c2 / concentration-quantity
+                                          :quant "30"
+                                          :unit (m / micromolar))
+                               :ARG1-of (m2 / mean-01
+                                            :ARG2 (s3 / small-molecule
+                                                      :name (n5 / name
+                                                                :op1 "U0126")
+                                                      :ARG0-of (i / inhibit-01
+                                                                  :ARG1 (p / protein-family
+                                                                           :name (n2 / name
+                                                                                     :op1 "MEK")))
+                                                      :ARG0-of (s / select-01)))))
+           :ARG1 (p2 / phosphorylate-01
+                     :ARG1 (e / enzyme
+                              :name (n6 / name
+                                        :op1 "ERK1/2"))))
+   :op2 (l / lead-03
+           :ARG1 t2
+           :ARG2 (d2 / decrease-01
+                     :ARG1 (e2 / express-03
+                               :ARG2 (p3 / protein
+                                         :name (n7 / name
+                                                   :op1 "HIF-1α")))
+                     :ARG0-of (d3 / depend-01
+                                  :ARG1 (t3 / time))))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (f / figure
+                         :mod "6A")))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Although 30 μM U0126 has been used in published studies to selectively inhibit MEK [<xref ref-type="bibr" rid="B16">16</xref>,<xref ref-type="bibr" rid="B21">21</xref>], the original paper describing this inhibitor [<xref ref-type="bibr" rid="B22">22</xref>] used much lower concentrations to achieve high selectivity.
+# ::file pmid_1991_9690_86.txt
+# ::date 2015-08-16T08:00:17
+# ::id pmid_1991_9690.86
+(h / have-concession-91
+   :ARG1 (u2 / use-01
+             :ARG0 (p4 / paper
+                       :mod (o / original)
+                       :ARG0-of (d2 / describe-01
+                                    :ARG1 "s"
+                                    :ARG1-of (d3 / describe-01
+                                                 :ARG0 (p5 / publication
+                                                           :ARG1-of (c3 / cite-01
+                                                                        :ARG2 "22")))))
+             :ARG1 (c4 / concentrate-02
+                       :ARG1-of (l / low-04
+                                   :degree (m / more
+                                              :degree (m3 / much))))
+             :ARG2 (a2 / achieve-01
+                       :ARG0 p4
+                       :ARG1 (s4 / select-01
+                                 :ARG1-of (h2 / high-02))))
+   :ARG2 (u / use-01
+            :ARG1 (s / small-molecule
+                     :name (n / name
+                              :op1 "U0126")
+                     :quant (c / concentration-quantity
+                               :quant "30"
+                               :unit (m2 / micromolar)))
+            :ARG2 (i2 / inhibit-01
+                      :ARG0 s
+                      :ARG1 (e / enzyme
+                               :name (n2 / name
+                                         :op1 "MEK"))
+                      :ARG0-of (s5 / select-01))
+            :ARG1-of (d / describe-01
+                        :ARG0 (p3 / publication
+                                  :ARG1-of (c2 / cite-01
+                                               :ARG2 (a / and
+                                                        :op1 "16"
+                                                        :op2 "21"))))
+            :location (s2 / study-01
+                          :ARG1-of (p2 / publish-01))))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore we repeated this experiment using 10 μM U0126 (Fig. <xref ref-type="fig" rid="F6">6B</xref>).
+# ::file pmid_1991_9690_87.txt
+# ::date 2015-08-16T08:20:18
+# ::id pmid_1991_9690.87
+(c / cause-01
+   :ARG1 (r / repeat-01
+            :ARG0 (w / we)
+            :ARG1 (e / experiment-01
+                     :mod (t / this))
+            :manner (u / use-01
+                       :ARG0 w
+                       :ARG1 (s / small-molecule
+                                :name (n / name
+                                         :op1 "U0126")
+                                :quant (c2 / concentration-quantity
+                                           :quant "10"
+                                           :unit (m / micromolar)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6B")))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At 24 h of treatment, 10 μM U0126 completely suppressed the phosphorylation of ERK1/2, yet there was minimal change in the level of HIF-1α relative to control cells.
+# ::file pmid_1991_9690_88.txt
+# ::date 2015-08-16T08:26:49
+# ::id pmid_1991_9690.88
+(s2 / suppress-01
+    :ARG0 (s / small-molecule
+             :name (n / name
+                      :op1 "U0126")
+             :quant (c / concentration-quantity
+                       :quant "10"
+                       :unit (m / micromolar)))
+    :ARG1 (p / phosphorylate-01
+             :ARG1 (e / enzyme
+                      :name (n2 / name
+                                :op1 "ERK1/2")))
+    :ARG1-of (c2 / complete-02)
+    :ARG1-of (c3 / contrast-01
+                 :ARG2 (c4 / charge-03
+                           :ARG1 (l / level
+                                    :quant-of (p2 / protein
+                                                  :name (n3 / name
+                                                            :op1 "HIF-1α")))
+                           :ARG1-of (m2 / minimal-02)
+                           :ARG1-of (r / relative-05
+                                       :ARG3 (c5 / cell
+                                                 :mod (c6 / control)))))
+    :time (a / after
+             :op1 (t / treat-04)
+             :quant (t2 / temporal-quantity
+                        :quant "24"
+                        :unit (h / hour))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt With further time of inhibitor treatment, phosphorylation of ERK was not totally suppressed, but HIF-1α levels decreased.
+# ::file pmid_1991_9690_89.txt
+# ::date 2015-08-16T08:34:36
+# ::id pmid_1991_9690.89
+(s / suppress-01
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "ERK")))
+   :ARG1-of (c / contrast-01
+               :ARG2 (d / decrease-01
+                        :ARG1 (l / level
+                                 :quant-of (p3 / protein
+                                               :name (n2 / name
+                                                         :op1 "HIF-1α")))))
+   :degree (t / total
+              :polarity "-")
+   :condition (t4 / time
+                  :mod (f / further)
+                  :duration-of (t3 / treat-04
+                                   :ARG2 (s2 / small-molecule
+                                             :ARG0-of (i / inhibit-01)))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We also used siRNA specifically targeting MEK1 and 2 in WM9 cells to inhibit ERK1/2 phosphorylation.
+# ::file pmid_1991_9690_90.txt
+# ::date 2015-08-16T08:42:33
+# ::id pmid_1991_9690.90
+(u / use-01
+   :ARG0 (w / we)
+   :ARG1 (n6 / nucleic-acid
+             :name (n / name
+                      :op1 "siRNA")
+             :ARG0-of (t / target-01
+                         :ARG1 (a2 / and
+                                   :op1 (e / enzyme
+                                           :name (n2 / name
+                                                     :op1 "MEK1"))
+                                   :op2 (e2 / enzyme
+                                            :name (n3 / name
+                                                      :op1 "MEK2")))
+                         :location (c / cell-line
+                                      :name (n4 / name
+                                                :op1 "WM9"))
+                         :manner (s / specific-02)))
+   :ARG2 (i / inhibit-01
+            :ARG0 n6
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (e3 / enzyme
+                               :name (n5 / name
+                                         :op1 "ERK1/2"))))
+   :mod (a / also))
+
+# ::save-date Mon Feb 1, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Treatment of WM9 cells with siRNA targeting MEK1 and 2 consistently decreased its expression by greater than 90% and also decreased ERK1/2 phosphorylation.
+# ::file pmid_1991_9690_91.txt
+# ::date 2015-08-16T08:53:11
+# ::id pmid_1991_9690.91
+(a / and
+   :op1 (d / decrease-01
+           :ARG0 (t / treat-04
+                    :ARG1 (c / cell-line
+                             :name (n / name
+                                      :op1 "WM9"))
+                    :ARG2 (n6 / nucleic-acid
+                              :name (n2 / name
+                                        :op1 "siRNA")
+                              :ARG0-of (t2 / target-01
+                                           :ARG1 (a2 / and
+                                                     :op1 (e / enzyme
+                                                             :name (n3 / name
+                                                                       :op1 "MEK1"))
+                                                     :op2 (e2 / enzyme
+                                                              :name (n4 / name
+                                                                        :op1 "MEK2"))))))
+           :ARG1 (e3 / express-03
+                     :ARG3 c)
+           :ARG2 (m / more-than
+                    :op1 (p / percentage-entity
+                            :value "90"))
+           :manner (c2 / consistent-02))
+   :op2 (d2 / decrease-01
+            :ARG0 t
+            :ARG1 (p2 / phosphorylate-01
+                      :ARG1 (e4 / enzyme
+                                :name (n5 / name
+                                          :op1 "ERK1/2")))
+            :mod (a3 / also)))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, knockdown of MEK1 and 2 did not decrease the normoxic expression of HIF-1α protein in human metastatic melanoma WM9 cells (Fig. <xref ref-type="fig" rid="F6">6C</xref>).
+# ::file pmid_1991_9690_92.txt
+# ::date 2015-08-16T09:00:08
+# ::id pmid_1991_9690.92
+(c / contrast-01
+   :ARG2 (d / decrease-01
+            :polarity "-"
+            :ARG0 (k / knock-down-02
+                     :ARG1 (a / and
+                              :op1 (e / enzyme
+                                      :name (n / name
+                                               :op1 "MEK1"))
+                              :op2 (e2 / enzyme
+                                       :name (n2 / name
+                                                 :op1 "MEK2"))))
+            :ARG1 (e3 / express-03
+                      :ARG2 (p / protein
+                               :name (n4 / name
+                                         :op1 "HIF-1α"))
+                      :ARG3 (c2 / cell-line
+                                :name (n5 / name
+                                          :op1 "WM9")
+                                :mod (m / medical-condition
+                                        :name (n6 / name
+                                                  :op1 "melanoma"))
+                                :mod (h / human)
+                                :ARG1-of (m2 / metastasize-101))
+                      :mod (n3 / normoxia)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "6C")))

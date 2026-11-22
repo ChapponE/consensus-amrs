@@ -1,6 +1,7 @@
 """Corpus side: AMR files to per-chapter tensor encodings, and tensors back to Penman."""
 from __future__ import annotations
 
+import hashlib
 import re
 from collections import defaultdict
 from dataclasses import dataclass
@@ -232,11 +233,33 @@ def decode(
 # Chapter loading
 # --------------------------------------------------------------------------
 
-def load_chapter(path: Path, max_nodes: int = 15) -> Chapter:
-    """Load one chapter file into padded tensors sharing a chapter-local vocabulary.
+def natural_key(name: str) -> list:
+    """Sort key reading the digit runs of a name as numbers: chapter_2 before chapter_10."""
+    return [int(part) if part.isdigit() else part for part in re.split(r"(\d+)", name)]
+
+
+def population_key(chapter: Chapter) -> str:
+    """Digest of a loaded population: its tensors and vocabularies.
+
+    Any preprocessing setting that changes the population changes the digest, so
+    a cache keyed on it cannot serve a mean computed on another population.
+    """
+    digest = hashlib.sha256()
+    for block in (chapter.nf, chapter.ef):
+        block = np.ascontiguousarray(block)
+        digest.update(np.asarray(block.shape, dtype="<i8").tobytes())
+        digest.update(block.tobytes())
+    digest.update("\x00".join(chapter.concepts + ["\x01"] + chapter.roles).encode("utf-8"))
+    return digest.hexdigest()[:12]
+
+
+def load_chapter(path: Path, max_nodes: int = 15, drop_heading: bool = True) -> Chapter:
+    """Load one population file into padded tensors sharing a population-local vocabulary.
 
     Graphs above ``max_nodes`` nodes are dropped to keep the padded encoding
-    tractable, and the file's first graph is the chapter heading ("Chapter N .").
+    tractable. With ``drop_heading`` the file's first graph is the chapter heading
+    ("Chapter N .") and is dropped too; population files whose headers were
+    already removed when they were written are read with ``drop_heading=False``.
     """
     graphs = [g for g in (prune_graph(g) for g in parse_amr_file(path)) if g is not None]
     graphs = [g for g in graphs if len(g.variables()) <= max_nodes]
@@ -253,11 +276,13 @@ def load_chapter(path: Path, max_nodes: int = 15) -> Chapter:
     for position, g in enumerate(graphs):
         X, A = encode(g, concepts, roles)
         text = decode(X, A, concepts, roles, active_idx=np.arange(X.shape[0]))
-        if text is None or position == 0:
+        if text is None or (drop_heading and position == 0):
             continue
         kept.append((X, A))
         sentences.append(g.metadata.get("snt", ""))
         penmans.append(text)
+    if not kept:
+        raise ValueError(f"{path}: no graph left after preprocessing.")
 
     N = max(X.shape[0] for X, _ in kept)
     nf = np.zeros((len(kept), N, len(concepts)), dtype=np.float32)

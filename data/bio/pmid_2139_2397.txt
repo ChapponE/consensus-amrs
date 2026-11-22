@@ -1,0 +1,2736 @@
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The average level of phosphorylation of YB-1 in the breast cancer cell lines SKBr3, MCF-7, HBL100 and MDA-MB-231 was significantly higher than that in normal cells.
+# ::file a_pmid_2139_2397_12.txt
+# ::date 2015-05-26T08:45:19
+# ::id a_pmid_2139_2397.12
+(h / high-02
+   :ARG1 (l / level
+            :ARG1-of (a / average-04)
+            :degree-of (p / phosphorylate-01
+                          :ARG1 (p2 / protein
+                                    :name (n / name
+                                             :op1 "YB-1")))
+            :location (a2 / and
+                          :op1 (c3 / cell-line
+                                   :name (n3 / name
+                                             :op1 "SKBr3"))
+                          :op2 (c4 / cell-line
+                                   :name (n4 / name
+                                             :op1 "MCF-7"))
+                          :op3 (c5 / cell-line
+                                   :name (n5 / name
+                                             :op1 "HBL100"))
+                          :op4 (c6 / cell-line
+                                   :name (n6 / name
+                                             :op1 "MDA-MB-231"))
+                          :mod (d / disease
+                                  :wiki "Breast_cancer"
+                                  :name (n2 / name
+                                            :op1 "breast"
+                                            :op2 "cancer"))))
+   :degree (m / more)
+   :ARG1-of (s / significant-02)
+   :compared-to (c7 / cell
+                    :ARG1-of (n7 / normal-02)))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Exposure to IR and stimulation with erbB1 ligands resulted in phosphorylation of YB-1 in <i>K-RAS</i><sub>wt </sub>SKBr3, MCF-7 and HBL100 cells, which was shown to be K-Ras-independent.
+# ::file a_pmid_2139_2397_13.txt
+# ::date 2015-05-26T09:06:52
+# ::id a_pmid_2139_2397.13
+(r / result-01
+   :ARG1 (a / and
+            :op1 (e / expose-01
+                    :ARG2 (r2 / radiate-01
+                              :ARG0-of (i / ionize-01)))
+            :op2 (s / stimulate-01
+                    :ARG2 (l / ligand
+                             :name (n2 / name
+                                       :op1 "erbB1"))))
+   :ARG2 (p / phosphorylate-01
+            :ARG1 (p2 / protein
+                      :name (n3 / name
+                                :op1 "YB-1"))
+            :location (a2 / and
+                          :op1 (c / cell-line
+                                  :name (n4 / name
+                                            :op1 "SKBr3"))
+                          :op2 (c2 / cell-line
+                                   :name (n5 / name
+                                             :op1 "MCF-7"))
+                          :op3 (c3 / cell-line
+                                   :name (n6 / name
+                                             :op1 "HBL100"))
+                          :mod (g / gene
+                                  :name (n7 / name
+                                            :op1 "K-Ras")
+                                  :mod (w / wild-type)))
+            :ARG1-of (d / depend-01
+                        :polarity "-"
+                        :ARG0 g
+                        :ARG1-of (s2 / show-01))))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, lack of YB-1 phosphorylation after stimulation with either IR or erbB1 ligands was observed in <i>K-RAS</i><sub>mt </sub>MDA-MB-231 cells.
+# ::file a_pmid_2139_2397_14.txt
+# ::date 2015-05-26T09:24:42
+# ::id a_pmid_2139_2397.14
+(c / contrast-01
+   :ARG2 (o / observe-01
+            :ARG1 (l / lack-01
+                     :ARG1 (p / phosphorylate-01
+                              :ARG1 (p2 / protein
+                                        :name (n / name
+                                                 :op1 "YB-1")))
+                     :time (a / after
+                              :op1 (s / stimulate-01
+                                      :ARG2 (o2 / or
+                                                :op1 (r / radiate-01
+                                                        :ARG0-of (i / ionize-01))
+                                                :op2 (l3 / ligand
+                                                         :name (n3 / name
+                                                                   :op1 "erbB1"))))))
+            :location (c2 / cell-line
+                          :name (n4 / name
+                                    :op1 "MDA-MB-231")
+                          :mod (g / gene
+                                  :name (n5 / name
+                                            :op1 "K-RAS")
+                                  :ARG2-of (m / mutate-01)))))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similarly to MDA-MB-231 cells, YB-1 became constitutively phosphorylated in <i>K-RAS</i><sub>wt </sub>cells following the overexpression of mutated <i>K-RAS</i>, and its phosphorylation was not further enhanced by IR.
+# ::file a_pmid_2139_2397_15.txt
+# ::date 2015-05-26T09:29:24
+# ::id a_pmid_2139_2397.15
+(a / and
+   :op1 (b / become-01
+           :ARG1 (p / protein
+                    :name (n / name
+                             :op1 "YB-1"))
+           :ARG2 (p2 / phosphorylate-01
+                     :ARG1 p
+                     :mod (c / constitutive)
+                     :location (c2 / cell
+                                   :mod (g2 / gene
+                                            :name (n2 / name
+                                                      :op1 "K-RAS")
+                                            :mod (w / wild-type))))
+           :ARG2-of (f / follow-01
+                       :ARG1 (o / overexpress-01
+                                :ARG1 (g / gene
+                                         :name (n3 / name
+                                                   :op1 "K-RAS")
+                                         :ARG2-of (m / mutate-01)))))
+   :op2 (e3 / enhance-01
+            :polarity "-"
+            :ARG1 p2
+            :ARG2 (r2 / radiate-01
+                      :ARG0-of (i / ionize-01))
+            :degree (f2 / further))
+   :ARG1-of (r / resemble-01
+               :ARG2 (c3 / cell-line
+                         :name (n5 / name
+                                   :op1 "MDA-MB-231"))))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Phosphorylation of YB-1 as a result of irradiation or <i>K-RAS </i>mutation was dependent on erbB1 and its downstream pathways, PI3K and MAPK/ERK.
+# ::file a_pmid_2139_2397_16.txt
+# ::date 2015-05-26T09:43:38
+# ::id a_pmid_2139_2397.16
+(d / depend-01
+   :ARG0 (p2 / phosphorylate-01
+             :ARG1 (p3 / protein
+                       :name (n2 / name
+                                 :op1 "YB-1"))
+             :ARG2-of (r / result-01
+                         :ARG1 (a / and
+                                  :op1 (i / irradiate-01)
+                                  :op2 (m / mutate-01
+                                          :ARG1 (g / gene
+                                                   :name (n3 / name
+                                                             :op1 "K-RAS"))))))
+   :ARG1 (a3 / and
+             :op1 (p / protein
+                     :name (n6 / name
+                               :op1 "erbB1"))
+             :op2 (p4 / pathway
+                      :mod (d2 / downstream)
+                      :ARG2-of (i2 / include-91
+                                   :ARG1 (a2 / and
+                                             :op1 (p5 / pathway
+                                                      :name (n4 / name
+                                                                :op1 "PI3K"))
+                                             :op2 (p6 / pathway
+                                                      :name (n5 / name
+                                                                :op1 "MAPK/ERK"))))
+                      :poss p)))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In <i>K-RAS</i><sub>mt </sub>cells <i>K-RAS </i>siRNA as well as YB-1 siRNA blocked repair of DNA-DSB.
+# ::file a_pmid_2139_2397_17.txt
+# ::date 2015-05-26T09:50:26
+# ::id a_pmid_2139_2397.17
+(b / block-01
+   :ARG0 (a / and
+            :op1 (n7 / nucleic-acid
+                     :name (n2 / name
+                               :op1 "siRNA")
+                     :ARG0-of (e2 / encode-01
+                                  :ARG1 (g / gene
+                                           :name (n / name
+                                                    :op1 "K-Ras"))))
+            :op2 (n8 / nucleic-acid
+                     :name (n3 / name
+                               :op1 "siRNA")
+                     :ARG0-of (e3 / encode-01
+                                  :ARG1 (p / protein
+                                           :name (n4 / name
+                                                     :op1 "YB-1")))))
+   :ARG1 (r3 / repair-01
+             :ARG1 (t / thing
+                      :name (n5 / name
+                                :op1 "DNA-DSB")))
+   :location (c / cell
+                :mod (g2 / gene
+                         :name (n6 / name
+                                   :op1 "K-RAS")
+                         :ARG2-of (m / mutate-01))))
+
+# ::save-date Wed Jun 3, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Likewise, YB-1 siRNA increased radiation sensitivity.
+# ::file a_pmid_2139_2397_18.txt
+# ::date 2015-05-26T10:05:55
+# ::id a_pmid_2139_2397.18
+(i / increase-01
+   :ARG0 (n3 / nucleic-acid
+             :name (n / name
+                      :op1 "siRNA")
+             :ARG0-of (e / encode-01
+                         :ARG1 (p / protein
+                                  :name (n2 / name
+                                            :op1 "YB-1"))))
+   :ARG1 (s / sensitive-03
+            :ARG1 (r2 / radiate-01))
+   :manner (l / likewise))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The level of basal YB-1 phosphorylation at S102 in a panel of breast cancer cells (MDA-MB-231, MCF-7, HBL100 and SKBr3) was compared to the level of YB-1 phosphorylation in normal cells, that is, human skin and lung fibroblasts (HSF1, HSF7 and HFL) as well as normal mammary epithelial cells (MCF-10A) (Figures <xref ref-type="fig" rid="F1">1A</xref> and <xref ref-type="fig" rid="F1">1B</xref>).
+# ::file a_pmid_2139_2397_116.txt
+# ::date 2015-05-26T13:20:02
+# ::id a_pmid_2139_2397.116
+(c / compare-01
+   :ARG1 (l / level
+            :degree-of (p / phosphorylate-01
+                          :ARG1 (a / amino-acid
+                                   :mod "102"
+                                   :name (n2 / name
+                                             :op1 "serine")
+                                   :part-of (p2 / protein
+                                                :name (n3 / name
+                                                          :op1 "YB-1")))
+                          :location (p3 / panel
+                                        :consist-of (c2 / cell-line
+                                                        :ARG2-of (i / include-91
+                                                                    :ARG1 (a2 / and
+                                                                              :op1 (c4 / cell-line
+                                                                                       :name (n4 / name
+                                                                                                 :op1 "MDA-MB-231"))
+                                                                              :op2 (c5 / cell-line
+                                                                                       :name (n5 / name
+                                                                                                 :op1 "MCF-7"))
+                                                                              :op3 (c6 / cell-line
+                                                                                       :name (n6 / name
+                                                                                                 :op1 "HBL100"))
+                                                                              :op4 (c7 / cell-line
+                                                                                       :name (n7 / name
+                                                                                                 :op1 "SKBr3"))))
+                                                        :mod (d / disease
+                                                                :wiki "Breast_cancer"
+                                                                :name (n / name
+                                                                         :op1 "breast"
+                                                                         :op2 "cancer"))))
+                          :mod (b2 / basal)))
+   :ARG2 (l2 / level
+             :degree-of (p4 / phosphorylate-01
+                            :ARG1 p2
+                            :location (c8 / cell-line
+                                          :ARG1-of (n8 / normal-02
+                                                       :ARG1 c12)
+                                          :ARG2-of (m3 / mean-01
+                                                       :ARG1 (a4 / and
+                                                                 :op1 (s / skin
+                                                                         :mod (h / human))
+                                                                 :op2 (f / fibroblast
+                                                                         :mod (l3 / lung))
+                                                                 :op3 (c12 / cell
+                                                                           :mod (e / epithelium)
+                                                                           :mod (m / mammary)
+                                                                           :ARG1-of (m2 / mean-01
+                                                                                        :ARG2 (c13 / cell-line
+                                                                                                   :name (n14 / name
+                                                                                                              :op1 "MCF-10A"))))
+                                                                 :ARG2-of (i3 / include-91
+                                                                              :ARG1 (a3 / and
+                                                                                        :op1 (c10 / cell-line
+                                                                                                  :name (n10 / name
+                                                                                                             :op1 "HSF1"))
+                                                                                        :op2 (c9 / cell-line
+                                                                                                 :name (n11 / name
+                                                                                                            :op1 "HSF7"))
+                                                                                        :op3 (c11 / cell-line
+                                                                                                  :name (n12 / name
+                                                                                                             :op1 "HFL")))))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a5 / and
+                          :op1 (f2 / figure
+                                   :mod "1A")
+                          :op2 (f3 / figure
+                                   :mod "1B"))))
+
+# ::save-date Fri Dec 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F1">1C</xref>, the ratio of P-YB-1/YB-1 is significantly higher in tumor cells than in fibroblasts.
+# ::file a_pmid_2139_2397_117.txt
+# ::date 2015-05-26T13:40:47
+# ::id a_pmid_2139_2397.117
+(h2 / high
+    :domain (r / ratio-of
+               :op1 (p2 / protein
+                        :name (n / name
+                                 :op1 "YB-1")
+                        :ARG3-of (p / phosphorylate-01))
+               :op2 (p3 / protein
+                        :name (n2 / name
+                                  :op1 "YB-1"))
+               :ARG1-of (h / high-02
+                           :degree (m / more)
+                           :ARG1-of (s2 / significant-02))
+               :location (c / cell
+                            :mod (t / tumor))
+               :compared-to (f2 / fibroblast))
+    :ARG1-of (s / show-01
+                :ARG0 (f / figure
+                         :mod "1C")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The comparisons of the ratio of P-YB-1/YB-1 in tumor cells and normal mammary epithelial cells indicated an even stronger significant difference as tested for MDA-MB-231 and MCF-10A cells (Figures <xref ref-type="fig" rid="F1">1B</xref> and <xref ref-type="fig" rid="F1">1C</xref>).
+# ::file a_pmid_2139_2397_118.txt
+# ::date 2015-05-26T13:49:13
+# ::id a_pmid_2139_2397.118
+(i / indicate-01
+   :ARG0 (c / compare-01
+            :ARG2 (r / ratio-of
+                     :op1 (p2 / protein
+                              :name (n / name
+                                       :op1 "YB-1")
+                              :ARG3-of (p / phosphorylate-01))
+                     :op2 (p3 / protein
+                              :name (n2 / name
+                                        :op1 "YB-1")))
+            :location (a3 / and
+                          :op1 (c2 / cell
+                                   :mod (t / tumor))
+                          :op2 (c3 / cell
+                                   :mod (e / epithelium)
+                                   :mod (m / mammary)
+                                   :ARG1-of (n5 / normal-02))))
+   :ARG1 (d / differ-02
+            :mod (s / strong
+                    :degree (m2 / more)
+                    :mod (e2 / even))
+            :ARG1-of (s2 / significant-02)
+            :ARG1-of (t2 / test-01
+                         :ARG2 (a / and
+                                  :op1 (c4 / cell-line
+                                           :name (n3 / name
+                                                     :op1 "MDA-MB-231"))
+                                  :op2 (c5 / cell-line
+                                           :name (n4 / name
+                                                     :op1 "MCF-10A")))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f / figure
+                                  :mod "1B")
+                          :op2 (f2 / figure
+                                   :mod "1C"))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt YB-1 has been identified as a direct substrate of Akt [<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B35">35</xref>].
+# ::file a_pmid_2139_2397_119.txt
+# ::date 2015-05-26T13:56:53
+# ::id a_pmid_2139_2397.119
+(i / identify-01
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "YB-1"))
+   :ARG2 (s / substrate
+            :mod (e / enzyme
+                    :name (n2 / name
+                              :op1 "Akt"))
+            :ARG1-of (d / direct-02))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p2 / publication
+                          :ARG1-of (c / cite-01
+                                      :ARG2 (a / and
+                                               :op1 "12"
+                                               :op2 "35")))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As previously reported, IR can activate the Akt ligand independently [<xref ref-type="bibr" rid="B30">30</xref>,<xref ref-type="bibr" rid="B36">36</xref>].
+# ::file a_pmid_2139_2397_120.txt
+# ::date 2015-05-26T14:01:38
+# ::id a_pmid_2139_2397.120
+(p / possible-01
+   :ARG1 (a / activate-01
+            :ARG0 (r2 / radiate-01
+                      :ARG0-of (i / ionize-01))
+            :ARG1 (l / ligand
+                     :mod (e / enzyme
+                             :name (n3 / name
+                                       :op1 "Akt")))
+            :manner (d2 / depend-01
+                        :polarity "-"))
+   :ARG1-of (d / describe-01
+               :ARG0 (p3 / publication
+                         :ARG1-of (c / cite-01
+                                     :ARG2 (a2 / and
+                                               :op1 "30"
+                                               :op2 "36"))))
+   :ARG1-of (r / report-01
+               :time (p2 / previous)))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, we asked whether IR could induce YB-1 phosphorylation as well.
+# ::file a_pmid_2139_2397_121.txt
+# ::date 2015-05-26T14:08:00
+# ::id a_pmid_2139_2397.121
+(c / cause-01
+   :ARG1 (a / ask-01
+            :mode "interrogative"
+            :ARG0 (w / we)
+            :ARG1 (p3 / possible-01
+                      :ARG1 (i / induce-01
+                               :ARG0 (r / radiate-01
+                                        :ARG0-of (i2 / ionize-01))
+                               :ARG2 (p2 / phosphorylate-01
+                                         :ARG1 (p4 / protein
+                                                   :name (n2 / name
+                                                             :op1 "YB-1")))
+                               :mod (a2 / as-well)))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F1">1D</xref>, IR induces YB-1 phosphorylation differentially.
+# ::file a_pmid_2139_2397_122.txt
+# ::date 2015-05-26T14:12:54
+# ::id a_pmid_2139_2397.122
+(i / induce-01
+   :ARG0 (r / radiate-01
+            :ARG0-of (i2 / ionize-01))
+   :ARG2 (p / phosphorylate-01
+            :ARG1 (p2 / protein
+                      :name (n2 / name
+                                :op1 "YB-1")))
+   :ARG1-of (s / show-01
+               :ARG0 (f / figure
+                        :mod "1D"))
+   :manner (d / differential))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A strong phosphorylation signal was observed in SKBr3, whereas HBL100 showed moderate phosphorylation of YB-1 and phosphorylation in MCF-7 was weak.
+# ::file a_pmid_2139_2397_123.txt
+# ::date 2015-05-26T14:17:15
+# ::id a_pmid_2139_2397.123
+(c / contrast-01
+   :ARG1 (o / observe-01
+            :ARG1 (s / signal-07
+                     :ARG1 (p / phosphorylate-01)
+                     :mod (s2 / strong)
+                     :location (c2 / cell-line
+                                   :name (n / name
+                                            :op1 "SKBr3"))))
+   :ARG2 (a / and
+            :op1 (s3 / show-01
+                     :ARG0 (c3 / cell-line
+                               :name (n2 / name
+                                         :op1 "HBL100"))
+                     :ARG1 (p2 / phosphorylate-01
+                               :ARG1 (p3 / protein
+                                         :name (n3 / name
+                                                   :op1 "YB-1"))
+                               :ARG1-of (m / moderate-03)))
+            :op2 (p4 / phosphorylate-01
+                     :location (c4 / cell-line
+                                   :name (n4 / name
+                                             :op1 "MCF-7"))
+                     :ARG1-of (w / weak-02))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, in MDA-MB-231 cells, a lack of IR-induced YB-1 phosphorylation was observed.
+# ::file a_pmid_2139_2397_124.txt
+# ::date 2015-05-26T14:26:27
+# ::id a_pmid_2139_2397.124
+(h / have-concession-91
+   :ARG1 (o / observe-01
+            :ARG1 (l / lack-01
+                     :ARG1 (p / phosphorylate-01
+                              :ARG1 (p2 / protein
+                                        :name (n / name
+                                                 :op1 "YB-1"))
+                              :ARG2-of (i / induce-01
+                                          :ARG0 (r / radiate-01
+                                                   :ARG0-of (i2 / ionize-01))))
+                     :location (c / cell-line
+                                  :name (n3 / name
+                                            :op1 "MDA-MB-231")))))
+
+# ::save-date Wed Mar 9, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In this cell line, stimulation with the erbB1 ligand EGF, AREG or TGFα did not induce YB-1 phosphorylation, whereas strong phosphorylation at the indicated times after stimulation was observed in the cell lines SKBr3, HBL100 and MCF-7 (Figure <xref ref-type="fig" rid="F1">1D</xref>).
+# ::file a_pmid_2139_2397_125.txt
+# ::date 2015-05-26T14:34:37
+# ::id a_pmid_2139_2397.125
+(c / contrast-01
+   :ARG1 (i / induce-01
+            :polarity "-"
+            :ARG0 (s / stimulate-01
+                     :ARG2 (l / ligand
+                              :name (n / name
+                                       :op1 "erbB1")
+                              :ARG2-of (i2 / include-91
+                                           :ARG1 (a / and
+                                                    :op1 (p6 / protein
+                                                             :name (n2 / name
+                                                                       :op1 "EGF"))
+                                                    :op2 (p2 / protein
+                                                             :name (n3 / name
+                                                                       :op1 "AREG"))
+                                                    :op3 (p3 / protein
+                                                             :name (n4 / name
+                                                                       :op1 "TGFα"))))))
+            :ARG2 (p / phosphorylate-01
+                     :ARG1 (p4 / protein
+                               :name (n5 / name
+                                         :op1 "YB-1")))
+            :location (c5 / cell-line
+                          :mod (t2 / this)))
+   :ARG2 (o / observe-01
+            :ARG1 (p5 / phosphorylate-01
+                      :mod (s3 / strong)
+                      :time (t / time
+                               :ARG1-of (i3 / indicate-01))
+                      :time (a2 / after
+                                :op1 s))
+            :location (a3 / and
+                          :op1 (c2 / cell-line
+                                   :name (n6 / name
+                                             :op1 "SKBr3"))
+                          :op2 (c3 / cell-line
+                                   :name (n7 / name
+                                             :op1 "HBL100"))
+                          :op3 (c4 / cell-line
+                                   :name (n8 / name
+                                             :op1 "MCF-7"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1D")))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Although the MCF-7 and HBL100 cell lines have <i>K-RAS</i><sub>wt </sub>status, these cells presented high basal YB-1 phosphorylation.
+# ::file a_pmid_2139_2397_126.txt
+# ::date 2015-05-26T14:54:13
+# ::id a_pmid_2139_2397.126
+(h / have-concession-91
+   :ARG1 (p2 / present-01
+             :ARG0 "a"
+             :ARG1 (p / phosphorylate-01
+                      :ARG1 (p3 / protein
+                                :name (n4 / name
+                                          :op1 "YB-1"))
+                      :ARG1-of (h3 / high-02)
+                      :mod (b / basal)))
+   :ARG2 (h2 / have-03
+             :ARG0 (a / and
+                      :op1 (c / cell-line
+                              :name (n2 / name
+                                        :op1 "MCF-7"))
+                      :op2 (c2 / cell-line
+                               :name (n3 / name
+                                         :op1 "HBL100")))
+             :ARG1 (s / status
+                      :mod (g / gene
+                              :name (n / name
+                                       :op1 "K-RAS")
+                              :mod (w / wild-type)))))
+
+# ::save-date Wed Feb 24, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To prove whether the high basal phosphorylation status of YB-1 was due to stimulation by growth factors in the culture medium, P-YB-1 was compared under serum supplementation and serum depletion in MCF-7 cells.
+# ::file a_pmid_2139_2397_127.txt
+# ::date 2015-05-27T08:54:46
+# ::id a_pmid_2139_2397.127
+(c5 / compare-01
+    :ARG0 (a / and
+             :op1 (s4 / supplement-01
+                      :ARG1 (s5 / serum))
+             :op2 (d / deplete-01
+                     :ARG1 s5)
+             :location (c4 / cell-line
+                           :name (n3 / name
+                                     :op1 "MCF-7")))
+    :ARG1 (p4 / protein
+              :name (n4 / name
+                        :op1 "YB-1")
+              :ARG3-of (p5 / phosphorylate-01))
+    :purpose (p2 / prove-01
+                 :ARG1 (c / cause-01
+                          :mode "interrogative"
+                          :ARG0 (s2 / stimulate-01
+                                    :ARG0 (g / growth-factor)
+                                    :location (m / medium
+                                                 :mod (c2 / culture)))
+                          :ARG1 (s / status
+                                   :mod (p / phosphorylate-01
+                                           :ARG1 (p3 / protein
+                                                     :name (n / name
+                                                              :op1 "YB-1"))
+                                           :degree (h / high-02)
+                                           :mod (b / basal))))))
+
+# ::save-date Wed Jun 3, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F1">1F</xref>, P-YB-1 was markedly reduced when cells were incubated in serum-free medium for 24 hours.
+# ::file a_pmid_2139_2397_128.txt
+# ::date 2015-05-27T09:07:45
+# ::id a_pmid_2139_2397.128
+(r / reduce-01
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "YB-1")
+            :ARG3-of (p2 / phosphorylate-01))
+   :manner (m / marked)
+   :time (i / incubate-01
+            :ARG1 (c / cell)
+            :ARG2 (m2 / medium
+                      :ARG1-of (f / free-04
+                                  :ARG2 (s / serum)))
+            :duration (t2 / temporal-quantity
+                          :quant "24"
+                          :unit (h2 / hour)))
+   :ARG1-of (s2 / show-01
+                :ARG0 (f2 / figure
+                          :mod "1F")))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, serum depletion did not reduce basal YB-1 phosphorylation in <i>K-RAS</i><sub>mt </sub>MDA-MB-231 cells (Figure <xref ref-type="fig" rid="F1">1F</xref>).
+# ::file a_pmid_2139_2397_129.txt
+# ::date 2015-05-27T09:12:09
+# ::id a_pmid_2139_2397.129
+(c / contrast-01
+   :ARG2 (r / reduce-01
+            :polarity "-"
+            :ARG0 (d / deplete-01
+                     :ARG1 (s / serum))
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (p2 / protein
+                               :name (n2 / name
+                                         :op1 "YB-1"))
+                     :mod (b / basal))
+            :location (c2 / cell-line
+                          :name (n3 / name
+                                    :op1 "MDA-MB-231")
+                          :mod (g / gene
+                                  :name (n / name
+                                           :op1 "K-RAS")
+                                  :ARG2-of (m / mutate-01))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1F")))
+
+# ::save-date Wed May 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt MDA-MB-231 cells are characterized by a point mutation at codon 13 in the <i>K-RAS </i>gene [<xref ref-type="bibr" rid="B37">37</xref>].
+# ::file a_pmid_2139_2397_131.txt
+# ::date 2015-05-27T09:18:22
+# ::id a_pmid_2139_2397.131
+(c / characterize-01
+   :ARG0 (m / mutate-01
+            :ARG1 (c3 / codon
+                      :mod "13"
+                      :part-of (g / gene
+                                  :name (n3 / name
+                                            :op1 "K-RAS")))
+            :mod (p / point))
+   :ARG1 (c2 / cell-line
+             :name (n2 / name
+                       :op1 "MDA-MB-231"))
+   :ARG1-of (d / describe-01
+               :ARG0 (p2 / publication
+                         :ARG1-of (c4 / cite-01
+                                      :ARG2 "37"))))
+
+
+# ::save-date Wed May 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This mutation is responsible for the constitutive phosphorylation of ERK1/2 [<xref ref-type="bibr" rid="B30">30</xref>].
+# ::file a_pmid_2139_2397_132.txt
+# ::date 2015-05-27T09:24:03
+# ::id a_pmid_2139_2397.132
+(r / responsible-01
+      :ARG0 (m / mutate-01
+            :mod (t / this))
+      :ARG1 (p / phosphorylate-01
+            :ARG1 (e / enzyme
+                  :name (n / name :op1 "ERK1/2"))
+            :mod (c / constitutive))
+      :ARG1-of (d / describe-01
+            :ARG0 (p2 / publication
+                  :ARG1-of (c2 / cite-01 :ARG2 "30"))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition to ERK1/2 phosphorylation, these cells also present a constitutive phosphorylation of YB-1, which is not further modified after exposure to IR or stimulation with erbB1 ligands (Figures <xref ref-type="fig" rid="F1">1D</xref> and <xref ref-type="fig" rid="F1">1E</xref>).
+# ::file a_pmid_2139_2397_133.txt
+# ::date 2015-05-27T09:28:03
+# ::id a_pmid_2139_2397.133
+(p5 / present-01
+    :ARG0 (c / cell
+             :mod (t / this))
+    :ARG1 (p3 / phosphorylate-01
+              :ARG1 (p4 / protein
+                        :name (n2 / name
+                                  :op1 "YB-1"))
+              :mod (c2 / constitutive)
+              :ARG1-of (m / modify-01
+                          :polarity "-"
+                          :ARG0 (o / or
+                                   :op1 (e2 / expose-01
+                                            :ARG1 c
+                                            :ARG2 (r / radiate-01
+                                                     :ARG0-of (i / ionize-01)))
+                                   :op2 (s / stimulate-01
+                                           :ARG1 c
+                                           :ARG2 (l / ligand
+                                                    :name (n4 / name
+                                                              :op1 "erbB1"))))
+                          :degree (f3 / further)))
+    :mod (a2 / also)
+    :ARG1-of (a4 / add-02
+                 :ARG2 (p / phosphorylate-01
+                          :ARG1 (e / enzyme
+                                   :name (n / name
+                                            :op1 "ERK1/2"))))
+    :ARG1-of (d / describe-01
+                :ARG0 (a3 / and
+                          :op1 (f / figure
+                                  :mod "1D")
+                          :op2 (f2 / figure
+                                   :mod "1E"))))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, we investigated whether the constitutive phosphorylation of YB-1 in MDA-MB-231 cells is due to the described endogenous expression of mutated <i>K-RAS </i>[<xref ref-type="bibr" rid="B37">37</xref>].
+# ::file a_pmid_2139_2397_134.txt
+# ::date 2015-05-27T09:36:55
+# ::id a_pmid_2139_2397.134
+(c / cause-01
+   :ARG1 (i / investigate-01
+            :ARG0 (w / we)
+            :ARG1 (c2 / cause-01
+                      :mode "interrogative"
+                      :ARG0 (e2 / express-03
+                                :ARG2 (g / gene
+                                         :name (n / name
+                                                  :op1 "K-RAS")
+                                         :ARG2-of (m2 / mutate-01))
+                                :ARG1-of (d / describe-01)
+                                :mod (m / monocot))
+                      :ARG1 (p / phosphorylate-01
+                               :ARG1 (p2 / protein
+                                         :name (n2 / name
+                                                   :op1 "YB-1"))
+                               :location (c3 / cell-line
+                                             :name (n3 / name
+                                                       :op1 "MDA-MB-231"))
+                               :mod (c4 / constitutive))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p3 / publication
+                          :ARG1-of (c5 / cite-01
+                                       :ARG2 "37"))))
+
+# ::save-date Wed Jun 3, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, K-Ras expression was downregulated by siRNA, and the level of P-YB-1 was investigated.
+# ::file a_pmid_2139_2397_135.txt
+# ::date 2015-05-27T09:43:01
+# ::id a_pmid_2139_2397.135
+(c / cause-01
+   :ARG1 (a / and
+            :op1 (d / downregulate-01
+                    :ARG1 (e2 / express-03
+                              :ARG2 (e / enzyme
+                                       :name (n / name
+                                                :op1 "K-Ras")))
+                    :ARG2 (n4 / nucleic-acid
+                              :name (n2 / name
+                                        :op1 "siRNA")))
+            :op2 (i / investigate-01
+                    :ARG1 (l / level
+                             :quant-of (p / protein
+                                          :name (n3 / name
+                                                    :op1 "YB-1")
+                                          :ARG3-of (p2 / phosphorylate-01))))))
+
+# ::save-date Wed Jun 3, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Using a similar approach, we analyzed the effect of ERK1 on YB-1 phosphorylation downstream of mutated K-Ras.
+# ::file a_pmid_2139_2397_136.txt
+# ::date 2015-05-27T09:47:42
+# ::id a_pmid_2139_2397.136
+(a4 / analyze-01
+    :ARG0 (w / we)
+    :ARG1 (a3 / affect-01
+              :ARG0 (e2 / enzyme
+                        :name (n2 / name
+                                  :op1 "ERK1"))
+              :ARG1 (p / phosphorylate-01
+                       :ARG1 (p2 / protein
+                                 :name (n3 / name
+                                           :op1 "YB-1"))
+                       :location (r2 / relative-position
+                                     :op1 (e / enzyme
+                                             :name (n / name
+                                                      :op1 "K-Ras")
+                                             :ARG2-of (m / mutate-01))
+                                     :direction (d / downstream))))
+    :manner (u / use-01
+               :ARG1 (a / approach-02
+                        :ARG1-of (r / resemble-01))))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F2">2A</xref>, <i>K-RAS </i>siRNA led to a strong reduction in P-ERK1/2 and P-YB-1 (Figure <xref ref-type="fig" rid="F2">2A</xref>).
+# ::file a_pmid_2139_2397_137.txt
+# ::date 2015-05-27T09:53:55
+# ::id a_pmid_2139_2397.137
+(l / lead-03
+   :ARG0 (n5 / nucleic-acid
+             :name (n2 / name
+                       :op1 "siRNA")
+             :ARG0-of (e2 / encode-01
+                          :ARG1 (g / gene
+                                   :name (n / name
+                                            :op1 "K-Ras"))))
+   :ARG2 (r2 / reduce-01
+             :ARG1 (a / and
+                      :op1 (e3 / enzyme
+                               :name (n3 / name
+                                         :op1 "ERK1/2")
+                               :ARG1-of (p / phosphorylate-01))
+                      :op2 (p2 / protein
+                               :name (n4 / name
+                                         :op1 "YB-1")
+                               :ARG3-of (p3 / phosphorylate-01)))
+             :mod (s / strong))
+   :ARG1-of (s2 / show-01
+                :ARG0 (f / figure
+                         :mod "2A")))
+
+# ::save-date Wed Jun 3, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Yet, ERK1/2 and YB-1 protein levels were not affected.
+# ::file a_pmid_2139_2397_138.txt
+# ::date 2015-05-27T09:59:01
+# ::id a_pmid_2139_2397.138
+(h / have-concession-91
+   :ARG1 (a / affect-01
+            :polarity "-"
+            :ARG1 (a2 / and
+                      :op1 (l / level
+                              :quant-of (e / enzyme
+                                           :name (n / name
+                                                    :op1 "ERK1/2")))
+                      :op2 (l2 / level
+                               :quant-of (p / protein
+                                            :name (n2 / name
+                                                      :op1 "YB-1"))))))
+
+# ::save-date Fri Jun 5, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Likewise, a marked reduction of P-YB-1 was observed when ERK1 was targeted with siRNA.
+# ::file a_pmid_2139_2397_139.txt
+# ::date 2015-05-27T11:48:06
+# ::id a_pmid_2139_2397.139
+(o / observe-01
+   :ARG1 (r / reduce-01
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "YB-1")
+                     :ARG3-of (p2 / phosphorylate-01))
+            :time (t / target-01
+                     :ARG1 (e / enzyme
+                              :name (n2 / name
+                                        :op1 "ERK1"))
+                     :ARG2 (n4 / nucleic-acid
+                               :name (n3 / name
+                                         :op1 "siRNA")))
+            :degree (m / marked))
+   :manner (l / likewise))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The role of stimulated ERK1/2 phosphorylation on YB-1 phosphorylation was further supported by the results when a MEK inhibitor was used.
+# ::file a_pmid_2139_2397_140.txt
+# ::date 2015-05-27T12:44:40
+# ::id a_pmid_2139_2397.140
+(s / support-01
+   :ARG0 (t2 / thing
+             :ARG2-of (r2 / result-01))
+   :ARG1 (r / role
+            :poss (p / phosphorylate-01
+                     :ARG1 (e2 / enzyme
+                               :name (n2 / name
+                                         :op1 "ERK1/2"))
+                     :ARG1-of (s2 / stimulate-01))
+            :topic (p2 / phosphorylate-01
+                       :ARG1 (p3 / protein
+                                 :name (n3 / name
+                                           :op1 "YB-1"))))
+   :degree (f / further)
+   :time (u / use-01
+            :ARG1 (m / molecular-physical-entity
+                     :ARG0-of (i / inhibit-01
+                                 :ARG1 (p4 / protein-family
+                                           :name (n / name
+                                                    :op1 "MEK"))))))
+
+# ::save-date Tue Jan 19, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F2">2B</xref>, pretreatment of MDA-MB-231 cells with the MEK inhibitor PD98059 markedly blocked YB-1 phosphorylation.
+# ::file a_pmid_2139_2397_141.txt
+# ::date 2015-05-27T13:10:48
+# ::id a_pmid_2139_2397.141
+(b / block-01
+   :ARG0 (p2 / pretreat-01
+             :ARG1 (c / cell-line
+                      :name (n2 / name
+                                :op1 "MDA-MB-231"))
+             :ARG3 (s2 / small-molecule
+                       :name (n3 / name
+                                 :op1 "PD98059")
+                       :ARG0-of (i2 / inhibit-01
+                                    :ARG1 (p4 / protein-family
+                                              :name (n / name
+                                                       :op1 "MEK")))))
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (p3 / protein
+                      :name (n4 / name
+                                :op1 "YB-1")))
+   :degree (m2 / marked)
+   :ARG1-of (s / show-01
+               :ARG0 (f / figure
+                        :mod "2B")))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similar to the data shown in Figure <xref ref-type="fig" rid="F1">1D</xref>, exposure to IR did not induce YB-1 phosphorylation.
+# ::file a_pmid_2139_2397_142.txt
+# ::date 2015-05-27T13:16:54
+# ::id a_pmid_2139_2397.142
+(i2 / induce-01
+    :polarity "-"
+    :ARG0 (e / expose-01
+             :ARG2 (r2 / radiate-01
+                       :ARG0-of (i / ionize-01)))
+    :ARG2 (p / phosphorylate-01
+             :ARG1 (p2 / protein
+                       :name (n2 / name
+                                 :op1 "YB-1")))
+    :ARG1-of (r / resemble-01
+                :ARG2 (d / data))
+    :ARG1-of (s / show-01
+                :ARG0 (f / figure
+                         :mod "1D")))
+
+# ::save-date Wed Jun 3, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results indicates that the constitutive YB-1 phosphorylation in MDA-MB-231 cells is a consequence of mutated K-Ras-mediated ERK1/2 phosphorylation.
+# ::file a_pmid_2139_2397_143.txt
+# ::date 2015-05-27T13:20:06
+# ::id a_pmid_2139_2397.143
+(i / indicate-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG1 (c / consequence
+            :domain (p / phosphorylate-01
+                       :ARG1 (p2 / protein
+                                 :wiki "Y_box_binding_protein_1"
+                                 :name (n / name
+                                          :op1 "YB-1"))
+                       :mod (c2 / constitutive)
+                       :location (c3 / cell-line
+                                     :wiki "-"
+                                     :name (n2 / name
+                                               :op1 "MDA-MB-231")))
+            :ARG1-of (c4 / cause-01
+                         :ARG0 (p3 / phosphorylate-01
+                                   :ARG1 (e / enzyme
+                                            :wiki "Extracellular_signal-regulated_kinases"
+                                            :name (n3 / name
+                                                      :op1 "ERK1/2"))
+                                   :ARG1-of (m / mediate-01
+                                               :ARG0 (e2 / enzyme
+                                                         :wiki "KRAS"
+                                                         :name (n4 / name
+                                                                   :op1 "K-Ras")
+                                                         :ARG2-of (m2 / mutate-01)))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To investigate the role of K-Ras in the constitutive phosphorylation of YB-1, we further analyzed the status of <i>K-RAS </i>in SKBr3, MCF-7 and HBL100 cells.
+# ::file a_pmid_2139_2397_145.txt
+# ::date 2015-05-27T13:36:13
+# ::id a_pmid_2139_2397.145
+(a / analyze-01
+   :ARG0 (w / we)
+   :ARG1 (s / status
+            :location (a2 / and
+                          :op1 (c / cell-line
+                                  :name (n2 / name
+                                            :op1 "SKBr3"))
+                          :op2 (c2 / cell-line
+                                   :name (n3 / name
+                                             :op1 "MCF-7"))
+                          :op3 (c3 / cell-line
+                                   :name (n4 / name
+                                             :op1 "HBL100")))
+            :poss (g / gene
+                     :name (n6 / name
+                               :op1 "K-RAS")))
+   :degree (f / further)
+   :purpose (i / investigate-01
+               :ARG0 w
+               :ARG1 (r / role
+                        :topic (p / phosphorylate-01
+                                  :ARG1 (p2 / protein
+                                            :name (n5 / name
+                                                      :op1 "YB-1"))
+                                  :mod (c4 / constitutive))
+                        :poss (e / enzyme
+                                 :name (n / name
+                                          :op1 "K-Ras")))))
+
+# ::save-date Tue Jan 19, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Sequencing of the <i>K-RAS </i>gene revealed that none of these cell lines presents a <i>K-RAS </i>point mutation in codon 12, codon 13 or 61.
+# ::file a_pmid_2139_2397_146.txt
+# ::date 2015-05-27T13:52:03
+# ::id a_pmid_2139_2397.146
+(r / reveal-01
+   :ARG0 (s / sequence-01
+            :ARG1 (g / gene
+                     :name (n2 / name
+                               :op1 "K-RAS")))
+   :ARG1 (p / present-01
+            :ARG0 (c / cell-line
+                     :quant (n3 / none)
+                     :mod (t / this))
+            :ARG1 (m / mutate-01
+                     :ARG1 g
+                     :mod (p2 / point)
+                     :location (o / or
+                                  :op1 (c2 / codon
+                                           :mod "12")
+                                  :op2 (c3 / codon
+                                           :mod "13")
+                                  :op3 (c4 / codon
+                                           :mod "61")))))
+
+# ::save-date Fri Jul 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To investigate whether mutated <i>K-RAS</i><sup>V12 </sup>could upregulate YB-1 phosphorylation, we introduced mutated <i>K-RAS </i>into <i>K-RAS</i><sub>wt</sub>, SKBr3 and MCF-7 cells.
+# ::file a_pmid_2139_2397_147.txt
+# ::date 2015-05-29T03:10:45
+# ::id a_pmid_2139_2397.147
+(i / introduce-02
+   :ARG0 (w / we)
+   :ARG1 "g"
+   :ARG2 (a / and
+            :op1 (c / cell-line
+                    :name (n4 / name
+                              :op1 "SKBr3"))
+            :op2 (c2 / cell-line
+                     :name (n5 / name
+                               :op1 "MCF-7"))
+            :mod (g2 / gene
+                     :name (n3 / name
+                               :op1 "K-RAS")
+                     :mod (w2 / wild-type)))
+   :purpose (i2 / investigate-01
+                :ARG0 w
+                :ARG1 (p3 / possible-01
+                          :mode "interrogative"
+                          :ARG1 (u / upregulate-01
+                                   :ARG1 (p2 / phosphorylate-01
+                                             :ARG1 (p / protein
+                                                      :name (n2 / name
+                                                                :op1 "YB-1")))
+                                   :ARG2 (g / gene
+                                            :name (n / name
+                                                     :op1 "K-RAS")
+                                            :ARG2-of (m / mutate-01
+                                                        :value "V12"))))))
+
+# ::save-date Thu Dec 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cells were transiently transfected with either a control pEGFP-C1 vector (indicated as con.-vector) or a vector expressing mutated <i>K-RAS</i>, pEGFP-C1/<i>K-RAS</i><sup>V12 </sup>(indicated as <i>K-RAS</i><sup>V12</sup>).
+# ::file a_pmid_2139_2397_148.txt
+# ::date 2015-05-29T03:19:16
+# ::id a_pmid_2139_2397.148
+(t / transfect-01
+   :ARG1 (c / cell)
+   :ARG2 (o / or
+            :op1 (v / vector
+                    :name (n2 / name
+                              :op1 "pEGFP-C1")
+                    :mod (c2 / control)
+                    :ARG1-of (i / indicate-01
+                                :ARG0 (v4 / vector
+                                          :name (n5 / name
+                                                    :op1 "con.-vector"))))
+            :op2 (v2 / vector
+                     :name (n4 / name
+                               :op1 "pEGFP-C1/K-RASV12")
+                     :ARG3-of (e2 / express-03
+                                  :ARG1 (g / gene
+                                           :name (n / name
+                                                    :op1 "K-RAS")
+                                           :ARG2-of (m / mutate-01)))
+                     :ARG1-of (i2 / indicate-01
+                                  :ARG0 (v3 / vector
+                                            :name (n3 / name
+                                                      :op1 "K-RASV12")))))
+   :ARG1-of (t2 / transient-02))
+
+# ::save-date Thu Dec 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Fluorescence images of living cells transfected with con.-vector and <i>K-RAS</i><sup>V12 </sup>revealed that GFP in <i>K-RAS</i><sup>V12 </sup>vector-transfected cells was localized to the plasma membrane, but that in con.-vector-transfected cells it was not (Figure <xref ref-type="fig" rid="F3">3A</xref>).
+# ::file a_pmid_2139_2397_149.txt
+# ::date 2015-05-29T03:32:44
+# ::id a_pmid_2139_2397.149
+(r / reveal-01
+   :ARG0 (i / image-101
+            :ARG1 (a / and
+                     :op1 (c / cell
+                             :ARG0-of (l / live-01)
+                             :ARG1-of (t / transfect-01
+                                         :ARG2 (v / vector
+                                                  :name (n2 / name
+                                                            :op1 "con.-vector"))))
+                     :op2 (c3 / cell
+                              :ARG0-of l
+                              :ARG1-of (t2 / transfect-01
+                                           :ARG2 (v2 / vector
+                                                     :name (n / name
+                                                              :op1 "K-RASV12"))))))
+   :ARG1 (c2 / contrast-01
+             :ARG1 (l2 / localize-01
+                       :ARG1 (p / protein
+                                :name (n3 / name
+                                          :op1 "GFP"))
+                       :location (m / membrane
+                                    :mod (p2 / plasma))
+                       :location (c4 / cell
+                                     :ARG2-of t2))
+             :ARG2 (l3 / localize-01
+                       :polarity "-"
+                       :ARG1 p
+                       :location (c5 / cell
+                                     :ARG2-of t)
+                       :location m))
+   :mod (f / fluorescence)
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "3A")))
+
+# ::save-date Tue Dec 8, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This is due to posttranslational modification and membrane association of K-Ras (Figure <xref ref-type="fig" rid="F3">3A</xref>).
+# ::file a_pmid_2139_2397_150.txt
+# ::date 2015-05-29T03:43:20
+# ::id a_pmid_2139_2397.150
+(c / cause-01
+   :ARG0 (a / and
+            :op1 (m / modify-01
+                    :ARG1 (e / enzyme
+                             :name (n / name
+                                      :op1 "K-Ras"))
+                    :time (a2 / after
+                              :op1 (t2 / translate-02
+                                       :ARG1 e)))
+            :op2 (a3 / associate-01
+                     :ARG1 e
+                     :ARG2 (m2 / membrane)))
+   :ARG1 (t / this)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3A")))
+
+# ::save-date Fri Dec 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In con.-vector-transfected cells, GFP expression was not accumulated at the cell membrane, but rather it was equally distributed throughout the cytoplasm.
+# ::file a_pmid_2139_2397_151.txt
+# ::date 2015-05-29T03:46:30
+# ::id a_pmid_2139_2397.151
+(i / instead-of-91
+   :ARG1 (d / distribute-01
+            :ARG1 "e"
+            :location (c / cytoplasm)
+            :mod (r / rather)
+            :ARG1-of (e2 / equal-01))
+   :ARG2 (a / accumulate-01
+            :polarity "-"
+            :ARG0 (m / membrane
+                     :part-of "c2")
+            :ARG1 (e / express-03
+                     :ARG2 (p / protein
+                              :name (n / name
+                                       :op1 "GFP"))
+                     :ARG3 (c2 / cell
+                               :ARG1-of (t / transfect-01
+                                           :ARG2 (v / vector
+                                                    :name (n2 / name
+                                                              :op1 "con.-vector")))))))
+
+
+# ::save-date Thu Dec 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The efficiency of transfection was verified by immunoblotting as well (Figure <xref ref-type="fig" rid="F3">3B</xref>).
+# ::file a_pmid_2139_2397_152.txt
+# ::date 2015-05-29T03:53:52
+# ::id a_pmid_2139_2397.152
+(v / verify-01
+      :ARG1 (e / efficient-01
+            :ARG1 (t / transfect-01))
+      :mod (a / as-well)
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "3B"))
+      :manner (i / immunoblot-01))
+
+# ::save-date Thu Dec 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In cells transfected with <i>K-RAS</i><sup>V12 </sup>vector, the expression of K-Ras (21 kDa) resulted in a shift of GFP from 27 kDa to 48 kDa (Figure <xref ref-type="fig" rid="F3">3B</xref>).
+# ::file a_pmid_2139_2397_153.txt
+# ::date 2015-05-29T03:58:18
+# ::id a_pmid_2139_2397.153
+(r / result-01
+   :ARG1 (e2 / express-03
+             :ARG2 (e / enzyme
+                      :name (n / name
+                               :op1 "K-Ras")
+                      :quant (m2 / mass-quantity
+                                 :quant "21"
+                                 :unit (k / kilodalton)))
+             :ARG3 (c / cell
+                      :ARG1-of (t / transfect-01
+                                  :ARG2 (v / vector
+                                           :name (n2 / name
+                                                     :op1 "K-RASV12")))))
+   :ARG2 (s / shift-01
+            :ARG1 (p / protein
+                     :name (n3 / name
+                               :op1 "GFP"))
+            :ARG2 (m4 / mass-quantity
+                      :quant "48"
+                      :unit k)
+            :ARG3 (m3 / mass-quantity
+                      :quant "27"
+                      :unit k))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3B")))
+
+# ::save-date Tue Jun 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The expression of GFP-tagged K-Ras with a molecular weight of 48 kDa was further confirmed by stripping the anti-GFP antibody from the membrane and reincubating the blots with a K-Ras antibody.
+# ::file a_pmid_2139_2397_154.txt
+# ::date 2015-05-29T04:06:56
+# ::id a_pmid_2139_2397.154
+(c / confirm-01
+   :ARG1 (e2 / express-03
+             :ARG2 (e / enzyme
+                      :name (n / name
+                               :op1 "K-Ras")
+                      :ARG1-of (t / tag-01
+                                  :ARG2 (p / protein
+                                           :name (n2 / name
+                                                     :op1 "GFP")))
+                      :mod (w / weight
+                              :mod (m / molecule)
+                              :quant (m2 / mass-quantity
+                                         :quant "48"
+                                         :unit (k / kilodalton)))))
+   :degree (f / further)
+   :manner (a2 / and
+               :op1 (s / strip-01
+                       :ARG1 (a3 / antibody
+                                 :ARG0-of (c2 / counter-01
+                                              :ARG1 p))
+                       :ARG2 (m3 / membrane))
+               :op2 (i / incubate-01
+                       :ARG1 (b / blot)
+                       :ARG2 (a4 / antibody
+                                 :ARG0-of (c3 / counter-01
+                                              :ARG1 e))
+                       :mod (a5 / again))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In line with our observations of MDA-MB-231 cells, exogenous expression of <i>K-RAS</i><sup>V12 </sup>in <i>K-RAS</i><sub>wt</sub>, SKBr3 and MCF-7 cells resulted in markedly enhanced basal phosphorylation of YB-1 at S102 (Figure <xref ref-type="fig" rid="F3">3B</xref>), which prevents further enhancement of phosphorylation by IR (Figure <xref ref-type="fig" rid="F3">3C</xref>).
+# ::file a_pmid_2139_2397_155.txt
+# ::date 2015-05-29T04:16:28
+# ::id a_pmid_2139_2397.155
+(r / result-01
+   :ARG1 (e2 / express-03
+             :ARG1 (g / gene
+                      :name (n / name
+                               :op1 "K-RAS")
+                      :ARG2-of (m / mutate-01
+                                  :value "V12"))
+             :ARG3 (a / and
+                      :op1 (c / cell-line
+                              :name (n3 / name
+                                        :op1 "SKBr3"))
+                      :op2 (c2 / cell-line
+                               :name (n4 / name
+                                         :op1 "MCF-7"))
+                      :mod (g2 / gene
+                               :name (n2 / name
+                                         :op1 "K-RAS")
+                               :mod (w / wild-type)))
+             :mod (e3 / exogenous))
+   :ARG2 (p / phosphorylate-01
+            :ARG1 (a2 / amino-acid
+                      :mod "102"
+                      :name (n5 / name
+                                :op1 "serine")
+                      :part-of (p2 / protein
+                                   :name (n6 / name
+                                             :op1 "YB-1")))
+            :mod (b / basal)
+            :ARG1-of (e5 / enhance-01
+                         :manner (m2 / marked))
+            :ARG0-of (p3 / prevent-01
+                         :ARG1 (e6 / enhance-01
+                                   :ARG1 p
+                                   :ARG2 (r3 / radiate-01
+                                             :ARG0-of (i / ionize-01))
+                                   :degree (f2 / further))
+                         :ARG1-of (d2 / describe-01
+                                      :ARG0 (f3 / figure
+                                                :mod "3C"))))
+   :ARG1-of (r2 / resemble-01
+                :ARG2 (o / observe-01
+                         :ARG0 (w2 / we)
+                         :ARG1 (c3 / cell-line
+                                   :name (n7 / name
+                                             :op1 "MDA-MB-231"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3B")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, these data support the hypothesis that in cells expressing mutated <i>K-RAS</i>, the basal phosphorylation of YB-1 is constitutively enhanced and cannot be further stimulated by IR.
+# ::file a_pmid_2139_2397_156.txt
+# ::date 2015-05-29T04:36:53
+# ::id a_pmid_2139_2397.156
+(i / infer-01
+   :ARG1 (s / support-01
+            :ARG0 (d / data
+                     :mod (t2 / this))
+            :ARG1 (h2 / hypothesize-01
+                      :ARG1 (a / and
+                               :op1 (e2 / enhance-01
+                                        :ARG1 (p / phosphorylate-01
+                                                 :ARG1 (p3 / protein
+                                                           :name (n2 / name
+                                                                     :op1 "YB-1"))
+                                                 :mod (b / basal))
+                                        :mod (c / constitutive))
+                               :op2 (p2 / possible-01
+                                        :polarity "-"
+                                        :ARG1 (s2 / stimulate-01
+                                                  :ARG1 p
+                                                  :ARG2 (r / radiate-01
+                                                           :ARG0-of (i2 / ionize-01))
+                                                  :degree (f / further)))
+                               :location (c2 / cell
+                                             :ARG3-of (e3 / express-03
+                                                          :ARG1 (g / gene
+                                                                   :name (n / name
+                                                                            :op1 "K-RAS")
+                                                                   :ARG2-of (m / mutate-01))))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The phosphorylation of YB-1 at S102 in response to stimulation with EGF has been described as being dependent on p90 ribosomal S6 kinase [<xref ref-type="bibr" rid="B11">11</xref>].
+# ::file a_pmid_2139_2397_158.txt
+# ::date 2015-05-29T04:46:42
+# ::id a_pmid_2139_2397.158
+(d / describe-01
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (a / amino-acid
+                     :mod "102"
+                     :name (n2 / name
+                               :op1 "serine")
+                     :part-of (p2 / protein
+                                  :name (n / name
+                                           :op1 "YB-1")))
+            :ARG2-of (r / respond-01
+                        :ARG1 (s / stimulate-01
+                                 :ARG1 p2
+                                 :ARG2 (p4 / protein
+                                           :name (n3 / name
+                                                     :op1 "EGF")))))
+   :ARG2 (d2 / depend-01
+             :ARG0 p
+             :ARG1 (e / enzyme
+                      :name (n5 / name
+                                :op1 "p90"
+                                :op2 "ribosomal"
+                                :op3 "S6"
+                                :op4 "kinase")))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (p3 / publication
+                          :ARG1-of (c / cite-01
+                                      :ARG2 "11"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In that study [<xref ref-type="bibr" rid="B11">11</xref>], Stratford <i>et al</i>. showed that the stimulation of SUM149 breast cancer cells with serum, EGF and phorbol 12-myristate 13-acetate (PMA) leads to phosphorylation of YB-1 at S102, which is dependent on the MAP kinase pathway [<xref ref-type="bibr" rid="B11">11</xref>].
+# ::file a_pmid_2139_2397_159.txt
+# ::date 2015-05-29T04:55:41
+# ::id a_pmid_2139_2397.159
+(s / show-01
+   :ARG0 (a / and
+            :op1 (p2 / person
+                     :name (n2 / name
+                               :op1 "Stratford"))
+            :op2 (p3 / person
+                     :mod (o / other)))
+   :ARG1 (l / lead-03
+            :ARG0 (s2 / stimulate-01
+                      :ARG1 (c / cell-line
+                               :name (n3 / name
+                                         :op1 "SUM149")
+                               :source (d4 / disease
+                                           :wiki "Breast_cancer"
+                                           :name (n9 / name
+                                                     :op1 "breast"
+                                                     :op2 "cancer")))
+                      :ARG2 (a2 / and
+                                :op1 (s3 / serum)
+                                :op2 (p7 / protein
+                                         :name (n4 / name
+                                                   :op1 "EGF"))
+                                :op3 (s5 / small-molecule
+                                         :name (n5 / name
+                                                   :op1 "phorbol"
+                                                   :op2 "12-myristate"
+                                                   :op3 "13-acetate")
+                                         :ARG1-of (d2 / describe-01
+                                                      :ARG2 (s6 / small-molecule
+                                                                :name (n6 / name
+                                                                          :op1 "PMA"))))))
+            :ARG2 (p / phosphorylate-01
+                     :ARG1 (a3 / amino-acid
+                               :mod "102"
+                               :name (n7 / name
+                                         :op1 "serine")
+                               :part-of (p4 / protein
+                                            :name (n / name
+                                                     :op1 "YB-1")))
+                     :ARG0-of (d / depend-01
+                                 :ARG1 (p5 / pathway
+                                           :name (n8 / name
+                                                     :op1 "MAP"
+                                                     :op2 "kinase")))))
+   :medium (s7 / study-01
+               :mod (t / that)
+               :ARG1-of (d3 / describe-01
+                            :ARG0 (p6 / publication
+                                      :ARG1-of (c3 / cite-01
+                                                   :ARG2 "11"))
+                            :ARG1 s)))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Because we and others have shown that IR induces activation of erbB1 in a ligand-independent manner [<xref ref-type="bibr" rid="B24">24</xref>,<xref ref-type="bibr" rid="B25">25</xref>], we tested whether the IR-induced YB-1 phosphorylation shown in Figure <xref ref-type="fig" rid="F1">1D</xref> could be blocked by erbB1 tyrosine kinase inhibitors.
+# ::file a_pmid_2139_2397_161.txt
+# ::date 2015-05-29T05:03:47
+# ::id a_pmid_2139_2397.161
+(t2 / test-01
+    :ARG0 (w / we)
+    :ARG1 (p2 / possible-01
+              :mode "interrogative"
+              :ARG1 (b / block-01
+                       :ARG1 (p / phosphorylate-01
+                                :ARG1 (p3 / protein
+                                          :name (n2 / name
+                                                    :op1 "YB-1"))
+                                :ARG2-of (i2 / induce-01
+                                             :ARG0 (r / radiate-01
+                                                      :ARG0-of (i4 / ionize-01)))
+                                :ARG1-of (s / show-01
+                                            :medium (f / figure
+                                                       :mod "1D")))
+                       :ARG3 (m3 / molecular-physical-entity
+                                 :ARG0-of (i / inhibit-01
+                                             :ARG1 (e / enzyme
+                                                      :name (n4 / name
+                                                                :op1 "erB1"
+                                                                :op2 "tyrosine"
+                                                                :op3 "kinase"))))))
+    :ARG1-of (c / cause-01
+                :ARG0 (s2 / show-01
+                          :ARG0 (a / and
+                                   :op1 (w2 / we)
+                                   :op2 (p5 / person
+                                            :mod (o / other)))
+                          :ARG1 (i3 / induce-01
+                                    :ARG0 r
+                                    :ARG2 (a2 / activate-01
+                                              :ARG1 e)
+                                    :manner (d / depend-01
+                                               :polarity "-"
+                                               :ARG0 a2
+                                               :ARG1 (l / ligand)))
+                          :ARG1-of (d2 / describe-01
+                                       :ARG0 (a3 / and
+                                                 :op1 (p6 / publication
+                                                          :ARG1-of (c2 / cite-01
+                                                                       :ARG2 "24"))
+                                                 :op2 (p7 / publication
+                                                          :ARG1-of (c3 / cite-01
+                                                                       :ARG2 "25")))))))
+
+# ::save-date Sun May 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test this hypothesis, the effect of the erbB1-RTK inhibitor erlotinib on YB-1 phosphorylation was analyzed in whole cell extracts as well as in cytoplasmic and nuclear fractions.
+# ::file a_pmid_2139_2397_162.txt
+# ::date 2015-05-29T05:20:55
+# ::id a_pmid_2139_2397.162
+(a / analyze-01
+   :ARG1 (a2 / affect-01
+             :ARG0 (s / small-molecule
+                      :name (n / name
+                               :op1 "erlotinib")
+                      :ARG0-of (i / inhibit-01
+                                  :ARG1 (p3 / pathway
+                                            :name (n4 / name
+                                                      :op1 "erbB1-RTK"))))
+             :ARG1 (p / phosphorylate-01
+                      :ARG1 (p2 / protein
+                                :name (n2 / name
+                                          :op1 "YB-1"))))
+   :location (a3 / and
+                 :op1 (e / extract-01
+                         :ARG1 (c / cell
+                                  :mod (w / whole)))
+                 :op2 (f / fraction
+                         :part-of (c2 / cytoplasm))
+                 :op3 (f2 / fraction
+                          :part-of (n3 / nucleus)))
+   :purpose (t3 / test-01
+                :ARG1 (t / thing
+                         :ARG1-of (h / hypothesize-01)
+                         :mod (t4 / this))))
+
+# ::save-date Tue Jan 19, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Pretreatment of SKBr3 cells with erlotinib resulted in complete inhibition of YB-1 phosphorylation in whole cell extract (Figure <xref ref-type="fig" rid="F4">4A</xref>) as well as in cytoplasmic and nuclear fractions (Figure <xref ref-type="fig" rid="F4">4B</xref>).
+# ::file a_pmid_2139_2397_163.txt
+# ::date 2015-05-29T05:28:37
+# ::id a_pmid_2139_2397.163
+(r / result-01
+   :ARG1 (p3 / pretreat-01
+             :ARG1 (c / cell-line
+                      :name (n / name
+                               :op1 "SKBr3"))
+             :ARG3 (s / small-molecule
+                      :name (n2 / name
+                                :op1 "erlotinib")))
+   :ARG2 (i / inhibit-01
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (p2 / protein
+                               :name (n3 / name
+                                         :op1 "YB-1")))
+            :ARG1-of (c2 / complete-02)
+            :location (a / and
+                         :op1 (e / extract-01
+                                 :ARG1 (c3 / cell
+                                           :mod (w / whole))
+                                 :ARG1-of (d / describe-01
+                                             :ARG0 (f / figure
+                                                      :mod "4A")))
+                         :op2 (a2 / and
+                                  :op1 (f2 / fraction
+                                           :part-of (c4 / cytoplasm))
+                                  :op2 (f3 / fraction
+                                           :part-of (n4 / nucleus))
+                                  :ARG1-of (d2 / describe-01
+                                               :ARG0 (f4 / figure
+                                                         :mod "4B"))))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As expected, erlotinib also blocked basal- and radiation-induced P-Akt and P-ERK1/2 in these cells (Figure <xref ref-type="fig" rid="F4">4A</xref>).
+# ::file a_pmid_2139_2397_164.txt
+# ::date 2015-05-29T05:33:47
+# ::id a_pmid_2139_2397.164
+(b / block-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "erlotinib"))
+   :ARG1 (a / and
+            :op1 (a3 / and
+                     :op1 (e / enzyme
+                             :name (n2 / name
+                                       :op1 "Akt"))
+                     :op2 (s2 / slash
+                              :op1 (e2 / enzyme
+                                       :name (n3 / name
+                                                 :op1 "ERK1"))
+                              :op2 (e3 / enzyme
+                                       :name (n4 / name
+                                                 :op1 "ERK2")))
+                     :mod (b2 / basal)
+                     :ARG1-of (p / phosphorylate-01))
+            :op2 (a4 / and
+                     :op1 e
+                     :op2 s2
+                     :ARG1-of p
+                     :ARG2-of (i / induce-01
+                                 :ARG0 (r / radiate-01))))
+   :location (c / cell
+                :mod (t / this))
+   :ARG1-of (e4 / expect-01)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4A"))
+   :mod (a2 / also))
+
+# ::save-date Tue Jan 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To rule out off-target effects of erlotinib, the efficacy of the highly specific erbB1-RTK inhibitor BIBX1382BS [<xref ref-type="bibr" rid="B38">38</xref>] on radiation-induced YB-1 phosphorylation was tested in cytoplasmic and nuclear fractions.
+# ::file a_pmid_2139_2397_165.txt
+# ::date 2015-05-29T05:39:05
+# ::id a_pmid_2139_2397.165
+(t2 / test-01
+    :ARG1 (e / efficient-01
+             :ARG1 (s3 / small-molecule
+                       :wiki "-"
+                       :name (n2 / name
+                                 :op1 "BIBX1382BS")
+                       :ARG0-of (i / inhibit-01
+                                   :ARG1 (e2 / enzyme
+                                             :wiki "-"
+                                             :name (n5 / name
+                                                       :op1 "erbB1-RTK")))
+                       :ARG1-of (d / describe-01
+                                   :ARG0 (p3 / publication
+                                             :ARG1-of (c / cite-01
+                                                         :ARG2 "38")))
+                       :ARG1-of (s / specific-02
+                                   :ARG1-of (h / high-02)))
+             :ARG2 (p / phosphorylate-01
+                      :ARG1 (p2 / protein
+                                :wiki "Y_box_binding_protein_1"
+                                :name (n / name
+                                         :op1 "YB-1"))
+                      :ARG2-of (i2 / induce-01
+                                   :ARG0 (r / radiate-01))))
+    :location (a2 / and
+                  :op1 (f / fraction
+                          :part-of (c2 / cytoplasm))
+                  :op2 (f2 / fraction
+                           :mod (n3 / nucleus)))
+    :purpose (r2 / rule-out-02
+                 :ARG1 (a3 / affect-01
+                           :ARG0 (s2 / small-molecule
+                                     :wiki "Erlotinib"
+                                     :name (n4 / name
+                                               :op1 "erlotinib"))
+                           :mod (o / off-target))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt EGF was included as positive control.
+# ::file a_pmid_2139_2397_166.txt
+# ::date 2015-05-29T05:44:26
+# ::id a_pmid_2139_2397.166
+(i / include-01
+   :ARG1 (p2 / protein
+             :name (n / name
+                      :op1 "EGF"))
+   :condition (c / control
+                 :mod (p / positive)))
+
+# ::save-date Fri Feb 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown at the bottom of Figure <xref ref-type="fig" rid="F4">4B</xref>, in both cytoplasmic and nuclear protein fractions treatment with BIBX1382BS resulted in a marked reduction of YB-1 phosphorylation stimulated by IR as well as EGF treatment.
+# ::file a_pmid_2139_2397_167.txt
+# ::date 2015-05-29T05:45:39
+# ::id a_pmid_2139_2397.167
+(r / result-01
+   :ARG1 (t / treat-04
+            :ARG2 (s2 / small-molecule
+                      :name (n / name
+                               :op1 "BIBX1382BS")))
+   :ARG2 (r2 / reduce-01
+             :ARG1 (p / phosphorylate-01
+                      :ARG1 (p2 / protein
+                                :name (n2 / name
+                                          :op1 "YB-1")))
+             :mod (m2 / marked)
+             :ARG1-of (s / stimulate-01
+                         :ARG0 (a / and
+                                  :op1 (r3 / radiate-01
+                                           :ARG0-of (i / ionize-01))
+                                  :op2 (t2 / treat-04
+                                           :ARG2 (p5 / protein
+                                                     :name (n4 / name
+                                                               :op1 "EGF"))))))
+   :ARG1-of (s4 / show-01
+                :medium (b / bottom
+                           :mod (f / figure
+                                   :mod "4B")))
+   :location (a2 / and
+                 :op1 (f2 / fraction
+                          :part-of (p3 / protein
+                                       :mod (c / cytoplasm)))
+                 :op2 (f3 / fraction
+                          :part-of (p4 / protein
+                                       :mod (n5 / nucleus)))
+                 :mod (b2 / both)))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These data indicate that erbB1-RTK activity is necessary for radiation-induced YB-1 phosphorylation, and this is most likely due to activation of the PI3K/Akt and MAPK/ERK pathways.
+# ::file a_pmid_2139_2397_168.txt
+# ::date 2015-05-29T05:52:02
+# ::id a_pmid_2139_2397.168
+(a2 / and
+    :op1 (i / indicate-01
+            :ARG0 (d / data
+                     :mod (t / this))
+            :ARG1 (n / need-01
+                     :ARG0 (p / phosphorylate-01
+                              :ARG1 (p3 / protein
+                                        :name (n3 / name
+                                                  :op1 "YB-1"))
+                              :ARG2-of (i2 / induce-01
+                                           :ARG0 (r / radiate-01)))
+                     :ARG1 (a / activate-01
+                              :ARG1 (p5 / pathway
+                                        :name (n5 / name
+                                                  :op1 "erbB1-RTK")))))
+    :op2 (l / likely-01
+            :ARG1 (c / cause-01
+                     :ARG0 (a3 / activate-01
+                               :ARG1 (a4 / and
+                                         :op1 (p2 / pathway
+                                                  :name (n2 / name
+                                                            :op1 "PI3K/AKT"))
+                                         :op2 (p4 / pathway
+                                                  :name (n4 / name
+                                                            :op1 "MAPK/ERK"))))
+                     :ARG1 n)
+            :degree (m / most)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test the function of PI3K/Akt and MAPK/ERK pathways in YB-1 phosphorylation, we further investigated whether the inhibitors of PI3K, Akt and MAPK affect YB-1 phosphorylation in irradiated cells.
+# ::file a_pmid_2139_2397_169.txt
+# ::date 2015-05-29T05:57:58
+# ::id a_pmid_2139_2397.169
+(i2 / investigate-01
+    :ARG0 (w / we)
+    :ARG1 (a / affect-01
+             :mode "interrogative"
+             :ARG0 (a4 / and
+                       :op1 (m / molecular-physical-entity
+                               :ARG0-of (i / inhibit-01
+                                           :ARG1 (e / enzyme
+                                                    :name (n3 / name
+                                                              :op1 "PI3K"))))
+                       :op2 (m2 / molecular-physical-entity
+                                :ARG0-of (i4 / inhibit-01
+                                             :ARG1 (e2 / enzyme
+                                                       :name (n4 / name
+                                                                 :op1 "Akt"))))
+                       :op3 (m3 / molecular-physical-entity
+                                :ARG0-of (i5 / inhibit-01
+                                             :ARG1 (p5 / protein-family
+                                                       :name (n5 / name
+                                                                 :op1 "MAPK")))))
+             :ARG1 (p2 / phosphorylate-01
+                       :ARG1 (p4 / protein
+                                 :name (n6 / name
+                                           :op1 "YB-1")))
+             :location (c / cell
+                          :ARG1-of (i3 / irradiate-01)))
+    :degree (f / further)
+    :purpose (t / test-01
+                :ARG0 w
+                :ARG1 (f2 / function-01
+                          :ARG0 (a3 / and
+                                    :op1 (p / pathway
+                                            :name (n / name
+                                                     :op1 "PI3K/Akt"))
+                                    :op2 (p3 / pathway
+                                             :name (n2 / name
+                                                       :op1 "MAPK/ERK")))
+                          :ARG1 p2)))
+
+# ::save-date Sun May 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The data shown in Figures <xref ref-type="fig" rid="F4">4C</xref> and <xref ref-type="fig" rid="F4">4D</xref> indicate that treatment with either of the inhibitors markedly reduced the phosphorylation of YB-1 at S102.
+# ::file a_pmid_2139_2397_170.txt
+# ::date 2015-05-29T06:03:30
+# ::id a_pmid_2139_2397.170
+(i2 / indicate-01
+    :ARG0 (d / data
+             :ARG1-of (s2 / show-01
+                          :medium (a / and
+                                     :op1 (f / figure
+                                             :mod "4C")
+                                     :op2 (f2 / figure
+                                              :mod "4D"))))
+    :ARG1 (r / reduce-01
+             :ARG0 (t / treat-04
+                      :ARG2 (m2 / molecular-physical-entity
+                                :mod (e / either)
+                                :ARG0-of (i / inhibit-01)))
+             :ARG1 (p / phosphorylate-01
+                      :ARG1 (a2 / amino-acid
+                                :mod "102"
+                                :name (n / name
+                                         :op1 "serine")
+                                :part-of (p2 / protein
+                                             :name (n2 / name
+                                                       :op1 "YB-1"))))
+             :manner (m / marked)))
+
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, optimal inhibition was observed when cells were treated with a combination of PI3K and MEK inhibitors.
+# ::file a_pmid_2139_2397_171.txt
+# ::date 2015-05-29T06:09:34
+# ::id a_pmid_2139_2397.171
+(h / have-concession-91
+      :ARG1 (o / observe-01
+            :ARG1 (i / inhibit-01
+                  :mod (o2 / optimal))
+            :time (t2 / treat-04
+                  :ARG1 (c / cell)
+                  :ARG2 (c2 / combine-01
+                        :ARG1 (m / molecular-physical-entity
+                              :ARG0-of (i2 / inhibit-01
+                                    :ARG1 (p / protein-family
+                                          :name (n2 / name :op1 "PI3K"))))
+                        :ARG2 (m2 / molecular-physical-entity
+                              :ARG0-of (i3 / inhibit-01
+                                    :ARG1 (p2 / protein-family
+                                          :name (n / name :op1 "MEK"))))))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As IR-induced YB-1 phosphorylation was shown to be dependent on erbB1, PI3K/Akt and MAPK/ERK, we further investigated whether <i>K-RAS</i><sub>mt</sub>-dependent constitutive phosphorylation of YB-1 might be sensitive to the inhibition of erbB1, PI3K and MEK.
+# ::file a_pmid_2139_2397_173.txt
+# ::date 2015-05-29T06:17:55
+# ::id a_pmid_2139_2397.173
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (p3 / possible-01
+             :mode "interrogative"
+             :ARG1 (s / sensitive-03
+                      :ARG0 (p / phosphorylate-01
+                               :ARG1 (p4 / protein
+                                         :name (n4 / name
+                                                   :op1 "YB-1"))
+                               :mod (c / constitutive)
+                               :ARG0-of (d / depend-01
+                                           :ARG1 (g / gene
+                                                    :name (n2 / name
+                                                              :op1 "K-RAS")
+                                                    :ARG1-of (m / mutate-01))))
+                      :ARG1 (i2 / inhibit-01
+                                :ARG1 (a / and
+                                         :op1 (p5 / protein
+                                                  :name (n5 / name
+                                                            :op1 "erbB1"))
+                                         :op2 (e / enzyme
+                                                 :name (n6 / name
+                                                           :op1 "PI3K"))
+                                         :op3 (e2 / enzyme
+                                                  :name (n3 / name
+                                                            :op1 "MEK"))))))
+   :degree (f / further)
+   :ARG1-of (c2 / cause-01
+                :ARG0 (s2 / show-01
+                          :ARG1 (d2 / depend-01
+                                    :ARG0 (p6 / phosphorylate-01
+                                              :ARG1 p4
+                                              :ARG2-of (i3 / induce-01
+                                                           :ARG0 (r / radiate-01
+                                                                    :ARG0-of (i4 / ionize-01))))
+                                    :ARG1 (a2 / and
+                                              :op1 p5
+                                              :op2 (p2 / pathway
+                                                       :name (n / name
+                                                                :op1 "PI3K/Akt"))
+                                              :op3 (p7 / pathway
+                                                       :name (n8 / name
+                                                                 :op1 "MAPK/ERK")))))))
+
+# ::save-date Fri Feb 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To this end, <i>K-RAS</i><sub>wt </sub>MCF-7 cells were transiently transfected with con.-vector or <i>K-RAS</i><sup>V12 </sup>vector, and 48 hours after transfection the cells were treated with the erbB1 inhibitor erlotinib, the PI3K inhibitor LY294002 or the MEK inhibitor PD98059 for 2 hours.
+# ::file a_pmid_2139_2397_174.txt
+# ::date 2015-05-29T07:05:42
+# ::id a_pmid_2139_2397.174
+(a / and
+   :op1 (t4 / transfect-01
+            :ARG1 (c / cell-line
+                     :name (n3 / name
+                               :op1 "MCF-7")
+                     :mod (g / gene
+                             :name (n / name
+                                      :op1 "K-RAS")
+                             :mod (w / wild-type)))
+            :ARG2 (o / or
+                     :op1 (v2 / vector
+                              :name (n2 / name
+                                        :op1 "con.-vector"))
+                     :op2 (v / vector
+                             :name (n4 / name
+                                       :op1 "K-RASV12")))
+            :ARG1-of (t5 / transient-02))
+   :op2 (t / treat-04
+           :ARG1 c
+           :ARG2 (a2 / and
+                     :op1 (s / small-molecule
+                             :name (n5 / name
+                                       :op1 "erlotinib")
+                             :ARG0-of (i / inhibit-01
+                                         :ARG1 (p / protein
+                                                  :name (n6 / name
+                                                            :op1 "erbB1"))))
+                     :op2 (s3 / small-molecule
+                              :name (n7 / name
+                                        :op1 "LY294002")
+                              :ARG0-of (i2 / inhibit-01
+                                           :ARG1 (p2 / protein-family
+                                                     :name (n9 / name
+                                                               :op1 "PI3K"))))
+                     :op3 (s2 / small-molecule
+                              :name (n8 / name
+                                        :op1 "PD98059")
+                              :ARG0-of (i3 / inhibit-01
+                                           :ARG1 (p3 / protein-family
+                                                     :name (n10 / name
+                                                                :op1 "MEK")))))
+           :time (a3 / after
+                     :op1 t4
+                     :quant (t2 / temporal-quantity
+                                :quant "48"
+                                :unit (h / hour)))
+           :duration (t3 / temporal-quantity
+                         :quant "2"
+                         :unit h))
+   :purpose (t6 / this))
+
+# ::save-date Thu Dec 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similar to the results shown in Figure <xref ref-type="fig" rid="F3">3</xref>, overexpression of <i>K-RAS</i><sup>V12 </sup>resulted in an about 2.5-fold stimulation of YB-1 phosphorylation.
+# ::file a_pmid_2139_2397_175.txt
+# ::date 2015-05-29T07:16:08
+# ::id a_pmid_2139_2397.175
+(r2 / result-01
+    :ARG1 (o / overexpress-01
+             :ARG1 (g / gene
+                      :name (n2 / name
+                                :op1 "K-RAS")
+                      :ARG2-of (m / mutate-01
+                                  :value "V12")))
+    :ARG2 (s / stimulate-01
+             :ARG1 (p / phosphorylate-01
+                      :ARG1 (p2 / protein
+                                :name (n / name
+                                         :op1 "YB-1")))
+             :degree (a / about
+                        :op1 (p3 / product-of
+                                 :op1 "2.5")))
+    :ARG1-of (r / resemble-01
+                :ARG2 (t / thing
+                         :ARG2-of (r3 / result-01)
+                         :ARG1-of (s2 / show-01
+                                      :medium (f / figure
+                                                 :mod "3")))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Erlotinib reduced mutated <i>K-RAS </i><sup>V12</sup>-induced YB-1 phosphorylation by about 50%, while the PI3K inhibitor and the MEK inhibitor reduced <i>K-RAS</i><sup>V12</sup>-induced YB-1 phosphorylation to the control level.
+# ::file a_pmid_2139_2397_176.txt
+# ::date 2015-05-29T07:21:11
+# ::id a_pmid_2139_2397.176
+(c / contrast-01
+   :ARG1 (r / reduce-01
+            :ARG0 (s / small-molecule
+                     :name (n3 / name
+                               :op1 "erlotinib"))
+            :ARG1 (p2 / phosphorylate-01
+                      :ARG1 (p3 / protein
+                                :name (n4 / name
+                                          :op1 "YB-1"))
+                      :ARG2-of (i2 / induce-01
+                                   :ARG0 (g / gene
+                                            :name (n / name
+                                                     :op1 "K-RAS")
+                                            :ARG2-of (m / mutate-01
+                                                        :value "V12"))))
+            :ARG2 (p4 / percentage-entity
+                      :value "50"))
+   :ARG2 (r2 / reduce-01
+             :ARG0 (a / and
+                      :op1 (m2 / molecular-physical-entity
+                               :ARG0-of (i / inhibit-01
+                                           :ARG1 (p / protein-family
+                                                    :name (n5 / name
+                                                              :op1 "PI3K"))))
+                      :op2 (m3 / molecular-physical-entity
+                               :ARG0-of (i3 / inhibit-01
+                                            :ARG1 (p5 / protein-family
+                                                      :name (n2 / name
+                                                                :op1 "MEK")))))
+             :ARG1 p2
+             :ARG4 (l / level
+                      :mod (c2 / control))))
+
+# ::save-date Fri Feb 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, the combination of PD98059 and LY294002 (PD/LY) blocked basal and <i>K-RAS </i><sup>V12</sup>-induced YB-1 phosphorylation completely (Figure <xref ref-type="fig" rid="F5">5A</xref>).
+# ::file a_pmid_2139_2397_177.txt
+# ::date 2015-05-29T07:29:08
+# ::id a_pmid_2139_2397.177
+(h / have-concession-91
+   :ARG1 (b / block-01
+            :ARG0 (c / combine-01
+                     :ARG1 (s / small-molecule
+                              :name (n2 / name
+                                        :op1 "PD98059"))
+                     :ARG2 (s2 / small-molecule
+                               :name (n3 / name
+                                         :op1 "LY294002")))
+            :ARG1 (a / and
+                     :op1 (p / phosphorylate-01
+                             :ARG1 (p2 / protein
+                                       :name (n4 / name
+                                                 :op1 "YB-1"))
+                             :mod (b2 / basal))
+                     :op2 (p3 / phosphorylate-01
+                              :ARG1 p2
+                              :ARG2-of (i / induce-01
+                                          :ARG0 (g / gene
+                                                   :name (n / name
+                                                            :op1 "K-RAS")
+                                                   :ARG2-of (m3 / mutate-01
+                                                                :value "V12")))))
+            :ARG1-of (c2 / complete-02))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5A")))
+
+# ::save-date Thu Nov 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These data indicate that phosphorylation of YB-1 due to mutation of <i>K-RAS </i>in part depends on activation of erbB1.
+# ::file a_pmid_2139_2397_178.txt
+# ::date 2015-05-29T07:34:42
+# ::id a_pmid_2139_2397.178
+(i / indicate-01
+   :ARG0 (d / data
+            :mod (t / this))
+   :ARG1 (d2 / depend-01
+             :ARG0 (p / phosphorylate-01
+                      :ARG1 (p2 / protein
+                                :name (n2 / name
+                                          :op1 "YB-1"))
+                      :ARG1-of (c / cause-01
+                                  :ARG0 (m / mutate-01
+                                           :ARG1 (g / gene
+                                                    :name (n / name
+                                                             :op1 "K-RAS")))))
+             :ARG1 (a / activate-01
+                      :ARG1 (p3 / protein
+                                :name (n3 / name
+                                          :op1 "erbB1")))
+             :degree (p4 / part)))
+
+# ::save-date Thu Nov 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This is most likely mediated by autocrine production of ligands and is in part independent of erbB1, but it is dependent on activation of the PI3K/Akt and MAPK/ERK pathways.
+# ::file a_pmid_2139_2397_179.txt
+# ::date 2015-05-29T07:37:35
+# ::id a_pmid_2139_2397.179
+(c / contrast-01
+   :ARG1 (a / and
+            :op1 (l / likely-01
+                    :ARG1 (m2 / mediate-01
+                              :ARG0 (p2 / produce-01
+                                        :ARG1 (l2 / ligand)
+                                        :mod (a2 / autocrine))
+                              :ARG1 (t / this))
+                    :degree (m / most))
+            :op2 (d / depend-01
+                    :polarity "-"
+                    :ARG0 t
+                    :ARG1 (p3 / protein
+                              :name (n2 / name
+                                        :op1 "erbB1"))
+                    :degree (p5 / part)))
+   :ARG2 (d2 / depend-01
+             :ARG0 t
+             :ARG1 (a3 / activate-01
+                       :ARG1 (a4 / and
+                                 :op1 (p / pathway
+                                         :name (n / name
+                                                  :op1 "PI3K/Akt"))
+                                 :op2 (p4 / pathway
+                                          :name (n3 / name
+                                                    :op1 "MAPK/ERK"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Because K-Ras strongly induces YB-1 phosphorylation when it is mutated (Figures <xref ref-type="fig" rid="F3">3</xref> and <xref ref-type="fig" rid="F5">5A</xref>), we next analyzed whether phosphorylation of YB-1 in <i>K-RAS</i><sub>wt </sub>cells after irradiation or stimulation with EGF depends on K-Ras expression.
+# ::file a_pmid_2139_2397_180.txt
+# ::date 2015-05-29T07:41:26
+# ::id a_pmid_2139_2397.180
+(a / analyze-01
+   :ARG0 (w / we)
+   :ARG1 (d / depend-01
+            :mode "interrogative"
+            :ARG0 (p / phosphorylate-01
+                     :ARG1 (p2 / protein
+                               :name (n2 / name
+                                         :op1 "YB-1"))
+                     :location (c / cell
+                                  :mod (g / gene
+                                          :name (n3 / name
+                                                    :op1 "K-RAS")
+                                          :mod (w2 / wild-type))))
+            :ARG1 (e2 / express-03
+                      :ARG2 (e / enzyme
+                               :name (n / name
+                                        :op1 "K-Ras")))
+            :time (a2 / after
+                      :op1 (o / or
+                              :op1 (i / irradiate-01
+                                      :ARG1 c)
+                              :op2 (s / stimulate-01
+                                      :ARG1 c
+                                      :ARG2 (p3 / protein
+                                                :name (n7 / name
+                                                          :op1 "EGF"))))))
+   :time (n5 / next)
+   :ARG1-of (c2 / cause-01
+                :ARG0 (i2 / induce-01
+                          :ARG0 e
+                          :ARG2 p
+                          :condition (m / mutate-01
+                                        :ARG2 e)
+                          :manner (s3 / strong))
+                :ARG1-of (d2 / describe-01
+                             :ARG0 (a3 / and
+                                       :op1 (f / figure
+                                               :mod "3")
+                                       :op2 (f2 / figure
+                                                :mod "5A")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, following downregulation of K-Ras by siRNA, SKBr3 cells were irradiated or stimulated with EGF.
+# ::file a_pmid_2139_2397_181.txt
+# ::date 2015-05-29T07:48:43
+# ::id a_pmid_2139_2397.181
+(i / infer-01
+   :ARG1 (o / or
+            :op1 (i2 / irradiate-01
+                     :ARG1 (c / cell-line
+                              :name (n2 / name
+                                        :op1 "SKBr3")))
+            :op2 (s / stimulate-01
+                    :ARG1 c
+                    :ARG2 (p / protein
+                             :name (n3 / name
+                                       :op1 "EGF")))
+            :ARG1-of (f / follow-01
+                        :ARG2 (d / downregulate-01
+                                 :ARG1 (e / enzyme
+                                          :name (n / name
+                                                   :op1 "K-Ras"))
+                                 :ARG2 (n5 / nucleic-acid
+                                           :name (n4 / name
+                                                     :op1 "siRNA"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F5">5B</xref>, downregulation of K-Ras did not affect either IR- or EGF-induced YB-1 phosphorylation.
+# ::file a_pmid_2139_2397_182.txt
+# ::date 2015-05-29T07:52:14
+# ::id a_pmid_2139_2397.182
+(a / affect-01
+   :polarity "-"
+   :ARG0 (d / downregulate-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "K-Ras")))
+   :ARG1 (o / or
+            :op1 (p / phosphorylate-01
+                    :ARG1 (p2 / protein
+                              :name (n2 / name
+                                        :op1 "YB-1"))
+                    :ARG2-of (i / induce-01
+                                :ARG0 (r / radiate-01
+                                         :ARG0-of (i3 / ionize-01))))
+            :op2 (p3 / phosphorylate-01
+                     :ARG1 p2
+                     :ARG2-of (i2 / induce-01
+                                  :ARG0 (p4 / protein
+                                            :name (n4 / name
+                                                      :op1 "EGF")))))
+   :ARG1-of (s3 / show-01
+                :medium (f / figure
+                           :mod "5B")))
+
+# ::save-date Sun May 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A lack of effect of <i>K-RAS</i>-siRNA on P-ERK1/2 was observed as well (Figure <xref ref-type="fig" rid="F5">5B</xref>).
+# ::file a_pmid_2139_2397_183.txt
+# ::date 2015-05-29T07:57:28
+# ::id a_pmid_2139_2397.183
+(o / observe-01
+   :ARG1 (l / lack-01
+            :ARG1 (a / affect-01
+                     :ARG0 (n / nucleic-acid
+                              :name (n2 / name
+                                        :op1 "siRNA")
+                              :mod (g / gene
+                                      :name (n3 / name
+                                                :op1 "K-RAS")))
+                     :ARG1 (s / slash
+                              :op1 (e3 / enzyme
+                                       :name (n4 / name
+                                                 :op1 "ERK1"))
+                              :op2 (e4 / enzyme
+                                       :name (n5 / name
+                                                 :op1 "ERK2"))
+                              :ARG1-of (p / phosphorylate-01))))
+   :manner (a2 / as-well)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5B")))
+
+# ::save-date Fri May 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition to its function as a transcription factor, YB-1 is also involved in DNA repair, that is, base excision repair and mismatch repair [<xref ref-type="bibr" rid="B39">39</xref>].
+# ::file a_pmid_2139_2397_185.txt
+# ::date 2015-05-29T08:05:03
+# ::id a_pmid_2139_2397.185
+(i / involve-01
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "YB-1"))
+   :ARG2 (r / repair-01
+            :ARG1 (n4 / nucleic-acid
+                      :wiki "DNA"
+                      :name (n5 / name
+                                :op1 "DNA"))
+            :ARG1-of (m / mean-01
+                        :ARG2 (a3 / and
+                                  :op1 (e / event
+                                          :name (n2 / name
+                                                    :op1 "base"
+                                                    :op2 "excision"
+                                                    :op3 "repair"))
+                                  :op2 (e2 / event
+                                           :name (n3 / name
+                                                     :op1 "mismatch"
+                                                     :op2 "repair")))))
+   :mod (a / also)
+   :ARG1-of (a2 / add-02
+                :ARG2 (f / function-01
+                         :ARG0 p
+                         :ARG1 (f2 / factor
+                                   :ARG0-of (t / transcribe-01))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p2 / publication
+                          :ARG1-of (c / cite-01
+                                      :ARG2 "39"))))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In line with this function, it has been demonstrated that YB-1 binds to double-stranded, single-stranded and DNA-containing abasic sites [<xref ref-type="bibr" rid="B40">40</xref>].
+# ::file a_pmid_2139_2397_186.txt
+# ::date 2015-05-29T08:10:16
+# ::id a_pmid_2139_2397.186
+(d / demonstrate-01
+   :ARG1 (b / bind-01
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "YB-1"))
+            :ARG2 (a / and
+                     :op1 (n2 / nucleic-acid
+                              :wiki "DNA"
+                              :name (n4 / name
+                                        :op1 "DNA")
+                              :mod (s / strand
+                                      :mod (d3 / double)))
+                     :op2 (n5 / nucleic-acid
+                              :wiki "DNA"
+                              :name (n6 / name
+                                        :op1 "DNA")
+                              :mod (s2 / strand
+                                       :ARG1-of (s3 / single-02)))
+                     :op3 (d2 / dna-sequence
+                              :name (n3 / name
+                                        :op1 "abasic"
+                                        :op2 "site")
+                              :ARG0-of (c / contain-01
+                                          :ARG1 (n7 / nucleic-acid
+                                                    :wiki "DNA"
+                                                    :name (n8 / name
+                                                              :op1 "DNA"))))))
+   :ARG1-of (d7 / describe-01
+                :ARG0 (p2 / publication
+                          :ARG1-of (c2 / cite-01
+                                       :ARG2 "40")))
+   :ARG1-of (r / resemble-01
+               :ARG2 (f / function
+                        :mod (t / this))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt So far, however, no data demonstrating the function of YB-1 in repair of IR-induced DNA-DSB and postirradiation survival exist.
+# ::file a_pmid_2139_2397_187.txt
+# ::date 2015-05-29T08:16:19
+# ::id a_pmid_2139_2397.187
+(h / have-concession-91
+   :ARG1 (e / exist-01
+            :ARG1 (d / data
+                     :polarity "-"
+                     :ARG0-of (d2 / demonstrate-01
+                                  :ARG1 (f / function-01
+                                           :ARG0 (p / protein
+                                                    :name (n / name
+                                                             :op1 "YB-1"))
+                                           :ARG1 (a / and
+                                                    :op1 (r / repair-01
+                                                            :ARG1 (e2 / event
+                                                                      :name (n2 / name
+                                                                                :op1 "DSB")
+                                                                      :mod (n3 / nucleic-acid
+                                                                               :wiki "DNA"
+                                                                               :name (n4 / name
+                                                                                         :op1 "DNA")))
+                                                            :ARG2-of (i / induce-01
+                                                                        :ARG0 (r2 / radiate-01
+                                                                                  :ARG0-of (i3 / ionize-01))))
+                                                    :op2 (s3 / survive-01
+                                                             :time (a2 / after
+                                                                       :op1 (i2 / irradiate-01))))))))
+   :time (s / so-far))
+
+# ::save-date Sun May 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The function of erbB1 and its downstream pathways and the impact of mutated <i>K-RAS </i>on repair of DNA-DSB have been demonstrated previously [<xref ref-type="bibr" rid="B15">15</xref>,<xref ref-type="bibr" rid="B34">34</xref>,<xref ref-type="bibr" rid="B41">41</xref>,<xref ref-type="bibr" rid="B42">42</xref>].
+# ::file a_pmid_2139_2397_188.txt
+# ::date 2015-05-29T08:20:53
+# ::id a_pmid_2139_2397.188
+(d / demonstrate-01
+   :ARG1 (a / and
+            :op1 (f / function-01
+                    :ARG0 (a2 / and
+                              :op1 (p2 / protein
+                                       :name (n2 / name
+                                                 :op1 "erbB1"))
+                              :op2 (p3 / pathway
+                                       :poss p2
+                                       :location (d2 / downstream))))
+            :op2 (i / impact-01
+                    :ARG0 (g / gene
+                             :name (n / name
+                                      :op1 "K-RAS")
+                             :ARG2-of (m / mutate-01))
+                    :ARG1 (r / repair-01
+                             :ARG1 (e / event
+                                      :name (n3 / name
+                                                :op1 "DSB")
+                                      :mod (n4 / nucleic-acid
+                                               :wiki "DNA"
+                                               :name (n5 / name
+                                                         :op1 "DNA"))))))
+   :time (p / previous)
+   :ARG1-of (d4 / describe-01
+                :ARG0 (a3 / and
+                          :op1 (p4 / publication
+                                   :ARG1-of (c / cite-01
+                                               :ARG2 "15"))
+                          :op2 (p5 / publication
+                                   :ARG1-of (c2 / cite-01
+                                                :ARG2 "34"))
+                          :op3 (p6 / publication
+                                   :ARG1-of (c3 / cite-01
+                                                :ARG2 "41"))
+                          :op4 (p7 / publication
+                                   :ARG1-of (c4 / cite-01
+                                                :ARG2 "42")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, we next asked whether the cells presenting a differential pattern of basal- and radiation-induced YB-1 phosphorylation additionally exert a differential sensitivity to IR.
+# ::file a_pmid_2139_2397_189.txt
+# ::date 2015-05-29T08:27:58
+# ::id a_pmid_2139_2397.189
+(c2 / cause-01
+    :ARG1 (a / ask-01
+             :ARG0 (w / we)
+             :ARG1 (e / exert-01
+                      :mode "interrogative"
+                      :ARG0 (c / cell
+                               :ARG0-of (p2 / present-01
+                                            :ARG1 (p3 / pattern
+                                                      :mod (d / differential)
+                                                      :topic (a3 / and
+                                                                 :op1 (p / phosphorylate-01
+                                                                         :ARG1 (p4 / protein
+                                                                                   :name (n2 / name
+                                                                                             :op1 "YB-1"))
+                                                                         :mod (b / basal))
+                                                                 :op2 (p5 / phosphorylate-01
+                                                                          :ARG1 p4
+                                                                          :ARG2-of (i2 / induce-01
+                                                                                       :ARG0 (r / radiate-01)))))))
+                      :ARG1 (s / sensitive-03
+                               :ARG0 c
+                               :ARG1 (r2 / radiate-01
+                                         :ARG0-of (i / ionize-01))
+                               :mod d)
+                      :manner (a2 / additional))
+             :time (n / next)))
+
+
+# ::save-date Fri Jul 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The results obtained by clonogenic assay indicate a differential response in terms of postirradiation survival of the cell lines analyzed.
+# ::file a_pmid_2139_2397_190.txt
+# ::date 2015-05-29T08:43:16
+# ::id a_pmid_2139_2397.190
+(i / indicate-01
+      :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :ARG1-of (o / obtain-01
+                  :manner (a3 / assay-01
+                        :mod (c2 / clonogenic))))
+      :ARG1 (r2 / respond-01
+            :ARG2 (s / survive-01
+                  :ARG0 (c / cell-line
+                        :ARG1-of (a2 / analyze-01))
+                  :time (a / after
+                        :op1 (i2 / irradiate-01)))
+            :ARG1-of (d / differ-02)))
+
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The radiation dose, D<sub>37</sub>, which is required to reduce cell survival to 37%, is 1.95 Gy for SKBr3, 1.65 Gy for MDA-MB-23, 1.35 Gy for MCF-7 and 1.10 Gy for HBL100 cells.
+# ::file a_pmid_2139_2397_191.txt
+# ::date 2015-05-29T08:49:16
+# ::id a_pmid_2139_2397.191
+(e / equal-01
+      :ARG1 (d / dose-01
+            :ARG1 (r5 / radiate-01)
+            :ARG1-of (r6 / require-01
+                  :ARG0 (r7 / reduce-01
+                        :ARG1 (s / survive-01 :ARG0 "c")
+                        :ARG4 (p2 / percentage-entity :value "37")))
+            :ARG1-of (l / label-01
+                  :ARG2 (s2 / string-entity :value "D37")))
+      :ARG2 (a / and
+            :op1 (r / radiation-quantity
+                  :quant "1.95"
+                  :unit (g / gray)
+                  :location (c / cell-line
+                        :name (n / name :op1 "SKBr3")))
+            :op2 (r2 / radiation-quantity
+                  :quant "1.65"
+                  :unit g
+                  :location (c2 / cell-line
+                        :name (n2 / name :op1 "MDA-MB-23")))
+            :op3 (r3 / radiation-quantity
+                  :quant "1.35"
+                  :unit g
+                  :location (c3 / cell-line
+                        :name (n3 / name :op1 "MCF-7")))
+            :op4 (r4 / radiation-quantity
+                  :quant "1.10"
+                  :unit g
+                  :location (c4 / cell-line
+                        :name (n4 / name :op1 "HBL100")))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We further investigated whether YB-1 activity is involved in the process of DNA-DSB repair and postirradiation survival.
+# ::file a_pmid_2139_2397_192.txt
+# ::date 2015-05-29T08:57:52
+# ::id a_pmid_2139_2397.192
+(i / investigate-01
+   :ARG0 (w / we)
+   :ARG1 (i2 / involve-01
+             :mode "interrogative"
+             :ARG1 (a / activity-06
+                      :ARG0 (p / protein
+                               :name (n / name
+                                        :op1 "YB-1")))
+             :ARG2 (a2 / and
+                       :op1 (p2 / process-02
+                                :ARG1 (r / repair-01
+                                         :ARG1 (e / event
+                                                  :name (n2 / name
+                                                            :op1 "DSB")
+                                                  :mod (n3 / nucleic-acid
+                                                           :wiki "DNA"
+                                                           :name (n4 / name
+                                                                     :op1 "DNA")))))
+                       :op2 (s / survive-01
+                               :time (a3 / after
+                                         :op1 (i3 / irradiate-01)))))
+   :degree (f / further))
+
+
+# ::save-date Fri May 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt For this purpose, a siRNA approach was used.
+# ::file a_pmid_2139_2397_193.txt
+# ::date 2015-05-29T09:02:30
+# ::id a_pmid_2139_2397.193
+(u / use-01
+      :ARG1 (a / approach-02
+            :mod (n2 / nucleic-acid
+                  :name (n / name :op1 "siRNA")))
+      :purpose (t / this))
+
+# ::save-date Sun May 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F6">6</xref>, downregulation of YB-1 by siRNA, either in <i>K-RAS</i><sub>mt </sub>MDA-MB-231 or in <i>K-RAS</i><sub>wt </sub>SKBr3 cells, resulted in impaired repair of DNA-DSB as shown by enhanced residual γ-H2AX foci 24 hours after irradiation.
+# ::file a_pmid_2139_2397_194.txt
+# ::date 2015-05-29T09:04:07
+# ::id a_pmid_2139_2397.194
+(r / result-01
+   :ARG1 (d / downregulate-01
+            :ARG1 (p / protein
+                     :name (n2 / name
+                               :op1 "YB-1"))
+            :ARG2 (n11 / nucleic-acid
+                       :name (n3 / name
+                                 :op1 "siRNA"))
+            :location (o / or
+                         :op1 (c / cell-line
+                                 :name (n4 / name
+                                           :op1 "MDA-MB-231")
+                                 :mod (g / gene
+                                         :name (n6 / name
+                                                   :op1 "K-RAS")
+                                         :ARG2-of (m / mutate-01)))
+                         :op2 (c2 / cell-line
+                                  :name (n5 / name
+                                            :op1 "SKBr3")
+                                  :mod (g2 / gene
+                                           :name (n7 / name
+                                                     :op1 "K-RAS")
+                                           :mod (w / wild-type)))))
+   :ARG2 (r4 / repair-01
+             :ARG1 (e2 / event
+                       :name (n8 / name
+                                 :op1 "DSB")
+                       :mod (n / nucleic-acid
+                               :wiki "DNA"
+                               :name (n10 / name
+                                          :op1 "DNA")))
+             :ARG1-of (i / impair-01))
+   :ARG1-of (s2 / show-01
+                :medium (f2 / figure
+                            :mod "6"))
+   :ARG1-of (s / show-01
+               :ARG0 (f / focus
+                        :mod (p2 / protein
+                                 :name (n9 / name
+                                           :op1 "γ-H2AX"))
+                        :mod (r3 / residual)
+                        :ARG1-of (e3 / enhance-01))
+               :time (a / after
+                        :op1 (i2 / irradiate-01)
+                        :quant (t / temporal-quantity
+                                  :quant "24"
+                                  :unit (h / hour)))))
+
+# ::save-date Sun May 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, downregulating K-Ras resulted in enhanced frequency of residual DSB to the level observed with YB-1 siRNA.
+# ::file a_pmid_2139_2397_195.txt
+# ::date 2015-05-29T09:13:13
+# ::id a_pmid_2139_2397.195
+(r / result-01
+   :ARG1 (d / downregulate-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "K-Ras")))
+   :ARG2 (h / have-frequency-91
+            :ARG1 (e3 / event
+                      :name (n2 / name
+                                :op1 "DSB")
+                      :mod (r3 / residual))
+            :ARG1-of (e2 / enhance-01
+                         :ARG3 (l / level
+                                  :ARG1-of (o / observe-01
+                                              :location (n5 / nucleic-acid
+                                                            :name (n3 / name
+                                                                      :op1 "siRNA")
+                                                            :mod (p / protein
+                                                                    :name (n4 / name
+                                                                              :op1 "YB-1")))))))
+   :ARG2-of (i / interest-01))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Likewise, siRNA targeting of YB-1 increased radiation sensitivity tested in MDA-MB-231 cells.
+# ::file a_pmid_2139_2397_196.txt
+# ::date 2015-05-29T09:13:52
+# ::id a_pmid_2139_2397.196
+(i / increase-01
+   :ARG0 (t / target-01
+            :ARG0 (n4 / nucleic-acid
+                      :name (n2 / name
+                                :op1 "siRNA"))
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "YB-1")))
+   :ARG1 (s / sensitive-03
+            :ARG1 (r / radiate-01)
+            :ARG2-of (t2 / test-01
+                         :ARG1 (c / cell-line
+                                  :name (n3 / name
+                                            :op1 "MDA-MB-231"))))
+   :ARG1-of (r3 / resemble-01))

@@ -1,0 +1,2016 @@
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Mechanistic biomarker studies of the effects of selumetinib in human tumour xenograft models have shown that, in addition to pERK1/2 downregulation, a sustained exposure to the agent results in an increase in downstream apoptotic signalling and a decrease in cell cycle progression (<xref ref-type="bibr" rid="bib6">Davies <i>et al</i>, 2007</xref>).
+# ::file a_pmid_2234_3622_61.txt
+# ::date 2015-05-28T15:47:00
+# ::id a_pmid_2234_3622.61
+(s / show-01
+   :ARG0 (s2 / study-01
+             :ARG1 (a / affect-01
+                      :ARG0 (s3 / small-molecule
+                                :name (n3 / name
+                                          :op1 "selumetinib"))
+                      :ARG1 (m2 / model
+                                :mod (x / xenograft
+                                        :mod (t / tumor))
+                                :mod (h / human)))
+             :mod (b / biomarker
+                     :mod (m / mechanistic)))
+   :ARG1 (r / result-01
+            :ARG1 (e / expose-01
+                     :ARG2 s3
+                     :ARG1-of (s4 / sustain-01))
+            :ARG2 (a7 / and
+                      :op1 (d2 / downregulate-01
+                               :ARG1 (e2 / enzyme
+                                         :name (n / name
+                                                  :op1 "ERK1/2")
+                                         :ARG3-of (p / phosphorylate-01)))
+                      :op2 (i / increase-01
+                              :ARG1 (s5 / signal-07
+                                        :mod (a5 / apoptosis)
+                                        :location (d4 / downstream)))
+                      :op3 (d3 / decrease-01
+                               :ARG1 (p2 / progress-01
+                                         :ARG1 (c / cycle-02
+                                                  :ARG1 (c2 / cell))))))
+   :ARG1-of (d5 / describe-01
+                :ARG0 (p5 / publication-91
+                          :ARG0 (a3 / and
+                                    :op1 (p3 / person
+                                             :name (n2 / name
+                                                       :op1 "Davies"))
+                                    :op2 (p4 / person
+                                             :mod (o / other)))
+                          :time (d / date-entity
+                                   :year "2007"))))
+
+# ::save-date Wed Jan 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, a chronic dosing schedule of selumetinib (25 mg kg<sup>–1</sup> per bid for 14 doses) in HCT-116 xenografts increased the levels of the pro-apoptotic BH3 protein Bim-EL (∼4-fold increase) compared with no change with the level of this protein following a shorter dosing period (three doses) (<xref ref-type="fig" rid="fig1">Figure 1</xref>).
+# ::file a_pmid_2234_3622_62.txt
+# ::date 2015-05-29T11:36:12
+# ::id a_pmid_2234_3622.62
+(a / and
+   :op2 (i / increase-01
+           :ARG0 (s / schedule-01
+                    :ARG1 (d2 / dose-01
+                              :quant "14"
+                              :ARG2 (s2 / small-molecule
+                                        :name (n4 / name
+                                                  :op1 "selumetinib")
+                                        :quant (c4 / concentration-quantity
+                                                   :quant "25"
+                                                   :unit (m / milligram-per-kilogram)))
+                              :mod (c / chronic)
+                              :frequency (r / rate-entity-91
+                                            :ARG1 "2"
+                                            :ARG2 (t / temporal-quantity
+                                                     :quant "1"
+                                                     :unit (d5 / day)))))
+           :ARG1 (l / level
+                    :quant-of (p / protein
+                                 :name (n2 / name
+                                           :op1 "Bim-EL")
+                                 :ARG0-of (f / favor-01
+                                             :ARG1 (a2 / apoptosis))
+                                 :ARG1-of (i2 / include-91
+                                              :ARG2 (p4 / protein-family
+                                                        :name (n3 / name
+                                                                  :op1 "BH3")))))
+           :ARG4 (p2 / product-of
+                     :op1 "4")
+           :compared-to (c2 / change-01
+                            :polarity "-"
+                            :ARG1 (l2 / level
+                                      :quant-of p)
+                            :ARG1-of (f3 / follow-01
+                                         :ARG2 (p3 / period
+                                                   :time-of (d3 / dose-01)
+                                                   :ARG1-of (s3 / short-07
+                                                                :degree (m2 / more))
+                                                   :ARG1-of (m3 / mean-01
+                                                                :ARG3 (d4 / dose-01
+                                                                          :quant "3")))))
+           :location (x / xenograft
+                        :mod (c3 / cell-line
+                                 :name (n / name
+                                          :op1 "HCT-116"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "1")))
+
+# ::save-date Tue Dec 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to exploit the apoptotic threshold of selumetinib, we wanted to study the effects of combining it with agents known to induce the apoptotic cascade to drive tumour growth inhibition and/or cell death.
+# ::file a_pmid_2234_3622_63.txt
+# ::date 2015-05-28T15:50:33
+# ::id a_pmid_2234_3622.63
+(w / want-01
+   :ARG0 (w2 / we)
+   :ARG1 (s / study-01
+            :ARG0 w2
+            :ARG1 (a / affect-01
+                     :ARG0 (c / combine-01
+                              :ARG1 "s2"
+                              :ARG2 (a2 / agent
+                                        :ARG0-of (i / induce-01
+                                                    :ARG2 (c2 / cascade
+                                                              :mod "a3")
+                                                    :purpose (d / drive-02
+                                                                :ARG0 a2
+                                                                :ARG1 (a4 / and-or
+                                                                          :op1 (i2 / inhibit-01
+                                                                                   :ARG1 (g / grow-01
+                                                                                            :ARG1 (t2 / tumor)))
+                                                                          :op2 (d2 / die-01
+                                                                                   :ARG1 (c3 / cell))))
+                                                    :ARG1-of (k / know-01))))))
+   :purpose (e / exploit-01
+               :ARG0 w2
+               :ARG1 (t / threshold
+                        :poss (s2 / small-molecule
+                                  :name (n / name
+                                           :op1 "selumetinib"))
+                        :mod (a3 / apoptosis))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The effects of selumetinib in combination with a number of key standard of care agents were tested pre-clinically in human tumour xenograft models and resulted in enhanced anti-tumour activity.
+# ::file a_pmid_2234_3622_64.txt
+# ::date 2015-05-28T15:56:00
+# ::id a_pmid_2234_3622.64
+(a / and
+   :op1 (t / test-01
+           :ARG1 (a2 / affect-01
+                     :ARG0 (s / small-molecule
+                              :name (n2 / name
+                                        :op1 "selumetinib"))
+                     :ARG1-of (c / combine-01
+                                 :ARG2 (s2 / standard
+                                           :ARG1-of (k / key-02)
+                                           :mod (a4 / agent
+                                                    :mod (c3 / care-03)
+                                                    :quant (n / number)))))
+           :time (b / before
+                    :op1 (c2 / clinic))
+           :location (m / model
+                        :mod (x / xenograft
+                                :mod (t2 / tumor))
+                        :mod (h / human)))
+   :op2 (r / result-01
+           :ARG1 a2
+           :ARG2 (a3 / activity-06
+                     :ARG1-of (e / enhance-01)
+                     :ARG0-of (c4 / counter-01
+                                  :ARG1 t2))))
+
+# ::save-date Tue Jan 19, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A number of compounds including the DNA-alkylating agent TMZ and the anti-mitotic drug docetaxel resulted in a greatly enhanced tumour growth inhibition compared with monotherapies (<xref ref-type="table" rid="tbl1">Table 1</xref> and <xref ref-type="supplementary-material" rid="sup1">supplementary Table 1</xref>).
+# ::file a_pmid_2234_3622_65.txt
+# ::date 2015-05-28T15:59:44
+# ::id a_pmid_2234_3622.65
+(r / result-01
+   :ARG1 (c2 / compound
+             :ARG2-of (i3 / include-91
+                          :ARG1 (a3 / and
+                                    :op1 (a4 / agent
+                                             :ARG0-of (a / alkylate-01
+                                                         :ARG1 (n / nucleic-acid
+                                                                  :wiki "DNA"
+                                                                  :name (n5 / name
+                                                                            :op1 "DNA")))
+                                             :ARG1-of (m3 / mean-01
+                                                          :ARG2 (s3 / small-molecule
+                                                                    :name (n3 / name
+                                                                              :op1 "TMZ"))))
+                                    :op2 (s2 / small-molecule
+                                             :name (n4 / name
+                                                       :op1 "docetaxel")
+                                             :ARG0-of (c3 / counter-01
+                                                          :ARG1 (m2 / mitosis)))))
+             :quant (n2 / number))
+   :ARG2 (i / inhibit-01
+            :ARG1 (g / grow-01
+                     :ARG1 (t / tumor))
+            :ARG1-of (e / enhance-01
+                        :ARG3 (g2 / great)
+                        :compared-to (m / monotherapy)))
+   :ARG1-of (d / describe-01
+               :ARG0 (a2 / and
+                         :op1 (t2 / table
+                                  :mod "1")
+                         :op2 (t3 / table
+                                  :mod "1"
+                                  :ARG2-of (s / supplement-01)))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, combining selumetinib with gemcitabine did not enhance the anti-tumour activity of the individual agents (<xref ref-type="supplementary-material" rid="sup1">supplementary Table 1</xref>).
+# ::file a_pmid_2234_3622_66.txt
+# ::date 2015-05-28T15:47:43
+# ::id a_pmid_2234_3622.66
+(c / contrast-01
+   :ARG2 (e / enhance-01
+            :polarity "-"
+            :ARG0 (c2 / combine-01
+                      :ARG1 (s2 / small-molecule
+                                :name (n / name
+                                         :op1 "selumetinib"))
+                      :ARG2 (s3 / small-molecule
+                                :name (n2 / name
+                                          :op1 "gemcitabine")))
+            :ARG1 (a / activity-06
+                     :ARG0 (a2 / agent
+                               :mod (i / individual))
+                     :ARG0-of (c3 / counter-01
+                                  :ARG1 (t2 / tumor))))
+   :ARG1-of (d / describe-01
+               :ARG0 (t / table
+                        :mod "1"
+                        :ARG2-of (s / supplement-01))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The data presented here suggests that when selumetinib is combined, with either TMZ or docetaxel, the resulting anti-tumour phenotypes maybe due to mechanistic interactions between the two compounds.
+# ::file a_pmid_2234_3622_67.txt
+# ::date 2015-05-28T15:50:05
+# ::id a_pmid_2234_3622.67
+(s / suggest-01
+   :ARG0 (d / data
+            :ARG1-of (p2 / present-01
+                         :medium (h / here)))
+   :ARG1 (p3 / possible-01
+             :ARG1 (c2 / cause-01
+                       :ARG0 (i / interact-01
+                                :ARG0 "s2"
+                                :ARG1 "o"
+                                :ARG2 (m / mechanistic))
+                       :ARG1 (p / phenotype
+                                :ARG2-of (r / result-01)
+                                :ARG0-of (c3 / counter-01
+                                             :ARG1 (t2 / tumor))))
+             :time (c / combine-01
+                      :ARG1 (s2 / small-molecule
+                                :name (n2 / name
+                                          :op1 "selumetinib"))
+                      :ARG2 (o / or
+                               :op1 (s4 / small-molecule
+                                        :name (n3 / name
+                                                  :op1 "TMZ"))
+                               :op2 (s3 / small-molecule
+                                        :name (n / name
+                                                 :op1 "docetaxel"))))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The combination of selumetinib and TMZ in the SW-620 human tumour xenograft model resulted in a significantly enhanced anti-tumour efficacy (103.5% inhibition; <i>P</i><0.0005), compared with selumetinib (52% inhibition; <i>P</i><0.0005) and TMZ (88% inhibition; <i>P</i><0.0005) alone (<xref ref-type="fig" rid="fig2">Figure 2A</xref>).
+# ::file a_pmid_2234_3622_69.txt
+# ::date 2015-05-28T16:04:17
+# ::id a_pmid_2234_3622.69
+(r / result-01
+   :ARG1 (c2 / combine-01
+             :ARG1 "s2"
+             :ARG2 "s3"
+             :location (c3 / cell-line
+                           :name (n / name
+                                    :op1 "SW-620")
+                           :mod (x / xenograft
+                                   :mod (t3 / tumor
+                                            :mod (h / human)))))
+   :ARG2 (e / efficacy
+            :ARG0-of (c / counter-01
+                        :ARG1 t3)
+            :ARG1-of (e2 / enhance-01
+                         :ARG1-of (s / significant-02))
+            :ARG1-of (m5 / mean-01
+                         :ARG2 (a3 / and
+                                   :op1 (i3 / inhibit-01
+                                            :degree (p / percentage-entity
+                                                       :value "103.5"))
+                                   :op2 (s4 / statistical-test-91
+                                            :ARG2 (l / less-than
+                                                     :op1 "0.0005")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "2A"))
+   :compared-to (a / and
+                   :op1 (s2 / small-molecule
+                            :name (n2 / name
+                                      :op1 "selumetinib")
+                            :ARG0-of (i / inhibit-01
+                                        :degree (p2 / percentage-entity
+                                                    :value "52"))
+                            :mod s4)
+                   :op2 (s3 / small-molecule
+                            :name (n3 / name
+                                      :op1 "TMZ")
+                            :ARG0-of (i2 / inhibit-01
+                                         :degree (p3 / percentage-entity
+                                                     :value "88"))
+                            :mod s4)
+                   :mod (a2 / alone)))
+
+
+# ::save-date Mon Jul 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At the end of the dosing period, the monotherapy and combination treatment groups were left to observe the growth rate following the cessation of dosing (animals in the control group had to be killed due to tumour size).
+# ::file a_pmid_2234_3622_70.txt
+# ::date 2015-05-29T11:05:55
+# ::id a_pmid_2234_3622.70
+(l / leave-17
+      :ARG1 (a / and
+            :op1 (g / group
+                  :ARG1-of (t / treat-04
+                        :ARG2 (m / monotherapy)))
+            :op2 (g2 / group
+                  :mod (t2 / treat-04
+                        :ARG1-of (c / combine-01))))
+      :time (e / end-01
+            :ARG1 (p / period
+                  :time-of (d / dose-01)))
+      :purpose (o / observe-01
+            :ARG1 (r / rate
+                  :mod (g3 / grow-01)
+                  :ARG1-of (f / follow-01
+                        :ARG2 (c2 / cease-01
+                              :ARG1 d
+                              :ARG1-of (m2 / mean-01
+                                    :ARG2 (o2 / obligate-01
+                                          :ARG1 (k / kill-01
+                                                :ARG1 (a2 / animal
+                                                      :part-of (g4 / group
+                                                            :mod (c4 / control))))
+                                          :ARG1-of (c3 / cause-01
+                                                :ARG0 (s / size
+                                                      :poss (t3 / tumor))))))))))
+
+# ::save-date Tue Jun 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the selumetinib and TMZ monotherapy-treated groups, tumour growth progressed rapidly once compound treatment had been removed.
+# ::file a_pmid_2234_3622_71.txt
+# ::date 2015-05-28T22:00:08
+# ::id a_pmid_2234_3622.71
+(p / progress-01
+   :ARG1 (g / grow-01
+            :ARG1 (t / tumor))
+   :manner (r / rapid)
+   :ARG1-of (c / cause-01
+               :ARG0 (r2 / remove-01
+                         :ARG1 (t2 / treat-04
+                                   :ARG2 (c2 / compound))))
+   :location (a / and
+                :op1 (g2 / group
+                         :ARG1-of (t3 / treat-04
+                                      :ARG2 (s / small-molecule
+                                               :name (n / name
+                                                        :op1 "selumetinib")
+                                               :mod (m2 / monotherapy))))
+                :op2 (g3 / group
+                         :ARG1-of (t4 / treat-04
+                                      :ARG2 (s2 / small-molecule
+                                                :name (n2 / name
+                                                          :op1 "TMZ")
+                                                :mod m2)))))
+
+# ::save-date Tue Jun 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, the start of tumour growth in the combination group was delayed for approximately 24 days from the start of the experiment compared with 15 days in the TMZ alone group.
+# ::file a_pmid_2234_3622_72.txt
+# ::date 2015-05-28T22:03:28
+# ::id a_pmid_2234_3622.72
+(c / contrast-01
+   :ARG2 (d3 / delay-01
+             :ARG1 (s / start-01
+                      :ARG1 (g / grow-01
+                               :ARG1 (t3 / tumor)
+                               :location (g2 / group
+                                             :mod (c2 / combine-01))))
+             :ARG2 (a / approximately
+                      :op1 (t / temporal-quantity
+                              :quant "24"
+                              :unit (d / day)))
+             :compared-to (d4 / delay-01
+                              :ARG2 (t2 / temporal-quantity
+                                        :quant "15"
+                                        :unit (d2 / day))
+                              :location (g4 / group
+                                            :mod (s5 / small-molecule
+                                                     :name (n / name
+                                                              :op1 "TMZ")
+                                                     :mod (a2 / alone))))
+             :time (s4 / start-01
+                       :ARG1 (e / experiment-01))))
+
+# ::save-date Tue Jun 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to investigate potential mechanisms, to explain the enhanced combination effect with TMZ, we used the growth inhibition data generated from our anti-tumour studies to guide our pharmacodynamic sampling times (<xref ref-type="fig" rid="fig2">Figure 2A</xref>).
+# ::file a_pmid_2234_3622_73.txt
+# ::date 2015-05-29T11:48:06
+# ::id a_pmid_2234_3622.73
+(u / use-01
+   :ARG0 (w / we)
+   :ARG1 (d / data
+            :topic (i / inhibit-01
+                      :ARG1 (g / grow-01))
+            :ARG1-of (g2 / generate-01
+                         :ARG2 (s / study-01
+                                  :ARG0 w
+                                  :ARG0-of (c2 / counter-01
+                                               :ARG1 (t3 / tumor)))))
+   :ARG2 (g3 / guide-01
+             :ARG0 d
+             :ARG1 (t / time
+                      :time-of (s2 / sample-01
+                                   :ARG0 w
+                                   :mod (p / pharmacodynamic))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "2A"))
+   :purpose (a / and
+               :op1 (i2 / investigate-01
+                        :ARG0 w
+                        :ARG1 (m / mechanism
+                                 :mod (p2 / potential)))
+               :op2 (e / explain-01
+                       :ARG0 w
+                       :ARG1 (a2 / affect-01
+                                 :ARG0 (c / combine-01
+                                          :ARG2 (s3 / small-molecule
+                                                    :name (n / name
+                                                             :op1 "TMZ")))
+                                 :ARG1-of (e2 / enhance-01)))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Samples were collected at the end of the TMZ dosing (PD1), when the TMZ and combination groups growth rate started to diverge (PD2), at the end of selumetinib dosing (PD3) and at the end of the re-growth period (PD4) (<xref ref-type="fig" rid="fig2">Figure 2A</xref>; white arrows on graph).
+# ::file a_pmid_2234_3622_74.txt
+# ::date 2015-05-29T11:56:18
+# ::id a_pmid_2234_3622.74
+(c / collect-01
+   :ARG1 (t5 / thing
+             :ARG1-of (s / sample-01))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a / and
+                         :op1 (f / figure
+                                 :mod "2A")
+                         :op2 (a2 / arrow
+                                  :ARG1-of (w / white-03)
+                                  :location (g2 / graph))))
+   :time (a6 / and
+             :op1 (e / end-01
+                     :ARG1 (d / dose-01
+                              :ARG2 (s4 / small-molecule
+                                        :name (n6 / name
+                                                  :op1 "TMZ")))
+                     :ARG1-of (l / label-01
+                                 :ARG2 (t2 / thing
+                                           :name (n / name
+                                                    :op1 "PD1"))))
+             :op2 (s2 / start-01
+                      :ARG1 (d4 / diverge-01
+                                :ARG0 (r / rate
+                                         :mod (g6 / grow-01
+                                                  :ARG1 (g / group
+                                                           :mod s4)))
+                                :ARG1 (r2 / rate
+                                          :mod (g7 / grow-01
+                                                   :ARG1 (g8 / group
+                                                             :mod (c2 / combine-01)))))
+                      :ARG1-of (l2 / label-01
+                                   :ARG2 (t3 / thing
+                                             :name (n4 / name
+                                                       :op1 "PD2"))))
+             :op3 (e2 / end-01
+                      :ARG1 (d3 / dose-01
+                                :ARG2 (s3 / small-molecule
+                                          :name (n5 / name
+                                                    :op1 "selumetinib")))
+                      :ARG1-of (l3 / label-01
+                                   :ARG2 (t4 / thing
+                                             :name (n3 / name
+                                                       :op1 "PD3"))))
+             :op4 (e3 / end-01
+                      :ARG1 (g3 / grow-01
+                                :mod (a4 / again))
+                      :ARG1-of (l4 / label-01
+                                   :ARG2 (t / thing
+                                            :name (n2 / name
+                                                      :op1 "PD4"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt IHC analysis and histological scoring was performed on all the tissues collected to examine, selumetinib effects (pERK1/2), DNA damage (<i>γ</i>H2A.X), apoptosis (cleaved caspase 3) and the cell cycle (pHH3) (scoring data not shown).
+# ::file a_pmid_2234_3622_75.txt
+# ::date 2015-05-29T12:07:22
+# ::id a_pmid_2234_3622.75
+(p / perform-02
+   :ARG1 (a5 / and
+             :op1 (a6 / analyze-01
+                      :mod (i / immunohistochemistry))
+             :op2 (s2 / score-01
+                      :ARG3 (h / histology)))
+   :location (t / tissue
+                :mod (a7 / all)
+                :ARG1-of (c3 / collect-01
+                             :purpose (a4 / and
+                                          :op1 (e / examine-01
+                                                  :ARG1 (a3 / affect-01
+                                                            :ARG0 (s / small-molecule
+                                                                     :name (n5 / name
+                                                                               :op1 "selumetinib"))
+                                                            :ARG2 (e2 / enzyme
+                                                                      :name (n / name
+                                                                               :op1 "ERK1/2")
+                                                                      :ARG3-of (p2 / phosphorylate-01))))
+                                          :op2 (e3 / examine-01
+                                                   :ARG1 (d / damage-01
+                                                            :ARG1 (n7 / nucleic-acid
+                                                                      :wiki "DNA"
+                                                                      :name (n8 / name
+                                                                                :op1 "DNA")))
+                                                   :instrument (p5 / protein
+                                                                   :name (n2 / name
+                                                                             :op1 "γH2A.X")))
+                                          :op3 (e4 / examine-01
+                                                   :ARG1 (a2 / apoptosis)
+                                                   :instrument (p6 / protein
+                                                                   :name (n3 / name
+                                                                             :op1 "Cleaved"
+                                                                             :op2 "Caspase"
+                                                                             :op3 "3")))
+                                          :op4 (e5 / examine-01
+                                                   :ARG1 (c / cycle-02
+                                                            :ARG1 (c2 / cell))
+                                                   :instrument (p4 / protein
+                                                                   :name (n4 / name
+                                                                             :op1 "HH3")
+                                                                   :ARG3-of (p3 / phosphorylate-01))))))
+   :ARG1-of (s3 / show-01
+                :polarity "-"
+                :ARG0 (d3 / data
+                          :mod (s4 / score-01))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The sampling timepoint, which gave us the greatest insight into the mechanistic effects of these agents was that taken when we started to see the TMZ and combination groups diverge (PD2).
+# ::file a_pmid_2234_3622_76.txt
+# ::date 2015-05-29T13:21:18
+# ::id a_pmid_2234_3622.76
+(t3 / timepoint
+    :mod (t5 / thing
+             :name (n / name
+                      :op1 "PD2"))
+    :ARG1-of (t4 / take-01
+                 :ARG0 "w"
+                 :time (s3 / start-01
+                           :ARG0 "w"
+                           :ARG1 (s2 / see-01
+                                     :ARG0 "w"
+                                     :ARG1 (d / diverge-01
+                                              :ARG0 (g4 / group
+                                                        :mod (s4 / small-molecule
+                                                                 :name (n2 / name
+                                                                           :op1 "TMZ")))
+                                              :ARG1 (g3 / group
+                                                        :mod (c / combine-01)
+                                                        :ARG1-of (m3 / mean-01))))))
+    :domain (t / timepoint
+               :time-of (s / sample-01)
+               :ARG0-of (g2 / give-01
+                            :ARG1 (i / insight
+                                     :mod (g / great
+                                             :degree (m / most))
+                                     :topic (a / affect-01
+                                               :ARG0 (a2 / agent
+                                                         :mod (t2 / this))
+                                               :mod (m2 / mechanistic)))
+                            :ARG2 (w / we))))
+
+# ::save-date Mon Jun 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As expected, in response to selumetinib or TMZ alone we saw changes in the mechanistic biomarkers pERK1/2 (decrease) and <i>γ</i>H2A.X (increase), respectively, and a reduction in mitotic cells as shown by pHH3 in the selumetinib group compared with an increase in the TMZ tissues (<xref ref-type="fig" rid="fig2">Figure 2B</xref>).
+# ::file a_pmid_2234_3622_77.txt
+# ::date 2015-05-29T13:30:43
+# ::id a_pmid_2234_3622.77
+(r2 / respond-01
+    :ARG1 (o / or
+             :op1 (s2 / small-molecule
+                      :name (n4 / name
+                                :op1 "selumetinib"))
+             :op2 (s4 / small-molecule
+                      :name (n5 / name
+                                :op1 "TMZ"))
+             :mod (a / alone))
+    :ARG2 (s3 / see-01
+              :ARG0 "w"
+              :ARG1 (a3 / and
+                        :op1 (c / change-01
+                                :ARG1 (b2 / biomarker
+                                          :mod (m3 / mechanistic)
+                                          :ARG1-of (m5 / mean-01
+                                                       :ARG2 (a4 / and
+                                                                 :op1 (e2 / enzyme
+                                                                          :name (n / name
+                                                                                   :op1 "ERK1/2")
+                                                                          :ARG1-of (d / decrease-01)
+                                                                          :ARG3-of "p2")
+                                                                 :op2 (p3 / protein
+                                                                          :name (n2 / name
+                                                                                    :op1 "γH2A.X")
+                                                                          :mod m3
+                                                                          :ARG1-of (i / increase-01))))))
+                        :op2 (r / reduce-01
+                                :ARG1 (c2 / cell
+                                          :mod (m4 / mitosis))
+                                :ARG1-of (s / show-01
+                                            :ARG0 (p / protein
+                                                     :name (n3 / name
+                                                               :op1 "HH3")
+                                                     :ARG3-of (p2 / phosphorylate-01))
+                                            :location (g / group
+                                                         :mod s2))
+                                :compared-to (i2 / increase-01
+                                                 :ARG1 (t2 / tissue
+                                                           :mod s4))))
+              :ARG1-of (e / expect-01
+                          :ARG0 (w / we))))
+
+# ::save-date Tue Jun 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Level of the apoptotic marker, cleaved caspase 3, was comparable in the combination group compared with the TMZ monotherapy (<xref ref-type="fig" rid="fig2">Figure 2B</xref>).
+# ::file a_pmid_2234_3622_78.txt
+# ::date 2015-05-28T22:04:00
+# ::id a_pmid_2234_3622.78
+(p / possible-01
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "2B"))
+   :ARG1 (c / compare-01
+            :ARG1 (l / level
+                     :degree-of (m / marker
+                                   :name (n / name
+                                            :op1 "cleaved"
+                                            :op2 "caspase"
+                                            :op3 "3")
+                                   :mod (a / apoptosis))
+                     :location (g / group
+                                  :mod (c2 / combine-01)))
+            :ARG2 (m2 / monotherapy
+                      :mod (s / small-molecule
+                              :name (n2 / name
+                                        :op1 "TMZ")))))
+
+# ::save-date Tue Jun 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, in the combination group we observed a greatly enhanced upregulation of <i>γ</i>H2A.X compared with the TMZ group alone, suggesting that when selumetinib and TMZ are combined DNA damage is enhanced (<xref ref-type="fig" rid="fig2">Figure 2B</xref>).
+# ::file a_pmid_2234_3622_79.txt
+# ::date 2015-05-28T22:07:33
+# ::id a_pmid_2234_3622.79
+(c / contrast-01
+   :ARG2 (o / observe-01
+            :ARG0 (w / we)
+            :ARG1 (u / upregulate-01
+                     :ARG1 (p / protein
+                              :name (n / name
+                                       :op1 "γH2A.X"))
+                     :location (g / group
+                                  :mod (c2 / combine-01))
+                     :ARG1-of (e / enhance-01
+                                 :ARG3 (g2 / great)
+                                 :compared-to (g3 / group
+                                                  :mod (s3 / small-molecule
+                                                           :name (n3 / name
+                                                                     :op1 "TMZ")
+                                                           :mod (a2 / alone))))
+                     :ARG0-of (s / suggest-01
+                                 :ARG1 (e2 / enhance-01
+                                           :ARG1 (d / damage-01
+                                                    :ARG1 (n4 / nucleic-acid
+                                                              :wiki "DNA"
+                                                              :name (n5 / name
+                                                                        :op1 "DNA")))
+                                           :time (c3 / combine-01
+                                                     :ARG1 (s2 / small-molecule
+                                                               :name (n2 / name
+                                                                         :op1 "selumetinib"))
+                                                     :ARG2 s3)))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "2B")))
+
+# ::save-date Mon Jul 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Continuous, concurrent combinations of selumetinib and docetaxel resulted in significant anti-tumour effects in several models (<xref ref-type="table" rid="tbl1">Table 1</xref> and <xref ref-type="fig" rid="fig3">Figure 3A</xref>).
+# ::file a_pmid_2234_3622_81.txt
+# ::date 2015-05-29T08:46:53
+# ::id a_pmid_2234_3622.81
+(r / result-01
+   :ARG1 (c / combine-01
+            :ARG1 (s / small-molecule
+                     :name (n / name
+                              :op1 "selumetinib"))
+            :ARG2 (s4 / small-molecule
+                      :name (n2 / name
+                                :op1 "docetaxel"))
+            :ARG1-of (c2 / concurrent-02)
+            :ARG1-of (c3 / continue-01))
+   :ARG2 (a / affect-01
+            :ARG2 (c4 / counter-01
+                      :ARG0 (t / tumor))
+            :location (m / model
+                         :quant (s2 / several))
+            :ARG1-of (s3 / significant-02))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (t2 / table
+                                   :mod "1")
+                          :op2 (f / figure
+                                  :mod "3A"))))
+
+# ::save-date Tue Jan 19, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, we were interested to explore the effect of dose sequencing on the anti-tumour efficacy of these two agents as administration of selumetinib and docetaxel as monotherapies results in distinct cell cycle phenotypes; a G1 or mitotic arrest, respectively.
+# ::file a_pmid_2234_3622_82.txt
+# ::date 2015-05-29T08:54:24
+# ::id a_pmid_2234_3622.82
+(c / contrast-01
+   :ARG2 (c2 / cause-01
+             :ARG0 (r / result-01
+                      :ARG1 (a3 / administer-01
+                                :ARG1 (a4 / and
+                                          :op1 (s2 / small-molecule
+                                                   :name (n2 / name
+                                                             :op1 "selumetinib"))
+                                          :op2 (s3 / small-molecule
+                                                   :name (n3 / name
+                                                             :op1 "docetaxel")))
+                                :manner (m / monotherapy))
+                      :ARG2 (p / phenotype
+                               :mod (c4 / cycle-02
+                                        :ARG1 (c5 / cell)
+                                        :mod (d2 / distinct))
+                               :ARG1-of (m5 / mean-01
+                                            :ARG2 (a5 / and
+                                                      :op2 (a6 / arrest-02
+                                                               :time (e3 / event
+                                                                         :name (n / name
+                                                                                  :op1 "G1")))
+                                                      :op3 (a7 / arrest-02
+                                                               :time (m2 / mitosis))))))
+             :ARG1 (i / interest-01
+                      :ARG1 (w / we)
+                      :ARG2 (e / explore-01
+                               :ARG0 w
+                               :ARG1 (a / affect-01
+                                        :ARG0 (s / sequence-01
+                                                 :ARG1 (d / dose-01))
+                                        :ARG1 (e2 / efficacy
+                                                  :poss (a2 / agent
+                                                            :quant "2"
+                                                            :mod (t2 / this)
+                                                            :ARG1-of (m4 / mean-01
+                                                                         :ARG2 a4)
+                                                            :ARG0-of (c3 / counter-01
+                                                                         :ARG1 (t / tumor)))))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Two schedules were designed in which mice bearing HCT-116 CRC tumours were treated with either a single dose of docetaxel (15 mg kg<sup>–1</sup>) followed 24 h later by selumetinib (25 mg kg<sup>–1</sup> per bid) for 7 days (schedule 1) or selumetinib was administered as above for 7 days followed 24 h later with docetaxel (schedule 2) (<xref ref-type="fig" rid="fig3">Figure 3B</xref>).
+# ::file a_pmid_2234_3622_83.txt
+# ::date 2015-05-29T11:05:20
+# ::id a_pmid_2234_3622.83
+(d2 / design-01
+    :ARG1 (s / schedule
+             :quant "2")
+    :ARG3 (o / or
+             :op1 (t2 / treat-04
+                      :ARG1 (m2 / mouse
+                                :ARG0-of (b / bear-01
+                                            :ARG1 (t3 / tumor
+                                                      :mod (c / cell-line
+                                                              :name (n / name
+                                                                       :op1 "HCT-116")
+                                                              :mod (d4 / disease
+                                                                       :name (n4 / name
+                                                                                 :op1 "CRC"))))))
+                      :ARG2 (s5 / small-molecule
+                                :name (n3 / name
+                                          :op1 "docetaxel")
+                                :ARG2-of (d5 / dose-01
+                                             :ARG1-of (s2 / single-02))
+                                :ARG2-of (f2 / follow-01
+                                             :ARG1 (d6 / dose-01
+                                                       :ARG2 (s3 / small-molecule
+                                                                 :name (n2 / name
+                                                                           :op1 "selumetinib")
+                                                                 :quant (c3 / concentration-quantity
+                                                                            :quant "25"
+                                                                            :unit "m3"))
+                                                       :duration (t / temporal-quantity
+                                                                    :quant "7"
+                                                                    :unit (d / day))
+                                                       :frequency (r / rate-entity-91
+                                                                     :ARG1 "2"
+                                                                     :ARG2 (t5 / temporal-quantity
+                                                                               :quant "1"
+                                                                               :unit d)))
+                                             :time (l / late
+                                                      :op1 (t4 / temporal-quantity
+                                                               :quant "24"
+                                                               :unit (h / hour))
+                                                      :degree (m / more)))
+                                :quant (c2 / concentration-quantity
+                                           :quant "15"
+                                           :unit (m3 / milligram-per-kilogram))))
+             :op2 (a / administer-01
+                     :ARG1 s3
+                     :duration t
+                     :ARG2-of (f3 / follow-01
+                                  :ARG1 (a3 / administer-01
+                                            :ARG1 s5)
+                                  :time l)
+                     :mod t2))
+    :ARG1-of (d3 / describe-01
+                 :ARG0 (f / figure
+                          :mod "3B")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As monotherapies, docetaxel and selumetinib resulted in 77% (<i>P</i><0.0005) and 50% (<i>P</i><0.005) tumour growth inhibition, respectively (<xref ref-type="fig" rid="fig3">Figure 3C</xref>).
+# ::file a_pmid_2234_3622_84.txt
+# ::date 2015-05-29T12:36:05
+# ::id a_pmid_2234_3622.84
+(r / result-01
+   :ARG1 (a / and
+            :op1 (s2 / small-molecule
+                     :name (n2 / name
+                               :op1 "docetaxel"))
+            :op2 (s / small-molecule
+                    :name (n / name
+                             :op1 "selumetinib"))
+            :mod (m / monotherapy))
+   :ARG2 (a2 / and
+             :op1 (i / inhibit-01
+                     :ARG1 (g / grow-01
+                              :ARG1 (t / tumor)
+                              :mod (p / percentage-entity
+                                      :value "77"))
+                     :ARG1-of (s3 / statistical-test-91
+                                  :ARG2 (l / less-than
+                                           :op1 "0.0005")))
+             :op2 (i2 / inhibit-01
+                      :ARG1 (g2 / grow-01
+                                :ARG1 t
+                                :mod (p2 / percentage-entity
+                                         :value "50"))
+                      :ARG1-of (s4 / statistical-test-91
+                                   :ARG2 (l2 / less-than
+                                             :op1 "0.005"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3C")))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, in the two combination schedules docetaxel administered before selumetinib (schedule 1) resulted in a 110% (<i>P</i><0.0005) compared with 61% (<i>P</i><0.005) tumour growth inhibition when docetaxel was administered after selumetinib (schedule 2).
+# ::file a_pmid_2234_3622_85.txt
+# ::date 2015-05-29T12:40:17
+# ::id a_pmid_2234_3622.85
+(r / result-01
+   :ARG1 (a / administer-01
+            :ARG1 (s5 / small-molecule
+                      :name (n / name
+                               :op1 "docetaxel"))
+            :time (b / before
+                     :op1 (a2 / administer-01
+                              :ARG1 (s / small-molecule
+                                       :name (n2 / name
+                                                 :op1 "selumetinib")))
+                     :ARG1-of (m / mean-01
+                                 :ARG2 (s3 / schedule
+                                           :mod "1"))))
+   :ARG2 (i3 / inhibit-01
+             :degree (p / percentage-entity
+                        :value "110")
+             :compared-to (i / inhibit-01
+                             :ARG1 (g / grow-01
+                                      :ARG1 (t / tumor))
+                             :degree (p2 / percentage-entity
+                                         :value "61")
+                             :time (a3 / administer-01
+                                       :ARG1 s5
+                                       :time (a4 / after
+                                                 :op1 s)
+                                       :ARG1-of (m4 / mean-01
+                                                    :ARG2 (s4 / schedule
+                                                              :mod "2"))))
+             :ARG1-of (s6 / statistical-test-91
+                          :ARG2 (l2 / less-than
+                                    :op1 "0.0005")))
+   :ARG0-of (i2 / interest-01)
+   :condition (s2 / schedule
+                  :quant "2"
+                  :mod (c / combine-01)))
+
+# ::save-date Tue Jun 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results suggest that selumetinib could enhance the efficacy of docetaxel when administered in the sequence of docetaxel followed by selumetinib.
+# ::file a_pmid_2234_3622_86.txt
+# ::date 2015-05-28T22:12:42
+# ::id a_pmid_2234_3622.86
+(s / suggest-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG1 (p / possible-01
+            :ARG1 (e / enhance-01
+                     :ARG0 (s3 / small-molecule
+                               :name (n2 / name
+                                         :op1 "selumetinib"))
+                     :ARG1 (e2 / efficacy
+                               :poss (s4 / small-molecule
+                                         :name (n / name
+                                                  :op1 "docetaxel")))
+                     :condition (a / administrate-01
+                                   :manner (s2 / sequence
+                                               :poss s4
+                                               :mod (f / follow-01
+                                                       :ARG1 s3
+                                                       :ARG2 s4))))))
+
+# ::save-date Mon Jul 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to determine the mechanism of action in the scheduling studies with docetaxel, a series of tumour tissue samples were taken at different time points following exposure to the two dosing regimens (<xref ref-type="fig" rid="fig4">Figure 4Ai and Bi</xref>).
+# ::file a_pmid_2234_3622_88.txt
+# ::date 2015-05-29T08:38:19
+# ::id a_pmid_2234_3622.88
+(s / sample-01
+   :ARG1 (t2 / tissue
+             :mod (t3 / tumor))
+   :time (p / point
+            :mod (t / time)
+            :ARG1-of (d4 / differ-02))
+   :ARG1-of (f / follow-01
+               :ARG2 (e / expose-01
+                        :ARG2 (r2 / regimen
+                                  :quant "2"
+                                  :ARG0-of (d / dose-01))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a / and
+                         :op1 (f2 / figure
+                                  :mod "4Ai")
+                         :op2 (f3 / figure
+                                  :mod "4Bi")))
+   :quant (s2 / series)
+   :purpose (d3 / determine-01
+                :ARG1 (m / mechanism
+                         :mod (a2 / act-02)
+                         :purpose (s3 / study-01
+                                      :ARG1 (s5 / small-molecule
+                                                :name (n / name
+                                                         :op1 "docetaxel"))
+                                      :ARG1-of (s4 / schedule-01)))))
+
+# ::save-date Tue Jan 19, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To assess the cell cycle mechanistic effects the mitotic marker pHH3 was quantitated.
+# ::file a_pmid_2234_3622_89.txt
+# ::date 2015-05-29T09:40:00
+# ::id a_pmid_2234_3622.89
+(q / quantitate-01
+   :ARG1 (m / marker
+            :mod (m2 / mitosis)
+            :ARG1-of (m4 / mean-01
+                         :ARG2 (p / protein
+                                  :name (n / name
+                                           :op1 "HH3")
+                                  :ARG1-of (p2 / phosphorylate-01))))
+   :purpose (a / assess-01
+               :ARG1 (a2 / affect-01
+                         :ARG1 (c / cycle-02
+                                  :ARG1 (c2 / cell))
+                         :mod (m3 / mechanistic))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the sequence when docetaxel was administered before selumetinib, increased levels of pHH3 were observed at the early timepoints (PD1 & PD2) (2.7- and 2.3-fold change, respectively; <i>P</i><0.0005).
+# ::file a_pmid_2234_3622_90.txt
+# ::date 2015-05-29T09:44:56
+# ::id a_pmid_2234_3622.90
+(o / observe-01
+   :ARG1 (l / level
+            :ARG1-of (i / increase-01
+                        :ARG1-of (s4 / statistical-test-91
+                                     :ARG2 (l2 / less-than
+                                               :op1 "0.0005")))
+            :quant-of (p4 / protein
+                          :name (n / name
+                                   :op1 "HH3")
+                          :ARG3-of (p5 / phosphorylate-01)))
+   :time (t / timepoint
+            :mod (e / early))
+   :location (s / sequence
+                :mod (a / administer-01
+                        :ARG1 (s3 / small-molecule
+                                  :name (n5 / name
+                                            :op1 "docetaxel"))
+                        :time (b2 / before
+                                  :op1 (a2 / administer-01
+                                           :ARG1 (s2 / small-molecule
+                                                     :name (n4 / name
+                                                               :op1 "selumetinib"))))))
+   :ARG1-of (m2 / mean-01
+                :ARG2 (a3 / and
+                          :op1 (t2 / thing
+                                   :name (n2 / name
+                                             :op1 "PD1"))
+                          :op2 (t3 / thing
+                                   :name (n3 / name
+                                             :op1 "PD2"))))
+   :ARG1-of (m3 / mean-01
+                :ARG2 (a5 / and
+                          :op1 (c / change-01
+                                  :ARG2 (p2 / product-of
+                                            :op1 "2.7"))
+                          :op2 (c2 / change-01
+                                   :ARG2 (p3 / product-of
+                                             :op1 "2.3")))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In schedule 2, pHH3 levels were seen to increase following docetaxel (PD7) (3.4-fold; <i>P</i><0.0005) (<xref ref-type="fig" rid="fig4">Figure 4Aii and 4Bii</xref>).
+# ::file a_pmid_2234_3622_91.txt
+# ::date 2015-05-29T12:26:53
+# ::id a_pmid_2234_3622.91
+(s / see-01
+   :ARG1 (i / increase-01
+            :ARG1 (l / level
+                     :quant-of (p3 / protein
+                                   :name (n2 / name
+                                             :op1 "HH3")
+                                   :ARG3-of (p4 / phosphorylate-01)))
+            :ARG2 (p / product-of
+                     :op1 "3.4")
+            :ARG1-of (f / follow-01
+                        :ARG2 (s2 / small-molecule
+                                  :name (n3 / name
+                                            :op1 "docetaxel")))
+            :ARG1-of (s4 / statistical-test-91
+                         :ARG2 (l2 / less-than
+                                   :op1 "0.0005")))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a / and
+                         :op1 (f2 / figure
+                                  :mod "4Aii")
+                         :op2 (f3 / figure
+                                  :mod "4Bii")))
+   :condition (s3 / schedule
+                  :mod "2")
+   :ARG1-of (m3 / mean-01
+                :ARG2 (t / thing
+                         :name (n / name
+                                  :op1 "PD7"))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt When selumetinib was administered alone levels of pHH3 decreased at several measurement points compared with controls (PD2 <i>P</i><0.0005; PD4 <i>P</i><0.005; PD5 <i>P</i><0.0005; PD6 <i>P</i><0.0005) consistent with the inhibition of the MEK/ERK pathway resulting in a G1/S arrest.
+# ::file a_pmid_2234_3622_92.txt
+# ::date 2015-05-29T12:35:08
+# ::id a_pmid_2234_3622.92
+(d / decrease-01
+   :ARG1 (l / level
+            :quant-of (p7 / protein
+                          :name (n3 / name
+                                    :op1 "HH3")
+                          :ARG3-of (p8 / phosphorylate-01)))
+   :time (a / administer-01
+            :ARG1 (s / small-molecule
+                     :name (n8 / name
+                               :op1 "selumetinib")
+                     :mod (a3 / alone)))
+   :time (p2 / point
+             :quant (s2 / several)
+             :mod (m3 / measure-01)
+             :ARG1-of (m4 / mean-01
+                          :ARG2 (a4 / and
+                                    :op1 (t / thing
+                                            :name (n4 / name
+                                                      :op1 "PD2"))
+                                    :op2 (t2 / thing
+                                             :name (n5 / name
+                                                       :op1 "PD4"))
+                                    :op3 (t4 / thing
+                                             :name (n6 / name
+                                                       :op1 "PD5"))
+                                    :op4 (t5 / thing
+                                             :name (n7 / name
+                                                       :op1 "PD6")))))
+   :compared-to (c / control)
+   :ARG1-of (c2 / consistent-01
+                :ARG2 (i / inhibit-01
+                         :ARG1 (p / pathway
+                                  :name (n / name
+                                           :op1 "MEK/ERK"))
+                         :ARG1-of (r / result-01
+                                     :ARG2 (a2 / arrest-02
+                                               :time (e / event
+                                                        :name (n2 / name
+                                                                  :op1 "G1/S"))))))
+   :ARG1-of (s3 / statistical-test-91
+                :ARG2 (l2 / less-than
+                          :op1 "0.0005")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, in both sequences in the combination there is a reduction in pHH3 compared with the docetaxel alone group at that timepoint (PD2 and PD7) (3.8- and 2.5-fold change, respectively; <i>P</i><0.0005).
+# ::file a_pmid_2234_3622_93.txt
+# ::date 2015-05-29T13:41:36
+# ::id a_pmid_2234_3622.93
+(r / reduce-01
+   :ARG1 (p4 / protein
+             :name (n / name
+                      :op1 "HH3")
+             :ARG3-of (p5 / phosphorylate-01))
+   :ARG0-of (i / interest-01)
+   :location (s / sequence
+                :mod (b / both)
+                :mod (c / combine-01))
+   :compared-to (g / group
+                   :mod (s2 / small-molecule
+                            :name (n4 / name
+                                      :op1 "docetaxel")
+                            :mod (a / alone)))
+   :time (t / timepoint
+            :mod (t2 / that)
+            :ARG1-of (m2 / mean-01
+                         :ARG2 (a2 / and
+                                   :op1 (t3 / thing
+                                            :name (n2 / name
+                                                      :op1 "PD2"))
+                                   :op2 (t4 / thing
+                                            :name (n3 / name
+                                                      :op1 "PD7")))))
+   :ARG1-of (m5 / mean-01
+                :ARG2 (a3 / and
+                          :op1 (c2 / change-01
+                                   :ARG2 (p / product-of
+                                            :op1 "3.8"))
+                          :op2 (c3 / change-01
+                                   :ARG2 (p2 / product-of
+                                             :op1 "2.5"))))
+   :ARG1-of (s3 / statistical-test-91
+                :ARG2 (l / less-than
+                         :op1 "0.0005")))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Levels of the apoptotic marker cleaved caspase 3, in tumour tissue taken from the docetaxel followed by selumetinib group, increased in this combination group (16.8-fold change from the control; <i>P</i><0.0005) compared with the single agents alone (3.5- and 2.4-fold change for docetaxel and selumetinib, respectively) (<xref ref-type="fig" rid="fig4">Figure 4Aiii</xref> PD2).
+# ::file a_pmid_2234_3622_94.txt
+# ::date 2015-05-29T14:26:40
+# ::id a_pmid_2234_3622.94
+(i / increase-01
+   :ARG1 (l / level
+            :quant-of (m / marker
+                         :name (n / name
+                                  :op1 "cleaved"
+                                  :op2 "caspase"
+                                  :op3 "3")
+                         :mod (a3 / apoptosis)
+                         :location (t / tissue
+                                      :source (t2 / tumor)
+                                      :ARG1-of (t3 / take-01
+                                                   :ARG2 (g / group
+                                                            :mod (s3 / small-molecule
+                                                                     :name (n2 / name
+                                                                               :op1 "docetaxel"))
+                                                            :ARG2-of (f2 / follow-01
+                                                                         :ARG1 (g2 / group
+                                                                                   :mod (s2 / small-molecule
+                                                                                            :name (n3 / name
+                                                                                                      :op1 "selumetinib")))))))))
+   :ARG4 (a4 / and
+             :op1 (c / change-01
+                     :ARG1 (c2 / control)
+                     :ARG2 (p2 / product-of
+                               :op1 "16.8")))
+   :compared-to (a / agent
+                   :ARG1-of (s / single-02)
+                   :mod (a2 / alone)
+                   :ARG1-of (m2 / mean-01
+                                :ARG2 (a5 / and
+                                          :op1 (c3 / change-01
+                                                   :ARG0 s3
+                                                   :ARG2 (p3 / product-of
+                                                             :op1 "3.5"))
+                                          :op2 (c4 / change-01
+                                                   :ARG0 s2
+                                                   :ARG2 (p4 / product-of
+                                                             :op1 "2.4")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4AiiiPD2"))
+   :location g
+   :ARG1-of (s4 / statistical-test-91
+                :ARG2 (l2 / less-than
+                          :op1 "0.0005")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In comparison, tumour tissue analysed in the same study after the chronic dosing schedule of selumetinib did not demonstrate an increase in cleaved caspase 3 levels in the combination group when compared with the single agents alone.
+# ::file a_pmid_2234_3622_95.txt
+# ::date 2015-05-29T12:08:32
+# ::id a_pmid_2234_3622.95
+(c / compare-01
+   :ARG1 (d / demonstrate-01
+            :polarity "-"
+            :ARG0 (t / tissue
+                     :source (t2 / tumor)
+                     :ARG1-of (a3 / analyze-01
+                                  :ARG0 (s2 / study-01
+                                            :ARG1-of (s3 / same-01)
+                                            :time (a4 / after
+                                                      :op1 (s4 / schedule-01
+                                                               :ARG1 (d2 / dose-01
+                                                                         :ARG2 (s5 / small-molecule
+                                                                                   :name (n2 / name
+                                                                                             :op1 "selumetinib"))
+                                                                         :mod (c4 / chronic)))))))
+            :ARG1 (i / increase-01
+                     :ARG1 (l / level
+                              :location (g / group
+                                           :mod (c2 / combine-01))
+                              :quant-of (p / protein
+                                           :name (n / name
+                                                    :op1 "cleaved"
+                                                    :op2 "caspase"
+                                                    :op3 "3"))))
+            :time (c3 / compare-01
+                      :ARG2 (a / agent
+                               :ARG1-of (s / single-02))
+                      :mod (a2 / alone))))
+
+# ::save-date Wed Mar 9, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt When selumetinib was dosed before docetaxel an increase in cleaved caspase 3 was not observed in the combination group at any of the sampling timepoints compared with at least one of the monotherapies (<xref ref-type="fig" rid="fig4">Figure 4Biii</xref>).
+# ::file a_pmid_2234_3622_96.txt
+# ::date 2015-05-29T09:45:32
+# ::id a_pmid_2234_3622.96
+(o / observe-01
+   :polarity "-"
+   :ARG1 (i / increase-01
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "cleaved"
+                              :op2 "caspase"
+                              :op3 "3"))
+            :compared-to (m2 / monotherapy
+                             :quant (a / at-least
+                                       :op1 "1")
+                             :ARG1-of (i2 / include-91
+                                          :ARG2 (m3 / monotherapy))))
+   :time (d / dose-01
+            :ARG2 (s / small-molecule
+                     :name (n3 / name
+                               :op1 "selumetinib"))
+            :time (b / before
+                     :op1 (d2 / dose-01
+                              :ARG2 (s3 / small-molecule
+                                        :name (n2 / name
+                                                  :op1 "docetaxel")))))
+   :location (g / group
+                :mod (c / combine-01))
+   :time (t / timepoint
+            :time-of (s2 / sample-01))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (f / figure
+                         :mod "4Biii")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Representative IHC images from PD2 highlights the increase in pHH3 following docetaxel exposure and the increase in cleaved caspase 3 in the docetaxel followed by selumetinib group (<xref ref-type="fig" rid="fig4">Figure 4C</xref>).
+# ::file a_pmid_2234_3622_97.txt
+# ::date 2015-06-02T09:01:36
+# ::id a_pmid_2234_3622.97
+(h / highlight-01
+   :ARG0 (i / image
+            :ARG0-of (r / represent-01)
+            :source (t2 / thing
+                        :name (n7 / name
+                                  :op1 "PD2"))
+            :mod (i4 / immunohistochemistry))
+   :ARG1 (a / and
+            :op1 (i2 / increase-01
+                     :ARG1 (p / protein
+                              :name (n2 / name
+                                        :op1 "HH3")
+                              :ARG3-of (p3 / phosphorylate-01))
+                     :ARG1-of (f / follow-01
+                                 :ARG2 (e / expose-01
+                                          :ARG1 p
+                                          :ARG2 (s / small-molecule
+                                                   :name (n3 / name
+                                                             :op1 "docetaxel")))))
+            :op2 (i3 / increase-01
+                     :ARG1 (p2 / protein
+                               :name (n4 / name
+                                         :op1 "caspase"
+                                         :op2 "3")
+                               :ARG1-of (c / cleave-01))
+                     :location (g / group
+                                  :mod (s2 / small-molecule
+                                           :name (n5 / name
+                                                     :op1 "docetaxel")
+                                           :ARG2-of (f3 / follow-01
+                                                        :ARG1 (s3 / small-molecule
+                                                                  :name (n6 / name
+                                                                            :op1 "selumetinib")))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "4C")))
+
+# ::save-date Thu Jun 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The data presented here suggests that the combination efficacy effect seen when docetaxel was dosed before selumetinib was due to an increase in apoptosis.
+# ::file a_pmid_2234_3622_98.txt
+# ::date 2015-06-02T09:44:05
+# ::id a_pmid_2234_3622.98
+(s / suggest-01
+   :ARG0 (d / data
+            :ARG1-of (p / present-01
+                        :location (h / here)))
+   :ARG1 (c / cause-01
+            :ARG0 (i / increase-01
+                     :ARG1 (a / apoptosis))
+            :ARG1 (a2 / affect-01
+                      :ARG0 (e / efficient-01
+                               :ARG1 (c2 / combine-01))
+                      :ARG1-of (s2 / see-01
+                                   :time (d2 / dose-01
+                                             :ARG2 (s3 / small-molecule
+                                                       :name (n / name
+                                                                :op1 "docetaxel"))
+                                             :time (b / before
+                                                      :op1 (d3 / dose-01
+                                                               :ARG2 (s4 / small-molecule
+                                                                         :name (n2 / name
+                                                                                   :op1 "selumetinib")))))))))
+
+# ::save-date Mon Jun 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The dose-scheduling effects of combining selumetinib and docetaxel lead us to investigate the sequence dependency of selumetinib combined with another mitotic targeting agent, the Aurora B kinase inhibitor, barasertib (AZD1152) (16).
+# ::file a_pmid_2234_3622_100.txt
+# ::date 2015-06-02T10:32:21
+# ::id a_pmid_2234_3622.100
+(l / lead-03
+   :ARG0 (a / affect-01
+            :ARG0 (c / combine-01
+                     :ARG1 (s / small-molecule
+                              :name (n / name
+                                       :op1 "selumetinib"))
+                     :ARG2 (s2 / small-molecule
+                               :name (n2 / name
+                                         :op1 "docetaxel")))
+            :ARG1 (s6 / schedule-01
+                      :ARG1 (d2 / dose-01)))
+   :ARG1 (w / we)
+   :ARG2 (i / investigate-01
+            :ARG0 w
+            :ARG1 (d / depend-01
+                     :ARG0 (s3 / small-molecule
+                               :name (n3 / name
+                                         :op1 "selumetinib")
+                               :ARG1-of (c2 / combine-01
+                                            :ARG2 (a2 / agent
+                                                      :ARG0-of (t / target-01
+                                                                  :ARG1 (m / mitosis))
+                                                      :ARG1-of (m2 / mean-01
+                                                                   :ARG2 (s5 / small-molecule
+                                                                             :name (n5 / name
+                                                                                       :op1 "barasertib")
+                                                                             :ARG0-of (i3 / inhibit-01
+                                                                                          :ARG1 (k / kinase
+                                                                                                   :name (n4 / name
+                                                                                                             :op1 "Aurora"
+                                                                                                             :op2 "B")))))
+                                                      :mod (a3 / another))))
+                     :ARG1 (s4 / sequence)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (p / publication
+                         :ARG1-of (c3 / cite-01
+                                      :ARG2 "16"))))
+
+# ::save-date Wed Mar 9, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We designed two regimes in which barasertib was dosed at 150 mg kg<sup>–1</sup> per qd for 2 consecutive days through a mini-pump (MP) with a 24 h gap followed by selumetinib 25 mg kg<sup>–1</sup> per bid for 14 consecutive days (schedule 1) or the reverse of this schedule where barasertib was dosed following selumetinib treatment (schedule 2) (<xref ref-type="fig" rid="fig5">Figure 5A</xref>).
+# ::file a_pmid_2234_3622_101.txt
+# ::date 2015-06-02T10:49:07
+# ::id a_pmid_2234_3622.101
+(d7 / design-01
+    :ARG0 (w / we)
+    :ARG1 (r4 / regime
+              :quant "2"
+              :consist-of (o / or
+                             :op1 (d / dose-01
+                                     :ARG2 (a / and
+                                              :op1 (s / small-molecule
+                                                      :quant "150"
+                                                      :name (n / name
+                                                               :op1 "barasertib")
+                                                      :quant (c2 / concentration-quantity
+                                                                 :quant "150"
+                                                                 :ARG1-of (r / rate-entity-91
+                                                                             :ARG2 (t / temporal-quantity
+                                                                                      :quant "24"
+                                                                                      :unit (h / hour)))
+                                                                 :unit (m2 / milligram-per-kilogram))))
+                                     :duration (t2 / temporal-quantity
+                                                   :quant "2"
+                                                   :unit (d3 / day
+                                                             :mod (c / consecutive)))
+                                     :instrument (p / pump
+                                                    :mod (m3 / mini))
+                                     :manner (g / gap
+                                                :duration (t3 / temporal-quantity
+                                                              :quant "24"
+                                                              :unit h))
+                                     :ARG2-of (f / follow-01
+                                                 :ARG1 (d5 / dose-01
+                                                           :ARG1 (s2 / small-molecule
+                                                                     :name (n2 / name
+                                                                               :op1 "selumetinib")
+                                                                     :quant (c3 / concentration-quantity
+                                                                                :quant "25"
+                                                                                :ARG1-of (r2 / rate-entity-91
+                                                                                             :ARG2 (t4 / temporal-quantity
+                                                                                                       :quant "12"
+                                                                                                       :unit h))
+                                                                                :unit (m / milligram-per-kilogram)))
+                                                           :duration (t5 / temporal-quantity
+                                                                         :quant "14"
+                                                                         :unit d3)))
+                                     :ARG1-of (m9 / mean-01
+                                                  :ARG2 (s5 / schedule
+                                                            :mod "1")))
+                             :op2 (d6 / dose-01
+                                      :ARG1 (s3 / small-molecule
+                                                :name (n3 / name
+                                                          :op1 "barasertib"))
+                                      :ARG2-of (f2 / follow-01
+                                                   :ARG1 (t6 / treat-03
+                                                             :ARG3 (s4 / small-molecule
+                                                                       :name (n4 / name
+                                                                                 :op1 "selumetinib"))))
+                                      :ARG1-of (d8 / describe-01
+                                                   :ARG0 (f3 / figure
+                                                             :mod "5A"))
+                                      :ARG1-of (m10 / mean-01
+                                                    :ARG2 (s6 / schedule
+                                                              :mod "2"))
+                                      :ARG1-of (r3 / reverse-01
+                                                   :ARG2 d)))))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The CaLu-6 NSCLC human tumour xenograft model was used in this study as previous experience with both agents allowed us to select appropriate dose levels in order to investigate these schedules (<xref ref-type="bibr" rid="bib6">Davies <i>et al</i>, 2007</xref>; <xref ref-type="bibr" rid="bib29">Wilkinson <i>et al</i>, 2007</xref>).
+# ::file a_pmid_2234_3622_102.txt
+# ::date 2015-06-02T14:53:51
+# ::id a_pmid_2234_3622.102
+(u / use-01
+      :ARG1 (m / model
+            :mod (x2 / xenograft
+                  :name (n / name :op1 "CaLu-6")
+                  :mod (t / tumor
+                        :mod (h / human)
+                        :mod (d / disease
+                              :name (n2 / name :op1 "NSCLC")))))
+      :ARG2 (t2 / thing
+            :ARG1-of (s / study-01)
+            :mod (t3 / this))
+      :ARG1-of (c2 / cause-01
+            :ARG0 (a / allow-01
+                  :ARG0 (e / experience-01
+                        :ARG0 "w"
+                        :ARG1 (a2 / agent
+                              :mod (b / both))
+                        :time (p7 / previous))
+                  :ARG1 (s2 / select-01
+                        :ARG0 (w / we)
+                        :ARG1 (l / level
+                              :quant-of (d2 / dose-01
+                                    :ARG1-of (a3 / appropriate-02)))
+                        :ARG3 (i / investigate-01
+                              :ARG0 w
+                              :ARG1 (s3 / schedule
+                                    :mod t3)))))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (a4 / and
+                  :op1 (p / publication-91
+                        :ARG0 (a5 / and
+                              :op1 (p2 / person
+                                    :name (n3 / name :op1 "Davies"))
+                              :op2 (p3 / person
+                                    :mod (o / other)))
+                        :time (d4 / date-entity :year "2007"))
+                  :op2 (p4 / publication-91
+                        :ARG0 (a6 / and
+                              :op1 (p5 / person
+                                    :name (n4 / name :op1 "Wilkinson"))
+                              :op2 p3)
+                        :time d4))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Selumetinib and barasertib alone resulted in 57% (<i>P</i><0.005) and 95% (<i>P</i><0.0005) tumour growth inhibition compared with the vehicle-treated controls at day 21 after the start of dosing.
+# ::file a_pmid_2234_3622_103.txt
+# ::date 2015-06-02T15:30:10
+# ::id a_pmid_2234_3622.103
+(a3 / and
+    :op1 (r / result-01
+            :ARG1 (s / small-molecule
+                     :name (n / name
+                              :op1 "selumetinib")
+                     :mod (a / alone)
+                     :ARG1-of (c / compare-01
+                                 :ARG2 (c3 / control
+                                           :ARG1-of (t2 / treat-04
+                                                        :ARG2 (v / vehicle)))))
+            :ARG2 (i / inhibit-01
+                     :ARG1 (g / grow-01
+                              :ARG1 (t / tumor))
+                     :quant (p / percentage-entity
+                               :value "57")
+                     :time (a2 / after
+                               :op1 (s2 / start-01
+                                        :ARG1 (d / dose-01))
+                               :quant (t3 / temporal-quantity
+                                          :quant "21"
+                                          :unit (d2 / day)))
+                     :ARG1-of (s4 / statistical-test-91
+                                  :ARG2 (l / less-than
+                                           :op1 "0.005"))))
+    :op2 (r2 / result-01
+             :ARG1 (s3 / small-molecule
+                       :name (n2 / name
+                                 :op1 "barasertib")
+                       :mod a
+                       :ARG1-of c)
+             :ARG2 (i2 / inhibit-01
+                       :ARG1 g
+                       :quant (p2 / percentage-entity
+                                  :value "95")
+                       :time a2
+                       :ARG1-of (s5 / statistical-test-91
+                                    :ARG2 (l2 / less-than
+                                              :op1 "0.0005")))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In comparison when selumetinib was dosed before barasertib the anti-tumour efficacy was 74% (<i>P</i><0.0005) in contrast to 106% (<i>P</i><0.0005) observed when selumetinib was dosed following barasertib.
+# ::file a_pmid_2234_3622_104.txt
+# ::date 2015-06-02T15:31:49
+# ::id a_pmid_2234_3622.104
+(e3 / efficient-01
+    :ARG1 (d / dose-01
+             :ARG1 (s / small-molecule
+                      :name (n / name
+                               :op1 "selumetinib"))
+             :time (b / before
+                      :op1 (d2 / dose-01
+                               :ARG1 (s2 / small-molecule
+                                         :name (n2 / name
+                                                   :op1 "barasertib")))))
+    :ARG2 (o / oppose-01
+             :ARG1 (t / tumor))
+    :ARG1-of (c / contrast-01
+                :ARG2 (e2 / efficient-01
+                          :quant (p3 / percentage-entity
+                                     :value "106")
+                          :ARG1-of (o2 / observe-01
+                                       :time (d3 / dose-01
+                                                 :ARG1 s
+                                                 :ARG1-of (f / follow-01
+                                                             :ARG2 s2)))
+                          :ARG1-of (s4 / statistical-test-91
+                                       :ARG2 "l")))
+    :ARG1-of (c2 / compare-01)
+    :quant (p / percentage-entity
+              :value "74")
+    :ARG1-of (s3 / statistical-test-91
+                 :ARG2 (l / less-than
+                          :op1 "0.0005")))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At 21 days after the start of dosing the control, animals had to be culled due to tumour size; however, the monotherapy and combination-treated groups were kept on study for a further 14 days.
+# ::file a_pmid_2234_3622_105.txt
+# ::date 2015-06-02T15:34:02
+# ::id a_pmid_2234_3622.105
+(m / multi-sentence
+      :snt1 (o / obligate-01
+            :ARG2 (c / cull-01
+                  :ARG1 (a / animal)
+                  :ARG1-of (c2 / cause-01
+                        :ARG0 (s / size-01
+                              :ARG1 (t / tumor)))
+                  :time (a2 / after
+                        :op1 (s2 / start-01
+                              :ARG1 (d / dose-01
+                                    :ARG1 (c3 / control)))
+                        :quant (t2 / temporal-quantity
+                              :quant "21"
+                              :unit (d2 / day)))))
+      :snt2 (h / have-concession-91
+            :ARG2 (k / keep-01
+                  :ARG1 (a3 / and
+                        :op1 (g / group
+                              :mod (m2 / monotherapy))
+                        :op2 (g2 / group
+                              :ARG1-of (t3 / treat-04
+                                    :ARG2 (c5 / combine-01)))
+                        :ARG1-of (s3 / study-01))
+                  :duration (t5 / temporal-quantity
+                        :quant "14"
+                        :mod (f / further)
+                        :unit d2))))
+
+
+# ::save-date Thu Jun 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt During this time, the tumours in the monotherapy and schedule 2 groups started to re-grow.
+# ::file a_pmid_2234_3622_106.txt
+# ::date 2015-06-02T16:10:24
+# ::id a_pmid_2234_3622.106
+(s / start-01
+      :ARG0 (t / tumor
+            :source (a / and
+                  :op1 (g / group
+                        :mod (m / monotherapy))
+                  :op2 (g2 / group
+                        :mod (s2 / schedule :mod "2"))))
+      :ARG1 (g3 / grow-01
+            :ARG1 t
+            :mod (a2 / again))
+      :time (t3 / time
+            :mod (t4 / this)))
+
+# ::save-date Thu Jun 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, the tumours in the group where barasertib was administered before selumetinib (schedule 1) tumour re-growth was delayed (<xref ref-type="fig" rid="fig5">Figure 5B</xref>).
+# ::file a_pmid_2234_3622_107.txt
+# ::date 2015-06-03T13:18:28
+# ::id a_pmid_2234_3622.107
+(d / delay-01
+   :ARG1 (g / grow-01
+            :ARG1 (t / tumor
+                     :source (g2 / group
+                                 :ARG2-of (a / administer-01
+                                             :ARG1 (s / small-molecule
+                                                      :name (n / name
+                                                               :op1 "barasertib"))
+                                             :time (b / before
+                                                      :op1 (a2 / administer-01
+                                                               :ARG1 (s2 / small-molecule
+                                                                         :name (n2 / name
+                                                                                   :op1 "selumetinib"))))
+                                             :ARG2-of (m / mean-01
+                                                         :ARG1 (s3 / schedule
+                                                                   :mod "1"))))))
+   :mod (i / interesting)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5B")))
+
+
+# ::save-date Tue Jul 28, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to investigate this further, we performed pharmacodynamic analysis on tumour tissue.
+# ::file a_pmid_2234_3622_108.txt
+# ::date 2015-06-03T13:52:34
+# ::id a_pmid_2234_3622.108
+(p / perform-02
+      :ARG0 (w / we)
+      :ARG1 (a / analyze-01
+            :ARG0 w
+            :ARG1 (t / tissue
+                  :mod (t2 / tumor))
+            :mod (p2 / pharmacodynamic))
+      :purpose (i / investigate-01
+            :ARG0 w
+            :ARG1 (t3 / this)
+            :degree (f / further)))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In schedule 1 we analysed tumour tissue at 24 h after the end of the barasertib infusion (PD1) and at the end of the selumetinib-dosing period (PD2) (<xref ref-type="fig" rid="fig5">Figure 5A</xref>).
+# ::file a_pmid_2234_3622_109.txt
+# ::date 2015-06-03T14:03:40
+# ::id a_pmid_2234_3622.109
+(a / analyze-01
+   :ARG0 (w / we)
+   :ARG1 (t / tissue
+            :mod (t2 / tumor))
+   :time (a2 / after
+             :op1 (e / end-01
+                     :ARG1 (i / infuse-01
+                              :ARG1 (s / small-molecule
+                                       :name (n / name
+                                                :op1 "barasertib"))))
+             :quant (t3 / temporal-quantity
+                        :quant "24"
+                        :unit (h / hour)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5A"))
+   :location (s3 / schedule
+                 :mod "1")
+   :time (a5 / and
+             :op1 (a3 / after
+                      :op1 (e3 / end-01
+                               :ARG1 (p2 / period
+                                         :duration-of (i2 / infuse-01
+                                                          :ARG2 (s4 / small-molecule
+                                                                    :name (n3 / name
+                                                                              :op1 "barasertib"))
+                                                          :ARG1-of (d3 / describe-01
+                                                                       :ARG2 (s5 / string-entity
+                                                                                 :value "PD1"))))))
+             :op2 (a4 / after
+                      :op1 (e2 / end-01
+                               :ARG1 (p / period
+                                        :duration-of (d / dose-01
+                                                        :ARG2 (s2 / small-molecule
+                                                                  :name (n2 / name
+                                                                            :op1 "selumetinib")))
+                                        :ARG1-of (d4 / describe-01
+                                                     :ARG2 (s6 / string-entity
+                                                               :value "PD2")))))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In schedule 2, tumours were harvested 24 h after the end of the barasertib infusion at the end of the study (PD3) (<xref ref-type="fig" rid="fig5">Figure 5A</xref>).
+# ::file a_pmid_2234_3622_110.txt
+# ::date 2015-06-03T14:17:55
+# ::id a_pmid_2234_3622.110
+(h / harvest-01
+   :ARG1 (t / tumor)
+   :time (a / and
+            :op1 (a2 / after
+                     :op1 (e / end-01
+                             :ARG1 (i / infuse-01
+                                      :ARG1 (s / small-molecule
+                                               :name (n / name
+                                                        :op1 "barasertib")))))
+            :op2 (a3 / after
+                     :op1 (e2 / end-01
+                              :ARG1 (t2 / thing
+                                        :ARG1-of (s2 / study-01))))
+            :quant (t3 / temporal-quantity
+                       :quant "24"
+                       :unit (h2 / hour)))
+   :location (s3 / schedule
+                 :mod "2")
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5A"))
+   :ARG1-of (d2 / describe-01
+                :ARG2 (s4 / string-entity
+                          :value "PD3")))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Using flow cytometry we assessed tissues for polyploidy and demonstrated that compared with the vehicle-treated control group, barasertib-treated tumours resulted in increased polyploidy (1.7-fold change; <i>P</i><0.05) in the PD1 samples consistent with the mechanism of this agent (<xref ref-type="fig" rid="fig5">Figure 5C</xref>) (<xref ref-type="bibr" rid="bib29">Wilkinson <i>et al</i>, 2007</xref>).
+# ::file a_pmid_2234_3622_111.txt
+# ::date 2015-06-03T14:23:05
+# ::id a_pmid_2234_3622.111
+(a / and
+   :op1 (a2 / assess-01
+            :ARG0 (w / we)
+            :ARG1 (t / tissue)
+            :ARG2 (p / polyploidy))
+   :op2 (d / demonstrate-01
+           :ARG0 w
+           :ARG1 (r / result-01
+                    :ARG1 (t2 / tumor
+                              :ARG1-of (t3 / treat-04
+                                           :ARG2 (s / small-molecule
+                                                    :name (n / name
+                                                             :op1 "barasertib")))
+                              :ARG1-of (c3 / compare-01
+                                           :ARG2 (g / group
+                                                    :ARG0-of (c4 / control-01)
+                                                    :ARG1-of (t6 / treat-03
+                                                                 :ARG2 (v / vehicle)))))
+                    :ARG2 (p2 / polyploidy
+                              :ARG1-of (i / increase-01
+                                          :ARG2 (p3 / product-of
+                                                    :op1 "1.7")
+                                          :ARG2-of (m / mean-01
+                                                      :ARG1 (c / change-01
+                                                               :ARG1 p2))
+                                          :source (s2 / sample-01
+                                                      :ARG2 (t4 / thing
+                                                                :name (n2 / name
+                                                                          :op1 "PD1")))
+                                          :ARG1-of (c2 / consistent-01
+                                                       :ARG2 (m2 / mechanism
+                                                                 :poss (a3 / agent
+                                                                           :mod (t5 / this))))
+                                          :ARG1-of (s3 / statistical-test-91
+                                                       :ARG2 (l / less-than
+                                                                :op1 "0.05"))))))
+   :ARG2-of (u / use-01
+               :ARG0 w
+               :ARG1 (c5 / cytometry
+                         :mod (f / flow)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "5C"))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (p4 / publication-91
+                          :ARG0 (a4 / and
+                                    :op1 (p5 / person
+                                             :name (n3 / name
+                                                       :op1 "Wilkinson"))
+                                    :op2 (p6 / person
+                                             :mod (o / other)))
+                          :time (d4 / date-entity
+                                    :year "2007"))))
+
+
+# ::save-date Mon Jun 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the same experiment, we monitored the population of sub G1 cells in these groups.
+# ::file a_pmid_2234_3622_112.txt
+# ::date 2015-06-03T15:03:40
+# ::id a_pmid_2234_3622.112
+(m / monitor-01
+      :ARG0 (w / we)
+      :ARG1 (p / population
+            :consist-of (c / cell-line
+                  :name (n / name :op1 "sub" :op2 "G1")))
+      :location (g / group
+            :mod (t / this))
+      :medium (e / experiment-01
+            :ARG1-of (s / same-01)))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At the end of the dosing period in schedule 1 (PD2), there was a significant increase (3.5-fold change; <i>P</i><0.0005) in the sub G1 population in the combination compared with the vehicle-treated controls and selumetinib monotherapy (<xref ref-type="fig" rid="fig5">Figure 5Cii</xref>).
+# ::file a_pmid_2234_3622_113.txt
+# ::date 2015-06-03T15:23:12
+# ::id a_pmid_2234_3622.113
+(i / increase-01
+   :ARG1 (p / population
+            :consist-of (c / cell-line
+                           :name (n / name
+                                    :op1 "sub"
+                                    :op2 "G1"))
+            :ARG1-of (c3 / combine-01))
+   :ARG2 (p2 / product-of
+             :op1 "3.5"
+             :ARG2-of (c2 / change-01))
+   :ARG1-of (s / significant-02)
+   :ARG2-of (m / mean-01)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5Cii"))
+   :ARG1-of (c4 / compare-01
+                :ARG2 (a / and
+                         :op1 (c5 / control
+                                  :ARG1-of (t / treat-04
+                                              :ARG2 (v / vehicle)))
+                         :op2 (m2 / monotherapy
+                                  :mod (s2 / small-molecule
+                                           :name (n2 / name
+                                                     :op1 "selumetinib")))))
+   :time (a2 / after
+             :op1 (e / end-01
+                     :ARG1 (p4 / period
+                               :duration-of (d2 / dose-01)
+                               :ARG1-of (d3 / describe-01
+                                            :ARG2 (s5 / string-entity
+                                                      :value "PD2"))
+                               :time (s3 / schedule
+                                         :mod "1"))))
+   :ARG1-of (s4 / statistical-test-91
+                :ARG2 (l / less-than
+                         :op1 "0.0005")))
+
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In comparison, the sub G1 populations in schedule 2 (PD3) were increased ∼2-fold in both the monotherapy and combination groups (<xref ref-type="fig" rid="fig5">Figure 5Dii</xref>).
+# ::file a_pmid_2234_3622_114.txt
+# ::date 2015-06-03T15:48:09
+# ::id a_pmid_2234_3622.114
+(i / increase-01
+      :ARG1 (p / population
+            :consist-of (c2 / cell-line
+                  :name (n / name :op1 "sub" :op2 "G1")))
+      :ARG2 (a2 / approximately
+            :op1 (p2 / product-of :op1 "2"))
+      :time (s / schedule
+            :mod "2"
+            :ARG1-of (d2 / describe-01
+                  :ARG2 (s2 / string-entity :value "PD3")))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "5Dii"))
+      :ARG1-of (c / compare-01)
+      :location (a / and
+            :op1 (g / group
+                  :mod (m / monotherapy))
+            :op2 (g2 / group
+                  :ARG3-of (c3 / combine-01))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results suggest that the sustained anti-tumour effect and regression observed when barasertib is scheduled before selumetinib is likely to be due to an avoidance of cell cycle-mediated antagonism which allowed an increase in cell death.
+# ::file a_pmid_2234_3622_115.txt
+# ::date 2015-06-03T16:00:12
+# ::id a_pmid_2234_3622.115
+(s / suggest-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG1 (l / likely-01
+            :ARG1 (c / cause-01
+                     :ARG0 (a / avoid-01
+                              :ARG1 (a2 / antagonize-02
+                                        :ARG1-of (m / mediate-01
+                                                    :ARG0 (c2 / cycle-02
+                                                              :ARG1 (c3 / cell)))
+                                        :ARG0-of (a3 / allow-01
+                                                     :ARG1 (i / increase-01
+                                                              :ARG1 (d / die-01
+                                                                       :ARG1 (c4 / cell))))))
+                     :ARG1 (a4 / and
+                               :op1 (a5 / affect-01
+                                        :ARG2 (o / oppose-01
+                                                 :ARG1 (t3 / tumor))
+                                        :ARG1-of (s6 / sustain-01))
+                               :op2 (r2 / regress-01)
+                               :ARG1-of (o2 / observe-01
+                                            :time (s2 / schedule-01
+                                                      :ARG1 (s3 / small-molecule
+                                                                :name (n / name
+                                                                         :op1 "barasertib"))
+                                                      :ARG3 (b / before
+                                                               :op1 (s4 / schedule-01
+                                                                        :ARG1 (s5 / small-molecule
+                                                                                  :name (n2 / name
+                                                                                            :op1 "selumetinib"))))))))))

@@ -1,0 +1,3266 @@
+# ::save-date Fri Feb 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We first evaluated the sensitivity to the selective MEK1/2 inhibitor, selumetinib, in a panel of five NSCLC (GLC82, H460, A549, H1299, Calu3) and six CRC (GEO, HCT15, HCT116, SW480, SW620, LS174T) cell lines by using the MTT assay.
+# ::file a_pmid_2256_9000_97.txt
+# ::date 2015-06-06T02:57:48
+# ::id a_pmid_2256_9000.97
+(e / evaluate-01
+   :ARG0 (w / we)
+   :ARG1 (s / sensitive-03
+            :ARG1 (s2 / small-molecule
+                      :name (n / name
+                               :op1 "selumetinib")
+                      :ARG0-of (i / inhibit-01
+                                  :ARG1 (e2 / enzyme
+                                            :name (n2 / name
+                                                      :op1 "MEK1/2")))
+                      :ARG0-of (s3 / select-01)))
+   :mod (f / first)
+   :location (p / panel
+                :consist-of (a / and
+                               :op1 (c / cell-line
+                                       :quant "5"
+                                       :ARG1-of (m / mean-01
+                                                   :ARG2 (a2 / and
+                                                             :op1 (c2 / cell-line
+                                                                      :name (n4 / name
+                                                                                :op1 "GLC82"))
+                                                             :op2 (c3 / cell-line
+                                                                      :name (n5 / name
+                                                                                :op1 "H460"))
+                                                             :op3 (c4 / cell-line
+                                                                      :name (n6 / name
+                                                                                :op1 "A549"))
+                                                             :op4 (c5 / cell-line
+                                                                      :name (n7 / name
+                                                                                :op1 "H1299"))
+                                                             :op5 (c6 / cell-line
+                                                                      :name (n8 / name
+                                                                                :op1 "Calu3"))))
+                                       :mod (d / disease
+                                               :name (n3 / name
+                                                         :op1 "NSCLC")))
+                               :op2 (c7 / cell-line
+                                        :quant "6"
+                                        :ARG1-of (m2 / mean-01
+                                                     :ARG2 (a3 / and
+                                                               :op1 (c8 / cell-line
+                                                                        :name (n10 / name
+                                                                                   :op1 "GEO"))
+                                                               :op2 (c9 / cell-line
+                                                                        :name (n11 / name
+                                                                                   :op1 "HCT15"))
+                                                               :op3 (c10 / cell-line
+                                                                         :name (n12 / name
+                                                                                    :op1 "HCT116"))
+                                                               :op4 (c11 / cell-line
+                                                                         :name (n13 / name
+                                                                                    :op1 "SW480"))
+                                                               :op5 (c12 / cell-line
+                                                                         :name (n14 / name
+                                                                                    :op1 "SW620"))
+                                                               :op6 (c13 / cell-line
+                                                                         :name (n15 / name
+                                                                                    :op1 "LS174T"))))
+                                        :mod (d2 / disease
+                                                 :name (n9 / name
+                                                           :op1 "CRC")))))
+   :manner (u / use-01
+              :ARG0 w
+              :ARG1 (a4 / assay-01
+                        :instrument (s4 / small-molecule
+                                        :name (n16 / name
+                                                   :op1 "MTT")))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cancer cells were treated with selumetinib at concentrations ranging from 0.01 to 10 <i>μ</i>ℳ for 48, 72, and 96 h.
+# ::file a_pmid_2256_9000_98.txt
+# ::date 2015-06-06T04:02:40
+# ::id a_pmid_2256_9000.98
+(t / treat-04
+   :ARG1 (c / cell
+            :mod (d / disease
+                    :wiki "Cancer"
+                    :name (n / name
+                             :op1 "cancer")))
+   :ARG2 (s / small-molecule
+            :name (n2 / name
+                      :op1 "selumetinib")
+            :quant (c2 / concentration
+                       :ARG1-of (r / range-01
+                                   :ARG3 (c3 / concentration-quantity
+                                             :quant "0.01"
+                                             :unit (m2 / micromolar))
+                                   :ARG4 (c4 / concentration-quantity
+                                             :quant "10"
+                                             :unit m2))))
+   :duration (t2 / temporal-quantity
+                 :quant (a / and
+                           :op1 "48"
+                           :op2 "72"
+                           :op3 "96")
+                 :unit (h / hour)))
+
+
+# ::save-date Wed Mar 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in <xref ref-type="fig" rid="fig1">Figure 1</xref>, there was a wide range of sensitivity, with IC<sub>50</sub> values varying between 0.01 and >10 <i>μ</i>ℳ.
+# ::file a_pmid_2256_9000_99.txt
+# ::date 2015-06-06T04:15:40
+# ::id a_pmid_2256_9000.99
+(s / sensitive-03
+      :ARG1-of (r / range-01
+            :ARG1-of (w / wide-02)
+            :ARG1-of (m / mean-01
+                  :ARG2 (v / vary-01
+                        :ARG1 (v2 / value
+                              :ARG4-of (h / have-percentage-maximal-inhibitory-concentration-01 :ARG2 "50"))
+                        :ARG3 (c / concentration-quantity
+                              :quant "0.01"
+                              :unit (m2 / micromolar))
+                        :ARG4 (m3 / more-than
+                              :op1 (c2 / concentration-quantity
+                                    :quant "10"
+                                    :unit (m4 / micromolar))))))
+      :ARG1-of (s2 / show-01
+            :ARG0 (f / figure :mod "1")))
+
+# ::save-date Wed Mar 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We classified as sensitive (S) or resistant (R) the cancer cell lines according to selumetinib IC<sub>50</sub> at 96 h ⩽1 or >1 <i>μ</i>ℳ, respectively.
+# ::file a_pmid_2256_9000_100.txt
+# ::date 2015-06-06T07:27:02
+# ::id a_pmid_2256_9000.100
+(a / and
+   :op1 (c / classify-01
+           :ARG0 (w / we)
+           :ARG1 (c2 / cell-line
+                     :mod (d / disease
+                             :wiki "Cancer"
+                             :name (n / name
+                                      :op1 "cancer")))
+           :ARG2 (s / sensitive-03
+                    :ARG0 c2)
+           :condition (h2 / have-percentage-maximal-inhibitory-concentration-01
+                          :ARG1 (s2 / small-molecule
+                                    :name (n3 / name
+                                              :op1 "selumetinib"))
+                          :ARG2 "50"
+                          :ARG4 (o / or
+                                   :op1 (c3 / concentration-quantity
+                                            :quant "1"
+                                            :unit (m3 / micromolar))
+                                   :op2 (l / less-than
+                                           :op1 (c4 / concentration-quantity
+                                                    :quant "1"
+                                                    :unit (m / micromolar))))
+                          :time (a2 / after
+                                    :op1 (t2 / temporal-quantity
+                                             :quant "96"
+                                             :unit (h / hour)))))
+   :op2 (c5 / classify-01
+            :ARG0 w
+            :ARG1 c2
+            :ARG2 (r / resist-01
+                     :ARG0 c2)
+            :condition (h3 / have-percentage-maximal-inhibitory-concentration-01
+                           :ARG1 s2
+                           :ARG2 "50"
+                           :ARG4 (m2 / more-than
+                                     :op1 (c7 / concentration-quantity
+                                              :quant "1"
+                                              :unit (m4 / micromolar)))
+                           :time a2)))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This concentration was chosen based on the data from phase I studies, which indicated that 1 <i>μ</i>ℳ was within the average plasma concentrations of selumetinib achieved in patients at the maximum tolerated dose for this agent (<xref ref-type="bibr" rid="bib2">Adjei <i>et al</i>, 2008</xref>).
+# ::file a_pmid_2256_9000_101.txt
+# ::date 2015-06-06T08:00:48
+# ::id a_pmid_2256_9000.101
+(c / choose-01
+   :ARG1 (c2 / concentrate-02
+             :mod (t / this))
+   :ARG1-of (b / base-02
+               :ARG2 (d / data
+                        :source (s / study-01
+                                   :mod (p / phase
+                                           :ord (o / ordinal-entity
+                                                   :value "1")))
+                        :ARG0-of (i / indicate-01
+                                    :ARG1 (i2 / include-01
+                                              :ARG1 (c3 / concentration-quantity
+                                                        :quant "1"
+                                                        :unit (m / micromolar))
+                                              :ARG2 (c4 / concentrate-02
+                                                        :ARG1 (s2 / small-molecule
+                                                                  :name (n / name
+                                                                           :op1 "selumetinib"))
+                                                        :location (p2 / plasma)
+                                                        :ARG1-of (a / average-04)
+                                                        :ARG1-of (a2 / achieve-01
+                                                                     :location (p3 / patient))
+                                                        :quant (d2 / dose
+                                                                   :quant (m2 / maximum)
+                                                                   :ARG1-of (t2 / tolerate-01
+                                                                                :topic (a3 / agent
+                                                                                           :mod (t3 / this)))))))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (p4 / publication-91
+                          :ARG0 (a4 / and
+                                    :op1 (p5 / person
+                                             :name (n2 / name
+                                                       :op1 "Adjei"))
+                                    :op2 (p6 / person
+                                             :mod (o2 / other)))
+                          :time (d4 / date-entity
+                                    :year "2008"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Overall, 67% (four of six) CRC and 40% (two of five) NSCLC cell lines had a selumetinib IC<sub>50</sub> of ⩽1 <i>μ</i>ℳ.
+# ::file a_pmid_2256_9000_102.txt
+# ::date 2015-06-06T10:23:23
+# ::id a_pmid_2256_9000.102
+(h / have-03
+   :ARG0 (a / and
+            :op1 (c / cell-line
+                    :quant "4"
+                    :ARG1-of (i / include-91
+                                :ARG2 (c2 / cell-line
+                                          :quant "6"
+                                          :mod (d2 / disease
+                                                   :name (n / name
+                                                            :op1 "CRC")))
+                                :ARG3 (p / percentage-entity
+                                         :value "67")))
+            :op2 (c3 / cell-line
+                     :quant "2"
+                     :ARG1-of (i2 / include-91
+                                  :ARG2 (c4 / cell-line
+                                            :quant "5"
+                                            :mod (d / disease
+                                                    :name (n3 / name
+                                                              :op1 "NSCLC")))
+                                  :ARG3 (p2 / percentage-entity
+                                            :value "40"))))
+   :ARG1 (s / small-molecule
+            :name (n6 / name
+                      :op1 "selumetinib")
+            :ARG1-of (h2 / have-percentage-maximal-inhibitory-concentration-01
+                         :ARG2 "50"
+                         :ARG4 (c5 / concentration-quantity
+                                   :quant (o / or
+                                             :op1 (l / less-than
+                                                     :op1 "1")
+                                             :op2 "1")
+                                   :unit (m / micromolar))))
+   :mod (o2 / overall))
+
+# ::save-date Tue Mar 1, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In particular, among the sensitive cancer cell lines there were four, two NSCLC (Calu3 and H1299) and two CRC (HCT116 and SW620), extremely sensitive to selumetinib with an IC<sub>50</sub> of ⩽0.01 <i>μ</i>ℳ (<xref ref-type="fig" rid="fig1">Figure 1A and B</xref>).
+# ::file a_pmid_2256_9000_103.txt
+# ::date 2015-06-06T10:49:58
+# ::id a_pmid_2256_9000.103
+(i / include-91
+   :ARG1 (c / cell-line
+            :quant "4"
+            :mod (d / disease
+                    :wiki "Cancer"
+                    :name (n / name
+                             :op1 "cancer"))
+            :ARG0-of (s / sensitive-03)
+            :ARG2-of (i2 / include-91
+                         :ARG1 (a / and
+                                  :op1 (c2 / cell-line
+                                           :quant "2"
+                                           :ARG1-of (m / mean-01
+                                                       :ARG2 (a2 / and
+                                                                 :op1 (c3 / cell-line
+                                                                          :name (n3 / name
+                                                                                    :op1 "Calu3"))
+                                                                 :op2 (c4 / cell-line
+                                                                          :name (n4 / name
+                                                                                    :op1 "H1299"))))
+                                           :mod (d3 / disease
+                                                    :name (n2 / name
+                                                              :op1 "NSCLC")))
+                                  :op2 (c5 / cell-line
+                                           :quant "2"
+                                           :ARG1-of (m2 / mean-01
+                                                        :ARG2 (a3 / and
+                                                                  :op1 (c6 / cell-line
+                                                                           :name (n6 / name
+                                                                                     :op1 "HCT116"))
+                                                                  :op2 (c7 / cell-line
+                                                                           :name (n7 / name
+                                                                                     :op1 "SW620"))))
+                                           :mod (d4 / disease
+                                                    :name (n5 / name
+                                                              :op1 "CRC")))
+                                  :ARG0-of (s2 / sensitive-03
+                                               :ARG1 (s3 / small-molecule
+                                                         :name (n8 / name
+                                                                   :op1 "selumetinib")
+                                                         :ARG1-of (h / have-percentage-maximal-inhibitory-concentration-01
+                                                                     :ARG2 "50"
+                                                                     :ARG4 (c8 / concentration-quantity
+                                                                               :quant (o / or
+                                                                                         :op1 (l / less-than
+                                                                                                 :op1 "0.01")
+                                                                                         :op2 "0.01")
+                                                                               :unit (m3 / micromolar))))
+                                               :degree (e2 / extreme)))))
+   :ARG2 (c9 / cell-line
+             :mod d
+             :ARG0-of s)
+   :mod (p / particular)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a4 / and
+                          :op1 (f / figure
+                                  :mod "1A")
+                          :op2 (f2 / figure
+                                   :mod "1B"))))
+
+# ::save-date Wed Jun 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To investigate the mechanisms underlying the different sensitivities to the drug, we conducted experiments on a group of four cancer cell lines representing both selumetinib-sensitive (HCT116 and Calu3) and selumetinib-resistant (HCT15 and H460) models.
+# ::file a_pmid_2256_9000_104.txt
+# ::date 2015-06-06T11:20:38
+# ::id a_pmid_2256_9000.104
+(c / conduct-01
+   :ARG0 (w / we)
+   :ARG1 (e / experiment-01
+            :ARG0 w
+            :ARG1 (g / group
+                     :consist-of (c2 / cell-line
+                                     :quant "4"
+                                     :mod (d / disease
+                                             :wiki "Cancer"
+                                             :name (n / name
+                                                      :op1 "cancer"))
+                                     :ARG0-of (r / represent-01
+                                                 :ARG1 (a / and
+                                                          :op1 (m / model-01
+                                                                  :ARG0-of (s / sensitive-03
+                                                                              :ARG1 (s2 / small-molecule
+                                                                                        :name (n2 / name
+                                                                                                  :op1 "selumetinib")))
+                                                                  :ARG1-of (m2 / mean-01
+                                                                               :ARG2 (a2 / and
+                                                                                         :op1 (c3 / cell-line
+                                                                                                  :name (n3 / name
+                                                                                                            :op1 "HCT116"))
+                                                                                         :op2 (c4 / cell-line
+                                                                                                  :name (n4 / name
+                                                                                                            :op1 "Calu3")))))
+                                                          :op2 (m3 / model-01
+                                                                   :ARG0-of (r2 / resist-01
+                                                                                :ARG1 s2)
+                                                                   :ARG1-of (m4 / mean-01
+                                                                                :ARG2 (a3 / and
+                                                                                          :op1 (c5 / cell-line
+                                                                                                   :name (n5 / name
+                                                                                                             :op1 "HCT15"))
+                                                                                          :op2 (c6 / cell-line
+                                                                                                   :name (n6 / name
+                                                                                                             :op1 "H460"))))))))))
+   :purpose (i / investigate-01
+               :ARG0 w
+               :ARG1 (m5 / mechanism
+                         :ARG0-of (u / underlie-01
+                                     :ARG1 (s3 / sensitive-03
+                                               :ARG1 (d2 / drug)
+                                               :ARG1-of (d3 / differ-02))))))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We conducted flow cytometric analysis to compare the cell-cycle distribution following treatment of the selumetinib-sensitive HCT116 and Calu3 cancer cell lines and of the selumetinib-resistant HCT15 and H460 cancer cell lines.
+# ::file a_pmid_2256_9000_106.txt
+# ::date 2015-06-06T12:29:55
+# ::id a_pmid_2256_9000.106
+(c / conduct-01
+   :ARG0 (w / we)
+   :ARG1 (a / analyze-01
+            :manner (c9 / cytometry
+                        :mod (f2 / flow)))
+   :purpose (c2 / compare-01
+                :ARG0 w
+                :ARG1 (d / distribute-01
+                         :ARG1 (c3 / cycle-02
+                                   :ARG1 (c4 / cell))
+                         :ARG1-of (f / follow-01
+                                     :ARG2 (t / treat-04
+                                              :ARG1 (a2 / and
+                                                        :op1 (a3 / and
+                                                                 :op1 (c5 / cell-line
+                                                                          :name (n2 / name
+                                                                                    :op1 "HCT116"))
+                                                                 :op2 (c6 / cell-line
+                                                                          :name (n3 / name
+                                                                                    :op1 "Calu3"))
+                                                                 :mod (d2 / disease
+                                                                          :wiki "Cancer"
+                                                                          :name (n4 / name
+                                                                                    :op1 "cancer"))
+                                                                 :ARG0-of (s / sensitive-03
+                                                                             :ARG1 (s2 / small-molecule
+                                                                                       :name (n5 / name
+                                                                                                 :op1 "selumetinib"))))
+                                                        :op2 (a4 / and
+                                                                 :op1 (c7 / cell-line
+                                                                          :name (n6 / name
+                                                                                    :op1 "HCT15"))
+                                                                 :op2 (c8 / cell-line
+                                                                          :name (n7 / name
+                                                                                    :op1 "H460"))
+                                                                 :mod d2
+                                                                 :ARG0-of (r / resist-01
+                                                                             :ARG1 s2))))))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cancer cells were treated with selumetinib at the IC<sub>50</sub> values for inhibition of cell proliferation for 24, 48, and 72 h.
+# ::file a_pmid_2256_9000_107.txt
+# ::date 2015-06-06T12:47:55
+# ::id a_pmid_2256_9000.107
+(t / treat-04
+   :ARG1 (c / cell
+            :mod (d / disease
+                    :wiki "Cancer"
+                    :name (n / name
+                             :op1 "cancer")))
+   :ARG2 (s / small-molecule
+            :name (n2 / name
+                      :op1 "selumetinib")
+            :ARG1-of (h2 / have-percentage-maximal-inhibitory-concentration-01
+                         :ARG2 "50"
+                         :ARG3 (i / inhibit-01
+                                  :ARG1 (p / proliferate-01
+                                           :ARG0 (c2 / cell)))))
+   :duration (t3 / temporal-quantity
+                 :quant (a / and
+                           :op1 "24"
+                           :op2 "48"
+                           :op3 "72")
+                 :unit (h / hour)))
+
+# ::save-date Wed Jun 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Twenty-four hours selumetinib treatment caused cell accumulation in the G1 phase and concomitant reduction in the S phase as compared with controls in selumetinib-sensitive cancer cell lines (<xref ref-type="fig" rid="fig2">Figure 2A</xref>).
+# ::file a_pmid_2256_9000_108.txt
+# ::date 2015-06-06T12:54:12
+# ::id a_pmid_2256_9000.108
+(c / cause-01
+   :ARG0 (t / treat-04
+            :ARG2 (s / small-molecule
+                     :name (n / name
+                              :op1 "selumetinib"))
+            :duration (t2 / temporal-quantity
+                          :quant "24"
+                          :unit (h / hour)))
+   :ARG1 (a / and
+            :op1 (a2 / accumulate-01
+                     :ARG1 (c2 / cell)
+                     :time (p / phase
+                              :name (n2 / name
+                                        :op1 "G1")))
+            :op2 (r / reduce-01
+                    :ARG1 c2
+                    :mod (c3 / concomitant)
+                    :time (p2 / phase
+                              :name (n3 / name
+                                        :op1 "S")))
+            :compared-to (m / molecular-physical-entity
+                            :ARG2-of (c4 / control-01)
+                            :location (c5 / cell-line
+                                          :mod (d / disease
+                                                  :wiki "Cancer"
+                                                  :name (n4 / name
+                                                            :op1 "cancer"))
+                                          :ARG0-of (s2 / sensitive-03
+                                                       :ARG1 s))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "2A")))
+
+# ::save-date Tue Aug 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The arrest in the G1 phase was significantly increased with longer (48 and 72 h) treatment with selumetinib in both HCT116 and Calu3 cells.
+# ::file a_pmid_2256_9000_109.txt
+# ::date 2015-06-06T13:04:44
+# ::id a_pmid_2256_9000.109
+(i / increase-01
+   :ARG1 (a / arrest-02
+            :time (p / phase
+                     :name (n / name
+                              :op1 "G1")))
+   :ARG2 (s / significant-02)
+   :instrument (t / treat-04
+                  :ARG2 (s2 / small-molecule
+                            :name (n2 / name
+                                      :op1 "selumetinib"))
+                  :ARG1-of (l / long-03
+                              :degree (m / more)
+                              :ARG1-of (m2 / mean-01
+                                           :ARG2 (a4 / and
+                                                     :op1 (t2 / temporal-quantity
+                                                              :quant "48"
+                                                              :unit (h / hour))
+                                                     :op2 (t3 / temporal-quantity
+                                                              :quant "72"
+                                                              :unit (h2 / hour))))))
+   :location (a3 / and
+                 :op1 (c / cell-line
+                         :name (n3 / name
+                                   :op1 "HCT116"))
+                 :op2 (c2 / cell-line
+                          :name (n4 / name
+                                    :op1 "Calu3"))))
+
+# ::save-date Wed Jun 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This effect was also paralleled by a time-dependent reduction in the S phase in both selumetinib-sensitive cancer cell lines (<xref ref-type="fig" rid="fig2">Figure 2A</xref>).
+# ::file a_pmid_2256_9000_110.txt
+# ::date 2015-06-06T13:11:29
+# ::id a_pmid_2256_9000.110
+(p / parallel-01
+   :ARG0 (a / affect-01
+            :mod (t / this))
+   :ARG1 (r / reduce-01
+            :ARG0-of (d / depend-01
+                        :ARG1 (t2 / time))
+            :time (p2 / phase
+                      :name (n / name
+                               :op1 "S"))
+            :location (c / cell-line
+                         :mod (d2 / disease
+                                  :wiki "Cancer"
+                                  :name (n2 / name
+                                            :op1 "cancer"))
+                         :ARG0-of (s / sensitive-03
+                                     :ARG1 (s2 / small-molecule
+                                               :name (n3 / name
+                                                         :op1 "selumetinib")))
+                         :mod (b / both)))
+   :mod (a2 / also)
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "2A")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, no effect was observed on cell-cycle distribution in the two selumetinib-resistant HCT15 and H460 cells (<xref ref-type="fig" rid="fig2">Figure 2A</xref>).
+# ::file a_pmid_2256_9000_111.txt
+# ::date 2015-06-06T13:17:31
+# ::id a_pmid_2256_9000.111
+(c / contrast-01
+   :ARG2 (o / observe-01
+            :ARG1 (a / affect-01
+                     :polarity "-"
+                     :ARG1 (d / distribute-01
+                              :ARG1 (c2 / cycle-02
+                                        :ARG1 (c3 / cell))))
+            :location (a2 / and
+                          :quant "2"
+                          :op1 (c4 / cell-line
+                                   :name (n / name
+                                            :op1 "HCT15"))
+                          :op2 (c5 / cell-line
+                                   :name (n2 / name
+                                             :op1 "H460"))
+                          :ARG0-of (r / resist-01
+                                      :ARG1 (s / small-molecule
+                                               :name (n3 / name
+                                                         :op1 "selumetinib")))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "2A")))
+
+# ::save-date Wed Jun 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These results were supported also by <xref ref-type="bibr" rid="bib18">Garon <i>et al</i> (2010)</xref>, in which the block in G1 phase inducted by selumetinib is evident only in sensitive cell lines.
+# ::file a_pmid_2256_9000_112.txt
+# ::date 2015-06-06T13:34:03
+# ::id a_pmid_2256_9000.112
+(s / support-01
+   :ARG0 (p / publication-91
+            :ARG0 (a / and
+                     :op1 (p2 / person
+                              :name (n / name
+                                       :op1 "Garon"))
+                     :op2 (p3 / person
+                              :mod (o / other)))
+            :time (d / date-entity
+                     :year "2010")
+            :location-of (e / evident
+                            :domain (b / block-01
+                                       :time (p4 / phase
+                                                 :name (n2 / name
+                                                           :op1 "G1"))
+                                       :ARG2-of (i / induce-01
+                                                   :ARG0 (s2 / small-molecule
+                                                             :name (n3 / name
+                                                                       :op1 "selumetinib"))))
+                            :location (c / cell-line
+                                         :ARG0-of (s3 / sensitive-03)
+                                         :mod (o2 / only))))
+   :ARG1 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :mod (a2 / also))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Several preclinical models have demonstrated that selumetinib act as a cytotoxic drug rather than cytostatic by inducing proapoptotic activity (<xref ref-type="bibr" rid="bib23">Huynh <i>et al</i>, 2007a</xref>; <xref ref-type="bibr" rid="bib24">Huynh <i>et al</i>, 2007b</xref>; <xref ref-type="bibr" rid="bib29">Meng <i>et al</i>, 2009</xref>; <xref ref-type="bibr" rid="bib28">Meng <i>et al</i>, 2010</xref>).
+# ::file a_pmid_2256_9000_114.txt
+# ::date 2015-06-06T13:49:46
+# ::id a_pmid_2256_9000.114
+(d / demonstrate-01
+   :ARG0 (m / model-01
+            :mod (p / preclinical)
+            :quant (s / several))
+   :ARG1 (a / act-01
+            :ARG0 (s2 / small-molecule
+                      :name (n / name
+                               :op1 "selumetinib"))
+            :ARG1 (d2 / drug
+                      :mod (c / cytotoxic)
+                      :ARG1-of (i / instead-of-91
+                                  :ARG2 (d3 / drug
+                                            :mod (c2 / cytostatic))))
+            :manner (i2 / induce-01
+                        :ARG2 (a2 / activity-06
+                                  :ARG0-of (f / favor-01
+                                              :ARG1 (a3 / apoptosis)))))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (a4 / and
+                          :op1 (p2 / publication-91
+                                   :ARG0 (a5 / and
+                                             :op1 (p3 / person
+                                                      :name (n2 / name
+                                                                :op1 "Huynh"))
+                                             :op2 (p4 / person
+                                                      :mod (o / other)))
+                                   :time (d5 / date-entity
+                                             :year "2007"))
+                          :op2 (p5 / publication-91
+                                   :ARG0 a5
+                                   :time d5)
+                          :op3 (p6 / publication-91
+                                   :ARG0 (a6 / and
+                                             :op1 (p7 / person
+                                                      :name (n3 / name
+                                                                :op1 "Meng"))
+                                             :op2 p4)
+                                   :time (d6 / date-entity
+                                             :year "2009"))
+                          :op4 (p8 / publication-91
+                                   :ARG0 a6
+                                   :time (d7 / date-entity
+                                             :year "2010")))))
+
+# ::save-date Fri Jan 15, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To confirm this effect, the induction of apoptosis was evaluated using an FACS-based assay for Annexin V and PI staining.
+# ::file a_pmid_2256_9000_115.txt
+# ::date 2015-06-06T14:15:55
+# ::id a_pmid_2256_9000.115
+(e / evaluate-01
+   :ARG1 (i / induce-01
+            :ARG2 (a / apoptosis))
+   :manner (u / use-01
+              :ARG1 (a2 / assay-01
+                        :ARG1-of (b / base-02
+                                    :ARG2 (t / thing
+                                             :name (n / name
+                                                      :op1 "FACS"))))
+              :purpose (s / stain-01
+                          :ARG1 (a3 / and
+                                    :op1 (p / protein
+                                            :name (n2 / name
+                                                      :op1 "Annexin"
+                                                      :op2 "V"))
+                                    :op2 (s2 / small-molecule
+                                             :name (n3 / name
+                                                       :op1 "PI")))))
+   :purpose (c / confirm-01
+               :ARG1 (a4 / affect-01
+                         :mod (t2 / this))))
+
+# ::save-date Fri Dec 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt After 24 h of selumetinib treatment, a significant induction of apoptosis was detected in the sensitive HCT116 and Calu3 cancer cell lines, which was maximal following 72 h of treatment (<xref ref-type="fig" rid="fig2">Figure 2B</xref>).
+# ::file a_pmid_2256_9000_116.txt
+# ::date 2015-06-06T14:37:57
+# ::id a_pmid_2256_9000.116
+(d / detect-01
+   :ARG1 (i / induce-01
+            :ARG2 (a / apoptosis)
+            :ARG1-of (s / significant-02)
+            :mod (m / maximal)
+            :ARG1-of (f / follow-01
+                        :ARG2 (t / treat-04
+                                 :ARG2 (s2 / small-molecule
+                                           :name (n / name
+                                                    :op1 "selumetinib"))
+                                 :duration (t2 / temporal-quantity
+                                               :quant "72"
+                                               :unit (h / hour)))))
+   :location (a2 / and
+                 :op1 (c / cell-line
+                         :name (n2 / name
+                                   :op1 "HCT116"))
+                 :op2 (c2 / cell-line
+                          :name (n3 / name
+                                    :op1 "Calu3"))
+                 :ARG0-of (s3 / sensitive-03)
+                 :mod (d2 / disease
+                          :wiki "Cancer"
+                          :name (n4 / name
+                                    :op1 "cancer")))
+   :time (a3 / after
+             :op1 (t3 / treat-04
+                      :ARG2 s2
+                      :duration (t4 / temporal-quantity
+                                    :quant "24"
+                                    :unit h)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "2B")))
+
+# ::save-date Wed Jun 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, apoptosis was not detectable following treatment with selumetinib in the two resistant HCT15 and H460 cancer cell lines (<xref ref-type="fig" rid="fig2">Figure 2B</xref>).
+# ::file a_pmid_2256_9000_117.txt
+# ::date 2015-06-06T14:49:33
+# ::id a_pmid_2256_9000.117
+(a / and
+   :op2 (p / possible-01
+           :polarity "-"
+           :ARG1 (d / detect-01
+                    :ARG1 (a2 / apoptosis)
+                    :location (a3 / and
+                                  :quant "2"
+                                  :op1 (c / cell-line
+                                          :name (n / name
+                                                   :op1 "HCT15"))
+                                  :op2 (c2 / cell-line
+                                           :name (n2 / name
+                                                     :op1 "H460"))
+                                  :ARG0-of (r / resist-01)
+                                  :mod (d2 / disease
+                                           :wiki "Cancer"
+                                           :name (n3 / name
+                                                     :op1 "cancer"))))
+           :ARG1-of (f / follow-01
+                       :ARG2 (t / treat-04
+                                :ARG2 (s / small-molecule
+                                         :name (n4 / name
+                                                   :op1 "selumetinib")))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "2B")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To assess the effects of selumetinib treatment on key intracellular downstream signalling pathways, western blots were performed to assess total and phosphorylated EGFR and downstream effectors (total MEK1/2, phospho-MEK1/2, total MAPK, phospho-MAPK, total AKT, phospho-AKT, total 4EBP1, and phosho-4EBP1).
+# ::file a_pmid_2256_9000_119.txt
+# ::date 2015-06-06T14:59:49
+# ::id a_pmid_2256_9000.119
+(p / perform-01
+   :ARG1 (i2 / immunoblot-01)
+   :purpose (a / assess-01
+               :ARG1 (a2 / and
+                         :op1 (e / enzyme
+                                 :name (n2 / name
+                                           :op1 "EGFR")
+                                 :mod (t2 / total-01))
+                         :op2 (e2 / enzyme
+                                  :name (n3 / name
+                                            :op1 "EGFR")
+                                  :ARG3-of (p2 / phosphorylate-01
+                                               :ARG3 e5
+                                               :ARG3 e7
+                                               :ARG3 e9
+                                               :ARG3 p4))
+                         :op3 (e3 / effector
+                                  :location (d / downstream)
+                                  :ARG1-of (m / mean-01
+                                              :ARG2 (a3 / and
+                                                        :op1 (e4 / enzyme
+                                                                 :name (n4 / name
+                                                                           :op1 "MEK1/2")
+                                                                 :mod t2)
+                                                        :op2 (e5 / enzyme
+                                                                 :name (n5 / name
+                                                                           :op1 "MEK1/2"))
+                                                        :op3 (e6 / enzyme
+                                                                 :name (n6 / name
+                                                                           :op1 "MAPK")
+                                                                 :mod t2)
+                                                        :op4 (e7 / enzyme
+                                                                 :name (n7 / name
+                                                                           :op1 "MAPK"))
+                                                        :op5 (e8 / enzyme
+                                                                 :name (n8 / name
+                                                                           :op1 "AKT")
+                                                                 :mod t2)
+                                                        :op6 (e9 / enzyme
+                                                                 :name (n9 / name
+                                                                           :op1 "AKT"))
+                                                        :op7 (p3 / protein
+                                                                 :name (n10 / name
+                                                                            :op1 "4EBP1")
+                                                                 :mod t2)
+                                                        :op8 (p4 / protein
+                                                                 :name (n11 / name
+                                                                            :op1 "4EBP1")))))))
+   :purpose (a4 / assess-01
+                :ARG1 (a5 / affect-01
+                          :ARG0 (t3 / treat-04
+                                    :ARG2 (s / small-molecule
+                                             :name (n12 / name
+                                                        :op1 "selumetinib")))
+                          :ARG1 (p5 / pathway
+                                    :ARG0-of (s2 / signal-07
+                                                 :direction (d2 / downstream))
+                                    :mod (i / intracellular)
+                                    :ARG1-of (k / key-02)))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cancer cells were evaluated at baseline and at different time points after treatment with selumetinib at 0.05 <i>μ</i>ℳ.
+# ::file a_pmid_2256_9000_120.txt
+# ::date 2015-06-07T05:13:52
+# ::id a_pmid_2256_9000.120
+(e / evaluate-01
+   :ARG1 (c / cell
+            :mod (d / disease
+                    :wiki "Cancer"
+                    :name (n / name
+                             :op1 "cancer")))
+   :manner (a / and
+              :op1 (b / baseline)
+              :op2 (p / point
+                      :mod (t / time)
+                      :ARG1-of (d2 / differ-02)))
+   :time (a2 / after
+             :op1 (t2 / treat-04
+                      :ARG2 (s / small-molecule
+                               :name (n2 / name
+                                         :op1 "selumetinib")
+                               :quant (c2 / concentration-quantity
+                                          :quant "0.05"
+                                          :unit (m / micromolar))))))
+
+# ::save-date Thu Jun 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No change in total and phosphorylated EGFR expression was observed in both selumetinib-sensitive and selumetinib-resistant cancer cell lines (<xref ref-type="fig" rid="fig3">Figure 3A–D</xref>).
+# ::file a_pmid_2256_9000_121.txt
+# ::date 2015-06-07T05:28:29
+# ::id a_pmid_2256_9000.121
+(o / observe-01
+   :ARG1 (c / change-01
+            :polarity "-"
+            :ARG1 (e / express-03
+                     :ARG2 (a / and
+                              :op1 (e2 / enzyme
+                                       :name (n / name
+                                                :op1 "EGFR")
+                                       :mod (t / total-01))
+                              :op2 (e3 / enzyme
+                                       :name (n2 / name
+                                                 :op1 "EGFR")
+                                       :ARG3-of (p / phosphorylate-01)))))
+   :location (a2 / and
+                 :op1 (c2 / cell-line
+                          :ARG0-of (s / sensitive-03
+                                      :ARG1 (s2 / small-molecule
+                                                :name (n3 / name
+                                                          :op1 "selumetinib"))))
+                 :op2 (c3 / cell-line
+                          :ARG0-of (r / resist-01
+                                      :ARG1 s2))
+                 :mod (d / disease
+                         :wiki "Cancer"
+                         :name (n4 / name
+                                   :op1 "cancer")))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a3 / and
+                          :op1 (f / figure
+                                  :mod "3A")
+                          :op2 (f2 / figure
+                                   :mod "3B")
+                          :op3 (f3 / figure
+                                   :mod "3C")
+                          :op4 (f4 / figure
+                                   :mod "3D"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Treatment with selumetinib caused a time-dependent inhibition in phospho-MEK1/2 with a complete signal suppression within 60 or 15 min of treatment in HCT116 and Calu3 cells, respectively (<xref ref-type="fig" rid="fig3">Figure 3A and B</xref>).
+# ::file a_pmid_2256_9000_122.txt
+# ::date 2015-06-07T05:38:40
+# ::id a_pmid_2256_9000.122
+(c / cause-01
+   :ARG0 (t / treat-04
+            :ARG2 (s / small-molecule
+                     :name (n / name
+                              :op1 "selumetinib")))
+   :ARG1 (a4 / and
+             :op1 (i / inhibit-01
+                     :ARG0-of (d / depend-01
+                                 :ARG1 (t2 / time)))
+             :op2 (s2 / suppress-01
+                      :ARG1 (s3 / signal-07)
+                      :degree (c2 / complete-01)
+                      :time (a / after
+                               :op1 (t3 / treat-04
+                                        :ARG2 s
+                                        :quant (u / up-to
+                                                  :op1 (t4 / temporal-quantity
+                                                           :quant "60"
+                                                           :unit (m / minute)))))
+                      :location (c3 / cell-line
+                                    :name (n2 / name
+                                              :op1 "HCT116")))
+             :op3 (s4 / suppress-01
+                      :ARG1 s3
+                      :degree c2
+                      :time (a2 / after
+                                :op1 (t5 / treat-04
+                                         :ARG2 s)
+                                :quant (u2 / up-to
+                                           :op1 (t6 / temporal-quantity
+                                                    :quant "15"
+                                                    :unit m)))
+                      :location (c4 / cell-line
+                                    :name (n3 / name
+                                              :op1 "Calu3"))))
+   :location (e / enzyme
+                :name (n4 / name
+                          :op1 "MEK1/2")
+                :ARG3-of (p / phosphorylate-01))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a3 / and
+                          :op1 (f / figure
+                                  :mod "3A")
+                          :op2 (f2 / figure
+                                   :mod "3B"))))
+
+# ::save-date Wed Jun 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This inhibition was sustained for 24 h of selumetinib treatment in both cancer cell lines.
+# ::file a_pmid_2256_9000_123.txt
+# ::date 2015-06-07T05:58:59
+# ::id a_pmid_2256_9000.123
+(s / sustain-01
+   :ARG1 (i / inhibit-01
+            :mod (t / this))
+   :duration (t2 / treat-04
+                 :ARG2 (s2 / small-molecule
+                           :name (n / name
+                                    :op1 "selumetinib"))
+                 :duration (t3 / temporal-quantity
+                               :quant "24"
+                               :unit (h / hour)))
+   :location (c / cell-line
+                :mod (d / disease
+                        :wiki "Cancer"
+                        :name (n2 / name
+                                  :op1 "cancer"))
+                :mod (b / both)))
+
+# ::save-date Thu Jun 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, MEK1/2 inhibition of protein phosphorylation was less effective with only a slight reduction in pospho-MEK1/2 in the two selumetinib-resistant HCT15 and H460 cancer cell lines (<xref ref-type="fig" rid="fig3">Figure 3C and D</xref>).
+# ::file a_pmid_2256_9000_124.txt
+# ::date 2015-06-07T06:03:58
+# ::id a_pmid_2256_9000.124
+(c / contrast-01
+   :ARG2 (e / effective-04
+            :ARG0 (i / inhibit-01
+                     :ARG0 (e3 / enzyme
+                               :name (n6 / name
+                                         :op1 "MEK1/2"))
+                     :ARG1 (p2 / phosphorylate-01
+                               :ARG1 (p3 / protein)))
+            :ARG1 (r / reduce-01
+                     :ARG1 (e2 / enzyme
+                               :name (n / name
+                                        :op1 "MEK1/2")
+                               :ARG3-of (p / phosphorylate-01))
+                     :ARG2 (s / slight)
+                     :mod (o / only)
+                     :location (a / and
+                                  :quant "2"
+                                  :op1 (c2 / cell-line
+                                           :name (n2 / name
+                                                     :op1 "HCT15"))
+                                  :op2 (c3 / cell-line
+                                           :name (n3 / name
+                                                     :op1 "H460"))
+                                  :mod (d / disease
+                                          :wiki "Cancer"
+                                          :name (n4 / name
+                                                    :op1 "cancer"))
+                                  :ARG0-of (r2 / resist-01
+                                               :ARG1 (s2 / small-molecule
+                                                         :name (n5 / name
+                                                                   :op1 "selumetinib")))))
+            :degree (l / less))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f / figure
+                                  :mod "3C")
+                          :op2 (f2 / figure
+                                   :mod "3D"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, MAPK phosphorylation was completely blocked following selumetinib treatment in HCT116 and Calu3.
+# ::file a_pmid_2256_9000_125.txt
+# ::date 2015-06-07T06:11:15
+# ::id a_pmid_2256_9000.125
+(a / and
+   :op2 (b / block-01
+           :ARG1 (p / phosphorylate-01
+                    :ARG1 (e / enzyme
+                             :name (n / name
+                                      :op1 "MAPK")))
+           :degree (c / complete-01)
+           :ARG1-of (f / follow-01
+                       :ARG2 (t / treat-04
+                                :ARG2 (s / small-molecule
+                                         :name (n2 / name
+                                                   :op1 "selumetinib"))))
+           :location (a2 / and
+                         :op1 (c2 / cell-line
+                                  :name (n3 / name
+                                            :op1 "HCT116"))
+                         :op2 (c3 / cell-line
+                                  :name (n4 / name
+                                            :op1 "Calu3")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, in the two selumetinib-resistant HCT15 and H460 cells MAPK phosphorylation was only reduced but never completely abrogated (<xref ref-type="fig" rid="fig3">Figure 3C and D</xref>).
+# ::file a_pmid_2256_9000_126.txt
+# ::date 2015-06-07T06:20:52
+# ::id a_pmid_2256_9000.126
+(c / contrast-01
+   :ARG2 (c2 / contrast-01
+             :ARG1 (r / reduce-01
+                      :ARG1 (p / phosphorylate-01
+                               :ARG1 (e / enzyme
+                                        :name (n / name
+                                                 :op1 "MAPK")))
+                      :mod (o / only))
+             :ARG2 (a2 / abrogate-01
+                       :ARG1 p
+                       :degree (c3 / complete-01)
+                       :time (e2 / ever
+                                 :polarity "-"))
+             :location (a / and
+                          :quant "2"
+                          :op1 (c4 / cell-line
+                                   :name (n2 / name
+                                             :op1 "HCT15"))
+                          :op2 (c5 / cell-line
+                                   :name (n3 / name
+                                             :op1 "H460"))
+                          :ARG0-of (r2 / resist-01
+                                       :ARG1 (s / small-molecule
+                                                :name (n4 / name
+                                                          :op1 "selumetinib")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "3C")
+                         :op2 (f2 / figure
+                                  :mod "3D"))))
+
+# ::save-date Thu Jun 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next assessed the levels of AKT, phosphor-AKT, 4EBP1 and poshospho-4EBP1, which are downstream effectors of the PI3 kinase (PI3K) pathway.
+# ::file a_pmid_2256_9000_127.txt
+# ::date 2015-06-03T05:45:27
+# ::id a_pmid_2256_9000.127
+(a / assess-01
+   :ARG0 (w / we)
+   :ARG1 (a2 / and
+             :op1 (l / level
+                     :quant-of (e / enzyme
+                                  :name (n2 / name
+                                            :op1 "AKT")))
+             :op2 (l2 / level
+                      :quant-of (e2 / enzyme
+                                    :name (n3 / name
+                                              :op1 "AKT")
+                                    :ARG3-of (p / phosphorylate-01
+                                                :ARG3 p3)))
+             :op3 (l3 / level
+                      :quant-of (p2 / protein
+                                    :name (n4 / name
+                                              :op1 "4EBP1")))
+             :op4 (l4 / level
+                      :quant-of (p3 / protein
+                                    :name (n5 / name
+                                              :op1 "4EBP1"))))
+   :time (n / next)
+   :ARG0-of (a3 / affect-01
+                :ARG1 (p5 / pathway
+                          :name (n6 / name
+                                    :op1 "PI3"
+                                    :op2 "kinase"))
+                :mod (d / downstream)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Previous reports have suggested that resistance to selumetinib treatment in CRC and NSCLC cell lines was associated with baseline increased PI3K signalling (<xref ref-type="bibr" rid="bib7">Balmanno <i>et al</i>, 2009</xref>).
+# ::file a_pmid_2256_9000_128.txt
+# ::date 2015-06-03T12:50:47
+# ::id a_pmid_2256_9000.128
+(s / suggest-01
+   :ARG0 (t / thing
+            :ARG1-of (r / report-01)
+            :time (p / previous))
+   :ARG1 (a2 / associate-01
+             :ARG1 (r2 / resist-01
+                       :ARG1 (t2 / treat-04
+                                 :ARG2 (s4 / small-molecule
+                                           :name (n5 / name
+                                                     :op1 "selumetinib")))
+                       :location (a / and
+                                    :op1 (c / cell-line
+                                            :mod (d4 / disease
+                                                     :name (n / name
+                                                              :op1 "CRC")))
+                                    :op2 (c2 / cell-line
+                                             :mod (d3 / disease
+                                                      :name (n2 / name
+                                                                :op1 "NSCLC")))))
+             :ARG2 (s3 / signal-07
+                       :ARG0 (p2 / pathway
+                                 :name (n3 / name
+                                           :op1 "PI3K")
+                                 :ARG1-of (i / increase-01)
+                                 :mod (b / baseline))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p3 / publication-91
+                          :ARG0 (a3 / and
+                                    :op1 (p4 / person
+                                             :name (n4 / name
+                                                       :op1 "Balmanno"))
+                                    :op2 (p5 / person
+                                             :mod (o / other)))
+                          :time (d / date-entity
+                                   :year "2009"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, as depicted in <xref ref-type="fig" rid="fig3">Figure 3E–H</xref>, we failed to segregate the panel of 11 NSCLC and CRC cell lines into selumetinib-sensitive and selumetinib-resistant groups, by using the PI3K pathway.
+# ::file a_pmid_2256_9000_129.txt
+# ::date 2015-06-03T13:06:28
+# ::id a_pmid_2256_9000.129
+(h / have-concession-91
+   :ARG1 (f / fail-01
+            :ARG1 (w / we)
+            :ARG2 (s / segregate-01
+                     :ARG0 w
+                     :ARG1 (p / panel
+                              :consist-of (a3 / and
+                                              :quant "11"
+                                              :op1 (c / cell-line
+                                                      :mod (d2 / disease
+                                                               :name (n / name
+                                                                        :op1 "NSCLC")))
+                                              :op2 (c2 / cell-line
+                                                       :mod (d3 / disease
+                                                                :name (n2 / name
+                                                                          :op1 "CRC")))))
+                     :ARG2 (a2 / and
+                               :op1 (g / group
+                                       :ARG0-of (s2 / sensitive-03
+                                                    :ARG1 (s4 / small-molecule
+                                                              :name (n4 / name
+                                                                        :op1 "selumetinib"))))
+                               :op2 (g2 / group
+                                        :ARG0-of (r / resist-01
+                                                    :ARG1 s4)))
+                     :manner (u / use-01
+                                :ARG1 (p3 / pathway
+                                          :name (n3 / name
+                                                    :op1 "PI3K")))))
+   :ARG1-of (d / depict-01
+               :ARG0 (v / value-interval
+                        :op1 (f2 / figure
+                                 :mod "3E")
+                        :op2 (f3 / figure
+                                 :mod "3H"))))
+
+# ::save-date Fri Dec 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in <xref ref-type="fig" rid="fig4">Figure 4A and B</xref>, HCT116 and Calu3 xenograft growth was significantly inhibited by selumetinib treatment in a dose-dependent manner.
+# ::file a_pmid_2256_9000_131.txt
+# ::date 2015-06-03T13:21:01
+# ::id a_pmid_2256_9000.131
+(i / inhibit-01
+   :ARG0 (t / treat-04
+            :ARG2 (s4 / small-molecule
+                      :name (n3 / name
+                                :op1 "selumetinib")))
+   :ARG1 (g / grow-01
+            :ARG1 (a / and
+                     :op1 (x3 / xenograft
+                              :source (c / cell-line
+                                         :name (n / name
+                                                  :op1 "HCT116")))
+                     :op2 (x2 / xenograft
+                              :source (c2 / cell-line
+                                          :name (n4 / name
+                                                    :op1 "Calu3")))))
+   :ARG1-of (s / signify-01)
+   :manner (d / depend-01
+              :ARG0 g
+              :ARG1 (d2 / dose))
+   :ARG1-of (s3 / show-01
+                :ARG0 (a2 / and
+                          :op1 (f / figure
+                                  :mod "4A")
+                          :op2 (f2 / figure
+                                   :mod "4B"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As an example, at day 50 from the injection of cancer cells, the mean tumour volume in mice bearing HCT116 tumour xenografts and treated with selumetinib, 25 or 50 mg kg<sup>−1</sup> were 40% and 15%, respectively, as compared with control untreated mice.
+# ::file a_pmid_2256_9000_132.txt
+# ::date 2015-06-03T13:25:49
+# ::id a_pmid_2256_9000.132
+(a4 / and
+    :op1 (a / average-01
+            :ARG1 (v / volume
+                     :mod (t / tumor))
+            :ARG2 (p / percentage-entity
+                     :value "40")
+            :location (m2 / mouse
+                          :ARG0-of (b / bear-01
+                                      :ARG1 (x2 / xenograft
+                                                :source (t3 / tumor
+                                                            :mod (c / cell-line
+                                                                    :name (n / name
+                                                                             :op1 "HCT116")))))))
+    :op2 (a5 / average-01
+             :ARG1 v
+             :ARG2 (p2 / percentage-entity
+                       :value "15")
+             :location (m4 / mouse
+                           :ARG1-of (t4 / treat-04
+                                        :ARG2 (s2 / small-molecule
+                                                  :name (n4 / name
+                                                            :op1 "selumetinib")
+                                                  :quant (o / or
+                                                            :op1 (c3 / concentration-quantity
+                                                                     :quant "25"
+                                                                     :unit (m / milligram-per-kilogram))
+                                                            :op2 (c2 / concentration-quantity
+                                                                     :quant "50"
+                                                                     :unit (m3 / milligram-per-kilogram)))))))
+    :time (a2 / after
+              :op1 (i / inject-01
+                      :ARG2 (c4 / cell
+                                :mod (d / disease
+                                        :wiki "Cancer"
+                                        :name (n2 / name
+                                                  :op1 "cancer"))))
+              :quant (t5 / temporal-quantity
+                         :quant "50"
+                         :unit (d2 / day)))
+    :mod (r / respective)
+    :compared-to (m5 / mouse
+                     :ARG1-of (t6 / treat-04
+                                  :polarity "-")
+                     :mod (c6 / control))
+    :ARG0-of (e / exemplify-01))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similarly, at day 50 from the injection of cancer cells, the mean tumour volume in mice bearing Calu3 tumour xenografts and treated with selumetinib, 25 or 50 mg kg<sup>−1</sup> were 22% and 8%, respectively, as compared with control untreated mice.
+# ::file a_pmid_2256_9000_133.txt
+# ::date 2015-06-03T14:20:02
+# ::id a_pmid_2256_9000.133
+(a / and
+   :op1 (a2 / average-01
+            :ARG1 (v / volume
+                     :mod (t / tumor))
+            :ARG2 (p / percentage-entity
+                     :value "22")
+            :location (m / mouse
+                         :ARG0-of (b / bear-01
+                                     :ARG1 (x2 / xenograft
+                                               :source (t6 / tumor
+                                                           :mod (d3 / disease
+                                                                    :name (n / name
+                                                                             :op1 "cell-line"
+                                                                             :op2 "Calu3")))))))
+   :op2 (a3 / average-01
+            :ARG1 v
+            :ARG2 (p2 / percentage-entity
+                      :value "8")
+            :location (m2 / mouse
+                          :ARG1-of (t3 / treat-04
+                                       :ARG2 (s / small-molecule
+                                                :name (n3 / name
+                                                          :op1 "selumetinib")
+                                                :quant (o / or
+                                                          :op1 (c2 / concentration-quantity
+                                                                   :quant "25"
+                                                                   :unit (m3 / milligram-per-kilogram))
+                                                          :op2 (c3 / concentration-quantity
+                                                                   :quant "50"
+                                                                   :unit (m4 / milligram-per-kilogram)))))))
+   :mod (r / respective)
+   :compared-to (m5 / mouse
+                    :ARG1-of (t2 / treat-04
+                                 :polarity "-")
+                    :mod (c4 / control))
+   :ARG1-of (r2 / resemble-01)
+   :time (a4 / after
+             :op1 (i / inject-01
+                     :ARG2 (c5 / cell
+                               :mod (d2 / disease
+                                        :wiki "Cancer"
+                                        :name (n2 / name
+                                                  :op1 "cancer"))))
+             :quant (t5 / temporal-quantity
+                        :quant "50"
+                        :unit (d / day))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, selumetinib treatment was unable to affect tumour growth in both HCT15 and H460 tumour xenografts (<xref ref-type="fig" rid="fig4">Figure 4C and D</xref>).
+# ::file a_pmid_2256_9000_134.txt
+# ::date 2015-06-03T14:59:23
+# ::id a_pmid_2256_9000.134
+(c / contrast-01
+   :ARG2 (c2 / capable-01
+             :polarity "-"
+             :ARG1 (t / treat-04
+                      :ARG2 (s / small-molecule
+                               :name (n / name
+                                        :op1 "selumetinib")))
+             :ARG2 (a / affect-01
+                      :ARG0 t
+                      :ARG1 (g / grow-01
+                               :ARG1 (t2 / tumor)
+                               :location (a2 / and
+                                             :op1 (x3 / xenograft
+                                                      :source (t3 / tumor
+                                                                  :mod (c4 / cell-line
+                                                                           :name (n3 / name
+                                                                                     :op1 "HCT15"))))
+                                             :op2 (x / xenograft
+                                                     :source (t4 / tumor
+                                                                 :mod (c3 / cell-line
+                                                                          :name (n2 / name
+                                                                                    :op1 "H460"))))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "4C")
+                         :op2 (f2 / figure
+                                  :mod "4D"))))
+
+
+# ::save-date Thu Jun 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Identification of predictive biomarkers is becoming a fundamental aspect in the development of targeted agents.
+# ::file a_pmid_2256_9000_136.txt
+# ::date 2015-06-04T08:29:54
+# ::id a_pmid_2256_9000.136
+(b / become-01
+      :ARG1 (i / identify-01
+            :ARG1 (b2 / biomarker
+                  :ARG0-of (p / predict-01)))
+      :ARG2 (a / aspect
+            :topic (d / develop-02
+                  :ARG1 (a2 / agent
+                        :ARG1-of (t / target-01)))
+            :mod (f / fundamental)))
+
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt So far, several preclinical studies have been published trying to address this aspect for the sensitivity to MEK inhibitors, but, since different results have been reported, no univocal interpretation could be made (<xref ref-type="bibr" rid="bib7">Balmanno <i>et al</i>, 2009</xref>; <xref ref-type="bibr" rid="bib17">Dry <i>et al</i>, 2010</xref>; <xref ref-type="bibr" rid="bib18">Garon <i>et al</i>, 2010</xref>; <xref ref-type="bibr" rid="bib44">Tendler <i>et al</i>, 2010)</xref>.
+# ::file a_pmid_2256_9000_137.txt
+# ::date 2015-06-04T08:34:01
+# ::id a_pmid_2256_9000.137
+(c / contrast-01
+      :ARG1 (p2 / publish-01
+            :ARG1 (s2 / study-01
+                  :mod (p3 / preclinical)
+                  :quant (s3 / several)
+                  :ARG0-of (t2 / try-01
+                        :ARG1 (a / address-02
+                              :ARG0 s2
+                              :ARG1 (a2 / aspect
+                                    :mod (t3 / this)
+                                    :topic (s4 / sensitive-03
+                                          :ARG1 (m / molecular-physical-entity
+                                                :ARG0-of (i / inhibit-01
+                                                      :ARG1 (p / protein-family
+                                                            :name (n / name :op1 "MEK")))))))))
+            :time (s / so-far))
+      :ARG2 (p4 / possible-01
+            :ARG1 (i2 / interpret-01
+                  :polarity "-"
+                  :mod (u / univocal))
+            :ARG1-of (c2 / cause-01
+                  :ARG0 (r / report-01
+                        :ARG1 (t4 / thing
+                              :ARG2-of (r2 / result-01)
+                              :ARG1-of (d4 / differ-02)))))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (a3 / and
+                  :op1 (p5 / publication-91
+                        :ARG0 (a4 / and
+                              :op1 (p6 / person
+                                    :name (n2 / name :op1 "Balmanno"))
+                              :op2 (p7 / person
+                                    :mod (o / other)))
+                        :time (d / date-entity :year "2009"))
+                  :op2 (p8 / publication-91
+                        :ARG0 (a5 / and
+                              :op1 (p9 / person
+                                    :name (n3 / name :op1 "Dry"))
+                              :op2 p7)
+                        :time (d2 / date-entity :year "2010"))
+                  :op3 (p11 / publication-91
+                        :ARG0 (a6 / and
+                              :op1 (p12 / person
+                                    :name (n4 / name :op1 "Garon"))
+                              :op2 p7)
+                        :time d2)
+                  :op4 (p14 / publication-91
+                        :ARG0 (a7 / and
+                              :op1 (p15 / person
+                                    :name (n5 / name :op1 "Tendler"))
+                              :op2 p7)
+                        :time d2))))
+
+# ::save-date Wed Mar 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To identify specific profiles, which could allow identifying different molecular patterns of sensitivity or resistance to MEK inhibition, we first screened the intracellular signalling status of each cell lines.
+# ::file a_pmid_2256_9000_138.txt
+# ::date 2015-06-04T08:51:42
+# ::id a_pmid_2256_9000.138
+(s / screen-01
+   :ARG0 (w / we)
+   :ARG1 (s2 / status
+             :mod (s3 / signal-07
+                      :ARG1 (c / cell-line
+                               :mod (e2 / each))
+                      :mod (i4 / intracellular)))
+   :purpose (i / identify-01
+               :ARG0 w
+               :ARG1 (p2 / profile
+                         :ARG1-of (s4 / specific-02)
+                         :ARG0-of (a / allow-01
+                                     :ARG1 (i2 / identify-01
+                                               :ARG1 (p3 / pattern-01
+                                                         :ARG1 (o3 / or
+                                                                   :op1 (s5 / sensitive-03
+                                                                            :ARG1 (p / pattern
+                                                                                     :ARG0-of (i3 / inhibit-01
+                                                                                                  :ARG1 (e / enzyme
+                                                                                                           :name (n / name
+                                                                                                                    :op1 "MEK")))
+                                                                                     :mod (m2 / molecule)))
+                                                                   :op2 (r2 / resist-01
+                                                                            :ARG1 p))
+                                                         :mod (m / molecule)
+                                                         :ARG1-of (d / differ-02)))
+                                     :ARG1-of (p4 / possible-01))))
+   :time (f / first))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As depicted in <xref ref-type="supplementary-material" rid="sup1">Supplementary Figure 1A</xref>, the NCSLC and CRC cell lines displayed highly variable basal levels of total and phosphorylated EGFR, RAS, MEK, and AKT.
+# ::file a_pmid_2256_9000_139.txt
+# ::date 2015-06-04T09:02:19
+# ::id a_pmid_2256_9000.139
+(d / display-01
+   :ARG0 (a / and
+            :op1 (c / cell-line
+                    :mod (d4 / disease
+                             :name (n4 / name
+                                       :op1 "NCSLC")))
+            :op2 (c2 / cell-line
+                     :mod (d3 / disease
+                              :name (n5 / name
+                                        :op1 "CRC"))))
+   :ARG1 (a2 / and
+             :op1 (l5 / level
+                      :quant-of (e2 / enzyme
+                                    :name (n2 / name
+                                              :op1 "EGFR")
+                                    :mod (t2 / total)))
+             :op2 (l / level
+                     :quant-of (e / enzyme
+                                  :name (n / name
+                                           :op1 "EGFR")
+                                  :ARG3-of (p / phosphorylate-01
+                                              :ARG3 e4
+                                              :ARG2 e7
+                                              :ARG3 e8)))
+             :op3 (l6 / level
+                      :quant-of (e3 / enzyme
+                                    :name (n3 / name
+                                              :op1 "RAS")
+                                    :mod t2))
+             :op4 (l2 / level
+                      :quant-of (e4 / enzyme
+                                    :name (n6 / name
+                                              :op1 "RAS")))
+             :op5 (l3 / level
+                      :quant-of (e5 / enzyme
+                                    :name (n7 / name
+                                              :op1 "MEK")
+                                    :mod t2))
+             :op6 (l7 / level
+                      :quant-of (e7 / enzyme
+                                    :name (n9 / name
+                                              :op1 "MEK")))
+             :op7 (l4 / level
+                      :quant-of (e6 / enzyme
+                                    :name (n8 / name
+                                              :op1 "AKT")
+                                    :mod t2))
+             :op8 (l8 / level
+                      :quant-of (e8 / enzyme
+                                    :name (n10 / name
+                                               :op1 "AKT")))
+             :ARG1-of (v / vary-01
+                         :ARG2 (h / high-02))
+             :mod (b / basal))
+   :ARG1-of (d2 / depict-01
+                :ARG0 (f / figure
+                         :mod "1A"
+                         :ARG2-of (s / supplement-01))))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As illustrated in <xref ref-type="supplementary-material" rid="sup1">Supplementary Figure 1B</xref>, there was no apparent correlation between basal levels of total and phosphorylated proteins listed above in both tumour types.
+# ::file a_pmid_2256_9000_140.txt
+# ::date 2015-06-04T09:19:17
+# ::id a_pmid_2256_9000.140
+(c2 / correlate-01
+      :polarity "-"
+      :ARG1 (l / level
+            :quant-of (p / protein
+                  :mod (t / total))
+            :mod (b / basal)
+            :ARG1-of (l3 / list-01
+                  :location (a2 / above))
+            :location (t2 / type-03
+                  :ARG1 (t3 / tumor)
+                  :mod (b2 / both)))
+      :ARG2 (l2 / level
+            :ARG3-of (p3 / phosphorylate-01)
+            :ARG1-of l3
+            :mod b
+            :location t2)
+      :mod (a / apparent)
+      :ARG1-of (i / illustrate-01
+            :ARG0 (f / figure
+                  :mod "1B"
+                  :ARG2-of (s / supplement-01))))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Activation of the classic MAPK cascade (RAS-RAF-MEK-ERK) is a common event in colorectal and lung cancer.
+# ::file a_pmid_2256_9000_142.txt
+# ::date 2015-06-04T10:14:54
+# ::id a_pmid_2256_9000.142
+(e / event
+   :mod (c / common)
+   :location (a / and
+                :op1 (d / disease
+                        :wiki "Colorectal_cancer"
+                        :name (n2 / name
+                                  :op1 "colon"
+                                  :op2 "cancer"))
+                :op2 (d2 / disease
+                         :wiki "Lung_cancer"
+                         :name (n7 / name
+                                   :op1 "cancer")))
+   :domain (a2 / activate-01
+               :ARG1 (p / pathway
+                        :name (n / name
+                                 :op1 "MAPK")
+                        :mod (c6 / classic)
+                        :ARG1-of (m / mean-01
+                                    :ARG2 (m2 / macro-molecular-complex
+                                              :part (e5 / enzyme
+                                                        :name (n3 / name
+                                                                  :op1 "RAS"))
+                                              :part (e2 / enzyme
+                                                        :name (n4 / name
+                                                                  :op1 "RAF"))
+                                              :part (e4 / enzyme
+                                                        :name (n5 / name
+                                                                  :op1 "MEK"))
+                                              :part (e3 / enzyme
+                                                        :name (n6 / name
+                                                                  :op1 "ERK")))))))
+
+
+# ::save-date Thu Jun 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Some genes within this pathway are mutated or aberrantly expressed.
+# ::file a_pmid_2256_9000_143.txt
+# ::date 2015-06-04T10:22:20
+# ::id a_pmid_2256_9000.143
+(o / or
+      :op1 (m / mutate-01
+            :ARG1 (g / gene
+                  :quant (s / some)
+                  :ARG1-of (i / include-91
+                        :ARG2 (p / pathway
+                              :mod (t / this)))))
+      :op2 (e / express-03
+            :ARG2 g
+            :manner (a / aberrant)))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, the MAPK pathway can be indirectly activated by mutations of genes encoding for PI3K/PTEN/AKT and p53.
+# ::file a_pmid_2256_9000_144.txt
+# ::date 2015-06-04T10:25:42
+# ::id a_pmid_2256_9000.144
+(a / and
+   :op2 (p2 / possible-01
+            :ARG1 (a2 / activate-01
+                      :ARG0 (m / mutate-01
+                               :ARG1 (g / gene
+                                        :ARG0-of (e / encode-01
+                                                    :ARG1 (a3 / and
+                                                              :op1 (p3 / pathway
+                                                                       :name (n2 / name
+                                                                                 :op1 "PI3K/PTEN/AKT"))
+                                                              :op2 (p4 / protein
+                                                                       :name (n3 / name
+                                                                                 :op1 "p53"))))))
+                      :ARG1 (p / pathway
+                               :name (n / name
+                                        :op1 "MAPK"))
+                      :ARG1-of (d / direct-02
+                                  :polarity "-"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We have screened the panel of 11 NSCLC and CRC cell lines for mutations in <i>KRAS, NRAS, BRAF, PIK3CA, p53, PTEN, MEK1/2, AKT, EGFR</i> (<xref ref-type="table" rid="tbl1">Table 1</xref>; <xref ref-type="supplementary-material" rid="sup1">Supplementary Table 1A–F</xref>).
+# ::file a_pmid_2256_9000_145.txt
+# ::date 2015-06-04T10:31:29
+# ::id a_pmid_2256_9000.145
+(s / screen-01
+   :ARG0 (w2 / we)
+   :ARG1 (p / panel
+            :consist-of (a4 / and
+                            :quant "11"
+                            :op1 (c / cell-line
+                                    :mod (d2 / disease
+                                             :name (n / name
+                                                      :op1 "NSCLC")))
+                            :op2 (c2 / cell-line
+                                     :mod (d3 / disease
+                                              :name (n2 / name
+                                                        :op1 "CRC")))))
+   :ARG2 (m / mutate-01
+            :ARG1 (a2 / and
+                      :op1 (g2 / gene
+                               :name (n5 / name
+                                         :op1 "KRAS"))
+                      :op2 (g3 / gene
+                               :name (n6 / name
+                                         :op1 "NRAS"))
+                      :op3 (g4 / gene
+                               :name (n7 / name
+                                         :op1 "BRAF"))
+                      :op4 (g5 / gene
+                               :name (n8 / name
+                                         :op1 "PIK3CA"))
+                      :op5 (g6 / gene
+                               :name (n9 / name
+                                         :op1 "p53"))
+                      :op6 (g7 / gene
+                               :name (n10 / name
+                                          :op1 "PTEN"))
+                      :op7 (g8 / gene
+                               :name (n11 / name
+                                          :op1 "MEK1/2"))
+                      :op8 (g9 / gene
+                               :name (n12 / name
+                                          :op1 "AKT"))
+                      :op9 (g10 / gene
+                                :name (n13 / name
+                                           :op1 "EGFR"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (t / table
+                                 :mod "1")
+                         :op2 (v / value-interval
+                                 :op1 (t2 / table
+                                          :mod "1A")
+                                 :op2 (t3 / table
+                                          :mod "1F")
+                                 :ARG2-of (s2 / supplement-01)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In NSCLC cell lines, two out of five (40%) harboured a <i>KRAS</i> mutation, which was located in codon 12 or 13.
+# ::file a_pmid_2256_9000_146.txt
+# ::date 2015-06-04T10:39:47
+# ::id a_pmid_2256_9000.146
+(h / harbor-01
+   :ARG0 (c4 / cell-line
+             :quant "2"
+             :ARG1-of (i / include-91
+                         :ARG2 (c5 / cell-line
+                                   :quant "5")
+                         :ARG3 (p / percentage-entity
+                                  :value "40")))
+   :ARG1 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "KRAS"))
+            :ARG1-of (l / locate-01
+                        :location (o / or
+                                     :op1 (c / codon
+                                             :mod "12")
+                                     :op2 (c2 / codon
+                                              :mod "13"))))
+   :location (c3 / cell-line
+                 :mod (d / disease
+                         :name (n2 / name
+                                   :op1 "NSCLC"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, three out of five (60%) of NSCLC cells harboured a <i>PI3KCA</i> mutation, which were located in exon 9 or 20.
+# ::file a_pmid_2256_9000_147.txt
+# ::date 2015-06-04T10:48:48
+# ::id a_pmid_2256_9000.147
+(a / and
+   :op2 (h / harbor-01
+           :ARG0 (c / cell-line
+                    :quant "3"
+                    :ARG1-of (i / include-91
+                                :ARG2 (c2 / cell-line
+                                          :quant "5"
+                                          :mod (d / disease
+                                                  :name (n / name
+                                                           :op1 "NSCLC")))
+                                :ARG3 (p / percentage-entity
+                                         :value "60")))
+           :ARG1 (m / mutate-01
+                    :ARG1 (g / gene
+                             :name (n3 / name
+                                       :op1 "PI3KCA"))
+                    :ARG1-of (l / locate-01
+                                :location (o / or
+                                             :op1 (e / exon
+                                                     :mod "9")
+                                             :op2 (e2 / exon
+                                                      :mod "20"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A concomitant mutation in <i>KRAS</i> and <i>PI3KCA</i> gene was found in two out of five (40%) NSCLC.
+# ::file a_pmid_2256_9000_148.txt
+# ::date 2015-06-04T10:54:23
+# ::id a_pmid_2256_9000.148
+(f / find-01
+   :ARG1 (m / mutate-01
+            :ARG1 (a / and
+                     :op1 (g / gene
+                             :name (n / name
+                                      :op1 "KRAS"))
+                     :op2 (g2 / gene
+                              :name (n2 / name
+                                        :op1 "PI3KCA")))
+            :mod (c / concomitant))
+   :location (c2 / cell-line
+                 :quant "2"
+                 :ARG1-of (i / include-91
+                             :ARG2 (c3 / cell-line
+                                       :quant "5"
+                                       :mod (d / disease
+                                               :name (n3 / name
+                                                         :op1 "NSCLC")))
+                             :ARG3 (p / percentage-entity
+                                      :value "40"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt One NSCLC cell line had an <i>NRAS</i> mutation (<xref ref-type="table" rid="tbl1">Table 1</xref>; <xref ref-type="supplementary-material" rid="sup1">Supplementary Table 1A–F</xref>).
+# ::file a_pmid_2256_9000_149.txt
+# ::date 2015-06-04T10:57:16
+# ::id a_pmid_2256_9000.149
+(h / have-03
+   :ARG0 (c / cell-line
+            :quant "1"
+            :mod (d2 / disease
+                     :name (n / name
+                              :op1 "NSCLC")))
+   :ARG1 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n2 / name
+                               :op1 "NRAS")))
+   :ARG1-of (d / describe-01
+               :ARG0 (a / and
+                        :op1 (t / table
+                                :mod "1")
+                        :op2 (v / value-interval
+                                :op1 (t2 / table
+                                         :mod "1A")
+                                :op2 (t3 / table
+                                         :mod "1F")
+                                :ARG2-of (s / supplement-01)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the panel of six CRC cell lines, all of them harboured a <i>KRAS</i> gene mutation that was located in codon 12 or 13.
+# ::file a_pmid_2256_9000_150.txt
+# ::date 2015-06-04T11:00:44
+# ::id a_pmid_2256_9000.150
+(h / harbor-01
+   :ARG0 "c3"
+   :ARG1 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "KRAS"))
+            :ARG1-of (l / locate-01
+                        :location (o / or
+                                     :op1 (c / codon
+                                             :mod "12")
+                                     :op2 (c2 / codon
+                                              :mod "13"))))
+   :location (p / panel
+                :consist-of (c3 / cell-line
+                                :quant "6"
+                                :mod (d / disease
+                                        :name (n2 / name
+                                                  :op1 "CRC")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, half of CRC cell lines had both a <i>PI3KCA</i> mutation in exon 9 or 20 and a <i>KRAS</i> mutation.
+# ::file a_pmid_2256_9000_151.txt
+# ::date 2015-06-04T11:04:59
+# ::id a_pmid_2256_9000.151
+(a / and
+   :op2 (h / have-03
+           :ARG0 (c / cell-line
+                    :quant "1/2"
+                    :ARG1-of (i / include-91
+                                :ARG2 (c2 / cell-line
+                                          :mod (d / disease
+                                                  :name (n / name
+                                                           :op1 "CRC")))))
+           :ARG1 (a2 / and
+                     :op1 (m / mutate-01
+                             :ARG1 (g / gene
+                                      :name (n3 / name
+                                                :op1 "PI3KCA"))
+                             :location (a3 / and
+                                           :op1 (e / exon
+                                                   :mod "9")
+                                           :op2 (e2 / exon
+                                                    :mod "20")))
+                     :op2 (m2 / mutate-01
+                              :ARG1 (g2 / gene
+                                        :name (n4 / name
+                                                  :op1 "KRAS"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt None of the CRC cells had an <i>NRAS</i> mutation.
+# ::file a_pmid_2256_9000_152.txt
+# ::date 2015-06-04T11:22:42
+# ::id a_pmid_2256_9000.152
+(h / have-03
+   :ARG0 (c / cell-line
+            :quant (n2 / none)
+            :mod (d / disease
+                    :name (n / name
+                             :op1 "CRC")))
+   :ARG1 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n3 / name
+                               :op1 "NRAS"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No <i>BRAF</i> mutations were observed in the whole panel of NSCLC and CRC cells.
+# ::file a_pmid_2256_9000_153.txt
+# ::date 2015-06-04T11:38:35
+# ::id a_pmid_2256_9000.153
+(o / observe-01
+   :ARG1 (m / mutate-01
+            :polarity "-"
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "BRAF")))
+   :location (p / panel
+                :mod (w / whole)
+                :consist-of (a2 / and
+                                :op1 (c / cell-line
+                                        :mod (d / disease
+                                                :name (n2 / name
+                                                          :op1 "NSCLC")))
+                                :op2 (c2 / cell-line
+                                         :mod (d2 / disease
+                                                  :name (n3 / name
+                                                            :op1 "CRC"))))))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As reported in <xref ref-type="supplementary-material" rid="sup1">Supplementary Table 1E and F</xref>, no other gene mutations were found in both NSCLC and CRC cell lines.
+# ::file a_pmid_2256_9000_154.txt
+# ::date 2015-06-04T11:43:00
+# ::id a_pmid_2256_9000.154
+(f / find-01
+      :ARG1 (m / mutate-01
+            :polarity "-"
+            :ARG1 (g / gene
+                  :mod (o / other)))
+      :location (a / and
+            :op1 (c / cell-line
+                  :mod (d2 / disease
+                        :name (n / name :op1 "NSCLC")))
+            :op2 (c2 / cell-line
+                  :mod (d / disease
+                        :name (n2 / name :op1 "CRC"))))
+      :ARG1-of (r / report-01
+            :ARG0 (a2 / and
+                  :op1 (t / table :mod "1E")
+                  :op2 (t2 / table :mod "1F")
+                  :ARG2-of (s / supplement-01))))
+
+# ::save-date Thu Jun 11, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt After this screening, we tried to correlate the mutational status with selumetinib sensitivity.
+# ::file a_pmid_2256_9000_155.txt
+# ::date 2015-06-04T12:09:14
+# ::id a_pmid_2256_9000.155
+(t / try-01
+   :ARG0 (w / we)
+   :ARG1 (c / correlate-01
+            :ARG0 w
+            :ARG1 (s / status
+                     :mod (m / mutate-01))
+            :ARG2 (s2 / sensitive-03
+                      :ARG1 (s3 / small-molecule
+                                :name (n / name
+                                         :op1 "selumetinib"))))
+   :time (a / after
+            :op1 (s4 / screen-01
+                     :mod (t2 / this))))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The analysis was made either considering separately the two sets of cell lines (data not shown) or all together (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure 2A and B</xref>).
+# ::file a_pmid_2256_9000_156.txt
+# ::date 2015-06-04T12:16:57
+# ::id a_pmid_2256_9000.156
+(a4 / analyze-01
+      :manner (c / consider-01
+            :ARG1 (o / or
+                  :op1 (s / set
+                        :quant "2"
+                        :consist-of (c2 / cell-line)
+                        :ARG1-of (s2 / separate-02)
+                        :ARG1-of (d / describe-01
+                              :ARG0 (d2 / data
+                                    :ARG1-of (s3 / show-01 :polarity "-"))))
+                  :op2 (s5 / set
+                        :quant "2"
+                        :consist-of c2
+                        :mod (t2 / together)
+                        :ARG1-of (d3 / describe-01
+                              :ARG0 (a3 / and
+                                    :op1 (f / figure :mod "2A")
+                                    :op2 (f2 / figure :mod "2B")
+                                    :ARG2-of (s4 / supplement-01)))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Sensitivity to selumetinib did not seem to correlate with any specific gene mutations in this panel of NSCLC and CRC cell lines.
+# ::file a_pmid_2256_9000_157.txt
+# ::date 2015-06-04T12:40:13
+# ::id a_pmid_2256_9000.157
+(s / seem-01
+   :polarity "-"
+   :ARG1 (c / correlate-01
+            :ARG1 (s2 / sensitive-03
+                      :ARG1 (s3 / small-molecule
+                                :name (n / name
+                                         :op1 "selumetinib")))
+            :ARG2 (m / mutate-01
+                     :ARG1 (g / gene)
+                     :ARG1-of (s4 / specific-02)
+                     :mod (a / any))
+            :location (p / panel
+                         :consist-of (a3 / and
+                                         :op1 (c2 / cell-line
+                                                  :mod (d / disease
+                                                          :name (n2 / name
+                                                                    :op1 "NSCLC")))
+                                         :op2 (c3 / cell-line
+                                                  :mod (d2 / disease
+                                                           :name (n3 / name
+                                                                     :op1 "CRC"))))
+                         :mod (t / this))))
+
+
+# ::save-date Mon Dec 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RNAs from the 11 cancer cell lines were extracted and used for microarray gene expression analysis.
+# ::file a_pmid_2256_9000_159.txt
+# ::date 2015-06-04T12:53:38
+# ::id a_pmid_2256_9000.159
+(a / and
+      :op1 (e / extract-01
+            :ARG1 (n3 / nucleic-acid
+                  :name (n2 / name :op1 "RNA")
+                  :source (c / cell-line
+                        :quant "11"
+                        :mod (d / disease
+                              :wiki "Cancer"
+                              :name (n / name :op1 "cancer")))))
+      :op2 (u / use-01
+            :ARG1 n3
+            :ARG2 (a2 / analyze-01
+                  :ARG0 (m / microarray)
+                  :ARG1 (e2 / express-03
+                        :ARG2 (g / gene)))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Using Student's <i>t</i>-test with Benjamini–Hochberg multiple test correction, 21 and 18 genes were identified as upregulated or downregulated, respectively, in selumetinib-resistant cancer cell lines (<i>t</i>-test, <i>P</i><0.05) (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure 3</xref>).
+# ::file a_pmid_2256_9000_160.txt
+# ::date 2015-06-04T13:11:13
+# ::id a_pmid_2256_9000.160
+(a2 / and
+    :op1 (i / identify-01
+            :ARG1 (g / gene
+                     :quant "21")
+            :ARG2 (u / upregulate-01))
+    :op2 (i2 / identify-01
+             :ARG1 (g2 / gene
+                       :quant "18")
+             :ARG2 (d2 / downregulate-01))
+    :location (c / cell-line
+                 :mod (d / disease
+                         :wiki "Cancer"
+                         :name (n / name
+                                  :op1 "cancer"))
+                 :ARG0-of (r2 / resist-01
+                              :ARG1 (s2 / small-molecule
+                                        :name (n2 / name
+                                                  :op1 "selumetinib"))))
+    :ARG1-of (s / statistical-test-91
+                :ARG2 (l / less-than
+                         :op1 "0.05")
+                :ARG4 (t / thing
+                         :wiki "Student's_t-test"
+                         :name (n3 / name
+                                   :op1 "Student's"
+                                   :op2 "t-test")
+                         :mod (c2 / correct-01
+                                  :mod (t2 / test-01
+                                           :quant (m / multiple))
+                                  :ARG1-of (a3 / accord-02
+                                               :ARG2 (a4 / and
+                                                         :op1 (p / person
+                                                                 :name (n5 / name
+                                                                           :op1 "Benjamini"))
+                                                         :op2 (p2 / person
+                                                                  :name (n6 / name
+                                                                            :op1 "Hochberg")))))))
+    :ARG1-of (d3 / describe-01
+                 :ARG0 (f / figure
+                          :mod "3"
+                          :ARG2-of (s3 / supplement-01))))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <xref ref-type="table" rid="tbl2">Table 2</xref> lists the differentially expressed genes in selumetinib-resistant cancer cell lines.
+# ::file a_pmid_2256_9000_161.txt
+# ::date 2015-06-04T13:35:27
+# ::id a_pmid_2256_9000.161
+(l / list-01
+   :ARG0 (t / table
+            :mod "2")
+   :ARG1 (g / gene
+            :ARG2-of (e / express-03
+                        :ARG3 (c / cell-line
+                                 :ARG0-of (r / resist-01
+                                             :ARG1 (s / small-molecule
+                                                      :name (n2 / name
+                                                                :op1 "selumetinib")))
+                                 :mod (d / disease
+                                         :wiki "Cancer"
+                                         :name (n / name
+                                                  :op1 "cancer")))
+                        :manner (d2 / differential))))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Among the 21 genes that were upregulated in selumetinib-resistant cancer cell lines, we identified two genes, <i>ADCY7</i> and <i>AKAP13,</i> which are involved in the cAMP-dependent protein kinase (PKA) pathway (<xref ref-type="table" rid="tbl2">Table 2A</xref>; <xref ref-type="supplementary-material" rid="sup1">Supplementary Figure 3</xref>).
+# ::file a_pmid_2256_9000_162.txt
+# ::date 2015-06-02T05:36:06
+# ::id a_pmid_2256_9000.162
+(i / identify-01
+   :ARG0 (w / we)
+   :ARG1 (a / and
+            :op1 (g / gene
+                    :name (n / name
+                             :op1 "ADCY7"))
+            :op2 (g2 / gene
+                     :name (n2 / name
+                               :op1 "AKAP13"))
+            :ARG1-of (i2 / involve-01
+                         :ARG2 (p / pathway
+                                  :name (n3 / name
+                                            :op1 "cAMP-dependent"
+                                            :op2 "protein"
+                                            :op3 "kinase")))
+            :ARG1-of (i3 / include-91
+                         :ARG2 (g3 / gene
+                                   :quant "21"
+                                   :ARG1-of (u / upregulate-01
+                                               :location (c / cell-line
+                                                            :ARG0-of (r / resist-01
+                                                                        :ARG1 (s / small-molecule
+                                                                                 :name (n4 / name
+                                                                                           :op1 "selumetinib")))
+                                                            :mod (d2 / disease
+                                                                     :wiki "Cancer"
+                                                                     :name (n5 / name
+                                                                               :op1 "cancer")))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a2 / and
+                         :op1 (t / table
+                                 :mod "2A")
+                         :op2 (f / figure
+                                 :mod "3"
+                                 :ARG2-of (s2 / supplement-01)))))
+
+# ::save-date Sun Jun 7, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The <i>ADCY7</i> gene encodes a membrane-bound adenylatecyclase that convert ATP into 3', 5'-adenosine monophosphate (cAMP) and pyrophosphate (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure 4</xref>).
+# ::file a_pmid_2256_9000_163.txt
+# ::date 2015-06-02T05:47:27
+# ::id a_pmid_2256_9000.163
+(e / encode-01
+   :ARG0 (g / gene
+            :name (n / name
+                     :op1 "ADCY7"))
+   :ARG1 (e2 / enzyme
+             :name (n2 / name
+                       :op1 "adenylatecyclase")
+             :ARG1-of (b / bind-01
+                         :ARG2 (m2 / membrane))
+             :ARG0-of (c / convert-01
+                         :ARG1 (s / small-molecule
+                                  :name (n3 / name
+                                            :op1 "ATP"))
+                         :ARG2 (a / and
+                                  :op1 (s2 / small-molecule
+                                           :name (n4 / name
+                                                     :op1 "3'"
+                                                     :op2 "5'"
+                                                     :op3 "adenosine"
+                                                     :op4 "monophosphate"))
+                                  :op2 (s3 / small-molecule
+                                           :name (n5 / name
+                                                     :op1 "pyrophosphate")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4"
+                        :ARG2-of (s4 / supplement-01))))
+
+# ::save-date Wed Mar 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The cAMP is a second messenger that has a key role in intracellular signalling transduction.
+# ::file a_pmid_2256_9000_164.txt
+# ::date 2015-06-02T05:53:53
+# ::id a_pmid_2256_9000.164
+(h / have-03
+   :ARG0 (m / messenger
+            :domain (s3 / small-molecule
+                        :name (n / name
+                                 :op1 "cAMP"))
+            :ord (o / ordinal-entity
+                    :value "2"))
+   :ARG1 (r / role
+            :ARG1-of (k / key-02)
+            :prep-in (t / transduce-01
+                        :ARG1 (s2 / signal-07
+                                  :mod (i / intracellular)))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A major function in mammalian cells is the activation of the PKA (<xref ref-type="bibr" rid="bib42">Tasken <i>et al</i>, 1997</xref>).
+# ::file a_pmid_2256_9000_165.txt
+# ::date 2015-06-02T06:03:30
+# ::id a_pmid_2256_9000.165
+(f / function-01
+   :ARG1 (a / activate-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "PKA")))
+   :ARG1-of (m / major-02)
+   :location (c / cell
+                :part-of (a2 / animal
+                             :name (n2 / name
+                                       :op1 "Mammalia")))
+   :ARG1-of (d / describe-01
+               :ARG0 (p / publication-91
+                        :ARG0 (a3 / and
+                                  :op1 (p3 / person
+                                           :name (n3 / name
+                                                     :op1 "Tasken"))
+                                  :op2 (p2 / person
+                                           :mod (o / other)))
+                        :time (d2 / date-entity
+                                  :year "1997"))))
+
+# ::save-date Tue Jun 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The <i>AKAP13</i> gene encodes the A-kinase anchor protein 13 that has the function of binding to the regulatory subunits of PKA (<xref ref-type="supplementary-material" rid="sup1">Supplementary Figure 4</xref>).
+# ::file a_pmid_2256_9000_166.txt
+# ::date 2015-06-02T06:09:59
+# ::id a_pmid_2256_9000.166
+(e / encode-01
+   :ARG0 (g / gene
+            :name (n / name
+                     :op1 "AKAP13"))
+   :ARG1 (e2 / enzyme
+             :name (n2 / name
+                       :op1 "A-kinase"
+                       :op2 "anchor"
+                       :op3 "protein"
+                       :op4 "13")
+             :ARG0-of (f / function-01
+                         :ARG1 (b / bind-01
+                                  :ARG1 e2
+                                  :ARG2 (s / subunit
+                                           :ARG0-of (r / regulate-01)
+                                           :part-of (e3 / enzyme
+                                                        :name (n3 / name
+                                                                  :op1 "PKA"))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "4"
+                         :ARG2-of (s2 / supplement-01))))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, four genes (<i>NCOA3, TAF3, NR1H2</i>, and <i>RXRA</i>), which are upregulated in selumetinib-resistant cancer cell lines, belong to the retinoic acid pathway, which is also activated by PKA (<xref ref-type="bibr" rid="bib6">Altucci <i>et al</i>, 2007</xref>).
+# ::file a_pmid_2256_9000_167.txt
+# ::date 2015-06-02T06:12:35
+# ::id a_pmid_2256_9000.167
+(a / and
+   :op2 (b / belong-01
+           :ARG0 (g5 / gene
+                     :quant "4"
+                     :ARG1-of (m / mean-01
+                                 :ARG2 (a2 / and
+                                           :op1 (g / gene
+                                                   :name (n / name
+                                                            :op1 "NCOA3"))
+                                           :op2 (g2 / gene
+                                                    :name (n2 / name
+                                                              :op1 "TAF3"))
+                                           :op3 (g3 / gene
+                                                    :name (n3 / name
+                                                              :op1 "NR1H2"))
+                                           :op4 (g4 / gene
+                                                    :name (n4 / name
+                                                              :op1 "RXRA"))))
+                     :ARG1-of (u / upregulate-01
+                                 :location (c / cell-line
+                                              :ARG0-of (r / resist-01
+                                                          :ARG1 (s / small-molecule
+                                                                   :name (n5 / name
+                                                                             :op1 "selumetinib")))
+                                              :mod (d3 / disease
+                                                       :wiki "Cancer"
+                                                       :name (n9 / name
+                                                                 :op1 "cancer")))))
+           :ARG1 (p / pathway
+                    :name (n6 / name
+                              :op1 "retinoic"
+                              :op2 "acid")
+                    :ARG1-of (a3 / activate-01
+                                 :ARG0 (e / enzyme
+                                          :name (n7 / name
+                                                    :op1 "PKA"))
+                                 :mod (a4 / also)))
+           :ARG1-of (d / describe-01
+                       :ARG0 (p2 / publication-91
+                                 :ARG0 (a5 / and
+                                           :op1 (p3 / person
+                                                    :name (n8 / name
+                                                              :op1 "Altucci"))
+                                           :op2 (p4 / person
+                                                    :mod (o / other)))
+                                 :time (d2 / date-entity
+                                           :year "2007")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To functionally evaluate if the cAMP-dependent PKA could mediate resistance to MEK inhibitor treatment, we have treated the panel of NSCLC and CRC with 8-Cl-cAMP, a site-selective cAMP analogue, which specifically inhibits PKAI, the PKA isoform that is directly involved in mitogenic signalling and the transformed phenotype (<xref ref-type="bibr" rid="bib46">Tortora and Ciardiello, 2000</xref>; <xref ref-type="bibr" rid="bib33">Naviglio <i>et al</i>, 2009</xref>).
+# ::file a_pmid_2256_9000_169.txt
+# ::date 2015-06-02T06:27:56
+# ::id a_pmid_2256_9000.169
+(t / treat-04
+   :ARG0 (w / we)
+   :ARG1 (p / panel
+            :part (c / cell-line
+                     :mod (d6 / disease
+                              :name (n / name
+                                       :op1 "NSCLC")))
+            :part (c2 / cell-line
+                      :mod (d7 / disease
+                               :name (n2 / name
+                                         :op1 "CRC"))))
+   :ARG2 (s / small-molecule
+            :name (n3 / name
+                      :op1 "8-Cl-cAMP")
+            :mod (a2 / analogue
+                     :poss (s2 / small-molecule
+                               :name (n4 / name
+                                         :op1 "cAMP"))
+                     :mod (s3 / selective
+                              :mod (s4 / site)))
+            :ARG0-of (i / inhibit-01
+                        :ARG1 (e / enzyme
+                                 :name (n5 / name
+                                           :op1 "PKAI")
+                                 :mod (i2 / isoform
+                                          :poss (e2 / enzyme
+                                                    :name (n6 / name
+                                                              :op1 "PKA"))
+                                          :ARG1-of (i3 / involve-01
+                                                       :ARG2 (a3 / and
+                                                                 :op1 (s6 / signal-07
+                                                                          :mod (m / mitogenic))
+                                                                 :op2 (p2 / phenotype
+                                                                          :ARG1-of (t2 / transform-01)))
+                                                       :ARG1-of (d / direct-02))))
+                        :ARG1-of (s5 / specific-02)))
+   :purpose (e3 / evaluate-01
+                :ARG0 w
+                :ARG1 (p3 / possible-01
+                          :mode "interrogative"
+                          :ARG1 (m2 / mediate-01
+                                    :ARG0 (e4 / enzyme
+                                              :name (n7 / name
+                                                        :op1 "PKA")
+                                              :ARG0-of (d2 / depend-01
+                                                           :ARG1 s2))
+                                    :ARG1 (r / resist-01
+                                             :ARG1 (t3 / treat-04
+                                                       :ARG2 (m3 / molecular-physical-entity
+                                                                 :ARG0-of (i4 / inhibit-01
+                                                                              :ARG1 (p10 / protein-family
+                                                                                         :name (n8 / name
+                                                                                                   :op1 "MEK"))))))))
+                :manner (f / functional))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (a4 / and
+                          :op1 (p4 / publication-91
+                                   :ARG0 (a5 / and
+                                             :op1 (p5 / person
+                                                      :name (n9 / name
+                                                                :op1 "Tortora"))
+                                             :op2 (p6 / person
+                                                      :name (n10 / name
+                                                                 :op1 "Ciardiello")))
+                                   :time (d4 / date-entity
+                                             :year "2000"))
+                          :op2 (p7 / publication-91
+                                   :ARG0 (a6 / and
+                                             :op1 (p8 / person
+                                                      :name (n11 / name
+                                                                 :op1 "Naviglio"))
+                                             :op2 (p9 / person
+                                                      :mod (o / other)))
+                                   :time (d5 / date-entity
+                                             :year "2009")))))
+
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A dose-dependent inhibition of growth was observed in all cancer cell lines with a different degree of sensitivity, as illustrated in <xref ref-type="fig" rid="fig5">Figure 5A</xref>.
+# ::file a_pmid_2256_9000_170.txt
+# ::date 2015-06-02T06:40:26
+# ::id a_pmid_2256_9000.170
+(o / observe-01
+      :ARG1 (i / inhibit-01
+            :ARG1 (g / grow-01)
+            :ARG0-of (d / depend-01
+                  :ARG1 (d2 / dose)))
+      :location (c / cell-line
+            :ARG0-of (h / have-03
+                  :ARG1 (t / thing
+                        :degree-of (s / sensitive-03)
+                        :ARG1-of (d4 / differ-02)))
+            :mod (a / all)
+            :mod (d5 / disease
+                  :wiki "Cancer"
+                  :name (n / name :op1 "cancer")))
+      :ARG1-of (i2 / illustrate-01
+            :ARG0 (f / figure :mod "5A")))
+
+# ::save-date Tue Jun 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To evaluate the interaction between selumetinib and 8-Cl-cAMP, combination analyses were done.
+# ::file a_pmid_2256_9000_171.txt
+# ::date 2015-06-02T08:00:58
+# ::id a_pmid_2256_9000.171
+(a / analyze-01
+   :mod (c / combine-01)
+   :purpose (e / evaluate-01
+               :ARG1 (i / interact-01
+                        :ARG0 (s / small-molecule
+                                 :name (n / name
+                                          :op1 "selumetinib"))
+                        :ARG1 (s2 / small-molecule
+                                  :name (n2 / name
+                                            :op1 "8-Cl-cAMP")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The CRC and NSCLC cancer cells were treated with different concentrations of selumetinib (range, 0.01–10 <i>μ</i>ℳ) and 8-Cl-cAMP (range, 0.01–5 <i>μ</i>ℳ) each day, for a total of 3 days at a fixed drug ratio selumetinib to 8-Cl-cAMP of 1 : 1.
+# ::file a_pmid_2256_9000_172.txt
+# ::date 2015-06-02T08:14:50
+# ::id a_pmid_2256_9000.172
+(t / treat-04
+   :ARG1 (a / and
+            :op1 (c / cell-line
+                    :mod (d6 / disease
+                             :name (n / name
+                                      :op1 "NSCLC")))
+            :op2 (c2 / cell-line
+                     :mod (d7 / disease
+                              :name (n2 / name
+                                        :op1 "CRC")))
+            :mod (d5 / disease
+                     :wiki "Cancer"
+                     :name (n5 / name
+                               :op1 "cancer")))
+   :ARG2 (a2 / and
+             :op1 (s / small-molecule
+                     :name (n3 / name
+                               :op1 "selumetinib")
+                     :mod (c4 / concentration-quantity
+                              :quant (v / value-interval
+                                        :op1 "0.01"
+                                        :op2 "10")
+                              :unit (m / micromolar)
+                              :ARG1-of (d3 / differ-02)))
+             :op2 (s2 / small-molecule
+                      :name (n4 / name
+                                :op1 "8-Cl-cAMP")
+                      :mod (c5 / concentration-quantity
+                               :ARG1-of (d4 / differ-02)
+                               :quant (v2 / value-interval
+                                          :op1 "0.01"
+                                          :op2 "5")
+                               :unit m)))
+   :frequency (r2 / rate-entity-91
+                  :ARG3 (t2 / temporal-quantity
+                            :quant "1"
+                            :unit (d / day)))
+   :condition (e / equal-01
+                 :ARG1 (r3 / ratio-of
+                           :op1 s
+                           :op2 s2
+                           :ARG1-of (f / fix-03))
+                 :ARG2 (r4 / ratio-of
+                           :op1 "1"
+                           :op2 "1"))
+   :duration (t3 / temporal-quantity
+                 :quant "3"
+                 :unit (d2 / day)
+                 :mod (t4 / total)))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In all selumetinib-resistant cancer cell lines, the combination treatment caused synergistic growth inhibitory effects.
+# ::file a_pmid_2256_9000_173.txt
+# ::date 2015-06-02T08:31:37
+# ::id a_pmid_2256_9000.173
+(c / cause-01
+   :ARG0 (t / treat-04
+            :mod (c2 / combine-01))
+   :ARG1 (a / affect-01
+            :ARG2 (i / inhibit-01
+                     :ARG1 (g / grow-01))
+            :ARG0-of (s2 / synergize-01))
+   :location (c3 / cell-line
+                 :ARG0-of (r / resist-01
+                             :ARG1 (s / small-molecule
+                                      :name (n / name
+                                               :op1 "selumetinib")))
+                 :mod (a2 / all)
+                 :mod (d / disease
+                         :wiki "Cancer"
+                         :name (n2 / name
+                                   :op1 "cancer"))))
+
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In fact, the CI values for the combinations treatments ranged between 0.013 and 0.350.
+# ::file a_pmid_2256_9000_174.txt
+# ::date 2015-06-02T08:37:07
+# ::id a_pmid_2256_9000.174
+(r / range-01
+      :ARG1 (v / value
+            :mod (i / interval
+                  :mod (c / confidence))
+            :poss (t / treat-04
+                  :mod (c2 / combine-01)))
+      :ARG3 "0.013"
+      :ARG4 "0.350"
+      :mod (i2 / in-fact))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This was significantly different in the selumetinib-sensitive cancer cells in which the combination treatment was clearly antagonistic with CI between 1.3 and 3.6 (<xref ref-type="fig" rid="fig5">Figure 5B</xref>).
+# ::file a_pmid_2256_9000_175.txt
+# ::date 2015-06-02T08:40:44
+# ::id a_pmid_2256_9000.175
+(d2 / differ-02
+    :ARG1 (t / this)
+    :location (c / cell-line
+                 :ARG0-of (s2 / sensitive-03
+                              :ARG1 (s3 / small-molecule
+                                        :name (n / name
+                                                 :op1 "selumetinib")))
+                 :location-of (a / antagonize-02
+                                 :ARG1 (t2 / treat-04
+                                           :mod (c3 / combine-01))
+                                 :ARG1-of (c2 / clear-06))
+                 :ARG0-of (h / have-03
+                             :ARG1 (i / interval
+                                      :mod (c4 / confidence)
+                                      :mod (v / value-interval
+                                              :op1 "1.3"
+                                              :op2 "3.6")))
+                 :mod (d3 / disease
+                          :wiki "Cancer"
+                          :name (n2 / name
+                                    :op1 "cancer")))
+    :ARG1-of (d / describe-01
+                :ARG0 (f / figure
+                         :mod "5B"))
+    :ARG1-of (s4 / significant-02))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next assessed the phosphorylation state of MEK and MAPK following treatment with selumetinib, 8-Cl-cAMP as single agents or in combination with HCT15 and H460 cancer cell lines.
+# ::file a_pmid_2256_9000_176.txt
+# ::date 2015-06-02T08:49:49
+# ::id a_pmid_2256_9000.176
+(a / assess-01
+   :ARG0 (w / we)
+   :ARG1 (s / state
+            :mod (p / phosphorylate-01
+                    :ARG1 (a2 / and
+                              :op1 (e / enzyme
+                                      :name (n2 / name
+                                                :op1 "MEK"))
+                              :op2 (e2 / enzyme
+                                       :name (n3 / name
+                                                 :op1 "MAPK"))))
+            :ARG1-of (f / follow-01
+                        :ARG2 (t / treat-04
+                                 :ARG2 (o / or
+                                          :op1 (o2 / or
+                                                   :op1 (s2 / small-molecule
+                                                            :name (n4 / name
+                                                                      :op1 "selumetinib"))
+                                                   :op2 (s3 / small-molecule
+                                                            :name (n5 / name
+                                                                      :op1 "8-Cl-cAMP"))
+                                                   :ARG0-of (a3 / act-01
+                                                                :ARG1 (a4 / agent
+                                                                          :ARG1-of (s4 / single-02))))
+                                          :op2 (c / combine-01
+                                                  :ARG1 (a5 / and
+                                                            :op1 s2
+                                                            :op2 s3)
+                                                  :ARG2 (a6 / and
+                                                            :op1 (c2 / cell-line
+                                                                     :name (n6 / name
+                                                                               :op1 "HCT15"))
+                                                            :op2 (c3 / cell-line
+                                                                     :name (n7 / name
+                                                                               :op1 "H460"))
+                                                            :mod (d / disease
+                                                                    :wiki "Cancer"
+                                                                    :name (n8 / name
+                                                                              :op1 "cancer"))))))))
+   :mod (n / next))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in <xref ref-type="fig" rid="fig3">Figure 3C</xref>, single agent selumetinib or 8-Cl-cAMP slightly inhibited p-MEK and p-MAPK, whereas the combination induced a significant inhibition of both phosphorylated proteins.
+# ::file a_pmid_2256_9000_177.txt
+# ::date 2015-06-02T08:56:49
+# ::id a_pmid_2256_9000.177
+(c / contrast-01
+   :ARG1 (i / inhibit-01
+            :ARG0 (o / or
+                     :op1 (s2 / small-molecule
+                              :name (n / name
+                                       :op1 "selumetinib"))
+                     :op2 (s3 / small-molecule
+                              :name (n2 / name
+                                        :op1 "8-Cl-cAMP"))
+                     :ARG0-of (a / act-01
+                                 :ARG1 (a2 / agent
+                                           :ARG1-of (s4 / single-02))))
+            :ARG1 (a3 / and
+                      :op1 (e / enzyme
+                              :name (n3 / name
+                                        :op1 "MEK")
+                              :ARG3-of (p5 / phosphorylate-01
+                                           :ARG3 e2))
+                      :op2 (e2 / enzyme
+                               :name (n4 / name
+                                         :op1 "MAPK")))
+            :degree (s / slight))
+   :ARG2 (i2 / induce-01
+             :ARG0 (c2 / combine-01
+                       :ARG1 s2
+                       :ARG2 s3)
+             :ARG1 (i3 / inhibit-01
+                       :ARG1 a3
+                       :ARG1-of (s7 / significant-02)))
+   :ARG1-of (s6 / show-01
+                :ARG0 (f / figure
+                         :mod "3C")))
+
+# ::save-date Fri Feb 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A genetic approach to inhibiting PKAI expression was developed by the use of phosphorothioate antisense oligonucleotides targeting the synthesis of the PKAI regulatory subunit RI<i>α</i>.
+# ::file a_pmid_2256_9000_178.txt
+# ::date 2015-06-02T09:02:19
+# ::id a_pmid_2256_9000.178
+(d / develop-02
+   :ARG1 (a / approach-02
+            :ARG1 (i / inhibit-01
+                     :ARG1 (e / express-03
+                              :ARG2 (e2 / enzyme
+                                        :name (n / name
+                                                 :op1 "PKAI")
+                                        :part p)))
+            :mod (g / genetics))
+   :manner (u / use-01
+              :ARG1 (o / oligonucleotide
+                       :ARG0-of (t / target-01
+                                   :ARG1 (s / synthesize-01
+                                            :ARG1 (p / protein-segment
+                                                     :name (n3 / name
+                                                               :op1 "RIα")
+                                                     :ARG0-of (r / regulate-01))))
+                       :ARG0-of (c / counter-01
+                                   :ARG1 (s2 / sense-01))
+                       :mod (p2 / phosphorothioate))))
+
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These oligonucleotides inhibit growth of several human cancer cell lines <i>in vitro</i> and <i>in vivo</i> (<xref ref-type="bibr" rid="bib49">Yokozaki <i>et al</i>, 1993</xref>; <xref ref-type="bibr" rid="bib34">Nesterova and Cho-Chung, 1995</xref>; <xref ref-type="bibr" rid="bib45">Tortora <i>et al</i>, 1997a</xref>).
+# ::file a_pmid_2256_9000_179.txt
+# ::date 2015-06-02T09:20:05
+# ::id a_pmid_2256_9000.179
+(i / inhibit-01
+      :ARG0 (o / oligonucleotide
+            :mod (t / this))
+      :ARG1 (g / grow-01
+            :ARG1 (c / cell-line
+                  :mod (h / human)
+                  :quant (s / several)
+                  :mod (d5 / disease
+                        :wiki "Cancer"
+                        :name (n5 / name :op1 "cancer"))))
+      :manner (a / and
+            :op1 (i2 / in-vitro)
+            :op2 (i3 / in-vivo))
+      :ARG1-of (d / describe-01
+            :ARG0 (a2 / and
+                  :op1 (p / publication-91
+                        :ARG0 (a3 / and
+                              :op1 (p4 / person
+                                    :name (n / name :op1 "Yokozaki"))
+                              :op2 (p5 / person
+                                    :mod (o2 / other)))
+                        :time (d2 / date-entity :year "1993"))
+                  :op2 (p2 / publication-91
+                        :ARG0 (a4 / and
+                              :op1 (p6 / person
+                                    :name (n2 / name :op1 "Nesterova"))
+                              :op2 (p7 / person
+                                    :name (n3 / name :op1 "Cho-Chung")))
+                        :time (d3 / date-entity :year "1995"))
+                  :op3 (p3 / publication-91
+                        :li "a"
+                        :ARG0 (a5 / and
+                              :op1 (p8 / person
+                                    :name (n4 / name :op1 "Tortora"))
+                              :op2 p5)
+                        :time (d4 / date-entity :year "1997")))))
+
+# ::save-date Wed Mar 9, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, HYB 190, an 18-mer MBO antisense to the N-terminal 8–13 codons of the RI<i>α</i> subunit of PKAI, and the control HYB 239, containing four mismatched bases, were tested to study the effect on the growth of NSCLC and CRC cell lines.
+# ::file a_pmid_2256_9000_180.txt
+# ::date 2015-06-02T09:26:05
+# ::id a_pmid_2256_9000.180
+(c3 / cause-01
+    :ARG1 (t / test-01
+             :ARG1 (a3 / and
+                       :op1 (o / oligonucleotide
+                               :name (n3 / name
+                                         :op1 "HYB"
+                                         :op2 "190")
+                               :mod (b2 / backbone
+                                        :ARG3-of (m / mix-01))
+                               :mod (a4 / antisense
+                                        :prep-to (c4 / codon
+                                                     :mod (v / value-interval
+                                                             :op1 "8"
+                                                             :op2 "13")
+                                                     :part-of (p / protein-segment
+                                                                 :name (n4 / name
+                                                                           :op1 "N-terminus"))
+                                                     :part-of (p2 / protein-segment
+                                                                  :name (n5 / name
+                                                                            :op1 "RIα")
+                                                                  :part-of (e2 / enzyme
+                                                                               :name (n6 / name
+                                                                                         :op1 "PKAI")))))
+                               :mod (p3 / polymer
+                                        :ARG1-of (l / long-03
+                                                    :ARG2 "18")))
+                       :op2 (s2 / small-molecule
+                                :name (n7 / name
+                                          :op1 "HYB"
+                                          :op2 "239")
+                                :ARG0-of (c6 / contain-01
+                                             :ARG1 (b / base
+                                                      :quant "4"
+                                                      :mod (m4 / mismatch)))
+                                :ARG0-of (c5 / control-01)))
+             :purpose (s / study-01
+                         :ARG1 (a / affect-01
+                                  :ARG1 (g / grow-01
+                                           :ARG1 (a2 / and
+                                                     :op1 (c / cell-line
+                                                             :mod (d / disease
+                                                                     :name (n / name
+                                                                              :op1 "NSCLC")))
+                                                     :op2 (c2 / cell-line
+                                                              :mod (d2 / disease
+                                                                       :name (n2 / name
+                                                                                 :op1 "CRC")))))))))
+
+# ::save-date Fri Feb 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All cancer cell lines treated with HBY 190 displayed a dose-dependent inhibition of growth by MTT assay (<xref ref-type="fig" rid="fig6">Figure 6A</xref>).
+# ::file a_pmid_2256_9000_181.txt
+# ::date 2015-06-02T09:47:26
+# ::id a_pmid_2256_9000.181
+(d2 / display-01
+    :ARG0 (c / cell-line
+             :ARG1-of (t / treat-04
+                         :ARG2 (s / small-molecule
+                                  :name (n2 / name
+                                            :op1 "HYB"
+                                            :op2 "190")))
+             :mod (a / all)
+             :mod (d / disease
+                     :wiki "Cancer"
+                     :name (n / name
+                              :op1 "cancer")))
+    :ARG1 (i / inhibit-01
+             :ARG1 (g / grow-01)
+             :ARG0-of (d3 / depend-01
+                          :ARG1 (d4 / dose)))
+    :ARG1-of (d5 / describe-01
+                 :ARG0 (f / figure
+                          :mod "6A"))
+    :manner (a2 / assay-01
+                :instrument (s2 / small-molecule
+                                :name (n3 / name
+                                          :op1 "MTT"))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Growth inhibition was more pronounced in selumetinib-resistant cancer cell lines (IC<sub>50</sub> between 0.25 and 1 <i>μ</i>ℳ), while the IC<sub>50</sub> values were >5 <i>μ</i>ℳ in the selumetinib-sensitive cancer cells.
+# ::file a_pmid_2256_9000_182.txt
+# ::date 2015-06-02T09:50:50
+# ::id a_pmid_2256_9000.182
+(c / contrast-01
+   :ARG1 (p / pronounced-02
+            :ARG1 (i / inhibit-01
+                     :ARG1 (g / grow-01))
+            :degree (m / more)
+            :location (c2 / cell-line
+                          :ARG0-of (r / resist-01
+                                      :ARG1 (s / small-molecule
+                                               :name (n2 / name
+                                                         :op1 "selumetinib")
+                                               :ARG1-of (h2 / have-percentage-maximal-inhibitory-concentration-01
+                                                            :ARG2 "50"
+                                                            :ARG4 (c4 / concentration-quantity
+                                                                      :unit (m3 / micromolar)
+                                                                      :quant (v / value-interval
+                                                                                :op1 "0.25"
+                                                                                :op2 "1")))))
+                          :mod (d / disease
+                                  :wiki "Cancer"
+                                  :name (n / name
+                                           :op1 "cancer"))))
+   :ARG2 (h3 / have-percentage-maximal-inhibitory-concentration-01
+             :ARG2 "50"
+             :ARG4 (m5 / more-than
+                       :op1 (c7 / concentration-quantity
+                                :quant "5"
+                                :unit m3))
+             :location (c5 / cell-line
+                           :ARG0-of (s2 / sensitive-03
+                                        :ARG1 s)
+                           :mod d)))
+
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, the control oligonucleotide, HYB 239, at doses up to 5 <i>μ</i>ℳ, showed only 5–15% growth inhibition among all of the cell lines tested (<xref ref-type="fig" rid="fig6">Figure 6A</xref>).
+# ::file a_pmid_2256_9000_183.txt
+# ::date 2015-06-02T09:58:52
+# ::id a_pmid_2256_9000.183
+(c / contrast-01
+      :ARG2 (s / show-01
+            :ARG0 (o / oligonucleotide
+                  :wiki "-"
+                  :name (n / name :op1 "HYB" :op2 "239")
+                  :ARG0-of (c2 / control-01))
+            :ARG1 (i / inhibit-01
+                  :ARG1 (g / grow-01)
+                  :mod (p / percentage-entity
+                        :value (v / value-interval :op1 "5" :op2 "15")
+                        :mod (o2 / only)))
+            :condition (d / dose
+                  :quant (u / up-to
+                        :op1 (c4 / concentration-quantity
+                              :quant "5"
+                              :unit (m / micromolar))))
+            :location (c3 / cell-line
+                  :mod (a / all)
+                  :ARG1-of (t / test-01)))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure :mod "6A")))
+
+# ::save-date Mon Jun 8, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To determine whether a combination of selumetinib and oligonucleotide HYB 190 could enhance the antiproliferative effect compared with either agent alone, selumetinib-resistant cells were treated with different combinations of the two agents at a fixed drug ratio of 1 : 1.
+# ::file a_pmid_2256_9000_184.txt
+# ::date 2015-06-02T12:42:11
+# ::id a_pmid_2256_9000.184
+(t / treat-04
+   :ARG1 (c4 / cell
+             :ARG0-of (r3 / resist-01
+                          :ARG1 "s"))
+   :ARG2 (c / combine-01
+            :ARG1 "s"
+            :ARG2 "o"
+            :ARG1-of (d3 / differ-02))
+   :purpose (d / determine-01
+               :ARG1 (p2 / possible-01
+                         :mode "interrogative"
+                         :ARG1 (e / enhance-01
+                                  :ARG0 (c2 / combine-01
+                                            :ARG1 (s / small-molecule
+                                                     :name (n / name
+                                                              :op1 "selumetinib"))
+                                            :ARG2 (o / oligonucleotide
+                                                     :name (n2 / name
+                                                               :op1 "HYB"
+                                                               :op2 "190")))
+                                  :ARG1 (a / affect-01
+                                           :ARG2 (c3 / counter-01
+                                                     :ARG1 (p3 / proliferate-01)))
+                                  :compared-to (o2 / or
+                                                   :op1 (e2 / enhance-01
+                                                            :ARG0 s
+                                                            :ARG1 a)
+                                                   :op2 (e3 / enhance-01
+                                                            :ARG0 o
+                                                            :ARG1 a)))))
+   :condition (e4 / equal-01
+                  :ARG1 (r2 / ratio
+                            :mod (d2 / drug)
+                            :ARG1-of (f / fix-03))
+                  :ARG2 (r4 / ratio-of
+                            :op1 "1"
+                            :op2 "1")))
+
+
+# ::save-date Mon Jun 8, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in <xref ref-type="fig" rid="fig6">Figure 6B</xref>, the combination treatment caused synergistic growth inhibitory effects.
+# ::file a_pmid_2256_9000_185.txt
+# ::date 2015-06-02T12:58:05
+# ::id a_pmid_2256_9000.185
+(c / cause-01
+      :ARG0 (t / treat-04
+            :mod (c2 / combine-01))
+      :ARG1 (a / affect-01
+            :ARG2 (i / inhibit-01
+                  :ARG1 (g / grow-01)))
+      :ARG1-of (s / show-01
+            :ARG0 (f / figure :mod "6B")))
+
+# ::save-date Tue Aug 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To determine whether the growth inhibitory effect of oligonucleotide HYB 190 correlated with a reduction in RI<i>α</i> protein levels, we performed protein blots on total cell extracts prepared from H460 cells treated with oligonucleotide HYB 190, oligonucleotide HYB 239, selumetinib, and combinations.
+# ::file a_pmid_2256_9000_186.txt
+# ::date 2015-06-02T13:00:24
+# ::id a_pmid_2256_9000.186
+(p / perform-01
+   :ARG0 (w / we)
+   :ARG1 (i2 / immunoblot-01
+             :ARG1 (p2 / protein)
+             :ARG2 (m / molecular-physical-entity
+                      :ARG1-of (e / extract-01
+                                  :ARG2 (c2 / cell))
+                      :mod (t / total)
+                      :ARG1-of (p4 / prepare-01
+                                   :ARG2 (c3 / cell-line
+                                             :name (n3 / name
+                                                       :op1 "H460")
+                                             :ARG1-of (t2 / treat-04
+                                                          :ARG2 (o2 / or
+                                                                    :op1 "o"
+                                                                    :op2 (o3 / oligonucleotide
+                                                                             :name (n4 / name
+                                                                                       :op1 "HYB"
+                                                                                       :op2 "239"))
+                                                                    :op3 (s / small-molecule
+                                                                            :name (n5 / name
+                                                                                      :op1 "selumetinib"))
+                                                                    :op4 (c4 / combine-01)))))))
+   :purpose (d / determine-01
+               :ARG0 w
+               :ARG1 (c / correlate-01
+                        :mode "interrogative"
+                        :ARG1 (a / affect-01
+                                 :ARG0 (o / oligonucleotide
+                                          :name (n / name
+                                                   :op1 "HYB"
+                                                   :op2 "190"))
+                                 :ARG2 (i / inhibit-01
+                                          :ARG0 o3
+                                          :ARG1 (g / grow-01)))
+                        :ARG2 (r / reduce-01
+                                 :ARG1 (l / level
+                                          :quant-of (p3 / protein-segment
+                                                        :name (n2 / name
+                                                                  :op1 "RIα")))))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Compared with untreated H460 cells, RI<i>α</i> levels were substantially unchanged, even in cells treated with a higher dose of the control oligonucleotide HYB 239 (1 <i>μ</i>ℳ) and selumetinib (5 <i>μ</i>ℳ).
+# ::file a_pmid_2256_9000_187.txt
+# ::date 2015-06-02T13:11:21
+# ::id a_pmid_2256_9000.187
+(c / change-01
+   :polarity "-"
+   :ARG1 (l / level
+            :quant-of (p / protein-segment
+                         :name (n / name
+                                  :op1 "RIα"))
+            :compared-to (c2 / cell-line
+                             :name (n2 / name
+                                       :op1 "H460")
+                             :ARG1-of (t / treat-04
+                                         :polarity "-")))
+   :degree (s / substantial)
+   :concession (t2 / treat-04
+                   :ARG1 (c3 / cell)
+                   :ARG2 (a / and
+                            :op1 (d / dose
+                                    :ARG1-of (h / high-02
+                                                :degree (m / more))
+                                    :quant-of (o / oligonucleotide
+                                                 :name (n3 / name
+                                                           :op1 "HYB"
+                                                           :op2 "239")
+                                                 :ARG0-of (c4 / control-01))
+                                    :ARG1-of (m2 / mean-01
+                                                 :ARG2 (c5 / concentration-quantity
+                                                           :quant "1"
+                                                           :unit (m3 / micromolar))))
+                            :op1 (d2 / dose
+                                     :ARG1-of h
+                                     :quant-of (s2 / small-molecule
+                                                   :name (n4 / name
+                                                             :op1 "selumetinib"))
+                                     :ARG1-of (m5 / mean-01
+                                                  :ARG2 (m6 / mass-quantity
+                                                            :quant "5"
+                                                            :unit m3))))))
+
+
+# ::save-date Mon Jun 8, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, reduction of RI<i>α</i> expression was seen when H460 cells were treated with oligonucleotide HYB 190 (<xref ref-type="fig" rid="fig6">Figure 6C</xref>).
+# ::file a_pmid_2256_9000_188.txt
+# ::date 2015-06-02T13:30:31
+# ::id a_pmid_2256_9000.188
+(c2 / contrast-01
+      :ARG2 (s / see-01
+            :ARG1 (r / reduce-01
+                  :ARG1 (e / express-03
+                        :ARG2 (p / protein-segment
+                              :name (n / name :op1 "RIα"))))
+            :condition (t / treat-04
+                  :ARG1 (c / cell-line
+                        :name (n2 / name :op1 "H460"))
+                  :ARG2 (o / oligonucleotide
+                        :name (n3 / name :op1 "HYB" :op2 "190")))
+            :ARG1-of (d / describe-01
+                  :ARG0 (f / figure :mod "6C"))))
+
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, a complete inhibition of RI<i>α</i> expression was seen in the combination treatment (<xref ref-type="fig" rid="fig6">Figure 6C</xref>).
+# ::file a_pmid_2256_9000_189.txt
+# ::date 2015-06-02T13:34:48
+# ::id a_pmid_2256_9000.189
+(a / and
+      :op2 (s / see-01
+            :ARG1 (i / inhibit-01
+                  :ARG1 (e / express-03
+                        :ARG2 (p / protein-segment
+                              :name (n / name :op1 "RIα")))
+                  :degree (c / complete-02))
+            :condition (t / treat-04
+                  :mod (c2 / combine-01))
+            :ARG1-of (d / describe-01
+                  :ARG0 (f / figure :mod "6C"))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We finally evaluated whether the combined inhibition of both PKA and MEK pathways would have antitumour activity <i>in vivo</i> in selumetinib-resistant HCT15 and H460 xenografts (<xref ref-type="fig" rid="fig7">Figure 7</xref>).
+# ::file a_pmid_2256_9000_190.txt
+# ::date 2015-06-02T13:36:16
+# ::id a_pmid_2256_9000.190
+(e2 / evaluate-01
+    :li "-1"
+    :ARG0 (w2 / we)
+    :ARG1 (a / activity-06
+             :mode "interrogative"
+             :ARG0 (i / inhibit-01
+                      :ARG1 (a2 / and
+                                :op1 (p / pathway
+                                        :name (n2 / name
+                                                  :op1 "PKA"))
+                                :op2 (p2 / pathway
+                                         :name (n3 / name
+                                                   :op1 "MEK")))
+                      :ARG1-of (c / combine-01))
+             :ARG1 (c2 / counter-01
+                       :ARG1 (t / tumor))
+             :manner (i2 / in-vivo)
+             :location (a3 / and
+                           :op1 (x / xenograft
+                                   :source (c3 / cell-line
+                                               :name (n / name
+                                                        :op1 "HCT15")))
+                           :op2 (x2 / xenograft
+                                    :source (c4 / cell-line
+                                                :name (n4 / name
+                                                          :op1 "H460")))
+                           :ARG0-of (r / resist-01
+                                       :ARG1 (s / small-molecule
+                                                :name (n6 / name
+                                                          :op1 "selumetinib")))))
+    :ARG1-of (d / describe-01
+                :ARG0 (f2 / figure
+                          :mod "7")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At day 50 from cancer cell injection, the mean tumour volume in mice bearing HCT15 and H460 tumour xenografts and treated with selumetinib, 25 mg kg<sup>−1</sup>, and 8-Cl-cAMP, 0.5 mg kg<sup>−1</sup>, were 20% and 16%, respectively, as compared with control untreated mice.
+# ::file a_pmid_2256_9000_191.txt
+# ::date 2015-06-02T13:42:54
+# ::id a_pmid_2256_9000.191
+(a / and
+   :op1 (e / equal-01
+           :ARG1 (v / volume
+                    :mod (t / tumor)
+                    :mod (m / mean))
+           :ARG2 (p / percentage-entity
+                    :value "20")
+           :location (m2 / mouse
+                         :ARG0-of (b / bear-01
+                                     :ARG1 (a2 / and
+                                               :op1 (x / xenograft
+                                                       :source (t2 / tumor
+                                                                   :mod (c6 / cell-line
+                                                                            :name (n / name
+                                                                                     :op1 "HCT15"))))
+                                               :op2 (x2 / xenograft
+                                                        :source (t3 / tumor
+                                                                    :mod (c4 / cell-line
+                                                                             :name (n2 / name
+                                                                                       :op1 "H460"))))))
+                         :ARG1-of (t4 / treat-04
+                                      :ARG2 (s / small-molecule
+                                               :name (n4 / name
+                                                         :op1 "selumetinib")
+                                               :mod (c / concentration-quantity
+                                                       :quant "25"
+                                                       :unit (m3 / milligram-per-kilogram))))))
+   :op2 (e2 / equal-01
+            :ARG1 v
+            :ARG2 (p2 / percentage-entity
+                      :value "16")
+            :location (m4 / mouse
+                          :ARG0-of b
+                          :ARG1-of (t5 / treat-04
+                                       :ARG2 (s2 / small-molecule
+                                                 :name (n5 / name
+                                                           :op1 "8-Cl-cAMP")
+                                                 :mod (c2 / concentration-quantity
+                                                          :quant "0.5"
+                                                          :unit (m5 / milligram-per-kilogram))))))
+   :time (a3 / after
+             :op1 (i / inject-01
+                     :ARG1 (c3 / cell
+                               :mod (d / disease
+                                       :wiki "Cancer"
+                                       :name (n3 / name
+                                                 :op1 "cancer"))))
+             :quant (t6 / temporal-quantity
+                        :quant "50"
+                        :unit (d2 / day)))
+   :compared-to (m6 / mouse
+                    :ARG0-of (c5 / control-01)
+                    :ARG1-of (t7 / treat-04
+                                 :polarity "-")))

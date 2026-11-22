@@ -1,0 +1,2461 @@
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients whose nuclear expression of MAPK rose with the development of CRPC had a significantly shorter median time to death following biochemical relapse (1.40 <i>vs</i> 3.00 years, <i>P</i>=0.0255) as well as reduced disease-specific survival when compared with those whose expression fell or remained unchanged (1.16 <i>vs</i> 2.62 years, <i>P</i>=0.0005).
+# ::file pmid_2155_9022_10.txt
+# ::date 2015-08-08T07:15:41
+# ::id pmid_2155_9022.10
+(h / have-03
+   :ARG0 (p / person
+            :ARG0-of (h2 / have-rel-role-91
+                         :ARG2 (p2 / patient))
+            :ARG3-of (e / express-03
+                        :ARG2 (e2 / enzyme
+                                  :name (n2 / name
+                                            :op1 "MAPK"))
+                        :mod (n / nucleus)
+                        :ARG1-of (r / rise-01
+                                    :time (d / develop-01
+                                             :ARG2 (d4 / disease
+                                                       :name (n3 / name
+                                                                 :op1 "CRPC")))))
+            :ARG1-of (c / compare-01
+                        :ARG2 (p3 / person
+                                  :ARG0-of (h3 / have-rel-role-91
+                                               :ARG2 (p4 / patient))
+                                  :poss (o2 / or
+                                            :op1 (e4 / express-03
+                                                     :ARG1-of (f2 / fall-01))
+                                            :op2 (e5 / express-03
+                                                     :ARG1-of (c3 / change-01
+                                                                  :polarity "-"))
+                                            :ARG1-of (m5 / mean-01
+                                                         :ARG2 (t2 / temporal-quantity
+                                                                   :quant "1.16"
+                                                                   :compared-to (t3 / temporal-quantity
+                                                                                    :quant "2.62"
+                                                                                    :unit "y3")
+                                                                   :unit (y3 / year)))
+                                            :ARG1-of (s6 / statistical-test-91
+                                                         :ARG2 "0.005")))))
+   :ARG1 (a / and
+            :op1 (t / time
+                    :mod (m / median)
+                    :ARG1-of (s / short-07
+                                :degree (m2 / more)
+                                :ARG1-of (s2 / significant-02)
+                                :ARG1-of (s5 / statistical-test-91
+                                             :ARG2 "0.0255"))
+                    :mod (d2 / die-01
+                             :ARG1-of (f / follow-01
+                                         :ARG2 (r2 / relapse-01
+                                                   :mod (b / biochemistry))))
+                    :ARG1-of (m3 / mean-01
+                                 :ARG2 (t4 / temporal-quantity
+                                           :quant "1.40"
+                                           :compared-to (t5 / temporal-quantity
+                                                            :quant "3.00"
+                                                            :unit y3)
+                                           :unit y3)))
+            :op2 (s3 / survive-01
+                     :ARG1-of (r3 / reduce-01)
+                     :ARG1-of (s4 / specific-02
+                                  :ARG2 (d3 / disease)))))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Significant correlations were observed between protein expression of Raf-1 and MAPK with the type 1 receptor tyrosine kinases, Her2 and epidermal growth factor receptor, as well as the transcription factor AP-1 in CRPC tumours.
+# ::file pmid_2155_9022_11.txt
+# ::date 2015-08-12T01:08:14
+# ::id pmid_2155_9022.11
+(o / observe-01
+   :ARG1 (c / correlate-01
+            :ARG1 (e / express-03
+                     :ARG2 (a / and
+                              :op1 (e2 / enzyme
+                                       :name (n / name
+                                                :op1 "Raf-1"))
+                              :op2 (e3 / enzyme
+                                       :name (n2 / name
+                                                 :op1 "MAPK")))
+                     :location (t3 / tumor
+                                   :mod (d / disease
+                                           :name (n7 / name
+                                                     :op1 "CRPC"))))
+            :ARG2 (a2 / and
+                      :op1 (e4 / enzyme
+                               :name (n5 / name
+                                         :op1 "receptor"
+                                         :op2 "tyrosine"
+                                         :op3 "kinase")
+                               :mod (t / type
+                                       :mod "1"))
+                      :op2 (e5 / enzyme
+                               :name (n3 / name
+                                         :op1 "Her2"))
+                      :op3 (e6 / enzyme
+                               :name (n4 / name
+                                         :op1 "epidermal"
+                                         :op2 "growth"
+                                         :op3 "factor"
+                                         :op4 "receptor"))
+                      :op4 (p / protein
+                              :name (n6 / name
+                                        :op1 "AP-1")
+                              :ARG0-of (t2 / transcribe-01)
+                              :mod (f / factor)))
+            :ARG1-of (s / significant-02)))
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The clinical data collected and recorded for each patient included age (median: 70 years; inter-quartile range: 66–74 years), PSA level at diagnosis (median: 31 ng ml<sup>−1</sup>; inter-quartile range: 7.8–109 ng ml<sup>−1</sup>), PSA level at relapse (median: 10 ng ml<sup>−1</sup>; inter-quartile range: 4–11 ng ml<sup>−1</sup>) and Gleason grade at diagnosis (median: 8, inter-quartile range: 7–9).
+# ::file pmid_2155_9022_75.txt
+# ::date 2015-08-14T11:12:36
+# ::id pmid_2155_9022.75
+(i / include-91
+   :ARG1 (a2 / and
+             :op1 (a / age
+                     :ARG1-of (m / mean-01
+                                 :ARG2 (a3 / and
+                                           :op1 (t / time
+                                                   :mod (m2 / median)
+                                                   :ARG1-of (m3 / mean-01
+                                                                :ARG2 (t2 / temporal-quantity
+                                                                          :quant "70"
+                                                                          :unit (y / year))))
+                                           :op2 (r3 / range-01
+                                                    :ARG3 (t3 / temporal-quantity
+                                                              :quant "66"
+                                                              :unit y)
+                                                    :ARG4 (t4 / temporal-quantity
+                                                              :quant "74"
+                                                              :unit y)
+                                                    :mod (i2 / inter-quartile)))))
+             :op2 (l / level
+                     :degree-of (e2 / enzyme
+                                    :name (n / name
+                                             :op1 "PSA"))
+                     :time (d2 / diagnose-01)
+                     :ARG1-of (m5 / mean-01
+                                  :ARG2 (a4 / and
+                                            :op1 (c3 / concentration-quantity
+                                                     :quant "31"
+                                                     :mod m2
+                                                     :unit (n2 / nanogram-per-milliliter))
+                                            :op2 (r4 / range-01
+                                                     :ARG3 (c4 / concentration-quantity
+                                                               :quant "7.8"
+                                                               :unit n2)
+                                                     :ARG4 (c5 / concentration-quantity
+                                                               :quant "109"
+                                                               :unit n2)
+                                                     :mod (i3 / inter-quartile)))))
+             :op3 (l2 / level
+                      :degree-of e2
+                      :time (r2 / relapse-01)
+                      :ARG1-of (m6 / mean-01
+                                   :ARG2 (a5 / and
+                                             :op1 (c6 / concentration-quantity
+                                                      :quant "10"
+                                                      :mod m2
+                                                      :unit n2)
+                                             :op2 (r5 / range-01
+                                                      :ARG3 (c8 / concentration-quantity
+                                                                :quant "4"
+                                                                :unit n2)
+                                                      :ARG4 (c9 / concentration-quantity
+                                                                :quant "11"
+                                                                :unit n2)
+                                                      :mod (i4 / inter-quartile)))))
+             :op4 (g / grade
+                     :time d2
+                     :ARG1-of (m7 / mean-01
+                                  :ARG2 (a6 / and
+                                            :op1 (c7 / concentration-quantity
+                                                     :quant "8"
+                                                     :unit n2)
+                                            :op2 (r6 / range-01
+                                                     :ARG3 (c10 / concentration-quantity
+                                                                :quant "7"
+                                                                :unit n2)
+                                                     :ARG4 (c11 / concentration-quantity
+                                                                :quant "9"
+                                                                :unit n2)
+                                                     :mod (i5 / inter-quartile))))
+                     :mod (p3 / person
+                              :name (n3 / name
+                                        :op1 "Gleason"))))
+   :ARG2 (d / data
+            :mod (c / clinic)
+            :ARG1-of (c2 / collect-01
+                         :topic (p / person
+                                   :mod (e / each)
+                                   :ARG0-of (h / have-rel-role-91
+                                               :ARG2 (p2 / patient))))
+            :ARG1-of (r / record-01
+                        :topic p)))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All patients underwent biochemical relapse (median time to relapse: 2.54 years; inter-quartile range: 1.51–4.62 years).
+# ::file pmid_2155_9022_76.txt
+# ::date 2015-08-08T08:43:06
+# ::id pmid_2155_9022.76
+(u / undergo-28
+      :ARG1 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG2 (p2 / patient))
+            :mod (a / all))
+      :ARG2 (r / relapse-01
+            :ARG1 p
+            :mod (b / biochemistry)
+            :ARG1-of (m / mean-01
+                  :ARG2 (a2 / and
+                        :op1 (t / time
+                              :mod (m2 / median)
+                              :mod (r3 / relapse-01)
+                              :ARG1-of (m3 / mean-01
+                                    :ARG2 (t2 / temporal-quantity
+                                          :quant "2.54"
+                                          :unit (y / year))))
+                        :op2 (r2 / range-01
+                              :ARG3 (t3 / temporal-quantity
+                                    :quant "1.51"
+                                    :unit y)
+                              :ARG4 (t4 / temporal-quantity
+                                    :quant "4.62"
+                                    :unit y)
+                              :mod (i / inter-quartile))))))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All patients included in this study were deceased (median time to death after relapse: 1.37 years; inter-quartile range: 0.82–2.69).
+# ::file pmid_2155_9022_77.txt
+# ::date 2015-08-12T02:30:59
+# ::id pmid_2155_9022.77
+(d / decease-01
+      :ARG1 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG2 (p2 / patient))
+            :mod (a / all)
+            :ARG1-of (i / include-01
+                  :ARG2 (s / study
+                        :mod (t / this))))
+      :ARG1-of (m / mean-01
+            :ARG2 (a2 / and
+                  :op1 (t2 / time
+                        :mod (m2 / median)
+                        :mod (d2 / die-01)
+                        :time (a3 / after
+                              :op1 (r / relapse-01))
+                        :ARG1-of (m3 / mean-01
+                              :ARG2 (t3 / temporal-quantity
+                                    :quant "1.37"
+                                    :unit (y / year))))
+                  :op2 (r2 / range-01
+                        :ARG3 (t4 / temporal-quantity
+                              :quant "0.82"
+                              :unit y)
+                        :ARG4 (t5 / temporal-quantity
+                              :quant "2.69"
+                              :unit y)
+                        :mod (i2 / inter-quartile)))))
+
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This resulted in an overall median survival time of 4.5 years (inter-quartile range: 3.00–7.01).
+# ::file pmid_2155_9022_78.txt
+# ::date 2015-08-12T02:56:01
+# ::id pmid_2155_9022.78
+(r / result-01
+      :ARG1 (t / this)
+      :ARG2 (t2 / time
+            :mod (s / survive-01)
+            :mod (o / overall)
+            :mod (m / median)
+            :duration (t3 / temporal-quantity
+                  :quant "4.5"
+                  :unit (y / year)))
+      :ARG1-of (m2 / mean-01
+            :ARG2 (r2 / range-01
+                  :ARG3 (t4 / temporal-quantity
+                        :quant "3.00"
+                        :unit (y2 / year))
+                  :ARG4 (t5 / temporal-quantity
+                        :quant "7.01"
+                        :unit y)
+                  :mod (i / inter-quartile))))
+
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients were diagnosed with locally advanced (46 patients) or metastatic (19 patients) prostate cancer, and at the time of relapse the number of patients presenting with metastatic disease had risen (40 patients).
+# ::file pmid_2155_9022_79.txt
+# ::date 2015-08-12T22:50:42
+# ::id pmid_2155_9022.79
+(a / and
+      :op1 (d / diagnose-01
+            :ARG1 "p4"
+            :ARG2 (o / or
+                  :op1 (d3 / disease
+                        :wiki "Prostate_cancer"
+                        :name (n2 / name :op1 "prostate" :op2 "cancer")
+                        :ARG1-of (a2 / advanced-02
+                              :ARG1-of (l / local-02)
+                              :ARG1-of (m2 / mean-01
+                                    :ARG2 (p2 / person
+                                          :quant "46"
+                                          :ARG0-of (h / have-rel-role-91
+                                                :ARG2 (p3 / patient))))))
+                  :op2 (d4 / disease
+                        :wiki "Cancer"
+                        :name (n3 / name :op1 "cancer")
+                        :ARG1-of (m / metastasize-101
+                              :ARG1-of (m3 / mean-01
+                                    :ARG2 (p7 / person
+                                          :quant "19"
+                                          :ARG0-of h))))))
+      :op2 (r / rise-01
+            :ARG1 (n / number
+                  :quant-of (p4 / person
+                        :ARG0-of (p / present-102
+                              :ARG1 (d2 / disease
+                                    :ARG1-of m))
+                        :ARG0-of h))
+            :time (r2 / relapse-01)
+            :ARG1-of (m4 / mean-01
+                  :ARG2 (p9 / person
+                        :quant "40"
+                        :ARG0-of h))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At diagnosis, patients either underwent surgery (27 orchidectomy) or androgen deprivation therapy (59 GnRH analogue and/or anti-androgen deprivation therapy).
+# ::file pmid_2155_9022_80.txt
+# ::date 2015-08-12T23:59:28
+# ::id pmid_2155_9022.80
+(u / undergo-28
+   :ARG1 (p / person
+            :ARG0-of (h / have-rel-role-91
+                        :ARG2 (p2 / patient)))
+   :ARG2 (o / or
+            :op1 (s / surgery-01
+                    :ARG1 p
+                    :ARG1-of (m / mean-01
+                                :ARG2 (o2 / orchidectomy
+                                          :mod "27")))
+            :op2 (t / therapy
+                    :ARG0-of (d2 / deprive-01
+                                 :ARG1 (a / androgen))
+                    :ARG1-of (m2 / mean-01
+                                 :ARG2 (a2 / and-or
+                                           :op1 (e / enzyme
+                                                   :mod "59"
+                                                   :name (n / name
+                                                            :op1 "GnRH")
+                                                   :mod (a3 / analogue))
+                                           :op2 (t2 / therapy
+                                                    :ARG1-of (d3 / deprive-01)
+                                                    :ARG0-of (o3 / oppose-01
+                                                                 :ARG1 (a4 / androgen)))))))
+   :time (d / diagnose-01))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Most patients were deceased during the course of follow-up (46 patients), although some survived beyond follow-up (19 patients).
+# ::file pmid_2155_9022_81.txt
+# ::date 2015-08-09T02:28:32
+# ::id pmid_2155_9022.81
+(d / decease-01
+      :ARG1 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG2 (p2 / patient))
+            :mod (m / most
+                  :ARG1-of (m2 / mean-01
+                        :ARG2 (p3 / person
+                              :quant "46"
+                              :ARG0-of h))))
+      :time (f / follow-up-03)
+      :concession (s / survive-01
+            :ARG1 (s2 / some
+                  :ARG1-of (m3 / mean-01
+                        :ARG2 (p5 / person
+                              :quant "19"
+                              :ARG0-of h)))
+            :mod (b / beyond
+                  :op1 f)))
+
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The presence of metastatic disease at diagnosis was associated with reduced time to biochemical relapse (<i>P</i>=0.037) and a trend in overall patient survival (<i>P</i>=0.06).
+# ::file pmid_2155_9022_82.txt
+# ::date 2015-08-06T03:38:45
+# ::id pmid_2155_9022.82
+(a / associate-01
+      :ARG1 (p / present-02
+            :ARG1 (d / disease
+                  :ARG1-of (m / metastasize-101))
+            :ARG2 (d2 / diagnose-01))
+      :ARG2 (a2 / and
+            :op1 (t / time
+                  :ARG1-of (r / reduce-01)
+                  :mod (r2 / relapse-01
+                        :mod (b / biochemistry)
+                        :ARG1-of (s2 / statistical-test-91 :ARG2 "0.037")))
+            :op2 (t2 / trend-01
+                  :ARG1 (s / survive-01
+                        :ARG0 (p2 / person
+                              :ARG0-of (h / have-rel-role-91
+                                    :ARG2 (p3 / patient)))
+                        :mod (o / overall))
+                  :ARG1-of (s3 / statistical-test-91 :ARG2 "0.06"))))
+
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt High Gleason scores were associated with more rapid biochemical relapse (<i>P</i>=0.002), time to death after biochemical relapse (<i>P</i>=0.02) and disease-specific survival (<i>P</i>=0.001), confirming the association of these clinical parameters with the progression of prostate cancer.
+# ::file pmid_2155_9022_83.txt
+# ::date 2015-08-13T00:37:57
+# ::id pmid_2155_9022.83
+(a / associate-01
+      :ARG1 (s / score
+            :ARG1-of (h / high-02)
+            :mod (p6 / person
+                  :name (n / name :op1 "Gleason"))
+            :ARG1-of (s4 / statistical-test-91 :ARG2 "0.002"))
+      :ARG2 (a2 / and
+            :op1 (r / relapse-01
+                  :mod (r2 / rapid
+                        :degree (m / more))
+                  :mod (b / biochemistry))
+            :op2 (t / time
+                  :mod (d / die-01)
+                  :time (a3 / after
+                        :op1 r)
+                  :ARG1-of (s5 / statistical-test-91 :ARG2 "0.02"))
+            :op3 (s2 / survive-01
+                  :ARG1-of (s3 / specific-02
+                        :ARG2 (d2 / disease))
+                  :ARG1-of (s6 / statistical-test-91 :ARG2 "0.001")))
+      :ARG0-of (c / confirm-01
+            :ARG1 (a4 / associate-01
+                  :ARG1 a2
+                  :ARG2 (p / progress-01
+                        :ARG1 (d3 / disease
+                              :wiki "Prostate_cancer"
+                              :name (n2 / name :op1 "prostate" :op2 "cancer"))))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Raf-1 was observed in the cytoplasm and peri-membrane areas (<xref ref-type="fig" rid="fig1">Figure 1A</xref>), and the inactive form of Raf-1 was found only in the peri-membrane region (<xref ref-type="fig" rid="fig1">Figure 1B</xref>); however, the activated form of Raf-1 was observed in the cytoplasm, nucleus and the cell membrane (<xref ref-type="fig" rid="fig1">Figure 1C</xref>).
+# ::file pmid_2155_9022_85.txt
+# ::date 2015-08-14T02:21:34
+# ::id pmid_2155_9022.85
+(a / and
+   :op1 (a2 / and
+            :op1 (o / observe-01
+                    :ARG1 (e / enzyme
+                             :name (n / name
+                                      :op1 "Raf-1"))
+                    :ARG0-of (d / describe-01
+                                :ARG1 (f4 / figure
+                                          :mod "1A"))
+                    :location (a8 / and
+                                  :op1 (a4 / area
+                                           :part-of (c / cytoplasm))
+                                  :op2 (a9 / area
+                                           :part-of (p / peri-membrane
+                                                       :part r))))
+            :op2 (f / find-01
+                    :ARG1 (e2 / enzyme
+                              :name (n2 / name
+                                        :op1 "Raf-1")
+                              :mod (f2 / form
+                                       :ARG0-of (a3 / activity-06
+                                                    :polarity "-")))
+                    :location (r / region
+                                 :mod (o3 / only))
+                    :ARG0-of (d2 / describe-01
+                                 :ARG1 (f5 / figure
+                                           :mod "1B"))))
+   :op2 (h / have-concession-91
+           :ARG1 (o2 / observe-01
+                     :ARG1 (e3 / enzyme
+                               :name (n3 / name
+                                         :op1 "Raf-1")
+                               :mod (f3 / form
+                                        :ARG0-of (a5 / activate-01))))
+           :location (a7 / and
+                         :op1 c
+                         :op2 (n4 / nucleus)
+                         :op3 (m / membrane
+                                 :part-of (c3 / cell)))
+           :ARG0-of (d3 / describe-01
+                        :ARG1 (f6 / figure
+                                  :mod "1C"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Mitogen-activated protein kinase and phosphorylated MAPK (pMAPK) (Thr202/204) were observed in the nucleus and cytoplasm (<xref ref-type="fig" rid="fig1">Figure 1D</xref>).
+# ::file pmid_2155_9022_86.txt
+# ::date 2015-08-07T03:06:44
+# ::id pmid_2155_9022.86
+(o / observe-01
+   :ARG1 (a / and
+            :op1 (e2 / enzyme
+                     :name (n / name
+                              :op1 "mitogen-activated"
+                              :op2 "protein"
+                              :op3 "kinase"))
+            :op2 (a2 / amino-acid
+                     :name (n2 / name
+                               :op1 "threonine")
+                     :part-of (e / enzyme
+                                 :name (n3 / name
+                                           :op1 "MAPK"))
+                     :ARG3-of (p / phosphorylate-01)
+                     :mod (s / slash
+                             :op1 "202"
+                             :op2 "204")))
+   :location (a3 / and
+                 :op1 (n5 / nucleus)
+                 :op2 (c / cytoplasm))
+   :ARG0-of (d / describe-01
+               :ARG1 (f / figure
+                        :mod "1D")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Overall, comparison of HNPC tumours and CRPC tumours revealed no differences in total or average expression levels of either Raf-1 (and all phosphorylated forms) (<xref ref-type="table" rid="tbl1">Table 1</xref>) or MAPK (activated or inactivate, nuclear or cytoplasmic) (<xref ref-type="table" rid="tbl2">Table 2</xref>).
+# ::file pmid_2155_9022_87.txt
+# ::date 2015-08-11T23:11:35
+# ::id pmid_2155_9022.87
+(r / reveal-01
+   :ARG0 (c / compare-01
+            :ARG1 (t / tumor
+                     :mod (d4 / disease
+                              :name (n / name
+                                       :op1 "HNPC")))
+            :ARG2 (t2 / tumor
+                      :mod (d5 / disease
+                               :name (n2 / name
+                                         :op1 "CRPC"))))
+   :ARG1 (d / differ-02
+            :polarity "-"
+            :ARG1 (l / level
+                     :degree-of (e / express-03
+                                   :ARG2 (o3 / or
+                                             :op1 (a2 / and
+                                                      :op1 (e2 / enzyme
+                                                               :name (n3 / name
+                                                                         :op1 "Raf-1"))
+                                                      :op2 (e3 / enzyme
+                                                               :name (n4 / name
+                                                                         :op1 "Raf-1")
+                                                               :ARG3-of (p / phosphorylate-01))
+                                                      :ARG1-of (d2 / describe-01
+                                                                   :ARG0 (t4 / table
+                                                                             :mod "1")))
+                                             :op2 (o7 / or
+                                                      :op1 (o8 / or
+                                                               :op1 (e7 / enzyme
+                                                                        :name (n5 / name
+                                                                                  :op1 "MAPK")
+                                                                        :ARG1-of (d3 / describe-01
+                                                                                     :ARG0 (t5 / table
+                                                                                               :mod "2"))
+                                                                        :ARG0-of (a3 / activate-01))
+                                                               :op2 (e4 / enzyme
+                                                                        :name (n7 / name
+                                                                                  :op1 "MAPK")
+                                                                        :ARG0-of (a4 / activate-01
+                                                                                     :polarity "-")))
+                                                      :op2 (o9 / or
+                                                               :op1 (e6 / enzyme
+                                                                        :name (n8 / name
+                                                                                  :op1 "MAPK")
+                                                                        :location (n9 / nucleus))
+                                                               :op2 (e5 / enzyme
+                                                                        :name (n10 / name
+                                                                                   :op1 "MAPK")
+                                                                        :location (c3 / cytoplasm))))))
+                     :ARG1-of (t3 / total-01)
+                     :ARG1-of (a / average-01)))
+   :mod (o / overall))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, analysis of matched pairs revealed a subgroup that showed significant increases in Raf-1 and MAPK levels in CRPC tumours.
+# ::file pmid_2155_9022_88.txt
+# ::date 2015-08-10T11:28:33
+# ::id pmid_2155_9022.88
+(h / have-concession-91
+   :ARG1 (r / reveal-01
+            :ARG0 (a / analyze-01
+                     :ARG1 (p / pair
+                              :ARG1-of (m / match-01)))
+            :ARG1 (s / subgroup
+                     :ARG0-of (s2 / show-01
+                                  :ARG1 (i / increase-01
+                                           :ARG1 (a3 / and
+                                                     :op1 (l / level
+                                                             :quant-of (e3 / enzyme
+                                                                           :name (n3 / name
+                                                                                     :op1 "Raf-1")))
+                                                     :op2 (l2 / level
+                                                              :quant-of (e / enzyme
+                                                                           :name (n2 / name
+                                                                                     :op1 "MAPK"))))
+                                           :ARG1-of (s3 / significant-02))
+                                  :location (t / tumor
+                                               :mod (d / disease
+                                                       :name (n / name
+                                                                :op1 "CRPC")))))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We have previously reported that patients whose Raf-1 expression rose in this cohort with the development of CRPC had a significantly shorter time to relapse than those patients who had a fall or no change (<i>P</i>=0.0005) (<xref ref-type="bibr" rid="bib31">Mukherjee <i>et al</i>, 2005</xref>).
+# ::file pmid_2155_9022_89.txt
+# ::date 2015-08-13T02:18:07
+# ::id pmid_2155_9022.89
+(r / report-01
+   :ARG0 (w / we)
+   :ARG1 (h / have-03
+            :ARG0 (p / person
+                     :ARG0-of (h2 / have-rel-role-91
+                                  :ARG2 (p2 / patient))
+                     :poss (e / express-03
+                              :ARG2 (e2 / enzyme
+                                        :name (n / name
+                                                 :op1 "Raf-1"))
+                              :ARG1-of (r2 / rise-01
+                                           :location (c / cohort
+                                                        :mod (t3 / this))
+                                           :time (d / develop-01
+                                                    :ARG2 (d4 / disease
+                                                              :name (n2 / name
+                                                                        :op1 "CRPC")))))
+                     :ARG1-of (c3 / compare-01
+                                  :ARG2 (p3 / person
+                                            :ARG0-of (h3 / have-rel-role-91
+                                                         :ARG2 (p4 / patient))
+                                            :mod (t2 / that)
+                                            :ARG0-of (h4 / have-06
+                                                         :ARG1 (o / or
+                                                                  :op1 (f / fall-01)
+                                                                  :op2 (c4 / change-01
+                                                                           :polarity "-"))))))
+            :ARG1 (t / time
+                     :ARG1-of (s / short-07
+                                 :degree (m / more))
+                     :ARG1-of (s2 / significant-02)
+                     :mod (r3 / relapse-01))
+            :ARG1-of (s3 / statistical-test-91
+                         :ARG2 "0.0005"))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p6 / publication-91
+                          :ARG0 (a / and
+                                   :op1 (p7 / person
+                                            :name (n3 / name
+                                                      :op1 "Mukherjee"))
+                                   :op2 (p8 / person
+                                            :mod (o2 / other)))
+                          :time (d3 / date-entity
+                                    :year "2005")))
+   :time (p9 / previous))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with this observation, patients with rising levels of nuclear pRaf (Ser338, activated Raf-1) had a significantly shorter time to biochemical relapse (2.2 years; range: 1.84–2.56 years) by 2.4 years when compared with patients who showed a fall in levels (4.6 years; range: 3.4–5.8 years) (<i>P</i>=0.01) (<xref ref-type="fig" rid="fig2">Figure 2</xref>).
+# ::file pmid_2155_9022_90.txt
+# ::date 2015-08-14T00:30:22
+# ::id pmid_2155_9022.90
+(h / have-03
+   :ARG0 (p / person
+            :ARG0-of (h2 / have-rel-role-91
+                         :ARG2 (p2 / patient)
+                         :ARG0 p4)
+            :ARG0-of (h4 / have-03
+                         :ARG1 (l / level
+                                  :quant-of (a / amino-acid
+                                               :mod "338"
+                                               :name (n / name
+                                                        :op1 "serine")
+                                               :part-of (e / enzyme
+                                                           :name (n2 / name
+                                                                     :op1 "Raf")
+                                                           :ARG3-of (p3 / phosphorylate-01)
+                                                           :mod (n3 / nucleus)
+                                                           :ARG1-of (m2 / mean-01
+                                                                        :ARG2 (e2 / enzyme
+                                                                                  :name (n4 / name
+                                                                                            :op1 "Raf-1")
+                                                                                  :ARG1-of (a2 / activate-01)))))
+                                  :ARG1-of (r2 / rise-01))))
+   :ARG1 (t5 / time
+             :ARG1-of (s / short-07
+                         :degree (m / more)
+                         :ARG1-of (s2 / significant-02)
+                         :ARG1-of (s4 / statistical-test-91
+                                      :ARG2 "0.01"))
+             :mod (r / relapse-01
+                     :mod (b / biochemistry)
+                     :duration (t7 / temporal-quantity
+                                   :quant "2.4"
+                                   :unit (y5 / year)))
+             :ARG1-of (m3 / mean-01
+                          :ARG2 (a3 / and
+                                    :op1 (t / temporal-quantity
+                                            :quant "2.2"
+                                            :unit y5)
+                                    :op2 (r3 / range-01
+                                             :ARG3 (t2 / temporal-quantity
+                                                       :quant "1.84"
+                                                       :unit y5)
+                                             :ARG4 (t3 / temporal-quantity
+                                                       :quant "2.56"
+                                                       :unit y5)))))
+   :ARG1-of (c / consistent-01
+               :ARG2 (o / observe-01
+                        :mod (t6 / this)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "2"))
+   :condition (c2 / compare-01
+                  :ARG1 p
+                  :ARG2 (p4 / person
+                            :ARG0-of (s3 / show-01
+                                         :ARG1 (f / fall-01
+                                                  :ARG1 (l2 / level
+                                                            :ARG1-of (m5 / mean-01
+                                                                         :ARG2 (a4 / and
+                                                                                   :op1 (t4 / temporal-quantity
+                                                                                            :quant "4.6"
+                                                                                            :unit y5)
+                                                                                   :op2 (r4 / range-01
+                                                                                            :ARG3 (t8 / temporal-quantity
+                                                                                                      :quant "3.4"
+                                                                                                      :unit y5)
+                                                                                            :ARG4 (t9 / temporal-quantity
+                                                                                                      :quant "5.8"
+                                                                                                      :unit y5))))))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients whose nuclear MAPK expression rose with the development of CRPC had a significantly shorter time to death from relapse (1.40 (1.20–1.61) years) compared with samples that showed a fall or no change in expression (3.00 (1.43–4.57) years), <i>P</i>=0.0255 (<xref ref-type="fig" rid="fig3">Figure 3A</xref>).
+# ::file pmid_2155_9022_91.txt
+# ::date 2015-08-14T08:54:56
+# ::id pmid_2155_9022.91
+(h / have-03
+   :ARG0 (p / person
+            :ARG0-of (h2 / have-rel-role-91
+                         :ARG2 (p2 / patient))
+            :poss (e / express-03
+                     :ARG2 (e2 / enzyme
+                               :name (n / name
+                                        :op1 "MAPK"))
+                     :mod (n2 / nucleus)
+                     :ARG1-of (r / rise-01
+                                 :time (d / develop-01
+                                          :ARG2 (d4 / disease
+                                                    :name (n3 / name
+                                                              :op1 "CRPC")))))
+            :ARG1-of (c2 / compare-01
+                         :ARG2 (t8 / thing
+                                   :ARG1-of (s3 / sample-01
+                                                :ARG0-of (s4 / show-01
+                                                             :ARG1 (o / or
+                                                                      :op1 (f / fall-01
+                                                                              :ARG1 "e3")
+                                                                      :op2 (c3 / change-01
+                                                                               :polarity "-"
+                                                                               :ARG1 (e3 / express-03))))
+                                                :ARG1-of (m4 / mean-01
+                                                             :ARG2 (t5 / temporal-quantity
+                                                                       :quant "3.00"
+                                                                       :unit "y"
+                                                                       :ARG1-of (m5 / mean-01
+                                                                                    :ARG2 (v2 / value-interval
+                                                                                              :op1 (t6 / temporal-quantity
+                                                                                                       :quant "1.43"
+                                                                                                       :unit "y")
+                                                                                              :op2 (t7 / temporal-quantity
+                                                                                                       :quant "4.57"
+                                                                                                       :unit "y")))))))))
+   :ARG1 (t / time
+            :ARG1-of (s / short-07
+                        :degree (m / more)
+                        :ARG1-of (s2 / significant-02)
+                        :ARG1-of (s5 / statistical-test-91
+                                     :ARG2 "0.0255"))
+            :mod (d2 / die-01
+                     :time (a / after
+                              :op1 (r2 / relapse-01)))
+            :ARG1-of (m2 / mean-01
+                         :ARG2 (t2 / temporal-quantity
+                                   :quant "1.40"
+                                   :unit (y / year)
+                                   :ARG1-of (m3 / mean-01
+                                                :ARG2 (v / value-interval
+                                                         :op1 (t3 / temporal-quantity
+                                                                  :quant "1.20"
+                                                                  :unit y)
+                                                         :op2 (t4 / temporal-quantity
+                                                                  :quant "1.61"
+                                                                  :unit y))))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "3A")))
+
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This translated into a shorter disease-specific survival of 3.37 (1.58–5.16 ) years compared with 6.89 (5.70–8.08) years, <i>P</i>=0.0068 (<xref ref-type="fig" rid="fig3">Figure 3B</xref>).
+# ::file pmid_2155_9022_92.txt
+# ::date 2015-08-10T10:06:30
+# ::id pmid_2155_9022.92
+(t / translate-01
+      :ARG1 (t2 / this)
+      :ARG2 (s / survive-01
+            :ARG1-of (s2 / short-07
+                  :degree (m / more))
+            :ARG1-of (s3 / specific-02
+                  :ARG2 (d / disease))
+            :duration (t3 / temporal-quantity
+                  :quant "3.37"
+                  :unit (y / year)
+                  :compared-to (t4 / temporal-quantity
+                        :quant "6.89"
+                        :unit y
+                        :ARG1-of (m3 / mean-01
+                              :ARG2 (v2 / value-interval
+                                    :op1 (t5 / temporal-quantity
+                                          :quant "5.70"
+                                          :unit y)
+                                    :op2 (t6 / temporal-quantity
+                                          :quant "8.08"
+                                          :unit y))))
+                  :ARG1-of (m2 / mean-01
+                        :ARG2 (v / value-interval
+                              :op1 (t7 / temporal-quantity
+                                    :quant "1.58"
+                                    :unit y)
+                              :op2 (t8 / temporal-quantity
+                                    :quant "5.16"
+                                    :unit y)))))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure :mod "3B"))
+      :ARG1-of (s4 / statistical-test-91 :ARG2 "0.0068"))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, there was also an association seen between rising cytoplasmic pMAPK (Thr202/204) expression and reduced time to biochemical relapse (<i>P</i>=0.06).
+# ::file pmid_2155_9022_93.txt
+# ::date 2015-08-07T04:21:13
+# ::id pmid_2155_9022.93
+(s / see-01
+   :ARG1 (a / associate-01
+            :ARG1 (e / express-03
+                     :ARG2 (a2 / amino-acid
+                               :name (n / name
+                                        :op1 "threonine")
+                               :mod (s2 / slash
+                                        :op1 "202"
+                                        :op2 "204")
+                               :part-of (e2 / enzyme
+                                            :name (n2 / name
+                                                      :op1 "MAPK"))
+                               :ARG3-of (p / phosphorylate-01)
+                               :mod (c / cytoplasm))
+                     :ARG1-of (r / rise-01))
+            :ARG2 (t / time
+                     :ARG1-of (r2 / reduce-01)
+                     :mod (r3 / relapse-01
+                              :mod (b / biochemistry)))
+            :mod (a3 / also)
+            :ARG1-of (s3 / statistical-test-91
+                         :ARG2 "0.06"))
+   :ARG2-of (i / interest-01))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In HNPC tumours, Raf-1 correlated with the inactive form, pRaf (Ser259), before relapse (<i>P</i>=0.0041, <i>r</i><sup>2</sup>=0.1201).
+# ::file pmid_2155_9022_95.txt
+# ::date 2015-08-08T09:16:33
+# ::id pmid_2155_9022.95
+(c / correlate-01
+   :ARG1 (e / enzyme
+            :name (n / name
+                     :op1 "Raf-1"))
+   :ARG2 (a / amino-acid
+            :mod "259"
+            :name (n2 / name
+                      :op1 "serine")
+            :part-of (e2 / enzyme
+                         :name (n3 / name
+                                   :op1 "Raf"))
+            :ARG3-of (p / phosphorylate-01)
+            :mod (f / form
+                    :ARG1-of (a2 / activity-06
+                                 :polarity "-")))
+   :time (b / before
+            :op1 (r / relapse-01))
+   :location (t / tumor
+                :mod (d / disease
+                        :name (n4 / name
+                                  :op1 "HNPC")))
+   :ARG1-of (s / statistical-test-91
+               :ARG2 "0.0041"
+               :ARG3 "0.1201"))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Nuclear pRaf (Ser338) and cytoplasmic pRaf (Ser338) strongly correlated with each other (<i>P</i>=0.0035, <i>r</i><sup>2</sup>=0.1381).
+# ::file pmid_2155_9022_96.txt
+# ::date 2015-08-08T10:18:21
+# ::id pmid_2155_9022.96
+(c / correlate-01
+   :ARG1 (a2 / amino-acid
+             :mod "338"
+             :name (n / name
+                      :op1 "serine")
+             :part-of (e / enzyme
+                         :name (n2 / name
+                                   :op1 "Raf")
+                         :mod (n3 / nucleus))
+             :ARG3-of (p / phosphorylate-01
+                         :ARG3 e2))
+   :ARG2 (a / amino-acid
+            :mod "338"
+            :name (n4 / name
+                      :op1 "serine")
+            :part-of (e2 / enzyme
+                         :name (n5 / name
+                                   :op1 "Raf")
+                         :mod (c2 / cytoplasm)))
+   :ARG1-of (s / strong-02)
+   :ARG1-of (s2 / statistical-test-91
+                :ARG2 "0.0035"
+                :ARG3 "0.1381"))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No correlations between total Raf-1 and cytoplasmic pRaf (Ser338) or nuclear pRaf (Ser338) expression were evident.
+# ::file pmid_2155_9022_97.txt
+# ::date 2015-08-08T10:55:26
+# ::id pmid_2155_9022.97
+(e / evidence-01
+   :polarity "-"
+   :ARG1 (c / correlate-01
+            :ARG1 (e2 / enzyme
+                      :name (n / name
+                               :op1 "Raf-1")
+                      :mod (t / total))
+            :ARG2 (o / or
+                     :op1 (e3 / express-03
+                              :ARG2 (a / amino-acid
+                                       :mod "338"
+                                       :name (n2 / name
+                                                 :op1 "serine")
+                                       :part-of (e4 / enzyme
+                                                    :name (n3 / name
+                                                              :op1 "Raf"))
+                                       :ARG3-of (p / phosphorylate-01
+                                                   :ARG3 e6)
+                                       :mod (c2 / cytoplasm)))
+                     :op2 (e5 / express-03
+                              :ARG2 (a3 / amino-acid
+                                        :mod "338"
+                                        :name (n4 / name
+                                                  :op1 "serine")
+                                        :part-of (e6 / enzyme
+                                                     :name (n6 / name
+                                                               :op1 "Raf")))
+                              :mod (n5 / nucleus)))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition no correlations were observed between the inactive form of pRaf (Ser259) and nuclear pRaf (Ser338) or cytoplasmic pRaf (Ser338).
+# ::file pmid_2155_9022_98.txt
+# ::date 2015-08-08T10:40:02
+# ::id pmid_2155_9022.98
+(a / and
+   :op2 (o / observe-01
+           :polarity "-"
+           :ARG1 (c / correlate-01
+                    :ARG1 (a4 / amino-acid
+                              :mod "259"
+                              :name (n / name
+                                       :op1 "serine")
+                              :part-of (e / enzyme
+                                          :name (n4 / name
+                                                    :op1 "Raf"))
+                              :ARG3-of (p / phosphorylate-01
+                                          :ARG3 e2
+                                          :ARG3 e3)
+                              :mod (f / form
+                                      :ARG0-of (a2 / activity-06
+                                                   :polarity "-")))
+                    :ARG2 (o3 / or
+                              :op1 (a5 / amino-acid
+                                       :mod "338"
+                                       :name (n3 / name
+                                                 :op1 "serine")
+                                       :part-of (e2 / enzyme
+                                                    :name (n5 / name
+                                                              :op1 "Raf"))
+                                       :mod (n2 / nucleus))
+                              :op2 (a3 / amino-acid
+                                       :mod "338"
+                                       :name (n6 / name
+                                                 :op1 "serine")
+                                       :part-of (e3 / enzyme
+                                                    :name (n7 / name
+                                                              :op1 "Raf"))
+                                       :mod (c2 / cytoplasm))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Total cytoplasmic expression of MAPK correlated with total nuclear expression of MAPK (<i>P</i>=0.0126, <i>r</i><sup>2</sup>=0.1009), activated MAPK (Thr202/204) (<i>P</i>=0.0152, <i>r</i><sup>2</sup>=0.1044) and the cytoplasmic expression of MAPK (Thr202/204) (<i>P</i><0.0001, <i>r</i><sup>2</sup>=0.3391).
+# ::file pmid_2155_9022_99.txt
+# ::date 2015-08-11T23:40:09
+# ::id pmid_2155_9022.99
+(a2 / and
+    :op1 (c / correlate-01
+            :ARG1 (e / express-03
+                     :ARG2 (e2 / enzyme
+                               :name (n / name
+                                        :op1 "MAPK"))
+                     :mod (c2 / cytoplasm))
+            :ARG2 (e3 / express-03
+                      :ARG2 (e5 / enzyme
+                                :name (n2 / name
+                                          :op1 "MAPK")
+                                :mod (n3 / nucleus)
+                                :mod (t / total)))
+            :ARG1-of (s2 / statistical-test-91
+                         :ARG2 "0.0126"
+                         :ARG3 "0.1009"))
+    :op2 (c3 / correlate-01
+             :ARG1 e
+             :ARG2 (a3 / amino-acid
+                       :name (n5 / name
+                                 :op1 "threonine")
+                       :part-of (e4 / enzyme
+                                    :name (n4 / name
+                                              :op1 "MAPK"))
+                       :mod (s / slash
+                               :op1 "202"
+                               :op2 "204"))
+             :ARG1-of (s3 / statistical-test-91
+                          :ARG2 "0.0152"
+                          :ARG3 "0.1044"))
+    :op3 (c4 / correlate-01
+             :ARG1 e
+             :ARG2 (e6 / express-03
+                       :ARG2 (a4 / amino-acid
+                                 :name (n6 / name
+                                           :op1 "threonine")
+                                 :mod s
+                                 :part-of e2)
+                       :mod c2)
+             :ARG1-of (s4 / statistical-test-91
+                          :ARG2 (l / less-than
+                                   :op1 "0.0001")
+                          :ARG3 "0.3391")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Total nuclear MAPK expression correlated very strongly with the activated form of MAPK (Thr202/204) in the nucleus (<i>P</i><0.0001, <i>r</i><sup>2</sup>=0.3447) and pMAPK (Thr202/204) in the cytoplasm (<i>P</i>=0.0075, <i>r</i><sup>2</sup>=0.1250).
+# ::file pmid_2155_9022_100.txt
+# ::date 2015-08-11T00:30:06
+# ::id pmid_2155_9022.100
+(a5 / and
+    :op1 (c / correlate-01
+            :ARG1 (e / express-03
+                     :ARG2 (e2 / enzyme
+                               :name (n / name
+                                        :op1 "MAPK")
+                               :mod (t / total))
+                     :mod (n2 / nucleus))
+            :ARG2 (a / amino-acid
+                     :name (n3 / name
+                               :op1 "threonine")
+                     :mod (s2 / slash
+                              :op1 "202"
+                              :op2 "204")
+                     :part-of (e3 / enzyme
+                                  :name (n4 / name
+                                            :op1 "MAPK")
+                                  :ARG1-of (a2 / activate-01)))
+            :location (n5 / nucleus)
+            :ARG1-of (s3 / statistical-test-91
+                         :ARG2 "0.0001"
+                         :ARG3 "0.3447"))
+    :op2 (c3 / correlate-01
+             :ARG1 e
+             :ARG2 (a4 / amino-acid
+                       :name (n6 / name
+                                 :op1 "threonine")
+                       :part-of (e4 / enzyme
+                                    :name (n7 / name
+                                              :op1 "MAPK")
+                                    :ARG3-of (p / phosphorylate-01))
+                       :mod s2)
+             :location (c2 / cytoplasm)
+             :ARG1-of (s4 / statistical-test-91
+                          :ARG2 "0.0075"
+                          :ARG3 "0.1250"))
+    :ARG1-of (s / strong-02
+                :degree (v / very)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Activated cytoplasmic MAPK (Thr202/204) also very strongly associated with its activated expression (MAPK pThr202) in the nucleus (<i>P</i><0.0001, <i>r</i><sup>2</sup>=0.5210).
+# ::file pmid_2155_9022_101.txt
+# ::date 2015-08-08T09:38:01
+# ::id pmid_2155_9022.101
+(a / associate-01
+   :ARG1 (a3 / amino-acid
+             :name (n / name
+                      :op1 "threonine")
+             :part-of (e2 / enzyme
+                          :name (n2 / name
+                                    :op1 "MAPK")
+                          :mod (c / cytoplasm)
+                          :ARG1-of (a4 / activate-01))
+             :mod (s2 / slash
+                      :op1 "202"
+                      :op2 "204"))
+   :ARG2 (a5 / amino-acid
+             :mod "202"
+             :name (n3 / name
+                       :op1 "threonine")
+             :ARG3-of (p / phosphorylate-01)
+             :part-of (e / enzyme
+                         :name (n4 / name
+                                   :op1 "MAPK"))
+             :ARG2-of (e3 / express-03
+                          :ARG3 (n5 / nucleus)
+                          :ARG1-of (a6 / activate-01)))
+   :ARG1-of (s / strong-02
+               :degree (v / very))
+   :mod (a2 / also)
+   :ARG1-of (s3 / statistical-test-91
+                :ARG2 (l / less-than
+                         :op1 "0.0001")
+                :ARG3 "0.5210"))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, Raf-1 and pRaf (Ser259) both correlated with the cytoplasmic expression of MAPK (<i>P</i><0.0001, <i>r</i><sup>2</sup>=0.2979 and <i>P</i>=0.0005, <i>r</i><sup>2</sup>=0.1879, respectively) and activated cytoplasmic MAPK (Thr202/204) (<i>P</i>=0.0007, <i>r</i><sup>2</sup>=0.1826 and <i>P</i>=0.0069, <i>r</i><sup>2</sup>=0.1214, respectively).
+# ::file pmid_2155_9022_102.txt
+# ::date 2015-08-08T23:42:55
+# ::id pmid_2155_9022.102
+(a / and
+   :op2 (a4 / and
+            :op1 (a7 / and
+                     :op1 (c / correlate-01
+                             :ARG1 (e / enzyme
+                                      :name (n / name
+                                               :op1 "Raf-1"))
+                             :ARG2 (e14 / express-03
+                                        :ARG2 (e4 / enzyme
+                                                  :name (n4 / name
+                                                            :op1 "MAPK"))
+                                        :ARG3 (c2 / cytoplasm))
+                             :ARG1-of (s2 / statistical-test-91
+                                          :ARG2 (l / less-than
+                                                   :op1 "0.0001")
+                                          :ARG3 "0.2979"))
+                     :op2 (c3 / correlate-01
+                              :ARG1 (a5 / amino-acid
+                                        :mod "259"
+                                        :name (n2 / name
+                                                  :op1 "serine")
+                                        :part-of (e3 / enzyme
+                                                     :name (n3 / name
+                                                               :op1 "Raf"))
+                                        :ARG3-of (p / phosphorylate-01))
+                              :ARG2 e14
+                              :ARG1-of (s3 / statistical-test-91
+                                           :ARG2 "0.0005"
+                                           :ARG3 "0.1879")))
+            :op2 (a8 / and
+                     :op1 (c4 / correlate-01
+                              :ARG1 e
+                              :ARG2 (a2 / amino-acid
+                                        :name (n5 / name
+                                                  :op1 "threonine")
+                                        :mod (s / slash
+                                                :op1 "202"
+                                                :op2 "204")
+                                        :part-of (e2 / enzyme
+                                                     :name (n6 / name
+                                                               :op1 "MAPK")
+                                                     :mod c2)
+                                        :ARG1-of (a3 / activate-01))
+                              :ARG1-of (s4 / statistical-test-91
+                                           :ARG2 "0.0007"
+                                           :ARG3 "0.1826"))
+                     :op2 (c5 / correlate-01
+                              :ARG1 a5
+                              :ARG2 a2
+                              :ARG1-of (s5 / statistical-test-91
+                                           :ARG2 "0.0069"
+                                           :ARG3 "0.1214")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Raf-1 also correlated with nuclear activated MAPK (Thr202/204) (<i>P</i>=0.0022, <i>r</i><sup>2</sup>=0.1525).
+# ::file pmid_2155_9022_103.txt
+# ::date 2015-08-06T02:45:32
+# ::id pmid_2155_9022.103
+(c / correlate-01
+   :ARG1 (e / enzyme
+            :name (n / name
+                     :op1 "Raf-1"))
+   :ARG2 (e2 / enzyme
+             :name (n2 / name
+                       :op1 "MAPK")
+             :ARG1-of (a / activate-01)
+             :mod (n3 / nucleus)
+             :part (a2 / amino-acid
+                       :name (n4 / name
+                                 :op1 "threonine")
+                       :mod (s / slash
+                               :op1 "202"
+                               :op2 "204")))
+   :mod (a4 / also)
+   :ARG1-of (s2 / statistical-test-91
+                :ARG2 "0.0022"
+                :ARG3 "0.1525"))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There were no correlations seen between pRaf (Ser338) and MAPK or pMAPK (Thr202/204).
+# ::file pmid_2155_9022_104.txt
+# ::date 2015-08-07T01:06:12
+# ::id pmid_2155_9022.104
+(s / see-01
+   :polarity "-"
+   :ARG1 (c / correlate-01
+            :ARG1 (a / amino-acid
+                     :mod "338"
+                     :name (n / name
+                              :op1 "serine")
+                     :part-of (e2 / enzyme
+                                  :name (n2 / name
+                                            :op1 "Raf")
+                                  :ARG3-of (p / phosphorylate-01
+                                              :ARG3 e)))
+            :ARG2 (o / or
+                     :op1 (e3 / enzyme
+                              :name (n3 / name
+                                        :op1 "MAPK"))
+                     :op2 (a2 / amino-acid
+                              :name (n4 / name
+                                        :op1 "threonine")
+                              :mod (s2 / slash
+                                       :op1 "202"
+                                       :op2 "204")
+                              :part-of (e / enzyme
+                                          :name (n5 / name
+                                                    :op1 "MAPK"))))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In CRPC tumours, Raf-1 correlated with pRaf (Ser259) strongly (<i>P</i>=0.0003, <i>r</i><sup>2</sup>=0.1778).
+# ::file pmid_2155_9022_106.txt
+# ::date 2015-07-23T10:46:51
+# ::id pmid_2155_9022.106
+(c / correlate-01
+   :ARG1 (e / enzyme
+            :wiki "C-Raf"
+            :name (n / name
+                     :op1 "Raf-1"))
+   :ARG2 (a2 / amino-acid
+             :mod "259"
+             :wiki "Serine"
+             :name (n4 / name
+                       :op1 "serine")
+             :part-of (e2 / enzyme
+                          :wiki "RAF_kinase"
+                          :name (n2 / name
+                                    :op1 "Raf")
+                          :ARG3-of (p / phosphorylate-01)))
+   :manner (s / strong-02)
+   :location (t / tumor
+                :mod (d3 / disease
+                         :wiki "-"
+                         :name (n5 / name
+                                   :op1 "castration-resistant"
+                                   :op2 "prostate"
+                                   :op3 "cancer")))
+   :ARG1-of (s2 / statistical-test-91
+                :ARG2 "0.0003"
+                :ARG3 "0.1778"))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The nuclear and cytoplasmic forms of pRaf (Ser338) also strongly correlated with each other (<i>P</i><0.0001, <i>r</i><sup>2</sup>=0.6009).
+# ::file pmid_2155_9022_107.txt
+# ::date 2015-07-23T12:54:26
+# ::id pmid_2155_9022.107
+(c / correlate-01
+   :ARG1 (a3 / amino-acid
+             :mod "338"
+             :name (n5 / name
+                       :op1 "serine")
+             :mod (n2 / nucleus)
+             :part-of (e / enzyme
+                         :name (n / name
+                                  :op1 "Raf")
+                         :ARG3-of (p / phosphorylate-01)
+                         :part a))
+   :ARG2 (a / amino-acid
+            :mod "338"
+            :name (n3 / name
+                      :op1 "serine")
+            :mod (c2 / cytoplasm))
+   :manner (s / strong-02)
+   :mod (a2 / also)
+   :ARG1-of (s2 / statistical-test-91
+                :ARG2 (l / less-than
+                         :op1 "0.0001")
+                :ARG3 "0.6009"))
+
+# ::save-date Wed Aug 5, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similarly to HNPC, protein expression of the inactive form of pRaf (Ser259) and the active forms of pRaf (Ser338) did not correlate in the cell cytoplasm or nucleus.
+# ::file pmid_2155_9022_108.txt
+# ::date 2015-07-23T13:40:30
+# ::id pmid_2155_9022.108
+(c / correlate-01
+   :polarity "-"
+   :ARG1 (e / express-03
+            :ARG2 (a2 / amino-acid
+                      :mod "259"
+                      :wiki "Serine"
+                      :name (n2 / name
+                                :op1 "serine")
+                      :part-of (e2 / enzyme
+                                   :wiki "RAF_kinase"
+                                   :name (n / name
+                                            :op1 "Raf")
+                                   :ARG3-of (p2 / phosphorylate-01)
+                                   :part a4)
+                      :ARG0-of (a / activity-06
+                                  :polarity "-")))
+   :ARG2 (e3 / express-03
+             :ARG2 (a4 / amino-acid
+                       :mod "338"
+                       :wiki "Serine"
+                       :name (n4 / name
+                                 :op1 "serine")
+                       :ARG0-of (a3 / activity-06)))
+   :location (o / or
+                :op1 (c2 / cytoplasm
+                         :part-of (c3 / cell))
+                :op2 (n5 / nucleus
+                         :part-of c3))
+   :ARG1-of (r / resemble-01
+               :ARG2 (d / disease
+                        :wiki "-"
+                        :name (n3 / name
+                                  :op1 "hormone-naive"
+                                  :op2 "prostate"
+                                  :op3 "cancer"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt After the development of CRPC, cytoplasmic expression of total MAPK became strongly associated with the expression of total MAPK in the nucleus (<i>P</i>=<0.0001, <i>r</i><sup>2</sup>=0.2564) and more weakly with its activated form, pMAPK (Thr202/204), in the nucleus (<i>P</i>=0.0194, <i>r</i><sup>2</sup>=0.0864).
+# ::file pmid_2155_9022_109.txt
+# ::date 2015-07-23T14:38:53
+# ::id pmid_2155_9022.109
+(a2 / and
+    :op1 (a / associate-01
+            :ARG1 (e / express-03
+                     :ARG2 (e5 / enzyme
+                               :name (n / name
+                                        :op1 "MAPK")
+                               :ARG1-of (t / total-01))
+                     :ARG3 (c / cytoplasm))
+            :ARG2 (e2 / express-03
+                      :ARG2 e5
+                      :ARG3 (n5 / nucleus))
+            :manner (s / strong-02)
+            :ARG1-of (s3 / statistical-test-91
+                         :ARG2 (o / or
+                                  :op1 "0.0001"
+                                  :op2 (l / less-than
+                                          :op1 "0.0001"))
+                         :ARG3 "0.2564"))
+    :op2 (a3 / associate-01
+             :ARG1 e
+             :ARG2 (e3 / express-03
+                       :ARG2 (a5 / amino-acid
+                                 :name (n4 / name
+                                           :op1 "threonine")
+                                 :part-of (e4 / enzyme
+                                              :name (n3 / name
+                                                        :op1 "MAPK"))
+                                 :ARG1-of (a4 / activate-01)
+                                 :mod (s2 / slash
+                                          :op1 "202"
+                                          :op2 "204")
+                                 :ARG3-of (p / phosphorylate-01))
+                       :ARG3 n5)
+             :manner (w / weak-02)
+             :ARG1-of (s4 / statistical-test-91
+                          :ARG2 "0.0194"
+                          :ARG3 "0.0864"))
+    :time (a6 / after
+              :op1 (d / develop-02
+                      :ARG1 (d4 / disease
+                                :name (n2 / name
+                                          :op1 "castration-resistant"
+                                          :op2 "prostate"
+                                          :op3 "cancer")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cytoplasmic expression of total MAPK continued to show a correlation with its activated form in the cytoplasm (MAPK pThr202/204) (<i>P</i>=0.0004, <i>r</i><sup>2</sup>=0.1861).
+# ::file pmid_2155_9022_110.txt
+# ::date 2015-07-24T03:56:45
+# ::id pmid_2155_9022.110
+(c / continue-01
+   :ARG0 (e / express-03
+            :ARG2 (e3 / enzyme
+                      :name (n / name
+                               :op1 "MAPK")
+                      :mod (t / total))
+            :ARG3 (c2 / cytoplasm))
+   :ARG1 (s / show-01
+            :ARG0 e
+            :ARG1 (c3 / correlate-01
+                      :ARG1 e
+                      :ARG2 (e2 / express-03
+                                :ARG2 (a2 / amino-acid
+                                          :name (n3 / name
+                                                    :op1 "threonine")
+                                          :part-of (e4 / enzyme
+                                                       :name (n2 / name
+                                                                 :op1 "MAPK")
+                                                       :ARG1-of (a / activate-01))
+                                          :mod (s2 / slash
+                                                   :op1 "202"
+                                                   :op2 "204"))
+                                :ARG3 (c4 / cytoplasm))
+                      :ARG1-of (s3 / statistical-test-91
+                                   :ARG2 "0.0004"
+                                   :ARG3 "0.1861"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Activated cytoplasmic MAPK (Thr202/204) remained strongly associated with activated nuclear MAPK (Thr202/204) (<i>P</i><0.0001, <i>r</i><sup>2</sup>=0.5350).
+# ::file pmid_2155_9022_111.txt
+# ::date 2015-07-24T08:58:03
+# ::id pmid_2155_9022.111
+(r / remain-01
+   :ARG1 (a / amino-acid
+            :name (n / name
+                     :op1 "threonine")
+            :part-of (e / enzyme
+                        :name (n2 / name
+                                  :op1 "MAPK")
+                        :part a4)
+            :mod (c / cytoplasm)
+            :ARG1-of (a2 / activate-01
+                         :ARG1 a4)
+            :mod (s2 / slash
+                     :op1 "202"
+                     :op2 "204"))
+   :ARG2 (a3 / associate-01
+             :ARG1 a
+             :ARG2 (a4 / amino-acid
+                       :name (n3 / name
+                                 :op1 "threonine")
+                       :mod (n4 / nucleus)
+                       :mod (s3 / slash
+                                :op1 "202"
+                                :op2 "204"))
+             :ARG1-of (s / strong-02)
+             :ARG1-of (s4 / statistical-test-91
+                          :ARG2 (l / less-than
+                                   :op1 "0.0001")
+                          :ARG3 "0.5350")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Raf-1 showed similar associations with cytoplasmic and nuclear MAPK expression (<i>P</i><0.0001, <i>r</i><sup>2</sup>=0.2141 and <i>P</i>=0.0016, <i>r</i><sup>2</sup>=0.1426, respectively).
+# ::file pmid_2155_9022_112.txt
+# ::date 2015-07-24T09:15:01
+# ::id pmid_2155_9022.112
+(s / show-01
+   :ARG0 (e / enzyme
+            :name (n / name
+                     :op1 "Raf-1"))
+   :ARG1 (a5 / and
+             :op1 (a / associate-01
+                     :ARG1 e
+                     :ARG2 (e2 / express-03
+                               :ARG2 (e4 / enzyme
+                                         :name (n2 / name
+                                                   :op1 "MAPK"))
+                               :ARG3 (c / cytoplasm))
+                     :ARG1-of (r / resemble-01
+                                 :ARG1 a6)
+                     :ARG1-of (s2 / statistical-test-91
+                                  :ARG2 (l / less-than
+                                           :op1 "0.0001")
+                                  :ARG3 "0.2141"))
+             :op2 (a6 / associate-01
+                      :ARG1 e
+                      :ARG2 (e3 / express-03
+                                :ARG2 e4
+                                :ARG3 (n3 / nucleus))
+                      :ARG1-of (s3 / statistical-test-91
+                                   :ARG2 "0.0016"
+                                   :ARG3 "0.1426"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cytoplasmic MAPK also correlated with pRaf (Ser259) (<i>P</i>=0.0026, <i>r</i><sup>2</sup>=0.1329).
+# ::file pmid_2155_9022_113.txt
+# ::date 2015-07-24T09:32:24
+# ::id pmid_2155_9022.113
+(c / correlate-01
+   :ARG1 (e / enzyme
+            :name (n / name
+                     :op1 "MAPK")
+            :mod (c2 / cytoplasm))
+   :ARG2 (a2 / amino-acid
+             :mod "259"
+             :name (n2 / name
+                       :op1 "serine")
+             :part-of (p3 / protein-family
+                          :name (n3 / name
+                                    :op1 "Raf")
+                          :ARG3-of (p2 / phosphorylate-01)))
+   :mod (a / also)
+   :ARG1-of (s / statistical-test-91
+               :ARG2 "0.0026"
+               :ARG3 "0.1329"))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similarly to HNPC tumours, no correlations were noted between pRaf (Ser338) and MAPK in any location or form.
+# ::file pmid_2155_9022_114.txt
+# ::date 2015-07-24T09:40:32
+# ::id pmid_2155_9022.114
+(n / note-01
+   :polarity "-"
+   :ARG1 (c / correlate-01
+            :ARG1 (a / amino-acid
+                     :mod "338"
+                     :name (n2 / name
+                               :op1 "serine")
+                     :part-of (e2 / enzyme
+                                  :name (n3 / name
+                                            :op1 "Raf")
+                                  :ARG3-of (p / phosphorylate-01)))
+            :ARG2 (e / enzyme
+                     :name (n4 / name
+                               :op1 "MAPK"))
+            :location (l / location
+                         :mod (a2 / any))
+            :manner (f / form
+                       :mod (a3 / any)))
+   :ARG1-of (r / resemble-01
+               :ARG2 (t / tumor
+                        :mod (d / disease
+                                :name (n5 / name
+                                          :op1 "hormone-naive"
+                                          :op2 "prostate"
+                                          :op3 "cancer")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Analysis of the upstream activators EGFR and Her2, as well as the downstream targets AR and AP-1, has previously been carried out on the same cohort of patients (<xref ref-type="bibr" rid="bib16">Edwards <i>et al</i>, 2003a</xref>, <xref ref-type="bibr" rid="bib17">2004</xref>; <xref ref-type="bibr" rid="bib4">Bartlett <i>et al</i>, 2005</xref>).
+# ::file pmid_2155_9022_116.txt
+# ::date 2015-07-24T10:15:56
+# ::id pmid_2155_9022.116
+(c / carry-out-03
+   :ARG1 (a / analyze-01
+            :ARG1 (a4 / and
+                      :op1 (a2 / activate-01
+                               :ARG0 (a3 / and
+                                         :op1 (e / enzyme
+                                                 :name (n / name
+                                                          :op1 "EGFR"))
+                                         :op2 (e2 / enzyme
+                                                  :name (n4 / name
+                                                            :op1 "Her2")))
+                               :mod (u / upstream))
+                      :op2 (t / target-01
+                              :ARG1 (a5 / and
+                                        :op1 (e3 / enzyme
+                                                 :name (n2 / name
+                                                           :op1 "AR"))
+                                        :op2 (p2 / protein
+                                                 :name (n3 / name
+                                                           :op1 "AP-1")))
+                              :mod (d / downstream))))
+   :time (p3 / previous)
+   :instrument (c2 / cohort
+                   :consist-of (p4 / person
+                                   :ARG0-of (h / have-rel-role-91
+                                               :ARG2 (p5 / patient)))
+                   :ARG1-of (s / same-01))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a6 / and
+                          :op1 (p6 / publication-91
+                                   :ARG0 (a7 / and
+                                             :op1 (p7 / person
+                                                      :name (n5 / name
+                                                                :op1 "Edwards"))
+                                             :op2 (p8 / person
+                                                      :mod (o / other)))
+                                   :time (a8 / and
+                                             :op1 (d4 / date-entity
+                                                      :year "2003")
+                                             :op2 (d5 / date-entity
+                                                      :year "2004")))
+                          :op2 (p9 / publication-91
+                                   :ARG0 (a9 / and
+                                             :op1 (p10 / person
+                                                       :name (n9 / name
+                                                                 :op1 "Bartlett"))
+                                             :op2 p8)
+                                   :time (d3 / date-entity
+                                             :year "2005")))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We therefore correlated Raf-1 and MAPK expression with these previous results, to determine the differences in the entire pathway in the transition from HNPC to CRPC.
+# ::file pmid_2155_9022_117.txt
+# ::date 2015-07-24T10:34:51
+# ::id pmid_2155_9022.117
+(c / cause-01
+   :ARG1 (c2 / correlate-01
+             :ARG0 (w / we)
+             :ARG1 (a / and
+                      :op1 (e / express-03
+                              :ARG2 (e2 / enzyme
+                                        :name (n / name
+                                                 :op1 "Raf-1")))
+                      :op2 (e3 / express-03
+                               :ARG2 (e5 / enzyme
+                                         :name (n2 / name
+                                                   :op1 "MAPK"))))
+             :ARG2 (t3 / thing
+                       :time (p2 / previous)
+                       :mod (t / this)
+                       :ARG2-of (r / result-01))
+             :purpose (d / determine-01
+                         :ARG0 w
+                         :ARG1 (d2 / differ-02
+                                   :ARG3 (p3 / pathway
+                                             :mod (e4 / entire))
+                                   :time (t2 / transition-01
+                                             :ARG2 (d4 / disease
+                                                       :name (n3 / name
+                                                                 :op1 "castration-resistant"
+                                                                 :op2 "prostate"
+                                                                 :op3 "cancer"))
+                                             :ARG3 (d3 / disease
+                                                       :name (n4 / name
+                                                                 :op1 "hormone-naive"
+                                                                 :op2 "prostate"
+                                                                 :op3 "cancer")))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In hormone-naïve tumours, expression of the putative growth factor receptor Her2 correlated with Raf-1 expression (<i>P</i>=0.0099, <i>r</i><sup>2</sup>=0.1333) and the nuclear and cytoplasmic expression of pMAPK (Thr202/204) (<i>P</i>=0.0150, <i>r</i><sup>2</sup>=0.1300 and <i>P</i>=0.0017, <i>r</i><sup>2</sup>=0.2074, respectively).
+# ::file pmid_2155_9022_118.txt
+# ::date 2015-07-25T08:53:26
+# ::id pmid_2155_9022.118
+(c / correlate-01
+   :ARG1 (e / express-03
+            :ARG2 (e10 / enzyme
+                       :name (n7 / name
+                                 :op1 "growth"
+                                 :op2 "factor"
+                                 :op3 "receptor"
+                                 :op4 "Her2")))
+   :ARG2 (a / and
+            :op1 (e3 / express-03
+                     :ARG2 (e4 / enzyme
+                               :name (n3 / name
+                                         :op1 "Raf-1"))
+                     :ARG1-of (s2 / statistical-test-91
+                                  :ARG2 "0.0099"
+                                  :ARG3 "0.1333"))
+            :op2 (a2 / and
+                     :op1 (e5 / express-03
+                              :ARG2 (a3 / amino-acid
+                                        :name (n5 / name
+                                                  :op1 "threonine")
+                                        :part-of (e2 / enzyme
+                                                     :name (n6 / name
+                                                               :op1 "MAPK")
+                                                     :ARG3-of (p3 / phosphorylate-01))
+                                        :mod (s / slash
+                                                :op1 "202"
+                                                :op2 "204"))
+                              :ARG3 (n4 / nucleus)
+                              :ARG1-of (s3 / statistical-test-91
+                                           :ARG2 "0.0150"
+                                           :ARG3 "0.0150"))
+                     :op2 (e6 / express-03
+                              :ARG2 a3
+                              :ARG3 (c2 / cytoplasm)
+                              :ARG1-of (s4 / statistical-test-91
+                                           :ARG2 "0.0017"
+                                           :ARG3 "0.2074"))))
+   :location (t / tumor
+                :mod (h / hormone-naive)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Once activated, the phosphorylated form of Her2 (pHer2) showed moderate correlations with Raf-1 (<i>P</i>=0.0056, <i>r</i><sup>2</sup>=0.1435), pRaf (Ser259) (<i>P</i>=0.0052, <i>r</i><sup>2</sup>=0.1459) and cytoplasmic MAPK expression (<i>P</i>=0.0123, <i>r</i><sup>2</sup>=0.1211) (<xref ref-type="fig" rid="fig4">Figure 4</xref>), but not the activated forms of Raf or MAPK.
+# ::file pmid_2155_9022_119.txt
+# ::date 2015-07-25T09:31:20
+# ::id pmid_2155_9022.119
+(c3 / contrast-01
+    :ARG1 (s / show-01
+             :ARG0 (e / enzyme
+                      :name (n / name
+                               :op1 "Her2")
+                      :ARG3-of (p / phosphorylate-01
+                                  :ARG3 e3))
+             :ARG1 (a6 / and
+                       :op1 (c / correlate-01
+                               :ARG1 e
+                               :ARG2 (e2 / enzyme
+                                         :name (n2 / name
+                                                   :op1 "Raf-1"))
+                               :ARG1-of (m / moderate-03)
+                               :ARG1-of (s3 / statistical-test-91
+                                            :ARG2 "0.0056"
+                                            :ARG3 "0.1435"))
+                       :op2 (c6 / correlate-01
+                                :ARG1 e
+                                :ARG2 (a3 / amino-acid
+                                          :mod "259"
+                                          :name (n4 / name
+                                                    :op1 "serine")
+                                          :part-of (e3 / enzyme
+                                                       :name (n3 / name
+                                                                 :op1 "Raf")))
+                                :ARG1-of (s4 / statistical-test-91
+                                             :ARG2 "0.0052"
+                                             :ARG3 "0.1459"))
+                       :op3 (c7 / correlate-01
+                                :ARG1 e
+                                :ARG2 (e4 / express-03
+                                          :ARG2 (e7 / enzyme
+                                                    :name (n5 / name
+                                                              :op1 "MAPK"))
+                                          :ARG3 (c2 / cytoplasm))
+                                :ARG1-of (s5 / statistical-test-91
+                                             :ARG2 "0.0123"
+                                             :ARG3 "0.1211")))
+             :ARG1-of (d / describe-01
+                         :ARG0 (f / figure
+                                  :mod "4"))
+             :time (a / activate-01
+                      :ARG1 e))
+    :ARG2 (s2 / show-01
+              :polarity "-"
+              :ARG0 e
+              :ARG1 (c4 / correlate-01
+                        :ARG1 e
+                        :ARG2 (a4 / and
+                                  :op1 (e5 / enzyme
+                                           :name (n6 / name
+                                                     :op1 "Raf")
+                                           :ARG1-of (a5 / activate-01
+                                                        :ARG1 e6))
+                                  :op2 (e6 / enzyme
+                                           :name (n7 / name
+                                                     :op1 "MAPK"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No correlations were seen with EGFR in HNPC tumours, except weak correlations with Raf-1 (<i>P</i>=0.0439, <i>r</i><sup>2</sup>=0.06008) and pMAPK (Thr202/204) (nuclear) (<i>P</i>=0.0243, <i>r</i><sup>2</sup>=0.0844).
+# ::file pmid_2155_9022_120.txt
+# ::date 2015-07-25T10:05:40
+# ::id pmid_2155_9022.120
+(s / see-01
+   :ARG1 (c / correlate-01
+            :polarity "-"
+            :ARG2 (e / enzyme
+                     :name (n / name
+                              :op1 "EGFR"))
+            :ARG2-of (e2 / except-01
+                         :ARG1 (a3 / and
+                                   :op1 (c2 / correlate-01
+                                            :ARG1 e
+                                            :ARG2 (e3 / enzyme
+                                                      :name (n2 / name
+                                                                :op1 "Raf-1"))
+                                            :ARG1-of (s3 / statistical-test-91
+                                                         :ARG2 "0.0439"
+                                                         :ARG3 "0.06008"))
+                                   :op2 (c4 / correlate-01
+                                            :ARG1 e
+                                            :ARG2 (a2 / amino-acid
+                                                      :name (n3 / name
+                                                                :op1 "threonine")
+                                                      :part-of (e4 / enzyme
+                                                                   :name (n4 / name
+                                                                             :op1 "MAPK")
+                                                                   :ARG3-of (p3 / phosphorylate-01))
+                                                      :mod (n5 / nucleus)
+                                                      :mod (s2 / slash
+                                                               :op1 "202"
+                                                               :op2 "204"))
+                                            :ARG1-of (s4 / statistical-test-91
+                                                         :ARG2 "0.0243"
+                                                         :ARG3 "0.0844"))
+                                   :ARG1-of (w / weak-02))))
+   :location (t / tumor
+                :mod (d / disease
+                        :name (n6 / name
+                                  :op1 "hormone-naive"
+                                  :op2 "prostate"
+                                  :op3 "cancer"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, the mutant variant, EGFR vIII, did correlate strongly with cytoplasmic expression of MAPK (<i>P</i><0.0001, <i>r</i><sup>2</sup>=0.2617) and to a weaker extent with Raf-1 (<i>P</i>=0.025, <i>r</i><sup>2</sup>=0.07965) and pRaf (Ser259) (<i>P</i>=0.0323, <i>r</i><sup>2</sup>=0.07295).
+# ::file pmid_2155_9022_121.txt
+# ::date 2015-07-25T10:30:45
+# ::id pmid_2155_9022.121
+(c4 / contrast-01
+    :ARG2 (a / and
+             :op1 (c / correlate-01
+                     :ARG1 (v / variant
+                              :ARG2-of (m / mutate-01)
+                              :ARG1-of (d / describe-01
+                                          :ARG2 (e / enzyme
+                                                   :name (n / name
+                                                            :op1 "EGFR"
+                                                            :op2 "vIII"))))
+                     :ARG2 (e2 / express-03
+                               :ARG2 (e6 / enzyme
+                                         :name (n2 / name
+                                                   :op1 "MAPK"))
+                               :ARG3 (c2 / cytoplasm))
+                     :manner (s / strong-02)
+                     :ARG1-of (s2 / statistical-test-91
+                                  :ARG2 (l / less-than
+                                           :op1 "0.0001")
+                                  :ARG3 "0.2617"))
+             :op2 (c3 / correlate-01
+                      :ARG1 v
+                      :ARG2 (a2 / and
+                                :op1 (e4 / enzyme
+                                         :name (n3 / name
+                                                   :op1 "Raf-1")
+                                         :ARG1-of (s3 / statistical-test-91
+                                                      :ARG2 "0.025"
+                                                      :ARG3 "0.07965"))
+                                :op2 (a3 / amino-acid
+                                         :mod "259"
+                                         :name (n4 / name
+                                                   :op1 "serine")
+                                         :part-of (e5 / enzyme
+                                                      :name (n5 / name
+                                                                :op1 "Raf")
+                                                      :ARG3-of (p4 / phosphorylate-01))
+                                         :ARG1-of (s4 / statistical-test-91
+                                                      :ARG2 "0.0323"
+                                                      :ARG3 "0.07295")))
+                      :degree (e3 / extent
+                                  :ARG1-of (w / weak-02)))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Further downstream, activated pRaf (Ser338) in the cytoplasm strongly correlated with phosphorylated c-jun (<i>P</i>=0.0009, <i>r</i><sup>2</sup>=0.2673) and total MAPK (cytoplasmic) correlated weakly with c-Fos (<i>P</i>=0.0453, <i>r</i><sup>2</sup>=0.09418) (<xref ref-type="fig" rid="fig5">Figure 5</xref>).
+# ::file pmid_2155_9022_122.txt
+# ::date 2015-07-26T03:19:12
+# ::id pmid_2155_9022.122
+(a3 / and
+    :op1 (c / correlate-01
+            :ARG1 (a / amino-acid
+                     :mod "338"
+                     :name (n2 / name
+                               :op1 "serine")
+                     :part-of (e / enzyme
+                                 :name (n / name
+                                          :op1 "Raf")
+                                 :ARG3-of (p / phosphorylate-01
+                                             :ARG3 p2)
+                                 :ARG1-of (a2 / activate-01
+                                              :location (c2 / cytoplasm))))
+            :ARG2 (p2 / protein
+                      :name (n3 / name
+                                :op1 "c-jun"))
+            :manner (s / strong-02)
+            :ARG1-of (s2 / statistical-test-91
+                         :ARG2 "0.0009"
+                         :ARG3 "0.2673"))
+    :op2 (c3 / correlate-01
+             :ARG1 (e4 / enzyme
+                       :name (n4 / name
+                                 :op1 "MAPK")
+                       :mod (c4 / cytoplasm)
+                       :mod (t / total))
+             :ARG2 (p5 / protein
+                       :name (n5 / name
+                                 :op1 "c-Fos"))
+             :ARG1-of (w / weak-02)
+             :ARG1-of (s3 / statistical-test-91
+                          :ARG2 "0.0453"
+                          :ARG3 "0.09418"))
+    :location (d / downstream
+                 :degree (f / further))
+    :ARG1-of (d2 / describe-01
+                 :ARG0 (f2 / figure
+                           :mod "5")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There were no correlations seen between MAPK and its activated form with c-jun, phospho c-Jun or c-Fos.
+# ::file pmid_2155_9022_123.txt
+# ::date 2015-07-26T03:44:50
+# ::id pmid_2155_9022.123
+(s / see-01
+   :ARG1 (c / correlate-01
+            :polarity "-"
+            :ARG1 (a / and
+                     :op1 (e / enzyme
+                             :name (n / name
+                                      :op1 "MAPK"))
+                     :op2 (e2 / enzyme
+                              :name (n2 / name
+                                        :op1 "MAPK")
+                              :ARG1-of (a2 / activate-01)))
+            :ARG2 (o / or
+                     :op1 (p3 / protein
+                              :name (n3 / name
+                                        :op1 "c-jun"))
+                     :op2 (p4 / protein
+                              :name (n4 / name
+                                        :op1 "c-Jun")
+                              :ARG3-of (p5 / phosphorylate-01))
+                     :op3 (p6 / protein
+                              :name (n5 / name
+                                        :op1 "c-Fos")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, PSA showed weak correlations with Raf-1 (<i>P</i>=0.0142, <i>r</i><sup>2</sup>=0.09604), pRaf (Ser259) (<i>P</i>=0.043, <i>r</i><sup>2</sup>=0.06547), and showed links to overall MAPK levels, MAPK (nuclear) (<i>P</i>=0.0029, <i>r</i><sup>2</sup>=0.1502) and MAPK (cytoplasmic) (<i>P</i><0.0001, <i>r</i><sup>2</sup>=0.2467), with strong ties to the activated forms, pMAPK (Thr202/204) (cytoplasmic) (<i>P</i><0.0001, <i>r</i><sup>2</sup>=0.2891) and pMAPK (Thr202/204) (nuclear) (<i>P</i>=0.0001, <i>r</i><sup>2</sup>=0.2233) (<xref ref-type="fig" rid="fig6">Figure 6</xref>), whereas AR showed no correlations with Raf, MAPK or any of their forms.
+# ::file pmid_2155_9022_124.txt
+# ::date 2015-07-26T03:52:13
+# ::id pmid_2155_9022.124
+(a / and
+   :op2 (c4 / contrast-01
+            :ARG1 (s / show-01
+                     :ARG0 (e4 / enzyme
+                               :name (n14 / name
+                                          :op1 "PSA"))
+                     :ARG1 (a3 / and
+                               :op1 (c / correlate-01
+                                       :ARG1 e4
+                                       :ARG2 (a5 / and
+                                                 :op1 (e / enzyme
+                                                         :name (n / name
+                                                                  :op1 "Raf-1")
+                                                         :ARG1-of (s5 / statistical-test-91
+                                                                      :ARG2 "0.0142"
+                                                                      :ARG3 "0.09604"))
+                                                 :op2 (a6 / amino-acid
+                                                          :mod "259"
+                                                          :name (n2 / name
+                                                                    :op1 "serine")
+                                                          :part-of (e6 / enzyme
+                                                                       :name (n3 / name
+                                                                                 :op1 "Raf")
+                                                                       :ARG3-of (p2 / phosphorylate-01))
+                                                          :ARG1-of (s6 / statistical-test-91
+                                                                       :ARG2 "0.043"
+                                                                       :ARG3 "0.06547")))
+                                       :ARG1-of (w / weak-02))
+                               :op2 (l / link-01
+                                       :ARG1 e4
+                                       :ARG2 (a13 / and
+                                                  :op1 (l2 / level
+                                                           :quant-of (e2 / enzyme
+                                                                         :name (n4 / name
+                                                                                   :op1 "MAPK"))
+                                                           :mod (o / overall))
+                                                  :op2 (e3 / enzyme
+                                                           :name (n5 / name
+                                                                     :op1 "MAPK")
+                                                           :mod (n6 / nucleus)
+                                                           :ARG1-of (s7 / statistical-test-91
+                                                                        :ARG2 "0.0029"
+                                                                        :ARG3 "0.1502"))
+                                                  :op3 (e10 / enzyme
+                                                            :name (n7 / name
+                                                                      :op1 "MAPK")
+                                                            :mod (c2 / cytoplasm)
+                                                            :ARG1-of (s8 / statistical-test-91
+                                                                         :ARG2 (l3 / less-than
+                                                                                   :op1 "0.0001")
+                                                                         :ARG3 "0.2467"))))
+                               :op3 (t / tie-01
+                                       :ARG1 e4
+                                       :ARG2 (a8 / and
+                                                 :op1 (a9 / amino-acid
+                                                          :name (n8 / name
+                                                                    :op1 "threonine")
+                                                          :part-of (e9 / enzyme
+                                                                       :quant "0.0001"
+                                                                       :name (n9 / name
+                                                                                 :op1 "MAPK")
+                                                                       :ARG3-of (p11 / phosphorylate-01)
+                                                                       :part a10)
+                                                          :mod (c3 / cytoplasm)
+                                                          :mod (s4 / slash
+                                                                   :op1 "202"
+                                                                   :op2 "204")
+                                                          :ARG1-of (s9 / statistical-test-91
+                                                                       :ARG2 (l4 / less-than
+                                                                                 :op1 "0.0001")
+                                                                       :ARG3 "0.2891"))
+                                                 :op2 (a10 / amino-acid
+                                                           :name (n10 / name
+                                                                      :op1 "threonine")
+                                                           :mod (n11 / nucleus)
+                                                           :mod s4
+                                                           :ARG1-of (s10 / statistical-test-91
+                                                                         :ARG2 "0.0001"
+                                                                         :ARG3 "0.2233"))
+                                                 :ARG1-of (a7 / activate-01))
+                                       :ARG1-of (s2 / strong-02)))
+                     :ARG1-of (d3 / describe-01
+                                  :ARG2 (f2 / figure
+                                            :mod "6")))
+            :ARG2 (s3 / show-01
+                      :ARG0 (e5 / enzyme
+                                :name (n15 / name
+                                           :op1 "AR"))
+                      :ARG2 (c5 / correlate-01
+                                :polarity "-"
+                                :ARG1 e5
+                                :ARG2 (o2 / or
+                                          :op1 (e8 / enzyme
+                                                   :name (n12 / name
+                                                              :op1 "Raf"))
+                                          :op2 (e7 / enzyme
+                                                   :name (n13 / name
+                                                              :op1 "MAPK"))
+                                          :op3 (f3 / form
+                                                   :mod (a11 / any)
+                                                   :poss (a12 / and
+                                                              :op1 e8
+                                                              :op2 e7)))))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt After the development of CRPC, Her2 no longer showed a correlation with Raf-1 nor a negative association became evident between pRaf (Ser338) both in the cytoplasm (<i>P</i>=0.0035, <i>r</i><sup>2</sup>=0.1854) and nucleus (<i>P</i>=0.0068, <i>r</i><sup>2</sup>=0.1581) with Her2.
+# ::file pmid_2155_9022_126.txt
+# ::date 2015-07-26T05:44:01
+# ::id pmid_2155_9022.126
+(a / and
+   :op1 (s / show-01
+           :ARG0 (e / enzyme
+                    :name (n / name
+                             :op1 "Her2"))
+           :ARG1 (c / correlate-01
+                    :ARG1 e
+                    :ARG2 (e2 / enzyme
+                              :name (n3 / name
+                                        :op1 "Raf-1")))
+           :time (n2 / no-longer))
+   :op2 (e3 / evident
+            :polarity "-"
+            :domain (a2 / associate-01
+                        :ARG1 (a3 / amino-acid
+                                  :mod "338"
+                                  :name (n5 / name
+                                            :op1 "serine")
+                                  :part-of (e4 / enzyme
+                                               :name (n6 / name
+                                                         :op1 "Raf")
+                                               :ARG3-of (p / phosphorylate-01))
+                                  :location (a4 / and
+                                                :op1 (c2 / cytoplasm
+                                                         :ARG1-of (s2 / statistical-test-91
+                                                                      :ARG2 "0.0035"
+                                                                      :ARG3 "0.1854"))
+                                                :op2 (n7 / nucleus
+                                                         :ARG1-of (s3 / statistical-test-91
+                                                                      :ARG2 "0.0068"
+                                                                      :ARG3 "0.1581"))))
+                        :ARG2 e
+                        :ARG2-of (n4 / negative-01)))
+   :time (a5 / after
+             :op1 (d / develop-01
+                     :ARG2 (d2 / disease
+                               :name (n9 / name
+                                         :op1 "castration-resistant"
+                                         :op2 "prostate"
+                                         :op3 "cancer")))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, the activated form (pHer2) correlated with pRaf (Ser259) (<i>P</i>=0.0008, <i>r</i><sup>2</sup>=0.2011).
+# ::file pmid_2155_9022_127.txt
+# ::date 2015-07-26T07:15:42
+# ::id pmid_2155_9022.127
+(a / and
+   :op2 (c / correlate-01
+           :ARG1 (f / form
+                    :ARG1-of (a2 / activate-01)
+                    :ARG1-of (d / describe-01
+                                :ARG2 (e / enzyme
+                                         :name (n / name
+                                                  :op1 "Her2")
+                                         :ARG3-of (p / phosphorylate-01
+                                                     :ARG3 e2))))
+           :ARG2 (a3 / amino-acid
+                     :mod "259"
+                     :name (n2 / name
+                               :op1 "serine")
+                     :part-of (e2 / enzyme
+                                  :name (n3 / name
+                                            :op1 "Raf")))
+           :ARG1-of (s / statistical-test-91
+                       :ARG2 "0.0008"
+                       :ARG3 "0.02011")))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, the activated cytoplasmic form of Raf showed a positive weak correlation with the pHer2 (<i>P</i>=0.0363, <i>r</i><sup>2</sup>=0.09376) (<xref ref-type="fig" rid="fig7">Figure 7</xref>).
+# ::file pmid_2155_9022_128.txt
+# ::date 2015-07-26T07:24:29
+# ::id pmid_2155_9022.128
+(s / show-01
+   :ARG0 (e / enzyme
+            :name (n / name
+                     :op1 "Raf")
+            :mod (c / cytoplasm)
+            :ARG1-of (a / activate-01))
+   :ARG1 (c2 / correlate-01
+             :ARG1 e
+             :ARG2 (e2 / enzyme
+                       :name (n2 / name
+                                 :op1 "Her2")
+                       :ARG3-of (p2 / phosphorylate-01))
+             :mod (p / positive)
+             :ARG1-of (w / weak-02)
+             :ARG1-of (s2 / statistical-test-91
+                          :ARG2 "0.0363"
+                          :ARG3 "0.09376"))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "7"))
+   :ARG0-of (i / interest-01))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, no correlations were evident between Her2 or pHer2 with MAPK in any form.
+# ::file pmid_2155_9022_129.txt
+# ::date 2015-07-26T07:35:47
+# ::id pmid_2155_9022.129
+(a3 / and
+    :op2 (e / evident
+            :domain (c / correlate-01
+                       :polarity "-"
+                       :ARG1 (a / and
+                                :op1 (e2 / enzyme
+                                         :name (n / name
+                                                  :op1 "Her2"))
+                                :op2 (e3 / enzyme
+                                         :name (n2 / name
+                                                   :op1 "Her2")
+                                         :ARG3-of (p / phosphorylate-01)))
+                       :ARG2 (f / form
+                                :mod (a2 / any)
+                                :mod (e4 / enzyme
+                                         :name (n3 / name
+                                                   :op1 "MAPK"))))))
+
+# ::save-date Sun Aug 2, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All associations between EGFR and EGFR vIII disappeared after progression to CRPC.
+# ::file pmid_2155_9022_130.txt
+# ::date 2015-07-26T07:47:00
+# ::id pmid_2155_9022.130
+(d / disappear-01
+   :ARG1 (a / associate-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "EGFR"))
+            :ARG2 (e2 / enzyme
+                      :name (n2 / name
+                                :op1 "EGFR"
+                                :op2 "vIII"))
+            :mod (a2 / all))
+   :time (a3 / after
+             :op1 (p / progress-01
+                     :ARG4 (d2 / disease
+                               :name (n3 / name
+                                         :op1 "castration-resistant"
+                                         :op2 "prostate"
+                                         :op3 "cancer")))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A moderate positive correlation was seen between pRaf (Ser259) and AR (<i>P</i>=0.0035, <i>r</i><sup>2</sup>=0.1154), whereas a negative correlation is evident between nuclear MAPK and AR (<i>P</i>=0.0429, <i>r</i><sup>2</sup>=0.06066).
+# ::file pmid_2155_9022_131.txt
+# ::date 2015-07-26T08:00:19
+# ::id pmid_2155_9022.131
+(c / contrast-01
+   :ARG1 (s / see-01
+            :ARG1 (c2 / correlate-01
+                      :ARG1 (a / amino-acid
+                               :mod "259"
+                               :name (n2 / name
+                                         :op1 "serine")
+                               :part-of (e4 / enzyme
+                                            :name (n / name
+                                                     :op1 "Raf")
+                                            :ARG3-of (p2 / phosphorylate-01)))
+                      :ARG2 (e3 / enzyme
+                                :name (n3 / name
+                                          :op1 "AR"))
+                      :ARG1-of (m / moderate-03)
+                      :mod (p / positive)
+                      :ARG1-of (s2 / statistical-test-91
+                                   :ARG2 "0.0035"
+                                   :ARG3 "0.1154")))
+   :ARG2 (e2 / evidence-01
+             :ARG1 (c3 / correlate-01
+                       :ARG1 (e / enzyme
+                                :name (n5 / name
+                                          :op1 "MAPK")
+                                :mod (n6 / nucleus))
+                       :ARG2 e3
+                       :ARG2-of (n4 / negative-01)
+                       :ARG1-of (s3 / statistical-test-91
+                                    :ARG2 "0.0429"
+                                    :ARG3 "0.06066"))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There was no correlation (positive or negative) shown between total Raf-1 expression and AR.
+# ::file pmid_2155_9022_132.txt
+# ::date 2015-07-26T12:55:49
+# ::id pmid_2155_9022.132
+(s / show-01
+   :ARG1 (c / correlate-01
+            :polarity "-"
+            :ARG1 (e / express-03
+                     :ARG2 (e2 / enzyme
+                               :name (n2 / name
+                                         :op1 "Raf-1")
+                               :mod (t / total)))
+            :ARG2 (e3 / enzyme
+                      :name (n3 / name
+                                :op1 "AR"))
+            :mod (o / or
+                    :op1 (p / positive)
+                    :op2 (n / negative-01))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, there were no correlations noted between either Raf-1 (any form) or MAPK (any form) and PSA level.
+# ::file pmid_2155_9022_133.txt
+# ::date 2015-07-26T13:03:58
+# ::id pmid_2155_9022.133
+(a / and
+   :op2 (n / note-01
+           :ARG1 (c / correlate-01
+                    :polarity "-"
+                    :ARG1 (o / or
+                             :op1 (f / form
+                                     :mod (a2 / any)
+                                     :mod (e / enzyme
+                                             :name (n2 / name
+                                                       :op1 "Raf-1")))
+                             :op2 (f2 / form
+                                      :mod (a3 / any)
+                                      :mod (e3 / enzyme
+                                               :name (n3 / name
+                                                         :op1 "MAPK"))))
+                    :ARG2 (l / level
+                             :quant-of (e2 / enzyme
+                                           :name (n4 / name
+                                                     :op1 "PSA"))))))
+
+# ::save-date Sun Jul 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt More correlations were noted with components of the downstream transcription factor AP-1.
+# ::file pmid_2155_9022_134.txt
+# ::date 2015-07-26T13:18:55
+# ::id pmid_2155_9022.134
+(n / note-01
+   :ARG1 (c / correlate-01
+            :ARG2 (c2 / component
+                      :part-of (p / protein
+                                  :name (n2 / name
+                                            :op1 "AP-1")
+                                  :location (d / downstream)
+                                  :mod (f / factor)
+                                  :ARG1-of (t / transcribe-01)))
+            :quant (m / more)))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Correlations were evident between phosphorylated c-jun and cytoplasmic pRaf (Ser338) (<i>P</i>=0.0026, <i>r</i><sup>2</sup>=0.2192) and pRaf (Ser259) (<i>P</i>=0.0278, <i>r</i><sup>2</sup>=0.1077).
+# ::file pmid_2155_9022_135.txt
+# ::date 2015-07-26T13:30:24
+# ::id pmid_2155_9022.135
+(e / evidence-01
+   :ARG1 (a4 / and
+             :op1 (c / correlate-01
+                     :ARG1 (p / protein
+                              :name (n / name
+                                       :op1 "c-jun")
+                              :ARG3-of (p2 / phosphorylate-01))
+                     :ARG2 (a2 / amino-acid
+                               :mod "338"
+                               :name (n2 / name
+                                         :op1 "serine")
+                               :part-of (e2 / enzyme
+                                            :name (n3 / name
+                                                      :op1 "Raf")
+                                            :ARG3-of (p3 / phosphorylate-01)
+                                            :part a3)
+                               :mod (c2 / cytoplasm))
+                     :ARG1-of (s / statistical-test-91
+                                 :ARG2 "0.0026"
+                                 :ARG3 "0.2192"))
+             :op2 (c4 / correlate-01
+                      :ARG1 p
+                      :ARG2 (a3 / amino-acid
+                                :mod "259"
+                                :name (n4 / name
+                                          :op1 "serine"))
+                      :ARG1-of (s2 / statistical-test-91
+                                   :ARG2 "0.0278"
+                                   :ARG3 "0.1077"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There was also a correlation seen between Raf-1 and c-Fos (<i>P</i>=0.0131, <i>r</i><sup>2</sup>=0.1512), and between the nuclear and cytoplasmic expression of pMAPK (Thr202/204) and c-jun (<i>P</i>=0.0146, <i>r</i><sup>2</sup>=0.1368 and <i>P</i>=0.0178, <i>r</i><sup>2</sup>=0.1295, respectively) (<xref ref-type="fig" rid="fig8">Figure 8</xref>).
+# ::file pmid_2155_9022_136.txt
+# ::date 2015-07-26T13:43:33
+# ::id pmid_2155_9022.136
+(s / see-01
+   :ARG1 (a / and
+            :op1 (c / correlate-01
+                    :ARG1 (e / enzyme
+                             :name (n / name
+                                      :op1 "Raf-1"))
+                    :ARG2 (p / protein
+                             :name (n2 / name
+                                       :op1 "c-Fos"))
+                    :ARG1-of (s3 / statistical-test-91
+                                 :ARG2 "0.0131"
+                                 :ARG3 "0.1512"))
+            :op2 (c3 / correlate-01
+                     :ARG1 (a2 / and
+                               :op1 (e2 / express-03
+                                        :ARG2 (a3 / amino-acid
+                                                  :name (n3 / name
+                                                            :op1 "threonine")
+                                                  :part-of (e4 / enzyme
+                                                               :name (n5 / name
+                                                                         :op1 "MAPK")
+                                                               :ARG3-of (p4 / phosphorylate-01))
+                                                  :mod (s2 / slash
+                                                           :op1 "202"
+                                                           :op2 "204"))
+                                        :ARG3 (n4 / nucleus)
+                                        :ARG1-of (s4 / statistical-test-91
+                                                     :ARG2 "0.0146"
+                                                     :ARG3 "0.1368"))
+                               :op2 (e3 / express-03
+                                        :ARG2 a3
+                                        :ARG3 (c2 / cytoplasm)
+                                        :ARG1-of (s5 / statistical-test-91
+                                                     :ARG2 "0.0178"
+                                                     :ARG3 "0.1295")))
+                     :ARG2 (p5 / protein
+                               :name (n6 / name
+                                         :op1 "c-jun")))
+            :ARG1-of (d / describe-01
+                        :ARG0 (f / figure
+                                 :mod "8")))
+   :mod (a6 / also))

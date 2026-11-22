@@ -1,0 +1,1320 @@
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Normal melanocytes could not be distinguished from melanoma cells on the basis of pathway utilisation when grown in the presence of serum, but could be distinguished upon serum starvation, where signalling protein phosphorylation was generally abrogated.
+# ::file pmid_2247_5322_8.txt
+# ::date 2015-08-23T09:36:18
+# ::id pmid_2247_5322.8
+(c / contrast-01
+      :ARG1 (p2 / possible-01
+            :polarity "-"
+            :ARG1 (d / distinguish-01
+                  :ARG1 (m / melanocyte
+                        :ARG1-of (n / normal-02))
+                  :ARG2 (c2 / cell
+                        :source (m2 / medical-condition
+                              :name (n2 / name :op1 "melanoma")))
+                  :instrument (u / utilize-01
+                        :ARG1 (p / pathway))
+                  :time (g / grow-01
+                        :ARG1 m
+                        :manner (p3 / present-02
+                              :ARG1 (s / serum)))))
+      :ARG2 (p4 / possible-01
+            :ARG1 (d2 / distinguish-01
+                  :ARG1 m
+                  :ARG1-of (c3 / cause-01
+                        :ARG0 (s2 / starve-01
+                              :ARG1 m
+                              :ARG2 s))
+                  :time (a / abrogate-01
+                        :ARG1 (p5 / phosphorylate-01
+                              :ARG1 (p6 / protein
+                                    :ARG0-of (s3 / signal-07)))
+                        :ARG1-of (g2 / general-02)))))
+
+
+# ::save-date Mon Feb 1, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Surprisingly, the differential utilisation of individual pathways was not consistently associated with the presence of an oncogenic or tumour suppressor mutation of genes in these pathways.
+# ::file pmid_2247_5322_9.txt
+# ::date 2015-08-20T08:07:35
+# ::id pmid_2247_5322.9
+(a / associate-01
+      :polarity "-"
+      :ARG1 (u / utilize-01
+            :ARG1 (p / pathway
+                  :mod (i / individual))
+            :ARG1-of (d / differentiate-01))
+      :ARG2 (p2 / present-02
+            :ARG1 (o / or
+                  :op1 (m / mutate-01
+                        :ARG1 (m3 / molecular-physical-entity
+                              :ARG0-of (s3 / suppress-01 :ARG1 "g"))
+                        :ARG0-of (c2 / cause-01
+                              :ARG1 (d2 / disease
+                                    :wiki "Cancer"
+                                    :name (n / name :op1 "cancer"))))
+                  :op2 (m2 / mutate-01
+                        :ARG1 (m4 / molecular-physical-entity
+                              :ARG0-of (s2 / suppress-01
+                                    :ARG1 (g / gene))
+                              :mod (t / tumor)))
+                  :location p))
+      :ARG1-of (s / surprise-01)
+      :manner (c / consistent-02))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to determine whether the presence of activating mutations in the PI3K and MAPK signalling pathways correlated with increased utilisation of downstream signalling pathways, we first determined the mutational status of <i>PIK3CA, PTEN, NRAS </i>and <i>BRAF </i>genes in the NZM cell line collection.
+# ::file pmid_2247_5322_70.txt
+# ::date 2015-08-23T09:43:06
+# ::id pmid_2247_5322.70
+(d / determine-01
+   :ARG0 (w / we)
+   :ARG1 (a4 / and
+             :op1 (s / status
+                     :topic (m / mutate-01
+                               :ARG1 (g / gene
+                                        :name (n2 / name
+                                                  :op1 "PIK3CA"))))
+             :op2 (s4 / status
+                      :topic (m3 / mutate-01
+                                 :ARG1 (g2 / gene
+                                           :name (n3 / name
+                                                     :op1 "PTEN"))))
+             :op3 (s5 / status
+                      :topic (m4 / mutate-01
+                                 :ARG1 (g3 / gene
+                                           :name (n4 / name
+                                                     :op1 "NRAS"))))
+             :op4 (s6 / status
+                      :topic (m5 / mutate-01
+                                 :ARG1 (g4 / gene
+                                           :name (n5 / name
+                                                     :op1 "BRAF"))))
+             :location (c / collect-01
+                          :ARG1 (c2 / cell-line
+                                    :name (n / name
+                                             :op1 "NZM"))))
+   :time (f / first)
+   :purpose (d2 / determine-01
+                :ARG0 w
+                :ARG1 (c3 / correlate-01
+                          :mode "interrogative"
+                          :ARG1 (p / present-02
+                                   :ARG1 (m2 / mutate-01
+                                             :ARG0-of (a2 / activate-01))
+                                   :ARG2 (a3 / and
+                                             :op1 (p2 / pathway
+                                                      :name (n6 / name
+                                                                :op1 "PI3K"))
+                                             :op2 (p3 / pathway
+                                                      :name (n7 / name
+                                                                :op1 "MAPK"))
+                                             :ARG0-of (s2 / signal-07)))
+                          :ARG2 (u / utilize-01
+                                   :ARG1 (p4 / pathway
+                                             :ARG0-of (s3 / signal-07
+                                                          :direction (d3 / downstream)))
+                                   :ARG1-of (i / increase-01)))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Representative DNA sequences for <i>PTEN, PIK3CA, BRAF </i>and <i>NRAS </i>are provided in Figure <xref ref-type="fig" rid="F1">1</xref>.
+# ::file pmid_2247_5322_71.txt
+# ::date 2015-08-20T12:03:19
+# ::id pmid_2247_5322.71
+(p2 / provide-01
+    :ARG0 (f / figure
+             :mod "1")
+    :ARG1 (d2 / dna-sequence
+              :ARG0-of (r / represent-01
+                          :ARG1 (a / and
+                                   :op1 (g4 / gene
+                                            :name (n / name
+                                                     :op1 "PTEN"))
+                                   :op2 (g / gene
+                                           :name (n2 / name
+                                                     :op1 "PIK3CA"))
+                                   :op3 (g2 / gene
+                                            :name (n3 / name
+                                                      :op1 "BRAF"))
+                                   :op4 (g3 / gene
+                                            :name (n4 / name
+                                                      :op1 "NRAS"))))))
+
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Table <xref ref-type="table" rid="T1">1</xref>, we selected cell lines that were characterised by a number of genetic mutations.
+# ::file pmid_2247_5322_72.txt
+# ::date 2015-08-20T06:23:41
+# ::id pmid_2247_5322.72
+(s / select-01
+      :ARG0 (w / we)
+      :ARG1 (c / cell-line
+            :ARG1-of (c2 / characterize-01
+                  :ARG2 (m / mutate-01
+                        :ARG1 (g / gene)
+                        :quant (n / number))))
+      :ARG1-of (s2 / show-01
+            :ARG0 (t / table :mod "1")))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All of the selected cell lines harboured either oncogenic V600E or V600K <i>BRAF </i>or Q61H <i>NRAS </i>mutations.
+# ::file pmid_2247_5322_73.txt
+# ::date 2015-08-20T06:27:04
+# ::id pmid_2247_5322.73
+(h / harbor-01
+   :ARG0 (c / cell-line
+            :mod (a / all)
+            :ARG1-of (i / include-91
+                        :ARG2 (c2 / cell-line
+                                  :ARG1-of (s / select-01))))
+   :ARG1 (o / or
+            :op1 (g2 / gene
+                     :name (n2 / name
+                               :op1 "BRAF")
+                     :ARG1-of (m / mutate-01
+                                 :value "V600E"))
+            :op2 (g / gene
+                    :name (n / name
+                             :op1 "BRAF")
+                    :ARG1-of (m3 / mutate-01
+                                 :value "V600K"))
+            :op3 (g3 / gene
+                     :name (n3 / name
+                               :op1 "NRAS")
+                     :ARG1-of (m2 / mutate-01
+                                  :value "Q61H"))
+            :ARG0-of (c3 / cause-01
+                         :ARG1 (d / disease
+                                  :wiki "Cancer"
+                                  :name (n4 / name
+                                            :op1 "cancer")))))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Since the tumour suppressor gene <i>PTEN </i>can be functionally lost during melanoma development through both mutation and epigenetic mechanisms [<xref ref-type="bibr" rid="B32">32</xref>], we measured PTEN protein expression in the NZM cell lines (Figure <xref ref-type="fig" rid="F2">2</xref>).
+# ::file pmid_2247_5322_74.txt
+# ::date 2015-08-23T08:49:31
+# ::id pmid_2247_5322.74
+(c / cause-01
+   :ARG0 (p2 / possible-01
+             :ARG1 (l / lose-02
+                      :ARG1 (g / gene
+                               :name (n3 / name
+                                         :op1 "PTEN")
+                               :ARG0-of (s / suppress-01
+                                           :ARG1 (t / tumor)))
+                      :ARG1-of (f2 / function-01)
+                      :time (d2 / develop-01
+                                :ARG2 (m2 / medical-condition
+                                          :name (n4 / name
+                                                    :op1 "melanoma"))
+                                :manner (a / and
+                                           :op1 (m3 / mutate-01)
+                                           :op2 (m4 / mechanism
+                                                    :mod (e2 / epigenetic)))))
+             :ARG1-of (d3 / describe-01
+                          :ARG0 (p3 / publication
+                                    :ARG0-of (c3 / cite-01
+                                                 :ARG1 "32"))))
+   :ARG1 (m / measure-01
+            :ARG0 (w / we)
+            :ARG1 (e / express-03
+                     :ARG1 (p / protein
+                              :name (n / name
+                                       :op1 "PTEN"))
+                     :ARG3 (c2 / cell-line
+                               :name (n2 / name
+                                         :op1 "NZM"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "2")))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Mutation of the <i>PTEN </i>gene led to loss of functional PTEN protein expression, as seen in Figure <xref ref-type="fig" rid="F2">2</xref>.
+# ::file pmid_2247_5322_75.txt
+# ::date 2015-08-23T03:50:48
+# ::id pmid_2247_5322.75
+(l / lead-03
+   :ARG0 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "PTEN")))
+   :ARG2 (l2 / lose-02
+             :ARG1 (e / express-03
+                      :ARG2 (p / protein
+                               :name (n2 / name
+                                         :op1 "PTEN")
+                               :ARG0-of (f / function-01))))
+   :ARG1-of (s / see-01
+               :location (f2 / figure
+                             :mod "2")))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The cell lines NZM40, NZM46 and NZM52, which all harbour the oncogenic H1047R <i>PIK3CA </i>mutation, had concurrent <i>BRAF </i>or <i>NRAS </i>mutations (Table <xref ref-type="table" rid="T1">1</xref>).
+# ::file pmid_2247_5322_76.txt
+# ::date 2015-08-23T03:55:24
+# ::id pmid_2247_5322.76
+(h / have-03
+   :ARG0 (a / and
+            :op1 (c / cell-line
+                    :name (n2 / name
+                              :op1 "NZM40"))
+            :op2 (c2 / cell-line
+                     :name (n3 / name
+                               :op1 "NZM46"))
+            :op3 (c3 / cell-line
+                     :name (n4 / name
+                               :op1 "NZM52"))
+            :ARG0-of (h2 / harbor-01
+                         :ARG1 (m / mutate-01
+                                  :value "H1047R"
+                                  :ARG1 (g / gene
+                                           :name (n / name
+                                                    :op1 "PIK3CA"))
+                                  :ARG0-of (c5 / cause-01
+                                               :ARG1 (d2 / disease
+                                                         :wiki "Cancer"
+                                                         :name (n7 / name
+                                                                   :op1 "cancer"))))))
+   :ARG1 (o / or
+            :op1 (m2 / mutate-01
+                     :ARG1 (g2 / gene
+                               :name (n6 / name
+                                         :op1 "BRAF")))
+            :op2 (m3 / mutate-01
+                     :ARG1 (g3 / gene
+                               :name (n5 / name
+                                         :op1 "NRAS")))
+            :ARG1-of (c4 / concurrent-02))
+   :ARG1-of (d / describe-01
+               :ARG0 (t / table
+                        :mod "1")))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of particular interest was the high degree of expression of PTEN protein in the NZM46 cell line, compared to other cell lines harbouring the <i>PIK3CA </i>oncogenic mutation.
+# ::file pmid_2247_5322_77.txt
+# ::date 2015-08-23T04:01:13
+# ::id pmid_2247_5322.77
+(i / interest-01
+   :ARG2 (d / degree
+            :degree-of (e / express-03
+                          :ARG2 (p2 / protein
+                                    :name (n2 / name
+                                              :op1 "PTEN"))
+                          :ARG3 (c / cell-line
+                                   :name (n3 / name
+                                             :op1 "NZM46")))
+            :ARG1-of (h / high-02)
+            :compared-to (c2 / cell-line
+                             :ARG0-of (h2 / harbor-01
+                                          :ARG1 (m / mutate-01
+                                                   :ARG1 (g / gene
+                                                            :name (n / name
+                                                                     :op1 "PIK3CA"))
+                                                   :ARG0-of (c3 / cause-01
+                                                                :ARG1 (d2 / disease
+                                                                          :wiki "Cancer"
+                                                                          :name (n4 / name
+                                                                                    :op1 "cancer")))))
+                             :mod (o2 / other)))
+   :mod (p / particular))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Since the presence of an oncogenic mutation or a loss of tumour suppressor function does not dictate whether the cell uses all of the downstream signalling molecules for pathway activation [<xref ref-type="bibr" rid="B33">33</xref>,<xref ref-type="bibr" rid="B34">34</xref>], we determined the phosphorylation status of the immediate downstream substrates of the PI3K, mTOR and MAPK pathways.
+# ::file pmid_2247_5322_78.txt
+# ::date 2015-08-23T04:06:06
+# ::id pmid_2247_5322.78
+(c / cause-01
+      :ARG0 (d3 / dictate-01
+            :polarity "-"
+            :ARG0 (o2 / or
+                  :op1 (p5 / present-02
+                        :ARG1 (m / mutate-01
+                              :ARG0-of (c4 / cause-01
+                                    :ARG1 (d5 / disease
+                                          :wiki "Cancer"
+                                          :name (n4 / name :op1 "cancer")))))
+                  :op1 (l / lose-02
+                        :ARG1 (f / function-01
+                              :ARG1 (s3 / suppress-01
+                                    :ARG1 (t / tumor)))))
+            :ARG1 (u / use-01
+                  :ARG0 (c2 / cell)
+                  :ARG1 (m2 / molecule
+                        :ARG0-of (s4 / signal-07 :mod "d2"))
+                  :ARG2 (a2 / activate-01
+                        :ARG0 c2
+                        :ARG1 (p6 / pathway)))
+            :ARG1-of (d4 / describe-01
+                  :ARG0 (p7 / publication
+                        :ARG0-of (c3 / cite-01
+                              :ARG1 (a3 / and :op1 "33" :op2 "34")))))
+      :ARG1 (d / determine-01
+            :ARG0 (w / we)
+            :ARG1 (s / status
+                  :topic (p / phosphorylate-01)
+                  :poss (s2 / substrate
+                        :direction (d2 / downstream
+                              :mod (i / immediate))
+                        :poss (a / and
+                              :op1 (p2 / pathway
+                                    :name (n / name :op1 "PI3K"))
+                              :op2 (p3 / pathway
+                                    :name (n2 / name :op1 "mTOR"))
+                              :op3 (p4 / pathway
+                                    :name (n3 / name :op1 "MAPK")))))))
+
+
+# ::save-date Sun Dec 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Western blots for phosphorylated molecules were used as surrogate markers for pathway activation.
+# ::file pmid_2247_5322_79.txt
+# ::date 2015-08-20T13:26:35
+# ::id pmid_2247_5322.79
+(u / use-01
+      :ARG1 (i / immunoblot-01
+            :ARG1 (m / molecule
+                  :ARG1-of (p2 / phosphorylate-01)))
+      :ARG2 (a / activate-01
+            :ARG1 (p / pathway))
+      :manner (t / thing
+            :ARG1-of (m2 / mark-02)
+            :mod (s / surrogate)))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to establish whether <i>PIK3CA, PTEN, NRAS </i>and <i>BRAF </i>mutations resulted in constitutive activation of the downstream signalling pathways, we measured PKB activation by western blotting for phosphorylation at two sites, Ser473 and Thr308.
+# ::file pmid_2247_5322_81.txt
+# ::date 2015-08-23T08:19:19
+# ::id pmid_2247_5322.81
+(m / measure-01
+   :ARG0 (w / we)
+   :ARG1 (a / activate-01
+            :ARG1 (e2 / enzyme
+                      :name (n / name
+                               :op1 "PKB")))
+   :ARG2 (b / blot
+            :purpose (p / phosphorylate-01
+                        :ARG1 (s / site
+                                 :quant "2"
+                                 :ARG1-of (m6 / mean-01
+                                              :ARG2 (a3 / and
+                                                        :op1 (a4 / amino-acid
+                                                                 :mod "473"
+                                                                 :name (n3 / name
+                                                                           :op1 "serine"))
+                                                        :op2 (a5 / amino-acid
+                                                                 :mod "308"
+                                                                 :name (n4 / name
+                                                                           :op1 "threonine"))))))
+            :mod (w2 / western))
+   :purpose (e / establish-01
+               :ARG0 w
+               :ARG1 (r / result-01
+                        :mode "interrogative"
+                        :ARG1 (a6 / and
+                                  :op1 (m2 / mutate-01
+                                           :ARG1 (g / gene
+                                                    :name (n5 / name
+                                                              :op1 "PIK3CA")))
+                                  :op2 (m3 / mutate-01
+                                           :ARG1 (g4 / gene
+                                                     :name (n6 / name
+                                                               :op1 "PTEN")))
+                                  :op3 (m4 / mutate-01
+                                           :ARG1 (g2 / gene
+                                                     :name (n7 / name
+                                                               :op1 "NRAS")))
+                                  :op4 (m5 / mutate-01
+                                           :ARG1 (g3 / gene
+                                                     :name (n8 / name
+                                                               :op1 "BRAF"))))
+                        :ARG2 (a7 / activate-01
+                                  :ARG1 (p2 / pathway
+                                            :ARG0-of (s2 / signal-07
+                                                         :direction (d / downstream)))
+                                  :manner (c / constitutive)))))
+
+
+# ::save-date Sun Dec 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Equal amounts of protein from NZM cell lines were loaded onto the same gel, but for clarity, western blots were segmented to show results for individual NZM cell lines.
+# ::file pmid_2247_5322_82.txt
+# ::date 2015-08-23T04:27:40
+# ::id pmid_2247_5322.82
+(c / contrast-01
+      :ARG1 (l / load-01
+            :ARG1 (g / gel
+                  :ARG1-of (s3 / same-01))
+            :ARG2 (a / amount-01
+                  :ARG1 (p / protein :source "c3")
+                  :ARG1-of (e / equal-01)))
+      :ARG2 (s / segment-01
+            :ARG1 (i2 / immunoblot-01)
+            :purpose (c2 / clear-06)
+            :purpose (s2 / show-01
+                  :ARG0 i2
+                  :ARG1 (t / thing
+                        :ARG2-of (r / result-01
+                              :ARG1 (c3 / cell-line
+                                    :name (n2 / name :op1 "NZM")
+                                    :mod (i / individual)))))))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In melanocytes, phosphorylation of PKB on both Ser473 and Thr308 was strongly serum dependent while most of the NZM cell lines in this study showed serum independent phosphorylation.
+# ::file pmid_2247_5322_83.txt
+# ::date 2015-08-23T04:36:09
+# ::id pmid_2247_5322.83
+(h / have-concession-91
+   :ARG1 (d2 / depend-01
+             :ARG0 (p / phosphorylate-01
+                      :ARG1 (a / and
+                               :op1 (a2 / amino-acid
+                                        :mod "473"
+                                        :name (n3 / name
+                                                  :op1 "serine")
+                                        :part-of (e / enzyme
+                                                    :name (n2 / name
+                                                              :op1 "PKB")
+                                                    :part a3))
+                               :op2 (a3 / amino-acid
+                                        :mod "308"
+                                        :name (n4 / name
+                                                  :op1 "threonine"))
+                               :location (m2 / melanocyte)))
+             :ARG1 "s2"
+             :manner "s3")
+   :ARG2 (s / show-01
+            :ARG0 (c / cell-line
+                     :ARG1-of (i / include-91
+                                 :ARG2 (c2 / cell-line
+                                           :name (n / name
+                                                    :op1 "NZM")
+                                           :ARG1-of (s4 / study-01
+                                                        :mod (t / this))))
+                     :quant (m / most))
+            :ARG1 (p2 / phosphorylate-01
+                      :ARG0-of (d / depend-01
+                                  :polarity "-"
+                                  :ARG1 (s2 / serum)
+                                  :ARG1-of (s3 / strong-02)))))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PKB was phosphorylated independently of serum at the mTORC2 dependent Ser473 site in most of the cell lines, although NZM46 and NZM3 surprisingly had very low levels of phosphorylation even in the presence of serum (Figure <xref ref-type="fig" rid="F3">3</xref>).
+# ::file pmid_2247_5322_84.txt
+# ::date 2015-08-23T08:18:30
+# ::id pmid_2247_5322.84
+(h / have-concession-91
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (s3 / site
+                      :mod (a2 / amino-acid
+                               :mod "473"
+                               :name (n4 / name
+                                         :op1 "serine")
+                               :part-of (e / enzyme
+                                           :name (n3 / name
+                                                     :op1 "PKB")))
+                      :ARG0-of (d3 / depend-01
+                                   :ARG1 (m / macro-molecular-complex
+                                            :name (n5 / name
+                                                      :op1 "mTORC2"))))
+            :ARG0-of (d2 / depend-01
+                         :polarity "-"
+                         :ARG1 "s")
+            :location (c3 / cell-line
+                          :quant (m2 / most)
+                          :ARG1-of (i / include-91
+                                      :ARG2 (c4 / cell-line))))
+   :ARG2 (h2 / have-03
+             :ARG0 (a / and
+                      :op1 (c / cell-line
+                              :name (n / name
+                                       :op1 "NZM46"))
+                      :op2 (c2 / cell-line
+                               :name (n2 / name
+                                         :op1 "NZM3")))
+             :ARG1 (l / level
+                      :ARG1-of (l2 / low-04
+                                   :degree (v / very))
+                      :degree-of (p2 / phosphorylate-01))
+             :concession (p3 / present-02
+                             :ARG1 (s / serum))
+             :ARG0-of (s2 / surprise-01))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3")))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, phosphorylation at the PIP<sub>3</sub>-PDK1 dependent Thr308 site tended to be low in the serum starved state in most cell lines and increased with serum (Figure <xref ref-type="fig" rid="F3">3</xref>).
+# ::file pmid_2247_5322_85.txt
+# ::date 2015-08-23T09:19:10
+# ::id pmid_2247_5322.85
+(c / contrast-01
+   :ARG2 (a / and
+            :op1 (t / tend-02
+                    :ARG1 (p2 / phosphorylate-01
+                              :ARG1 (s / site
+                                       :mod (a2 / amino-acid
+                                                :mod "308"
+                                                :name (n / name
+                                                         :op1 "threonine"))
+                                       :ARG0-of (d / depend-01
+                                                   :ARG1 (m / macro-molecular-complex
+                                                            :name (n2 / name
+                                                                      :op1 "PIP3-PDK1")))))
+                    :ARG2 (l / low-04
+                             :ARG1 p2
+                             :location (s2 / state
+                                           :topic (s3 / starve-01
+                                                      :ARG1 (c2 / cell-line
+                                                                :quant (m2 / most))
+                                                      :ARG2 (s4 / serum)))))
+            :op2 (i / increase-01
+                    :ARG1 p2
+                    :ARG1-of (c3 / cause-01
+                                 :ARG0 s4)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "3")))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The notable exceptions were cell lines NZM12, NZM40 and NZM52 which have comparatively high Thr308 phosphorylation in serum starved cells.
+# ::file pmid_2247_5322_86.txt
+# ::date 2015-08-20T14:39:48
+# ::id pmid_2247_5322.86
+(e / except-01
+   :ARG1 (a / and
+            :op1 (c / cell-line
+                    :name (n2 / name
+                              :op1 "NZM12"))
+            :op2 (c2 / cell-line
+                     :name (n3 / name
+                               :op1 "NZM40"))
+            :op3 (c3 / cell-line
+                     :name (n4 / name
+                               :op1 "NZM52"))
+            :ARG0-of (h / have-03
+                        :ARG1 (p3 / phosphorylate-01
+                                  :ARG1 (a2 / amino-acid
+                                            :mod "308"
+                                            :name (n5 / name
+                                                      :op1 "threonine")
+                                            :ARG1-of (h2 / high-02
+                                                         :ARG1-of (c4 / comparable-03)))
+                                  :location (c5 / cell
+                                                :ARG1-of (s / starve-01
+                                                            :ARG2 (s2 / serum))))))
+   :ARG1-of (n / notable-04
+               :ARG1-of (p2 / possible-01)))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Phosphorylation of Thr308 in the NZM40 and NZM52 cell lines may be explained by the activating <i>PIK3CA </i>mutation in these cells.
+# ::file pmid_2247_5322_87.txt
+# ::date 2015-08-23T02:41:47
+# ::id pmid_2247_5322.87
+(p2 / possible-01
+    :ARG1 (e / explain-01
+             :ARG0 (a / activate-01
+                      :ARG1 (m / mutate-01
+                               :ARG1 (g2 / gene
+                                         :name (n2 / name
+                                                   :op1 "PIK3CA")))
+                      :location "a3")
+             :ARG1 (p / phosphorylate-01
+                      :ARG1 (a2 / amino-acid
+                                :mod "308"
+                                :name (n3 / name
+                                          :op1 "threonine"))
+                      :location (a3 / and
+                                    :op1 (c / cell-line
+                                            :name (n / name
+                                                     :op1 "NZM40"))
+                                    :op2 (c2 / cell-line
+                                             :name (n4 / name
+                                                       :op1 "NZM52"))))))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These two cell lines also have a very low level of total PKB suggesting some feedback regulation of PKB gene expression in these cells.
+# ::file pmid_2247_5322_88.txt
+# ::date 2015-08-21T15:47:48
+# ::id pmid_2247_5322.88
+(h / have-03
+   :ARG0 (c / cell-line
+            :quant "2"
+            :mod (t / this))
+   :ARG1 (l / level
+            :ARG1-of (l2 / low-04
+                         :degree (v / very))
+            :quant-of (e / enzyme
+                         :name (n / name
+                                  :op1 "PKB")
+                         :ARG2-of (t2 / total-01)))
+   :mod (a / also)
+   :ARG0-of (s / suggest-01
+               :ARG1 (r / regulate-01
+                        :ARG0 (f / feedback
+                                 :quant (s2 / some))
+                        :ARG1 (e2 / express-03
+                                  :ARG1 (g / gene
+                                           :name (n2 / name
+                                                     :op1 "PKB"))
+                                  :ARG3 c))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In support of this, NZM46, which also has a <i>PIK3CA </i>mutation (Figure <xref ref-type="fig" rid="F3">3</xref>), also has very high PTEN levels (Figure <xref ref-type="fig" rid="F2">2</xref>) which could explain the low Thr308 phosphorylation in these cells and the higher levels of total PKB compared to NZM40 and NZM52, as PIP<sub>3 </sub>levels would be predicted to be low despite the <i>PIK3CA </i>mutation.
+# ::file pmid_2247_5322_89.txt
+# ::date 2015-08-21T15:57:32
+# ::id pmid_2247_5322.89
+(s / support-01
+   :ARG0 (h / have-03
+            :ARG0 (c5 / cell-line
+                      :name (n7 / name
+                                :op1 "NZM46")
+                      :ARG0-of (h5 / have-03
+                                   :ARG1 (m3 / mutate-01
+                                             :ARG1 "g"
+                                             :ARG1-of (d / describe-01
+                                                         :ARG0 (f / figure
+                                                                  :mod "3")))
+                                   :mod "a4"))
+            :ARG1 (l5 / level
+                      :ARG1-of (h4 / high-02
+                                   :degree (v / very)
+                                   :ARG1-of (d2 / describe-01
+                                                :ARG0 (f2 / figure
+                                                          :mod "2")))
+                      :quant-of (p5 / protein
+                                    :name (n8 / name
+                                              :op1 "PTEN")))
+            :ARG0-of (e / explain-01
+                        :ARG1 (a / and
+                                 :op1 (p2 / phosphorylate-01
+                                          :ARG1 (a2 / amino-acid
+                                                    :mod "308"
+                                                    :name (n / name
+                                                             :op1 "threonine"))
+                                          :location c5)
+                                 :op2 (l2 / level
+                                          :ARG1-of (h2 / high-02
+                                                       :degree (m / more)
+                                                       :compared-to (a3 / and
+                                                                        :op1 (c2 / cell-line
+                                                                                 :name (n3 / name
+                                                                                           :op1 "NZM40"))
+                                                                        :op2 (c3 / cell-line
+                                                                                 :name (n4 / name
+                                                                                           :op1 "NZM52"))))
+                                          :quant-of (e2 / enzyme
+                                                        :name (n2 / name
+                                                                  :op1 "PKB")
+                                                        :ARG1-of (t2 / total-01))))
+                        :ARG1-of (p / possible-01)
+                        :ARG1-of (c4 / cause-01
+                                     :ARG0 (p3 / predict-01
+                                               :ARG1 (l3 / low-04
+                                                         :ARG1 (l4 / level
+                                                                   :quant-of (p4 / protein
+                                                                                 :name (n5 / name
+                                                                                           :op1 "PIP3")))
+                                                         :concession (m2 / mutate-01
+                                                                         :ARG1 (g / gene
+                                                                                  :name (n6 / name
+                                                                                            :op1 "PIK3CA"))))))
+                        :ARG1-of (l / low-04))
+            :mod (a4 / also))
+   :ARG1 (t / this))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt NZM46 shows suppression of phosphorylation by serum in the Thr308 site (as with the Ser473 site).
+# ::file pmid_2247_5322_90.txt
+# ::date 2015-08-23T08:57:57
+# ::id pmid_2247_5322.90
+(s / show-01
+   :ARG0 (c / cell-line
+            :name (n2 / name
+                      :op1 "NZM46"))
+   :ARG1 (s2 / suppress-01
+             :ARG1 (p2 / phosphorylate-01
+                       :ARG0 (s3 / serum)
+                       :ARG1 (s4 / site
+                                 :mod (a / amino-acid
+                                         :mod "308"
+                                         :name (n / name
+                                                  :op1 "threonine")))))
+   :ARG1-of (m / mean-01
+               :ARG2 (s5 / site
+                         :mod (a2 / amino-acid
+                                  :mod "473"
+                                  :name (n3 / name
+                                            :op1 "serine")))))
+
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Activation of components of the protein translation machinery has been observed in a large percentage of melanomas and is predictive of a poor prognosis [<xref ref-type="bibr" rid="B35">35</xref>].
+# ::file pmid_2247_5322_92.txt
+# ::date 2015-08-23T03:08:49
+# ::id pmid_2247_5322.92
+(a2 / and
+      :op1 (o2 / observe-01
+            :ARG1 (a / activate-01
+                  :ARG1 (c2 / component
+                        :poss (m / machinery
+                              :ARG0-of (t / translate-02
+                                    :ARG2 (p2 / protein)))))
+            :location (p3 / percentage
+                  :mod (l / large)
+                  :quant-of (m2 / medical-condition
+                        :name (n / name :op1 "melanoma"))))
+      :op2 (p4 / predict-01
+            :ARG0 a
+            :ARG1 (p5 / prognosis
+                  :mod (p6 / poor)))
+      :ARG1-of (d / describe-01
+            :ARG0 (p / publication
+                  :ARG0-of (c / cite-01 :ARG1 "35"))))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The PI3K signalling pathway can regulate protein translation machinery through mTORC1 and subsequent activation of p70S6K and phosphorylation of ribosomal protein S6 (rpS6).
+# ::file pmid_2247_5322_93.txt
+# ::date 2015-08-23T03:19:49
+# ::id pmid_2247_5322.93
+(p2 / possible-01
+    :ARG1 (r / regulate-01
+             :ARG0 (p6 / pathway
+                       :name (n5 / name
+                                 :op1 "PI3K")
+                       :ARG0-of (s / signal-07))
+             :ARG1 (m / machinery
+                      :ARG0-of (t / translate-02
+                                  :ARG2 (p3 / protein)))
+             :instrument (a / and
+                            :op1 (m2 / macro-molecular-complex
+                                     :name (n2 / name
+                                               :op1 "mTORC1"))
+                            :op2 (a2 / activate-01
+                                     :ARG1 (e / enzyme
+                                              :name (n3 / name
+                                                        :op1 "p70S6K"))
+                                     :time (s2 / subsequent))
+                            :op3 (p / phosphorylate-01
+                                    :ARG1 (p5 / protein
+                                              :name (n4 / name
+                                                        :op1 "ribosomal"
+                                                        :op2 "protein"
+                                                        :op3 "S6"))))))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore we next determined the phosphorylation status of p70S6K (Figure <xref ref-type="fig" rid="F4">4</xref>).
+# ::file pmid_2247_5322_94.txt
+# ::date 2015-08-20T13:05:14
+# ::id pmid_2247_5322.94
+(c / cause-01
+   :ARG1 (d2 / determine-01
+             :ARG0 (w / we)
+             :ARG1 (s2 / status
+                       :mod (p2 / phosphorylate-01
+                                :ARG1 (e / enzyme
+                                         :name (n / name
+                                                  :op1 "p70S6K"))))
+             :time (n2 / next))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "4")))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The p70S6K was strongly expressed in all cell lines as well as in normal melanocytes but the pattern of phosphorylation of p70S6K and p85S6K at Thr389 did not correlate with the phosphorylation status of PKB nor did it correlate with genotypes (Figure <xref ref-type="fig" rid="F4">4</xref>).
+# ::file pmid_2247_5322_95.txt
+# ::date 2015-08-23T09:01:44
+# ::id pmid_2247_5322.95
+(c / contrast-01
+   :ARG1 (a / and
+            :op1 (e / express-03
+                    :ARG1 "e3"
+                    :ARG3 (c4 / cell-line
+                              :mod (a5 / all))
+                    :manner (s / strong-02))
+            :op2 (e2 / express-03
+                     :ARG3 (m / melanocyte
+                              :ARG1-of (n4 / normal-02))))
+   :ARG2 (a2 / and
+             :op1 (c2 / correlate-01
+                      :polarity "-"
+                      :ARG1 (p / pattern-01
+                               :ARG1 (p2 / phosphorylate-01
+                                         :ARG1 (a3 / and
+                                                   :op1 (a6 / amino-acid
+                                                            :mod "389"
+                                                            :name (n6 / name
+                                                                      :op1 "threonine")
+                                                            :part-of (e3 / enzyme
+                                                                         :name (n / name
+                                                                                  :op1 "p70S6K")))
+                                                   :op2 (a4 / amino-acid
+                                                            :mod "389"
+                                                            :name (n3 / name
+                                                                      :op1 "threonine")
+                                                            :part-of (e4 / enzyme
+                                                                         :name (n2 / name
+                                                                                   :op1 "p85S6K"))))))
+                      :ARG2 (p3 / phosphorylate-01
+                                :ARG1 (e5 / enzyme
+                                          :name (n5 / name
+                                                    :op1 "PKB"))))
+             :op2 (c3 / correlate-01
+                      :polarity "-"
+                      :ARG1 p
+                      :ARG2 (g / genotype)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "f4")))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In melanocytes, the observed phosphorylation of Ser235/236 was serum dependent while Ser240/244 site, which is phosphorylated by p70S6K, was phosphorylated even in the absence of serum.
+# ::file pmid_2247_5322_96.txt
+# ::date 2015-08-23T08:37:06
+# ::id pmid_2247_5322.96
+(c / contrast-01
+   :ARG1 (d / depend-01
+            :ARG0 (p2 / phosphorylate-01
+                      :ARG1 (s3 / slash
+                                :op1 (a2 / amino-acid
+                                         :mod "235"
+                                         :name (n / name
+                                                  :op1 "serine"))
+                                :op2 (a3 / amino-acid
+                                         :mod "236"
+                                         :name (n4 / name
+                                                   :op1 "serine")))
+                      :ARG1-of (o / observe-01
+                                  :location (m / melanocyte)))
+            :ARG1 (s2 / serum))
+   :ARG2 (h / have-concession-91
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (s / site
+                              :ARG1-of (p5 / phosphorylate-01
+                                           :ARG2 (e / enzyme
+                                                    :name (n3 / name
+                                                              :op1 "p70S6K")))
+                              :mod (s4 / slash
+                                       :op1 (a4 / amino-acid
+                                                :mod "240"
+                                                :name (n2 / name
+                                                          :op1 "serine"))
+                                       :op2 (a5 / amino-acid
+                                                :mod "244"
+                                                :name (n5 / name
+                                                          :op1 "serine")))))
+            :ARG2 (a / absent-01
+                     :ARG1 s2)))
+
+# ::save-date Fri Nov 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In most of the cell lines, we observed serum independent phosphorylation of rpS6 while in NZM43 and to some degree, NZM10 and NZM15 showed serum dependent phosphorylation.
+# ::file pmid_2247_5322_97.txt
+# ::date 2015-08-23T07:20:02
+# ::id pmid_2247_5322.97
+(c6 / contrast-01
+    :ARG1 (o / observe-01
+             :ARG0 (w / we)
+             :ARG1 (p / phosphorylate-01
+                      :ARG1 (p3 / protein
+                                :name (n3 / name
+                                          :op1 "rpS6"))
+                      :ARG0-of (d2 / depend-01
+                                   :polarity "-"
+                                   :ARG1 "s2"))
+             :location (c3 / cell-line
+                           :ARG1-of (i / include-91
+                                       :ARG2 (c4 / cell-line
+                                                 :quant (m / most)))))
+    :ARG2 (s / show-01
+             :ARG1 (p2 / phosphorylate-01
+                       :ARG0-of (d / depend-01
+                                   :ARG1 (s2 / serum)))
+             :location (a2 / and
+                           :op1 (c5 / cell-line
+                                    :name (n4 / name
+                                              :op1 "NZM43"))
+                           :op2 (a3 / and
+                                    :op1 (c / cell-line
+                                            :name (n / name
+                                                     :op1 "NZM10"))
+                                    :op2 (c2 / cell-line
+                                             :name (n2 / name
+                                                       :op1 "NZM15"))
+                                    :degree (s3 / some)))))
+
+# ::save-date Fri Nov 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, we observed little phosphorylation of rpS6 at both sites in <i>BRAF </i>mutant cell lines, NZM3 and NZM12 (Figure <xref ref-type="fig" rid="F5">5</xref>).
+# ::file pmid_2247_5322_98.txt
+# ::date 2015-08-23T04:07:01
+# ::id pmid_2247_5322.98
+(o / observe-01
+   :ARG0 (w / we)
+   :ARG1 (p / phosphorylate-01
+            :ARG1 (p2 / protein
+                      :name (n / name
+                               :op1 "rpS6"))
+            :degree (l / little)
+            :location (s / site
+                         :location (a / and
+                                      :op1 (c / cell-line
+                                              :name (n3 / name
+                                                        :op1 "NZM3"))
+                                      :op2 (c2 / cell-line
+                                               :name (n4 / name
+                                                         :op1 "NZM12"))
+                                      :mod (m / mutate-01
+                                              :ARG3 (g / gene
+                                                       :name (n2 / name
+                                                                 :op1 "BRAF"))))
+                         :mod (b / both)))
+   :ARG2-of (i / interest-01)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5")))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, phosphorylation of rpS6 is independent of PI3K pathway activation in these melanoma cell lines.
+# ::file pmid_2247_5322_99.txt
+# ::date 2015-08-23T03:34:32
+# ::id pmid_2247_5322.99
+(c2 / cause-01
+    :ARG1 (d2 / depend-01
+              :polarity "-"
+              :ARG0 (p / phosphorylate-01
+                       :ARG1 (p3 / protein
+                                 :name (n / name
+                                          :op1 "rpS6")))
+              :ARG1 (a / activate-01
+                       :ARG1 (p2 / pathway
+                                 :name (n2 / name
+                                           :op1 "PI3K"))
+                       :location (c / cell-line
+                                    :mod (t / this)
+                                    :source (m / medical-condition
+                                               :name (n3 / name
+                                                         :op1 "melanoma"))))))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In these cells the phosphorylation of rpS6 is likely due to input from the ERK signalling cascade as can be seen in other cell types [<xref ref-type="bibr" rid="B36">36</xref>].
+# ::file pmid_2247_5322_100.txt
+# ::date 2015-08-22T08:20:42
+# ::id pmid_2247_5322.100
+(l / likely-01
+   :ARG1 (c / cause-01
+            :ARG0 (i / input
+                     :source (p5 / pathway
+                                 :name (n / name
+                                          :op1 "ERK")
+                                 :ARG0-of (s / signal-07)))
+            :ARG1 (p3 / phosphorylate-01
+                      :ARG1 (p4 / protein
+                                :name (n2 / name
+                                          :op1 "rpS6"))
+                      :ARG3 (c2 / cell
+                                :mod (t / this))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p / publication
+                        :ARG0-of (c5 / cite-01
+                                     :ARG1 "36")))
+   :ARG1-of (s3 / see-01
+                :ARG1-of (p2 / possible-01)
+                :location (t2 / type-03
+                              :ARG2 (c4 / cell)
+                              :mod (o / other))))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We also analysed the activation status of the MAPK pathway in NZM cell lines with <i>NRAS </i>or <i>BRAF </i>mutations and cell lines which additionally harbour <i>PTEN </i>or <i>PIK3CA </i>mutations.
+# ::file pmid_2247_5322_102.txt
+# ::date 2015-08-22T02:35:13
+# ::id pmid_2247_5322.102
+(a / analyze-01
+   :ARG0 (w / we)
+   :ARG1 (s / status
+            :mod (a3 / activate-01
+                     :ARG0 (a4 / and
+                               :op1 (o / or
+                                       :op1 (m / mutate-01
+                                               :ARG1 (g2 / gene
+                                                         :name (n6 / name
+                                                                   :op1 "NRAS")))
+                                       :op2 (m2 / mutate-01
+                                                :ARG1 (g3 / gene
+                                                          :name (n5 / name
+                                                                    :op1 "BRAF"))))
+                               :op2 (c2 / cell-line
+                                        :ARG0-of (h / harbor-01
+                                                    :ARG1 (o2 / or
+                                                              :op1 (m4 / mutate-01
+                                                                       :ARG1 (g / gene
+                                                                                :name (n / name
+                                                                                         :op1 "PTEN")))
+                                                              :op2 (m3 / mutate-01
+                                                                       :ARG1 (g4 / gene
+                                                                                 :name (n2 / name
+                                                                                           :op1 "PIK3CA"))))
+                                                    :manner (a5 / additional))))
+                     :ARG1 (p2 / pathway
+                               :name (n3 / name
+                                         :op1 "MAPK")
+                               :location (c / cell-line
+                                            :name (n4 / name
+                                                      :op1 "NZM")))))
+   :mod (a2 / also))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The activation of MEK and then ERK in response to oncogenic <i>NRAS </i>and <i>BRAF </i>mutations is proposed to be the basis of a MAPK pathway addiction by these cells [<xref ref-type="bibr" rid="B37">37</xref>].
+# ::file pmid_2247_5322_103.txt
+# ::date 2015-08-22T04:01:56
+# ::id pmid_2247_5322.103
+(p4 / propose-01
+    :ARG1 (a / and
+             :op1 (a2 / activate-01
+                      :ARG1 (e / enzyme
+                               :name (n / name
+                                        :op1 "MEK")))
+             :op2 (a3 / activate-01
+                      :time (t / then)
+                      :mod (e2 / enzyme
+                               :name (n2 / name
+                                         :op1 "ERK")))
+             :ARG2-of (r / respond-01
+                         :ARG1 (a4 / and
+                                   :op1 (m / mutate-01
+                                           :ARG1 (g / gene
+                                                    :name (n4 / name
+                                                              :op1 "NRAS")))
+                                   :op2 (m2 / mutate-01
+                                            :ARG1 (g2 / gene
+                                                      :name (n5 / name
+                                                                :op1 "BRAF")))
+                                   :ARG0-of (c3 / cause-01
+                                                :ARG1 (d2 / disease
+                                                          :wiki "Cancer"
+                                                          :name (n6 / name
+                                                                    :op1 "cancer"))))))
+    :ARG2 (b / base-02
+             :ARG0 (a5 / addictive-02
+                       :ARG0 (c / cell
+                                :mod (t2 / this))
+                       :ARG1 (p3 / pathway
+                                 :name (n3 / name
+                                           :op1 "MAPK")))
+             :ARG1 a2)
+    :ARG1-of (d / describe-01
+                :ARG0 (p / publication
+                         :ARG0-of (c2 / cite-01
+                                      :ARG1 "37"))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Total MEK protein was abundantly expressed in all NZM cell lines as well as melanocytes (Figure <xref ref-type="fig" rid="F6">6</xref>).
+# ::file pmid_2247_5322_104.txt
+# ::date 2015-08-20T12:14:42
+# ::id pmid_2247_5322.104
+(e / express-03
+   :ARG2 (e2 / enzyme
+             :name (n / name
+                      :op1 "MEK")
+             :mod (t / total))
+   :ARG3 (a3 / and
+             :op1 (c / cell-line
+                     :name (n2 / name
+                               :op1 "NZM")
+                     :mod (a2 / all))
+             :op2 (m / melanocyte))
+   :ARG1-of (a / abound-01)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "6")))
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However levels of MEK phosphorylation varied considerably and were not directly related to genotype (Figure <xref ref-type="fig" rid="F6">6</xref>).
+# ::file pmid_2247_5322_105.txt
+# ::date 2015-08-20T12:25:21
+# ::id pmid_2247_5322.105
+(h / have-concession-91
+   :ARG1 (a2 / and
+             :op1 (v / vary-01
+                     :ARG1 (l / level
+                              :degree-of (p / phosphorylate-01
+                                            :ARG2 (e / enzyme
+                                                     :name (n / name
+                                                              :op1 "MEK"))))
+                     :ARG2 (c3 / considerable))
+             :op2 (r / relate-01
+                     :polarity "-"
+                     :ARG1 l
+                     :ARG2 (g / genotype)
+                     :ARG1-of (d2 / direct-02)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6")))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, <i>NRAS-</i>only mutant NZM cell lines, NZM10, NZM15 and NZM42 showed very low levels of MEK phosphorylation (Figure <xref ref-type="fig" rid="F6">6</xref>).
+# ::file pmid_2247_5322_106.txt
+# ::date 2015-08-20T12:31:58
+# ::id pmid_2247_5322.106
+(a2 / and
+    :op1 (s2 / show-01
+             :ARG0 (c / cell-line
+                      :name (n / name
+                               :op1 "NZM")
+                      :mod (m / mutate-01
+                              :ARG1 (g / gene
+                                       :name (n2 / name
+                                                 :op1 "NRAS")))
+                      :ARG1-of (m2 / mean-01
+                                   :ARG2 (a / and
+                                            :op1 (c2 / cell-line
+                                                     :name (n3 / name
+                                                               :op1 "NZM10"))
+                                            :op2 (c3 / cell-line
+                                                     :name (n4 / name
+                                                               :op1 "NZM15"))
+                                            :op3 (c4 / cell-line
+                                                     :name (n5 / name
+                                                               :op1 "NZM42"))))
+                      :mod (o / only))
+             :ARG1 (l / level
+                      :ARG1-of (l2 / low-04
+                                   :degree (v / very))
+                      :degree-of (p / phosphorylate-01
+                                    :ARG1 (e / enzyme
+                                             :name (n6 / name
+                                                       :op1 "MEK")))))
+    :ARG1-of (d / describe-01
+                :ARG0 (f / figure
+                         :mod "6")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt ERK was constitutively phosphorylated in almost all cell lines, and unlike melanocytes, NZM cell lines showed serum independent MEK and ERK phosphorylation patterns (Figures <xref ref-type="fig" rid="F6">6</xref> and <xref ref-type="fig" rid="F7">7</xref>).
+# ::file pmid_2247_5322_107.txt
+# ::date 2015-08-23T04:13:43
+# ::id pmid_2247_5322.107
+(a / and
+   :op1 (p4 / phosphorylate-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "ERK"))
+            :manner (c / constitutive)
+            :location (c2 / cell-line
+                          :mod (a2 / all
+                                   :degree (a3 / almost))))
+   :op2 (s / show-01
+           :ARG0 (c3 / cell-line
+                     :name (n3 / name
+                               :op1 "NZM"))
+           :ARG1 (a4 / and
+                     :op1 (p5 / pattern-01
+                              :ARG1 (p7 / phosphorylate-01
+                                        :ARG1 (e2 / enzyme
+                                                  :name (n4 / name
+                                                            :op1 "MEK"))))
+                     :op2 (p6 / pattern-01
+                              :ARG1 (p8 / phosphorylate-01
+                                        :ARG1 e))
+                     :ARG0-of (d / depend-01
+                                 :polarity "-"
+                                 :ARG1 (s2 / serum)))
+           :ARG1-of (r2 / resemble-01
+                        :polarity "-"
+                        :ARG2 (m / melanocyte)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a5 / and
+                          :op1 (f / figure
+                                  :mod "6")
+                          :op2 (f2 / figure
+                                   :mod "7"))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, MEK phosphorylation status did not correlate with ERK phosphorylation patterns.
+# ::file pmid_2247_5322_108.txt
+# ::date 2015-08-20T05:05:24
+# ::id pmid_2247_5322.108
+(a / and
+   :op2 (c / correlate-01
+           :polarity "-"
+           :ARG1 (s / status
+                    :mod (p4 / phosphorylate-01
+                             :ARG1 (e2 / enzyme
+                                       :name (n / name
+                                                :op1 "MEK"))))
+           :ARG2 (p5 / pattern-01
+                     :ARG1 (p6 / phosphorylate-01
+                               :ARG1 (e / enzyme
+                                        :name (n3 / name
+                                                  :op1 "ERK"))))))

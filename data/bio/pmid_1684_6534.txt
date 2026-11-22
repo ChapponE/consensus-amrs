@@ -1,0 +1,2698 @@
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Transcription of several genes was altered after transfection of MUC1 siRNA, including decreased <i>MAP2K1 </i>(MEK1), <i>JUN</i>, <i>PDGFA</i>, <i>CDC25A</i>, <i>VEGF </i>and <i>ITGAV </i>(integrin α<sub>v</sub>), and increased <i>TNF</i>, <i>RAF1</i>, and <i>MMP2</i>.
+# ::file pmid_1684_6534_9.txt
+# ::date 2015-08-13T06:27:54
+# ::id pmid_1684_6534.9
+(a / alter-01
+   :ARG1 (t / transcribe-01
+            :ARG1 (g / gene
+                     :quant (s / several))
+            :ARG2-of (i / include-01
+                        :ARG1 (a3 / and
+                                  :op1 (a4 / and
+                                           :op1 (t3 / transcribe-01
+                                                    :ARG1 (g2 / gene
+                                                              :name (n3 / name
+                                                                        :op1 "MAP2K1")
+                                                              :ARG1-of (m / mean-01
+                                                                          :ARG2 (g8 / gene
+                                                                                    :ARG0-of (e / encode-01
+                                                                                                :ARG1 (e2 / enzyme
+                                                                                                          :name (n13 / name
+                                                                                                                     :op1 "MEK1")))))))
+                                           :op2 (t4 / transcribe-01
+                                                    :ARG1 (g3 / gene
+                                                              :name (n4 / name
+                                                                        :op1 "JUN")))
+                                           :op3 (t5 / transcribe-01
+                                                    :ARG1 (g4 / gene
+                                                              :name (n5 / name
+                                                                        :op1 "PDGFA")))
+                                           :op4 (t6 / transcribe-01
+                                                    :ARG1 (g5 / gene
+                                                              :name (n6 / name
+                                                                        :op1 "CDC25A")))
+                                           :op5 (t7 / transcribe-01
+                                                    :ARG1 (g6 / gene
+                                                              :name (n7 / name
+                                                                        :op1 "VEGF")))
+                                           :op6 (t8 / transcribe-01
+                                                    :ARG1 (g7 / gene
+                                                              :name (n8 / name
+                                                                        :op1 "ITGAV")
+                                                              :ARG0-of (e3 / encode-01
+                                                                           :ARG1 (p2 / protein
+                                                                                     :name (n9 / name
+                                                                                               :op1 "integrin"
+                                                                                               :op2 "αv")))))
+                                           :ARG1-of (d / decrease-01))
+                                  :op2 (a5 / and
+                                           :op1 (t9 / transcribe-01
+                                                    :ARG1 (g9 / gene
+                                                              :name (n10 / name
+                                                                         :op1 "TNF")))
+                                           :op2 (t10 / transcribe-01
+                                                     :ARG1 (g10 / gene
+                                                                :name (n11 / name
+                                                                           :op1 "RAF1")))
+                                           :op3 (t11 / transcribe-01
+                                                     :ARG1 (g11 / gene
+                                                                :name (n12 / name
+                                                                           :op1 "MMP2")))
+                                           :ARG1-of (i2 / increase-01)))))
+   :time (a2 / after
+             :op1 (t2 / transfect-01
+                      :ARG2 (n14 / nucleic-acid
+                                 :name (n / name
+                                          :op1 "siRNA")
+                                 :ARG0-of (e4 / encode-01
+                                              :ARG1 (p / protein
+                                                       :name (n2 / name
+                                                                 :op1 "MUC1")))))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Additional changes were seen at the protein level, such as increased expression of c-Myc, heightened phosphorylation of AKT, and decreased activation of MEK1/2 and ERK1/2.
+# ::file pmid_1684_6534_10.txt
+# ::date 2015-08-13T06:36:42
+# ::id pmid_1684_6534.10
+(s / see-01
+   :ARG1 (c / change-01
+            :ARG1 (l / level
+                     :quant-of (p / protein))
+            :mod (a / additional)
+            :example (a2 / and
+                         :op1 (e / express-03
+                                 :ARG2 (p3 / protein
+                                           :name (n / name
+                                                    :op1 "c-Myc"))
+                                 :ARG1-of (i / increase-01))
+                         :op2 (p2 / phosphorylate-01
+                                  :ARG1 (e2 / enzyme
+                                            :name (n2 / name
+                                                      :op1 "AKT"))
+                                  :ARG1-of (h / heighten-01))
+                         :op3 (a3 / activate-01
+                                  :ARG1 (a4 / and
+                                            :op1 (e3 / enzyme
+                                                     :name (n3 / name
+                                                               :op1 "MEK1"))
+                                            :op2 (e4 / enzyme
+                                                     :name (n4 / name
+                                                               :op1 "MEK2"))
+                                            :op3 (e5 / enzyme
+                                                     :name (n5 / name
+                                                               :op1 "ERK1"))
+                                            :op4 (e6 / enzyme
+                                                     :name (n6 / name
+                                                               :op1 "ERK2")))
+                                  :ARG1-of (d / decrease-01)))))
+
+# ::save-date Mon Dec 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These were correlated with cellular events, as MUC1 siRNA in the MDA-MB-468 line decreased proliferation and invasion, and increased stress-induced apoptosis.
+# ::file pmid_1684_6534_11.txt
+# ::date 2015-08-13T06:42:53
+# ::id pmid_1684_6534.11
+(c / correlate-01
+   :ARG1 (t / this)
+   :ARG2 (e / event
+            :mod (c2 / cell))
+   :ARG1-of (c4 / cause-01
+                :ARG0 (a / and
+                         :op1 (d / decrease-01
+                                 :ARG0 (n4 / nucleic-acid
+                                           :name (n / name
+                                                    :op1 "siRNA")
+                                           :ARG0-of (e2 / encode-01
+                                                        :ARG1 (p / protein
+                                                                 :name (n2 / name
+                                                                           :op1 "MUC1"))))
+                                 :ARG1 (a3 / and
+                                           :op1 (p2 / proliferate-01)
+                                           :op2 (i / invade-01)))
+                         :op2 (i2 / increase-01
+                                  :ARG0 n4
+                                  :ARG1 (a2 / apoptosis
+                                            :ARG2-of (i3 / induce-01
+                                                         :ARG0 (s / stress))))
+                         :location (c3 / cell-line
+                                       :name (n3 / name
+                                                 :op1 "MDA-MB-468")))))
+
+# ::save-date Thu Jan 7, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Intriguingly, BT-20 cells displayed similar levels of apoptosis regardless of siRNA, and actually increased proliferation after MUC1 siRNA.
+# ::file pmid_1684_6534_12.txt
+# ::date 2015-08-13T06:48:18
+# ::id pmid_1684_6534.12
+(a5 / and
+    :op1 (d / display-01
+            :ARG0 (c / cell-line
+                     :name (n / name
+                              :op1 "BT-20"))
+            :ARG1 (l / level
+                     :degree-of (a2 / apoptosis)
+                     :ARG1-of (r / resemble-01))
+            :ARG1-of (r2 / regardless-91
+                         :ARG2 (n5 / nucleic-acid
+                                   :name (n2 / name
+                                             :op1 "siRNA"))))
+    :op2 (i / increase-01
+            :ARG0 c
+            :ARG1 (p / proliferate-01
+                     :ARG0 c)
+            :ARG1-of (a / actual-02)
+            :time (a4 / after
+                      :op1 (n6 / nucleic-acid
+                               :name (n3 / name
+                                         :op1 "siRNA")
+                               :ARG0-of (e / encode-01
+                                           :ARG1 (p2 / protein
+                                                     :name (n4 / name
+                                                               :op1 "MUC1"))))))
+    :ARG0-of (i2 / intrigue-01))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Two human breast cancer cell lines, MDA-MB-468 and BT-20, were transiently transfected with a pool of four siRNA oligonucleotides directed against the MUC1 mRNA (468.siMUC1 and BT.siMUC1), or a control oligonucleotide directed against luciferase (468.siLuc and BT.siLuc).
+# ::file pmid_1684_6534_102.txt
+# ::date 2015-08-13T07:03:23
+# ::id pmid_1684_6534.102
+(t / transfect-01
+   :ARG1 (c / cell-line
+            :quant "2"
+            :ARG1-of (m / mean-01
+                        :ARG2 (a / and
+                                 :op1 (c3 / cell-line
+                                          :name (n / name
+                                                   :op1 "MDA-MB-468"))
+                                 :op2 (c4 / cell-line
+                                          :name (n2 / name
+                                                    :op1 "BT-20"))))
+            :source (d3 / disease
+                        :wiki "Breast_cancer"
+                        :name (n8 / name
+                                  :op1 "breast"
+                                  :op2 "cancer")
+                        :mod (h / human)))
+   :ARG2 (o / or
+            :op1 (p / pool
+                    :consist-of (o2 / oligonucleotide
+                                    :quant "4"
+                                    :mod (n11 / nucleic-acid
+                                              :name (n3 / name
+                                                        :op1 "siRNA")))
+                    :ARG1-of (d / direct-01
+                                :ARG2 (n12 / nucleic-acid
+                                           :name (n4 / name
+                                                     :op1 "mRNA")
+                                           :ARG0-of (e2 / encode-01
+                                                        :ARG1 (p2 / protein
+                                                                  :name (n5 / name
+                                                                            :op1 "MUC1")))))
+                    :ARG1-of (m2 / mean-01
+                                 :ARG2 (a2 / and
+                                           :op1 (c6 / cell-line
+                                                    :name (n6 / name
+                                                              :op1 "468.siMUC1"))
+                                           :op2 (c7 / cell-line
+                                                    :name (n7 / name
+                                                              :op1 "BT.siMUC1")))))
+            :op2 (o5 / oligonucleotide
+                     :mod (c5 / control)
+                     :ARG1-of (d2 / direct-01
+                                  :ARG2 (l / luciferase))
+                     :ARG1-of (m3 / mean-01
+                                  :ARG2 (a3 / and
+                                            :op1 (c8 / cell-line
+                                                     :name (n9 / name
+                                                               :op1 "468.siLuc"))
+                                            :op2 (c9 / cell-line
+                                                     :name (n10 / name
+                                                                :op1 "BT.siLuc"))))))
+   :manner (t2 / transient-02))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Both cell lines express high levels of MUC1, making them promising targets for this analysis.
+# ::file pmid_1684_6534_103.txt
+# ::date 2015-08-13T07:14:15
+# ::id pmid_1684_6534.103
+(e / express-03
+   :ARG2 (l / level
+            :ARG1-of (h / high-02)
+            :quant-of (p / protein
+                         :name (n / name
+                                  :op1 "MUC1")))
+   :ARG3 "c2"
+   :ARG0-of (m / make-02
+               :ARG1 (c2 / cell-line
+                         :mod (b / both)
+                         :ARG1-of (t / target-01
+                                     :ARG0 (a / analyze-01
+                                              :mod (t2 / this)))
+                         :ARG0-of (p2 / promise-01))))
+
+# ::save-date Sun Dec 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Western blots (Figure <xref ref-type="fig" rid="F1">1a</xref>) show successful knockdown of both the extracellular domain and cytoplasmic tail fragments of MUC1; luciferase siRNA does not substantially change the level of MUC1 compared to parental cells.
+# ::file pmid_1684_6534_104.txt
+# ::date 2015-08-13T07:21:19
+# ::id pmid_1684_6534.104
+(m / multi-sentence
+   :snt1 (s / show-01
+            :ARG0 (i / immunoblot-01
+                     :ARG1-of (d / describe-01
+                                 :ARG0 (f / figure
+                                          :mod "1a")))
+            :ARG1 (k / knock-down-02
+                     :ARG1 (a / and
+                              :op1 (p / protein-segment
+                                      :mod (e / extracellular)
+                                      :part-of (p2 / protein
+                                                   :name (n2 / name
+                                                             :op1 "MUC1")
+                                                   :part t2))
+                              :op2 (f2 / fragment
+                                       :part-of (t2 / tail
+                                                    :mod (c / cytoplasm))))
+                     :ARG0-of (s3 / succeed-01)))
+   :snt2 (c2 / change-01
+             :polarity "-"
+             :ARG0 (n4 / nucleic-acid
+                       :name (n3 / name
+                                 :op1 "siRNA")
+                       :ARG0-of (e2 / encode-01
+                                    :ARG1 (l2 / luciferase)))
+             :ARG1 (l / level
+                      :quant-of (p3 / protein
+                                    :name (n5 / name
+                                              :op1 "MUC1")))
+             :degree (s2 / substantial)
+             :compared-to (c3 / cell
+                              :mod (p4 / parental))))
+
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt 468.siMUC1 show a substantial decrease in the amount of MUC1-CT, while BT.siMUC1 show slightly less knockdown of MUC1-CT.
+# ::file pmid_1684_6534_105.txt
+# ::date 2015-08-13T07:29:42
+# ::id pmid_1684_6534.105
+(c / contrast-01
+      :ARG1 (s / show-01
+            :ARG0 (c2 / cell-line
+                  :name (n2 / name :op1 "468.siMUC1"))
+            :ARG1 (d / decrease-01
+                  :ARG1 (a / amount
+                        :quant-of (p / protein-segment
+                              :name (n / name :op1 "MUC1-CT")))
+                  :ARG2 (s2 / substantial)))
+      :ARG2 (s3 / show-01
+            :ARG0 (c3 / cell-line
+                  :name (n3 / name :op1 "BT.siMUC1"))
+            :ARG1 (k / knock-down-02
+                  :ARG1 p
+                  :ARG2 (l / less
+                        :degree (s4 / slight)))))
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Both MDA-MB-468 and BT-20 display a less dramatic decrease of MUC1 extracellular domain compared to MUC1-CT (Figure <xref ref-type="fig" rid="F1">1a</xref>); this likely represents protein synthesized prior to transfection, and may reflect differences in the turnover rates of the two subunits.
+# ::file pmid_1684_6534_106.txt
+# ::date 2015-08-13T07:34:33
+# ::id pmid_1684_6534.106
+(d / display-01
+   :ARG0 (a / and
+            :op1 (c / cell-line
+                    :name (n / name
+                             :op1 "MDA-MB-468"))
+            :op2 (c2 / cell-line
+                     :name (n2 / name
+                               :op1 "BT-20")))
+   :ARG1 (d2 / decrease-01
+             :ARG1 (p2 / protein-segment
+                       :mod (e / extracellular)
+                       :part-of (p / protein
+                                   :name (n3 / name
+                                             :op1 "MUC1")))
+             :ARG2 (d3 / dramatic
+                       :degree (l / less))
+             :compared-to (p3 / protein-segment
+                              :name (n4 / name
+                                        :op1 "MUC1-CT")))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (f / figure
+                         :mod "1a"))
+   :ARG0-of (r / represent-01
+               :ARG1 (p4 / protein
+                         :ARG1-of (s / synthesize-01
+                                     :time (p6 / prior
+                                               :op1 (t / transfect-01))))
+               :ARG1-of (l2 / likely-01))
+   :ARG1-of (r2 / reflect-01
+                :ARG2 (d5 / differ-02
+                          :ARG1 (r3 / rate
+                                    :degree-of (t2 / turnover)
+                                    :poss (a2 / and
+                                              :op1 p2
+                                              :op2 p3)))
+                :ARG1-of (p5 / possible-01)))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Analysis of the MUC1 extracellular domain by flow cytometry confirms that both cell lines substantially decrease MUC1 expression after siRNA (Figure <xref ref-type="fig" rid="F1">1b</xref>).
+# ::file pmid_1684_6534_107.txt
+# ::date 2015-08-13T07:42:39
+# ::id pmid_1684_6534.107
+(c / confirm-01
+   :ARG0 (a / analyze-01
+            :ARG1 (p / protein-segment
+                     :mod (e / extracellular)
+                     :part-of (p2 / protein
+                                  :name (n / name
+                                           :op1 "MUC1")))
+            :instrument (c2 / cytometry
+                            :mod (f / flow)))
+   :ARG1 (d / decrease-01
+            :ARG0 (c3 / cell-line
+                      :mod (b / both))
+            :ARG1 (e2 / express-03
+                      :ARG2 p2)
+            :ARG2 (s / substantial)
+            :time (a2 / after
+                      :op1 (n3 / nucleic-acid
+                               :name (n2 / name
+                                         :op1 "siRNA"))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "1b")))
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt By flow cytometry, 468.siMUC1 averaged 75% knockdown of MUC1 compared to 468.siLuc; and BT.siMUC1 averaged 50% knockdown relative to BT.siLuc.
+# ::file pmid_1684_6534_108.txt
+# ::date 2015-08-13T07:48:54
+# ::id pmid_1684_6534.108
+(a / and
+   :op1 (a2 / average-01
+            :ARG0 (c2 / cell-line
+                      :name (n2 / name
+                                :op1 "468.siMUC1")
+                      :compared-to (c3 / cell-line
+                                       :name (n3 / name
+                                                 :op1 "468.siLuc")))
+            :ARG1 (k / knock-down-02
+                     :ARG1 (p2 / protein
+                               :name (n / name
+                                        :op1 "MUC1")))
+            :ARG2 (p / percentage-entity
+                     :value "75"))
+   :op2 (a3 / average-01
+            :ARG0 (c5 / cell-line
+                      :name (n5 / name
+                                :op1 "BT.siMUC1")
+                      :ARG1-of (r / relative-05
+                                  :ARG3 (c4 / cell-line
+                                            :name (n4 / name
+                                                      :op1 "BT.siLuc"))))
+            :ARG1 (k2 / knock-down-02)
+            :ARG2 (p3 / percentage-entity
+                      :value "50"))
+   :time (c / cytometry
+            :mod (f / flow)))
+
+
+# ::save-date Tue Aug 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These effects could be titrated with the concentration of siRNA, were seen as early as 24 hours post-transfection (data not shown) and lasted to at least 96 h post-transfection (Figure <xref ref-type="fig" rid="F1">1b</xref>).
+# ::file pmid_1684_6534_109.txt
+# ::date 2015-08-13T07:52:32
+# ::id pmid_1684_6534.109
+(a / and
+      :op1 (p / possible-01
+            :ARG1 (t / titrate-01
+                  :ARG0 (c / concentrate-02
+                        :ARG1 (n2 / nucleic-acid
+                              :name (n / name :op1 "siRNA")))
+                  :ARG1 (a2 / affect-01
+                        :mod (t2 / this))))
+      :op2 (s / see-01
+            :ARG1 a2
+            :ARG1-of (d / describe-01
+                  :ARG0 (d2 / data
+                        :ARG1-of (s2 / show-01 :polarity "-")))
+            :time (a3 / after
+                  :op1 (t3 / transfect-01)
+                  :quant (t4 / temporal-quantity
+                        :quant "24"
+                        :unit (h / hour)
+                        :mod (e2 / early))))
+      :op3 (l / last-01
+            :ARG1 a2
+            :ARG2 (u / until
+                  :op1 (a4 / after
+                        :op1 t3
+                        :quant (t5 / temporal-quantity
+                              :quant "96"
+                              :unit h)))
+            :mod (a5 / at-least)
+            :ARG1-of (d3 / describe-01
+                  :ARG0 (f / figure :mod "1b"))))
+
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All experiments were conducted within 48 to 96 hours after siRNA transfection.
+# ::file pmid_1684_6534_110.txt
+# ::date 2015-08-13T08:03:02
+# ::id pmid_1684_6534.110
+(c / conduct-01
+      :ARG1 (e / experiment-01
+            :mod (a / all))
+      :time (a2 / after
+            :op1 (t / transfect-01
+                  :ARG2 (n2 / nucleic-acid
+                        :name (n / name :op1 "siRNA")))
+            :quant (u / up-to
+                  :op1 (v / value-interval
+                        :op1 (t2 / temporal-quantity
+                              :quant "48"
+                              :unit (h / hour))
+                        :op2 (t3 / temporal-quantity
+                              :quant "96"
+                              :unit h)))))
+
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similar results were obtained using two independent oligonucleotides designed in our lab (data not shown), designated '882' and '956' for the initial codon recognized by each.
+# ::file pmid_1684_6534_111.txt
+# ::date 2015-08-13T08:07:04
+# ::id pmid_1684_6534.111
+(o / obtain-01
+      :ARG1 (t / thing
+            :ARG2-of (r / result-01)
+            :ARG1-of (r2 / resemble-01))
+      :manner (u / use-01
+            :ARG1 (o2 / oligonucleotide
+                  :quant "2"
+                  :ARG0-of (d / depend-01 :polarity "-")
+                  :ARG1-of (d3 / describe-01
+                        :ARG0 (d4 / data
+                              :ARG1-of (s / show-01 :polarity "-")))
+                  :ARG1-of (d5 / designate-01
+                        :ARG2 (a / and
+                              :op1 (o3 / oligonucleotide :mod "882")
+                              :op2 (o4 / oligonucleotide :mod "956"))
+                        :ARG1-of (c / cause-01
+                              :ARG0 (c2 / codon
+                                    :mod (i / initial)
+                                    :ARG1-of (r3 / recognize-02
+                                          :location o2))))
+                  :ARG1-of (d2 / design-01
+                        :location (l / laboratory
+                              :poss (w / we))))))
+
+# ::save-date Tue Aug 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Recent work indicates that MUC1 may affect transcription both directly via interaction with transcription factors and indirectly (for example, through modulating signaling).
+# ::file pmid_1684_6534_113.txt
+# ::date 2015-08-13T08:19:27
+# ::id pmid_1684_6534.113
+(i / indicate-01
+   :ARG0 (w / work-01
+            :time (r / recent))
+   :ARG1 (p / possible-01
+            :ARG1 (a / affect-01
+                     :ARG0 (p2 / protein
+                               :name (n / name
+                                        :op1 "MUC1"))
+                     :ARG1 (t / transcribe-01)
+                     :manner (a2 / and
+                                 :op1 (d / direct-02
+                                         :manner (i2 / interact-01
+                                                     :ARG0 p2
+                                                     :ARG1 (f / factor
+                                                              :ARG0-of t)))
+                                 :op2 (d2 / direct-02
+                                          :polarity "-"
+                                          :example (m / modulate-01
+                                                      :ARG0 p2
+                                                      :ARG1 (s / signal-07)))))))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To study the effects of MUC1 knockdown in breast cancer cell lines, real-time PCR arrays were used to analyze transcription of 84 genes implicated in cancer.
+# ::file pmid_1684_6534_114.txt
+# ::date 2015-08-13T08:24:05
+# ::id pmid_1684_6534.114
+(u / use-01
+   :ARG1 (a / array-01
+            :mod (r2 / react-01
+                     :ARG0 (p / polymerase)
+                     :mod (r / real-time)
+                     :mod (c4 / chain)))
+   :ARG2 (a2 / analyze-01
+             :ARG1 (t / transcribe-01
+                      :ARG1 (g / gene
+                               :quant "84"
+                               :ARG1-of (i / implicate-01
+                                           :ARG2 (d / disease
+                                                    :wiki "Cancer"
+                                                    :name (n2 / name
+                                                              :op1 "cancer"))))))
+   :purpose (s / study-01
+               :ARG1 (a3 / affect-01
+                         :ARG0 (k / knock-down-02
+                                  :ARG1 (p2 / protein
+                                            :name (n / name
+                                                     :op1 "MUC1")))
+                         :ARG1 (c2 / cell-line
+                                   :source (d2 / disease
+                                               :wiki "Breast_cancer"
+                                               :name (n3 / name
+                                                         :op1 "breast"
+                                                         :op2 "cancer"))))))
+
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Only genes with greater than two-fold change were considered.
+# ::file pmid_1684_6534_115.txt
+# ::date 2015-08-13T08:32:00
+# ::id pmid_1684_6534.115
+(c / consider-02
+      :ARG1 (g / gene
+            :ARG1-of (c2 / change-01
+                  :ARG2 (g2 / great
+                        :degree (m / more)
+                        :compared-to (c3 / change-01
+                              :ARG2 (p / product-of :op1 "2")))))
+      :mod (o / only))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Three genes (<i>MAP2K1</i>, <i>VEGF</i>, <i>PDGFA</i>) were altered two-fold or more after MUC1 siRNA in both MDA-MB-468 and BT-20 cells (Figure <xref ref-type="fig" rid="F2">2</xref>); two genes (<i>ITGAV</i>, <i>MMP2</i>) changed only in 468.siMUC1; and five genes (<i>TIMP3</i>, <i>RAF1</i>, <i>JUN</i>, <i>TNF</i>, <i>CDC25A</i>) only in BT.siMUC1.
+# ::file pmid_1684_6534_116.txt
+# ::date 2015-08-13T08:34:41
+# ::id pmid_1684_6534.116
+(a6 / and
+    :op1 (a / alter-01
+            :ARG1 (g / gene
+                     :quant "3"
+                     :ARG1-of (m2 / mean-01
+                                  :ARG2 (a2 / and
+                                            :op1 (g2 / gene
+                                                     :name (n / name
+                                                              :op1 "MAP2K1"))
+                                            :op2 (g3 / gene
+                                                     :name (n2 / name
+                                                               :op1 "VEGF"))
+                                            :op3 (g4 / gene
+                                                     :name (n3 / name
+                                                               :op1 "PDGFA")))))
+            :degree (o / or
+                       :op1 (p / product-of
+                               :op1 "2")
+                       :op2 (m3 / more-than
+                                :op1 p))
+            :time (a3 / after
+                      :op1 (n17 / nucleic-acid
+                                :name (n4 / name
+                                          :op1 "siRNA")
+                                :ARG0-of (e / encode-01
+                                            :ARG1 (p2 / protein
+                                                      :name (n5 / name
+                                                                :op1 "MUC1")))))
+            :location (a4 / and
+                          :op1 (c / cell-line
+                                  :name (n6 / name
+                                            :op1 "MDA-MB-468"))
+                          :op2 (c2 / cell-line
+                                   :name (n7 / name
+                                             :op1 "BT-20")))
+            :ARG1-of (d / describe-01
+                        :ARG0 (f / figure
+                                 :mod "2")))
+    :op2 (c3 / change-01
+             :ARG1 (g5 / gene
+                       :quant "2"
+                       :ARG1-of (m4 / mean-01
+                                    :ARG2 (a5 / and
+                                              :op1 (g6 / gene
+                                                       :name (n8 / name
+                                                                 :op1 "ITGAV"))
+                                              :op2 (g7 / gene
+                                                       :name (n9 / name
+                                                                 :op1 "MMP2")))))
+             :mod "o2"
+             :location (c5 / cell-line
+                           :name (n15 / name
+                                      :op1 "468.siMUC1")))
+    :op3 (c4 / change-01
+             :ARG1 (g8 / gene
+                       :quant "5"
+                       :ARG1-of (m / mean-01
+                                   :ARG2 (a7 / and
+                                             :op1 (g9 / gene
+                                                      :name (n10 / name
+                                                                 :op1 "TIMP3"))
+                                             :op2 (g10 / gene
+                                                       :name (n11 / name
+                                                                  :op1 "RAF1"))
+                                             :op3 (g11 / gene
+                                                       :name (n12 / name
+                                                                  :op1 "JUN"))
+                                             :op4 (g12 / gene
+                                                       :name (n13 / name
+                                                                  :op1 "TNF"))
+                                             :op5 (g13 / gene
+                                                       :name (n14 / name
+                                                                  :op1 "CDC25A")))))
+             :mod (o2 / only)
+             :location (c6 / cell-line
+                           :name (n16 / name
+                                      :op1 "BT.siMUC1"))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This list represents all genes affected greater than two-fold after MUC1 siRNA, rather than a select group.
+# ::file pmid_1684_6534_117.txt
+# ::date 2015-08-13T08:45:07
+# ::id pmid_1684_6534.117
+(r / represent-01
+   :ARG0 (l / list
+            :mod (t / this))
+   :ARG1 (g / gene
+            :mod (a / all)
+            :ARG1-of (a2 / affect-01
+                         :degree (g2 / great
+                                     :degree (m / more)
+                                     :compared-to (p / product-of
+                                                     :op1 "2"))
+                         :time (a3 / after
+                                   :op1 (n3 / nucleic-acid
+                                            :name (n / name
+                                                     :op1 "siRNA")
+                                            :ARG0-of (e / encode-01
+                                                        :ARG1 (p2 / protein
+                                                                  :name (n2 / name
+                                                                            :op1 "MUC1")))))))
+   :ARG1-of (i / instead-of-91
+               :ARG2 (g3 / group
+                         :ARG1-of (s / select-01))))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Three genes whose transcription was changed by less than two-fold are shown, two of which (<i>PDGFB </i>and <i>ITGB1</i>) are listed because they relate closely to genes altered by two-fold (<i>PDGFA </i>and <i>ITGAV</i>).
+# ::file pmid_1684_6534_118.txt
+# ::date 2015-08-13T08:48:48
+# ::id pmid_1684_6534.118
+(s / show-01
+   :ARG1 (g / gene
+            :quant "3"
+            :ARG1-of (t / transcribe-01
+                        :ARG1-of (c / change-01
+                                    :ARG2 (l / less-than
+                                             :op1 (p / product-of
+                                                     :op1 "2"))))
+            :ARG2-of (i / include-91
+                        :ARG1 (g2 / gene
+                                  :quant "2"
+                                  :ARG1-of (m / mean-01
+                                              :ARG2 (a / and
+                                                       :op1 (g3 / gene
+                                                                :name (n / name
+                                                                         :op1 "PDGFB"))
+                                                       :op2 (g4 / gene
+                                                                :name (n2 / name
+                                                                          :op1 "ITGB1"))))
+                                  :ARG1-of (l2 / list-01
+                                               :ARG1-of (c2 / cause-01
+                                                            :ARG0 (r / relate-01
+                                                                     :ARG1 g2
+                                                                     :ARG2 (g5 / gene
+                                                                               :ARG1-of (a2 / alter-01
+                                                                                            :degree p)
+                                                                               :ARG1-of (m2 / mean-01
+                                                                                            :ARG2 (a3 / and
+                                                                                                      :op1 (g6 / gene
+                                                                                                               :name (n3 / name
+                                                                                                                         :op1 "PDGFA"))
+                                                                                                      :op2 (g7 / gene
+                                                                                                               :name (n4 / name
+                                                                                                                         :op1 "ITGAV")))))
+                                                                     :manner (c3 / close-10))))))))
+
+# ::save-date Sun Dec 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The third, <i>MYC</i>, is included because western blots confirmed a substantial change at the protein level (Figure <xref ref-type="fig" rid="F3">3a</xref>) that may reflect both transcriptional and post-transcriptional regulation.
+# ::file pmid_1684_6534_119.txt
+# ::date 2015-08-13T08:55:46
+# ::id pmid_1684_6534.119
+(i / include-01
+   :ARG1 (g / gene
+            :ord (o / ordinal-entity
+                    :value "3")
+            :ARG1-of (m / mean-01
+                        :ARG2 (g2 / gene
+                                  :name (n / name
+                                           :op1 "MYC"))))
+   :ARG1-of (c / cause-01
+               :ARG0 (c2 / confirm-01
+                         :ARG0 (i2 / immunoblot-01)
+                         :ARG1 (c3 / change-01
+                                   :ARG1 (l / level
+                                            :quant-of (p / protein))
+                                   :degree (s / substantial)
+                                   :ARG1-of (d / describe-01
+                                               :ARG0 (f / figure
+                                                        :mod "3a"))
+                                   :ARG1-of (r / reflect-01
+                                               :ARG2 (a / and
+                                                        :op1 (r2 / regulate-01
+                                                                 :time (t2 / transcribe-01))
+                                                        :op1 (r3 / regulate-01
+                                                                 :time (a2 / after
+                                                                           :op1 t2)))
+                                               :ARG1-of (p2 / possible-01))))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, transcription of <i>MAP2K1 </i>was decreased in both cell lines after MUC1 siRNA.
+# ::file pmid_1684_6534_120.txt
+# ::date 2015-08-13T09:02:18
+# ::id pmid_1684_6534.120
+(d / decrease-01
+   :ARG1 (t / transcribe-01
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "MAP2K1")))
+   :location (c / cell-line
+                :mod (b / both))
+   :time (a / after
+            :op1 (n4 / nucleic-acid
+                     :name (n2 / name
+                               :op1 "siRNA")
+                     :ARG0-of (e / encode-01
+                                 :ARG1 (p / protein
+                                          :name (n3 / name
+                                                    :op1 "MUC1")))))
+   :ARG2-of (i / interest-01))
+
+# ::save-date Thu Aug 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This gene encodes MEK1, one of the primary regulators of the ERK1/2 MAPK pathway [<xref ref-type="bibr" rid="B33">33</xref>], a network that has been linked several times to MUC1 [<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B34">34</xref>-<xref ref-type="bibr" rid="B36">36</xref>].
+# ::file pmid_1684_6534_121.txt
+# ::date 2015-08-13T09:10:40
+# ::id pmid_1684_6534.121
+(e / encode-01
+   :ARG0 (g / gene
+            :mod (t / this))
+   :ARG1 (e2 / enzyme
+             :name (n / name
+                      :op1 "MEK1")
+             :ARG1-of (i / include-91
+                         :ARG2 (m / molecular-physical-entity
+                                  :ARG0-of (r / regulate-01
+                                              :ARG1 (p2 / pathway
+                                                        :name (n2 / name
+                                                                  :op1 "ERK1/2"
+                                                                  :op2 "MAPK")
+                                                        :mod (n3 / network
+                                                                 :ARG1-of (l / link-01
+                                                                             :ARG2 (p4 / protein
+                                                                                       :name (n4 / name
+                                                                                                 :op1 "MUC1"))
+                                                                             :frequency (s / several)
+                                                                             :ARG1-of (d2 / describe-01
+                                                                                          :ARG0 (a / and
+                                                                                                   :op1 (p5 / publication
+                                                                                                            :ARG1-of (c2 / cite-01
+                                                                                                                         :ARG2 "12"))
+                                                                                                   :op2 (p6 / publication
+                                                                                                            :ARG1-of (c3 / cite-01
+                                                                                                                         :ARG2 (v / value-interval
+                                                                                                                                  :op1 "34"
+                                                                                                                                  :op2 "36")))))))))
+                                  :mod (p / primary))
+                         :ARG1-of (d / describe-01
+                                     :ARG0 (p3 / publication
+                                               :ARG1-of (c / cite-01
+                                                           :ARG2 "33"))))))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We examined MEK1 and MEK2 levels by western blot to confirm decreased protein in MUC1 siRNA-treated cells (Figure <xref ref-type="fig" rid="F3">3a</xref>), and found that not only were total MEK1/2 levels lower in 468.siMUC1 and BT.siMUC1 compared to controls (0.48 and 0.68 relative to siLuc, respectively), but so were the basal amounts of active (phosphorylated) MEK1/2 (pMEK1/2; 0.12 and 0.42 relative to siLuc, respectively).
+# ::file pmid_1684_6534_122.txt
+# ::date 2015-08-13T09:18:52
+# ::id pmid_1684_6534.122
+(a / and
+   :op1 (e / examine-01
+           :ARG0 (w / we)
+           :ARG1 (a2 / and
+                     :op1 (l / level
+                             :quant-of (e2 / enzyme
+                                           :name (n / name
+                                                    :op1 "MEK1")))
+                     :op2 (l2 / level
+                              :quant-of (e3 / enzyme
+                                            :name (n2 / name
+                                                      :op1 "MEK2"))))
+           :manner (i / immunoblot-01)
+           :purpose (c / confirm-01
+                       :ARG0 w
+                       :ARG1 (p / protein
+                                :ARG1-of (d / decrease-01
+                                            :location (c2 / cell
+                                                          :ARG1-of (t2 / treat-04
+                                                                       :ARG2 (n11 / nucleic-acid
+                                                                                  :name (n4 / name
+                                                                                            :op1 "siRNA")
+                                                                                  :ARG0-of (e4 / encode-01
+                                                                                               :ARG1 (p2 / protein
+                                                                                                         :name (n5 / name
+                                                                                                                   :op1 "MUC1")))))))))
+           :ARG1-of (d2 / describe-01
+                        :ARG0 (f / figure
+                                 :mod "3a")))
+   :op2 (f2 / find-01
+            :ARG0 w
+            :ARG1 (a3 / and
+                      :op1 (a4 / and
+                               :op1 (l3 / level
+                                        :quant-of e2)
+                               :op2 (l4 / level
+                                        :quant-of e3)
+                               :mod (t3 / total)
+                               :ARG1-of (l5 / low-04
+                                            :degree (m / more)
+                                            :compared-to (c3 / control)
+                                            :ARG1 a7)
+                               :ARG1-of (m2 / mean-01
+                                            :ARG2 (a14 / and
+                                                       :op1 (l6 / level
+                                                                :quant "0.48")
+                                                       :op2 (l7 / level
+                                                                :quant "0.68")
+                                                       :manner "r2"
+                                                       :ARG1-of (r3 / relative-05
+                                                                    :ARG3 (c6 / cell-line
+                                                                              :name (n8 / name
+                                                                                        :op1 "siLuc"))
+                                                                    :ARG1 a12)
+                                                       :mod t3)))
+                      :op2 (a7 / and
+                               :op1 (a8 / amount
+                                        :quant-of (e5 / enzyme
+                                                      :name (n9 / name
+                                                                :op1 "MEK1")
+                                                      :ARG1-of (a10 / activate-01
+                                                                    :ARG1-of (m3 / mean-01
+                                                                                 :ARG2 (p3 / phosphorylate-01
+                                                                                           :ARG3 e5)))))
+                               :op2 (a9 / amount
+                                        :quant-of (e6 / enzyme
+                                                      :name (n10 / name
+                                                                 :op1 "MEK2")
+                                                      :ARG1-of (a11 / activate-01
+                                                                    :ARG1-of (m5 / mean-01
+                                                                                 :ARG2 (p4 / phosphorylate-01
+                                                                                           :ARG3 e6)))))
+                               :mod (b / basal)
+                               :ARG1-of (m4 / mean-01
+                                            :ARG2 (a12 / and
+                                                       :op1 (a6 / amount
+                                                                :quant "0.12")
+                                                       :op2 (a13 / amount
+                                                                 :quant "0.42")
+                                                       :manner (r2 / respective)
+                                                       :mod b))))
+            :location (a5 / and
+                          :op1 (c4 / cell-line
+                                   :name (n6 / name
+                                             :op1 "468.siMUC1"))
+                          :op2 (c5 / cell-line
+                                   :name (n7 / name
+                                             :op1 "BT.siMUC1")))))
+
+# ::save-date Thu Nov 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Both 468.siMUC1 and BT.siMUC1 also showed reduced activation of ERK1/2 (dpERK1/2; 0.21 and 0.27 relative to siLuc, respectively), as would be expected with diminished signaling through MEK1/2; total ERK1/2 levels remain unchanged.
+# ::file pmid_1684_6534_123.txt
+# ::date 2015-08-13T09:34:57
+# ::id pmid_1684_6534.123
+(m2 / multi-sentence
+    :snt1 (s / show-01
+             :ARG0 (a / and
+                      :op1 (c3 / cell-line
+                               :name (n7 / name
+                                         :op1 "468.siMUC1"))
+                      :op2 (c4 / cell-line
+                               :name (n8 / name
+                                         :op1 "BT.siMUC1")))
+             :ARG1 (a3 / activate-01
+                       :ARG1 (s2 / slash
+                                 :op1 (e / enzyme
+                                         :name (n / name
+                                                  :op1 "ERK1"))
+                                 :op2 (e2 / enzyme
+                                          :name (n2 / name
+                                                    :op1 "ERK2"))
+                                 :ARG3-of (p / phosphorylate-01
+                                             :mod (d3 / dual))
+                                 :quant l2)
+                       :ARG1-of (r / reduce-01)
+                       :ARG1-of (m / mean-01
+                                   :ARG2 (a4 / and
+                                             :op1 (a5 / activate-01
+                                                      :degree "0.21")
+                                             :op2 (a6 / activate-01
+                                                      :degree "0.27")
+                                             :manner (r2 / respective)
+                                             :ARG1-of (r4 / relative-05
+                                                          :ARG3 (c5 / cell-line
+                                                                    :name (n9 / name
+                                                                              :op1 "siLuc"))))))
+             :mod (a2 / also)
+             :ARG1-of (e3 / expect-01
+                          :ARG1-of (c / cause-01
+                                      :ARG0 (s3 / signal-07
+                                                :ARG0 (s4 / slash
+                                                          :op1 (e4 / enzyme
+                                                                   :name (n3 / name
+                                                                             :op1 "MEK1"))
+                                                          :op2 (e5 / enzyme
+                                                                   :name (n4 / name
+                                                                             :op1 "MEK2")))
+                                                :ARG1-of (d / diminish-01)))))
+    :snt2 (r3 / remain-01
+              :ARG1 (l2 / level
+                        :mod (t / total))
+              :ARG3 (c2 / change-01
+                        :polarity "-")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As both lines have high levels of EGFR and thus activate the MEK-ERK cascade intensely when stimulated with EGF [<xref ref-type="bibr" rid="B37">37</xref>], siRNA-transfected cells were treated with EGF.
+# ::file pmid_1684_6534_124.txt
+# ::date 2015-08-13T09:48:48
+# ::id pmid_1684_6534.124
+(t / treat-04
+   :ARG1 (c / cell
+            :ARG1-of (t2 / transfect-01
+                         :ARG2 (n5 / nucleic-acid
+                                   :name (n2 / name
+                                             :op1 "siRNA"))))
+   :ARG2 (p3 / protein
+             :name (n3 / name
+                       :op1 "EGF"))
+   :ARG1-of (c2 / cause-01
+                :ARG0 (h / have-03
+                         :ARG0 (c3 / cell-line
+                                   :mod (b / both))
+                         :ARG1 (l / level
+                                  :ARG1-of (h2 / high-02)
+                                  :quant-of (e / enzyme
+                                               :name (n / name
+                                                        :op1 "EGFR")))
+                         :ARG2-of (i / infer-01
+                                     :ARG1 (a / activate-01
+                                              :ARG0 c3
+                                              :ARG1 (p / pathway
+                                                       :name (n4 / name
+                                                                 :op1 "MEK-ERK"))
+                                              :manner (i2 / intense-02)
+                                              :time (s2 / stimulate-01
+                                                        :ARG1 c3
+                                                        :ARG2 p3))))
+                :ARG1-of (d / describe-01
+                            :ARG0 (p2 / publication
+                                      :ARG1-of (c5 / cite-01
+                                                   :ARG2 "37")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Notably, MUC1 siRNA impairs this important oncogenic pathway in MDA-MB-468 cells, as 468.siMUC1 display less pMEK1/2 in response to EGF than do 468.siLuc (Figure <xref ref-type="fig" rid="F3">3b</xref>).
+# ::file pmid_1684_6534_125.txt
+# ::date 2015-08-13T09:55:17
+# ::id pmid_1684_6534.125
+(i / impair-01
+   :ARG0 (n11 / nucleic-acid
+              :name (n / name
+                       :op1 "siRNA")
+              :ARG0-of (e3 / encode-01
+                           :ARG1 (p / protein
+                                    :name (n2 / name
+                                              :op1 "MUC1"))))
+   :ARG1 (p2 / pathway
+             :mod (t / this)
+             :mod (i2 / important)
+             :ARG0-of (c / cause-01
+                         :ARG1 (d4 / disease
+                                   :wiki "Cancer"
+                                   :name (n10 / name
+                                              :op1 "cancer"))))
+   :location (c3 / cell-line
+                 :name (n3 / name
+                           :op1 "MDA-MB-468"))
+   :ARG1-of (n4 / notable-04)
+   :ARG1-of (c4 / cause-01
+                :ARG0 (d / display-01
+                         :ARG0 (c5 / cell-line
+                                   :name (n8 / name
+                                             :op1 "468.siMUC1"))
+                         :ARG1 (s / slash
+                                  :op1 (e / enzyme
+                                          :name (n5 / name
+                                                    :op1 "MEK1"))
+                                  :op2 (e2 / enzyme
+                                           :name (n6 / name
+                                                     :op1 "MEK2"))
+                                  :ARG3-of (p3 / phosphorylate-01)
+                                  :quant (l / less))
+                         :ARG2-of (r2 / respond-01
+                                      :ARG1 (p4 / protein
+                                                :name (n7 / name
+                                                          :op1 "EGF")))
+                         :compared-to (d2 / display-01
+                                          :ARG0 (c6 / cell-line
+                                                    :name (n9 / name
+                                                              :op1 "468.siLuc"))
+                                          :ARG1 (s3 / slash
+                                                    :op1 e
+                                                    :op2 e2))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "3b")))
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, EGF treatment of BT-20 cells results in slightly higher pMEK1/2 levels in BT.siMUC1 compared to BT.siLuc.
+# ::file pmid_1684_6534_126.txt
+# ::date 2015-08-13T10:03:21
+# ::id pmid_1684_6534.126
+(r / result-01
+   :ARG1 (t / treat-04
+            :ARG1 (c / cell-line
+                     :name (n2 / name
+                               :op1 "BT-20"))
+            :ARG2 (s / small-molecule
+                     :name (n / name
+                              :op1 "EGF")))
+   :ARG2 (l / level
+            :ARG1-of (h / high-02
+                        :degree (m / more
+                                   :degree (s2 / slight))
+                        :compared-to (c2 / cell-line
+                                         :name (n5 / name
+                                                   :op1 "BT.siLuc")))
+            :quant-of (s3 / slash
+                          :op1 (e / enzyme
+                                  :name (n3 / name
+                                            :op1 "MEK1"))
+                          :op2 (e2 / enzyme
+                                   :name (n4 / name
+                                             :op1 "MEK2"))
+                          :ARG3-of (p / phosphorylate-01))
+            :location (c3 / cell-line
+                          :name (n6 / name
+                                    :op1 "BT.siMUC1")))
+   :ARG2-of (i / interest-01))
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Though this result seems paradoxical in light of decreased <i>MAP2K1 </i>transcription in BT.siMUC1, it likely results from differential functions of Raf isoforms in combination with the increased <i>RAF1 </i>transcription (Figure <xref ref-type="fig" rid="F2">2</xref>) and protein level (Figure <xref ref-type="fig" rid="F3">3a</xref>) in these cells.
+# ::file pmid_1684_6534_127.txt
+# ::date 2015-08-14T01:03:53
+# ::id pmid_1684_6534.127
+(h / have-concession-91
+   :ARG1 (l / likely-01
+            :ARG1 (r3 / result-01
+                      :ARG1 (c / combine-01
+                               :ARG1 (f / function-01
+                                        :ARG0 (e / enzyme
+                                                 :name (n / name
+                                                          :op1 "Raf")
+                                                 :mod (i / isoform))
+                                        :mod (d2 / differential))
+                               :ARG2 (a / and
+                                        :op1 (t4 / transcribe-01
+                                                 :ARG1 (g2 / gene
+                                                           :name (n4 / name
+                                                                     :op1 "RAF1"))
+                                                 :ARG1-of (d4 / describe-01
+                                                              :ARG0 (f3 / figure
+                                                                        :mod "2")))
+                                        :op2 (l2 / level
+                                                 :quant-of (p / protein)
+                                                 :ARG1-of (d3 / describe-01
+                                                              :ARG0 (f2 / figure
+                                                                        :mod "3a")))
+                                        :location "c3"
+                                        :ARG1-of (i2 / increase-01)))
+                      :ARG2 "t"))
+   :ARG2 (s / seem-01
+            :ARG1 (p2 / paradox
+                      :domain (t / thing
+                                 :ARG2-of (r / result-01)
+                                 :mod (t2 / this)))
+            :ARG1-of (c4 / cause-01
+                         :ARG0 (d / decrease-01
+                                  :ARG1 (t3 / transcribe-01
+                                            :ARG1 (g / gene
+                                                     :name (n2 / name
+                                                               :op1 "MAP2K1"))
+                                            :location (c3 / cell-line
+                                                          :name (n3 / name
+                                                                    :op1 "BT.siMUC1")))))))
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Specifically, B-Raf is thought to be the main activator of MEK under normal conditions; Raf-1 activates MEK in response to stimulus [<xref ref-type="bibr" rid="B38">38</xref>].
+# ::file pmid_1684_6534_128.txt
+# ::date 2015-08-14T01:13:56
+# ::id pmid_1684_6534.128
+(a2 / and
+    :op1 (t2 / think-01
+             :ARG1 (a3 / activate-01
+                       :ARG0 (e / enzyme
+                                :name (n / name
+                                         :op1 "B-Raf"))
+                       :ARG1 (e3 / enzyme
+                                 :name (n3 / name
+                                           :op1 "MEK"))
+                       :mod (m / main)
+                       :condition (n4 / normal)))
+    :op2 (a4 / activate-01
+             :ARG0 (e4 / enzyme
+                       :name (n5 / name
+                                 :op1 "Raf-1"))
+             :ARG1 e3
+             :ARG2-of (r / respond-01
+                         :ARG1 (s / stimulus)))
+    :ARG1-of (s2 / specific-02)
+    :ARG1-of (d / describe-01
+                :ARG0 (p / publication
+                         :ARG1-of (c / cite-01
+                                     :ARG2 "38"))))
+
+# ::save-date Tue Aug 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, it appears that basal pMEK1/2 levels are not greatly affected by Raf-1 overexpression in BT.siMUC1 cells, likely because MEK is regulated primarily by B-Raf under normal growth conditions.
+# ::file pmid_1684_6534_129.txt
+# ::date 2015-08-14T01:24:38
+# ::id pmid_1684_6534.129
+(c2 / cause-01
+    :ARG0 (r / regulate-01
+             :ARG0 (e2 / enzyme
+                       :name (n3 / name
+                                 :op1 "B-Raf"))
+             :ARG1 (e5 / enzyme
+                       :name (n / name
+                                :op1 "MEK"))
+             :ARG1-of (l2 / likely-01)
+             :manner (p / primary)
+             :condition (g2 / grow-01
+                            :ARG1-of (n7 / normal-02)))
+    :ARG1 (a / appear-02
+             :ARG1 (a2 / affect-01
+                       :polarity "-"
+                       :ARG0 (o / overexpress-01
+                                :ARG1 (e / enzyme
+                                         :name (n2 / name
+                                                   :op1 "Raf-1"))
+                                :location (c / cell-line
+                                             :name (n6 / name
+                                                       :op1 "BT.siMUC1")))
+                       :ARG1 (l / level
+                                :quant-of (s / slash
+                                             :op1 (e3 / enzyme
+                                                      :name (n4 / name
+                                                                :op1 "MEK1"))
+                                             :op2 (e4 / enzyme
+                                                      :name (n5 / name
+                                                                :op1 "MEK2"))
+                                             :ARG3-of (p2 / phosphorylate-01))
+                                :mod (b / basal))
+                       :extent (g / great))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, when the cells are stimulated (EGF), increased Raf-1 levels in BT.siMUC1 leads to heightened pMEK1/2 (Figure <xref ref-type="fig" rid="F3">3b</xref>).
+# ::file pmid_1684_6534_130.txt
+# ::date 2015-08-14T01:31:02
+# ::id pmid_1684_6534.130
+(c / contrast-01
+   :ARG2 (l / lead-03
+            :ARG0 (l2 / level
+                      :quant-of (e / enzyme
+                                   :name (n / name
+                                            :op1 "Raf-1"))
+                      :location (c2 / cell-line
+                                    :name (n2 / name
+                                              :op1 "BT.siMUC1"))
+                      :ARG1-of (i / increase-01))
+            :ARG2 (s / slash
+                     :op1 (e2 / enzyme
+                              :name (n3 / name
+                                        :op1 "MEK1"))
+                     :op2 (e3 / enzyme
+                              :name (n4 / name
+                                        :op1 "MEK2"))
+                     :ARG3-of (p / phosphorylate-01)
+                     :ARG1-of (h / heighten-01))
+            :time (s2 / stimulate-01
+                      :ARG1 (c3 / cell)
+                      :ARG2 (p2 / protein
+                                :name (n5 / name
+                                          :op1 "EGF"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3b")))
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next examined whether MUC1 knockdown and its associated transcriptional alterations would affect overall cellular events.
+# ::file pmid_1684_6534_132.txt
+# ::date 2015-08-14T02:18:32
+# ::id pmid_1684_6534.132
+(e / examine-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :mode "interrogative"
+            :ARG0 (a2 / and
+                      :op1 (k / knock-down-02
+                              :ARG1 (p / protein
+                                       :name (n2 / name
+                                                 :op1 "MUC1")))
+                      :op2 (a3 / alter-01
+                               :ARG1 (t / transcribe-01
+                                        :ARG1 p)
+                               :ARG1-of (a4 / associate-01
+                                            :ARG2 k)))
+            :ARG1 (e2 / event
+                      :mod (c / cell)
+                      :mod (o / overall)))
+   :time (n / next))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As several of the genes shown in Figure <xref ref-type="fig" rid="F2">2</xref> are important in regulating proliferation and survival, and because of the recently described role of MUC1 in modulating apoptosis in response to cellular stresses [<xref ref-type="bibr" rid="B20">20</xref>,<xref ref-type="bibr" rid="B21">21</xref>,<xref ref-type="bibr" rid="B24">24</xref>], we first analyzed whether MUC1 siRNA would alter apoptosis in these lines.
+# ::file pmid_1684_6534_133.txt
+# ::date 2015-08-14T02:22:33
+# ::id pmid_1684_6534.133
+(a / analyze-01
+   :ARG0 (w / we)
+   :ARG1 (a2 / alter-01
+             :mode "interrogative"
+             :ARG0 (n3 / nucleic-acid
+                       :name (n / name
+                                :op1 "siRNA")
+                       :ARG0-of (e / encode-01
+                                   :ARG1 (p / protein
+                                            :name (n2 / name
+                                                      :op1 "MUC1"))))
+             :ARG1 (a3 / apoptosis)
+             :location (c / cell-line
+                          :mod (t / this)))
+   :time (f / first)
+   :ARG1-of (c2 / cause-01
+                :ARG0 (a4 / and
+                          :op1 (i / important
+                                  :domain (g / gene
+                                             :quant (s / several)
+                                             :ARG1-of (i2 / include-91
+                                                          :ARG2 (g2 / gene
+                                                                    :ARG1-of (s2 / show-01
+                                                                                 :medium (f2 / figure
+                                                                                             :mod "2")))))
+                                  :purpose (r2 / regulate-01
+                                               :ARG1 (a5 / and
+                                                         :op1 (p2 / proliferate-01)
+                                                         :op2 (s3 / survive-01))))
+                          :op2 (p3 / play-02
+                                   :ARG0 p
+                                   :ARG1 (m / modulate-01
+                                            :ARG0 p
+                                            :ARG1 a3
+                                            :ARG2-of (r3 / respond-01
+                                                         :ARG1 (s4 / stress
+                                                                   :mod (c3 / cell))))
+                                   :ARG1-of (d / describe-01
+                                               :time (r4 / recent)))
+                          :ARG1-of (d2 / describe-01
+                                       :ARG0 (a6 / and
+                                                 :op1 (p4 / publication
+                                                          :ARG1-of (c4 / cite-01
+                                                                       :ARG2 "20"))
+                                                 :op2 (p5 / publication
+                                                          :ARG1-of (c5 / cite-01
+                                                                       :ARG2 "21"))
+                                                 :op3 (p6 / publication
+                                                          :ARG1-of (c6 / cite-01
+                                                                       :ARG2 "24")))))))
+
+
+# ::save-date Tue Aug 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Although there was no change in basal apoptosis in either line (Figure <xref ref-type="fig" rid="F4">4a</xref>), we observed that the cell lines responded differently when trypsinized for re-plating 24 hours after transfection (Figure <xref ref-type="fig" rid="F4">4b</xref>).
+# ::file pmid_1684_6534_134.txt
+# ::date 2015-08-14T02:29:39
+# ::id pmid_1684_6534.134
+(h2 / have-concession-91
+      :ARG1 (o / observe-01
+            :ARG0 (w / we)
+            :ARG1 (r / respond-01
+                  :ARG0 "c2"
+                  :ARG1-of (d2 / differ-01)
+                  :time (t2 / trypsinize-00
+                        :ARG1 "c2"
+                        :purpose (r2 / replate-00)
+                        :time (a2 / after
+                              :op1 (t3 / transfect-01 :ARG1 "c2")
+                              :quant (t / temporal-quantity
+                                    :quant "24"
+                                    :unit (h / hour)))))
+            :ARG1-of (d3 / describe-01
+                  :ARG0 (f2 / figure :mod "4b")))
+      :ARG2 (c / change-01
+            :polarity "-"
+            :ARG1 (a / apoptosis
+                  :mod (b / basal))
+            :location (c2 / cell-line
+                  :mod (e / either))
+            :ARG1-of (d / describe-01
+                  :ARG0 (f / figure :mod "4a"))))
+
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, 468.siMUC1 cells show greater apoptosis after trypsinization than do 468.siLuc (49.8% versus 34.0%, respectively), while BT-20 cells from both siRNA treatments display similar levels of apoptosis (around 22%).
+# ::file pmid_1684_6534_135.txt
+# ::date 2015-08-14T02:35:58
+# ::id pmid_1684_6534.135
+(c / contrast-01
+      :ARG1 (s / show-01
+            :ARG0 (c2 / cell-line
+                  :name (n / name :op1 "468.siMUC1"))
+            :ARG1 (a / apoptosis
+                  :mod (g / great
+                        :degree (m / more)
+                        :compared-to (c3 / cell-line
+                              :name (n2 / name :op1 "468.siLuc")
+                              :ARG1-of (m3 / mean-01
+                                    :ARG2 (p2 / percentage-entity :value "34.0")))
+                        :ARG1-of (m2 / mean-01
+                              :ARG2 (p / percentage-entity :value "49.8"))))
+            :time (a2 / after
+                  :op1 (t / trypsinize-00)))
+      :ARG2 (d / display-01
+            :ARG0 (c4 / cell-line
+                  :name (n3 / name :op1 "BT-20")
+                  :source (t2 / treat-04
+                        :ARG2 (n5 / nucleic-acid
+                              :name (n4 / name :op1 "siRNA"))
+                        :mod (b / both)))
+            :ARG1 (l / level
+                  :degree-of a
+                  :ARG1-of (r / resemble-01)
+                  :ARG1-of (m4 / mean-01
+                        :ARG2 (p3 / percentage-entity :value "22"))))
+      :ARG2-of (i / interest-01))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To examine whether this phenomenon is specific to trypsin treatment or part of a general stress response involving MUC1, we subjected cells to a panel of stresses and measured cell death.
+# ::file pmid_1684_6534_136.txt
+# ::date 2015-08-14T02:40:34
+# ::id pmid_1684_6534.136
+(a / and
+   :op1 (s / subject-01
+           :ARG0 (w / we)
+           :ARG1 (c / cell)
+           :ARG2 (p / panel
+                    :consist-of (s2 / stress)))
+   :op2 (m / measure-01
+           :ARG0 w
+           :ARG1 (d / die-01
+                    :ARG1 c))
+   :purpose (e2 / examine-01
+                :ARG0 w
+                :ARG1 (o / or
+                         :mode "interrogative"
+                         :op1 (s3 / specific-02
+                                  :ARG1 "p2"
+                                  :ARG2 (t2 / treat-04
+                                            :ARG2 (e / enzyme
+                                                     :name (n / name
+                                                              :op1 "trypsin"))))
+                         :op2 (p2 / phenomenon
+                                  :mod (t / this)
+                                  :subevent-of (r / respond-01
+                                                  :ARG1 (s4 / stress)
+                                                  :ARG1-of (g / general-02)
+                                                  :ARG2-of (i / involve-01
+                                                              :ARG1 (p3 / protein
+                                                                        :name (n2 / name
+                                                                                  :op1 "MUC1"))))))))
+
+# ::save-date Thu Nov 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In agreement with the patterns seen with trypsinization, BT.siLuc and BT.siMUC1 respond similarly to all treatments (data not shown), while 468.siMUC1 die more readily than 468.siLuc in response to trypsin, G418, hydrogen peroxide, or celecoxib, a chemotherapeutic that targets the cyclooxygenase-2 (COX-2) pathway (Figure <xref ref-type="fig" rid="F4">4c</xref>); these data were confirmed with two independent siRNA constructs (data not shown).
+# ::file pmid_1684_6534_137.txt
+# ::date 2015-08-14T02:49:17
+# ::id pmid_1684_6534.137
+(m / multi-sentence
+   :snt1 (c / contrast-01
+            :ARG1 (r / respond-01
+                     :ARG0 (a / and
+                              :op1 (c2 / cell-line
+                                       :name (n2 / name
+                                                 :op1 "BT.siLuc"))
+                              :op2 (c3 / cell-line
+                                       :name (n3 / name
+                                                 :op1 "BT.siMUC1")))
+                     :ARG1 (t / treat-04
+                              :mod (a2 / all))
+                     :ARG1-of (r2 / resemble-01)
+                     :ARG1-of (d / describe-01
+                                 :ARG0 (d2 / data
+                                           :ARG1-of (s / show-01
+                                                       :polarity "-"))))
+            :ARG2 (d3 / die-01
+                      :ARG1 (c4 / cell-line
+                                :name (n4 / name
+                                          :op1 "468.siMUC1"))
+                      :manner (r3 / ready-02
+                                  :degree (m2 / more)
+                                  :compared-to (c5 / cell-line
+                                                   :name (n5 / name
+                                                             :op1 "468.siLuc")))
+                      :ARG2-of (r4 / respond-01
+                                   :ARG1 (o / or
+                                            :op1 (e / enzyme
+                                                    :name (n / name
+                                                             :op1 "trypsin"))
+                                            :op2 (s2 / small-molecule
+                                                     :name (n6 / name
+                                                               :op1 "G418"))
+                                            :op3 (s3 / small-molecule
+                                                     :name (n7 / name
+                                                               :op1 "hydrogen"
+                                                               :op2 "peroxide"))
+                                            :op4 (s4 / small-molecule
+                                                     :name (n8 / name
+                                                               :op1 "celecoxib")
+                                                     :mod (s5 / small-molecule
+                                                              :mod (c6 / chemotherapy)
+                                                              :ARG0-of (t2 / target-01
+                                                                           :ARG1 (p / pathway
+                                                                                    :name (n9 / name
+                                                                                              :op1 "cyclooxygenase-2"))))))))
+            :ARG1-of (d4 / describe-01
+                         :ARG0 (f / figure
+                                  :mod "4c"))
+            :ARG0-of (a3 / agree-01
+                         :ARG2 (p2 / pattern
+                                   :ARG1-of (s7 / see-01
+                                                :time (t4 / trypsinize-00)))))
+   :snt2 (c7 / confirm-01
+             :ARG0 (c8 / construct
+                       :quant "2"
+                       :mod (n11 / nucleic-acid
+                                 :name (n10 / name
+                                            :op1 "siRNA"))
+                       :ARG0-of (d6 / depend-01
+                                    :polarity "-"))
+             :ARG1 (d5 / data
+                       :mod (t3 / this))
+             :ARG1-of (d7 / describe-01
+                          :ARG0 (d8 / data
+                                    :ARG1-of (s6 / show-01
+                                                 :polarity "-")))))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Like the MAPK pathway, AKT signaling has been linked to MUC1 in cancer.
+# ::file pmid_1684_6534_138.txt
+# ::date 2015-08-14T03:04:36
+# ::id pmid_1684_6534.138
+(l / link-01
+   :ARG1 (s / signal-07
+            :ARG0 (e / enzyme
+                     :name (n3 / name
+                               :op1 "AKT")))
+   :ARG2 (p2 / protein
+             :name (n4 / name
+                       :op1 "MUC1"))
+   :ARG1-of (r / resemble-01
+               :ARG2 (p / pathway
+                        :name (n / name
+                                 :op1 "MAPK")))
+   :location (d / disease
+                :wiki "Cancer"
+                :name (n2 / name
+                          :op1 "cancer")))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Although transcription of <i>AKT </i>was not altered in MUC1 siRNA-treated cells, the results of our apoptosis studies prompted us to investigate levels of AKT further.
+# ::file pmid_1684_6534_139.txt
+# ::date 2015-08-14T03:07:43
+# ::id pmid_1684_6534.139
+(h / have-concession-91
+   :ARG1 (p / prompt-02
+            :ARG0 (t / thing
+                     :ARG2-of (r / result-01
+                                 :ARG1 (s / study-01
+                                          :ARG0 (w / we)
+                                          :ARG1 (a / apoptosis))))
+            :ARG1 w
+            :ARG2 (i / investigate-01
+                     :ARG0 w
+                     :ARG1 (l / level
+                              :quant-of (e / enzyme
+                                           :name (n2 / name
+                                                     :op1 "AKT")))
+                     :degree (f / further)))
+   :ARG2 (a2 / alter-01
+             :polarity "-"
+             :ARG1 (t2 / transcribe-01
+                       :ARG1 (g / gene
+                                :name (n / name
+                                         :op1 "AKT")))
+             :location (c / cell
+                          :ARG1-of (t3 / treat-04
+                                       :ARG2 (n5 / nucleic-acid
+                                                 :name (n3 / name
+                                                           :op1 "siRNA")
+                                                 :ARG0-of (e2 / encode-01
+                                                              :ARG1 (p2 / protein
+                                                                        :name (n4 / name
+                                                                                  :op1 "MUC1"))))))))
+
+# ::save-date Thu Nov 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As expected, the total AKT protein level is not greatly changed after MUC1 siRNA in either cell line, though the active form (pAKT) is increased in both 468.siMUC1 and BT.siMUC1 compared to controls (Figure <xref ref-type="fig" rid="F3">3a</xref>).
+# ::file pmid_1684_6534_140.txt
+# ::date 2015-08-14T03:12:21
+# ::id pmid_1684_6534.140
+(c / change-01
+   :polarity "-"
+   :ARG1 (l / level
+            :mod (t / total)
+            :quant-of (e4 / enzyme
+                          :name (n / name
+                                   :op1 "AKT")))
+   :degree (g / great)
+   :time (a / after
+            :op1 (n7 / nucleic-acid
+                     :name (n2 / name
+                               :op1 "siRNA")
+                     :ARG0-of (e3 / encode-01
+                                  :ARG1 (p2 / protein
+                                            :name (n3 / name
+                                                      :op1 "MUC1")))))
+   :location (c2 / cell-line
+                 :mod (e / either))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3a"))
+   :ARG1-of (e2 / expect-01)
+   :concession (i / increase-01
+                  :ARG1 (f2 / form
+                            :mod e4
+                            :ARG1-of (a2 / activate-01)
+                            :ARG1-of (m / mean-01
+                                        :ARG2 (e5 / enzyme
+                                                  :name (n6 / name
+                                                            :op1 "AKT")
+                                                  :ARG3-of (p5 / phosphorylate-01))))
+                  :location (a3 / and
+                                :op1 (c3 / cell-line
+                                         :name (n4 / name
+                                                   :op1 "468.siMUC1"))
+                                :op2 (c4 / cell-line
+                                         :name (n5 / name
+                                                   :op1 "BT.siMUC1")))
+                  :compared-to (c5 / control)))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This result disagrees with MUC1 activation of the AKT pathway in rat 3Y1 cells [<xref ref-type="bibr" rid="B18">18</xref>], and may reflect regulation more appropriate to breast cancer cells; this is supported by activation of AKT in response to MUC1 siRNA in other lines [<xref ref-type="bibr" rid="B21">21</xref>].
+# ::file pmid_1684_6534_141.txt
+# ::date 2015-08-14T03:16:22
+# ::id pmid_1684_6534.141
+(a / and
+   :op1 (d3 / disagree-01
+            :ARG0 (t / thing
+                     :mod (t2 / this)
+                     :ARG2-of (r / result-01))
+            :ARG1 (a2 / activate-01
+                      :ARG0 (p / protein
+                               :name (n2 / name
+                                         :op1 "MUC1"))
+                      :ARG1 (p2 / pathway
+                                :name (n3 / name
+                                          :op1 "AKT"))
+                      :location (c / cell
+                                   :name (n4 / name
+                                             :op1 "3Y1")
+                                   :source (r2 / rat)))
+            :ARG1-of (d4 / describe-01
+                         :ARG0 (p3 / publication
+                                   :ARG1-of (c2 / cite-01
+                                                :ARG2 "18"))))
+   :op2 (p4 / possible-01
+            :ARG1 (r3 / reflect-01
+                      :ARG1 t
+                      :ARG2 (r4 / regulate-01
+                                :ARG1-of (a3 / appropriate-02
+                                             :ARG2 (c3 / cell
+                                                       :source (d2 / disease
+                                                                   :wiki "Breast_cancer"
+                                                                   :name (n / name
+                                                                            :op1 "breast"
+                                                                            :op2 "cancer")))
+                                             :degree (m / more)))))
+   :ARG1-of (s / support-01
+               :ARG0 (a4 / activate-01
+                         :ARG1 p2
+                         :ARG2-of (r5 / respond-01
+                                      :ARG1 (n6 / nucleic-acid
+                                                :name (n5 / name
+                                                          :op1 "siRNA")
+                                                :ARG0-of (e / encode-01
+                                                            :ARG1 p)))
+                         :location (c5 / cell-line
+                                       :mod (o / other)))
+               :ARG1-of (d / describe-01
+                           :ARG0 (p5 / publication
+                                     :ARG1-of (c6 / cite-01
+                                                  :ARG2 "21")))))
+
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, there is a striking difference in the relative amounts of AKT and pAKT in the two cell lines (Figure <xref ref-type="fig" rid="F4">4d</xref>).
+# ::file pmid_1684_6534_142.txt
+# ::date 2015-08-14T03:34:15
+# ::id pmid_1684_6534.142
+(a4 / and
+    :op2 (d / differ-02
+            :ARG1 (a2 / and
+                      :op1 (a / amount
+                              :ARG1-of (r / relative-05)
+                              :quant-of (e / enzyme
+                                           :name (n / name
+                                                    :op1 "AKT")))
+                      :op2 (a3 / amount
+                               :ARG1-of r
+                               :quant-of (e2 / enzyme
+                                             :name (n2 / name
+                                                       :op1 "AKT")
+                                             :ARG3-of (p / phosphorylate-01))))
+            :ARG0-of (s / strike-01)
+            :location (c / cell-line
+                         :quant "2")
+            :ARG1-of (d2 / describe-01
+                         :ARG0 (f / figure
+                                  :mod "4d"))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt When lysates from both lines are exposed to film for the same length of time (overexposure masks the differences between BT.siLuc and BT.siMUC1 that are apparent in Figure <xref ref-type="fig" rid="F3">3a</xref>), it is clear that pAKT levels are much higher in BT-20 than in MDA-MB-468, despite lower total AKT expression.
+# ::file pmid_1684_6534_143.txt
+# ::date 2015-08-14T03:41:50
+# ::id pmid_1684_6534.143
+(c / clear-06
+   :ARG1 (h2 / high-02
+             :ARG1 (l2 / level
+                       :quant-of (e / enzyme
+                                    :name (n / name
+                                             :op1 "AKT")
+                                    :ARG3-of (p / phosphorylate-01)))
+             :degree (m / more
+                        :quant (m3 / much))
+             :location (c2 / cell-line
+                           :name (n2 / name
+                                     :op1 "BT-20"))
+             :compared-to (c3 / cell-line
+                              :name (n3 / name
+                                        :op1 "MDA-MB-468")))
+   :time (e3 / expose-01
+             :ARG1 (l3 / lysate
+                       :source (a / and
+                                  :op1 c2
+                                  :op2 c3))
+             :ARG2 (f / film)
+             :duration (s / same-01)
+             :ARG1-of (m4 / mean-01
+                          :ARG2 (m5 / mask-01
+                                    :ARG0 (o / overexpose-00
+                                             :ARG1 l3)
+                                    :ARG1 (d / differ-02
+                                             :ARG1 (c4 / cell-line
+                                                       :name (n4 / name
+                                                                 :op1 "BT.siLuc"))
+                                             :ARG2 (c5 / cell-line
+                                                       :name (n5 / name
+                                                                 :op1 "BT.siMUC1"))
+                                             :ARG1-of (a2 / appear-02
+                                                          :medium (f2 / figure
+                                                                      :mod "3a"))))))
+   :concession (e2 / express-03
+                   :ARG2 e
+                   :degree (t / total)
+                   :ARG1-of (l / low-04
+                               :degree (m2 / more))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This difference in AKT activation between MDA-MB-468 and BT-20 likely contributes to the disparity in their sensitivity to the increased apoptosis expected with loss of MUC1.
+# ::file pmid_1684_6534_144.txt
+# ::date 2015-08-14T00:41:43
+# ::id pmid_1684_6534.144
+(l / likely-01
+   :ARG1 (c / contribute-01
+            :ARG0 (d / differ-02
+                     :ARG1 (c3 / cell-line
+                               :name (n2 / name
+                                         :op1 "MDA-MB-468"))
+                     :ARG2 (c2 / cell-line
+                               :name (n3 / name
+                                         :op1 "BT-20"))
+                     :ARG3 (a / activate-01
+                              :ARG1 (e / enzyme
+                                       :name (n / name
+                                                :op1 "AKT")))
+                     :mod (t / this))
+            :ARG2 (d2 / disparity
+                      :domain (s / sensitive-03
+                                 :ARG0 (a3 / and
+                                           :op1 c3
+                                           :op2 c2)
+                                 :ARG1 (a2 / apoptosis
+                                           :ARG1-of (i / increase-01)
+                                           :ARG1-of (e2 / expect-01
+                                                        :time (l2 / lose-02
+                                                                  :ARG1 (p / protein
+                                                                           :name (n4 / name
+                                                                                     :op1 "MUC1")))))))))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As MUC1 is involved in apoptosis, we next analyzed its effects on proliferation.
+# ::file pmid_1684_6534_146.txt
+# ::date 2015-08-14T01:40:06
+# ::id pmid_1684_6534.146
+(c / cause-01
+   :ARG0 (i / involve-01
+            :ARG1 (p2 / protein
+                      :name (n2 / name
+                                :op1 "MUC1"))
+            :ARG2 (a3 / apoptosis))
+   :ARG1 (a / analyze-01
+            :ARG0 (w / we)
+            :ARG1 (a2 / affect-01
+                      :ARG0 p2
+                      :ARG1 (p / proliferate-01))
+            :time (n / next)))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt BrdU and [<sup>3</sup>H]thymidine incorporation were used to analyze proliferation after MUC1 siRNA.
+# ::file pmid_1684_6534_147.txt
+# ::date 2015-08-14T01:43:41
+# ::id pmid_1684_6534.147
+(u / use-01
+   :ARG1 (a / and
+            :op1 (i / incorporate-02
+                    :ARG1 (s2 / small-molecule
+                              :name (n / name
+                                       :op1 "BrdU")))
+            :op2 (i2 / incorporate-02
+                     :ARG1 (s / small-molecule
+                              :name (n2 / name
+                                        :op1 "3H-thymidine"))))
+   :ARG2 (a2 / analyze-01
+             :ARG1 (p / proliferate-01))
+   :time (a3 / after
+             :op1 (n5 / nucleic-acid
+                      :name (n3 / name
+                                :op1 "siRNA")
+                      :ARG0-of (e / encode-01
+                                  :ARG1 (p3 / protein
+                                            :name (n4 / name
+                                                      :op1 "MUC1"))))))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt 468.siMUC1 cells show a significant decrease in [<sup>3</sup>H]thymidine incorporation compared to 468.siLuc, while intriguingly, BT.siMUC1 cells show a significant increase in proliferation (Figure <xref ref-type="fig" rid="F5">5a</xref>).
+# ::file pmid_1684_6534_148.txt
+# ::date 2015-08-15T12:22:08
+# ::id pmid_1684_6534.148
+(c / contrast-01
+   :ARG1 (s / show-01
+            :ARG0 (c3 / cell-line
+                      :name (n / name
+                               :op1 "468.siMUC1"))
+            :ARG1 (d2 / decrease-01
+                      :ARG1 (i / incorporate-02
+                               :ARG1 (s5 / small-molecule
+                                         :name (n3 / name
+                                                   :op1 "3H-thymidine")))
+                      :ARG1-of (s3 / significant-02
+                                   :ARG1 i2))
+            :compared-to (s2 / show-01
+                             :ARG0 (c2 / cell-line
+                                       :name (n2 / name
+                                                 :op1 "468.siLuc"))))
+   :ARG2 (s4 / show-01
+             :ARG0 (c4 / cell-line
+                       :name (n4 / name
+                                 :op1 "BT.siMUC1"))
+             :ARG1 (i2 / increase-01
+                       :ARG1 (p / proliferate-01))
+             :ARG0-of (i3 / intrigue-01))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5a")))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Growth curves mirror these results, as do experiments with the two independent MUC1 siRNA oligonucleotides (data not shown).
+# ::file pmid_1684_6534_149.txt
+# ::date 2015-08-15T11:58:09
+# ::id pmid_1684_6534.149
+(m / mirror-01
+   :ARG1 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG2 (c / curve-01
+            :ARG1 (g / grow-01))
+   :ARG1-of (r3 / resemble-01
+                :ARG2 (m2 / mirror-01
+                          :ARG2 (e2 / experiment-01
+                                    :ARG1 (o / oligonucleotide
+                                             :quant "2"
+                                             :mod (n3 / nucleic-acid
+                                                      :name (n2 / name
+                                                                :op1 "siRNA")
+                                                      :ARG0-of (e / encode-01
+                                                                  :ARG1 (p / protein
+                                                                           :name (n / name
+                                                                                    :op1 "MUC1"))))
+                                             :ARG0-of (d / depend-01
+                                                         :polarity "-")))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (d3 / data
+                          :ARG1-of (s / show-01
+                                      :polarity "-"))))
+
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Note that these assays require trypsinizing cells 24 hours post-transfection; therefore, the results in the MDA-MB-468 line could stem from the changes in apoptosis described in the previous section, rather than a true effect on proliferation.
+# ::file pmid_1684_6534_150.txt
+# ::date 2015-08-15T12:03:35
+# ::id pmid_1684_6534.150
+(m / multi-sentence
+      :snt1 (n / note-01
+            :ARG1 (r2 / require-01
+                  :ARG0 (a3 / assay-01
+                        :mod (t4 / this))
+                  :ARG1 (t5 / trypsinize-00
+                        :ARG1 (c4 / cell)
+                        :time (a4 / after
+                              :op1 (t6 / transfect-01)
+                              :quant (t / temporal-quantity
+                                    :quant "24"
+                                    :unit (h / hour))))))
+      :snt2 (c / cause-01
+            :ARG1 (p2 / possible-01
+                  :ARG1 (i / instead-of-91
+                        :ARG1 (s / stem-01
+                              :ARG1 (t2 / thing
+                                    :ARG2-of (r / result-01)
+                                    :location (c3 / cell-line
+                                          :name (n2 / name :op1 "MDA-MB-468")))
+                              :ARG2 (c2 / change-01
+                                    :ARG1 (a2 / apoptosis)
+                                    :ARG1-of (d / describe-01
+                                          :ARG0 (s2 / section
+                                                :mod (p4 / previous)))))
+                        :ARG2 (a / affect-01
+                              :ARG0 t2
+                              :ARG1 (p3 / proliferate-01)
+                              :ARG1-of (t3 / true-01))))))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To control for this, we incubated non-trypsinized, siRNA-transfected cells at similar confluence with BrdU to measure incorporation.
+# ::file pmid_1684_6534_151.txt
+# ::date 2015-08-15T11:48:01
+# ::id pmid_1684_6534.151
+(i / incubate-01
+   :ARG0 (w / we)
+   :ARG1 (c / cell
+            :ARG1-of (t / transfect-01
+                        :ARG2 (n3 / nucleic-acid
+                                  :name (n / name
+                                           :op1 "siRNA")))
+            :ARG1-of (t2 / trypsinize-00
+                         :polarity "-"))
+   :ARG3 (c2 / confluence
+             :ARG1-of (r / resemble-01
+                         :ARG2 (c3 / confluence
+                                   :mod (s / small-molecule
+                                           :name (n2 / name
+                                                     :op1 "BrdU")))))
+   :ARG4 (m / measure-01
+            :ARG0 w
+            :ARG1 (i2 / incorporate-02))
+   :purpose (c4 / control-01
+                :ARG0 w
+                :ARG1 (t3 / this)))
+
+
+# ::save-date Sun Aug 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The 'clumped' profile of cells (contrast to Figure <xref ref-type="fig" rid="F4">4b</xref>) is likely a result of the acid denaturation (recommended by the antibody manufacturer), as it occurs uniformly in these experiments.
+# ::file pmid_1684_6534_152.txt
+# ::date 2015-08-15T11:57:15
+# ::id pmid_1684_6534.152
+(c2 / cause-01
+      :ARG0 (u / uniform-02
+            :ARG1 "p"
+            :location (t / thing
+                  :ARG1-of (e / experiment-01)
+                  :mod (t2 / this)))
+      :ARG1 (l / likely-01
+            :ARG1 (r / result-01
+                  :ARG1 (n / natural-02
+                        :polarity "-"
+                        :ARG1 (a / acid)
+                        :ARG1-of (r2 / recommend-01
+                              :ARG0 (t3 / thing
+                                    :ARG0-of (m / manufacture-01
+                                          :ARG1 (a2 / antibody)))))
+                  :ARG2 (p / profile-01
+                        :ARG1 (c3 / cell)
+                        :ARG1-of (c4 / clump-02)))
+            :ARG1-of (c / contrast-01
+                  :ARG2 (f / figure :mod "4b"))))
+
+# ::save-date Thu Nov 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt BrdU incorporation (Figure <xref ref-type="fig" rid="F5">5b</xref>) confirms that the [<sup>3</sup>H]thymidine results are not solely due to alterations in apoptosis, as 468.siMUC1 cells incorporate less BrdU than 468.siLuc; once again, BT.siMUC1 cells show increased proliferation over BT.siLuc.
+# ::file pmid_1684_6534_153.txt
+# ::date 2015-08-16T10:55:53
+# ::id pmid_1684_6534.153
+(m / multi-sentence
+   :snt2 (s / show-01
+            :ARG0 (c / cell-line
+                     :name (n / name
+                              :op1 "BT.siMUC1"))
+            :ARG1 (i / increase-01
+                     :ARG1 (p / proliferate-01
+                              :compared-to (c2 / cell-line
+                                               :name (n2 / name
+                                                         :op1 "BT.siLuc"))))
+            :mod (a / again
+                    :mod (o / once)))
+   :snt1 (c3 / confirm-01
+             :ARG0 (i2 / incorporate-02
+                       :ARG1 (s4 / small-molecule
+                                 :name (n3 / name
+                                           :op1 "BrdU"))
+                       :ARG1-of (d / describe-01
+                                   :ARG0 (f / figure
+                                            :mod "5b")))
+             :ARG1 (c4 / cause-01
+                       :polarity "-"
+                       :ARG0 (a2 / alter-01
+                                 :ARG1 (a3 / apoptosis)
+                                 :mod (s2 / sole))
+                       :ARG1 (r / result-01
+                                :ARG1 (s3 / small-molecule
+                                          :name (n4 / name
+                                                    :op1 "3H-thymidine")))
+                       :ARG1-of (c5 / cause-01
+                                    :ARG0 (i3 / incorporate-02
+                                              :ARG0 (c6 / cell-line
+                                                        :name (n5 / name
+                                                                  :op1 "468.siMUC1"))
+                                              :ARG1 s4
+                                              :degree (l / less)
+                                              :compared-to (i4 / incorporate-02
+                                                               :ARG0 (c7 / cell-line
+                                                                         :name (n6 / name
+                                                                                   :op1 "468.siLuc"))
+                                                               :ARG1 s4))))))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Given the role of MUC1 in adhesion, we examined whether MUC1 siRNA affects cellular invasion.
+# ::file pmid_1684_6534_154.txt
+# ::date 2015-08-14T01:44:10
+# ::id pmid_1684_6534.154
+(c / cause-01
+   :ARG0 (r / role
+            :poss (p / protein
+                     :name (n / name
+                              :op1 "MUC1"))
+            :purpose (a / adhere-01))
+   :ARG1 (e / examine-01
+            :ARG0 (w / we)
+            :ARG1 (a2 / affect-01
+                      :mode "interrogative"
+                      :ARG0 (n3 / nucleic-acid
+                                :name (n2 / name
+                                          :op1 "siRNA")
+                                :ARG0-of (e2 / encode-01
+                                             :ARG1 p))
+                      :ARG1 (i / invade-01
+                               :ARG1 (c2 / cell)))))
+
+
+# ::save-date Thu Jan 7, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In transwell assays, BT-20 cells invaded poorly, regardless of the siRNA used (data not shown).
+# ::file pmid_1684_6534_155.txt
+# ::date 2015-08-14T01:47:01
+# ::id pmid_1684_6534.155
+(i / invade-01
+      :ARG0 (c2 / cell-line
+            :name (n2 / name :op1 "BT-20"))
+      :ARG1 (a / assay-01
+            :mod (t / transwell))
+      :manner (p / poor)
+      :ARG1-of (d / describe-01
+            :ARG0 (d2 / data
+                  :ARG1-of (s / show-01 :polarity "-")))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (d4 / data
+                  :ARG1-of (s2 / show-01 :polarity "-")))
+      :ARG1-of (r / regardless-91
+            :ARG2 (n3 / nucleic-acid
+                  :name (n / name :op1 "siRNA")
+                  :ARG1-of (u / use-01))))
+
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, MDA-MB-468 cells invade more readily, and were analyzed on a panel of three different extracellular matrix proteins.
+# ::file pmid_1684_6534_156.txt
+# ::date 2015-08-14T01:54:05
+# ::id pmid_1684_6534.156
+(h / have-concession-91
+      :ARG1 (a / and
+            :op1 (i / invade-01
+                  :ARG0 (c2 / cell-line
+                        :name (n / name :op1 "MDA-MB-468"))
+                  :manner (r / ready-02
+                        :degree (m / more)))
+            :op2 (a2 / analyze-01
+                  :ARG1 c2
+                  :location (p / panel
+                        :consist-of (p2 / protein
+                              :quant "3"
+                              :ARG1-of (d / differ-02)
+                              :mod (m2 / matrix
+                                    :mod (e / extracellular)))))))
+
+# ::save-date Fri Jan 15, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, 468.siMUC1 cells display somewhat decreased invasion on collagen IV, laminin, and fibronectin matrices, and on a no-matrix control (Figure <xref ref-type="fig" rid="F5">5c</xref>), which is in agreement with the trend towards decreased metastasis observed in Muc1<sup>-/- </sup>× MMTV-PyV MT mice [<xref ref-type="bibr" rid="B8">8</xref>].
+# ::file pmid_1684_6534_157.txt
+# ::date 2015-08-14T02:04:35
+# ::id pmid_1684_6534.157
+(d / display-01
+   :ARG0 (c / cell-line
+            :name (n / name
+                     :op1 "468.siMUC1"))
+   :ARG1 (i2 / invade-01
+             :ARG0 c
+             :ARG1 (a / and
+                      :op1 (p4 / protein
+                               :name (n5 / name
+                                         :op1 "collagen"
+                                         :op2 "IV"))
+                      :op2 (l / laminin)
+                      :op3 (m / matrix
+                              :mod (f / fibronectin))
+                      :op4 (c3 / control-01
+                               :ARG1 (m2 / matrix
+                                         :polarity "-")))
+             :ARG1-of (d2 / describe-01
+                          :ARG0 (f2 / figure
+                                    :mod "5c"))
+             :ARG1-of (d5 / decrease-01
+                          :degree (s / somewhat)))
+   :ARG2-of (i / interest-01)
+   :ARG0-of (a2 / agree-01
+                :ARG2 (t / trend-01
+                         :ARG1 (m3 / metastasis
+                                   :ARG1-of (d3 / decrease-01)
+                                   :ARG1-of (o / observe-01
+                                               :location (p2 / protein
+                                                             :name (n2 / name
+                                                                       :op1 "Muc1")
+                                                             :ARG2-of (m4 / mutate-01
+                                                                          :mod "-/-"))
+                                               :location (m5 / mouse
+                                                             :mod (p3 / protein
+                                                                      :name (n3 / name
+                                                                                :op1 "PyV"
+                                                                                :op2 "MT")
+                                                                      :mod (o2 / organism
+                                                                               :name (n4 / name
+                                                                                         :op1 "MMTV"))))
+                                               :ARG1-of (d4 / describe-01
+                                                            :ARG0 (p / publication
+                                                                     :ARG0-of (c4 / cite-01
+                                                                                  :ARG1 "8"))))))))
+
+# ::save-date Wed Mar 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To determine if the above effects are specific to MUC1, we created stable transfectants of the MDA-MB-468 line using empty vector (468.Neo) or a full-length MUC1 construct (468.MUC1Δ8) that is resistant to one of the independent MUC1-directed oligonucleotides ('882').
+# ::file pmid_1684_6534_159.txt
+# ::date 2015-08-14T15:07:41
+# ::id pmid_1684_6534.159
+(c / create-01
+   :ARG0 (w / we)
+   :ARG1 (t / transfect-01
+            :ARG1 (c2 / cell-line
+                      :name (n / name
+                               :op1 "MDA-MB-468"))
+            :ARG1-of (s2 / stable-02))
+   :ARG2 (o / or
+            :op1 (v / vector
+                    :name (n3 / name
+                              :op1 "468.Neo")
+                    :ARG1-of (e / empty-02))
+            :op2 (c3 / construct-01
+                     :ARG2 "p2"
+                     :ARG1-of (m / mean-01
+                                 :ARG2 (c4 / cell-line
+                                           :name (n4 / name
+                                                     :op1 "468.MUC1Δ8")))
+                     :ARG0-of (r / resist-01
+                                 :ARG1 (o2 / oligonucleotide
+                                           :mod "882"
+                                           :ARG1-of (i / include-91
+                                                       :ARG2 (o3 / oligonucleotide
+                                                                 :ARG1-of (d2 / direct-01
+                                                                              :ARG0 "p2")
+                                                                 :ARG0-of (d3 / depend-01
+                                                                              :polarity "-")))))
+                     :ARG1-of (l / long-03
+                                 :mod (f / full))))
+   :purpose (d / determine-01
+               :ARG0 w
+               :ARG1 (s / specific-02
+                        :mode "interrogative"
+                        :ARG1 (a / affect-02
+                                 :mod (a2 / above))
+                        :ARG2 (p2 / protein
+                                  :name (n2 / name
+                                            :op1 "MUC1")))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These cells were maintained in G418-containing medium to retain transgene selection.
+# ::file pmid_1684_6534_160.txt
+# ::date 2015-08-14T02:05:50
+# ::id pmid_1684_6534.160
+(m / maintain-01
+   :ARG1 (c / cell
+            :mod (t2 / this))
+   :purpose (r / retain-01
+               :ARG0 c
+               :ARG1 (s / select-01
+                        :ARG1 (t / transgene)))
+   :location (m2 / medium
+                 :ARG0-of (c2 / contain-01
+                              :ARG1 (s2 / small-molecule
+                                        :name (n / name
+                                                 :op1 "G418")))))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As expected, 468.MUC1Δ8 cells show higher levels of both the MUC1 extracellular domain and the MUC1-CT than do 468.Neo (Figure <xref ref-type="fig" rid="F6">6a</xref>).
+# ::file pmid_1684_6534_161.txt
+# ::date 2015-08-14T02:09:30
+# ::id pmid_1684_6534.161
+(s3 / show-01
+      :ARG0 (c / cell-line
+            :name (n2 / name :op1 "468.MUC1Δ8"))
+      :ARG1 (a2 / and
+            :op1 (l / level
+                  :quant-of (p / protein-segment
+                        :name (n4 / name :op1 "MUC1")))
+            :op2 (l2 / level
+                  :quant-of (p2 / protein-segment
+                        :name (n3 / name :op1 "MUC1-CT")))
+            :ARG1-of (h / high-02
+                  :degree (m / more)
+                  :compared-to "c2")
+            :mod (d / domain
+                  :mod (e2 / extracellular)))
+      :compared-to (c2 / cell-line
+            :name (n / name :op1 "468.Neo"))
+      :ARG1-of (e / expect-01)
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure :mod "6a")))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Note that 468.Neo have MUC1 expression comparable to parental MDA-MB-468; the exposures in Figure <xref ref-type="fig" rid="F6">6a</xref> are lighter than those in Figure <xref ref-type="fig" rid="F1">1a</xref>, in order to clearly show the relative levels of MUC1 in the stable transfectants.
+# ::file pmid_1684_6534_162.txt
+# ::date 2015-08-14T12:30:40
+# ::id pmid_1684_6534.162
+(m / multi-sentence
+   :snt1 (n / note-01
+            :ARG1 (e3 / express-03
+                      :ARG2 "p2"
+                      :ARG3 (c2 / cell-line
+                                :name (n4 / name
+                                          :op1 "468.Neo"))
+                      :ARG1-of (c5 / comparable-03
+                                   :ARG2 (c3 / cell-line
+                                             :name (n5 / name
+                                                       :op1 "MDA-MB-468")
+                                             :mod (p / parent)))))
+   :snt2 (l / light-06
+            :ARG1 (e / exposure
+                     :medium (f / figure
+                                :mod "6a"))
+            :degree (m2 / more)
+            :compared-to (e2 / expose-01
+                             :source (f2 / figure
+                                         :mod "1a"))
+            :purpose (s / show-01
+                        :ARG0 e
+                        :ARG1 (l2 / level
+                                  :quant-of (p2 / protein
+                                                :name (n2 / name
+                                                          :op1 "MUC1"))
+                                  :ARG1-of (r / relative-05))
+                        :ARG1-of (c / clear-06)
+                        :location (c4 / cell
+                                      :ARG1-of (s2 / stable-02)
+                                      :ARG1-of (t / transfect-01)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt After MUC1 siRNA, 468.MUC1Δ8 lose some MUC1 (likely endogenous protein, which is not siRNA-resistant) but retain high-level expression, while 468.Neo show a decrease in MUC1 levels similar to parental 468.siMUC1 cells (Figures <xref ref-type="fig" rid="F6">6a,b</xref>).
+# ::file pmid_1684_6534_163.txt
+# ::date 2015-08-16T04:01:17
+# ::id pmid_1684_6534.163
+(c / contrast-01
+   :ARG1 (c5 / contrast-01
+             :ARG1 (l / lose-02
+                      :ARG0 (c2 / cell-line
+                                :name (n2 / name
+                                          :op1 "468.MUC1Δ8"))
+                      :ARG1 (p3 / protein
+                                :name (n3 / name
+                                          :op1 "MUC1")
+                                :mod (s2 / some)
+                                :ARG1-of (m / mean-01
+                                            :ARG2 (l3 / likely-01
+                                                      :ARG1 (p2 / protein
+                                                                :mod (m2 / monocot)
+                                                                :ARG0-of (r / resist-01
+                                                                            :polarity "-"
+                                                                            :ARG1 "n6")))))
+                      :ARG2 (r3 / retain-01
+                                :ARG0 c2
+                                :ARG1 (e / express-03)
+                                :ARG1-of (h / high-02))
+                      :time (a / after
+                               :op1 (n6 / nucleic-acid
+                                        :name (n / name
+                                                 :op1 "siRNA")
+                                        :ARG0-of (e2 / encode-01
+                                                     :ARG1 p3)))))
+   :ARG2 (s / show-01
+            :ARG0 (c3 / cell-line
+                      :name (n4 / name
+                                :op1 "468.Neo"))
+            :ARG1 (d / decrease-01
+                     :ARG1 (l2 / level
+                               :quant-of p3)
+                     :ARG1-of (r4 / resemble-01
+                                  :ARG2 (c4 / cell-line
+                                            :name (n5 / name
+                                                      :op1 "468.siMUC1")
+                                            :mod (p / parent)))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f / figure
+                                  :mod "6a")
+                          :op2 (f2 / figure
+                                   :mod "6b"))))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The difference in the amount of MUC1 knockdown between 468.Neo and 468.MUC1Δ8 is highlighted by the purple shading in Figure <xref ref-type="fig" rid="F6">6b</xref>.
+# ::file pmid_1684_6534_164.txt
+# ::date 2015-08-15T13:15:30
+# ::id pmid_1684_6534.164
+(h / highlight-01
+   :ARG0 (s / shade-01
+            :ARG0 (p / purple))
+   :ARG1 (d / differ-02
+            :ARG1 (a / amount-01)
+            :ARG2 (c2 / cell-line
+                      :name (n3 / name
+                                :op1 "468.MUC1Δ8"))
+            :ARG3 (k / knock-down-02
+                     :ARG1 (p2 / protein
+                               :name (n / name
+                                        :op1 "MUC1")))
+            :ARG1 (c / cell-line
+                     :name (n2 / name
+                               :op1 "468.Neo")))
+   :medium (f / figure
+              :mod "6b"))
+
+# ::save-date Thu Jan 7, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt BrdU incorporation (Figure <xref ref-type="fig" rid="F6">6c</xref>) indicates that 468.Neo show decreased nucleotide incorporation after MUC1 siRNA compared to control (3.3% versus 25.0%, respectively); this is not seen in 468.MUC1Δ8 cells, which show similar levels of BrdU incorporation regardless of the siRNA used (21.5% for luciferase, 23.9% for MUC1).
+# ::file pmid_1684_6534_165.txt
+# ::date 2015-08-15T13:21:59
+# ::id pmid_1684_6534.165
+(m / multi-sentence
+   :snt1 (i / indicate-01
+            :ARG0 (i3 / incorporate-02
+                      :ARG1 (s5 / small-molecule
+                                :name (n4 / name
+                                          :op1 "BrdU")))
+            :ARG1 (s3 / show-01
+                      :ARG0 (c2 / cell-line
+                                :name (n5 / name
+                                          :op1 "468.Neo"))
+                      :ARG1 (i4 / incorporate-02
+                                :ARG1 (n6 / nucleotide)
+                                :ARG1-of (d / decrease-01
+                                            :compared-to (c3 / control
+                                                             :ARG1-of (m2 / mean-01
+                                                                          :ARG2 (v / versus
+                                                                                   :op1 (p / percentage-entity
+                                                                                           :value "3.3")
+                                                                                   :op2 (p2 / percentage-entity
+                                                                                            :value "25.0"))))))
+                      :time (a / after
+                               :op1 (n10 / nucleic-acid
+                                         :name (n7 / name
+                                                   :op1 "siRNA")
+                                         :ARG0-of (e / encode-01
+                                                     :ARG1 (p7 / protein
+                                                               :name (n8 / name
+                                                                         :op1 "MUC1"))))))
+            :ARG1-of (d2 / describe-01
+                         :ARG0 (f / figure
+                                  :mod "6c")))
+   :snt2 (s / see-01
+            :polarity "-"
+            :ARG1 (t / this)
+            :location (c / cell-line
+                         :name (n / name
+                                  :op1 "468.MUC1Δ8")
+                         :ARG0-of (s2 / show-01
+                                      :ARG1 (l / level
+                                               :ARG1-of (r2 / resemble-01)
+                                               :degree-of (i2 / incorporate-02
+                                                              :ARG1 (s4 / small-molecule
+                                                                        :name (n2 / name
+                                                                                  :op1 "BrdU"))))
+                                      :ARG1-of (r / regardless-91
+                                                  :ARG2 (n11 / nucleic-acid
+                                                             :name (n3 / name
+                                                                       :op1 "siRNA")
+                                                             :ARG1-of (u / use-01)
+                                                             :ARG1-of (m3 / mean-01
+                                                                          :ARG2 (a2 / and
+                                                                                    :op1 (p3 / percentage-entity
+                                                                                             :value "21.5"
+                                                                                             :prep-for (l2 / luciferase))
+                                                                                    :op2 (p4 / percentage-entity
+                                                                                             :value "23.9"
+                                                                                             :quant-of (p8 / protein
+                                                                                                           :name (n9 / name
+                                                                                                                     :op1 "MUC1")))))))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt 468.Neo cells display a more dramatic decrease in BrdU incorporation after MUC1 siRNA than what is seen in parental 468.siMUC1 cells, which may reflect the additional stress of being maintained in G418-containing medium.
+# ::file pmid_1684_6534_166.txt
+# ::date 2015-08-16T04:04:39
+# ::id pmid_1684_6534.166
+(d / display-01
+   :ARG0 (c / cell-line
+            :name (n5 / name
+                      :op1 "468.Neo"))
+   :ARG1 (d2 / decrease-01
+             :ARG1 (i / incorporate-02
+                      :ARG1 (s3 / small-molecule
+                                :name (n / name
+                                         :op1 "BrdU")))
+             :ARG2 (d3 / dramatic
+                       :degree (m / more))
+             :compared-to (t / thing
+                             :ARG1-of (s / see-01
+                                         :location (c2 / cell-line
+                                                       :name (n4 / name
+                                                                 :op1 "468.siMUC1")
+                                                       :mod (p2 / parent)))
+                             :ARG1-of (r2 / reflect-01
+                                          :ARG2 (s2 / stress-01
+                                                    :ARG0 (m2 / maintain-01
+                                                              :location (m3 / medium
+                                                                            :ARG0-of (c3 / contain-01
+                                                                                         :ARG1 (s4 / small-molecule
+                                                                                                   :name (n6 / name
+                                                                                                             :op1 "G418")))))
+                                                    :mod (a2 / additional))
+                                          :ARG1-of (p / possible-01))))
+   :time (a / after
+            :op1 (n7 / nucleic-acid
+                     :name (n2 / name
+                               :op1 "siRNA")
+                     :ARG0-of (e / encode-01
+                                 :ARG1 (p4 / protein
+                                           :name (n3 / name
+                                                     :op1 "MUC1"))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similarly, analysis of apoptosis in trypsinized cells indicates that the increased apoptosis seen in parental 468.siMUC1 cells is also present in the 468.Neo line after MUC1 siRNA (Figure <xref ref-type="fig" rid="F6">6d</xref>; 43.6% in control versus 59.6% in MUC1 siRNA).
+# ::file pmid_1684_6534_167.txt
+# ::date 2015-08-16T04:16:52
+# ::id pmid_1684_6534.167
+(i / indicate-01
+   :ARG0 (a / analyze-01
+            :ARG1 (a2 / apoptosis
+                      :ARG1-of (p5 / present-02
+                                   :ARG2 (c / cell
+                                            :ARG1-of (t / trypsinize-00)))))
+   :ARG1 (p6 / present-02
+             :ARG1 (a3 / apoptosis
+                       :ARG1-of (s / see-01
+                                   :location (c2 / cell-line
+                                                 :name (n / name
+                                                          :op1 "468.siMUC1")
+                                                 :mod (p3 / parent)))
+                       :ARG1-of (i2 / increase-01))
+             :ARG2 (c3 / cell-line
+                       :name (n2 / name
+                                 :op1 "468.Neo"))
+             :mod (a4 / also)
+             :time (a5 / after
+                       :op1 "n5")
+             :mod (c4 / control-01
+                      :location (n5 / nucleic-acid
+                                    :name (n3 / name
+                                              :op1 "siRNA")
+                                    :ARG0-of (e / encode-01
+                                                :ARG1 (p4 / protein
+                                                          :name (n4 / name
+                                                                    :op1 "MUC1")))))
+             :ARG1-of (m / mean-01
+                         :ARG2 (p / percentage-entity
+                                  :value "43.6"
+                                  :compared-to (p2 / percentage-entity
+                                                   :value "59.6"))))
+   :ARG1-of (r / resemble-01)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6d")))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, in 468.MUC1Δ8 cells, the level of apoptosis after luciferase siRNA (34.1%) is lower than that in 468.Neo cells; MUC1 siRNA increases the amount of apoptosis slightly (42.8%), restoring it to a level similar to that seen in luciferase siRNA-treated 468.Neo cells.
+# ::file pmid_1684_6534_168.txt
+# ::date 2015-08-16T04:33:41
+# ::id pmid_1684_6534.168
+(m2 / multi-sentence
+    :snt1 (h / have-concession-91
+             :ARG1 (l2 / low-04
+                       :ARG1 (l3 / level
+                                 :quant-of (a / apoptosis)
+                                 :location (c2 / cell-line
+                                               :name (n2 / name
+                                                         :op1 "468.MUC1Δ8"))
+                                 :ARG1-of (m3 / mean-01
+                                              :ARG2 (p / percentage-entity
+                                                       :value "34.1")))
+                       :time (a2 / after
+                                 :op1 (n8 / nucleic-acid
+                                          :name (n / name
+                                                   :op1 "siRNA")
+                                          :ARG0-of (e / encode-01
+                                                      :ARG1 (l4 / luciferase))))
+                       :compared-to (l5 / level
+                                        :quant-of a
+                                        :location (c4 / cell-line
+                                                      :name (n3 / name
+                                                                :op1 "468.Neo")))
+                       :degree (m / more)))
+    :snt2 (i / increase-01
+             :ARG0 (n9 / nucleic-acid
+                       :name (n5 / name
+                                 :op1 "siRNA")
+                       :ARG0-of (e2 / encode-01
+                                    :ARG1 (p3 / protein
+                                              :name (n4 / name
+                                                        :op1 "MUC1"))))
+             :ARG1 (a3 / amount
+                       :quant-of (a4 / apoptosis)
+                       :ARG1-of (m4 / mean-01
+                                    :ARG2 (p2 / percentage-entity
+                                              :value "42.8")))
+             :ARG2 (s / slight)
+             :ARG0-of (r / restore-02
+                         :ARG1 a3
+                         :ARG2 (l / level
+                                  :ARG1-of (r4 / resemble-01
+                                               :ARG2 (l6 / level
+                                                         :ARG1-of (s2 / see-01
+                                                                      :location (c3 / cell-line
+                                                                                    :name (n6 / name
+                                                                                              :op1 "468.Neo")
+                                                                                    :ARG1-of (t / treat-04
+                                                                                                :ARG2 (n10 / nucleic-acid
+                                                                                                           :name (n7 / name
+                                                                                                                     :op1 "siRNA")
+                                                                                                           :ARG0-of (e3 / encode-01
+                                                                                                                        :ARG1 (l7 / luciferase))))))))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Together, these studies suggest that the above-described results are specific to MUC1, as stable transfection of an siRNA-resistant MUC1 rescues the phenotype seen in 468.siMUC1 cells.
+# ::file pmid_1684_6534_169.txt
+# ::date 2015-08-15T13:24:41
+# ::id pmid_1684_6534.169
+(s / suggest-01
+   :ARG0 (s7 / study-01
+             :mod (t3 / together)
+             :mod (t / this))
+   :ARG1 (c / cause-01
+            :ARG0 (r / rescue-01
+                     :ARG0 (t4 / transfect-01
+                               :ARG2 (p3 / protein
+                                         :name (n2 / name
+                                                   :op1 "MUC1")
+                                         :ARG0-of (r2 / resist-01
+                                                      :ARG1 (n5 / nucleic-acid
+                                                                :name (n3 / name
+                                                                          :op1 "siRNA"))))
+                               :ARG1-of (s6 / stable-03))
+                     :ARG1 (p / phenotype
+                              :ARG1-of (s5 / see-01
+                                           :location (c2 / cell-line
+                                                         :name (n4 / name
+                                                                   :op1 "468.siMUC1")))))
+            :ARG1 (s3 / specific-02
+                      :ARG1 (t2 / thing
+                                :ARG2-of (r4 / result-01)
+                                :ARG1-of (d / describe-01
+                                            :location (a / above)))
+                      :ARG2 (p2 / protein
+                                :name (n / name
+                                         :op1 "MUC1")))))

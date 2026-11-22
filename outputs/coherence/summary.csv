@@ -1,0 +1,2 @@
+corpus,n_populations,within,across,gain,n_within_higher,median_gain,ci95_low,ci95_high,n_worse,n_tied,p_perm,p_perm_greater,p_wilcoxon,p_wilcoxon_greater,p_sign_2s,p_ttest_2s
+petit_prince,27,0.17445,0.150814,0.0236358,24,0.013175,0.0143082,0.0340512,3,0,1.49999e-05,1.49999e-05,3.08454e-06,1.54227e-06,4.92334e-05,0.00011048

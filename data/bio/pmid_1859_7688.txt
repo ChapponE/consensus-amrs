@@ -1,0 +1,3557 @@
+# ::save-date Fri Aug 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Activation of both the ERK and PI3K signaling pathways was sufficient to induce cellular transformation, which was accompanied by up-regulation of EGFR ligands, suggesting autocrine EGFR stimulation during the transformation process.
+# ::file pmid_1859_7688_11.txt
+# ::date 2015-07-06T08:31:19
+# ::id pmid_1859_7688.11
+(s / suggest-01
+   :ARG0 (a / activate-01
+            :ARG1 (a2 / and
+                      :op1 (p / pathway
+                              :name (n / name
+                                       :op1 "ERK"))
+                      :op2 (p2 / pathway
+                               :name (n2 / name
+                                         :op1 "PI3K"))
+                      :mod (b / both)
+                      :ARG0-of (s2 / signal-07))
+            :ARG0-of (s3 / suffice-01
+                         :ARG1 (i / induce-01
+                                  :ARG0 a
+                                  :ARG2 (t / transform-01
+                                           :ARG1 (c / cell)
+                                           :ARG1-of (a3 / accompany-01
+                                                        :ARG0 (u / upregulate-01
+                                                                 :ARG1 (l / ligand
+                                                                          :mod (e / enzyme
+                                                                                  :name (n3 / name
+                                                                                            :op1 "EGFR")))))))))
+   :ARG1 (s4 / stimulate-01
+             :ARG1 e
+             :mod (a4 / autocrine)
+             :time (p3 / process-02
+                       :ARG1 (t2 / transform-01))))
+
+# ::save-date Fri Jul 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Only activation of the ERK pathway was sufficient to transform cells in the presence of EGFR inhibition and was sufficient for tumorigenesis in xenografts.
+# ::file pmid_1859_7688_12.txt
+# ::date 2015-07-06T08:47:03
+# ::id pmid_1859_7688.12
+(s / suffice-01
+   :ARG0 (a / activate-01
+            :ARG1 (p / pathway
+                     :name (n / name
+                              :op1 "ERK"))
+            :mod (o / only))
+   :ARG1 (a2 / and
+             :op1 (t / transform-01
+                     :ARG1 (c / cell
+                              :condition (b / be-located-at-91
+                                            :ARG1 (e / enzyme
+                                                     :name (n2 / name
+                                                               :op1 "EGFR")
+                                                     :ARG1-of (i / inhibit-01)))))
+             :op2 (c2 / create-01
+                      :ARG1 (t2 / tumor)
+                      :location (x / xenograft))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Up-regulation of the PHLDA1 gene product, TDAG51, was found to correlate with persistent ERK activation and anchorage-independent growth in the absence or presence of EGFR inhibition.
+# ::file pmid_1859_7688_13.txt
+# ::date 2015-07-06T08:53:45
+# ::id pmid_1859_7688.13
+(f / find-01
+   :ARG1 (c / correlate-01
+            :ARG1 (u / upregulate-01
+                     :ARG1 (p / produce-01
+                              :ARG0 (g / gene
+                                       :name (n / name
+                                                :op1 "PHLDA1"))
+                              :ARG1 (p3 / protein
+                                        :name (n2 / name
+                                                  :op1 "TDAG51"))))
+            :ARG2 (a / and
+                     :op1 (a2 / activate-01
+                              :ARG1 (e / enzyme
+                                       :name (n3 / name
+                                                 :op1 "ERK"))
+                              :ARG1-of (p2 / persist-01))
+                     :op2 (g3 / grow-01
+                              :ARG0-of (d / depend-01
+                                          :polarity "-"
+                                          :ARG1 (a3 / anchorage))))
+            :condition (o / or
+                          :op1 (a4 / absent-01
+                                   :ARG1 (i / inhibit-01
+                                            :ARG1 (e2 / enzyme
+                                                      :name (n4 / name
+                                                                :op1 "EGFR"))))
+                          :op2 (p4 / present-02
+                                   :ARG1 i))))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Knockdown of this putative breast cancer tumor-suppressor gene resulted in increased ERK pathway activation and enhanced matrix-detached cellular proliferation of Ras/Raf transformed cells.
+# ::file pmid_1859_7688_14.txt
+# ::date 2015-07-06T09:11:58
+# ::id pmid_1859_7688.14
+(r / result-01
+   :ARG1 (k / knock-down-02
+            :ARG1 (g / gene
+                     :ARG1-of (t3 / think-01
+                                  :ARG2 (s / suppress-01
+                                           :ARG0 g
+                                           :ARG1 (t / tumor
+                                                    :source (d2 / disease
+                                                                :wiki "Breast_cancer"
+                                                                :name (n4 / name
+                                                                          :op1 "breast"
+                                                                          :op2 "cancer")))))
+                     :mod (t4 / this)))
+   :ARG2 (a / and
+            :op1 (i / increase-01
+                    :ARG1 (a2 / activate-01
+                              :ARG1 (p2 / pathway
+                                        :name (n / name
+                                                 :op1 "ERK"))))
+            :op2 (e / enhance-01
+                    :ARG1 (p3 / proliferate-01
+                              :ARG0 (c2 / cell
+                                        :ARG1-of (t2 / transform-01
+                                                     :ARG0 (s2 / slash
+                                                               :op1 (e2 / enzyme
+                                                                        :name (n2 / name
+                                                                                  :op1 "Ras"))
+                                                               :op2 (e3 / enzyme
+                                                                        :name (n3 / name
+                                                                                  :op1 "Raf"))))
+                                        :ARG1-of (d / detach-01
+                                                    :ARG2 (m / matrix)))))))
+
+# ::save-date Thu Jan 28, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Retroviral vectors coding for amino terminal HA-tagged activated H-RasV12, the H-RasV12 effector domain mutants (EDM) H-RasV12G37, H-RasV12S35, and H-RasV12C40, and the constitutively activated version of a RalGEF, Rlf-CAAX, were used to infect telomerase immortalized HME16C human mammary epithelial cells.
+# ::file pmid_1859_7688_116.txt
+# ::date 2015-07-07T06:36:18
+# ::id pmid_1859_7688.116
+(u2 / use-01
+    :ARG1 (a4 / and
+              :op1 (v / vector
+                      :mod (r / retrovirus)
+                      :ARG0-of (c / code-01
+                                  :ARG1 (p4 / protein-segment
+                                            :name (n12 / name
+                                                       :op1 "amino-terminus")
+                                            :part-of (e / enzyme
+                                                        :name (n2 / name
+                                                                  :op1 "H-Ras")
+                                                        :ARG2-of (m / mutate-01
+                                                                    :value "V12")
+                                                        :ARG1-of (t2 / tag-01
+                                                                     :ARG2 (p3 / protein
+                                                                               :name (n10 / name
+                                                                                          :op1 "haemagglutinin"
+                                                                                          :op2 "A")))
+                                                        :ARG1-of (a / activate-01)))))
+              :op2 (d / domain
+                      :mod (e9 / effector)
+                      :mod (e3 / enzyme
+                               :name (n3 / name
+                                         :op1 "H-Ras")
+                               :ARG2-of (m2 / mutate-01
+                                            :value "V12"))
+                      :ARG1-of (m7 / mean-01
+                                   :ARG2 (a6 / and
+                                             :op1 (e4 / enzyme
+                                                      :name (n4 / name
+                                                                :op1 "H-Ras")
+                                                      :ARG2-of (m3 / mutate-01
+                                                                   :value "V12G37"))
+                                             :op2 (e5 / enzyme
+                                                      :name (n5 / name
+                                                                :op1 "H-Ras")
+                                                      :ARG2-of (m4 / mutate-01
+                                                                   :value "V12S35"))
+                                             :op3 (e6 / enzyme
+                                                      :name (n6 / name
+                                                                :op1 "H-Ras")
+                                                      :ARG2-of (m5 / mutate-01
+                                                                   :value "V12C40")))))
+              :op3 (p2 / pathway
+                       :name (n7 / name
+                                 :op1 "RalGEF")
+                       :ARG1-of (a5 / activate-01
+                                    :mod (c2 / constitutive)
+                                    :ARG1-of (m6 / mean-01
+                                                 :ARG2 (e7 / enzyme
+                                                           :name (n8 / name
+                                                                     :op1 "Rlf-CAAX"))))))
+    :ARG2 (i / infect-01
+             :ARG0 a4
+             :ARG1 (c3 / cell-line
+                       :name (n9 / name
+                                 :op1 "HME16C")
+                       :mod (e2 / epithelium
+                                :mod (m8 / mammary
+                                         :mod (h / human)))
+                       :ARG1-of (i2 / immortalize-03
+                                    :ARG2 (t / telomerase)))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Anti-Ras and anti-HA western blotting demonstrated approximately equal levels of ectopic Ras expression among Ras-infected cells, with slightly lower levels in HME16C RasV12-infected cells relative to EDM-infected cells (Figure 1A).
+# ::file pmid_1859_7688_117.txt
+# ::date 2015-07-07T06:40:35
+# ::id pmid_1859_7688.117
+(d / demonstrate-01
+   :ARG0 (a / and
+            :op1 (i4 / immunoblot-01
+                     :ARG3 (a3 / antibody
+                               :ARG0-of (c3 / counter-01
+                                            :ARG1 "e5")))
+            :op2 (i5 / immunoblot-01
+                     :ARG3 (a4 / antibody
+                               :ARG0-of (c5 / counter-01
+                                            :ARG1 (p / protein
+                                                     :name (n2 / name
+                                                               :op1 "HA"))))))
+   :ARG1 (l / level
+            :ARG1-of (e / equal-01
+                        :ARG0-of (a2 / approximate-01))
+            :degree-of (e2 / express-03
+                           :ARG2 (e4 / enzyme
+                                     :name (n5 / name
+                                               :op1 "Ras")
+                                     :mod (e3 / ectopic))
+                           :ARG3 (c / cell
+                                    :ARG1-of (i / infect-01
+                                                :ARG2 (e5 / enzyme
+                                                          :name (n6 / name
+                                                                    :op1 "Ras")))))
+            :prep-with (l2 / level
+                           :ARG1-of (l3 / low-04
+                                        :degree (m / more
+                                                   :degree (s / slight)))
+                           :ARG1-of (r / relative-05
+                                       :ARG2 (l4 / level
+                                                 :mod (c4 / cell
+                                                          :ARG1-of (i3 / infect-01
+                                                                       :ARG2 (e7 / enzyme
+                                                                                 :name (n8 / name
+                                                                                           :op1 "EDM"))))))
+                           :location (c2 / cell-line
+                                         :name (n / name
+                                                  :op1 "HME16C")
+                                         :ARG1-of (i2 / infect-01
+                                                      :ARG2 (e6 / enzyme
+                                                                :name (n7 / name
+                                                                          :op1 "Ras")
+                                                                :ARG2-of (m2 / mutate-01
+                                                                             :value "V12"))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1A")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Analysis of activated, GTP-bound Ral A demonstrated highly elevated levels of activated Ral A only in Rlf-CAAX-expressing cells and not in Ras-infected cells grown under standard culture conditions (Figure 1B).
+# ::file pmid_1859_7688_118.txt
+# ::date 2015-07-07T07:11:12
+# ::id pmid_1859_7688.118
+(d / demonstrate-01
+   :ARG0 (a / analyze-01
+            :ARG1 (e2 / enzyme
+                      :name (n2 / name
+                                :op1 "Ral"
+                                :op2 "A")
+                      :ARG1-of (a2 / activate-01)
+                      :ARG2-of (b / bind-01
+                                  :ARG1 (s / small-molecule
+                                           :name (n / name
+                                                    :op1 "GTP")))))
+   :ARG1 (a4 / and
+             :op1 (e3 / elevate-01
+                      :ARG1 (l / level
+                               :mod (a3 / activate-01
+                                        :ARG1 e2))
+                      :ARG1-of (h / high-02)
+                      :location (c / cell
+                                   :ARG3-of (e4 / express-03
+                                                :ARG2 (e5 / enzyme
+                                                          :name (n3 / name
+                                                                    :op1 "Rlf-CAAX"))))
+                      :mod (o / only))
+             :op2 (e6 / elevate-01
+                      :polarity "-"
+                      :ARG1 l
+                      :location (c2 / cell
+                                    :ARG1-of (i / infect-01
+                                                :ARG2 (e7 / enzyme
+                                                          :name (n4 / name
+                                                                    :op1 "Ras")))
+                                    :ARG1-of (g / grow-03
+                                                :condition (c5 / culture-01
+                                                               :mod (s2 / standard))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1B")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To assess activation of the ERK pathway, anti-phospho Erk western blotting was performed and showed significantly elevated Erk phosphoprotein in RasV12- and RasV12S35-infected HME16C cells relative to control pLRT-infected cells (Figure 1A).
+# ::file pmid_1859_7688_119.txt
+# ::date 2015-07-07T07:28:50
+# ::id pmid_1859_7688.119
+(a / and
+   :op1 (p / perform-01
+           :ARG1 (i3 / immunoblot-01
+                     :ARG0-of (c / counter-01
+                                 :ARG1 (e4 / enzyme
+                                           :name (n2 / name
+                                                     :op1 "Erk")
+                                           :ARG3-of (p2 / phosphorylate-01))))
+           :purpose (a2 / assess-01
+                        :ARG1 (a3 / activate-01
+                                  :ARG1 (p3 / pathway
+                                            :name (n3 / name
+                                                      :op1 "ERK")))))
+   :op2 (s / show-01
+           :ARG0 i3
+           :ARG1 (e2 / elevate-01
+                     :ARG1 e4
+                     :location (c3 / cell-line
+                                   :name (n4 / name
+                                             :op1 "HME16C")
+                                   :ARG1-of (i / infect-01
+                                               :ARG2 (a4 / and
+                                                         :op1 (e / enzyme
+                                                                 :name (n5 / name
+                                                                           :op1 "Ras")
+                                                                 :ARG2-of (m / mutate-01
+                                                                             :value "V12"))
+                                                         :op2 (e3 / enzyme
+                                                                  :name (n6 / name
+                                                                            :op1 "Ras")
+                                                                  :ARG2-of (m2 / mutate-01
+                                                                               :value "V12S35")))))
+                     :ARG1-of (r / relative-05
+                                 :ARG2 (c2 / cell
+                                           :ARG1-of (i2 / infect-01
+                                                        :ARG2 (p4 / protein
+                                                                  :name (n7 / name
+                                                                            :op1 "LRT")
+                                                                  :ARG3-of (p5 / phosphorylate-01)))
+                                           :ARG0-of (c4 / control-01)))
+                     :ARG1-of (s2 / significant-02)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1A")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Elevated levels of phosphorylated Erk were also observed in RasV12G37- and RasV12C40-infected cells, although at a much lower level than that found in RasV12- and RasV12S35-infected cells.
+# ::file pmid_1859_7688_120.txt
+# ::date 2015-07-07T07:48:46
+# ::id pmid_1859_7688.120
+(h / have-concession-91
+   :ARG1 (o / observe-01
+            :ARG1 (e / elevate-01
+                     :ARG1 (l / level
+                              :quant-of (e6 / enzyme
+                                            :name (n / name
+                                                     :op1 "Erk")
+                                            :ARG3-of (p / phosphorylate-01))
+                              :location (c / cell
+                                           :ARG1-of (i / infect-01
+                                                       :ARG2 (a / and
+                                                                :op1 (e5 / enzyme
+                                                                         :name (n2 / name
+                                                                                   :op1 "Ras")
+                                                                         :ARG2-of (m / mutate-01
+                                                                                     :value "V12G37"))
+                                                                :op2 (e4 / enzyme
+                                                                         :name (n3 / name
+                                                                                   :op1 "Ras")
+                                                                         :ARG2-of (m2 / mutate-01
+                                                                                      :value "V12C40")))))))
+            :mod (a2 / also))
+   :ARG2 (l3 / low-04
+             :ARG1 l
+             :degree (m3 / more)
+             :ARG1-of (c2 / compare-01
+                          :ARG2 (l2 / level
+                                    :ARG1-of (f2 / find-01)
+                                    :location (c3 / cell
+                                                  :ARG1-of (i2 / infect-01
+                                                               :ARG2 (a3 / and
+                                                                         :op1 (e2 / enzyme
+                                                                                  :name (n4 / name
+                                                                                            :op1 "Ras")
+                                                                                  :ARG2-of (m4 / mutate-01
+                                                                                               :value "V12"))
+                                                                         :op2 (e3 / enzyme
+                                                                                  :name (n5 / name
+                                                                                            :op1 "Ras")
+                                                                                  :ARG2-of (m5 / mutate-01
+                                                                                               :value "V12S35")))))))
+             :degree (m6 / much)))
+
+# ::save-date Sat Jan 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To assess activation of the PI3K signaling pathway, anti-phosphoAkt (Ser473) western blotting was performed to detect activated, phosphorylated Akt.
+# ::file pmid_1859_7688_121.txt
+# ::date 2015-07-07T10:44:20
+# ::id pmid_1859_7688.121
+(p / perform-01
+   :ARG1 (i / immunoblot-01
+            :ARG1 (a / amino-acid
+                     :mod "473"
+                     :name (n3 / name
+                               :op1 "Serine")
+                     :part-of (e / enzyme
+                                 :name (n2 / name
+                                           :op1 "Akt")
+                                 :ARG3-of (p2 / phosphorylate-01))))
+   :purpose (d / detect-01
+               :ARG1 (a2 / and
+                         :op1 (a3 / activate-01
+                                  :ARG1 e)
+                         :op2 e))
+   :purpose (a4 / assess-01
+                :ARG1 (a5 / activate-01
+                          :ARG1 (p3 / pathway
+                                    :name (n4 / name
+                                              :op1 "PI3K")
+                                    :ARG0-of (s / signal-07)))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In cells that were serum starved for 24 hours and matrix detached for 6 hours, elevated levels of phosphorylated Akt were observed in RasV12-, RasV12C40-, and RasV12G37-infected HME16C, with highest levels present in RasV12-infected cells (Figure 1C).
+# ::file pmid_1859_7688_122.txt
+# ::date 2015-07-07T10:49:40
+# ::id pmid_1859_7688.122
+(o / observe-01
+   :ARG1 (e / elevate-01
+            :ARG1 (l / level
+                     :quant-of (e2 / enzyme
+                                   :name (n / name
+                                            :op1 "Akt")
+                                   :ARG3-of (p / phosphorylate-01))
+                     :location (c2 / cell-line
+                                   :name (n2 / name
+                                             :op1 "HME16C")
+                                   :ARG1-of (i / infect-01
+                                               :ARG2 (a / and
+                                                        :op1 (e3 / enzyme
+                                                                 :name (n3 / name
+                                                                           :op1 "Ras")
+                                                                 :ARG2-of (m2 / mutate-01
+                                                                              :value "V12"))
+                                                        :op2 (e4 / enzyme
+                                                                 :name (n4 / name
+                                                                           :op1 "Ras")
+                                                                 :ARG2-of (m3 / mutate-01
+                                                                              :value "V12C40"))
+                                                        :op3 (e5 / enzyme
+                                                                 :name (n5 / name
+                                                                           :op1 "Ras")
+                                                                 :ARG2-of (m4 / mutate-01
+                                                                              :value "V12G37")))))
+                     :ARG1-of (h / high-02
+                                 :degree (m5 / most)
+                                 :location (c3 / cell
+                                               :ARG1-of (i2 / infect-01
+                                                            :ARG2 e3)))))
+   :location (c / cell
+                :ARG1-of (s / starve-01
+                            :ARG2 (s2 / serum)
+                            :duration (t / temporal-quantity
+                                         :quant "24"
+                                         :unit (h4 / hour)))
+                :ARG1-of (d / detach-01
+                            :ARG2 (m / matrix)
+                            :duration (t2 / temporal-quantity
+                                          :quant "6"
+                                          :unit h4)))
+   :ARG1-of (d2 / describe-01
+                :ARG2 (f / figure
+                         :mod "1C")))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To assess transformation by different Ras signaling pathways, anchorage-independent growth assays were performed in soft agar and in ultra-low attachment tissue culture plates.
+# ::file pmid_1859_7688_124.txt
+# ::date 2015-07-07T11:28:43
+# ::id pmid_1859_7688.124
+(p / perform-01
+      :ARG1 (a / assay-01
+            :ARG1 (g / grow-01
+                  :ARG0-of (d / depend-01
+                        :polarity "-"
+                        :mod (a2 / anchorage))))
+      :ARG2 (p2 / plate
+            :mod (c / culture-01
+                  :ARG1 (t / tissue
+                        :ARG3-of (a5 / attach-01
+                              :ARG1-of (l / low-04
+                                    :degree (u / ultra))))
+                  :instrument (a4 / agar
+                        :ARG1-of (s / soft-02))))
+      :purpose (a6 / assess-01
+            :ARG1 (t2 / transform-01
+                  :ARG0 (p3 / pathway
+                        :name (n / name :op1 "Ras")
+                        :ARG0-of (s2 / signal-07)
+                        :ARG1-of (d2 / differ-02)))))
+
+# ::save-date Wed Mar 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Ras- and Ras EDM-infected HME16C cells formed significantly more soft agar colonies >100 μm in diameter than pLRT vector-infected cells (Figure 2A).
+# ::file pmid_1859_7688_125.txt
+# ::date 2015-07-07T14:19:43
+# ::id pmid_1859_7688.125
+(f / form-01
+   :ARG0 (c / cell-line
+            :name (n / name
+                     :op1 "HME16C")
+            :ARG1-of (i / infect-01
+                        :ARG2 (a / and
+                                 :op1 (e / enzyme
+                                         :name (n2 / name
+                                                   :op1 "Ras"))
+                                 :op2 (e2 / enzyme
+                                          :name (n3 / name
+                                                    :op1 "Ras"
+                                                    :op2 "EDM")))))
+   :ARG1 (c2 / colony
+             :mod (a2 / agar
+                      :ARG1-of (s / soft-02))
+             :mod (d / diameter
+                     :mod (m2 / more-than
+                              :op1 (d2 / distance-quantity
+                                       :quant "100"
+                                       :unit (m / micrometer))))
+             :quant (m3 / more
+                        :ARG1-of (s2 / significant-02)
+                        :ARG1-of (c3 / compare-01
+                                     :ARG2 (c4 / cell
+                                               :ARG1-of (i2 / infect-01
+                                                            :ARG2 (v / vector
+                                                                     :name (n4 / name
+                                                                               :op1 "LRT")
+                                                                     :ARG3-of (p2 / phosphorylate-01)))))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "2A")))
+
+# ::save-date Tue Dec 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The RasV12-infected cells formed large colonies, many exceeding 1000 μm, although the total number exceeding 100 μm was typically less than that for the Ras EDM (Figure 2B).
+# ::file pmid_1859_7688_126.txt
+# ::date 2015-07-07T14:36:07
+# ::id pmid_1859_7688.126
+(f / form-01
+   :ARG0 (c / cell
+            :ARG1-of (i / infect-01
+                        :ARG2 (e / enzyme
+                                 :name (n / name
+                                          :op1 "Ras")
+                                 :ARG2-of (m / mutate-01
+                                             :value "V12"))))
+   :ARG1 (c2 / colony
+             :mod (l / large)
+             :quant (m2 / many)
+             :ARG0-of (e4 / exceed-01
+                          :ARG1 (d / distance-quantity
+                                   :quant "1000"
+                                   :unit (m3 / micrometer))))
+   :concession (n2 / number
+                   :mod (t / total)
+                   :ARG0-of (e2 / exceed-01
+                                :ARG1 (d2 / distance-quantity
+                                          :quant "100"
+                                          :unit m3))
+                   :quant (l2 / less
+                              :ARG1-of (t2 / typical-02))
+                   :ARG1-of (c3 / compare-01
+                                :ARG2 (n4 / number
+                                          :condition (e3 / enzyme
+                                                         :name (n3 / name
+                                                                   :op1 "Ras"
+                                                                   :op2 "EDM")))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "2B")))
+
+# ::save-date Wed Jul 8, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Among the Ras EDM-infected cells, the RasV12S35-infected cells formed the largest colonies.
+# ::file pmid_1859_7688_127.txt
+# ::date 2015-07-07T14:52:55
+# ::id pmid_1859_7688.127
+(f / form-01
+   :ARG0 (c / cell
+            :ARG1-of (i / infect-01
+                        :ARG2 (e / enzyme
+                                 :name (n / name
+                                          :op1 "Ras")
+                                 :ARG2-of (m / mutate-01
+                                             :value "V12S35")))
+            :ARG1-of (i2 / include-91
+                         :ARG2 (c2 / cell
+                                   :ARG1-of (i3 / infect-01
+                                                :ARG2 (e2 / enzyme
+                                                          :name (n2 / name
+                                                                    :op1 "Ras"
+                                                                    :op2 "EDM"))))))
+   :ARG1 (c3 / colony
+             :mod (l / large
+                     :degree (m2 / most))))
+
+# ::save-date Sat Aug 8, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These were similar to, but smaller than, the RasV12-infected cells.
+# ::file pmid_1859_7688_128.txt
+# ::date 2015-07-07T14:56:41
+# ::id pmid_1859_7688.128
+(c3 / contrast-01
+    :ARG1 (r / resemble-01
+             :ARG1 (t / this)
+             :ARG2 (c / cell
+                      :ARG1-of (i / infect-01
+                                  :ARG2 (e / enzyme
+                                           :name (n / name
+                                                    :op1 "Ras")
+                                           :ARG2-of (m / mutate-01
+                                                       :value "V12")))))
+    :ARG2 (s / small
+             :domain t
+             :degree (m2 / more)
+             :ARG1-of (c2 / compare-01
+                          :ARG2 c)))
+
+# ::save-date Wed Mar 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt For colonies above 100 μm in diameter, RasV12C40-infected cells were the most efficient at colony formation, despite the smaller mean size of colonies.
+# ::file pmid_1859_7688_129.txt
+# ::date 2015-07-07T15:04:54
+# ::id pmid_1859_7688.129
+(h / have-concession-91
+   :ARG1 (e / efficient-01
+            :ARG1 (c / cell
+                     :ARG1-of (i / infect-01
+                                 :ARG2 (e2 / enzyme
+                                           :name (n / name
+                                                    :op1 "Ras")
+                                           :ARG2-of (m / mutate-01
+                                                       :value "V12C40"))))
+            :ARG2 (f / form-01
+                     :ARG1 (c2 / colony))
+            :degree (m2 / most))
+   :ARG2 (s / size-01
+            :ARG1 c2
+            :ARG2 (s2 / small
+                      :degree (m4 / more))
+            :mod (m3 / mean))
+   :condition (c3 / colony
+                  :mod (d2 / diameter
+                           :mod (a / above
+                                   :op1 (d / distance-quantity
+                                           :quant "100"
+                                           :unit (m5 / micrometer))))))
+
+# ::save-date Wed Mar 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Rlf-CAAX-infected cells formed slightly more colonies above 100 μm than vector-transfected control cells, but these were significantly smaller than those formed by Ras- and Ras EDM-infected cells.
+# ::file pmid_1859_7688_130.txt
+# ::date 2015-07-07T23:27:10
+# ::id pmid_1859_7688.130
+(c / contrast-01
+   :ARG1 (f / form-01
+            :ARG0 (c2 / cell
+                      :ARG1-of (i / infect-01
+                                  :ARG2 (e / enzyme
+                                           :name (n / name
+                                                    :op1 "Rlf-CAAX"))))
+            :ARG1 (c3 / colony
+                      :quant (m2 / more
+                                 :degree (s3 / slight))
+                      :compared-to (c4 / cell
+                                       :ARG0-of (c5 / control-01)
+                                       :ARG1-of (t / transfect-01
+                                                   :ARG2 (v / vector)))
+                      :mod (a / above
+                              :op1 (d / distance-quantity
+                                      :quant "100"
+                                      :unit (m / micrometer)))))
+   :ARG2 (s / small
+            :degree (m3 / more)
+            :ARG1-of (s2 / significant-02)
+            :domain c2
+            :compared-to (c7 / colony
+                             :ARG1-of (f2 / form-01
+                                          :ARG0 (c6 / cell
+                                                    :ARG1-of (i2 / infect-01
+                                                                 :ARG2 (a2 / and
+                                                                           :op1 (e2 / enzyme
+                                                                                    :name (n2 / name
+                                                                                              :op1 "Ras"))
+                                                                           :op2 (e3 / enzyme
+                                                                                    :name (n3 / name
+                                                                                              :op1 "Ras"
+                                                                                              :op2 "EDM")))))))))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt When grown under anchorage-independent conditions in ultra-low attachment plates, the accumulation of cells for the various infected cell lines roughly paralleled the total cell masses seen in soft agar growth assays (Figure 2C).
+# ::file pmid_1859_7688_131.txt
+# ::date 2015-07-07T23:42:02
+# ::id pmid_1859_7688.131
+(p / parallel-01
+      :ARG0 (a / accumulate-01
+            :ARG1 (c / cell)
+            :mod (c2 / cell-line
+                  :ARG1-of (i / infect-01)
+                  :mod (v / various)))
+      :ARG1 (m / mass-01
+            :ARG0 (c3 / cell
+                  :mod (t / total))
+            :ARG1-of (s / see-01
+                  :location (a2 / assay-01
+                        :ARG1 (g / grow-01
+                              :condition (a3 / agar
+                                    :ARG1-of (s2 / soft-02))))))
+      :degree (r / rough)
+      :condition (g2 / grow-01
+            :ARG0-of (d / depend-01
+                  :polarity "-"
+                  :ARG1 (a4 / anchorage))
+            :location (p2 / plate
+                  :ARG3-of (a5 / attach-01
+                        :ARG1-of (l / low-04
+                              :degree (u / ultra)))))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure :mod "2C")))
+
+# ::save-date Sat Aug 8, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The RasV12- and RasV12 EDM-expressing cells grew well, while the growth of the Rlf-CAAX-expressing cells was significantly less.
+# ::file pmid_1859_7688_132.txt
+# ::date 2015-07-07T23:55:16
+# ::id pmid_1859_7688.132
+(c / contrast-01
+   :ARG1 (g / grow-01
+            :ARG1 (c2 / cell
+                      :ARG3-of (e / express-03
+                                  :ARG2 (a / and
+                                           :op1 (e2 / enzyme
+                                                    :name (n / name
+                                                             :op1 "Ras")
+                                                    :ARG2-of (m / mutate-01
+                                                                :value "V12"))
+                                           :op2 (e3 / enzyme
+                                                    :name (n2 / name
+                                                              :op1 "Ras"
+                                                              :op2 "EDM")
+                                                    :ARG2-of (m2 / mutate-01
+                                                                 :value "V12")))))
+            :ARG1-of (w / well-09))
+   :ARG2 (g2 / grow-01
+             :ARG1 (c3 / cell
+                       :ARG3-of (e4 / express-03
+                                    :ARG2 (e5 / enzyme
+                                              :name (n3 / name
+                                                        :op1 "Rlf-CAAX"))))
+             :mod (l / less
+                     :ARG1-of (s / significant-02))
+             :compared-to g))
+
+
+# ::save-date Sat Aug 8, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The HME16C cells maintained viability but did not increase in number.
+# ::file pmid_1859_7688_133.txt
+# ::date 2015-07-08T00:03:31
+# ::id pmid_1859_7688.133
+(c / contrast-01
+      :ARG1 (m / maintain-01
+            :ARG0 (c2 / cell-line
+                  :name (n / name :op1 "HME16C"))
+            :ARG1 (v / viability))
+      :ARG2 (i / increase-01
+            :polarity "-"
+            :ARG1 c2
+            :mod (n2 / number)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To compare our results to others, we verified the function of pLRT vector driven Ras EDM mutants and Rlf-CAAX in HEK-HT cells, which previously have been reported to form colonies in soft agar upon expression of H-RasV12G37 and Rlf-CAAX [27].
+# ::file pmid_1859_7688_134.txt
+# ::date 2015-07-08T00:06:34
+# ::id pmid_1859_7688.134
+(v / verify-01
+   :ARG0 (w / we)
+   :ARG1 (f / function-01
+            :ARG0 (a / and
+                     :op1 (e / enzyme
+                             :name (n2 / name
+                                       :op1 "Ras"
+                                       :op2 "EDM")
+                             :ARG2-of (m / mutate-01))
+                     :op2 (e2 / enzyme
+                              :name (n3 / name
+                                        :op1 "Rlf-CAAX"))
+                     :ARG1-of (d / drive-02
+                                 :ARG0 (v2 / vector
+                                           :name (n / name
+                                                    :op1 "LRT")
+                                           :ARG3-of (p4 / phosphorylate-01))))
+            :location (c / cell-line
+                         :name (n4 / name
+                                   :op1 "HEK-HT")
+                         :ARG0-of (f2 / form-01
+                                      :ARG1 (c2 / colony)
+                                      :location (a2 / agar
+                                                    :ARG1-of (s / soft-02))
+                                      :condition (e3 / express-03
+                                                     :ARG2 (a3 / and
+                                                               :op1 (e4 / enzyme
+                                                                        :name (n5 / name
+                                                                                  :op1 "H-Ras")
+                                                                        :ARG2-of (m2 / mutate-01
+                                                                                     :value "V12G37"))
+                                                               :op2 e2))
+                                      :ARG1-of (r / report-01
+                                                  :time (p2 / previous)))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p3 / publication
+                          :ARG1-of (c3 / cite-01
+                                       :ARG2 "27")))
+   :purpose (c4 / compare-01
+                :ARG0 w
+                :ARG1 (t2 / thing
+                          :ARG2-of (r2 / result-01)
+                          :poss w)
+                :ARG2 (t / thing
+                         :ARG2-of r2
+                         :poss (p5 / person)
+                         :mod (o / other))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In our hands, expression of H-RasV12, H-RasV12G37, and Rlf-CAAX from the pLRT vector induced efficient soft agar colony growth, and H-RasV12S35 and H-RasV12C40 did not (not shown), identical to previously reported results [27].
+# ::file pmid_1859_7688_135.txt
+# ::date 2015-07-08T00:07:46
+# ::id pmid_1859_7688.135
+(c / contrast-01
+   :ARG1 (i / induce-01
+            :ARG0 (e / express-03
+                     :ARG2 (a / and
+                              :op1 (e2 / enzyme
+                                       :name (n2 / name
+                                                 :op1 "H-Ras")
+                                       :ARG2-of (m / mutate-01
+                                                   :value "V12"))
+                              :op2 (e3 / enzyme
+                                       :name (n3 / name
+                                                 :op1 "H-Ras")
+                                       :ARG2-of (m2 / mutate-01
+                                                    :value "V12G37"))
+                              :op3 (e4 / enzyme
+                                       :name (n4 / name
+                                                 :op1 "Rlf-CAAX"))
+                              :source (v / vector
+                                         :name (n / name
+                                                  :op1 "LRT")
+                                         :ARG3-of (p4 / phosphorylate-01))))
+            :ARG2 (g / grow-01
+                     :ARG2 (c2 / colony
+                               :location (a2 / agar
+                                             :ARG1-of (s / soft-02)))
+                     :ARG1-of (e5 / efficient-01)))
+   :ARG2 (i3 / induce-01
+             :polarity "-"
+             :ARG0 (a3 / and
+                       :op1 (e6 / enzyme
+                                :name (n5 / name
+                                          :op1 "H-ras")
+                                :ARG2-of (m3 / mutate-01
+                                             :value "V12S35"))
+                       :op2 (e7 / enzyme
+                                :name (n6 / name
+                                          :op1 "H-ras")
+                                :ARG2-of (m4 / mutate-01
+                                             :value "V12C40")))
+             :ARG2 g
+             :ARG1-of (s2 / show-01
+                          :polarity "-"))
+   :location (h / hand
+                :part-of (w / we))
+   :ARG1-of (i2 / identical-01
+                :ARG2 (t / thing
+                         :ARG2-of (r / result-01
+                                     :ARG1-of (r2 / report-01
+                                                  :time (p2 / previous)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p3 / publication
+                         :ARG1-of (c3 / cite-01
+                                      :ARG2 "27"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Expression of exogenous H-Ras and Rlf-CAAX, and activation of endogenous RalA, in this cell line was similar to that observed in HME16C cells (not shown).
+# ::file pmid_1859_7688_136.txt
+# ::date 2015-07-08T00:26:16
+# ::id pmid_1859_7688.136
+(r / resemble-01
+   :ARG1 (a / and
+            :op1 (e / express-03
+                    :ARG2 (a3 / and
+                              :op1 (e2 / enzyme
+                                       :name (n / name
+                                                :op1 "H-Ras"))
+                              :op2 (e3 / enzyme
+                                       :name (n2 / name
+                                                 :op1 "Rlf-CAAX"))
+                              :mod (e4 / exogene))
+                    :ARG3 (c / cell-line
+                             :mod (t / this)))
+            :op2 (a2 / activate-01
+                     :ARG1 (p / protein
+                              :name (n3 / name
+                                        :op1 "RalA")
+                              :mod (e6 / endogene))
+                     :location c))
+   :ARG2 (o / observe-01
+            :ARG1 (a4 / and
+                      :op1 e
+                      :op2 a2)
+            :location (c2 / cell-line
+                          :name (n4 / name
+                                    :op1 "HME16C")
+                          :ARG1-of (s / show-01
+                                      :polarity "-"))))
+
+# ::save-date Thu Jan 28, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, expression of Rlf-CAAX and subsequent RalA activation did not appear to be sufficient to induce anchorage-independent growth in the HME16C mammary epithelial cell line in contrast to HEK-HT and various other immortalized human cell types [27].
+# ::file pmid_1859_7688_137.txt
+# ::date 2015-07-08T01:00:01
+# ::id pmid_1859_7688.137
+(i / infer-01
+   :ARG1 (a / appear-01
+            :polarity "-"
+            :ARG1 (a2 / and
+                      :op1 (e / express-03
+                              :ARG2 (e2 / enzyme
+                                        :name (n / name
+                                                 :op1 "Rlf-CAAX")))
+                      :op1 (a3 / activate-01
+                               :ARG1 (p2 / protein
+                                         :name (n2 / name
+                                                   :op1 "RalA"))
+                               :mod (s / subsequent)))
+            :ARG0-of (s2 / suffice-01
+                         :ARG1 (i2 / induce-01
+                                   :ARG0 a2
+                                   :ARG2 (g / grow-01
+                                            :ARG0-of (d / depend-01
+                                                        :polarity "-"
+                                                        :ARG1 (a4 / anchorage)))
+                                   :location (c / cell-line
+                                                :name (n3 / name
+                                                          :op1 "HME16C")
+                                                :mod (e4 / epithelium
+                                                         :mod (m / mammary))))
+                         :ARG1-of (c2 / contrast-01
+                                      :ARG2 (a5 / and
+                                                :op1 (c3 / cell-line
+                                                         :name (n4 / name
+                                                                   :op1 "HEK-HT"))
+                                                :op2 (t / type-03
+                                                        :ARG1 (c4 / cell
+                                                                  :mod (h / human)
+                                                                  :ARG1-of (i3 / immortalize-03))
+                                                        :mod (o / other)
+                                                        :mod (v / various))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p / publication
+                         :ARG1-of (c5 / cite-01
+                                      :ARG2 "27"))))
+
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Anchorage-independent growth often predicts the ability of cells to grow as xenografted tumors in immuno-compromised mice.
+# ::file pmid_1859_7688_139.txt
+# ::date 2015-07-08T01:20:45
+# ::id pmid_1859_7688.139
+(p / predict-01
+      :ARG0 (g / grow-01
+            :ARG0-of (d / depend-01
+                  :polarity "-"
+                  :ARG1 (a / anchorage)))
+      :ARG1 (c / capable-01
+            :ARG1 (c2 / cell)
+            :ARG2 (g2 / grow-01
+                  :ARG1 c2
+                  :manner (t / tumor
+                        :mod (x / xenograft)
+                        :location (m / mouse
+                              :ARG1-of (i / immune-02
+                                    :ARG1-of (c3 / compromise-02))))))
+      :frequency (o / often))
+
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Tumor formation was assessed following subcutaneous inoculation.
+# ::file pmid_1859_7688_140.txt
+# ::date 2015-07-08T01:57:32
+# ::id pmid_1859_7688.140
+(a / assess-01
+      :ARG1 (f / form-01
+            :ARG1 (t / tumor))
+      :ARG1-of (f2 / follow-01
+            :ARG2 (i / inoculate-01
+                  :mod (s / subcutaneous))))
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The RasV12-infected HME16C cells formed rapidly growing, fluid-filled tumors with an average latency of 4 weeks and a mean tumor volume of 808.8 mm3 at 6 weeks (Table 1).
+# ::file pmid_1859_7688_141.txt
+# ::date 2015-07-08T02:02:10
+# ::id pmid_1859_7688.141
+(f / form-01
+   :ARG0 (c / cell-line
+            :name (n / name
+                     :op1 "HME16C")
+            :ARG1-of (i / infect-01
+                        :ARG2 (e / enzyme
+                                 :name (n2 / name
+                                           :op1 "Ras")
+                                 :ARG2-of (m / mutate-01
+                                             :value "V12"))))
+   :ARG1 (t / tumor
+            :ARG1-of (g / grow-01
+                        :manner (r2 / rapid))
+            :ARG1-of (f2 / fill-01
+                         :ARG2 (f3 / fluid))
+            :mod (l / latency
+                    :ARG1-of (a / average-01
+                                :ARG2 (t2 / temporal-quantity
+                                          :quant "4"
+                                          :unit (w / week))))
+            :mod (v / volume-quantity
+                    :quant "808.8"
+                    :mod (t3 / tumor
+                             :mod (m2 / mean))
+                    :unit (c2 / cubic-millimeter)
+                    :time (a2 / after
+                              :op1 (t4 / temporal-quantity
+                                       :quant "6"
+                                       :unit w))))
+   :ARG1-of (d / describe-01
+               :ARG0 (t5 / table
+                         :mod "1")))
+
+
+# ::save-date Fri Nov 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Approximately one-half of the tumors were aspirated prior to sacrifice, and a sero-sanguinous fluid was observed, on average accounting for roughly one-third of the measured tumor volume.
+# ::file pmid_1859_7688_142.txt
+# ::date 2015-07-08T02:16:14
+# ::id pmid_1859_7688.142
+(a / and
+      :op1 (a2 / aspirate-101
+            :ARG1 (t / tumor
+                  :quant (h / half
+                        :ARG1-of (a3 / approximate-01)))
+            :time (p / prior
+                  :op1 (s / sacrifice-01)))
+      :op2 (o2 / observe-01
+            :ARG1 (f / fluid
+                  :mod (s2 / sero-sanguine)
+                  :ARG0-of (a4 / account-01
+                        :ARG1 (v / volume
+                              :mod (t2 / tumor)
+                              :ARG1-of (m / measure-01)
+                              :quant (r2 / roughly :op1 "1/3"))
+                        :ARG1-of (a5 / average-01)))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Histological analysis of H&E stained tumor sections revealed poorly differentiated spindle-shaped tumor cells with prominent squamous cell differentiation and extracellular keratin deposition (not shown).
+# ::file pmid_1859_7688_143.txt
+# ::date 2015-07-08T08:07:08
+# ::id pmid_1859_7688.143
+(r / reveal-01
+   :ARG0 (a / analyze-01
+            :ARG1 (s / section-01
+                     :ARG1 (t / tumor)
+                     :ARG1-of (s2 / stain-01
+                                  :ARG2 (a2 / and
+                                            :op1 (s7 / small-molecule
+                                                     :name (n / name
+                                                              :op1 "hematoxylin"))
+                                            :op2 (s8 / small-molecule
+                                                     :name (n2 / name
+                                                               :op1 "eosin")))))
+            :mod (h / histology))
+   :ARG1 (c / cell
+            :mod t
+            :ARG1-of (s3 / shape-01
+                         :ARG2 (s4 / spindle))
+            :ARG1-of (d / differentiate-101
+                        :degree (p / poor))
+            :ARG0-of (h2 / have-03
+                         :ARG1 (a3 / and
+                                   :op1 (d2 / differentiate-101
+                                            :ARG1 (c2 / cell
+                                                      :mod (s5 / squamous))
+                                            :degree (p2 / prominent))
+                                   :op2 (d3 / deposit-01
+                                            :ARG1 (k / keratin)
+                                            :mod (e / extracellular)))))
+   :ARG1-of (s6 / show-01
+                :polarity "-"))
+
+
+# ::save-date Wed Jul 8, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Tumors also contained a strong inflammatory component.
+# ::file pmid_1859_7688_144.txt
+# ::date 2015-07-08T10:29:13
+# ::id pmid_1859_7688.144
+(c / contain-01
+      :ARG0 (t / tumor)
+      :ARG1 (c2 / component
+            :ARG0-of (i / inflame-01)
+            :ARG1-of (s / strong-02))
+      :mod (a / also))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of the other cell lines tested, only the RasV12S35-infected HME16C cells formed palpable tumors in 50% of injected animals with an average latency of approximately 12 weeks and a mean tumor volume of 109.0 mm3 at 16 weeks, considerably smaller than RasV12-expressing tumors (Table 1).
+# ::file pmid_1859_7688_145.txt
+# ::date 2015-07-08T10:40:39
+# ::id pmid_1859_7688.145
+(f / form-01
+   :ARG1 (t / tumor
+            :mod (p / palpable)
+            :ARG0-of (h / have-03
+                        :ARG1 (a3 / and
+                                  :op1 (l / latency
+                                          :duration (a4 / approximately
+                                                        :op1 (t3 / temporal-quantity
+                                                                 :quant "12"
+                                                                 :unit (w / week))))
+                                  :op2 (v / volume
+                                          :mod t
+                                          :ARG1-of (a5 / average-01
+                                                       :ARG2 "109.0"
+                                                       :ARG3 (c3 / cubic-millimeter))
+                                          :time (a6 / after
+                                                    :quant (t4 / temporal-quantity
+                                                               :quant "16"
+                                                               :unit w))
+                                          :degree (s / small
+                                                     :degree (m2 / more)
+                                                     :mod (c4 / considerable)
+                                                     :compared-to (t5 / tumor
+                                                                      :ARG3-of (e2 / express-03
+                                                                                   :ARG2 (e3 / enzyme
+                                                                                             :name (n3 / name
+                                                                                                       :op1 "Ras")
+                                                                                             :ARG2-of (m3 / mutate-01
+                                                                                                          :value "V12")))))))))
+   :ARG2 (c / cell-line
+            :name (n / name
+                     :op1 "HME16C")
+            :ARG1-of (i / infect-01
+                        :ARG2 (e / enzyme
+                                 :name (n2 / name
+                                           :op1 "Ras")
+                                 :ARG2-of (m / mutate-01
+                                             :value "V12S35")))
+            :ARG1-of (i2 / include-01
+                         :ARG2 (c2 / cell-line
+                                   :ARG1-of (t2 / test-01)
+                                   :mod (o / other)))
+            :mod (o2 / only))
+   :location (a / animal
+                :ARG1-of (i3 / include-91
+                             :ARG2 (a2 / animal
+                                       :ARG2-of (i4 / inject-01))
+                             :ARG3 (p2 / percentage-entity
+                                       :value "50")))
+   :ARG1-of (d / describe-01
+               :ARG0 (t6 / table
+                         :mod "1")))
+
+# ::save-date Thu Jul 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cells within RasV12S35-infected tumors resembled the histology of RasV12 tumor cells but with less keratin deposition and without the formation of fluid-filled spaces (not shown).
+# ::file pmid_1859_7688_146.txt
+# ::date 2015-07-08T21:54:15
+# ::id pmid_1859_7688.146
+(r / resemble-01
+   :ARG1 (c / cell
+            :location (t / tumor
+                         :ARG1-of (i / infect-01
+                                     :ARG2 (e / enzyme
+                                              :name (n / name
+                                                       :op1 "Ras")
+                                              :ARG2-of (m / mutate-01
+                                                          :value "V12S35")))))
+   :ARG2 (h / histology
+            :poss (c2 / cell
+                      :mod (t2 / tumor
+                               :ARG1-of (i2 / infect-01
+                                            :ARG2 (e3 / enzyme
+                                                      :name (n2 / name
+                                                                :op1 "Ras")
+                                                      :ARG2-of (m2 / mutate-01
+                                                                   :value "V12"))))))
+   :ARG1-of (c3 / contrast-01
+                :ARG2 (a / and
+                         :op1 (h2 / have-03
+                                  :ARG0 c
+                                  :ARG1 (d / deposit-01
+                                           :ARG1 (k / keratin)
+                                           :quant (l / less)))
+                         :op2 (f / form-01
+                                 :polarity "-"
+                                 :ARG1 (s / space
+                                          :ARG1-of (f2 / fill-01
+                                                       :ARG2 (f3 / fluid)))
+                                 :ARG2 c)))
+   :ARG1-of (s2 / show-01
+                :polarity "-"))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Empty vector-, RasV12G37-, RasV12C40-, and Rlf-CAAX-infected cells failed to form palpable tumors four months after injection.
+# ::file pmid_1859_7688_147.txt
+# ::date 2015-07-08T22:06:57
+# ::id pmid_1859_7688.147
+(f / fail-01
+   :ARG1 (a / and
+            :op1 (c / cell
+                    :ARG1-of (i / infect-01
+                                :ARG2 (v / vector
+                                         :ARG2-of (e / empty-01))))
+            :op2 (c2 / cell
+                     :ARG1-of (i2 / infect-01
+                                  :ARG2 (e2 / enzyme
+                                            :name (n / name
+                                                     :op1 "Ras")
+                                            :ARG2-of (m / mutate-01
+                                                        :value "V12G37"))))
+            :op3 (c3 / cell
+                     :ARG1-of (i3 / infect-01
+                                  :ARG2 (e3 / enzyme
+                                            :name (n2 / name
+                                                      :op1 "Ras")
+                                            :ARG2-of (m2 / mutate-01
+                                                         :value "V12C40"))))
+            :op4 (c4 / cell
+                     :ARG1-of (i4 / infect-01
+                                  :ARG2 (e4 / enzyme
+                                            :name (n3 / name
+                                                      :op1 "Rlf-CAAX")))))
+   :ARG2 (f2 / form-01
+             :ARG0 c
+             :ARG1 (t / tumor
+                      :mod (p2 / palpable)))
+   :time (a2 / after
+             :op1 (i5 / inject-01)
+             :quant (t2 / temporal-quantity
+                        :quant "4"
+                        :unit (m3 / month))))
+
+# ::save-date Thu Jul 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The metastatic potential of RasV12- and RasV12G37-expressing cell lines was tested by tail-vein injection in nude mice, but no metastatic lesions were observed by histological analysis in lungs, liver, spleen, or kidneys at 16 weeks post injection (not shown).
+# ::file pmid_1859_7688_148.txt
+# ::date 2015-07-08T22:27:50
+# ::id pmid_1859_7688.148
+(c / contrast-01
+   :ARG1 (t / test-01
+            :ARG1 (p / potential
+                     :mod (m / metastasize-101
+                             :ARG2 (a / and
+                                      :op1 (c2 / cell-line
+                                               :ARG3-of (e / express-03
+                                                           :ARG2 (e2 / enzyme
+                                                                     :name (n / name
+                                                                              :op1 "Ras")
+                                                                     :ARG2-of (m2 / mutate-01
+                                                                                  :value "V12"))))
+                                      :op2 (c3 / cell-line
+                                               :ARG3-of (e3 / express-03
+                                                            :ARG2 (e4 / enzyme
+                                                                      :name (n2 / name
+                                                                                :op1 "Ras")
+                                                                      :ARG2-of (m3 / mutate-01
+                                                                                   :value "V12G37")))))))
+            :manner (i / inject-01
+                       :ARG2 (v / vein
+                                :part-of (t2 / tail
+                                             :part-of (m4 / mouse
+                                                          :mod (n3 / nude))))))
+   :ARG2 (o / observe-01
+            :polarity "-"
+            :ARG1 (l / lesion
+                     :mod m)
+            :manner (a2 / analyze-01
+                        :mod (h / histology))
+            :location (o2 / or
+                          :op1 (l2 / lung)
+                          :op2 (l3 / liver)
+                          :op3 (s / spleen)
+                          :op4 (k / kidney))
+            :time (a3 / after
+                      :op1 (i2 / inject-01)
+                      :quant (t3 / temporal-quantity
+                                 :quant "16"
+                                 :unit (w / week))))
+   :ARG1-of (s2 / show-01
+                :polarity "-"))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt EGFR signaling is frequently altered in breast cancer, where EGFR and ErbB2 over-expression are common events.
+# ::file pmid_1859_7688_150.txt
+# ::date 2015-07-08T23:06:02
+# ::id pmid_1859_7688.150
+(a / alter-01
+   :ARG1 (s / signal-07
+            :ARG1 (e2 / enzyme
+                      :name (n / name
+                               :op1 "EGFR")))
+   :ARG1-of (f / frequent-02)
+   :location (d / disease
+                :wiki "Breast_cancer"
+                :name (n2 / name
+                          :op1 "breast"
+                          :op2 "cancer")
+                :location-of (e / event
+                                :mod (c2 / common)
+                                :domain (o / overexpress-01
+                                           :ARG1 (a2 / and
+                                                     :op1 e2
+                                                     :op2 (p / protein
+                                                             :name (n3 / name
+                                                                       :op1 "ErbB2")))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt cDNA microarray and real-time RT-PCR analysis of HME16C RasV12- and Ras EDM-infected cells (Additional file 1) revealed increased levels of mRNAs for EGFR ligands, including epiregulin, amphiregulin, and TGFa (Table 2).
+# ::file pmid_1859_7688_151.txt
+# ::date 2015-07-08T23:15:36
+# ::id pmid_1859_7688.151
+(r / reveal-01
+   :ARG0 (a / and
+            :op1 (a2 / analyze-01
+                     :ARG1 (a3 / and
+                               :op1 (c / cell-line
+                                       :name (n / name
+                                                :op1 "HME16C")
+                                       :ARG1-of (i / infect-01
+                                                   :ARG2 (e / enzyme
+                                                            :name (n2 / name
+                                                                      :op1 "Ras")
+                                                            :ARG2-of (m / mutate-01
+                                                                        :value "V12"))))
+                               :op2 (c2 / cell-line
+                                        :name (n3 / name
+                                                  :op1 "HME16C")
+                                        :ARG1-of (i2 / infect-01
+                                                     :ARG2 (e2 / enzyme
+                                                               :name (n4 / name
+                                                                         :op1 "Ras"
+                                                                         :op2 "EDM")))))
+                     :instrument (m2 / microarray
+                                     :consist-of (n5 / nucleic-acid
+                                                     :name (n13 / name
+                                                                :op1 "cDNA"))))
+            :op2 (a4 / analyze-01
+                     :ARG1 a3
+                     :mod (r3 / react-01
+                              :ARG0 (p / polymerase)
+                              :mod (c3 / chain)
+                              :subevent (t / transcribe-01
+                                           :ARG1-of (r4 / reverse-01))
+                              :mod (r2 / real-time)))
+            :ARG1-of (d / describe-01
+                        :ARG0 (f / file
+                                 :mod "1"
+                                 :ARG1-of (a5 / add-02))))
+   :ARG1 (l / level
+            :quant-of (n12 / nucleic-acid
+                           :name (n7 / name
+                                     :op1 "mRNA"))
+            :ARG1-of (i3 / increase-01))
+   :location (l2 / ligand
+                 :name (n8 / name
+                           :op1 "EGFR")
+                 :ARG2-of (i4 / include-91
+                              :ARG1 (a6 / and
+                                        :op1 (l3 / ligand
+                                                 :name (n9 / name
+                                                           :op1 "epiregulin"))
+                                        :op2 (l4 / ligand
+                                                 :name (n10 / name
+                                                            :op1 "amphiregulin"))
+                                        :op3 (l5 / ligand
+                                                 :name (n11 / name
+                                                            :op1 "TGFa")))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (t3 / table
+                          :mod "2")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, increased levels of phospho-Erk were unexpectedly seen in RasV12G37- and RasV12C40-infected cells, possibly the result of autocrine activation of endogenous EGFR by secreted EGFR ligands.
+# ::file pmid_1859_7688_152.txt
+# ::date 2015-07-08T23:42:09
+# ::id pmid_1859_7688.152
+(a / and
+   :op2 (s / see-01
+           :ARG1 (l / level
+                    :quant-of (e4 / enzyme
+                                  :name (n / name
+                                           :op1 "Erk")
+                                  :ARG3-of (p / phosphorylate-01))
+                    :ARG1-of (i / increase-01))
+           :ARG1-of (e2 / expect-01
+                        :polarity "-")
+           :location (a2 / and
+                         :op1 (c / cell
+                                 :ARG1-of (i2 / infect-01
+                                              :ARG2 (e / enzyme
+                                                       :name (n2 / name
+                                                                 :op1 "Ras")
+                                                       :ARG2-of (m / mutate-01
+                                                                   :value "V12G37"))))
+                         :op2 (c2 / cell
+                                  :ARG1-of (i3 / infect-01
+                                               :ARG2 (e3 / enzyme
+                                                         :name (n3 / name
+                                                                   :op1 "Ras")
+                                                         :ARG2-of (m2 / mutate-01
+                                                                      :value "V12C40")))))
+           :ARG2-of (r / result-01
+                       :ARG1 (a3 / activate-01
+                                 :ARG0 (l2 / ligand
+                                           :name (n4 / name
+                                                     :op1 "EGFR")
+                                           :ARG1-of (s2 / secrete-01))
+                                 :ARG1 (e5 / enzyme
+                                           :name (n5 / name
+                                                     :op1 "EGFR")
+                                           :mod (e6 / endogenous))
+                                 :mod (a4 / autocrine))
+                       :ARG1-of (p2 / possible-01))))
+
+# ::save-date Sun Dec 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The presence of EGFR was established using Western blots (not shown).
+# ::file pmid_1859_7688_153.txt
+# ::date 2015-07-08T23:58:31
+# ::id pmid_1859_7688.153
+(e / establish-01
+   :ARG1 (b / be-located-at-91
+            :ARG1 (e2 / enzyme
+                      :name (n / name
+                               :op1 "EGFR")))
+   :ARG2-of (u / use-01
+               :ARG1 (i / immunoblot-01))
+   :ARG1-of (s / show-01
+               :polarity "-"))
+
+# ::save-date Fri Jul 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, we sought to determine if autocrine signaling by the EGFR was required for the anchorage-independent growth of Ras- or Ras EDM-infected cells.
+# ::file pmid_1859_7688_154.txt
+# ::date 2015-07-09T00:03:47
+# ::id pmid_1859_7688.154
+(c / cause-01
+   :ARG1 (s / seek-01
+            :ARG0 (w / we)
+            :ARG1 (d / determine-01
+                     :ARG0 w
+                     :ARG1 (r / require-01
+                              :mode "interrogative"
+                              :ARG0 (g / grow-01
+                                       :ARG1 (o / or
+                                                :op1 (c2 / cell
+                                                         :ARG1-of (i / infect-01
+                                                                     :ARG2 (e / enzyme
+                                                                              :name (n / name
+                                                                                       :op1 "Ras"))))
+                                                :op2 (c3 / cell
+                                                         :ARG1-of (i2 / infect-01
+                                                                      :ARG2 (e2 / enzyme
+                                                                                :name (n2 / name
+                                                                                          :op1 "Ras"
+                                                                                          :op2 "EDM")))))
+                                       :ARG0-of (d2 / depend-01
+                                                    :polarity "-"
+                                                    :ARG1 (a / anchor-01)))
+                              :ARG1 (s2 / signal-07
+                                        :ARG0 (e3 / enzyme
+                                                  :name (n3 / name
+                                                            :op1 "EGFR"))
+                                        :mod (a2 / autocrine))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RasV12- and Ras EDM-infected HME16C cells were grown in soft agar in the presence or absence of the EGFR-specific inhibitors, PD153035 and PD168393.
+# ::file pmid_1859_7688_155.txt
+# ::date 2015-07-09T00:18:43
+# ::id pmid_1859_7688.155
+(g / grow-01
+   :ARG1 (a / and
+            :op1 (c / cell-line
+                    :name (n / name
+                             :op1 "HME16C")
+                    :ARG1-of (i / infect-01
+                                :ARG2 (e / enzyme
+                                         :name (n2 / name
+                                                   :op1 "Ras")
+                                         :ARG2-of (m / mutate-01
+                                                     :value "V12"))))
+            :op2 (c2 / cell-line
+                     :name (n3 / name
+                               :op1 "HME16C")
+                     :ARG1-of (i2 / infect-01
+                                  :ARG2 (e2 / enzyme
+                                            :name (n4 / name
+                                                      :op1 "Ras"
+                                                      :op2 "EDM")))))
+   :location (a2 / agar
+                 :ARG1-of (s / soft-02))
+   :manner (o / or
+              :op1 (b / be-located-at-91
+                      :ARG1 (a3 / and
+                                :op1 (s2 / small-molecule
+                                         :name (n5 / name
+                                                   :op1 "PD153035"))
+                                :op2 (s3 / small-molecule
+                                         :name (n6 / name
+                                                   :op1 "PD168393"))
+                                :ARG0-of (i3 / inhibit-01)
+                                :ARG1-of (s4 / specific-02
+                                             :ARG2 (e3 / enzyme
+                                                       :name (n7 / name
+                                                                 :op1 "EGFR")))))
+              :op2 (a4 / absent-01
+                       :ARG1 a3)))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Complete inhibition of colony formation for RasV12G37-infected and RasV12C40-infected cells was observed at 0.25 μM PD153035, a concentration that specifically inhibits EGFR [28], whereas both the RasV12- and RasV12S35-infected cells formed colonies efficiently at this same concentration of inhibitor (Figure 3A and 3B).
+# ::file pmid_1859_7688_156.txt
+# ::date 2015-07-09T00:58:21
+# ::id pmid_1859_7688.156
+(c / contrast-01
+   :ARG1 (o / observe-01
+            :ARG1 (i / inhibit-01
+                     :ARG1 (f / form-01
+                              :ARG0 (a / and
+                                       :op1 (c2 / cell
+                                                :ARG1-of (i2 / infect-01
+                                                             :ARG2 (e / enzyme
+                                                                      :name (n / name
+                                                                               :op1 "Ras")
+                                                                      :ARG2-of (m / mutate-01
+                                                                                  :value "V12G37"))))
+                                       :op2 (c3 / cell
+                                                :ARG1-of (i3 / infect-01
+                                                             :ARG2 (e2 / enzyme
+                                                                       :name (n2 / name
+                                                                                 :op1 "Ras")
+                                                                       :ARG2-of (m2 / mutate-01
+                                                                                    :value "V12C40")))))
+                              :ARG1 (c4 / colony))
+                     :degree (c5 / complete-01))
+            :manner (s / small-molecule
+                       :name (n3 / name
+                                 :op1 "PD153035")
+                       :quant (c6 / concentration-quantity
+                                  :quant "0.25"
+                                  :unit (m3 / micromolar)
+                                  :ARG0-of (i4 / inhibit-01
+                                               :ARG1 (e3 / enzyme
+                                                         :name (n4 / name
+                                                                   :op1 "EGFR"))
+                                               :ARG1-of (s2 / specific-02))))
+            :ARG1-of (d / describe-01
+                        :ARG0 (p / publication
+                                 :ARG1-of (c7 / cite-01
+                                              :ARG2 "28"))))
+   :ARG2 (f2 / form-01
+             :ARG0 (a2 / and
+                       :op1 (c8 / cell
+                                :ARG1-of (i5 / infect-01
+                                             :ARG2 (e4 / enzyme
+                                                       :name (n5 / name
+                                                                 :op1 "Ras")
+                                                       :ARG2-of (m4 / mutate-01
+                                                                    :value "V12"))))
+                       :op2 (c9 / cell
+                                :ARG1-of (i6 / infect-01
+                                             :ARG2 (e5 / enzyme
+                                                       :name (n6 / name
+                                                                 :op1 "Ras")
+                                                       :ARG2-of (m5 / mutate-01
+                                                                    :value "V12S35")))))
+             :ARG1 c4
+             :ARG2-of (e6 / efficient-01)
+             :manner s)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a3 / and
+                          :op1 (f3 / figure
+                                   :mod "3A")
+                          :op2 (f4 / figure
+                                   :mod "3B"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Identical results were found for the EGFR-specific inhibitor PD168393 used at 0.1 μM, a concentration that specifically inhibits EGFR and Her-2 receptors [29](not shown).
+# ::file pmid_1859_7688_157.txt
+# ::date 2015-07-09T01:54:35
+# ::id pmid_1859_7688.157
+(f / find-01
+   :ARG1 (t / thing
+            :ARG2-of (r / result-01)
+            :ARG2-of (i / identical-01))
+   :ARG2 (s / small-molecule
+            :name (n / name
+                     :op1 "PD168393")
+            :ARG0-of (i2 / inhibit-01)
+            :ARG1-of (s2 / specific-02
+                         :ARG2 (e / enzyme
+                                  :name (n2 / name
+                                            :op1 "EGFR")))
+            :ARG1-of (u / use-01
+                        :manner (c / concentration-quantity
+                                   :quant "0.1"
+                                   :unit (m / micromolar)
+                                   :ARG0-of (i3 / inhibit-01
+                                                :ARG1 (a / and
+                                                         :op1 (e2 / enzyme
+                                                                  :name (n3 / name
+                                                                            :op1 "EGFR"))
+                                                         :op2 (r3 / receptor
+                                                                  :name (n4 / name
+                                                                            :op1 "Her-2")))
+                                                :ARG1-of (s3 / specific-02)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p / publication
+                        :ARG1-of (c2 / cite-01
+                                     :ARG2 "29")))
+   :ARG1-of (s4 / show-01
+                :polarity "-"))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similarly, treatment of cells grown in ultra-low-attachment plates also demonstrated that EGFR inhibition substantially inhibited growth of RasV12G37-and RasV12C40-expressing cells relative to that of RasV12- and RasV12S35-expressing HME16C (Figure 2C).
+# ::file pmid_1859_7688_158.txt
+# ::date 2015-07-09T02:12:45
+# ::id pmid_1859_7688.158
+(d / demonstrate-01
+   :ARG0 (t / treat-04
+            :ARG1 (c / cell
+                     :ARG1-of (g / grow-01
+                                 :location (p / plate
+                                              :ARG2-of (a / attach-01
+                                                          :ARG1-of (l / low-04
+                                                                      :degree (u / ultra)))))))
+   :ARG1 (i / inhibit-01
+            :ARG0 (i2 / inhibit-01
+                      :ARG1 (e / enzyme
+                               :name (n / name
+                                        :op1 "EGFR")))
+            :ARG1 (g2 / grow-01
+                      :ARG1 (c2 / cell
+                                :ARG3-of (e2 / express-03
+                                             :ARG2 (a2 / and
+                                                       :op1 (e3 / enzyme
+                                                                :name (n2 / name
+                                                                          :op1 "Ras")
+                                                                :ARG2-of (m / mutate-01
+                                                                            :value "V12G37"))
+                                                       :op2 (e4 / enzyme
+                                                                :name (n3 / name
+                                                                          :op1 "Ras")
+                                                                :ARG2-of (m2 / mutate-01
+                                                                             :value "V12C40"))))))
+            :degree (s / substantial)
+            :ARG1-of (r / relative-05
+                        :ARG3 (g3 / grow-01
+                                  :ARG1 (c3 / cell-line
+                                            :name (n4 / name
+                                                      :op1 "HME16C")
+                                            :ARG3-of (e5 / express-03
+                                                         :ARG2 (a3 / and
+                                                                   :op1 (e6 / enzyme
+                                                                            :name (n5 / name
+                                                                                      :op1 "Ras")
+                                                                            :ARG2-of (m3 / mutate-01
+                                                                                         :value "V12"))
+                                                                   :op2 (e7 / enzyme
+                                                                            :name (n6 / name
+                                                                                      :op1 "Ras")
+                                                                            :ARG2-of (m4 / mutate-01
+                                                                                         :value "V12S35"))))))))
+   :mod (a4 / also)
+   :ARG1-of (r2 / resemble-01)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "2C")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Western blotting of cellular lysates from cells treated with 0.25 μM PD153035 showed that high levels of phosphorylated Erk were maintained only in RasV12- and RasV12S35-infected cells, but were significantly reduced in RasV12G37- or RasV12C40-infected cells treated with the inhibitor (Figure 3C), while phoshorylated Akt was minimally affected (not shown).
+# ::file pmid_1859_7688_159.txt
+# ::date 2015-07-09T02:45:18
+# ::id pmid_1859_7688.159
+(c / contrast-01
+   :ARG1 (s / show-01
+            :ARG0 (i6 / immunoblot-01
+                      :ARG1 (l / lysate
+                               :mod (c2 / cell)
+                               :source (c3 / cell
+                                           :ARG1-of (t / treat-04
+                                                       :ARG2 (s2 / small-molecule
+                                                                 :name (n / name
+                                                                          :op1 "PD153035")
+                                                                 :quant (c4 / concentration-quantity
+                                                                            :quant "0.25"
+                                                                            :unit (m / micromolar))
+                                                                 :ARG0-of (i / inhibit-01))))))
+            :ARG1 (c5 / contrast-01
+                      :ARG1 (m2 / maintain-01
+                                :ARG1 (l2 / level
+                                          :quant-of (e / enzyme
+                                                       :name (n3 / name
+                                                                 :op1 "Erk")
+                                                       :ARG3-of (p / phosphorylate-01
+                                                                   :ARG3 e6))
+                                          :ARG1-of (h / high-02))
+                                :location (a2 / and
+                                              :op1 (c6 / cell
+                                                       :ARG1-of (i2 / infect-01
+                                                                    :ARG2 (e5 / enzyme
+                                                                              :name (n4 / name
+                                                                                        :op1 "Ras")
+                                                                              :ARG2-of (m3 / mutate-01
+                                                                                           :value "V12"))))
+                                              :op2 (c7 / cell
+                                                       :ARG1-of (i3 / infect-01
+                                                                    :ARG2 (e4 / enzyme
+                                                                              :name (n5 / name
+                                                                                        :op1 "Ras")
+                                                                              :ARG2-of (m4 / mutate-01
+                                                                                           :value "V12S35"))))
+                                              :mod (o / only)))
+                      :ARG2 (r / reduce-01
+                               :ARG1 l2
+                               :ARG2 (s3 / significant-02)
+                               :location (o2 / or
+                                             :op1 (c8 / cell
+                                                      :ARG1-of (i4 / infect-01
+                                                                   :ARG2 (e2 / enzyme
+                                                                             :name (n6 / name
+                                                                                       :op1 "Ras")
+                                                                             :ARG2-of (m5 / mutate-01
+                                                                                          :value "V12G37"))))
+                                             :op2 (c9 / cell
+                                                      :ARG1-of (i5 / infect-01
+                                                                   :ARG2 (e3 / enzyme
+                                                                             :name (n7 / name
+                                                                                       :op1 "Ras")
+                                                                             :ARG2-of (m6 / mutate-01
+                                                                                          :value "V12C40"))))
+                                             :ARG1-of (t3 / treat-04
+                                                          :ARG2 s2))))
+            :ARG1-of (d / describe-01
+                        :ARG0 (f / figure
+                                 :mod "3C")))
+   :ARG2 (a3 / affect-01
+             :ARG1 (e6 / enzyme
+                       :name (n8 / name
+                                 :op1 "Akt"))
+             :ARG1-of (m7 / minimal-02)
+             :ARG1-of (s4 / show-01
+                          :polarity "-")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Anchorage-independent growth therefore correlated with maintenance of high Erk activity in HME16C cells.
+# ::file pmid_1859_7688_160.txt
+# ::date 2015-07-09T03:12:41
+# ::id pmid_1859_7688.160
+(c / cause-01
+   :ARG1 (c2 / correlate-01
+             :ARG1 (g / grow-01
+                      :ARG0-of (d / depend-01
+                                  :polarity "-"
+                                  :ARG1 (a / anchor-01)))
+             :ARG2 (m / maintain-01
+                      :ARG1 (a2 / activity-06
+                                :ARG0 (e / enzyme
+                                         :name (n / name
+                                                  :op1 "Erk"))
+                                :ARG1-of (h / high-02))
+                      :location (c3 / cell-line
+                                    :name (n2 / name
+                                              :op1 "HME16C")))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with this observation, inhibition of MEK, and therefore ERK signaling, using the MEK-specific inhibitor PD98059 at 10 μM, significantly inhibited soft agar colony formation by all cell lines (not shown).
+# ::file pmid_1859_7688_161.txt
+# ::date 2015-07-09T03:16:46
+# ::id pmid_1859_7688.161
+(i / inhibit-01
+   :ARG0 (a / and
+            :op1 (i2 / inhibit-01
+                     :ARG1 (s / signal-07
+                              :ARG0 (e / enzyme
+                                       :name (n / name
+                                                :op1 "MEK"))))
+            :op2 (i3 / inhibit-01
+                     :ARG1 (s2 / signal-07
+                               :ARG0 (e2 / enzyme
+                                         :name (n2 / name
+                                                   :op1 "Erk")))
+                     :ARG1-of (c / cause-01
+                                 :ARG0 i2))
+            :ARG2-of (u / use-01
+                        :ARG1 (s3 / small-molecule
+                                  :name (n3 / name
+                                            :op1 "PD98059")
+                                  :ARG0-of (i4 / inhibit-01
+                                               :ARG1 e)
+                                  :ARG1-of (s4 / specific-02
+                                               :ARG2 e)
+                                  :quant (c2 / concentration-quantity
+                                             :quant "10"
+                                             :unit (m / micromolar)))))
+   :ARG1 (f / form-01
+            :ARG1 (c3 / colony
+                      :mod (a2 / agar
+                               :ARG1-of (s5 / soft-02)))
+            :ARG2 (c4 / cell-line
+                      :mod (a3 / all)))
+   :ARG1-of (s6 / significant-02)
+   :ARG1-of (c5 / consistent-01
+                :ARG2 (o / observe-01
+                         :mod (t / this)))
+   :ARG1-of (s7 / show-01
+                :polarity "-"))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Activation of the Ras oncogene is accompanied by the stimulation of multiple signal transduction pathways leading to the activation or repression of numerous transcription factors as well as changes in mRNA translation and stability, and thus, the modulation of gene expression.
+# ::file pmid_1859_7688_163.txt
+# ::date 2015-07-09T03:44:45
+# ::id pmid_1859_7688.163
+(a / accompany-01
+   :ARG0 (s / stimulate-01
+            :ARG1 (p / pathway
+                     :ARG2-of (t / transduce-01
+                                 :ARG1 (s2 / signal-07))
+                     :quant (m / multiple)))
+   :ARG1 (a2 / activate-01
+             :ARG1 (e2 / enzyme
+                       :name (n / name
+                                :op1 "Ras")
+                       :ARG0-of (c3 / cause-01
+                                    :ARG1 (d / disease
+                                             :wiki "Cancer"
+                                             :name (n5 / name
+                                                       :op1 "cancer")))))
+   :ARG0-of (l / lead-03
+               :ARG2 (a3 / and
+                         :op1 (a4 / and
+                                  :op1 (o2 / or
+                                           :op1 (a5 / activate-01
+                                                    :ARG1 (f / factor
+                                                             :ARG0-of (t2 / transcribe-01)
+                                                             :quant (n2 / numerous)))
+                                           :op2 (r / repress-01
+                                                   :ARG1 f))
+                                  :op2 (c / change-01
+                                          :ARG1 (a6 / and
+                                                    :op1 (t3 / translate-02
+                                                             :ARG1 (n4 / nucleic-acid
+                                                                       :name (n3 / name
+                                                                                 :op1 "mRNA")))
+                                                    :op2 (s3 / stable-03
+                                                             :ARG1 n4))))
+                         :op2 (c2 / cause-01
+                                  :ARG0 a4
+                                  :ARG1 (m2 / modulate-01
+                                            :ARG1 (e / express-03
+                                                     :ARG1 (g / gene)))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To determine which gene expression changes accompany the transformation of HME16C human epithelial cells by activated Ras, we examined our transformed HME16C cells by cDNA microarray analysis.
+# ::file pmid_1859_7688_164.txt
+# ::date 2015-07-09T04:17:05
+# ::id pmid_1859_7688.164
+(e / examine-01
+   :ARG0 (w / we)
+   :ARG1 (c / cell-line
+            :name (n / name
+                     :op1 "HME16C")
+            :ARG1-of (t / transform-01)
+            :ARG1-of (a / analyze-01
+                        :instrument (m / microarray
+                                       :consist-of (n2 / nucleic-acid
+                                                       :name (n5 / name
+                                                                 :op1 "cDNA"))))
+            :poss w)
+   :purpose (d / determine-01
+               :ARG0 w
+               :ARG1 (a2 / accompany-01
+                         :ARG0 (c2 / change-01
+                                   :ARG1 (e2 / express-03
+                                             :ARG1 (g / gene)))
+                         :ARG1 (t3 / transform-01
+                                   :ARG0 (e3 / enzyme
+                                             :name (n3 / name
+                                                       :op1 "Ras")
+                                             :ARG1-of (a3 / activate-01))
+                                   :ARG1 (c3 / cell-line
+                                             :name (n4 / name
+                                                       :op1 "HME16C")
+                                             :mod (e4 / epithelium
+                                                      :part-of (h / human)))))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To do this, RNA was isolated from H-RasV12 and H-RasV12 EDM expressing cells after treatment with doxycycline to fully induce gene expression and compared to RNA from identically treated pLRT vector-infected control cells.
+# ::file pmid_1859_7688_165.txt
+# ::date 2015-07-09T04:37:52
+# ::id pmid_1859_7688.165
+(a / and
+   :op1 (i / isolate-01
+           :ARG1 (n4 / nucleic-acid
+                     :name (n5 / name
+                               :op1 "RNA"))
+           :ARG2 (a2 / and
+                     :op1 (c / cell
+                             :ARG3-of (e / express-03
+                                         :ARG2 (e2 / enzyme
+                                                   :name (n / name
+                                                            :op1 "H-Ras")
+                                                   :ARG2-of (m / mutate-01
+                                                               :value "V12"
+                                                               :ARG2 e4))))
+                     :op2 (c2 / cell
+                              :ARG3-of (e3 / express-03
+                                           :ARG2 (e4 / enzyme
+                                                     :name (n2 / name
+                                                               :op1 "H-Ras"
+                                                               :op2 "EDM")))))
+           :time (a3 / after
+                     :op1 (t / treat-04
+                             :ARG1 a2
+                             :ARG2 (d / doxycycline)))
+           :purpose (i2 / induce-01
+                        :ARG0 n4
+                        :ARG2 (e5 / express-03
+                                  :ARG1 (g / gene))
+                        :degree (f / full)))
+   :op2 (c3 / compare-01
+            :ARG1 i
+            :ARG2 (i3 / isolate-01
+                      :ARG1 n4
+                      :ARG2 (c4 / cell
+                                :ARG2-of (c5 / control-01)
+                                :ARG1-of (i4 / infect-01
+                                             :ARG2 (v / vector
+                                                      :name (n3 / name
+                                                                :op1 "LRT")
+                                                      :ARG3-of (p / phosphorylate-01)))
+                                :ARG1-of (t2 / treat-04
+                                             :ARG2 d
+                                             :ARG2-of (i5 / identical-01)))))
+   :purpose (d2 / do-02
+                :ARG1 (t3 / this)))
+
+
+# ::save-date Tue Nov 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Statistical analysis of microarray (SAM) data analysis was performed for the datasets, and a delta value of 0.4 was chosen for each dataset, which maintains the estimated false discovery rate (FDR) below 1% for each.
+# ::file pmid_1859_7688_166.txt
+# ::date 2015-07-09T05:01:44
+# ::id pmid_1859_7688.166
+(a / and
+      :op1 (p / perform-01
+            :ARG1 (a2 / analyze-01
+                  :ARG1 (d5 / data
+                        :topic (m2 / microarray))
+                  :purpose (d / dataset)
+                  :mod (s / statistics)))
+      :op2 (c / choose-01
+            :ARG1 (v / value
+                  :quant "0.4"
+                  :mod (d2 / delta))
+            :ARG3 (d3 / dataset
+                  :mod (e / each))
+            :ARG0-of (m / maintain-01
+                  :ARG1 (r / rate
+                        :mod (d4 / discover-01)
+                        :mod (f / false)
+                        :ARG1-of (e2 / estimate-01))
+                  :ARG2 (b / below
+                        :quant (p2 / percentage-entity :value "1")))
+            :beneficiary d3))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A summary of the genes up- or down-regulated greater than 2-fold in the H-RasV12- and Ras effector domain mutant-infected HME16C cell lines is presented in Additional file 1, organized according to broad categories of gene function.
+# ::file pmid_1859_7688_167.txt
+# ::date 2015-07-09T05:19:32
+# ::id pmid_1859_7688.167
+(p / present-01
+   :ARG1 (s / summarize-01
+            :ARG1 (o / or
+                     :op1 (g / gene
+                             :ARG1-of (u / upregulate-01))
+                     :op2 (g2 / gene
+                              :ARG1-of (d / downregulate-01))
+                     :quant (m2 / more-than
+                                :op1 (p2 / product-of
+                                         :quant "2"))
+                     :location (a / and
+                                  :op1 (c / cell-line
+                                          :name (n / name
+                                                   :op1 "HME16C")
+                                          :ARG1-of (i / infect-01
+                                                      :ARG2 (e / enzyme
+                                                               :name (n2 / name
+                                                                         :op1 "H-Ras")
+                                                               :ARG2-of (m / mutate-01
+                                                                           :value "V12"))))
+                                  :op2 (c2 / cell-line
+                                           :name (n3 / name
+                                                     :op1 "HME16C")
+                                           :ARG1-of (i2 / infect-01
+                                                        :ARG2 (d2 / domain
+                                                                  :part-of (e2 / effector
+                                                                               :mod (p3 / protein-family
+                                                                                        :name (n4 / name
+                                                                                                  :op1 "Ras")))
+                                                                  :ARG2-of (m3 / mutate-01))))))
+            :ARG1-of (o2 / organize-01
+                         :ARG1-of (c3 / consistent-01
+                                      :ARG2 (c4 / categorize-01
+                                                :ARG1 (f / function
+                                                         :mod (g4 / gene))
+                                                :ARG1-of (b / broad-02)))))
+   :location (f2 / file
+                 :mod "1"
+                 :ARG1-of (a2 / add-02)))
+
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To validate gene expression changes identified by cDNA microarray analysis, quantitative RT-PCR was performed using RNA from the same samples used in microarray analysis, and is presented in Additional file 2.
+# ::file pmid_1859_7688_168.txt
+# ::date 2015-07-09T05:57:59
+# ::id pmid_1859_7688.168
+(a / and
+      :op1 (p / perform-01
+            :ARG1 (r / react-01
+                  :ARG0 (p3 / polymerase)
+                  :mod (q / quantitative)
+                  :mod (c2 / chain)
+                  :subevent (t / transcribe-01
+                        :ARG1-of (r2 / reverse-01)))
+            :ARG2-of (u / use-01
+                  :ARG1 (n3 / nucleic-acid
+                        :name (n4 / name :op1 "RNA")
+                        :source (t2 / thing
+                              :ARG1-of (s / sample-01)
+                              :ARG1-of (s2 / same-01
+                                    :ARG2 (t3 / thing
+                                          :ARG1-of (s3 / sample-01)
+                                          :ARG1-of (u2 / use-01
+                                                :ARG2 (a2 / analyze-01
+                                                      :mod (m / microarray
+                                                            :consist-of (n5 / nucleic-acid
+                                                                  :name (n6 / name :op1 "cDNA")))))))))))
+      :op2 (p2 / present-01
+            :ARG1 r
+            :location (f / file
+                  :mod "2"
+                  :ARG1-of (a3 / add-02)))
+      :purpose (v / validate-01
+            :ARG1 (c / change-01
+                  :ARG1 (e / express-03
+                        :ARG1 (g / gene))
+                  :ARG1-of (i / identify-01
+                        :ARG0 a2))))
+
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Results for 22 of 26 genes chosen to reflect genes up- or down-regulated both strongly or weakly showed strong agreement with microarray data, demonstrating that the microarray dataset represents a reliable quantification of gene expression changes.
+# ::file pmid_1859_7688_169.txt
+# ::date 2015-07-09T06:10:53
+# ::id pmid_1859_7688.169
+(s / show-01
+      :ARG0 (t / thing
+            :ARG2-of (r / result-01
+                  :ARG1 (g / gene
+                        :quant "22"
+                        :ARG1-of (i / include-91
+                              :ARG2 (g2 / gene
+                                    :quant "26"
+                                    :ARG2-of (c / choose-01
+                                          :ARG1 g
+                                          :ARG4 (r2 / reflect-01
+                                                :ARG1 g
+                                                :ARG2 (o / or
+                                                      :op1 (g3 / gene
+                                                            :ARG1-of (u / upregulate-01
+                                                                  :degree (o2 / or
+                                                                        :op1 (s2 / strong-02)
+                                                                        :op2 (w / weak-02))))
+                                                      :op2 (g4 / gene
+                                                            :ARG1-of (d / downregulate-01
+                                                                  :degree o2))))))))))
+      :ARG1 (a / agree-01
+            :ARG0 t
+            :ARG1 (d2 / data
+                  :mod (m / microarray))
+            :degree s2)
+      :ARG0-of (d3 / demonstrate-01
+            :ARG1 (r3 / represent-01
+                  :ARG0 (d4 / dataset
+                        :mod m)
+                  :ARG1 (q / quantify-01
+                        :ARG1 (c2 / change-01
+                              :ARG1 (e / express-03
+                                    :ARG1 o))
+                        :ARG1-of (r4 / rely-01
+                              :ARG1-of (p / possible-01))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To evaluate the effect of EGFR inhibition on gene expression, RasV12-, RasV12S35-, and RasV12G37-infected cells were induced with doxycycline and subsequently incubated either in the presence or absence of 0.25 μM PD153035, and microarray analysis comparisons were made to vehicle-treated pLRT-infected cells.
+# ::file pmid_1859_7688_170.txt
+# ::date 2015-07-09T06:27:48
+# ::id pmid_1859_7688.170
+(a / and
+   :op1 (a2 / and
+            :op1 (i / induce-01
+                    :ARG0 (d / doxycycline)
+                    :ARG2 (a3 / and
+                              :op1 (c / cell
+                                      :ARG1-of (i2 / infect-01
+                                                   :ARG2 (e / enzyme
+                                                            :name (n / name
+                                                                     :op1 "Ras")
+                                                            :ARG2-of (m / mutate-01
+                                                                        :value "V12"))))
+                              :op2 (c2 / cell
+                                       :ARG1-of (i3 / infect-01
+                                                    :ARG2 (e2 / enzyme
+                                                              :name (n2 / name
+                                                                        :op1 "Ras")
+                                                              :ARG2-of (m2 / mutate-01
+                                                                           :value "V12S35"))))
+                              :op3 (c3 / cell
+                                       :ARG1-of (i4 / infect-01
+                                                    :ARG2 (e3 / enzyme
+                                                              :name (n3 / name
+                                                                        :op1 "Ras")
+                                                              :ARG2-of (m3 / mutate-01
+                                                                           :value "V12G37"))))))
+            :op2 (i5 / incubate-01
+                     :ARG1 a3
+                     :ARG2 (o / or
+                              :op1 (b / be-located-at-91
+                                      :ARG1 (s / small-molecule
+                                               :name (n4 / name
+                                                         :op1 "PD153035")
+                                               :ARG0-of (i6 / inhibit-01)
+                                               :quant (c4 / concentration-quantity
+                                                          :quant "0.25"
+                                                          :unit (m4 / micromolar))))
+                              :op2 (a4 / absent-01
+                                       :ARG1 s)
+                              :mod (e4 / either))
+                     :time (s2 / subsequent)))
+   :op2 (m5 / make-01
+            :ARG1 (c5 / compare-01
+                      :ARG1 a3
+                      :ARG2 (c6 / cell
+                                :ARG1-of (i7 / infect-01
+                                             :ARG2 (p2 / protein
+                                                       :name (n5 / name
+                                                                 :op1 "LRT")
+                                                       :ARG3-of (p / phosphorylate-01)))
+                                :ARG1-of (t / treat-04
+                                            :ARG2 (v / vehicle)))
+                      :mod (m7 / microarray)))
+   :purpose (e5 / evaluate-01
+                :ARG1 (a5 / affect-01
+                          :ARG0 (i8 / inhibit-01
+                                    :ARG1 (e7 / enzyme
+                                              :name (n6 / name
+                                                        :op1 "EGFR")))
+                          :ARG1 (e6 / express-03
+                                    :ARG1 (g / gene)))))
+
+# ::save-date Mon Feb 15, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Almost all Ras and Ras EDM-induced upregulated transcriptional responses were blocked by pharmacological inhibition of EGFR, consistent with previous reports for inhibition of Raf-regulated transcription [30].
+# ::file pmid_1859_7688_171.txt
+# ::date 2015-07-09T06:56:08
+# ::id pmid_1859_7688.171
+(b / block-01
+   :ARG0 (i / inhibit-01
+            :ARG1 (e4 / enzyme
+                      :name (n / name
+                               :op1 "EGFR"))
+            :mod (p2 / pharmacology))
+   :ARG1 (t / thing
+            :ARG2-of (r / respond-01)
+            :ARG1-of (t2 / transcribe-01)
+            :ARG1-of (u / upregulate-01)
+            :ARG2-of (i2 / induce-01
+                         :ARG0 (a / and
+                                  :op1 (e / enzyme
+                                          :name (n2 / name
+                                                    :op1 "Ras"))
+                                  :op2 (e2 / enzyme
+                                           :name (n3 / name
+                                                     :op1 "Ras"
+                                                     :op2 "EDM"))))
+            :mod (a2 / all
+                     :degree (a3 / almost)))
+   :ARG1-of (c / consistent-01
+               :ARG2 (r2 / report-01
+                         :ARG1 (i3 / inhibit-01
+                                   :ARG1 (t3 / transcribe-01
+                                             :ARG1-of (r3 / regulate-01
+                                                          :ARG0 (e3 / enzyme
+                                                                    :name (n4 / name
+                                                                              :op1 "Raf")))))
+                         :time (p3 / previous)))
+   :ARG1-of (d / describe-01
+               :ARG0 (p4 / publication
+                         :ARG1-of (c2 / cite-01
+                                      :ARG2 "30"))))
+
+# ::save-date Mon Jul 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Our analysis identified PHLDA1 as an up-regulated gene in both vehicle-treated and PD153035-treated RasV12 and RasV12S35 cells, although the relative fold increase was reduced following EGFR inhibition.
+# ::file pmid_1859_7688_172.txt
+# ::date 2015-07-09T15:10:23
+# ::id pmid_1859_7688.172
+(h / have-concession-91
+   :ARG1 (i / identify-01
+            :ARG0 (a / analyze-01
+                     :ARG0 (w / we))
+            :ARG1 (g2 / gene
+                      :wiki "-"
+                      :name (n2 / name
+                                :op1 "PHLDA1"))
+            :ARG2 (g3 / gene
+                      :ARG1-of (u / upregulate-01))
+            :location (a2 / and
+                          :op1 (c2 / cell
+                                   :ARG1-of (t2 / treat-04
+                                                :ARG2 (s / small-molecule
+                                                         :wiki "-"
+                                                         :name (n3 / name
+                                                                   :op1 "PD153035")))
+                                   :mod (e / enzyme
+                                           :wiki "Ras_subfamily"
+                                           :name (n4 / name
+                                                     :op1 "Ras")
+                                           :ARG2-of (m2 / mutate-01
+                                                        :value "V12")))
+                          :op2 (c3 / cell
+                                   :ARG1-of (t / treat-04
+                                               :ARG0 (v / vehicle))
+                                   :mod (e2 / enzyme
+                                            :wiki "Ras_subfamily"
+                                            :name (n5 / name
+                                                      :op1 "Ras")
+                                            :ARG2-of (m3 / mutate-01
+                                                         :value "V12S35")))))
+   :ARG2 (r / reduce-01
+            :ARG1 (i2 / increase-01
+                      :ARG2 (p / product-of)
+                      :ARG1-of (r2 / relative-05))
+            :ARG1-of (f2 / follow-01
+                         :ARG2 (i3 / inhibit-01
+                                   :ARG1 (e3 / enzyme
+                                             :wiki "Epidermal_growth_factor_receptor"
+                                             :name (n / name
+                                                      :op1 "EGFR"))))))
+
+# ::save-date Thu Jul 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt By comparison, PHLDA1 was down-regulated in PD153035-treated RasV12G37 relative to vehicle-treated cells (not shown).
+# ::file pmid_1859_7688_173.txt
+# ::date 2015-07-10T06:05:56
+# ::id pmid_1859_7688.173
+(d / downregulate-01
+   :ARG1 (g / gene
+            :name (n / name
+                     :op1 "PHLDA1"))
+   :ARG1-of (c / compare-01)
+   :location (c3 / cell
+                 :mod (e / enzyme
+                         :ARG2-of (m / mutate-01
+                                     :value "V12G37")
+                         :ARG1-of (t / treat-04
+                                     :ARG2 (s2 / small-molecule
+                                               :name (n2 / name
+                                                         :op1 "PD153035"))))
+                 :ARG1-of (r / relative-05
+                             :ARG3 (c2 / cell
+                                       :ARG1-of (t2 / treat-04
+                                                    :ARG0 (v / vehicle)))))
+   :ARG1-of (s / show-01
+               :polarity "-"))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, PHLDA1 represents a Raf/ERK-responsive gene whose expression parallels EGFR-independent HME16C mammary epithelial cell transformation.
+# ::file pmid_1859_7688_174.txt
+# ::date 2015-07-10T06:22:26
+# ::id pmid_1859_7688.174
+(c2 / cause-01
+    :ARG1 (r / represent-01
+             :ARG0 (g / gene
+                      :name (n / name
+                               :op1 "PHLDA1"))
+             :ARG1 (p2 / pathway
+                       :name (n2 / name
+                                 :op1 "Raf/ERK")
+                       :ARG0-of (r2 / responsive-02)
+                       :ARG1-of (e / express-01
+                                   :ARG0-of (p / parallel-01
+                                               :ARG1 (t / transform-01
+                                                        :ARG1 (c / cell-line
+                                                                 :name (n3 / name
+                                                                           :op1 "HME16C")
+                                                                 :location (e2 / epithelium)
+                                                                 :mod (m / mammary)
+                                                                 :ARG0-of (d / depend-01
+                                                                             :polarity "-"
+                                                                             :ARG1 (e3 / enzyme
+                                                                                       :name (n4 / name
+                                                                                                 :op1 "EGFR"))))))))))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The PHLDA1 gene is of interest as it has been suggested to be a tumor suppressor in breast adenocarcinoma and melanoma [17,18].
+# ::file pmid_1859_7688_176.txt
+# ::date 2015-07-10T03:49:59
+# ::id pmid_1859_7688.176
+(c / cause-01
+   :ARG0 (s / suggest-01
+            :ARG1 (s2 / suppress-01
+                      :ARG0 "g"
+                      :ARG1 (t / tumor)
+                      :location (a / and
+                                   :op1 (m2 / medical-condition
+                                            :name (n2 / name
+                                                      :op1 "adenocarcinoma"))
+                                   :op2 (m / medical-condition
+                                           :name (n3 / name
+                                                     :op1 "melanoma"))
+                                   :mod (b / breast))))
+   :ARG1 (i / interest-01
+            :ARG0 (g / gene
+                     :name (n / name
+                              :op1 "PHLDA1")))
+   :ARG1-of (d / describe-01
+               :ARG0 (p / publication
+                        :ARG1-of (c2 / cite-01
+                                     :ARG2 (a3 / and
+                                               :op1 "17"
+                                               :op2 "18")))))
+
+# ::save-date Thu Jul 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We further analyzed the signal dependent expression of the PHLDA1 gene and its protein product, TDAG51.
+# ::file pmid_1859_7688_177.txt
+# ::date 2015-07-10T04:15:47
+# ::id pmid_1859_7688.177
+(a / analyze-01
+   :ARG0 (w / we)
+   :ARG1 (a2 / and
+             :op1 (e / express-03
+                     :ARG1 (g / gene
+                              :name (n2 / name
+                                        :op1 "PHLDA1")
+                              :ARG0-of (d / depend-01
+                                          :ARG1 (s / signal))))
+             :op2 (p2 / protein
+                      :name (n / name
+                               :op1 "TDAG51")
+                      :ARG1-of (p / produce-01
+                                  :ARG0 g)))
+   :degree (f / further))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Microarray analysis identified the PHLDA1 gene as being dramatically up-regulated in RasV12- and Ras EDM-infected cells to levels that correlated with the level of ERK activation and the extent of anchorage-independent growth (Additional file 1).
+# ::file pmid_1859_7688_178.txt
+# ::date 2015-07-10T04:23:06
+# ::id pmid_1859_7688.178
+(i / identify-01
+   :ARG0 (a2 / analyze-01
+             :ARG1 (m / microarray))
+   :ARG1 (u / upregulate-01
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "PHLDA1"))
+            :location (a3 / and
+                          :op1 (c / cell
+                                  :ARG1-of (i2 / infect-01
+                                               :ARG2 (e / enzyme
+                                                        :name (n2 / name
+                                                                  :op1 "Ras")
+                                                        :ARG2-of (m2 / mutate-01
+                                                                     :value "V12"))))
+                          :op2 (c2 / cell
+                                   :ARG1-of (i3 / infect-01
+                                                :ARG0 (e2 / enzyme
+                                                          :name (n3 / name
+                                                                    :op1 "EDM")))))
+            :manner (d2 / dramatic)
+            :degree (l / level
+                       :ARG1-of (c3 / correlate-01
+                                    :ARG2 (a5 / and
+                                              :op1 (l2 / level
+                                                       :degree-of (a4 / activate-01
+                                                                      :ARG1 (e3 / enzyme
+                                                                                :name (n4 / name
+                                                                                          :op1 "ERK"))))
+                                              :op2 (e4 / extent
+                                                       :degree-of (g2 / grow-01
+                                                                      :ARG0-of (d3 / depend-01
+                                                                                   :polarity "-"
+                                                                                   :ARG1 (a6 / anchorage))))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / file
+                        :mod "1"
+                        :mod (a / additional))))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Western blotting confirmed that TDAG51 was also upregulated in a similar manner (Figure 4A).
+# ::file pmid_1859_7688_179.txt
+# ::date 2015-07-10T16:37:38
+# ::id pmid_1859_7688.179
+(c / confirm-01
+   :ARG0 (i / immunoblot-01)
+   :ARG1 (u / upregulate-01
+            :ARG1 (p / protein
+                     :name (n2 / name
+                               :op1 "TDAG51"))
+            :mod (a2 / also)
+            :ARG1-of (r / resemble-01
+                        :ARG2 (m / manner)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4A")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The PHLDA1 gene was elevated in PD153035-treated RasV12- and RasV12S35-infected cells but was significantly dependent upon EGFR tyrosine kinase activity for upregulation in RasV12G37- and RasV12C40-infected cells (not shown), and the expression of the encoded TDAG51 protein approximately paralleled PHLDA1 RNA expression (Figure 4B).
+# ::file pmid_1859_7688_180.txt
+# ::date 2015-07-10T16:44:18
+# ::id pmid_1859_7688.180
+(a / and
+   :op1 (c / contrast-01
+           :ARG1 (e4 / elevate-01
+                     :ARG1 (g2 / gene
+                               :wiki "-"
+                               :name (n7 / name
+                                         :op1 "PHLDA1"))
+                     :location (a3 / and
+                                   :op1 (c2 / cell
+                                            :ARG1-of (i / infect-01
+                                                        :ARG2 (e6 / enzyme
+                                                                  :wiki "Ras_subfamily"
+                                                                  :name (n4 / name
+                                                                            :op1 "Ras")
+                                                                  :ARG2-of (m / mutate-01
+                                                                              :value "V12"))))
+                                   :op2 (c3 / cell
+                                            :ARG1-of (i2 / infect-01
+                                                         :ARG2 (e7 / enzyme
+                                                                   :wiki "Ras_subfamily"
+                                                                   :name (n5 / name
+                                                                             :op1 "Ras")
+                                                                   :ARG2-of (m2 / mutate-01
+                                                                                :value "V12S35"))))
+                                   :ARG1-of (t / treat-04
+                                               :ARG2 (s / small-molecule
+                                                        :wiki "-"
+                                                        :name (n6 / name
+                                                                  :op1 "PD153035")))))
+           :ARG2 (d2 / depend-01
+                     :ARG0 g2
+                     :ARG1 (a4 / activity-06
+                               :ARG0 (k / kinase
+                                        :mod (e10 / enzyme
+                                                  :wiki "Epidermal_growth_factor_receptor"
+                                                  :name (n11 / name
+                                                             :op1 "EGFR"))
+                                        :mod (t2 / tyrosine))
+                               :ARG1 (u / upregulate-01
+                                        :ARG1 (a5 / and
+                                                  :op1 (c4 / cell
+                                                           :ARG1-of (i3 / infect-01
+                                                                        :ARG2 (e8 / enzyme
+                                                                                  :wiki "Ras_subfamily"
+                                                                                  :name (n9 / name
+                                                                                            :op1 "Ras")
+                                                                                  :ARG2-of (m3 / mutate-01
+                                                                                               :value "V12G37"))))
+                                                  :op2 (c5 / cell
+                                                           :ARG1-of (i4 / infect-01
+                                                                        :ARG2 (e9 / enzyme
+                                                                                  :wiki "Ras_subfamily"
+                                                                                  :name (n10 / name
+                                                                                             :op1 "Ras")
+                                                                                  :ARG2-of (m4 / mutate-01
+                                                                                               :value "V12C40")))))
+                                        :ARG1-of (s3 / show-01
+                                                     :polarity "-")))
+                     :ARG1-of (s2 / significant-02)))
+   :op2 (p / parallel-01
+           :ARG0 (e3 / express-03
+                     :ARG2 (p2 / protein
+                               :wiki "PHLDA1"
+                               :name (n / name
+                                        :op1 "TDAG51")
+                               :ARG1-of (e2 / encode-01)))
+           :ARG1 (e / express-03
+                    :ARG1 (n8 / nucleic-acid
+                              :wiki "RNA"
+                              :name (n3 / name
+                                        :op1 "RNA")
+                              :ARG0-of (e5 / encode-01
+                                           :ARG1 (g / gene
+                                                    :wiki "-"
+                                                    :name (n2 / name
+                                                              :op1 "PHLDA1")))))
+           :degree (a2 / approximate))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4B")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure 3C, EGFR inhibition significantly reduced ERK signaling in RasV12G37- and RasV12C40-infected cells without affecting RasV12- and RasV12S35-infected cells.
+# ::file pmid_1859_7688_181.txt
+# ::date 2015-07-11T04:11:30
+# ::id pmid_1859_7688.181
+(r / reduce-01
+   :ARG0 (i / inhibit-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "EGFR")))
+   :ARG1 (s3 / signal-07
+             :ARG0 (e6 / enzyme
+                       :name (n2 / name
+                                 :op1 "ERK"))
+             :location (a / and
+                          :op1 (c2 / cell
+                                   :ARG1-of (i2 / infect-01
+                                                :ARG2 (e4 / enzyme
+                                                          :name (n3 / name
+                                                                    :op1 "Ras")
+                                                          :ARG2-of (m / mutate-01
+                                                                      :value "V12G37"))))
+                          :op2 (c / cell
+                                  :ARG1-of (i5 / infect-01
+                                               :ARG2 (e5 / enzyme
+                                                         :name (n6 / name
+                                                                   :op1 "Ras")
+                                                         :ARG2-of (m2 / mutate-01
+                                                                      :value "V12C40"))))))
+   :ARG2 (s2 / significant-02)
+   :ARG1-of (s / show-01
+               :ARG0 (f / figure
+                        :mod "3C"))
+   :ARG0-of (a2 / affect-01
+                :polarity "-"
+                :ARG1 (a3 / and
+                          :op1 (c3 / cell
+                                   :ARG1-of (i3 / infect-01
+                                                :ARG2 (e3 / enzyme
+                                                          :name (n4 / name
+                                                                    :op1 "Ras")
+                                                          :ARG2-of (m3 / mutate-01
+                                                                       :value "V12"))))
+                          :op2 (c4 / cell
+                                   :ARG1-of (i4 / infect-01
+                                                :ARG2 (e2 / enzyme
+                                                          :name (n5 / name
+                                                                    :op1 "Ras")
+                                                          :ARG2-of (m4 / mutate-01
+                                                                       :value "V12S35")))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To confirm that TDAG51 up-regulation was induced specifically by ERK activation, we treated pLRT-, RasV12-, and RasV12S35-infected cells with the MEK-specific inhibitor PD98059.
+# ::file pmid_1859_7688_182.txt
+# ::date 2015-07-10T16:46:21
+# ::id pmid_1859_7688.182
+(t / treat-04
+   :ARG0 "w"
+   :ARG1 (a2 / and
+             :op1 (c2 / cell
+                      :mod (p4 / protein
+                               :name (n5 / name
+                                         :op1 "LRT")
+                               :ARG1-of (p2 / phosphorylate-01)))
+             :op2 (c3 / cell
+                      :ARG1-of (i4 / infect-01
+                                   :ARG2 (e / enzyme
+                                            :name (n6 / name
+                                                      :op1 "Ras")
+                                            :ARG2-of (m2 / mutate-01
+                                                         :value "V12"))))
+             :op3 (c4 / cell
+                      :ARG1-of (i5 / infect-01
+                                   :ARG2 (e5 / enzyme
+                                             :name (n7 / name
+                                                       :op1 "Ras")
+                                             :ARG2-of (m3 / mutate-01
+                                                          :value "V12S35")))))
+   :ARG2 (s2 / small-molecule
+             :name (n3 / name
+                       :op1 "PD98059")
+             :ARG0-of (i2 / inhibit-01
+                          :ARG1 (p3 / protein-family
+                                    :name (n4 / name
+                                              :op1 "MEK")))
+             :ARG1-of (s / specific-02
+                         :ARG1 i))
+   :purpose (c / confirm-01
+               :ARG0 (w / we)
+               :ARG1 (i / induce-01
+                        :ARG0 (a / activate-01
+                                 :ARG1 (e4 / enzyme
+                                           :name (n2 / name
+                                                     :op1 "ERK")))
+                        :ARG2 (u / upregulate-01
+                                 :ARG1 (p / protein
+                                          :name (n / name
+                                                   :op1 "TDAG51"))))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PD98059 used at 20 μM appears to be specific for MEK1 as it does not nonspecifically inhibit a variety of other protein kinases that have been assayed.
+# ::file pmid_1859_7688_183.txt
+# ::date 2015-07-10T17:01:48
+# ::id pmid_1859_7688.183
+(a3 / appear-02
+    :ARG1 (s / specific-02
+             :ARG1 (s3 / small-molecule
+                       :name (n / name
+                                :op1 "PD98059")
+                       :ARG1-of (u / use-01
+                                   :ARG2 (c2 / concentration-quantity
+                                             :quant "20"
+                                             :unit (n2 / nanomolar))))
+             :ARG2 (e / enzyme
+                      :name (n3 / name
+                                :op1 "MEK1")))
+    :ARG1-of (c3 / cause-01
+                 :ARG0 (i / inhibit-01
+                          :polarity "-"
+                          :ARG0 s3
+                          :ARG1 (k / kinase
+                                   :mod (o / other)
+                                   :ARG1-of (a2 / assay-01)
+                                   :mod (v / variety)
+                                   :mod (p / protein))
+                          :ARG1-of (s2 / specific-02
+                                       :polarity "-"))))
+
+
+# ::save-date Thu Jul 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt [31].
+# ::file pmid_1859_7688_184.txt
+# ::date 2015-07-10T17:41:09
+# ::id pmid_1859_7688.184
+(p / publication
+      :ARG1-of (c / cite-01 :ARG2 "31"))
+
+# ::save-date Thu Jul 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt TDAG51 up-regulation was attenuated by MEK inhibition (Figure 5).
+# ::file pmid_1859_7688_185.txt
+# ::date 2015-07-10T09:26:08
+# ::id pmid_1859_7688.185
+(a / attenuate-01
+   :ARG0 (i / inhibit-01
+            :ARG1 (e / enzyme
+                     :name (n2 / name
+                               :op1 "MEK")))
+   :ARG1 (u / upregulate-01
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "TDAG51")))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt TDAG51 therefore represents an ERK-inducible gene whose up-regulation in HME16C is correlated with an EGFR-independent, ERK-mediated transformation.
+# ::file pmid_1859_7688_186.txt
+# ::date 2015-07-10T09:28:20
+# ::id pmid_1859_7688.186
+(c2 / cause-01
+    :ARG1 (r2 / represent-01
+              :ARG0 (g2 / gene
+                        :name (n / name
+                                 :op1 "TDAG51"))
+              :ARG1 (g / gene
+                       :ARG2-of (i / induce-01
+                                   :ARG1 (e / enzyme
+                                            :name (n2 / name
+                                                      :op1 "ERK"))
+                                   :ARG1-of (p / possible-01))
+                       :ARG1-of (u / upregulate-01
+                                   :location (c3 / cell-line
+                                                 :name (n3 / name
+                                                           :op1 "HME16C"))
+                                   :ARG1-of (c / correlate-01
+                                               :ARG2 (t / transform-01
+                                                        :ARG0-of (d / depend-01
+                                                                    :polarity "-"
+                                                                    :ARG1 (e2 / enzyme
+                                                                              :name (n4 / name
+                                                                                        :op1 "EGFR")))
+                                                        :ARG1-of (m2 / mediate-01
+                                                                     :ARG0 e)))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To analyze the role of TDAG51 in ERK-dependent growth, we reduced TDAG51 expression in RasV12- and RasV12S35-infected cells to a level comparable to that in non-transformed vector-infected control cells using stably expressed TDAG51-specific shRNA (Figure 6A).
+# ::file pmid_1859_7688_188.txt
+# ::date 2015-07-10T14:41:07
+# ::id pmid_1859_7688.188
+(r / reduce-01
+   :ARG0 "w"
+   :ARG1 (e2 / express-03
+             :ARG2 "p"
+             :ARG3 (a2 / and
+                       :op1 (c / cell
+                               :ARG1-of (i3 / infect-01
+                                            :ARG2 (e3 / enzyme
+                                                      :name (n3 / name
+                                                                :op1 "Ras")
+                                                      :ARG2-of (m / mutate-01
+                                                                  :value "V12"))))
+                       :op2 (c2 / cell)
+                       :ARG1-of (i / infect-01
+                                   :ARG2 (e4 / enzyme
+                                             :name n3
+                                             :ARG2-of (m2 / mutate-01
+                                                          :value "V12S35")))))
+   :ARG4 (l / level
+            :ARG1-of (c3 / comparable-03
+                         :ARG2 (l2 / level
+                                   :location (c4 / cell
+                                                 :ARG1-of (i2 / infect-01
+                                                              :ARG2 (v / vector))
+                                                 :ARG0-of (c5 / control-01)
+                                                 :ARG1-of (t / transform-01
+                                                             :polarity "-")))))
+   :manner (u / use-01
+              :ARG0 "w"
+              :ARG1 (n5 / nucleic-acid
+                        :name (n4 / name
+                                  :op1 "shRNA")
+                        :ARG1-of (s / specific-02
+                                    :ARG2 "p")
+                        :ARG2-of (e5 / express-03
+                                     :ARG1-of (s2 / stable-03))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6A"))
+   :purpose (a / analyze-01
+               :ARG0 (w / we)
+               :ARG1 (r2 / role
+                         :poss (p / protein
+                                  :name (n / name
+                                           :op1 "TDAG51"))
+                         :topic (g / grow-01
+                                   :ARG0-of (d2 / depend-01
+                                                :ARG1 (e / enzyme
+                                                         :name (n2 / name
+                                                                   :op1 "ERK")))))))
+
+# ::save-date Mon Jul 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cell proliferation of attached cells grown on tissue culture plastic was unaffected by lowered TDAG51 protein levels (not shown).
+# ::file pmid_1859_7688_189.txt
+# ::date 2015-07-11T06:00:17
+# ::id pmid_1859_7688.189
+(a / affect-01
+   :polarity "-"
+   :ARG0 (l / level
+            :quant-of (p3 / protein
+                          :name (n / name
+                                   :op1 "TDAG51"))
+            :ARG1-of (l2 / low-04))
+   :ARG1 (p / proliferate-01
+            :ARG0 (c / cell
+                     :ARG1-of (a2 / attach-01)
+                     :ARG1-of (g / grow-01
+                                 :location (p2 / plastic
+                                               :mod (c3 / culture
+                                                        :source (t / tissue))))))
+   :ARG1-of (s / show-01
+               :polarity "-"))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, cell growth under anchorage-independent conditions in ultra-low attachment plates was significantly enhanced by TDAG51 knock-down in RasV12S35-infected cells (Figure 6B).
+# ::file pmid_1859_7688_190.txt
+# ::date 2015-07-11T05:27:41
+# ::id pmid_1859_7688.190
+(c / contrast-01
+   :ARG2 (e / enhance-01
+            :ARG1 (g / grow-01
+                     :ARG1 (c3 / cell)
+                     :location (p / plate
+                                  :ARG3-of (a2 / attach-01)
+                                  :ARG1-of (l / low-04
+                                              :degree (u / ultra)))
+                     :condition (d2 / depend-01
+                                    :polarity "-"
+                                    :ARG1 (a / anchorage)))
+            :ARG2 (k / knock-down-02
+                     :ARG1 (p2 / protein
+                               :name (n / name
+                                        :op1 "TDAG51")))
+            :ARG1-of (s / significant-02)
+            :location (c5 / cell
+                          :ARG1-of (i / infect-01
+                                      :ARG2 (e2 / enzyme
+                                                :name (n2 / name
+                                                          :op1 "Ras")
+                                                :ARG2-of (m / mutate-01
+                                                            :value "V12S35")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6B")))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Likewise, results with RasV12-infected cells stably infected with TDAG51-targeting shRNA also showed enhanced growth relative to vector-infected control cells, although to a lesser extent than that seen with RasV12S35-infected cells (Figure 6C).
+# ::file pmid_1859_7688_191.txt
+# ::date 2015-07-11T05:37:30
+# ::id pmid_1859_7688.191
+(c / contrast-01
+   :ARG1 (s / show-01
+            :ARG0 (t / thing
+                     :ARG2-of (r2 / result-01
+                                  :ARG1 (c4 / cell
+                                            :ARG1-of (i2 / infect-01
+                                                         :ARG2 (e2 / enzyme
+                                                                   :wiki "Ras_subfamily"
+                                                                   :name (n / name
+                                                                            :op1 "Ras")
+                                                                   :ARG2-of (m / mutate-01
+                                                                               :value "V12")))
+                                            :ARG1-of (i3 / infect-01
+                                                         :ARG2 (n5 / nucleic-acid
+                                                                   :wiki "Small_hairpin_RNA"
+                                                                   :name (n2 / name
+                                                                             :op1 "shRNA")
+                                                                   :ARG0-of (t2 / target-01
+                                                                                :ARG1 (p / protein
+                                                                                         :wiki "PHLDA1"
+                                                                                         :name (n3 / name
+                                                                                                   :op1 "TDAG51"))))
+                                                         :ARG1-of (s3 / stable-03)))))
+            :ARG1 (g / grow-01
+                     :ARG1-of (e / enhance-01)
+                     :ARG1-of (r3 / relative-05
+                                  :ARG2 (c2 / cell
+                                            :ARG0-of (c3 / control-01)
+                                            :ARG1-of (i / infect-01
+                                                        :ARG0 (v / vector)))))
+            :mod (a / also))
+   :ARG2 (s2 / show-01
+             :ARG0 t
+             :ARG1 (g2 / grow-01
+                       :degree (l / less
+                                  :degree (m2 / more))
+                       :compared-to (g3 / grow-01
+                                        :ARG1-of (s4 / see-01
+                                                     :location (c5 / cell
+                                                                   :ARG1-of (i4 / infect-01
+                                                                                :ARG2 (e3 / enzyme
+                                                                                          :wiki "Ras_subfamily"
+                                                                                          :name (n4 / name
+                                                                                                    :op1 "Ras")
+                                                                                          :ARG2-of (m3 / mutate-01
+                                                                                                       :value "V12S35"))))))))
+   :ARG1-of (r / resemble-01)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6C")))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This suggests that Ras signaling pathways other than ERK compensate partially for the negative growth effects of TDAG51, or that RasV12-infected cells are already close to maximally transformed under anchorage-independent growth conditions.
+# ::file pmid_1859_7688_192.txt
+# ::date 2015-07-10T16:45:12
+# ::id pmid_1859_7688.192
+(s / suggest-01
+   :ARG0 (t / this)
+   :ARG1 (o / or
+            :op1 (c / compensate-01
+                    :ARG0 (p2 / pathway
+                              :name (n / name
+                                       :op1 "Ras")
+                              :ARG0-of (s2 / signal-07)
+                              :ARG2-of (e2 / except-01
+                                           :ARG1 (p3 / pathway
+                                                     :name (n2 / name
+                                                               :op1 "ERK"))))
+                    :ARG1 (a2 / affect-01
+                              :ARG0 (g / grow-01
+                                       :ARG1 (p4 / protein
+                                                 :name (n4 / name
+                                                           :op1 "TDAG51")))
+                              :ARG2-of (n3 / negative-05))
+                    :degree (p / part))
+            :op2 (c2 / close-10
+                     :ARG1 (c4 / cell
+                               :ARG1-of (i / infect-01
+                                           :ARG2 (e / enzyme
+                                                    :name (n5 / name
+                                                              :op1 "Ras")
+                                                    :ARG2-of (m2 / mutate-01
+                                                                 :value "V12"))))
+                     :ARG2 (t2 / transform-01
+                               :ARG1 c4
+                               :degree (m / maximal))
+                     :time (a3 / already)
+                     :condition (g2 / grow-01
+                                    :ARG0-of (d / depend-01
+                                                :polarity "-"
+                                                :ARG1 (a / anchorage))))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To characterize the effect of TDAG51 on cell proliferation under anchorage-independent conditions, cell cycle analysis and cell proliferation assays for RasV12S35- and RasV12-infected cells were performed.
+# ::file pmid_1859_7688_194.txt
+# ::date 2015-07-10T15:11:06
+# ::id pmid_1859_7688.194
+(p / perform-01
+   :ARG1 (a / and
+            :op1 (a2 / analyze-01
+                     :ARG1 (c2 / cycle-02
+                               :ARG1 (c3 / cell)))
+            :op2 (a3 / assay-01
+                     :ARG1 (p2 / proliferate-01
+                               :ARG0 c3))
+            :purpose (a4 / and
+                         :op1 (c4 / cell
+                                  :ARG1-of (i2 / infect-01
+                                               :ARG2 (e / enzyme
+                                                        :name (n / name
+                                                                 :op1 "Ras")
+                                                        :ARG2-of (m / mutate-01
+                                                                    :value "V12S35"))))
+                         :op2 (c5 / cell
+                                  :ARG1-of (i / infect-01
+                                              :ARG2 (e2 / enzyme
+                                                        :name (n2 / name
+                                                                  :op1 "Ras")
+                                                        :ARG2-of (m2 / mutate-01
+                                                                     :value "V12"))))))
+   :purpose (c / characterize-01
+               :ARG1 (a5 / affect-01
+                         :ARG0 (p3 / protein
+                                   :name (n3 / name
+                                             :op1 "TDAG51"))
+                         :ARG1 (p4 / proliferate-01
+                                   :ARG0 c3
+                                   :condition (d / depend-01
+                                                 :ARG1 (a6 / anchorage))))))
+
+# ::save-date Wed Mar 9, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Both RasV12S35- and RasV12- TDAG51 shRNA-expressing cells demonstrated an increased S-phase fraction versus pLVTHM vector control cells at various time points during anchorage-independent growth (Figure 7A).
+# ::file pmid_1859_7688_195.txt
+# ::date 2015-07-10T16:03:42
+# ::id pmid_1859_7688.195
+(d / demonstrate-01
+   :ARG0 (a / and
+            :op1 (c / cell
+                    :ARG3-of (e / express-03
+                                :ARG2 (n4 / nucleic-acid
+                                          :name (n2 / name
+                                                    :op1 "shRNA")
+                                          :ARG0-of (e5 / encode-01
+                                                       :ARG1 (p4 / protein
+                                                                 :name (n5 / name
+                                                                           :op1 "TDAG51")
+                                                                 :ARG1-of (i2 / infect-01
+                                                                              :ARG2 (e3 / enzyme
+                                                                                        :name (n / name
+                                                                                                 :op1 "Ras")
+                                                                                        :ARG2-of (m / mutate-01
+                                                                                                    :value "V12S35"))))))))
+            :op2 (c2 / cell
+                     :ARG3-of (e2 / express-03
+                                  :ARG1 (e4 / enzyme
+                                            :name (n6 / name
+                                                      :op1 "Ras")
+                                            :ARG2-of (m2 / mutate-01
+                                                         :value "V12"))
+                                  :ARG2 n4)))
+   :ARG1 (f2 / fraction
+             :ARG1-of (i / increase-01)
+             :part-of (p / phase
+                         :mod (s / synthesize-01)))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "7A"))
+   :compared-to (c3 / cell
+                    :ARG0-of (c4 / control-01)
+                    :mod (v / vector
+                            :name (n3 / name
+                                      :op1 "LVTHM")
+                            :ARG3-of (p2 / phosphorylate-01)))
+   :time (p3 / point
+             :mod (t / time)
+             :ARG1-of (v2 / vary-01))
+   :time (g / grow-01
+            :ARG0-of (d3 / depend-01
+                         :polarity "-"
+                         :ARG1 (a2 / anchorage))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In concordance with these results, RasV12S35 and RasV12 cells expressing the TDAG51-specific shRNA showed enhanced incorporation of 5-ethynyl-2'-deoxyuridine (EdU) in cell proliferation assays, indicating a higher rate of DNA synthesis in cells with reduced TDAG51 protein (Figure 7C).
+# ::file pmid_1859_7688_196.txt
+# ::date 2015-07-11T09:32:12
+# ::id pmid_1859_7688.196
+(s / show-01
+   :ARG0 (a / and
+            :op1 (c2 / cell
+                     :mod (e / enzyme
+                             :wiki "Ras_subfamily"
+                             :name (n / name
+                                      :op1 "Ras")
+                             :ARG2-of (m / mutate-01
+                                         :value "V12S35")))
+            :op2 (c3 / cell
+                     :mod (e5 / enzyme
+                              :wiki "Ras_subfamily"
+                              :name (n6 / name
+                                        :op1 "Ras")
+                              :ARG2-of (m2 / mutate-01
+                                           :value "V12")))
+            :ARG3-of (e3 / express-03
+                         :ARG1 (n7 / nucleic-acid
+                                   :wiki "Small_hairpin_RNA"
+                                   :name (n2 / name
+                                             :op1 "shRNA")
+                                   :ARG1-of (s2 / specific-02
+                                                :ARG2 (p / protein
+                                                         :wiki "PHLDA1"
+                                                         :name (n3 / name
+                                                                   :op1 "TDAG51"))))))
+   :ARG1 (i2 / incorporate-01
+             :ARG0 n7
+             :ARG1 (s4 / small-molecule
+                       :wiki "5-Ethynyl-2'-deoxyuridine"
+                       :name (n4 / name
+                                 :op1 "5-ethynyl-2'-deoxyuridine"))
+             :ARG1-of (e4 / enhance-01)
+             :location (a2 / assay-01
+                           :ARG1 (p2 / proliferate-01
+                                     :ARG0 (c4 / cell))))
+   :ARG0-of (i / indicate-01
+               :ARG1 (r3 / rate-entity-91
+                         :ARG4 (s3 / synthesize-01
+                                   :ARG1 (n8 / nucleic-acid
+                                             :wiki "DNA"
+                                             :name (n9 / name
+                                                       :op1 "DNA")))
+                         :ARG1-of (h / high-02
+                                     :degree (m4 / more)))
+               :location (c5 / cell
+                             :ARG0-of (h2 / have-03
+                                          :ARG1 (p4 / protein
+                                                    :wiki "PHLDA1"
+                                                    :name (n5 / name
+                                                              :op1 "TDAG51")
+                                                    :ARG1-of (r4 / reduce-01)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "7C"))
+   :ARG1-of (r5 / resemble-01
+                :ARG2 (t / thing
+                         :ARG2-of (r / result-01)
+                         :mod (t2 / this))))
+
+# ::save-date Mon Jul 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Since cell growth under anchorage-independent conditions is a balance between cell proliferation and cell death, we sought to evaluate the effect upon cellular death of TDAG51 knock-down.
+# ::file pmid_1859_7688_197.txt
+# ::date 2015-07-10T15:19:46
+# ::id pmid_1859_7688.197
+(c / cause-01
+   :ARG0 (b / balance-01
+            :ARG0 (g / grow-01
+                     :ARG1 (c3 / cell)
+                     :condition (d3 / depend-01
+                                    :polarity "-"
+                                    :ARG1 (a2 / anchorage)))
+            :ARG1 (a3 / and
+                      :op1 (p2 / proliferate-01
+                               :ARG0 (c5 / cell))
+                      :op2 (d2 / die-01
+                               :ARG1 c5)))
+   :ARG1 (s / seek-01
+            :ARG0 (w / we)
+            :ARG1 (e / evaluate-01
+                     :ARG0 w
+                     :ARG1 (a / affect-01
+                              :ARG0 (k / knock-down-02
+                                       :ARG1 (p / protein
+                                                :name (n / name
+                                                         :op1 "TDAG51")))
+                              :ARG1 (d / die-01
+                                       :ARG1 (c2 / cell))))))
+
+# ::save-date Thu Jul 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We used an assay of cellular cytotoxicity that measures the release of the lactose deydrogenase enzyme, LDH.
+# ::file pmid_1859_7688_198.txt
+# ::date 2015-07-10T04:38:09
+# ::id pmid_1859_7688.198
+(u / use-01
+   :ARG0 (w / we)
+   :ARG1 (a / assay-01
+            :ARG1 (c / cytotoxicity
+                     :mod (c2 / cell))
+            :ARG0-of (m / measure-01
+                        :ARG1 (r / release-01
+                                 :ARG1 (e / enzyme
+                                          :name (n / name
+                                                   :op1 "lactose"
+                                                   :op2 "deydrogenase"))))))
+
+# ::save-date Wed Mar 9, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt LDH release was increased by TDAG51 shRNA-expressing RasV12S35 cells relative to pLVTHM-infected cells at various time points after the initiation of matrix-detached growth (Figure 8).
+# ::file pmid_1859_7688_199.txt
+# ::date 2015-07-10T04:43:14
+# ::id pmid_1859_7688.199
+(i / increase-01
+   :ARG0 (c / cell
+            :ARG3-of (e2 / express-03
+                         :ARG2 (n6 / nucleic-acid
+                                   :name (n5 / name
+                                             :op1 "shRNA")
+                                   :ARG0-of (e4 / encode-01
+                                                :ARG1 (p / protein
+                                                         :name (n2 / name
+                                                                   :op1 "TDAG51")))))
+            :mod (e3 / enzyme
+                     :name (n3 / name
+                               :op1 "Ras")
+                     :ARG2-of (m / mutate-01
+                                 :value "V12S35")))
+   :ARG1 (r / release-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "LDH")))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "8"))
+   :ARG1-of (r2 / relative-05
+                :ARG3 (c2 / cell
+                          :ARG1-of (i2 / infect-01
+                                       :ARG2 (v2 / vector
+                                                 :name (n4 / name
+                                                           :op1 "LVTHM")
+                                                 :ARG3-of (p2 / phosphorylate-01)))))
+   :time (p3 / point
+             :mod (t / time)
+             :ARG1-of (v / vary-01))
+   :time (a / after
+            :op1 (i3 / initiate-01
+                     :ARG1 (g / grow-01
+                              :ARG1-of (d2 / detach-01
+                                           :ARG2 (m3 / matrix))))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The difference in LDH release for TDAG51 shRNA-expressing RasV12 cells was minimal and rarely approached statistical significance.
+# ::file pmid_1859_7688_200.txt
+# ::date 2015-07-10T07:22:49
+# ::id pmid_1859_7688.200
+(a / and
+   :op1 (m / minimal-02
+           :ARG1 (d / differ-02
+                    :ARG1 (r2 / release-01
+                              :ARG0 (c / cell
+                                       :ARG3-of (e2 / express-03
+                                                    :ARG2 (n5 / nucleic-acid
+                                                              :name (n3 / name
+                                                                        :op1 "shRNA")
+                                                              :ARG0-of (e4 / encode-01
+                                                                           :ARG1 (p / protein
+                                                                                    :name (n2 / name
+                                                                                              :op1 "TDAG51")))))
+                                       :mod (e3 / enzyme
+                                                :name (n4 / name
+                                                          :op1 "Ras")
+                                                :ARG2-of (m2 / mutate-01
+                                                             :value "V12")))
+                              :ARG1 (e / enzyme
+                                       :name (n / name
+                                                :op1 "LDH")))))
+   :op2 (a2 / approach-01
+            :ARG1 d
+            :ARG2 (s / significant-02
+                     :ARG1 d
+                     :mod (s2 / statistics))
+            :ARG1-of (r / rare-02)))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Sub-G1 peaks indicative of dead cells were sometimes seen with cell cycle analysis at late time points, but varied from experiment to experiment.
+# ::file pmid_1859_7688_201.txt
+# ::date 2015-07-10T05:34:16
+# ::id pmid_1859_7688.201
+(s / see-01
+      :ARG1 (p / peak
+            :ARG0-of (i / indicate-01
+                  :ARG1 (c / cell
+                        :ARG1-of (d / die-01)))
+            :mod (s4 / sub
+                  :op1 (p2 / phase
+                        :mod "1"
+                        :mod (g / grow-01))))
+      :frequency (s2 / sometimes)
+      :instrument (a / analyze-01
+            :ARG1 (c2 / cycle-02
+                  :ARG1 (c3 / cell)))
+      :time (p3 / point
+            :mod (t / time
+                  :time (l / late)))
+      :ARG1-of (c4 / contrast-01
+            :ARG2 (v / vary-01
+                  :ARG1 p
+                  :ARG3 (e / experiment-01)
+                  :ARG4 e)))
+
+# ::save-date Mon Jul 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, for RasV12S35-infected cells, the differences in cell growth after TDAG51 reduction under anchorage-independent conditions resulted from an enhanced rate of cellular proliferation that exceeded a concomitant increase in cell death.
+# ::file pmid_1859_7688_202.txt
+# ::date 2015-07-10T05:25:14
+# ::id pmid_1859_7688.202
+(c7 / cause-01
+    :ARG1 (r / result-01
+             :ARG1 (r2 / rate
+                       :ARG1-of (e / enhance-01)
+                       :ARG0-of (e2 / exceed-01
+                                    :ARG1 (i / increase-01
+                                             :ARG1 (d / die-01
+                                                      :ARG1 (c3 / cell))
+                                             :time (c2 / concomitant)))
+                       :degree-of (p / proliferate-01
+                                     :ARG0 (c / cell)))
+             :ARG2 (d2 / differ-02
+                       :ARG1 (c6 / cell)
+                       :ARG3 (g / grow-01
+                                :ARG1 (c4 / cell
+                                          :ARG1-of (i2 / infect-01
+                                                       :ARG2 (e3 / enzyme
+                                                                 :name (n2 / name
+                                                                           :op1 "Ras")
+                                                                 :ARG2-of (m / mutate-01
+                                                                             :value "V12S35"))))
+                                :time (a / after
+                                         :op1 (r3 / reduce-01
+                                                  :ARG1 (p2 / protein
+                                                            :name (n / name
+                                                                     :op1 "TDAG51"))
+                                                  :condition (d3 / depend-01
+                                                                 :polarity "-"
+                                                                 :ARG1 (a2 / anchorage))))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Reducing TDAG51 protein levels in ERK-driven cellular transformation enhanced cell growth under anchorage-independent, but not attached, conditions.
+# ::file pmid_1859_7688_204.txt
+# ::date 2015-07-10T04:46:15
+# ::id pmid_1859_7688.204
+(e / enhance-01
+   :ARG0 (r / reduce-01
+            :ARG1 (l / level
+                     :quant-of (p / protein
+                                  :name (n / name
+                                           :op1 "TDAG51")))
+            :time (t / transform-01
+                     :ARG1 (c / cell)
+                     :ARG1-of (d / drive-02
+                                 :ARG0 (e2 / enzyme
+                                           :name (n2 / name
+                                                     :op1 "ERK")))))
+   :ARG1 (g / grow-01
+            :ARG1 c)
+   :condition (d2 / depend-01
+                  :polarity "-"
+                  :ARG1 (a / anchorage)
+                  :ARG1-of (c2 / contrast-01
+                               :ARG2 (a2 / attach-01
+                                         :polarity "-"))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test whether TDAG51 might affect proximal ERK signaling, we examined the activation status of Erk in cells expressing TDAG51-specific shRNA.
+# ::file pmid_1859_7688_205.txt
+# ::date 2015-07-10T04:49:46
+# ::id pmid_1859_7688.205
+(e / examine-01
+   :ARG0 (w / we)
+   :ARG1 (s / status
+            :mod (a / activate-01
+                    :ARG1 (e2 / enzyme
+                              :name (n / name
+                                       :op1 "Erk"))
+                    :location (c / cell
+                                 :ARG3-of (e3 / express-03
+                                              :ARG1 (n4 / nucleic-acid
+                                                        :name (n2 / name
+                                                                  :op1 "shRNA")
+                                                        :ARG1-of (s2 / specific-02
+                                                                     :ARG2 (p / protein
+                                                                              :name (n3 / name
+                                                                                        :op1 "TDAG51"))))))))
+   :purpose (t / test-01
+               :ARG0 w
+               :ARG1 (p2 / possible-01
+                         :mode "interrogative"
+                         :ARG1 (a2 / affect-01
+                                   :ARG0 p
+                                   :ARG1 (s3 / signal-07
+                                             :ARG1 e2
+                                             :mod (p3 / proximal))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, the levels of phosphorylated Erk were enhanced when TDAG51 protein levels were reduced in RasV12S35 and RasV12 cells grown under anchorage-independent, but not attached, conditions (Figure 9).
+# ::file pmid_1859_7688_206.txt
+# ::date 2015-07-10T05:12:06
+# ::id pmid_1859_7688.206
+(e / enhance-01
+   :ARG1 (l / level
+            :quant-of (e2 / enzyme
+                          :name (n / name
+                                   :op1 "Erk")
+                          :ARG3-of (p / phosphorylate-01)))
+   :time (r / reduce-01
+            :ARG1 (l2 / level
+                      :quant-of (p2 / protein
+                                    :name (n2 / name
+                                              :op1 "TDAG51")))
+            :location (a / and
+                         :op1 (c4 / cell
+                                  :mod (e3 / enzyme
+                                           :name (n3 / name
+                                                     :op1 "Ras")
+                                           :ARG2-of (m2 / mutate-01
+                                                        :value "V12S35")))
+                         :op2 (c5 / cell
+                                  :mod (e4 / enzyme
+                                           :name n3
+                                           :ARG2-of (m / mutate-01
+                                                       :value "V12")))
+                         :ARG1-of (g / grow-01
+                                     :condition (d / depend-01
+                                                   :polarity "-"
+                                                   :ARG1 (a2 / anchorage)
+                                                   :ARG1-of (c / contrast-01
+                                                               :ARG2 (a3 / attach-01
+                                                                         :polarity "-"))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "9"))
+   :ARG0-of (i / interest-01))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The fact that the activation status of Erk was unchanged in cells grown under attached conditions suggests that reducing TDAG51 expression had no selective effect with regard to ERK activation in these cells.
+# ::file pmid_1859_7688_207.txt
+# ::date 2015-07-10T08:10:38
+# ::id pmid_1859_7688.207
+(s / suggest-01
+   :ARG0 (c2 / change-01
+             :polarity "-"
+             :ARG1 (s3 / status
+                       :mod (a3 / activate-01
+                                :ARG1 (e2 / enzyme
+                                          :name (n3 / name
+                                                    :op1 "Erk"))))
+             :location (c3 / cell
+                           :ARG1-of (g / grow-01)
+                           :condition (a4 / attach-01)))
+   :ARG1 (a / affect-01
+            :polarity "-"
+            :ARG0 (r / reduce-01
+                     :ARG1 (e / express-03
+                              :ARG2 (p / protein
+                                       :name (n / name
+                                                :op1 "TDAG51"))))
+            :manner (s2 / selective)
+            :topic (a2 / activate-01
+                       :ARG1 (e3 / enzyme
+                                 :name (n2 / name
+                                           :op1 "ERK")
+                                 :location c3))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Rather, the enhanced activation of Erk was specific to anchorage-independent growth conditions.
+# ::file pmid_1859_7688_208.txt
+# ::date 2015-07-10T05:51:12
+# ::id pmid_1859_7688.208
+(i / instead-of-91
+   :ARG1 (s / specific-02
+            :ARG1 (a / activate-01
+                     :ARG1 (e2 / enzyme
+                               :name (n / name
+                                        :op1 "Erk"))
+                     :ARG1-of (e / enhance-01))
+            :ARG2 (c / condition
+                     :mod (g / grow-01)
+                     :ARG0-of (d / depend-01
+                                 :polarity "-"
+                                 :ARG1 (a2 / anchorage)))))

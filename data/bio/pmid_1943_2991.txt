@@ -1,0 +1,2710 @@
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We have used the 2-stage dimethylbenzanthracene (DMBA)/12-<i>O</i>-tetradecanoylphorbol-13-acetate (TPA) mouse skin carcinogenesis model to investigate the chemopreventive effects of ATRA.
+# ::file pmid_1943_2991_7.txt
+# ::date 2015-08-16T01:22:05
+# ::id pmid_1943_2991.7
+(u / use-01
+   :ARG0 (w / we)
+   :ARG1 (m / model
+            :mod (c / carcinogenesis
+                    :mod (s / skin
+                            :poss (m2 / mouse)))
+            :mod (s2 / slash
+                     :op1 (s4 / small-molecule
+                              :name (n / name
+                                       :op1 "dimethylbenzanthracene")
+                              :mod (s3 / stage
+                                       :quant "2"))
+                     :op2 (s5 / small-molecule
+                              :name (n2 / name
+                                        :op1 "12-O-tetradecanoylphorbol-13-acetate"))))
+   :ARG2 (i / investigate-01
+            :ARG0 w
+            :ARG1 (a / affect-01
+                     :ARG0 (s6 / small-molecule
+                               :name (n4 / name
+                                         :op1 "ATRA"))
+                     :ARG2 (p / prevent-01
+                              :ARG1 (d / disease
+                                       :wiki "Breast_cancer"
+                                       :name (n3 / name
+                                                 :op1 "breast"
+                                                 :op2 "cancer"))
+                              :mod (c2 / chemistry)))))
+
+# ::save-date Thu Nov 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We have compared the gene expression profiles of control skin to skin subjected to the 2-stage protocol, with or without ATRA, using Affymetrix 430 2.0 DNA microarrays.
+# ::file pmid_1943_2991_8.txt
+# ::date 2015-08-16T01:33:39
+# ::id pmid_1943_2991.8
+(c / compare-01
+   :ARG0 (w / we)
+   :ARG1 (p / profile-01
+            :ARG1 (s / skin
+                     :ARG0-of (c2 / control-01))
+            :topic (e / express-03
+                      :ARG2 (g / gene)))
+   :ARG2 (p2 / profile-01
+             :ARG1 (s2 / skin
+                       :ARG1-of (s3 / subject-01
+                                    :ARG2 (o / or
+                                             :op1 (p3 / protocol
+                                                      :mod (s4 / stage
+                                                               :quant "2")
+                                                      :accompanier (s5 / small-molecule
+                                                                       :name (n / name
+                                                                                :op1 "ATRA")))
+                                             :op2 p3)))
+             :topic e)
+   :instrument (m / microarray
+                  :mod "430"
+                  :mod "2.0"
+                  :mod (n2 / nucleic-acid
+                           :wiki "DNA"
+                           :name (n4 / name
+                                     :op1 "DNA"))
+                  :mod (c3 / company
+                           :name (n3 / name
+                                     :op1 "Affymetrix"))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Approximately 49% of the genes showing altered expression with TPA treatment are conversely affected when ATRA is co-administered.
+# ::file pmid_1943_2991_9.txt
+# ::date 2015-08-16T01:54:47
+# ::id pmid_1943_2991.9
+(a3 / affect-01
+    :ARG1 (g / gene
+             :quant (p2 / percentage-entity
+                        :value "49"
+                        :ARG1-of (i / include-91
+                                    :ARG2 (g2 / gene
+                                              :ARG0-of (s / show-01
+                                                          :ARG1 (e / express-03
+                                                                   :ARG1-of (a2 / alter-01))
+                                                          :condition (t / treat-04
+                                                                        :ARG2 (s3 / small-molecule
+                                                                                  :name (n / name
+                                                                                           :op1 "TPA")))))
+                                    :ARG3 (a / approximate-01))))
+    :manner (c / converse)
+    :condition (a4 / administer-01
+                   :ARG1 (a5 / and
+                             :op1 s3
+                             :op2 (s2 / small-molecule
+                                      :name (n2 / name
+                                                :op1 "ATRA")))))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The activity of these genes, which we refer to as 'counter-regulated', may contribute to chemoprevention by ATRA.
+# ::file pmid_1943_2991_10.txt
+# ::date 2015-08-16T02:02:18
+# ::id pmid_1943_2991.10
+(p / possible-01
+   :ARG1 (c / contribute-01
+            :ARG1 (a / activity-06
+                     :ARG0 (g / gene
+                              :mod (t / this))
+                     :ARG1-of (r / refer-01
+                                 :ARG0 (w / we)
+                                 :ARG2 (r2 / regulate-01
+                                           :ARG1 a
+                                           :ARG1-of (c2 / counter-01))))
+            :ARG2 (p2 / prevent-01
+                      :ARG1 (d / disease
+                               :wiki "Breast_cancer"
+                               :name (n / name
+                                        :op1 "breast"
+                                        :op2 "cancer"))
+                      :ARG3 (s / small-molecule
+                               :name (n2 / name
+                                         :op1 "ATRA"))
+                      :mod (c3 / chemistry))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The counter-regulated genes have been clustered into functional categories and bioinformatic analysis has identified the B-Raf/Mek/Erk branch of the MAP kinase pathway as one containing several genes whose upregulation by TPA is blocked by ATRA.
+# ::file pmid_1943_2991_11.txt
+# ::date 2015-08-16T02:08:09
+# ::id pmid_1943_2991.11
+(a / and
+   :op1 (c / cluster-01
+           :ARG1 (g / gene
+                    :ARG1-of (r / regulate-01
+                                :ARG1-of (c2 / counter-01)))
+           :ARG2 (c3 / category
+                     :ARG0-of (f / function-01)))
+   :op2 (i / identify-01
+           :ARG0 (a2 / analyze-01
+                     :mod (b / bioinformatic))
+           :ARG1 (b2 / branch
+                     :mod (s / slash
+                             :op1 (e / enzyme
+                                     :name (n / name
+                                              :op1 "B-Raf"))
+                             :op2 (e2 / enzyme
+                                      :name (n2 / name
+                                                :op1 "Mek"))
+                             :op3 (e3 / enzyme
+                                      :name (n3 / name
+                                                :op1 "Erk")))
+                     :part-of (p / pathway
+                                 :name (n4 / name
+                                           :op1 "MAP"
+                                           :op2 "kinase")))
+           :ARG2 (c4 / contain-01
+                     :ARG0 b2
+                     :ARG1 (g2 / gene
+                               :quant (s2 / several)
+                               :ARG1-of (u / upregulate-01
+                                           :ARG2 (s3 / small-molecule
+                                                     :name (n5 / name
+                                                               :op1 "TPA"))
+                                           :ARG1-of (b3 / block-01
+                                                        :ARG0 (s4 / small-molecule
+                                                                  :name (n6 / name
+                                                                            :op1 "ATRA"))))))))
+
+# ::save-date Sun Dec 13, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We also show that ATRA blocks signaling through this pathway, as revealed by immunohistochemistry and Western blotting.
+# ::file pmid_1943_2991_12.txt
+# ::date 2015-08-16T03:18:18
+# ::id pmid_1943_2991.12
+(s / show-01
+   :ARG0 (w2 / we)
+   :ARG1 (b / block-01
+            :ARG0 (s3 / small-molecule
+                      :name (n2 / name
+                                :op1 "ATRA"))
+            :ARG1 (s2 / signal-07
+                      :ARG0 (p / pathway
+                               :mod (t / this))))
+   :ARG1-of (r / reveal-01
+               :ARG0 (a2 / and
+                         :op1 (i / immunohistochemistry)
+                         :op2 (i2 / immunoblot-01)))
+   :mod (a / also))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Finally, we found that blocking the B-Raf/Mek/Erk pathway with a pharmacological inhibitor, Sorafenib (BAY43-9006), induces squamous differentiation of existing skin SCCs formed in the 2-stage model.
+# ::file pmid_1943_2991_13.txt
+# ::date 2015-08-17T05:52:16
+# ::id pmid_1943_2991.13
+(f4 / find-01
+    :ARG0 (w / we)
+    :ARG1 (i2 / induce-01
+              :ARG0 (b / block-01
+                       :ARG1 (p / pathway
+                                :name (n / name
+                                         :op1 "B-Raf/Mek/Erk"))
+                       :ARG3 (s5 / small-molecule
+                                 :name (n2 / name
+                                           :op1 "Sorafenib")
+                                 :ARG0-of (i / inhibit-01)
+                                 :mod (p2 / pharmacology)
+                                 :ARG1-of (n4 / name-01
+                                              :ARG2 (n6 / name
+                                                        :op1 "BAY43-9006"))))
+              :ARG2 (d / differentiate-01
+                       :ARG1 (m2 / medical-condition
+                                 :name (n3 / name
+                                           :op1 "carcinoma")
+                                 :mod (c / cell)
+                                 :mod (s2 / squamous)
+                                 :mod (s3 / skin)
+                                 :ARG1-of (f3 / form-01
+                                              :location (m / model
+                                                           :ARG0-of (h / have-03
+                                                                       :ARG1 (s4 / stage
+                                                                                 :quant "2")))))
+                       :mod (s / squamous)))
+    :time (f5 / final))
+
+# ::save-date Sat Aug 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Our group and others have shown that ATRA can suppress tumor promotion by TPA in the 2-stage model, but only as long as it is being co-administered with TPA [<xref ref-type="bibr" rid="B9">9</xref>,<xref ref-type="bibr" rid="B20">20</xref>].
+# ::file pmid_1943_2991_51.txt
+# ::date 2015-08-17T06:33:06
+# ::id pmid_1943_2991.51
+(s / show-01
+   :ARG0 (a2 / and
+             :op1 (g / group
+                     :poss (w / we))
+             :op2 (o / other))
+   :ARG1 (p / possible-01
+            :ARG1 (s2 / suppress-01
+                      :ARG0 (s4 / small-molecule
+                                :name (n / name
+                                         :op1 "ATRA"))
+                      :ARG1 (p2 / promote-01
+                                :ARG0 (s5 / small-molecule
+                                          :name (n2 / name
+                                                    :op1 "TPA"))
+                                :ARG1 (t / tumor))
+                      :location (m / model
+                                   :ARG0-of (h / have-03
+                                               :ARG1 (s3 / stage
+                                                         :quant "2")))
+                      :condition (a / as-long-as
+                                    :op1 (a4 / administer-01
+                                             :ARG1 (a5 / and
+                                                       :op1 s4
+                                                       :op2 s5)
+                                             :mod (o2 / only)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p4 / publication
+                         :ARG1-of (c / cite-01
+                                     :ARG2 (a6 / and
+                                               :op1 "9"
+                                               :op2 "20")))))
+
+# ::save-date Sat Aug 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt If ATRA treatment is discontinued while TPA treatment is maintained, the mice showed a linear increase in tumor multiplicity with time after stopping the last treatment [<xref ref-type="bibr" rid="B20">20</xref>].
+# ::file pmid_1943_2991_52.txt
+# ::date 2015-08-17T06:42:55
+# ::id pmid_1943_2991.52
+(s / show-01
+   :ARG0 (m / mouse)
+   :ARG1 (i / increase-01
+            :ARG1 (m2 / multiply-01
+                      :ARG1 (t / tumor))
+            :mod (l / linear)
+            :ARG0-of (h / have-03
+                        :ARG1 (t2 / time
+                                  :time (a / after
+                                           :op1 (s2 / stop-01
+                                                    :ARG1 (t3 / treat-04
+                                                              :mod (l2 / last)))))))
+   :condition (a2 / and
+                  :op1 (d / discontinue-01
+                          :ARG1 (t4 / treat-04
+                                    :ARG2 (s3 / small-molecule
+                                              :name (n / name
+                                                       :op1 "ATRA"))))
+                  :op2 (m3 / maintain-01
+                           :ARG1 (t5 / treat-04
+                                     :ARG2 (s4 / small-molecule
+                                               :name (n2 / name
+                                                         :op1 "TPA")))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p2 / publication
+                          :ARG1-of (c / cite-01
+                                      :ARG2 "20"))))
+
+# ::save-date Sat Aug 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This suggests that ATRA may be primarily acting to suppress promotion by TPA, but has little apparent effect on initiation.
+# ::file pmid_1943_2991_53.txt
+# ::date 2015-08-17T06:50:45
+# ::id pmid_1943_2991.53
+(c / contrast-01
+   :ARG1 (s / suggest-01
+            :ARG0 (t / this)
+            :ARG1 (p / possible-01
+                     :ARG1 (a / act-01
+                              :ARG0 (s3 / small-molecule
+                                        :name (n / name
+                                                 :op1 "ATRA"))
+                              :purpose (s2 / suppress-01
+                                           :ARG0 s3
+                                           :ARG1 (p2 / promote-01
+                                                     :ARG0 (s4 / small-molecule
+                                                               :name (n2 / name
+                                                                         :op1 "TPA"))))
+                              :mod (p4 / primary))))
+   :ARG2 (a3 / affect-01
+             :ARG0 s3
+             :ARG1 (i / initiate-01
+                      :ARG1 p2)
+             :degree (l / little)
+             :ARG1-of (a4 / appear-01)))
+
+# ::save-date Wed Mar 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to explore the mechanism of the chemopreventive effect of ATRA at an early step during TPA-induced tumor promotion, we performed Affymetrix DNA microarray analyses for mouse skin subjected to the 2-stage protocol for 3 weeks, with and without co-administration of ATRA.
+# ::file pmid_1943_2991_54.txt
+# ::date 2015-08-17T06:57:15
+# ::id pmid_1943_2991.54
+(p / perform-01
+   :ARG0 (w2 / we)
+   :ARG1 (o / or
+            :op1 (a2 / and
+                     :op1 (a / analyze-01
+                             :ARG1 (s / skin
+                                      :mod (m / mouse)
+                                      :ARG1-of (s2 / subject-01
+                                                   :ARG2 (p2 / protocol
+                                                             :ARG0-of (h / have-03
+                                                                         :ARG1 (s3 / stage
+                                                                                   :quant "2")))
+                                                   :duration (t2 / temporal-quantity
+                                                                 :quant "3"
+                                                                 :unit (w3 / week))))
+                             :mod (m3 / microarray
+                                      :mod (n / nucleic-acid
+                                              :wiki "DNA"
+                                              :name (n6 / name
+                                                        :op1 "DNA"))
+                                      :source (c / company
+                                                 :name (n2 / name
+                                                           :op1 "Affymetrix"))))
+                     :op2 (a3 / administer-01
+                              :ARG1 (s5 / small-molecule
+                                        :name (n3 / name
+                                                  :op1 "ATRA"))))
+            :op2 (a5 / and
+                     :op1 a
+                     :op2 (a6 / administer-01
+                              :polarity "-"
+                              :ARG1 s5)))
+   :purpose (e / explore-01
+               :ARG0 w2
+               :ARG1 (m2 / mechanism
+                         :poss (a7 / affect-01
+                                   :ARG0 s5
+                                   :ARG2 (p3 / prevent-01
+                                             :ARG1 (d / disease
+                                                      :wiki "Breast_cancer"
+                                                      :name (n7 / name
+                                                                :op1 "breast"
+                                                                :op2 "cancer"))
+                                             :mod (c2 / chemistry))
+                                   :time (s4 / step
+                                             :mod (e2 / early)
+                                             :subevent-of (p4 / promote-01
+                                                              :ARG1 (t / tumor)
+                                                              :ARG2-of (i / induce-01
+                                                                          :ARG0 (s6 / small-molecule
+                                                                                    :name (n5 / name
+                                                                                              :op1 "TPA")))))))))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We chose the 3 week time point because this precedes the appearance of tumors but is after the TPA treated skin exhibits pronounced hyperplasia (Fig. <xref ref-type="fig" rid="F1">1</xref>); and this time point proved to be advantageous for identifying genes regulated by TPA plus retinoid combinations in mouse skin in a previous study from our laboratory [<xref ref-type="bibr" rid="B20">20</xref>].
+# ::file pmid_1943_2991_55.txt
+# ::date 2015-08-18T01:39:53
+# ::id pmid_1943_2991.55
+(a3 / and
+    :op1 (c / choose-01
+            :ARG0 (w2 / we)
+            :ARG1 (p / point
+                     :mod (t2 / time
+                              :ARG1-of (e / equal-01
+                                          :ARG2 (t3 / temporal-quantity
+                                                    :quant "3"
+                                                    :unit (w3 / week)))))
+            :ARG1-of (c2 / cause-01
+                         :ARG0 (c3 / contrast-01
+                                   :ARG1 (p2 / precede-01
+                                             :ARG1 p
+                                             :ARG2 (a / appear-01
+                                                      :ARG1 (t4 / tumor)))
+                                   :ARG2 (a2 / after
+                                             :op1 (e2 / exhibit-01
+                                                      :ARG0 (s / skin
+                                                               :ARG1-of (t5 / treat-04
+                                                                            :ARG2 (s5 / small-molecule
+                                                                                      :name (n / name
+                                                                                               :op1 "TPA"))))
+                                                      :ARG1 (m / medical-condition
+                                                               :name (n2 / name
+                                                                         :op1 "hyperplasia")
+                                                               :ARG1-of (p4 / pronounced-02)))
+                                             :domain p)))
+            :ARG1-of (d2 / describe-01
+                         :ARG0 (f / figure
+                                  :mod "1")))
+    :op2 (p5 / prove-01
+             :ARG0 p
+             :ARG1 (a4 / advantageous
+                       :purpose (i / identify-01
+                                   :ARG1 (g / gene
+                                            :ARG1-of (r / regulate-01
+                                                        :ARG0 (a5 / and
+                                                                  :op1 s5
+                                                                  :op2 (c4 / combine-01
+                                                                           :ARG1 (s4 / small-molecule
+                                                                                     :name (n3 / name
+                                                                                               :op1 "retinoid"))
+                                                                           :time (s2 / study-01
+                                                                                     :mod (p6 / previous)
+                                                                                     :location (l / laboratory
+                                                                                                  :poss (w4 / we)))
+                                                                           :location (s3 / skin
+                                                                                         :mod (m2 / mouse))))))))
+             :ARG1-of (d3 / describe-01
+                          :ARG0 (p7 / publication
+                                    :ARG1-of (c5 / cite-01
+                                                 :ARG2 "20")))))
+
+# ::save-date Sat Aug 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We reason that at least a portion of important TPA-induced promotion events will have taken place by this time.
+# ::file pmid_1943_2991_56.txt
+# ::date 2015-08-18T02:01:17
+# ::id pmid_1943_2991.56
+(r / reason-01
+   :ARG0 (w / we)
+   :ARG1 (p3 / portion
+             :mod (a / at-least)
+             :part-of (e / event
+                         :ARG0-of (p / promote-01)
+                         :ARG1-of (i / induce-01
+                                     :ARG0 (s / small-molecule
+                                              :name (n / name
+                                                       :op1 "TPA")))
+                         :mod (i3 / important))
+             :time (u / up-to
+                      :op1 (t / time
+                              :mod (t2 / this)))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of the ~45,000 probe sets (representing ~39,000 transcripts and variants from over 34,000 characterized mouse genes) on the 430 2.0 GeneChip, expression of 3,948 were altered by TPA, upwards or downwards, relative to untreated controls (fold changes between treatment groups ≥ 1.5, with p ≤ 0.05).
+# ::file pmid_1943_2991_57.txt
+# ::date 2015-08-18T02:10:26
+# ::id pmid_1943_2991.57
+(m2 / multi-sentence
+    :snt1 (a / alter-01
+             :ARG0 (s3 / small-molecule
+                       :name (n2 / name
+                                 :op1 "TPA"))
+             :ARG1 (e / express-03
+                      :ARG2 (s / set
+                               :quant "3948"
+                               :mod (p / probe)
+                               :ARG1-of (i / include-91
+                                           :ARG2 (s2 / set
+                                                     :mod (p2 / probe)
+                                                     :quant (a2 / approximately
+                                                                :op1 "45000")
+                                                     :ARG0-of (r / represent-01
+                                                                 :ARG1 (a3 / and
+                                                                           :op1 (t / transcribe-01
+                                                                                   :ARG1 (g / gene
+                                                                                            :mod (m / mouse)
+                                                                                            :ARG1-of (c / characterize-01)
+                                                                                            :quant (o / over
+                                                                                                      :op1 "34000")))
+                                                                           :op2 (v / vary-01
+                                                                                   :ARG1 g)
+                                                                           :quant (a4 / approximately
+                                                                                      :op1 "39000")))
+                                                     :location (t2 / thing
+                                                                   :mod "2.0"
+                                                                   :mod "430"
+                                                                   :name (n / name
+                                                                            :op1 "GeneChip"))))))
+             :direction (o2 / or
+                            :op1 (u / upward)
+                            :op2 (d / downward))
+             :ARG1-of (r2 / relate-01
+                          :ARG2 (c2 / control-01
+                                    :ARG1-of (t3 / treat-04
+                                                 :polarity "-"))))
+    :snt2 (c3 / change-01
+              :mod (f / fold)
+              :location (b2 / between
+                            :op1 (g2 / group
+                                     :mod (t4 / treat-04)))
+              :ARG1-of (e2 / equal-01
+                           :ARG2 (o3 / over
+                                     :op1 "1.5"))
+              :ARG1-of (s4 / statistical-test-91
+                           :ARG2 (o4 / or
+                                     :op1 "0.05"
+                                     :op2 (l / less-than
+                                             :op1 "0.05")))))
+
+
+# ::save-date Sat Aug 22, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This group of genes was divided into clusters as described in Materials and Methods.
+# ::file pmid_1943_2991_58.txt
+# ::date 2015-08-18T03:52:24
+# ::id pmid_1943_2991.58
+(d / divide-02
+      :ARG1 (g / group
+            :consist-of (g2 / gene)
+            :mod (t / this))
+      :ARG2 (c / cluster)
+      :ARG1-of (d2 / describe-01
+            :medium (a / and
+                  :op1 (m / material)
+                  :op2 (m2 / method))))
+
+
+# ::save-date Tue Aug 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The heatmap in figure <xref ref-type="fig" rid="F2">2</xref> represents the genes that fall into each subcluster, with expression patterns produced by normalized raw scores for the subcluster indicated in the panels on the right.
+# ::file pmid_1943_2991_59.txt
+# ::date 2015-08-18T03:56:18
+# ::id pmid_1943_2991.59
+(r / represent-01
+      :ARG0 (h / heatmap
+            :location (f / figure :mod "2"))
+      :ARG1 (g / gene
+            :ARG1-of (f2 / fall-01
+                  :ARG4 (s / subcluster
+                        :mod (e / each)))
+            :ARG0-of (h2 / have-03
+                  :ARG1 (p / pattern
+                        :topic (e2 / express-03)
+                        :ARG1-of (p2 / produce-01
+                              :ARG0 (s2 / score
+                                    :mod (r2 / raw)
+                                    :ARG1-of (n / normalize-01))
+                              :ARG3 (s3 / subcluster
+                                    :ARG1-of (i / indicate-01
+                                          :location (p3 / panel
+                                                :ARG1-of (r3 / right-04)))))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Amongst the 3,948 total TPA regulated genes, 49.5% were found to be in the C1A and C2A subclusters.
+# ::file pmid_1943_2991_60.txt
+# ::date 2015-08-18T04:04:42
+# ::id pmid_1943_2991.60
+(f / find-01
+   :ARG1 (g / gene
+            :ARG1-of (i / include-91
+                        :ARG2 (g2 / gene
+                                  :quant "3948"
+                                  :mod (t / total)
+                                  :ARG1-of (r / regulate-01
+                                              :ARG0 (s3 / small-molecule
+                                                        :name (n / name
+                                                                 :op1 "TPA"))))
+                        :ARG3 (p / percentage-entity
+                                 :value "49.5")))
+   :location (a / and
+                :op1 (s / subcluster
+                        :part-of (g3 / gene
+                                     :name (n2 / name
+                                               :op1 "C1A")))
+                :op2 (s2 / subcluster
+                         :part-of (g4 / gene
+                                      :name (n3 / name
+                                                :op1 "C2A")))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We are calling these genes 'counter-regulated' because their direction of expression (increase or decrease) in TPA + ATRA treated skin compared to TPA treated skin is opposite to that of TPA treated skin compared to control skin.
+# ::file pmid_1943_2991_61.txt
+# ::date 2015-08-18T04:09:27
+# ::id pmid_1943_2991.61
+(c / call-01
+   :ARG0 (w / we)
+   :ARG1 (g / gene
+            :mod (t / this))
+   :ARG2 (g2 / gene
+             :ARG1-of (r / regulate-01
+                         :ARG1-of (c2 / counter-01)))
+   :ARG1-of (c3 / cause-01
+                :ARG0 (o / opposite-01
+                         :ARG1 (d / direct-01
+                                  :ARG1 (e / express-03
+                                           :ARG2 g
+                                           :ARG3 (s / skin
+                                                    :ARG1-of (t2 / treat-04
+                                                                 :ARG2 (a / and
+                                                                          :op1 (s5 / small-molecule
+                                                                                   :name (n / name
+                                                                                            :op1 "TPA"))
+                                                                          :op2 (s6 / small-molecule
+                                                                                   :name (n2 / name
+                                                                                             :op1 "ATRA"))))
+                                                    :compared-to (s2 / skin
+                                                                     :ARG1-of (t3 / treat-04
+                                                                                  :ARG2 s5))))
+                                  :ARG1-of (m / mean-01
+                                              :ARG2 (o2 / or
+                                                        :op1 (i / increase-01)
+                                                        :op2 (d2 / decrease-01))))
+                         :ARG2 (s3 / skin
+                                   :ARG1-of (t4 / treat-04
+                                                :ARG2 s5)
+                                   :compared-to (s4 / skin
+                                                    :ARG0-of (c4 / control-01))))))
+
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This data can also be represented graphically as scatterplots (Fig. S1, additional file <xref ref-type="supplementary-material" rid="S1">1</xref>).
+# ::file pmid_1943_2991_62.txt
+# ::date 2015-08-18T04:19:30
+# ::id pmid_1943_2991.62
+(p / possible-01
+      :ARG1 (r / represent-01
+            :ARG1 (d / data
+                  :mod (t / this))
+            :ARG2 (s / scatterplot)
+            :mod (g / graphic)
+            :mod (a3 / also))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (a / and
+                  :op1 (f / figure :mod "S1")
+                  :op2 (f2 / file
+                        :mod "1"
+                        :ARG1-of (a2 / add-02)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We note that when comparing control skin with TPA + ATRA skin, the majority of counter-regulated genes lie close the x = y diagonal, indicating that ATRA can suppress TPA effects on expression of these genes completely or near completely (Fig. S1C, additional file <xref ref-type="supplementary-material" rid="S1">1</xref>, see C1A and C2A subclusters).
+# ::file pmid_1943_2991_63.txt
+# ::date 2015-08-18T04:23:14
+# ::id pmid_1943_2991.63
+(m2 / multi-sentence
+    :snt1 (n / note-01
+             :ARG0 (w / we)
+             :ARG1 (l / lie-07
+                      :ARG1 (g / gene
+                               :quant (m / majority)
+                               :ARG1-of (i / include-91
+                                           :ARG2 (g2 / gene
+                                                     :ARG1-of (r / regulate-01
+                                                                 :ARG1-of (c2 / counter-01)))))
+                      :ARG2 (c / close-10
+                               :ARG1 g
+                               :ARG2 (d / diagonal
+                                        :location-of (e2 / equal-01
+                                                         :ARG1 (s10 / string-entity
+                                                                    :value "x")
+                                                         :ARG2 (s11 / string-entity
+                                                                    :value "y"))))
+                      :time (c3 / compare-01
+                                :ARG0 w
+                                :ARG1 (s / skin
+                                         :ARG0-of (c4 / control-01))
+                                :ARG2 (s2 / skin
+                                          :ARG1-of (t / treat-04
+                                                      :ARG2 (a / and
+                                                               :op1 (s8 / small-molecule
+                                                                        :name (n3 / name
+                                                                                  :op1 "TPA"))
+                                                               :op2 (s9 / small-molecule
+                                                                        :name (n4 / name
+                                                                                  :op1 "ATRA"))))))
+                      :ARG0-of (i2 / indicate-01
+                                   :ARG1 (p / possible-01
+                                            :ARG1 (o / or
+                                                     :op1 (s3 / suppress-01
+                                                              :ARG1 (a3 / affect-01
+                                                                        :ARG0 s8
+                                                                        :ARG1 (e / express-03
+                                                                                 :ARG2 g))
+                                                              :ARG1-of (c6 / complete-02))
+                                                     :op2 (s4 / suppress-01
+                                                              :ARG1 a3
+                                                              :ARG1-of (c7 / complete-02
+                                                                           :degree (n5 / near)))))))
+             :ARG1-of (d2 / describe-01
+                          :ARG0 (a4 / and
+                                    :op1 (f / figure
+                                            :mod "S1C")
+                                    :op2 (f2 / file
+                                             :mod "1"
+                                             :ARG1-of (a5 / add-02)))))
+    :snt2 (s5 / see-01
+              :ARG0 (y / you)
+              :ARG1 (a6 / and
+                        :op1 (s6 / subcluster
+                                 :part-of (g3 / gene
+                                              :name (n2 / name
+                                                        :op1 "C1A")))
+                        :op2 (s7 / subcluster
+                                 :part-of (g4 / gene
+                                              :name (n6 / name
+                                                        :op1 "C2A"))))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A subset of the C1A and C2A genes are listed in Table S1 in additional file <xref ref-type="supplementary-material" rid="S2">2</xref>, sorted according to their known function in cellular signaling pathways, using the GeneSifter program.
+# ::file pmid_1943_2991_64.txt
+# ::date 2015-08-18T04:36:59
+# ::id pmid_1943_2991.64
+(l / list-01
+   :ARG1 (s / subset
+            :consist-of (a / and
+                           :op1 (g / gene
+                                   :name (n / name
+                                            :op1 "C1A"))
+                           :op2 (g2 / gene
+                                    :name (n2 / name
+                                              :op1 "C2A")))
+            :ARG1-of (s2 / sort-01
+                         :ARG2 (f2 / function-01
+                                   :ARG0 a
+                                   :ARG1 (p / pathway
+                                            :ARG0-of (s4 / signal-07
+                                                         :mod (c / cell)))
+                                   :ARG1-of (k / know-01))))
+   :ARG2 (t / table
+            :mod "S1"
+            :location (f / file
+                         :mod "2"))
+   :manner (u / use-01
+              :ARG1 (p2 / program
+                        :name (n5 / name
+                                  :op1 "GeneSifter"))))
+
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The table lists genes in the major signaling pathways in epithelial cells that have the highest Z-scores.
+# ::file pmid_1943_2991_65.txt
+# ::date 2015-08-18T04:46:30
+# ::id pmid_1943_2991.65
+(l / list-01
+      :ARG0 (t / table)
+      :ARG1 (g / gene
+            :location (p / pathway
+                  :ARG0-of (s / signal-07)
+                  :ARG1-of (m2 / major-02)
+                  :location (c / cell
+                        :mod (e / epithelium)
+                        :ARG0-of (h2 / have-03
+                              :ARG1 (s2 / score
+                                    :name (n / name :op1 "Z")
+                                    :ARG1-of (h / high-02
+                                          :degree (m / most))))))))
+
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Z-score is a measure of the significance of over-representation for a particular gene list within an ontology group [<xref ref-type="bibr" rid="B21">21</xref>].
+# ::file pmid_1943_2991_66.txt
+# ::date 2015-08-18T04:58:58
+# ::id pmid_1943_2991.66
+(m / measure-01
+      :ARG1 (s2 / significant-02
+            :ARG1 (r / represent-01
+                  :ARG2 (l / list
+                        :topic (g / gene)
+                        :location (g2 / group
+                              :mod (o2 / ontology))
+                        :mod (p2 / particular))
+                  :degree (o / over)))
+      :ARG2 (s / score
+            :name (n / name :op1 "Z"))
+      :ARG1-of (d / describe-01
+            :ARG0 (p / publication
+                  :ARG1-of (c / cite-01 :ARG2 "21"))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We also identified several counter-regulated genes that were previously determined to be TPA regulated (Table S2, additional file <xref ref-type="supplementary-material" rid="S3">3</xref>).
+# ::file pmid_1943_2991_67.txt
+# ::date 2015-08-18T05:06:22
+# ::id pmid_1943_2991.67
+(i / identify-01
+   :ARG0 (w / we)
+   :ARG1 (g / gene
+            :quant (s / several)
+            :ARG1-of (r / regulate-01
+                        :ARG1-of (c / counter-01))
+            :ARG1-of (d / determine-01
+                        :ARG3 (r2 / regulate-01
+                                  :ARG0 (s2 / small-molecule
+                                            :name (n / name
+                                                     :op1 "TPA"))
+                                  :ARG1 g)
+                        :time (p / previous)))
+   :mod (a / also)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (t / table
+                                  :mod "S2")
+                          :op2 (f / file
+                                  :mod "3"
+                                  :ARG1-of (a3 / add-02)))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This abrogation of TPA effect on gene expression by ATRA is consistent with the findings of numerous investigators who have shown that TPA activates the AP-1 transcription factor complex, and that AP-1 activity is inhibited by ATRA through the retinoid receptors [<xref ref-type="bibr" rid="B10">10</xref>] for review and [<xref ref-type="bibr" rid="B14">14</xref>,<xref ref-type="bibr" rid="B22">22</xref>].
+# ::file pmid_1943_2991_68.txt
+# ::date 2015-08-18T05:10:40
+# ::id pmid_1943_2991.68
+(c / consistent-01
+   :ARG1 (a / abrogate-01
+            :ARG0 (s2 / small-molecule
+                      :name (n3 / name
+                                :op1 "ATRA"))
+            :ARG1 (a2 / affect-01
+                      :ARG0 (s3 / small-molecule
+                                :name (n2 / name
+                                          :op1 "TPA"))
+                      :ARG1 (e / express-03
+                               :ARG2 (g / gene)))
+            :mod (t / this))
+   :ARG2 (f / find-01
+            :ARG0 (p3 / person
+                      :ARG0-of (i / investigate-01)
+                      :quant (n4 / numerous)
+                      :ARG0-of (s / show-01
+                                  :ARG1 (a5 / and
+                                            :op1 (a4 / activate-01
+                                                     :ARG0 s3
+                                                     :ARG1 (c2 / complex
+                                                               :mod (f2 / factor
+                                                                        :ARG0-of (t2 / transcribe-01))
+                                                               :ARG1-of (m / mean-01
+                                                                           :ARG2 (p4 / protein
+                                                                                     :name (n5 / name
+                                                                                               :op1 "AP-1")))))
+                                            :op2 (i2 / inhibit-01
+                                                     :ARG0 s2
+                                                     :ARG1 (a3 / activity-06
+                                                               :ARG0 p4)
+                                                     :instrument (r / receptor
+                                                                    :mod (r2 / retinoid))
+                                                     :ARG1-of (d / describe-01
+                                                                 :ARG0 (p5 / publication
+                                                                           :ARG1-of (c3 / cite-01
+                                                                                        :ARG2 (a7 / and
+                                                                                                  :op1 "10"
+                                                                                                  :op2 "14"
+                                                                                                  :op3 "22"))))))))))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Examination of the above microarray results revealed altered expression of a disproportionate number of genes involved in the MAP kinase signaling pathway, in particular the B-Raf/Mek/Erk pathway (Table S1, additional file <xref ref-type="supplementary-material" rid="S2">2</xref>).
+# ::file pmid_1943_2991_70.txt
+# ::date 2015-08-18T05:26:03
+# ::id pmid_1943_2991.70
+(r / reveal-01
+      :ARG0 (e / examine-01
+            :ARG1 (m / microarray
+                  :ARG1-of (r2 / result-01)
+                  :location (a / above)))
+      :ARG1 (e2 / express-03
+            :ARG2 (n2 / number
+                  :quant-of (g / gene
+                        :ARG1-of (i / involve-01
+                              :ARG2 (a3 / and
+                                    :op1 (p4 / pathway
+                                          :name (n / name :op1 "MAP" :op2 "kinase")
+                                          :ARG0-of (s / signal-07))
+                                    :op2 (p2 / pathway
+                                          :name (n4 / name :op1 "B-Raf/Mek/Erk")
+                                          :mod (p3 / particular)))))
+                  :mod (d / disproportionate))
+            :ARG1-of (a2 / alter-01))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (a4 / and
+                  :op1 (t2 / table :mod "S1")
+                  :op2 (f / file
+                        :mod "2"
+                        :ARG1-of (a5 / add-02)))))
+
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next performed a 2-stage skin carcinogenesis experiment as above, except that in this study the protocol was carried out for 30 weeks.
+# ::file pmid_1943_2991_71.txt
+# ::date 2015-08-18T05:34:00
+# ::id pmid_1943_2991.71
+(c / contrast-01
+      :ARG1 (p / perform-02
+            :ARG0 (w2 / we)
+            :ARG1 (e / experiment-01
+                  :ARG1 (c3 / carginogenesis
+                        :mod (s / skin))
+                  :ARG0-of (h / have-03
+                        :ARG1 (s2 / stage :quant "2"))
+                  :ARG1-of (r / resemble-01
+                        :ARG2 (a / above)))
+            :time (n / next))
+      :ARG2 (c2 / carry-out-03
+            :ARG0 w2
+            :ARG1 (p2 / protocol)
+            :duration (t2 / temporal-quantity
+                  :quant "30"
+                  :unit (w3 / week))
+            :location (s3 / study
+                  :mod (t3 / this))))
+
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Tumor counts were recorded each week and mice were sacrificed at multiple time points (6 hours, 3, 7, 10, and 30 weeks of treatment), for subsequent analysis of B-Raf/Mek/Erk pathway signaling.
+# ::file pmid_1943_2991_72.txt
+# ::date 2015-08-18T05:45:11
+# ::id pmid_1943_2991.72
+(a / and
+      :op1 (r / record-01
+            :ARG1 (c / count-01
+                  :ARG1 (t3 / tumor))
+            :time (w2 / week
+                  :mod (e / each)))
+      :op2 (s / sacrifice-01
+            :ARG1 (m / mouse)
+            :time (p / point
+                  :mod (t4 / time)
+                  :quant (m2 / multiple)
+                  :ARG1-of (m3 / mean-01
+                        :ARG2 (a2 / and
+                              :op1 (a4 / after
+                                    :op1 (t7 / treat-04
+                                          :quant (t / temporal-quantity
+                                                :quant "6"
+                                                :unit (h / hour))))
+                              :op2 (a5 / after
+                                    :op1 (t8 / treat-04
+                                          :quant (t5 / temporal-quantity
+                                                :quant "3"
+                                                :unit (w3 / week))))
+                              :op3 (a6 / after
+                                    :op1 (t9 / treat-04
+                                          :quant (t6 / temporal-quantity
+                                                :quant "7"
+                                                :unit (w4 / week))))
+                              :op4 (a7 / after
+                                    :op1 (t10 / treat-04
+                                          :quant (t11 / temporal-quantity
+                                                :quant "10"
+                                                :unit (w5 / week))))
+                              :op5 (a8 / after
+                                    :op1 (t12 / treat-04
+                                          :quant (t13 / temporal-quantity
+                                                :quant "30"
+                                                :unit (w6 / week)))))))
+            :purpose (a3 / analyze-01
+                  :ARG1 (s2 / signal-07
+                        :ARG0 (p2 / pathway
+                              :name (n / name :op1 "B-Raf/Mek/Erk")))
+                  :time (s3 / subsequent))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The reduced tumor multiplicity and increased tumor latency for mice treated with TPA+ATRA, compared to mice treated with TPA alone, indicated the potent tumor suppressive activity of ATRA, in agreement with previous results (Fig. <xref ref-type="fig" rid="F3">3A</xref>, compare black line with blue line) [<xref ref-type="bibr" rid="B8">8</xref>,<xref ref-type="bibr" rid="B9">9</xref>].
+# ::file pmid_1943_2991_73.txt
+# ::date 2015-08-18T05:54:03
+# ::id pmid_1943_2991.73
+(m4 / multi-sentence
+    :snt1 (i / indicate-01
+             :ARG0 (a / and
+                      :op1 (m / multiply-01
+                              :ARG1 (t / tumor)
+                              :ARG1-of (r / reduce-01))
+                      :op2 (l / latent
+                              :domain t
+                              :ARG1-of (i2 / increase-01))
+                      :location (m2 / mouse
+                                    :ARG1-of (t2 / treat-04
+                                                 :ARG2 (a2 / and
+                                                           :op1 (s2 / small-molecule
+                                                                    :name (n / name
+                                                                             :op1 "TPA"))
+                                                           :op2 (s3 / small-molecule
+                                                                    :name (n2 / name
+                                                                              :op1 "ATRA")))))
+                      :compared-to (m3 / mouse
+                                       :ARG1-of (t3 / treat-04
+                                                    :ARG2 s2
+                                                    :mod (a4 / alone))))
+             :ARG1 (a3 / activity-06
+                       :ARG0 s3
+                       :ARG1 (s / suppress-01
+                                :ARG1 t)
+                       :mod (p2 / potent)
+                       :ARG0-of (a6 / agree-01
+                                    :ARG2 (t5 / thing
+                                              :ARG2-of (r2 / result-01
+                                                           :time (p3 / previous)))))
+             :ARG1-of (d / describe-01
+                         :ARG0 (f / figure
+                                  :mod "3A")))
+    :snt2 (c / compare-01
+             :ARG0 (y / you)
+             :ARG1 (l2 / line
+                       :ARG1-of (b / black-04))
+             :ARG2 (l3 / line
+                       :mod (b2 / blue)))
+    :ARG1-of (d2 / describe-01
+                 :ARG0 (p4 / publication
+                           :ARG1-of (c2 / cite-01
+                                        :ARG2 (a7 / and
+                                                  :op1 "8"
+                                                  :op2 "9")))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However a small number of tumors were observed in the mice treated with TPA+ATRA.
+# ::file pmid_1943_2991_74.txt
+# ::date 2015-08-18T06:11:42
+# ::id pmid_1943_2991.74
+(h / have-concession-91
+   :ARG1 (o / observe-01
+            :ARG1 (n / number
+                     :quant-of (t / tumor)
+                     :mod (s / small))
+            :location (m / mouse
+                         :ARG1-of (t2 / treat-04
+                                      :ARG2 (a / and
+                                               :op1 (s2 / small-molecule
+                                                        :name (n2 / name
+                                                                  :op1 "TPA"))
+                                               :op2 (s3 / small-molecule
+                                                        :name (n3 / name
+                                                                  :op1 "ATRA")))))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, histological examination of these ATRA resistant tumors revealed a less differentiated phenotype than for the tumors that arose in the mice treated with TPA alone (Fig. <xref ref-type="fig" rid="F3">3B</xref>).
+# ::file pmid_1943_2991_75.txt
+# ::date 2015-08-18T06:15:36
+# ::id pmid_1943_2991.75
+(r / reveal-01
+   :ARG0 (e / examine-01
+            :ARG1 (t / tumor
+                     :ARG0-of (r2 / resist-01
+                                  :ARG1 (s / small-molecule
+                                           :name (n / name
+                                                    :op1 "ATRA")
+                                           :mod (t2 / this))))
+            :mod (h / histology))
+   :ARG1 (p / phenotype
+            :ARG1-of (d / differentiate-01
+                        :degree (l / less)
+                        :compared-to (t3 / tumor
+                                         :ARG1-of (a2 / arise-02
+                                                      :location (m / mouse
+                                                                   :ARG1-of (t4 / treat-04
+                                                                                :ARG2 (s2 / small-molecule
+                                                                                          :name (n2 / name
+                                                                                                    :op1 "TPA")
+                                                                                          :mod (a3 / alone))))))))
+   :ARG2-of (i / interest-01)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "3B")))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These tumors closely resembled advanced SCC, while the tumors in the TPA mice were papillary, with a high degree of keratinization as confirmed by a immunohistochemical (IHC) staining for cytokeratin 10 (Fig. <xref ref-type="fig" rid="F3">3B</xref>, lower panels).
+# ::file pmid_1943_2991_76.txt
+# ::date 2015-08-18T06:22:35
+# ::id pmid_1943_2991.76
+(c3 / contrast-01
+    :ARG1 (r / resemble-01
+             :ARG1 (t / tumor
+                      :mod (t2 / this))
+             :ARG2 (m / medical-condition
+                      :name (n / name
+                               :op1 "carcinoma")
+                      :mod (c2 / cell)
+                      :mod (s / squamous)
+                      :ARG1-of (a / advance-01))
+             :ARG1-of (c / close-10))
+    :ARG2 (p / papilla
+             :domain (t3 / tumor
+                         :location (m2 / mouse
+                                       :ARG1-of (t4 / treat-04
+                                                    :ARG2 (s3 / small-molecule
+                                                              :name (n2 / name
+                                                                        :op1 "TPA"))))
+                         :ARG0-of (h / have-03
+                                     :ARG1 (d2 / degree
+                                               :degree-of (k / keratinize-00)
+                                               :ARG1-of (h2 / high-02))
+                                     :ARG1-of (c4 / confirm-01
+                                                  :ARG0 (s2 / stain-01
+                                                            :mod (i / immunohistochemical)
+                                                            :purpose (p3 / protein
+                                                                         :name (n3 / name
+                                                                                   :op1 "cytokeratin"
+                                                                                   :op2 "10")))))))
+    :ARG1-of (d3 / describe-01
+                 :ARG0 (a2 / and
+                           :op1 (f / figure
+                                   :mod "3B")
+                           :op2 (p4 / panel
+                                    :ARG1-of (l / low-04
+                                                :degree (m3 / more))))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to investigate the effects of ATRA on TPA-induced activation of the B-Raf/Mek/Erk pathway, we performed IHC staining of paraffin sections from mouse skin treated with TPA, ATRA, TPA+ATRA, or acetone solvent, with phosphorylation site-specific antibodies to B-Raf (phospho-Ser 445), Mek1/2 (phospho-Ser 217/221), and Erk1/2 (phospho-Thr202/Tyr 204).
+# ::file pmid_1943_2991_77.txt
+# ::date 2015-08-18T06:45:31
+# ::id pmid_1943_2991.77
+(p2 / perform-02
+    :ARG0 (w / we)
+    :ARG1 (s / stain-01
+             :ARG1 (s2 / section
+                       :source (s3 / skin
+                                   :mod (m / mouse)
+                                   :ARG1-of (t2 / treat-04
+                                                :ARG2 (o / or
+                                                         :op1 (s11 / small-molecule
+                                                                   :name (n4 / name
+                                                                             :op1 "TPA"))
+                                                         :op2 (s12 / small-molecule
+                                                                   :name (n5 / name
+                                                                             :op1 "ATRA"))
+                                                         :op3 (a3 / and
+                                                                  :op1 s11
+                                                                  :op2 s12)
+                                                         :op4 (s4 / solvent
+                                                                  :mod (a / acetone)))))
+                       :mod (p3 / paraffin))
+             :ARG2 (a5 / and
+                       :op1 (a4 / antibody
+                                :ARG1-of (s5 / specific-02
+                                             :ARG2 (s6 / site
+                                                       :ARG1-of (p / phosphorylate-01
+                                                                   :ARG1 a14)
+                                                       :ARG1-of (m2 / mean-01
+                                                                    :ARG2 (a7 / amino-acid
+                                                                              :mod "445"
+                                                                              :name (n8 / name
+                                                                                        :op1 "serine")
+                                                                              :ARG3-of (p4 / phosphorylate-01)))))
+                                :ARG0-of (c / counter-01
+                                            :ARG1 (e / enzyme
+                                                     :name (n / name
+                                                              :op1 "B-Raf"))))
+                       :op2 (a6 / antibody
+                                :ARG0-of (c2 / counter-01
+                                             :ARG1 (s7 / slash
+                                                       :op1 (e3 / enzyme
+                                                                :name (n6 / name
+                                                                          :op1 "Mek1"))
+                                                       :op2 (e4 / enzyme
+                                                                :name (n7 / name
+                                                                          :op1 "Mek2"))))
+                                :ARG1-of (s13 / specific-02
+                                              :ARG2 (s14 / site
+                                                         :ARG1-of (m3 / mean-01
+                                                                      :ARG2 (s10 / slash
+                                                                                 :op1 (a12 / amino-acid
+                                                                                           :mod "217"
+                                                                                           :name (n9 / name
+                                                                                                     :op1 "serine")
+                                                                                           :ARG3-of (p5 / phosphorylate-01))
+                                                                                 :op2 (a13 / amino-acid
+                                                                                           :mod "221"
+                                                                                           :name (n14 / name
+                                                                                                      :op1 "serine")))))))
+                       :op3 (a9 / antibody
+                                :ARG0-of (c3 / counter-01
+                                             :ARG1 (s8 / slash
+                                                       :op1 (e5 / enzyme
+                                                                :name (n10 / name
+                                                                           :op1 "Erk1"))
+                                                       :op2 (e6 / enzyme
+                                                                :name (n11 / name
+                                                                           :op1 "Erk2"))))
+                                :ARG1-of (s15 / specific-02
+                                              :ARG2 (s16 / site
+                                                         :ARG1-of (m4 / mean-01
+                                                                      :ARG2 (s9 / slash
+                                                                                :op1 (a10 / amino-acid
+                                                                                          :mod "202"
+                                                                                          :name (n12 / name
+                                                                                                     :op1 "threonine"))
+                                                                                :op2 (a11 / amino-acid
+                                                                                          :mod "204"
+                                                                                          :name (n13 / name
+                                                                                                     :op1 "tyrosine"))))))))
+             :mod (i / immunohistochemistry))
+    :purpose (i2 / investigate-01
+                 :ARG0 w
+                 :ARG1 (a14 / affect-01
+                            :ARG0 s12
+                            :ARG1 (a15 / activate-01
+                                       :ARG1 (p6 / pathway
+                                                 :name (n15 / name
+                                                            :op1 "B-Raf/Mek/Erk"))
+                                       :ARG2-of (i3 / induce-01
+                                                    :ARG0 s11)))))
+
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The 6 h, 3, 7, 10 and 30 week time points were selected for sample isolation in order to obtain data prior to tumor formation (6 h and 3 weeks), just as tumors are beginning to be detectable (7 weeks), after the majority of mice have tumors (10 weeks), and after tumors had grown substantially (30 weeks).
+# ::file pmid_1943_2991_78.txt
+# ::date 2015-08-18T07:16:34
+# ::id pmid_1943_2991.78
+(s / select-01
+      :ARG1 (a / and
+            :op1 (p / point
+                  :mod (t5 / time
+                        :ARG1-of (e2 / equal-01
+                              :ARG2 (t6 / temporal-quantity
+                                    :quant "6"
+                                    :unit (h / hour)))))
+            :op2 (p2 / point
+                  :mod (t7 / time
+                        :ARG1-of (e3 / equal-01
+                              :ARG2 (t2 / temporal-quantity
+                                    :quant "3"
+                                    :unit (w2 / week)))))
+            :op3 (p3 / point
+                  :mod (t8 / time
+                        :ARG1-of (e4 / equal-01
+                              :ARG2 (t3 / temporal-quantity
+                                    :quant "7"
+                                    :unit (w3 / week)
+                                    :ARG1-of (e / equal-01)))))
+            :op4 (p4 / point
+                  :mod (t9 / time
+                        :ARG1-of (e5 / equal-01
+                              :ARG2 (t4 / temporal-quantity
+                                    :quant "10"
+                                    :unit (w4 / week)))))
+            :op5 (p5 / point
+                  :mod (t10 / time
+                        :ARG1-of (e6 / equal-01
+                              :ARG2 (t / temporal-quantity
+                                    :quant "30"
+                                    :unit (w / week))))))
+      :ARG3 (i / isolate-01
+            :ARG1 (t13 / thing
+                  :ARG1-of (s2 / sample-01))
+            :purpose (o / obtain-01
+                  :ARG1 (a4 / and
+                        :op1 (d / data
+                              :time (p6 / prior
+                                    :op1 (f / form-01
+                                          :ARG1 (t11 / tumor))
+                                    :ARG1-of (m / mean-01
+                                          :ARG2 (a2 / and
+                                                :op1 t6
+                                                :op2 t2))))
+                        :op2 (d3 / data
+                              :time (b / begin-01
+                                    :ARG0 t11
+                                    :ARG1 (d2 / detect-01
+                                          :ARG1 t11)
+                                    :ARG1-of (m5 / mean-01
+                                          :ARG2 t3)))
+                        :op3 (d4 / data
+                              :time (a5 / after
+                                    :op1 (h3 / have-03
+                                          :ARG0 (m2 / mouse
+                                                :quant (m3 / majority)
+                                                :ARG1-of (i2 / include-91
+                                                      :ARG2 (m7 / mouse)))
+                                          :ARG1 t11)
+                                    :ARG1-of (m6 / mean-01
+                                          :ARG2 t4)))
+                        :op4 (d5 / data
+                              :time (a3 / after
+                                    :op1 (g / grow-01
+                                          :ARG1 t11
+                                          :degree (s3 / substantial))
+                                    :ARG1-of (m4 / mean-01
+                                          :ARG2 t)))))))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the TPA treated skin, hyperproliferation was correlated with increased levels of activated (phosphorylated) B-Raf, Mek1/2, and Erk1/2, as detected by increased red fluorescence from the Alexa 546-coupled secondary antibody.
+# ::file pmid_1943_2991_79.txt
+# ::date 2015-08-18T07:43:21
+# ::id pmid_1943_2991.79
+(c / correlate-01
+   :ARG1 (h / hyperproliferate-01)
+   :ARG2 (a / and
+            :op1 (l / level
+                    :ARG1-of (i / increase-01
+                                :ARG1 f)
+                    :quant-of (e3 / enzyme
+                                  :name (n3 / name
+                                            :op1 "B-Raf")
+                                  :ARG1-of (a2 / activate-01
+                                               :ARG1-of (m / mean-01
+                                                           :ARG2 (p / phosphorylate-01))
+                                               :ARG1 e4
+                                               :ARG1 e5
+                                               :ARG1 e6
+                                               :ARG1 e7)))
+            :op2 (l2 / level
+                     :ARG1-of i
+                     :quant-of (s / slash
+                                  :op1 (e4 / enzyme
+                                           :name (n4 / name
+                                                     :op1 "Mek1"))
+                                  :op2 (e5 / enzyme
+                                           :name (n5 / name
+                                                     :op1 "Mek2"))))
+            :op3 (l3 / level
+                     :ARG1-of i
+                     :quant-of (s2 / slash
+                                   :op1 (e6 / enzyme
+                                            :name (n6 / name
+                                                      :op1 "Erk1"))
+                                   :op2 (e7 / enzyme
+                                            :name (n7 / name
+                                                      :op1 "Erk2")))))
+   :ARG1-of (d / detect-01
+               :ARG0 (f / fluoresce-01
+                        :ARG1 (a3 / antibody
+                                  :mod (s3 / secondary)
+                                  :ARG1-of (c2 / couple-01
+                                               :ARG2 (s6 / small-molecule
+                                                         :name (n8 / name
+                                                                   :op1 "Alexa"
+                                                                   :op2 "546"))))
+                        :ARG1-of (r / red-02)))
+   :location (s4 / skin
+                 :ARG1-of (t2 / treat-04
+                              :ARG2 (s5 / small-molecule
+                                        :name (n9 / name
+                                                  :op1 "TPA")))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Results are shown for a representative (3 week) time point (Fig. <xref ref-type="fig" rid="F4">4A</xref>; compare TPA panels to Control panels for all 3 rows).
+# ::file pmid_1943_2991_80.txt
+# ::date 2015-08-18T07:51:55
+# ::id pmid_1943_2991.80
+(m2 / multi-sentence
+    :snt1 (s / show-01
+             :ARG1 (t2 / thing
+                       :ARG2-of (r2 / result-01))
+             :purpose (p2 / point
+                          :mod (t3 / time)
+                          :ARG0-of (r3 / represent-01)
+                          :ARG1-of (m / mean-01
+                                      :ARG2 (a2 / after
+                                                :op1 (t / temporal-quantity
+                                                        :quant "3"
+                                                        :unit (w / week)))))
+             :ARG1-of (d / describe-01
+                         :ARG0 (f / figure
+                                  :mod "4A")))
+    :snt2 (c / compare-01
+             :ARG0 (y / you)
+             :ARG1 (p3 / panel
+                       :consist-of (s2 / small-molecule
+                                       :name (n / name
+                                                :op1 "TPA")))
+             :ARG2 (p5 / panel
+                       :ARG0-of (c2 / control-01))
+             :purpose (r4 / row
+                          :quant "3"
+                          :mod (a / all))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Skin treated with a single application of TPA, ATRA or TPA+ATRA showed no notable changes in staining for any of the phosphoproteins (data not shown).
+# ::file pmid_1943_2991_81.txt
+# ::date 2015-08-18T07:58:10
+# ::id pmid_1943_2991.81
+(s5 / show-01
+    :ARG0 (s2 / skin
+              :ARG1-of (t / treat-04
+                          :ARG2 (o / or
+                                   :op1 (a / apply-02
+                                           :ARG1 (s6 / small-molecule
+                                                     :name (n / name
+                                                              :op1 "TPA"))
+                                           :ARG1-of (s3 / single-02
+                                                        :ARG1 a2
+                                                        :ARG1 a4))
+                                   :op2 (a2 / apply-02
+                                            :ARG1 (s7 / small-molecule
+                                                      :name (n2 / name
+                                                                :op1 "ATRA")))
+                                   :op3 (a4 / apply-02
+                                            :ARG1 (a5 / and
+                                                      :op1 s6
+                                                      :op2 s7)))))
+    :ARG1 (c / change-01
+             :ARG1 (s4 / stain-01
+                       :ARG1 (p2 / protein
+                                 :mod (a6 / any)
+                                 :ARG1-of (p3 / phosphorylate-01)))
+             :ARG1-of (n3 / notable-04))
+    :ARG1-of (d / describe-01
+                :ARG0 (d2 / data
+                          :ARG1-of (s / show-01
+                                      :polarity "-"))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt pB-Raf was expressed predominantly in the cytoplasm in TPA treated skin at all time points, and this effect was blocked with co-administration of ATRA with TPA (Fig. <xref ref-type="fig" rid="F4">4A</xref>, upper rows and data not shown).
+# ::file pmid_1943_2991_82.txt
+# ::date 2015-08-18T08:16:33
+# ::id pmid_1943_2991.82
+(a / and
+   :op1 (e / express-03
+           :ARG2 (e2 / enzyme
+                     :name (n / name
+                              :op1 "B-Raf")
+                     :ARG3-of (p / phosphorylate-01))
+           :ARG3 (c / cytoplasm
+                    :location (s / skin
+                                 :ARG1-of (t / treat-04
+                                             :ARG2 (s3 / small-molecule
+                                                       :name (n2 / name
+                                                                 :op1 "TPA")))))
+           :ARG1-of (p2 / predominate-01)
+           :time (p4 / point
+                     :mod (t2 / time)
+                     :mod (a2 / all)))
+   :op2 (b / block-01
+           :ARG1 (a4 / affect-01
+                     :mod (t3 / this))
+           :ARG3 (a5 / administer-01
+                     :ARG1 (a6 / and
+                               :op1 (s4 / small-molecule
+                                        :name (n3 / name
+                                                  :op1 "ATRA"))
+                               :op2 s3)))
+   :ARG1-of (d / describe-01
+               :ARG0 (a3 / and
+                         :op1 (f / figure
+                                 :mod "4A"
+                                 :location (r / row))
+                         :op2 (d2 / data
+                                  :ARG1-of (s2 / show-01
+                                               :polarity "-")))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We did not observe any changes in phosphorylation of c-Raf (RAF1), the other Raf family member present in skin, with any of the treatments using an antibody to phospho-serine 338 (Fig. S2, additional file <xref ref-type="supplementary-material" rid="S4">4</xref>).
+# ::file pmid_1943_2991_83.txt
+# ::date 2015-08-18T10:55:59
+# ::id pmid_1943_2991.83
+(o / observe-01
+   :polarity "-"
+   :ARG0 (w / we)
+   :ARG1 (c / change-01
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (e / enzyme
+                              :name (n / name
+                                       :op1 "c-Raf")))
+            :mod (a6 / any))
+   :condition (p3 / present
+                  :location (s / skin)
+                  :domain (m2 / member
+                              :ARG1-of (i / include-91
+                                          :ARG2 (p2 / protein-family
+                                                    :name (n3 / name
+                                                              :op1 "Raf")
+                                                    :ARG1-of (m / mean-01
+                                                                :ARG2 e)))
+                              :mod (o2 / other)))
+   :condition (t / treat-04
+                 :mod (a / any)
+                 :ARG0-of (u / use-01
+                             :ARG1 (a2 / antibody
+                                       :ARG0-of (c2 / counter-01
+                                                    :ARG1 (a3 / amino-acid
+                                                              :mod "338"
+                                                              :name (n5 / name
+                                                                        :op1 "serine")
+                                                              :ARG3-of (p4 / phosphorylate-01))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (a4 / and
+                         :op1 (f / figure
+                                 :mod "S2")
+                         :op2 (f2 / file
+                                  :mod "4"
+                                  :ARG1-of (a5 / add-02)))))
+
+# ::save-date Sun Aug 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt pMek1/2 levels were increased and expression was localized predominantly to the inner surface of the cell membrane in TPA treated skin (Fig. <xref ref-type="fig" rid="F4">4A</xref>, middle rows).
+# ::file pmid_1943_2991_84.txt
+# ::date 2015-08-18T11:07:07
+# ::id pmid_1943_2991.84
+(a / and
+   :op1 (i / increase-01
+           :ARG1 (s / slash
+                    :op1 (l / level
+                            :quant-of (e / enzyme
+                                         :name (n / name
+                                                  :op1 "Mek1")
+                                         :ARG3-of (p / phosphorylate-01
+                                                     :ARG3 l2)))
+                    :op2 (l2 / level
+                             :quant-of (e2 / enzyme
+                                           :name (n2 / name
+                                                     :op1 "Mek2")))))
+   :op2 (l3 / localize-01
+            :ARG1 (e3 / express-03)
+            :ARG1-of (p2 / predominate-01)
+            :location (s2 / surface
+                          :mod (i2 / inner)
+                          :part-of (m / membrane
+                                      :mod (c / cell)
+                                      :location (s3 / skin
+                                                    :ARG1-of (t / treat-04
+                                                                :ARG2 (s4 / small-molecule
+                                                                          :name (n3 / name
+                                                                                    :op1 "TPA")))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4A"
+                        :part (r / row
+                                 :location (m2 / middle)))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This observation is notable since it has been shown that the translocation of pMek to the cell membrane results in lowering the threshold for activation of MAP kinase signal output [<xref ref-type="bibr" rid="B23">23</xref>].
+# ::file pmid_1943_2991_85.txt
+# ::date 2015-08-17T09:31:09
+# ::id pmid_1943_2991.85
+(c / cause-01
+   :ARG0 (s / show-01
+            :ARG1 (r / result-01
+                     :ARG1 (t / translocate-01
+                              :ARG1 (e / enzyme
+                                       :name (n / name
+                                                :op1 "Mek")
+                                       :ARG3-of (p / phosphorylate-01))
+                              :ARG2 (m / membrane
+                                       :mod (c2 / cell)))
+                     :ARG2 (l / lower-05
+                              :ARG1 (t2 / threshold
+                                        :degree-of (a / activate-01
+                                                      :ARG1 (o / output
+                                                               :mod (s2 / signal-07
+                                                                        :ARG0 (k / kinase
+                                                                                 :name (n2 / name
+                                                                                           :op1 "MAP")))))))))
+   :ARG1 (n3 / notable-04
+             :ARG1 (t3 / thing
+                       :ARG1-of (o2 / observe-01)
+                       :mod (t4 / this)))
+   :ARG1-of (d / describe-01
+               :ARG0 (p2 / publication
+                         :ARG1-of (c3 / cite-01
+                                      :ARG2 "23"))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As was observed for pB-Raf, the increased levels of pMek1/2 was blocked with co-administration of ATRA.
+# ::file pmid_1943_2991_86.txt
+# ::date 2015-08-17T09:31:21
+# ::id pmid_1943_2991.86
+(b / block-01
+   :ARG1 (l / level
+            :quant-of (e / enzyme
+                         :name (n / name
+                                  :op1 "Mek1/2")
+                         :ARG3-of (p / phosphorylate-01
+                                     :ARG3 e2))
+            :ARG1-of (i / increase-01))
+   :ARG3 (c / coadminister-00
+            :ARG1 (s / small-molecule
+                     :name (n2 / name
+                               :op1 "ATRA")))
+   :ARG2-of (r / resemble-01
+               :ARG1 (o / observe-01
+                        :ARG1 (e2 / enzyme
+                                  :name (n3 / name
+                                            :op1 "B-Raf")))))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Staining for pErk1/2 was observed in pairs of scattered nuclei in control skin, with an increase in staining intensity for TPA treated skin, as would be predicted accompanying hyperproliferation.
+# ::file pmid_1943_2991_87.txt
+# ::date 2015-08-17T09:57:38
+# ::id pmid_1943_2991.87
+(o / observe-01
+   :ARG1 (s / stain-01
+            :purpose (e / enzyme
+                        :wiki "Extracellular_signal-regulated_kinases"
+                        :name (n / name
+                                 :op1 "Erk1/2")
+                        :ARG3-of (p / phosphorylate-01))
+            :ARG0-of (h3 / have-03
+                         :ARG1 (i / intensity
+                                  :ARG1-of (i2 / increase-01
+                                               :location (s4 / skin
+                                                             :ARG1-of (t / treat-04
+                                                                         :ARG2 (s5 / small-molecule
+                                                                                   :wiki "12-O-Tetradecanoylphorbol-13-acetate"
+                                                                                   :name (n3 / name
+                                                                                             :op1 "TPA"))))
+                                               :ARG1-of (c2 / cause-01
+                                                            :ARG0 (p3 / predict-01
+                                                                      :ARG0 i2
+                                                                      :ARG1 (h2 / hyperproliferate-01
+                                                                                :ARG0-of (a / accompany-01))))))))
+   :location (p2 / pair-01
+                 :ARG1 (n2 / nucleus
+                           :ARG1-of (s2 / scatter-01)
+                           :location (s3 / skin
+                                         :mod (c / control)))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Fewer nuclei were stained for TPA+ATRA treated skin than for TPA treatment alone (Fig. <xref ref-type="fig" rid="F4">4A</xref>, bottom rows).
+# ::file pmid_1943_2991_88.txt
+# ::date 2015-08-17T10:38:00
+# ::id pmid_1943_2991.88
+(s / stain-01
+   :ARG1 (n / nucleus
+            :quant (f / few
+                      :degree (m / more)
+                      :compared-to (t2 / treat-04
+                                       :ARG2 "s3"
+                                       :mod (a2 / alone))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "4A"
+                         :location (r / row
+                                      :location (b / bottom))))
+   :purpose (s2 / skin
+                :ARG1-of (t / treat-04
+                            :ARG2 (a / and
+                                     :op1 (s3 / small-molecule
+                                              :name (n2 / name
+                                                        :op1 "TPA"))
+                                     :op2 (s4 / small-molecule
+                                              :name (n3 / name
+                                                        :op1 "ATRA"))))))
+
+# ::save-date Tue Jan 19, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We attempted to quantitate pErk1/2 levels by determining the percent positive nuclei in the treated skin.
+# ::file pmid_1943_2991_89.txt
+# ::date 2015-08-17T10:42:24
+# ::id pmid_1943_2991.89
+(a / attempt-01
+   :ARG0 (w / we)
+   :ARG1 (q / quantitate-01
+            :ARG0 w
+            :ARG1 (l / level
+                     :quant-of (e / enzyme
+                                  :name (n / name
+                                           :op1 "Erk1/2")
+                                  :ARG3-of (p / phosphorylate-01))))
+   :instrument (d / determine-01
+                  :ARG0 w
+                  :ARG1 (p2 / percent
+                            :quant-of (n2 / nucleus
+                                          :mod (p3 / positive))
+                            :location (s / skin
+                                         :ARG1-of (t / treat-04)))))
+
+# ::save-date Thu Feb 11, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At all time points except 30 weeks, the percent positive pErk staining nuclei actually decreased in TPA treated skin compared to controls and TPA+ATRA skin (data not shown).
+# ::file pmid_1943_2991_90.txt
+# ::date 2015-08-17T10:48:07
+# ::id pmid_1943_2991.90
+(d / decrease-01
+   :ARG1 (p / percent
+            :mod (p2 / positive)
+            :quant-of (n / nucleus
+                         :ARG1-of (s6 / stain-01
+                                      :purpose (e / enzyme
+                                                  :name (n4 / name
+                                                            :op1 "Erk")
+                                                  :ARG3-of (p3 / phosphorylate-01)))))
+   :ARG1-of (a / actual-02)
+   :location (s / skin
+                :ARG1-of (t / treat-04
+                            :ARG2 (s2 / small-molecule
+                                      :name (n2 / name
+                                                :op1 "TPA"))))
+   :time (p4 / point
+             :mod (t2 / time)
+             :mod (a3 / all)
+             :ARG2-of (e2 / except-01
+                          :ARG1 (t3 / temporal-quantity
+                                    :quant "30"
+                                    :unit (w / week))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (d3 / data
+                          :ARG1-of (s7 / show-01
+                                       :polarity "-")))
+   :compared-to (a2 / and
+                    :op1 (s3 / skin
+                             :mod (c / control))
+                    :op2 (s4 / skin
+                             :mod (s5 / small-molecule
+                                      :name (n3 / name
+                                                :op1 "ATRA"))
+                             :mod s2)))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This was due to the far greater number of total cells in the hyperplastic TPA treated skin.
+# ::file pmid_1943_2991_91.txt
+# ::date 2015-08-17T11:24:48
+# ::id pmid_1943_2991.91
+(c / cause-01
+   :ARG0 (n / number
+            :quant-of (c2 / cell
+                          :mod (t / total)
+                          :location (s / skin
+                                       :mod (h / hyperplasia)
+                                       :ARG1-of (t2 / treat-04
+                                                    :ARG2 (s2 / small-molecule
+                                                              :name (n2 / name
+                                                                        :op1 "TPA")))))
+            :mod (g / great
+                    :degree (m / more
+                               :degree (f / far))))
+   :ARG1 (t3 / this))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To more precisely measure the levels of phosphorylation of the MAP kinase signaling proteins in this model, we performed Western blot analysis on epidermal lysates pooled from 5 mice per treatment group for each time point, from skin adjacent to the tissue that was embedded for sectioning and IHC.
+# ::file pmid_1943_2991_92.txt
+# ::date 2015-08-17T12:14:24
+# ::id pmid_1943_2991.92
+(p / perform-02
+   :ARG0 (w / we)
+   :ARG1 (i / immunoblot-01
+            :ARG2 (l / lysate
+                     :mod (e / epidermis)
+                     :ARG1-of (p2 / pool-01
+                                  :source (m / mouse
+                                             :quant "5"
+                                             :ARG1-of (r / rate-entity-91
+                                                         :ARG2 (g / group
+                                                                  :ARG1-of (t2 / treat-04))))
+                                  :time (p3 / point
+                                            :mod (t3 / time)
+                                            :mod (e2 / each)))
+                     :source (s / skin
+                                :ARG2-of (b / border-01
+                                            :ARG1 (t4 / tissue
+                                                      :ARG1-of (e3 / embed-01
+                                                                   :purpose (a2 / and
+                                                                                :op1 (s2 / section-01)
+                                                                                :op2 (i2 / immunohistochemistry))))))))
+   :purpose (m2 / measure-01
+                :ARG0 w
+                :ARG1 (l2 / level
+                          :degree-of (p4 / phosphorylate-01
+                                         :ARG1 (e4 / enzyme
+                                                   :name (n3 / name
+                                                             :op1 "MAP"
+                                                             :op2 "kinase")
+                                                   :ARG0-of (s3 / signal-07))))
+                :location (m3 / model
+                              :mod (t6 / this))
+                :manner (p6 / precise
+                            :degree (m4 / more))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Using 10 weeks as a representative time point, co-administration of ATRA with TPA resulted in a lower level of pB-Raf, pMek1/2 and pErk1/2, than with TPA treatment alone (Fig. <xref ref-type="fig" rid="F4">4B</xref> compare TPA and TPA+ATRA lanes).
+# ::file pmid_1943_2991_93.txt
+# ::date 2015-08-17T12:14:51
+# ::id pmid_1943_2991.93
+(r / result-01
+   :ARG1 (c / coadminister-00
+            :ARG1 (a / and
+                     :op1 (s / small-molecule
+                             :name (n / name
+                                      :op1 "ATRA"))
+                     :op2 (s2 / small-molecule
+                              :name (n2 / name
+                                        :op1 "TPA"))))
+   :ARG2 (l / low-04
+            :ARG1 (a2 / and
+                      :op1 (l2 / level
+                               :quant-of (e / enzyme
+                                            :name (n3 / name
+                                                      :op1 "B-Raf")
+                                            :ARG3-of (p / phosphorylate-01
+                                                        :ARG3 e2
+                                                        :ARG3 e3))
+                               :mod (s4 / small-molecule))
+                      :op2 (l3 / level
+                               :quant-of (e2 / enzyme
+                                             :name (n4 / name
+                                                       :op1 "Mek1/2")))
+                      :op3 (l4 / level
+                               :quant-of (e3 / enzyme
+                                             :name (n5 / name
+                                                       :op1 "Erk1/2"))))
+            :degree (m / more)
+            :compared-to (t / treat-04
+                            :ARG2 (s3 / small-molecule
+                                      :name (n6 / name
+                                                :op1 "TPA")
+                                      :mod (a3 / alone))))
+   :ARG2-of (u / use-01
+               :ARG1 (t2 / temporal-quantity
+                         :quant "10"
+                         :unit (w / week)
+                         :ARG0-of (r2 / represent-01
+                                      :ARG1 (p2 / point
+                                                :mod (t3 / time)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4B"
+                        :ARG0-of (c2 / compare-01
+                                     :ARG1 (l5 / lane
+                                               :mod s2)
+                                     :ARG2 (l7 / lane
+                                               :mod s
+                                               :mod s2)))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At the same time there is an increase in the protein levels of total Erk1/2 with TPA treatment that is suppressed by ATRA.
+# ::file pmid_1943_2991_94.txt
+# ::date 2015-08-18T14:02:26
+# ::id pmid_1943_2991.94
+(i / increase-01
+   :ARG1 (l / level
+            :quant-of (e / enzyme
+                         :name (n / name
+                                  :op1 "Erk1/2")
+                         :mod (t3 / total)))
+   :condition (t / treat-04
+                 :ARG2 (s / small-molecule
+                          :name (n2 / name
+                                    :op1 "TPA")))
+   :time (t2 / time
+             :ARG1-of (s4 / same-01))
+   :ARG1-of (s2 / suppress-01
+                :ARG0 (s3 / small-molecule
+                          :name (n3 / name
+                                    :op1 "ATRA"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The results from both IHC and Western blot analysis indicate that suppression of pB-Raf, pMek1/2, and pErk1/2 levels by ATRA.
+# ::file pmid_1943_2991_95.txt
+# ::date 2015-08-18T14:10:30
+# ::id pmid_1943_2991.95
+(i / indicate-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :source (a / and
+                       :op1 (a3 / analyze-01
+                                :mod (i3 / immunohistochemistry))
+                       :op2 (a2 / analyze-01
+                                :manner (i2 / immunoblot-01))))
+   :ARG1 (s / suppress-01
+            :ARG0 (s2 / small-molecule
+                      :name (n3 / name
+                                :op1 "ATRA"))
+            :ARG1 (a4 / and
+                      :op1 (l / level
+                              :quant-of (e / enzyme
+                                           :name (n4 / name
+                                                     :op1 "B-Raf")
+                                           :ARG3-of (p / phosphorylate-01
+                                                       :ARG3 e2
+                                                       :ARG3 e3)))
+                      :op2 (l2 / level
+                               :quant-of (e2 / enzyme
+                                             :name (n5 / name
+                                                       :op1 "Mek1/2")))
+                      :op3 (l3 / level
+                               :quant-of (e3 / enzyme
+                                             :name (n6 / name
+                                                       :op1 "Erk1/2"))))))
+
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The two other major MAP kinase signaling pathways besides the B-Raf/Mek/Erk pathway are the Jun N-terminal kinase (JNK) and p38 MAP kinase pathways.
+# ::file pmid_1943_2991_97.txt
+# ::date 2015-08-18T14:35:45
+# ::id pmid_1943_2991.97
+(p3 / pathway
+      :quant "2"
+      :name (n3 / name :op1 "MAP" :op2 "kinase")
+      :ARG0-of (s / signal-07)
+      :mod (o / other)
+      :ARG1-of (m / major-02)
+      :ARG2-of (e / except-01
+            :ARG1 (p4 / pathway
+                  :name (n4 / name :op1 "B-Raf/Mek/Erk")))
+      :domain (a / and
+            :op1 (p / pathway
+                  :name (n / name
+                        :op1 "Jun"
+                        :op2 "N-terminal"
+                        :op3 "kinase"))
+            :op2 (p2 / pathway
+                  :name (n2 / name
+                        :op1 "p38"
+                        :op2 "MAP"
+                        :op3 "kinase"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to confirm our previous microarray results, which suggested that these pathways were less important in regards to ATRA suppression of TPA induced tumor promotion, we performed IHC on tissue sections taken at the 7 week time point from the same 2-stage skin carcinogenesis experiment as above.
+# ::file pmid_1943_2991_98.txt
+# ::date 2015-08-18T14:49:15
+# ::id pmid_1943_2991.98
+(p / perform-02
+   :ARG0 (w / we)
+   :ARG1 (i3 / immunohistochemistry)
+   :location (s / section-01
+                :ARG1 (t2 / tissue)
+                :ARG1-of (t3 / take-01
+                             :ARG2 (e / experiment-01
+                                      :ARG1 (c / carcinogenesis
+                                               :mod (s2 / skin))
+                                      :mod (s3 / stage
+                                               :mod "2")
+                                      :ARG1-of (r / resemble-01
+                                                  :ARG2 (a / above))
+                                      :ARG1-of (s8 / same-01))
+                             :time (p2 / point
+                                       :mod (t4 / time)
+                                       :mod (t5 / temporal-quantity
+                                                :quant "7"
+                                                :unit (w2 / week)))))
+   :purpose (c2 / confirm-01
+                :ARG0 w
+                :ARG1 (t6 / thing
+                          :ARG2-of (r2 / result-01)
+                          :time (p3 / previous)
+                          :mod (m / microarray)
+                          :poss w
+                          :ARG0-of (s4 / suggest-01
+                                       :ARG1 (i / important
+                                                :degree (l / less)
+                                                :domain (p4 / pathway
+                                                            :mod (t7 / this))
+                                                :topic (s5 / suppress-01
+                                                           :ARG0 (s6 / small-molecule
+                                                                     :name (n2 / name
+                                                                               :op1 "ATRA"))
+                                                           :ARG1 (p5 / promote-01
+                                                                     :ARG1 (t8 / tumor
+                                                                               :ARG2-of (i2 / induce-01
+                                                                                            :ARG0 (s7 / small-molecule
+                                                                                                      :name (n3 / name
+                                                                                                                :op1 "TPA")))))))))))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Using antibodies to phosphorylated (activated) p38 (Thr180/Tyr182), and JNK (Thr183/Tyr185) we observed that, unlike the B-Raf, Mek1/2 and Erk1/2 proteins, neither p38 nor JNK were increased in phosphorylation upon TPA treatment (Fig. <xref ref-type="fig" rid="F5">5A</xref>, compare TPA panels to Control).
+# ::file pmid_1943_2991_99.txt
+# ::date 2015-08-18T15:11:55
+# ::id pmid_1943_2991.99
+(o / observe-01
+   :ARG0 (w / we)
+   :ARG1 (i / increase-01
+            :polarity "-"
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (a3 / and
+                               :op1 (e / enzyme
+                                       :name (n / name
+                                                :op1 "p38"))
+                               :op2 (e2 / enzyme
+                                        :name (n2 / name
+                                                  :op1 "JNK")))
+                     :ARG1-of (r / resemble-01
+                                 :polarity "-"
+                                 :ARG2 (a2 / and
+                                           :op1 (e5 / enzyme
+                                                    :name (n4 / name
+                                                              :op1 "B-Raf"))
+                                           :op2 (e6 / enzyme
+                                                    :name (n5 / name
+                                                              :op1 "Mek1/2"))
+                                           :op3 (e7 / enzyme
+                                                    :name (n6 / name
+                                                              :op1 "Erk1/2")))))
+            :condition (t / treat-04
+                          :ARG0 a3
+                          :ARG2 (s / small-molecule
+                                   :name (n3 / name
+                                             :op1 "TPA"))))
+   :ARG2-of (u / use-01
+               :ARG1 (a / antibody
+                        :ARG0-of (c3 / counter-01
+                                     :ARG1 (a7 / and
+                                               :op1 (e3 / enzyme
+                                                        :name (n7 / name
+                                                                  :op1 "p38")
+                                                        :ARG3-of (p2 / phosphorylate-01
+                                                                     :ARG1 (s3 / slash
+                                                                               :op1 (a5 / amino-acid
+                                                                                        :mod "180"
+                                                                                        :name (n8 / name
+                                                                                                  :op1 "threonine"))
+                                                                               :op2 (a6 / amino-acid
+                                                                                        :mod "182"
+                                                                                        :name (n9 / name
+                                                                                                  :op1 "threonine")))
+                                                                     :ARG1-of (m / mean-01
+                                                                                 :ARG2 (a11 / activate-01))))
+                                               :op2 (e4 / enzyme
+                                                        :name (n10 / name
+                                                                   :op1 "JNK")
+                                                        :ARG3-of (p6 / phosphorylate-01
+                                                                     :ARG1 (s2 / slash
+                                                                               :op1 (a9 / amino-acid
+                                                                                        :mod "183"
+                                                                                        :name (n11 / name
+                                                                                                   :op1 "threonine"))
+                                                                               :op2 (a10 / amino-acid
+                                                                                         :mod "185"
+                                                                                         :name (n12 / name
+                                                                                                    :op1 "threonine")))))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5A"
+                        :ARG0-of (c / compare-01
+                                    :ARG1 (p7 / panel
+                                              :mod s)
+                                    :ARG2 (c2 / control)))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Importantly, the phosphorylation levels of p38 and JNK were not suppressed by co-administration of ATRA with TPA (Fig. <xref ref-type="fig" rid="F5">5A</xref>, compare TPA and TPA+ATRA panels).
+# ::file pmid_1943_2991_100.txt
+# ::date 2015-08-18T15:44:13
+# ::id pmid_1943_2991.100
+(s / suppress-01
+   :polarity "-"
+   :ARG0 (c / coadminister-00
+            :ARG1 (a / and
+                     :op1 (s2 / small-molecule
+                              :name (n / name
+                                       :op1 "ATRA"))
+                     :op2 (s3 / small-molecule
+                              :name (n2 / name
+                                        :op1 "TPA"))))
+   :ARG1 (l / level
+            :degree-of (p / phosphorylate-01
+                          :ARG1 (a2 / and
+                                    :op1 (e / enzyme
+                                            :name (n3 / name
+                                                      :op1 "p38"))
+                                    :op2 (e2 / enzyme
+                                             :name (n4 / name
+                                                       :op1 "JNK")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5A"
+                        :ARG0-of (c2 / compare-01
+                                     :ARG1 (p2 / panel
+                                               :mod s3)
+                                     :ARG2 (a3 / and
+                                               :op1 (p3 / panel
+                                                        :mod s3)
+                                               :op2 (p4 / panel
+                                                        :mod s2)))))
+   :mod (i / important))
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This observation was confirmed by Western blotting using the same phospho-specific antibodies, as well as antibodies to total p38 and total JNK (Fig. <xref ref-type="fig" rid="F5">5B</xref>).
+# ::file pmid_1943_2991_101.txt
+# ::date 2015-08-18T15:56:01
+# ::id pmid_1943_2991.101
+(c / confirm-01
+   :ARG0 (i / immunoblot-01)
+   :ARG1 (o / observe-01
+            :mod (t / this))
+   :ARG2-of (u / use-01
+               :ARG1 (a / and
+                        :op1 (a2 / antibody
+                                 :ARG1-of (s / specific-02
+                                             :ARG2 (p / phosphorylate-01))
+                                 :ARG1-of (s2 / same-01))
+                        :op2 (a3 / antibody
+                                 :ARG0-of (c2 / counter-01
+                                              :ARG1 (a4 / and
+                                                        :op1 (e / enzyme
+                                                                :name (n2 / name
+                                                                          :op1 "p38")
+                                                                :mod (t3 / total))
+                                                        :op2 (e2 / enzyme
+                                                                 :name (n3 / name
+                                                                           :op1 "JNK")
+                                                                 :mod t3)))
+                                 :ARG1-of (d / describe-01
+                                             :ARG0 (f / figure
+                                                      :mod "5B"))))))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly we observed a modest increase in p38 phosphorylation in the skin treated with ATRA alone, suggesting that the p38 pathway could play a role in mediating retinoid effects in skin.
+# ::file pmid_1943_2991_102.txt
+# ::date 2015-08-18T16:08:38
+# ::id pmid_1943_2991.102
+(o / observe-01
+   :ARG0 (w / we)
+   :ARG1 (i / increase-01
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 "p4")
+            :ARG2 (m / modest)
+            :location (s / skin
+                         :ARG1-of (t / treat-04
+                                     :ARG2 (s2 / small-molecule
+                                               :name (n2 / name
+                                                         :op1 "ATRA")
+                                               :mod (a2 / alone))))
+            :ARG0-of (s3 / suggest-01
+                         :ARG1 (p2 / possible-01
+                                   :ARG1 (p3 / play-02
+                                             :ARG0 (p4 / pathway
+                                                       :name (n3 / name
+                                                                 :op1 "p38"))
+                                             :ARG1 (m2 / mediate-01
+                                                       :ARG1 (a / affect-01
+                                                                :ARG0 (s4 / small-molecule
+                                                                          :name (n4 / name
+                                                                                    :op1 "retinoid"))
+                                                                :ARG1 (s5 / skin)))))))
+   :ARG2-of (i2 / interest-01))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We hypothesize that ATRA exerts its tumor suppressive effect by blocking B-Raf/Mek/Erk signaling.
+# ::file pmid_1943_2991_104.txt
+# ::date 2015-08-18T16:24:08
+# ::id pmid_1943_2991.104
+(h / hypothesize-01
+   :ARG0 (w / we)
+   :ARG1 (e / exert-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "ATRA"))
+            :ARG1 (a / affect-01
+                     :ARG0 s
+                     :ARG2 (s2 / suppress-01
+                               :ARG0 s
+                               :ARG1 (t / tumor)))
+            :instrument (b / block-01
+                           :ARG1 (s3 / signal-07
+                                     :ARG0 (p / pathway
+                                              :name (n2 / name
+                                                        :op1 "B-Raf/Mek/Erk")))
+                           :ARG3 s)))
+
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This predicts that blocking this pathway through another means should also suppress tumorigenesis and/or the growth of tumors.
+# ::file pmid_1943_2991_105.txt
+# ::date 2015-08-18T16:35:19
+# ::id pmid_1943_2991.105
+(p / predict-01
+      :ARG0 (t / this)
+      :ARG1 (r / recommend-01
+            :ARG1 (s / suppress-01
+                  :ARG0 (b / block-01
+                        :ARG1 (p2 / pathway
+                              :mod t)
+                        :manner (m / mean
+                              :mod (a2 / another)))
+                  :ARG1 (a / and-or
+                        :op1 (c / create-01
+                              :ARG1 (t2 / tumor))
+                        :op2 (g / grow-01
+                              :ARG1 (t3 / tumor)))
+                  :mod (a3 / also))))
+
+# ::save-date Tue Jan 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test this prediction we have used a novel Raf inhibiting bi-aryl urea compound from Bayer Pharmaceuticals called BAY 43-9006, or Sorafenib [<xref ref-type="bibr" rid="B24">24</xref>].
+# ::file pmid_1943_2991_106.txt
+# ::date 2015-08-18T16:43:33
+# ::id pmid_1943_2991.106
+(u / use-01
+   :ARG0 (w / we)
+   :ARG1 (c / compound
+            :mod (u2 / urea)
+            :source (c2 / company
+                        :wiki "Bayer"
+                        :name (n2 / name
+                                  :op1 "Bayer"
+                                  :op2 "Pharmaceuticals"))
+            :ARG0-of (i / inhibit-01
+                        :ARG1 (e / enzyme
+                                 :wiki "RAF_kinase"
+                                 :name (n5 / name
+                                           :op1 "Raf")))
+            :mod (b / biaryl)
+            :ARG1-of (c3 / call-01
+                         :ARG2 (o / or
+                                  :op1 (s / small-molecule
+                                          :wiki "-"
+                                          :name (n / name
+                                                   :op1 "BAY"
+                                                   :op2 "43-9006"))
+                                  :op2 (s2 / small-molecule
+                                           :wiki "Sorafenib"
+                                           :name (n3 / name
+                                                     :op1 "Sorafenib")))))
+   :ARG2 (t / test-01
+            :ARG0 w
+            :ARG1 (p / predict-01
+                     :mod (t2 / this)))
+   :ARG1-of (d / describe-01
+               :ARG0 (p2 / publication
+                         :ARG0-of (c4 / cite-01
+                                      :ARG2 "24"))))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This compound has been shown to inhibit MAP kinase signaling in colon, pancreatic and breast cancer cell lines, as well as inhibit tumor growth in colon, breast and non-small-cell lung cancer mouse xenograft models.
+# ::file pmid_1943_2991_107.txt
+# ::date 2015-08-22T11:59:06
+# ::id pmid_1943_2991.107
+(s / show-01
+   :ARG1 (a / and
+            :op1 (i / inhibit-01
+                    :ARG0 (c / compound
+                             :mod (t / this))
+                    :ARG1 (s2 / signal-07
+                              :ARG0 (k / kinase
+                                       :name (n / name
+                                                :op1 "MAP")))
+                    :location (a2 / and
+                                  :op1 (c2 / cell-line
+                                           :mod (d / disease
+                                                   :wiki "Pancreatic_cancer"
+                                                   :name (n2 / name
+                                                             :op1 "pancreatic"
+                                                             :op2 "cancer")))
+                                  :op2 (c4 / cell-line
+                                           :mod (d2 / disease
+                                                    :wiki "Colorectal_cancer"
+                                                    :name (n3 / name
+                                                              :op1 "colon"
+                                                              :op2 "cancer")))
+                                  :op3 (c7 / cell-line
+                                           :mod (d3 / disease
+                                                    :wiki "Breast_cancer"
+                                                    :name (n4 / name
+                                                              :op1 "breast"
+                                                              :op2 "cancer")))))
+            :op2 (i2 / inhibit-01
+                     :ARG0 c
+                     :ARG1 (g / grow-01
+                              :ARG1 (t2 / tumor))
+                     :location (a3 / and
+                                   :op1 (m / model
+                                           :mod (m2 / mouse)
+                                           :mod (x / xenograft)
+                                           :mod d2)
+                                   :op2 (m3 / model
+                                            :mod m2
+                                            :mod x
+                                            :mod d3)
+                                   :op3 (m4 / model
+                                            :mod m2
+                                            :mod x
+                                            :mod (d4 / disease
+                                                     :wiki "Lung_cancer"
+                                                     :name (n5 / name
+                                                               :op1 "lung"
+                                                               :op2 "cancer")
+                                                     :mod (c10 / cell
+                                                               :mod (s3 / small
+                                                                        :polarity "-"))))))))
+
+# ::save-date Thu Nov 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Tumor-bearing SENCAR mice that had been treated topically with TPA, twice weekly for 27 weeks, were treated with Sorafenib either topically or by gavage, as described in the Materials and Methods.
+# ::file pmid_1943_2991_108.txt
+# ::date 2015-08-18T23:04:15
+# ::id pmid_1943_2991.108
+(t / treat-04
+   :ARG1 (m / mouse
+            :ARG0-of (b / bear-01
+                        :ARG1 (t3 / tumor))
+            :ARG1-of (t4 / treat-04
+                         :ARG2 (s / small-molecule
+                                  :name (n2 / name
+                                            :op1 "TPA"))
+                         :duration (t5 / temporal-quantity
+                                       :quant "27"
+                                       :unit (w / week))
+                         :frequency (r / rate-entity-91
+                                       :ARG1 "2"
+                                       :ARG2 (t6 / temporal-quantity
+                                                 :quant "1"
+                                                 :unit w))
+                         :manner (t7 / topic))
+            :ARG0-of (s3 / sensitive-03
+                         :ARG1 (c / carcinogen)))
+   :ARG2 (s2 / small-molecule
+             :name (n3 / name
+                       :op1 "Sorafenib"))
+   :manner (o / or
+              :op1 t7
+              :op2 (g / gavage))
+   :ARG1-of (d / describe-01
+               :ARG0 (t9 / title-01
+                         :ARG1 (a / and
+                                  :op1 (m2 / material)
+                                  :op2 (m3 / method)))))
+
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Mice were photographed twice weekly to monitor tumor morphology and size.
+# ::file pmid_1943_2991_109.txt
+# ::date 2015-08-18T23:41:30
+# ::id pmid_1943_2991.109
+(p / photograph-01
+      :ARG1 (m / mouse)
+      :frequency (r / rate-entity-91
+            :ARG1 "2"
+            :ARG2 (t / temporal-quantity
+                  :quant "1"
+                  :unit (w / week)))
+      :purpose (m2 / monitor-01
+            :ARG1 (a / and
+                  :op1 (m3 / morphology
+                        :mod (t2 / tumor))
+                  :op2 (s / size
+                        :mod t2))))
+
+# ::save-date Thu Nov 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Tumors that received only topical acetone solvent, along with the TPA treatment, displayed the exophytic papilloma morphology normally observed in TPA-treated mice in this model (Fig. <xref ref-type="fig" rid="F6">6A</xref>).
+# ::file pmid_1943_2991_110.txt
+# ::date 2015-08-18T23:45:29
+# ::id pmid_1943_2991.110
+(d / display-01
+   :ARG0 (t / tumor
+            :ARG0-of (r / receive-01
+                        :ARG1 (a / and
+                                 :op1 (s / solvent
+                                         :mod (t2 / topic)
+                                         :mod (s3 / solvent))
+                                 :op2 (t3 / treat-04
+                                          :ARG1 t
+                                          :ARG2 (s2 / small-molecule
+                                                    :name (n2 / name
+                                                              :op1 "TPA"))))
+                        :mod (o / only)))
+   :ARG1 (m / morphology
+            :mod (p / papilloma)
+            :mod (e / exophytic)
+            :ARG1-of (o2 / observe-01
+                         :location (m2 / mouse
+                                       :ARG1-of (t4 / treat-04
+                                                    :ARG2 s2))
+                         :ARG1-of (n3 / normal-02)
+                         :location (m3 / model
+                                       :mod (t5 / this))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "6A")))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The histological appearance of these tumors was also typical of TPA-induced papillomas (Fig. <xref ref-type="fig" rid="F6">6E</xref>).
+# ::file pmid_1943_2991_111.txt
+# ::date 2015-08-19T00:00:36
+# ::id pmid_1943_2991.111
+(t / typical-02
+   :ARG1 (a / appear-01
+            :ARG1 (t2 / tumor
+                      :mod (t3 / this))
+            :mod (h / histology))
+   :ARG2 (p / papilloma
+            :ARG2-of (i / induce-01
+                        :ARG0 (s / small-molecule
+                                 :name (n / name
+                                          :op1 "TPA"))))
+   :mod (a2 / also)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6E")))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Tumors receiving topical Sorafenib at either concentration displayed a dried and darkened appearance that was reminiscent of human keratoacanthoma (Fig. <xref ref-type="fig" rid="F6">6</xref>, compare A to B and data not shown).
+# ::file pmid_1943_2991_112.txt
+# ::date 2015-08-19T00:05:57
+# ::id pmid_1943_2991.112
+(d / display-01
+   :ARG0 (t / tumor
+            :ARG0-of (r / receive-01
+                        :ARG1 (s / small-molecule
+                                 :name (n / name
+                                          :op1 "Sorafenib")
+                                 :ARG1-of (c / concentrate-02
+                                             :mod (e / either)))))
+   :ARG1 (a2 / appear-01
+             :ARG1 t
+             :ARG1-of (d2 / dry-08)
+             :ARG1-of (d3 / dark-02)
+             :ARG0-of (r2 / reminisce-01
+                          :ARG1 (k / keratoacanthoma
+                                   :mod (h / human))))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (a4 / and
+                          :op1 (f / figure
+                                  :mod "6"
+                                  :ARG0-of (c2 / compare-01
+                                               :ARG1 (f2 / figure
+                                                         :mod "6A")
+                                               :ARG2 (f3 / figure
+                                                         :mod "6B")))
+                          :op2 (d5 / data
+                                   :ARG1-of (s2 / show-01
+                                                :polarity "-")))))
+
+# ::save-date Thu Nov 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Histological analysis of these tumors revealed that the bulk of the tumor mass was non-cellular keratin, indicating a greatly enhanced level of squamous differentiation compared to the control TPA-induced tumors (Fig. <xref ref-type="fig" rid="F6">6</xref>, compare E to F).
+# ::file pmid_1943_2991_113.txt
+# ::date 2015-08-19T00:29:18
+# ::id pmid_1943_2991.113
+(r / reveal-01
+   :ARG0 (a / analyze-01
+            :ARG1 (t / tumor
+                     :mod (t2 / this))
+            :mod (h / histology))
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "keratin")
+            :mod (c / cell
+                    :polarity "-")
+            :domain (m / mass
+                       :mod (t3 / tumor)
+                       :quant (b / bulk))
+            :ARG0-of (i / indicate-01
+                        :ARG1 (l / level
+                                 :degree-of (d / differentiate-101
+                                               :mod (s / squamous))
+                                 :ARG1-of (e / enhance-01
+                                             :compared-to (t4 / tumor
+                                                              :mod (c2 / control)
+                                                              :ARG2-of (i2 / induce-01
+                                                                           :ARG0 (s2 / small-molecule
+                                                                                     :name (n2 / name
+                                                                                               :op1 "TPA"))))
+                                             :degree (g / great)))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "6"
+                         :ARG0-of (c3 / compare-01
+                                      :ARG1 (f2 / figure
+                                                :mod "6E")
+                                      :ARG2 (f3 / figure
+                                                :mod "6F")))))
+
+# ::save-date Wed Aug 19, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, the tumors of mice treated with Sorafenib by oral gavage did not differ drastically in outward appearance from the control TPA-induced tumors.
+# ::file pmid_1943_2991_114.txt
+# ::date 2015-08-19T00:46:34
+# ::id pmid_1943_2991.114
+(d / differ-02
+   :polarity "-"
+   :ARG1 (t / tumor
+            :poss (m / mouse
+                     :ARG1-of (t2 / treat-04
+                                  :ARG2 (s / small-molecule
+                                           :name (n / name
+                                                    :op1 "Sorafenib"))
+                                  :manner (g / gavage
+                                             :mod (o / oral)))))
+   :ARG2 (t3 / tumor
+             :mod (c / control)
+             :ARG2-of (i / induce-01
+                         :ARG0 (s2 / small-molecule
+                                   :name (n2 / name
+                                             :op1 "TPA"))))
+   :ARG3 (a / appear-01
+            :mod (o2 / outward))
+   :mod (d2 / drastic)
+   :ARG2-of (i2 / interest-01))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However upon histological examination these tumors appear very similar to the tumors that received topical Sorafenib (Fig. <xref ref-type="fig" rid="F6">6C</xref> and <xref ref-type="fig" rid="F6">6G</xref>).
+# ::file pmid_1943_2991_115.txt
+# ::date 2015-08-19T00:56:13
+# ::id pmid_1943_2991.115
+(h2 / have-concession-91
+    :ARG2 (a / appear-02
+             :ARG1 (r / resemble-01
+                      :ARG1 (t / tumor
+                               :mod (t2 / this))
+                      :ARG2 (t3 / tumor
+                                :ARG0-of (r2 / receive-01
+                                             :ARG1 (s / small-molecule
+                                                      :name (n / name
+                                                               :op1 "Sorafenib")
+                                                      :mod (t4 / topic))))
+                      :degree (v / very))
+             :condition (e / examine-01
+                           :mod (h / histology)))
+    :ARG1-of (d / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f / figure
+                                  :mod "6C")
+                          :op2 (f2 / figure
+                                   :mod "6G"))))
+
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt It was previously shown in the breast and colon tumor xenograft models that inhibition of tumor growth was closely associated with suppression of Erk1/2 phosphorylation [<xref ref-type="bibr" rid="B24">24</xref>].
+# ::file pmid_1943_2991_116.txt
+# ::date 2015-08-19T01:23:57
+# ::id pmid_1943_2991.116
+(s / show-01
+      :ARG0 (a / and
+            :op1 (m / model
+                  :mod (x / xenograft)
+                  :mod (b / breast))
+            :op2 (m2 / model
+                  :mod x
+                  :mod (c / colon)))
+      :ARG1 (a2 / associate-01
+            :ARG1 (i / inhibit-01
+                  :ARG1 (g / grow-01
+                        :ARG1 (t / tumor)))
+            :ARG2 (s2 / suppress-01
+                  :ARG1 (p2 / phosphorylate-01
+                        :ARG1 (e / enzyme
+                              :name (n / name :op1 "Erk1/2"))))
+            :ARG1-of (c2 / close-10))
+      :time (p / previous)
+      :ARG1-of (d / describe-01
+            :ARG0 (p3 / publication
+                  :ARG1-of (c3 / cite-01 :ARG2 "24"))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We therefore stained paraffin-embedded sections of the TPA-induced tumors, with and without Sorafenib treatment, with the pErk1/2 antibody.
+# ::file pmid_1943_2991_117.txt
+# ::date 2015-08-19T01:32:42
+# ::id pmid_1943_2991.117
+(c / cause-01
+   :ARG1 (s / stain-01
+            :ARG0 (w / we)
+            :ARG1 (s2 / section-01
+                      :ARG1 (a2 / and
+                                :op1 (t / tumor
+                                        :ARG2-of (i / induce-01
+                                                    :ARG0 (s3 / small-molecule
+                                                              :name (n / name
+                                                                       :op1 "TPA"))
+                                                    :ARG2 t3)
+                                        :ARG1-of (t2 / treat-04
+                                                     :ARG2 (s4 / small-molecule
+                                                               :name (n3 / name
+                                                                         :op1 "Sorafenib"))))
+                                :op2 (t3 / tumor
+                                         :ARG1-of (t4 / treat-04
+                                                      :polarity "-"
+                                                      :ARG2 s4)))
+                      :ARG1-of (e / embed-01
+                                  :ARG2 (p / paraffin)))
+            :ARG2 (a / antibody
+                     :ARG0-of (c2 / counter-01
+                                  :ARG1 (e2 / enzyme
+                                            :name (n2 / name
+                                                      :op1 "Erk1/2")
+                                            :ARG3-of (p2 / phosphorylate-01))))))
+
+# ::save-date Mon Aug 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The number of nuclei and intensity of staining was reduced for Sorafenib treated tumors compared to the TPA only-treated tumors (Fig. <xref ref-type="fig" rid="F6">6H</xref>).
+# ::file pmid_1943_2991_118.txt
+# ::date 2015-08-19T01:55:23
+# ::id pmid_1943_2991.118
+(r / reduce-01
+   :ARG1 (a / and
+            :op1 (n / number
+                    :quant-of (n2 / nucleus))
+            :op2 (i / intensity
+                    :degree-of (s / stain-01)))
+   :location (t / tumor
+                :ARG1-of (t2 / treat-04
+                             :ARG2 (s2 / small-molecule
+                                       :name (n3 / name
+                                                 :op1 "Sorafenib"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6H"))
+   :compared-to (t3 / tumor
+                    :ARG1-of (t4 / treat-04
+                                 :ARG2 (s3 / small-molecule
+                                           :name (n4 / name
+                                                     :op1 "TPA"))
+                                 :mod (o / only))))

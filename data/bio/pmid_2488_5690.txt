@@ -1,0 +1,1391 @@
+# ::save-date Wed Feb 24, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Genetic targeting of mutant <i>BRAF</i> resulted in restoration of sensitivity to serum starvation-induced apoptosis and efficiently inhibited cell proliferation in the absence of growth factors.
+# ::file a_pmid_2488_5690_10.txt
+# ::date 2015-06-08T05:01:37
+# ::id a_pmid_2488_5690.10
+(a / and
+   :op1 (r2 / result-01
+            :ARG1 (t / target-01
+                     :ARG1 (g2 / gene
+                               :wiki "BRAF_(gene)"
+                               :name (n / name
+                                        :op1 "BRAF")
+                               :ARG1-of (m / mutate-01))
+                     :mod (g / gene))
+            :ARG2 (r / restore-01
+                     :ARG1 (s / sensitive-03
+                              :ARG1 (a2 / apoptosis
+                                        :ARG2-of (i / induce-01
+                                                    :ARG0 (s2 / starve-01
+                                                              :ARG2 (s3 / serum)))))))
+   :op2 (i2 / inhibit-01
+            :ARG0 t
+            :ARG1 (p / proliferate-01
+                     :ARG0 (c / cell)
+                     :condition (a3 / absent-01
+                                    :ARG1 (g3 / growth-factor)))
+            :ARG2-of (e / efficient-01)
+            :condition a3))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Among tested agents, the B-Raf inhibitor dabrafenib was found to induce a strong V600E-dependent shift in cell viability.
+# ::file a_pmid_2488_5690_11.txt
+# ::date 2015-06-08T23:25:37
+# ::id a_pmid_2488_5690.11
+(f / find-01
+   :ARG1 (i2 / induce-01
+             :ARG0 (s / small-molecule
+                      :name (n3 / name
+                                :op1 "dabrafenib")
+                      :ARG0-of (i3 / inhibit-01
+                                   :ARG1 (e2 / enzyme
+                                             :name (n2 / name
+                                                       :op1 "B-Raf")))
+                      :ARG1-of (i4 / include-01
+                                   :ARG2 (a / agent
+                                            :ARG1-of (t2 / test-01))))
+             :ARG2 (s2 / shift-01
+                       :ARG1 (v / viability
+                                :mod (c / cell))
+                       :ARG0-of (d / depend-01
+                                   :ARG1 (m / mutate-01
+                                            :value "V600E"))
+                       :mod (s3 / strong))))
+
+# ::save-date Sun Jun 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, no differential sensitizing effect was observed for conventional chemotherapeutic agents (mitomycin C, oxaliplatin, paclitaxel, etoposide, 5-fluorouracil), nor for the targeted agents cetuximab, sorafenib, vemurafenib, RAF265, or for inhibition of PI3 kinase.
+# ::file a_pmid_2488_5690_12.txt
+# ::date 2015-06-08T23:42:39
+# ::id a_pmid_2488_5690.12
+(c / contrast-01
+   :ARG2 (o / observe-01
+            :ARG1 (a / affect-01
+                     :polarity "-"
+                     :ARG0 (a2 / and
+                               :op1 (a3 / agent
+                                        :mod (c2 / conventional)
+                                        :mod (c3 / chemotherapy)
+                                        :ARG1-of (m / mean-01
+                                                    :ARG2 (a5 / and
+                                                              :op1 (s2 / small-molecule
+                                                                       :name (n / name
+                                                                                :op1 "mitomycin"
+                                                                                :op2 "C"))
+                                                              :op2 (s3 / small-molecule
+                                                                       :name (n2 / name
+                                                                                 :op1 "oxaliplatin"))
+                                                              :op3 (s4 / small-molecule
+                                                                       :name (n3 / name
+                                                                                 :op1 "paclitaxel"))
+                                                              :op4 (s5 / small-molecule
+                                                                       :name (n4 / name
+                                                                                 :op1 "etoposide"))
+                                                              :op5 (s6 / small-molecule
+                                                                       :name (n5 / name
+                                                                                 :op1 "5-fluorouracil")))))
+                               :op2 (a4 / agent
+                                        :ARG1-of (t / target-01)
+                                        :ARG1-of (m2 / mean-01
+                                                     :ARG2 (a6 / and
+                                                               :op1 (s7 / small-molecule
+                                                                        :name (n6 / name
+                                                                                  :op1 "cetuximab"))
+                                                               :op2 (s8 / small-molecule
+                                                                        :name (n7 / name
+                                                                                  :op1 "sorafenib"))
+                                                               :op3 (s9 / small-molecule
+                                                                        :name (n8 / name
+                                                                                  :op1 "vemurafenib"))
+                                                               :op4 (s10 / small-molecule
+                                                                         :name (n9 / name
+                                                                                   :op1 "RAF265")))))
+                               :op3 (i / inhibit-01
+                                       :ARG1 (k / kinase
+                                                :name (n10 / name
+                                                           :op1 "PI3"))))
+                     :ARG2 (s / sensitize-01)
+                     :ARG1-of (d / differ-02))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Treatment with dabrafenib efficiently inhibited phosphorylation of the B-Raf downstream targets Mek 1/2 and Erk 1/2.
+# ::file a_pmid_2488_5690_13.txt
+# ::date 2015-06-08T23:54:05
+# ::id a_pmid_2488_5690.13
+(i / inhibit-01
+   :ARG0 (t / treat-04
+            :ARG2 (s / small-molecule
+                     :name (n5 / name
+                               :op1 "dabrafenib")))
+   :ARG1 (p2 / phosphorylate-01
+             :ARG1 (a / and
+                      :op1 (e3 / enzyme
+                               :name (n3 / name
+                                         :op1 "Mek1/2"))
+                      :op2 (e4 / enzyme
+                               :name (n4 / name
+                                         :op1 "Erk1/2"))
+                      :ARG1-of (t2 / target-01
+                                   :ARG0 (e2 / enzyme
+                                             :name (n2 / name
+                                                       :op1 "B-Raf")))
+                      :direction (d / downstream)))
+   :ARG2-of (e / efficient-01
+               :ARG1 t))
+
+# ::save-date Wed Feb 24, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt It has been shown that B-Raf<sup>V600E</sup> is sufficient to promote proliferation via Erk 1/2 signaling independently of exogenous growth factors and confers mechanisms to evade apoptosis [<xref ref-type="bibr" rid="B14">14</xref>-<xref ref-type="bibr" rid="B16">16</xref>].
+# ::file a_pmid_2488_5690_34.txt
+# ::date 2015-06-09T00:10:23
+# ::id a_pmid_2488_5690.34
+(s / show-01
+   :ARG0 (p3 / publication
+             :ARG1-of (c2 / cite-01
+                          :ARG2 (v / value-interval
+                                   :op1 "14"
+                                   :op2 "16")))
+   :ARG1 (a / and
+            :op1 (s2 / suffice-01
+                     :ARG0 (e2 / enzyme
+                               :name (n2 / name
+                                         :op1 "B-Raf")
+                               :ARG1-of (m / mutate-01
+                                           :value "V600E"))
+                     :ARG1 (p / promote-01
+                              :ARG0 e2
+                              :ARG1 (p2 / proliferate-01
+                                        :instrument (s3 / signal-07
+                                                        :ARG0 (e3 / enzyme
+                                                                  :name (n3 / name
+                                                                            :op1 "Erk1/2")))
+                                        :ARG0-of (d / depend-01
+                                                    :polarity "-"
+                                                    :ARG1 (g / growth-factor
+                                                             :mod (e4 / exogenous))))))
+            :op2 (c / confer-02
+                    :ARG0 e2
+                    :ARG1 (m2 / mechanism
+                              :purpose (e5 / evade-01
+                                           :ARG1 (a2 / apoptosis))))))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, these results are primarily based on non-quantitative RNA interference (RNAi) methods which are prone to artifacts in mammalian cells due to nonspecific defense mechanisms [<xref ref-type="bibr" rid="B17">17</xref>].
+# ::file a_pmid_2488_5690_35.txt
+# ::date 2015-06-09T00:20:02
+# ::id a_pmid_2488_5690.35
+(c / contrast-01
+      :ARG2 (b / base-02
+            :ARG1 (t2 / thing
+                  :ARG2-of (r / result-01)
+                  :mod (t / this))
+            :ARG2 (m / method
+                  :ARG1-of (p / prone-01
+                        :ARG2 (a / artifact)
+                        :location (c2 / cell
+                              :part-of (a2 / animal
+                                    :name (n2 / name :op1 "Mammalia")))
+                        :ARG1-of (c3 / cause-01
+                              :ARG0 (m2 / mechanism
+                                    :purpose (d / defend-01)
+                                    :ARG1-of (s / specific-02 :polarity "-"))))
+                  :mod (q / quantitative :polarity "-")
+                  :manner-of (i / interfere-01
+                        :ARG1 (n / nucleic-acid
+                              :name (n3 / name :op1 "RNA"))))
+            :manner (p3 / primary))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (p2 / publication
+                  :ARG1-of (c4 / cite-01 :ARG2 "17"))))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, somatic cell gene targeting enables quantitative knockouts of single alleles (Figure <xref ref-type="fig" rid="F1">1</xref>A) and the generation of endogenous models featuring well-defined genetic backgrounds [<xref ref-type="bibr" rid="B18">18</xref>].
+# ::file a_pmid_2488_5690_36.txt
+# ::date 2015-06-09T00:25:38
+# ::id a_pmid_2488_5690.36
+(c / contrast-01
+      :ARG2 (e / enable-01
+            :ARG0 (t / target-01
+                  :ARG1 (g / gene
+                        :part-of (c2 / cell
+                              :mod (s / somatic))))
+            :ARG1 (a / and
+                  :op1 (k / knock-out-03
+                        :ARG1 (a2 / allele
+                              :ARG1-of (s2 / single-02))
+                        :mod (q / quantity)
+                        :ARG1-of (d / describe-01
+                              :ARG0 (f / figure :mod "1A")))
+                  :op2 (g2 / generate-01
+                        :ARG1 (m / model
+                              :mod (e2 / endogenous)
+                              :ARG0-of (f2 / feature-01
+                                    :ARG1 (b / background
+                                          :mod (g3 / gene)
+                                          :ARG1-of (d2 / define-01
+                                                :manner (w / well))))))))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (p / publication
+                  :ARG1-of (c3 / cite-01 :ARG2 "18"))))
+
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Utilizing this method, we have disrupted <i>BRAF</i> alleles in the colorectal cancer cell line RKO and established syngeneic clones which harbor a single <i>BRAF</i> allele of either wild-type or mutant genotype.
+# ::file a_pmid_2488_5690_37.txt
+# ::date 2015-06-09T00:31:02
+# ::id a_pmid_2488_5690.37
+(a / and
+      :op1 (d2 / disrupt-01
+            :ARG0 (w2 / we)
+            :ARG1 (a2 / allele
+                  :name (n2 / name :op1 "BRAF"))
+            :location (c / cell-line
+                  :name (n3 / name :op1 "RKO")
+                  :mod (d3 / disease
+                        :wiki "Colorectal_cancer"
+                        :name (n6 / name :op1 "colorectal" :op2 "cancer"))))
+      :op2 (e / establish-01
+            :ARG0 w2
+            :ARG1 (c2 / clone
+                  :mod (s / syngeneic)
+                  :ARG0-of (h2 / harbor-01
+                        :ARG1 (o / or
+                              :op1 (a3 / allele
+                                    :name (n4 / name :op1 "BRAF")
+                                    :mod (w3 / wild-type)
+                                    :ARG1-of (s2 / single-02))
+                              :op2 (a4 / allele
+                                    :name (n5 / name :op1 "BRAF")
+                                    :ARG1-of (m / mutate-01)
+                                    :ARG1-of s2)))))
+      :manner (u / utilize-01
+            :ARG0 w2
+            :ARG1 (m2 / method
+                  :mod (t / this))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Despite its near-diploid karyotype and MSI phenotype, the colorectal cancer cell line RKO carries a stable triplication of the <i>BRAF</i> gene locus (dup (7) (q21q36)) with one wild-type and two mutant alleles present in parental cells [<xref ref-type="bibr" rid="B13">13</xref>].
+# ::file a_pmid_2488_5690_38.txt
+# ::date 2015-06-09T00:36:59
+# ::id a_pmid_2488_5690.38
+(c / carry-01
+   :ARG0 (c2 / cell-line
+             :name (n2 / name
+                       :op1 "RKO")
+             :mod (d / disease
+                     :wiki "Colorectal_cancer"
+                     :name (n / name
+                              :op1 "colorectal"
+                              :op2 "cancer")))
+   :ARG1 (t / triplicate-00
+            :ARG1 (l / locus
+                     :mod (g / gene
+                             :name (n3 / name
+                                       :op1 "BRAF"))
+                     :ARG1-of (l2 / label-01
+                                  :ARG2 (s2 / string-entity
+                                            :value "dup(7)(q21q36)")))
+            :ARG1-of (s / stable-03)
+            :ARG1-of (m / mean-01
+                        :ARG2 (b / be-located-at-91
+                                 :ARG1 (a / and
+                                          :op1 (a2 / allele
+                                                   :quant "1"
+                                                   :mod (w / wild-type))
+                                          :op2 (a3 / allele
+                                                   :quant "2"
+                                                   :ARG1-of (m2 / mutate-01)))
+                                 :ARG2 (c3 / cell
+                                           :mod (p / parent)))))
+   :concession (h2 / have-03
+                   :ARG0 c2
+                   :ARG1 (a4 / and
+                             :op1 (k / karyotype
+                                     :ARG1-of (n4 / near-01
+                                                  :ARG2 (d3 / diploid)))
+                             :op2 (p2 / phenotype
+                                      :name (n5 / name
+                                                :op1 "microsattelite"
+                                                :op2 "instability"))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p3 / publication
+                          :ARG1-of (c4 / cite-01
+                                       :ARG2 "13"))))
+
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This genotype was verified by DNA sequencing in RKO-E1, a subclone obtained from RKO that was found to be comparable to the parental cell line in terms of morphology and proliferation (Figure <xref ref-type="fig" rid="F1">1</xref>B and data not shown).
+# ::file a_pmid_2488_5690_39.txt
+# ::date 2015-06-09T00:45:57
+# ::id a_pmid_2488_5690.39
+(v / verify-01
+      :ARG1 (g / genotype
+            :mod (t / this))
+      :location (c / cell-line
+            :name (n2 / name :op1 "RKO-E1")
+            :ARG3-of (s2 / subclone-01
+                  :ARG1-of (o / obtain-01
+                        :ARG2 (c2 / cell-line
+                              :name (n3 / name :op1 "RKO")))
+                  :ARG1-of (c3 / compare-01
+                        :ARG2 (c4 / cell-line
+                              :mod (p2 / parent))
+                        :ARG1-of (p / possible-01)
+                        :topic (a / and
+                              :op1 (m / morphology)
+                              :op2 (p3 / proliferate-01))
+                        :ARG1-of (f / find-01))))
+      :ARG1-of (d / describe-01
+            :ARG0 (a2 / and
+                  :op1 (f2 / figure :mod "1B")
+                  :op2 (d2 / data
+                        :ARG1-of (s / show-01 :polarity "-"))))
+      :manner (s3 / sequence-01
+            :ARG1 (n / nucleic-acid
+                  :wiki "DNA"
+                  :name (n4 / name :op1 "DNA"))))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the first targeting round, an oncogenic allele of <i>BRAF</i> exon 15 was recombined and deleted by somatic cell gene targeting to generate the cell clone RBOW (RKO-derived <i>BRAF</i><sup>onc/wt/-</sup>).
+# ::file a_pmid_2488_5690_40.txt
+# ::date 2015-06-09T04:41:16
+# ::id a_pmid_2488_5690.40
+(a / and
+   :op1 (r / recombine-01
+           :ARG1 (a2 / allele
+                     :mod (o2 / oncogenic)
+                     :mod (e / exon
+                             :mod "15"
+                             :part-of (g / gene
+                                         :name (n / name
+                                                  :op1 "BRAF")))))
+   :op2 (d / delete-01
+           :ARG1 a2)
+   :time (r2 / round-05
+             :ARG1 (t / target-01)
+             :ord (o / ordinal-entity
+                     :value "1"))
+   :instrument (t2 / target-01
+                   :ARG1 (g4 / gene
+                             :part-of (c / cell
+                                         :mod (s / somatic))))
+   :purpose (g2 / generate-01
+                :ARG1 (c2 / cell
+                          :name (n2 / name
+                                    :op1 "RBOW")
+                          :ARG1-of (m / mean-01
+                                      :ARG2 (c4 / cell-line
+                                                :location-of (g3 / gene
+                                                                 :name (n3 / name
+                                                                           :op1 "BRAF")
+                                                                 :ARG1-of (d2 / derive-01
+                                                                              :ARG2 (c3 / cell-line
+                                                                                        :name (n4 / name
+                                                                                                  :op1 "RKO")))
+                                                                 :ARG1-of (l / label-01
+                                                                             :ARG2 (s2 / string-entity
+                                                                                       :value "onc/wt/-")))))
+                          :ARG1-of (c5 / clone-01))))
+
+# ::save-date Wed Jan 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Subsequently, either wild-type or V600E-mutant B-Raf was disrupted by targeting a second allele in RBOW, yielding six <i>BRAF</i>-mutant and one wild-type clone from approximately 10<sup>4</sup> screened colonies.
+# ::file a_pmid_2488_5690_41.txt
+# ::date 2015-06-09T04:51:08
+# ::id a_pmid_2488_5690.41
+(d / disrupt-01
+   :ARG1 (o2 / or
+             :op1 (e2 / enzyme
+                      :name (n2 / name
+                                :op1 "B-Raf")
+                      :mod (w / wild-type))
+             :op2 (e / enzyme
+                     :name (n / name
+                              :op1 "B-Raf")
+                     :ARG2-of (m / mutate-01
+                                 :value "V600E")))
+   :manner (t2 / target-01
+               :ARG1 (a2 / allele
+                         :part-of (c / cell
+                                     :name (n3 / name
+                                               :op1 "RBOW"))
+                         :mod (o / ordinal-entity
+                                 :value "2")))
+   :ARG0-of (y / yield-01
+               :ARG1 (a3 / and
+                         :op1 (c2 / clone
+                                  :quant "6"
+                                  :mod (m2 / mutate-01
+                                           :ARG1 (g / gene
+                                                    :name (n4 / name
+                                                              :op1 "BRAF"))))
+                         :op2 (c3 / clone
+                                  :quant "1"
+                                  :mod w))
+               :source (c4 / colony
+                           :ARG1-of (s2 / screen-01)
+                           :quant (a / approximately
+                                     :op1 "10000")))
+   :time (s3 / subsequent))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Out of these double positive clones, <i>BRAF</i> knockout cell lines RBO-1 and RBO-2 (RKO-derived <i>BRAF</i><sup>onc/-/-</sup> 1 and 2) as well as RBW-1 (RKO-derived <i>BRAF</i><sup>wt/-/-</sup>) were established (Figure <xref ref-type="fig" rid="F1">1</xref>B).
+# ::file a_pmid_2488_5690_42.txt
+# ::date 2015-06-09T05:02:53
+# ::id a_pmid_2488_5690.42
+(e / establish-01
+   :ARG1 (a / and
+            :op1 (c / cell-line
+                    :name (n / name
+                             :op1 "RBO-1")
+                    :ARG1-of (m / mean-01
+                                :ARG2 (c3 / cell-line
+                                          :mod "1"
+                                          :location-of (g2 / gene
+                                                           :name (n4 / name
+                                                                     :op1 "BRAF")
+                                                           :ARG1-of (d / derive-01
+                                                                       :ARG2 (c4 / cell-line
+                                                                                 :name (n5 / name
+                                                                                           :op1 "RKO"))
+                                                                       :ARG1 g3)
+                                                           :ARG2-of (m2 / mutate-01
+                                                                        :mod "−/−")
+                                                           :ARG0-of (c9 / cause-01
+                                                                        :ARG1 (d4 / disease
+                                                                                  :wiki "Cancer"
+                                                                                  :name (n8 / name
+                                                                                            :op1 "cancer"))))))
+                    :location-of (k / knock-out-03
+                                    :ARG1 (g / gene
+                                             :name (n3 / name
+                                                       :op1 "BRAF"))
+                                    :location c2))
+            :op2 (c2 / cell-line
+                     :name (n2 / name
+                               :op1 "RBO-2")
+                     :ARG1-of (m3 / mean-01
+                                  :ARG2 (c5 / cell-line
+                                            :mod "2"
+                                            :location-of g2)))
+            :op3 (c6 / cell-line
+                     :name (n6 / name
+                               :op1 "RBW-1")
+                     :ARG1-of (m4 / mean-01
+                                  :ARG2 (c7 / cell-line
+                                            :location-of (g3 / gene
+                                                             :name (n7 / name
+                                                                       :op1 "BRAF")
+                                                             :ARG2-of (m5 / mutate-01
+                                                                          :mod "−/−")
+                                                             :mod (w / wild-type)))))
+            :source (c8 / clone
+                        :mod (p / positive
+                                :mod (d2 / double))
+                        :mod (t / this)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "1B")))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The apparent counterselection against inactivation of B Raf<sup>V600E</sup> might indicate the presence of an oncogene addiction for B-Raf<sup>V600E</sup> as a cancer cell trait in RKO [<xref ref-type="bibr" rid="B19">19</xref>].
+# ::file a_pmid_2488_5690_43.txt
+# ::date 2015-06-09T05:16:43
+# ::id a_pmid_2488_5690.43
+(p2 / possible-01
+    :ARG1 (i / indicate-01
+             :ARG0 (c / counterselect-00
+                      :mod (a / apparent)
+                      :ARG0-of (c6 / counter-01
+                                   :ARG1 (a3 / activate-01
+                                             :polarity "-"
+                                             :ARG1 (e3 / enzyme
+                                                       :name (n3 / name
+                                                                 :op1 "B-Raf")
+                                                       :ARG2-of (m / mutate-01
+                                                                   :value "V600E")))))
+             :ARG1 (t / trait
+                      :domain (a2 / addict-01
+                                  :ARG1 e3
+                                  :ARG2 (o / oncogene))
+                      :mod (c2 / cell
+                               :mod (d / disease
+                                       :wiki "Cancer"
+                                       :name (n / name
+                                                :op1 "cancer")))
+                      :location (c4 / cell-line
+                                    :name (n5 / name
+                                              :op1 "RKO"))))
+    :ARG1-of (d2 / describe-01
+                 :ARG0 (p3 / publication
+                           :ARG1-of (c5 / cite-01
+                                        :ARG2 "19"))))
+
+
+# ::save-date Tue Jan 19, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt For structural confirmation of the deleted alleles, DNA sequencing was performed and all genotypes were verified (Figure <xref ref-type="fig" rid="F1">1</xref>B).
+# ::file a_pmid_2488_5690_44.txt
+# ::date 2015-06-09T05:24:19
+# ::id a_pmid_2488_5690.44
+(a / and
+      :op1 (p / perform-01
+            :ARG1 (s / sequence-01
+                  :ARG1 (n / nucleic-acid
+                        :wiki "DNA"
+                        :name (n2 / name :op1 "DNA"))))
+      :op2 (v / verify-01
+            :ARG1 (g / genotype
+                  :mod (a2 / all)))
+      :purpose (c / confirm-01
+            :ARG1 (a3 / allele
+                  :ARG1-of (d / delete-01))
+            :mod (s2 / structure))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f / figure :mod "1B")))
+
+# ::save-date Tue Jan 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, all cells expressed <i>BRAF</i> protein at comparable levels (Figure <xref ref-type="fig" rid="F1">1</xref>C).
+# ::file a_pmid_2488_5690_45.txt
+# ::date 2015-06-09T05:27:35
+# ::id a_pmid_2488_5690.45
+(a / and
+   :op2 (p2 / possible-01
+            :ARG1 (c2 / compare-01
+                      :ARG1 (l / level
+                               :quant-of (e / express-03
+                                            :ARG2 (e2 / enzyme
+                                                      :wiki "-"
+                                                      :name (n / name
+                                                               :op1 "BRAF"))
+                                            :ARG3 (c / cell
+                                                     :mod (a2 / all))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1C")))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt While the expression of Mek 1/2 and Erk 1/2 was independent of serum concentration and <i>BRAF</i> status, the phosphorylation of these effector kinases was constantly active in the <i>BRAF</i>-mutant clones but low in <i>BRAF</i>-wild-type cells (Figure <xref ref-type="fig" rid="F1">1</xref>C).
+# ::file a_pmid_2488_5690_46.txt
+# ::date 2015-06-09T05:31:04
+# ::id a_pmid_2488_5690.46
+(c / contrast-01
+   :ARG1 (c3 / contrast-01
+             :ARG1 (a3 / active
+                       :domain (p / phosphorylate-01
+                                  :ARG1 "a")
+                       :manner (c4 / constant)
+                       :location (c5 / clone
+                                     :location-of (g2 / gene
+                                                      :name (n4 / name
+                                                                :op1 "BRAF")
+                                                      :ARG2-of (m / mutate-01))))
+             :ARG2 (l / low-04
+                      :ARG1 (c6 / cell
+                                :location-of (g3 / gene
+                                                 :name (n5 / name
+                                                           :op1 "BRAF")
+                                                 :mod (w / wild-type)))
+                      :ARG2 p))
+   :ARG2 (d / depend-01
+            :polarity "-"
+            :ARG0 (e3 / express-03
+                      :ARG2 (a / and
+                               :op1 (k / kinase
+                                       :name (n / name
+                                                :op1 "Mek1/2"))
+                               :op2 (k2 / kinase
+                                        :name (n2 / name
+                                                  :op1 "Erk1/2"))
+                               :ARG0-of (e / effect-03)))
+            :ARG1 (a2 / and
+                      :op1 (c2 / concentrate-02
+                               :ARG1 (s / serum))
+                      :op2 (s2 / status
+                               :mod (g / gene
+                                       :name (n3 / name
+                                                 :op1 "BRAF")))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1C")))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This was found to be independent of the serum concentration, indicating that the phosphorylation status of Mek and Erk is dependent on mutant <i>BRAF</i> in RKO.
+# ::file a_pmid_2488_5690_47.txt
+# ::date 2015-06-09T05:39:53
+# ::id a_pmid_2488_5690.47
+(f / find-01
+   :ARG1 (d / depend-01
+            :polarity "-"
+            :ARG0 (t / this)
+            :ARG1 (c / concentrate-02
+                     :ARG1 (s / serum))
+            :ARG0-of (i / indicate-01
+                        :ARG1 (d2 / depend-01
+                                  :ARG0 (s2 / status
+                                            :mod (p / phosphorylate-01
+                                                    :ARG1 (a / and
+                                                             :op1 (e / enzyme
+                                                                     :name (n / name
+                                                                              :op1 "Mek"))
+                                                             :op2 (e2 / enzyme
+                                                                      :name (n2 / name
+                                                                                :op1 "Erk")))))
+                                  :ARG1 (g / gene
+                                           :name (n3 / name
+                                                     :op1 "BRAF")
+                                           :ARG2-of (m / mutate-01))
+                                  :location (c2 / cell-line
+                                                :name (n4 / name
+                                                          :op1 "RKO"))))))
+
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Under standard long-term cell culture conditions no differences in morphology or growth were observed between the cell clones (Figures <xref ref-type="fig" rid="F1">1</xref>B and <xref ref-type="fig" rid="F2">2</xref>A).
+# ::file a_pmid_2488_5690_49.txt
+# ::date 2015-06-09T09:59:07
+# ::id a_pmid_2488_5690.49
+(o / observe-01
+      :ARG1 (d / differ-02
+            :polarity "-"
+            :ARG1 (c2 / cell
+                  :ARG1-of (c / clone-01))
+            :ARG3 (o2 / or
+                  :op1 (m / morphology)
+                  :op2 (g / grow-01)))
+      :condition (c3 / condition
+            :ARG1-of (s / standard-02)
+            :mod (c4 / culture-01
+                  :ARG1 (c5 / cell)
+                  :ARG1-of (l2 / long-03)))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (a / and
+                  :op1 (f / figure :mod "1B")
+                  :op2 (f2 / figure :mod "2A"))))
+
+
+# ::save-date Sun Jun 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Expectedly, decreased serum concentrations led to lower proliferation rates in these cells, but exponential growth was sustained under all applied conditions.
+# ::file a_pmid_2488_5690_50.txt
+# ::date 2015-06-09T10:02:11
+# ::id a_pmid_2488_5690.50
+(c3 / contrast-01
+      :ARG1 (l2 / lead-03
+            :ARG0 (c / concentrate-02
+                  :ARG1 (s / serum)
+                  :ARG1-of (d / decrease-01))
+            :ARG2 (p / proliferate-01
+                  :ARG2-of (l / low-04
+                        :ARG1 (c2 / cell
+                              :mod (t / this))
+                        :degree (m / more)))
+            :ARG1-of (e2 / expect-01))
+      :ARG2 (s2 / sustain-01
+            :ARG1 (g / grow-01
+                  :ARG2 (e / exponential))
+            :condition (c4 / condition
+                  :ARG1-of (a / apply-02)
+                  :mod (a2 / all))))
+
+
+# ::save-date Wed Jun 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, the withdrawal of serum resulted in the inhibition of cell growth of the wild-type cells RBW-1 (Figure <xref ref-type="fig" rid="F2">2</xref>B and C).
+# ::file a_pmid_2488_5690_51.txt
+# ::date 2015-06-09T10:05:20
+# ::id a_pmid_2488_5690.51
+(c / contrast-01
+      :ARG2 (r / result-01
+            :ARG1 (w / withdraw-01
+                  :ARG1 (s / serum))
+            :ARG2 (i / inhibit-01
+                  :ARG1 (g / grow-01
+                        :ARG0 (c2 / cell-line
+                              :name (n / name :op1 "RBW-1")
+                              :mod (w2 / wild-type)))))
+      :ARG1-of (d / describe-01
+            :ARG0 (a / and
+                  :op1 (f / figure :mod "2B")
+                  :op2 (f2 / figure :mod "2C"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt It has been shown previously that <i>BRAF</i> wild-type cells require glucose supply for survival whereas <i>BRAF</i>-mutant cell clones maintain proliferation in low-glucose environments [<xref ref-type="bibr" rid="B20">20</xref>].
+# ::file a_pmid_2488_5690_52.txt
+# ::date 2015-06-09T10:07:28
+# ::id a_pmid_2488_5690.52
+(c / contrast-01
+   :ARG1 (r / require-01
+            :ARG0 (c2 / cell
+                      :location-of (g / gene
+                                      :name (n / name
+                                               :op1 "BRAF")
+                                      :mod (w / wild-type)))
+            :ARG1 (s2 / supply-01
+                      :ARG1 (s3 / small-molecule
+                                :name (n2 / name
+                                          :op1 "glucose")))
+            :purpose (s4 / survive-01
+                         :ARG0 c2))
+   :ARG2 (m / maintain-01
+            :ARG0 (c4 / cell
+                      :ARG1-of (c3 / clone-01
+                                   :location-of (g2 / gene
+                                                    :name (n3 / name
+                                                              :op1 "BRAF")
+                                                    :ARG1-of (m2 / mutate-01))))
+            :ARG1 (p2 / proliferate-01)
+            :location (e / environment
+                         :ARG1-of (l / low-04
+                                     :ARG2 s3)))
+   :ARG1-of (s / show-01
+               :ARG0 (p3 / publication
+                         :ARG1-of (c5 / cite-01
+                                      :ARG2 "20"))
+               :time (p / previous)))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Here we show that the V600E mutation of B-Raf also provides independency of serum-derived growth signals in RKO and that targeting of oncogenically mutant <i>BRAF</i> is sufficient to deprive this vital feature of malignancy from the cells, thereby corroborating previous reports [<xref ref-type="bibr" rid="B6">6</xref>].
+# ::file a_pmid_2488_5690_53.txt
+# ::date 2015-06-09T10:21:30
+# ::id a_pmid_2488_5690.53
+(a / and
+   :op1 (p / provide-01
+           :ARG0 (e2 / enzyme
+                     :name (n2 / name
+                               :op1 "B-Raf")
+                     :ARG2-of (m / mutate-01
+                                 :value "V600E"))
+           :ARG1 (d / depend-01
+                    :polarity "-"
+                    :ARG1 (s / signal-07
+                             :ARG1 (g / grow-01)
+                             :ARG1-of (d2 / derive-01
+                                          :ARG2 (s2 / serum))))
+           :mod (a2 / also)
+           :location (c / cell-line
+                        :name (n3 / name
+                                  :op1 "RKO")))
+   :op2 (s3 / suffice-01
+            :ARG0 (t / target-01
+                     :ARG1 (g2 / gene
+                               :name (n4 / name
+                                         :op1 "BRAF")
+                               :ARG1-of (m2 / mutate-01
+                                            :ARG0-of (c6 / cause-01
+                                                         :ARG1 (d5 / disease
+                                                                   :wiki "Cancer"
+                                                                   :name (n / name
+                                                                            :op1 "cancer"))))))
+            :ARG1 (d3 / deprive-01
+                      :ARG0 t
+                      :ARG1 (f / feature-01
+                               :ARG0 "c2"
+                               :ARG1 (m3 / malignancy)
+                               :mod (t2 / this)
+                               :mod (v / vital))
+                      :ARG2 (c2 / cell)))
+   :ARG1-of (s4 / show-01
+                :ARG0 (w / we)
+                :location (h / here)
+                :ARG0-of (c3 / cause-01
+                             :ARG1 (c4 / corroborate-01
+                                       :ARG1 (r / report
+                                                :time (p2 / previous)
+                                                :ARG1-of (d4 / describe-01
+                                                             :ARG0 (p3 / publication
+                                                                       :ARG1-of (c5 / cite-01
+                                                                                    :ARG2 "6"))))))))
+
+# ::save-date Thu Jan 28, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Sustained proliferative signaling is considered one of the major traits of cancer cells and is therefore used as a target mechanism of individualized therapy approaches including anti EGFR therapy strategies in colorectal cancer [<xref ref-type="bibr" rid="B21">21</xref>,<xref ref-type="bibr" rid="B22">22</xref>].
+# ::file a_pmid_2488_5690_54.txt
+# ::date 2015-06-09T10:31:52
+# ::id a_pmid_2488_5690.54
+(c / consider-01
+   :ARG1 (i / include-01
+            :ARG1 (s / signal-07
+                     :ARG0-of (p / proliferate-01)
+                     :ARG1-of (s2 / sustain-01))
+            :ARG2 (t / trait
+                     :poss (c2 / cell
+                               :mod (d2 / disease
+                                        :wiki "Cancer"
+                                        :name (n3 / name
+                                                  :op1 "cancer")))
+                     :ARG1-of (m / major-02)))
+   :ARG0-of (c4 / cause-01
+                :ARG1 (u / use-01
+                         :ARG1 s
+                         :ARG2 (m2 / mechanism
+                                   :ARG1-of (t2 / target-01)
+                                   :poss (a / approach-02
+                                            :mod (t3 / therapy
+                                                     :ARG1-of (i2 / individualize-02))
+                                            :ARG2-of (i3 / include-91
+                                                         :ARG1 (s3 / strategy
+                                                                   :mod (t4 / therapy
+                                                                            :ARG0-of (c7 / counter-01
+                                                                                         :ARG1 (e / enzyme
+                                                                                                  :name (n2 / name
+                                                                                                            :op1 "EGFR"))))
+                                                                   :prep-in (d / disease
+                                                                               :wiki "Colorectal_cancer"
+                                                                               :name (n / name
+                                                                                        :op1 "colorectal"
+                                                                                        :op2 "cancer")))
+                                                         :ARG1-of (d4 / describe-01
+                                                                      :ARG0 (p3 / publication
+                                                                                :ARG1-of (c6 / cite-01
+                                                                                             :ARG2 "22"))))))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (p2 / publication
+                          :ARG1-of (c5 / cite-01
+                                       :ARG2 "21"))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In another context, mutant B-Raf induced cellular senescence rather than proliferation [<xref ref-type="bibr" rid="B23">23</xref>,<xref ref-type="bibr" rid="B24">24</xref>].
+# ::file a_pmid_2488_5690_55.txt
+# ::date 2015-06-09T23:18:51
+# ::id a_pmid_2488_5690.55
+(i / induce-01
+   :ARG0 (e2 / enzyme
+             :name (n2 / name
+                       :op1 "B-Raf")
+             :ARG2-of (m / mutate-01))
+   :ARG2 (s / senescence
+            :mod (c / cell)
+            :ARG1-of (i2 / instead-of-91
+                         :ARG2 (p / proliferate-01
+                                  :ARG0 c)))
+   :condition (c2 / context
+                  :mod (a / another))
+   :ARG1-of (d / describe-01
+               :ARG0 (p2 / publication
+                         :ARG1-of (c3 / cite-01
+                                      :ARG2 (a2 / and
+                                                :op1 "23"
+                                                :op2 "24")))))
+
+# ::save-date Sun Jun 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, senescence can be overcome by phosphoinositide 3-kinase (PI3K)/AKT signaling [<xref ref-type="bibr" rid="B24">24</xref>] which is hyperactivated in RKO due to a <i>PIK3CA</i> mutation.
+# ::file a_pmid_2488_5690_56.txt
+# ::date 2015-06-09T23:22:38
+# ::id a_pmid_2488_5690.56
+(c / contrast-01
+   :ARG2 (p / possible-01
+            :ARG1 (o / overcome-01
+                     :ARG0 (s2 / signal-07
+                               :ARG0 (p2 / pathway
+                                         :name (n2 / name
+                                                   :op1 "phosphoinositide"
+                                                   :op2 "3-kinase"
+                                                   :op3 "AKT"))
+                               :ARG1-of (a / activate-01
+                                           :degree (h / hyper)
+                                           :location (c3 / cell-line
+                                                         :name (n3 / name
+                                                                   :op1 "RKO"))
+                                           :ARG1-of (c4 / cause-01
+                                                        :ARG0 (m / mutate-01
+                                                                 :ARG1 (g / gene
+                                                                          :name (n / name
+                                                                                   :op1 "PIK3CA"))))))
+                     :ARG1 (s / senescence))
+            :ARG1-of (d / describe-01
+                        :ARG0 (p3 / publication
+                                  :ARG1-of (c2 / cite-01
+                                               :ARG2 "24")))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt By staining of senescence-associated β-galactosidase activity [<xref ref-type="bibr" rid="B25">25</xref>] we examined whether the differential proliferation rates observed upon serum deprivation were attributable to cellular senescence.
+# ::file a_pmid_2488_5690_57.txt
+# ::date 2015-06-09T23:29:10
+# ::id a_pmid_2488_5690.57
+(e / examine-01
+   :ARG0 (w / we)
+   :ARG1 (p / possible-01
+            :mode "interrogative"
+            :ARG1 (a / attribute-01
+                     :ARG1 (r / rate
+                              :mod (p2 / proliferate-01)
+                              :ARG1-of (d / differ-02)
+                              :ARG1-of (o / observe-01
+                                          :condition (d3 / deprive-01
+                                                         :ARG1 (s3 / serum))))
+                     :ARG2 (s / senescence
+                              :mod (c / cell))))
+   :manner (s2 / stain-01
+               :ARG1 (a2 / activity-06
+                         :ARG0 (e2 / enzyme
+                                   :name (n / name
+                                            :op1 "senescence-associated"
+                                            :op2 "β-galactosidase")))
+               :ARG1-of (d2 / describe-01
+                            :ARG0 (p3 / publication
+                                      :ARG1-of (c2 / cite-01
+                                                   :ARG2 "25")))))
+
+
+# ::save-date Thu Jun 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cellular senescence was detected at very low levels in less than 5% of cells (Figure <xref ref-type="fig" rid="F2">2</xref>D-E), indicating that senescence alone cannot explain the strong reduction in cell growth observed upon withdrawal of serum.
+# ::file a_pmid_2488_5690_58.txt
+# ::date 2015-06-09T23:32:53
+# ::id a_pmid_2488_5690.58
+(d / detect-01
+      :ARG1 (l2 / level
+            :quant-of (s / senescence
+                  :mod (c / cell))
+            :ARG1-of (l3 / low-04
+                  :degree (v / very)))
+      :location (c2 / cell
+            :quant (l / less-than
+                  :op1 (p / percentage-entity :value "5")))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (a / and
+                  :op1 (f / figure
+                        :name (n / name :op1 "2D"))
+                  :op2 (f2 / figure
+                        :name (n2 / name :op1 "2E"))))
+      :ARG0-of (i / indicate-01
+            :ARG1 (p2 / possible-01
+                  :polarity "-"
+                  :ARG1 (e / explain-01
+                        :ARG0 (s2 / senescence
+                              :mod (a2 / alone))
+                        :ARG1 (r / reduce-01
+                              :ARG1 (g / grow-01
+                                    :ARG1 (c3 / cell))
+                              :ARG2 (s4 / strong)
+                              :ARG1-of (o / observe-01
+                                    :condition (w / withdraw-01
+                                          :ARG1 (s3 / serum))))))))
+
+
+# ::save-date Fri Dec 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Flow cytometry revealed a significant increase of apoptotic cells in wild-type compared to mutant clones upon withdrawal of serum (Figure <xref ref-type="fig" rid="F2">2</xref>F and G).
+# ::file a_pmid_2488_5690_59.txt
+# ::date 2015-06-09T23:38:16
+# ::id a_pmid_2488_5690.59
+(r / reveal-01
+      :ARG0 (t / thing
+            :name (n / name :op1 "flow" :op2 "cytometry"))
+      :ARG1 (i / increase-01
+            :ARG1 (c / cell
+                  :mod (a / apoptosis))
+            :ARG2 (s / significant-02)
+            :location (c2 / cell
+                  :mod (w / wild-type)
+                  :compared-to (c3 / clone
+                        :ARG2-of (m / mutate-01)))
+            :condition (w2 / withdraw-01
+                  :ARG1 (s2 / serum)))
+      :ARG1-of (d / describe-01
+            :ARG0 (a2 / and
+                  :op1 (f / figure :mod "2F")
+                  :op2 (f2 / figure :mod "2G"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Apoptosis was confirmed by the detection of cleaved caspase 3 at considerable levels in serum-starved RBW-1, while all other samples showed full-length protein only (Figure <xref ref-type="fig" rid="F2">2</xref>H).
+# ::file a_pmid_2488_5690_60.txt
+# ::date 2015-06-09T23:42:19
+# ::id a_pmid_2488_5690.60
+(c5 / contrast-01
+    :ARG1 (c / confirm-01
+             :ARG0 (d / detect-01
+                      :ARG1 (l / level
+                               :quant-of (p2 / protein
+                                             :name (n / name
+                                                      :op1 "caspase"
+                                                      :op2 "3")
+                                             :ARG1-of (c2 / cleave-01))
+                               :quant (c3 / considerable))
+                      :location (c4 / cell-line
+                                    :name (n2 / name
+                                              :op1 "RBW-1")
+                                    :ARG1-of (s / starve-01
+                                                :ARG2 (s2 / serum))))
+             :ARG1 (a / apoptosis))
+    :ARG2 (s3 / show-01
+              :ARG0 (t / thing
+                       :mod (a2 / all)
+                       :mod (o / other)
+                       :ARG1-of (s4 / sample-01))
+              :ARG1 (p / protein
+                       :ARG1-of (l2 / long-03
+                                    :degree (f / full)))
+              :mod (o2 / only))
+    :ARG1-of (d2 / describe-01
+                 :ARG0 (f2 / figure
+                           :mod "2H")))
+
+# ::save-date Wed Oct 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with RKO modeling a distinct subpopulation of patients characterized by the presence of certain molecular features and the absence of others [<xref ref-type="bibr" rid="B7">7</xref>], no implication of p53 in apoptosis was observed (Figure <xref ref-type="fig" rid="F2">2</xref>H).
+# ::file a_pmid_2488_5690_61.txt
+# ::date 2015-06-09T23:49:47
+# ::id a_pmid_2488_5690.61
+(o / observe-01
+   :ARG1 (i / implicate-01
+            :polarity "-"
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "p53"))
+            :ARG2 (a / apoptosis))
+   :ARG1-of (c / consistent-01
+               :ARG2 (m / model-01
+                        :ARG0 (c2 / cell-line
+                                  :name (n2 / name
+                                            :op1 "RKO"))
+                        :ARG1 (s / subpopulation
+                                 :mod (p2 / patient)
+                                 :mod (d / distinct)
+                                 :ARG1-of (c3 / characterize-01
+                                              :ARG2 (a2 / and
+                                                        :op1 (h / have-03
+                                                                :ARG0 s
+                                                                :ARG1 (f / feature
+                                                                         :mod (m2 / molecule)
+                                                                         :mod (c4 / certain)))
+                                                        :op2 (l / lack-01
+                                                                :ARG0 s
+                                                                :ARG1 (f2 / feature
+                                                                          :mod m2
+                                                                          :mod (o2 / other))))))
+                        :ARG1-of (d2 / describe-01
+                                     :ARG0 (p3 / publication
+                                               :ARG1-of (c5 / cite-01
+                                                            :ARG2 "7")))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f3 / figure
+                          :mod "2H")))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Since serum starvation is often used to model apoptosis mediated via the PUMA pathway [<xref ref-type="bibr" rid="B26">26</xref>], we also analyzed PUMA protein levels.
+# ::file a_pmid_2488_5690_62.txt
+# ::date 2015-06-09T23:56:19
+# ::id a_pmid_2488_5690.62
+(a / analyze-01
+   :ARG0 (w / we)
+   :ARG1 (l / level
+            :quant-of (p / protein
+                         :name (n / name
+                                  :op1 "PUMA")))
+   :ARG1-of (c / cause-01
+               :ARG0 (u / use-01
+                        :ARG1 (s / starve-01
+                                 :ARG2 (s2 / serum))
+                        :frequency (o / often)
+                        :purpose (m / model-01
+                                    :ARG0 s
+                                    :ARG1 (a2 / apoptosis
+                                              :ARG1-of (m2 / mediate-01
+                                                           :instrument (p2 / pathway
+                                                                           :name (n2 / name
+                                                                                     :op1 "PUMA")))))
+                        :ARG1-of (d / describe-01
+                                    :ARG0 (p3 / publication
+                                              :ARG1-of (c2 / cite-01
+                                                           :ARG2 "26")))))
+   :mod (a3 / also))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PUMA was found to be highly abundant specifically in serum starved RBW-1 (Figure <xref ref-type="fig" rid="F2">2</xref>H).
+# ::file a_pmid_2488_5690_63.txt
+# ::date 2015-06-10T00:00:07
+# ::id a_pmid_2488_5690.63
+(a / abundant
+   :op1 (c / cell-line
+           :name (n2 / name
+                     :op1 "RBW-1")
+           :ARG1-of (s / starve-01
+                       :ARG2 (s2 / serum)))
+   :ARG1-of (h / high-02)
+   :domain (p / protein
+              :name (n / name
+                       :op1 "PUMA"))
+   :ARG1-of (f / find-01)
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "2H"))
+   :ARG1-of (s3 / specific-02))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with data previously shown by others, starvation-induced apoptosis is mediated by PUMA in a p53-independent fashion in our experiments [<xref ref-type="bibr" rid="B27">27</xref>].
+# ::file a_pmid_2488_5690_64.txt
+# ::date 2015-06-10T00:05:29
+# ::id a_pmid_2488_5690.64
+(m / mediate-01
+   :ARG0 (p / protein
+            :name (n / name
+                     :op1 "PUMA"))
+   :ARG1 (a / apoptosis
+            :ARG2-of (i / induce-01
+                        :ARG0 (s / starve-01)))
+   :manner (d / depend-01
+              :polarity "-"
+              :ARG1 (p2 / protein
+                        :name (n2 / name
+                                  :op1 "p53")))
+   :time (e / experiment-01
+            :ARG0 (w / we))
+   :ARG1-of (c / consistent-01
+               :ARG2 (d2 / data
+                         :ARG1-of (s2 / show-01
+                                      :ARG0 (p5 / person
+                                                :mod (o / other))
+                                      :time (p3 / previous))
+                         :ARG1-of (d3 / describe-01
+                                      :ARG0 (p4 / publication
+                                                :ARG1-of (c2 / cite-01
+                                                             :ARG2 "27"))))))
+
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Programmed cell death is a key feature of proliferation control in homeostasis and overcoming apoptosis is considered another hallmark of cancer cells [<xref ref-type="bibr" rid="B28">28</xref>].
+# ::file a_pmid_2488_5690_65.txt
+# ::date 2015-06-10T00:10:01
+# ::id a_pmid_2488_5690.65
+(a / and
+      :op1 (f / feature
+            :ARG1-of (k / key-02
+                  :ARG2 (d2 / die-01
+                        :ARG1 (c / cell)
+                        :ARG1-of (p / program-01)))
+            :part-of (c2 / control-01
+                  :ARG1 (p2 / proliferate-01))
+            :prep-in (h / homeostasis))
+      :op2 (c3 / consider-01
+            :ARG1 (h2 / hallmark
+                  :mod (c4 / cell
+                        :mod (d / disease
+                              :wiki "Cancer"
+                              :name (n / name :op1 "cancer")))
+                  :domain (o / overcome-01
+                        :ARG1 (a2 / apoptosis))
+                  :mod (a3 / another))
+            :ARG1-of (d3 / describe-01
+                  :ARG0 (p3 / publication
+                        :ARG1-of (c6 / cite-01 :ARG2 "28")))))
+
+
+# ::save-date Mon Feb 15, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Since virtually all malignant cancer cells show apoptosis resistance, the induction of apoptotic pathways is considered a particularly promising approach for therapeutic strategies [<xref ref-type="bibr" rid="B29">29</xref>].
+# ::file a_pmid_2488_5690_66.txt
+# ::date 2015-06-10T00:16:49
+# ::id a_pmid_2488_5690.66
+(c / consider-01
+      :ARG1 (a / approach-02
+            :ARG0 (i / induce-01
+                  :ARG2 (p3 / pathway :mod "a4"))
+            :ARG1 (s / strategy
+                  :mod (t / therapy))
+            :ARG2-of (p / promise-01
+                  :degree (p2 / particular)))
+      :ARG1-of (c2 / cause-01
+            :ARG0 (s2 / show-01
+                  :ARG0 (c3 / cell
+                        :mod (a3 / all
+                              :degree (v / virtual))
+                        :mod (d / disease
+                              :wiki "Cancer"
+                              :name (n / name :op1 "cancer")
+                              :ARG2-of (m / malignant-02)))
+                  :ARG1 (r / resist-01
+                        :ARG0 c3
+                        :ARG1 (a4 / apoptosis))))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (p4 / publication
+                  :ARG1-of (c5 / cite-01 :ARG2 "29"))))
+
+# ::save-date Wed Dec 9, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Our results show that in RKO this particular cancer cell trait is modulated by and dependent on B-Raf<sup>V600E</sup> and that targeting mutant <i>BRAF</i> is sufficient to restore sensitivity to caspase-dependent apoptosis after serum withdrawal via p53-independent PUMA induction [<xref ref-type="bibr" rid="B27">27</xref>].
+# ::file a_pmid_2488_5690_67.txt
+# ::date 2015-06-10T00:22:21
+# ::id a_pmid_2488_5690.67
+(s / show-01
+   :ARG0 (t4 / thing
+             :ARG1-of (r / result-01)
+             :poss (w / we))
+   :ARG1 (a / and
+            :op1 (a2 / and
+                     :op1 (m / modulate-01
+                             :ARG0 (e2 / enzyme
+                                       :name (n3 / name
+                                                 :op1 "B-Raf")
+                                       :ARG2-of (m2 / mutate-01
+                                                    :value "V600E"))
+                             :ARG1 (t / trait
+                                      :mod (c / cell
+                                              :mod (d5 / disease
+                                                       :wiki "Cancer"
+                                                       :name (n / name
+                                                                :op1 "cancer")))
+                                      :mod (p / particular)
+                                      :mod (t3 / this)))
+                     :op2 (d2 / depend-01
+                              :ARG0 t
+                              :ARG1 e2)
+                     :location (c3 / cell-line
+                                   :name (n4 / name
+                                             :op1 "RKO")))
+            :op2 (s2 / suffice-01
+                     :ARG0 (t2 / target-01
+                               :ARG1 (g / gene
+                                        :name (n5 / name
+                                                  :op1 "BRAF")
+                                        :ARG2-of (m3 / mutate-01)))
+                     :ARG1 (r2 / restore-01
+                               :ARG0 t2
+                               :ARG1 (s3 / sensitive-03
+                                         :ARG1 (a3 / apoptosis
+                                                   :ARG0-of (d3 / depend-01
+                                                                :ARG1 (p2 / protein
+                                                                          :name (n6 / name
+                                                                                    :op1 "caspase")))
+                                                   :time (a4 / after
+                                                             :op1 (w2 / withdraw-01
+                                                                      :ARG1 (s4 / serum)))
+                                                   :instrument (i / induce-01
+                                                                  :ARG2 (p3 / protein
+                                                                            :name (n7 / name
+                                                                                      :op1 "PUMA"))
+                                                                  :ARG0-of (d4 / depend-01
+                                                                               :polarity "-"
+                                                                               :ARG1 (p4 / protein
+                                                                                         :name (n8 / name
+                                                                                                   :op1 "p53")))
+                                                                  :ARG1-of (d / describe-01
+                                                                              :ARG0 (p5 / publication
+                                                                                        :ARG1-of (c4 / cite-01
+                                                                                                     :ARG2 "27"))))))))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Complementing and extending previous studies, we thus provide evidence from an endogenous and quantitative genetic model of <i>BRAF</i>-mutant colorectal cancer cells, thereby ruling out the occurrence of artifacts caused by unspecific cellular response or incomplete knockdown in RNAi setups and, likewise, avoiding inter-species bias potentially experienced in mouse models of colorectal cancer [<xref ref-type="bibr" rid="B30">30</xref>].
+# ::file a_pmid_2488_5690_68.txt
+# ::date 2015-06-10T00:40:15
+# ::id a_pmid_2488_5690.68
+(i / infer-01
+   :ARG1 (p / provide-01
+            :ARG0 (w / we)
+            :ARG1 (e / evidence
+                     :source (m2 / model
+                                 :mod (c / cell
+                                         :location-of (g / gene
+                                                         :name (n3 / name
+                                                                   :op1 "BRAF")
+                                                         :ARG2-of (m / mutate-01))
+                                         :mod (d / disease
+                                                 :wiki "Colorectal_cancer"
+                                                 :name (n / name
+                                                          :op1 "colorectal"
+                                                          :op2 "cancer")))
+                                 :mod (q / quantity)
+                                 :mod (e2 / endogenous)
+                                 :mod (g2 / gene)))
+            :ARG0-of (c2 / cause-01
+                         :ARG1 (a / and
+                                  :op1 (r / rule-out-02
+                                          :ARG1 (a2 / artifact
+                                                    :ARG1-of (c3 / cause-01
+                                                                 :ARG0 (o2 / or
+                                                                           :op1 (r2 / respond-01
+                                                                                    :ARG0 (c4 / cell)
+                                                                                    :ARG1-of (s / specific-02
+                                                                                                :polarity "-"))
+                                                                           :op2 (k / knock-down-02
+                                                                                   :ARG1-of (c5 / complete-01
+                                                                                                :polarity "-")
+                                                                                   :location (s2 / setup
+                                                                                                 :mod (i3 / interfere-01
+                                                                                                          :ARG1 (n2 / nucleic-acid
+                                                                                                                    :name (n4 / name
+                                                                                                                              :op1 "RNA")))))))))
+                                  :op2 (a3 / avoid-01
+                                           :ARG1 (b / bias-01
+                                                    :mod (i2 / inter-species)
+                                                    :ARG1-of (e3 / experience-01
+                                                                 :ARG1-of (p2 / possible-01)
+                                                                 :location (m3 / model
+                                                                               :mod (d2 / disease)
+                                                                               :mod (m4 / mouse)
+                                                                               :ARG1-of (d3 / describe-01
+                                                                                            :ARG0 (p3 / publication
+                                                                                                      :ARG1-of (c6 / cite-01
+                                                                                                                   :ARG2 "30"))))))))))
+   :ARG1-of (c7 / complement-01
+                :ARG2 (s3 / study-01
+                          :time (p4 / previous)))
+   :ARG0-of (e4 / extend-01
+                :ARG1 s3))

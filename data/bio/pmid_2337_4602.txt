@@ -1,0 +1,2808 @@
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Only PIK3CA mutations occasionally coexisted with other gene mutations.
+# ::file pmid_2337_4602_9.txt
+# ::date 2015-08-04T01:15:22
+# ::id pmid_2337_4602.9
+(c / coexist-01
+   :ARG1 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "PIK3CA"))
+            :mod (o / only))
+   :ARG2 (m2 / mutate-01
+             :ARG2 (g2 / gene
+                       :mod (o3 / other)))
+   :frequency (o2 / occasional))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In univariate analysis, prognostic significance for survival ( from metastases until death) was seen for BRAF mutations (Hazard Ratio HR 8.1, 95% CI 3.4-19), codon 12-only KRAS mutations (HR 1.62, 95% CI 1.1-2.4), high AREG mRNA expression only in KRAS wild type CRC (HR 0.47, 95% CI 0.3-0.7) and high EREG mRNA expression irrespective of KRAS mutation status (HR 0.45, 95% CI 0.28-0.7).
+# ::file pmid_2337_4602_10.txt
+# ::date 2015-08-04T01:17:18
+# ::id pmid_2337_4602.10
+(s / see-01
+   :ARG1 (s2 / signify-01
+             :ARG0 (a / and
+                      :op1 (m2 / mutate-01
+                               :ARG1 (e5 / enzyme
+                                         :name (n / name
+                                                  :op1 "BRAF"))
+                               :ARG1-of (m5 / mean-01
+                                            :ARG2 (a2 / and
+                                                      :op1 (r4 / ratio-of
+                                                               :quant "8.1"
+                                                               :op1 (h2 / hazard))
+                                                      :op2 (i / interval
+                                                              :value (b / between
+                                                                        :op1 "3.4"
+                                                                        :op2 "19")
+                                                              :quant (p / percentage-entity
+                                                                        :value "95")
+                                                              :mod (c2 / confidence)))))
+                      :op2 (m3 / mutate-01
+                               :ARG1 (c / codon
+                                        :mod "12"
+                                        :mod (o / only)
+                                        :part-of (e6 / enzyme
+                                                     :name (n3 / name
+                                                               :op1 "KRAS")))
+                               :ARG1-of (m6 / mean-01
+                                            :ARG2 (a3 / and
+                                                      :op1 (r5 / ratio-of
+                                                               :quant "1.62"
+                                                               :op1 h2)
+                                                      :op2 (i2 / interval
+                                                               :value (b2 / between
+                                                                          :op1 "1.1"
+                                                                          :op2 "2.4")
+                                                               :quant p
+                                                               :mod c2))))
+                      :op3 (e / express-03
+                              :ARG2 (n10 / nucleic-acid
+                                         :name (n4 / name
+                                                   :op1 "mRNA")
+                                         :ARG0-of (e2 / encode-01
+                                                      :ARG1 (p3 / protein
+                                                                :name (n5 / name
+                                                                          :op1 "AREG"))))
+                              :ARG3 (d / disease
+                                       :name (n6 / name
+                                                 :op1 "CRC")
+                                       :mod o
+                                       :mod (e7 / enzyme
+                                                :name (n7 / name
+                                                          :op1 "KRAS")
+                                                :mod (w / wild-type)))
+                              :ARG1-of (h / high-02
+                                          :ARG1 e3)
+                              :ARG1-of (m7 / mean-01
+                                           :ARG2 (a4 / and
+                                                     :op1 (r6 / ratio-of
+                                                              :quant "0.47"
+                                                              :op1 h2)
+                                                     :op2 (i3 / interval
+                                                              :value (b3 / between
+                                                                         :op1 "0.3"
+                                                                         :op2 "0.7")
+                                                              :quant p
+                                                              :mod c2))))
+                      :op4 (e3 / express-03
+                               :ARG2 (n11 / nucleic-acid
+                                          :name (n8 / name
+                                                    :op1 "mRNA")
+                                          :ARG0-of (e4 / encode-01
+                                                       :ARG1 (p4 / protein
+                                                                 :name (n9 / name
+                                                                           :op1 "EREG"))))
+                               :ARG1-of (m8 / mean-01
+                                            :ARG2 (a5 / and
+                                                      :op1 (r7 / ratio-of
+                                                               :quant "0.45"
+                                                               :op1 h2)
+                                                      :op2 (i4 / interval
+                                                               :value (b4 / between
+                                                                          :op1 "0.28"
+                                                                          :op2 "0.7")
+                                                               :quant p
+                                                               :mod c2)))
+                               :ARG1-of (r / regardless-91
+                                           :ARG2 (s4 / status
+                                                     :mod (m4 / mutate-01
+                                                              :ARG2 e6)))))
+             :ARG1 (s3 / survive-01
+                       :time (a6 / after
+                                 :op1 (m / metastasize-101))
+                       :time (u2 / until
+                                 :op1 (d2 / die-01)))
+             :mod (p2 / prognostic))
+   :time (a7 / analyze-01
+             :mod (u / univariate)))
+
+# ::save-date Wed Aug 5, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt EREG tumoural mRNA expression was significantly associated with a 2.26-fold increased likelihood of objective response to cetuximab therapy (RECIST 1.1).
+# ::file pmid_2337_4602_11.txt
+# ::date 2015-08-04T01:53:43
+# ::id pmid_2337_4602.11
+(a / associate-01
+   :ARG1 (e / express-03
+            :ARG2 (n5 / nucleic-acid
+                      :name (n / name
+                               :op1 "mRNA")
+                      :ARG0-of (e2 / encode-01
+                                   :ARG1 (p / protein
+                                            :name (n2 / name
+                                                      :op1 "EREG"))))
+            :ARG0-of (c / cause-01
+                        :ARG1 (t / tumor)))
+   :ARG2 (l / likely-01
+            :ARG1 (t2 / thing
+                      :ARG2-of (r2 / respond-01
+                                   :ARG1 (t3 / therapy
+                                             :mod (s / small-molecule
+                                                     :name (n3 / name
+                                                               :op1 "cetuximab"))))
+                      :mod (o / objective))
+            :ARG1-of (i / increase-01
+                        :ARG2 (p2 / product-of
+                                  :op1 "2.26"))
+            :ARG1-of (m / mean-01
+                        :ARG2 (t4 / thing
+                                  :value "1.1"
+                                  :name (n4 / name
+                                            :op1 "RECIST"))))
+   :ARG1-of (s2 / significant-02))
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In multivariate analysis, favourable predictive factors were high AREG mRNA in KRAS wild type tumours, high EREG mRNA, low Ephrin A2 receptor mRNA.
+# ::file pmid_2337_4602_12.txt
+# ::date 2015-08-04T02:07:44
+# ::id pmid_2337_4602.12
+(a / and
+   :op1 (n8 / nucleic-acid
+            :name (n / name
+                     :op1 "mRNA")
+            :ARG0-of (e / encode-01
+                        :ARG1 (p / protein
+                                 :name (n2 / name
+                                           :op1 "AREG")))
+            :ARG1-of (h / high-02
+                        :ARG1 n9)
+            :location (t / tumor
+                         :mod (g / gene
+                                 :name (n3 / name
+                                           :op1 "KRAS")
+                                 :mod (w / wild-type))))
+   :op2 (n9 / nucleic-acid
+            :name (n4 / name
+                      :op1 "mRNA")
+            :ARG0-of (e3 / encode-01
+                         :ARG1 (p2 / protein
+                                   :name (n5 / name
+                                             :op1 "EREG"))))
+   :op3 (n10 / nucleic-acid
+             :name (n6 / name
+                       :op1 "mRNA")
+             :ARG0-of (e4 / encode-01
+                          :ARG1 (p3 / protein
+                                    :name (n7 / name
+                                              :op1 "Ephrin"
+                                              :op2 "A2"
+                                              :op3 "receptor")))
+             :ARG1-of (l / low-04))
+   :domain (f / factor
+              :ARG0-of (p4 / predict-01)
+              :ARG0-of (f2 / favor-01))
+   :time (a2 / analyze-01
+             :mod (m / multivariate)))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cetuximab-treated patients with AREG-low KRAS wild type CRC fared very poorly, their survival being similar to KRAS mutant CRC.
+# ::file pmid_2337_4602_13.txt
+# ::date 2015-08-04T02:21:44
+# ::id pmid_2337_4602.13
+(f / fare-01
+   :ARG0 (p / person
+            :ARG0-of (h / have-rel-role-91
+                        :ARG2 (p2 / patient))
+            :ARG1-of (t / treat-03
+                        :ARG3 (s / small-molecule
+                                 :name (n / name
+                                          :op1 "cetuximab")))
+            :ARG0-of (h2 / have-03
+                         :ARG1 (d / disease
+                                  :name (n2 / name
+                                            :op1 "CRC")
+                                  :mod (g / gene
+                                          :name (n3 / name
+                                                    :op1 "KRAS")
+                                          :mod (w / wild-type))
+                                  :ARG1-of (l / low-04
+                                              :ARG2 (p3 / protein
+                                                        :name (n4 / name
+                                                                  :op1 "AREG"))))))
+   :manner (p4 / poor
+               :degree (v / very))
+   :ARG1-of (c / cause-01
+               :ARG0 (r / resemble-01
+                        :ARG1 (s2 / survive-01
+                                  :ARG0 p)
+                        :ARG2 (s3 / survive-01
+                                  :ARG1 (d2 / disease
+                                            :name (n5 / name
+                                                      :op1 "CRC")
+                                            :mod (g2 / gene
+                                                     :name (n6 / name
+                                                               :op1 "KRAS")
+                                                     :ARG2-of (m / mutate-01)))))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Patients with KRAS codon 13 or other non-codon 12 mutations had a median survival (30 months, 95% CI 20–35) similar to that of patients with KRAS wild-type (median survival 29 months, 95% CI 25–35), in contrast to patients with KRAS codon 12 mutations who fared worse (median survival 19 months, 95% CI 15–26).
+# ::file pmid_2337_4602_14.txt
+# ::date 2015-08-04T02:30:20
+# ::id pmid_2337_4602.14
+(h3 / have-03
+    :ARG0 (p2 / person
+              :ARG0-of (h / have-rel-role-91
+                          :ARG2 (p3 / patient))
+              :ARG0-of (h2 / have-03
+                           :ARG1 (o / or
+                                    :op1 (m / mutate-01
+                                            :ARG1 (c2 / codon
+                                                      :mod "13"
+                                                      :part-of (g / gene
+                                                                  :name (n3 / name
+                                                                            :op1 "KRAS"))))
+                                    :op2 (m2 / mutate-01
+                                             :ARG1 (c4 / codon
+                                                       :mod "12"
+                                                       :polarity "-"
+                                                       :part-of g)
+                                             :mod (o2 / other)))))
+    :ARG1 (s / survive-01
+             :ARG0 p2
+             :mod (m3 / median)
+             :ARG1-of (r / resemble-01
+                         :ARG2 (s2 / survive-01
+                                   :ARG0 (p4 / person
+                                             :ARG0-of h
+                                             :ARG0-of (h4 / have-03
+                                                          :ARG1 (g2 / gene
+                                                                    :name (n4 / name
+                                                                              :op1 "KRAS")
+                                                                    :mod (w / wild-type))))
+                                   :ARG1-of (m6 / mean-01
+                                                :ARG2 (a2 / and
+                                                          :op1 (s3 / survive-01
+                                                                   :duration (t2 / temporal-quantity
+                                                                                 :quant "29"
+                                                                                 :unit "m5")
+                                                                   :mod m3)
+                                                          :op2 (i / interval
+                                                                  :value (b3 / between
+                                                                             :op1 (t6 / temporal-quantity
+                                                                                      :quant "25"
+                                                                                      :unit "m5")
+                                                                             :op2 "t5")
+                                                                  :quant "p"
+                                                                  :mod (c3 / confidence)))))))
+    :ARG1-of (m4 / mean-01
+                 :ARG2 (a / and
+                          :op1 (t / temporal-quantity
+                                  :quant "30"
+                                  :unit (m5 / month))
+                          :op2 (i2 / interval
+                                   :value (b2 / between
+                                              :op1 (t4 / temporal-quantity
+                                                       :quant "20"
+                                                       :unit m5)
+                                              :op2 (t5 / temporal-quantity
+                                                       :quant "35"
+                                                       :unit m5))
+                                   :quant (p / percentage-entity
+                                             :value "95")
+                                   :mod c3)))
+    :ARG1-of (c / contrast-01
+                :ARG2 (p5 / person
+                          :ARG0-of h
+                          :ARG0-of (h5 / have-03
+                                       :ARG1 (m8 / mutate-01
+                                                 :ARG1 (c5 / codon
+                                                           :mod "12"
+                                                           :part-of g)))
+                          :ARG0-of (f / fare-01
+                                      :ARG1-of (b / bad-07
+                                                  :degree (m9 / more)
+                                                  :ARG1-of (m10 / mean-01
+                                                                :ARG2 (a3 / and
+                                                                          :op1 (s4 / survive-01
+                                                                                   :duration (t3 / temporal-quantity
+                                                                                                 :quant "19"
+                                                                                                 :unit m5)
+                                                                                   :mod m3)
+                                                                          :op2 (i3 / interval
+                                                                                   :value (b4 / between
+                                                                                              :op1 (t7 / temporal-quantity
+                                                                                                       :quant "15"
+                                                                                                       :unit m5)
+                                                                                              :op2 (t8 / temporal-quantity
+                                                                                                       :quant "26"
+                                                                                                       :unit m5))
+                                                                                   :quant p
+                                                                                   :mod c3))))))))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A total of 226 patients of a median age of 62.6 years (range 26–85) underwent excisional or incisional biopsy of colorectal adenocarcinoma, of whom 83 (36.8%) were diagnosed with localised (stage I-III) colon cancer and 137 (60.6%) with metastatic disease (Table  <xref ref-type="table" rid="T1">1</xref>).
+# ::file pmid_2337_4602_83.txt
+# ::date 2015-08-04T04:53:58
+# ::id pmid_2337_4602.83
+(u / undergo-28
+      :ARG1 (p3 / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG2 (p4 / patient))
+            :ARG1-of (t / total-01 :ARG2 "226")
+            :ARG1-of (a / age-01
+                  :ARG2 (t2 / temporal-quantity
+                        :quant "62.6"
+                        :unit (y / year))
+                  :mod (m / median)
+                  :ARG1-of (r / range-01
+                        :ARG3 (t3 / temporal-quantity
+                              :quant "26"
+                              :unit y)
+                        :ARG4 (t4 / temporal-quantity
+                              :quant "85"
+                              :unit y)))
+            :ARG2-of (i2 / include-91
+                  :ARG1 (a3 / and
+                        :op1 (p5 / person
+                              :quant "83"
+                              :ARG0-of h
+                              :ARG1-of (m2 / mean-01
+                                    :ARG2 (p / percentage-entity :value "36.8"))
+                              :ARG1-of (d2 / diagnose-01
+                                    :ARG2 (d5 / disease
+                                          :wiki "Cancer"
+                                          :name (n / name :op1 "cancer")
+                                          :ARG1-of (l / local-02
+                                                :ARG2 (c3 / colon))
+                                          :ARG1-of (r2 / range-01
+                                                :ARG3 (s / stage
+                                                      :ord (o / ordinal-entity :value "1"))
+                                                :ARG4 (s2 / stage
+                                                      :ord (o3 / ordinal-entity :value "3"))))))
+                        :op2 (p6 / person
+                              :quant "137"
+                              :ARG0-of h
+                              :ARG1-of (m3 / mean-01
+                                    :ARG2 (p2 / percentage-entity :value "60.6"))
+                              :ARG1-of (d3 / diagnose-01
+                                    :ARG2 (d4 / disease
+                                          :ARG1-of (m4 / metastasize-101)))))))
+      :ARG2 (o2 / or
+            :op1 (b / biopsy-101
+                  :ARG1 (m5 / medical-condition
+                        :name (n2 / name :op1 "adenocarcinoma")
+                        :mod (c / colorectal))
+                  :ARG0-of (e / excise-01))
+            :op2 (b2 / biopsy-101
+                  :ARG1 (a2 / adenocarcinoma)
+                  :ARG0-of (i / incise-01)))
+      :ARG1-of (d / describe-01
+            :ARG0 (t5 / table :mod "1")))
+
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The primary tumour was located in the left colon (distal transverse to rectum) in 165 (73.0%) of cases and in the right colon (caecum to proximal transverse) in 60 (26.6%).
+# ::file pmid_2337_4602_84.txt
+# ::date 2015-08-04T05:10:55
+# ::id pmid_2337_4602.84
+(a / and
+      :op1 (l / locate-02
+            :ARG1 (t / tumor
+                  :mod (p3 / primary))
+            :location (c / colon
+                  :ARG1-of (l2 / left-20)
+                  :ARG1-of (m / mean-01
+                        :ARG2 (b / between
+                              :op1 (t2 / transverse
+                                    :mod (d / distal))
+                              :op2 (r / rectum))))
+            :location (c2 / case-04
+                  :quant "165"
+                  :ARG1-of (m3 / mean-01
+                        :ARG2 (p / percentage-entity :value "73.0"))))
+      :op2 (l3 / locate-02
+            :ARG1 t
+            :location (c3 / colon
+                  :ARG1-of (m2 / mean-01
+                        :ARG2 (b2 / between
+                              :op1 (c4 / caecum)
+                              :op2 (t3 / transverse
+                                    :mod (p4 / proximal))))
+                  :ARG1-of (r2 / right-04))
+            :location (c5 / case-04
+                  :quant "60"
+                  :ARG1-of (m4 / mean-01
+                        :ARG2 (p2 / percentage-entity :value "26.6")))))
+
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Rectal tumours accounted for 71 cases (31%).
+# ::file pmid_2337_4602_85.txt
+# ::date 2015-08-04T05:20:07
+# ::id pmid_2337_4602.85
+(a / account-01
+      :ARG0 (t / tumor
+            :mod (r / rectum))
+      :ARG1 (c / case-04
+            :quant "71"
+            :ARG1-of (m / mean-01
+                  :ARG2 (p / percentage-entity :value "31"))))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt From May 2004 until December 2008, cetuximab had been administered as an intravenous infusion according to standard regimens (loading dose 400 mg/m2 followed by weekly 250 mg/m2) as monotherapy (42, 13.4%) or with regimes based on irinotecan (153, 48.7%), oxaliplatin (84, 26.7%) or both agents (29, 9.2%).
+# ::file pmid_2337_4602_86.txt
+# ::date 2015-08-04T05:22:11
+# ::id pmid_2337_4602.86
+(o / or
+   :op1 (a / administer-01
+           :ARG1 (s / small-molecule
+                    :name (n / name
+                             :op1 "cetuximab"))
+           :ARG2 (c3 / case-04
+                     :quant "42"
+                     :ARG1-of (m4 / mean-01
+                                  :ARG2 (p / percentage-entity
+                                           :value "13.4")))
+           :ARG1-of (i / infuse-01
+                       :mod (i2 / intravenous)
+                       :ARG1 a3
+                       :ARG1 a4
+                       :ARG1 a5)
+           :ARG1-of (a2 / accord-02
+                        :ARG2 (r / regimen
+                                 :ARG1-of (s2 / standard-02)
+                                 :ARG1-of (m / mean-01
+                                             :ARG2 (d3 / dose-01
+                                                       :ARG2-of (l / load-01)
+                                                       :quant (c / concentration-quantity
+                                                                 :quant "400"
+                                                                 :unit (m2 / milligram-per-square-meter))
+                                                       :ARG2-of (f / follow-01
+                                                                   :ARG1 (d4 / dose-01
+                                                                             :frequency (w / week)
+                                                                             :quant (c2 / concentration-quantity
+                                                                                        :quant "250"
+                                                                                        :unit m2))))))
+                        :ARG1 a3
+                        :ARG1 a4
+                        :ARG1 a5)
+           :manner (m3 / monotherapy))
+   :op2 (a3 / administer-01
+            :ARG1 s
+            :ARG2 (c4 / case-04
+                      :quant "153"
+                      :ARG1-of (m5 / mean-01
+                                   :ARG2 (p2 / percentage-entity
+                                             :value "48.7")))
+            :prep-with (r2 / regimen
+                           :ARG1-of (b / base-02
+                                       :ARG2 (s3 / small-molecule
+                                                 :name (n2 / name
+                                                           :op1 "irinotecan")))))
+   :op3 (a4 / administer-01
+            :ARG1 s
+            :ARG2 (c5 / case-04
+                      :quant "84"
+                      :ARG1-of (m6 / mean-01
+                                   :ARG2 (p3 / percentage-entity
+                                             :value "26.7")))
+            :prep-with (r3 / regimen
+                           :ARG1-of (b2 / base-02
+                                        :ARG2 (s4 / small-molecule
+                                                  :name (n3 / name
+                                                            :op1 "oxaliplatin")))))
+   :op4 (a5 / administer-01
+            :ARG1 s
+            :ARG2 (c6 / case-04
+                      :quant "29"
+                      :ARG1-of (m7 / mean-01
+                                   :ARG2 (p4 / percentage-entity
+                                             :value "9.2")))
+            :prep-with (r4 / regimen
+                           :ARG1-of (b3 / base-02
+                                        :ARG2 (a6 / and
+                                                  :op1 s3
+                                                  :op2 s4))))
+   :time (d5 / date-interval
+             :op1 (d / date-entity
+                     :month "5"
+                     :year "2004")
+             :op2 (d2 / date-entity
+                      :month "12"
+                      :year "2008")))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The lines of therapy during which cetuximab was administered were 1st line in 38 (16.8%), 2nd line in 108 (47.8%), 3rd and beyond in 80 (35.4%) (Table  <xref ref-type="table" rid="T1">1</xref>).
+# ::file pmid_2337_4602_87.txt
+# ::date 2015-08-04T05:45:23
+# ::id pmid_2337_4602.87
+(a / and
+   :op1 (l2 / line
+            :ord (o / ordinal-entity
+                    :value "1")
+            :location (c / case-04
+                         :quant "38"
+                         :ARG1-of (m / mean-01
+                                     :ARG2 (p / percentage-entity
+                                              :value "16.8"))))
+   :op2 (l3 / line
+            :ord (o2 / ordinal-entity
+                     :value "2")
+            :location (c2 / case-04
+                          :quant "108"
+                          :ARG1-of (m2 / mean-01
+                                       :ARG2 (p2 / percentage-entity
+                                                 :value "47.8"))))
+   :op3 (a3 / and
+            :op1 (l4 / line
+                     :ord (o3 / ordinal-entity
+                              :value "3"))
+            :op2 (l5 / line
+                     :mod (b / beyond
+                             :op1 l4))
+            :location (c3 / case-04
+                          :quant "80"
+                          :ARG1-of (m3 / mean-01
+                                       :ARG2 (p3 / percentage-entity
+                                                 :value "35.4"))))
+   :domain (l / line
+              :mod (t / therapy)
+              :time-of (a2 / administer-01
+                           :ARG1 (s / small-molecule
+                                    :name (n / name
+                                             :op1 "cetuximab"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (t2 / table
+                         :mod "1")))
+
+# ::save-date Thu Jan 7, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of note, as the period of therapy extended from 2004 until December 2008, an unselected patient population received cetuximab-based therapies, irrespective of KRAS mutational status.
+# ::file pmid_2337_4602_88.txt
+# ::date 2015-08-04T05:52:55
+# ::id pmid_2337_4602.88
+(r / receive-01
+   :ARG0 (p / population
+            :consist-of (p2 / person
+                            :ARG0-of (h / have-rel-role-91
+                                        :ARG2 (p3 / patient))
+                            :ARG1-of (s / select-01
+                                        :polarity "-")))
+   :ARG1 (t / therapy
+            :ARG1-of (b / base-02
+                        :ARG2 (s2 / small-molecule
+                                  :name (n / name
+                                           :op1 "cetuximab"))))
+   :ARG1-of (n3 / note-02)
+   :ARG1-of (c / cause-01
+               :ARG0 (e2 / extend-01
+                         :ARG1 (p4 / period
+                                   :duration-of t)
+                         :ARG3 (d / date-entity
+                                  :year "2004")
+                         :ARG4 (d2 / date-entity
+                                   :month "12"
+                                   :year "2008")))
+   :ARG1-of (r2 / regardless-91
+                :ARG2 (s3 / status
+                          :mod (m / mutate-01
+                                  :ARG2 (g / gene
+                                           :name (n2 / name
+                                                     :op1 "KRAS"))))))
+
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Out of the 199 samples tested for mRNA expression, three were found not eligible for all targets.
+# ::file pmid_2337_4602_90.txt
+# ::date 2015-08-04T06:07:58
+# ::id pmid_2337_4602.90
+(f / find-02
+      :ARG1 (t / thing
+            :quant "3"
+            :ARG1-of (s / sample-01)
+            :ARG1-of (q / qualify-02
+                  :polarity "-"
+                  :ARG2 (t3 / thing
+                        :ARG1-of (t2 / target-01)
+                        :mod (a / all)))
+            :ARG1-of (i / include-91
+                  :ARG2 (t4 / thing
+                        :quant "199"
+                        :ARG1-of s
+                        :ARG1-of (t5 / test-01
+                              :ARG2 (e2 / express-03
+                                    :ARG2 (n2 / nucleic-acid
+                                          :name (n / name :op1 "mRNA"))))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In total, 84.4% of samples were eligible for AREG analysis; 83.9% for EGF; 84.4% for EGFR; 80.4% for EREG; and 81.4% for TGFa.
+# ::file pmid_2337_4602_91.txt
+# ::date 2015-08-04T06:25:07
+# ::id pmid_2337_4602.91
+(p7 / possible-01
+    :ARG1 (a / and
+             :op1 (q / qualify-02
+                     :ARG1 (t / thing
+                              :ARG1-of (s / sample-01)
+                              :ARG1-of (i / include-91
+                                          :ARG2 (t7 / thing
+                                                    :ARG1-of s)
+                                          :ARG3 (p / percentage-entity
+                                                   :value "84.4")))
+                     :ARG2 (a2 / analyze-01
+                               :ARG1 (p6 / protein
+                                         :name (n2 / name
+                                                   :op1 "AREG"))))
+             :op2 (q2 / qualify-02
+                      :ARG1 (t2 / thing
+                                :ARG1-of s
+                                :ARG1-of (i2 / include-91
+                                             :ARG2 t7
+                                             :ARG3 (p2 / percentage-entity
+                                                       :value "83.9")))
+                      :ARG2 (a3 / analyze-01
+                                :ARG1 (p9 / protein
+                                          :name (n3 / name
+                                                    :op1 "EGF"))))
+             :op3 (q3 / qualify-02
+                      :ARG1 t
+                      :ARG2 (a4 / analyze-01
+                                :ARG1 (e / enzyme
+                                         :name (n / name
+                                                  :op1 "EGFR"))))
+             :op4 (q4 / qualify-02
+                      :ARG1 (t4 / thing
+                                :ARG1-of s
+                                :ARG1-of (i3 / include-91
+                                             :ARG2 t7
+                                             :ARG3 (p4 / percentage-entity
+                                                       :value "80.4")))
+                      :ARG2 (a5 / analyze-01
+                                :ARG1 (p3 / protein
+                                          :name (n4 / name
+                                                    :op1 "EREG"))))
+             :op5 (q5 / qualify-02
+                      :ARG1 (t5 / thing
+                                :ARG1-of s
+                                :ARG1-of (i4 / include-91
+                                             :ARG2 t7
+                                             :ARG3 (p5 / percentage-entity
+                                                       :value "81.4")))
+                      :ARG2 (a6 / analyze-01
+                                :ARG1 (p8 / protein
+                                          :name (n5 / name
+                                                    :op1 "TGFa")))))
+    :ARG1-of (t6 / total-01))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Out of the 226 DNA samples screened for the presence of mutations, genotyping was successful in 205 samples for KRAS (90.8%), 159 (70.4%) for NRAS, 220 for BRAF and 220 for PIK3CA (97.3% in each case) (Table  <xref ref-type="table" rid="T2">2</xref>).
+# ::file pmid_2337_4602_92.txt
+# ::date 2015-08-04T06:35:32
+# ::id pmid_2337_4602.92
+(a2 / and
+    :op1 (s / succeed-01
+            :ARG0 (g5 / genotyping)
+            :ARG1 (e4 / enzyme
+                      :name (n3 / name
+                                :op1 "KRAS"))
+            :location (s7 / sample-01
+                          :quant "205"
+                          :ARG2 "n2"
+                          :ARG1-of (i / include-91
+                                      :ARG2 (s6 / sample-01
+                                                :quant "226"
+                                                :ARG1 (n2 / nucleic-acid
+                                                          :wiki "DNA"
+                                                          :name (n6 / name
+                                                                    :op1 "DNA"))
+                                                :ARG1-of (s8 / screen-01
+                                                             :ARG2 (p4 / present-02
+                                                                       :ARG1 (m / mutate-01))))
+                                      :ARG3 (p / percentage-entity
+                                               :value "90.8"))))
+    :op2 (s3 / succeed-01
+             :ARG0 g5
+             :ARG1 (e / enzyme
+                      :name (n4 / name
+                                :op1 "NRAS"))
+             :location (s9 / sample-01
+                           :quant "159"
+                           :ARG2 n2
+                           :ARG1-of (i2 / include-91
+                                        :ARG2 s6
+                                        :ARG3 (p2 / percentage-entity
+                                                  :value "70.4"))))
+    :op3 (s4 / succeed-01
+             :ARG0 g5
+             :ARG1 (e3 / enzyme
+                       :name (n5 / name
+                                 :op1 "BRAF"))
+             :location (s10 / sample-01
+                            :quant "220"
+                            :ARG2 n2
+                            :ARG1-of (i3 / include-91
+                                         :ARG2 s6
+                                         :ARG3 (p3 / percentage-entity
+                                                   :value "97.3"))))
+    :op4 (s5 / succeed-01
+             :ARG0 g5
+             :ARG1 (g / gene
+                      :name (n / name
+                               :op1 "PIK3CA"))
+             :location (s2 / sample-01
+                           :quant "220"
+                           :ARG2 n2
+                           :ARG1-of i3))
+    :ARG1-of (d / describe-01
+                :ARG0 (t6 / table
+                          :mod "2")))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt KRAS mutations were detected in 72 tumours (31.9%), mostly in exon 2, in codon 12 in 45 cases (20.0%) and in codon 13 in 16 cases (7.0%), while BRAF V600E mutations were found in 6 cases (2.6%).
+# ::file pmid_2337_4602_93.txt
+# ::date 2015-08-04T06:46:24
+# ::id pmid_2337_4602.93
+(c / contrast-01
+   :ARG1 (d / detect-01
+            :ARG1 (m / mutate-01
+                     :ARG2 (e / exon
+                              :mod "2"
+                              :part-of (g / gene
+                                          :name (n / name
+                                                   :op1 "KRAS"))
+                              :degree (m2 / most)))
+            :location (t / tumor
+                         :quant "72"
+                         :ARG1-of (m6 / mean-01
+                                      :ARG2 (p / percentage-entity
+                                               :value "31.9"))
+                         :ARG2-of (i / include-91
+                                     :ARG1 (a2 / and
+                                               :op1 (c2 / case-04
+                                                        :quant "45"
+                                                        :ARG1-of (m7 / mean-01
+                                                                     :ARG2 (p2 / percentage-entity
+                                                                               :value "20.0"))
+                                                        :ARG0-of (h / have-03
+                                                                    :ARG1 (m3 / mutate-01
+                                                                              :ARG2 (c5 / codon
+                                                                                        :mod "12"
+                                                                                        :part-of g))))
+                                               :op2 (c3 / case-04
+                                                        :quant "16"
+                                                        :ARG1-of (m8 / mean-01
+                                                                     :ARG2 (p3 / percentage-entity
+                                                                               :value "7.0"))
+                                                        :ARG0-of (h2 / have-03
+                                                                     :ARG1 (m4 / mutate-01
+                                                                               :ARG2 (c6 / codon
+                                                                                         :mod "13"))))))))
+   :ARG2 (f / find-01
+            :ARG1 (m5 / mutate-01
+                      :value "V600E"
+                      :ARG2 (e2 / enzyme
+                                :name (n5 / name
+                                          :op1 "BRAF")))
+            :location (c4 / case-04
+                          :quant "6"
+                          :ARG1-of (m9 / mean-01
+                                       :ARG2 (p4 / percentage-entity
+                                                 :value "2.6")))))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt NRAS mutations were also quite rare, found only in 7 cases (3.1%).
+# ::file pmid_2337_4602_94.txt
+# ::date 2015-08-04T06:58:07
+# ::id pmid_2337_4602.94
+(r / rare-02
+   :ARG1 (m / mutate-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "NRAS"))
+            :mod (a / also))
+   :degree (q / quite)
+   :ARG1-of (i / infer-01
+               :ARG2 (f / find-01
+                        :ARG1 m
+                        :mod (o / only)
+                        :location (c / case-04
+                                     :quant "7"
+                                     :ARG1-of (m2 / mean-01
+                                                  :ARG2 (p / percentage-entity
+                                                           :value "3.1"))))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PIK3CA mutations were detected in 37 tumours (16.4%), 20 in exon 9 (8.8%) and only five in exon 20 (2.2%).
+# ::file pmid_2337_4602_95.txt
+# ::date 2015-08-04T07:01:49
+# ::id pmid_2337_4602.95
+(d2 / detect-01
+    :ARG1 (m / mutate-01
+             :ARG1 (g / gene
+                      :name (n / name
+                               :op1 "PIK3CA")))
+    :location (t / tumor
+                 :quant "37"
+                 :ARG1-of (m2 / mean-01
+                              :ARG2 (p / percentage-entity
+                                       :value "16.4"))
+                 :ARG2-of (i / include-91
+                             :ARG1 (a / and
+                                      :op1 (t2 / tumor
+                                               :quant "20"
+                                               :ARG0-of (h / have-03
+                                                           :ARG1 (m3 / mutate-01
+                                                                     :ARG1 (e / exon
+                                                                              :mod "9")))
+                                               :ARG1-of (m4 / mean-01
+                                                            :ARG2 (p2 / percentage-entity
+                                                                      :value "8.8")))
+                                      :op2 (t3 / tumor
+                                               :quant "5"
+                                               :mod (o / only)
+                                               :ARG0-of (h2 / have-03
+                                                            :ARG1 (m5 / mutate-01
+                                                                      :ARG1 (e2 / exon
+                                                                                :mod "20")))
+                                               :ARG1-of (m6 / mean-01
+                                                            :ARG2 (p3 / percentage-entity
+                                                                      :value "2.2")))))))
+
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This genotypic analysis was included in a previous publication [<xref ref-type="bibr" rid="B8">8</xref>].
+# ::file pmid_2337_4602_96.txt
+# ::date 2015-08-04T07:07:42
+# ::id pmid_2337_4602.96
+(i / include-01
+      :ARG1 (a / analyze-01
+            :ARG1 (g / genotype)
+            :mod (t / this))
+      :ARG2 (t2 / thing
+            :time (p2 / previous)
+            :ARG1-of (d / describe-01
+                  :ARG0 (p3 / publication
+                        :ARG1-of (c / cite-01 :ARG2 "8")))
+            :ARG1-of (p / publish-01)))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Correlation analysis revealed that mutations in KRAS, BRAF, NRAS genes were mutually exclusive in all evaluable cases.
+# ::file pmid_2337_4602_97.txt
+# ::date 2015-08-04T07:09:02
+# ::id pmid_2337_4602.97
+(r / reveal-01
+   :ARG0 (a / analyze-01
+            :ARG1 (c / correlate-01))
+   :ARG1 (e / exclude-01
+            :ARG1 (a2 / and
+                      :op1 (m / mutate-01
+                              :ARG1 (g / gene
+                                       :name (n / name
+                                                :op1 "KRAS")))
+                      :op2 (m2 / mutate-01
+                               :ARG1 (g2 / gene
+                                         :name (n2 / name
+                                                   :op1 "BRAF")))
+                      :op3 (m3 / mutate-01
+                               :ARG1 (g3 / gene
+                                         :name (n3 / name
+                                                   :op1 "NRAS"))))
+            :manner (m4 / mutual)
+            :location (c2 / case-04
+                          :ARG1-of (e2 / evaluate-101
+                                       :ARG1-of (p / possible-01))
+                          :mod (a3 / all))))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt On the contrary, mutations in the PIK3CA gene co-existed with KRAS mutations in 17 cases and with NRAS mutations in two.
+# ::file pmid_2337_4602_98.txt
+# ::date 2015-08-04T07:12:53
+# ::id pmid_2337_4602.98
+(c / contrast-01
+   :ARG2 (a / and
+            :op1 (c2 / coexist-01
+                     :ARG1 (m / mutate-01
+                              :ARG1 (g / gene
+                                       :name (n / name
+                                                :op1 "PIK3CA")))
+                     :ARG2 (m2 / mutate-01
+                               :ARG1 (g2 / gene
+                                         :name (n2 / name
+                                                   :op1 "KRAS")))
+                     :location (t / thing
+                                  :ARG1-of (c3 / case-04
+                                               :quant "17")))
+            :op2 (c4 / coexist-01
+                     :ARG1 m
+                     :ARG2 (m3 / mutate-01
+                               :ARG1 (g3 / gene
+                                         :name (n3 / name
+                                                   :op1 "NRAS")))
+                     :location (t2 / thing
+                                   :ARG1-of (c5 / case-04
+                                                :quant "2")))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Statistically significant associations at the 2-sided p<0.05 level were seen between wild type status of KRAS, BRAF genes and high AREG, EREG, EGFR mRNA levels.
+# ::file pmid_2337_4602_99.txt
+# ::date 2015-08-04T07:16:30
+# ::id pmid_2337_4602.99
+(s / see-01
+   :ARG1 (a / associate-01
+            :ARG1 (a2 / and
+                      :op1 (g / gene
+                              :name (n2 / name
+                                        :op1 "KRAS"))
+                      :op2 (g2 / gene
+                               :name (n3 / name
+                                         :op1 "BRAF"))
+                      :mod (w / wild-type))
+            :ARG1-of (s2 / significant-02
+                         :manner (s3 / statistic)))
+   :ARG2 (a4 / and
+             :op1 (l / level
+                     :quant-of (n9 / nucleic-acid
+                                   :name (n4 / name
+                                             :op1 "mRNA")
+                                   :ARG0-of (e2 / encode-01
+                                                :ARG1 (p / protein
+                                                         :name (n7 / name
+                                                                   :op1 "AREG")))))
+             :op2 (l4 / level
+                      :quant-of (n10 / nucleic-acid
+                                     :name (n5 / name
+                                               :op1 "mRNA")
+                                     :ARG0-of (e3 / encode-01
+                                                  :ARG1 (p2 / protein
+                                                            :name (n8 / name
+                                                                      :op1 "EREG")))))
+             :op3 (l5 / level
+                      :quant-of (n11 / nucleic-acid
+                                     :name (n6 / name
+                                               :op1 "mRNA")
+                                     :ARG0-of (e4 / encode-01
+                                                  :ARG1 (e / enzyme
+                                                           :name (n / name
+                                                                    :op1 "EGFR")))))
+             :ARG1-of (h / high-02))
+   :condition (s5 / statistical-test-91
+                  :ARG2 (l3 / less-than
+                            :op1 "0.05")
+                  :mod (s4 / side
+                           :quant "2")))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Among KRAS-wild type cases, 81.4% were seen in AREG-high and 57.4% in EREG-high tumours, while of KRAS-mutated cases only 63.9% were observed in AREG-high and only 35.7% in EREG-high tumours.
+# ::file pmid_2337_4602_100.txt
+# ::date 2015-08-04T07:18:16
+# ::id pmid_2337_4602.100
+(c / contrast-01
+   :ARG1 (a / and
+            :op1 (s / see-01
+                    :ARG1 (c2 / case-04
+                              :ARG1-of (i / include-91
+                                          :ARG2 (c4 / case-04
+                                                    :ARG1 (g / gene
+                                                             :name (n3 / name
+                                                                       :op1 "KRAS")
+                                                             :mod (w / wild-type)))
+                                          :ARG3 (p / percentage-entity
+                                                   :value "81.4")))
+                    :location (t / tumor
+                                 :ARG1-of (h / high-02
+                                             :ARG2 (p5 / protein
+                                                       :name (n / name
+                                                                :op1 "AREG")))))
+            :op2 (s2 / see-01
+                     :ARG1 (c3 / case-04
+                               :ARG1-of (i3 / include-91
+                                            :ARG2 c4
+                                            :ARG3 (p2 / percentage-entity
+                                                      :value "57.4")))
+                     :location (t2 / tumor
+                                   :ARG1-of (h2 / high-02
+                                                :ARG2 (p6 / protein
+                                                          :name (n2 / name
+                                                                    :op1 "EREG"))))))
+   :ARG2 (a2 / and
+             :op1 (o / observe-01
+                     :ARG1 (c5 / case-04
+                               :ARG1-of (i2 / include-91
+                                            :ARG2 (c6 / case-04
+                                                      :ARG1 (g2 / gene
+                                                                :name (n4 / name
+                                                                          :op1 "KRAS")
+                                                                :ARG2-of (m / mutate-01)))
+                                            :ARG3 (p3 / percentage-entity
+                                                      :value "63.9"
+                                                      :mod (o2 / only))))
+                     :location t)
+             :op2 (o3 / observe-01
+                      :ARG1 (c7 / case-04
+                                :ARG1-of (i4 / include-91
+                                             :ARG2 c6
+                                             :ARG3 (p4 / percentage-entity
+                                                       :value "35.7"
+                                                       :mod o2)))
+                      :location t2)))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similarly, among BRAF-wild type cases, 76.1% were seen in AREG-high and 50.7% in EREG-high tumours, while of BRAF-mutated cases only two out of six (33.3%) were observed in AREG-high and none in EREG-high tumours.
+# ::file pmid_2337_4602_101.txt
+# ::date 2015-08-04T07:27:06
+# ::id pmid_2337_4602.101
+(c / contrast-01
+   :ARG1 (a / and
+            :op1 (s / see-01
+                    :ARG1 (c2 / case-04
+                              :ARG1-of (i / include-91
+                                          :ARG2 (c3 / case-04
+                                                    :ARG1 (e / enzyme
+                                                             :name (n / name
+                                                                      :op1 "BRAF")
+                                                             :mod (w / wild-type)))
+                                          :ARG3 (p / percentage-entity
+                                                   :value "76.1")))
+                    :location (t / tumor
+                                 :ARG1-of (h / high-02
+                                             :ARG2 (p4 / protein
+                                                       :name (n2 / name
+                                                                 :op1 "AREG")))))
+            :op2 (s2 / see-01
+                     :ARG1 (c4 / case-04
+                               :ARG1-of (i3 / include-91
+                                            :ARG2 c3
+                                            :ARG3 (p2 / percentage-entity
+                                                      :value "50.7")))
+                     :location (t2 / tumor
+                                   :ARG1-of (h2 / high-02
+                                                :ARG2 (p5 / protein
+                                                          :name (n3 / name
+                                                                    :op1 "EREG"))))))
+   :ARG2 (a2 / and
+             :op1 (o / observe-01
+                     :ARG1 (c5 / case-04
+                               :quant "2"
+                               :ARG1-of (i2 / include-91
+                                            :ARG2 (c6 / case-04
+                                                      :quant "6"
+                                                      :ARG1 (e2 / enzyme
+                                                                :name (n4 / name
+                                                                          :op1 "BRAF")
+                                                                :ARG2-of (m / mutate-01)))
+                                            :ARG3 (p3 / percentage-entity
+                                                      :value "33.3"))
+                               :mod (o2 / only))
+                     :location t)
+             :op2 (o3 / observe-01
+                      :ARG1 (c7 / case-04
+                                :polarity "-"
+                                :ARG1-of i2)
+                      :location t2))
+   :ARG1-of (r / resemble-01))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Regarding the primary location, 64.8% of KRAS mutations (p=0.07) and 58% of PIK3CA mutations (p=0.036) occurred in left-sided colorectal tumours, whereas four (66.7%) of BRAF mutations in right-sided colon carcinomas (p=0.024).
+# ::file pmid_2337_4602_102.txt
+# ::date 2015-08-04T07:34:54
+# ::id pmid_2337_4602.102
+(c / contrast-01
+   :ARG1 (a2 / and
+             :op1 (m2 / mutate-01
+                      :ARG1-of (i / include-91
+                                  :ARG2 (m / mutate-01
+                                           :ARG1 (e / enzyme
+                                                    :name (n2 / name
+                                                              :op1 "KRAS")))
+                                  :ARG3 (p / percentage-entity
+                                           :value "64.8"))
+                      :ARG1-of (s3 / statistical-test-91
+                                   :ARG2 "0.07"))
+             :op2 (m9 / mutate-01
+                      :ARG1-of (i2 / include-91
+                                   :ARG2 (m3 / mutate-01
+                                             :ARG1 (g / gene
+                                                      :name (n / name
+                                                               :op1 "PIK3CA")))
+                                   :ARG3 (p2 / percentage-entity
+                                             :value "58"))
+                      :ARG1-of (s4 / statistical-test-91
+                                   :ARG2 "0.036"))
+             :location (t / tumor
+                          :mod (c2 / colorectal)
+                          :location (s / side
+                                       :ARG1-of (l / left-20))))
+   :ARG2 (m7 / mutate-01
+             :quant "4"
+             :location (c3 / carcinoma
+                           :location (s2 / side
+                                         :poss (c4 / colon)
+                                         :ARG1-of (r / right-04)))
+             :ARG1-of (i3 / include-91
+                          :ARG2 (m6 / mutate-01
+                                    :ARG1 (e2 / enzyme
+                                              :name (n3 / name
+                                                        :op1 "BRAF")))
+                          :ARG3 (p3 / percentage-entity
+                                    :value "66.7"))
+             :ARG1-of (s5 / statistical-test-91
+                          :ARG2 "0.024"))
+   :topic (l2 / location
+              :mod (p7 / primary)))
+
+# ::save-date Mon Jan 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt mRNA RQ values were examined as continuous variables and significant correlations at Spearmann’s R>0.4 were found between AREG and EREG mRNA (R=0.63, 95% CI 0.53-0.72, p=0.0005).
+# ::file pmid_2337_4602_103.txt
+# ::date 2015-08-04T07:51:06
+# ::id pmid_2337_4602.103
+(a / and
+   :op1 (e / examination-02
+           :ARG1 (v / value
+                    :ARG2-of (r / result-01
+                                :ARG1 (q / quantify-01
+                                         :ARG1-of (r6 / relative-05)))
+                    :quant-of (n7 / nucleic-acid
+                                  :name (n2 / name
+                                            :op1 "mRNA")))
+           :manner (v2 / variable
+                       :ARG1-of (c / continue-01)))
+   :op2 (f / find-01
+           :ARG1 (c2 / correlate-01
+                     :ARG1 (n8 / nucleic-acid
+                               :name (n3 / name
+                                         :op1 "mRNA")
+                               :ARG0-of (e2 / encode-01
+                                            :ARG1 (p2 / protein
+                                                      :name (n5 / name
+                                                                :op1 "AREG"))))
+                     :ARG2 (n9 / nucleic-acid
+                               :name (n4 / name
+                                         :op1 "mRNA")
+                               :ARG0-of (e3 / encode-01
+                                            :ARG1 (p3 / protein
+                                                      :name (n6 / name
+                                                                :op1 "EREG"))))
+                     :ARG1-of (s / significant-02)
+                     :ARG1-of (m / mean-01
+                                 :ARG2 (a2 / and
+                                           :op1 (r5 / rho
+                                                    :value "0.63")
+                                           :op2 (i / interval
+                                                   :value (b2 / between
+                                                              :op1 "0.53"
+                                                              :op2 "0.72")
+                                                   :quant (p / percentage-entity
+                                                             :value "95")
+                                                   :mod (c3 / confidence)))))
+           :manner (v3 / value
+                       :mod (p5 / person
+                                :name (n / name
+                                         :op1 "Spearmann"))
+                       :value (m2 / more-than
+                                  :op1 "0.4")
+                       :mod (s3 / string-entity
+                                :value "R")))
+   :ARG1-of (s2 / statistical-test-91
+                :ARG2 "0.0005"))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At a median follow-up of 73.6 months, 215 patients (95.1%) had experienced disease progression and 163 (93.1%) had died.
+# ::file pmid_2337_4602_105.txt
+# ::date 2015-08-04T08:02:19
+# ::id pmid_2337_4602.105
+(a / and
+      :op1 (e / experience-01
+            :ARG0 (p3 / person
+                  :quant "215"
+                  :ARG0-of (h / have-rel-role-91
+                        :ARG2 (p4 / patient))
+                  :ARG1-of (m3 / mean-01
+                        :ARG2 (p / percentage-entity :value "95.1")))
+            :ARG1 (p5 / progress-01
+                  :ARG1 (d / disease)))
+      :op2 (d2 / die-01
+            :ARG1 (p6 / person
+                  :quant "163"
+                  :ARG0-of h
+                  :ARG1-of (m4 / mean-01
+                        :ARG2 (p2 / percentage-entity :value "93.1"))))
+      :time (f / follow-up-03
+            :mod (m / median)
+            :time (a2 / after
+                  :op1 (t / temporal-quantity
+                        :quant "73.6"
+                        :unit (m2 / month)))))
+
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The median survival was was 27 months (95% CI 25–31).
+# ::file pmid_2337_4602_106.txt
+# ::date 2015-08-04T08:07:20
+# ::id pmid_2337_4602.106
+(t2 / temporal-quantity
+      :quant "27"
+      :unit (m / month)
+      :domain (s / survive-01
+            :mod (m2 / median))
+      :condition (i / interval
+            :value (b / between
+                  :op1 (t / temporal-quantity
+                        :quant "25"
+                        :unit m)
+                  :op2 (t3 / temporal-quantity
+                        :quant "31"
+                        :unit m))
+            :quant (p / percentage-entity :value "95")
+            :mod (c / confidence)))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At univariate analysis, in the present cohort of patients treated with cetuximab the presence of BRAF mutations was significantly associated with an 8.1-fold increased risk of death compared to patients harbouring BRAF-wild type tumours.
+# ::file pmid_2337_4602_107.txt
+# ::date 2015-08-04T08:09:31
+# ::id pmid_2337_4602.107
+(a / associate-01
+   :ARG1 (p / present-02
+            :ARG1 (m / mutate-01
+                     :ARG1 (e2 / enzyme
+                               :name (n / name
+                                        :op1 "BRAF")))
+            :ARG2 (c / cohort
+                     :ARG1-of (p2 / present-02)
+                     :consist-of (p3 / person
+                                     :ARG0-of (h / have-rel-role-91
+                                                 :ARG2 (p4 / patient))
+                                     :ARG1-of (t / treat-03
+                                                 :ARG3 (s2 / small-molecule
+                                                           :name (n2 / name
+                                                                     :op1 "cetuximab"))))))
+   :ARG2 (r / risk-01
+            :ARG1 (d / die-01)
+            :ARG1-of (i / increase-01
+                        :ARG2 (p5 / product-of
+                                  :op1 "8.1")))
+   :ARG1-of (s / significant-02)
+   :compared-to (p6 / person
+                    :ARG0-of h
+                    :ARG0-of (h2 / harbor-01
+                                 :ARG1 (t2 / tumor
+                                           :mod (e / enzyme
+                                                   :name (n3 / name
+                                                             :op1 "BRAF")
+                                                   :mod (w / wild-type)))))
+   :time (a2 / analyze-01
+             :mod (u / univariate)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt When all types of mutations were pooled for each gene, KRAS (HR 1.28, p=0.14), NRAS (HR 1.43, p=0.36) and PIK3CA (HR 1.27, p=0.25) mutations did not have prognostic/predictive utility.
+# ::file pmid_2337_4602_108.txt
+# ::date 2015-08-05T05:55:36
+# ::id pmid_2337_4602.108
+(h / have-03
+   :polarity "-"
+   :ARG0 (a2 / and
+             :op1 (m / mutate-01
+                     :ARG2 (e2 / enzyme
+                               :name (n / name
+                                        :op1 "KRAS")
+                               :mod (r / ratio-of
+                                       :quant "1.28"
+                                       :op1 (h2 / hazard)))
+                     :ARG1-of (s / statistical-test-91
+                                 :ARG2 "0.14"))
+             :op2 (m3 / mutate-01
+                      :ARG2 (e3 / enzyme
+                                :name (n2 / name
+                                          :op1 "NRAS"))
+                      :mod (r2 / ratio-of
+                               :quant "1.43"
+                               :op1 h2)
+                      :ARG1-of (s2 / statistical-test-91
+                                   :ARG2 "0.36"))
+             :op3 (m4 / mutate-01
+                      :ARG2 (g2 / gene
+                                :name (n3 / name
+                                          :op1 "PIK3CA"))
+                      :mod (r3 / ratio-of
+                               :quant "1.27"
+                               :op1 h2)
+                      :ARG1-of (s3 / statistical-test-91
+                                   :ARG2 "0.25")))
+   :ARG1 (u / utility
+            :mod (p / prognostic)
+            :ARG0-of (p2 / predict-01))
+   :time (p3 / pool-01
+             :ARG1 (m2 / mutate-01
+                       :mod (t / type
+                               :mod (a / all)))
+             :topic (g / gene
+                       :mod (e / each))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, when types of mutations were analysed separately for each gene, KRAS codon 12 mutations were predictive for increased risk of death (HR 1.62, p=0.014).
+# ::file pmid_2337_4602_109.txt
+# ::date 2015-08-05T07:23:09
+# ::id pmid_2337_4602.109
+(c / contrast-01
+   :ARG2 (p / predict-01
+            :ARG0 (m / mutate-01
+                     :ARG1 (c2 / codon
+                               :mod "12"
+                               :part-of (e / enzyme
+                                           :name (n / name
+                                                    :op1 "KRAS")))
+                     :mod (r2 / ratio-of
+                              :quant "1.62"
+                              :op1 (h / hazard)))
+            :ARG1 (r / risk-01
+                     :ARG2 (d / die-01))
+            :time (a / analyze-01
+                     :ARG1 (m2 / mutate-01
+                               :mod (t / type))
+                     :manner (s / separate-02
+                                :ARG1 (g / gene
+                                         :mod (e2 / each))))
+            :ARG1-of (s2 / statistical-test-91
+                         :ARG2 "0.014")))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Among parameters studied for gene expression, only the 25th percentile of AREG mRNA values and the 75th percentile of EREG mRNA values dichotomized cases into groups with different outcome and were selected as optimal cut-offs.
+# ::file pmid_2337_4602_110.txt
+# ::date 2015-08-05T07:34:05
+# ::id pmid_2337_4602.110
+(a / and
+   :op1 (d / dichotomize-00
+           :ARG0 (a2 / and
+                     :op1 (v / value
+                             :mod (p / percentile
+                                     :ARG3-of (i / include-91
+                                                 :ARG2 (n5 / nucleic-acid
+                                                           :name (n / name
+                                                                    :op1 "mRNA")
+                                                           :ARG0-of (e2 / encode-01
+                                                                        :ARG1 (p5 / protein
+                                                                                  :name (n3 / name
+                                                                                            :op1 "AREG")))))
+                                     :mod (o2 / only)
+                                     :ord (o5 / ordinal-entity
+                                              :value "25")))
+                     :op2 (v2 / value
+                              :mod (p2 / percentile
+                                       :ARG3-of (i2 / include-91
+                                                    :ARG2 (n6 / nucleic-acid
+                                                              :name (n2 / name
+                                                                        :op1 "mRNA")
+                                                              :ARG0-of (e3 / encode-01
+                                                                           :ARG1 (p4 / protein
+                                                                                     :name (n4 / name
+                                                                                               :op1 "EREG")))))
+                                       :mod (o3 / only)
+                                       :ord (o6 / ordinal-entity
+                                                :value "75")))
+                     :ARG1-of (i3 / include-91
+                                  :ARG2 (p3 / parameter
+                                            :ARG1-of (s2 / study-01
+                                                         :purpose (e / express-03
+                                                                     :ARG1 (g2 / gene))))))
+           :ARG1 (c / case-04)
+           :ARG2 (g / group
+                    :ARG0-of (h / have-03
+                                :ARG1 (o / outcome
+                                         :ARG1-of (d2 / differ-02)))))
+   :op2 (s / select-01
+           :ARG1 a2
+           :ARG3 (t / thing
+                    :mod (o4 / optimal)
+                    :ARG3-of (c2 / cut-off-04))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt None of EGF, TGFa, EGFR mRNA levels disclosed cut-off points of prognostic significance.
+# ::file pmid_2337_4602_111.txt
+# ::date 2015-08-06T03:41:49
+# ::id pmid_2337_4602.111
+(d / disclose-01
+   :ARG0 (a / and
+            :op1 (l / level
+                    :quant-of (n / nucleic-acid
+                                 :name (n2 / name
+                                           :op1 "mRNA")
+                                 :ARG0-of (e2 / encode-01
+                                              :ARG1 (p / protein
+                                                       :name (n3 / name
+                                                                 :op1 "EGF")))))
+            :op2 (l2 / level
+                     :quant-of (n9 / nucleic-acid
+                                   :name (n4 / name
+                                             :op1 "mRNA")
+                                   :ARG0-of (e3 / encode-01
+                                                :ARG1 (p2 / protein
+                                                          :name (n5 / name
+                                                                    :op1 "TGFa")))))
+            :op3 (l3 / level
+                     :quant-of (n10 / nucleic-acid
+                                    :name (n6 / name
+                                              :op1 "mRNA")
+                                    :ARG0-of (e4 / encode-01
+                                                 :ARG1 (e / enzyme
+                                                          :name (n7 / name
+                                                                    :op1 "EGFR")))))
+            :quant (n8 / none))
+   :ARG1 (p4 / point
+             :mod (c / cut-off-04)
+             :ARG0-of (h / have-03
+                         :ARG1 (t / thing
+                                  :mod (p5 / prognostic)
+                                  :ARG1-of (s / significant-02)))))
+
+# ::save-date Tue Jan 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cetuximab therapy in patients harbouring AREG-high (HR 0.47, p=0.0002) or EREG-high (HR 0.45, p=0.0009) tumours resulted in reduced risk of death.
+# ::file pmid_2337_4602_112.txt
+# ::date 2015-08-06T03:42:10
+# ::id pmid_2337_4602.112
+(r / result-01
+   :ARG1 (t / therapy
+            :mod (s / small-molecule
+                    :name (n / name
+                             :op1 "Cetuximab"))
+            :location (p / person
+                         :ARG0-of (h / harbor-01
+                                     :ARG1 (o / or
+                                              :op1 (t2 / tumor
+                                                       :ARG1-of (h2 / high-02
+                                                                    :ARG2 (p2 / protein
+                                                                              :name (n2 / name
+                                                                                        :op1 "AREG")))
+                                                       :mod (r4 / ratio-of
+                                                                :quant "0.47"
+                                                                :op1 (h5 / hazard))
+                                                       :ARG1-of (s2 / statistical-test-91
+                                                                    :ARG2 "0.0002"))
+                                              :op2 (t3 / tumor
+                                                       :ARG1-of (h3 / high-02
+                                                                    :ARG2 (p3 / protein
+                                                                              :name (n3 / name
+                                                                                        :op1 "EREG")))
+                                                       :mod (r5 / ratio-of
+                                                                :quant "0.45"
+                                                                :op1 (h6 / hazard))
+                                                       :ARG1-of (s3 / statistical-test-91
+                                                                    :ARG2 "0.0009"))))
+                         :ARG0-of (h4 / have-rel-role-91
+                                      :ARG2 (p6 / patient))))
+   :ARG2 (r2 / risk-01
+             :ARG2 (d / die-01)
+             :ARG1-of (r3 / reduce-01)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt EGFR, EGF, TGFa mRNA expression had no significant prognostic/predictive value, either in the entire cohort or in the KRAS-wild type versus KRAS mutant cases.
+# ::file pmid_2337_4602_113.txt
+# ::date 2015-08-06T07:19:05
+# ::id pmid_2337_4602.113
+(h / have-03
+   :polarity "-"
+   :ARG0 (e2 / express-03
+             :ARG1 (n / nucleic-acid
+                      :name (n2 / name
+                                :op1 "mRNA")
+                      :ARG0-of (e3 / encode-01
+                                   :ARG1 (a / and
+                                            :op1 (e / enzyme
+                                                    :name (n3 / name
+                                                              :op1 "EGFR"))
+                                            :op2 (p4 / protein
+                                                     :name (n4 / name
+                                                               :op1 "EGF"))
+                                            :op3 (p5 / protein
+                                                     :name (n5 / name
+                                                               :op1 "TGFa"))))))
+   :ARG1 (v / value
+            :ARG1-of (s / significant-02)
+            :mod (p / prognostic)
+            :ARG0-of (p2 / predict-01))
+   :location (o2 / or
+                 :op1 (c / cohort
+                         :mod (e4 / entire))
+                 :op2 (c2 / compare-01
+                          :ARG1 (e5 / enzyme
+                                    :name (n6 / name
+                                              :op1 "KRAS")
+                                    :mod (w / wild-type))
+                          :ARG2 (e6 / enzyme
+                                    :name (n7 / name
+                                              :op1 "KRAS")
+                                    :ARG2-of (m / mutate-01)))))
+
+# ::save-date Fri Oct 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Regarding objective tumour response to any line of cetuximab-based therapy, tumoural AREG and EREG mRNA expression levels were associated with tumour shrinkage as continuous variables.
+# ::file pmid_2337_4602_114.txt
+# ::date 2015-08-06T07:34:32
+# ::id pmid_2337_4602.114
+(a / associate-01
+   :ARG1 (l / level
+            :quant-of (e / express-03
+                         :ARG1 (a2 / and
+                                   :op1 (n6 / nucleic-acid
+                                            :name (n / name
+                                                     :op1 "mRNA")
+                                            :ARG0-of (e2 / encode-01
+                                                         :ARG1 (p / protein
+                                                                  :name (n2 / name
+                                                                            :op1 "AREG"))))
+                                   :op2 (n7 / nucleic-acid
+                                            :name (n3 / name
+                                                      :op1 "mRNA")
+                                            :ARG0-of (e3 / encode-01
+                                                         :ARG1 (p2 / protein
+                                                                   :name (n4 / name
+                                                                             :op1 "EREG"))))))
+            :location (t / tumor))
+   :ARG2 (s / shrink-01
+            :ARG1 t)
+   :purpose (v / variable
+               :ARG1-of (c / continue-01))
+   :topic (r3 / respond-01
+              :ARG0 t
+              :ARG1 (l2 / line
+                        :mod (a3 / any)
+                        :part-of (t2 / therapy
+                                     :ARG1-of (b / base-02
+                                                 :ARG2 (s2 / small-molecule
+                                                           :name (n5 / name
+                                                                     :op1 "cetuximab")))))
+              :mod (o / objective)))
+
+# ::save-date Fri Oct 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt AREG was not statistically significant as categorical variable but EREG mRNA at the 75th percentile was associated with a 2.26-fold increased likelihood of tumour response to cetuximab compared to tumours with lower EREG mRNA expression.
+# ::file pmid_2337_4602_115.txt
+# ::date 2015-08-06T08:22:39
+# ::id pmid_2337_4602.115
+(c / contrast-01
+   :ARG1 (p / protein
+            :name (n2 / name
+                      :op1 "AREG")
+            :ARG1-of (s / significant-02
+                        :polarity "-"
+                        :mod (s2 / statistic)
+                        :purpose (v / variable
+                                    :mod (c2 / categorical))))
+   :ARG2 (n7 / nucleic-acid
+             :name (n3 / name
+                       :op1 "mRNA")
+             :ARG0-of (e2 / encode-01
+                          :ARG1 (p2 / protein
+                                    :name (n4 / name
+                                              :op1 "EREG")))
+             :location (p3 / percentile
+                           :ord (o / ordinal-entity
+                                   :value "75"))
+             :ARG1-of (a / associate-01
+                         :ARG2 (l / likely-01
+                                  :ARG1 (r / respond-01
+                                           :ARG0 (t / tumor)
+                                           :ARG1 (s3 / small-molecule
+                                                     :name (n / name
+                                                              :op1 "cetuximab")))
+                                  :ARG1-of (i / increase-01
+                                              :ARG2 (p4 / product-of
+                                                        :op1 "2.26"))
+                                  :compared-to (t2 / tumor
+                                                   :ARG3-of (e / express-03
+                                                               :ARG1 (n8 / nucleic-acid
+                                                                         :name (n5 / name
+                                                                                   :op1 "mRNA"))
+                                                               :ARG2 (p5 / protein
+                                                                         :name (n6 / name
+                                                                                   :op1 "EREG"))
+                                                               :ARG2-of (l2 / low-04
+                                                                            :degree (m / more))))))))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt AREG failed to predict response in either KRAS wild type or mutated cases.
+# ::file pmid_2337_4602_116.txt
+# ::date 2015-08-06T09:13:58
+# ::id pmid_2337_4602.116
+(f / fail-01
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "AREG"))
+   :ARG2 (p2 / predict-01
+             :ARG0 p
+             :ARG1 (r / respond-01
+                      :prep-in (o / or
+                                  :op1 (c / case-04
+                                          :ARG1 (e / enzyme
+                                                   :name (n2 / name
+                                                             :op1 "KRAS")
+                                                   :mod (w / wild-type)))
+                                  :op2 (c2 / case-04
+                                           :ARG1 (e2 / enzyme
+                                                     :name (n3 / name
+                                                               :op1 "KRAS")
+                                                     :ARG2-of (m / mutate-01)))))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The expression levels of EREG in the tumours of responding and non-responding patients by KRAS gene status is depicted in a waterfall plot (Figure  <xref ref-type="fig" rid="F1">1</xref>).
+# ::file pmid_2337_4602_117.txt
+# ::date 2015-08-06T09:20:34
+# ::id pmid_2337_4602.117
+(d / depict-01
+   :ARG1 (l / level
+            :quant-of (e / express-03
+                         :ARG2 (p / protein
+                                  :name (n / name
+                                           :op1 "EREG"))
+                         :ARG3 (t / tumor
+                                  :source (a / and
+                                             :op1 (p2 / person
+                                                      :ARG0-of (r / respond-01)
+                                                      :ARG0-of (h / have-rel-role-91
+                                                                  :ARG2 (p5 / patient)
+                                                                  :ARG0 p3))
+                                             :op2 (p3 / person
+                                                      :ARG0-of (r2 / respond-01
+                                                                   :polarity "-"))
+                                             :ARG1-of (s / say-01
+                                                         :ARG0 (s2 / status
+                                                                   :poss (g / gene
+                                                                            :name (n2 / name
+                                                                                      :op1 "KRAS"))))))))
+   :location (p4 / plot
+                 :mod (w / waterfall))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1")))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of note, in an exploratory analysis, the predictive significance for objective response was maintained only in KRAS mutated CRC, in which EREG had an odds ratio for response of 5.4 (95% CI 1.2-23.8, p=0.024).
+# ::file pmid_2337_4602_118.txt
+# ::date 2015-08-06T10:01:23
+# ::id pmid_2337_4602.118
+(n / note-02
+   :ARG1 (m / maintain-01
+            :ARG1 (s / significant-02
+                     :ARG1 (r / respond-01
+                              :mod (o / objective))
+                     :ARG0-of (p2 / predict-01))
+            :location (d / disease
+                         :name (n2 / name
+                                   :op1 "CRC")
+                         :mod (m2 / mutate-01
+                                  :ARG1 (e / enzyme
+                                           :name (n3 / name
+                                                     :op1 "KRAS")))
+                         :location-of (h / have-03
+                                         :ARG0 (p3 / protein
+                                                   :name (n4 / name
+                                                             :op1 "EREG"))
+                                         :ARG1 (e3 / equal-01
+                                                   :ARG1 (r2 / ratio
+                                                             :mod (o2 / odds)
+                                                             :prep-for (r3 / respond-01))
+                                                   :ARG2 (r4 / ratio-of
+                                                             :op1 "5.4")
+                                                   :mod (i / interval
+                                                           :quant (v / value-interval
+                                                                     :op1 "1.2"
+                                                                     :op2 "23.8")
+                                                           :mod (p4 / percentage-entity
+                                                                    :quant "95")
+                                                           :mod (c / confidence))))
+                         :mod (o3 / only))
+            :time (a / analyze-01
+                     :quant "1"
+                     :ARG0-of (e2 / explore-01))
+            :ARG1-of (s2 / statistical-test-91
+                         :ARG2 "0.024")))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt By contrast, in KRAS-wild type tumours EREG failed to significantly predict for response to therapy (OR 2.2, 95% CI 0.83-5.86, p=0.11).
+# ::file pmid_2337_4602_119.txt
+# ::date 2015-08-06T10:36:10
+# ::id pmid_2337_4602.119
+(c / contrast-01
+   :ARG2 (f / fail-01
+            :ARG1 (p2 / protein
+                      :name (n / name
+                               :op1 "EREG"))
+            :ARG2 (p3 / predict-01
+                      :ARG0 p2
+                      :ARG1 (r / respond-01
+                               :ARG1 (t / therapy))
+                      :ARG1-of (s / significant-02))
+            :location (t2 / tumor
+                          :mod (e / enzyme
+                                  :name (n2 / name
+                                            :op1 "KRAS")
+                                  :mod (w / wild-type)))
+            :mod (i / interval
+                    :mod (p4 / percentage-entity
+                             :quant "95")
+                    :quant (v / value-interval
+                              :op1 "0.83"
+                              :op2 "5.86")
+                    :mod (c2 / confidence))
+            :mod (r2 / ratio
+                     :quant "2.2"
+                     :mod (o / odds))
+            :ARG1-of (s2 / statistical-test-91
+                         :ARG2 "0.11")))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt EGF, TGFa and EGFR mRNA expression had no predictive utility for response to cetuximab in the whole cohort, neither in KRAS wild-type or KRAS mutated cases.
+# ::file pmid_2337_4602_120.txt
+# ::date 2015-08-06T10:51:53
+# ::id pmid_2337_4602.120
+(h / have-03
+   :polarity "-"
+   :ARG0 (e2 / express-03
+             :ARG1 (n / nucleic-acid
+                      :name (n2 / name
+                                :op1 "mRNA")
+                      :ARG0-of (e3 / encode-01
+                                   :ARG1 (a / and
+                                            :op1 (p / protein
+                                                    :name (n3 / name
+                                                              :op1 "EGF"))
+                                            :op2 (p2 / protein
+                                                     :name (n4 / name
+                                                               :op1 "TGFa"))
+                                            :op2 (e / enzyme
+                                                    :name (n5 / name
+                                                              :op1 "EGFR"))))))
+   :ARG1 (u / utility
+            :ARG0-of (p4 / predict-01
+                         :ARG1 (r2 / respond-01
+                                   :ARG1 (s / small-molecule
+                                            :name (n6 / name
+                                                      :op1 "cetuximab")))))
+   :location (c2 / cohort
+                 :mod (w / whole))
+   :topic (o / or
+             :op1 (c / case-04
+                     :ARG1 (e4 / enzyme
+                               :name (n7 / name
+                                         :op1 "KRAS")
+                               :mod (w2 / wild-type)))
+             :op2 (c3 / case-04
+                      :ARG1 (e5 / enzyme
+                                :name (n8 / name
+                                          :op1 "KRAS")
+                                :ARG2-of (m / mutate-01)))))
+
+# ::save-date Wed Oct 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All factors with potential predictive utility for cetuximab benefit are summarized in Table  <xref ref-type="table" rid="T3">3</xref>.
+# ::file pmid_2337_4602_121.txt
+# ::date 2015-08-06T11:27:36
+# ::id pmid_2337_4602.121
+(s / summarize-01
+   :ARG1 (f / factor
+            :mod (a / all)
+            :poss (u / utility
+                     :ARG0-of (p / predict-01
+                                 :ARG1 (b / benefit-01
+                                          :ARG0 (s2 / small-molecule
+                                                    :name (n / name
+                                                             :op1 "cetuximab"))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (t / table
+                        :mod "3")))
+
+
+# ::save-date Wed Nov 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Significant interactions (at the 1% significance level) between study variables for prognostic/predictive utility (survival, ORR) were sought.
+# ::file pmid_2337_4602_123.txt
+# ::date 2015-08-06T13:07:39
+# ::id pmid_2337_4602.123
+(s / seek-01
+      :ARG1 (i / interact-01
+            :ARG0 (v / variable
+                  :mod (s4 / study-01))
+            :ARG1-of (s2 / significant-02)
+            :prep-at (l / level
+                  :ARG1-of (s3 / significant-02)
+                  :mod (p / percentage-entity :value "1"))
+            :purpose (u / utility
+                  :ARG0-of (p2 / predict-01)
+                  :mod (p3 / prognostic)
+                  :ARG1-of (m / mean-01
+                        :ARG2 (a / and
+                              :op1 (s5 / survive-01)
+                              :op2 (r / rate
+                                    :mod (r2 / respond-01)
+                                    :mod (o / overall)))))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In terms of impact on survival, significant interactions were found between AREG mRNA levels and mutational status of the KRAS gene (p=0.0033).
+# ::file pmid_2337_4602_124.txt
+# ::date 2015-08-06T13:57:22
+# ::id pmid_2337_4602.124
+(f / find-01
+   :ARG1 (i / interact-01
+            :ARG0 (l / level
+                     :quant-of (n4 / nucleic-acid
+                                   :name (n / name
+                                            :op1 "mRNA")
+                                   :ARG0-of (e / encode-01
+                                               :ARG1 (p / protein
+                                                        :name (n2 / name
+                                                                  :op1 "AREG")))))
+            :ARG1 (s2 / status
+                      :mod (m / mutate-01)
+                      :poss (g / gene
+                               :name (n3 / name
+                                         :op1 "KRAS")))
+            :ARG1-of (s / significant-02))
+   :topic (i2 / impact-01
+              :ARG1 (s3 / survive-01))
+   :ARG1-of (s4 / statistical-test-91
+                :ARG2 "0.0033"))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt High mRNA levels of AREG predicted for longer survival in patients with KRAS wild-type (median survival 33 vs. 15 months, p=0.0005, Figure  <xref ref-type="fig" rid="F2">2</xref>), but not in KRAS mutant tumours (median survival 22 vs. 17 months, p=0.64).
+# ::file pmid_2337_4602_125.txt
+# ::date 2015-08-06T13:57:35
+# ::id pmid_2337_4602.125
+(c / contrast-01
+   :ARG1 (p / predict-01
+            :ARG0 (l / level
+                     :quant-of (n5 / nucleic-acid
+                                   :name (n / name
+                                            :op1 "mRNA")
+                                   :ARG0-of (e3 / encode-01
+                                                :ARG1 (p2 / protein
+                                                          :name (n2 / name
+                                                                    :op1 "AREG"))))
+                     :ARG1-of (h / high-02))
+            :ARG1 (s / survive-01
+                     :ARG0 (p3 / person
+                               :poss (t / tumor
+                                        :mod (e / enzyme
+                                                :name (n3 / name
+                                                          :op1 "KRAS")
+                                                :mod (w / wild-type)))
+                               :ARG0-of (h2 / have-rel-role-91
+                                            :ARG2 (p8 / patient)
+                                            :ARG0 p5))
+                     :ARG1-of (l2 / long-03
+                                  :degree (m / more))
+                     :mod (c2 / contrast-01
+                              :ARG1 (s3 / survive-01
+                                        :mod (m3 / median)
+                                        :duration (t3 / temporal-quantity
+                                                      :quant "33"
+                                                      :unit (m5 / month)))
+                              :ARG2 (s4 / survive-01
+                                        :duration (t4 / temporal-quantity
+                                                      :quant "15"
+                                                      :unit m5)
+                                        :mod m3)
+                              :ARG1-of (d / describe-01
+                                          :ARG0 (f / figure
+                                                   :mod "2")))
+                     :ARG1-of (s7 / statistical-test-91
+                                  :ARG2 "0.0005")))
+   :ARG2 (p4 / predict-01
+             :polarity "-"
+             :ARG0 l
+             :ARG1 (s2 / survive-01
+                       :ARG0 (p5 / person
+                                 :poss (t2 / tumor
+                                           :mod (m2 / mutate-01
+                                                    :ARG2 (e2 / enzyme
+                                                              :name (n4 / name
+                                                                        :op1 "KRAS")))))
+                       :mod (c3 / contrast-01
+                                :ARG1 (s5 / survive-01
+                                          :duration (t5 / temporal-quantity
+                                                        :quant "22"
+                                                        :unit m5)
+                                          :mod m3)
+                                :ARG2 (s6 / survive-01
+                                          :mod m3
+                                          :duration (t6 / temporal-quantity
+                                                        :quant "17"
+                                                        :unit m5)))
+                       :ARG1-of (s8 / statistical-test-91
+                                    :ARG2 "0.64"))))
+
+# ::save-date Thu Jan 7, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, high mRNA levels of EREG were associated with favourable prognosis irrespective of KRAS mutational status.
+# ::file pmid_2337_4602_126.txt
+# ::date 2015-08-07T04:43:40
+# ::id pmid_2337_4602.126
+(c / contrast-01
+   :ARG2 (a / associate-01
+            :ARG1 (l / level
+                     :quant-of (n4 / nucleic-acid
+                                   :name (n / name
+                                            :op1 "mRNA")
+                                   :ARG0-of (e2 / encode-01
+                                                :ARG1 (p / protein
+                                                         :name (n2 / name
+                                                                   :op1 "EREG"))))
+                     :ARG1-of (h / high-02))
+            :ARG2 (p2 / prognosis
+                      :mod (f / favourable))
+            :ARG1-of (r / regardless-91
+                        :ARG2 (s / status
+                                 :mod (m / mutate-01
+                                         :ARG1 (e / enzyme
+                                                  :name (n3 / name
+                                                            :op1 "KRAS")))))))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In KRAS wild type cases, the median survival was 37 months for EREG-high as compared to 23 months for EREG-low expressing tumours (p=0.01), while in KRAS mutated tumours median survival was 33 versus 19 months (p=0.02) in EREG-high vs. low cases (Figure  <xref ref-type="fig" rid="F3">3</xref>).
+# ::file pmid_2337_4602_127.txt
+# ::date 2015-08-07T04:44:15
+# ::id pmid_2337_4602.127
+(c / contrast-01
+   :ARG1 (c2 / compare-01
+             :ARG1 (s / survive-01
+                      :condition (t / tumor
+                                    :ARG3-of (e / express-03
+                                                :ARG2 (p / protein
+                                                         :wiki "Epiregulin"
+                                                         :name (n / name
+                                                                  :op1 "EREG")
+                                                         :ARG1-of (h / high-02))))
+                      :mod (m / median)
+                      :duration (t2 / temporal-quantity
+                                    :quant "37"
+                                    :unit (m2 / month))
+                      :ARG1-of (s5 / statistical-test-91
+                                   :ARG2 "0.01"))
+             :ARG2 (s2 / survive-01
+                       :condition (t3 / tumor
+                                      :ARG3-of (e2 / express-03
+                                                   :ARG2 (p2 / protein
+                                                             :wiki "Epiregulin"
+                                                             :name (n2 / name
+                                                                       :op1 "EREG")
+                                                             :ARG1-of (l / low-04))))
+                       :mod m
+                       :duration (t4 / temporal-quantity
+                                     :quant "23"
+                                     :unit m2))
+             :topic (c3 / case-04
+                        :ARG1 (e3 / enzyme
+                                  :wiki "KRAS"
+                                  :name (n3 / name
+                                            :op1 "KRAS")
+                                  :mod (w / wild-type))))
+   :ARG2 (c4 / compare-01
+             :ARG1 (s3 / survive-01
+                       :mod m
+                       :duration (t6 / temporal-quantity
+                                     :quant "33"
+                                     :unit m2)
+                       :condition (c5 / case-04
+                                      :ARG1 p)
+                       :ARG1-of (s6 / statistical-test-91
+                                    :ARG2 "0.02"))
+             :ARG2 (s4 / survive-01
+                       :mod m
+                       :duration (t7 / temporal-quantity
+                                     :quant "19"
+                                     :unit m2)
+                       :condition (c6 / case-04
+                                      :ARG1 p2))
+             :condition (t5 / tumor
+                            :mod (e4 / enzyme
+                                     :wiki "KRAS"
+                                     :name (n4 / name
+                                               :op1 "KRAS")
+                                     :ARG2-of (m3 / mutate-01))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similar findings for EREG high vs. low were seen when we examined complex cancer genotypes: a) KRAS+BRAF, both wild type vs. any mutant, b) KRAS+BRAF+PIK3CA+NRAS, all wild type vs. any mutant.
+# ::file pmid_2337_4602_128.txt
+# ::date 2015-08-07T04:46:09
+# ::id pmid_2337_4602.128
+(s / see-01
+   :ARG1 (t / thing
+            :ARG1-of (f / find-01)
+            :topic (c / compare-01
+                      :ARG1 (p / protein
+                               :name (n2 / name
+                                         :op1 "EREG")
+                               :ARG1-of (h / high-02))
+                      :ARG2 (p2 / protein
+                                :name (n3 / name
+                                          :op1 "EREG")
+                                :ARG1-of (l / low-04)))
+            :ARG1-of (r / resemble-01))
+   :time (e / examine-01
+            :ARG0 (w / we)
+            :ARG1 (g / genotype
+                     :mod (c3 / complex)
+                     :ARG1-of (m / mean-01
+                                 :ARG2 (a3 / and
+                                           :op1 (c4 / compare-01
+                                                    :li "a"
+                                                    :ARG1 (a / and
+                                                             :op1 (g5 / gene
+                                                                      :name (n4 / name
+                                                                                :op1 "KRAS")
+                                                                      :mod (w2 / wild-type))
+                                                             :op2 (g4 / gene
+                                                                      :name (n5 / name
+                                                                                :op1 "BRAF")
+                                                                      :mod w2))
+                                                    :ARG2 (m2 / molecular-physical-entity
+                                                              :ARG2-of (m3 / mutate-01)
+                                                              :mod (a2 / any)))
+                                           :op2 (c5 / compare-01
+                                                    :li "b"
+                                                    :ARG1 (a5 / and
+                                                              :op1 g5
+                                                              :op2 g4
+                                                              :op3 (g2 / gene
+                                                                       :name (n8 / name
+                                                                                 :op1 "PIK3CA")
+                                                                       :mod w2)
+                                                              :op4 (g3 / gene
+                                                                       :name (n9 / name
+                                                                                 :op1 "NRAS")
+                                                                       :mod w2))
+                                                    :ARG2 m2)))
+                     :mod (d / disease
+                             :wiki "Cancer"
+                             :name (n / name
+                                      :op1 "cancer")))))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt AREG mRNA had a favourable predictive significance in wild type cases only, whereas EREG mRNA preserved its significance in wild type as well as in mutant cases.
+# ::file pmid_2337_4602_129.txt
+# ::date 2015-08-07T04:49:01
+# ::id pmid_2337_4602.129
+(c / contrast-01
+   :ARG1 (n5 / nucleic-acid
+             :name (n / name
+                      :op1 "mRNA")
+             :ARG0-of (e / encode-01
+                         :ARG1 (p / protein
+                                  :name (n2 / name
+                                            :op1 "AREG")))
+             :ARG1-of (s / significant-02
+                         :mod (f / favourable)
+                         :ARG0-of (p2 / predict-01)
+                         :topic (c2 / case-04
+                                    :mod (w / wild-type)
+                                    :mod (o / only))))
+   :ARG2 (n6 / nucleic-acid
+             :name (n3 / name
+                       :op1 "mRNA")
+             :ARG0-of (e2 / encode-01
+                          :ARG1 (p3 / protein
+                                    :name (n4 / name
+                                              :op1 "EREG")))
+             :ARG0-of (p4 / preserve-01
+                          :ARG1 (s2 / significant-02
+                                    :ARG1 n6)
+                          :topic (a / and
+                                    :op1 (c3 / case-04
+                                             :mod w)
+                                    :op2 (c4 / case-04
+                                             :ARG2-of (m / mutate-01))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A multivariate analysis was performed in the context of a broader mRNA profiling project of several biomarkers (IGFBP2, IGF1R, cMET, EGFR, TGFa, EphA2, HER2, HER3, HER4, Table  <xref ref-type="table" rid="T4">4</xref>).
+# ::file pmid_2337_4602_130.txt
+# ::date 2015-08-07T04:50:36
+# ::id pmid_2337_4602.130
+(p / perform-02
+   :ARG1 (a / analyze-01
+            :mod (m / multivariate))
+   :ARG1-of (d / describe-01
+               :ARG0 (t / table
+                        :mod "4"))
+   :time (p2 / project
+             :ARG0-of (p3 / profile-01
+                          :ARG1 (b2 / biomarker
+                                    :ARG1-of (m2 / mean-01
+                                                 :ARG2 (a2 / and
+                                                           :op1 (p4 / protein
+                                                                    :name (n5 / name
+                                                                              :op1 "IGFBP2"))
+                                                           :op2 (p5 / protein
+                                                                    :name (n6 / name
+                                                                              :op1 "IGF1R"))
+                                                           :op3 (p6 / protein
+                                                                    :name (n7 / name
+                                                                              :op1 "cMET"))
+                                                           :op4 (e / enzyme
+                                                                   :name (n / name
+                                                                            :op1 "EGFR"))
+                                                           :op5 (p8 / protein
+                                                                    :name (n9 / name
+                                                                              :op1 "TGFa"))
+                                                           :op6 (p9 / protein
+                                                                    :name (n10 / name
+                                                                               :op1 "EphA2"))
+                                                           :op7 (e2 / enzyme
+                                                                    :name (n11 / name
+                                                                               :op1 "HER2"))
+                                                           :op8 (e3 / enzyme
+                                                                    :name (n12 / name
+                                                                               :op1 "HER3"))
+                                                           :op9 (e4 / enzyme
+                                                                    :name (n13 / name
+                                                                               :op1 "HER4"))))
+                                    :quant (s / several))
+                          :instrument (n2 / nucleic-acid
+                                          :name (n4 / name
+                                                    :op1 "mRNA")))
+             :ARG1-of (b / broad-02
+                         :degree (m3 / more))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the presence of wild-type KRAS, high AREG mRNA levels were independently associated with 83.0% reduction in the risk of death compared to patients with AREG-low tumours.
+# ::file pmid_2337_4602_131.txt
+# ::date 2015-08-09T13:32:22
+# ::id pmid_2337_4602.131
+(a / associate-01
+   :ARG1 (l / level
+            :quant-of (n3 / nucleic-acid
+                          :name (n / name
+                                   :op1 "mRNA")
+                          :ARG0-of (e / encode-01
+                                      :ARG1 (p2 / protein
+                                                :name (n2 / name
+                                                          :op1 "AREG"))))
+            :ARG1-of (h / high-02))
+   :ARG2 (r2 / reduce-01
+             :ARG1 (r3 / risk-01
+                       :ARG2 (d / die-01))
+             :ARG2 (p3 / percentage-entity
+                       :value "83")
+             :compared-to (p4 / person
+                              :poss (t / tumor
+                                       :ARG1-of (l2 / low-04
+                                                    :ARG2 p2))
+                              :ARG0-of (h2 / have-rel-role-91
+                                           :ARG2 (p / patient))))
+   :ARG0-of (d2 / depend-01
+                :polarity "-")
+   :condition (p5 / present-02
+                  :ARG1 (e2 / enzyme
+                            :name (n4 / name
+                                      :op1 "KRAS")
+                            :mod (w / wild-type))))
+
+# ::save-date Thu Jan 7, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt High EREG tumoural mRNA was a favourable outcome predictor for cetuximab-treated patients, irrespective of KRAS mutation status.
+# ::file pmid_2337_4602_132.txt
+# ::date 2015-08-09T14:32:03
+# ::id pmid_2337_4602.132
+(t / thing
+   :ARG0-of (p / predict-01
+               :ARG1 (o / outcome))
+   :domain (n5 / nucleic-acid
+               :name (n / name
+                        :op1 "mRNA")
+               :ARG0-of (e / encode-01
+                           :ARG1 (p2 / protein
+                                     :name (n2 / name
+                                               :op1 "EREG")))
+               :mod (h / high))
+   :mod (f / favourable)
+   :topic (p3 / patient
+              :ARG1-of (t2 / treat-03
+                           :ARG3 (s / small-molecule
+                                    :name (n3 / name
+                                              :op1 "cetuximab"))))
+   :ARG1-of (r / regardless-91
+               :ARG2 (s2 / status
+                         :mod (m / mutate-01
+                                 :ARG2 (e2 / enzyme
+                                           :name (n4 / name
+                                                     :op1 "KRAS"))))))
+
+# ::save-date Wed Oct 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt High Ephrin A2 (EphA2) mRNA and advanced age were adverse independent prognosticators.
+# ::file pmid_2337_4602_133.txt
+# ::date 2015-08-09T15:13:08
+# ::id pmid_2337_4602.133
+(p / prognosticator
+   :domain (a / and
+              :op1 (n3 / nucleic-acid
+                       :name (n / name
+                                :op1 "mRNA")
+                       :ARG0-of (e / encode-01
+                                   :ARG1 (p2 / protein
+                                             :name (n2 / name
+                                                       :op1 "Ephrin"
+                                                       :op2 "A2")
+                                             :ARG1-of (h / high-02))))
+              :op2 (a2 / age
+                       :ARG1-of (a3 / advance-01)))
+   :ARG0-of (d / depend-01
+               :polarity "-")
+   :mod (a4 / adverse))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Finally, among cetuximab-treated patients with AREG-low tumours, those with mutant KRAS fared significantly better than patients harbouring colon cancer with KRAS wild type (81% decreased risk of death).
+# ::file pmid_2337_4602_134.txt
+# ::date 2015-08-09T15:17:22
+# ::id pmid_2337_4602.134
+(f / fare-01
+   :ARG0 (p6 / person
+             :ARG1-of (i / include-91
+                         :ARG2 (p / person
+                                  :ARG1-of (t2 / treat-03
+                                               :ARG3 (s2 / small-molecule
+                                                         :name (n3 / name
+                                                                   :op1 "cetuximab")))
+                                  :poss (t / tumor
+                                           :mod (p5 / protein
+                                                    :name (n4 / name
+                                                              :op1 "AREG")
+                                                    :ARG1-of (l / low-04)))
+                                  :ARG0-of (h2 / have-rel-role-91
+                                               :ARG2 (p4 / patient)
+                                               :ARG0 p2)))
+             :mod (e2 / enzyme
+                      :name (n / name
+                               :op1 "KRAS")
+                      :ARG2-of (m4 / mutate-01)))
+   :ARG1-of (w2 / well-09
+                :mod (m2 / more)
+                :ARG1-of (s / significant-02)
+                :ARG1-of (m3 / mean-01
+                             :ARG2 (r / risk-01
+                                      :ARG2 (d2 / die-01)
+                                      :ARG1-of (d3 / decrease-01
+                                                   :ARG2 (p3 / percentage-entity
+                                                             :value "81"))))
+                :degree (m / more))
+   :compared-to (p2 / person
+                    :ARG0-of (h / harbor-01
+                                :ARG1 (d / disease
+                                         :wiki "Colorectal_cancer"
+                                         :name (n5 / name
+                                                   :op1 "colon"
+                                                   :op2 "cancer")
+                                         :mod (e / enzyme
+                                                 :name (n2 / name
+                                                           :op1 "KRAS")
+                                                 :mod (w / wild-type)))))
+   :time (f2 / final))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We examined different types of KRAS and PIK3CA mutations for potentially distinct impact on patient survival.
+# ::file pmid_2337_4602_136.txt
+# ::date 2015-08-09T23:28:02
+# ::id pmid_2337_4602.136
+(e / examine-01
+   :ARG0 (w / we)
+   :ARG1 (t / type
+            :mod (m / mutate-01
+                    :ARG2 (a / and
+                             :op1 (g2 / gene
+                                      :name (n2 / name
+                                                :op1 "KRAS"))
+                             :op2 (g3 / gene
+                                      :name (n3 / name
+                                                :op1 "PIK3CA"))))
+            :ARG1-of (d / differ-02))
+   :ARG2 (i / impact-01
+            :ARG0 t
+            :ARG1 (s / survive-01
+                     :ARG0 (p / person
+                              :ARG0-of (h / have-rel-role-91
+                                          :ARG2 (p3 / patient))))
+            :mod (d2 / distinct
+                     :mod (p2 / potential))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Regarding KRAS, cetuximab-treated patients with codon 12 mutations had a median survival of 19 months (95% CI 15–26), significantly lower (p=0.033) than the median survival of patients with other KRAS mutations (30 months, 95% CI 20–35) and that of patients with wild-type KRAS (29 months, 95% CI 25–35).
+# ::file pmid_2337_4602_137.txt
+# ::date 2015-08-09T23:33:11
+# ::id pmid_2337_4602.137
+(h / have-03
+   :ARG0 (p / person
+            :ARG1-of (t / treat-03
+                        :ARG3 (s / small-molecule
+                                 :name (n2 / name
+                                           :op1 "cetuximab")))
+            :poss (m2 / mutate-01
+                      :ARG1 (c / codon
+                               :mod "12"))
+            :ARG0-of (h2 / have-rel-role-91
+                         :ARG2 (p2 / patient)
+                         :ARG0 p5
+                         :ARG0 p6))
+   :ARG1 (s2 / survive-01
+             :mod (m3 / median)
+             :duration (t2 / temporal-quantity
+                           :quant "19"
+                           :unit (m4 / month))
+             :ARG1-of (m5 / mean-01
+                          :ARG2 (i / interval
+                                   :mod (p3 / percentage-entity
+                                            :value "95")
+                                   :mod (v / value-interval
+                                           :op1 "15"
+                                           :op2 "26")
+                                   :mod (c2 / confidence)))
+             :ARG1-of (l / low-04
+                         :degree (m6 / more)
+                         :ARG1-of (s3 / significant-02)
+                         :compared-to (a / and
+                                         :op1 (s4 / survive-01
+                                                  :ARG0 (p5 / person
+                                                            :poss (m8 / mutate-01
+                                                                      :ARG1 "g"
+                                                                      :mod (o / other)))
+                                                  :mod m3
+                                                  :ARG1-of (m9 / mean-01
+                                                               :ARG2 (i2 / interval
+                                                                         :mod (v2 / value-interval
+                                                                                  :op1 "20"
+                                                                                  :op2 "35")
+                                                                         :mod p3
+                                                                         :mod c2)
+                                                               :duration (t3 / temporal-quantity
+                                                                             :quant "30"
+                                                                             :unit m4)))
+                                         :op2 (s5 / survive-01
+                                                  :ARG0 (p6 / person
+                                                            :poss (g2 / gene
+                                                                      :name (n3 / name
+                                                                                :op1 "KRAS")
+                                                                      :mod (w / wild-type)))
+                                                  :ARG1-of (m10 / mean-01
+                                                                :ARG2 (i3 / interval
+                                                                          :mod (v3 / value-interval
+                                                                                   :op1 "25"
+                                                                                   :op2 "35")
+                                                                          :mod c2)
+                                                                :duration (t4 / temporal-quantity
+                                                                              :quant "29"
+                                                                              :unit m4))))
+                         :ARG1-of (s6 / statistical-test-91
+                                      :ARG2 "0.033")))
+   :topic (g / gene
+             :name (n / name
+                      :op1 "KRAS")))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Further subgroup analyses showed that the median survival in patients with codon 12 KRAS mutations was also lower than the median survival of all other patient subgroups (other KRAS mutations or KRAS wild-type).
+# ::file pmid_2337_4602_138.txt
+# ::date 2015-08-10T00:18:36
+# ::id pmid_2337_4602.138
+(s / show-01
+   :ARG0 (a / analyze-01
+            :ARG1 (s2 / subgroup)
+            :degree (f / further))
+   :ARG1 (s3 / survive-01
+             :ARG0 (p / person
+                      :poss (m3 / mutate-01
+                                :ARG1 (c / codon
+                                         :mod "12"
+                                         :part-of (g / gene
+                                                     :name (n / name
+                                                              :op1 "KRAS"))))
+                      :ARG0-of (h / have-rel-role-91
+                                  :ARG2 (p2 / patient)))
+             :mod (m2 / median)
+             :ARG1-of (l / low-04
+                         :degree (m4 / more)
+                         :compared-to (s4 / survive-01
+                                          :ARG0 (s5 / subgroup
+                                                    :mod (o / other)
+                                                    :mod (a2 / all)
+                                                    :ARG1-of (m5 / mean-01
+                                                                 :ARG2 (o2 / or
+                                                                           :op1 (m6 / mutate-01
+                                                                                    :ARG2 g
+                                                                                    :mod (o3 / other))
+                                                                           :op2 (g2 / gene
+                                                                                    :name (n2 / name
+                                                                                              :op1 "KRAS")
+                                                                                    :mod (w / wild-type))))
+                                                    :consist-of (p3 / person
+                                                                    :ARG0-of h))
+                                          :mod m2)
+                         :mod (a3 / also))))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Specifically, patients with codon 13 mutations reached a median survival of 28 months (95% CI 16–39), those with other rarer KRAS mutations a median survival of 33 months (95% CI 16–42) and patients with KRAS wild-type tumours a median survival of 29 months (95% CI 25–35).
+# ::file pmid_2337_4602_139.txt
+# ::date 2015-08-10T00:49:50
+# ::id pmid_2337_4602.139
+(a / and
+   :op1 (p / person
+           :poss (m / mutate-01
+                    :ARG1 (c / codon
+                             :mod "13"))
+           :ARG0-of (r / reach-01
+                       :ARG1 (s2 / survive-01
+                                 :mod (m2 / median)
+                                 :duration (t / temporal-quantity
+                                              :quant "28"
+                                              :unit (m3 / month))
+                                 :ARG1-of (m4 / mean-01
+                                              :ARG2 (i / interval
+                                                       :mod (p3 / percentage-entity
+                                                                :value "95")
+                                                       :mod (v / value-interval
+                                                               :op1 "16"
+                                                               :op2 "39")
+                                                       :mod (c2 / confidence)))))
+           :ARG0-of (h / have-rel-role-91
+                       :ARG2 (p5 / patient)
+                       :ARG0 p2
+                       :ARG0 p4))
+   :op2 (p2 / person
+            :poss (m5 / mutate-01
+                      :ARG1 (g / gene
+                               :name (n / name
+                                        :op1 "KRAS"))
+                      :mod (o / other)
+                      :ARG1-of (r4 / rare-02
+                                   :degree (m8 / more)))
+            :ARG0-of (r2 / reach-01
+                         :ARG1 (s3 / survive-01
+                                   :mod m2
+                                   :duration (t2 / temporal-quantity
+                                                 :quant "33"
+                                                 :unit m3)
+                                   :ARG1-of (m6 / mean-01
+                                                :ARG2 (i2 / interval
+                                                          :mod (v2 / value-interval
+                                                                   :op1 "16"
+                                                                   :op2 "42")
+                                                          :mod p3
+                                                          :mod c2)))))
+   :op3 (p4 / person
+            :poss (t3 / tumor
+                      :mod (g2 / gene
+                               :name (n2 / name
+                                         :op1 "KRAS")
+                               :mod (w / wild-type)))
+            :ARG0-of (r3 / reach-01
+                         :ARG1 (s4 / survive-01
+                                   :mod m2
+                                   :duration (t4 / temporal-quantity
+                                                 :quant "29"
+                                                 :unit m3)
+                                   :ARG1-of (m7 / mean-01
+                                                :ARG2 (i3 / interval
+                                                          :mod (v3 / value-interval
+                                                                   :op1 "25"
+                                                                   :op2 "35")
+                                                          :mod p3
+                                                          :mod c2)))))
+   :ARG1-of (s / specific-02))
+
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Despite the rather small size of compared subgroups, a trend for statistical significance was evident (p=0.068, Figure  <xref ref-type="fig" rid="F4">4</xref>).
+# ::file pmid_2337_4602_140.txt
+# ::date 2015-08-10T01:00:58
+# ::id pmid_2337_4602.140
+(e / evidence-01
+      :ARG1 (t / trend-01
+            :ARG2 (s / signify-01
+                  :mod (s2 / statistic)))
+      :concession (s3 / size-01
+            :ARG1 (s5 / subgroup
+                  :ARG1-of (c / compare-01))
+            :ARG2 (s4 / small
+                  :degree (r / rather)))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "4"))
+      :ARG1-of (s6 / statistical-test-91 :ARG2 "0.068"))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt No difference in patient outcomes was found when we compared tumours with PIK3CA exon 9 versus exon 20 mutations versus PIK3CA wild-type status, as survival times clustered from 25 to 29 months (p=0.31).
+# ::file pmid_2337_4602_141.txt
+# ::date 2015-08-10T01:07:42
+# ::id pmid_2337_4602.141
+(f / find-01
+   :polarity "-"
+   :ARG1 (d / differ-02
+            :ARG1 (o / outcome
+                     :poss-of (p / person
+                                 :ARG0-of (h / have-rel-role-91
+                                             :ARG2 (p3 / patient)))))
+   :time (c / compare-01
+            :ARG0 (w / we)
+            :ARG1 (t / tumor
+                     :poss (a / and
+                              :op1 (m / mutate-01
+                                      :ARG2 (e / exon
+                                               :mod "9"
+                                               :part-of (g2 / gene
+                                                            :name (n2 / name
+                                                                      :op1 "PIK3CA"))))
+                              :op2 (m2 / mutate-01
+                                       :ARG2 (e2 / exon
+                                                 :mod "20"
+                                                 :part-of g2))
+                              :op3 (g3 / gene
+                                       :name (n3 / name
+                                                 :op1 "PIK3CA")
+                                       :poss (s / status
+                                                :mod (w2 / wild-type))))))
+   :ARG1-of (c2 / cause-01
+                :ARG0 (t2 / time
+                          :duration-of (s2 / survive-01)
+                          :ARG1-of (c3 / cluster-01
+                                       :duration (v / value-interval
+                                                    :op1 (t3 / temporal-quantity
+                                                             :quant "25"
+                                                             :unit (m3 / month))
+                                                    :op2 (t4 / temporal-quantity
+                                                             :quant "29"
+                                                             :unit m3)))))
+   :ARG1-of (s3 / statistical-test-91
+                :ARG2 "0.31"))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The only complex genotype that harboured significance for cetuximab benefit was CG3 (p=0.019): Patients with tumours wild-type for all PIK3CA, KRAS, BRAF reached a median survival of 32 months (95% CI 25–36), those with a PIK3CA mutation along with KRAS or BRAF mutation had a median survival of 26 months (95% CI 16–32) while patients with any single mutation in KRAS, BRAF or PIK3CA genes had a median survival of 22 months (95% CI 19–28).
+# ::file pmid_2337_4602_142.txt
+# ::date 2015-08-10T01:33:42
+# ::id pmid_2337_4602.142
+(m / multi-sentence
+   :snt1 (h / harbor-01
+            :ARG0 (g2 / genotype
+                      :mod (c / complex)
+                      :mod (o / only)
+                      :domain (d / dna-sequence
+                                 :name (n / name
+                                          :op1 "CG3")))
+            :ARG1 (s / significant-02
+                     :ARG1 (b / benefit-01
+                              :ARG0 (s2 / small-molecule
+                                        :name (n2 / name
+                                                  :op1 "cetuximab")))
+                     :ARG1-of (s7 / statistical-test-91
+                                  :ARG2 "0.019")))
+   :snt2 (a / and
+            :op1 (r / reach-01
+                    :ARG0 (p / person
+                             :poss (t / tumor
+                                      :mod (g / gene
+                                              :name (n3 / name
+                                                        :op1 "PIK3CA")
+                                              :mod (w / wild-type)))
+                             :ARG0-of (h4 / have-rel-role-91
+                                          :ARG2 (p5 / patient)
+                                          :ARG0 p7
+                                          :ARG0 p3)
+                             :poss (t6 / tumor
+                                       :mod (e2 / enzyme
+                                                :name (n4 / name
+                                                          :op1 "KRAS")
+                                                :mod w))
+                             :poss (t7 / tumor
+                                       :mod (e3 / enzyme
+                                                :name (n5 / name
+                                                          :op1 "BRAF")
+                                                :mod w)))
+                    :ARG1 (s3 / survive-01
+                              :ARG0 p
+                              :mod (m2 / median)
+                              :duration (t2 / temporal-quantity
+                                            :quant "32"
+                                            :unit (m3 / month))
+                              :ARG1-of (m4 / mean-01
+                                           :ARG2 (i / interval
+                                                    :mod (p4 / percentage-entity
+                                                             :value "95")
+                                                    :mod (v / value-interval
+                                                            :op1 "25"
+                                                            :op2 "36")
+                                                    :mod (c2 / confidence)))))
+            :op2 (h2 / have-03
+                     :ARG0 (p7 / person
+                               :poss (a4 / and
+                                         :op1 (m5 / mutate-01
+                                                  :ARG2 g)
+                                         :op2 (o2 / or
+                                                  :op1 (m6 / mutate-01
+                                                           :ARG2 e2)
+                                                  :op2 (m7 / mutate-01
+                                                           :ARG2 e3))))
+                     :ARG1 (s4 / survive-01
+                               :ARG0 p7
+                               :mod m2
+                               :duration (t3 / temporal-quantity
+                                             :quant "26"
+                                             :unit m3)
+                               :ARG1-of (m8 / mean-01
+                                            :ARG2 (i2 / interval
+                                                      :mod (v2 / value-interval
+                                                               :op1 "16"
+                                                               :op2 "32")
+                                                      :mod p4
+                                                      :mod c2))))
+            :op3 (h3 / have-03
+                     :ARG0 (p3 / person
+                               :poss (m9 / mutate-01
+                                         :ARG2 (o3 / or
+                                                   :op1 g
+                                                   :op2 e2
+                                                   :op3 e3)
+                                         :ARG1-of (s5 / single-02)))
+                     :ARG1 (s6 / survive-01
+                               :ARG0 p3
+                               :mod m2
+                               :duration (t5 / temporal-quantity
+                                             :quant "22"
+                                             :unit m3)
+                               :ARG1-of (m10 / mean-01
+                                             :ARG2 (i3 / interval
+                                                       :mod (v3 / value-interval
+                                                                :op1 "19"
+                                                                :op2 "28")
+                                                       :mod p4
+                                                       :mod c2))))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Apparently, concurrent mutations in PIK3CA along with KRAS or BRAF mutations carried rather weak additional adverse prediction.
+# ::file pmid_2337_4602_143.txt
+# ::date 2015-08-10T02:09:16
+# ::id pmid_2337_4602.143
+(c / carry-01
+   :ARG0 (a4 / and
+             :op1 (m / mutate-01
+                     :ARG2 (e3 / enzyme
+                               :name (n2 / name
+                                         :op1 "PIK3CA"))
+                     :ARG1-of (c2 / concurrent-02))
+             :op2 (m2 / mutate-01
+                      :ARG2 (o / or
+                               :op1 (e / enzyme
+                                       :name (n3 / name
+                                                 :op1 "KRAS"))
+                               :op2 (e2 / enzyme
+                                        :name (n4 / name
+                                                  :op1 "BRAF")))))
+   :ARG1 (p / predict-01
+            :mod (a2 / adverse)
+            :mod (a3 / additional)
+            :ARG1-of (w / weak-02
+                        :degree (r / rather)))
+   :manner (a / apparent))

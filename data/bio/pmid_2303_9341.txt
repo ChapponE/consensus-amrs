@@ -1,0 +1,2552 @@
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The majority of melanoma cell lines were either sensitive (IC50 < 500 nM, 24/31) or hypersensitive (IC50 < 100 nM, 18/31) to E6201.
+# ::file pmid_2303_9341_9.txt
+# ::date 2015-06-23T01:06:58
+# ::id pmid_2303_9341.9
+(o / or
+   :op1 (s / sensitive-03
+           :ARG0 (c / cell-line
+                    :quant "24"
+                    :quant (m / majority)
+                    :ARG1-of (i / include-91
+                                :ARG2 (c3 / cell-line
+                                          :quant "31"
+                                          :mod (m2 / medical-condition
+                                                   :name (n / name
+                                                            :op1 "melanoma"))))
+                    :ARG0-of (h2 / have-03
+                                 :ARG1 (c6 / concentrate-02
+                                           :mod (i3 / inhibit-01
+                                                    :degree (p / percentage-entity
+                                                               :degree "50"))
+                                           :quant (l3 / less-than
+                                                      :op1 (c2 / concentration-quantity
+                                                               :quant "500"
+                                                               :unit (n3 / nanomolar))))))
+           :ARG1 (s3 / small-molecule
+                     :name (n2 / name
+                               :op1 "E6201")))
+   :op2 (s2 / sensitive-03
+            :ARG0 (c4 / cell-line
+                      :quant "18"
+                      :ARG1-of (i2 / include-91
+                                   :ARG2 c3)
+                      :ARG0-of (h3 / have-03
+                                   :ARG1 (c7 / concentrate-02
+                                             :mod i3
+                                             :quant (l / less-than
+                                                       :op1 (c5 / concentration-quantity
+                                                                :quant "100"
+                                                                :unit n3))))
+                      :quant (m3 / majority)
+                      :mod m2)
+            :ARG1 s3
+            :degree (h / hyper)))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This sensitivity correlated with wildtype <i>PTEN</i> and mutant <i>BRAF</i> status, whereas mutant <i>RAS</i> and PI3K pathway activation were associated with resistance.
+# ::file pmid_2303_9341_10.txt
+# ::date 2015-06-23T01:34:19
+# ::id pmid_2303_9341.10
+(c / contrast-01
+   :ARG1 (c2 / correlate-01
+             :ARG1 (s / sensitive-03
+                      :mod (t / this))
+             :ARG2 (a / and
+                      :op1 (s2 / status
+                               :mod (g / gene
+                                       :name (n2 / name
+                                                 :op1 "PTEN")
+                                       :mod (w / wild-type)))
+                      :op2 (s3 / status
+                               :mod (g2 / gene
+                                        :name (n / name
+                                                 :op1 "BRAF")
+                                        :ARG2-of (m / mutate-01)))))
+   :ARG2 (a2 / associate-01
+             :ARG1 (a6 / and
+                       :op1 (g3 / gene
+                                :name (n3 / name
+                                          :op1 "RAS")
+                                :ARG2-of (m2 / mutate-01))
+                       :op2 (p / pathway
+                               :name (n4 / name
+                                         :op1 "PI3K")
+                               :ARG1-of (a7 / activate-01)))
+             :ARG2 (r / resist-01)))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Although MEK inhibitors predominantly exert a cytostatic effect, E6201 elicited a potent cytocidal effect on most of the sensitive lines studied, as evidenced by Annexin positivity and cell death ELISA.
+# ::file pmid_2303_9341_11.txt
+# ::date 2015-06-23T01:42:45
+# ::id pmid_2303_9341.11
+(e2 / elicit-01
+    :ARG0 (s4 / small-molecule
+              :name (n2 / name
+                        :op1 "E6201"))
+    :ARG1 (a / affect-01
+             :ARG0 s4
+             :ARG1 (l / line
+                      :ARG0-of (s / sensitive-03)
+                      :quant (m / most)
+                      :ARG1-of (i2 / include-91
+                                   :ARG2 (l2 / line
+                                             :ARG0-of (s2 / sensitive-03)
+                                             :ARG1-of (s3 / study-01))))
+             :ARG2 (c / cytocide
+                      :mod (p / potent)))
+    :concession (e3 / exert-01
+                    :ARG0 (m2 / molecular-physical-entity
+                              :ARG0-of (i3 / inhibit-01
+                                           :ARG1 (p5 / protein-family
+                                                     :name (n3 / name
+                                                               :op1 "MEK"))))
+                    :ARG2 (a2 / affect-01
+                              :ARG0 m2
+                              :ARG2 (c2 / cytostatic)
+                              :ARG1-of (p4 / predominate-01)))
+    :ARG1-of (e5 / evidence-01
+                 :ARG0 (a3 / and
+                           :op1 (p2 / positive
+                                    :domain (p3 / protein
+                                                :name (n4 / name
+                                                          :op1 "Annexin")))
+                           :op2 (c3 / cell
+                                    :ARG1-of (d / die-01)))
+                 :instrument (t / thing
+                                :name (n / name
+                                         :op1 "ELISA"))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Conversely, E6201 did not induce cell death in the two resistant melanoma cell lines tested.
+# ::file pmid_2303_9341_12.txt
+# ::date 2015-06-23T02:02:29
+# ::id pmid_2303_9341.12
+(c3 / contrast-01
+    :ARG2 (i / induce-01
+             :polarity "-"
+             :ARG0 (s / small-molecule
+                      :name (n / name
+                               :op1 "E6201"))
+             :ARG1 (c / cell-line
+                      :quant "2"
+                      :mod (m / medical-condition
+                              :name (n2 / name
+                                        :op1 "melanoma"))
+                      :ARG0-of (r / resist-01)
+                      :ARG1-of (t2 / test-01))
+             :ARG2 (d2 / die-01
+                       :ARG1 (c2 / cell))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt E6201 inhibited xenograft tumour growth in all four melanoma cell lines studied to varying degrees, but a more pronounced anti-tumour effect was observed for cell lines that previously demonstrated a cytocidal response <i>in vitro</i>.
+# ::file pmid_2303_9341_13.txt
+# ::date 2015-06-23T04:24:49
+# ::id pmid_2303_9341.13
+(c / contrast-01
+   :ARG1 (i / inhibit-01
+            :ARG0 (s2 / small-molecule
+                      :name (n / name
+                               :op1 "E6201"))
+            :ARG1 (g / grow-01
+                     :ARG1 (t2 / tumor
+                               :mod (x / xenograft)))
+            :location (c2 / cell-line
+                          :quant "4"
+                          :mod (m2 / medical-condition
+                                   :name (n2 / name
+                                             :op1 "melanoma"))
+                          :mod (a / all)
+                          :ARG1-of (s / study-01))
+            :degree (d3 / degree
+                        :ARG1-of (v / vary-01)))
+   :ARG2 (o / observe-01
+            :ARG1 (a2 / affect-01
+                      :ARG1 (c3 / cell-line
+                                :ARG0-of (d2 / demonstrate-01
+                                             :ARG1 (r / respond-01
+                                                      :ARG0 c3
+                                                      :ARG2 (c4 / cytocide))
+                                             :manner (i2 / in-vitro)
+                                             :time (p2 / previous)))
+                      :ARG2 (c5 / counter-01
+                                :ARG1 (t3 / tumor))
+                      :ARG1-of (p / pronounce-01
+                                  :degree (m / more)))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>In vitro</i> combination studies of E6201 and LY294002 showed synergism in all six melanoma cell lines tested, as defined by a mean combination index < 1.
+# ::file pmid_2303_9341_14.txt
+# ::date 2015-06-23T04:50:20
+# ::id pmid_2303_9341.14
+(s / show-01
+   :ARG0 (c / combine-01
+            :ARG1 (a2 / and
+                      :op1 (s4 / study-01
+                               :ARG1 (s2 / small-molecule
+                                         :name (n / name
+                                                  :op1 "E6201")))
+                      :op2 (s5 / study-01
+                               :ARG1 (s6 / small-molecule
+                                         :name (n2 / name
+                                                   :op1 "LY294002"))))
+            :manner (i3 / in-vitro)
+            :ARG1-of (d2 / define-01
+                         :ARG0 (i / index
+                                  :mod (c3 / combine-01
+                                           :mod (m / mean))
+                                  :value (l / less-than
+                                            :op1 "1"))))
+   :ARG1 (s3 / synergism)
+   :location (c2 / cell-line
+                 :quant "6"
+                 :mod (m2 / medical-condition
+                          :name (n4 / name
+                                    :op1 "melanoma"))
+                 :ARG1-of (t3 / test-01)
+                 :mod (a / all)))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Sensitivity to E6201 was assessed in a panel of 31 cell lines for which the mutation status of common melanoma genes was known (Table <xref ref-type="table" rid="T1">1</xref>).
+# ::file pmid_2303_9341_46.txt
+# ::date 2015-06-23T05:17:12
+# ::id pmid_2303_9341.46
+(a / assess-01
+   :ARG1 (s / sensitive-03
+            :ARG1 (s3 / small-molecule
+                      :name (n / name
+                               :op1 "E6201")))
+   :location (p / panel
+                :consist-of (c / cell-line
+                               :quant "31"
+                               :mod (k / know-01
+                                       :ARG1 (s2 / status
+                                                 :mod (m / mutate-01
+                                                         :ARG1 (g / gene
+                                                                  :mod (m2 / medical-condition
+                                                                           :name (n2 / name
+                                                                                     :op1 "melanoma"))
+                                                                  :mod (c2 / common)))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (t2 / table
+                          :mod "1")))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These lines were chosen to represent different mutational profiles from a larger panel of more than one hundred melanoma cell lines.
+# ::file pmid_2303_9341_47.txt
+# ::date 2015-06-23T05:31:03
+# ::id pmid_2303_9341.47
+(c / choose-01
+      :ARG1 (l / line
+            :mod (t / this))
+      :ARG2 (p2 / panel
+            :mod (l2 / large
+                  :degree (m3 / more))
+            :consist-of (c2 / cell-line
+                  :mod (m2 / medical-condition
+                        :name (n / name :op1 "melanoma"))
+                  :quant (m4 / more-than :op1 "100")))
+      :ARG4 (r / represent-01
+            :ARG0 l
+            :ARG1 (p / profile
+                  :mod (m / mutate-01)
+                  :ARG1-of (d / differ-02))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Western blots in <xref ref-type="supplementary-material" rid="S1">Additional file 1: Figure S1</xref> confirm that E6201 efficiently inhibits MEK1/2 activity by virtue of its ability to abrogate phosphorylation of ERK1/2 in our entire panel of melanoma cell lines.
+# ::file pmid_2303_9341_48.txt
+# ::date 2015-06-23T05:41:06
+# ::id pmid_2303_9341.48
+(c / confirm-01
+   :ARG0 (i2 / immunoblot-01
+             :ARG1-of (d / describe-01
+                         :ARG0 (f / figure
+                                  :mod "S1"
+                                  :location (f2 / file
+                                                :mod "1"
+                                                :mod (a / additional)))))
+   :ARG1 (i / inhibit-01
+            :ARG0 (s / small-molecule
+                     :name (n3 / name
+                               :op1 "E6201"))
+            :ARG1 (a2 / activity-06
+                      :ARG0 (e2 / enzyme
+                                :name (n4 / name
+                                          :op1 "MEK1/2")))
+            :ARG2-of (e / efficient-01
+                        :ARG1 s)
+            :ARG1-of (c4 / cause-01
+                         :ARG0 (c3 / capable-01
+                                   :ARG1 s
+                                   :ARG2 (a4 / abrogate-01
+                                             :ARG0 s
+                                             :ARG1 (p2 / phosphorylate-01
+                                                       :ARG1 (e3 / enzyme
+                                                                 :name (n5 / name
+                                                                           :op1 "ERK1/2")))
+                                             :location (p3 / panel
+                                                           :consist-of (c2 / cell-line
+                                                                           :mod (m / medical-condition
+                                                                                   :name (n6 / name
+                                                                                             :op1 "melanoma")))
+                                                           :mod (e4 / entire)
+                                                           :poss (w2 / we)))))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The majority (24/31) of the melanoma cell lines were sensitive to E6201 (IC50 <500 nM) (Figure <xref ref-type="fig" rid="F1">1</xref>).
+# ::file pmid_2303_9341_49.txt
+# ::date 2015-06-23T05:53:27
+# ::id pmid_2303_9341.49
+(s / sensitive-03
+   :ARG0 (c / cell-line
+            :quant "24"
+            :ARG1-of (i / include-91
+                        :ARG2 (c2 / cell-line
+                                  :quant "31"
+                                  :mod (m2 / medical-condition
+                                           :name (n / name
+                                                    :op1 "melanoma")))
+                        :ARG3 (m / majority))
+            :mod (c4 / concentrate-02
+                     :mod (i2 / inhibit-01
+                              :degree (p / percentage-entity
+                                         :value "50"))
+                     :quant (l2 / less-than
+                                :op1 (c3 / concentration-quantity
+                                         :quant "500"
+                                         :unit (n3 / nanomolar)))))
+   :ARG1 (s2 / small-molecule
+             :name (n2 / name
+                       :op1 "E6201"))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "1")))
+
+# ::save-date Wed Jun 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt MAPK activation due to mutations in <i>BRAF</i> and <i>NRAS</i> was not significantly associated with increased sensitivity to E6201.
+# ::file pmid_2303_9341_50.txt
+# ::date 2015-06-23T05:58:14
+# ::id pmid_2303_9341.50
+(a / associate-01
+   :ARG1 (a2 / activate-01
+             :ARG1 (p2 / pathway
+                       :name (n2 / name
+                                 :op1 "MAPK"))
+             :ARG1-of (c / cause-01
+                         :ARG0 (m / mutate-01
+                                  :ARG1 (a3 / and
+                                            :op1 (g / gene
+                                                    :name (n3 / name
+                                                              :op1 "BRAF"))
+                                            :op2 (g2 / gene
+                                                     :name (n4 / name
+                                                               :op1 "NRAS"))))))
+   :ARG2 (s2 / sensitive-03
+             :ARG1 (s3 / small-molecule
+                       :name (n5 / name
+                                 :op1 "E6201"))
+             :ARG1-of (i / increase-01))
+   :ARG1-of (s / significant-02
+               :polarity "-"))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the 26 cell lines carrying mutations in <i>BRAF</i>, <i>NRAS</i>, or <i>HRAS</i>, sensitivity to E6201 was statistically associated with wildtype <i>PTEN</i> status (p = 0.02).
+# ::file pmid_2303_9341_51.txt
+# ::date 2015-06-23T06:07:34
+# ::id pmid_2303_9341.51
+(a / associate-01
+   :ARG1 (s / sensitive-03
+            :ARG1 (s4 / small-molecule
+                      :name (n / name
+                               :op1 "E6201")))
+   :ARG2 (s3 / status
+             :mod (g / gene
+                     :name (n2 / name
+                               :op1 "PTEN")
+                     :mod (w / wild-type)))
+   :mod (s2 / statistic)
+   :location (c / cell-line
+                :quant "26"
+                :ARG0-of (c2 / carry-01
+                             :ARG1 (m / mutate-01
+                                      :ARG1 (o / or
+                                               :op1 (g2 / gene
+                                                        :name (n3 / name
+                                                                  :op1 "BRAF"))
+                                               :op2 (g3 / gene
+                                                        :name (n4 / name
+                                                                  :op1 "NRAS"))
+                                               :op3 (g4 / gene
+                                                        :name (n5 / name
+                                                                  :op1 "HRAS"))))))
+   :ARG1-of (s5 / statistical-test-91
+                :ARG2 "0.02"))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Specifically, of the 18 cell lines with wildtype <i>PTEN</i>, 17 were sensitive whereas in the 8 cell lines with mutant <i>PTEN</i>, only 4 were sensitive.
+# ::file pmid_2303_9341_52.txt
+# ::date 2015-06-23T06:14:43
+# ::id pmid_2303_9341.52
+(c / contrast-01
+   :ARG1 (s / sensitive-03
+            :ARG0 (c2 / cell-line
+                      :quant "17"
+                      :ARG1-of (i / include-91
+                                  :ARG2 (c3 / cell-line
+                                            :quant "18"
+                                            :ARG0-of (h / have-03
+                                                        :ARG1 (g / gene
+                                                                 :name (n / name
+                                                                          :op1 "PTEN")
+                                                                 :mod (w / wild-type)))))))
+   :ARG2 (s2 / sensitive-03
+             :ARG0 (c4 / cell-line
+                       :quant "4"
+                       :ARG1-of (i2 / include-91
+                                    :ARG2 (c5 / cell-line
+                                              :quant "8"
+                                              :ARG0-of (h2 / have-03
+                                                           :ARG1 (g2 / gene
+                                                                     :name (n2 / name
+                                                                               :op1 "PTEN")
+                                                                     :ARG2-of (m / mutate-01)))))
+                       :mod (o / only)))
+   :ARG1-of (s3 / specific-02))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, even if <i>PTEN</i> status alone is examined, E6201 sensitivity is associated, albeit non-significantly, with wildtype <i>PTEN</i> status; 23/31 cell lines are wildtype for <i>PTEN</i> and of these 20 are sensitive (whereas only 4/8 cell lines with mutant <i>PTEN</i> are sensitive) (p = 0.053).
+# ::file pmid_2303_9341_53.txt
+# ::date 2015-06-23T06:28:29
+# ::id pmid_2303_9341.53
+(m / multi-sentence
+   :snt1 (a / and
+            :op2 (a2 / associate-01
+                     :ARG1 (s / sensitive-03
+                              :ARG1 (s7 / small-molecule
+                                        :name (n / name
+                                                 :op1 "E6201")))
+                     :ARG2 (s2 / status
+                               :mod (g4 / gene
+                                        :name (n2 / name
+                                                  :op1 "PTEN")
+                                        :mod (w / wild-type)))
+                     :ARG1-of (s3 / significant-02
+                                  :polarity "-"
+                                  :concession-of a2)
+                     :concession (e2 / even-if
+                                     :op1 (e3 / examine-01
+                                              :ARG1 (s4 / status
+                                                        :mod (g3 / gene
+                                                                 :name (n3 / name
+                                                                           :op1 "PTEN"))
+                                                        :mod (a3 / alone))))))
+   :snt2 (c / contrast-01
+            :ARG1 (a4 / and
+                      :op1 (c2 / cell-line
+                               :quant "23"
+                               :mod (g2 / gene
+                                        :name (n4 / name
+                                                  :op1 "PTEN")
+                                        :mod (w2 / wild-type))
+                               :ARG1-of (i / include-91
+                                           :ARG2 (c3 / cell-line
+                                                     :quant "31")))
+                      :op2 (s5 / sensitive-03
+                               :ARG0 (c4 / cell-line
+                                         :quant "20"
+                                         :ARG1-of (i2 / include-91
+                                                      :ARG2 c2))))
+            :ARG2 (s6 / sensitive-03
+                      :ARG0 (c5 / cell-line
+                                :quant "4"
+                                :ARG1-of (i3 / include-91
+                                             :ARG2 (c6 / cell-line
+                                                       :quant "8"
+                                                       :ARG0-of (h2 / have-03
+                                                                    :ARG1 (m2 / mutate-01
+                                                                              :ARG2 (g / gene
+                                                                                       :name (n5 / name
+                                                                                                 :op1 "PTEN"))))))
+                                :mod (o / only)))
+            :ARG1-of (s8 / statistical-test-91
+                         :ARG2 "0.053")))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, 18 of the 24 sensitive cell lines also demonstrated hypersensitivity to E6201, with an IC50 < 100 nM.
+# ::file pmid_2303_9341_54.txt
+# ::date 2015-06-23T06:53:58
+# ::id pmid_2303_9341.54
+(d / demonstrate-01
+   :ARG0 (c / cell-line
+            :quant "18"
+            :ARG1-of (i / include-91
+                        :ARG2 (c2 / cell-line
+                                  :quant "24"
+                                  :ARG0-of (s2 / sensitive-03)))
+            :ARG0-of (h2 / have-03
+                         :ARG1 (c4 / concentrate-02
+                                   :mod (i3 / inhibit-01
+                                            :degree (p / percentage-entity
+                                                       :value "50"))
+                                   :mod (l2 / less-than
+                                            :op1 (c3 / concentration-quantity
+                                                     :quant "100"
+                                                     :unit (n2 / nanomolar))))))
+   :ARG1 (s3 / sensitive-03
+             :ARG0 c
+             :ARG1 (s4 / small-molecule
+                       :name (n / name
+                                :op1 "E6201"))
+             :degree (h / hyper))
+   :mod (a / also)
+   :ARG0-of (i2 / interest-01))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Using this criterion, <i>BRAF</i> mutation status correlated with E6201 hypersensitivity (p < 0.03), with 15 out of the 18 hypersensitive cell lines possessing a <i>BRAF</i> mutation.
+# ::file pmid_2303_9341_55.txt
+# ::date 2015-06-23T06:59:57
+# ::id pmid_2303_9341.55
+(c / correlate-01
+   :ARG1 (s / status
+            :mod (g / gene
+                    :name (n / name
+                             :op1 "BRAF")
+                    :ARG1-of (m / mutate-01)))
+   :ARG2 (s2 / sensitive-03
+             :ARG1 (s5 / small-molecule
+                       :name (n2 / name
+                                 :op1 "E6201"))
+             :degree (h / hyper))
+   :condition (u / use-01
+                 :ARG1 (c2 / criterion
+                           :mod (t2 / this)))
+   :prep-with (c3 / cell-line
+                  :quant "15"
+                  :ARG0-of (p2 / possess-01
+                               :ARG1 g)
+                  :ARG1-of (i / include-91
+                              :ARG2 (c4 / cell-line
+                                        :quant "18"
+                                        :ARG0-of (s4 / sensitive-03
+                                                     :degree (h3 / hyper)))))
+   :ARG1-of (s3 / statistical-test-91
+                :ARG2 (l / less-than
+                         :op1 "0.03")))
+
+# ::save-date Wed Jun 24, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, of the 11 cell lines with wildtype <i>BRAF</i>, only 3 were hypersensitive.
+# ::file pmid_2303_9341_56.txt
+# ::date 2015-06-23T07:30:16
+# ::id pmid_2303_9341.56
+(c / contrast-01
+   :ARG2 (c2 / cell-line
+             :quant "3"
+             :ARG0-of (s / sensitive-03
+                         :degree (h / hyper))
+             :ARG1-of (i / include-91
+                         :ARG2 (c3 / cell-line
+                                   :quant "11"
+                                   :ARG0-of (h2 / have-03
+                                                :ARG1 (g / gene
+                                                         :name (n / name
+                                                                  :op1 "BRAF")
+                                                         :mod (w / wild-type)))))
+             :mod (o / only)))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In those cell lines carrying mutations in <i>BRAF</i> (21 cell lines), sensitivity to E6201 was not statistically associated with wildtype <i>PTEN</i> status.
+# ::file pmid_2303_9341_57.txt
+# ::date 2015-06-23T07:34:35
+# ::id pmid_2303_9341.57
+(a / associate-01
+   :polarity "-"
+   :ARG1 (s / sensitive-03
+            :ARG1 (s4 / small-molecule
+                      :name (n / name
+                               :op1 "E6201")))
+   :ARG2 (s2 / status
+             :mod (g2 / gene
+                      :name (n2 / name
+                                :op1 "PTEN")
+                      :mod (w / wild-type)))
+   :mod (s3 / statistic)
+   :location (c / cell-line
+                :quant "21"
+                :ARG0-of (c2 / carry-01
+                             :ARG1 (m / mutate-01
+                                      :ARG1 (g / gene
+                                               :name (n3 / name
+                                                         :op1 "BRAF"))))
+                :mod (t / that)))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>NRAS/HRAS</i> mutation status correlated with E6201 resistance, where none of the 5 <i>NRAS</i>/<i>HRAS</i> mutant cell lines were hypersensitive to E6201 and 18 of the 26 <i>NRAS/HRAS</i> wildtype cell lines were hypersensitive (p < 0.01).
+# ::file pmid_2303_9341_58.txt
+# ::date 2015-06-23T07:42:00
+# ::id pmid_2303_9341.58
+(c / correlate-01
+   :ARG1 (s / status
+            :mod (m / mutate-01
+                    :ARG1 (s2 / slash
+                              :op1 (g5 / gene
+                                       :name (n2 / name
+                                                 :op1 "NRAS"))
+                              :op2 (g6 / gene
+                                       :name (n3 / name
+                                                 :op1 "HRAS")))))
+   :ARG2 (r / resist-01
+            :ARG1 (s8 / small-molecule
+                      :name (n / name
+                               :op1 "E6201")))
+   :example (a / and
+               :op1 (c2 / cell-line
+                        :quant "0"
+                        :ARG1-of (i / include-91
+                                    :ARG2 (c3 / cell-line
+                                              :quant "5"
+                                              :mod (m2 / mutate-01
+                                                       :ARG2 (s3 / slash
+                                                                 :op1 g5
+                                                                 :op2 g6))))
+                        :ARG0-of (s4 / sensitive-03
+                                     :ARG1 s8
+                                     :degree (h / hyper)
+                                     :ARG0 c4))
+               :op2 (c4 / cell-line
+                        :quant "18"
+                        :ARG1-of (i2 / include-91
+                                     :ARG2 (c5 / cell-line
+                                               :quant "26"
+                                               :mod (s5 / slash
+                                                        :op1 g5
+                                                        :op2 g6
+                                                        :mod (w / wild-type))))))
+   :ARG1-of (s6 / statistical-test-91
+                :ARG2 (l / less-than
+                         :op1 "0.01")))
+
+# ::save-date Thu Jan 7, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Neither <i>CDKN2A</i>, <i>CDK4</i> or <i>TP53</i> mutational status in our panel of melanoma cell lines, irrespective of their <i>BRAF</i> and <i>RAS</i> mutational status, was associated with E6201 sensitivity.
+# ::file pmid_2303_9341_59.txt
+# ::date 2015-06-23T08:00:55
+# ::id pmid_2303_9341.59
+(a / associate-01
+   :ARG1 (s / status
+            :mod (m / mutate-01
+                    :ARG1 (o / or
+                             :op1 (g / gene
+                                     :name (n3 / name
+                                               :op1 "CDKN2A"))
+                             :op2 (g2 / gene
+                                      :name (n4 / name
+                                                :op1 "CDK4"))
+                             :op3 (g3 / gene
+                                      :name (n5 / name
+                                                :op1 "TP53"))))
+            :mod (n6 / neither)
+            :location (p / panel
+                         :poss (w / we)
+                         :consist-of (c / cell-line
+                                        :mod (m3 / medical-condition
+                                                 :name (n7 / name
+                                                           :op1 "melanoma")))))
+   :ARG2 (s2 / sensitive-03
+             :ARG1 (s4 / small-molecule
+                       :name (n2 / name
+                                 :op1 "E6201")))
+   :ARG1-of (r / regardless-91
+               :ARG2 (s3 / status
+                         :mod (m2 / mutate-01
+                                  :ARG1 (a2 / and
+                                            :op1 (g4 / gene
+                                                     :name (n8 / name
+                                                               :op1 "BRAF"))
+                                            :op2 (g5 / gene
+                                                     :name (n9 / name
+                                                               :op1 "RAS"))))
+                         :poss c)))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To determine whether E6201 responsiveness correlated with direct Akt or ERK1/2 activation, the phosphorylation status of Akt and ERK1/2 proteins was evaluated following serum starvation (Figure <xref ref-type="fig" rid="F2">2</xref>).
+# ::file pmid_2303_9341_61.txt
+# ::date 2015-06-23T08:16:54
+# ::id pmid_2303_9341.61
+(e / evaluate-01
+   :ARG1 (a / and
+            :op1 (s / status
+                    :mod (p / phosphorylate-01
+                            :ARG1 (e3 / enzyme
+                                      :name (n / name
+                                               :op1 "Akt"))))
+            :op2 (s2 / status
+                     :mod (p3 / phosphorylate-01
+                              :ARG1 (e2 / enzyme
+                                        :name (n2 / name
+                                                  :op1 "ERK1/2")))))
+   :ARG1-of (f / follow-01
+               :ARG2 (s3 / starve-01
+                         :ARG2 (s4 / serum)))
+   :purpose (d / determine-01
+               :ARG1 (c / correlate-01
+                        :mode "interrogative"
+                        :ARG1 (r / respond-01
+                                 :ARG1 (s5 / small-molecule
+                                           :name (n3 / name
+                                                     :op1 "E6201")))
+                        :ARG2 (a2 / activate-01
+                                  :ARG1 (a3 / and
+                                            :op1 e3
+                                            :op2 e2)
+                                  :ARG1-of (d2 / direct-02))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "2")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Phosphorylated (p) Akt (Ser473) was detectable in 7/7 cell lines with mutant PTEN.
+# ::file pmid_2303_9341_62.txt
+# ::date 2015-06-23T08:33:20
+# ::id pmid_2303_9341.62
+(d / detect-01
+   :ARG1 (a / amino-acid
+            :mod "473"
+            :name (n2 / name
+                      :op1 "serine")
+            :part-of (e / enzyme
+                        :name (n4 / name
+                                  :op1 "Akt")
+                        :ARG3-of (p / phosphorylate-01)))
+   :location (c / cell-line
+                :quant "7"
+                :ARG1-of (i / include-91
+                            :ARG2 (c2 / cell-line
+                                      :quant "7"
+                                      :ARG0-of (h / have-03
+                                                  :ARG1 (m2 / mutate-01
+                                                            :ARG2 (p3 / protein
+                                                                      :name (n3 / name
+                                                                                :op1 "PTEN")))))))
+   :ARG1-of (p2 / possible-01))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, pAkt was present in 5/23 cell lines with wildtype <i>PTEN</i> although the mechanism responsible for phosphorylation of Akt in these cell lines is unknown.
+# ::file pmid_2303_9341_63.txt
+# ::date 2015-06-23T08:39:33
+# ::id pmid_2303_9341.63
+(a / and
+   :op2 (h2 / have-concession-91
+            :ARG1 (p / present-02
+                     :ARG1 (e / enzyme
+                              :name (n / name
+                                       :op1 "Akt")
+                              :ARG3-of (p3 / phosphorylate-01))
+                     :ARG2 (c2 / cell-line
+                               :quant "5"
+                               :ARG1-of (i / include-91
+                                           :ARG2 (c3 / cell-line
+                                                     :quant "23"
+                                                     :ARG0-of (h / have-03
+                                                                 :ARG1 (g / gene
+                                                                          :name (n2 / name
+                                                                                    :op1 "PTEN")
+                                                                          :mod (w / wild-type)))))))
+            :ARG2 (k / know-01
+                     :polarity "-"
+                     :ARG1 (m / mechanism
+                              :ARG0-of (r / responsible-01
+                                          :ARG1 (p5 / phosphorylate-01
+                                                    :ARG1 (p4 / protein)
+                                                    :location c3))))))
+
+# ::save-date Mon Jul 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Phosphorylated (p) ERK1/2 was detected in all cell lines with mutant <i>BRAF</i> (20/20).
+# ::file pmid_2303_9341_64.txt
+# ::date 2015-06-23T08:50:06
+# ::id pmid_2303_9341.64
+(d / detect-01
+   :ARG1 (e / enzyme
+            :name (n / name
+                     :op1 "ERK1/2")
+            :ARG3-of (p / phosphorylate-01))
+   :location (c / cell-line
+                :quant "20"
+                :ARG1-of (i / include-91
+                            :ARG2 (c2 / cell-line
+                                      :quant "20"
+                                      :ARG0-of (h / have-03
+                                                  :ARG1 (m / mutate-01
+                                                           :ARG2 (g / gene
+                                                                    :name (n2 / name
+                                                                              :op1 "BRAF"))))))
+                :mod (a / all)))
+
+# ::save-date Wed Jul 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consistent with previous reports [<xref ref-type="bibr" rid="B13">13</xref>,<xref ref-type="bibr" rid="B26">26</xref>], elevated pERK1/2 was detected in 3/5 cell lines with mutant <i>NRAS</i> or <i>HRAS</i>.
+# ::file pmid_2303_9341_65.txt
+# ::date 2015-06-23T08:56:33
+# ::id pmid_2303_9341.65
+(d / detect-01
+   :ARG1 (e / enzyme
+            :name (n / name
+                     :op1 "ERK1/2")
+            :ARG3-of (p / phosphorylate-01)
+            :ARG1-of (e2 / elevate-01))
+   :location (c / cell-line
+                :quant "3"
+                :ARG1-of (i / include-91
+                            :ARG2 (c2 / cell-line
+                                      :quant "5"
+                                      :ARG0-of (h / have-03
+                                                  :ARG1 (m / mutate-01
+                                                           :ARG2 (o / or
+                                                                    :op1 (g2 / gene
+                                                                             :name (n2 / name
+                                                                                       :op1 "NRAS"))
+                                                                    :op2 (g / gene
+                                                                            :name (n3 / name
+                                                                                      :op1 "HRAS"))))))))
+   :ARG1-of (c3 / consistent-01
+                :ARG2 (r / report-01
+                         :time (p2 / previous))
+                :ARG1-of (d2 / describe-01
+                             :ARG0 (p3 / publication
+                                       :ARG1-of (c4 / cite-01
+                                                    :ARG2 (a / and
+                                                             :op1 "13"
+                                                             :op2 "26"))))))
+
+# ::save-date Mon Jul 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All five cell lines with wildtype <i>BRAF</i> and <i>NRAS</i> also had elevated ERK1/2 phosphorylation, as reported previously [<xref ref-type="bibr" rid="B26">26</xref>,<xref ref-type="bibr" rid="B27">27</xref>], although the mechanism responsible for ERK1/2 activation in these cell lines is unknown.
+# ::file pmid_2303_9341_66.txt
+# ::date 2015-06-23T09:09:28
+# ::id pmid_2303_9341.66
+(h3 / have-concession-91
+    :ARG1 (c2 / cell-line
+              :quant "5"
+              :ARG0-of (h / have-03
+                          :ARG1 (a / and
+                                   :op1 (g / gene
+                                           :name (n / name
+                                                    :op1 "BRAF"))
+                                   :op2 (g2 / gene
+                                            :name (n2 / name
+                                                      :op1 "NRAS"))
+                                   :mod (w / wild-type))
+                          :mod (a3 / also))
+              :ARG0-of (h2 / have-03
+                           :ARG1 (p3 / phosphorylate-01
+                                     :ARG1 (e3 / enzyme
+                                               :name (n3 / name
+                                                         :op1 "ERK1/2"))
+                                     :ARG1-of (e4 / elevate-01)))
+              :mod (a2 / all)
+              :ARG1-of (r / report-01
+                          :time (p2 / previous)
+                          :ARG1-of (d / describe-01
+                                      :ARG0 (p4 / publication
+                                                :ARG1-of (c3 / cite-01
+                                                             :ARG2 (a4 / and
+                                                                       :op1 "26"
+                                                                       :op2 "27"))))))
+    :ARG2 (k / know-01
+             :polarity "-"
+             :ARG1 (m / mechanism
+                      :ARG0-of (r2 / responsible-01
+                                   :ARG1 (a5 / activate-01
+                                             :ARG1 e3))
+                      :location (c4 / cell-line
+                                    :mod (t / this)))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt When the cell lines were classified based on phospho-ERK levels rather than <i>BRAF</i> mutation status, there was no correlation with the degree of cell growth inhibition.
+# ::file pmid_2303_9341_67.txt
+# ::date 2015-06-23T09:20:39
+# ::id pmid_2303_9341.67
+(c / correlate-01
+   :polarity "-"
+   :ARG2 (d / degree
+            :degree-of (i / inhibit-01
+                          :ARG1 (g / grow-01
+                                   :ARG1 (c2 / cell))))
+   :condition (c3 / classify-01
+                  :ARG1 (c4 / cell-line)
+                  :ARG1-of (b / base-02
+                              :ARG2 (l / level
+                                       :quant-of (p / phosphorylate-01
+                                                    :ARG2 (e / enzyme
+                                                             :name (n / name
+                                                                      :op1 "ERK")))
+                                       :ARG1-of (i2 / instead-of-91
+                                                    :ARG2 (s / status
+                                                             :mod (g2 / gene
+                                                                      :name (n2 / name
+                                                                                :op1 "BRAF")
+                                                                      :ARG1-of (m / mutate-01))))))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, high levels of pAkt (3+) in <i>BRAF/RAS</i> mutant cell lines were strongly suggestive of insensitivity to E6201 (p = 0.057).
+# ::file pmid_2303_9341_68.txt
+# ::date 2015-06-23T09:32:31
+# ::id pmid_2303_9341.68
+(c / contrast-01
+   :ARG2 (s / suggest-01
+            :ARG0 (l / level
+                     :ARG1-of (h / high-02)
+                     :quant-of (p / phosphorylate-01
+                                  :ARG2 (e / enzyme
+                                           :name (n / name
+                                                    :op1 "Akt")))
+                     :location (c2 / cell-line
+                                   :mod (m / mutate-01
+                                           :ARG2 (a / and
+                                                    :op1 (g / gene
+                                                            :name (n2 / name
+                                                                      :op1 "BRAF"))
+                                                    :op2 (g2 / gene
+                                                             :name (n3 / name
+                                                                       :op1 "RAS")))))
+                     :value (m2 / more-than
+                                :op1 "3"))
+            :ARG1 (s4 / sensitive-03
+                      :polarity "-"
+                      :ARG1 (s3 / small-molecule
+                                :name (n4 / name
+                                          :op1 "E6201")))
+            :ARG1-of (s2 / strong-02)
+            :ARG1-of (s5 / statistical-test-91
+                         :ARG2 "0.057")))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, high levels of pAkt (3+) significantly correlated with E6201 insensitivity independent of <i>BRAF</i> or <i>PTEN</i> status (p < 0.02).
+# ::file pmid_2303_9341_69.txt
+# ::date 2015-06-24T00:19:27
+# ::id pmid_2303_9341.69
+(a / and
+   :op2 (c / correlate-01
+           :ARG1 (l / level
+                    :quant-of (p / phosphorylate-01
+                                 :ARG2 (e / enzyme
+                                          :name (n / name
+                                                   :op1 "Akt")))
+                    :ARG1-of (h / high-02)
+                    :value (m / more-than
+                              :op1 "3"))
+           :ARG2 (s5 / sensitive-03
+                     :polarity "-"
+                     :ARG1 (s4 / small-molecule
+                               :name (n2 / name
+                                         :op1 "E6201")))
+           :ARG0-of (d / depend-01
+                       :polarity "-"
+                       :ARG1 (a2 / and
+                                 :op1 (s2 / status
+                                          :mod (g / gene
+                                                  :name (n3 / name
+                                                            :op1 "BRAF")))
+                                 :op2 (s3 / status
+                                          :mod (g2 / gene
+                                                   :name (n4 / name
+                                                             :op1 "PTEN")))))
+           :ARG1-of (s / significant-02)
+           :ARG1-of (s6 / statistical-test-91
+                        :ARG2 (l2 / less-than
+                                  :op1 "0.02"))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PTEN protein was present in 20 of the melanoma cell lines tested with a lack of the tumour suppressor being suggestive of resistance to E6201 in not only <i>BRAF/RAS</i> mutant lines (p = 0.12) but also if all lines are considered (p = 0.14).
+# ::file pmid_2303_9341_70.txt
+# ::date 2015-06-24T00:34:02
+# ::id pmid_2303_9341.70
+(a3 / and
+    :op1 (p4 / present-02
+             :ARG1 (p2 / protein
+                       :name (n / name
+                                :op1 "PTEN"))
+             :ARG2 (c / cell-line
+                      :quant "20"
+                      :mod (m3 / medical-condition
+                               :name (n2 / name
+                                         :op1 "melanoma"))
+                      :ARG1-of (i / include-91
+                                  :ARG2 (c2 / cell-line
+                                            :ARG1-of (t / test-01)))))
+    :op2 (s / suggest-01
+            :ARG0 (l / lack-01
+                     :ARG1 (m2 / molecular-physical-entity
+                               :ARG0-of (s5 / suppress-01
+                                            :ARG1 (t3 / tumor))))
+            :ARG1 (r / resist-01
+                     :ARG0 (a4 / and
+                               :op1 (l2 / line
+                                        :mod (m / mutate-01
+                                                :ARG2 (s3 / slash
+                                                          :op1 (g / gene
+                                                                  :name (n4 / name
+                                                                            :op1 "BRAF"))
+                                                          :op2 (g2 / gene
+                                                                   :name (n5 / name
+                                                                             :op1 "RAS"))))
+                                        :ARG1-of (s2 / statistical-test-91
+                                                     :ARG2 "0.12"))
+                               :op2 (l3 / line
+                                        :ARG1-of (c3 / consider-01)
+                                        :mod (a5 / all)
+                                        :mod (a / also)
+                                        :ARG1-of (s6 / statistical-test-91
+                                                     :ARG2 "0.14")))
+                     :ARG1 (s4 / small-molecule
+                               :name (n3 / name
+                                         :op1 "E3201")))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt MEK inhibitors have been previously shown to have a predominantly cytostatic effect on melanoma cells, although some clinically relevant inhibitors, such as CI-1040, PD0325901 and AZD6244, have been shown to induce cell death [<xref ref-type="bibr" rid="B10">10</xref>,<xref ref-type="bibr" rid="B12">12</xref>,<xref ref-type="bibr" rid="B13">13</xref>].
+# ::file pmid_2303_9341_72.txt
+# ::date 2015-06-25T14:15:20
+# ::id pmid_2303_9341.72
+(c / contrast-01
+   :ARG1 (s5 / show-01
+             :ARG1 (a3 / affect-01
+                       :ARG0 (m2 / molecular-physical-entity
+                                 :ARG0-of (i3 / inhibit-01
+                                              :ARG1 (p4 / protein-family
+                                                        :name (n4 / name
+                                                                  :op1 "MEK"))
+                                              :ARG0 m3))
+                       :ARG1 (c5 / cell
+                                 :source (m / medical-condition
+                                            :name (n5 / name
+                                                      :op1 "melanoma")))
+                       :ARG2 (c6 / cytostasis)
+                       :ARG1-of (p2 / predominate-01))
+             :time (p3 / previous))
+   :ARG2 (s / show-01
+            :ARG1 (i / induce-01
+                     :ARG0 (m3 / molecular-physical-entity
+                               :ARG1-of (r / relevant-01
+                                           :manner (c4 / clinical))
+                               :mod (s6 / some)
+                               :example (a2 / and
+                                            :op1 (s2 / small-molecule
+                                                     :name (n / name
+                                                              :op1 "CI-1040"))
+                                            :op2 (s3 / small-molecule
+                                                     :name (n2 / name
+                                                               :op1 "PD0325901"))
+                                            :op3 (s4 / small-molecule
+                                                     :name (n3 / name
+                                                               :op1 "AZD6244"))))
+                     :ARG2 (d2 / die-01
+                               :ARG1 (c3 / cell))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p / publication-91
+                        :ARG1-of (c2 / cite-01
+                                     :ARG2 (a / and
+                                              :op1 "10"
+                                              :op2 "12"
+                                              :op3 "13")))))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We sought to further evaluate the mechanism of sensitivity to E6201, as an equivocal cytocidal response <i>in vitro</i> may equate to the poor clinical response observed with current MEK inhibitors.
+# ::file pmid_2303_9341_73.txt
+# ::date 2015-06-25T16:05:00
+# ::id pmid_2303_9341.73
+(c / cause-01
+   :ARG0 (p / possible-01
+            :ARG1 (e3 / equate-01
+                      :ARG1 (t2 / thing
+                                :ARG2-of (r / respond-01
+                                            :manner (i2 / in-vitro))
+                                :mod (c2 / cytocidal))
+                      :ARG2 (t3 / thing
+                                :ARG2-of (r2 / respond-01
+                                             :ARG1-of (o / observe-01
+                                                         :prep-with (m3 / molecular-physical-entity
+                                                                        :ARG0-of (i3 / inhibit-01
+                                                                                     :ARG1 (p3 / protein-family
+                                                                                               :name (n / name
+                                                                                                        :op1 "MEK")))
+                                                                        :time (c4 / current))))
+                                :mod (p2 / poor)
+                                :mod (c3 / clinic)
+                                :mod (e4 / equivocal))))
+   :ARG1 (s / seek-01
+            :ARG0 (w / we)
+            :ARG1 (e2 / evaluate-01
+                      :ARG0 w
+                      :ARG1 (m / mechanism
+                               :ARG0-of (s2 / sensitive-03
+                                            :ARG1 (s3 / small-molecule
+                                                      :name (n2 / name
+                                                                :op1 "E6201"))))
+                      :degree (f / further))))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Fifteen melanoma cell lines were selected such that 13 cell lines demonstrated sensitivity to E6201 and 2 cell lines were insensitive to E6201.
+# ::file pmid_2303_9341_74.txt
+# ::date 2015-06-25T14:16:10
+# ::id pmid_2303_9341.74
+(s / select-01
+   :ARG1 (c / cell-line
+            :quant "15"
+            :source (m / medical-condition
+                       :name (n2 / name
+                                 :op1 "melanoma")))
+   :purpose (a / and
+               :op1 (d / demonstrate-01
+                       :ARG0 (c2 / cell-line
+                                 :quant "13")
+                       :ARG1 (s3 / sensitive-03
+                                 :ARG0 c2
+                                 :ARG1 (s4 / small-molecule
+                                           :name (n / name
+                                                    :op1 "E6201"))))
+               :op2 (s2 / sensitive-03
+                        :polarity "-"
+                        :ARG0 (c3 / cell-line
+                                  :quant "2")
+                        :ARG1 s4)))
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of these cell lines, seven were mutant for <i>BRAF</i> but wildtype for <i>PTEN</i>, five were mutant for both <i>BRAF</i>/<i>NRAS</i> and <i>PTEN</i>, and three were wildtype for both <i>BRAF</i> and <i>PTEN</i>.
+# ::file pmid_2303_9341_75.txt
+# ::date 2015-06-25T14:26:51
+# ::id pmid_2303_9341.75
+(a / and
+   :op1 (c / cell-line
+           :quant "7"
+           :mod (g4 / gene
+                    :name (n / name
+                             :op1 "BRAF")
+                    :ARG2-of (m2 / mutate-01)
+                    :ARG1-of (c5 / contrast-01
+                                 :ARG2 (g5 / gene
+                                           :name (n2 / name
+                                                     :op1 "PTEN")
+                                           :mod (w / wild-type)))))
+   :op2 (c2 / cell-line
+            :quant "5"
+            :mod (s / slash
+                    :op1 (g / gene
+                            :name (n4 / name
+                                      :op1 "BRAF"))
+                    :op2 (g2 / gene
+                             :name (n3 / name
+                                       :op1 "NRAS"))
+                    :op3 (g3 / gene
+                             :name (n5 / name
+                                       :op1 "PTEN"))
+                    :ARG2-of (m / mutate-01)))
+   :op3 (c3 / cell-line
+            :quant "3"
+            :mod (e3 / enzyme
+                     :name (n6 / name
+                               :op1 "BRAF")
+                     :mod (w2 / wild-type))
+            :mod g5)
+   :ARG1-of (i / include-91
+               :ARG2 (c4 / cell-line
+                         :mod (t / this))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt E6201 treatment induced G1 arrest in all of the sensitive cell lines and had little to no effect on cell cycle progression in the two insensitive cell lines (Figure <xref ref-type="fig" rid="F3">3</xref>A).
+# ::file pmid_2303_9341_76.txt
+# ::date 2015-06-25T15:29:41
+# ::id pmid_2303_9341.76
+(a / and
+   :op1 (i / induce-01
+           :ARG0 (t / treat-04
+                    :ARG2 (s3 / small-molecule
+                              :name (n / name
+                                       :op1 "E6201")))
+           :ARG2 (a2 / arrest-02
+                     :time (e / event
+                              :name (n2 / name
+                                        :op1 "G1")))
+           :location (c / cell-line
+                        :mod (a3 / all)
+                        :ARG0-of (s / sensitive-03)))
+   :op2 (o2 / or
+            :op1 (a4 / affect-01
+                     :ARG0 t
+                     :ARG1 (p3 / progress-01
+                               :ARG1 (c2 / cycle-02
+                                         :ARG1 (c3 / cell))
+                               :location (c4 / cell-line
+                                             :quant "2"
+                                             :ARG0-of (s2 / sensitive-03
+                                                          :polarity "-")))
+                     :degree (l / little))
+            :op2 (a5 / affect-01
+                     :polarity "-"
+                     :ARG0 t
+                     :ARG1 p3))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3A")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt E6201 treatment resulted in a greater than 2-fold increase in Annexin-positive staining in eleven out of fifteen cell lines, including eleven out of thirteen sensitive cell lines (Figure <xref ref-type="fig" rid="F3">3</xref>B).
+# ::file pmid_2303_9341_77.txt
+# ::date 2015-06-25T14:56:45
+# ::id pmid_2303_9341.77
+(r / result-01
+   :ARG1 (t / treat-04
+            :ARG2 (s3 / small-molecule
+                      :name (n / name
+                               :op1 "E6201")))
+   :ARG2 (i2 / increase-01
+             :ARG1 (s / stain-01
+                      :ARG2 (p / protein
+                               :name (n2 / name
+                                         :op1 "Annexin"))
+                      :mod (p2 / positive))
+             :ARG2 (m / more-than
+                      :op1 (p3 / product-of
+                               :op1 "2"))
+             :location (c / cell-line
+                          :quant "11"
+                          :ARG1-of (i3 / include-91
+                                       :ARG2 (c2 / cell-line
+                                                 :quant "15")
+                                       :ARG2-of (i4 / include-91
+                                                    :ARG1 (c3 / cell-line
+                                                              :quant "11"
+                                                              :ARG1-of (i5 / include-91
+                                                                           :ARG2 (c4 / cell-line
+                                                                                     :quant "13"
+                                                                                     :ARG0-of (s2 / sensitive-03))))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3B")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Two sensitive cell lines, SKMEL13 and BL, did not demonstrate E6201-induced Annexin staining although both of these cell lines underwent cell cycle arrest with E6201 treatment and were hypersensitive to E6201 (IC50 < 100 nM).
+# ::file pmid_2303_9341_78.txt
+# ::date 2015-06-25T15:03:23
+# ::id pmid_2303_9341.78
+(h2 / have-concession-91
+    :ARG1 (d / demonstrate-01
+             :polarity "-"
+             :ARG0 (c2 / cell-line
+                       :quant "2"
+                       :ARG0-of (s2 / sensitive-03)
+                       :ARG1-of (m2 / mean-01
+                                    :ARG2 (a2 / and
+                                              :op1 (c3 / cell-line
+                                                       :name (n2 / name
+                                                                 :op1 "SKMEL13"))
+                                              :op2 (c4 / cell-line
+                                                       :name (n3 / name
+                                                                 :op1 "BL")))))
+             :ARG1 (s3 / stain-01
+                       :ARG2 (p / protein
+                                :name (n4 / name
+                                          :op1 "Annexin"))
+                       :ARG2-of (i / induce-01
+                                   :ARG0 "s4")))
+    :ARG2 (a / and
+             :op1 (u / undergo-28
+                     :ARG1 a2
+                     :ARG2 (a3 / arrest-02
+                               :ARG0 (t / treat-04
+                                        :ARG2 "s4")
+                               :ARG1 (c5 / cycle-02
+                                         :ARG1 (c6 / cell))))
+             :op2 (s / sensitive-03
+                     :ARG0 a2
+                     :ARG1 (s4 / small-molecule
+                               :name (n / name
+                                        :op1 "E6201"))
+                     :degree (h / hyper)
+                     :mod (c7 / concentrate-02
+                              :quant (l / less-than
+                                        :op1 (c / concentration-quantity
+                                                :quant "100"
+                                                :unit (n5 / nanomolar)))
+                              :mod (i2 / inhibit-01
+                                       :degree (p2 / percentage-entity
+                                                   :value "50"))))))
+
+
+# ::save-date Thu Jun 25, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These experiments were repeated in duplicate to confirm this finding.
+# ::file pmid_2303_9341_79.txt
+# ::date 2015-06-25T14:27:32
+# ::id pmid_2303_9341.79
+(r / repeat-01
+      :ARG1 (e / experiment-01
+            :mod (t / this))
+      :ARG3 (d / duplicate-01
+            :ARG1 e)
+      :purpose (c / confirm-01
+            :ARG0 "r"
+            :ARG1 (t2 / thing
+                  :ARG1-of (f / find-01))))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt E6201 induced a less than two-fold increase in Annexin staining in the E6201-insensitive cell lines (IC50 > 500 nM) (Figure <xref ref-type="fig" rid="F3">3</xref>B).
+# ::file pmid_2303_9341_80.txt
+# ::date 2015-06-25T14:35:57
+# ::id pmid_2303_9341.80
+(i / induce-01
+   :ARG0 (s3 / small-molecule
+             :name (n / name
+                      :op1 "E6201"))
+   :ARG2 (i2 / increase-01
+             :ARG1 (s / stain-01
+                      :ARG2 (p2 / protein
+                                :name (n2 / name
+                                          :op1 "Annexin")))
+             :ARG2 (l / less-than
+                      :op1 (p / product-of
+                              :op1 "2"))
+             :location (c / cell-line
+                          :ARG0-of (s2 / sensitive-03
+                                       :polarity "-"
+                                       :ARG1 s3)
+                          :ARG1-of (m2 / mean-01
+                                       :ARG2 (c3 / concentrate-02
+                                                 :quant (m / more-than
+                                                           :op1 (c2 / concentration-quantity
+                                                                    :quant "500"
+                                                                    :unit (n3 / nanomolar)))
+                                                 :mod (i3 / inhibit-01
+                                                          :degree (p3 / percentage-entity
+                                                                      :value "50"))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3B")))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Three of the five <i>PTEN</i>-mutant cell lines exhibited a cytocidal response to E6201, demonstrating that <i>PTEN</i> mutation does not preclude a cytocidal response to E6201.
+# ::file pmid_2303_9341_81.txt
+# ::date 2015-06-25T14:36:59
+# ::id pmid_2303_9341.81
+(c / cause-01
+   :ARG0 (e / exhibit-01
+            :ARG0 (c2 / cell-line
+                      :quant "3"
+                      :ARG1-of (i / include-91
+                                  :ARG2 (c3 / cell-line
+                                            :quant "5"
+                                            :mod (g / gene
+                                                    :name (n / name
+                                                             :op1 "PTEN")
+                                                    :ARG2-of (m / mutate-01)))))
+            :ARG1 (t / thing
+                     :mod (c4 / cytocidal)
+                     :ARG2-of (r / respond-01
+                                 :ARG0 c2
+                                 :ARG1 (s / small-molecule
+                                          :name (n2 / name
+                                                    :op1 "E6201")))))
+   :ARG1 (d / demonstrate-01
+            :ARG0 c2
+            :ARG1 (p2 / preclude-01
+                      :polarity "-"
+                      :ARG0 g
+                      :ARG1 t)))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt E6201 also induced cell cycle arrest and cell death in cell lines with constitutively active Akt, suggesting that although high pAkt correlates with E6201 insensitivity, cell lines with high pAkt can still undergo a cytocidal response to E6201.
+# ::file pmid_2303_9341_82.txt
+# ::date 2015-06-25T14:45:07
+# ::id pmid_2303_9341.82
+(i / induce-01
+   :ARG0 (s4 / small-molecule
+             :name (n / name
+                      :op1 "E6201"))
+   :ARG2 (a2 / and
+             :op1 (a3 / arrest-02
+                      :ARG1 (c / cycle-02
+                               :ARG1 (c2 / cell)))
+             :op2 (d / die-01
+                     :ARG1 c)
+             :location (c3 / cell-line
+                           :mod (e / enzyme
+                                   :name (n2 / name
+                                             :op1 "Akt")
+                                   :ARG0-of (a4 / activity-06
+                                                :manner (c4 / constitutive)))))
+   :ARG0-of (s / suggest-01
+               :ARG1 (h2 / have-concession-91
+                         :ARG1 (p / possible-01
+                                  :ARG1 (u / undergo-28
+                                           :ARG1 (c7 / cell-line
+                                                     :mod "e2")
+                                           :ARG2 (t / thing
+                                                    :ARG2-of (r / respond-01
+                                                                :ARG0 c7
+                                                                :ARG1 s4
+                                                                :mod (c5 / cytocidal)))
+                                           :mod (s3 / still)))
+                         :ARG2 (c6 / correlate-01
+                                   :ARG1 (e2 / enzyme
+                                             :name n2
+                                             :ARG3-of (p2 / phosphorylate-01)
+                                             :ARG1-of (h / high-02))
+                                   :ARG2 (s2 / sensitive-03
+                                             :polarity "-"
+                                             :ARG1 s4))))
+   :mod (a / also))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To confirm our Annexin V results we also performed an enzyme-linked immunosorbent assay (ELISA) to determine the degree of DNA fragmentation as an indicator of cell death with E6201 treatment (Figure <xref ref-type="fig" rid="F3">3</xref>C).
+# ::file pmid_2303_9341_83.txt
+# ::date 2015-06-26T01:13:24
+# ::id pmid_2303_9341.83
+(p / perform-01
+   :ARG0 (w / we)
+   :ARG1 (a2 / assay-01
+             :purpose (d / determine-01
+                         :ARG0 w
+                         :ARG1 (d2 / degree
+                                   :degree-of (f / fragment-01
+                                                 :ARG1 (n4 / nucleic-acid
+                                                           :wiki "DNA"
+                                                           :name (n5 / name
+                                                                     :op1 "DNA")))
+                                   :ARG0-of (i / indicate-01
+                                               :ARG1 (d4 / die-01
+                                                         :ARG1 (c2 / cell)
+                                                         :ARG0-of (c3 / cause-01
+                                                                      :ARG1 (t3 / treat-04
+                                                                                :ARG2 (s / small-molecule
+                                                                                         :name (n3 / name
+                                                                                                   :op1 "E6201"))))))))
+             :instrument (i2 / immunosorbent
+                             :ARG1-of (l / link-01
+                                         :ARG2 (e / enzyme)))
+             :ARG1-of (d3 / describe-01
+                          :ARG2 (t / thing
+                                   :name (n2 / name
+                                             :op1 "ELISA"))))
+   :purpose (c / confirm-01
+               :ARG0 w
+               :ARG1 (t2 / thing
+                         :ARG2-of (r / result-01
+                                     :ARG1 (p2 / protein
+                                               :name (n / name
+                                                        :op1 "Annexin"
+                                                        :op2 "V")))))
+   :mod (a / also)
+   :ARG1-of (d5 / describe-01
+                :ARG0 (f2 / figure
+                          :mod "3C")))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The results from the cell death ELISA were very similar to that obtained from the Annexin studies with 10 out of 13 sensitive melanoma lines demonstrating a greater than two-fold increase in DNA fragmentation with E6201.
+# ::file pmid_2303_9341_84.txt
+# ::date 2015-06-26T01:37:39
+# ::id pmid_2303_9341.84
+(r2 / resemble-01
+    :ARG1 (t / thing
+             :ARG2-of (r / result-01
+                         :ARG1 (d / die-01
+                                  :ARG1 (c / cell)
+                                  :mod (a / assay-01
+                                          :mod (t2 / thing
+                                                   :name (n / name
+                                                            :op1 "ELISA"))))))
+    :ARG2 (t3 / thing
+              :ARG2-of (r3 / result-01
+                           :ARG1-of (o / obtain-01
+                                       :ARG2 (s / study-01
+                                                :ARG1 (p / protein
+                                                         :name (n2 / name
+                                                                   :op1 "Annexin")
+                                                         :prep-with (c2 / cell-line
+                                                                        :quant "10"
+                                                                        :ARG1-of (i / include-91
+                                                                                    :ARG2 (c3 / cell-line
+                                                                                              :quant "13"
+                                                                                              :ARG0-of (s2 / sensitive-03)
+                                                                                              :source (m / medical-condition
+                                                                                                         :name (n6 / name
+                                                                                                                   :op1 "melanoma"))))))))))
+    :degree (v / very)
+    :ARG0-of (d2 / demonstrate-01
+                 :ARG1 (i2 / increase-01
+                           :ARG1 (f / fragment-01
+                                    :ARG0 (s3 / small-molecule
+                                              :name (n3 / name
+                                                        :op1 "E6201"))
+                                    :ARG1 (n4 / nucleic-acid
+                                              :wiki "DNA"
+                                              :name (n5 / name
+                                                        :op1 "DNA")))
+                           :ARG2 (m2 / more-than
+                                     :op1 (p2 / product-of
+                                              :op1 "2")))))
+
+# ::save-date Sun Dec 20, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Of the three sensitive lines that did not exhibit a cytocidal response by ELISA, SKMEL13 and BL also demonstrated no induction of cell death with E6201 by Annexin positivity, as stated previously.
+# ::file pmid_2303_9341_85.txt
+# ::date 2015-06-26T01:46:00
+# ::id pmid_2303_9341.85
+(d3 / demonstrate-01
+    :ARG0 (a4 / and
+              :op1 (c2 / cell-line
+                       :name (n2 / name
+                                 :op1 "SKMEL13"))
+              :op2 (c3 / cell-line
+                       :name (n3 / name
+                                 :op1 "BL"))
+              :ARG1-of (i / include-91
+                          :ARG2 (c4 / cell-line
+                                    :quant "3"
+                                    :ARG0-of (s2 / sensitive-03)
+                                    :ARG0-of (e / exhibit-01
+                                                :polarity "-"
+                                                :ARG1 (r / respond-01
+                                                         :ARG0 c4
+                                                         :mod (c5 / cytocidal))
+                                                :manner (a / assay-01
+                                                           :mod (t / thing
+                                                                   :name (n / name
+                                                                            :op1 "ELISA")))))))
+    :ARG1 (i2 / induce-01
+              :polarity "-"
+              :ARG0 (s3 / small-molecule
+                        :name (n4 / name
+                                  :op1 "E6201"))
+              :ARG2 (d2 / die-01
+                        :ARG1 (c6 / cell)))
+    :manner (p2 / positive
+                :domain (p3 / protein
+                            :name (n5 / name
+                                      :op1 "Annexin")))
+    :ARG1-of (s / state-01
+                :time (p / previous))
+    :mod (a3 / also))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt There was no significant induction of DNA fragmentation in any of the E6201-resistant melanoma cell lines.
+# ::file pmid_2303_9341_86.txt
+# ::date 2015-06-25T14:45:42
+# ::id pmid_2303_9341.86
+(i / induce-01
+   :ARG2 (f / fragment-01
+            :ARG1 (n2 / nucleic-acid
+                      :wiki "DNA"
+                      :name (n3 / name
+                                :op1 "DNA")))
+   :location (c / cell-line
+                :mod (a / any)
+                :ARG0-of (r / resist-01
+                            :ARG1 (s2 / small-molecule
+                                      :name (n / name
+                                               :op1 "E6201")))
+                :source (m / medical-condition
+                           :name (n4 / name
+                                     :op1 "melanoma")))
+   :ARG1-of (s / significant-02
+               :polarity "-"))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We evaluated the <i>in vivo</i> activity of E6201 in two melanoma cell lines that exhibited a cytocidal response (MM540, MM604) and two melanoma cell lines that exhibited a cytostatic response (SKMEL13, BL) to E6201 <i>in vitro</i> (Figure <xref ref-type="fig" rid="F4">4</xref>).
+# ::file pmid_2303_9341_88.txt
+# ::date 2015-06-25T14:55:55
+# ::id pmid_2303_9341.88
+(e / evaluate-01
+   :ARG0 (w / we)
+   :ARG1 (a2 / activity-06
+             :ARG0 (s / small-molecule
+                      :name (n / name
+                               :op1 "E6201"))
+             :manner (i / in-vivo)
+             :location (a5 / and
+                           :op1 (c / cell-line
+                                   :quant "2"
+                                   :ARG0-of (e2 / exhibit-01
+                                                :ARG1 (t / thing
+                                                         :ARG2-of (r / respond-01
+                                                                     :ARG1 s
+                                                                     :mod (c2 / cytocidal))))
+                                   :ARG1-of (m3 / mean-01
+                                                :ARG2 (a3 / and
+                                                          :op1 (c3 / cell-line
+                                                                   :name (n2 / name
+                                                                             :op1 "MM540"))
+                                                          :op2 (c4 / cell-line
+                                                                   :name (n3 / name
+                                                                             :op1 "MM604"))))
+                                   :source (m / medical-condition
+                                              :name (n6 / name
+                                                        :op1 "melanoma")))
+                           :op2 (c5 / cell-line
+                                    :quant "2"
+                                    :source (m2 / melanoma)
+                                    :ARG0-of (e3 / exhibit-01
+                                                 :ARG1 (r2 / respond-01
+                                                           :ARG1 s
+                                                           :ARG2 (c6 / cytostasis)
+                                                           :manner (i2 / in-vitro)))
+                                    :ARG1-of (m4 / mean-01
+                                                 :ARG2 (a4 / and
+                                                           :op1 (c7 / cell-line
+                                                                    :name (n4 / name
+                                                                              :op1 "SKMEL13"))
+                                                           :op2 (c8 / cell-line
+                                                                    :name (n5 / name
+                                                                              :op1 "BL")))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4")))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Given that the majority of sensitive melanoma cell lines in our cell line panel exhibited a cytocidal response to E6201 <i>in vitro</i>, we hypothesized that E6201 would induce tumour regression in a xenograft model of these cell lines as well, and to a greater extent in those cell lines that demonstrated a cytocidal response to E6201 <i>in vitro</i> compared to those with a cytostatic response.
+# ::file pmid_2303_9341_89.txt
+# ::date 2015-06-26T02:17:34
+# ::id pmid_2303_9341.89
+(h / hypothesize-01
+   :ARG0 "w"
+   :ARG1 (a / and
+            :op1 (i2 / induce-01
+                     :ARG0 "s2"
+                     :ARG2 (r2 / regress-01
+                               :ARG1 (t2 / tumor))
+                     :manner (a2 / as-well)
+                     :location (m4 / model
+                                   :mod (x / xenograft)
+                                   :source "c2"))
+            :op2 (i3 / induce-01
+                     :ARG0 "s2"
+                     :degree (e2 / extent
+                                 :mod (g / great
+                                         :degree (m5 / more)))
+                     :location (c3 / cell-line
+                                   :mod (t3 / that)
+                                   :ARG0-of (d / demonstrate-01
+                                               :ARG1 (r3 / respond-01
+                                                         :ARG0 "c2"
+                                                         :ARG1 "s2"
+                                                         :mod (c4 / cytocidal)
+                                                         :manner "i"))
+                                   :compared-to (c5 / cell-line
+                                                    :ARG0-of (r4 / respond-01
+                                                                 :ARG2 (c6 / cytostasis))))))
+   :ARG1-of (c / cause-01
+               :ARG0 (e / exhibit-01
+                        :ARG0 (c2 / cell-line
+                                  :ARG1-of (i4 / include-91
+                                               :ARG2 (c7 / cell-line
+                                                         :location (p / panel
+                                                                      :mod c2
+                                                                      :poss (w / we))
+                                                         :ARG0-of (s / sensitive-03)
+                                                         :source (m / medical-condition
+                                                                    :name (n2 / name
+                                                                              :op1 "melanoma")))
+                                               :ARG3 (m2 / majority)))
+                        :ARG1 (t / thing
+                                 :ARG2-of (r / respond-01
+                                             :ARG1 (s2 / small-molecule
+                                                       :name (n / name
+                                                                :op1 "E6201"))
+                                             :manner (i / in-vitro))
+                                 :mod c4))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Administration of E6201 at all doses (10, 20 and 40 mg/kg) to MM540 tumour-bearing mice completely abrogated tumour growth and caused transient, partial tumour regression for the two weeks of drug treatment, although tumour growth recommenced following drug withdrawal, indicating not all cells were killed in this two week period (Figure <xref ref-type="fig" rid="F4">4</xref>A).
+# ::file pmid_2303_9341_90.txt
+# ::date 2015-06-26T02:55:10
+# ::id pmid_2303_9341.90
+(a / and
+   :op1 (a2 / abrogate-01
+            :ARG0 (a4 / administer-01
+                      :ARG1 (s / small-molecule
+                               :name (n / name
+                                        :op1 "E6201")
+                               :ARG2-of (d3 / dose-01
+                                            :mod (a5 / all))
+                               :quant (c6 / concentration-quantity
+                                          :quant (a6 / and
+                                                     :op1 "10"
+                                                     :op2 "20"
+                                                     :op3 "40")
+                                          :unit (m / milligram-per-kilogram)))
+                      :ARG2 (m2 / mouse
+                                :ARG0-of (b / bear-01
+                                            :ARG1 (t4 / tumor
+                                                      :mod (c5 / cell-line
+                                                               :name (n2 / name
+                                                                         :op1 "MM540"))))))
+            :ARG1 "g"
+            :degree (c4 / complete))
+   :op2 (c2 / cause-01
+            :ARG0 a4
+            :ARG1 (r2 / regress-01
+                      :ARG1 "t"
+                      :ARG1-of (t2 / transient-02)
+                      :degree (p / part)
+                      :duration (t3 / temporal-quantity
+                                    :quant "2"
+                                    :unit (w2 / week)
+                                    :time-of (t5 / treat-04
+                                                 :ARG2 "d2")))
+            :concession (r / recommence-01
+                           :ARG1 (g / grow-01
+                                    :ARG1 (t / tumor))
+                           :ARG0-of (i / indicate-01
+                                       :ARG1 (k / kill-01
+                                                :ARG1 (c3 / cell
+                                                          :mod (a3 / all
+                                                                   :polarity "-"))))
+                           :ARG1-of (f2 / follow-01
+                                        :ARG2 (w / withdraw-01
+                                                 :ARG1 (d2 / drug)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4A")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt E6201 at 40 mg/kg in MM604 and SKMEL13 xenografts prevented tumour progression for the two weeks of drug treatment, with tumour growth recommencing following drug removal, while lower doses of drug (10 and 20 mg/kg) only attenuated, rather than prevented, tumour growth <i>in vivo</i> (Figure <xref ref-type="fig" rid="F4">4</xref>B and C).
+# ::file pmid_2303_9341_91.txt
+# ::date 2015-06-26T04:10:38
+# ::id pmid_2303_9341.91
+(c / contrast-01
+   :ARG1 (a4 / and
+             :op1 (p / prevent-01
+                     :ARG0 (s / small-molecule
+                              :name (n / name
+                                       :op1 "E6201")
+                              :quant (c2 / concentration-quantity
+                                         :quant "40"
+                                         :unit (m2 / milligram-per-kilogram))
+                              :location (a / and
+                                           :op1 (x / xenograft
+                                                   :mod (c3 / cell-line
+                                                            :name (n2 / name
+                                                                      :op1 "MM604")))
+                                           :op2 (x2 / xenograft
+                                                    :mod (c4 / cell-line
+                                                             :name (n3 / name
+                                                                       :op1 "SKMEL13")))))
+                     :ARG1 (p2 / progress-01
+                               :ARG1 "t3")
+                     :time (t2 / treat-04
+                               :ARG2 (d / drug)
+                               :duration (t / temporal-quantity
+                                            :quant "2"
+                                            :unit (w / week))))
+             :op2 (r / recommence-01
+                     :ARG1 (g / grow-01
+                              :ARG1 (t3 / tumor))
+                     :ARG1-of (f / follow-01
+                                 :ARG2 (r2 / remove-01
+                                           :ARG1 d))))
+   :ARG2 (i2 / instead-of-91
+             :ARG1 (a2 / attenuate-01
+                       :ARG0 (d2 / dose-01
+                                 :ARG2 d
+                                 :ARG1-of (l / low-04
+                                             :degree (m / more))
+                                 :quant (a5 / and
+                                            :op1 (c5 / concentration-quantity
+                                                     :quant "10"
+                                                     :unit (m3 / milligram-per-kilogram))
+                                            :op2 (c6 / concentration-quantity
+                                                     :quant "20"
+                                                     :unit (m4 / milligram-per-kilogram))))
+                       :mod (o / only))
+             :ARG2 (p3 / prevent-01
+                       :ARG0 d2
+                       :ARG1 (g2 / grow-01
+                                 :ARG1 t3
+                                 :manner (i / in-vivo))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (a3 / and
+                          :op1 (f2 / figure
+                                   :mod "4B")
+                          :op2 (f3 / figure
+                                   :mod "4C"))))
+
+# ::save-date Fri Dec 18, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Only the highest dose of E6201 (40 mg/kg) had any significant inhibitory effect on tumour growth in BL tumour-bearing mice, while lower drug doses had little or no effect on tumour progression (Figure <xref ref-type="fig" rid="F4">4</xref>D).
+# ::file pmid_2303_9341_92.txt
+# ::date 2015-06-26T04:32:02
+# ::id pmid_2303_9341.92
+(c / contrast-01
+   :ARG1 (a / affect-01
+            :ARG0 (d4 / dose-01
+                      :ARG2 (s3 / small-molecule
+                                :name (n / name
+                                         :op1 "E6201")
+                                :quant (c3 / concentration-quantity
+                                           :quant "40"
+                                           :unit (m3 / milligram-per-kilogram)))
+                      :ARG1-of (h / high-02
+                                  :degree (m2 / most))
+                      :mod (o2 / only))
+            :ARG2 (i / inhibit-01
+                     :ARG1 (g / grow-01
+                              :ARG1 "t"
+                              :location (m4 / mouse
+                                            :ARG0-of (b / bear-01
+                                                        :ARG1 (t2 / tumor
+                                                                  :mod (c2 / cell-line
+                                                                           :name (n2 / name
+                                                                                     :op1 "BL")))))))
+            :ARG1-of (s2 / significant-02)
+            :mod (a4 / any))
+   :ARG2 (o / or
+            :op1 (a2 / affect-01
+                     :ARG0 (d2 / dose-01
+                               :ARG1 (d3 / drug)
+                               :ARG1-of (l2 / low-04
+                                            :degree (m / more)))
+                     :ARG1 (p / progress-01
+                              :ARG1 (t / tumor))
+                     :mod (l / little))
+            :op2 (a3 / affect-01
+                     :polarity "-"
+                     :ARG0 d2
+                     :ARG1 p))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4D")))
+
+# ::save-date Thu Jan 14, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As such our hypothesis was confirmed, with E6201 inhibiting xenograft tumour growth in all four melanoma cell lines studied, and enhanced <i>in vivo</i> activity observed for those cell lines that demonstrated a cytocidal response <i>in vitro</i>.
+# ::file pmid_2303_9341_93.txt
+# ::date 2015-06-26T04:44:08
+# ::id pmid_2303_9341.93
+(c / confirm-01
+   :ARG0 (a2 / and
+             :op1 (i / inhibit-01
+                     :ARG0 (s2 / small-molecule
+                               :name (n / name
+                                        :op1 "E6201"))
+                     :ARG1 (g / grow-01
+                              :ARG1 (t2 / tumor
+                                        :mod (x / xenograft)))
+                     :location (c2 / cell-line
+                                   :quant "4"
+                                   :mod (a3 / all)
+                                   :ARG1-of (s / study-01)
+                                   :mod (t4 / that)
+                                   :source (m / medical-condition
+                                              :name (n2 / name
+                                                        :op1 "melanoma"))))
+             :op2 (e / enhance-01
+                     :ARG1 (a4 / activity-06
+                               :manner (i2 / in-vivo)
+                               :ARG1-of (o / observe-01
+                                           :location (c3 / cell-line
+                                                         :ARG0-of (d / demonstrate-01
+                                                                     :ARG1 (t3 / thing
+                                                                               :ARG2-of (r / respond-01
+                                                                                           :mod (c4 / cytocidal)
+                                                                                           :manner (i3 / in-vitro))))
+                                                         :mod (t5 / that))))))
+   :ARG1 (t / thing
+            :ARG1-of (h / hypothesize-01
+                        :ARG0 (w / we)))
+   :mod (a / as-such))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Given our previous data suggesting that E6201 resistance is associated with mutation of <i>PTEN</i> and high levels of pAkt, we hypothesized that combining E6201 with an inhibitor of the PI3K pathway in these cell lines might result in either an additive or synergistic effect.
+# ::file pmid_2303_9341_95.txt
+# ::date 2015-06-24T06:29:32
+# ::id pmid_2303_9341.95
+(h3 / hypothesize-01
+    :ARG0 (w2 / we)
+    :ARG1 (r2 / result-01
+              :ARG1 (c / combine-01
+                       :ARG1 (s3 / small-molecule
+                                 :name (n4 / name
+                                           :op1 "E6201"))
+                       :ARG2 (m / molecular-physical-entity
+                                :ARG0-of (i2 / inhibit-01
+                                             :ARG1 (p4 / pathway
+                                                       :name (n5 / name
+                                                                 :op1 "PI3K"))))
+                       :location (c2 / cell-line
+                                     :mod (t / this)))
+              :ARG2 (a3 / affect-01
+                        :ARG2 (o / or
+                                 :op1 (a4 / add-02)
+                                 :op2 (s2 / synergize-01)))
+              :ARG1-of (p5 / possible-01))
+    :ARG1-of (i / infer-01
+                :ARG2 (d / data
+                         :poss (w / we)
+                         :time (p / previous)
+                         :ARG0-of (s / suggest-01
+                                     :ARG1 (r / resist-01
+                                              :ARG0 s3
+                                              :ARG1-of (a / associate-01
+                                                          :ARG2 (a2 / and
+                                                                    :op1 (m2 / mutate-01
+                                                                             :ARG1 (g / gene
+                                                                                      :name (n2 / name
+                                                                                                :op1 "PTEN")))
+                                                                    :op2 (l / level
+                                                                            :ARG1-of (h / high-02)
+                                                                            :quant-of (e / enzyme
+                                                                                         :name (n3 / name
+                                                                                                   :op1 "Akt")
+                                                                                         :ARG3-of (p6 / phosphorylate-01))))))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <xref ref-type="supplementary-material" rid="S2">Additional file 2: Figure S2</xref> demonstrates that LY294002 effectively inhibits PI3K by evidence of reduced phosphorylated AKT protein levels in the four <i>PTEN</i>-mutant melanoma cell lines that normally express high levels of pAKT (UACC647, UACC558, UACC903 and MM622).
+# ::file pmid_2303_9341_96.txt
+# ::date 2015-06-24T06:32:09
+# ::id pmid_2303_9341.96
+(d / demonstrate-01
+   :ARG0 (a2 / and
+             :op1 (f / file
+                     :mod "2"
+                     :mod (a3 / additional))
+             :op2 (f2 / figure
+                      :mod "2"))
+   :ARG1 (i / inhibit-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "LY294002"))
+            :ARG1 (e6 / enzyme
+                      :name (n2 / name
+                                :op1 "PI3K"))
+            :ARG1-of (e / effective-04))
+   :ARG1-of (e2 / evidence-01
+                :ARG0 (l / level
+                         :mod (e7 / enzyme
+                                  :name (n3 / name
+                                            :op1 "AKT")
+                                  :ARG3-of (p3 / phosphorylate-01)
+                                  :quant l2)
+                         :ARG1-of (r / reduce-01))
+                :location (c / cell-line
+                             :quant "4"
+                             :ARG3-of (e3 / express-03
+                                          :ARG2 (l2 / level
+                                                    :ARG1-of (h / high-02))
+                                          :ARG1-of (n5 / normal-02))
+                             :example (a / and
+                                         :op1 (c2 / cell-line
+                                                  :name (n7 / name
+                                                            :op1 "UACC647"))
+                                         :op2 (c3 / cell-line
+                                                  :name (n8 / name
+                                                            :op1 "UACC558"))
+                                         :op3 (c4 / cell-line
+                                                  :name (n9 / name
+                                                            :op1 "UACC903"))
+                                         :op4 (c5 / cell-line
+                                                  :name (n10 / name
+                                                             :op1 "MM622")))
+                             :source (m / medical-condition
+                                        :name (n6 / name
+                                                  :op1 "melanoma")
+                                        :mod (g / gene
+                                                :name (n4 / name
+                                                          :op1 "PTEN")
+                                                :ARG2-of (m4 / mutate-01))))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, <xref ref-type="supplementary-material" rid="S3">Additional file 3: Figures S3</xref> and <xref ref-type="supplementary-material" rid="S4">Additional file 4: Figure S4</xref> show the concentration-effect curves for single-agent LY294002 and E6201 respectively, where both drugs were added 24 hours following plating.
+# ::file pmid_2303_9341_97.txt
+# ::date 2015-06-24T06:32:41
+# ::id pmid_2303_9341.97
+(a / and
+   :op2 (s / show-01
+           :ARG0 (a2 / and
+                     :op1 (f / figure
+                             :mod "S3"
+                             :location (f3 / file
+                                           :mod "3"
+                                           :mod (a7 / additional)))
+                     :op2 (f2 / figure
+                              :mod "S4"
+                              :location (f4 / file
+                                            :mod "4"
+                                            :mod a7)))
+           :ARG1 (a8 / and
+                     :op1 (c / curve
+                             :beneficiary (a4 / agent
+                                              :ARG1-of (s2 / single-02)
+                                              :mod (s3 / small-molecule
+                                                       :name (n / name
+                                                                :op1 "LY294002")))
+                             :topic (a3 / affect-01
+                                        :ARG0 (c2 / concentrate-02)))
+                     :op2 (c3 / curve
+                              :beneficiary (a5 / agent
+                                               :mod (s5 / small-molecule
+                                                        :name (n2 / name
+                                                                  :op1 "E6201")))
+                              :topic a3)
+                     :location-of (a6 / add-on-05
+                                      :ARG1 (a10 / and
+                                                 :op1 s3
+                                                 :op2 s5)
+                                      :ARG1-of (f5 / follow-01
+                                                   :ARG2 (p / plate-00)
+                                                   :quant (t / temporal-quantity
+                                                             :quant "24"
+                                                             :unit (h / hour)))))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The six melanoma cell lines tested displayed similar trends in E6201 sensitivity compared to our previous experiments, with MM622, MM540, UACC903, and WM35 being the most sensitive (IC50 = 40-61 nM) and UACC558 and UACC647 being less sensitive (302 and 2310 nM, respectively).
+# ::file pmid_2303_9341_98.txt
+# ::date 2015-06-24T06:33:01
+# ::id pmid_2303_9341.98
+(d / display-01
+   :ARG0 (c / cell-line
+            :quant "6"
+            :ARG1-of (t / test-01)
+            :mod (m / medical-condition
+                    :name (n12 / name
+                               :op1 "melanoma")))
+   :ARG1 (t2 / trend-01
+             :ARG2 (s / sensitive-03
+                      :ARG0 (a / and
+                               :op1 (c4 / cell-line
+                                        :name (n2 / name
+                                                  :op1 "MM622"))
+                               :op2 (c5 / cell-line
+                                        :name (n3 / name
+                                                  :op1 "MM540"))
+                               :op3 (c6 / cell-line
+                                        :name (n4 / name
+                                                  :op1 "UACC903"))
+                               :op4 (c9 / cell-line
+                                        :name (n5 / name
+                                                  :op1 "WM35"))
+                               :ARG1-of (c3 / contrast-01
+                                            :ARG2 (a2 / and
+                                                      :op1 (c8 / cell-line
+                                                               :name (n6 / name
+                                                                         :op1 "UACC558"))
+                                                      :op1 (c7 / cell-line
+                                                               :name (n7 / name
+                                                                         :op1 "UACC647"))
+                                                      :ARG1-of (s2 / sensitive-03
+                                                                   :degree (l / less))
+                                                      :mod (c12 / concentrate-02
+                                                                :ARG1-of (e3 / equal-01
+                                                                             :ARG2 (c11 / concentration-quantity
+                                                                                        :unit (n9 / nanomolar)
+                                                                                        :quant (a3 / and
+                                                                                                   :op1 "302"
+                                                                                                   :op2 "2310")))
+                                                                :mod (i / inhibit-01
+                                                                        :degree (p2 / percentage-entity
+                                                                                    :value "50")))))
+                               :ARG1-of (h / have-percentage-maximal-inhibitory-concentration-01
+                                           :ARG2 "50"
+                                           :ARG4 (c10 / concentration-quantity
+                                                      :quant (v / value-interval
+                                                                :op1 "40"
+                                                                :op2 "61")
+                                                      :unit (n8 / nanomolar))))
+                      :ARG1 (s3 / small-molecule
+                                :name (n / name
+                                         :op1 "E6201")))
+             :ARG1-of (r / resemble-01)
+             :ARG1-of (c2 / compare-01
+                          :ARG2 (e / experiment-01
+                                   :ARG0 (w / we)
+                                   :time (p / previous))))
+   :degree (m2 / most))
+
+# ::save-date Tue Dec 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Surprisingly, all cell lines showed similar sensitivity to LY294002, with IC50 ranging from 11 μM to 17 μM.
+# ::file pmid_2303_9341_99.txt
+# ::date 2015-06-24T22:33:34
+# ::id pmid_2303_9341.99
+(s / show-01
+   :ARG0 (c / cell-line
+            :mod (a / all)
+            :ARG0-of (h / have-03
+                        :ARG1 (c4 / concentrate-02
+                                  :ARG1-of (r2 / range-01
+                                               :ARG3 (c2 / concentration-quantity
+                                                         :quant "11"
+                                                         :unit (m / micromolar))
+                                               :ARG4 (c3 / concentration-quantity
+                                                         :quant "17"
+                                                         :unit m))
+                                  :mod (i / inhibit-01
+                                          :degree (p / percentage-entity
+                                                     :value "50")))))
+   :ARG1 (s2 / sensitive-03
+             :ARG0 c
+             :ARG1 (s4 / small-molecule
+                       :name (n / name
+                                :op1 "LY294002"))
+             :ARG1-of (r / resemble-01))
+   :ARG0-of (s3 / surprise-01))
+
+# ::save-date Wed Nov 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This was unexpected, as one would predict MM540 and WM35 cells to be relatively resistant to PI3K inhibition given the lack of detectable levels of pAkt indicating no constitutive PI3K activation in these cell lines.
+# ::file pmid_2303_9341_100.txt
+# ::date 2015-06-24T22:52:13
+# ::id pmid_2303_9341.100
+(e / expect-01
+   :polarity "-"
+   :ARG1 (t / this)
+   :ARG0-of (c / cause-01
+               :ARG1 (p / predict-01
+                        :ARG0 (p2 / person)
+                        :ARG1 (r / resist-01
+                                 :ARG0 (a / and
+                                          :op1 (c2 / cell-line
+                                                   :name (n / name
+                                                            :op1 "MM540"))
+                                          :op2 (c3 / cell-line
+                                                   :name (n2 / name
+                                                             :op1 "WM35")))
+                                 :ARG1 (i / inhibit-01
+                                          :ARG1 (e2 / enzyme
+                                                    :name (n3 / name
+                                                              :op1 "PI3K")))
+                                 :ARG2-of (r2 / relative-05)
+                                 :ARG1-of (c4 / cause-01
+                                              :ARG0 (l / lack-01
+                                                       :ARG1 (l2 / level
+                                                                 :ARG1-of (d / detect-01
+                                                                             :ARG1-of (p4 / possible-01))
+                                                                 :quant-of (e3 / enzyme
+                                                                               :name (n4 / name
+                                                                                         :op1 "Akt")
+                                                                               :ARG3-of (p3 / phosphorylate-01)))
+                                                       :ARG0-of (i2 / indicate-01
+                                                                    :ARG1 (a2 / activate-01
+                                                                              :polarity "-"
+                                                                              :ARG1 e2
+                                                                              :manner (c5 / constitutive)
+                                                                              :location a))))))))
+
+# ::save-date Tue Jul 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A previous study by Smalley and others [<xref ref-type="bibr" rid="B26">26</xref>], however, reported a similar sensitivity of WM35 cells to LY294002.
+# ::file pmid_2303_9341_101.txt
+# ::date 2015-06-25T07:34:37
+# ::id pmid_2303_9341.101
+(r / report-01
+   :ARG0 (s / study-01
+            :ARG0 (a / and
+                     :op1 (p2 / person
+                              :name (n / name
+                                       :op1 "Smalley"))
+                     :op2 (p4 / person
+                              :mod (o / other)))
+            :time (p / previous)
+            :ARG1-of (d / describe-01
+                        :ARG0 (p3 / publication-91
+                                  :ARG0-of (c / cite-01
+                                              :ARG2 "26"))))
+   :ARG1 (s2 / sensitive-03
+             :ARG0 (c2 / cell-line
+                       :name (n2 / name
+                                 :op1 "WM35"))
+             :ARG1 (s3 / small-molecule
+                       :name (n3 / name
+                                 :op1 "LY294002"))
+             :ARG1-of (r2 / resemble-01))
+   :ARG2-of (c3 / contrast-01))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The concentration response curves for E6201 and LY294002 combinations, normalized to a dimethyl sulfoxide (DMSO) control are given in <xref ref-type="supplementary-material" rid="S4">Additional file 4: Figure S4</xref>.
+# ::file pmid_2303_9341_102.txt
+# ::date 2015-06-25T10:02:39
+# ::id pmid_2303_9341.102
+(g / give-01
+   :ARG1 (c / curve
+            :mod (r / respond-01
+                    :ARG1 (c2 / concentrate-02
+                              :ARG1 (c3 / combine-01
+                                        :ARG1 (s / small-molecule
+                                                 :name (n / name
+                                                          :op1 "E6201"))
+                                        :ARG2 (s2 / small-molecule
+                                                  :name (n2 / name
+                                                            :op1 "LY294002")))))
+            :ARG1-of (n3 / normalize-01
+                         :topic (c4 / control-01
+                                    :ARG2 (s3 / small-molecule
+                                              :name (n4 / name
+                                                        :op1 "DMSO")))))
+   :location (f / figure
+                :mod "S4"
+                :location (f2 / file
+                              :mod "4"
+                              :mod (a / additional))))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As differences in synergy may exist at different drug effect levels, we graphed individual combination index values for LY294002 with increasing concentrations of E6201 for each cell line (Figure <xref ref-type="fig" rid="F5">5</xref>A).
+# ::file pmid_2303_9341_103.txt
+# ::date 2015-06-25T11:35:00
+# ::id pmid_2303_9341.103
+(c / cause-01
+   :ARG0 (p / possible-01
+            :ARG1 (e / exist-01
+                     :ARG1 (d / differ-02
+                              :ARG2 (s / synergize-01))
+                     :location (l / level
+                                  :ARG1-of (d2 / differ-02)
+                                  :degree-of (a / affect-01
+                                                :ARG0 (d3 / drug)))))
+   :ARG1 (g / graph-00
+            :ARG0 (w / we)
+            :ARG1 (v / value
+                     :mod (i / individual)
+                     :mod (c2 / combine-01)
+                     :mod (i2 / index))
+            :value-of (s2 / small-molecule
+                          :name (n / name
+                                   :op1 "LY294002"))
+            :accompanier (c3 / concentrate-02
+                             :ARG1 (s3 / small-molecule
+                                       :name (n2 / name
+                                                 :op1 "E6201"))
+                             :ARG1-of (i3 / increase-01))
+            :location (c4 / cell-line
+                          :mod (e2 / each))
+            :ARG1-of (d4 / describe-01
+                         :ARG0 (f / figure
+                                  :mod "5A"))))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F5">5</xref>A, evaluating the individual combination index for all combinations tested revealed that E6201 and LY294002 exhibit synergistic activity in all six melanoma cell lines, irrespective of E6201 sensitivity or <i>PTEN</i> or pAkt status.
+# ::file pmid_2303_9341_104.txt
+# ::date 2015-06-25T12:30:04
+# ::id pmid_2303_9341.104
+(r / reveal-01
+   :ARG0 (e / evaluate-01
+            :ARG1 (i / index
+                     :mod (c / combine-01
+                             :manner (i2 / individual))
+                     :beneficiary (c2 / combine-01
+                                      :mod (a / all)
+                                      :ARG1-of (t / test-01))))
+   :ARG1 (e2 / exhibit-01
+             :ARG0 (a2 / and
+                       :op1 (s5 / small-molecule
+                                :name (n / name
+                                         :op1 "E6201"))
+                       :op2 (s6 / small-molecule
+                                :name (n2 / name
+                                          :op1 "LY294002")))
+             :ARG1 (a3 / activity-06
+                       :ARG1 (s / synergize-01)
+                       :location (c3 / cell-line
+                                     :quant "6"
+                                     :mod (m / medical-condition
+                                             :name (n3 / name
+                                                       :op1 "melanoma"))
+                                     :mod (a4 / all))
+                       :ARG1-of (r2 / regardless-91
+                                    :ARG2 (o / or
+                                             :op1 (s2 / sensitive-03
+                                                      :ARG1 s5)
+                                             :op2 (s3 / status
+                                                      :poss (a5 / and
+                                                                :op1 (p / protein
+                                                                        :name (n5 / name
+                                                                                  :op1 "PTEN"))
+                                                                :op2 (e3 / enzyme
+                                                                         :name (n6 / name
+                                                                                   :op1 "Akt")
+                                                                         :ARG3-of (p2 / phosphorylate-01))))))))
+   :ARG1-of (s4 / show-01
+                :ARG0 (f / figure
+                         :mod "5A")))
+
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, different patterns of synergy were observed among the groups of cell lines tested.
+# ::file pmid_2303_9341_105.txt
+# ::date 2015-06-25T13:16:21
+# ::id pmid_2303_9341.105
+(o / observe-01
+      :ARG1 (p / pattern-01
+            :ARG1 (s / synergize-01)
+            :ARG1-of (d / differ-02)
+            :ARG1-of (i / include-91
+                  :ARG2 (g / group
+                        :consist-of (c / cell-line
+                              :ARG1-of (t / test-01)))))
+      :ARG2-of (i2 / interest-01))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt While most (4/6) of the cell lines showed an increasing combination index (and thus decreasing synergy) at higher concentrations of E6201, UACC647 and UACC558 cells showed a decreasing combination index or enhanced synergy with increasing concentrations of E6201.
+# ::file pmid_2303_9341_106.txt
+# ::date 2015-06-25T13:27:52
+# ::id pmid_2303_9341.106
+(c / contrast-01
+   :ARG1 (s / show-01
+            :ARG0 (c2 / cell-line
+                      :quant "4"
+                      :ARG1-of (i5 / include-91
+                                   :ARG2 (c8 / cell-line
+                                             :quant "6")
+                                   :ARG3 (m / most)))
+            :ARG1 (i / index
+                     :mod (c3 / combine-01
+                              :ARG1-of (i2 / increase-01)))
+            :ARG0-of (c4 / cause-01
+                         :ARG1 (d2 / decrease-01
+                                   :ARG1 (s2 / synergize-01)))
+            :condition (c5 / concentrate-02
+                           :ARG1 (s5 / small-molecule
+                                     :name (n / name
+                                              :op1 "E6201"))
+                           :ARG1-of (h / high-02)))
+   :ARG2 (s3 / show-01
+             :ARG0 (a / and
+                      :op1 (c9 / cell-line
+                               :name (n2 / name
+                                         :op1 "UACC647"))
+                      :op2 (c10 / cell-line
+                                :name (n3 / name
+                                          :op1 "UACC558")))
+             :ARG1 (o / or
+                      :op1 (i3 / index
+                               :mod (c6 / combine-01
+                                        :ARG1-of (d / decrease-01)))
+                      :op2 (s4 / synergize-01
+                               :ARG1-of (e / enhance-01)
+                               :condition (c7 / concentrate-02
+                                              :ARG1 s5
+                                              :ARG1-of (i4 / increase-01))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Notably, this pattern observed for UACC647 and UACC558 cells occurs within the context of high pAkt and relative resistance to E6201, supporting the hypothesis that administration of a PI3K inhibitor can sensitize E6201-resistant cells with high pAkt levels to E6201.
+# ::file pmid_2303_9341_107.txt
+# ::date 2015-06-25T21:58:06
+# ::id pmid_2303_9341.107
+(p3 / pattern
+    :ARG1-of (n6 / notable-04)
+    :mod (t / this)
+    :ARG1-of (o2 / observe-01)
+    :topic (a / and
+              :op1 (c3 / cell-line
+                       :name (n / name
+                                :op1 "UACC647"))
+              :op2 (c4 / cell-line
+                       :name (n2 / name
+                                 :op1 "UACC558")))
+    :time (c / context
+             :poss (a2 / and
+                       :op1 (e / enzyme
+                               :name (n3 / name
+                                         :op1 "Akt")
+                               :ARG3-of (p6 / phosphorylate-01)
+                               :ARG1-of (h2 / high-02))
+                       :op2 (r / resist-01
+                               :ARG1 (s3 / small-molecule
+                                         :name (n4 / name
+                                                   :op1 "E6201"))
+                               :ARG2-of (r2 / relative-05))))
+    :ARG0-of (s / support-01
+                :ARG1 (h / hypothesize-01
+                         :ARG1 (s2 / sensitize-01
+                                   :ARG0 (a3 / administer-01
+                                             :ARG1 (m / molecular-physical-entity
+                                                      :ARG0-of (i / inhibit-01
+                                                                  :ARG1 (p / protein-family
+                                                                           :name (n5 / name
+                                                                                     :op1 "PI3K")))))
+                                   :ARG1 (c2 / cell
+                                             :ARG0-of (r3 / resist-01
+                                                          :ARG1 s3)
+                                             :mod (l / level
+                                                     :quant-of e
+                                                     :degree h2))
+                                   :ARG2 s3
+                                   :ARG1-of (p4 / possible-01)))))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In summary, the combination of E6201 and LY294002 resulted in synergistic activity in all six melanoma cell lines tested, as defined by a combination index < 1.
+# ::file pmid_2303_9341_108.txt
+# ::date 2015-06-25T23:17:47
+# ::id pmid_2303_9341.108
+(r / result-01
+   :ARG1 (c / combine-01
+            :ARG1 (s2 / small-molecule
+                      :name (n / name
+                               :op1 "E6201"))
+            :ARG2 (s3 / small-molecule
+                      :name (n2 / name
+                                :op1 "LY294002")))
+   :ARG2 (a / activity-06
+            :ARG1 (s / synergize-01))
+   :location (c2 / cell-line
+                 :quant "6"
+                 :mod (a2 / all)
+                 :ARG1-of (t / test-01)
+                 :mod (m / medical-condition
+                         :name (n3 / name
+                                   :op1 "melanoma")))
+   :ARG1-of (d / define-01
+               :ARG0 (i / index
+                        :mod (c3 / combine-01)
+                        :value (l / less-than
+                                  :op1 "1")))
+   :ARG2-of (s4 / summarize-01))
+
+# ::save-date Tue Feb 2, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, enhanced synergy of E6201 with LY294002 treatment in the E6201-resistant cell lines UACC647 and UACC558 was observed at high concentrations of E6201.
+# ::file pmid_2303_9341_109.txt
+# ::date 2015-06-28T11:07:11
+# ::id pmid_2303_9341.109
+(o / observe-01
+   :ARG1 (s / synergize-01
+            :ARG0 (t / treat-04
+                     :ARG2 (s2 / small-molecule
+                               :name (n2 / name
+                                         :op1 "LY294002")))
+            :ARG1 (t2 / treat-04
+                      :ARG2 (s3 / small-molecule
+                                :name (n3 / name
+                                          :op1 "E6201")))
+            :ARG1-of (e / enhance-01)
+            :location (c / cell-line
+                         :ARG0-of (r / resist-01)
+                         :ARG2-of (i / include-91
+                                     :ARG1 (a / and
+                                              :op1 (c3 / cell-line
+                                                       :name (n4 / name
+                                                                 :op1 "UACC647"))
+                                              :op2 (c4 / cell-line
+                                                       :name (n5 / name
+                                                                 :op1 "UACC558"))))))
+   :condition (c2 / concentrate-02
+                  :ARG1 s3
+                  :ARG1-of (h / high-02))
+   :ARG2-of (i2 / interest-01))

@@ -1,0 +1,1492 @@
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt AZD6244 could inhibit the tumor growth of NCI-H1993, but slightly inhibit the tumor growth of NCI-1975 and NCI-H460.
+# ::file pmid_2493_9055_10.txt
+# ::date 2015-08-28T08:48:58
+# ::id pmid_2493_9055.10
+(c / contrast-01
+   :ARG1 (p2 / possible-01
+             :ARG1 (i2 / inhibit-01
+                       :ARG0 (s / small-molecule
+                                :name (n / name
+                                         :op1 "AZD6244"))
+                       :ARG1 (g / grow-01
+                                :ARG0 (c3 / cell-line
+                                          :name (n3 / name
+                                                    :op1 "NCI-H1993"))
+                                :ARG1 (t / tumor))))
+   :ARG2 (i / inhibit-01
+            :ARG1 (g2 / grow-01
+                      :ARG0 (a / and
+                               :op1 (c2 / cell-line
+                                        :name (n2 / name
+                                                  :op1 "NCI-1975"))
+                               :op2 (c4 / cell-line
+                                        :name (n4 / name
+                                                  :op1 "NCI-H460")))
+                      :ARG1 t)
+            :manner (s2 / slight)))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Combining AZD6244 with BEZ235 markedly enhanced their antitumor effects and without any marked adverse events.
+# ::file pmid_2493_9055_11.txt
+# ::date 2015-08-28T09:31:31
+# ::id pmid_2493_9055.11
+(a2 / and
+    :op1 (e / enhance-01
+            :ARG0 (c / combine-01
+                     :ARG1 (s / small-molecule
+                              :name (n / name
+                                       :op1 "AZD6244"))
+                     :ARG2 (s2 / small-molecule
+                               :name (n2 / name
+                                         :op1 "BEZ235")))
+            :ARG1 (a / affect-01
+                     :ARG0 (a4 / and
+                               :op1 s
+                               :op2 s2)
+                     :ARG0-of (c2 / counter-01
+                                  :ARG1 (t / tumor)))
+            :manner (m / marked))
+    :op2 (e2 / enhance-01
+             :ARG0 c
+             :ARG0-of (c3 / cause-01
+                          :polarity "-"
+                          :ARG1 (e3 / event
+                                    :mod (a3 / adverse)
+                                    :mod m))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Western blot analysis and immunohistochemical staining revealed that AZD6244 alone reduced ERK1/2 phosphorylation, angiogenesis, and tumor cell proliferation.
+# ::file pmid_2493_9055_12.txt
+# ::date 2015-08-29T01:45:10
+# ::id pmid_2493_9055.12
+(r / reveal-01
+   :ARG0 (a / and
+            :op1 (a2 / analyze-01
+                     :mod (i2 / immunoblot-01))
+            :op2 (s2 / stain-01
+                     :mod (i / immunohistochemical)))
+   :ARG1 (r2 / reduce-01
+             :ARG0 (s / small-molecule
+                      :name (n2 / name
+                                :op1 "AZD6244")
+                      :mod (a5 / alone))
+             :ARG1 (a3 / and
+                       :op1 (p / phosphorylate-01
+                               :ARG1 (e / enzyme
+                                        :name (n / name
+                                                 :op1 "ERK1/2")))
+                       :op2 (a4 / angiogenesis)
+                       :op3 (p2 / proliferate-01
+                                :ARG0 (c / cell
+                                         :mod (t / tumor))))))
+
+# ::save-date Fri Aug 28, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, MEK1/2 inhibition resulted in decreased AKT phosphorylation in NCI-H1993 tumor model.
+# ::file pmid_2493_9055_13.txt
+# ::date 2015-08-28T08:56:36
+# ::id pmid_2493_9055.13
+(a / and
+   :op2 (r / result-01
+           :ARG1 (i / inhibit-01
+                    :ARG1 (e / enzyme
+                             :name (n / name
+                                      :op1 "MEK1/2")))
+           :ARG2 (p / phosphorylate-01
+                    :ARG1 (e2 / enzyme
+                              :name (n2 / name
+                                        :op1 "AKT"))
+                    :location (m / model
+                                 :mod (t / tumor)
+                                 :mod (c / cell-line
+                                         :name (n3 / name
+                                                   :op1 "NCI-H1993")))
+                    :ARG1-of (d / decrease-01))))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt BEZ235 also inhibited AKT phosphorylation as well as their downstream molecules in all three tumor models.
+# ::file pmid_2493_9055_14.txt
+# ::date 2015-08-28T09:17:42
+# ::id pmid_2493_9055.14
+(i / inhibit-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "BEZ235"))
+   :ARG1 (a / and
+            :op1 (p / phosphorylate-01
+                    :ARG1 (e / enzyme
+                             :name (n2 / name
+                                       :op1 "AKT")))
+            :op2 (m / molecule
+                    :direction (d / downstream)
+                    :location (m2 / model
+                                  :quant "3"
+                                  :mod (t / tumor)
+                                  :mod (a2 / all))
+                    :poss s))
+   :mod (a3 / also))
+
+# ::save-date Mon Nov 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The antiangiogenic effects were substantially enhanced when the agents were combined, which may due to the reduced expression of matrix metallopeptidase-9 in tumor tissues (MMP-9).
+# ::file pmid_2493_9055_15.txt
+# ::date 2015-08-29T01:56:00
+# ::id pmid_2493_9055.15
+(e / enhance-01
+   :ARG0 (a2 / affect-01
+             :ARG0-of (c4 / counter-01
+                          :ARG1 (a3 / angiogenesis)))
+   :degree (s / substantial)
+   :condition (c3 / combine-01
+                  :ARG1 (a / agent))
+   :ARG1-of (c2 / cause-01
+                :ARG0 (e2 / express-03
+                          :ARG2 (e3 / enzyme
+                                    :name (n / name
+                                             :op1 "matrix"
+                                             :op2 "metallopeptidase-9"))
+                          :ARG3 (t / tissue
+                                   :source (t2 / tumor))
+                          :ARG1-of (r / reduce-01))
+                :ARG1-of (p / possible-01)))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Before evaluating the effect of AZD6244, BEZ235 and AZD6244 plus BEZ235 treatment on gefitinib-resistant NSCLC xenograft models in nude mice, the sensitivity of cell lines to compounds was evaluated <i>in vitro.</i>
+# ::file pmid_2493_9055_96.txt
+# ::date 2015-08-29T02:05:45
+# ::id pmid_2493_9055.96
+(e / evaluate-01
+   :ARG1 (s2 / sensitive-03
+             :ARG0 (c2 / cell-line)
+             :ARG1 (c / compound))
+   :manner (i / in-vitro)
+   :time (b / before
+            :op1 (e2 / evaluate-01
+                     :ARG1 (a / affect-01
+                              :ARG0 (t / treat-04
+                                       :ARG1 (m / model
+                                                :mod (x / xenograft
+                                                        :mod (d / disease
+                                                                :name (n3 / name
+                                                                          :op1 "NSCLC")))
+                                                :ARG0-of (r / resist-01
+                                                            :ARG1 (s4 / small-molecule
+                                                                      :name (n4 / name
+                                                                                :op1 "gefitinib")))
+                                                :location (m2 / mouse
+                                                              :mod (n5 / nude)))
+                                       :ARG2 (a2 / and
+                                                 :op1 (s / small-molecule
+                                                         :name (n / name
+                                                                  :op1 "AZD6244"))
+                                                 :op2 (s3 / small-molecule
+                                                          :name (n2 / name
+                                                                    :op1 "BEZ235"))
+                                                 :op3 (a3 / and
+                                                          :op1 s
+                                                          :op2 s3)))))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cell proliferation was analyzed by MTT assay in cells treated with 0, 0.01, 0.1, 1, 10 and 100 μM of AZD6244 or BEZ235 for 72 h.
+# ::file pmid_2493_9055_97.txt
+# ::date 2015-08-29T12:25:56
+# ::id pmid_2493_9055.97
+(a / analyze-01
+   :ARG1 (p / proliferate-01
+            :ARG0 (c / cell))
+   :instrument (a2 / assay-01
+                   :instrument (s3 / small-molecule
+                                   :name (n / name
+                                            :op1 "MTT")))
+   :location (c2 / cell
+                 :ARG1-of (t / treat-04
+                             :ARG2 (a3 / and
+                                       :op1 (c3 / concentration-quantity
+                                                :quant "0"
+                                                :unit "m3")
+                                       :op2 (c4 / concentration-quantity
+                                                :quant "0.01"
+                                                :unit "m3")
+                                       :op3 (c5 / concentration-quantity
+                                                :quant "0.1"
+                                                :unit "m3")
+                                       :op4 (c6 / concentration-quantity
+                                                :quant "1"
+                                                :unit "m3")
+                                       :op5 (c7 / concentration-quantity
+                                                :quant "10"
+                                                :unit (m3 / micromolar))
+                                       :op6 (c8 / concentration-quantity
+                                                :quant "100"
+                                                :unit m3)
+                                       :quant-of (o / or
+                                                    :op1 (s / small-molecule
+                                                            :name (n2 / name
+                                                                      :op1 "AZD6244"))
+                                                    :op2 (s2 / small-molecule
+                                                             :name (n3 / name
+                                                                       :op1 "BEZ235"))))
+                             :duration (t2 / temporal-quantity
+                                           :quant "72"
+                                           :unit (h / hour)))))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The results showed that AZD6244 significantly suppressed the growth of NCI-H1993 with a low micromolar IC50 value of 5.6 μM (Figure <xref ref-type="fig" rid="F1">1</xref>A).
+# ::file pmid_2493_9055_98.txt
+# ::date 2015-08-30T05:44:04
+# ::id pmid_2493_9055.98
+(s / show-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01))
+   :ARG1 (s2 / suppress-01
+             :ARG0 (s3 / small-molecule
+                       :name (n / name
+                                :op1 "AZD6244"))
+             :ARG1 (g / grow-01
+                      :ARG1 (c / cell-line
+                               :name (n3 / name
+                                         :op1 "NCI-H1993"))
+                      :ARG2 (v / value-01
+                               :ARG1 (t2 / thing
+                                         :name (n2 / name
+                                                   :op1 "IC50"))
+                               :ARG2 (c2 / concentration-quantity
+                                         :quant "5.6"
+                                         :unit (m / micromolar))
+                               :ARG1-of (l / low-04)))
+             :ARG1-of (s4 / significant-02))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1A")))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, AZD6244 alone mildly inhibited cell growth with IC50 values of 37.5 μM and 26.8 μM in NCI-H1975 and NCI-H460 cells, respectively (Figure <xref ref-type="fig" rid="F1">1</xref>A).
+# ::file pmid_2493_9055_99.txt
+# ::date 2015-08-30T05:48:56
+# ::id pmid_2493_9055.99
+(a / and
+   :op2 (i / inhibit-01
+           :ARG0 (a3 / and
+                     :op1 (s / small-molecule
+                             :name (n / name
+                                      :op1 "AZD6244")
+                             :mod (v / value-01
+                                     :ARG1 (t / thing
+                                              :name (n2 / name
+                                                        :op1 "IC50"))
+                                     :ARG2 (c3 / concentration-quantity
+                                               :quant "37.5"
+                                               :unit (m2 / micromolar))
+                                     :location (c4 / cell-line
+                                                   :name (n3 / name
+                                                             :op1 "NCI-H1975"))))
+                     :op2 (s2 / small-molecule
+                              :name (n5 / name
+                                        :op1 "AZD6244")
+                              :mod (v2 / value-01
+                                       :ARG1 t
+                                       :ARG2 (c2 / concentration-quantity
+                                                 :quant "26.8"
+                                                 :unit (m3 / micromolar))
+                                       :location (c5 / cell-line
+                                                     :name (n4 / name
+                                                               :op1 "NCI-H460"))))
+                     :mod (a2 / alone))
+           :ARG1 (g / grow-01
+                    :ARG1 (c / cell))
+           :manner (m / mild))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1A")))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt BEZ235 alone also suppressed the growth of three cell lines with slightly high IC50 values of 23.5, 67.8 and 16.8 μM in NCI-H1993, NCI-H1975 and NCI-H460 cells, respectively (Figure <xref ref-type="fig" rid="F1">1</xref>B).
+# ::file pmid_2493_9055_100.txt
+# ::date 2015-08-30T05:55:39
+# ::id pmid_2493_9055.100
+(s / suppress-01
+   :ARG0 (s2 / small-molecule
+             :name (n / name
+                      :op1 "BEZ235"))
+   :ARG1 (g / grow-01
+            :ARG1 (a4 / and
+                      :op1 (c / cell-line
+                              :location (c3 / cell-line
+                                            :name (n3 / name
+                                                      :op1 "NCI-H1993"))
+                              :mod (v / value-01
+                                      :ARG1 (t / thing
+                                               :name (n2 / name
+                                                         :op1 "IC50"))
+                                      :ARG2 (c2 / concentration-quantity
+                                                :quant "23.5"
+                                                :unit (m / micromolar))
+                                      :ARG1-of (h / high-04
+                                                  :degree (s3 / slight))))
+                      :op2 (c8 / cell-line
+                               :location (c7 / cell-line
+                                             :name (n4 / name
+                                                       :op1 "NCI-H1975"))
+                               :mod (v2 / value-01
+                                        :ARG1 t
+                                        :ARG2 (c4 / concentration-quantity
+                                                  :quant "67.8"
+                                                  :unit m)))
+                      :op3 (c9 / cell-line
+                               :location (c6 / cell-line
+                                             :name (n5 / name
+                                                       :op1 "NCI-H460"))
+                               :mod (v3 / value-01
+                                        :ARG1 t
+                                        :ARG2 (c5 / concentration-quantity
+                                                  :quant "16.8"
+                                                  :unit m)))
+                      :mod (a3 / alone)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1B"))
+   :mod (a / also))
+
+
+# ::save-date Sat Jan 16, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The anti-proliferative effect of combining a MEK and PI3K/mTOR inhibitor was measured in NCI-H1993, NCI-H1975 and NCI-H460 cells by calculating the combination index (CI) according to the Chou-Talalay method [<xref ref-type="bibr" rid="B21">21</xref>] using a fixed dose ratio.
+# ::file pmid_2493_9055_102.txt
+# ::date 2015-08-29T03:45:29
+# ::id pmid_2493_9055.102
+(m / measure-01
+      :ARG1 (a / affect-01
+            :ARG0 (c2 / combine-01
+                  :ARG1 (m2 / molecular-physical-entity
+                        :ARG0-of (i / inhibit-01
+                              :ARG1 (p4 / protein-family
+                                    :name (n2 / name :op1 "MEK"))))
+                  :ARG2 (m3 / molecular-physical-entity
+                        :ARG0-of (i2 / inhibit-01
+                              :ARG1 (p2 / pathway
+                                    :name (n / name :op1 "PI3K/mTOR")))))
+            :ARG0-of (c / counter-01
+                  :ARG1 (p / proliferate-01)))
+      :ARG2 (c6 / calculate-01
+            :ARG1 (i3 / index
+                  :mod (c7 / combine-01)))
+      :ARG3 (u / use-01
+            :ARG1 (r / ratio
+                  :mod (d / dose
+                        :ARG1-of (f / fix-03)))
+            :ARG1-of (s / say-01
+                  :ARG0 (m4 / method
+                        :name (n6 / name :op1 "Chou-Talalay")))
+            :ARG1-of (d2 / describe-01
+                  :ARG0 (p3 / publication
+                        :ARG0-of (c8 / cite-01 :ARG1 "21"))))
+      :location (a2 / and
+            :op1 (c3 / cell-line
+                  :name (n3 / name :op1 "NCI-H1993"))
+            :op2 (c4 / cell-line
+                  :name (n4 / name :op1 "NCI-H1975"))
+            :op3 (c5 / cell-line
+                  :name (n5 / name :op1 "NCI-H460"))))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Both AZD6244 and BEZ235 were introduced to cell cultures at 0.25×, 0.5×, 1×, 2× and 4× their respective IC50s in NCI-H1993, NCI-H1975 and NCI-H460 cell lines for 72 h.
+# ::file pmid_2493_9055_103.txt
+# ::date 2015-08-30T08:08:19
+# ::id pmid_2493_9055.103
+(i / introduce-01
+   :ARG1 (a / and
+            :op1 (s / small-molecule
+                    :name (n / name
+                             :op1 "AZD6244"))
+            :op2 (s2 / small-molecule
+                     :name (n2 / name
+                               :op1 "BEZ235"))
+            :mod (t / thing
+                    :name (n3 / name
+                              :op1 "IC50"))
+            :quant (a3 / and
+                       :op1 (p / product-of
+                               :op1 "0.25"
+                               :op2 t)
+                       :op2 (p2 / product-of
+                                :op1 "0.5"
+                                :op2 t)
+                       :op3 (p3 / product-of
+                                :op1 "1"
+                                :op2 t)
+                       :op4 (p4 / product-of
+                                :op2 "2"
+                                :op2 t)
+                       :op5 (p5 / product-of
+                                :op2 "4"
+                                :op2 t)
+                       :mod (r / respective)))
+   :ARG2 (c / culture-01
+            :ARG1 (c2 / cell))
+   :location (a2 / and
+                 :op1 (c3 / cell-line
+                          :name (n4 / name
+                                    :op1 "NCI-H1993"))
+                 :op2 (c4 / cell-line
+                          :name (n5 / name
+                                    :op1 "NCI-H1975"))
+                 :op3 (c5 / cell-line
+                          :name (n6 / name
+                                    :op1 "NCI-H460")))
+   :duration (t2 / temporal-quantity
+                 :quant "72"
+                 :unit (h / hour)))
+
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Cell growth in all cell lines was markedly decreased following combination treatment at multiple paired concentrations when compared with either single agent alone.
+# ::file pmid_2493_9055_104.txt
+# ::date 2015-08-29T02:06:48
+# ::id pmid_2493_9055.104
+(d / decrease-01
+      :ARG1 (g / grow-01
+            :ARG1 (c / cell)
+            :location (c2 / cell-line
+                  :mod (a / all)))
+      :ARG2 (m / marked)
+      :ARG1-of (f / follow-01
+            :ARG2 (t / treat-04
+                  :ARG2 (c4 / concentrate-01
+                        :ARG1-of (p / pair-01)
+                        :quant (m2 / multiple))
+                  :mod (c3 / combine-01)))
+      :ARG1-of (c5 / compare-01
+            :ARG2 (a2 / agent
+                  :ARG1-of (s / single-02)
+                  :mod (e / either)
+                  :mod (a3 / alone))))
+
+
+# ::save-date Fri Feb 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The cells viability data were processed to get the CI under the corresponding effective dose (ED) in NCI-H1993, NCI-H1975 and NCI-H460 cell lines (Figure <xref ref-type="fig" rid="F2">2</xref>) by CalcuSyn software.
+# ::file pmid_2493_9055_105.txt
+# ::date 2015-08-29T02:09:58
+# ::id pmid_2493_9055.105
+(p / process-01
+      :ARG1 (d / data
+            :topic (v / viability
+                  :poss (c / cell)))
+      :purpose (g / get-03
+            :ARG1 (i / interval
+                  :mod (c7 / confidence))
+            :ARG2 (u / under
+                  :op1 (c6 / concentration-quantity
+                        :ARG4-of (h2 / have-percentage-maximal-effective-dose-01
+                              :ARG5 (a2 / and
+                                    :op1 (c3 / cell-line
+                                          :name (n4 / name :op1 "NCI-H1993"))
+                                    :op2 (c4 / cell-line
+                                          :name (n3 / name :op1 "NCI-H1975"))
+                                    :op3 (c5 / cell-line
+                                          :name (n2 / name :op1 "NCI-H460"))))
+                        :ARG1-of (c2 / correspond-01))))
+      :ARG1-of (d4 / describe-01
+            :ARG0 (f / figure :mod "2"))
+      :instrument (s / software
+            :name (n5 / name :op1 "CalcuSyn")))
+
+
+# ::save-date Fri Feb 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt For the NCI-H1993 cell line the following CI value was obtained: 0.4101 (ED50).
+# ::file pmid_2493_9055_106.txt
+# ::date 2015-08-30T06:03:45
+# ::id pmid_2493_9055.106
+(o / obtain-01
+      :ARG1 (v / value-01
+            :ARG1 (i / interval
+                  :mod (c / confidence))
+            :ARG2 "0.4101"
+            :ARG2-of (f / follow-01)
+            :ARG1-of (m / mean-01
+                  :ARG2 (h / have-percentage-maximal-effective-dose-01 :ARG2 "50")))
+      :purpose (c2 / cell-line
+            :name (n2 / name :op1 "NCI-H1993")))
+
+
+# ::save-date Fri Feb 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt For NCI-H1975 and NCI-H460 cell line the CI values were 0.02052 (ED50), and 0.0440 (ED50) respectively.
+# ::file pmid_2493_9055_107.txt
+# ::date 2015-08-30T06:07:33
+# ::id pmid_2493_9055.107
+(a / and
+      :op1 (v / value-01
+            :ARG1 (i / interval
+                  :mod (c3 / confidence))
+            :ARG2 "0.02052"
+            :purpose (c / cell-line
+                  :name (n / name :op1 "NCI-H1975"))
+            :ARG1-of (m / mean-01
+                  :ARG2 (h / have-percentage-maximal-effective-dose-01 :ARG2 "50")))
+      :op2 (v2 / value-01
+            :ARG1 i
+            :ARG2 "0.0440"
+            :purpose (c2 / cell-line
+                  :name (n2 / name :op1 "NCI-H460"))
+            :ARG1-of (d2 / describe-01
+                  :ARG0 (p / publication-91))
+            :ARG1-of m))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The CI results suggested that AZD6244 and BEZ235 worked synergistically to produce an anti-proliferative effect in NCI-H1993, NCI-H1975 and NCI-H460 cell lines (Figures <xref ref-type="fig" rid="F2">2</xref>A-C).
+# ::file pmid_2493_9055_108.txt
+# ::date 2015-08-30T06:11:05
+# ::id pmid_2493_9055.108
+(s / suggest-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01
+                        :ARG1 (i / index
+                                 :mod (c5 / combine-01))))
+   :ARG1 (w / work-01
+            :ARG0 (a / and
+                     :op1 (s3 / small-molecule
+                              :name (n2 / name
+                                        :op1 "AZD6244"))
+                     :op2 (s4 / small-molecule
+                              :name (n3 / name
+                                        :op1 "BEZ235")))
+            :ARG1 (p / produce-01
+                     :ARG0 a
+                     :ARG1 (a2 / affect-01
+                               :ARG0-of (c / counter-01
+                                           :ARG1 (p2 / proliferate-01
+                                                     :location (a3 / and
+                                                                   :op1 (c2 / cell-line
+                                                                            :name (n4 / name
+                                                                                      :op1 "NCI-H1993"))
+                                                                   :op2 (c3 / cell-line
+                                                                            :name (n5 / name
+                                                                                      :op1 "NCI-H1975"))
+                                                                   :op3 (c4 / cell-line
+                                                                            :name (n6 / name
+                                                                                      :op1 "NCI-H460")))))))
+            :manner (s2 / synergistical))
+   :ARG1-of (d / describe-01
+               :ARG0 (a4 / and
+                         :op1 (f / figure
+                                 :mod "2A")
+                         :op2 (f2 / figure
+                                  :mod "2B")
+                         :op3 (f3 / figure
+                                  :mod "2C"))))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to investigate tumor growth inhibition effect of AZD6244 and/or BEZ235 <i>in vivo</i>, we used AZD6244, BEZ235, and AZD6244 plus BEZ235 to treat NCI-H1993, NCI-H1975 and NCI-H460 subcutaneous tumor models respectively for 3 weeks.
+# ::file pmid_2493_9055_110.txt
+# ::date 2015-08-29T03:05:30
+# ::id pmid_2493_9055.110
+(u / use-01
+   :ARG0 (w / we)
+   :ARG1 (a / and
+            :op1 (s / small-molecule
+                    :name (n / name
+                             :op1 "AZD6244"))
+            :op2 (s2 / small-molecule
+                     :name (n2 / name
+                               :op1 "BEZ235"))
+            :op3 (a5 / and
+                     :op1 s
+                     :op2 s2))
+   :ARG2 (t / treat-04
+            :ARG0 w
+            :ARG1 (a2 / and
+                      :op1 (m / model
+                              :mod (t3 / tumor)
+                              :mod (c / cell-line
+                                      :name (n3 / name
+                                                :op1 "NCI-H1993")))
+                      :op2 (m2 / model
+                               :mod t3
+                               :mod (c2 / cell-line
+                                        :name (n4 / name
+                                                  :op1 "NCI-H1975")))
+                      :op3 (m3 / model
+                               :mod t3
+                               :mod (c3 / cell-line
+                                        :name (n5 / name
+                                                  :op1 "NCI-H460")))
+                      :mod (s3 / subcutaneous))
+            :duration (t2 / temporal-quantity
+                          :quant "3"
+                          :unit (w2 / week))
+            :manner (r / respective))
+   :purpose (i2 / investigate-01
+                :ARG0 w
+                :ARG1 (a3 / affect-01
+                          :ARG0 (a4 / and-or
+                                    :op1 s
+                                    :op2 s2)
+                          :ARG1 (i / inhibit-01
+                                   :ARG1 (g / grow-01
+                                            :ARG1 t3))
+                          :manner (i3 / in-vivo))))
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As shown in Figure <xref ref-type="fig" rid="F3">3</xref>A-C, treatment with AZD6244 for 3 weeks was able to inhibit tumor growth of NCI-H1993 (T/C value 40%), but slightly inhibit tumor growth in both NCI-H1975 and NCI-H460 subcutaneous tumor models (T/C values 60% and 65%), whereas BEZ235 treatment caused an approximately 50% reduction in tumor growth in all three subcutaneous tumor models.
+# ::file pmid_2493_9055_111.txt
+# ::date 2015-08-29T03:11:54
+# ::id pmid_2493_9055.111
+(c7 / contrast-01
+    :ARG1 (c3 / contrast-01
+              :ARG1 (p6 / possible-01
+                        :ARG1 (i / inhibit-01
+                                 :ARG0 (t2 / treat-04
+                                           :ARG2 (s / small-molecule
+                                                    :name (n / name
+                                                             :op1 "AZD6244")))
+                                 :ARG1 (g / grow-01
+                                          :ARG1 (t3 / tumor)
+                                          :location (c2 / cell-line
+                                                        :name (n2 / name
+                                                                  :op1 "NCI-H1993")))
+                                 :ARG1-of (m / mean-01
+                                             :ARG2 (v / value-01
+                                                      :ARG2 (p / percentage-entity
+                                                               :value "40")))))
+              :ARG2 (i2 / inhibit-01
+                        :ARG1 (g2 / grow-01
+                                  :ARG1 t3)
+                        :degree (s3 / slight)
+                        :location (a / and
+                                     :op1 (m2 / model
+                                              :mod t3
+                                              :location (c4 / cell-line
+                                                            :name (n3 / name
+                                                                      :op1 "NCI-H1975")))
+                                     :op2 (m3 / model
+                                              :mod t3
+                                              :location (c5 / cell-line
+                                                            :name (n4 / name
+                                                                      :op1 "NCI-H460")))
+                                     :mod (s2 / subcutaneous))
+                        :ARG1-of (m4 / mean-01
+                                     :ARG2 (a2 / and
+                                               :op1 (v2 / value-01
+                                                        :ARG2 (p2 / percentage-entity
+                                                                  :value "60"))
+                                               :op2 (v3 / value-01
+                                                        :ARG2 (p3 / percentage-entity
+                                                                  :value "65"))))))
+    :ARG2 (c6 / cause-01
+              :ARG0 (t4 / treat-04
+                        :ARG2 (s5 / small-molecule
+                                  :name (n5 / name
+                                            :op1 "BEZ235")))
+              :ARG1 (r / reduce-01
+                       :ARG1 (g3 / grow-01
+                                 :ARG1 t3)
+                       :ARG2 (a3 / approximately
+                                 :op1 (p4 / percentage-entity
+                                          :value "50"))
+                       :location (m5 / model
+                                     :quant "3"
+                                     :mod s2
+                                     :mod t3
+                                     :mod (a4 / all))))
+    :ARG1-of (s6 / show-01
+                 :ARG0 (a5 / and
+                           :op1 (f / figure
+                                   :mod "3A")
+                           :op2 (f2 / figure
+                                    :mod "3B")
+                           :op3 (f3 / figure
+                                    :mod "3C"))))
+
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, the combined treatments with the two drugs almost completely inhibited NCI-H1993, NCI-H1975 and NCI-H460 tumor growth at the end of the 3 weeks of therapy (Figure <xref ref-type="fig" rid="F3">3</xref>A-D).
+# ::file pmid_2493_9055_112.txt
+# ::date 2015-08-29T12:26:42
+# ::id pmid_2493_9055.112
+(c / contrast-01
+      :ARG2 (i / inhibit-01
+            :ARG0 (t4 / treat-04
+                  :ARG1-of (c6 / combine-01
+                        :ARG2 (d2 / drug :quant "2")))
+            :ARG1 (a2 / and
+                  :op1 (g / grow-01
+                        :ARG0 (c3 / cell-line
+                              :name (n / name :op1 "NCI-H1993"))
+                        :ARG1 (t3 / tumor))
+                  :op2 (g2 / grow-01
+                        :ARG0 (c4 / cell-line
+                              :name (n2 / name :op1 "NCI-H1975"))
+                        :ARG1 t3)
+                  :op3 (g3 / grow-01
+                        :ARG0 (c5 / cell-line
+                              :name (n3 / name :op1 "NCI-H460"))
+                        :ARG1 t3))
+            :ARG1-of (c2 / complete-02
+                  :degree (a / almost))
+            :time (e / end-01
+                  :ARG1 (t2 / therapy
+                        :duration (t / temporal-quantity
+                              :quant "3"
+                              :unit (w / week)))))
+      :ARG1-of (d / describe-01
+            :ARG0 (a3 / and
+                  :op1 (f / figure :mod "3A")
+                  :op2 (f2 / figure :mod "3B")
+                  :op3 (f3 / figure :mod "3C")
+                  :op4 (f4 / figure :mod "3D"))))
+
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Single agent and combination treatment protocols were well tolerated by mice, with no weight loss or other signs of acute or delayed toxicity (Figure <xref ref-type="fig" rid="F4">4</xref>A-C).
+# ::file pmid_2493_9055_113.txt
+# ::date 2015-08-29T02:14:32
+# ::id pmid_2493_9055.113
+(t / tolerate-01
+      :ARG0 (m / mouse
+            :ARG0-of (l / lose-02
+                  :polarity "-"
+                  :ARG1 (w / weight))
+            :ARG0-of (s / signal-07
+                  :ARG1 (o3 / or
+                        :op1 (t2 / toxicity
+                              :mod (a2 / acute))
+                        :op2 (t3 / toxicity
+                              :ARG1-of (d / delay-01)))
+                  :mod (o2 / other)))
+      :ARG1 (a / and
+            :op1 (p / protocol
+                  :topic (t4 / treat-04
+                        :ARG2 (a3 / agent
+                              :ARG1-of (s2 / single-02))))
+            :op2 (p2 / protocol
+                  :topic (t5 / treat-04
+                        :ARG1-of (c / combine-01))))
+      :manner (w2 / well)
+      :ARG1-of (d2 / describe-01
+            :ARG0 (a4 / and
+                  :op1 (f / figure :mod "4A")
+                  :op2 (f2 / figure :mod "4B")
+                  :op3 (f3 / figure :mod "4C"))))
+
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To assess the impact of both compounds on downstream molecules of the MEK and PI3K pathways, we used Western blot analysis to observe phosphorylation status and total protein expression in tumor tissues.
+# ::file pmid_2493_9055_115.txt
+# ::date 2015-08-29T02:56:07
+# ::id pmid_2493_9055.115
+(u / use-01
+      :ARG0 (w / we)
+      :ARG1 (a / analyze-01
+            :mod (i2 / immunoblot-01))
+      :ARG2 (o / observe-01
+            :ARG0 w
+            :ARG1 (a2 / and
+                  :op1 (s / status
+                        :mod (p / phosphorylate-01))
+                  :op2 (e / express-03
+                        :ARG2 (p2 / protein)
+                        :ARG3 (t / tissue
+                              :source (t2 / tumor))
+                        :ARG1-of (t3 / total-01))))
+      :purpose (a3 / assess-01
+            :ARG0 w
+            :ARG1 (i / impact-01
+                  :ARG0 (c / compound
+                        :mod (b / both))
+                  :ARG1 (m / molecule
+                        :direction (d / downstream)
+                        :source (a4 / and
+                              :op1 (p3 / pathway
+                                    :name (n2 / name :op1 "MEK"))
+                              :op2 (p4 / pathway
+                                    :name (n3 / name :op1 "PI3K")))))))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The results showed that p-MEK1/2, p-ERK1/2, p-AKT, p-S6 and p-4E-BP1 appeared to be inhibited by AZD6244 and BEZ235 combination treatment, whereas the total protein levels of MEK1/2, ERK1/2, AKT, S6 and 4E-BP1 remained unchanged in each tumor model (Figure <xref ref-type="fig" rid="F5">5</xref>).
+# ::file pmid_2493_9055_116.txt
+# ::date 2015-08-29T14:02:27
+# ::id pmid_2493_9055.116
+(s2 / show-01
+    :ARG0 (t / thing
+             :ARG2-of (r / result-01))
+    :ARG1 (c2 / contrast-01
+              :ARG1 (a / appear-01
+                       :ARG1 (i / inhibit-01
+                                :ARG0 (t2 / treat-04
+                                          :ARG0-of (c / combine-01
+                                                      :ARG1 (s4 / small-molecule
+                                                                :name (n8 / name
+                                                                          :op1 "AZD6244"))
+                                                      :ARG2 (s3 / small-molecule
+                                                                :name (n7 / name
+                                                                          :op1 "BEZ235"))))
+                                :ARG1 (a2 / and
+                                          :op1 (e / enzyme
+                                                  :name (n2 / name
+                                                            :op1 "MEK1/2")
+                                                  :ARG3-of (p / phosphorylate-01
+                                                              :ARG1 e2
+                                                              :ARG1 e3
+                                                              :ARG1 p3
+                                                              :ARG1 p4))
+                                          :op2 (e2 / enzyme
+                                                   :name (n3 / name
+                                                             :op1 "ERK1/2"))
+                                          :op3 (e3 / enzyme
+                                                   :name (n4 / name
+                                                             :op1 "AKT"))
+                                          :op4 (p3 / protein
+                                                   :name (n5 / name
+                                                             :op1 "S6"))
+                                          :op5 (p4 / protein
+                                                   :name (n6 / name
+                                                             :op1 "4E-BP1")))))
+              :ARG2 (r2 / remain-01
+                        :ARG1 (a3 / and
+                                  :op1 (l / level
+                                          :degree-of e)
+                                  :op2 (l2 / level
+                                           :degree-of e2)
+                                  :op3 (l3 / level
+                                           :degree-of e3)
+                                  :op4 (l4 / level
+                                           :degree-of p3)
+                                  :op5 (l5 / level
+                                           :degree-of p4))
+                        :ARG2 (m / model
+                                 :mod (t3 / tumor))
+                        :ARG3 (c3 / change-01
+                                  :polarity "-")))
+    :ARG1-of (d / describe-01
+                :ARG0 (f / figure
+                         :mod "5")))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Western blot analysis of downstream signals also showed treatment with AZD6244 or BEZ235 inhibited the phosphorylation of ERK1/2 or AKT in all three tumor models respectively.
+# ::file pmid_2493_9055_117.txt
+# ::date 2015-08-30T07:07:39
+# ::id pmid_2493_9055.117
+(s / show-01
+   :ARG0 (a / analyze-01
+            :ARG1 (s2 / signal-07
+                      :direction (d / downstream))
+            :mod (i2 / immunoblot-01))
+   :ARG1 (i / inhibit-01
+            :ARG0 (t / treat-04
+                     :ARG2 (o / or
+                              :op1 (s3 / small-molecule
+                                       :name (n2 / name
+                                                 :op1 "AZD6244"))
+                              :op2 (s4 / small-molecule
+                                       :name (n3 / name
+                                                 :op1 "BEZ235"))))
+            :ARG1 (p / phosphorylate-01
+                     :ARG1 (o2 / or
+                               :op1 (e / enzyme
+                                       :name (n4 / name
+                                                 :op1 "ERK1/2"))
+                               :op2 (e2 / enzyme
+                                        :name (n5 / name
+                                                  :op1 "AKT")))
+                     :location (m / model
+                                  :quant "3"
+                                  :mod (t2 / tumor)
+                                  :mod (a2 / all)))
+            :manner (r / respective))
+   :mod (a3 / also))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, combined treatment with AZD6244 and BEZ235 showed greater inhibition of p-ERK1/2 and p-AKT than observed in control group or mice treated with each compound alone <i>in vivo</i> (Figure <xref ref-type="fig" rid="F5">5</xref>).
+# ::file pmid_2493_9055_118.txt
+# ::date 2015-08-29T12:41:12
+# ::id pmid_2493_9055.118
+(a / and
+   :op2 (s2 / show-01
+            :ARG0 (t / treat-04
+                     :ARG1-of (c / combine-01
+                                 :ARG2 (a2 / and
+                                           :op1 (s / small-molecule
+                                                   :name (n / name
+                                                            :op1 "AZD6244"))
+                                           :op2 (s3 / small-molecule
+                                                    :name (n2 / name
+                                                              :op1 "BEZ235")))))
+            :ARG1 (i / inhibit-01
+                     :ARG1 (a3 / and
+                               :op1 (e / enzyme
+                                       :name (n3 / name
+                                                 :op1 "ERK1/2")
+                                       :ARG3-of (p / phosphorylate-01
+                                                   :ARG1 e2))
+                               :op2 (e2 / enzyme
+                                        :name (n4 / name
+                                                  :op1 "AKT")))
+                     :mod (g / great
+                             :degree (m / more)
+                             :compared-to (i2 / inhibit-01
+                                              :ARG1-of (o / observe-01
+                                                          :location (o2 / or
+                                                                        :op1 (g2 / group
+                                                                                 :ARG1-of (c3 / control-01))
+                                                                        :op2 (m2 / mouse
+                                                                                 :ARG1-of (t2 / treat-04
+                                                                                              :ARG2 (c4 / compound
+                                                                                                        :mod (e3 / each)
+                                                                                                        :mod (a4 / alone))
+                                                                                              :manner (i3 / in-vivo)))))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "5")))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, the impact from both inhibitors on p-S6 and p-4E-BP1 levels was, alternatively, tumor model specific.
+# ::file pmid_2493_9055_119.txt
+# ::date 2015-08-29T12:53:21
+# ::id pmid_2493_9055.119
+(s2 / specific-02
+    :ARG1 (i3 / impact-01
+              :ARG0 (m / molecular-physical-entity
+                       :mod (b / both)
+                       :ARG0-of (i2 / inhibit-01))
+              :ARG1 (a / and
+                       :op1 (l / level
+                               :quant-of (p2 / protein
+                                             :name (n / name
+                                                      :op1 "S6")
+                                             :ARG3-of (p / phosphorylate-01
+                                                         :ARG3 p3)))
+                       :op2 (l2 / level
+                                :quant-of (p3 / protein
+                                              :name (n2 / name
+                                                        :op1 "4E-BP1")))))
+    :ARG2 (m2 / model
+              :mod (t / tumor))
+    :ARG2-of (i / interest-01)
+    :mod (a2 / alternative))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt For example, AZD6244 and BEZ235 alone and in combination markedly inhibited p-S6 and p-4E-BP1 expression levels in NCI-H1993 tumor models, compared with the minimal suppression observed in NCI-H460 tumor model (Figure <xref ref-type="fig" rid="F5">5</xref>).
+# ::file pmid_2493_9055_120.txt
+# ::date 2015-08-29T13:03:15
+# ::id pmid_2493_9055.120
+(i / inhibit-01
+   :ARG0 (a / and
+            :op1 (a2 / and
+                     :op1 (s / small-molecule
+                             :name (n / name
+                                      :op1 "AZD6244"))
+                     :op2 (s2 / small-molecule
+                              :name (n2 / name
+                                        :op1 "BEZ235")))
+            :op2 (c / combine-01
+                    :ARG1 s
+                    :ARG2 s2)
+            :mod (a4 / alone))
+   :ARG1 (a3 / and
+             :op1 (l / level
+                     :degree-of (e2 / express-03
+                                    :ARG2 (p2 / protein
+                                              :name (n3 / name
+                                                        :op1 "S6")
+                                              :ARG3-of (p / phosphorylate-01
+                                                          :ARG1 p3
+                                                          :ARG3 p3))
+                                    :ARG3 "m2"))
+             :op2 (l2 / level
+                      :degree-of (e3 / express-03
+                                     :ARG2 (p3 / protein
+                                               :name (n4 / name
+                                                         :op1 "4E-BP1"))
+                                     :ARG3 (m2 / model
+                                               :mod (t / tumor
+                                                       :mod (c3 / cell-line
+                                                                :name (n5 / name
+                                                                          :op1 "NCI-H1993")))))))
+   :ARG0-of (e / exemplify-01)
+   :manner (m / marked)
+   :compared-to (s3 / suppress-01
+                    :ARG1-of (o / observe-01
+                                :location (m4 / model
+                                              :mod t
+                                              :mod (c2 / cell-line
+                                                       :name (n6 / name
+                                                                 :op1 "NCI-H460"))))
+                    :degree (m3 / minimal))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "5")))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Neither AZD6244 nor BEZ235 alone suppressed p-S6 and p-4E-BP1 in NCI-H1975 tumor model.
+# ::file pmid_2493_9055_121.txt
+# ::date 2015-08-30T07:35:33
+# ::id pmid_2493_9055.121
+(s / suppress-01
+   :polarity "-"
+   :ARG0 (a / and
+            :op1 (s2 / small-molecule
+                     :name (n2 / name
+                               :op1 "AZD6244"))
+            :op2 (s3 / small-molecule
+                     :name (n / name
+                              :op1 "BEZ235"))
+            :mod (a3 / alone))
+   :ARG1 (a2 / and
+             :op1 (p2 / protein
+                      :name (n4 / name
+                                :op1 "S6")
+                      :ARG3-of (p / phosphorylate-01
+                                  :ARG1 p3))
+             :op2 (p3 / protein
+                      :name (n5 / name
+                                :op1 "4E-BP1")))
+   :location (m2 / model
+                 :mod (t / tumor)
+                 :mod (c / cell-line
+                         :name (n3 / name
+                                   :op1 "NCI-H1975"))))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We also found that the expression of MMP-9 was significantly inhibited by AZD6244 and BEZ235 combination treatment, whereas the expression of MMP-2 was not affected by the treatment.
+# ::file pmid_2493_9055_122.txt
+# ::date 2015-08-30T06:58:30
+# ::id pmid_2493_9055.122
+(f / find-01
+   :ARG0 (w / we)
+   :ARG1 (c / contrast-01
+            :ARG1 (i / inhibit-01
+                     :ARG0 (t2 / treat-04
+                               :ARG2 (c2 / combine-01
+                                         :ARG1 (s2 / small-molecule
+                                                   :name (n3 / name
+                                                             :op1 "AZD6244"))
+                                         :ARG2 (s3 / small-molecule
+                                                   :name (n4 / name
+                                                             :op1 "BEZ235"))))
+                     :ARG1 (e3 / express-03
+                               :ARG2 (e4 / enzyme
+                                         :name (n2 / name
+                                                   :op1 "MMP-9")))
+                     :ARG1-of (s / significant-02))
+            :ARG2 (a2 / affect-01
+                      :polarity "-"
+                      :ARG0 t2
+                      :ARG1 (e / express-03
+                               :ARG2 (e2 / enzyme
+                                         :name (n / name
+                                                  :op1 "MMP-2")))))
+   :mod (a / also))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To characterize the mechanism of tumor growth inhibition observed in our gefitinib-resistant NSCLC tumor models by AZD6244 and BEZ235, lung tumor tissues were assessed by evaluating Ki-67 expression using immunohistochemical analyses.
+# ::file pmid_2493_9055_124.txt
+# ::date 2015-08-30T06:47:18
+# ::id pmid_2493_9055.124
+(a / assess-01
+   :ARG1 (t / tissue
+            :source (t2 / tumor
+                        :part-of (l / lung)))
+   :manner (e / evaluate-01
+              :ARG1 (e2 / express-03
+                        :ARG2 (p / protein
+                                 :name (n / name
+                                          :op1 "Ki-67"))))
+   :manner (u / use-01
+              :ARG1 (a2 / analyze-01
+                        :mod (i / immunohistochemical)))
+   :purpose (c / characterize-01
+               :ARG1 (m / mechanism
+                        :ARG1-of (o / observe-01
+                                    :ARG0 (a3 / and
+                                              :op1 (s / small-molecule
+                                                      :name (n3 / name
+                                                                :op1 "AZD6244"))
+                                              :op2 (s2 / small-molecule
+                                                       :name (n4 / name
+                                                                 :op1 "BEZ235")))
+                                    :location (m2 / model
+                                                  :ARG0-of (r / resist-01
+                                                              :ARG1 (s3 / small-molecule
+                                                                        :name (n2 / name
+                                                                                  :op1 "gefitinib")))
+                                                  :mod (t4 / tumor
+                                                           :mod (d / disease
+                                                                   :name (n5 / name
+                                                                             :op1 "NSCLC")))
+                                                  :poss (w / we)))
+                        :instrument-of (i2 / inhibit-01
+                                           :ARG1 (g / grow-01
+                                                    :ARG1 (t3 / tumor))))))
+
+
+# ::save-date Sun Aug 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We observed active cell proliferation in NCI-H1993 tumor model, with a 56% proliferation index (Figure <xref ref-type="fig" rid="F6">6</xref>A).
+# ::file pmid_2493_9055_125.txt
+# ::date 2015-08-30T06:54:17
+# ::id pmid_2493_9055.125
+(o / observe-01
+      :ARG0 (w / we)
+      :ARG1 (p2 / proliferate-01
+            :ARG0 (c / cell)
+            :ARG0-of (a / activity-06)
+            :location (m / model
+                  :mod (t / tumor)
+                  :mod (c2 / cell-line
+                        :name (n / name :op1 "NCI-H199")))
+            :ARG1-of (i / index-01
+                  :ARG2 (p / percentage-entity :value "56")))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "6A")))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Monotherapy with AZD6244 or BEZ235 slightly decreased the percentage of Ki-67-positive proliferating tumor tissues, with proliferation indices of 42% and 39%, respectively (Figure <xref ref-type="fig" rid="F6">6</xref>A).
+# ::file pmid_2493_9055_126.txt
+# ::date 2015-08-30T06:17:34
+# ::id pmid_2493_9055.126
+(d / decrease-01
+   :ARG0 (m / monotherapy
+            :instrument (a / and
+                           :op1 (s / small-molecule
+                                   :name (n / name
+                                            :op1 "AZD6244"))
+                           :op2 (s3 / small-molecule
+                                    :name (n2 / name
+                                              :op1 "BEZ235"))))
+   :ARG1 (p3 / percentage
+             :quant-of (t / tissue
+                          :source (t2 / tumor)
+                          :ARG0-of (p5 / proliferate-01)
+                          :mod (p4 / protein
+                                   :name (n3 / name
+                                             :op1 "Ki-67")
+                                   :mod (p6 / positive))
+                          :ARG0-of (h / have-03
+                                      :ARG1 (a2 / and
+                                                :op1 (i / index
+                                                        :mod p5
+                                                        :mod (p / percentage-entity
+                                                                :value "42"))
+                                                :op2 (i2 / index
+                                                         :mod p5
+                                                         :mod (p2 / percentage-entity
+                                                                  :value "39"))))))
+   :degree (s2 / slight)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "6A")))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Combined treatment with AZD6244 and BEZ235 markedly decreased the percentage of Ki-67-positive proliferating tumor tissues to 10%, consistent with the marked inhibition of ERK1/2 and AKT phosphorylation.
+# ::file pmid_2493_9055_127.txt
+# ::date 2015-08-30T06:22:05
+# ::id pmid_2493_9055.127
+(d / decrease-01
+   :ARG0 (t / treat-04
+            :ARG1-of (c2 / combine-01
+                         :ARG2 (a2 / and
+                                   :op1 (s / small-molecule
+                                           :name (n3 / name
+                                                     :op1 "AZD6244"))
+                                   :op2 (s2 / small-molecule
+                                            :name (n4 / name
+                                                      :op1 "BEZ235")))))
+   :ARG1 (p3 / percentage
+             :quant-of (t2 / tissue
+                           :source (t3 / tumor)
+                           :ARG0-of (p4 / proliferate-01)
+                           :mod (p5 / protein
+                                    :name (n5 / name
+                                              :op1 "Ki-67")
+                                    :mod (p7 / positive))))
+   :ARG2 (m / marked)
+   :ARG4 (p6 / percentage-entity
+             :value "10")
+   :ARG1-of (c / consistent-01
+               :ARG2 (i / inhibit-01
+                        :ARG1 (a / and
+                                 :op1 (p / phosphorylate-01
+                                         :ARG1 (e / enzyme
+                                                  :name (n / name
+                                                           :op1 "ERK1/2")))
+                                 :op2 (p2 / phosphorylate-01
+                                          :ARG1 (e2 / enzyme
+                                                    :name (n2 / name
+                                                              :op1 "AKT"))))
+                        :degree m)))
+
+# ::save-date Tue Jan 19, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We also found the similar results in NCI-H1975 and NCI-H460 tumor models (Figure <xref ref-type="fig" rid="F6">6</xref>A).To evaluate the potential antiangiogenic mechanism of AZD6244 and BEZ235, gefitinib-resistant NSCLC tumor tissues were analyzed by immunostaining for CD31 (platelet endothelial cell adhesion molecule 1).
+# ::file pmid_2493_9055_128.txt
+# ::date 2015-08-30T07:14:35
+# ::id pmid_2493_9055.128
+(m / multi-sentence
+   :snt1 (f / find-01
+            :ARG0 (w / we)
+            :ARG1 (t / thing
+                     :ARG2-of (r / result-01)
+                     :ARG1-of (r2 / resemble-01))
+            :ARG1-of (d / describe-01
+                        :ARG0 (f2 / figure
+                                  :mod "6A"))
+            :mod (a / also)
+            :location (a2 / and
+                          :op1 (m2 / model
+                                   :mod (t2 / tumor)
+                                   :mod (c / cell-line
+                                           :name (n2 / name
+                                                     :op1 "NCI-H1975")))
+                          :op2 (m3 / model
+                                   :mod t2
+                                   :mod (c2 / cell-line
+                                            :name (n / name
+                                                     :op1 "NCI-H460")))))
+   :snt2 (a3 / analyze-01
+             :ARG0 (i / immunostain-01
+                      :ARG3 (p / protein
+                               :name (n3 / name
+                                         :op1 "CD31")))
+             :ARG1 (t3 / tissue
+                       :source (t4 / tumor)
+                       :mod (d2 / disease
+                                :name (n4 / name
+                                          :op1 "NSCLC"))
+                       :ARG0-of (r3 / resist-01
+                                    :ARG1 (s3 / small-molecule
+                                              :name (n7 / name
+                                                        :op1 "gefitinib"))))
+             :purpose (e / evaluate-01
+                         :ARG1 (m4 / mechanism
+                                   :poss (a4 / and
+                                             :op1 (s / small-molecule
+                                                     :name (n5 / name
+                                                               :op1 "AZD6244"))
+                                             :op2 (s2 / small-molecule
+                                                      :name (n6 / name
+                                                                :op1 "BEZ235")))
+                                   :ARG0-of (c3 / counter-01
+                                                :ARG1 (a5 / angiogenesis
+                                                          :mod (p2 / potential)))))))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The results showed BEZ235 significantly decreased the vascular density of all three gefitinib-resistant NSCLC tumors, whereas AZD6244 monotherapy had only a mildly effect upon lung tumor angiogenesis.
+# ::file pmid_2493_9055_129.txt
+# ::date 2015-08-29T04:34:16
+# ::id pmid_2493_9055.129
+(c / contrast-01
+   :ARG1 (s2 / show-01
+             :ARG0 (t2 / thing
+                       :ARG2-of (r / result-01))
+             :ARG1 (d / decrease-01
+                      :ARG0 (s5 / small-molecule
+                                :name (n3 / name
+                                          :op1 "BEZ235"))
+                      :ARG1 (d2 / density)
+                      :mod (v / vessel)
+                      :location (t3 / tumor
+                                    :quant "3"
+                                    :mod (d3 / disease
+                                             :name (n / name
+                                                      :op1 "NSCLC"))
+                                    :ARG0-of (r2 / resist-01
+                                                 :ARG1 (s / small-molecule
+                                                          :name (n4 / name
+                                                                    :op1 "gefitinib"))))
+                      :ARG1-of (s4 / significant-02)))
+   :ARG2 (a / affect-01
+            :ARG0 (m2 / monotherapy
+                      :mod (s3 / small-molecule
+                               :name (n2 / name
+                                         :op1 "AZD6244")))
+            :ARG1 (a2 / angiogenesis
+                      :mod (t / tumor
+                              :source (l / lung)))
+            :manner (m / mild)
+            :mod (o / only)))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The antiangiogenic effects AZD6244 and BEZ235 were markedly increased when they were combined (Figure <xref ref-type="fig" rid="F6">6</xref>B).
+# ::file pmid_2493_9055_130.txt
+# ::date 2015-08-28T09:38:25
+# ::id pmid_2493_9055.130
+(i / increase-01
+   :ARG1 (a / affect-01
+            :ARG0 (a2 / and
+                      :op1 (s / small-molecule
+                              :name (n / name
+                                       :op1 "AZD6244"))
+                      :op2 (s2 / small-molecule
+                               :name (n2 / name
+                                         :op1 "BEZ235")))
+            :ARG0-of (c4 / counter-01
+                         :ARG1 (a3 / angiogenesis)))
+   :ARG2 (m / marked)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6B"))
+   :condition (c2 / combine-01
+                  :ARG1 a2))
+
+# ::save-date Wed Sep 16, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In order to investigate whether AZD6244 and/or BEZ235 would induce apoptosis in gefitinib-resistant NSCLC tumor models, activity of caspase-3, 8 and 9 were measured by the colorimetric assay.
+# ::file pmid_2493_9055_132.txt
+# ::date 2015-08-29T01:44:31
+# ::id pmid_2493_9055.132
+(m / measure-01
+   :ARG0 (a / assay-01
+            :mod (c / colorimetric))
+   :ARG1 (a2 / and
+             :op1 (p / protein
+                     :name (n2 / name
+                               :op1 "Caspase"
+                               :op2 "3"))
+             :op2 (p2 / protein
+                      :name (n3 / name
+                                :op1 "Caspase"
+                                :op2 "8"))
+             :op3 (p3 / protein
+                      :name (n4 / name
+                                :op1 "Caspase"
+                                :op2 "9")))
+   :purpose (i / investigate-01
+               :ARG1 (i2 / induce-01
+                         :mode "interrogative"
+                         :ARG0 (a3 / and-or
+                                   :op1 (s / small-molecule
+                                           :name (n / name
+                                                    :op1 "AZD6244"))
+                                   :op2 (s2 / small-molecule
+                                            :name (n5 / name
+                                                      :op1 "BEZ235")))
+                         :ARG2 (a4 / apoptosis)
+                         :location (m5 / model
+                                       :mod (t / tumor
+                                               :mod (d / disease
+                                                       :name (n6 / name
+                                                                 :op1 "NSCLC")))
+                                       :ARG0-of (r / resist-01
+                                                   :ARG1 (s3 / small-molecule
+                                                             :name (n7 / name
+                                                                       :op1 "gefitinib")))))))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The results showed that AZD6244 and/or BEZ235 had no effect on caspase-3, 8 and 9 activities in all three gefitinib-resistant NSCLC tumor models (Figure <xref ref-type="fig" rid="F7">7</xref>).
+# ::file pmid_2493_9055_133.txt
+# ::date 2015-08-29T03:15:43
+# ::id pmid_2493_9055.133
+(s2 / show-01
+    :ARG0 (t / thing
+             :ARG2-of (r / result-01))
+    :ARG1 (a / affect-01
+             :polarity "-"
+             :ARG0 (a2 / and-or
+                       :op1 (s / small-molecule
+                               :name (n / name
+                                        :op1 "AZD6244"))
+                       :op2 (s3 / small-molecule
+                                :name (n3 / name
+                                          :op1 "BEZ235")))
+             :ARG1 (a3 / and
+                       :op1 (a4 / activity-06
+                                :ARG0 (p / protein
+                                         :name (n5 / name
+                                                   :op1 "Caspase"
+                                                   :op2 "3")))
+                       :op2 (a5 / activity-06
+                                :ARG0 (p3 / protein
+                                          :name (n4 / name
+                                                    :op1 "Caspase"
+                                                    :op2 "8")))
+                       :op3 (a6 / activity-06
+                                :ARG0 (p2 / protein
+                                          :name (n6 / name
+                                                    :op1 "Caspase"
+                                                    :op2 "9")))
+                       :location (m / model
+                                    :quant "3"
+                                    :mod (t2 / tumor
+                                             :mod (d2 / disease
+                                                      :name (n2 / name
+                                                                :op1 "NSCLC")))
+                                    :ARG0-of (r2 / resist-01
+                                                 :ARG1 (s4 / small-molecule
+                                                           :name (n7 / name
+                                                                     :op1 "gefitinib")))
+                                    :mod (a7 / all))))
+    :ARG1-of (d / describe-01
+                :ARG0 (f / figure
+                         :mod "7")))

@@ -1,0 +1,2431 @@
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The level of PHB expression was crucial for maintenance of oncogenic ERK-driven pancreatic tumorigenesis.
+# ::file pmid_2456_8222_10.txt
+# ::date 2015-08-25T11:28:27
+# ::id pmid_2456_8222.10
+(c / crucial
+   :domain (l / level
+              :mod (e / express-03
+                      :ARG2 (p2 / protein
+                                :name (n / name
+                                         :op1 "PHB"))))
+   :purpose (m / maintain-01
+               :ARG1 (c4 / create-01
+                         :ARG1 (t / tumor
+                                  :mod (p / pancreas))
+                         :ARG1-of (d / drive-02
+                                     :ARG0 (e2 / enzyme
+                                               :name (n2 / name
+                                                         :op1 "ERK")
+                                               :ARG0-of (c2 / cause-01
+                                                            :ARG1 (c3 / cancer)))))))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Additionally, rocaglamide (RocA), a small molecular inhibitor, selectively bound to PHB with nanomolar affinity to disrupt the PHB-CRAF interaction by altering its localization to the plasma membrane.
+# ::file pmid_2456_8222_11.txt
+# ::date 2015-08-25T11:40:48
+# ::id pmid_2456_8222.11
+(a / and
+   :op2 (b / bind-01
+           :ARG1 (s3 / small-molecule
+                     :name (n2 / name
+                               :op1 "rocaglamide")
+                     :ARG1-of (m2 / mean-01
+                                  :ARG2 (s4 / small-molecule
+                                            :ARG0-of (i / inhibit-01))))
+           :ARG2 (p2 / protein
+                     :name (n / name
+                              :op1 "PHB"))
+           :mod (s / selective)
+           :manner (a2 / affinity
+                       :prep-to (d / disrupt-01
+                                   :ARG0 (r / rocaglamide)
+                                   :ARG1 (i2 / interact-01
+                                             :ARG0 p2
+                                             :ARG1 (e / enzyme
+                                                      :name (n4 / name
+                                                                :op1 "CRAF")))
+                                   :manner (a3 / alter-01
+                                               :ARG0 s3
+                                               :ARG1 (b2 / be-located-at-91
+                                                         :ARG1 i2
+                                                         :ARG2 (m3 / membrane
+                                                                   :mod (p / plasma)))))
+                       :mod (n3 / nanomolar))))
+
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Consequently, there was an impairment of oncogenic RAS-ERK signaling, thereby blocking <i>in vitro</i> and <i>in vivo</i> growth and metastasis of pancreatic cancer cells that were addicted to RAS-ERK signaling.
+# ::file pmid_2456_8222_12.txt
+# ::date 2015-08-25T12:07:46
+# ::id pmid_2456_8222.12
+(c / cause-01
+      :ARG1 (i / impair-01
+            :ARG1 (s / signal-07
+                  :ARG0 (p2 / pathway
+                        :name (n / name :op1 "RAS-ERK")
+                        :ARG0-of (c2 / cause-01
+                              :ARG1 (c3 / cancer)))
+                  :ARG0-of (c4 / cause-01
+                        :ARG1 (b / block-01
+                              :ARG1 (a / and
+                                    :op1 (g / grow-01
+                                          :ARG1 (c5 / cell
+                                                :mod (c6 / cancer)
+                                                :mod (p / pancreas)
+                                                :ARG1-of (a3 / addict-01
+                                                      :ARG2 s))
+                                          :manner (a2 / and
+                                                :op1 (i2 / in-vitro)
+                                                :op2 (i3 / in-vivo)))
+                                    :op2 (m / metastasize-101
+                                          :ARG1 c5)))))))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt More importantly, RocA treatment resulted in a significant increase of the lifespan of tumor-bearing mice without any detectable toxicity.
+# ::file pmid_2456_8222_13.txt
+# ::date 2015-08-25T12:31:03
+# ::id pmid_2456_8222.13
+(r / result-01
+   :ARG1 (t / treat-04
+            :ARG2 (s2 / small-molecule
+                      :name (n / name
+                               :op1 "rocaglamide")))
+   :ARG2 (i / increase-01
+            :ARG1 (l / lifespan
+                     :duration-of (l3 / live-01
+                                      :ARG0 (m / mouse
+                                               :ARG0-of (b / bear-01
+                                                           :ARG1 (t3 / tumor)))))
+            :ARG1-of (s / significant-02))
+   :mod (i2 / important
+            :degree (m2 / more))
+   :manner (t2 / toxicity
+               :polarity "-"
+               :ARG1-of (d3 / detect-01
+                            :ARG1-of (p / possible-01))))
+
+# ::save-date Mon Aug 31, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To investigate the role of PHB in pancreatic cancer cells, we first chose two human pancreatic cancer cell lines, AsPC-1 (high malignancy) and Capan-2 (low malignancy).
+# ::file pmid_2456_8222_41.txt
+# ::date 2015-08-25T13:04:03
+# ::id pmid_2456_8222.41
+(c / choose-01
+   :ARG0 (w / we)
+   :ARG1 (c2 / cell-line
+             :quant "2"
+             :mod (c3 / cancer)
+             :mod (p / pancreas)
+             :ARG1-of (m / mean-01
+                         :ARG2 (a / and
+                                  :op1 (c4 / cell-line
+                                           :name (n / name
+                                                    :op1 "AsPC-1")
+                                           :ARG0-of (h3 / have-03
+                                                        :ARG1 (m2 / malignancy
+                                                                  :ARG1-of (h2 / high-02))))
+                                  :op1 (c5 / cell-line
+                                           :name (n2 / name
+                                                     :op1 "Capan-2")
+                                           :ARG0-of (h4 / have-03
+                                                        :ARG1 (m3 / malignancy
+                                                                  :ARG1-of (l / low-04))))))
+             :part-of (h / human))
+   :purpose (i / investigate-01
+               :ARG0 w
+               :ARG1 (r / role
+                        :poss (p2 / protein
+                                  :name (n3 / name
+                                            :op1 "PHB"))
+                        :location (c6 / cell
+                                      :mod (p3 / pancreas)
+                                      :mod (c7 / cancer))))
+   :ord (o2 / ordinal-entity
+            :value "1"))
+
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, AsPC-1 cells grew as single cells (Figure <xref ref-type="fig" rid="F1">1</xref>A, left), whereas Capan-2 cells exhibited tiny islands of densely packed cells (Figure <xref ref-type="fig" rid="F1">1</xref>A, right).
+# ::file pmid_2456_8222_42.txt
+# ::date 2015-08-25T20:29:15
+# ::id pmid_2456_8222.42
+(c / contrast-01
+      :ARG1 (g / grow-01
+            :ARG1 (c2 / cell-line
+                  :name (n / name :op1 "AsPC-1"))
+            :ARG4 (c3 / cell
+                  :ARG1-of (s / single-02))
+            :ARG1-of (d / describe-01
+                  :ARG0 (f / figure
+                        :mod "1A"
+                        :ARG1-of (l / left-20))))
+      :ARG2 (e / exhibit-01
+            :ARG0 (c4 / cell-line
+                  :name (n2 / name :op1 "Capan-2"))
+            :ARG1 (i / island
+                  :mod (t / tiny)
+                  :consist-of (c6 / cell
+                        :ARG2-of (p / pack-01
+                              :manner (d2 / dense))))
+            :ARG1-of (d3 / describe-01
+                  :ARG0 (f2 / figure
+                        :mod "1A"
+                        :ARG1-of (r / right-04))))
+      :ARG2-of (i2 / interest-01))
+
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Additionally, AsPC-1 cells exhibited much higher growth and migration capacities than those of Capan-2 cells (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S1A,B).
+# ::file pmid_2456_8222_43.txt
+# ::date 2015-08-25T20:37:43
+# ::id pmid_2456_8222.43
+(a / and
+      :op2 (e / exhibit-01
+            :ARG0 (c / cell-line
+                  :name (n / name :op1 "AsPC-1"))
+            :ARG1 (a2 / and
+                  :op1 (g / grow-01
+                        :ARG1-of (h / high-02
+                              :degree (m / more
+                                    :quant (m2 / much))))
+                  :op2 (c2 / capable-01
+                        :ARG2 (m3 / migrate-01)
+                        :ARG1-of (h2 / high-02)))
+            :compared-to (c3 / cell-line
+                  :name (n2 / name :op1 "Capan-2")))
+      :ARG1-of (d / describe-01
+            :ARG0 (f / file
+                  :mod "1"
+                  :mod (a3 / additional)
+                  :part (a4 / and
+                        :op1 (f2 / figure :mod "S1A")
+                        :op2 (f3 / figure :mod "S1B")))))
+
+# ::save-date Sun Jan 3, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RT-PCR showed a difference in PHB mRNA expression levels, revealing higher expression in AsPC-1 cells than that in Capan-2 cells (Figure <xref ref-type="fig" rid="F1">1</xref>B and Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S2A).
+# ::file pmid_2456_8222_44.txt
+# ::date 2015-08-25T20:49:06
+# ::id pmid_2456_8222.44
+(s / show-01
+   :ARG0 (t / thing
+            :name (n / name
+                     :op1 "RT-PCR"))
+   :ARG1 (d / differ-02
+            :ARG1 (l / level
+                     :degree-of (e / express-03
+                                   :ARG2 (n4 / nucleic-acid
+                                             :name (n6 / name
+                                                       :op1 "RNA")
+                                             :ARG0-of (e4 / encode-01
+                                                          :ARG1 (p / protein
+                                                                   :name (n2 / name
+                                                                             :op1 "PHB")))))))
+   :ARG0-of (r2 / reveal-01
+                :ARG1 (e2 / express-03
+                          :ARG3 (c / cell-line
+                                   :name (n3 / name
+                                             :op1 "AsPC-1"))
+                          :ARG1-of (h / high-02
+                                      :degree (m2 / more)
+                                      :compared-to (e3 / express-03
+                                                       :ARG3 (c2 / cell-line
+                                                                 :name (n5 / name
+                                                                           :op1 "Capan-2"))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a / and
+                         :op1 (f / figure
+                                 :mod "1B")
+                         :op2 (f2 / file
+                                  :mod (a2 / additional)
+                                  :part (f3 / figure
+                                            :mod "S2A")))))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In agreement with RT-PCR data, immunoblot analysis also demonstrated high expression of PHB protein in AsPC-1 cells, but little expression in Capan-2 cells (Figure <xref ref-type="fig" rid="F1">1</xref>C and Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S2B).
+# ::file pmid_2456_8222_45.txt
+# ::date 2015-08-25T21:03:16
+# ::id pmid_2456_8222.45
+(d / demonstrate-01
+   :ARG0 (a / analyze-01
+            :mod (i / immunoblot-01))
+   :ARG1 (c2 / contrast-01
+             :ARG1 (e / express-03
+                      :ARG2 (p / protein
+                               :name (n / name
+                                        :op1 "PHB"))
+                      :ARG3 (c / cell-line
+                               :name (n2 / name
+                                         :op1 "AsPC-1"))
+                      :ARG1-of (h / high-02))
+             :ARG2 (e2 / express-03
+                       :ARG3 (c3 / cell-line
+                                 :name (n3 / name
+                                           :op1 "Capan-2"))
+                       :mod (l / little)))
+   :mod (a2 / also)
+   :ARG1-of (a3 / agree-01
+                :ARG2 (d2 / data
+                          :mod (t / thing
+                                  :name (n4 / name
+                                            :op1 "RT-PCR"))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (a4 / and
+                          :op1 (f / figure
+                                  :mod "1C")
+                          :op2 (f2 / file
+                                   :mod (a5 / additional)
+                                   :part (f3 / figure
+                                             :mod "S2B")))))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Intriguingly, localization of PHB in AsPC-1 cells was mainly in the plasma membrane and cytosol, whereas its localization was in Capan-2 cells (Figure <xref ref-type="fig" rid="F1">1</xref>D,E).
+# ::file pmid_2456_8222_46.txt
+# ::date 2015-08-25T21:13:36
+# ::id pmid_2456_8222.46
+(c2 / contrast-01
+    :ARG1 (b / be-located-at-91
+             :ARG1 "p2"
+             :ARG2 (a / and
+                      :op1 (m / membrane
+                              :mod (p / plasma))
+                      :op2 (c / cytosol)
+                      :part-of (c3 / cell-line
+                                   :name (n2 / name
+                                             :op1 "AsPC-1")))
+             :mod (m2 / main)
+             :ARG0-of (i / intrigue-01)
+             :ARG1-of (d / describe-01
+                         :ARG0 (a2 / and
+                                   :op1 (f / figure
+                                           :mod "1D")
+                                   :op2 (f2 / figure
+                                            :mod "1E"))))
+    :ARG2 (b3 / be-located-at-91
+              :ARG1 (p2 / protein
+                        :name (n / name
+                                 :op1 "PHB"))
+              :ARG2 (c4 / cell-line
+                        :name (n3 / name
+                                  :op1 "Capan-2"))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This result indicated that the observed phenotypes may correlate with the expression and localization of PHB protein.
+# ::file pmid_2456_8222_47.txt
+# ::date 2015-08-25T21:23:22
+# ::id pmid_2456_8222.47
+(i / indicate-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :mod (t2 / this))
+   :ARG1 (p / possible-01
+            :ARG1 (c / correlate-01
+                     :ARG1 (p2 / phenotype
+                               :ARG1-of (o / observe-01))
+                     :ARG2 (a / and
+                              :op1 (e / express-03
+                                      :ARG2 (p3 / protein
+                                                :name (n / name
+                                                         :op1 "PHB")))
+                              :op2 (b / be-located-at-91
+                                      :ARG1 p3)))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, AsPC-1 cells were chosen to investigate the biological properties of PHB in pancreatic cancer both <i>in vitro</i> and <i>in vivo</i>.
+# ::file pmid_2456_8222_48.txt
+# ::date 2015-08-25T21:27:03
+# ::id pmid_2456_8222.48
+(c / cause-01
+   :ARG1 (c2 / choose-01
+             :ARG1 (c3 / cell-line
+                       :name (n / name
+                                :op1 "AsPC-1"))
+             :purpose (i / investigate-01
+                         :ARG1 (p / property
+                                  :mod (b / biological)
+                                  :poss (p2 / protein
+                                            :name (n2 / name
+                                                      :op1 "PHB")
+                                            :topic (c4 / cancer
+                                                       :mod (p3 / pancreas))))
+                         :manner (a / and
+                                    :op1 (i2 / in-vitro)
+                                    :op2 (i3 / in-vivo)
+                                    :mod (b2 / both)))))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We next assessed PHB expression in pancreatic tissue.
+# ::file pmid_2456_8222_49.txt
+# ::date 2015-08-25T21:41:35
+# ::id pmid_2456_8222.49
+(a / assess-01
+   :ARG0 (w / we)
+   :ARG1 (e / express-03
+            :ARG2 (p / protein
+                     :name (n2 / name
+                               :op1 "PHB"))
+            :ARG3 (t / tissue
+                     :mod (p2 / pancreas)))
+   :time (n / next))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PHB protein was weakly expressed in 63.6% of normal pancreas samples (n = 11) (Figure <xref ref-type="fig" rid="F1">1</xref>F,G).
+# ::file pmid_2456_8222_50.txt
+# ::date 2015-08-26T09:48:50
+# ::id pmid_2456_8222.50
+(e / express-03
+   :ARG2 (p2 / protein
+             :name (n / name
+                      :op1 "PHB"))
+   :ARG3 (s / sample
+            :ARG1-of (i / include-91
+                        :ARG2 (s2 / sample
+                                  :quant "11"
+                                  :mod (p3 / pancreas)
+                                  :ARG1-of (n2 / normal-02))
+                        :ARG3 (p / percentage-entity
+                                 :value "63.6")))
+   :degree (w / weak-02)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "1F"
+                        :mod "1G")))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, PHB protein was strongly expressed in 58.7% of PDAC samples (n = 46) (Figure <xref ref-type="fig" rid="F1">1</xref>F,G and Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S3).
+# ::file pmid_2456_8222_51.txt
+# ::date 2015-08-26T09:58:17
+# ::id pmid_2456_8222.51
+(c / contrast-01
+   :ARG2 (e / express-03
+            :ARG2 (p2 / protein
+                      :name (n / name
+                               :op1 "PHB"))
+            :ARG3 (s2 / sample
+                      :ARG1-of (i / include-91
+                                  :ARG2 (s3 / sample
+                                            :quant "46"
+                                            :mod (a / adenocarcinoma
+                                                    :mod (d3 / duct
+                                                             :part-of (p3 / pancreas))))
+                                  :ARG3 (p / percentage-entity
+                                           :value "58.7")))
+            :ARG1-of (s / strong-02))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f / figure
+                                  :mod "1F"
+                                  :mod "1G")
+                          :op2 (f2 / file
+                                   :mod "1"
+                                   :mod (a3 / additional)
+                                   :part (f3 / figure
+                                             :mod "S3")))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Taken together, these results show that PHB, which becomes more pronounced with pancreatic cancer malignancy, may serve as a therapeutic target in pancreatic cancer.
+# ::file pmid_2456_8222_52.txt
+# ::date 2015-08-26T10:06:49
+# ::id pmid_2456_8222.52
+(s / show-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01)
+            :ARG1-of (t2 / take-04
+                         :mod (t3 / together))
+            :mod (t6 / this))
+   :ARG1 (p / possible-01
+            :ARG1 (s2 / serve-01
+                      :ARG0 (p2 / protein
+                                :name (n2 / name
+                                          :op1 "PHB")
+                                :ARG1-of (b / become-01
+                                            :ARG2 (p4 / pronounced-02
+                                                      :degree (m2 / more)
+                                                      :condition (m3 / malignant-02
+                                                                     :ARG1 (p5 / pancreas)
+                                                                     :ARG2 (c2 / cancer)))))
+                      :ARG2 (t4 / target-01
+                                :ARG1 p2
+                                :mod (t5 / therapy)
+                                :condition (c / cancer
+                                              :mod (p3 / pancreas))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The duration of ERK activity is a crucial factor in diverse biological processes that determine cell fate decisions [<xref ref-type="bibr" rid="B18">18</xref>].
+# ::file pmid_2456_8222_54.txt
+# ::date 2015-08-26T10:25:01
+# ::id pmid_2456_8222.54
+(f / factor
+   :mod (c / crucial)
+   :domain (d / duration
+              :duration-of (a / activity-06
+                              :ARG0 (e / enzyme
+                                       :name (n / name
+                                                :op1 "ERK"))))
+   :topic (p2 / process-01
+              :mod (b / biological)
+              :mod (d2 / diverse)
+              :ARG0-of (d3 / determine-01
+                           :ARG1 (d4 / decide-01
+                                     :ARG1 (f2 / fate-01
+                                               :ARG1 (c2 / cell)))))
+   :ARG1-of (d5 / describe-01
+                :ARG0 (p3 / publication
+                          :ARG1-of (c3 / cite-01
+                                       :ARG2 "18"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt ERK is phosphorylated and activated by MEK in response to growth factor stimulation, and then activated ERK phosphorylates and activates nuclear targets to up-regulate immediate-early genes [<xref ref-type="bibr" rid="B19">19</xref>].
+# ::file pmid_2456_8222_55.txt
+# ::date 2015-08-26T10:33:57
+# ::id pmid_2456_8222.55
+(a6 / and
+    :op1 (a / and
+            :op1 (p3 / phosphorylate-01
+                     :ARG1 (e3 / enzyme
+                               :name (n / name
+                                        :op1 "ERK"))
+                     :ARG2 (e / enzyme
+                              :name (n4 / name
+                                        :op1 "MEK")))
+            :op2 (a2 / activate-01
+                     :ARG0 e
+                     :ARG1 e3)
+            :ARG2-of (r / respond-01
+                        :ARG1 (s / stimulate-01
+                                 :ARG0 (p / protein
+                                          :name (n5 / name
+                                                    :op1 "growth-factor")))))
+    :op2 (a4 / and
+             :op1 (p2 / phosphorylate-01
+                      :ARG1 (m / molecular-physical-entity
+                               :ARG1-of (t / target-01)
+                               :mod (n3 / nucleus))
+                      :ARG2 (e4 / enzyme
+                                :name (n2 / name
+                                          :op1 "ERK")
+                                :ARG1-of (a3 / activate-01)))
+             :op2 (a5 / activate-01
+                      :ARG0 e4
+                      :ARG1 m)
+             :purpose (u2 / upregulate-01
+                          :ARG1 (g2 / gene
+                                    :mod (e2 / early
+                                             :mod (i / immediate)))
+                          :ARG2 e4)
+             :time (t2 / then))
+    :ARG1-of (d / describe-01
+                :ARG0 (p5 / publication
+                          :ARG1-of (c / cite-01
+                                      :ARG2 "19"))))
+
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, we determined the expression levels of p-ERK1/2 in AsPC-1 and Capan-2 cells.
+# ::file pmid_2456_8222_56.txt
+# ::date 2015-08-26T11:10:16
+# ::id pmid_2456_8222.56
+(c / cause-01
+      :ARG1 (d / determine-01
+            :ARG0 (w / we)
+            :ARG1 (l / level
+                  :degree-of (e / express-03
+                        :ARG2 (e2 / enzyme
+                              :name (n4 / name :op1 "ERK1/2")
+                              :ARG3-of (p2 / phosphorylate-01))
+                        :ARG3 (a / and
+                              :op1 (c2 / cell-line
+                                    :name (n2 / name :op1 "AsPC-1"))
+                              :op2 (c3 / cell-line
+                                    :name (n3 / name :op1 "Capan-2")))))))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Intriguingly, the phosphorylation status of ERK2 was much higher than that of ERK1 in AsPC-1 cells, and this phenomenon was completely converse in Capan-2 cells (Figure <xref ref-type="fig" rid="F2">2</xref>A).
+# ::file pmid_2456_8222_57.txt
+# ::date 2015-08-26T11:19:44
+# ::id pmid_2456_8222.57
+(a / and
+   :op1 (h / high-02
+           :ARG1 (s / status
+                    :mod (p / phosphorylate-01
+                            :ARG1 (e / enzyme
+                                     :name (n5 / name
+                                               :op1 "ERK2"))))
+           :degree (m / more
+                      :quant (m2 / much))
+           :compared-to (s2 / status
+                            :location (c / cell-line
+                                         :name (n3 / name
+                                                   :op1 "AsPC-1"))
+                            :mod (p2 / phosphorylate-01
+                                     :ARG1 (e2 / enzyme
+                                               :name (n / name
+                                                        :op1 "ERK1")))))
+   :op2 (c5 / converse
+            :domain (p3 / phenomenon
+                        :mod (t / this))
+            :ARG1-of (c3 / complete-02)
+            :location (c4 / cell-line
+                          :name (n4 / name
+                                    :op1 "Capan-2")))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "2A"))
+   :ARG0-of (i / intrigue-01))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This observation suggests distinct roles of ERK1 and ERK2 in the regulation of cell behavior in AsPC-1 and Capan-2 cells.
+# ::file pmid_2456_8222_58.txt
+# ::date 2015-08-26T11:30:03
+# ::id pmid_2456_8222.58
+(s / suggest-01
+   :ARG0 (o / observe-01
+            :mod (t / this))
+   :ARG1 (r / roles
+            :mod (d / distinct)
+            :topic (r2 / regulate-01
+                       :ARG1 (b / behave-01
+                                :ARG0 (c / cell)
+                                :location (a2 / and
+                                              :op1 (c2 / cell-line
+                                                       :name (n3 / name
+                                                                 :op1 "AsPC-1"))
+                                              :op2 (c3 / cell-line
+                                                       :name (n4 / name
+                                                                 :op1 "Capan-2")))))
+            :poss (a / and
+                     :op1 (e / enzyme
+                             :name (n / name
+                                      :op1 "ERK1"))
+                     :op2 (e2 / enzyme
+                              :name (n2 / name
+                                        :op1 "ERK2")))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To test whether PHB is required for the ERK pathway, we validated a siRNA against PHB (siPHB) in AsPC-1 and Panc-1 cells by quantitative real-time PCR.
+# ::file pmid_2456_8222_59.txt
+# ::date 2015-08-26T11:35:06
+# ::id pmid_2456_8222.59
+(v / validate-01
+   :ARG0 (w / we)
+   :ARG1 (n3 / nucleic-acid
+             :name (n2 / name
+                       :op1 "siRNA")
+             :ARG0-of (o / oppose-01
+                         :ARG1 "p"))
+   :location (a / and
+                :op1 (c / cell-line
+                        :name (n4 / name
+                                  :op1 "AsPC-1"))
+                :op2 (c2 / cell-line
+                         :name (n5 / name
+                                   :op1 "Panc-1")))
+   :manner (r / react-01
+              :ARG0 (p2 / polymerase)
+              :mod (q / quantitative)
+              :mod (r2 / real-time)
+              :ARG1-of (c3 / chain-01))
+   :purpose (t2 / test-01
+                :ARG0 w
+                :ARG1 (r3 / require-01
+                          :mode "interrogative"
+                          :ARG0 (p3 / pathway
+                                    :name (n7 / name
+                                              :op1 "ERK"))
+                          :ARG1 (p / protein
+                                   :name (n / name
+                                            :op1 "PHB")))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The results showed that siPHB reduced the PHB mRNA level by about 80% compared with that using control siRNA (siCon) (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S4A,B).
+# ::file pmid_2456_8222_60.txt
+# ::date 2015-08-26T12:32:44
+# ::id pmid_2456_8222.60
+(s / show-01
+   :ARG0 (t / thing
+            :ARG2-of (r / result-01))
+   :ARG1 (r2 / reduce-01
+             :ARG0 (n4 / nucleic-acid
+                       :name (n6 / name
+                                 :op1 "siRNA")
+                       :mod "p2")
+             :ARG1 (l / level
+                      :quant-of (n2 / nucleic-acid
+                                    :name (n5 / name
+                                              :op1 "mRNA")
+                                    :mod (p2 / protein
+                                             :name (n / name
+                                                      :op1 "PHB"))))
+             :ARG2 (a / about
+                      :quant (p / percentage-entity
+                                :value "80"
+                                :compared-to (l2 / level
+                                                 :condition (u / use-01
+                                                               :ARG1 (n7 / nucleic-acid
+                                                                         :name (n3 / name
+                                                                                   :op1 "siRNA")
+                                                                         :ARG0-of (c / control-01)))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / file
+                        :mod (a2 / additional)
+                        :part (f2 / figure
+                                  :mod "S4A"
+                                  :mod "S4B"))))
+
+# ::save-date Mon Nov 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, we checked the phosphorylation status of ERK1/2 in siPHB-transfected AsPC-1 and Panc-1 cells.
+# ::file pmid_2456_8222_61.txt
+# ::date 2015-08-26T12:42:57
+# ::id pmid_2456_8222.61
+(a2 / and
+    :op2 (c / check-01
+            :ARG0 (w / we)
+            :ARG1 (s / status
+                     :mod (p / phosphorylate-01
+                             :ARG1 (e / enzyme
+                                      :name (n / name
+                                               :op1 "ERK1/2"))
+                             :location (a / and
+                                          :op1 (c2 / cell-line
+                                                   :name (n2 / name
+                                                             :op1 "AsPC-1")
+                                                   :ARG1-of (t / transfect-01
+                                                               :ARG2 (n5 / nucleic-acid
+                                                                         :name (n6 / name
+                                                                                   :op1 "siRNA")
+                                                                         :mod (p3 / protein
+                                                                                  :name (n4 / name
+                                                                                            :op1 "PHB")))
+                                                               :ARG1 c3))
+                                          :op2 (c3 / cell-line
+                                                   :name (n3 / name
+                                                             :op1 "Panc-1")))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As expected, stimulation of AsPC-1 cells with epidermal growth factor (EGF) caused an increase of ERK1/2 phosphorylation (Figure <xref ref-type="fig" rid="F2">2</xref>B,C), whereas silencing of PHB expression strongly suppressed the EGF-induced phosphorylation of ERK (Figure <xref ref-type="fig" rid="F2">2</xref>B,C).
+# ::file pmid_2456_8222_62.txt
+# ::date 2015-08-26T12:57:26
+# ::id pmid_2456_8222.62
+(c3 / contrast-01
+    :ARG1 (c / cause-01
+             :ARG0 (s / stimulate-01
+                      :ARG1 (c2 / cell-line
+                                :name (n / name
+                                         :op1 "AsPC-1"))
+                      :ARG2 (p / protein
+                               :name (n2 / name
+                                         :op1 "epidermal"
+                                         :op2 "growth"
+                                         :op3 "factor")))
+             :ARG1 (i / increase-01
+                      :ARG1 (p2 / phosphorylate-01
+                                :ARG1 (e3 / enzyme
+                                          :name (n3 / name
+                                                    :op1 "ERK1/2"))))
+             :ARG1-of (d / describe-01
+                         :ARG0 (f / figure
+                                  :mod "2B"
+                                  :mod "2C")))
+    :ARG2 (s2 / suppress-01
+              :ARG0 (s3 / silence-01
+                        :ARG1 (e / express-03
+                                 :ARG2 (p4 / protein
+                                           :name (n4 / name
+                                                     :op1 "PHB"))))
+              :ARG1 (p5 / phosphorylate-01
+                        :ARG1 (e4 / enzyme
+                                  :name (n5 / name
+                                            :op1 "ERK"))
+                        :ARG2-of (i2 / induce-01
+                                     :ARG0 p))
+              :ARG1-of (d2 / describe-01
+                           :ARG0 (f2 / figure
+                                     :mod "2B"
+                                     :mod "2C"))
+              :ARG1-of (s4 / strong-02))
+    :ARG1-of (e2 / expect-01))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This finding suggested specific involvement of PHB in the RAS-RAF-ERK pathway.
+# ::file pmid_2456_8222_63.txt
+# ::date 2015-08-26T13:11:40
+# ::id pmid_2456_8222.63
+(s / suggest-01
+   :ARG0 (t / thing
+            :ARG1-of (f / find-01)
+            :mod (t2 / this))
+   :ARG1 (i / involve-01
+            :ARG1 (p / protein
+                     :name (n / name
+                              :op1 "PHB"))
+            :ARG2 (p2 / pathway
+                      :name (n2 / name
+                                :op1 "RAS-RAF-ERK"))
+            :ARG1-of (s2 / specific-02)))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, a similar result was obtained in Panc-1 cells (Figure <xref ref-type="fig" rid="F2">2</xref>B), indicating general inhibition of ERK activation by PHB depletion.
+# ::file pmid_2456_8222_64.txt
+# ::date 2015-08-26T08:19:14
+# ::id pmid_2456_8222.64
+(a / and
+   :op2 (o / obtain-01
+           :ARG1 (t / thing
+                    :ARG2-of (r / result-01)
+                    :ARG1-of (r2 / resemble-01))
+           :location (c / cell-line
+                        :name (n / name
+                                 :op1 "Panc-1"))
+           :ARG1-of (d / describe-01
+                       :ARG0 (f / figure
+                                :mod "2B"))
+           :ARG0-of (i / indicate-01
+                       :ARG1 (i2 / inhibit-01
+                                 :ARG0 (d2 / deplete-01
+                                           :ARG2 (p2 / protein
+                                                     :name (n3 / name
+                                                               :op1 "PHB")))
+                                 :ARG1 (a2 / activate-01
+                                           :ARG1 (e / enzyme
+                                                    :name (n2 / name
+                                                              :op1 "ERK")))
+                                 :ARG1-of (g / general-02)))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, these results clearly indicate that PHB is required for EGF-induced ERK1/2 activation in pancreatic cancer cells.
+# ::file pmid_2456_8222_65.txt
+# ::date 2015-08-26T08:28:51
+# ::id pmid_2456_8222.65
+(c / cause-01
+   :ARG1 (i / indicate-01
+            :ARG0 (t / thing
+                     :ARG2-of (r / result-01)
+                     :mod (t2 / this))
+            :ARG1 (r2 / require-01
+                      :ARG0 (a / activate-01
+                               :ARG1 (e / enzyme
+                                        :name (n2 / name
+                                                  :op1 "ERK1/2")
+                                        :ARG2-of (i2 / induce-01
+                                                     :ARG0 (p2 / protein
+                                                               :name (n3 / name
+                                                                         :op1 "EGF"))))
+                               :location (c2 / cell
+                                             :mod (c4 / cancer
+                                                      :mod (p3 / pancreas))))
+                      :ARG1 (p / protein
+                               :name (n / name
+                                        :op1 "PHB")))
+            :ARG1-of (c3 / clear-06)))
+
+
+# ::save-date Thu Jan 21, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The oncogenic RAS-ERK pathway is a key node for cellular proliferation signals and has been the focus of substantial drug discovery efforts in many cancers [<xref ref-type="bibr" rid="B20">20</xref>-<xref ref-type="bibr" rid="B23">23</xref>].
+# ::file pmid_2456_8222_67.txt
+# ::date 2015-08-26T09:12:55
+# ::id pmid_2456_8222.67
+(a / and
+      :op1 (k / key-02
+            :ARG1 (n / node
+                  :domain (p / pathway
+                        :name (n2 / name :op1 "RAS-ERK")
+                        :ARG0-of (c / cause-01
+                              :ARG1 (c2 / cancer))))
+            :ARG2 (s / signal-07
+                  :ARG1 (p2 / proliferate-01
+                        :ARG0 (c3 / cell))))
+      :op2 (f / focus-01
+            :ARG1 (e / effort-01
+                  :ARG1 (d / discover-01
+                        :ARG1 (d2 / drug))
+                  :degree (s2 / substantial))
+            :ARG2 p
+            :location (c4 / cancer
+                  :quant (m / many)))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (p3 / publication
+                  :ARG1-of (c5 / cite-01
+                        :ARG2 (v / value-interval :op1 "20" :op2 "23")))))
+
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A previous study has indicated that RocA suppresses the ERK pathway in leukemic cells [<xref ref-type="bibr" rid="B24">24</xref>].
+# ::file pmid_2456_8222_68.txt
+# ::date 2015-08-26T09:31:03
+# ::id pmid_2456_8222.68
+(i / indicate-01
+      :ARG0 (s / study-01
+            :time (p2 / previous))
+      :ARG1 (s2 / suppress-01
+            :ARG0 (s3 / small-molecule
+                  :name (n2 / name :op1 "RocA"))
+            :ARG1 (p3 / pathway
+                  :name (n3 / name :op1 "ERK"))
+            :location (c / cell
+                  :mod (l / leukemia)))
+      :ARG1-of (d / describe-01
+            :ARG0 (p / publication
+                  :ARG1-of (c2 / cite-01 :ARG2 "24"))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To confirm that the anti-tumor effect of RocA is indeed caused by suppression of the ERK pathway, we examined the effect of RocA on ERK activity in AsPC-1 cells (Figure <xref ref-type="fig" rid="F3">3</xref>E).
+# ::file pmid_2456_8222_69.txt
+# ::date 2015-08-26T09:40:36
+# ::id pmid_2456_8222.69
+(e / examine-01
+   :ARG0 (w / we)
+   :ARG1 (a / affect-01
+            :ARG0 (s2 / small-molecule
+                      :name (n2 / name
+                                :op1 "RocA"))
+            :ARG1 (a2 / activity-06
+                      :ARG0 (e2 / enzyme
+                                :name (n / name
+                                         :op1 "ERK")))
+            :location (c / cell-line
+                         :name (n3 / name
+                                   :op1 "AsPC-1")))
+   :purpose (c2 / confirm-01
+                :ARG0 w
+                :ARG1 (c3 / cause-01
+                          :ARG0 (s / suppress-01
+                                   :ARG1 (p2 / pathway
+                                             :name (n4 / name
+                                                       :op1 "ERK")))
+                          :ARG1 (a3 / affect-01
+                                    :ARG0 s2
+                                    :ARG2 (t / tumor
+                                             :ARG1-of (c4 / counter-01
+                                                          :ARG0 s2)))
+                          :mod (i / indeed)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3E")))
+
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The results showed significant dose-dependent inhibition of the phosphorylation status of ERK1/2 (Figure <xref ref-type="fig" rid="F3">3</xref>B).
+# ::file pmid_2456_8222_70.txt
+# ::date 2015-08-26T09:52:55
+# ::id pmid_2456_8222.70
+(s / show-01
+      :ARG0 (t / thing
+            :ARG2-of (r / result-01))
+      :ARG1 (i / inhibit-01
+            :ARG1 (s3 / status
+                  :mod (p / phosphorylate-01
+                        :ARG1 (e / enzyme
+                              :name (n / name :op1 "ERK1/2"))))
+            :ARG0-of (d / depend-01
+                  :ARG1 (d2 / dose-01))
+            :ARG1-of (s2 / significant-02))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f / figure :mod "3B")))
+
+
+# ::save-date Fri Aug 28, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Importantly, RocA showed very strong time-dependent suppression of ERK1/2 activities (Figure <xref ref-type="fig" rid="F3">3</xref>B).
+# ::file pmid_2456_8222_71.txt
+# ::date 2015-08-26T10:03:35
+# ::id pmid_2456_8222.71
+(s / show-01
+      :ARG0 (s4 / small-molecule
+            :name (n / name :op1 "RocA"))
+      :ARG1 (s2 / suppress-01
+            :ARG1 (a / activity-06
+                  :ARG1 (e / enzyme
+                        :name (n2 / name :op1 "ERK1/2")))
+            :ARG0-of (d / depend-01
+                  :ARG1 (t / time))
+            :ARG1-of (s3 / strong-02
+                  :degree (v / very)))
+      :mod (i / important)
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure :mod "3B")))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt PHB was previously shown to be required for membrane association and activation of CRAF [<xref ref-type="bibr" rid="B15">15</xref>].
+# ::file pmid_2456_8222_72.txt
+# ::date 2015-08-26T10:16:11
+# ::id pmid_2456_8222.72
+(s / show-01
+   :ARG1 (p / protein
+            :name (n / name
+                     :op1 "PHB")
+            :ARG1-of (r / require-01
+                        :ARG0 (a / and
+                                 :op1 (a2 / associate-01
+                                          :ARG1 (m / membrane))
+                                 :op2 (a3 / activate-01
+                                          :ARG1 (e / enzyme
+                                                   :name (n2 / name
+                                                             :op1 "CRAF"))))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p2 / publication
+                         :ARG1-of (c / cite-01
+                                     :ARG2 "15")))
+   :time (p3 / previous))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, we examined whether RocA affects PHB-CRAF membrane association in AsPC-1 cells.
+# ::file pmid_2456_8222_73.txt
+# ::date 2015-08-26T10:19:57
+# ::id pmid_2456_8222.73
+(c / cause-01
+   :ARG1 (e / examine-01
+            :ARG0 (w / we)
+            :ARG1 (a / affect-01
+                     :mode "interrogative"
+                     :ARG0 (s / small-molecule
+                              :name (n / name
+                                       :op1 "RocA"))
+                     :ARG1 (a2 / associate-01
+                               :ARG1 (m2 / membrane)
+                               :ARG2 (m3 / macro-molecular-complex
+                                         :part (p / protein
+                                                  :name (n2 / name
+                                                            :op1 "PHB"))
+                                         :part (e2 / enzyme
+                                                   :name (n3 / name
+                                                             :op1 "CRAF")))
+                               :location (c2 / cell-line
+                                             :name (n4 / name
+                                                       :op1 "AsPC-1"))))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To this end, cell membrane and cytosol fractions were prepared from AsPC-1 cells treated with Roc-A or DMSO to analyze the localization of PHB and CRAF.
+# ::file pmid_2456_8222_74.txt
+# ::date 2015-08-26T10:32:39
+# ::id pmid_2456_8222.74
+(p / prepare-01
+   :ARG1 (a / and
+            :op1 (m / membrane
+                    :mod (c / cell))
+            :op2 (f / fraction-01
+                    :location (c2 / cytosol)))
+   :ARG2 (c3 / cell-line
+             :name (n / name
+                      :op1 "AsPC-1")
+             :ARG1-of (t / treat-04
+                         :ARG2 (o / or
+                                  :op1 (s / small-molecule
+                                          :name (n2 / name
+                                                    :op1 "Roc-A"))
+                                  :op2 (s2 / small-molecule
+                                           :name (n3 / name
+                                                     :op1 "DMSO")))))
+   :purpose (a2 / analyze-01
+                :ARG1 (b / be-located-at-91
+                         :ARG1 (a3 / and
+                                   :op1 (p2 / protein
+                                            :name (n4 / name
+                                                      :op1 "PHB"))
+                                   :op2 (e / enzyme
+                                           :name (n5 / name
+                                                     :op1 "CRAF")))))
+   :purpose (t2 / this))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Immunoblot analysis showed significant reduction of CRAF, particularly phosphorylated CRAF (pSer338), in the membrane fraction after RocA treatment (Figure <xref ref-type="fig" rid="F3">3</xref>C).
+# ::file pmid_2456_8222_75.txt
+# ::date 2015-08-26T11:02:18
+# ::id pmid_2456_8222.75
+(s / show-01
+   :ARG0 (a / analyze-01
+            :ARG1 (i / immunoblot-01))
+   :ARG1 (r / reduce-01
+            :ARG1 (e / enzyme
+                     :name (n / name
+                              :op1 "CRAF")
+                     :ARG2-of (i2 / include-01
+                                  :ARG1 (a2 / amino-acid
+                                            :mod "338"
+                                            :name (n2 / name
+                                                      :op1 "serine")
+                                            :ARG3-of (p / phosphorylate-01)
+                                            :mod (p2 / particular)))
+                     :part a2)
+            :ARG1-of (s2 / significant-02)
+            :location (f / fraction-01
+                         :ARG1 (m / membrane)))
+   :time (a3 / after
+             :op1 (t / treat-04
+                     :ARG2 (s3 / small-molecule
+                               :name (n3 / name
+                                         :op1 "RocA"))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f2 / figure
+                         :mod "3C")))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Notably, RocA also significantly reduced the levels of PHB in the membrane fraction, indicating that binding of RocA to PHB may also interfere with PHB membrane association.
+# ::file pmid_2456_8222_76.txt
+# ::date 2015-08-26T11:10:43
+# ::id pmid_2456_8222.76
+(r / reduce-01
+   :ARG0 (s / small-molecule
+            :name (n / name
+                     :op1 "RocA"))
+   :ARG1 (l / level
+            :quant-of (p / protein
+                         :name (n2 / name
+                                   :op1 "PHB")))
+   :mod (a / also)
+   :ARG1-of (s2 / significant-02)
+   :location (f / fraction-01
+                :ARG1 (m / membrane))
+   :ARG0-of (i / indicate-01
+               :ARG1 (p2 / possible-01
+                         :ARG1 (i2 / interfere-01
+                                   :ARG0 (b / bind-01
+                                            :ARG1 s
+                                            :ARG2 p)
+                                   :ARG1 (a2 / associate-01
+                                             :ARG1 (m2 / membrane)
+                                             :ARG2 p)
+                                   :mod a)))
+   :ARG1-of (n3 / notable-04))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, RocA did not influence membrane localization of RAS (Figure <xref ref-type="fig" rid="F3">3</xref>C).
+# ::file pmid_2456_8222_77.txt
+# ::date 2015-08-26T11:24:03
+# ::id pmid_2456_8222.77
+(c / contrast-01
+   :ARG2 (i / influence-01
+            :polarity "-"
+            :ARG0 (s / small-molecule
+                     :name (n2 / name
+                               :op1 "RocA"))
+            :ARG1 (b / be-located-at-91
+                     :ARG1 (p2 / protein-family
+                               :name (n3 / name
+                                         :op1 "RAS"))
+                     :ARG2 (m / membrane)))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3C")))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Indeed, immunoprecipitation analysis suggested that RocA substantially decreased the amounts of total CRAF bound to PHB in AsPC-1 cells (Figure <xref ref-type="fig" rid="F3">3</xref>D).
+# ::file pmid_2456_8222_78.txt
+# ::date 2015-08-26T11:53:04
+# ::id pmid_2456_8222.78
+(s / suggest-01
+   :ARG0 (a / analyze-01
+            :ARG1 (i / immunoprecipitate-01))
+   :ARG1 (d / decrease-01
+            :ARG0 (s2 / small-molecule
+                      :name (n / name
+                               :op1 "RocA"))
+            :ARG1 (a2 / amount-01
+                      :ARG1 (e / enzyme
+                               :name (n2 / name
+                                         :op1 "CRAF")
+                               :mod (t / total)
+                               :ARG1-of (b / bind-01
+                                           :ARG2 (p / protein
+                                                    :name (n3 / name
+                                                              :op1 "PHB"))
+                                           :location (c / cell-line
+                                                        :name (n4 / name
+                                                                  :op1 "AsPC-1")))))
+            :manner (s3 / substantial))
+   :mod (i2 / indeed)
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "3D")))
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Notably, confocal microscopic analysis showed that treatment of AsPC-1 cells with 100 nM RocA for 4 h led to a loss of plasma membrane localization and random redistribution of PHB (Figure <xref ref-type="fig" rid="F3">3</xref>E).
+# ::file pmid_2456_8222_79.txt
+# ::date 2015-08-26T12:11:01
+# ::id pmid_2456_8222.79
+(s / show-01
+   :ARG0 (a / analyze-01
+            :mod (m / microscopy
+                    :mod (c / confocal)))
+   :ARG1 (l / lead-03
+            :ARG0 (t / treat-04
+                     :ARG1 (c2 / cell-line
+                               :name (n / name
+                                        :op1 "AsPC-1"))
+                     :ARG2 (s2 / small-molecule
+                               :name (n2 / name
+                                         :op1 "RocA")
+                               :quant (c3 / concentration-quantity
+                                          :quant "100"
+                                          :unit (n3 / nanomolar)))
+                     :duration (t2 / temporal-quantity
+                                   :quant "4"
+                                   :unit (h / hour)))
+            :ARG1 (a2 / and
+                      :op1 (l2 / lose-02
+                               :ARG1 (b / be-located-at-91
+                                        :ARG1 "p2"
+                                        :ARG2 (m2 / membrane
+                                                  :mod (p / plasma))))
+                      :op2 (r / redistribute-01
+                              :ARG1 (p2 / protein
+                                        :name (n4 / name
+                                                  :op1 "PHB"))
+                              :manner (r2 / random))))
+   :ARG1-of (n5 / notable-04)
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "3E")))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This observation indicates that inhibition of the PHB-CRAF interaction by RocA leads to the loss of spatial organization of PHB in AsPC-1 cells.
+# ::file pmid_2456_8222_80.txt
+# ::date 2015-08-26T12:59:34
+# ::id pmid_2456_8222.80
+(i / indicate-01
+   :ARG0 (o / observe-01
+            :mod (t / this))
+   :ARG1 (l / lead-03
+            :ARG0 (i2 / inhibit-01
+                      :ARG0 (s / small-molecule
+                               :name (n3 / name
+                                         :op1 "RocA"))
+                      :ARG1 (i3 / interact-01
+                                :ARG0 (p / protein
+                                         :name (n / name
+                                                  :op1 "PHB"))
+                                :ARG1 (e / enzyme
+                                         :name (n2 / name
+                                                   :op1 "CRAF"))))
+            :ARG1 (l2 / lose-02
+                      :ARG1 (o2 / organize-01
+                                :ARG1 p
+                                :mod (s2 / space)
+                                :location (c / cell-line
+                                             :name (n4 / name
+                                                       :op1 "AsPC-1"))))))
+
+# ::save-date Wed Aug 26, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Collectively, these results further demonstrate that RocA blocks the RAS-CRAF-ERK signaling pathway by disruption of the PHB-CRAF interaction in pancreatic cancer.
+# ::file pmid_2456_8222_81.txt
+# ::date 2015-08-26T13:04:26
+# ::id pmid_2456_8222.81
+(d2 / demonstrate-01
+    :ARG0 (r / result-01
+             :mod (t / this))
+    :ARG1 (b / block-01
+             :ARG0 (s / small-molecule
+                      :name (n2 / name
+                                :op1 "RocA"))
+             :ARG1 (p / pathway
+                      :name (n3 / name
+                                :op1 "RAS-CRAF-ERK")
+                      :ARG0-of (s2 / signal-07))
+             :manner (d3 / disrupt-01
+                         :ARG0 s
+                         :ARG1 (i / interact-01
+                                  :ARG0 (p2 / protein
+                                            :name (n4 / name
+                                                      :op1 "PHB"))
+                                  :ARG1 (e / enzyme
+                                           :name (n5 / name
+                                                     :op1 "CRAF")))
+                         :location (c / cancer
+                                      :mod (p3 / pancreas))))
+    :degree (f / further)
+    :mod (c2 / collective))
+
+
+# ::save-date Mon Nov 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The oncogenic RAS-RAF-ERK pathway confers epithelial cells with critical motile and invasive capacities during carcinoma progression, often by promotion of EMT [<xref ref-type="bibr" rid="B25">25</xref>,<xref ref-type="bibr" rid="B26">26</xref>].
+# ::file pmid_2456_8222_83.txt
+# ::date 2015-08-26T13:16:58
+# ::id pmid_2456_8222.83
+(c / confer-02
+      :ARG0 (p / pathway
+            :name (n / name :op1 "PAS-RAF-ERK")
+            :ARG0-of (c2 / cause-01
+                  :ARG1 (c3 / cancer)))
+      :ARG1 (a / and
+            :op1 (c8 / capable-01
+                  :ARG1 "c4"
+                  :ARG2 (m / motile
+                        :ARG1-of (c5 / critical-02)))
+            :op1 (c10 / capable-01
+                  :ARG1 "c4"
+                  :ARG2 (i / invade-01 :ARG0 "c4")))
+      :ARG2 (c4 / cell
+            :mod (e / epithelium))
+      :time (p2 / progress-01
+            :ARG1 (c7 / carcinoma))
+      :manner (p3 / promote-01
+            :ARG1 (t / transition-01
+                  :ARG2 (c6 / cell
+                        :mod (m2 / mesenchyme))
+                  :ARG3 (c11 / cell
+                        :mod (e2 / epithelium)))
+            :frequency (o / often))
+      :ARG1-of (d / describe-01
+            :ARG0 (p4 / publication
+                  :ARG1-of (c9 / cite-01
+                        :ARG2 (a2 / and :op1 "25" :op2 "26")))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To further investigate the role of PHB in EMT, the effects of PHB siRNA and RocA on EMT markers were assayed in AsPC-1 cells.
+# ::file pmid_2456_8222_84.txt
+# ::date 2015-08-27T10:57:28
+# ::id pmid_2456_8222.84
+(a / assay-01
+   :ARG1 (a3 / affect-01
+             :ARG0 (a4 / and
+                       :op1 (n4 / nucleic-acid
+                                :name (n / name
+                                         :op1 "siRNA")
+                                :ARG0-of (e / encode-01
+                                            :ARG1 (p / protein
+                                                     :name (n2 / name
+                                                               :op1 "PHB"))))
+                       :op2 (s / small-molecule
+                               :name (n3 / name
+                                         :op1 "RocA")))
+             :ARG1 (m / marker
+                      :mod (t / transition-01
+                              :ARG2 (c / cell
+                                       :mod (m2 / mesenchyme))
+                              :ARG3 (c2 / cell
+                                        :mod (e2 / epithelium)))))
+   :location (c3 / cell-line
+                 :name (n5 / name
+                           :op1 "AsPC-1"))
+   :purpose (i / investigate-01
+               :ARG1 (r2 / role
+                         :topic t
+                         :poss p)
+               :degree (f / further)))
+
+
+# ::save-date Mon Nov 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt First, we detected EMT markers in AsPC-1 and Capan-2 cells (Figure <xref ref-type="fig" rid="F4">4</xref>A).
+# ::file pmid_2456_8222_85.txt
+# ::date 2015-08-27T11:03:51
+# ::id pmid_2456_8222.85
+(d / detect-01
+      :ARG0 (w / we)
+      :ARG1 (m / marker
+            :mod (t / transition-01
+                  :ARG2 (c / cell
+                        :mod (m2 / mesenchyme))
+                  :ARG3 (c2 / cell
+                        :mod (e / epithelium))))
+      :location (a / and
+            :op1 (c3 / cell-line
+                  :name (n2 / name :op1 "AsPC-1"))
+            :op2 (c4 / cell-line
+                  :name (n3 / name :op1 "Capan-2")))
+      :time (f / first)
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f2 / figure :mod "4A")))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Knockdown of PHB in AsPC-1 cells by siRNA resulted in upregulation of E-cadherin and β-catenin and downregulation of vimentin (Figure <xref ref-type="fig" rid="F4">4</xref>B).
+# ::file pmid_2456_8222_86.txt
+# ::date 2015-08-27T11:06:44
+# ::id pmid_2456_8222.86
+(r / result-01
+   :ARG1 (k / knock-down-02
+            :ARG0 (n7 / nucleic-acid
+                      :name (n / name
+                               :op1 "siRNA"))
+            :ARG1 (p / protein
+                     :name (n2 / name
+                               :op1 "PHB"))
+            :location (c / cell-line
+                         :name (n3 / name
+                                   :op1 "AsPC-1")))
+   :ARG2 (a / and
+            :op1 (u / upregulate-01
+                    :ARG1 (a2 / and
+                              :op1 (p2 / protein
+                                       :name (n4 / name
+                                                 :op1 "E-cadherin"))
+                              :op2 (p3 / protein
+                                       :name (n5 / name
+                                                 :op1 "β-catenin"))))
+            :op2 (d / downregulate-01
+                    :ARG1 (p4 / protein
+                              :name (n6 / name
+                                        :op1 "vimentin"))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "4B")))
+
+# ::save-date Thu Aug 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similar to the effect of PHB knockdown, treatment of AsPC-1 cells with RocA showed the same results (Figure <xref ref-type="fig" rid="F4">4</xref>C).
+# ::file pmid_2456_8222_87.txt
+# ::date 2015-08-27T11:14:15
+# ::id pmid_2456_8222.87
+(s / show-01
+   :ARG0 (t / treat-04
+            :ARG1 (c / cell-line
+                     :name (n / name
+                              :op1 "AsPC-1"))
+            :ARG2 (s2 / small-molecule
+                      :name (n2 / name
+                                :op1 "RocA")))
+   :ARG1 (r2 / result-01
+             :ARG1-of (s3 / same-01))
+   :ARG1-of (r3 / resemble-01
+                :ARG2 (a / affect-01
+                         :ARG0 (k / knock-down-02
+                                  :ARG1 (p / protein
+                                           :name (n3 / name
+                                                     :op1 "PHB")))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "4C")))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Activated ERK2 directly phosphorylates Snail, leading to nuclear accumulation, reduced ubiquitylation, and an increased protein half-life of Snail, and then promotion of breast cancer cell invasion and migration <i>in vitro</i> and metastasis <i>in vivo</i>[<xref ref-type="bibr" rid="B27">27</xref>].
+# ::file pmid_2456_8222_88.txt
+# ::date 2015-08-27T11:20:02
+# ::id pmid_2456_8222.88
+(p / phosphorylate-01
+   :ARG1 (p2 / protein
+             :name (n3 / name
+                       :op1 "Snail"))
+   :ARG2 (e / enzyme
+            :name (n2 / name
+                      :op1 "ERK2")
+            :ARG1-of (a / activate-01))
+   :ARG0-of (l / lead-03
+               :ARG2 (a2 / and
+                         :op1 (a3 / accumulate-01
+                                  :mod (n4 / nucleus))
+                         :op2 (p3 / protein
+                                  :name (n5 / name
+                                            :op1 "Ubiquitin")
+                                  :ARG1-of (r / reduce-01))
+                         :op3 (p4 / protein
+                                  :name (n6 / name
+                                            :op1 "Snail")
+                                  :ARG0-of (l2 / live-01
+                                               :degree (h / half))
+                                  :ARG1-of (i / increase-01))
+                         :op4 (p5 / promote-01
+                                  :ARG1 (a4 / and
+                                            :op1 (a5 / and
+                                                     :op1 (i2 / invade-01
+                                                              :ARG0 (c / cell
+                                                                       :mod (c2 / cancer
+                                                                                :mod (b / breast))))
+                                                     :op2 (m / migrate-01)
+                                                     :manner (i3 / in-vitro))
+                                            :op2 (m2 / metastasize-101
+                                                     :manner (i4 / in-vivo)))
+                                  :time (t / then))))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (p6 / publication
+                          :ARG1-of (c3 / cite-01
+                                       :ARG2 "27")))
+   :ARG1-of (d / direct-02))
+
+# ::save-date Thu Aug 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Another study has shown clear increases of ZEB1 and ZEB2 protein levels by ERK2 but not ERK1 [<xref ref-type="bibr" rid="B28">28</xref>].
+# ::file pmid_2456_8222_89.txt
+# ::date 2015-08-27T11:32:31
+# ::id pmid_2456_8222.89
+(s / show-01
+   :ARG0 (s2 / study-01
+             :mod (a / another))
+   :ARG1 (c / contrast-01
+            :ARG1 (i / increase-01
+                     :ARG0 (e / enzyme
+                              :name (n3 / name
+                                        :op1 "ERK2"))
+                     :ARG1 (a2 / and
+                               :op1 (l / level
+                                       :quant-of (p / protein
+                                                    :name (n / name
+                                                             :op1 "ZEB1")))
+                               :op2 (l2 / level
+                                        :quant-of (p2 / protein
+                                                      :name (n2 / name
+                                                                :op1 "ZEB2"))))
+                     :ARG1-of (c2 / clear-06))
+            :ARG2 (i2 / increase-01
+                      :polarity "-"
+                      :ARG0 (e2 / enzyme
+                                :name (n4 / name
+                                          :op1 "ERK1"))
+                      :ARG1 a2))
+   :ARG1-of (d / describe-01
+               :ARG0 (p3 / publication
+                         :ARG1-of (c3 / cite-01
+                                      :ARG2 "28"))))
+
+# ::save-date Mon Nov 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To further investigate the molecular basis of ERK-regulated EMT, we detected the levels of Snail1, ZEB1, and transcription factors known to regulate EMT which act downstream of ERK1/2.
+# ::file pmid_2456_8222_90.txt
+# ::date 2015-08-27T11:42:18
+# ::id pmid_2456_8222.90
+(d / detect-01
+   :ARG0 (w / we)
+   :ARG1 (a / and
+            :op1 (l / level
+                    :quant-of (p / protein
+                                 :name (n / name
+                                          :op1 "Snail")))
+            :op2 (l2 / level
+                     :quant-of (p2 / protein
+                                   :name (n2 / name
+                                             :op1 "ZEB1")))
+            :op3 (l3 / level
+                     :quant-of (f / factor
+                                  :ARG0-of (t / transcribe-01
+                                              :ARG2 (c / cell
+                                                       :mod (m2 / mesenchyme))
+                                              :ARG3 (c2 / cell
+                                                        :mod (e / epithelium)))
+                                  :ARG0-of (r / regulate-01
+                                              :ARG1 (t2 / transition-01)
+                                              :ARG1-of (k / know-01))
+                                  :ARG0-of (a2 / act-02
+                                               :location (r2 / relative-position
+                                                             :op1 (e2 / enzyme
+                                                                      :name (n4 / name
+                                                                                :op1 "ERK1/2"))
+                                                             :direction (d2 / downstream))))))
+   :purpose (i / investigate-01
+               :ARG0 w
+               :ARG1 (b2 / base-02
+                         :ARG1 (t3 / transition-01
+                                   :ARG2 c
+                                   :ARG3 c2
+                                   :ARG1-of (r3 / regulate-01
+                                                :ARG0 (p3 / protein-family
+                                                          :name (n6 / name
+                                                                    :op1 "ERK"))))
+                         :ARG2 (m / molecule))
+               :degree (f2 / further)))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, we observed similar results in PHB-silenced and RocA-treated AsPC-1 cells (Figure <xref ref-type="fig" rid="F4">4</xref>B,C).
+# ::file pmid_2456_8222_91.txt
+# ::date 2015-08-27T11:54:19
+# ::id pmid_2456_8222.91
+(o / observe-01
+   :ARG0 (w / we)
+   :ARG1 (r / result-01
+            :ARG2 (c / cell-line
+                     :name (n2 / name
+                               :op1 "ASPC-1")
+                     :ARG1-of (t / treat-04
+                                 :ARG2 (s2 / small-molecule
+                                           :name (n3 / name
+                                                     :op1 "RocA")))
+                     :location-of (p / protein
+                                     :name (n / name
+                                              :op1 "PHB")
+                                     :ARG1-of (s / silence-01)))
+            :ARG1-of (r3 / resemble-01))
+   :ARG2-of (i / interest-01)
+   :ARG1-of (d / describe-01
+               :ARG0 (a2 / and
+                         :op1 (f / figure
+                                 :mod "4B")
+                         :op2 (f2 / figure
+                                  :mod "4C"))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt AsPC-1 cells lacking PHB expression showed defective migration (Figure <xref ref-type="fig" rid="F4">4</xref>D), indicating that the formation of clusters is the consequence of reduced motility of cells that lack high levels of PHB.
+# ::file pmid_2456_8222_92.txt
+# ::date 2015-08-27T11:59:31
+# ::id pmid_2456_8222.92
+(s / show-01
+   :ARG0 (c / cell-line
+            :name (n / name
+                     :op1 "ASPC-1")
+            :ARG0-of (l / lack-01
+                        :ARG1 (e / express-03
+                                 :ARG2 (p / protein
+                                          :name (n2 / name
+                                                    :op1 "PHB")
+                                          :quant l3))))
+   :ARG1 (m / migrate-01
+            :mod (d / defective))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "4D"))
+   :ARG0-of (i / indicate-01
+               :ARG1 (c3 / cause-01
+                         :ARG0 (m2 / motility
+                                   :ARG1-of (r / reduce-01)
+                                   :mod (c2 / cell)
+                                   :ARG0-of (l2 / lack-01
+                                                :ARG1 (l3 / level
+                                                          :ARG1-of (h / high-02))))
+                         :ARG1 (f2 / form-01
+                                   :ARG1 (c4 / cluster)))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Notably, AsPC-1 cells treated with RocA formed cell clusters similar to those formed by cells with reduced PHB expression (Figure <xref ref-type="fig" rid="F4">4</xref>D).
+# ::file pmid_2456_8222_93.txt
+# ::date 2015-08-27T12:06:24
+# ::id pmid_2456_8222.93
+(f / form-01
+   :ARG0 (c / cell-line
+            :wiki "-"
+            :name (n / name
+                     :op1 "AsPC-1")
+            :ARG1-of (t / treat-04
+                        :ARG2 (s / small-molecule
+                                 :wiki "-"
+                                 :name (n2 / name
+                                           :op1 "RocA"))))
+   :ARG1 (c2 / cluster
+             :ARG1-of (r2 / resemble-01
+                          :ARG2 (c5 / cluster
+                                    :ARG1-of (f2 / form-01
+                                                 :ARG0 (c4 / cell
+                                                           :ARG3-of (e / express-03
+                                                                       :ARG2 (p / protein
+                                                                                :wiki "Prohibitin"
+                                                                                :name (n3 / name
+                                                                                          :op1 "PHB"))
+                                                                       :ARG1-of (r3 / reduce-01))))))
+             :consist-of (c3 / cell))
+   :ARG1-of (n4 / notable-04)
+   :ARG1-of (d / describe-01
+               :ARG0 (f3 / figure
+                         :mod "4D")))
+
+# ::save-date Mon Nov 23, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Taken together, RocA mimics the effect of PHB knockdown on EMT marker expression and reverses the EMT phenotype in AsPC-1 cells.
+# ::file pmid_2456_8222_94.txt
+# ::date 2015-08-27T12:12:10
+# ::id pmid_2456_8222.94
+(a2 / and
+    :op1 (m / mimic-01
+            :ARG0 (s / small-molecule
+                     :name (n / name
+                              :op1 "RocA"))
+            :ARG1 (a / affect-01
+                     :ARG0 (k / knock-down-02
+                              :ARG1 (p / protein
+                                       :name (n2 / name
+                                                 :op1 "PHB")))
+                     :ARG1 (e2 / express-03
+                               :ARG2 (m2 / marker
+                                         :mod (t / transition-01
+                                                 :ARG2 (c / cell
+                                                          :mod (m3 / mesenchyme))
+                                                 :ARG3 (c2 / cell
+                                                           :mod (e / epithelium)))))))
+    :op2 (r / reverse-01
+            :ARG0 s
+            :ARG1 (p2 / phenotype
+                      :mod t)
+            :location (c3 / cell-line
+                          :name (n4 / name
+                                    :op1 "AsPC-1")))
+    :ARG1-of (t2 / take-01
+                 :manner (t3 / together)))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To characterize the action of RocA on pancreatic cancer cell growth, AsPC-1 and Panc-1 cells were treated with RocA (100 nM) or DMSO for 16 h and then applied to CCK-8 assays.
+# ::file pmid_2456_8222_96.txt
+# ::date 2015-08-27T12:26:12
+# ::id pmid_2456_8222.96
+(a / and
+   :op1 (t / treat-04
+           :ARG1 (a2 / and
+                     :op1 (c / cell-line
+                             :name (n2 / name
+                                       :op1 "AsPC-1"))
+                     :op2 (c2 / cell-line
+                              :name (n3 / name
+                                        :op1 "Panc-1")))
+           :ARG2 (o / or
+                    :op1 (s / small-molecule
+                            :name (n4 / name
+                                      :op1 "RocA")
+                            :quant (c3 / concentration-quantity
+                                       :quant "100"
+                                       :unit (n6 / nanomolar)))
+                    :op2 (s2 / small-molecule
+                             :name (n5 / name
+                                       :op1 "DMSO")))
+           :duration (t2 / temporal-quantity
+                         :quant "16"
+                         :unit (h / hour)))
+   :op2 (a3 / apply-02
+            :ARG1 a2
+            :ARG2 (a4 / assay-01
+                      :mod (t4 / thing
+                               :name (n7 / name
+                                         :op1 "CCK-8")))
+            :time (t3 / then))
+   :purpose (c4 / characterize-01
+                :ARG1 (a5 / act-02
+                          :ARG0 (s3 / small-molecule
+                                    :name (n8 / name
+                                              :op1 "RocA"))
+                          :ARG1 (g / grow-01
+                                   :ARG1 (c5 / cell
+                                             :mod (c6 / cancer
+                                                      :mod (p / pancreas)))))))
+
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RocA markedly impaired the growth of AsPC-1 and Panc-1 cells without affecting Hs 578Bst or L02 cells as controls (Figure <xref ref-type="fig" rid="F5">5</xref>A,B).
+# ::file pmid_2456_8222_97.txt
+# ::date 2015-08-27T12:41:23
+# ::id pmid_2456_8222.97
+(i / impair-01
+      :ARG0 (s / small-molecule
+            :name (n / name :op1 "RocA"))
+      :ARG1 (g / grow-01
+            :ARG1 (a / and
+                  :op1 (c / cell-line
+                        :name (n2 / name :op1 "ASPC-1"))
+                  :op2 (c2 / cell-line
+                        :name (n3 / name :op1 "Panc-1"))))
+      :manner (m / marked)
+      :ARG0-of (a2 / affect-01
+            :polarity "-"
+            :ARG1 (o / or
+                  :op1 (c3 / cell-line
+                        :name (n4 / name :op1 "Hs" :op2 "578Bst"))
+                  :op2 (c4 / cell-line
+                        :name (n5 / name :op1 "L02")))
+            :ARG0-of (c5 / control-01))
+      :ARG1-of (d / describe-01
+            :ARG0 (a3 / and
+                  :op1 (f / figure :mod "5A")
+                  :op2 (f2 / figure :mod "5B"))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, Capan-2 cells did not show any detectable toxicity in the presence of RocA (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S5), suggesting deficient expression of PHB in Capan-2 cells may rescue the effects of RocA.
+# ::file pmid_2456_8222_98.txt
+# ::date 2015-08-27T12:49:25
+# ::id pmid_2456_8222.98
+(s / show-01
+   :polarity "-"
+   :ARG0 (c / cell-line
+            :name (n / name
+                     :op1 "Capan-2"))
+   :ARG1 (t / toxicity
+            :ARG1-of (d2 / detect-01
+                         :ARG1-of (p / possible-01))
+            :mod (a3 / any))
+   :condition (p2 / present-02
+                  :ARG1 (s2 / small-molecule
+                            :name (n2 / name
+                                      :op1 "RocA")))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (f / figure
+                         :mod "S5"
+                         :location (f2 / file
+                                       :mod "1"
+                                       :ARG1-of (a / add-02))))
+   :ARG0-of (s3 / suggest-01
+                :ARG1 (p3 / possible-01
+                          :ARG1 (r / rescue-01
+                                   :ARG0 (e / express-03
+                                            :ARG2 (p4 / protein
+                                                      :name (n3 / name
+                                                                :op1 "PHB"))
+                                            :ARG3 c
+                                            :mod (d / deficient))
+                                   :ARG1 (a2 / affect-01
+                                             :ARG0 s2))))
+   :ARG2-of (i / interest-01))
+
+
+# ::save-date Thu Aug 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Additionally, RocA impaired the migration of AsPC-1 and Panc-1 cells (Figure <xref ref-type="fig" rid="F5">5</xref>C).
+# ::file pmid_2456_8222_99.txt
+# ::date 2015-08-27T12:56:19
+# ::id pmid_2456_8222.99
+(i / impair-01
+      :ARG0 (s / small-molecule
+            :name (n / name :op1 "RocA"))
+      :ARG1 (m / migrate-01
+            :ARG0 (a / and
+                  :op1 (c / cell-line
+                        :name (n2 / name :op1 "AsPC-1"))
+                  :op2 (c2 / cell-line
+                        :name (n3 / name :op1 "Panc-1"))))
+      :ARG1-of (a2 / add-02)
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "5C")))
+
+
+# ::save-date Fri Aug 28, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To investigate the effect of RocA on metastasis, we established an orthotopic xenograft model in mice using AsPC-1 cells.
+# ::file pmid_2456_8222_100.txt
+# ::date 2015-08-27T12:58:16
+# ::id pmid_2456_8222.100
+(e / establish-01
+      :ARG0 (w / we)
+      :ARG1 (m / model
+            :mod (x / xenograft)
+            :mod (o / orthotopic)
+            :location (m2 / mouse))
+      :instrument (c / cell-line
+            :name (n / name :op1 "AsPC-1"))
+      :purpose (i / investigate-01
+            :ARG0 w
+            :ARG1 (a / affect-01
+                  :ARG0 (s / small-molecule
+                        :name (n2 / name :op1 "RocA"))
+                  :ARG1 (m3 / metastasize-101))))
+
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt At 1 week after orthotopic implantation of AsPC-1 cells into severe combined immunodeficient (SCID) mice, RocA (5 mg/kg body weight) was administrated via intraperitoneal injection daily for 3 weeks.
+# ::file pmid_2456_8222_101.txt
+# ::date 2015-08-27T13:02:36
+# ::id pmid_2456_8222.101
+(a / administrate-01
+      :ARG1 (s / small-molecule
+            :name (n / name :op1 "RocA")
+            :quant (c3 / concentration-quantity
+                  :quant "5"
+                  :unit (m2 / milligram-per-kilogram)))
+      :frequency (t3 / temporal-quantity
+            :quant "1"
+            :unit (d / day))
+      :duration (t2 / temporal-quantity
+            :quant "3"
+            :unit (w2 / week))
+      :time (a2 / after
+            :op1 (i3 / implant-01
+                  :ARG1 (c / cell-line
+                        :name (n2 / name :op1 "AsPC-1"))
+                  :ARG2 (m3 / mouse
+                        :mod (i4 / immunodeficient)
+                        :ARG1-of (c2 / combine-01
+                              :degree (s2 / severe)))
+                  :mod (o / orthotopic))
+            :quant (t / temporal-quantity
+                  :quant "1"
+                  :unit (w / week)))
+      :manner (i / inject-01
+            :ARG1 s
+            :ARG2 (b / body
+                  :ARG1-of (w3 / weight-01))
+            :mod (i2 / intraperitoneal)))
+
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As a result, treatment with RocA significantly suppressed cancer metastasis to the lung and liver in mice (Figure <xref ref-type="fig" rid="F5">5</xref>D).
+# ::file pmid_2456_8222_102.txt
+# ::date 2015-08-27T13:19:34
+# ::id pmid_2456_8222.102
+(s / suppress-01
+      :ARG0 (t / treat-04
+            :ARG2 (s2 / small-molecule
+                  :name (n2 / name :op1 "RocA")))
+      :ARG1 (m / metastasize-101
+            :ARG1 (c / cancer)
+            :ARG2 (a / and
+                  :op1 (l / lung)
+                  :op2 (l2 / liver)))
+      :ARG1-of (s3 / significant-02)
+      :location (m2 / mouse)
+      :ARG2-of (r / result-01)
+      :ARG1-of (d2 / describe-01
+            :ARG0 (f / figure :mod "5D")))
+
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Histological analysis of the lung and liver revealed that dissemination of cancer cells was absent in tissue sections from RocA-treated mice, but an abundance of cancer cells were observed in vehicle-treated mice (Figure <xref ref-type="fig" rid="F5">5</xref>D).
+# ::file pmid_2456_8222_103.txt
+# ::date 2015-08-27T13:22:46
+# ::id pmid_2456_8222.103
+(c3 / contrast-01
+      :ARG1 (r / reveal-01
+            :ARG0 (a / analyze-01
+                  :ARG1 (a2 / and
+                        :op1 (l / lung)
+                        :op2 (l2 / liver))
+                  :mod (h / histologic))
+            :ARG1 (a3 / absent-01
+                  :ARG1 (d2 / disseminate-01
+                        :ARG1 (c / cell
+                              :mod (c2 / cancer)))
+                  :ARG2 (s / section-01
+                        :ARG1 (t / tissue)
+                        :ARG3 (m / mouse
+                              :ARG1-of (t2 / treat-04
+                                    :ARG2 (s2 / small-molecule
+                                          :name (n2 / name :op1 "RocA")))))))
+      :ARG2 (o / observe-01
+            :ARG1 (a4 / abound-01
+                  :ARG1 c)
+            :location (m2 / mouse
+                  :ARG1-of (t3 / treat-04
+                        :ARG2 (v / vehicle))))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f / figure :mod "5D")))
+
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Comparison of the survival curve of RocA-treated mice with that of vehicle-treated mice showed that RocA treatment significantly prolonged the survival of tumor-bearing mice (Additional file <xref ref-type="supplementary-material" rid="S1">1</xref>: Figure S6A,B).
+# ::file pmid_2456_8222_104.txt
+# ::date 2015-08-27T13:30:49
+# ::id pmid_2456_8222.104
+(s / show-01
+      :ARG0 (c / compare-01
+            :ARG1 (c2 / curve
+                  :mod (s2 / survive-01
+                        :ARG0 (m / mouse
+                              :ARG1-of (t / treat-04
+                                    :ARG2 (s3 / small-molecule
+                                          :name (n / name :op1 "RocA"))))))
+            :ARG2 (c3 / curve
+                  :mod (s6 / survive-01
+                        :ARG0 (m2 / mouse
+                              :ARG1-of (t3 / treat-04
+                                    :ARG2 (v / vehicle))))))
+      :ARG1 (p / prolong-01
+            :ARG0 t
+            :ARG1 (s5 / survive-01
+                  :ARG0 (m3 / mouse
+                        :ARG0-of (b / bear-01
+                              :ARG1 (t4 / tumor))))
+            :ARG1-of (s4 / significant-02))
+      :ARG1-of (d / describe-01
+            :ARG0 (a / and
+                  :op1 (f / figure :mod "S6A")
+                  :op2 (f2 / figure :mod "S6B")
+                  :location (f3 / file
+                        :mod "1"
+                        :ARG1-of (a2 / add-02)))))
+
+
+# ::save-date Thu Aug 27, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Taken together, RocA impairs the migration of pancreatic cancer cells <i>in vitro</i> and <i>in vivo</i>.
+# ::file pmid_2456_8222_105.txt
+# ::date 2015-08-27T13:37:57
+# ::id pmid_2456_8222.105
+(i / impair-01
+      :ARG0 (s / small-molecule
+            :name (n2 / name :op1 "RocA"))
+      :ARG1 (a / and
+            :op1 (m / migrate-01
+                  :ARG0 (c / cell
+                        :mod (c2 / cancer
+                              :mod (p / pancreas)))
+                  :manner (i2 / in-vitro))
+            :op2 (m2 / migrate-01
+                  :ARG0 c
+                  :manner (i3 / in-vivo)))
+      :ARG1-of (t / take-01
+            :manner (t2 / together)))
+
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To further evaluate the anti-tumor activity of RocA, we administered RocA to SCID mice bearing subcutaneous AsPC-1 tumor cell xenografts and monitored the tumor growth rate.
+# ::file pmid_2456_8222_107.txt
+# ::date 2015-08-27T13:43:12
+# ::id pmid_2456_8222.107
+(a2 / and
+      :op1 (a / administer-01
+            :ARG0 (w / we)
+            :ARG1 (s / small-molecule
+                  :name (n / name :op1 "RocA"))
+            :ARG2 (m / mouse
+                  :mod (i / immunodeficient)
+                  :ARG1-of (c / combine-01
+                        :degree (s3 / severe))
+                  :ARG0-of (b / bear-01
+                        :ARG1 (x / xenograft
+                              :mod (c2 / cell-line
+                                    :name (n2 / name :op1 "AsPC-1")
+                                    :mod (t / tumor))
+                              :mod (s2 / subcutaneous)))))
+      :op2 (m2 / monitor-01
+            :ARG0 w
+            :ARG1 (r / rate
+                  :mod (g2 / grow-01
+                        :ARG1 t)))
+      :purpose (e / evaluate-01
+            :ARG0 w
+            :ARG1 (a3 / activity-06
+                  :ARG0 s
+                  :ARG0-of (c3 / counter-01
+                        :ARG1 t))
+            :degree (f / further)))
+
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt RocA was administrated by intraperitoneal injection once per day.
+# ::file pmid_2456_8222_108.txt
+# ::date 2015-08-27T13:55:01
+# ::id pmid_2456_8222.108
+(a / administrate-01
+      :ARG1 (s / small-molecule
+            :name (n / name :op1 "RocA"))
+      :frequency (r / rate-entity-91
+            :ARG1 "1"
+            :ARG2 (t / temporal-quantity
+                  :quant "1"
+                  :unit (d / day)))
+      :manner (i / inject-01
+            :ARG1 s
+            :mod (i2 / intraperitoneal)))
+
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt As a result, RocA significantly suppressed tumor growth compared with that in the control group.
+# ::file pmid_2456_8222_109.txt
+# ::date 2015-08-27T14:02:33
+# ::id pmid_2456_8222.109
+(s / suppress-01
+      :ARG0 (s2 / small-molecule
+            :name (n / name :op1 "RocA"))
+      :ARG1 (g / grow-01
+            :ARG1 (t / tumor))
+      :ARG1-of (s3 / significant-02)
+      :ARG2-of (r / result-01)
+      :compared-to (g3 / grow-01
+            :ARG1 t
+            :location (g2 / group
+                  :mod (c / control))))
+
+
+# ::save-date Tue Sep 15, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Tumor volumes in the RocA-treated group were 37 ± 8% of those in the control group (Figure <xref ref-type="fig" rid="F6">6</xref>A,B).
+# ::file pmid_2456_8222_110.txt
+# ::date 2015-08-27T14:04:28
+# ::id pmid_2456_8222.110
+(e / equal-01
+      :ARG1 (v / volume
+            :quant-of (t / tumor)
+            :location (g / group
+                  :ARG1-of (t2 / treat-04
+                        :ARG2 (s / small-molecule
+                              :name (n / name :op1 "RocA")))))
+      :ARG2 (v3 / value-interval
+            :op1 (p4 / product-of
+                  :op1 (p2 / percentage-entity
+                        :value "37"
+                        :ARG2-of (s2 / subtract-01
+                              :ARG1 (p / percentage-entity :value "8")))
+                  :op2 (v2 / volume
+                        :location (g2 / group
+                              :mod (c / control))
+                        :quant-of t))
+            :op2 (p5 / product-of
+                  :op1 (p3 / percentage-entity
+                        :value "37"
+                        :ARG2-of (a / add-02
+                              :ARG1 p))
+                  :op2 v2))
+      :ARG1-of (d / describe-01
+            :ARG0 (a2 / and
+                  :op1 (f / figure :mod "6A")
+                  :op2 (f2 / figure :mod "6B"))))
+
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Intriguingly, RocA treatment neither caused any loss of body weight nor exhibited apparent signs of toxicity in mice during the treatments (Figure <xref ref-type="fig" rid="F6">6</xref>C), suggesting that RocA is generally well tolerated <i>in vivo</i>.
+# ::file pmid_2456_8222_111.txt
+# ::date 2015-08-28T05:32:37
+# ::id pmid_2456_8222.111
+(a / and
+      :op1 (c / cause-01
+            :polarity "-"
+            :ARG0 (t / treat-04
+                  :ARG2 (s / small-molecule
+                        :name (n / name :op1 "RocA")))
+            :ARG1 (l / lose-02
+                  :ARG1 (w / weight-01
+                        :ARG1 (b / body))
+                  :mod (a2 / any)))
+      :op2 (e / exhibit-01
+            :polarity "-"
+            :ARG0 t
+            :ARG1 (s2 / signal-07
+                  :ARG1 (t2 / toxicity)
+                  :ARG1-of (a3 / appear-02))
+            :location (m / mouse))
+      :time (t3 / treat-04)
+      :ARG1-of (d / describe-01
+            :ARG0 (f / figure :mod "6C"))
+      :ARG0-of (s3 / suggest-01
+            :ARG1 (t4 / tolerate-01
+                  :ARG1 s
+                  :ARG1-of (w2 / well-09
+                        :ARG1-of (g / general-02))
+                  :manner (i / in-vivo)))
+      :ARG0-of (i2 / intrigue-01))
+
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Moreover, although RocA-treated mice eventually died from the pancreatic tumors, treatment with RocA significantly extended their lifespan compared with that of vehicle treatment (Figure <xref ref-type="fig" rid="F6">6</xref>D,E).
+# ::file pmid_2456_8222_112.txt
+# ::date 2015-08-28T05:41:04
+# ::id pmid_2456_8222.112
+(a / and
+      :op2 (h / have-concession-91
+            :ARG1 (e2 / extend-01
+                  :ARG0 "t"
+                  :ARG1 (l / lifespan :poss "m")
+                  :ARG1-of (s2 / significant-02)
+                  :compared-to (l2 / lifespan
+                        :poss (m2 / mouse
+                              :ARG1-of (t4 / treat-04
+                                    :ARG2 (v / vehicle)))))
+            :ARG2 (d / die-01
+                  :ARG1 (m / mouse
+                        :ARG1-of (t / treat-04
+                              :ARG2 (s / small-molecule
+                                    :name (n / name :op1 "RocA"))))
+                  :time (e / eventual)
+                  :ARG1-of (c / cause-01
+                        :ARG0 (t2 / tumor
+                              :mod (p / pancreas)))))
+      :ARG1-of (d2 / describe-01
+            :ARG0 (a2 / and
+                  :op1 (f / figure :mod "6D")
+                  :op2 (f2 / figure :mod "6E"))))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Next, we investigated the effect of RocA on cell proliferation <i>in vivo</i> by hematoxylin and eosin (H&E) staining and examining Ki-67 and cyclin D1 expression in tumor tissues harvested from vehicle- and RocA-treated mice.
+# ::file pmid_2456_8222_113.txt
+# ::date 2015-08-28T05:48:21
+# ::id pmid_2456_8222.113
+(i3 / investigate-01
+    :ARG0 (w / we)
+    :ARG1 (a / affect-01
+             :ARG0 (s / small-molecule
+                      :name (n / name
+                               :op1 "RocA"))
+             :ARG1 (p / proliferate-01
+                      :ARG0 (c / cell)
+                      :manner (i2 / in-vivo)))
+    :manner (a6 / and
+                :op1 (s2 / stain-01
+                         :ARG0 w
+                         :ARG2 (a2 / and
+                                   :op1 (s3 / small-molecule
+                                            :name (n2 / name
+                                                      :op1 "hematoxylin"))
+                                   :op2 (s4 / small-molecule
+                                            :name (n3 / name
+                                                      :op1 "eosin"))))
+                :op2 (e2 / examine-01
+                         :ARG0 w
+                         :ARG1 (a4 / and
+                                   :op1 (e / express-03
+                                           :ARG2 (p2 / protein
+                                                     :name (n4 / name
+                                                               :op1 "Ki-67"))
+                                           :ARG3 (t / tissue
+                                                    :mod (t2 / tumor)
+                                                    :ARG1-of (h / harvest-01
+                                                                :source (a5 / and
+                                                                            :op1 (m3 / mouse
+                                                                                     :ARG1-of (t3 / treat-04
+                                                                                                  :ARG2 s))
+                                                                            :op2 (m4 / mouse
+                                                                                     :ARG1-of (t4 / treat-04
+                                                                                                  :ARG2 (v / vehicle)))))))
+                                   :op2 (e3 / express-03
+                                            :ARG2 (p3 / protein
+                                                      :name (n5 / name
+                                                                :op1 "cyclin"
+                                                                :op2 "D1"))
+                                            :ARG3 t))))
+    :time (n6 / next))
+
+# ::save-date Sat Feb 13, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt H&E staining showed a compact mass of epithelial cells in vehicle-treated mice, whereas RocA-treated tumors exhibited loose epithelial cell aggregates with a higher number of interspersed mesenchymal cells (Figure <xref ref-type="fig" rid="F6">6</xref>F, left).
+# ::file pmid_2456_8222_114.txt
+# ::date 2015-08-28T05:57:10
+# ::id pmid_2456_8222.114
+(c3 / contrast-01
+    :ARG1 (s / show-01
+             :ARG0 (s2 / stain-01
+                       :ARG2 (a / and
+                                :op1 (s4 / small-molecule
+                                         :name (n / name
+                                                  :op1 "hematoxylin"))
+                                :op2 (s5 / small-molecule
+                                         :name (n2 / name
+                                                   :op1 "eosin"))))
+             :ARG1 (m4 / mass-01
+                       :ARG0 (c2 / cell
+                                 :mod (e / epithelium))
+                       :location (m5 / mouse
+                                     :ARG1-of (t / treat-04
+                                                 :ARG2 (v / vehicle)))
+                       :ARG1-of (c / compact-01)))
+    :ARG2 (e2 / exhibit-01
+              :ARG0 (t2 / tumor
+                        :ARG1-of (t3 / treat-04
+                                     :ARG2 (s3 / small-molecule
+                                               :name (n3 / name
+                                                         :op1 "RocA"))))
+              :ARG1 (a2 / aggregate-01
+                        :ARG1 (c4 / cell)
+                        :ARG1-of (l / loose-04)
+                        :ARG0-of (h2 / have-03
+                                     :ARG1 (n4 / number
+                                               :ARG1-of (h / high-02
+                                                           :degree (m / more))
+                                               :quant-of (c5 / cell
+                                                             :mod (m6 / mesenchymal)
+                                                             :ARG1-of (i / intersperse-01))))
+                        :mod e))
+    :ARG1-of (d / describe-01
+                :ARG0 (f / figure
+                         :mod "6F"
+                         :ARG1-of (l2 / left-20))))
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, RocA treatment resulted in a 3.2-fold decrease of Ki-67-positive cells in tumor sections from RocA-treated mice compared with that in vehicle-treated mice (Figure <xref ref-type="fig" rid="F6">6</xref>F, middle and <xref ref-type="fig" rid="F6">6</xref>G, upper).
+# ::file pmid_2456_8222_115.txt
+# ::date 2015-08-28T06:13:45
+# ::id pmid_2456_8222.115
+(a2 / and
+    :op2 (r / result-01
+            :ARG1 (t / treat-04
+                     :ARG2 (s / small-molecule
+                              :name (n / name
+                                       :op1 "RocA")))
+            :ARG2 (d / decrease-01
+                     :ARG1 (c / cell
+                              :mod (p2 / positive
+                                       :mod (p3 / protein
+                                                :name (n2 / name
+                                                          :op1 "Ki-67"))))
+                     :ARG2 (p / product-of
+                              :op1 "3.2")
+                     :location (s2 / section-01
+                                   :ARG1 (t2 / tumor)
+                                   :ARG3 (m / mouse
+                                            :ARG1-of t))
+                     :compared-to (d3 / decrease-01
+                                      :location (m2 / mouse
+                                                    :ARG1-of (t4 / treat-04
+                                                                 :ARG2 (v / vehicle)))))
+            :ARG1-of (d2 / describe-01
+                         :ARG0 (a / and
+                                  :op1 (f / figure
+                                          :mod "6F"
+                                          :direction (m3 / middle))
+                                  :op2 (f2 / figure
+                                           :mod "6G"
+                                           :direction (u / upper))))))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Furthermore, we found a 4.1-fold decrease of cyclin D1-positive cells in tumor sections from RocA-treated mice relative to that in vehicle-treated mice (Figure <xref ref-type="fig" rid="F6">6</xref>F, right and 6G, lower).
+# ::file pmid_2456_8222_116.txt
+# ::date 2015-08-28T06:23:56
+# ::id pmid_2456_8222.116
+(a / and
+   :op2 (f / find-01
+           :ARG0 (w / we)
+           :ARG1 (d / decrease-01
+                    :ARG1 (c / cell
+                             :mod (p2 / positive
+                                      :mod (p3 / protein
+                                               :name (n / name
+                                                        :op1 "cyclin"
+                                                        :op2 "D1"))))
+                    :ARG2 (p / product-of
+                             :op1 "4.1")
+                    :location (s / section-01
+                                 :ARG1 (t / tumor)
+                                 :ARG3 (m2 / mouse
+                                           :ARG1-of (t2 / treat-04
+                                                        :ARG2 (s2 / small-molecule
+                                                                  :name (n2 / name
+                                                                            :op1 "RocA")))))
+                    :ARG1-of (r / relative-05
+                                :ARG3 (d3 / decrease-01
+                                          :location (m3 / mouse
+                                                        :ARG1-of (t4 / treat-04
+                                                                     :ARG2 (v / vehicle)))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (a2 / and
+                          :op1 (f2 / figure
+                                   :mod "6F"
+                                   :ARG1-of (r2 / right-04))
+                          :op2 (f3 / figure
+                                   :mod "6G"
+                                   :ARG1-of (l / low-04
+                                               :degree (m / more))))))
+
+
+# ::save-date Tue Sep 1, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Therefore, RocA is a potent small molecule that suppresses the growth of AsPC-1 cell-derived tumors <i>in vivo</i>.
+# ::file pmid_2456_8222_117.txt
+# ::date 2015-08-28T06:28:45
+# ::id pmid_2456_8222.117
+(c / cause-01
+      :ARG1 (m / molecule
+            :mod (s / small)
+            :mod (p / potent)
+            :domain (s2 / small-molecule
+                  :name (n / name :op1 "RocA"))
+            :ARG0-of (s3 / suppress-01
+                  :ARG1 (g / grow-01
+                        :ARG1 (t / tumor
+                              :mod (i / in-vivo)
+                              :ARG1-of (d / derive-01
+                                    :ARG2 (c2 / cell-line
+                                          :name (n2 / name :op1 "AsPC-1"))))))))

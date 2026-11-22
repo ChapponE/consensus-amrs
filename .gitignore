@@ -3,3 +3,14 @@ __pycache__/
 results*/means/
 results*/scores.csv.gz
 results*/graphs.csv.gz
+
+# AMR 3.0 (LDC2020T02) is licensed: never commit it, nor anything holding its graphs or sentences
+data/ldc_raw/
+data/proxy/
+data/proxy_summaries/
+data/proxy_removed.csv
+results_proxy/consensus_graph_*.csv
+outputs/describe/results_proxy.csv
+
+# private
+article/

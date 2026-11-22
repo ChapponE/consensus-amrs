@@ -1,0 +1,2652 @@
+
+# ::save-date Wed Feb 24, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Among the 238 common hot-spot cancer mutations in 19 genes interrogated by the OncoCarta panel, mutations were detected in 7 different genes at 26 different nucleotide positions in our colon cancer samples.
+# ::file pmid_2023_3444_8.txt
+# ::date 2015-08-03T12:33:34
+# ::id pmid_2023_3444.8
+(d / detect-01
+      :ARG1 (m / mutate-01
+            :ARG1 (g / gene
+                  :quant "7"
+                  :ARG1-of (d2 / differ-02)
+                  :part (p / position
+                        :quant "26"
+                        :mod (n / nucleotide)
+                        :ARG1-of d2
+                        :location (d3 / disease
+                              :wiki "Colorectal_cancer"
+                              :name (n3 / name :op1 "colon" :op2 "cancer")
+                              :ARG1-of (s / sample-01
+                                    :ARG0 (w / we)))))
+            :ARG1-of (i2 / include-91
+                  :ARG2 (m2 / mutate-01
+                        :quant "238"
+                        :ARG1 (g2 / gene
+                              :quant "19"
+                              :ARG1-of (i / interrogate-01
+                                    :ARG0 (p2 / panel
+                                          :name (n2 / name :op1 "OncoCarta"))))
+                        :ARG1-of (s2 / share-01
+                              :degree (m3 / most))
+                        :mod (h / hotspot)))))
+
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Twenty-four assays that detected mutations in more than 1% of the samples were reconfigured into a new multiplexed panel, termed here as ColoCarta.
+# ::file pmid_2023_3444_9.txt
+# ::date 2015-08-05T00:19:23
+# ::id pmid_2023_3444.9
+(c / configure-01
+      :ARG1 (a / assay-01
+            :quant "24"
+            :ARG0-of (d / detect-01
+                  :ARG1 (m / mutate-01)
+                  :location (t2 / thing
+                        :quant (m2 / more-than
+                              :op1 (p / percentage-entity :value "1"))
+                        :ARG1-of (s / sample-01))))
+      :ARG4 (p2 / panel
+            :ARG1-of (n / new-01)
+            :mod (m3 / multiplex)
+            :ARG1-of (t / term-01
+                  :ARG3 (p3 / panel
+                        :name (n2 / name :op1 "ColoCarta"))
+                  :location (h / here)))
+      :mod (a2 / again))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Mutation profiling was repeated on 32 mutant samples using ColoCarta and the results were identical to results with OncoCarta, demonstrating that this methodology was reproducible.
+# ::file pmid_2023_3444_10.txt
+# ::date 2015-08-05T00:24:22
+# ::id pmid_2023_3444.10
+(a / and
+      :op1 (r4 / repeat-01
+            :ARG1 (p2 / profile-01
+                  :ARG1 (m2 / mutate-01))
+            :ARG3 (m4 / mutate-01
+                  :quant "32"
+                  :ARG1-of (s / sample-01))
+            :manner (u / use-01
+                  :ARG1 (p3 / panel
+                        :name (n2 / name :op1 "ColoCarta"))))
+      :op2 (i / identical-01
+            :ARG1 (t / thing
+                  :ARG2-of (r / result-01))
+            :ARG2 (t2 / thing
+                  :ARG2-of (r2 / result-01)
+                  :instrument (p / product
+                        :name (n / name :op1 "OncoCarta")))
+            :ARG0-of (d / demonstrate-01
+                  :ARG1 (p4 / possible-01
+                        :ARG1 (r3 / reproduce-01
+                              :ARG0 (m / methodology
+                                    :mod (t3 / this)))))))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Further evidence demonstrating the validity of the data was the fact that the mutation frequencies of the most common colon cancer mutations were similar to the COSMIC (Catalog of Somatic Mutations in Cancer) database.
+# ::file pmid_2023_3444_11.txt
+# ::date 2015-08-05T00:28:25
+# ::id pmid_2023_3444.11
+(e / evidence-01
+      :ARG0 (r / resemble-01
+            :ARG1 (h / have-frequency-91
+                  :ARG1 (m2 / mutate-01
+                        :ARG1 (d4 / disease
+                              :wiki "Colorectal_cancer"
+                              :name (n2 / name :op1 "colon" :op2 "cancer"))
+                        :ARG1-of (s / share-01
+                              :degree (m3 / most)))
+                  :mod (m / mutate-01))
+            :ARG2 (m4 / mutate-01
+                  :source (d / database
+                        :name (n / name :op1 "COSMIC"))))
+      :degree (f / further)
+      :ARG0-of (d2 / demonstrate-01
+            :ARG1 (v / valid-02
+                  :ARG1 (d3 / data))))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The frequencies were 43.5% for <i>KRAS</i>, 20.1% for <i>PIK3CA</i>, and 12.1% for <i>BRAF</i>.
+# ::file pmid_2023_3444_12.txt
+# ::date 2015-08-04T03:35:45
+# ::id pmid_2023_3444.12
+(a2 / and
+    :op1 (h / have-frequency-91
+            :ARG1 (g2 / gene
+                      :name (n2 / name
+                                :op1 "KRAS"))
+            :ARG2 (p / percentage-entity
+                     :value "43.5"))
+    :op2 (h2 / have-frequency-91
+             :ARG1 (g / gene
+                      :name (n / name
+                               :op1 "PIK3CA"))
+             :ARG2 (p2 / percentage-entity
+                       :value "20.1"))
+    :op3 (h3 / have-frequency-91
+             :ARG1 (g3 / gene
+                       :name (n3 / name
+                                 :op1 "BRAF"))
+             :ARG2 (p3 / percentage-entity
+                       :value "12.1")))
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In addition, infrequent mutations in <i>NRAS</i>, <i>AKT1</i>, <i>ABL1</i>, and <i>MET </i>were detected.
+# ::file pmid_2023_3444_13.txt
+# ::date 2015-08-03T12:22:30
+# ::id pmid_2023_3444.13
+(a / and
+   :op2 (d / detect-01
+           :ARG1 (m / mutate-01
+                    :ARG1 (a2 / and
+                              :op1 (g4 / gene
+                                       :name (n / name
+                                                :op1 "NRAS"))
+                              :op2 (g / gene
+                                      :name (n2 / name
+                                                :op1 "AKT1"))
+                              :op3 (g2 / gene
+                                       :name (n3 / name
+                                                 :op1 "ABL1"))
+                              :op4 (g3 / gene
+                                       :name (n4 / name
+                                                 :op1 "MET")))
+                    :ARG1-of (f / frequent-02
+                                :polarity "-"))))
+
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Mutation profiling of metastatic lymph nodes and their corresponding primary tumors showed that they were 89.7% concordant.
+# ::file pmid_2023_3444_14.txt
+# ::date 2015-08-03T12:26:40
+# ::id pmid_2023_3444.14
+(s / show-01
+      :ARG0 (a / and
+            :op1 (p2 / profile-01
+                  :ARG1 (m / mutate-01
+                        :ARG1 (n / node
+                              :mod (l / lymph
+                                    :mod (m2 / metastasis)))))
+            :op2 (t / tumor
+                  :mod (p3 / primary)
+                  :ARG1-of (c / correspond-02
+                        :ARG2 n)))
+      :ARG1 (c2 / concordant
+            :domain a
+            :mod (p / percentage-entity :value "89.7")))
+
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt All mutations found in the lymph nodes were also found in the corresponding primary tumors, but in 4 cases a mutation was present in the primary tumor only.
+# ::file pmid_2023_3444_15.txt
+# ::date 2015-08-04T08:48:38
+# ::id pmid_2023_3444.15
+(c / contrast-01
+      :ARG1 (f2 / find-01
+            :ARG1 (m / mutate-01
+                  :ARG1-of (f / find-01
+                        :location (n / node
+                              :mod (l / lymph)))
+                  :mod (a / all))
+            :location (t / tumor
+                  :mod (p / primary)
+                  :ARG1-of (c2 / correspond-02))
+            :mod (a2 / also))
+      :ARG2 (m2 / mutate-01
+            :quant "1"
+            :mod (c3 / case-04 :quant "4")
+            :location (t2 / tumor
+                  :mod p
+                  :mod (o / only))))
+
+
+# ::save-date Mon Aug 3, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Previously described mutations in control cell lines were detected.
+# ::file pmid_2023_3444_93.txt
+# ::date 2015-08-03T14:15:02
+# ::id pmid_2023_3444.93
+(d / detect-01
+      :ARG1 (m / mutate-01
+            :ARG1-of (d2 / describe-01
+                  :time (p / previous))
+            :location (c / cell-line
+                  :ARG0-of (c2 / control-01))))
+
+# ::save-date Tue Jan 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>BRAF</i>_V600E, <i>HRAS</i>_G12D, <i>NRAS</i>_Q61L, <i>PIK3CA</i>_E545K, <i>KRAS</i>_G13D, <i>NRAS</i>_Q61K, <i>EGFR</i>1_S125L, and <i>PIK3CA</i>_H1047R were detected in the appropriate cell lines (A2058, HS578T, HL60, MCF7, MDAMB231, NCI-H1299, NCI-H1395, and UACC-893, respectively).
+# ::file pmid_2023_3444_94.txt
+# ::date 2015-08-03T14:26:58
+# ::id pmid_2023_3444.94
+(d / detect-01
+   :ARG1 (a3 / and
+             :op1 (g2 / gene
+                      :wiki "BRAF_(gene)"
+                      :name (n3 / name
+                                :op1 "BRAF")
+                      :ARG1-of (m2 / mutate-01
+                                   :value "V600E"))
+             :op2 (g3 / gene
+                      :wiki "-"
+                      :name (n4 / name
+                                :op1 "HRAS")
+                      :ARG1-of (m3 / mutate-01
+                                   :value "G12D"))
+             :op3 (g4 / gene
+                      :wiki "-"
+                      :name (n5 / name
+                                :op1 "NRAS")
+                      :ARG1-of (m4 / mutate-01
+                                   :value "Q61L"))
+             :op4 (g5 / gene
+                      :wiki "-"
+                      :name (n6 / name
+                                :op1 "PIK3CA")
+                      :ARG1-of (m5 / mutate-01
+                                   :value "E545K"))
+             :op5 (g6 / gene
+                      :wiki "-"
+                      :name (n7 / name
+                                :op1 "KRAS")
+                      :ARG1-of (m6 / mutate-01
+                                   :value "G13D"))
+             :op6 (g7 / gene
+                      :wiki "-"
+                      :name (n8 / name
+                                :op1 "NRAS")
+                      :ARG1-of (m7 / mutate-01
+                                   :value "Q61K"))
+             :op7 (g / gene
+                     :wiki "-"
+                     :name (n2 / name
+                               :op1 "EGFR")
+                     :ARG1-of (m9 / mutate-01
+                                  :value "S125L"))
+             :op8 (g8 / gene
+                      :wiki "-"
+                      :name (n / name
+                               :op1 "PIK3CA")
+                      :ARG1-of (m8 / mutate-01
+                                   :value "H1047R")))
+   :location (c / cell-line
+                :ARG1-of (a / appropriate-02)
+                :ARG1-of (m / mean-01
+                            :ARG2 (a2 / and
+                                      :op1 (c2 / cell-line
+                                               :wiki "-"
+                                               :name (n9 / name
+                                                         :op1 "A2058"))
+                                      :op2 (c3 / cell-line
+                                               :wiki "-"
+                                               :name (n16 / name
+                                                          :op1 "HS578T"))
+                                      :op3 (c4 / cell-line
+                                               :wiki "HL60"
+                                               :name (n12 / name
+                                                          :op1 "HL60"))
+                                      :op4 (c5 / cell-line
+                                               :wiki "MCF-7"
+                                               :name (n15 / name
+                                                          :op1 "MCF7"))
+                                      :op5 (c6 / cell-line
+                                               :wiki "-"
+                                               :name (n13 / name
+                                                          :op1 "MDAMB231"))
+                                      :op6 (c7 / cell-line
+                                               :wiki "-"
+                                               :name (n11 / name
+                                                          :op1 "NCI-H1299"))
+                                      :op7 (c8 / cell-line
+                                               :wiki "-"
+                                               :name (n14 / name
+                                                          :op1 "NCI-H1395"))
+                                      :op8 (c9 / cell-line
+                                               :wiki "-"
+                                               :name (n10 / name
+                                                          :op1 "UACC-893"))))))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The appropriate mutation was found in MCF-7 (<i>PIK3CA</i>_E545K) from both intact DNA and DNA isolated from FFPET.
+# ::file pmid_2023_3444_95.txt
+# ::date 2015-08-04T07:04:52
+# ::id pmid_2023_3444.95
+(f / find-01
+   :ARG1 (m / mutate-01
+            :ARG1-of (a / appropriate-02))
+   :location (c / cell-line
+                :name (n / name
+                         :op1 "MCF-7")
+                :ARG1-of (m2 / mean-01
+                             :ARG2 (g / gene
+                                      :name (n2 / name
+                                                :op1 "PIK3CA")
+                                      :ARG1-of (m3 / mutate-01
+                                                   :value "E545K")))
+                :location (a3 / and
+                              :op1 (n3 / nucleic-acid
+                                       :wiki "DNA"
+                                       :name (n5 / name
+                                                 :op1 "DNA")
+                                       :mod (i / intact))
+                              :op2 (n6 / nucleic-acid
+                                       :wiki "DNA"
+                                       :name (n7 / name
+                                                 :op1 "DNA")
+                                       :ARG1-of (i2 / isolate-01
+                                                    :ARG2 (t / thing
+                                                             :name (n4 / name
+                                                                       :op1 "FFPET")))))))
+
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt DNAs from clinical samples, control cell lines, and cell lines formalin-fixed, paraffin-embedded cell lines showed the same rates of primer extension and performance on mass spectrometer.
+# ::file pmid_2023_3444_96.txt
+# ::date 2015-08-04T07:33:58
+# ::id pmid_2023_3444.96
+(s / show-01
+      :ARG0 (n / nucleic-acid
+            :wiki "DNA"
+            :name (n2 / name :op1 "DNA")
+            :source (a2 / and
+                  :op1 (t / thing
+                        :mod (c / clinic)
+                        :ARG1-of (s4 / sample-01))
+                  :op2 (c2 / cell-line
+                        :ARG1-of (c3 / control-01))
+                  :op3 (c4 / cell-line
+                        :ARG0-of (f / fix-01
+                              :ARG1 (f2 / formalin)))
+                  :op4 (c5 / cell-line
+                        :ARG1-of (e2 / embed-01
+                              :ARG2 (p3 / paraffin)))))
+      :ARG1 (r / rate-entity-91
+            :ARG1 (a / and
+                  :op1 (e / extend-01
+                        :instrument (s3 / spectometer
+                              :mod (m / mass))
+                        :mod (p / primer))
+                  :op2 (p2 / perform-01
+                        :instrument s3))
+            :ARG1-of (s2 / same-01)))
+
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The proportion of the mutated alleles in each cell line, as observed from the area under the mutant peak on the spectra, ranged from 0.4-0.6, as expected for a pure clonal population with a heterozygote mutation.
+# ::file pmid_2023_3444_97.txt
+# ::date 2015-08-05T00:02:09
+# ::id pmid_2023_3444.97
+(r / range-01
+      :ARG1 (p2 / proportion-01
+            :ARG1 (a / allele
+                  :ARG1-of (m2 / mutate-01)
+                  :location (c2 / cell-line
+                        :mod (e2 / each)))
+            :ARG1-of (o / observe-01
+                  :location (a2 / area
+                        :location (u / under
+                              :op1 (p3 / peak
+                                    :ARG0-of (m3 / mutate-01)
+                                    :location (s / spectrum))))))
+      :ARG3 "0.4"
+      :ARG4 "0.6"
+      :ARG1-of (e / expect-01
+            :prep-for (p / population
+                  :mod (c / clone)
+                  :ARG1-of (m / mutate-01
+                        :ARG3 (h / heterozygote))
+                  :mod (p4 / pure))))
+
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Spectra for cell line UACC-893 had equal fractions of mutant and wt alleles (Fig. <xref ref-type="fig" rid="F2">2A</xref>).
+# ::file pmid_2023_3444_98.txt
+# ::date 2015-08-04T08:49:31
+# ::id pmid_2023_3444.98
+(h / have-03
+      :ARG0 (s / spectrum
+            :mod (c / cell-line
+                  :name (n / name :op1 "UACC-893")))
+      :ARG1 (e / equal-01
+            :ARG1 (f / fraction-01
+                  :ARG1 (a / allele
+                        :ARG1-of (m / mutate-01)))
+            :ARG2 (f2 / fraction-01
+                  :ARG1 (a2 / allele
+                        :mod (w / wild-type))))
+      :ARG1-of (d / describe-01
+            :ARG0 (f3 / figure :mod "2A")))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt One exception to this distribution among cell lines was seen in A2058, which showed spectra consistent with 2 copies of the WT allele and one mutant <i>BRAF </i>mutant allele (Fig. <xref ref-type="fig" rid="F2">2B</xref>).
+# ::file pmid_2023_3444_99.txt
+# ::date 2015-08-04T09:15:40
+# ::id pmid_2023_3444.99
+(s / see-01
+   :ARG1 (t / thing
+            :ARG1-of (e / except-01
+                        :ARG2 (d2 / distribute-01
+                                  :ARG1 (c2 / cell-line)
+                                  :mod (t2 / this))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "2B"))
+   :location (c / cell-line
+                :name (n / name
+                         :op1 "A2058")
+                :ARG0-of (s2 / show-01
+                             :ARG1 (s3 / spectra
+                                       :ARG1-of (c3 / consistent-01
+                                                    :ARG2 (a / and
+                                                             :op1 (c4 / copy-01
+                                                                      :quant "2"
+                                                                      :ARG1 (a2 / allele
+                                                                                :mod (w / wild-type)))
+                                                             :op2 (c5 / copy-01
+                                                                      :ARG1 (a3 / allele
+                                                                                :ARG3-of (m / mutate-01
+                                                                                            :ARG1 (g / gene
+                                                                                                     :name (n2 / name
+                                                                                                               :op1 "BRAF")))))))))))
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The 3 alleles of <i>BRAF </i>in A2058 are consistent with the observation that there are 3 copies of chromosome 7 in this cell line (COSMIC in the SNP Array Based LOH and Copy Number Analysis data base) [<xref ref-type="bibr" rid="B21">21</xref>].
+# ::file pmid_2023_3444_100.txt
+# ::date 2015-08-04T09:55:13
+# ::id pmid_2023_3444.100
+(c / consistent-01
+   :ARG1 (a / allele
+            :quant "3"
+            :mod (g / gene
+                    :name (n / name
+                             :op1 "BRAF"))
+            :location (c2 / cell-line
+                          :name (n2 / name
+                                    :op1 "A2058")))
+   :ARG2 (o / observe-01
+            :ARG1 (b / be-located-at-91
+                     :ARG1 (c3 / copy-01
+                               :quant "3"
+                               :ARG1 (c4 / chromosome
+                                         :mod "7"))
+                     :ARG2 (c5 / cell-line
+                               :mod (t / this))))
+   :ARG1-of (d / describe-01
+               :ARG0 (d2 / database
+                         :name (n3 / name
+                                   :op1 "COSMIC")
+                         :location (a3 / and
+                                       :op1 (d5 / database
+                                                :name (n6 / name
+                                                          :op1 "SNP"
+                                                          :op2 "Array"
+                                                          :op3 "Based"
+                                                          :op4 "LOH"))
+                                       :op2 (d3 / database
+                                                :name (n5 / name
+                                                          :op1 "Copy"
+                                                          :op2 "Number"
+                                                          :op3 "Analysis")))))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (p / publication
+                         :ARG0-of (c6 / cite-01
+                                      :ARG1 "21"))))
+
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Pilot studies demonstrated that the assays worked with as little as 1 ng of DNA (Fig. <xref ref-type="fig" rid="F3">3</xref>).
+# ::file pmid_2023_3444_102.txt
+# ::date 2015-08-04T03:44:51
+# ::id pmid_2023_3444.102
+(d / demonstrate-01
+      :ARG0 (s / study-01
+            :mod (p / pilot))
+      :ARG1 (w / work-09
+            :ARG1 (a / assay-01
+                  :mod (c / concentration-quantity
+                        :quant "1"
+                        :unit (n / nanogram)
+                        :mod (l / little
+                              :compared-to (n2 / nucleic-acid
+                                    :wiki "DNA"
+                                    :name (n3 / name :op1 "DNA"))))))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (f / figure :mod "3")))
+
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The fraction of unextended primer was .09 even when the input DNA was between 1-3 ng, When concentrations of the amount of DNA was between 3-14 ng, the fraction of unextended primer was similar, .07.
+# ::file pmid_2023_3444_103.txt
+# ::date 2015-08-04T03:51:34
+# ::id pmid_2023_3444.103
+(m / multi-sentence
+      :snt1 (f4 / fraction
+            :quant "0.09"
+            :part-of (p / primer
+                  :ARG1-of (e / extend-01 :polarity "-"))
+            :condition (n3 / nucleic-acid
+                  :wiki "DNA"
+                  :name (n4 / name :op1 "DNA")
+                  :mod (i / input)
+                  :quant (b / between
+                        :op1 (c / concentration-quantity
+                              :quant "1"
+                              :unit (n / nanogram))
+                        :op2 (c2 / concentration-quantity
+                              :quant "3"
+                              :unit n))))
+      :snt2 (f5 / fraction
+            :part-of (p2 / primer
+                  :quant "0.07"
+                  :ARG1-of (e2 / extend-01 :polarity "-"))
+            :condition (c3 / concentrate-02
+                  :ARG1 (a / amount-01
+                        :ARG1 (n5 / nucleic-acid
+                              :wiki "DNA"
+                              :name (n6 / name :op1 "DNA"))
+                        :ARG2 (b2 / between
+                              :op1 (c4 / concentration-quantity :quant "3" :unit "n2")
+                              :op2 (c5 / concentration-quantity
+                                    :quant "14"
+                                    :unit (n2 / nanogram)))))
+            :ARG1-of (r / resemble-01)))
+
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, the assays worked well even when only 1 ng of DNA was used.
+# ::file pmid_2023_3444_104.txt
+# ::date 2015-08-04T03:28:08
+# ::id pmid_2023_3444.104
+(c3 / cause-01
+      :ARG1 (w / work-09
+            :ARG1 (a / assay-01)
+            :manner (w2 / well)
+            :concession (e / even-when
+                  :op1 (u / use-01
+                        :ARG1 (n2 / nucleic-acid
+                              :wiki "DNA"
+                              :name (n3 / name :op1 "DNA")
+                              :quant (c2 / concentration-quantity
+                                    :quant "1"
+                                    :unit (n / nanogram)
+                                    :mod (o / only))))))
+      :ARG2-of (c / contrast-01))
+
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In clinical samples with some assays it was possible to detect mutations that only represented 5% of the total 2 peak areas.
+# ::file pmid_2023_3444_105.txt
+# ::date 2015-08-04T03:32:50
+# ::id pmid_2023_3444.105
+(p2 / possible-01
+      :ARG1 (d / detect-01
+            :ARG1 (m / mutate-01
+                  :ARG0-of (r / represent-01
+                        :ARG1 (p / percentage-entity
+                              :value "5"
+                              :ARG3-of (i / include-91
+                                    :ARG1 (a2 / area
+                                          :quant "2"
+                                          :mod (t / total)
+                                          :mod (p3 / peak))))
+                        :mod (o / only)))
+            :location (t2 / thing
+                  :ARG1-of (s / sample-01
+                        :manner (a / assay-01
+                              :quant (s2 / some))
+                        :mod (c / clinic)))))
+
+# ::save-date Tue Nov 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The spectra in Fig. <xref ref-type="fig" rid="F4">4</xref> show a small but clear peak at the expected size for a <i>PIK3CA </i>1047R mutation in a lymph node.
+# ::file pmid_2023_3444_106.txt
+# ::date 2015-08-04T05:32:58
+# ::id pmid_2023_3444.106
+(s / show-01
+   :ARG0 (s2 / spectra
+             :ARG1-of (d / describe-01
+                         :ARG0 (f / figure
+                                  :mod "4")))
+   :ARG1 (p / peak
+            :mod (s3 / small
+                     :ARG1-of (c / contrast-01
+                                 :ARG2 (p2 / peak
+                                           :mod (c2 / clear)
+                                           :ARG0-of (h / have-03
+                                                       :ARG1 (s4 / size-01
+                                                                 :ARG1 (m / mutate-01
+                                                                          :value "1047R"
+                                                                          :ARG2 (g2 / gene
+                                                                                    :name (n2 / name
+                                                                                              :op1 "PIK3CA"))
+                                                                          :location (n4 / node
+                                                                                        :mod (l / lymph)))
+                                                                 :ARG1-of (e / expect-01))))))))
+
+
+# ::save-date Tue Aug 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We also were able to demonstrate the sensitivity of the platform by performing a cell mixing experiment.
+# ::file pmid_2023_3444_107.txt
+# ::date 2015-08-04T03:54:22
+# ::id pmid_2023_3444.107
+(p2 / possible-01
+      :ARG1 (d / demonstrate-01
+            :ARG0 (w / we)
+            :ARG1 (s / sensitive-03
+                  :ARG0 (p3 / platform))
+            :mod (a / also)
+            :manner (p / perform-02
+                  :ARG0 w
+                  :ARG1 (e / experiment-01
+                        :ARG1 (m / mix-01
+                              :ARG1 (c / cell))))))
+
+
+# ::save-date Wed Aug 5, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Mutation analysis was done using MCF-7 cell line DNA alone or mixed with SKBR3 at various percentages.
+# ::file pmid_2023_3444_108.txt
+# ::date 2015-08-04T04:11:01
+# ::id pmid_2023_3444.108
+(a / analyze-01
+      :ARG1 (m / mutate-01)
+      :manner (o / or
+            :op1 (u / use-01
+                  :ARG1 (n3 / nucleic-acid
+                        :wiki "DNA"
+                        :name (n4 / name :op1 "DNA")
+                        :mod (c / cell-line
+                              :name (n / name :op1 "MCF-7"))
+                        :mod (a2 / alone)))
+            :op2 (u2 / use-01
+                  :ARG1 (m2 / mix-01
+                        :ARG1 n3
+                        :ARG2 (c2 / cell-line
+                              :name (n2 / name :op1 "SKBR3")))
+                  :degree (p / percentage
+                        :ARG1-of (v / vary-01)))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt MCF-7 cells contain a PIK3CA mutation, and SKBR3 cells do not.
+# ::file pmid_2023_3444_109.txt
+# ::date 2015-08-04T04:19:25
+# ::id pmid_2023_3444.109
+(a / and
+   :op1 (c / contain-01
+           :ARG0 (c3 / cell-line
+                     :name (n2 / name
+                               :op1 "MCF-7"))
+           :ARG1 (m / mutate-01
+                    :ARG1 (g / gene
+                             :name (n / name
+                                      :op1 "PIK3CA"))))
+   :op2 (c2 / contain-01
+            :polarity "-"
+            :ARG0 (c4 / cell-line
+                      :name (n3 / name
+                                :op1 "SKBR3"))
+            :ARG1 g))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Fig. <xref ref-type="fig" rid="F5">5</xref> demonstrates that the mutation was detectable even when the MCF-7 cells represented only 5 to 10% of the total DNA and only 5 to 2.5% of the alleles.
+# ::file pmid_2023_3444_110.txt
+# ::date 2015-08-04T04:23:12
+# ::id pmid_2023_3444.110
+(d / demonstrate-01
+      :ARG0 (f / figure :mod "5")
+      :ARG1 (h / have-concession-91
+            :ARG1 (p3 / possible-01
+                  :ARG1 (d2 / detect-01))
+            :ARG2 (r / represent-01
+                  :ARG0 (c / cell-line
+                        :name (n / name :op1 "MCF-7"))
+                  :ARG1 (a / and
+                        :op1 (b / between
+                              :op1 (p4 / percentage-entity :value "5")
+                              :op2 (p / percentage-entity :value "10")
+                              :ARG3-of (i / include-91
+                                    :ARG2 (n2 / nucleic-acid
+                                          :wiki "DNA"
+                                          :name (n3 / name :op1 "DNA")
+                                          :mod (t / total))))
+                        :op2 (b2 / between
+                              :op1 (p6 / percentage-entity :value "5")
+                              :op2 (p5 / percentage-entity :value "2.5")
+                              :mod (o / only)
+                              :ARG3-of (i2 / include-91
+                                    :ARG2 (a2 / allele)))))))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This sensitivity is important for mutation detection in clinical cancer samples, which usually contain some amount of normal tissue, which dilutes the number of tumor cells.
+# ::file pmid_2023_3444_111.txt
+# ::date 2015-08-04T04:47:39
+# ::id pmid_2023_3444.111
+(i / important
+      :domain (s / sensitive-03
+            :mod (t3 / this))
+      :purpose (d / detect-01
+            :ARG1 (m / mutate-01)
+            :location (s2 / sample-01
+                  :ARG1 (d2 / disease
+                        :wiki "Cancer"
+                        :name (n3 / name :op1 "cancer"))
+                  :ARG0-of (c / contain-01
+                        :ARG1 (a2 / amount
+                              :mod (s3 / some)
+                              :quant-of (t / tissue)
+                              :ARG1-of (n2 / normal-02)
+                              :ARG0-of (d3 / dilute-01
+                                    :ARG1 (n / number
+                                          :quant-of (c2 / cell
+                                                :mod (t2 / tumor)))))
+                        :manner (u / usual))
+                  :mod (c4 / clinic))))
+
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This is of particular concern when profiling lymph nodes, which may contain a minority of tumor cells.
+# ::file pmid_2023_3444_112.txt
+# ::date 2015-08-04T04:25:20
+# ::id pmid_2023_3444.112
+(c / concern-01
+      :ARG0 (t2 / this)
+      :time (p / profile-01
+            :ARG1 (n / node
+                  :mod (l / lymph)
+                  :ARG0-of (c2 / contain-01
+                        :ARG1 (c3 / cell
+                              :mod (t / tumor)
+                              :quant (m / minority))
+                        :ARG1-of (p2 / possible-01))))
+      :mod (p3 / particular))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In this preliminary assessment of the feasibility of using the Sequenom platform to do large-scale mutation profiling of colon cancer samples isolated from FFPET, it was essential to determine if our data yielded frequencies typical of what has been seen previously.
+# ::file pmid_2023_3444_114.txt
+# ::date 2015-08-04T07:04:07
+# ::id pmid_2023_3444.114
+(e / essential
+      :domain (d3 / determine-01
+            :ARG1 (y / yield-01
+                  :mode "interrogative"
+                  :ARG0 (d2 / data
+                        :poss (w / we))
+                  :ARG1 (f / frequency
+                        :ARG0-of (t / typify-01
+                              :ARG1 (t2 / thing
+                                    :ARG1-of (s / see-01
+                                          :time (p / previous))))))
+            :time (a / assess-01
+                  :ARG1 (f2 / feasible
+                        :mod (u / use-01
+                              :ARG1 (p3 / platform
+                                    :name (n / name :op1 "Sequenom"))
+                              :ARG2 (p4 / profile-01
+                                    :ARG0 (m / mutate-01
+                                          :mod (l / large-scale))
+                                    :ARG1 (s2 / sample-01
+                                          :ARG1 (d / disease
+                                                :wiki "Colorectal_cancer"
+                                                :name (n3 / name :op1 "colon" :op2 "cancer"))
+                                          :ARG1-of (i / isolate-01
+                                                :ARG2 (t3 / thing
+                                                      :name (n2 / name :op1 "FFPET")))))))
+                  :mod (p2 / preliminary)
+                  :mod (t4 / this))))
+
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Table <xref ref-type="table" rid="T2">2</xref> shows the mutation frequencies obtained here and from the COSMIC (Catalog of Somatic Mutations in Cancer) database [<xref ref-type="bibr" rid="B21">21</xref>].
+# ::file pmid_2023_3444_115.txt
+# ::date 2015-08-04T07:35:03
+# ::id pmid_2023_3444.115
+(s / show-01
+      :ARG0 (t / table :mod "2")
+      :ARG1 (h2 / have-frequency-91
+            :ARG1 (m / mutate-01)
+            :ARG1-of (o / obtain-01
+                  :location (h / here)
+                  :source (d2 / database
+                        :name (n / name :op1 "COSMIC")
+                        :ARG1-of (m2 / mean-01
+                              :ARG2 (t2 / thing
+                                    :ARG2-of (c2 / catalogue-01
+                                          :ARG1 (m3 / mutate-01
+                                                :mod (s2 / somatic)
+                                                :location (d3 / disease
+                                                      :wiki "Cancer"
+                                                      :name (n2 / name :op1 "cancer")))))))))
+      :ARG1-of (d / describe-01
+            :ARG0 (p / publication
+                  :ARG0-of (c / cite-01 :ARG1 "21"))))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The COSMIC frequencies seen in Table <xref ref-type="table" rid="T2">2</xref> are based only on those mutations that are detectable with OncoCarta.
+# ::file pmid_2023_3444_116.txt
+# ::date 2015-08-03T12:36:26
+# ::id pmid_2023_3444.116
+(b / base-02
+      :ARG1 (h / have-frequency-91
+            :ARG1-of (s / see-01
+                  :location (t / table :mod "2"))
+            :mod (t4 / thing
+                  :name (n / name :op1 "COSMIC")))
+      :ARG2 (m / mutate-01
+            :mod (t2 / this)
+            :ARG1-of (d / detect-01
+                  :ARG1-of (p / possible-01)
+                  :instrument (p2 / product
+                        :name (n2 / name :op1 "OncoCarta"))))
+      :mod (o / only))
+
+# ::save-date Tue Jan 19, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt OncoCarta assays interrogate 99%, 98%, and 78% of the known colon cancer mutations in <i>BRAF</i>, <i>KRAS</i>, and <i>PIK3CA</i>, respectively, based on a large number of colon cancer samples that have been sequenced in <i>BRAF </i>(n = 4628), <i>KRAS </i>(n = 858) and <i>PIK3CA </i>(n = 247).
+# ::file pmid_2023_3444_117.txt
+# ::date 2015-08-03T12:36:37
+# ::id pmid_2023_3444.117
+(i / interrogate-01
+   :ARG0 (a / assay-01
+            :instrument (p4 / product
+                            :name (n / name
+                                     :op1 "OncoCarta")))
+   :ARG1 (m / mutate-01
+            :ARG1 (a2 / and
+                      :op1 (g / gene
+                              :name (n2 / name
+                                        :op1 "BRAF"))
+                      :op2 (g2 / gene
+                               :name (n3 / name
+                                         :op1 "KRAS"))
+                      :op3 (g3 / gene
+                               :name (n4 / name
+                                         :op1 "PIK3CA")))
+            :manner (r / respective)
+            :ARG1-of (k / know-02)
+            :ARG2-of (i2 / include-91
+                         :ARG1 (m2 / mutate-01
+                                   :ARG1 a2
+                                   :ARG1-of k
+                                   :mod "d")
+                         :ARG3 (a4 / and
+                                   :op1 (p / percentage-entity
+                                           :value "99")
+                                   :op2 (p2 / percentage-entity
+                                            :value "98")
+                                   :op3 (p3 / percentage-entity
+                                            :value "78")))
+            :mod (d / disease
+                    :wiki "Colorectal_cancer"
+                    :name (n5 / name
+                              :op1 "colon"
+                              :op2 "cancer")))
+   :ARG1-of (b / base-02
+               :ARG2 (n8 / number
+                         :mod (l / large)
+                         :quant-of (a3 / and
+                                       :op1 (t / thing
+                                               :quant "4628"
+                                               :ARG1-of (s / sample-01
+                                                           :ARG2 d)
+                                               :ARG1-of (s2 / sequence-01
+                                                            :location g))
+                                       :op2 (t2 / thing
+                                                :quant "858"
+                                                :ARG1-of (s3 / sample-01
+                                                             :ARG2 d)
+                                                :ARG1-of (s4 / sequence-01
+                                                             :location g2))
+                                       :op3 (t3 / thing
+                                                :quant "247"
+                                                :ARG1-of (s5 / sample-01
+                                                             :ARG2 d)
+                                                :ARG1-of (s6 / sequence-01
+                                                             :location g3))))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The OncoCarta panel found that the most frequent mutations in C-07 were <i>KRAS </i>(43.5%), <i>PIK3CA </i>(20.1%), and <i>BRAF </i>(12.1%), which are similar to what is seen in COSMIC.
+# ::file pmid_2023_3444_118.txt
+# ::date 2015-08-03T13:22:27
+# ::id pmid_2023_3444.118
+(f / find-01
+   :ARG0 (p / panel
+            :name (n / name
+                     :op1 "OncoCarta"))
+   :ARG1 (f2 / frequent-02
+             :ARG1 (a3 / and
+                       :op1 (m / mutate-01
+                               :ARG1 (g / gene
+                                        :name (n2 / name
+                                                  :op1 "KRAS")
+                                        :frequency (p2 / percentage-entity
+                                                       :value "43.5")))
+                       :op2 (m3 / mutate-01
+                                :ARG1 (g2 / gene
+                                          :name (n3 / name
+                                                    :op1 "PIK3CA")
+                                          :frequency (p3 / percentage-entity
+                                                         :value "20.1")))
+                       :op3 (m4 / mutate-01
+                                :ARG1 (g3 / gene
+                                          :name (n4 / name
+                                                    :op1 "BRAF")
+                                          :frequency (p4 / percentage-entity
+                                                         :value "12.1")))
+                       :ARG1-of (r / resemble-01
+                                   :ARG2 (t3 / thing
+                                             :ARG1-of (s / see-01
+                                                         :location (t2 / thing
+                                                                       :name (n6 / name
+                                                                                 :op1 "COSMIC")))))
+                       :location (c / cell-line
+                                    :name (n5 / name
+                                              :op1 "C-07")))
+             :degree (m2 / most)))
+
+# ::save-date Tue Jan 12, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>NRAS </i>mutations, while infrequent, were detected in codons 12, 13 and 61 and represent a sizable minority of the C0-7 samples (3.8%).
+# ::file pmid_2023_3444_119.txt
+# ::date 2015-08-03T13:37:40
+# ::id pmid_2023_3444.119
+(a / and
+   :op1 (d / detect-01
+           :ARG1 (m / mutate-01
+                    :ARG1 (g / gene
+                             :wiki "-"
+                             :name (n / name
+                                      :op1 "NRAS"))
+                    :concession (f / frequent-02
+                                   :polarity "-"
+                                   :ARG1 m))
+           :location (a2 / and
+                         :op1 (c / codon
+                                 :mod "12")
+                         :op2 (c2 / codon
+                                  :mod "13")
+                         :op3 (c3 / codon
+                                  :mod "61")))
+   :op2 (r / represent-01
+           :ARG0 m
+           :ARG1 (m2 / minority
+                     :mod (s / sizable)
+                     :poss (t2 / thing
+                               :ARG1-of (s2 / sample-01)
+                               :ARG1-of (l / label-01
+                                           :ARG2 (s3 / string-entity
+                                                     :value "C0-7")))
+                     :ARG1-of (m3 / mean-01
+                                  :ARG2 (p / percentage-entity
+                                           :value "3.8")))))
+
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These data suggest that FFPET samples can be interrogated with the technology described here and yield accurate data.
+# ::file pmid_2023_3444_120.txt
+# ::date 2015-08-03T13:49:28
+# ::id pmid_2023_3444.120
+(s / suggest-01
+      :ARG0 (d / data
+            :mod (t / this))
+      :ARG1 (a / and
+            :op1 (p / possible-01
+                  :ARG1 (i / interrogate-01
+                        :ARG2 (t3 / thing
+                              :name (n / name :op1 "FFPET")
+                              :ARG1-of (s2 / sample-01))
+                        :instrument (t2 / technology
+                              :ARG1-of (d3 / describe-01
+                                    :location (h / here)))))
+            :op2 (y / yield-01
+                  :ARG0 t3
+                  :ARG1 (d2 / data
+                        :mod (a2 / accurate)))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt While most of the specific amino acid mutations mirror what is seen on the COSMIC database, some unique colon cancer gene mutations were found, which include <i>ABL1</i>-F359V, <i>AKT1-</i>E17K, <i>MET-</i>R970C, and <i>MET</i>-T992I.
+# ::file pmid_2023_3444_121.txt
+# ::date 2015-08-03T13:54:49
+# ::id pmid_2023_3444.121
+(h / have-concession-91
+   :ARG1 (f / find-01
+            :ARG1 (m / mutate-01
+                     :ARG1 (g / gene
+                              :mod (d2 / disease
+                                       :wiki "Colorectal_cancer"
+                                       :name (n6 / name
+                                                 :op1 "colon"
+                                                 :op2 "cancer")))
+                     :mod (u / unique)
+                     :ARG2-of (i / include-01
+                                 :ARG1 (a / and
+                                          :op1 (g2 / gene
+                                                   :name (n2 / name
+                                                             :op1 "ABL1")
+                                                   :ARG2-of (m7 / mutate-01
+                                                                :value "F359V"))
+                                          :op2 (g3 / gene
+                                                   :name (n3 / name
+                                                             :op1 "AKT1")
+                                                   :ARG2-of (m2 / mutate-01
+                                                                :value "E17K"))
+                                          :op3 (g4 / gene
+                                                   :name (n4 / name
+                                                             :op1 "MET")
+                                                   :ARG2-of (m3 / mutate-01
+                                                                :value "R970C"))
+                                          :op3 (g5 / gene
+                                                   :name (n5 / name
+                                                             :op1 "MET")
+                                                   :ARG2-of (m8 / mutate-01
+                                                                :value "T992I"))))
+                     :mod (s3 / some)))
+   :ARG2 (m4 / mirror-01
+             :ARG1 (t / thing
+                      :ARG1-of (s2 / see-01
+                                   :location (d / database
+                                                :name (n / name
+                                                         :op1 "COSMIC"))))
+             :ARG2 (m5 / mutate-01
+                       :ARG1 (a4 / amino-acid)
+                       :ARG1-of (s / specific-02
+                                   :ARG1 m9)
+                       :ARG1-of (i2 / include-91
+                                    :ARG2 (m9 / mutate-01
+                                              :ARG1 (a2 / amino-acid))
+                                    :ARG3 (m6 / most)))))
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Other amino acid changes that were not in the COSMIC database were amino acid changes R88Q, H701P, and C420R in <i>PIK3CA</i>, <i>BRAF</i>-594V/G, and <i>KRAS</i>-Q61R, and several in <i>NRAS</i>, including G12C, G12D, G13R, G13V, Q61H and Q61K (Table <xref ref-type="table" rid="T2">2</xref>).
+# ::file pmid_2023_3444_122.txt
+# ::date 2015-08-03T14:09:31
+# ::id pmid_2023_3444.122
+(c / change-01
+   :ARG1 (a / amino-acid)
+   :mod (o / other)
+   :ARG1-of (b / be-located-at-91
+               :polarity "-"
+               :ARG2 (d / database
+                        :name (n16 / name
+                                   :op1 "COSMIC")))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (t / table
+                         :mod "2"))
+   :domain (a6 / and
+               :op1 (c3 / change-01
+                        :ARG1 (a7 / amino-acid
+                                  :part-of (g / gene
+                                              :name (n4 / name
+                                                        :op1 "PIK3CA")
+                                              :ARG2-of (m / mutate-01
+                                                          :value "R88Q"))))
+               :op2 (c4 / change-01
+                        :ARG1 (a8 / amino-acid
+                                  :part-of (g5 / gene
+                                               :name (n / name
+                                                        :op1 "PIK3CA")
+                                               :ARG2-of (m2 / mutate-01
+                                                            :value "H701P"))))
+               :op3 (c5 / change-01
+                        :ARG1 (a9 / amino-acid
+                                  :part-of (g6 / gene
+                                               :name (n2 / name
+                                                         :op1 "PIK3CA")
+                                               :ARG2-of (m3 / mutate-01
+                                                            :value "C420R"))))
+               :op4 (c6 / change-01
+                        :ARG1 (a10 / amino-acid
+                                   :part-of (g2 / gene
+                                                :name (n6 / name
+                                                          :op1 "BRAF")
+                                                :ARG2-of (m4 / mutate-01
+                                                             :value "594V/G"))))
+               :op5 (c7 / change-01
+                        :ARG1 (a11 / amino-acid
+                                   :part-of (g3 / gene
+                                                :name (n8 / name
+                                                          :op1 "KRAS")
+                                                :ARG2-of (m5 / mutate-01
+                                                             :value "Q61R"))))
+               :op6 (c8 / change-01
+                        :ARG1 (a12 / amino-acid
+                                   :part-of (g4 / gene
+                                                :name (n9 / name
+                                                          :op1 "NRAS")
+                                                :ARG2-of (m6 / mutate-01
+                                                             :ARG2-of (i / include-01
+                                                                         :ARG1 (a4 / and
+                                                                                   :op1 (m7 / mutate-01
+                                                                                            :value "G12C")
+                                                                                   :op2 (m8 / mutate-01
+                                                                                            :value "G12D")
+                                                                                   :op3 (m9 / mutate-01
+                                                                                            :value "G13R")
+                                                                                   :op4 (m10 / mutate-01
+                                                                                             :value "G13V")
+                                                                                   :op5 (m11 / mutate-01
+                                                                                             :value "Q61H")
+                                                                                   :op6 (m12 / mutate-01
+                                                                                             :value "Q61K"))))))
+                        :quant (s / several))))
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>MET </i>mutations were found in 3.3% of C-07 samples.
+# ::file pmid_2023_3444_124.txt
+# ::date 2015-08-03T14:28:26
+# ::id pmid_2023_3444.124
+(f / find-01
+   :ARG1 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "MET")))
+   :location (t2 / thing
+                 :ARG1-of (i / include-91
+                             :ARG2 (t3 / thing
+                                       :source "c"
+                                       :ARG1-of (s2 / sample-01
+                                                    :source (c / cell-line
+                                                               :name (n2 / name
+                                                                         :op1 "C-07"))))
+                             :ARG3 (p / percentage-entity
+                                      :value "3.3"))
+                 :ARG1-of (s / sample-01)))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Interestingly, these mutations were not only unexpected in their appearance within the colon cancer population but also the frequency within the samples was unexpected.
+# ::file pmid_2023_3444_125.txt
+# ::date 2015-08-03T14:32:27
+# ::id pmid_2023_3444.125
+(a2 / and
+      :op1 (e / expect-01
+            :polarity "-"
+            :ARG1 (a / appear-01
+                  :ARG1 (m / mutate-01
+                        :mod (t / this))
+                  :location (p / population
+                        :mod (d / disease
+                              :wiki "Colorectal_cancer"
+                              :name (n / name :op1 "colon" :op2 "cancer")))))
+      :op2 (e2 / expect-01
+            :polarity "-"
+            :ARG1 (f / frequent-02
+                  :ARG1 (t2 / thing
+                        :ARG1-of (s / sample-01)))
+            :mod (a3 / also))
+      :ARG2-of (i / interest-01))
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In four of the eight samples with <i>MET </i>mutations, the mutant alleles were present at 58-70%, suggesting an amplification of the mutant allele or a loss of the wt gene (Fig. <xref ref-type="fig" rid="F6">6</xref>).
+# ::file pmid_2023_3444_126.txt
+# ::date 2015-08-03T14:44:03
+# ::id pmid_2023_3444.126
+(b / be-located-at-91
+   :ARG1 (a / allele
+            :ARG2-of (m / mutate-01)
+            :quant (v / value-interval
+                      :op1 (p / percentage-entity
+                              :value "58")
+                      :op2 (p2 / percentage-entity
+                               :value "70")))
+   :ARG2 (s / sample-01
+            :quant "4"
+            :ARG1 (m2 / mutate-01
+                      :ARG1 (g / gene
+                               :name (n / name
+                                        :op1 "MET")))
+            :ARG1-of (i / include-91
+                        :ARG2 (s2 / sample-01
+                                  :quant "8"
+                                  :ARG1 m2)))
+   :ARG0-of (s3 / suggest-01
+                :ARG1 (o / or
+                         :op1 (a2 / amplify-01
+                                  :ARG1 (a3 / allele
+                                            :ARG2-of m))
+                         :op2 (l / lose-02
+                                 :ARG1 (g2 / gene
+                                           :mod (w / wild-type)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (f / figure
+                        :mod "6")))
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Amplification may represent the best explanation, in that amplification of the <i>MET </i>genomic region, 7q31, has been observed in the Progenetix CGH Database in 23% of colorectal cancers [<xref ref-type="bibr" rid="B22">22</xref>]
+# ::file pmid_2023_3444_127.txt
+# ::date 2015-08-03T14:52:59
+# ::id pmid_2023_3444.127
+(p / possible-01
+   :ARG1 (r / represent-01
+            :ARG0 (a2 / amplify-01)
+            :ARG1 (e / explain-01
+                     :ARG2-of (g / good-03
+                                 :degree (m / most))))
+   :ARG0-of (c / cause-01
+               :ARG1 (o / observe-01
+                        :ARG1 (a / amplify-01
+                                 :ARG1 (d5 / dna-sequence
+                                           :name (n5 / name
+                                                     :op1 "7q31"
+                                                     :op2 "region")
+                                           :mod (g2 / genome)
+                                           :mod (g3 / gene
+                                                    :name (n / name
+                                                             :op1 "MET"))))
+                        :location (d / database
+                                     :name (n2 / name
+                                               :op1 "Progenetix"
+                                               :op2 "CGH"))
+                        :location (d4 / disease
+                                      :wiki "Cancer"
+                                      :name (n4 / name
+                                                :op1 "cancer")
+                                      :ARG1-of (i / include-91
+                                                  :ARG2 (d3 / disease
+                                                            :wiki "Colorectal_cancer"
+                                                            :name (n3 / name
+                                                                      :op1 "colorectal"
+                                                                      :op2 "cancer"))
+                                                  :ARG3 (p2 / percentage-entity
+                                                            :value "23")))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (p3 / publication
+                          :ARG1-of (c5 / cite-01
+                                       :ARG2 "22"))))
+
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Most of the assays in the OncoCarta panel did not detect mutations or the frequency of mutations was very low (below 1%) in our colon cancer samples.
+# ::file pmid_2023_3444_129.txt
+# ::date 2015-08-03T15:15:07
+# ::id pmid_2023_3444.129
+(o / or
+      :op1 (d / detect-01
+            :polarity "-"
+            :ARG0 (a / assay-01
+                  :quant (m / most)
+                  :ARG1-of (i / include-91
+                        :ARG2 (a2 / assay-01
+                              :location (p / panel
+                                    :name (n / name :op1 "OncoCarta")))))
+            :ARG1 (m2 / mutate-01))
+      :op2 (l / low-04
+            :ARG1 (f / frequent-02
+                  :ARG1 (m3 / mutate-01
+                        :location (s / sample-01
+                              :ARG0 (w / we)
+                              :ARG1 (d2 / disease
+                                    :wiki "Colorectal_cancer"
+                                    :name (n2 / name :op1 "colon" :op2 "cancer")))))
+            :ARG3 (b / below
+                  :op1 (p2 / percentage-entity :value "1"))
+            :degree (v / very)))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt OncoCarta assays interrogate mutations in these 19 genes listed in Table <xref ref-type="table" rid="T1">1</xref>.
+# ::file pmid_2023_3444_130.txt
+# ::date 2015-08-04T12:18:44
+# ::id pmid_2023_3444.130
+(i / interrogate-01
+      :ARG0 (a / assay-01
+            :instrument (p / product
+                  :name (n / name :op1 "OncoCarta")))
+      :ARG1 (m / mutate-01)
+      :location (g / gene
+            :quant "19"
+            :mod (t / this)
+            :ARG1-of (l / list-01
+                  :ARG2 (t2 / table :mod "1"))))
+
+
+# ::save-date Fri Feb 5, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt To reduce the cost, time and the amount of DNA required for profiling, only 24 assays, which detected mutations at a frequency of 1% or greater in C-07, were selected, resorted in 6 pools and included in a new panel, termed ColoCarta (Table <xref ref-type="table" rid="T3">3</xref>).
+# ::file pmid_2023_3444_131.txt
+# ::date 2015-08-04T12:23:05
+# ::id pmid_2023_3444.131
+(a / and
+      :op1 (s / select-01
+            :ARG1 (a2 / assay-01
+                  :quant "24"
+                  :mod (o / only)
+                  :ARG0-of (d / detect-01
+                        :ARG1 (m / mutate-01
+                              :ARG1-of (h / have-frequency-91
+                                    :ARG2 (o2 / or
+                                          :op1 (p / percentage-entity :value "1")
+                                          :op2 (m2 / more-than
+                                                :op1 p))
+                                    :location (c / cell-line
+                                          :name (n / name :op1 "C-07")))))))
+      :op2 (r / resort-00
+            :ARG1 a2
+            :location (p2 / pool :quant "6"))
+      :op3 (i / include-01
+            :ARG1 a2
+            :ARG2 (p3 / panel
+                  :ARG1-of (n2 / new-01)
+                  :ARG1-of (t2 / term-01
+                        :ARG3 (t5 / thing
+                              :name (n3 / name :op1 "ColoCarta")))))
+      :purpose (r2 / reduce-01
+            :ARG1 (a3 / and
+                  :op1 (c2 / cost)
+                  :op2 (t3 / time)
+                  :op3 (a4 / amount
+                        :quant-of (n4 / nucleic-acid
+                              :wiki "DNA"
+                              :name (n5 / name :op1 "DNA")))
+                  :ARG1-of (r3 / require-01
+                        :ARG0 (p4 / profile-01))))
+      :ARG1-of (d3 / describe-01
+            :ARG0 (t4 / table :mod "3")))
+
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Mutation profiles of 32 mutant samples with 41 mutations were repeated with the ColoCarta.
+# ::file pmid_2023_3444_132.txt
+# ::date 2015-08-04T12:47:08
+# ::id pmid_2023_3444.132
+(r / repeat-01
+      :ARG1 (p / profile-01
+            :ARG1 (t2 / thing
+                  :quant "32"
+                  :ARG2-of (m / mutate-01)
+                  :ARG0-of (h / have-03
+                        :ARG1 (m2 / mutate-01 :quant "41"))
+                  :ARG1-of (s / sample-01))
+            :mod m)
+      :instrument (t / thing
+            :name (n / name :op1 "ColoCarta")))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The mutations detected by the 2 panels (OncoCarta and ColoCarta) were identical, demonstrating the reproducibility of the methodology.
+# ::file pmid_2023_3444_133.txt
+# ::date 2015-08-04T12:48:19
+# ::id pmid_2023_3444.133
+(i / identical-01
+      :ARG1 (m / mutate-01
+            :ARG1-of (d / detect-01
+                  :ARG0 (p / panel
+                        :quant "2"
+                        :ARG1-of (m3 / mean-01
+                              :ARG2 (a / and
+                                    :op1 (p3 / panel
+                                          :name (n / name :op1 "OncoCarta"))
+                                    :op2 (p4 / panel
+                                          :name (n2 / name :op1 "ColoCarta")))))))
+      :ARG0-of (d2 / demonstrate-01
+            :ARG1 (p2 / possible-01
+                  :ARG1 (r / reproduce-01
+                        :ARG1 (m2 / methodology)))))
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A majority of the tumors (64%) contained at least one or more mutations in the following genes: <i>BRAF</i>, <i>KRAS</i>, <i>NRAS</i>, <i>MET</i>, or <i>PIK3CA</i>, and 18% had 2 or more mutations.
+# ::file pmid_2023_3444_135.txt
+# ::date 2015-08-04T13:22:12
+# ::id pmid_2023_3444.135
+(a / and
+   :op1 (c / contain-01
+           :ARG0 (t / tumor
+                    :quant (m / majority
+                              :ARG1-of (m2 / mean-01
+                                           :ARG2 (p / percentage-entity
+                                                    :value "64"))))
+           :ARG1 (m3 / mutate-01
+                     :quant (a2 / at-least
+                                :op1 (o / or
+                                        :op1 "1"
+                                        :op2 (m4 / more-than
+                                                 :op1 "1"))))
+           :location (g / gene
+                        :ARG1-of (f / follow-04)
+                        :ARG1-of (m7 / mean-01
+                                     :ARG2 (o2 / or
+                                               :op1 (g2 / gene
+                                                        :name (n / name
+                                                                 :op1 "BRAF"))
+                                               :op2 (g3 / gene
+                                                        :name (n2 / name
+                                                                  :op1 "KRAS"))
+                                               :op3 (g4 / gene
+                                                        :name (n3 / name
+                                                                  :op1 "NRAS"))
+                                               :op4 (g5 / gene
+                                                        :name (n4 / name
+                                                                  :op1 "MET"))
+                                               :op5 (g6 / gene
+                                                        :name (n5 / name
+                                                                  :op1 "PIK3CA"))))))
+   :op2 (h / have-03
+           :ARG0 (t2 / tumor
+                     :ARG1-of (i / include-91
+                                 :ARG2 t
+                                 :ARG3 (p2 / percentage-entity
+                                           :value "18")))
+           :ARG1 (m5 / mutate-01
+                     :quant (o3 / or
+                                :op1 "2"
+                                :op2 (m6 / more-than
+                                         :op1 "2")))))
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The most common double mutation was in <i>KRAS </i>and <i>PIK3CA</i>, followed by <i>PIK3CA </i>and <i>BRAF </i>(Table <xref ref-type="table" rid="T4">4</xref>).
+# ::file pmid_2023_3444_136.txt
+# ::date 2015-08-04T13:34:35
+# ::id pmid_2023_3444.136
+(m / mutate-01
+   :ARG1-of (d / double-01)
+   :mod (c / common
+           :degree (m2 / most))
+   :location (a / and
+                :op1 (g / gene
+                        :name (n / name
+                                 :op1 "KRAS"))
+                :op2 (g2 / gene
+                         :name (n2 / name
+                                   :op1 "PIK3CA"))
+                :ARG2-of (f / follow-01
+                            :ARG1 (a2 / and
+                                      :op1 g2
+                                      :op2 (g3 / gene
+                                               :name (n3 / name
+                                                         :op1 "BRAF")))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (t / table
+                         :mod "4")))
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Most samples with <i>PIK3CA </i>mutations (80%) also had mutations in other genes, the most frequent of which was <i>KRAS</i>; other mutated genes were <i>BRAF</i>, <i>MET</i>, <i>NRAS</i>, and a second <i>PIK3CA </i>mutation (Table <xref ref-type="table" rid="T2">2</xref>, last column).
+# ::file pmid_2023_3444_137.txt
+# ::date 2015-08-04T13:39:53
+# ::id pmid_2023_3444.137
+(m / multi-sentence
+   :snt1 (h / have-03
+            :ARG0 (t2 / thing
+                      :ARG1-of (i / include-91
+                                  :ARG2 (t3 / thing
+                                            :ARG1-of (s2 / sample-01)
+                                            :ARG0-of (h2 / have-03
+                                                         :ARG1 (m3 / mutate-01
+                                                                   :ARG1 (g2 / gene
+                                                                             :name (n2 / name
+                                                                                       :op1 "PIK3CA")))))
+                                  :ARG3 (m4 / most
+                                            :ARG1-of (m5 / mean-01
+                                                         :ARG2 (p / percentage-entity
+                                                                  :value "80"))))
+                      :ARG1-of (s / sample-01))
+            :ARG1 (m6 / mutate-01
+                      :location (g3 / gene
+                                    :mod (o / other)
+                                    :ARG2-of (i2 / include-91
+                                                 :ARG1 (g4 / gene
+                                                           :name (n3 / name
+                                                                     :op1 "KRAS")
+                                                           :ARG1-of (f / frequent-02)))))
+            :mod (a / also))
+   :snt2 (g5 / gene
+             :ARG2-of (m7 / mutate-01)
+             :ARG1-of (i3 / include-91
+                          :ARG2 (a2 / and
+                                    :op1 (g6 / gene
+                                             :name (n4 / name
+                                                       :op1 "BRAF"))
+                                    :op2 (g7 / gene
+                                             :name (n5 / name
+                                                       :op1 "MET"))
+                                    :op3 (g8 / gene
+                                             :name (n6 / name
+                                                       :op1 "NRAS"))
+                                    :op4 (g9 / gene
+                                             :name (n7 / name
+                                                       :op1 "PIK3CA")
+                                             :ARG1-of (m8 / mutate-01
+                                                          :ord (o2 / ordinal-entity
+                                                                   :value "2")))))
+             :mod (o3 / other))
+   :ARG1-of (d / describe-01
+               :ARG0 (t / table
+                        :mod "2"
+                        :part (c / column
+                                 :mod (l / last)))))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Tumors with <i>MET </i>and <i>NRAS </i>mutations also have an unexpectedly high frequency of co-occurring mutations, which suggests that they occur as a second mutation and perhaps later in the etiology of the tumor.
+# ::file pmid_2023_3444_138.txt
+# ::date 2015-08-04T14:17:59
+# ::id pmid_2023_3444.138
+(h / have-frequency-91
+   :ARG1 (m / mutate-01
+            :location (t / tumor
+                         :ARG0-of (h3 / have-03
+                                      :ARG1 (m2 / mutate-01
+                                                :ARG1 (a / and
+                                                         :op1 (g / gene
+                                                                 :name (n / name
+                                                                          :op1 "MET"))
+                                                         :op2 (g2 / gene
+                                                                  :name (n2 / name
+                                                                            :op1 "NRAS"))))))
+            :ARG1-of (c / cooccur-00))
+   :ARG2 (h2 / high
+             :ARG1-of (e / expect-01
+                         :polarity "-"))
+   :mod (a2 / also)
+   :ARG0-of (s / suggest-01
+               :ARG1 (m3 / mutate-01
+                         :ord (o / ordinal-entity
+                                 :value "2")
+                         :domain t
+                         :ARG1-of (b / be-temporally-at-91
+                                     :ARG2 (l / late
+                                              :op1 (e2 / etiology
+                                                       :poss (t3 / tumor))
+                                              :degree (m4 / more))
+                                     :ARG1-of (p / possible-01)))))
+
+# ::save-date Thu Dec 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Many tumors contain only a <i>KRAS </i>or <i>BRAF </i>mutation, which is consistent with previous reports finding these mutations in earlier stages of colon cancer [<xref ref-type="bibr" rid="B23">23</xref>,<xref ref-type="bibr" rid="B24">24</xref>].
+# ::file pmid_2023_3444_139.txt
+# ::date 2015-08-04T14:53:18
+# ::id pmid_2023_3444.139
+(c / contain-01
+   :ARG0 (t / tumor
+            :quant (m / many))
+   :ARG1 (m2 / mutate-01
+             :ARG1 (a / and
+                      :op1 (g / gene
+                              :name (n / name
+                                       :op1 "KRAS"))
+                      :op2 (g2 / gene
+                               :name (n2 / name
+                                         :op1 "BRAF")))
+             :mod (o / only))
+   :ARG1-of (c2 / consistent-01
+                :ARG2 (r / report
+                         :time (p / previous)
+                         :ARG0-of (f / find-01
+                                     :ARG2 m2
+                                     :time (e / early
+                                              :op1 (s / stage
+                                                      :subevent-of (d2 / disease
+                                                                       :wiki "Colorectal_cancer"
+                                                                       :name (n3 / name
+                                                                                 :op1 "colon"
+                                                                                 :op2 "cancer")))
+                                              :degree (m4 / more)))))
+   :ARG1-of (d / describe-01
+               :ARG0 (p2 / publication
+                         :ARG1-of (c5 / cite-01
+                                      :ARG2 (a2 / and
+                                                :op1 "23"
+                                                :op2 "24")))))
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The multiple mutation frequencies for tumors with <i>KRAS </i>and <i>PIK3CA </i>or with <i>PIK3CA </i>and <i>BRAF </i>were slightly higher and lower, respectively, than expected based on their individual frequencies (Table <xref ref-type="table" rid="T4">4</xref>).
+# ::file pmid_2023_3444_140.txt
+# ::date 2015-08-04T15:01:42
+# ::id pmid_2023_3444.140
+(a / and
+   :op1 (h / high-02
+           :ARG1 (h3 / have-frequency-91
+                     :ARG1 (m / mutate-01
+                              :mod (m2 / multiple))
+                     :location (t / tumor
+                                  :ARG0-of (h2 / have-03
+                                               :ARG1 (a4 / and
+                                                         :op1 (g / gene
+                                                                 :name (n / name
+                                                                          :op1 "KRAS"))
+                                                         :op2 (g2 / gene
+                                                                  :name (n2 / name
+                                                                            :op1 "PIK3CA")))))
+                     :ARG1-of (b / base-02
+                                 :ARG2 (f2 / frequent-02
+                                           :ARG1 t
+                                           :mod (i / individual))
+                                 :ARG1 h4))
+           :compared-to (e / expect-01))
+   :op2 (l / low-04
+           :ARG1 (h4 / have-frequency-91
+                     :ARG1 (m3 / mutate-01)
+                     :location (t3 / tumor
+                                   :ARG0-of (h5 / have-03
+                                                :ARG1 (a3 / and
+                                                          :op1 g2
+                                                          :op2 (g3 / gene
+                                                                   :name (n3 / name
+                                                                             :op1 "BRAF"))))))
+           :compared-to e)
+   :mod (r / respective)
+   :manner (s / slight)
+   :ARG1-of (d / describe-01
+               :ARG0 (t2 / table
+                         :mod "4")))
+
+# ::save-date Tue Aug 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Conversely, the expected double mutation frequency of <i>BRAF </i>and <i>KRAS </i>would be 5.1%, based on our data, but this combination was not found, also in agreement with previous reports [<xref ref-type="bibr" rid="B24">24</xref>] (Table <xref ref-type="table" rid="T4">4</xref>).
+# ::file pmid_2023_3444_141.txt
+# ::date 2015-08-04T15:15:53
+# ::id pmid_2023_3444.141
+(h / have-frequency-91
+   :ARG1 (m / mutate-01
+            :ARG1 (a / and
+                     :op1 (g / gene
+                             :name (n / name
+                                      :op1 "BRAF"))
+                     :op2 (g2 / gene
+                              :name (n2 / name
+                                        :op1 "KRAS")))
+            :ARG1-of (d / double-01)
+            :ARG1-of (e / expect-01))
+   :ARG2 (p / percentage-entity
+            :value "5.1")
+   :ARG1-of (b / base-02
+               :ARG2 (d2 / data
+                         :poss (w / we)))
+   :concession (f / find-01
+                  :polarity "-"
+                  :ARG1 (c / combine-01
+                           :mod (t / this))
+                  :ARG0-of (a2 / agree-01
+                               :ARG2 (r / report
+                                        :time (p2 / previous))
+                               :mod (a3 / also)))
+   :ARG1-of (d3 / describe-01
+                :ARG0 (p3 / publication
+                          :ARG1-of (c2 / cite-01
+                                       :ARG2 "24")))
+   :ARG1-of (d4 / describe-01
+                :ARG0 (t2 / table
+                          :mod "4"))
+   :manner (c3 / converse))
+
+# ::save-date Mon Dec 21, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In the samples with co-occurring mutations, the ratios of <i>KRAS </i>mutation ratio (<i>KRAS </i>mutation peak area/total peak area) to the <i>PIK3CA </i>mutation ratio (<i>PIK3CA </i>mutation peak area/total peak area) was determined.
+# ::file pmid_2023_3444_143.txt
+# ::date 2015-08-04T15:34:34
+# ::id pmid_2023_3444.143
+(d / determine-01
+   :ARG1 (r / ratio-of
+            :op1 (r2 / ratio-of
+                     :op1 (m / mutate-01
+                             :ARG1 (g / gene
+                                      :name (n / name
+                                               :op1 "KRAS")))
+                     :ARG1-of (m2 / mean-01
+                                  :ARG2 (r4 / ratio-of
+                                            :op1 (a / area
+                                                    :ARG1-of (p / peak-01)
+                                                    :mod m)
+                                            :op2 (a2 / area
+                                                     :ARG1-of (p2 / peak-01)
+                                                     :mod (t / total)))))
+            :op2 (r3 / ratio-of
+                     :op1 (m3 / mutate-01
+                              :ARG1 (g2 / gene
+                                        :name (n2 / name
+                                                  :op1 "PIK3CA")))
+                     :ARG1-of (m4 / mean-01
+                                  :ARG2 (r5 / ratio-of
+                                            :op1 (a3 / area
+                                                     :ARG1-of (p3 / peak-01)
+                                                     :mod m3)
+                                            :op2 a2))))
+   :location (s / sample-01
+                :ARG1 (m5 / mutate-01
+                          :ARG1-of (c / cooccur-00))))
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Twenty-two out of 31 samples (71%) had <i>KRAS</i>/<i>PIK3CA </i>ratios above 1.25 (Table <xref ref-type="table" rid="T5">5</xref>).
+# ::file pmid_2023_3444_144.txt
+# ::date 2015-08-04T15:48:15
+# ::id pmid_2023_3444.144
+(h / have-03
+   :ARG0 (t3 / thing
+             :quant "22"
+             :ARG1-of (i / include-91
+                         :ARG2 (t2 / thing
+                                   :quant "31"
+                                   :ARG1-of (s2 / sample-01))
+                         :ARG3 (p / percentage-entity
+                                  :value "71"))
+             :ARG1-of (s / sample-01))
+   :ARG1 (r / ratio-of
+            :op1 (g / gene
+                    :name (n / name
+                             :op1 "KRAS"))
+            :op2 (g2 / gene
+                     :name (n2 / name
+                               :op1 "PIK3CA"))
+            :ARG1-of (e / equal-01
+                        :ARG3 (a / above
+                                 :op1 "1.25")))
+   :ARG1-of (d / describe-01
+               :ARG0 (t / table
+                        :mod "5")))
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>PIK3CA </i>mutations were more prevalent in only 2 out of 31 samples.
+# ::file pmid_2023_3444_145.txt
+# ::date 2015-08-04T16:03:36
+# ::id pmid_2023_3444.145
+(p / prevail-02
+   :ARG1 (m2 / mutate-01
+             :ARG1 (g / gene
+                      :name (n / name
+                               :op1 "PIK3CA")))
+   :degree (m / more)
+   :location (t2 / thing
+                 :quant "2"
+                 :ARG1-of (i / include-91
+                             :ARG2 (t / thing
+                                      :quant "31"
+                                      :ARG1-of (s2 / sample-01)))
+                 :mod (o / only)
+                 :ARG1-of (s / sample-01)))
+
+# ::save-date Mon Aug 10, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These differences demonstrate that in a majority of primary tumors with double mutations in <i>KRAS </i>and <i>PIK3CA</i>, the <i>KRAS </i>mutations are more prevalent than the <i>PIK3CA</i>.
+# ::file pmid_2023_3444_146.txt
+# ::date 2015-08-04T16:07:45
+# ::id pmid_2023_3444.146
+(d / demonstrate-01
+   :ARG0 (d2 / differ-02
+             :mod (t / this))
+   :ARG1 (p / prevail-02
+            :ARG1 (m / mutate-01
+                     :ARG1 (g / gene
+                              :name (n / name
+                                       :op1 "KRAS")))
+            :mod (m2 / more)
+            :location (t2 / tumor
+                          :quant (m3 / majority)
+                          :mod (p2 / primary)
+                          :ARG0-of (h / have-03
+                                      :ARG1 (m4 / mutate-01
+                                                :ARG1 (a / and
+                                                         :op1 g
+                                                         :op2 "g2")
+                                                :ARG1-of (d3 / double-01))))
+            :compared-to (g2 / gene
+                             :name (n2 / name
+                                       :op1 "PIK3CA"))))
+
+# ::save-date Wed Dec 30, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This unequal distribution of mutant alleles within a tumor may be due to the fact that a majority of the tumor cells have only the <i>KRAS </i>mutation, and cells with a <i>PIK3CA </i>mutation are in the minority, or it could be due to copy number variations in the <i>KRAS </i>and <i>PIK3CA </i>loci.
+# ::file pmid_2023_3444_147.txt
+# ::date 2015-08-03T05:28:53
+# ::id pmid_2023_3444.147
+(p / possible-01
+   :ARG1 (d / distribute-01
+            :ARG1 (a / allele
+                     :ARG2-of (m / mutate-01))
+            :mod (e / equal
+                    :polarity "-")
+            :mod (t / this)
+            :location (t2 / tumor))
+   :ARG1-of (c / cause-01
+               :ARG0 (o / or
+                        :op1 (a2 / and
+                                 :op1 (h / have-03
+                                         :ARG0 (c2 / cell
+                                                   :mod (t3 / tumor)
+                                                   :ARG1-of (i / include-91
+                                                               :ARG2 (c3 / cell)
+                                                               :ARG3 (m2 / majority)))
+                                         :ARG1 (m3 / mutate-01
+                                                   :ARG1 (g2 / gene
+                                                             :name (n / name
+                                                                      :op1 "KRAS")))
+                                         :mod (o2 / only))
+                                 :op2 (c4 / cell
+                                          :location-of (m4 / mutate-01
+                                                           :ARG1 (g / gene
+                                                                    :name (n2 / name
+                                                                              :op1 "PIK3CA")))
+                                          :quant (m5 / minority)))
+                        :op2 (v / vary-01
+                                :ARG1 (n3 / number
+                                          :quant-of (d2 / dna-sequence
+                                                        :ARG2-of (c7 / copy-01)))
+                                :location (a3 / and
+                                              :op1 (l / locus
+                                                      :ARG0-of (c5 / contain-01
+                                                                   :ARG1 g2))
+                                              :op2 (l2 / locus
+                                                       :ARG0-of (c6 / contain-01
+                                                                    :ARG1 g)))))))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The frequency of mutations for <i>KRAS</i>, <i>PIK3CA</i>, and <i>BRAF </i>were tested for correlation to the degree of differentiation and to the prevalence of mucin in the tumor.
+# ::file pmid_2023_3444_149.txt
+# ::date 2015-08-03T14:28:24
+# ::id pmid_2023_3444.149
+(t / test-01
+   :ARG1 (a / and
+            :op1 (h / have-frequency-91
+                    :ARG1 (m / mutate-01
+                             :ARG1 (g / gene
+                                      :name (n / name
+                                               :op1 "KRAS"))))
+            :op2 (h2 / have-frequency-91
+                     :ARG1 (m2 / mutate-01
+                               :ARG1 (g2 / gene
+                                         :name (n2 / name
+                                                   :op1 "PIK3CA"))))
+            :op3 (h3 / have-frequency-91
+                     :ARG1 (m3 / mutate-01
+                               :ARG1 (g3 / gene
+                                         :name (n3 / name
+                                                   :op1 "BRAF")))))
+   :ARG2 (c / correlate-01
+            :ARG1 a
+            :ARG2 (a2 / and
+                      :op1 (d / degree
+                              :degree-of (d2 / differentiate-101))
+                      :op2 (p / prevail-01
+                              :ARG1 (p2 / protein
+                                        :name (n4 / name
+                                                  :op1 "mucin"))
+                              :location (t2 / tumor)))))
+
+# ::save-date Thu Feb 4, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>BRAF </i>mutations were found in 26.2% of the poorly differentiated tumors and in 8.2% of the moderate and well differentiated.
+# ::file pmid_2023_3444_150.txt
+# ::date 2015-08-03T21:23:35
+# ::id pmid_2023_3444.150
+(f / find-01
+   :ARG1 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "BRAF")))
+   :location (a / and
+                :op1 (t2 / tumor
+                         :ARG1-of (i / include-91
+                                     :ARG2 (t / tumor
+                                              :ARG1-of (d / differentiate-01
+                                                          :manner (p / poor)))
+                                     :ARG3 (p2 / percentage-entity
+                                               :value "26.2")))
+                :op2 (t3 / tumor
+                         :ARG1-of (i2 / include-91
+                                      :ARG2 (a2 / and
+                                                :op1 (t4 / tumor
+                                                         :ARG1-of (d2 / differentiate-01
+                                                                      :manner (m2 / moderate)))
+                                                :op2 (t5 / tumor
+                                                         :ARG1-of (d3 / differentiate-01
+                                                                      :ARG1-of (w / well-09))))
+                                      :ARG3 (p3 / percentage-entity
+                                                :value "8.2")))))
+
+
+# ::save-date Mon Dec 14, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These frequencies were significantly different by Chi square test (p value = 0.001).
+# ::file pmid_2023_3444_151.txt
+# ::date 2015-08-03T21:46:11
+# ::id pmid_2023_3444.151
+(d / differ-02
+      :ARG1 (h / have-frequency-91
+            :mod (t / this))
+      :ARG1-of (s / significant-02)
+      :ARG1-of (s3 / statistical-test-91
+            :ARG2 "0.001"
+            :ARG4 (t3 / thing
+                  :wiki "Chi-squared_test"
+                  :name (n / name
+                        :op1 "Chi"
+                        :op2 "square"
+                        :op3 "test"))))
+
+# ::save-date Tue Nov 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>BRAF </i>mutations were also associated with mucinous tumors: <i>BRAF </i>mutations occurred in 28% of grade 3 mucinous tumors (>50% mucinous tumor cells) but in only 9.4% of the non-mucinous tumors (grade 1 and 2).
+# ::file pmid_2023_3444_152.txt
+# ::date 2015-08-03T22:00:50
+# ::id pmid_2023_3444.152
+(a / associate-01
+   :ARG1 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "BRAF")))
+   :ARG2 (t / tumor
+            :mod (p4 / protein
+                     :name (n3 / name
+                               :op1 "mucin")))
+   :mod (a2 / also)
+   :ARG1-of (m3 / mean-01
+                :ARG2 (b3 / be-located-at-91
+                          :ARG1 (m4 / mutate-01
+                                    :ARG1 g)
+                          :ARG2 (a3 / and
+                                    :op1 (t2 / tumor
+                                             :ARG1-of (i / include-91
+                                                         :ARG2 (t3 / tumor
+                                                                   :mod (g3 / grade
+                                                                            :mod "3")
+                                                                   :mod p4)
+                                                         :ARG3 (p2 / percentage-entity
+                                                                   :value "28"
+                                                                   :ARG1-of (m6 / mean-01
+                                                                                :ARG2 (m2 / more-than
+                                                                                          :op1 (p / percentage-entity
+                                                                                                  :value "50")
+                                                                                          :quant-of (c / cell
+                                                                                                       :mod t))))))
+                                    :op2 (t5 / tumor
+                                             :ARG1-of (i2 / include-91
+                                                          :ARG2 (t6 / tumor
+                                                                    :ARG1-of (m9 / mean-01
+                                                                                 :ARG2 (a4 / and
+                                                                                           :op1 (g5 / grade
+                                                                                                    :mod "1")
+                                                                                           :op2 (g6 / grade
+                                                                                                    :mod "2")))
+                                                                    :ARG1-of (h / have-mod-91
+                                                                                :polarity "-"
+                                                                                :ARG2 (p5 / protein
+                                                                                          :name (n4 / name
+                                                                                                    :op1 "mucin"))))
+                                                          :ARG3 (p3 / percentage-entity
+                                                                    :value "9.4"))
+                                             :mod (o / only))))))
+
+
+# ::save-date Tue Dec 29, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt This was significant by the Chi square test at p value = 0.006.
+# ::file pmid_2023_3444_153.txt
+# ::date 2015-08-03T22:40:48
+# ::id pmid_2023_3444.153
+(s / significant-02
+      :ARG1 (t / this)
+      :ARG1-of (s3 / statistical-test-91
+            :ARG2 "0.006"
+            :ARG4 (t2 / thing
+                  :wiki "Chi-squared_test"
+                  :name (n / name
+                        :op1 "Chi"
+                        :op2 "square"
+                        :op3 "test"))))
+
+
+# ::save-date Mon Aug 3, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Similar data have been reported previously [<xref ref-type="bibr" rid="B25">25</xref>,<xref ref-type="bibr" rid="B26">26</xref>].
+# ::file pmid_2023_3444_154.txt
+# ::date 2015-08-03T22:46:52
+# ::id pmid_2023_3444.154
+(r / report-01
+      :ARG1 (d / data
+            :ARG1-of (r2 / resemble-01))
+      :time (p / previous)
+      :ARG1-of (d2 / describe-01
+            :ARG0 (p2 / publication
+                  :ARG1-of (c / cite-01
+                        :ARG2 (a / and :op1 "25" :op2 "26")))))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>KRAS </i>and <i>PIK3CA </i>mutations did not correlate with either the degree of differentiation or with prevalence of mucinous cells.
+# ::file pmid_2023_3444_155.txt
+# ::date 2015-08-03T23:02:51
+# ::id pmid_2023_3444.155
+(c / correlate-01
+   :polarity "-"
+   :ARG1 (m / mutate-01
+            :ARG1 (a / and
+                     :op1 (g / gene
+                             :name (n / name
+                                      :op1 "KRAS"))
+                     :op2 (g2 / gene
+                              :name (n2 / name
+                                        :op1 "PIK3CA"))))
+   :ARG2 (o / or
+            :op1 (d / degree
+                    :degree-of (d2 / differentiate-01))
+            :op2 (p / prevail-01
+                    :ARG0 (c2 / cell
+                              :mod (p2 / protein
+                                       :name (n3 / name
+                                                 :op1 "mucin"))))))
+
+
+# ::save-date Sun Jan 17, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Lymph node metastases were not routinely collected in C-07 but as a pilot study to determine the feasibility of using lymph nodes for mutation profiling was conducted.
+# ::file pmid_2023_3444_157.txt
+# ::date 2015-08-04T08:18:41
+# ::id pmid_2023_3444.157
+(c2 / contrast-01
+      :ARG1 (c / collect-01
+            :polarity "-"
+            :ARG1 (m / metastasize-101
+                  :ARG2 (n / node
+                        :mod (l / lymph)))
+            :manner (r / routine)
+            :location (c4 / cell-line
+                  :name (n3 / name :op1 "C-07")))
+      :ARG2 (c3 / conduct-01
+            :ARG1 (s / study-01
+                  :ARG1-of (p / pilot-01))
+            :purpose (d / determine-01
+                  :ARG1 (f / feasibility
+                        :poss (u / use-01
+                              :ARG1 (n2 / node
+                                    :mod (l2 / lymph))
+                              :ARG2 (p2 / profile-01
+                                    :ARG1 (m2 / mutate-01)))))))
+
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt We isolated DNA from 39 lymph nodes containing tumor cells and their corresponding primary tumors.
+# ::file pmid_2023_3444_158.txt
+# ::date 2015-08-04T10:38:36
+# ::id pmid_2023_3444.158
+(i / isolate-01
+      :ARG0 (w / we)
+      :ARG1 (n2 / nucleic-acid
+            :wiki "DNA"
+            :name (n3 / name :op1 "DNA"))
+      :ARG2 (a / and
+            :op1 (n / node
+                  :quant "39"
+                  :mod (l / lymph)
+                  :ARG0-of (c / contain-01
+                        :ARG1 (c2 / cell
+                              :mod (t / tumor))))
+            :op2 (t2 / tumor
+                  :mod (p / primary)
+                  :ARG2-of (c3 / correspond-02
+                        :ARG1 n))))
+
+
+# ::save-date Tue Nov 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt These primary and lymph nodes samples were profiled with the entire OncoCarta panel.
+# ::file pmid_2023_3444_159.txt
+# ::date 2015-08-04T10:56:22
+# ::id pmid_2023_3444.159
+(p / profile-01
+      :ARG1 (a / and
+            :op1 (s / sample-01
+                  :ARG1 (n / node
+                        :mod (l / lymph))
+                  :mod (t / this))
+            :op2 (s2 / sample-01
+                  :ARG1 (n2 / node
+                        :mod (p2 / primary))
+                  :mod t))
+      :instrument (p3 / panel
+            :name (n3 / name :op1 "OncoCarta")))
+
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt The majority of lymph nodes and their corresponding primary tumors (89.7%) were concordant.
+# ::file pmid_2023_3444_160.txt
+# ::date 2015-08-04T11:08:38
+# ::id pmid_2023_3444.160
+(c2 / concordant
+      :domain (a / and
+            :op1 (n2 / node
+                  :ARG1-of (i / include-91
+                        :ARG2 (n / node
+                              :mod (l / lymph))
+                        :ARG3 (m / majority)))
+            :op2 (t / tumor
+                  :mod (p / primary)
+                  :ARG2-of (c / correspond-02
+                        :ARG1 n)
+                  :quant (p2 / percentage-entity :value "89.7"))))
+
+# ::save-date Tue Aug 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt A total of 26 mutations were detected in lymph nodes, including <i>KRAS</i>, <i>BRAF</i>, <i>PIK3CA</i>, and <i>NRAS</i>.
+# ::file pmid_2023_3444_161.txt
+# ::date 2015-08-04T11:27:56
+# ::id pmid_2023_3444.161
+(d / detect-01
+   :ARG1 (m / mutate-01
+            :ARG1-of (t / total-01
+                        :ARG2 "26")
+            :ARG2-of (i / include-91
+                        :ARG1 (a / and
+                                 :op1 (g / gene
+                                         :name (n2 / name
+                                                   :op1 "KRAS"))
+                                 :op2 (g2 / gene
+                                          :name (n3 / name
+                                                    :op1 "BRAF"))
+                                 :op3 (g3 / gene
+                                          :name (n4 / name
+                                                    :op1 "PIK3CA"))
+                                 :op4 (g4 / gene
+                                          :name (n5 / name
+                                                    :op1 "NRAS")))))
+   :location (n / node
+                :mod (l / lymph)))
+
+# ::save-date Sat Jan 30, 2016
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thirty-five out of 39 lymph nodes had identical mutation profiles, but in 4 cases mutations in the primary tumors were not found in the corresponding lymph nodes (<i>BRAF </i>[<xref ref-type="bibr" rid="B2">2</xref>], <i>PIK3CA </i>[<xref ref-type="bibr" rid="B1">1</xref>] and <i>KRAS </i>[<xref ref-type="bibr" rid="B1">1</xref>]).
+# ::file pmid_2023_3444_162.txt
+# ::date 2015-08-04T11:34:54
+# ::id pmid_2023_3444.162
+(c / contrast-01
+   :ARG1 (h / have-03
+            :ARG0 (n / node
+                     :quant "35"
+                     :mod (l / lymph)
+                     :ARG1-of (i / include-91
+                                 :ARG2 (n2 / node
+                                           :quant "39"
+                                           :mod l)))
+            :ARG1 (p / profile-01
+                     :ARG1 (m / mutate-01)
+                     :ARG1-of (i2 / identical-01)))
+   :ARG2 (f / find-01
+            :polarity "-"
+            :ARG1 (m2 / mutate-01
+                      :location (t / tumor
+                                   :mod (p2 / primary)))
+            :mod (c2 / case-04
+                     :quant "4")
+            :location (n3 / node
+                          :ARG1-of (m3 / mean-01
+                                       :ARG2 (a / and
+                                                :op1 (g / gene
+                                                        :name (n4 / name
+                                                                  :op1 "BRAF")
+                                                        :ARG1-of (d / describe-01
+                                                                    :ARG0 (p3 / publication
+                                                                              :ARG1-of (c3 / cite-01
+                                                                                           :ARG2 "2"))))
+                                                :op2 (g2 / gene
+                                                         :name (n5 / name
+                                                                   :op1 "PIK3CA")
+                                                         :ARG1-of (d2 / describe-01
+                                                                      :ARG0 (p4 / publication
+                                                                                :ARG1-of (c4 / cite-01
+                                                                                             :ARG2 "1"))
+                                                                      :ARG1 g3))
+                                                :op3 (g3 / gene
+                                                         :name (n6 / name
+                                                                   :op1 "KRAS"))))
+                          :ARG2-of (c6 / correspond-02
+                                       :ARG1 t)
+                          :mod l)))
+
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Peak area evaluation of tumors that had 2 mutations and for which a metastatic lymph node was available demonstrated differences between the primary and lymph node samples.
+# ::file pmid_2023_3444_164.txt
+# ::date 2015-08-04T12:12:36
+# ::id pmid_2023_3444.164
+(d / demonstrate-01
+      :ARG0 (e / evaluate-01
+            :ARG1 (t / tumor
+                  :ARG0-of (h / have-03
+                        :ARG1 (m / mutate-01 :quant "2"))
+                  :ARG1-of (a2 / available-02
+                        :ARG2 (n / node
+                              :mod (l / lymph)
+                              :ARG1-of (m2 / metastasize-101))))
+            :location (a / area
+                  :mod (p / peak)))
+      :ARG1 (d2 / differ-02
+            :ARG1 (s / sample-01
+                  :ARG1 (n2 / node
+                        :mod (p2 / primary)))
+            :ARG2 (s2 / sample-01
+                  :ARG1 (n3 / node
+                        :mod (l2 / lymph)))))
+
+
+# ::save-date Tue Aug 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Table <xref ref-type="table" rid="T6">6</xref> details the frequency of mutant and wt alleles based on the peak areas for 5 such samples.
+# ::file pmid_2023_3444_165.txt
+# ::date 2015-08-04T12:37:37
+# ::id pmid_2023_3444.165
+(d / detail-01
+      :ARG0 (t / table :mod "6")
+      :ARG1 (h / have-frequency-91
+            :ARG1 (a / and
+                  :op1 (a2 / allele
+                        :ARG2-of (m / mutate-01))
+                  :op2 (a3 / allele
+                        :mod (w / wild-type))))
+      :ARG1-of (b / base-02
+            :ARG2 (a4 / area
+                  :mod (p / peak)))
+      :beneficiary (s / sample
+            :quant "5"
+            :mod (s2 / such)))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt <i>KRAS </i>to <i>PIK3CA </i>ratios demonstrated that there were more <i>KRAS </i>mutations than <i>PIK3CA </i>mutations in 4 of 4 primary samples, and in 3 of the 4 lymph node samples.
+# ::file pmid_2023_3444_166.txt
+# ::date 2015-08-04T12:49:03
+# ::id pmid_2023_3444.166
+(d / demonstrate-01
+   :ARG0 (r / ratio-of
+            :op1 (g / gene
+                    :name (n / name
+                             :op1 "KRAS"))
+            :op2 (g2 / gene
+                     :name (n2 / name
+                               :op1 "PIK3CA")))
+   :ARG1 (m / mutate-01
+            :ARG1 g
+            :quant (m2 / more-than
+                       :op1 (m3 / mutate-01
+                                :ARG1 g2))
+            :location (a / and
+                         :op1 (s / sample-01
+                                 :quant "4"
+                                 :ARG1-of (i / include-91
+                                             :ARG2 (s2 / sample-01
+                                                       :quant "4"
+                                                       :mod (p2 / primary))))
+                         :op2 (s3 / sample-01
+                                  :quant "3"
+                                  :ARG1 (n5 / node
+                                            :mod (l2 / lymph))
+                                  :ARG1-of (i2 / include-91
+                                               :ARG2 (s4 / sample-01
+                                                         :quant "4"
+                                                         :ARG1 n5))))))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt However, it is also notable that the ratio of <i>KRAS</i>/PIK3A was lower in the lymph node compared to their primary tumor in 3 out of 4 samples.
+# ::file pmid_2023_3444_167.txt
+# ::date 2015-08-04T13:12:10
+# ::id pmid_2023_3444.167
+(c / contrast-01
+   :ARG2 (n / notable-04
+            :ARG1 (r / ratio-of
+                     :op1 (g / gene
+                             :name (n2 / name
+                                       :op1 "KRAS"))
+                     :op2 (g2 / gene
+                              :name (n3 / name
+                                        :op1 "PIK3A")))
+            :ARG2 (l / low-04
+                     :ARG1 r
+                     :location (n4 / node
+                                   :mod (l2 / lymph))
+                     :compared-to (t / tumor
+                                     :mod (p / primary)
+                                     :poss n4))
+            :location (s / sample
+                         :quant "3"
+                         :ARG1-of (i / include-91
+                                     :ARG2 (s2 / sample
+                                               :quant "4")))
+            :mod (a / also)))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In sample 0940, the <i>KRAS</i>/<i>PIK3CA </i>mutation decreased by almost 1/2 in the lymph node tumor compared to the primary.
+# ::file pmid_2023_3444_168.txt
+# ::date 2015-08-04T13:45:09
+# ::id pmid_2023_3444.168
+(d / decrease-01
+   :ARG1 (m / mutate-01
+            :ARG1 (s / slash
+                     :op1 (g / gene
+                             :name (n / name
+                                      :op1 "KRAS"))
+                     :op2 (g2 / gene
+                              :name (n2 / name
+                                        :op1 "PIK3CA"))))
+   :ARG2 (a / almost
+            :op1 (p2 / product-of
+                     :op1 "1/2"))
+   :location (t / tumor
+                :mod (n4 / node
+                         :mod (l / lymph))
+                :compared-to (t2 / tumor
+                                 :mod (p / primary)))
+   :location (s2 / sample
+                 :mod "0940"))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, in these samples there is either a loss of <i>KRAS </i>mutations or an accumulation of <i>PIK3CA </i>mutations, suggesting that <i>PIK3CA </i>mutations may impart a selective advantage in the lymph node.
+# ::file pmid_2023_3444_169.txt
+# ::date 2015-08-04T14:14:56
+# ::id pmid_2023_3444.169
+(i / infer-01
+   :ARG1 (o / or
+            :op1 (l / lose-01
+                    :ARG1 (m / mutate-01
+                             :ARG1 (g / gene
+                                      :name (n / name
+                                               :op1 "KRAS")))
+                    :location (s / sample
+                                 :mod (t / this)))
+            :op2 (a / accumulate-01
+                    :ARG1 (m2 / mutate-01
+                              :ARG1 (g2 / gene
+                                        :name (n2 / name
+                                                  :op1 "PIK3CA")))
+                    :location s))
+   :ARG0-of (s2 / suggest-01
+                :ARG1 (i2 / impart-01
+                          :ARG0 m2
+                          :ARG1 (a2 / advantage
+                                    :mod (s3 / selective))
+                          :ARG2 (n4 / node
+                                    :mod (l2 / lymph))
+                          :ARG1-of (p / possible-01))))
+
+# ::save-date Tue Nov 17, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In contrast, two other samples have a less frequent occurrence of their <i>PIK3CA </i>mutation in the lymph node than in the primary tumor.
+# ::file pmid_2023_3444_170.txt
+# ::date 2015-08-04T14:36:55
+# ::id pmid_2023_3444.170
+(c / contrast-01
+   :ARG2 (h / have-frequency-91
+            :ARG1 (m / mutate-01
+                     :ARG1 (g / gene
+                              :name (n / name
+                                       :op1 "PIK3CA"))
+                     :location (s / sample
+                                  :quant "2"
+                                  :mod (o / other)))
+            :ARG2 (l / less)
+            :location (n2 / node
+                          :mod (l2 / lymph)
+                          :compared-to (t / tumor
+                                          :mod (p / primary)))))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In sample 2244, the <i>PIK3CA </i>mutation was undetectable in the lymph node (Table <xref ref-type="table" rid="T6">6</xref>).
+# ::file pmid_2023_3444_171.txt
+# ::date 2015-08-04T14:52:29
+# ::id pmid_2023_3444.171
+(d / detect-01
+   :ARG1 (m / mutate-01
+            :ARG1 (g / gene
+                     :name (n / name
+                              :op1 "PIK3CA")))
+   :location (n2 / node
+                 :mod (l / lymph))
+   :location (s / sample
+                :mod "2244")
+   :ARG1-of (d2 / describe-01
+                :ARG0 (t / table
+                         :mod "6"))
+   :ARG1-of (p / possible-01
+               :polarity "-"))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In fact, if there was a selection for both mutations in the lymph node, then the <i>PIK3CA </i>mutation frequency would have been the same as that of the <i>KRAS </i>mutation (0.15).
+# ::file pmid_2023_3444_172.txt
+# ::date 2015-08-04T14:57:25
+# ::id pmid_2023_3444.172
+(h / have-condition-91
+   :ARG1 (s2 / same-01
+             :ARG1 (h2 / have-frequency-91
+                       :ARG1 (m2 / mutate-01
+                                 :ARG1 (g / gene
+                                          :name (n2 / name
+                                                    :op1 "PIK3CA")))
+                       :ARG2 "f3")
+             :ARG2 (h3 / have-frequency-91
+                       :ARG1 (m3 / mutate-01
+                                 :ARG1 (g2 / gene
+                                           :name (n3 / name
+                                                     :op1 "KRAS")))
+                       :ARG2 (f3 / frequency-quantity
+                                 :value "0.15")))
+   :ARG2 (s / select-01
+            :ARG1 (m / mutate-01
+                     :mod (b / both))
+            :location (n / node
+                         :mod (l / lymph)))
+   :mod (i / in-fact))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt On the other hand, if the <i>PIK3CA</i>/<i>KRAS </i>ratio were the same in the primary and lymph node tumor, then the <i>PIK3CA </i>mutation frequency would have been .08, which is still detectable with this technology (Fig. <xref ref-type="fig" rid="F3">3</xref>).
+# ::file pmid_2023_3444_173.txt
+# ::date 2015-08-04T15:16:02
+# ::id pmid_2023_3444.173
+(c / contrast-01
+   :ARG2 (h / have-condition-91
+            :ARG1 (h2 / have-frequency-91
+                      :ARG1 (m / mutate-01
+                               :ARG1 "g")
+                      :ARG2 (f2 / frequency-quantity
+                                :value "0.08")
+                      :ARG1-of (d / detect-01
+                                  :ARG2 (t3 / technology
+                                            :mod (t4 / this))
+                                  :mod (s2 / still)
+                                  :ARG1-of (p2 / possible-01)))
+            :ARG2 (s / same-01
+                     :ARG1 (r / ratio-of
+                              :op1 (g / gene
+                                      :name (n / name
+                                               :op1 "PIK3CA"))
+                              :op2 (g2 / gene
+                                       :name (n2 / name
+                                                 :op1 "KRAS"))
+                              :location (t / tumor
+                                           :mod (n3 / node
+                                                    :mod (p / primary))))
+                     :ARG2 (r2 / ratio-of
+                               :op1 g
+                               :op2 g2
+                               :location (t2 / tumor
+                                             :mod (n4 / node
+                                                      :mod (l / lymph))))))
+   :ARG1-of (d2 / describe-01
+                :ARG0 (f / figure
+                         :mod "3")))
+
+# ::save-date Tue Aug 4, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt Thus, in sample 2244 there were fewer <i>PIK3CA </i>mutant alleles in the lymph node than in the primary tumor.
+# ::file pmid_2023_3444_174.txt
+# ::date 2015-08-04T15:39:34
+# ::id pmid_2023_3444.174
+(i / infer-01
+   :ARG1 (f / few
+            :quant-of (a / allele
+                         :ARG2-of (m / mutate-01
+                                     :ARG1 (g / gene
+                                              :name (n / name
+                                                       :op1 "PIK3CA"))))
+            :location (n2 / node
+                          :mod (l / lymph))
+            :compared-to (t / tumor
+                            :mod (p / primary))
+            :location (s / sample
+                         :mod "2244")))
+
+# ::save-date Thu Aug 6, 2015
+# ::annotator SDL-AMR-09
+# ::preferred 
+# ::snt In sample 1837, mutations in both <i>BRAF </i>and <i>PIK3CA </i>were detected and the <i>BRAF</i>/<i>PIK3CA </i>ratio was 1.67, but increased to 4.4 in the metastatic lymph node.
+# ::file pmid_2023_3444_175.txt
+# ::date 2015-08-04T15:57:18
+# ::id pmid_2023_3444.175
+(c / contrast-01
+   :ARG1 (a / and
+            :op1 (d / detect-01
+                    :ARG1 (m / mutate-01
+                             :ARG1 (a2 / and
+                                       :op1 (g / gene
+                                               :name (n / name
+                                                        :op1 "BRAF"))
+                                       :op2 (g2 / gene
+                                                :name (n2 / name
+                                                          :op1 "PIK3CA")))))
+            :op2 (e / equal-01
+                    :ARG1 (r / ratio-of
+                             :op1 g
+                             :op2 g2)
+                    :ARG2 "1.67"))
+   :ARG2 (i / increase-01
+            :ARG1 r
+            :ARG4 "4.4"
+            :location (n5 / node
+                          :mod (l / lymph)
+                          :ARG2-of (m2 / metastasize-101)))
+   :location (s / sample
+                :mod "1837"))
