@@ -31,25 +31,10 @@ python experiments/synthetic_recovery.py --jobs 2   # several hours
 
 All randomness is seeded: the tables come out identical.
 
-## Where each result comes from
-
-| Paper | File |
-| ----- | ---- |
-| Table 1, Section 7.1 | `results/experiment_scores.csv`: rows `main` (per-population τ) and `loco` (LOPO) |
-| Table 2 | `experiment_scores.csv` of `results/`, `results_bio/` and `results_proxy/` |
-| Thresholds selected | `results*/selected_params.csv` |
-| Figures 2 and 3, Section 7.2 | `results/consensus_graph_smatch.csv`, `outputs/describe/summary.json` |
-| Section 6.1 | `outputs/coherence/summary.csv`, `outputs/corpus_stats/summary.json` |
-| Constraints (C1)–(C7) | `outputs/constraints/summary.csv` |
-| Section 7.3, Table 3 | `outputs/synthetic/summary.csv` |
-| Section 7.4, Table 4 | `outputs/medoid_advantage/summary.csv` |
-
-In `experiment_scores.csv`, `gain` is the score of the consensus minus that of the baseline (Eq. 12), averaged over the populations, with its 95% bootstrap interval (`ci95_low`, `ci95_high`) and its two-sided permutation p-value (`p_perm`).
-
 ## Data
 
 - **The Little Prince**: `data/petit_prince/`, one file per chapter, from the AMR release 3.0 of the book ([amr.isi.edu](https://amr.isi.edu)).
-- **Bio AMR** v0.8 (CC BY 4.0): `data/bio/`, one file per PubMed article, built by `experiments/prepare_bio.py` from the release file `data/open_raw/amr-bio-v0.8.grounded.txt` (figshare mirror, article 3206062).
+- **Bio AMR** v0.8 (Garg et al., 2016), by ISI/USC and the AMR Development Team, released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) on [figshare](https://doi.org/10.6084/m9.figshare.3206062.v4). `data/open_raw/amr-bio-v0.8.grounded.txt` is the release file `amr-bio.txt.grounded.txt`, unchanged. `data/bio/` is our modified version, built from it by `experiments/prepare_bio.py`: one file per PubMed article, with the `:xref` grounding layer and the section titles removed.
 - **News**: AMR 3.0 is licensed by the LDC and is not included; `main.py prepare` builds `data/proxy/` from the release file.
 
 ## Citation
