@@ -1,9 +1,9 @@
-"""The three experiments, aggregated from the raw search.
+"""The two protocols of the paper, aggregated from the raw search.
 
-*main* tunes the threshold on each chapter and reads the per-chapter studies;
-*global_in_sample* takes the configuration that is best over the 27 chapters and
-*loco* selects it on 26 chapters and reads it on the held-out one, both from the
-corpus study. Selection is done per metric, ties going to the smallest threshold.
+*main* (per-population tau) tunes the threshold on each population and reads the
+per-population studies; *loco* (LOPO) selects it on the other populations and reads
+it on the held-out one, from the corpus study. Selection is done per metric, ties
+going to the smallest threshold.
 
 A population with no consensus to score — its decoder keeps at most one node at every
 threshold, or at the threshold one of the experiments selects for it — is left out of
@@ -11,10 +11,8 @@ every table and listed, with the reason, in ``populations_without_consensus.csv`
 one out changes the folds of the others, so the check is repeated until it is stable.
 No population is left out on the three corpora of the paper.
 
-Each comparison is tested over populations with the one-sided paired t-test and
-sign test of the paper, and with the distribution-free statistics of
-``consensus.stats``: permutation and Wilcoxon tests, and a percentile bootstrap interval
-of the mean gain.
+Each gain over a baseline comes with the bootstrap interval and the permutation test
+of ``consensus.stats``.
 """
 from __future__ import annotations
 
@@ -22,14 +20,12 @@ from pathlib import Path
 
 import numpy as np
 import pandas as pd
-from scipy import stats
 
 from . import stats as robust
 from .corpus import natural_key
 from .metrics import METRICS
 
 BASELINES = ("medoid_smatch", "medoid_s2match", "text_medoid")
-ALPHA = 0.05
 
 
 def _pick(scores: pd.Series) -> float:
@@ -49,10 +45,8 @@ def _select(chapter_pool: pd.DataFrame, corpus_pool: pd.DataFrame) -> dict:
     empty and never compete.
     """
     chapters = list(corpus_pool.columns)
-    globally = _pick(corpus_pool.mean(axis=1, skipna=False))
     return {
         "main": {c: ("chapter", _pick(chapter_pool[c])) for c in chapters},
-        "global_in_sample": {c: ("corpus", globally) for c in chapters},
         "loco": {c: ("corpus", _pick(corpus_pool.drop(columns=c).mean(axis=1, skipna=False)))
                  for c in chapters},
     }
@@ -95,11 +89,6 @@ def _without_consensus(ours_per_chapter: pd.DataFrame, chapters: list[str]) -> t
         excluded += [dict(chapter=c, reason=reason) for c, reason in missing.items()]
 
 
-def _paired_test(ours: np.ndarray, theirs: np.ndarray, alternative: str) -> float:
-    """One-sided paired t-test, NaN when the two series are identical."""
-    return float(stats.ttest_rel(ours, theirs, alternative=alternative).pvalue)
-
-
 def run(out_dir: Path) -> None:
     """Write the experiment table, the selected thresholds and the consensus graphs."""
     out_dir = Path(out_dir)
@@ -122,7 +111,6 @@ def run(out_dir: Path) -> None:
         print(f"{len(excluded)} population(s) left out for want of a consensus:")
         for entry in excluded:
             print(f"  {entry['chapter']}: {entry['reason']}")
-    ordered = raw.sort_values("graph_idx")  # per-input scores, paired by input
 
     rows, params, consensus = [], [], {}
     for metric in METRICS:
@@ -131,27 +119,13 @@ def run(out_dir: Path) -> None:
             b: per_chapter[per_chapter["method"] == b].set_index("chapter")[metric][chapters]
             for b in BASELINES
         }
-        ours_inputs = {
-            key: group[metric].to_numpy()
-            for key, group in ordered[ordered["method"] == "meanaac"]
-            .groupby(["chapter", "study", "threshold"])
-        }
-        theirs_inputs = {
-            key: group[metric].to_numpy()
-            for key, group in ordered[ordered["method"].isin(BASELINES)]
-            .groupby(["chapter", "method"])
-        }
 
         for experiment, configs in _select(pools["chapter"], pools["corpus"]).items():
             ours = np.array([pools[configs[c][0]].loc[configs[c][1], c] for c in chapters])
             for chapter in chapters:
                 study, threshold = configs[chapter]
-                if experiment != "global_in_sample":
-                    params.append(dict(experiment=experiment, metric=metric,
-                                       chapter=chapter, threshold=threshold))
-                elif chapter == chapters[0]:  # one configuration for the whole corpus
-                    params.append(dict(experiment=experiment, metric=metric,
-                                       chapter="ALL", threshold=threshold))
+                params.append(dict(experiment=experiment, metric=metric,
+                                   chapter=chapter, threshold=threshold))
                 if experiment == "main":
                     consensus.setdefault(metric, []).append(dict(
                         chapter=chapter, threshold=threshold,
@@ -160,20 +134,13 @@ def run(out_dir: Path) -> None:
 
             for baseline, theirs in by_baseline.items():
                 delta = ours - theirs.to_numpy()
-                paired = [(ours_inputs[(c, *configs[c])], theirs_inputs[(c, baseline)])
-                          for c in chapters]
                 rows.append(dict(
                     experiment=experiment, metric=metric,
-                    baseline=baseline, n_chapters=len(chapters),
-                    score_meanaac=round(float(ours.mean()), 4),
+                    baseline=baseline, n_populations=len(chapters),
+                    score_consensus=round(float(ours.mean()), 4),
                     score_baseline=round(float(theirs.mean()), 4),
                     gain=round(float(delta.mean()), 4),
-                    p_ttest=_paired_test(ours, theirs.to_numpy(), "greater"),
-                    p_sign=float(stats.binomtest(
-                        int((delta > 0).sum()), len(chapters), 0.5, alternative="greater").pvalue),
                     n_better=int((delta > 0).sum()),
-                    n_sig_better=sum(_paired_test(a, b, "greater") < ALPHA for a, b in paired),
-                    n_sig_worse=sum(_paired_test(a, b, "less") < ALPHA for a, b in paired),
                     **robust.paired_summary(ours, theirs.to_numpy()),
                 ))
 

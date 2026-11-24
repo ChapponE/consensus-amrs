@@ -26,7 +26,6 @@ main,smatch,chapter_24,0.13
 main,smatch,chapter_25,0.124
 main,smatch,chapter_26,0.076
 main,smatch,chapter_27,0.06
-global_in_sample,smatch,ALL,0.153
 loco,smatch,chapter_1,0.153
 loco,smatch,chapter_2,0.153
 loco,smatch,chapter_3,0.153
@@ -81,7 +80,6 @@ main,s2match,chapter_24,0.13
 main,s2match,chapter_25,0.124
 main,s2match,chapter_26,0.076
 main,s2match,chapter_27,0.206
-global_in_sample,s2match,ALL,0.158
 loco,s2match,chapter_1,0.158
 loco,s2match,chapter_2,0.158
 loco,s2match,chapter_3,0.158

@@ -43,7 +43,6 @@ main,smatch,pmid_2493_9055,0.132
 main,smatch,pmid_2514_2146,0.061
 main,smatch,pmid_2540_9876,0.09
 main,smatch,pmid_2541_3220,0.244
-global_in_sample,smatch,ALL,0.244
 loco,smatch,pmid_1177_7939,0.244
 loco,smatch,pmid_1528_0923,0.244
 loco,smatch,pmid_1563_0473,0.244
@@ -132,7 +131,6 @@ main,s2match,pmid_2493_9055,0.132
 main,s2match,pmid_2514_2146,0.06
 main,s2match,pmid_2540_9876,0.135
 main,s2match,pmid_2541_3220,0.244
-global_in_sample,s2match,ALL,0.246
 loco,s2match,pmid_1177_7939,0.246
 loco,s2match,pmid_1528_0923,0.246
 loco,s2match,pmid_1563_0473,0.246
