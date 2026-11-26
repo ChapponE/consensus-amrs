@@ -1,19 +1,19 @@
+# Python cache
 __pycache__/
 *.pyc
+
+# Large files written by `main.py search`
 results*/means/
 results*/scores.csv.gz
 results*/graphs.csv.gz
 
-# experiments/ write detailed tables next to their summary; only the summaries are versioned
+# Detailed tables from experiments/; only the summaries are kept
 outputs/*/*
 !outputs/*/summary.*
 
-# AMR 3.0 (LDC2020T02) is licensed: never commit it, nor anything holding its graphs or sentences
+# AMR 3.0 news data (LDC2020T02), distributed by the LDC under license
 data/ldc_raw/
 data/proxy/
 data/proxy_summaries/
 data/proxy_removed.csv
 results_proxy/consensus_graph_*.csv
-
-# private
-article/
